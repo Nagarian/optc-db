@@ -1,0 +1,996 @@
+{
+  "$ref": "#/definitions/OldDB.ExtendedUnit",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "OldDB.Class": {
+      "enum": [
+        "Fighter",
+        "Shooter",
+        "Slasher",
+        "Striker",
+        "Free Spirit",
+        "Cerebral",
+        "Powerhouse",
+        "Driven",
+        "Evolver",
+        "Booster"
+      ],
+      "type": "string"
+    },
+    "OldDB.DualCaptain": {
+      "additionalProperties": false,
+      "properties": {
+        "character1": {
+          "type": "string"
+        },
+        "character2": {
+          "type": "string"
+        },
+        "combined": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "character1",
+        "character2",
+        "combined"
+      ],
+      "type": "object"
+    },
+    "OldDB.DualCharacterSpecial": {
+      "additionalProperties": false,
+      "properties": {
+        "character1": {
+          "type": "string"
+        },
+        "character2": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "character1",
+        "character2"
+      ],
+      "type": "object"
+    },
+    "OldDB.DualClass": {
+      "items": {
+        "items": {
+          "$ref": "#/definitions/OldDB.Class"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "OldDB.DualSailor": {
+      "additionalProperties": false,
+      "properties": {
+        "character1": {
+          "type": "string"
+        },
+        "character2": {
+          "type": "string"
+        },
+        "combined": {
+          "type": "string"
+        },
+        "level1": {
+          "type": "string"
+        },
+        "level2": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "character1",
+        "character2",
+        "combined"
+      ],
+      "type": "object"
+    },
+    "OldDB.ExtendedUnit": {
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "class": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/OldDB.Class"
+            },
+            {
+              "$ref": "#/definitions/OldDB.MultiClass"
+            },
+            {
+              "$ref": "#/definitions/OldDB.DualClass"
+            },
+            {
+              "$ref": "#/definitions/OldDB.VersusClass"
+            }
+          ]
+        },
+        "combo": {
+          "type": "number"
+        },
+        "cooldown": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/OldDB.UnitCooldown"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cost": {
+          "type": "number"
+        },
+        "dbId": {
+          "type": "number"
+        },
+        "detail": {
+          "$ref": "#/definitions/OldDB.UnitDetail"
+        },
+        "dualCharacters": {
+          "items": {
+            "$ref": "#/definitions/OldDB.ExtendedUnit"
+          },
+          "type": "array"
+        },
+        "evolution": {
+          "$ref": "#/definitions/OldDB.UnitEvolution"
+        },
+        "evolutionMap": {
+          "items": {
+            "type": "number"
+          },
+          "type": "array"
+        },
+        "family": {
+          "$ref": "#/definitions/OldDB.UnitFamily"
+        },
+        "flags": {
+          "$ref": "#/definitions/OldDB.UnitFlags"
+        },
+        "gamewith": {
+          "type": "number"
+        },
+        "growth": {
+          "additionalProperties": false,
+          "properties": {
+            "atk": {
+              "type": "number"
+            },
+            "hp": {
+              "type": "number"
+            },
+            "rcv": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "hp",
+            "atk",
+            "rcv"
+          ],
+          "type": "object"
+        },
+        "id": {
+          "type": "number"
+        },
+        "images": {
+          "$ref": "#/definitions/OldDB.UnitImages"
+        },
+        "incomplete": {
+          "type": "boolean"
+        },
+        "limitATK": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "limitCD": {
+          "type": "number"
+        },
+        "limitHP": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "limitRCV": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "limitSlot": {
+          "type": "number"
+        },
+        "limitStats": {
+          "additionalProperties": false,
+          "properties": {
+            "atk": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "captains": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "hp": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "rcv": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            "sailors": {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "hp",
+            "atk",
+            "rcv",
+            "sailors",
+            "captains"
+          ],
+          "type": "object"
+        },
+        "limitexATK": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "limitexCD": {
+          "type": "number"
+        },
+        "limitexHP": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "limitexRCV": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "limitexSlot": {
+          "type": "number"
+        },
+        "maxATK": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxEXP": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxHP": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxLevel": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "maxRCV": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "minATK": {
+          "type": "number"
+        },
+        "minHP": {
+          "type": "number"
+        },
+        "minRCV": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "number": {
+          "type": "number"
+        },
+        "pirateFest": {
+          "additionalProperties": false,
+          "properties": {
+            "DEF": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "SPD": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "class": {
+              "$ref": "#/definitions/OldDB.RumbleStyle"
+            },
+            "maxCP": {
+              "type": "null"
+            },
+            "minCP": {
+              "type": "null"
+            }
+          },
+          "type": "object"
+        },
+        "preview": {
+          "type": "boolean"
+        },
+        "slots": {
+          "type": "number"
+        },
+        "stars": {
+          "$ref": "#/definitions/OldDB.Rarity"
+        },
+        "type": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/OldDB.Type"
+            },
+            {
+              "items": {
+                "$ref": "#/definitions/OldDB.Type"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          ]
+        }
+      },
+      "required": [
+        "class",
+        "combo",
+        "cost",
+        "dbId",
+        "detail",
+        "evolutionMap",
+        "flags",
+        "growth",
+        "id",
+        "images",
+        "limitATK",
+        "limitCD",
+        "limitHP",
+        "limitRCV",
+        "limitSlot",
+        "limitStats",
+        "limitexATK",
+        "limitexCD",
+        "limitexHP",
+        "limitexRCV",
+        "limitexSlot",
+        "maxATK",
+        "maxEXP",
+        "maxHP",
+        "maxLevel",
+        "maxRCV",
+        "minATK",
+        "minHP",
+        "minRCV",
+        "name",
+        "number",
+        "slots",
+        "stars",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.GloJapSpecial": {
+      "additionalProperties": false,
+      "properties": {
+        "global": {
+          "type": "string"
+        },
+        "japan": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "global",
+        "japan"
+      ],
+      "type": "object"
+    },
+    "OldDB.LimitBreak": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description"
+      ],
+      "type": "object"
+    },
+    "OldDB.LimitBrokenCaptain": {
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "type": "string"
+        },
+        "level1": {
+          "type": "string"
+        },
+        "level2": {
+          "type": "string"
+        },
+        "level3": {
+          "type": "string"
+        },
+        "level4": {
+          "type": "string"
+        },
+        "level5": {
+          "type": "string"
+        },
+        "level6": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "base",
+        "level1"
+      ],
+      "type": "object"
+    },
+    "OldDB.LimitBrokenSailor": {
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "type": "string"
+        },
+        "base2": {
+          "type": "string"
+        },
+        "level1": {
+          "type": "string"
+        },
+        "level2": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "OldDB.MultiClass": {
+      "items": {
+        "$ref": "#/definitions/OldDB.Class"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "OldDB.MultiStageSpecial": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "cooldown": {
+            "$ref": "#/definitions/OldDB.UnitCooldown"
+          },
+          "description": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "cooldown",
+          "description"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "OldDB.PotentialKey": {
+      "enum": [
+        "Enrage/Reduce Increase Damage Taken duration",
+        "Critical Hit",
+        "Reduce Slot Bind duration",
+        "Reduce No Healing duration",
+        "Pinch Healing",
+        "Barrier Penetration",
+        "[STR] Damage Reduction",
+        "[DEX] Damage Reduction",
+        "[QCK] Damage Reduction",
+        "[PSY] Damage Reduction",
+        "[INT] Damage Reduction",
+        "Cooldown Reduction",
+        "Double Special Activation",
+        "Reduce Ship Bind duration",
+        "Reduce Sailor Despair duration",
+        "Nutrition/Reduce Hunger duration"
+      ],
+      "type": "string"
+    },
+    "OldDB.Rarity": {
+      "enum": [
+        1,
+        2,
+        3,
+        4,
+        "4+",
+        5,
+        "5+",
+        6,
+        "6+"
+      ],
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "OldDB.RumbleStyle": {
+      "enum": [
+        "ATK",
+        "DEF",
+        "RCV",
+        "DBF",
+        "SPT"
+      ],
+      "type": "string"
+    },
+    "OldDB.SimpleCaptain": {
+      "type": "string"
+    },
+    "OldDB.SimpleSailor": {
+      "type": "string"
+    },
+    "OldDB.SimpleStageSpecial": {
+      "type": "string"
+    },
+    "OldDB.Type": {
+      "enum": [
+        "STR",
+        "DEX",
+        "QCK",
+        "PSY",
+        "INT",
+        "DUAL",
+        "VS"
+      ],
+      "type": "string"
+    },
+    "OldDB.UnitCooldown": {
+      "items": {
+        "type": "number"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "OldDB.UnitDetail": {
+      "additionalProperties": false,
+      "properties": {
+        "VSCondition": {
+          "type": "string"
+        },
+        "VSSpecial": {
+          "type": "string"
+        },
+        "VSSpecialNotes": {
+          "type": "string"
+        },
+        "captain": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/OldDB.SimpleCaptain"
+            },
+            {
+              "$ref": "#/definitions/OldDB.DualCaptain"
+            },
+            {
+              "$ref": "#/definitions/OldDB.LimitBrokenCaptain"
+            }
+          ]
+        },
+        "captainNotes": {
+          "type": "string"
+        },
+        "festAbility": {
+          "items": {
+            "$ref": "#/definitions/OldDB.UnitFestAbility"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "festAttackPattern": {
+          "items": {
+            "$ref": "#/definitions/OldDB.UnitFestAbility"
+          },
+          "type": "array"
+        },
+        "festAttackTarget": {
+          "type": "string"
+        },
+        "festResistance": {
+          "type": "string"
+        },
+        "festSpecial": {
+          "items": {
+            "$ref": "#/definitions/OldDB.UnitFestSpecial"
+          },
+          "maxItems": 10,
+          "minItems": 10,
+          "type": "array"
+        },
+        "limit": {
+          "items": {
+            "$ref": "#/definitions/OldDB.LimitBreak"
+          },
+          "type": "array"
+        },
+        "limitNotes": {
+          "type": "string"
+        },
+        "potential": {
+          "items": {
+            "$ref": "#/definitions/OldDB.UnitPotential"
+          },
+          "type": "array"
+        },
+        "potentialNotes": {
+          "type": "string"
+        },
+        "sailor": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/OldDB.SimpleSailor"
+            },
+            {
+              "$ref": "#/definitions/OldDB.DualSailor"
+            },
+            {
+              "$ref": "#/definitions/OldDB.LimitBrokenSailor"
+            }
+          ]
+        },
+        "sailorNotes": {
+          "type": "string"
+        },
+        "special": {
+          "$ref": "#/definitions/OldDB.UnitSpecial"
+        },
+        "specialName": {
+          "type": "string"
+        },
+        "specialNotes": {
+          "type": "string"
+        },
+        "superSpecial": {
+          "type": "string"
+        },
+        "superSpecialCriteria": {
+          "type": "string"
+        },
+        "superSpecialNotes": {
+          "type": "string"
+        },
+        "support": {
+          "items": {
+            "$ref": "#/definitions/OldDB.UnitSupport"
+          },
+          "maxItems": 1,
+          "minItems": 1,
+          "type": "array"
+        },
+        "supportNotes": {
+          "type": "string"
+        },
+        "swap": {
+          "type": "string"
+        },
+        "swapNotes": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "OldDB.UnitEvolution": {
+      "additionalProperties": false,
+      "properties": {
+        "evolution": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            }
+          ]
+        },
+        "evolvers": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/definitions/OldDB.UnitEvolverMaterial"
+              },
+              "type": "array"
+            },
+            {
+              "items": {
+                "items": {
+                  "$ref": "#/definitions/OldDB.UnitEvolverMaterial"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            }
+          ]
+        }
+      },
+      "required": [
+        "evolution",
+        "evolvers"
+      ],
+      "type": "object"
+    },
+    "OldDB.UnitEvolverMaterial": {
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "OldDB.UnitFamily": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      ]
+    },
+    "OldDB.UnitFestAbility": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description"
+      ],
+      "type": "object"
+    },
+    "OldDB.UnitFestSpecial": {
+      "additionalProperties": false,
+      "properties": {
+        "cooldown": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "cooldown"
+      ],
+      "type": "object"
+    },
+    "OldDB.UnitFlags": {
+      "additionalProperties": false,
+      "properties": {
+        "fnonly": {
+          "const": 1,
+          "description": "Fortnight only",
+          "type": "number"
+        },
+        "gloOnly": {
+          "const": 1,
+          "description": "Manually added",
+          "type": "number"
+        },
+        "global": {
+          "const": 1,
+          "description": "global available",
+          "type": "number"
+        },
+        "inkable": {
+          "const": 1,
+          "type": "number"
+        },
+        "japOnly": {
+          "const": 1,
+          "type": "number"
+        },
+        "kclrr": {
+          "const": 1,
+          "description": "Kizuna rare recruit",
+          "type": "number"
+        },
+        "lrr": {
+          "const": 1,
+          "description": "limiter rare recruit",
+          "type": "number"
+        },
+        "pflrr": {
+          "const": 1,
+          "description": "Pirate Festival rare recruit",
+          "type": "number"
+        },
+        "promo": {
+          "const": 1,
+          "description": "???",
+          "type": "number"
+        },
+        "raid": {
+          "const": 1,
+          "description": "Raid only",
+          "type": "number"
+        },
+        "rr": {
+          "const": 1,
+          "description": "Rare recruit pools (include all other rr)",
+          "type": "number"
+        },
+        "rro": {
+          "const": 1,
+          "description": "rare recruit",
+          "type": "number"
+        },
+        "shop": {
+          "const": 1,
+          "description": "Rayleigh shop",
+          "type": "number"
+        },
+        "slrr": {
+          "const": 1,
+          "description": "Support limited rare recruit",
+          "type": "number"
+        },
+        "special": {
+          "const": 1,
+          "description": "Special characters (gifted mostly)",
+          "type": "number"
+        },
+        "tmlrr": {
+          "const": 1,
+          "description": "TM rare recruit",
+          "type": "number"
+        },
+        "tmshop": {
+          "const": 1,
+          "description": "TM trade port",
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "OldDB.UnitImages": {
+      "additionalProperties": false,
+      "properties": {
+        "full": {
+          "type": "string"
+        },
+        "thumbnail": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "thumbnail",
+        "full"
+      ],
+      "type": "object"
+    },
+    "OldDB.UnitPotential": {
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "$ref": "#/definitions/OldDB.PotentialKey"
+        },
+        "description": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        }
+      },
+      "required": [
+        "Name",
+        "description"
+      ],
+      "type": "object"
+    },
+    "OldDB.UnitSpecial": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.SimpleStageSpecial"
+        },
+        {
+          "$ref": "#/definitions/OldDB.MultiStageSpecial"
+        },
+        {
+          "$ref": "#/definitions/OldDB.DualCharacterSpecial"
+        },
+        {
+          "$ref": "#/definitions/OldDB.GloJapSpecial"
+        }
+      ]
+    },
+    "OldDB.UnitSupport": {
+      "additionalProperties": false,
+      "properties": {
+        "Characters": {
+          "type": "string"
+        },
+        "description": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        }
+      },
+      "required": [
+        "Characters",
+        "description"
+      ],
+      "type": "object"
+    },
+    "OldDB.VersusClass": {
+      "items": {
+        "items": {
+          "$ref": "#/definitions/OldDB.Class"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    }
+  }
+}
