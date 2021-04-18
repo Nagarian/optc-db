@@ -17,11 +17,13 @@ export declare namespace OldDB {
   export type MultiClass = [Class, Class]
   export type DualClass = [[Class, Class], [Class, Class], [Class, Class]]
   export type VersusClass = [[Class, Class], [Class, Class]]
+  export type UnitClass = Class | MultiClass | DualClass | VersusClass
+  export type UnitType = Type | [Type, Type]
 
   export type BaseUnit = {
     name: string
-    type: Type | [Type, Type]
-    class: Class | MultiClass | DualClass | VersusClass
+    type: UnitType
+    class: UnitClass
     stars: Rarity
     cost: number
     combo: number
@@ -260,7 +262,7 @@ export declare namespace OldDB {
     dbId: number
     images: UnitImages
     evolution?: UnitEvolution
-    cooldown?: UnitCooldown | null
+    cooldown?: UnitCooldown
     detail: UnitDetail
     flags: UnitFlags
     family?: UnitFamily

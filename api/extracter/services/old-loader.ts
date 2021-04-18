@@ -63,7 +63,7 @@ function GetExtendedUnit(unit: OldDB.BaseUnit): OldDB.ExtendedUnit {
       full: getUnitFullPicture(dbId),
     },
     evolution: DBevolution[dbId],
-    cooldown: DBcooldown[unit.number],
+    cooldown: DBcooldown[unit.number] ?? undefined,
     detail: DBdetail[dbId] ?? {},
     flags,
     family: DBfamily[unit.number] ?? undefined,

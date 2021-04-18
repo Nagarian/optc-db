@@ -102,33 +102,13 @@
           "type": "array"
         },
         "class": {
-          "anyOf": [
-            {
-              "$ref": "#/definitions/OldDB.Class"
-            },
-            {
-              "$ref": "#/definitions/OldDB.MultiClass"
-            },
-            {
-              "$ref": "#/definitions/OldDB.DualClass"
-            },
-            {
-              "$ref": "#/definitions/OldDB.VersusClass"
-            }
-          ]
+          "$ref": "#/definitions/OldDB.UnitClass"
         },
         "combo": {
           "type": "number"
         },
         "cooldown": {
-          "anyOf": [
-            {
-              "$ref": "#/definitions/OldDB.UnitCooldown"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "$ref": "#/definitions/OldDB.UnitCooldown"
         },
         "cost": {
           "type": "number"
@@ -365,19 +345,7 @@
           "$ref": "#/definitions/OldDB.Rarity"
         },
         "type": {
-          "anyOf": [
-            {
-              "$ref": "#/definitions/OldDB.Type"
-            },
-            {
-              "items": {
-                "$ref": "#/definitions/OldDB.Type"
-              },
-              "maxItems": 2,
-              "minItems": 2,
-              "type": "array"
-            }
-          ]
+          "$ref": "#/definitions/OldDB.UnitType"
         }
       },
       "required": [
@@ -590,6 +558,22 @@
         "VS"
       ],
       "type": "string"
+    },
+    "OldDB.UnitClass": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.Class"
+        },
+        {
+          "$ref": "#/definitions/OldDB.MultiClass"
+        },
+        {
+          "$ref": "#/definitions/OldDB.DualClass"
+        },
+        {
+          "$ref": "#/definitions/OldDB.VersusClass"
+        }
+      ]
     },
     "OldDB.UnitCooldown": {
       "items": {
@@ -978,6 +962,21 @@
         "description"
       ],
       "type": "object"
+    },
+    "OldDB.UnitType": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.Type"
+        },
+        {
+          "items": {
+            "$ref": "#/definitions/OldDB.Type"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      ]
     },
     "OldDB.VersusClass": {
       "items": {

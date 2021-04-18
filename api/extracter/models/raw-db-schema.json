@@ -1,0 +1,874 @@
+{
+  "$ref": "#/definitions/RawDB.Character",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "RawDB.AffiliatedLinks": {
+      "additionalProperties": false,
+      "properties": {
+        "gamewithId": {
+          "type": "number"
+        },
+        "officialJapan": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "RawDB.BasicCharacter": {
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "captain": {
+          "$ref": "#/definitions/RawDB.Captain"
+        },
+        "class": {
+          "$ref": "#/definitions/RawDB.Class"
+        },
+        "evolution": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Evolution"
+          },
+          "type": "array"
+        },
+        "family": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "flags": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Flag"
+          },
+          "type": "array"
+        },
+        "frenchName": {
+          "type": "string"
+        },
+        "japanName": {
+          "type": "string"
+        },
+        "limitBreak": {
+          "$ref": "#/definitions/RawDB.LB.LimitBreak"
+        },
+        "links": {
+          "$ref": "#/definitions/RawDB.AffiliatedLinks"
+        },
+        "name": {
+          "type": "string"
+        },
+        "rarity": {
+          "$ref": "#/definitions/RawDB.Rarity"
+        },
+        "sailor": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Sailor"
+          },
+          "type": "array"
+        },
+        "special": {
+          "$ref": "#/definitions/RawDB.Special"
+        },
+        "stats": {
+          "$ref": "#/definitions/RawDB.Statistics"
+        },
+        "superType": {
+          "$ref": "#/definitions/RawDB.SuperType"
+        },
+        "support": {
+          "$ref": "#/definitions/RawDB.Support"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.Type"
+        }
+      },
+      "required": [
+        "aliases",
+        "class",
+        "family",
+        "flags",
+        "links",
+        "name",
+        "rarity",
+        "stats",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.Captain": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "upgrades": {
+          "items": {
+            "$ref": "#/definitions/RawDB.CaptainUpgrade"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "description"
+      ],
+      "type": "object"
+    },
+    "RawDB.CaptainUpgrade": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description"
+      ],
+      "type": "object"
+    },
+    "RawDB.Character": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.BasicCharacter"
+        },
+        {
+          "$ref": "#/definitions/RawDB.DualCharacter"
+        },
+        {
+          "$ref": "#/definitions/RawDB.VersusCharacter"
+        }
+      ]
+    },
+    "RawDB.Class": {
+      "items": {
+        "$ref": "#/definitions/RawDB.ClassKey"
+      },
+      "maxItems": 2,
+      "minItems": 0,
+      "type": "array"
+    },
+    "RawDB.ClassKey": {
+      "enum": [
+        "Fighter",
+        "Shooter",
+        "Slasher",
+        "Striker",
+        "Free Spirit",
+        "Cerebral",
+        "Powerhouse",
+        "Driven",
+        "Evolver",
+        "Booster"
+      ],
+      "type": "string"
+    },
+    "RawDB.DualCharacter": {
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "captain": {
+          "$ref": "#/definitions/RawDB.Captain"
+        },
+        "characters": {
+          "$ref": "#/definitions/RawDB.DualUnitNode"
+        },
+        "class": {
+          "$ref": "#/definitions/RawDB.Class"
+        },
+        "evolution": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Evolution"
+          },
+          "type": "array"
+        },
+        "family": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "flags": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Flag"
+          },
+          "type": "array"
+        },
+        "frenchName": {
+          "type": "string"
+        },
+        "japanName": {
+          "type": "string"
+        },
+        "limitBreak": {
+          "$ref": "#/definitions/RawDB.LB.LimitBreak"
+        },
+        "links": {
+          "$ref": "#/definitions/RawDB.AffiliatedLinks"
+        },
+        "name": {
+          "type": "string"
+        },
+        "rarity": {
+          "$ref": "#/definitions/RawDB.Rarity"
+        },
+        "sailor": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Sailor"
+          },
+          "type": "array"
+        },
+        "special": {
+          "$ref": "#/definitions/RawDB.Special"
+        },
+        "stats": {
+          "$ref": "#/definitions/RawDB.Statistics"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.Type"
+        }
+      },
+      "required": [
+        "aliases",
+        "characters",
+        "class",
+        "family",
+        "flags",
+        "links",
+        "name",
+        "rarity",
+        "stats",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.DualUnitDetail": {
+      "additionalProperties": false,
+      "properties": {
+        "captain": {
+          "$ref": "#/definitions/RawDB.Captain"
+        },
+        "class": {
+          "$ref": "#/definitions/RawDB.Class"
+        },
+        "frenchName": {
+          "type": "string"
+        },
+        "japanName": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "sailor": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Sailor"
+          },
+          "type": "array"
+        },
+        "special": {
+          "$ref": "#/definitions/RawDB.Special"
+        },
+        "stats": {
+          "$ref": "#/definitions/RawDB.Statistics"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.Type"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "class",
+        "stats"
+      ],
+      "type": "object"
+    },
+    "RawDB.DualUnitNode": {
+      "additionalProperties": false,
+      "properties": {
+        "character1": {
+          "$ref": "#/definitions/RawDB.DualUnitDetail"
+        },
+        "character2": {
+          "$ref": "#/definitions/RawDB.DualUnitDetail"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "swap": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "character1",
+        "character2",
+        "swap"
+      ],
+      "type": "object"
+    },
+    "RawDB.Evolution": {
+      "additionalProperties": false,
+      "properties": {
+        "evolvers": {
+          "items": {
+            "$ref": "#/definitions/RawDB.EvolutionMaterial"
+          },
+          "type": "array"
+        },
+        "id": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "evolvers"
+      ],
+      "type": "object"
+    },
+    "RawDB.EvolutionMaterial": {
+      "type": [
+        "string",
+        "number"
+      ]
+    },
+    "RawDB.Flag": {
+      "enum": [
+        "rare recruit",
+        "limited rare recruit",
+        "support rare recruit",
+        "tm rare recruit",
+        "kizuna rare recruit",
+        "rumble rare recruit",
+        "shop",
+        "tmshop",
+        "global-only",
+        "japan-only",
+        "special",
+        "retired",
+        "inkable"
+      ],
+      "type": "string"
+    },
+    "RawDB.LB.LimitBreak": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "items": {
+            "$ref": "#/definitions/RawDB.LB.Path"
+          },
+          "type": "array"
+        },
+        "potentials": {
+          "items": {
+            "$ref": "#/definitions/RawDB.LB.Potential"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "path",
+        "potentials"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.Path": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/RawDB.LB.PathType"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.PathType": {
+      "enum": [
+        "hp",
+        "atk",
+        "rcv",
+        "potential",
+        "slot",
+        "sailor",
+        "cooldown",
+        "captain",
+        "key"
+      ],
+      "type": "string"
+    },
+    "RawDB.LB.Potential": {
+      "additionalProperties": false,
+      "properties": {
+        "levels": {
+          "items": {
+            "$ref": "#/definitions/RawDB.LB.PotentialLevel"
+          },
+          "type": "array"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.LB.PotentialType"
+        }
+      },
+      "required": [
+        "type",
+        "levels"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.PotentialLevel": {
+      "additionalProperties": false,
+      "properties": {
+        "reduction": {
+          "type": "number"
+        },
+        "threshold": {
+          "type": "number"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "RawDB.LB.PotentialType": {
+      "enum": [
+        "Enrage/Reduce Increase Damage Taken duration",
+        "Critical Hit",
+        "Reduce Slot Bind duration",
+        "Reduce No Healing duration",
+        "Pinch Healing",
+        "Barrier Penetration",
+        "[STR] Damage Reduction",
+        "[DEX] Damage Reduction",
+        "[QCK] Damage Reduction",
+        "[PSY] Damage Reduction",
+        "[INT] Damage Reduction",
+        "Cooldown Reduction",
+        "Double Special Activation",
+        "Reduce Ship Bind duration",
+        "Reduce Sailor Despair duration",
+        "Nutrition/Reduce Hunger duration"
+      ],
+      "type": "string"
+    },
+    "RawDB.Rarity": {
+      "enum": [
+        1,
+        2,
+        3,
+        4,
+        "4+",
+        5,
+        "5+",
+        6,
+        "6+"
+      ],
+      "type": [
+        "number",
+        "string"
+      ]
+    },
+    "RawDB.Sailor": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description"
+      ],
+      "type": "object"
+    },
+    "RawDB.Special": {
+      "additionalProperties": false,
+      "properties": {
+        "cooldown": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        },
+        "maxLevel": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "stages": {
+          "items": {
+            "$ref": "#/definitions/RawDB.SpecialStage"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "description"
+      ],
+      "type": "object"
+    },
+    "RawDB.SpecialStage": {
+      "additionalProperties": false,
+      "properties": {
+        "cooldown": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "cooldown"
+      ],
+      "type": "object"
+    },
+    "RawDB.Statistic": {
+      "additionalProperties": false,
+      "properties": {
+        "atk": {
+          "type": "number"
+        },
+        "hp": {
+          "type": "number"
+        },
+        "rcv": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "hp",
+        "atk",
+        "rcv"
+      ],
+      "type": "object"
+    },
+    "RawDB.Statistics": {
+      "additionalProperties": false,
+      "properties": {
+        "combo": {
+          "type": "number"
+        },
+        "cost": {
+          "type": "number"
+        },
+        "maxExp": {
+          "type": "number"
+        },
+        "maxLevel": {
+          "type": "number"
+        },
+        "maxLvl": {
+          "$ref": "#/definitions/RawDB.Statistic"
+        },
+        "minLvl": {
+          "$ref": "#/definitions/RawDB.Statistic"
+        },
+        "slots": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "cost",
+        "combo",
+        "slots",
+        "maxLevel"
+      ],
+      "type": "object"
+    },
+    "RawDB.SuperType": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "criteria",
+        "description"
+      ],
+      "type": "object"
+    },
+    "RawDB.Support": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "string"
+        },
+        "levels": {
+          "items": {
+            "$ref": "#/definitions/RawDB.SupportLevel"
+          },
+          "type": "array"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "type": {
+          "items": {
+            "$ref": "#/definitions/RawDB.SupportType"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "type",
+        "criteria",
+        "levels"
+      ],
+      "type": "object"
+    },
+    "RawDB.SupportLevel": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "reduction": {
+          "additionalProperties": false,
+          "properties": {
+            "type": {
+              "$ref": "#/definitions/RawDB.Type"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "type",
+            "value"
+          ],
+          "type": "object"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "type": "object"
+    },
+    "RawDB.SupportType": {
+      "enum": [
+        "atk",
+        "hp",
+        "rcv",
+        "def",
+        "other"
+      ],
+      "type": "string"
+    },
+    "RawDB.Type": {
+      "enum": [
+        "STR",
+        "DEX",
+        "QCK",
+        "PSY",
+        "INT",
+        "DUAL",
+        "VS"
+      ],
+      "type": "string"
+    },
+    "RawDB.Versus": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description"
+      ],
+      "type": "object"
+    },
+    "RawDB.VersusCaptain": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "type": "object"
+    },
+    "RawDB.VersusCharacter": {
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "captain": {
+          "$ref": "#/definitions/RawDB.VersusCaptain"
+        },
+        "characters": {
+          "$ref": "#/definitions/RawDB.VersusUnitNode"
+        },
+        "class": {
+          "$ref": "#/definitions/RawDB.Class"
+        },
+        "evolution": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Evolution"
+          },
+          "type": "array"
+        },
+        "family": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "flags": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Flag"
+          },
+          "type": "array"
+        },
+        "frenchName": {
+          "type": "string"
+        },
+        "japanName": {
+          "type": "string"
+        },
+        "limitBreak": {
+          "$ref": "#/definitions/RawDB.LB.LimitBreak"
+        },
+        "links": {
+          "$ref": "#/definitions/RawDB.AffiliatedLinks"
+        },
+        "name": {
+          "type": "string"
+        },
+        "rarity": {
+          "$ref": "#/definitions/RawDB.Rarity"
+        },
+        "stats": {
+          "$ref": "#/definitions/RawDB.Statistics"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.Type"
+        }
+      },
+      "required": [
+        "aliases",
+        "captain",
+        "characters",
+        "class",
+        "family",
+        "flags",
+        "links",
+        "name",
+        "rarity",
+        "stats",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.VersusUnitDetail": {
+      "additionalProperties": false,
+      "properties": {
+        "captain": {
+          "$ref": "#/definitions/RawDB.Captain"
+        },
+        "class": {
+          "$ref": "#/definitions/RawDB.Class"
+        },
+        "frenchName": {
+          "type": "string"
+        },
+        "japanName": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "sailor": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Sailor"
+          },
+          "type": "array"
+        },
+        "special": {
+          "$ref": "#/definitions/RawDB.Special"
+        },
+        "stats": {
+          "$ref": "#/definitions/RawDB.Statistics"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.Type"
+        },
+        "versus": {
+          "$ref": "#/definitions/RawDB.Versus"
+        }
+      },
+      "required": [
+        "name",
+        "type",
+        "class",
+        "stats",
+        "versus"
+      ],
+      "type": "object"
+    },
+    "RawDB.VersusUnitNode": {
+      "additionalProperties": false,
+      "properties": {
+        "character1": {
+          "$ref": "#/definitions/RawDB.VersusUnitDetail"
+        },
+        "character2": {
+          "$ref": "#/definitions/RawDB.VersusUnitDetail"
+        },
+        "criteria": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "character1",
+        "character2",
+        "criteria"
+      ],
+      "type": "object"
+    }
+  }
+}
