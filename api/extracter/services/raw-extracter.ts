@@ -1,0 +1,184 @@
+import { OldDB } from '../models/old-db'
+import { RawDB } from '../models/raw-db'
+import { extractCaptain } from './old-to-raw/captain'
+import { extractDualUnit } from './old-to-raw/dual'
+import { extractEvolution } from './old-to-raw/evolution'
+import { extractLimitBreak } from './old-to-raw/limit-break'
+import {
+  extractClass,
+  extractFamily,
+  extractRealType,
+  extractType,
+} from './old-to-raw/old-db-helper'
+import { extractSailor } from './old-to-raw/sailor'
+import { extractSpecial } from './old-to-raw/special'
+import { extractStats } from './old-to-raw/statistic'
+import { extractSupport } from './old-to-raw/support'
+import { extractVersusUnit } from './old-to-raw/versus'
+
+export function remapper(db: OldDB.ExtendedUnit[]): RawDB.Character[] {
+  return db.map(remap)
+}
+
+export function remap(unit: OldDB.ExtendedUnit): RawDB.Character {
+  const unitType = extractRealType(unit)
+
+  switch (unitType) {
+    case 'DUAL':
+      return remapDualCharacter(unit)
+    case 'VS':
+      return remapVersusCharacter(unit)
+    default:
+      return remapBasicCharacter(unit)
+  }
+}
+
+export function remapBasicCharacter(
+  unit: OldDB.ExtendedUnit,
+): RawDB.BasicCharacter {
+  return {
+    name: unit.name,
+    frenchName: unit.aliases?.[1],
+    japanName: unit.aliases?.[0],
+    family: extractFamily(unit),
+    type: extractType(unit),
+    class: extractClass(unit),
+    stats: extractStats(unit),
+    rarity: unit.stars,
+    flags: [],
+    //   flags: computeFlags(unit),
+    //   dropLocation: computeDropLocation(unit),
+    links: {
+      gamewithId: unit.gamewith,
+      // officialJapan:
+    },
+    aliases: unit.aliases?.slice(2) ?? [],
+    captain: extractCaptain(unit),
+    superType: !unit.detail.superSpecial
+      ? undefined
+      : {
+          criteria: unit.detail.superSpecialCriteria!,
+          description: unit.detail.superSpecial,
+          notes: unit.detail.superSpecialNotes,
+        },
+    special: extractSpecial(unit),
+    sailor: extractSailor(unit),
+    support: extractSupport(unit),
+    evolution: extractEvolution(unit),
+    //   pirateFest:
+    //     !unit.pirateFest.class || unitType === 'VS'
+    //       ? undefined
+    //       : {
+    //           class: unit.pirateFest.class,
+    //           stats: {
+    //             DEF: unit.pirateFest.DEF,
+    //             SPD: unit.pirateFest.SPD,
+    //           },
+    //           targetPriority: unit.detail.festAttackTarget ?? '',
+    //           resistance:
+    //             unit.detail.festResistance ?? unit.detail.festResilience,
+    //           ability: unit.detail.festAbility ?? [],
+    //           behaviorPattern: unit.detail.festAttackPattern ?? [],
+    //           special: unit.detail.festSpecial ?? [],
+    //         },
+    limitBreak: extractLimitBreak(unit),
+  }
+}
+
+export function remapDualCharacter(
+  unit: OldDB.ExtendedUnit,
+): RawDB.DualCharacter {
+  return {
+    name: unit.name,
+    frenchName: unit.aliases?.[1],
+    japanName: unit.aliases?.[0],
+    family: extractFamily(unit),
+    type: 'DUAL',
+    class: extractClass(unit, true),
+    stats: extractStats(unit),
+    rarity: unit.stars,
+    flags: [],
+    //   flags: computeFlags(unit),
+    //   dropLocation: computeDropLocation(unit),
+    links: {
+      gamewithId: unit.gamewith,
+      // officialJapan:
+    },
+    aliases: unit.aliases?.slice(2) ?? [],
+    captain: extractCaptain(unit),
+    special: extractSpecial(unit),
+    sailor: extractSailor(unit),
+    evolution: extractEvolution(unit),
+    //   pirateFest:
+    //     !unit.pirateFest.class || unitType === 'VS'
+    //       ? undefined
+    //       : {
+    //           class: unit.pirateFest.class,
+    //           stats: {
+    //             DEF: unit.pirateFest.DEF,
+    //             SPD: unit.pirateFest.SPD,
+    //           },
+    //           targetPriority: unit.detail.festAttackTarget ?? '',
+    //           resistance:
+    //             unit.detail.festResistance ?? unit.detail.festResilience,
+    //           ability: unit.detail.festAbility ?? [],
+    //           behaviorPattern: unit.detail.festAttackPattern ?? [],
+    //           special: unit.detail.festSpecial ?? [],
+    //         },
+    limitBreak: extractLimitBreak(unit),
+    characters: {
+      swap: unit.detail.swap!,
+      character1: extractDualUnit(unit.dualCharacters![0], unit),
+      character2: extractDualUnit(unit.dualCharacters![1], unit),
+    },
+  }
+}
+
+export function remapVersusCharacter(
+  unit: OldDB.ExtendedUnit,
+): RawDB.VersusCharacter {
+  return {
+    name: unit.name,
+    frenchName: unit.aliases?.[1],
+    japanName: unit.aliases?.[0],
+    family: extractFamily(unit),
+    type: 'VS',
+    class: extractClass(unit, true),
+    stats: extractStats(unit),
+    rarity: unit.stars,
+    flags: [],
+    //   flags: computeFlags(unit),
+    //   dropLocation: computeDropLocation(unit),
+    links: {
+      gamewithId: unit.gamewith,
+      // officialJapan:
+    },
+    aliases: unit.aliases?.slice(2) ?? [],
+    captain: {
+      name: '',
+    },
+    evolution: extractEvolution(unit),
+    //   pirateFest:
+    //     !unit.pirateFest.class || unitType === 'VS'
+    //       ? undefined
+    //       : {
+    //           class: unit.pirateFest.class,
+    //           stats: {
+    //             DEF: unit.pirateFest.DEF,
+    //             SPD: unit.pirateFest.SPD,
+    //           },
+    //           targetPriority: unit.detail.festAttackTarget ?? '',
+    //           resistance:
+    //             unit.detail.festResistance ?? unit.detail.festResilience,
+    //           ability: unit.detail.festAbility ?? [],
+    //           behaviorPattern: unit.detail.festAttackPattern ?? [],
+    //           special: unit.detail.festSpecial ?? [],
+    //         },
+    limitBreak: extractLimitBreak(unit),
+    characters: {
+      criteria: unit.detail.VSCondition!,
+      character1: extractVersusUnit(unit.dualCharacters![0], unit, true),
+      character2: extractVersusUnit(unit.dualCharacters![1], unit, false),
+    },
+  }
+}

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "old-extract": "ts-node extract.ts",
-    "old-schema": "ts-json-schema-generator -f ./tsconfig.json -o './models/old-db-schema.json' --path './models/old-db.d.ts' --type 'OldDB.ExtendedUnit'"
+    "old-schema": "ts-json-schema-generator -f ./tsconfig.json -o './models/old-db-schema.json' --path './models/old-db.d.ts' --type 'OldDB.ExtendedUnit'",
+    "raw-schema": "ts-json-schema-generator -f ./tsconfig.json -o './models/raw-db-schema.json' --path './models/raw-db.d.ts' --type 'RawDB.Character'"
   },
   "dependencies": {
     "ajv": "^8.1.0",

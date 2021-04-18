@@ -1,6 +1,6 @@
 import { OldDB } from '../../models/old-db'
 
-const dualRemapping : Record<number, number[]> = {
+const dualRemapping: Record<number, number[]> = {
   1983: [5000, 5001, 5002, 5003],
   1984: [5004, 5005, 5006, 5007],
   1985: [5008, 5009, 5010, 5011],
@@ -106,13 +106,22 @@ const dualRemapping : Record<number, number[]> = {
 
   3279: [5311, 5312, 5313],
   3280: [5314, 5315, 5316],
+
+  3299: [5317, 5318, 5319, 5320],
+  3300: [5321, 5322, 5323, 5324],
 }
 
-export function fixupDualVersusMapping (
+export function fixupDualVersusMapping(
   unit: OldDB.ExtendedUnit,
   _index: number,
   units: OldDB.ExtendedUnit[],
 ): OldDB.ExtendedUnit {
+  if (Array.isArray(unit.type) && !dualRemapping[unit.dbId]) {
+    throw new Error(
+      `unit ${unit.dbId} "${unit.name}" is a new dual unit without their sub-mapping`,
+    )
+  }
+
   if (!dualRemapping[unit.dbId]) {
     return unit
   }
@@ -124,7 +133,10 @@ export function fixupDualVersusMapping (
     dualCharacters: dualRemapping[unit.dbId]
       .map(id => temp.find(u => u.dbId === id))
       .map(dualUnit => {
-        if (!dualUnit) throw new Error(`unit ${unit.dbId} "${unit.name}" doesn't have all its dual mapping`)
+        if (!dualUnit)
+          throw new Error(
+            `unit ${unit.dbId} "${unit.name}" doesn't have all its dual mapping`,
+          )
         return dualUnit
       }),
   }

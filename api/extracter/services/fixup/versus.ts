@@ -13,7 +13,6 @@ export function fixupVersusUnit(unit: OldDB.ExtendedUnit): OldDB.ExtendedUnit {
     detail: {
       ...untyped.detail,
       captain: undefined,
-      special: undefined,
       sailor: undefined,
       festAbility: undefined,
       festSpecial: undefined,
