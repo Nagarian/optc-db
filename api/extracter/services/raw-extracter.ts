@@ -6,7 +6,7 @@ import { extractEvolution } from './old-to-raw/evolution'
 import { extractFlags } from './old-to-raw/flags'
 import { extractLimitBreak } from './old-to-raw/limit-break'
 import { extractLinks } from './old-to-raw/links'
-import { extractRootNotes } from './old-to-raw/notes'
+import { extractNotes, extractRootNotes } from './old-to-raw/notes'
 import {
   extractClass,
   extractFamily,
@@ -17,6 +17,7 @@ import { extractSailor } from './old-to-raw/sailor'
 import { extractSpecial } from './old-to-raw/special'
 import { extractStats } from './old-to-raw/statistic'
 import { extractSupport } from './old-to-raw/support'
+import { extractSwap } from './old-to-raw/swap'
 import { extractVersusUnit } from './old-to-raw/versus'
 
 export function remapper(db: OldDB.ExtendedUnit[]): RawDB.Character[] {
@@ -58,7 +59,7 @@ export function remapBasicCharacter(
       : {
           criteria: unit.detail.superSpecialCriteria!,
           description: unit.detail.superSpecial,
-          notes: unit.detail.superSpecialNotes,
+          notes: extractNotes(unit.detail.superSpecialNotes),
         },
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
@@ -122,7 +123,7 @@ export function remapDualCharacter(
     //         },
     limitBreak: extractLimitBreak(unit),
     characters: {
-      swap: unit.detail.swap!,
+      swap: extractSwap(unit),
       character1: extractDualUnit(unit.dualCharacters![0], unit),
       character2: extractDualUnit(unit.dualCharacters![1], unit),
     },

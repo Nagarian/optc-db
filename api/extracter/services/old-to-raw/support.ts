@@ -1,5 +1,6 @@
 import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
+import { extractNotes } from './notes'
 
 const AtkRegex = /Adds.+%.+ATK/i
 const HpRegex = /Adds.+%.+HP/i
@@ -55,6 +56,6 @@ export function extractSupport(
             },
       }
     }),
-    notes: unit.detail.supportNotes,
+    notes: extractNotes(unit.detail.supportNotes),
   }
 }
