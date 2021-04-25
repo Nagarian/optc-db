@@ -5,7 +5,7 @@ import {
   Rarities,
   RumbleStyles,
 } from './constants'
-import { DropLocations, Flags, LBPathTypes, SupportTypes } from './raw-constant'
+import { Flags, LBPathTypes, SupportTypes } from './raw-constant'
 
 export declare namespace RawDB {
   export type Type = typeof CharacterTypes[number]
@@ -15,7 +15,6 @@ export declare namespace RawDB {
   export type RumbleStyle = typeof RumbleStyles[number]
 
   export type Flag = typeof Flags[number]
-  export type DropLocation = typeof DropLocations[number]
 
   export type Statistic = {
     hp: number
@@ -208,6 +207,7 @@ export declare namespace RawDB {
     flags: Flag[]
     links: AffiliatedLinks
     aliases: string[]
+    notes?: string
 
     limitBreak?: LB.LimitBreak
     evolution?: Evolution[]
