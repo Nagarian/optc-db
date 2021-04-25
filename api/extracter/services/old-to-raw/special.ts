@@ -1,5 +1,6 @@
 import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
+import { extractNotes } from './notes'
 
 const isSimpleSpecial = (
   special: OldDB.UnitSpecial,
@@ -38,6 +39,7 @@ export function extractSpecial(
       description: special,
       cooldown: cooldown[0],
       maxLevel: cooldown[1],
+      notes: extractNotes(unit.detail.specialNotes),
     }
   }
 
@@ -47,6 +49,7 @@ export function extractSpecial(
       description: `- global: ${special.global}\n\n- japan:${special.japan}`,
       cooldown: cooldown[0],
       maxLevel: cooldown[1],
+      notes: extractNotes(unit.detail.specialNotes),
     }
   }
 
@@ -62,6 +65,7 @@ export function extractSpecial(
       description,
       cooldown: cooldown[0],
       maxLevel: cooldown[1],
+      notes: extractNotes(unit.detail.specialNotes),
     }
   }
 
@@ -78,6 +82,7 @@ export function extractSpecial(
           description,
           cooldown: initial,
         })),
+      notes: extractNotes(unit.detail.specialNotes),
     }
   }
 

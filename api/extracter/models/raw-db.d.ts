@@ -163,11 +163,15 @@ export declare namespace RawDB {
     sailor?: Sailor[]
   }
 
+  export type Swap = {
+    description: string
+    notes?: string
+  }
+
   export type DualUnitNode = {
     character1: DualUnitDetail
     character2: DualUnitDetail
-    swap: string
-    notes?: string
+    swap: Swap
   }
 
   export type Versus = {

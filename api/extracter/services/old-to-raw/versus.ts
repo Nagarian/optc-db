@@ -1,6 +1,7 @@
 import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
 import { extractCaptain } from './captain'
+import { extractNotes } from './notes'
 import { extractClass, extractType } from './old-db-helper'
 import { extractSailor } from './sailor'
 import { extractSpecial } from './special'
@@ -31,7 +32,7 @@ export function extractVersusUnit(
     sailor: sailor,
     versus: {
       description: unit.detail.VSSpecial!,
-      notes: unit.detail.VSSpecialNotes!
+      notes: extractNotes(unit.detail.VSSpecialNotes)
     },
     stats: extractStats(unit),
   }

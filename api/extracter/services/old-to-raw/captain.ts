@@ -1,5 +1,6 @@
 import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
+import { extractNotes } from './notes'
 
 const isSimpleCaptain = (
   captain: OldDB.UnitCaptain,
@@ -30,7 +31,7 @@ export function extractCaptain(
     return {
       name: '',
       description: captain,
-      notes: unit.detail.captainNotes || undefined,
+      notes: extractNotes(unit.detail.captainNotes),
     }
   }
 
@@ -38,7 +39,7 @@ export function extractCaptain(
     return {
       name: '',
       description: captain.combined,
-      notes: unit.detail.captainNotes || undefined,
+      notes: extractNotes(unit.detail.captainNotes),
     }
   }
 
@@ -55,7 +56,7 @@ export function extractCaptain(
     return {
       name: '',
       description: captain.base,
-      notes: unit.detail.captainNotes || undefined,
+      notes: extractNotes(unit.detail.captainNotes),
       upgrades,
     }
   }
