@@ -7,7 +7,8 @@ With the new structure, there will be two main folder `api/raw/**` and `api/extr
 
 - [ ] Finish raw-db
   - [ ] add pirateFest
-  - [ ] add flags/dropLocation
+  - [x] add flags/dropLocation
+    - [ ] check that my custom special was really useless
   - [ ] add raw validation ?
   - [ ] add write to disk
 - [ ] add images download

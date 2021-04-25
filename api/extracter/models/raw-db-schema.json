@@ -62,6 +62,9 @@
         "name": {
           "type": "string"
         },
+        "notes": {
+          "type": "string"
+        },
         "rarity": {
           "$ref": "#/definitions/RawDB.Rarity"
         },
@@ -224,6 +227,9 @@
         "name": {
           "type": "string"
         },
+        "notes": {
+          "type": "string"
+        },
         "rarity": {
           "$ref": "#/definitions/RawDB.Rarity"
         },
@@ -349,18 +355,18 @@
     },
     "RawDB.Flag": {
       "enum": [
-        "rare recruit",
-        "limited rare recruit",
-        "support rare recruit",
-        "tm rare recruit",
-        "kizuna rare recruit",
-        "rumble rare recruit",
+        "rr",
+        "lrr",
+        "srr",
+        "tmrr",
+        "krr",
+        "prrr",
         "shop",
         "tmshop",
-        "global-only",
-        "japan-only",
+        "gloex",
+        "japex",
         "special",
-        "retired",
+        "removed",
         "inkable"
       ],
       "type": "string"
@@ -777,6 +783,9 @@
           "$ref": "#/definitions/RawDB.AffiliatedLinks"
         },
         "name": {
+          "type": "string"
+        },
+        "notes": {
           "type": "string"
         },
         "rarity": {

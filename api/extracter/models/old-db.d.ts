@@ -233,11 +233,6 @@ export declare namespace OldDB {
     /** Pirate Festival rare recruit */
     pflrr: 1
 
-    /** Fortnight only */
-    fnonly: 1
-    /** Raid only */
-    raid: 1
-
     /** Rayleigh shop */
     shop: 1
     /** TM trade port */

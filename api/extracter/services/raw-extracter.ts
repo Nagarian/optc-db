@@ -3,7 +3,10 @@ import { RawDB } from '../models/raw-db'
 import { extractCaptain } from './old-to-raw/captain'
 import { extractDualUnit } from './old-to-raw/dual'
 import { extractEvolution } from './old-to-raw/evolution'
+import { extractFlags } from './old-to-raw/flags'
 import { extractLimitBreak } from './old-to-raw/limit-break'
+import { extractLinks } from './old-to-raw/links'
+import { extractRootNotes } from './old-to-raw/notes'
 import {
   extractClass,
   extractFamily,
@@ -45,13 +48,9 @@ export function remapBasicCharacter(
     class: extractClass(unit),
     stats: extractStats(unit),
     rarity: unit.stars,
-    flags: [],
-    //   flags: computeFlags(unit),
-    //   dropLocation: computeDropLocation(unit),
-    links: {
-      gamewithId: unit.gamewith,
-      // officialJapan:
-    },
+    flags: extractFlags(unit),
+    links: extractLinks(unit),
+    notes: extractRootNotes(unit),
     aliases: unit.aliases?.slice(2) ?? [],
     captain: extractCaptain(unit),
     superType: !unit.detail.superSpecial
@@ -97,18 +96,14 @@ export function remapDualCharacter(
     class: extractClass(unit, true),
     stats: extractStats(unit),
     rarity: unit.stars,
-    flags: [],
-    //   flags: computeFlags(unit),
-    //   dropLocation: computeDropLocation(unit),
-    links: {
-      gamewithId: unit.gamewith,
-      // officialJapan:
-    },
+    flags: extractFlags(unit),
+    links: extractLinks(unit),
     aliases: unit.aliases?.slice(2) ?? [],
     captain: extractCaptain(unit),
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
     evolution: extractEvolution(unit),
+    notes: extractRootNotes(unit),
     //   pirateFest:
     //     !unit.pirateFest.class || unitType === 'VS'
     //       ? undefined
@@ -146,13 +141,9 @@ export function remapVersusCharacter(
     class: extractClass(unit, true),
     stats: extractStats(unit),
     rarity: unit.stars,
-    flags: [],
-    //   flags: computeFlags(unit),
-    //   dropLocation: computeDropLocation(unit),
-    links: {
-      gamewithId: unit.gamewith,
-      // officialJapan:
-    },
+    flags: extractFlags(unit),
+    links: extractLinks(unit),
+    notes: extractRootNotes(unit),
     aliases: unit.aliases?.slice(2) ?? [],
     captain: {
       name: '',

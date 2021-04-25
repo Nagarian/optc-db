@@ -30,37 +30,36 @@ export const LBDescriptionPattern = {
 }
 
 export const Flags = [
-  'rare recruit',
-  'limited rare recruit',
-  'support rare recruit',
-  'tm rare recruit',
-  'kizuna rare recruit',
-  'rumble rare recruit',
+  /** Rare recruit not limited */
+  'rr',
+  /** Limited Rare recruit */
+  'lrr',
+  /** Support Rare recruit */
+  'srr',
+  /** TM Rare recruit */
+  'tmrr',
+  /** Kizuna Rare recruit */
+  'krr',
+  /** Pirate Rumble Rare recruit */
+  'prrr',
   
+  /** Rayleigh Shop */
   'shop',
+  /** TM Shop */
   'tmshop',
 
-  'global-only',
-  'japan-only',
+  /** Released only on Global */
+  'gloex',
+  /** Released only on Global (Glo-first unit which has been release later on japan) */
+  'japex',
 
+  /** Mostly character gifted */
   'special',
-  'retired',
+  /** Character which has been removed from the game */
+  'removed',
 
+  /** Inkable */
   'inkable',
-] as const
-
-export const DropLocations = [
-  'rarerecruit',
-  'treasuremap',
-  'kizunaclash',
-  'piratefest',
-  'story',
-  'fortnight',
-  'raid',
-  'coliseum',
-  'arena',
-  'ambush',
-  'special',
 ] as const
 
 export const SupportTypes = [
