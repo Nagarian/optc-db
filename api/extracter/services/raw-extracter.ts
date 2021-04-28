@@ -41,6 +41,7 @@ export function remapBasicCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.BasicCharacter {
   return {
+    $schema: '../../../extracter/models/raw-db-basic.schema.json',
     oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
     frenchName: unit.aliases?.[1],
@@ -90,6 +91,7 @@ export function remapDualCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.DualCharacter {
   return {
+    $schema: '../../../extracter/models/raw-db-dual.schema.json',
     oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
     frenchName: unit.aliases?.[1],
@@ -136,6 +138,7 @@ export function remapVersusCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.VersusCharacter {
   return {
+    $schema: '../../../extracter/models/raw-db-versus.schema.json',
     oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
     frenchName: unit.aliases?.[1],

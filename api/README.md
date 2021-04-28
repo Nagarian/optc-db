@@ -9,8 +9,8 @@ With the new structure, there will be two main folder `api/raw/**` and `api/extr
   - [ ] add pirateFest
   - [x] add flags/dropLocation
     - [ ] check that my custom special was really useless
-  - [ ] add raw validation ?
-  - [ ] add write to disk
+  - [x] add raw validation
+  - [x] add write to disk
 - [ ] add images download
 - [ ] add final-db generator
   - [ ] add enhancer
