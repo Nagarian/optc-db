@@ -157,6 +157,12 @@ export declare namespace OldDB {
     | DualSailor
     | LimitBrokenSailor
 
+  export type UnitSuperSwap = {
+    base: string
+    super: string
+    superTurns: number
+  }
+
   export type UnitDetail = Partial<{
     captain: UnitCaptain
     captainNotes: string
@@ -193,7 +199,7 @@ export declare namespace OldDB {
     festAttackPattern: UnitFestAbility[]
     festAttackTarget: string
     festResistance: string
-    swap: string
+    swap: string | UnitSuperSwap
     swapNotes: string
     superSpecial: string
     superSpecialNotes: string
