@@ -619,6 +619,22 @@
       ],
       "type": "object"
     },
+    "RawDB.SuperSwap": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "criteria",
+        "description"
+      ],
+      "type": "object"
+    },
     "RawDB.SuperType": {
       "additionalProperties": false,
       "properties": {
@@ -713,6 +729,9 @@
         },
         "notes": {
           "type": "string"
+        },
+        "super": {
+          "$ref": "#/definitions/RawDB.SuperSwap"
         }
       },
       "required": [

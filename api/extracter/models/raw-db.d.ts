@@ -163,8 +163,14 @@ export declare namespace RawDB {
     sailor?: Sailor[]
   }
 
+  export type SuperSwap = {
+    criteria: number
+    description: string
+  }
+
   export type Swap = {
     description: string
+    super?: SuperSwap
     notes?: string
   }
 

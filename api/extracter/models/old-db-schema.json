@@ -704,7 +704,14 @@
           "type": "string"
         },
         "swap": {
-          "type": "string"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "$ref": "#/definitions/OldDB.UnitSuperSwap"
+            }
+          ]
         },
         "swapNotes": {
           "type": "string"
@@ -932,6 +939,26 @@
           "$ref": "#/definitions/OldDB.GloJapSpecial"
         }
       ]
+    },
+    "OldDB.UnitSuperSwap": {
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "type": "string"
+        },
+        "super": {
+          "type": "string"
+        },
+        "superTurns": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "base",
+        "super",
+        "superTurns"
+      ],
+      "type": "object"
     },
     "OldDB.UnitSupport": {
       "additionalProperties": false,
