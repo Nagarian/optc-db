@@ -12,7 +12,10 @@
     "raw-schema:versus": "ts-json-schema-generator -f ./tsconfig.json -o './models/raw-db-versus.schema.json' --path './models/raw-db.d.ts' --type 'RawDB.VersusCharacter'"
   },
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
     "ajv": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-standard": "^5.0.0",
     "ts-json-schema-generator": "^0.90.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4"
