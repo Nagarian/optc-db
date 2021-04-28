@@ -1,7 +1,9 @@
 import { LoadOldDb } from './services/old-loader'
-import { validate } from './services/old-validator'
+import { validate as oldValidate } from './services/old-validator'
 import { remapper } from './services/raw-extracter'
+import { validate } from './services/raw-validator'
 
 const oldDb = LoadOldDb()
-validate(oldDb)
-remapper(oldDb)
+oldValidate(oldDb)
+const rawDb = remapper(oldDb)
+validate(rawDb)

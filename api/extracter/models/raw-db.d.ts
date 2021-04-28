@@ -200,6 +200,8 @@ export declare namespace RawDB {
   }
 
   type BaseCharacter = {
+    $schema?: string
+    oldDbId?: number
     name: string
     japanName?: string
     frenchName?: string
@@ -245,4 +247,6 @@ export declare namespace RawDB {
   }
 
   export type Character = BasicCharacter | DualCharacter | VersusCharacter
+
+  export type DBCharacter = [number, RawDB.Character]
 }

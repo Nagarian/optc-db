@@ -5,7 +5,11 @@
   "scripts": {
     "old-extract": "ts-node extract.ts",
     "old-schema": "ts-json-schema-generator -f ./tsconfig.json -o './models/old-db-schema.json' --path './models/old-db.d.ts' --type 'OldDB.ExtendedUnit'",
-    "raw-schema": "ts-json-schema-generator -f ./tsconfig.json -o './models/raw-db-schema.json' --path './models/raw-db.d.ts' --type 'RawDB.Character'"
+    "raw-schema": "npm run raw-schema:all && npm run raw-schema:basic && npm run raw-schema:dual && npm run raw-schema:versus",
+    "raw-schema:all": "ts-json-schema-generator -f ./tsconfig.json -o './models/raw-db-schema.json' --path './models/raw-db.d.ts' --type 'RawDB.Character'",
+    "raw-schema:basic": "ts-json-schema-generator -f ./tsconfig.json -o './models/raw-db-basic.schema.json' --path './models/raw-db.d.ts' --type 'RawDB.BasicCharacter'",
+    "raw-schema:dual": "ts-json-schema-generator -f ./tsconfig.json -o './models/raw-db-dual.schema.json' --path './models/raw-db.d.ts' --type 'RawDB.DualCharacter'",
+    "raw-schema:versus": "ts-json-schema-generator -f ./tsconfig.json -o './models/raw-db-versus.schema.json' --path './models/raw-db.d.ts' --type 'RawDB.VersusCharacter'"
   },
   "dependencies": {
     "ajv": "^8.1.0",

@@ -20,8 +20,8 @@ import { extractSupport } from './old-to-raw/support'
 import { extractSwap } from './old-to-raw/swap'
 import { extractVersusUnit } from './old-to-raw/versus'
 
-export function remapper(db: OldDB.ExtendedUnit[]): RawDB.Character[] {
-  return db.map(remap)
+export function remapper(db: OldDB.ExtendedUnit[]): RawDB.DBCharacter[] {
+  return db.map(unit => [unit.id, remap(unit)])
 }
 
 export function remap(unit: OldDB.ExtendedUnit): RawDB.Character {
@@ -41,6 +41,7 @@ export function remapBasicCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.BasicCharacter {
   return {
+    oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
     frenchName: unit.aliases?.[1],
     japanName: unit.aliases?.[0],
@@ -89,6 +90,7 @@ export function remapDualCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.DualCharacter {
   return {
+    oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
     frenchName: unit.aliases?.[1],
     japanName: unit.aliases?.[0],
@@ -134,6 +136,7 @@ export function remapVersusCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.VersusCharacter {
   return {
+    oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
     frenchName: unit.aliases?.[1],
     japanName: unit.aliases?.[0],
