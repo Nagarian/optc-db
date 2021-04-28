@@ -40,14 +40,15 @@ export function extractSupport(
     criteria: unit.detail.support[0].Characters,
     type: supportType,
     levels: desc.map(d => {
-      const reduction =
-        parseInt(supportReductionRegex.exec(d)?.groups?.value ?? '') ??
-        undefined
+      const reduction = parseInt(
+        supportReductionRegex.exec(d)?.groups?.value ?? '',
+      )
+
+      const value = parseInt(supportValueRegex.exec(d)?.groups?.value ?? '')
 
       return {
         description: d,
-        value:
-          parseInt(supportValueRegex.exec(d)?.groups?.value ?? '') ?? undefined,
+        value: value === 0 ? value : value || undefined,
         reduction: !reduction
           ? undefined
           : {
