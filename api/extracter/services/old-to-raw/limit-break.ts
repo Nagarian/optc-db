@@ -74,6 +74,9 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
     /^Reduces? own Sailor Despair duration by (?<value>\d+|\?) turns?$/i,
     /^Reduces? Sailor Despair duration by (?<value>\d+|\?) turns?$/i,
   ],
+  'Reduce Healing Reduction duration': [
+    /^Reduces Healing Reduction duration by (?<value>\d+|\?) turns?$/i,
+  ],
   'Nutrition/Reduce Hunger duration': [
     /^Boosts base ATK by (?<value>\d+|\?) the turn after recovering (?<threshold>\d+,?\d*|\?) HP and reduces Hunger stack by (?<reduction>\d+|\?) stacks?$/i,
   ],
