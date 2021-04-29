@@ -9,6 +9,7 @@ type ValidationError = {
 }
 
 export function validate(db: OldDB.ExtendedUnit[]) : boolean {
+  console.log('Validation of extracted OldDB data')
   const errors = getErrors(db)
 
   console.log('unit in error:', new Set(errors.filter(e => e.id)).size)

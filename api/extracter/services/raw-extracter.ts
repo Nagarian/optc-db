@@ -10,8 +10,9 @@ import { extractNotes, extractRootNotes } from './old-to-raw/notes'
 import {
   extractClass,
   extractFamily,
-  extractRealType,
-  extractType,
+  extractFrenchName,
+  extractJapanName,
+  extractRealType
 } from './old-to-raw/old-db-helper'
 import { extractSailor } from './old-to-raw/sailor'
 import { extractSpecial } from './old-to-raw/special'
@@ -33,28 +34,58 @@ export function remap(unit: OldDB.ExtendedUnit): RawDB.Character {
     case 'VS':
       return remapVersusCharacter(unit)
     default:
-      return remapBasicCharacter(unit)
+      return remapSingleCharacter(unit)
   }
 }
 
-export function remapBasicCharacter(
-  unit: OldDB.ExtendedUnit,
-): RawDB.BasicCharacter {
+const rawSchemaPath = '../..'
+
+function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
   return {
-    $schema: '../../../extracter/models/raw-db-basic.schema.json',
     oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
-    frenchName: unit.aliases?.[1],
-    japanName: unit.aliases?.[0],
+    frenchName: extractFrenchName(unit),
+    japanName: extractJapanName(unit),
     family: extractFamily(unit),
-    type: extractType(unit),
-    class: extractClass(unit),
-    stats: extractStats(unit),
+    type: extractRealType(unit),
+    class: extractClass(unit, true),
     rarity: unit.stars,
+    stats: extractStats(unit),
+    cost: unit.cost,
+    slots: unit.slots,
+    maxExp: unit.maxEXP || undefined,
+    maxLevel: unit.maxLevel || 0,
     flags: extractFlags(unit),
     links: extractLinks(unit),
     notes: extractRootNotes(unit),
     aliases: unit.aliases?.slice(2) ?? [],
+    evolution: extractEvolution(unit),
+    limitBreak: extractLimitBreak(unit),
+    //   pirateFest:
+    //     !unit.pirateFest.class || unitType === 'VS'
+    //       ? undefined
+    //       : {
+    //           class: unit.pirateFest.class,
+    //           stats: {
+    //             DEF: unit.pirateFest.DEF,
+    //             SPD: unit.pirateFest.SPD,
+    //           },
+    //           targetPriority: unit.detail.festAttackTarget ?? '',
+    //           resistance:
+    //             unit.detail.festResistance ?? unit.detail.festResilience,
+    //           ability: unit.detail.festAbility ?? [],
+    //           behaviorPattern: unit.detail.festAttackPattern ?? [],
+    //           special: unit.detail.festSpecial ?? [],
+    //         },
+  }
+}
+
+function remapSingleCharacter(
+  unit: OldDB.ExtendedUnit,
+): RawDB.SingleCharacter {
+  return {
+    $schema: `${rawSchemaPath}/raw-db-single.schema.json`,
+    ...remapBaseCharacter(unit),
     captain: extractCaptain(unit),
     superType: !unit.detail.superSpecial
       ? undefined
@@ -66,66 +97,18 @@ export function remapBasicCharacter(
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
     support: extractSupport(unit),
-    evolution: extractEvolution(unit),
-    //   pirateFest:
-    //     !unit.pirateFest.class || unitType === 'VS'
-    //       ? undefined
-    //       : {
-    //           class: unit.pirateFest.class,
-    //           stats: {
-    //             DEF: unit.pirateFest.DEF,
-    //             SPD: unit.pirateFest.SPD,
-    //           },
-    //           targetPriority: unit.detail.festAttackTarget ?? '',
-    //           resistance:
-    //             unit.detail.festResistance ?? unit.detail.festResilience,
-    //           ability: unit.detail.festAbility ?? [],
-    //           behaviorPattern: unit.detail.festAttackPattern ?? [],
-    //           special: unit.detail.festSpecial ?? [],
-    //         },
-    limitBreak: extractLimitBreak(unit),
   }
 }
 
-export function remapDualCharacter(
+function remapDualCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.DualCharacter {
   return {
-    $schema: '../../../extracter/models/raw-db-dual.schema.json',
-    oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
-    name: unit.name,
-    frenchName: unit.aliases?.[1],
-    japanName: unit.aliases?.[0],
-    family: extractFamily(unit),
-    type: 'DUAL',
-    class: extractClass(unit, true),
-    stats: extractStats(unit),
-    rarity: unit.stars,
-    flags: extractFlags(unit),
-    links: extractLinks(unit),
-    aliases: unit.aliases?.slice(2) ?? [],
+    $schema: `${rawSchemaPath}/raw-db-dual.schema.json`,
+    ...remapBaseCharacter(unit),
     captain: extractCaptain(unit),
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
-    evolution: extractEvolution(unit),
-    notes: extractRootNotes(unit),
-    //   pirateFest:
-    //     !unit.pirateFest.class || unitType === 'VS'
-    //       ? undefined
-    //       : {
-    //           class: unit.pirateFest.class,
-    //           stats: {
-    //             DEF: unit.pirateFest.DEF,
-    //             SPD: unit.pirateFest.SPD,
-    //           },
-    //           targetPriority: unit.detail.festAttackTarget ?? '',
-    //           resistance:
-    //             unit.detail.festResistance ?? unit.detail.festResilience,
-    //           ability: unit.detail.festAbility ?? [],
-    //           behaviorPattern: unit.detail.festAttackPattern ?? [],
-    //           special: unit.detail.festSpecial ?? [],
-    //         },
-    limitBreak: extractLimitBreak(unit),
     characters: {
       swap: extractSwap(unit),
       character1: extractDualUnit(unit.dualCharacters![0], unit),
@@ -134,45 +117,15 @@ export function remapDualCharacter(
   }
 }
 
-export function remapVersusCharacter(
+function remapVersusCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.VersusCharacter {
   return {
-    $schema: '../../../extracter/models/raw-db-versus.schema.json',
-    oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
-    name: unit.name,
-    frenchName: unit.aliases?.[1],
-    japanName: unit.aliases?.[0],
-    family: extractFamily(unit),
-    type: 'VS',
-    class: extractClass(unit, true),
-    stats: extractStats(unit),
-    rarity: unit.stars,
-    flags: extractFlags(unit),
-    links: extractLinks(unit),
-    notes: extractRootNotes(unit),
-    aliases: unit.aliases?.slice(2) ?? [],
+    $schema: `${rawSchemaPath}/raw-db-versus.schema.json`,
+    ...remapBaseCharacter(unit),
     captain: {
       name: '',
     },
-    evolution: extractEvolution(unit),
-    //   pirateFest:
-    //     !unit.pirateFest.class || unitType === 'VS'
-    //       ? undefined
-    //       : {
-    //           class: unit.pirateFest.class,
-    //           stats: {
-    //             DEF: unit.pirateFest.DEF,
-    //             SPD: unit.pirateFest.SPD,
-    //           },
-    //           targetPriority: unit.detail.festAttackTarget ?? '',
-    //           resistance:
-    //             unit.detail.festResistance ?? unit.detail.festResilience,
-    //           ability: unit.detail.festAbility ?? [],
-    //           behaviorPattern: unit.detail.festAttackPattern ?? [],
-    //           special: unit.detail.festSpecial ?? [],
-    //         },
-    limitBreak: extractLimitBreak(unit),
     characters: {
       criteria: unit.detail.VSCondition!,
       character1: extractVersusUnit(unit.dualCharacters![0], unit, true),

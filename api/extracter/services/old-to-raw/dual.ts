@@ -1,7 +1,12 @@
 import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
 import { extractCaptain } from './captain'
-import { extractClass, extractType } from './old-db-helper'
+import {
+  extractClass,
+  extractFrenchName,
+  extractJapanName,
+  extractType,
+} from './old-db-helper'
 import { extractSailor } from './sailor'
 import { extractSpecial } from './special'
 import { extractStats } from './statistic'
@@ -16,8 +21,8 @@ export function extractDualUnit(
 
   return {
     name: unit.name.replace('[Dual Unit] ', ''),
-    frenchName: unit.aliases?.[1],
-    japanName: unit.aliases?.[0],
+    frenchName: extractFrenchName(unit),
+    japanName: extractJapanName(unit),
     class: unitClass,
     type: unitType,
     captain: extractCaptain(unit) || extractCaptain(base),

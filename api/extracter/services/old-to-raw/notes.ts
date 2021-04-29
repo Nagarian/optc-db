@@ -12,7 +12,7 @@ export function extractRootNotes(unit: OldDB.ExtendedUnit): string | undefined {
   const [, flagNote] = flagNotes[unit.id] ?? []
   const note = rootNotes[unit.id]
 
-  return [flagNote, note].filter(x => !!x).join(' ')
+  return [flagNote, note].filter(x => !!x).join(' ') || undefined
 }
 
 const computableNotes = {
@@ -64,22 +64,24 @@ const notes = {
 export function extractNotes(notes?: string): string | undefined {
   if (!notes) return undefined
 
-  return notes
-    .replace(/#\{(.+?)\}/g, (match, matchingContent: string) => {
-      const [key] = matchingContent.trim().split(/:/) ?? []
+  return (
+    notes
+      .replace(/#\{(.+?)\}/g, (match, matchingContent: string) => {
+        const [key] = matchingContent.trim().split(/:/) ?? []
 
-      if (!key) {
+        if (!key) {
+          return match
+        }
+
+        if (computableNotes.hasOwnProperty(key.trim())) {
+          return ''
+        } else if (notes.hasOwnProperty(key.trim())) {
+          console.error(`Unrecognized key: ${key}`)
+        }
+
         return match
-      }
-
-      if (computableNotes.hasOwnProperty(key.trim())) {
-        return ''
-      } else if (notes.hasOwnProperty(key.trim())) {
-        console.error(`Unrecognized key: ${key}`)
-      }
-
-       return match
-    })
-    .replace('<br>', '\n')
-    .trim()
+      })
+      .replace('<br>', '\n')
+      .trim() || undefined
+  )
 }

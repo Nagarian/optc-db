@@ -4,10 +4,6 @@ import { RawDB } from '../../models/raw-db'
 export function extractStats(unit: OldDB.ExtendedUnit): RawDB.Statistics {
   return {
     combo: unit.combo || 0,
-    maxLevel: unit.maxLevel || 0,
-    cost: unit.cost,
-    slots: unit.slots,
-    maxExp: unit.maxEXP || undefined,
     minLvl: {
       hp: unit.minHP || 0,
       atk: unit.minATK || 0,
