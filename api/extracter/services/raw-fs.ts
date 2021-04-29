@@ -1,6 +1,7 @@
 import { writeFile, mkdir, readdir, readFile } from 'fs/promises'
 import { basename, join, extname } from 'path'
 import { RawDB } from '../models/raw-db'
+import YAML from 'yaml'
 
 const basePath = '../raw'
 
@@ -25,6 +26,19 @@ export async function writeToDisk(db: RawDB.DBCharacter[]): Promise<void> {
     await writeFile(
       join(filePath, filename),
       JSON.stringify(character, null, 2),
+    )
+
+    const type = character.type === 'DUAL'
+      ? '.dual'
+      : character.type === 'VS'
+      ? '.versus'
+      : '.single'
+
+    const yamlFile = id.toString().padStart(4, '0').concat(type,'.yml')
+
+    await writeFile(
+      join(filePath, yamlFile),
+      YAML.stringify(character, { simpleKeys: true }),
     )
   }
 

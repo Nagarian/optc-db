@@ -5,7 +5,6 @@
   "scripts": {
     "old-extract": "ts-node old-extract.ts",
     "old-schema": "ts-json-schema-generator -f ./tsconfig.json -o './models/old-db-schema.json' --path './models/old-db.d.ts' --type 'OldDB.ExtendedUnit'",
-
     "extract": "ts-node extract.ts",
     "raw-schema": "npm run raw-schema:db && npm run raw-schema:single && npm run raw-schema:dual && npm run raw-schema:versus",
     "raw-schema:base": "ts-json-schema-generator -f ./tsconfig.json --path './models/raw-db.d.ts' ",
@@ -22,6 +21,7 @@
     "eslint-plugin-standard": "^5.0.0",
     "ts-json-schema-generator": "^0.90.0",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "yaml": "^2.0.0-5"
   }
 }
