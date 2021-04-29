@@ -14,101 +14,6 @@
       },
       "type": "object"
     },
-    "RawDB.BasicCharacter": {
-      "additionalProperties": false,
-      "properties": {
-        "$schema": {
-          "type": "string"
-        },
-        "aliases": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
-        "captain": {
-          "$ref": "#/definitions/RawDB.Captain"
-        },
-        "class": {
-          "$ref": "#/definitions/RawDB.Class"
-        },
-        "evolution": {
-          "items": {
-            "$ref": "#/definitions/RawDB.Evolution"
-          },
-          "type": "array"
-        },
-        "family": {
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
-        "flags": {
-          "items": {
-            "$ref": "#/definitions/RawDB.Flag"
-          },
-          "type": "array"
-        },
-        "frenchName": {
-          "type": "string"
-        },
-        "japanName": {
-          "type": "string"
-        },
-        "limitBreak": {
-          "$ref": "#/definitions/RawDB.LB.LimitBreak"
-        },
-        "links": {
-          "$ref": "#/definitions/RawDB.AffiliatedLinks"
-        },
-        "name": {
-          "type": "string"
-        },
-        "notes": {
-          "type": "string"
-        },
-        "oldDbId": {
-          "type": "number"
-        },
-        "rarity": {
-          "$ref": "#/definitions/RawDB.Rarity"
-        },
-        "sailor": {
-          "items": {
-            "$ref": "#/definitions/RawDB.Sailor"
-          },
-          "type": "array"
-        },
-        "special": {
-          "$ref": "#/definitions/RawDB.Special"
-        },
-        "stats": {
-          "$ref": "#/definitions/RawDB.Statistics"
-        },
-        "superType": {
-          "$ref": "#/definitions/RawDB.SuperType"
-        },
-        "support": {
-          "$ref": "#/definitions/RawDB.Support"
-        },
-        "type": {
-          "$ref": "#/definitions/RawDB.Type"
-        }
-      },
-      "required": [
-        "aliases",
-        "class",
-        "family",
-        "flags",
-        "links",
-        "name",
-        "rarity",
-        "stats",
-        "type"
-      ],
-      "type": "object"
-    },
     "RawDB.Captain": {
       "additionalProperties": false,
       "properties": {
@@ -149,7 +54,7 @@
     "RawDB.Character": {
       "anyOf": [
         {
-          "$ref": "#/definitions/RawDB.BasicCharacter"
+          "$ref": "#/definitions/RawDB.SingleCharacter"
         },
         {
           "$ref": "#/definitions/RawDB.DualCharacter"
@@ -203,6 +108,9 @@
         "class": {
           "$ref": "#/definitions/RawDB.Class"
         },
+        "cost": {
+          "type": "number"
+        },
         "evolution": {
           "items": {
             "$ref": "#/definitions/RawDB.Evolution"
@@ -233,6 +141,12 @@
         "links": {
           "$ref": "#/definitions/RawDB.AffiliatedLinks"
         },
+        "maxExp": {
+          "type": "number"
+        },
+        "maxLevel": {
+          "type": "number"
+        },
         "name": {
           "type": "string"
         },
@@ -251,6 +165,9 @@
           },
           "type": "array"
         },
+        "slots": {
+          "type": "number"
+        },
         "special": {
           "$ref": "#/definitions/RawDB.Special"
         },
@@ -265,11 +182,13 @@
         "aliases",
         "characters",
         "class",
+        "cost",
         "family",
         "flags",
-        "links",
+        "maxLevel",
         "name",
         "rarity",
+        "slots",
         "stats",
         "type"
       ],
@@ -519,6 +438,115 @@
       ],
       "type": "object"
     },
+    "RawDB.SingleCharacter": {
+      "additionalProperties": false,
+      "properties": {
+        "$schema": {
+          "type": "string"
+        },
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "captain": {
+          "$ref": "#/definitions/RawDB.Captain"
+        },
+        "class": {
+          "$ref": "#/definitions/RawDB.Class"
+        },
+        "cost": {
+          "type": "number"
+        },
+        "evolution": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Evolution"
+          },
+          "type": "array"
+        },
+        "family": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "flags": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Flag"
+          },
+          "type": "array"
+        },
+        "frenchName": {
+          "type": "string"
+        },
+        "japanName": {
+          "type": "string"
+        },
+        "limitBreak": {
+          "$ref": "#/definitions/RawDB.LB.LimitBreak"
+        },
+        "links": {
+          "$ref": "#/definitions/RawDB.AffiliatedLinks"
+        },
+        "maxExp": {
+          "type": "number"
+        },
+        "maxLevel": {
+          "type": "number"
+        },
+        "name": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "oldDbId": {
+          "type": "number"
+        },
+        "rarity": {
+          "$ref": "#/definitions/RawDB.Rarity"
+        },
+        "sailor": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Sailor"
+          },
+          "type": "array"
+        },
+        "slots": {
+          "type": "number"
+        },
+        "special": {
+          "$ref": "#/definitions/RawDB.Special"
+        },
+        "stats": {
+          "$ref": "#/definitions/RawDB.Statistics"
+        },
+        "superType": {
+          "$ref": "#/definitions/RawDB.SuperType"
+        },
+        "support": {
+          "$ref": "#/definitions/RawDB.Support"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.Type"
+        }
+      },
+      "required": [
+        "aliases",
+        "class",
+        "cost",
+        "family",
+        "flags",
+        "maxLevel",
+        "name",
+        "rarity",
+        "slots",
+        "stats",
+        "type"
+      ],
+      "type": "object"
+    },
     "RawDB.Special": {
       "additionalProperties": false,
       "properties": {
@@ -592,30 +620,15 @@
         "combo": {
           "type": "number"
         },
-        "cost": {
-          "type": "number"
-        },
-        "maxExp": {
-          "type": "number"
-        },
-        "maxLevel": {
-          "type": "number"
-        },
         "maxLvl": {
           "$ref": "#/definitions/RawDB.Statistic"
         },
         "minLvl": {
           "$ref": "#/definitions/RawDB.Statistic"
-        },
-        "slots": {
-          "type": "number"
         }
       },
       "required": [
-        "cost",
-        "combo",
-        "slots",
-        "maxLevel"
+        "combo"
       ],
       "type": "object"
     },
@@ -799,6 +812,9 @@
         "class": {
           "$ref": "#/definitions/RawDB.Class"
         },
+        "cost": {
+          "type": "number"
+        },
         "evolution": {
           "items": {
             "$ref": "#/definitions/RawDB.Evolution"
@@ -829,6 +845,12 @@
         "links": {
           "$ref": "#/definitions/RawDB.AffiliatedLinks"
         },
+        "maxExp": {
+          "type": "number"
+        },
+        "maxLevel": {
+          "type": "number"
+        },
         "name": {
           "type": "string"
         },
@@ -840,6 +862,9 @@
         },
         "rarity": {
           "$ref": "#/definitions/RawDB.Rarity"
+        },
+        "slots": {
+          "type": "number"
         },
         "stats": {
           "$ref": "#/definitions/RawDB.Statistics"
@@ -853,11 +878,13 @@
         "captain",
         "characters",
         "class",
+        "cost",
         "family",
         "flags",
-        "links",
+        "maxLevel",
         "name",
         "rarity",
+        "slots",
         "stats",
         "type"
       ],

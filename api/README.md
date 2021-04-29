@@ -11,6 +11,7 @@ With the new structure, there will be two main folder `api/raw/**` and `api/extr
     - [ ] check that my custom special was really useless
   - [x] add raw validation
   - [x] add write to disk
+  - [ ] Improve support by removing stats supporter description
 - [ ] add images download
 - [ ] add final-db generator
   - [ ] add enhancer

@@ -22,11 +22,7 @@ export declare namespace RawDB {
     rcv: number
   }
   export type Statistics = {
-    cost: number
     combo: number
-    slots: number
-    maxLevel: number
-    maxExp?: number
     minLvl?: Statistic
     maxLvl?: Statistic
   }
@@ -215,9 +211,13 @@ export declare namespace RawDB {
     type: Type
     class: Class
     rarity: Rarity
+    cost: number
+    slots: number
+    maxLevel: number
+    maxExp?: number
     stats: Statistics
     flags: Flag[]
-    links: AffiliatedLinks
+    links?: AffiliatedLinks
     aliases: string[]
     notes?: string
 
@@ -225,7 +225,7 @@ export declare namespace RawDB {
     evolution?: Evolution[]
   }
 
-  export type BasicCharacter = BaseCharacter & {
+  export type SingleCharacter = BaseCharacter & {
     captain?: Captain
     superType?: SuperType
     special?: Special
@@ -252,7 +252,7 @@ export declare namespace RawDB {
     characters: VersusUnitNode
   }
 
-  export type Character = BasicCharacter | DualCharacter | VersusCharacter
+  export type Character = SingleCharacter | DualCharacter | VersusCharacter
 
   export type DBCharacter = [number, RawDB.Character]
 }

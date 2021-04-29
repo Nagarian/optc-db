@@ -9,6 +9,7 @@ type ValidationError = {
 }
 
 export function validate(db: RawDB.DBCharacter[]) : boolean {
+  console.log('Validation of generated RawDB data')
   const errors = getErrors(db)
 
   console.log('unit in error:', new Set(errors.filter(e => e.id)).size)

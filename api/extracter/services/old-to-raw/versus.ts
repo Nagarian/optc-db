@@ -2,7 +2,12 @@ import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
 import { extractCaptain } from './captain'
 import { extractNotes } from './notes'
-import { extractClass, extractType } from './old-db-helper'
+import {
+  extractClass,
+  extractFrenchName,
+  extractJapanName,
+  extractType,
+} from './old-db-helper'
 import { extractSailor } from './sailor'
 import { extractSpecial } from './special'
 import { extractStats } from './statistic'
@@ -11,11 +16,11 @@ export function extractVersusUnit(
   unit: OldDB.ExtendedUnit,
   base: OldDB.ExtendedUnit,
   isFirstChar: boolean,
-): RawDB.VersusUnitDetail {  
+): RawDB.VersusUnitDetail {
   const captain = extractCaptain(unit)
   if (!captain) throw new Error(`VS unit ${base.id} has no captain description`)
 
-  const special = extractSpecial(base, isFirstChar? 1 : 2)
+  const special = extractSpecial(base, isFirstChar ? 1 : 2)
   if (!special) throw new Error(`VS unit ${base.id} has no special description`)
 
   const sailor = extractSailor(unit)
@@ -23,8 +28,8 @@ export function extractVersusUnit(
 
   return {
     name: unit.name.replace('[VS Unit] ', ''),
-    frenchName: unit.aliases?.[1],
-    japanName: unit.aliases?.[0],
+    frenchName: extractFrenchName(unit),
+    japanName: extractJapanName(unit),
     class: extractClass(unit),
     type: extractType(unit),
     captain: captain,
@@ -32,7 +37,7 @@ export function extractVersusUnit(
     sailor: sailor,
     versus: {
       description: unit.detail.VSSpecial!,
-      notes: extractNotes(unit.detail.VSSpecialNotes)
+      notes: extractNotes(unit.detail.VSSpecialNotes),
     },
     stats: extractStats(unit),
   }

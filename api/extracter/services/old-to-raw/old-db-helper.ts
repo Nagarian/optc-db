@@ -32,7 +32,7 @@ export function extractClass(
   if (!returnMain) {
     throw new Error(`unit ${unit.id} "${unit.name}" has no class`)
   }
-  
+
   if (isDualClass(unit.class)) {
     return unit.class[0]
   }
@@ -76,4 +76,12 @@ export function extractFamily(unit: OldDB.ExtendedUnit): string[] {
   }
 
   return unit.family
+}
+
+export function extractFrenchName(unit: OldDB.ExtendedUnit): string | undefined {
+  return unit.aliases?.[1] || undefined
+}
+
+export function extractJapanName(unit: OldDB.ExtendedUnit): string | undefined {
+  return unit.aliases?.[0] || undefined
 }
