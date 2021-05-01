@@ -8,6 +8,7 @@ import {
   DBflag,
   DBgamewith,
   DBunit,
+  DButils,
 } from './db-loader'
 import { getEvolutionMap } from './evolution'
 import { fixupDetail } from './fixup/detail'
@@ -16,16 +17,16 @@ import {
   removeDualVersusOldMapping,
 } from './fixup/dual-versus'
 import {
-  fixupGloOnlyImages,
+  addGloOnly,
   fixupGloOnlyEvolution,
   fixupGloOnlyFlags,
-  addGloOnly,
+  fixupGloOnlyImages,
   fixupSuperEvolutionMap,
 } from './fixup/global-only'
+import { fixupImages } from './fixup/image'
 import { fixupSpecificIssue } from './fixup/specific-issue'
 import { fixupVersusUnit } from './fixup/versus'
 import { globalOnlyWrongId } from './global-only'
-import { getUnitFullPicture, getUnitThumbnail } from './image'
 
 const evolutionMap = getEvolutionMap()
 
@@ -33,6 +34,7 @@ export function LoadOldDb(): OldDB.ExtendedUnit[] {
   let db = DBunit.filter(unit => unit.name)
     .map(GetExtendedUnit)
     .map(fixupDetail)
+    .map(fixupImages)
     .map(fixupDualVersusMapping)
     .filter(removeDualVersusOldMapping)
     .map(fixupVersusUnit)
@@ -59,8 +61,8 @@ function GetExtendedUnit(unit: OldDB.BaseUnit): OldDB.ExtendedUnit {
     id: gameId,
     dbId,
     images: {
-      thumbnail: getUnitThumbnail(dbId),
-      full: getUnitFullPicture(dbId),
+      thumbnail: DButils.getThumbnailUrl(dbId),
+      full: DButils.getBigThumbnailUrl(dbId),
     },
     evolution: DBevolution[dbId],
     cooldown: DBcooldown[unit.number] ?? undefined,

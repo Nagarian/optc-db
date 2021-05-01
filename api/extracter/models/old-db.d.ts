@@ -216,8 +216,8 @@ export declare namespace OldDB {
   }
 
   export type UnitImages = {
-    thumbnail: string
-    full: string
+    thumbnail?: string
+    full?: string
   }
 
   export type UnitFlags = Partial<{
