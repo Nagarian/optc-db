@@ -2,18 +2,21 @@ import { writeFile, mkdir, readdir, readFile } from 'fs/promises'
 import { basename, join, extname } from 'path'
 import { RawDB } from '../models/raw-db'
 import YAML from 'yaml'
+import { ProgressBar } from './progress-bar'
 
-const basePath = '../raw'
+const basePath = '../raw/characters'
 
 export async function writeToDisk(db: RawDB.DBCharacter[]): Promise<void> {
   console.log('Writing RawDB to disk - starting')
   const timerLabel = 'Writing RawDB to disk done'
   console.time(timerLabel)
 
+  const bar = new ProgressBar(db.length)
+
   for (const [id, character] of db) {
     const filePath = join(
       basePath,
-      `${Math.trunc(id / 1000)}000`,
+      `${Math.trunc(id / 1000)}`,
       `${Math.trunc((id % 1000) / 100)}00`,
     )
 
@@ -40,6 +43,8 @@ export async function writeToDisk(db: RawDB.DBCharacter[]): Promise<void> {
       join(filePath, yamlFile),
       YAML.stringify(character, { simpleKeys: true }),
     )
+
+    bar.increment()
   }
 
   console.timeEnd(timerLabel)

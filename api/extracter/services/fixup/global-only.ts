@@ -74,7 +74,7 @@ export function fixupGloOnlyImages(
   _index: number,
   _units: OldDB.ExtendedUnit[],
 ): OldDB.ExtendedUnit {
-  if (unit.id < 5001 || unit.id > 5008) {
+  if (unit.id < 5001) {
     return unit
   }
 
@@ -82,7 +82,7 @@ export function fixupGloOnlyImages(
     ...unit,
     images: {
       ...unit.images,
-      thumbnail: `http://nagarian.github.io/optc-box-manager/characters/${unit.id}.png`,
+      thumbnail: undefined,
     },
   }
 }
