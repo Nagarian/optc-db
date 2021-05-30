@@ -81,6 +81,11 @@ export declare namespace OldDB {
     description: [string, string, string, string, string]
   }
 
+  export type UnitLastTap = {
+    condition: string
+    description: string[]
+  }
+
   export type UnitSupport = {
     Characters: string
     description: [string, string, string, string, string]
@@ -175,6 +180,8 @@ export declare namespace OldDB {
     limitNotes: string // handled into rootNotes
     potential: UnitPotential[]
     potentialNotes: string
+    lastTap?: UnitLastTap[]
+    lastTapNotes?: string
     support: [UnitSupport]
     supportNotes: string
     festAbility: [
@@ -238,6 +245,8 @@ export declare namespace OldDB {
     kclrr: 1
     /** Pirate Festival rare recruit */
     pflrr: 1
+    /** Super limited rare recruit */
+    superlrr: 1
 
     /** Rayleigh shop */
     shop: 1
