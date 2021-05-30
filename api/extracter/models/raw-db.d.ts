@@ -108,9 +108,20 @@ export declare namespace RawDB {
       levels: PotentialLevel[]
     }
 
+    export type LastTapLevel = {
+      description: string
+    }
+
+    export type LastTap = {
+      criteria: string
+      levels: LastTapLevel[]
+      notes?: string
+    }
+
     export type LimitBreak = {
       path: Path[]
       potentials: Potential[]
+      lastTap?: LastTap
     }
   }
 

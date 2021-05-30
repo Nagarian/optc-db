@@ -299,9 +299,46 @@
       ],
       "type": "string"
     },
+    "RawDB.LB.LastTap": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "string"
+        },
+        "levels": {
+          "items": {
+            "$ref": "#/definitions/RawDB.LB.LastTapLevel"
+          },
+          "type": "array"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "criteria",
+        "levels"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.LastTapLevel": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description"
+      ],
+      "type": "object"
+    },
     "RawDB.LB.LimitBreak": {
       "additionalProperties": false,
       "properties": {
+        "lastTap": {
+          "$ref": "#/definitions/RawDB.LB.LastTap"
+        },
         "path": {
           "items": {
             "$ref": "#/definitions/RawDB.LB.Path"
@@ -402,7 +439,8 @@
         "Reduce Ship Bind duration",
         "Reduce Sailor Despair duration",
         "Reduce Healing Reduction duration",
-        "Nutrition/Reduce Hunger duration"
+        "Nutrition/Reduce Hunger duration",
+        "Last Tap"
       ],
       "type": "string"
     },

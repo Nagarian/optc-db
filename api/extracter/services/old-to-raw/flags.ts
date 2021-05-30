@@ -29,7 +29,7 @@ function extractRareRecruitFlag(
   if (unitFlags.pflrr) return 'prrr'
   if (unitFlags.slrr) return 'srr'
   // we put lrr only here because too many units have it but they wouldn't
-  if (unitFlags.lrr) return 'lrr'
+  if (unitFlags.lrr || unitFlags.superlrr) return 'lrr'
   if (unitFlags.rr || unitFlags.rro) return 'rr'
 
   return undefined

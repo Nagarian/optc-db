@@ -508,7 +508,8 @@
         "Reduce Ship Bind duration",
         "Reduce Sailor Despair duration",
         "Reduce Healing Reduction duration",
-        "Nutrition/Reduce Hunger duration"
+        "Nutrition/Reduce Hunger duration",
+        "Last Tap"
       ],
       "type": "string"
     },
@@ -639,6 +640,15 @@
           "maxItems": 10,
           "minItems": 10,
           "type": "array"
+        },
+        "lastTap": {
+          "items": {
+            "$ref": "#/definitions/OldDB.UnitLastTap"
+          },
+          "type": "array"
+        },
+        "lastTapNotes": {
+          "type": "string"
         },
         "limit": {
           "items": {
@@ -874,6 +884,11 @@
           "description": "Special characters (gifted mostly)",
           "type": "number"
         },
+        "superlrr": {
+          "const": 1,
+          "description": "Super limited rare recruit",
+          "type": "number"
+        },
         "tmlrr": {
           "const": 1,
           "description": "TM rare recruit",
@@ -897,6 +912,25 @@
           "type": "string"
         }
       },
+      "type": "object"
+    },
+    "OldDB.UnitLastTap": {
+      "additionalProperties": false,
+      "properties": {
+        "condition": {
+          "type": "string"
+        },
+        "description": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "condition",
+        "description"
+      ],
       "type": "object"
     },
     "OldDB.UnitPotential": {
