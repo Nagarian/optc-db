@@ -20,7 +20,7 @@ async function main() {
     process.exit(-1)
   }
 
-  writeToDisk(rawDb)
+  writeToDisk(rawDb, 'yaml')
 }
 
 main()
