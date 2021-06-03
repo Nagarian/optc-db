@@ -111,8 +111,8 @@ function remapDualCharacter(
     sailor: extractSailor(unit),
     characters: {
       swap: extractSwap(unit),
-      character1: extractDualUnit(unit.dualCharacters![0], unit),
-      character2: extractDualUnit(unit.dualCharacters![1], unit),
+      character1: extractDualUnit(unit.dualCharacters![0], unit, 1),
+      character2: extractDualUnit(unit.dualCharacters![1], unit, 2),
     },
   }
 }

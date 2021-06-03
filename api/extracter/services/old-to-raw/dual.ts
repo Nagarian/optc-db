@@ -14,6 +14,7 @@ import { extractStats } from './statistic'
 export function extractDualUnit(
   unit: OldDB.ExtendedUnit,
   base: OldDB.ExtendedUnit,
+  dualNumber: 1 | 2
 ): RawDB.DualUnitDetail {
   const sailors = extractSailor(unit)
   const unitClass = extractClass(unit)
@@ -28,8 +29,8 @@ export function extractDualUnit(
     stats: extractStats(unit),
     captain: extractCaptain(unit) || extractCaptain(base),
     special:
-      extractSpecial({ ...unit, cooldown: base.cooldown }) ||
-      extractSpecial(base),
+      extractSpecial({ ...unit, cooldown: base.cooldown }, dualNumber) ||
+      extractSpecial(base, dualNumber),
     sailor: sailors?.length ? sailors : extractSailor(base),
   }
 }
