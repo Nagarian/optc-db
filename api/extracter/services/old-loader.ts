@@ -14,7 +14,7 @@ import { getEvolutionMap } from './evolution'
 import { fixupDetail } from './fixup/detail'
 import {
   fixupDualVersusMapping,
-  removeDualVersusOldMapping,
+  isGhostUnit,
 } from './fixup/dual-versus'
 import {
   addGloOnly,
@@ -35,9 +35,9 @@ export function LoadOldDb(): OldDB.ExtendedUnit[] {
     .map(GetExtendedUnit)
     .map(fixupDetail)
     .map(fixupImages)
-    .map(fixupDualVersusMapping)
-    .filter(removeDualVersusOldMapping)
     .map(fixupVersusUnit)
+    .map(fixupDualVersusMapping)
+    .filter(u => !isGhostUnit(u))
     .map(fixupSpecificIssue)
 
   db = db

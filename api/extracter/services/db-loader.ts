@@ -1,14 +1,17 @@
 // @ts-ignore
 globalThis.window = {}
+import '../../../common/js/unitUtils'
+// @ts-ignore
+globalThis.UnitUtils = globalThis.window.UnitUtils
 import '../../../common/data/aliases'
 import '../../../common/data/cooldowns'
-import '../../../common/data/details'
 import '../../../common/data/evolutions'
 import '../../../common/data/families'
 import '../../../common/data/festival'
 import '../../../common/data/flags'
 import '../../../common/data/units'
 import '../../../common/js/utils'
+import '../../../common/data/details'
 import '../../../common/data/drops'
 import '../../../common/data/gw'
 import { OldDB } from '../models/old-db'
