@@ -6,7 +6,12 @@ import { ProgressBar } from './progress-bar'
 
 const basePath = '../raw/characters'
 
-export async function writeToDisk(db: RawDB.DBCharacter[]): Promise<void> {
+export type WriteType = 'all' | 'yaml' | 'json'
+
+export async function writeToDisk(
+  db: RawDB.DBCharacter[],
+  mode: WriteType,
+): Promise<void> {
   console.log('Writing RawDB to disk - starting')
   const timerLabel = 'Writing RawDB to disk done'
   console.time(timerLabel)
@@ -24,25 +29,30 @@ export async function writeToDisk(db: RawDB.DBCharacter[]): Promise<void> {
       recursive: true,
     })
 
-    const filename = id.toString().padStart(4, '0').concat('.json')
+    if (mode === 'all' || mode === 'json') {
+      const filename = id.toString().padStart(4, '0').concat('.json')
 
-    await writeFile(
-      join(filePath, filename),
-      JSON.stringify(character, null, 2),
-    )
+      await writeFile(
+        join(filePath, filename),
+        JSON.stringify(character, null, 2),
+      )
+    }
 
-    const type = character.type === 'DUAL'
-      ? '.dual'
-      : character.type === 'VS'
-      ? '.versus'
-      : '.single'
+    if (mode === 'all' || mode === 'yaml') {
+      const type =
+        character.type === 'DUAL'
+          ? '.dual'
+          : character.type === 'VS'
+          ? '.versus'
+          : '.single'
 
-    const yamlFile = id.toString().padStart(4, '0').concat(type,'.yml')
+      const yamlFile = id.toString().padStart(4, '0').concat(type, '.yml')
 
-    await writeFile(
-      join(filePath, yamlFile),
-      YAML.stringify(character, { simpleKeys: true }),
-    )
+      await writeFile(
+        join(filePath, yamlFile),
+        YAML.stringify(character, { simpleKeys: true }),
+      )
+    }
 
     bar.increment()
   }
