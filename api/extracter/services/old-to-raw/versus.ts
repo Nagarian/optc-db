@@ -32,6 +32,7 @@ export function extractVersusUnit(
     japanName: extractJapanName(unit),
     class: extractClass(unit),
     type: extractType(unit),
+    stats: extractStats(unit),
     captain: captain,
     special: special,
     sailor: sailor,
@@ -39,6 +40,5 @@ export function extractVersusUnit(
       description: unit.detail.VSSpecial!,
       notes: extractNotes(unit.detail.VSSpecialNotes),
     },
-    stats: extractStats(unit),
   }
 }

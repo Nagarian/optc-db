@@ -25,11 +25,11 @@ export function extractDualUnit(
     japanName: extractJapanName(unit),
     class: unitClass,
     type: unitType,
+    stats: extractStats(unit),
     captain: extractCaptain(unit) || extractCaptain(base),
     special:
       extractSpecial({ ...unit, cooldown: base.cooldown }) ||
       extractSpecial(base),
     sailor: sailors?.length ? sailors : extractSailor(base),
-    stats: extractStats(unit),
   }
 }
