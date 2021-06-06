@@ -8,7 +8,7 @@ type ValidationError = {
   message?: string
 }
 
-export function validate(db: OldDB.ExtendedUnit[]) : boolean {
+export function validate(db: OldDB.ExtendedUnit[]): boolean {
   console.log('Validation of extracted OldDB data')
   const errors = getErrors(db)
 

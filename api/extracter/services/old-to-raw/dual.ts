@@ -5,7 +5,7 @@ import {
   extractClass,
   extractFrenchName,
   extractJapanName,
-  extractType,
+  extractColorType,
 } from './old-db-helper'
 import { extractSailor } from './sailor'
 import { extractSpecial } from './special'
@@ -14,11 +14,11 @@ import { extractStats } from './statistic'
 export function extractDualUnit(
   unit: OldDB.ExtendedUnit,
   base: OldDB.ExtendedUnit,
-  dualNumber: 1 | 2
+  dualNumber: 1 | 2,
 ): RawDB.DualUnitDetail {
   const sailors = extractSailor(unit)
   const unitClass = extractClass(unit)
-  const unitType = extractType(unit)
+  const unitType = extractColorType(unit)
 
   return {
     name: unit.name.replace('[Dual Unit] ', ''),

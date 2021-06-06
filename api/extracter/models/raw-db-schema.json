@@ -87,6 +87,16 @@
       ],
       "type": "string"
     },
+    "RawDB.ColorType": {
+      "enum": [
+        "STR",
+        "DEX",
+        "QCK",
+        "PSY",
+        "INT"
+      ],
+      "type": "string"
+    },
     "RawDB.DualCharacter": {
       "additionalProperties": false,
       "properties": {
@@ -159,6 +169,9 @@
         "rarity": {
           "$ref": "#/definitions/RawDB.Rarity"
         },
+        "rumble": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Rumble"
+        },
         "sailor": {
           "items": {
             "$ref": "#/definitions/RawDB.Sailor"
@@ -225,7 +238,7 @@
           "$ref": "#/definitions/RawDB.Statistics"
         },
         "type": {
-          "$ref": "#/definitions/RawDB.Type"
+          "$ref": "#/definitions/RawDB.ColorType"
         }
       },
       "required": [
@@ -444,6 +457,714 @@
       ],
       "type": "string"
     },
+    "RawDB.PirateRumble.Ability": {
+      "additionalProperties": false,
+      "properties": {
+        "effects": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Effect"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "effects"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.AdditionalCriteriaType": {
+      "enum": [
+        "Critical Hit",
+        "Guard",
+        "Accuracy",
+        "Blow Away",
+        "Special CT",
+        "Silence",
+        "Provoke",
+        "Paralysis",
+        "Damage Over Time",
+        "Action Bind",
+        "Half Stats",
+        "Haste",
+        "Counter",
+        "near"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.Area": {
+      "enum": [
+        "Self",
+        "Small",
+        "Large",
+        "Medium"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.AttackEffectType": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "attributes": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+          },
+          "type": "array"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Condition"
+        },
+        "defbypass": {
+          "type": "boolean"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "effect": {
+          "$ref": "#/definitions/RawDB.PirateRumble.EffectEnum"
+        },
+        "level": {
+          "type": "number"
+        },
+        "range": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Range"
+        },
+        "targeting": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Targeting"
+        },
+        "type": {
+          "enum": [
+            "fixed",
+            "cut",
+            "atk",
+            "time"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "effect",
+        "targeting",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.AttackPattern": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "const": "attack",
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.PirateRumble.PatternType"
+        }
+      },
+      "required": [
+        "action",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.Attribute": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.RumbleStatType"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.ColorType"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.AdditionalCriteriaType"
+        }
+      ]
+    },
+    "RawDB.PirateRumble.ClassType": {
+      "enum": [
+        "Slasher",
+        "Fighter",
+        "Striker",
+        "Shooter",
+        "Cerebral",
+        "Free Spirit",
+        "Driven",
+        "Powerhouse"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.ColorType": {
+      "enum": [
+        "[STR]",
+        "[DEX]",
+        "[QCK]",
+        "[PSY]",
+        "[INT]"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.CommonEffect": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "attributes": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+          },
+          "type": "array"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Condition"
+        },
+        "defbypass": {
+          "type": "boolean"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "effect": {
+          "$ref": "#/definitions/RawDB.PirateRumble.EffectEnum"
+        },
+        "level": {
+          "type": "number"
+        },
+        "range": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Range"
+        },
+        "targeting": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Targeting"
+        }
+      },
+      "required": [
+        "effect",
+        "targeting"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.Condition": {
+      "additionalProperties": false,
+      "properties": {
+        "comparator": {
+          "$ref": "#/definitions/RawDB.PirateRumble.ConditionComparator"
+        },
+        "count": {
+          "type": "number"
+        },
+        "stat": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+        },
+        "team": {
+          "$ref": "#/definitions/RawDB.PirateRumble.ConditionTeam"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.PirateRumble.ConditionType"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.ConditionComparator": {
+      "enum": [
+        "above",
+        "below",
+        "remaining",
+        "first",
+        "after",
+        "more",
+        "less"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.ConditionTeam": {
+      "enum": [
+        "crew",
+        "enemies"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.ConditionType": {
+      "enum": [
+        "stat",
+        "time",
+        "crew",
+        "enemies",
+        "trigger",
+        "defeat"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.DamageResilience": {
+      "additionalProperties": false,
+      "properties": {
+        "attribute": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/RawDB.PirateRumble.ColorType"
+            },
+            {
+              "$ref": "#/definitions/RawDB.PirateRumble.ClassType"
+            },
+            {
+              "const": "all",
+              "type": "string"
+            }
+          ]
+        },
+        "percentage": {
+          "type": "number"
+        },
+        "type": {
+          "const": "damage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "percentage",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.DebuffResilience": {
+      "additionalProperties": false,
+      "properties": {
+        "attribute": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "type": {
+          "const": "debuff",
+          "type": "string"
+        }
+      },
+      "required": [
+        "attribute",
+        "chance",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.Direction": {
+      "enum": [
+        "forward",
+        "radial",
+        "sideways"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.Effect": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.CommonEffect"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.AttackEffectType"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.RechargeEffectType"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.EffectOverride"
+        }
+      ]
+    },
+    "RawDB.PirateRumble.EffectEnum": {
+      "enum": [
+        "buff",
+        "debuff",
+        "penalty",
+        "hinderance",
+        "damage",
+        "recharge",
+        "boon"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.EffectOverride": {
+      "additionalProperties": false,
+      "properties": {
+        "override": {
+          "additionalProperties": false,
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "attributes": {
+              "items": {
+                "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+              },
+              "type": "array"
+            },
+            "chance": {
+              "type": "number"
+            },
+            "condition": {
+              "$ref": "#/definitions/RawDB.PirateRumble.Condition"
+            },
+            "defbypass": {
+              "type": "boolean"
+            },
+            "duration": {
+              "type": "number"
+            },
+            "level": {
+              "type": "number"
+            },
+            "range": {
+              "$ref": "#/definitions/RawDB.PirateRumble.Range"
+            },
+            "targeting": {
+              "$ref": "#/definitions/RawDB.PirateRumble.Targeting"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "RawDB.PirateRumble.HealPattern": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "const": "heal",
+          "type": "string"
+        },
+        "area": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Area"
+        },
+        "level": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "action",
+        "area",
+        "level"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.HealingResilience": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Condition"
+        },
+        "interval": {
+          "type": "number"
+        },
+        "type": {
+          "const": "healing",
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "interval",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.Pattern": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.AttackPattern"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.HealPattern"
+        }
+      ]
+    },
+    "RawDB.PirateRumble.PatternType": {
+      "enum": [
+        "Normal",
+        "Power",
+        "Full"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.Range": {
+      "additionalProperties": false,
+      "properties": {
+        "direction": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Direction"
+        },
+        "size": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Size"
+        }
+      },
+      "required": [
+        "direction",
+        "size"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.RechargeEffectType": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "attributes": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+          },
+          "type": "array"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Condition"
+        },
+        "defbypass": {
+          "type": "boolean"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "effect": {
+          "$ref": "#/definitions/RawDB.PirateRumble.EffectEnum"
+        },
+        "level": {
+          "type": "number"
+        },
+        "range": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Range"
+        },
+        "targeting": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Targeting"
+        },
+        "type": {
+          "enum": [
+            "fixed",
+            "percentage",
+            "Special CT",
+            "RCV"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "effect",
+        "targeting",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.Resilience": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.DebuffResilience"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.DamageResilience"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.HealingResilience"
+        }
+      ]
+    },
+    "RawDB.PirateRumble.Rumble": {
+      "additionalProperties": false,
+      "properties": {
+        "ability": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Ability"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "pattern": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Pattern"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "resilience": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Resilience"
+          },
+          "type": "array"
+        },
+        "special": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Special"
+          },
+          "maxItems": 10,
+          "minItems": 10,
+          "type": "array"
+        },
+        "stats": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Stats"
+        },
+        "target": {
+          "$ref": "#/definitions/RawDB.PirateRumble.TargetClass"
+        }
+      },
+      "required": [
+        "ability",
+        "pattern",
+        "special",
+        "stats",
+        "target"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.RumbleStatType": {
+      "enum": [
+        "SPD",
+        "ATK",
+        "DEF",
+        "HP",
+        "RCV"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.RumbleType": {
+      "enum": [
+        "DBF",
+        "ATK",
+        "SPT",
+        "DEF",
+        "RCV"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.Size": {
+      "enum": [
+        "large",
+        "small",
+        "medium"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.Special": {
+      "additionalProperties": false,
+      "properties": {
+        "cooldown": {
+          "type": "number"
+        },
+        "effects": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Effect"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "cooldown",
+        "effects"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.Stats": {
+      "additionalProperties": false,
+      "properties": {
+        "def": {
+          "type": "number"
+        },
+        "rumbleType": {
+          "$ref": "#/definitions/RawDB.PirateRumble.RumbleType"
+        },
+        "spd": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "def",
+        "rumbleType",
+        "spd"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.TargetClass": {
+      "additionalProperties": false,
+      "properties": {
+        "comparator": {
+          "$ref": "#/definitions/RawDB.PirateRumble.TargetingPriority"
+        },
+        "criteria": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+        }
+      },
+      "required": [
+        "criteria"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.TargetElement": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.ColorType"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.ClassType"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.TargetType"
+        }
+      ]
+    },
+    "RawDB.PirateRumble.TargetType": {
+      "enum": [
+        "self",
+        "crew",
+        "enemies"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.Targeting": {
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "type": "number"
+        },
+        "percentage": {
+          "type": "number"
+        },
+        "priority": {
+          "$ref": "#/definitions/RawDB.PirateRumble.TargetingPriority"
+        },
+        "stat": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+        },
+        "targets": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.TargetElement"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "targets"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.TargetingPriority": {
+      "enum": [
+        "highest",
+        "lowest",
+        "above",
+        "below"
+      ],
+      "type": "string"
+    },
     "RawDB.Rarity": {
       "enum": [
         1,
@@ -544,6 +1265,9 @@
         },
         "rarity": {
           "$ref": "#/definitions/RawDB.Rarity"
+        },
+        "rumble": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Rumble"
         },
         "sailor": {
           "items": {
@@ -946,6 +1670,9 @@
         "name": {
           "type": "string"
         },
+        "rumble": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Rumble"
+        },
         "sailor": {
           "items": {
             "$ref": "#/definitions/RawDB.Sailor"
@@ -959,7 +1686,7 @@
           "$ref": "#/definitions/RawDB.Statistics"
         },
         "type": {
-          "$ref": "#/definitions/RawDB.Type"
+          "$ref": "#/definitions/RawDB.ColorType"
         },
         "versus": {
           "$ref": "#/definitions/RawDB.Versus"

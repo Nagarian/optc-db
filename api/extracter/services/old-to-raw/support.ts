@@ -6,7 +6,8 @@ const AtkRegex = /Adds.+%.+ATK/i
 const HpRegex = /Adds.+%.+HP/i
 const RcvRegex = /Adds.+%.+RCV/i
 const supportValueRegex = /Adds (?<value>\d+|\?)%.+(ATK|HP|RCV)/i
-const supportReductionRegex = /Reduces damage received from \[?(?<type>STR|DEX|QCK|PSY|INT)\]?.+by (?<value>\d+|\?)%/i
+const supportReductionRegex =
+  /Reduces damage received from \[?(?<type>STR|DEX|QCK|PSY|INT)\]?.+by (?<value>\d+|\?)%/i
 
 export function extractSupport(
   unit: OldDB.ExtendedUnit,

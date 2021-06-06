@@ -8,7 +8,7 @@ type ValidationError = {
   message?: string
 }
 
-export function validate(db: RawDB.DBCharacter[]) : boolean {
+export function validate(db: RawDB.DBCharacter[]): boolean {
   console.log('Validation of generated RawDB data')
   const errors = getErrors(db)
 

@@ -10,7 +10,7 @@ export function extractStats(unit: OldDB.ExtendedUnit): RawDB.Statistics {
       rcv: unit.minRCV || 0,
     },
     maxLvl: {
-        hp: unit.maxHP || 0,
+      hp: unit.maxHP || 0,
       atk: unit.maxATK || 0,
       rcv: unit.maxRCV || 0,
     },

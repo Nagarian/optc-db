@@ -12,10 +12,7 @@ import {
 } from './db-loader'
 import { getEvolutionMap } from './evolution'
 import { fixupDetail } from './fixup/detail'
-import {
-  fixupDualVersusMapping,
-  isGhostUnit,
-} from './fixup/dual-versus'
+import { fixupDualVersusMapping, isGhostUnit } from './fixup/dual-versus'
 import {
   addGloOnly,
   fixupGloOnlyEvolution,
@@ -24,6 +21,7 @@ import {
   fixupSuperEvolutionMap,
 } from './fixup/global-only'
 import { fixupImages } from './fixup/image'
+import { fixupVersusRumbleData, getRumble } from './fixup/rumble'
 import { fixupSpecificIssue } from './fixup/specific-issue'
 import { fixupVersusUnit } from './fixup/versus'
 import { globalOnlyWrongId } from './global-only'
@@ -38,6 +36,7 @@ export function LoadOldDb(): OldDB.ExtendedUnit[] {
     .map(fixupVersusUnit)
     .map(fixupDualVersusMapping)
     .filter(u => !isGhostUnit(u))
+    .map(fixupVersusRumbleData)
     .map(fixupSpecificIssue)
 
   db = db
@@ -73,6 +72,7 @@ function GetExtendedUnit(unit: OldDB.BaseUnit): OldDB.ExtendedUnit {
     evolutionMap: evolutionMap[dbId] ?? [dbId],
     aliases: DBalias[dbId],
     gamewith: DBgamewith[unit.number] ?? undefined,
+    rumble: getRumble(dbId),
   }
 
   return extended

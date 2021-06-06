@@ -6,8 +6,9 @@ import {
   extractClass,
   extractFrenchName,
   extractJapanName,
-  extractType,
+  extractColorType,
 } from './old-db-helper'
+import { extractRumble } from './rumble'
 import { extractSailor } from './sailor'
 import { extractSpecial } from './special'
 import { extractStats } from './statistic'
@@ -31,11 +32,12 @@ export function extractVersusUnit(
     frenchName: extractFrenchName(unit),
     japanName: extractJapanName(unit),
     class: extractClass(unit),
-    type: extractType(unit),
+    type: extractColorType(unit),
     stats: extractStats(unit),
     captain: captain,
     special: special,
     sailor: sailor,
+    rumble: extractRumble(unit),
     versus: {
       description: unit.detail.VSSpecial!,
       notes: extractNotes(unit.detail.VSSpecialNotes),

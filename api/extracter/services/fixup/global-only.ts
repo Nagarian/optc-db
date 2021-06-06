@@ -19,7 +19,9 @@ export function fixupSuperEvolutionMap(
   return fixSuperEvolution_Lucci(unit) ?? fixSuperEvolution_Robin(unit) ?? unit
 }
 
-function fixSuperEvolution_Lucci(unit: OldDB.ExtendedUnit): OldDB.ExtendedUnit | undefined {
+function fixSuperEvolution_Lucci(
+  unit: OldDB.ExtendedUnit,
+): OldDB.ExtendedUnit | undefined {
   if (!unit.evolutionMap?.includes(2784)) {
     return undefined
   }
@@ -44,7 +46,9 @@ function fixSuperEvolution_Lucci(unit: OldDB.ExtendedUnit): OldDB.ExtendedUnit |
   }
 }
 
-function fixSuperEvolution_Robin(unit: OldDB.ExtendedUnit): OldDB.ExtendedUnit | undefined {
+function fixSuperEvolution_Robin(
+  unit: OldDB.ExtendedUnit,
+): OldDB.ExtendedUnit | undefined {
   if (!unit.evolutionMap?.includes(2830)) {
     return undefined
   }
