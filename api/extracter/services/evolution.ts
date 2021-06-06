@@ -1,4 +1,5 @@
-import { DBevolution, OldDBWindow } from './db-loader'
+import { OldDB } from '../models/old-db'
+import { DBevolution } from './db-loader'
 
 type EvolutionMapHash = Record<number, number[]>
 
@@ -19,10 +20,7 @@ export function getEvolutionMap(): EvolutionMapHash {
   return evolutionHash
 }
 
-function evolutionSeeker(
-  evols: OldDBWindow.BaseUnitEvolution,
-  id: number,
-): number[] {
+function evolutionSeeker(evols: OldDB.BaseUnitEvolution, id: number): number[] {
   const evolutionForward = evols[id]
   const result = [id]
 

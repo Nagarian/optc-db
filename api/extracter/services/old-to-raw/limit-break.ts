@@ -19,7 +19,7 @@ export function extractLimitBreak(
   return {
     path,
     potentials,
-    lastTap: extractLastTap(unit)
+    lastTap: extractLastTap(unit),
   }
 }
 
@@ -81,9 +81,7 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
   'Nutrition/Reduce Hunger duration': [
     /^Boosts base ATK by (?<value>\d+|\?) the turn after recovering (?<threshold>\d+,?\d*|\?) HP and reduces Hunger stack by (?<reduction>\d+|\?) stacks?$/i,
   ],
-  'Last Tap': [
-    /^Last Tap Ability Lv.(?<value>\d+|\?)$/i,
-  ],
+  'Last Tap': [/^Last Tap Ability Lv.(?<value>\d+|\?)$/i],
 }
 function extractPotentialLevel(
   type: RawDB.LB.PotentialType,
@@ -163,7 +161,7 @@ function extractLastTap(
   }
 
   if (unit.detail.lastTap.length > 1) {
-    throw new Error("More than 1 last tap detected")
+    throw new Error('More than 1 last tap detected')
   }
 
   const lastTap = unit.detail.lastTap[0]
@@ -171,6 +169,6 @@ function extractLastTap(
   return {
     criteria: lastTap.condition,
     levels: lastTap.description.map(str => ({ description: str })),
-    notes: unit.detail.lastTapNotes || undefined
+    notes: unit.detail.lastTapNotes || undefined,
   }
 }

@@ -37,8 +37,7 @@ const computableNotes = {
   noFixedPerc:
     "Specials that deal fixed damage or cut a percentage of the enemy's HP are not affected by this captain ability",
   // need to extract value
-  orb:
-    'Orb amplification only affects matching and opposite orbs and works both ways: matching orbs will deal #1 more damage and opposite orbs will deal #1 less damage.',
+  orb: 'Orb amplification only affects matching and opposite orbs and works both ways: matching orbs will deal #1 more damage and opposite orbs will deal #1 less damage.',
   randomHits: 'The target of each of the #1 hits is chosen randomly.',
   rewind:
     'Some enemies can increase your cooldown by 1/2 turns, this Sailor Ability decreases that by #1 turn(s).',

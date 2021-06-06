@@ -338,6 +338,9 @@
         "preview": {
           "type": "boolean"
         },
+        "rumble": {
+          "$ref": "#/definitions/OldDB.PirateFest.Unit"
+        },
         "slots": {
           "type": "number"
         },
@@ -489,6 +492,724 @@
         "type": "object"
       },
       "type": "array"
+    },
+    "OldDB.PirateFest.Ability": {
+      "additionalProperties": false,
+      "properties": {
+        "effects": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Effect"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "effects"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.AdditionalCriteriaType": {
+      "enum": [
+        "Critical Hit",
+        "Guard",
+        "Accuracy",
+        "Blow Away",
+        "Special CT",
+        "Silence",
+        "Provoke",
+        "Paralysis",
+        "Damage Over Time",
+        "Action Bind",
+        "Half Stats",
+        "Haste",
+        "Counter",
+        "near"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.Area": {
+      "enum": [
+        "Self",
+        "Small",
+        "Large",
+        "Medium"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.AttackEffectType": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "attributes": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+          },
+          "type": "array"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/OldDB.PirateFest.Condition"
+        },
+        "defbypass": {
+          "type": "boolean"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "effect": {
+          "$ref": "#/definitions/OldDB.PirateFest.EffectEnum"
+        },
+        "level": {
+          "type": "number"
+        },
+        "range": {
+          "$ref": "#/definitions/OldDB.PirateFest.Range"
+        },
+        "targeting": {
+          "$ref": "#/definitions/OldDB.PirateFest.Targeting"
+        },
+        "type": {
+          "enum": [
+            "fixed",
+            "cut",
+            "atk",
+            "time"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "effect",
+        "targeting",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.AttackPattern": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "const": "attack",
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/OldDB.PirateFest.PatternType"
+        }
+      },
+      "required": [
+        "action",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.Attribute": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.RumbleStatType"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.ColorType"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.AdditionalCriteriaType"
+        }
+      ]
+    },
+    "OldDB.PirateFest.ClassType": {
+      "enum": [
+        "Slasher",
+        "Fighter",
+        "Striker",
+        "Shooter",
+        "Cerebral",
+        "Free Spirit",
+        "Driven",
+        "Powerhouse"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.ColorType": {
+      "enum": [
+        "[STR]",
+        "[DEX]",
+        "[QCK]",
+        "[PSY]",
+        "[INT]"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.CommonEffect": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "attributes": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+          },
+          "type": "array"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/OldDB.PirateFest.Condition"
+        },
+        "defbypass": {
+          "type": "boolean"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "effect": {
+          "$ref": "#/definitions/OldDB.PirateFest.EffectEnum"
+        },
+        "level": {
+          "type": "number"
+        },
+        "range": {
+          "$ref": "#/definitions/OldDB.PirateFest.Range"
+        },
+        "targeting": {
+          "$ref": "#/definitions/OldDB.PirateFest.Targeting"
+        }
+      },
+      "required": [
+        "effect",
+        "targeting"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.Condition": {
+      "additionalProperties": false,
+      "properties": {
+        "comparator": {
+          "$ref": "#/definitions/OldDB.PirateFest.ConditionComparator"
+        },
+        "count": {
+          "type": "number"
+        },
+        "stat": {
+          "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+        },
+        "team": {
+          "$ref": "#/definitions/OldDB.PirateFest.ConditionTeam"
+        },
+        "type": {
+          "$ref": "#/definitions/OldDB.PirateFest.ConditionType"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.ConditionComparator": {
+      "enum": [
+        "above",
+        "below",
+        "remaining",
+        "first",
+        "after",
+        "more",
+        "less"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.ConditionTeam": {
+      "enum": [
+        "crew",
+        "enemies"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.ConditionType": {
+      "enum": [
+        "stat",
+        "time",
+        "crew",
+        "enemies",
+        "trigger",
+        "defeat"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.DamageResilience": {
+      "additionalProperties": false,
+      "properties": {
+        "attribute": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/OldDB.PirateFest.ColorType"
+            },
+            {
+              "$ref": "#/definitions/OldDB.PirateFest.ClassType"
+            },
+            {
+              "const": "all",
+              "type": "string"
+            }
+          ]
+        },
+        "percentage": {
+          "type": "number"
+        },
+        "type": {
+          "const": "damage",
+          "type": "string"
+        }
+      },
+      "required": [
+        "percentage",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.DebuffResilience": {
+      "additionalProperties": false,
+      "properties": {
+        "attribute": {
+          "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "type": {
+          "const": "debuff",
+          "type": "string"
+        }
+      },
+      "required": [
+        "attribute",
+        "chance",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.Direction": {
+      "enum": [
+        "forward",
+        "radial",
+        "sideways"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.Effect": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.CommonEffect"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.AttackEffectType"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.RechargeEffectType"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.EffectOverride"
+        }
+      ]
+    },
+    "OldDB.PirateFest.EffectEnum": {
+      "enum": [
+        "buff",
+        "debuff",
+        "penalty",
+        "hinderance",
+        "damage",
+        "recharge",
+        "boon"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.EffectOverride": {
+      "additionalProperties": false,
+      "properties": {
+        "override": {
+          "additionalProperties": false,
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "attributes": {
+              "items": {
+                "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+              },
+              "type": "array"
+            },
+            "chance": {
+              "type": "number"
+            },
+            "condition": {
+              "$ref": "#/definitions/OldDB.PirateFest.Condition"
+            },
+            "defbypass": {
+              "type": "boolean"
+            },
+            "duration": {
+              "type": "number"
+            },
+            "level": {
+              "type": "number"
+            },
+            "range": {
+              "$ref": "#/definitions/OldDB.PirateFest.Range"
+            },
+            "targeting": {
+              "$ref": "#/definitions/OldDB.PirateFest.Targeting"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "OldDB.PirateFest.HealPattern": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "const": "heal",
+          "type": "string"
+        },
+        "area": {
+          "$ref": "#/definitions/OldDB.PirateFest.Area"
+        },
+        "level": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "action",
+        "area",
+        "level"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.HealingResilience": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/OldDB.PirateFest.Condition"
+        },
+        "interval": {
+          "type": "number"
+        },
+        "type": {
+          "const": "healing",
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "interval",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.Pattern": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.AttackPattern"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.HealPattern"
+        }
+      ]
+    },
+    "OldDB.PirateFest.PatternType": {
+      "enum": [
+        "Normal",
+        "Power",
+        "Full"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.Range": {
+      "additionalProperties": false,
+      "properties": {
+        "direction": {
+          "$ref": "#/definitions/OldDB.PirateFest.Direction"
+        },
+        "size": {
+          "$ref": "#/definitions/OldDB.PirateFest.Size"
+        }
+      },
+      "required": [
+        "direction",
+        "size"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.RechargeEffectType": {
+      "additionalProperties": false,
+      "properties": {
+        "amount": {
+          "type": "number"
+        },
+        "attributes": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+          },
+          "type": "array"
+        },
+        "chance": {
+          "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/OldDB.PirateFest.Condition"
+        },
+        "defbypass": {
+          "type": "boolean"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "effect": {
+          "$ref": "#/definitions/OldDB.PirateFest.EffectEnum"
+        },
+        "level": {
+          "type": "number"
+        },
+        "range": {
+          "$ref": "#/definitions/OldDB.PirateFest.Range"
+        },
+        "targeting": {
+          "$ref": "#/definitions/OldDB.PirateFest.Targeting"
+        },
+        "type": {
+          "enum": [
+            "fixed",
+            "percentage",
+            "Special CT",
+            "RCV"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "effect",
+        "targeting",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.Resilience": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.DebuffResilience"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.DamageResilience"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.HealingResilience"
+        }
+      ]
+    },
+    "OldDB.PirateFest.RumbleStatType": {
+      "enum": [
+        "SPD",
+        "ATK",
+        "DEF",
+        "HP",
+        "RCV"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.RumbleType": {
+      "enum": [
+        "DBF",
+        "ATK",
+        "SPT",
+        "DEF",
+        "RCV"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.Size": {
+      "enum": [
+        "large",
+        "small",
+        "medium"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.Special": {
+      "additionalProperties": false,
+      "properties": {
+        "cooldown": {
+          "type": "number"
+        },
+        "effects": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Effect"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "cooldown",
+        "effects"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.Stats": {
+      "additionalProperties": false,
+      "properties": {
+        "def": {
+          "type": "number"
+        },
+        "rumbleType": {
+          "$ref": "#/definitions/OldDB.PirateFest.RumbleType"
+        },
+        "spd": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "def",
+        "rumbleType",
+        "spd"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.TargetClass": {
+      "additionalProperties": false,
+      "properties": {
+        "comparator": {
+          "$ref": "#/definitions/OldDB.PirateFest.TargetingPriority"
+        },
+        "criteria": {
+          "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+        }
+      },
+      "required": [
+        "criteria"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.TargetElement": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.ColorType"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.ClassType"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.TargetType"
+        }
+      ]
+    },
+    "OldDB.PirateFest.TargetType": {
+      "enum": [
+        "self",
+        "crew",
+        "enemies"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.Targeting": {
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "type": "number"
+        },
+        "percentage": {
+          "type": "number"
+        },
+        "priority": {
+          "$ref": "#/definitions/OldDB.PirateFest.TargetingPriority"
+        },
+        "stat": {
+          "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+        },
+        "targets": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.TargetElement"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "targets"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.TargetingPriority": {
+      "enum": [
+        "highest",
+        "lowest",
+        "above",
+        "below"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.Unit": {
+      "additionalProperties": false,
+      "properties": {
+        "ability": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Ability"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "global": {
+          "$ref": "#/definitions/OldDB.PirateFest.Unit"
+        },
+        "id": {
+          "type": "number"
+        },
+        "japan": {
+          "$ref": "#/definitions/OldDB.PirateFest.Unit"
+        },
+        "pattern": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Pattern"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "resilience": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Resilience"
+          },
+          "type": "array"
+        },
+        "special": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Special"
+          },
+          "maxItems": 10,
+          "minItems": 10,
+          "type": "array"
+        },
+        "stats": {
+          "$ref": "#/definitions/OldDB.PirateFest.Stats"
+        },
+        "target": {
+          "$ref": "#/definitions/OldDB.PirateFest.TargetClass"
+        }
+      },
+      "required": [
+        "ability",
+        "id",
+        "pattern",
+        "special",
+        "stats",
+        "target"
+      ],
+      "type": "object"
     },
     "OldDB.PotentialKey": {
       "enum": [

@@ -44,14 +44,14 @@ export function extractClass(
   return []
 }
 
-export function extractType(unit: OldDB.ExtendedUnit): RawDB.Type {
+export function extractColorType(unit: OldDB.ExtendedUnit): RawDB.ColorType {
   const unitType = !Array.isArray(unit.type) ? unit.type : undefined
 
   if (unitType === undefined) {
     throw new Error(`unit ${unit.id} "${unit.name}" has no class`)
   }
 
-  return unitType
+  return unitType as RawDB.ColorType
 }
 
 export function extractRealType(unit: OldDB.ExtendedUnit): RawDB.Type {
@@ -78,10 +78,50 @@ export function extractFamily(unit: OldDB.ExtendedUnit): string[] {
   return unit.family
 }
 
-export function extractFrenchName(unit: OldDB.ExtendedUnit): string | undefined {
+export function extractFrenchName(
+  unit: OldDB.ExtendedUnit,
+): string | undefined {
   return unit.aliases?.[1] || undefined
 }
 
 export function extractJapanName(unit: OldDB.ExtendedUnit): string | undefined {
   return unit.aliases?.[0] || undefined
 }
+
+// const isColorTypeRegex = /\[(STR|DEX|QCK|PSY|INT)\]/
+// export const isColorType = (
+//   value?: OldDB.PirateFest.ColorType | any,
+// ): value is OldDB.PirateFest.ColorType => !!value && isColorTypeRegex.test(value)
+
+// export const convertColorType = (
+//   value: OldDB.PirateFest.ColorType,
+// ): RawDB.ColorType => {
+//   switch (value) {
+//     case '[STR]':
+//       return 'STR'
+//     case '[DEX]':
+//       return 'DEX'
+//     case '[QCK]':
+//       return 'QCK'
+//     case '[PSY]':
+//       return 'PSY'
+//     case '[INT]':
+//       return 'INT'
+//   }
+// }
+
+// export const isEffectOverride = (
+//   value: OldDB.PirateFest.Effect,
+// ): value is OldDB.PirateFest.EffectOverride => 'override' in value || Object.keys(value).length === 0
+
+// export const isCommonEffect = (
+//   value: OldDB.PirateFest.Effect,
+// ): value is OldDB.PirateFest.CommonEffect => 'effect' in value
+
+// export const isAttackEffect = (
+//   value: OldDB.PirateFest.Effect,
+// ): value is OldDB.PirateFest.AttackEffectType => isCommonEffect(value) && value.effect === 'damage'
+
+// export const isRechargeEffect = (
+//   value: OldDB.PirateFest.Effect,
+// ): value is OldDB.PirateFest.RechargeEffectType => isCommonEffect(value) && value.effect === 'recharge'

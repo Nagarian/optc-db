@@ -17,7 +17,7 @@ export function fixupVersusUnit(unit: OldDB.ExtendedUnit): OldDB.ExtendedUnit {
       festSpecial: undefined,
       festAttackPattern: undefined,
       festAttackTarget: undefined,
-      festResistance: undefined
+      festResistance: undefined,
     },
   }
 

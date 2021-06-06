@@ -1,5 +1,6 @@
 import {
   CharacterClasses,
+  CharacterColors,
   CharacterTypes,
   Potentials,
   Rarities,
@@ -8,6 +9,7 @@ import {
 import { Flags, LBPathTypes, SupportTypes } from './raw-constant'
 
 export declare namespace RawDB {
+  export type ColorType = typeof CharacterColors[number]
   export type Type = typeof CharacterTypes[number]
   export type ClassKey = typeof CharacterClasses[number]
   export type Class = [ClassKey?, ClassKey?]
@@ -87,7 +89,7 @@ export declare namespace RawDB {
     notes?: string
   }
 
-  namespace LB {
+  export namespace LB {
     export type PathType = typeof LBPathTypes[number]
 
     export type Path = {
@@ -125,34 +127,6 @@ export declare namespace RawDB {
     }
   }
 
-  // export type PFAbility = {
-  //   description: string
-  // }
-
-  // export type PFSpecial = {
-  //   description: string
-  //   cooldown: number
-  // }
-
-  // export type PFBehavior = {
-  //   description: string
-  // }
-
-  // export type PFStat = {
-  //   DEF: number
-  //   SPD: number
-  // }
-
-  // export type PirateFest = {
-  //   class: PirateFestStyle
-  //   ability: PFAbility[]
-  //   special: PFSpecial[]
-  //   behaviorPattern: PFBehavior[]
-  //   targetPriority: string
-  //   resistance?: string
-  //   stats: PFStat
-  // }
-
   export type AffiliatedLinks = {
     gamewithId?: number
     officialJapan?: string
@@ -162,7 +136,7 @@ export declare namespace RawDB {
     name: string
     japanName?: string
     frenchName?: string
-    type: Type
+    type: ColorType
     class: Class
     stats: Statistics
     captain?: Captain
@@ -196,13 +170,13 @@ export declare namespace RawDB {
     name: string
     japanName?: string
     frenchName?: string
-    type: Type
+    type: ColorType
     class: Class
     stats: Statistics
     captain?: Captain
     special?: Special
     sailor?: Sailor[]
-    // pirateFest?: PirateFest
+    rumble?: PirateRumble.Rumble
     versus: Versus
   }
 
@@ -212,7 +186,7 @@ export declare namespace RawDB {
     criteria: string
   }
 
-  type BaseCharacter = {
+  export type BaseCharacter = {
     $schema?: string
     oldDbId?: number
     name: string
@@ -237,19 +211,21 @@ export declare namespace RawDB {
   }
 
   export type SingleCharacter = BaseCharacter & {
+    type: ColorType
     captain?: Captain
     superType?: SuperType
     special?: Special
     sailor?: Sailor[]
     support?: Support
-    // pirateFest?: PirateFest
+    rumble?: PirateRumble.Rumble
   }
 
   export type DualCharacter = BaseCharacter & {
+    type: 'DUAL'
     captain?: Captain
     special?: Special
     sailor?: Sailor[]
-    // pirateFest?: PirateFest
+    rumble?: PirateRumble.Rumble
     characters: DualUnitNode
   }
 
@@ -258,12 +234,239 @@ export declare namespace RawDB {
   }
 
   export type VersusCharacter = BaseCharacter & {
+    type: 'VS'
     captain: VersusCaptain
-    // pirateFest?: PirateFest
     characters: VersusUnitNode
   }
 
   export type Character = SingleCharacter | DualCharacter | VersusCharacter
 
-  export type DBCharacter = [number, RawDB.Character]
+  export type DBCharacter = [number, Character]
+
+  export namespace PirateRumble {
+    export type ColorType = '[STR]' | '[DEX]' | '[QCK]' | '[PSY]' | '[INT]'
+    export type ClassType =
+      | 'Slasher'
+      | 'Fighter'
+      | 'Striker'
+      | 'Shooter'
+      | 'Cerebral'
+      | 'Free Spirit'
+      | 'Driven'
+      | 'Powerhouse'
+    export type RumbleStatType = 'SPD' | 'ATK' | 'DEF' | 'HP' | 'RCV'
+    export type RumbleType = 'DBF' | 'ATK' | 'SPT' | 'DEF' | 'RCV'
+    export type AdditionalCriteriaType =
+      | 'Critical Hit'
+      | 'Guard'
+      | 'Accuracy'
+      | 'Blow Away'
+      | 'Special CT'
+      | 'Silence'
+      | 'Provoke'
+      | 'Paralysis'
+      | 'Damage Over Time'
+      | 'Action Bind'
+      | 'Half Stats'
+      | 'Haste'
+      | 'Counter'
+      | 'near'
+
+    export type Direction = 'forward' | 'radial' | 'sideways'
+    export type Size = 'large' | 'small' | 'medium'
+
+    export type Attribute = RumbleStatType | ColorType | AdditionalCriteriaType
+
+    export type ConditionComparator =
+      | 'above'
+      | 'below'
+      | 'remaining'
+      | 'first'
+      | 'after'
+      | 'more'
+      | 'less'
+
+    export type ConditionType =
+      | 'stat'
+      | 'time'
+      | 'crew'
+      | 'enemies'
+      | 'trigger'
+      | 'defeat'
+
+    export type ConditionTeam = 'crew' | 'enemies'
+
+    export type EffectEnum =
+      | 'buff'
+      | 'debuff'
+      | 'penalty'
+      | 'hinderance'
+      | 'damage'
+      | 'recharge'
+      | 'boon'
+
+    export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below'
+
+    export type TargetType = 'self' | 'crew' | 'enemies'
+    export type TargetElement = ColorType | ClassType | TargetType
+
+    export type Action = 'attack' | 'heal'
+    export type Area = 'Self' | 'Small' | 'Large' | 'Medium'
+    export type PatternType = 'Normal' | 'Power' | 'Full'
+
+    export type Rumble = {
+      ability: [Ability, Ability, Ability, Ability, Ability]
+      pattern: [Pattern, ...Pattern[]]
+      special: [
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+      ]
+      stats: Stats
+      target: TargetClass
+      resilience?: Resilience[]
+    }
+
+    export type Ability = {
+      effects: Effect[]
+    }
+
+    export type Condition = {
+      comparator?: ConditionComparator
+      stat?: Attribute
+      type: ConditionType
+      team?: ConditionTeam
+      count?: number
+    }
+
+    export type Pattern = AttackPattern | HealPattern
+
+    export type HealPattern = {
+      action: 'heal'
+      area: Area
+      level: number
+    }
+
+    export type AttackPattern = {
+      action: 'attack'
+      type: PatternType
+    }
+
+    export type ResilienceType = 'debuff' | 'healing' | 'damage'
+    export type Resilience =
+      | DebuffResilience
+      | DamageResilience
+      | HealingResilience
+
+    export type DebuffResilience = {
+      attribute: Attribute
+      chance: number
+      type: 'debuff'
+    }
+
+    export type DamageResilience = {
+      attribute?: ColorType | ClassType | 'all'
+      percentage: number
+      type: 'damage'
+    }
+
+    export type HealingResilience = {
+      condition?: Condition
+      amount: number
+      interval: number
+      type: 'healing'
+    }
+
+    export type Special = {
+      cooldown: number
+      effects: Effect[]
+    }
+
+    export type Effect =
+      | CommonEffect
+      | AttackEffectType
+      | RechargeEffectType
+      | EffectOverride
+
+    export type BasicEffect = {
+      attributes?: Attribute[]
+      chance?: number
+      duration?: number
+      targeting: Targeting
+      amount?: number
+      level?: number
+      range?: Range
+      condition?: Condition
+      defbypass?: boolean
+    }
+
+    export type CommonEffect = BasicEffect & {
+      effect: EffectEnum
+    }
+
+    export type AttackEffectType = CommonEffect & {
+      effect: 'damage'
+      type: 'fixed' | 'cut' | 'atk' | 'time'
+    }
+
+    export type RechargeEffectType = CommonEffect & {
+      effect: 'recharge'
+      type: 'fixed' | 'percentage' | 'Special CT' | 'RCV'
+    }
+
+    export type EffectOverride = {
+      override?: Partial<BasicEffect>
+    }
+
+    export type Targeting = {
+      count?: number
+      priority?: TargetingPriority
+      percentage?: number
+      stat?: Attribute
+      targets: TargetElement[]
+    }
+
+    export type Range = {
+      direction: Direction
+      size: Size
+    }
+
+    export type Stats = {
+      def: number
+      rumbleType: RumbleType
+      spd: number
+    }
+
+    export type TargetClass = {
+      comparator?: TargetingPriority
+      criteria: Attribute
+    }
+  }
+
+  // export type DropAffiliatedLink = {
+  //   nakama?: number
+  //   gamewith?: number
+  //   slefty?: string
+  // }
+
+  // export type Stage = {
+  //   name: string
+  //   links?: DropAffiliatedLink
+  //   icon: number
+  //   global?: boolean
+  //   dropId: number
+  // }
+
+  // export type Drop = {
+  //   name: string
+  //   key: string
+  //   stages: Stage[]
+  // }
 }

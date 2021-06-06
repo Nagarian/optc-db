@@ -9,11 +9,13 @@ import { extractLinks } from './old-to-raw/links'
 import { extractNotes, extractRootNotes } from './old-to-raw/notes'
 import {
   extractClass,
+  extractColorType,
   extractFamily,
   extractFrenchName,
   extractJapanName,
   extractRealType
 } from './old-to-raw/old-db-helper'
+import { extractRumble } from './old-to-raw/rumble'
 import { extractSailor } from './old-to-raw/sailor'
 import { extractSpecial } from './old-to-raw/special'
 import { extractStats } from './old-to-raw/statistic'
@@ -61,22 +63,6 @@ function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
     aliases: unit.aliases?.slice(2) ?? [],
     evolution: extractEvolution(unit),
     limitBreak: extractLimitBreak(unit),
-    //   pirateFest:
-    //     !unit.pirateFest.class || unitType === 'VS'
-    //       ? undefined
-    //       : {
-    //           class: unit.pirateFest.class,
-    //           stats: {
-    //             DEF: unit.pirateFest.DEF,
-    //             SPD: unit.pirateFest.SPD,
-    //           },
-    //           targetPriority: unit.detail.festAttackTarget ?? '',
-    //           resistance:
-    //             unit.detail.festResistance ?? unit.detail.festResilience,
-    //           ability: unit.detail.festAbility ?? [],
-    //           behaviorPattern: unit.detail.festAttackPattern ?? [],
-    //           special: unit.detail.festSpecial ?? [],
-    //         },
   }
 }
 
@@ -86,6 +72,7 @@ function remapSingleCharacter(
   return {
     $schema: `${rawSchemaPath}/raw-db-single.schema.json`,
     ...remapBaseCharacter(unit),
+    type: extractColorType(unit),
     captain: extractCaptain(unit),
     superType: !unit.detail.superSpecial
       ? undefined
@@ -97,6 +84,7 @@ function remapSingleCharacter(
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
     support: extractSupport(unit),
+    rumble: extractRumble(unit),
   }
 }
 
@@ -106,9 +94,11 @@ function remapDualCharacter(
   return {
     $schema: `${rawSchemaPath}/raw-db-dual.schema.json`,
     ...remapBaseCharacter(unit),
+    type: 'DUAL',
     captain: extractCaptain(unit),
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
+    rumble: extractRumble(unit),
     characters: {
       swap: extractSwap(unit),
       character1: extractDualUnit(unit.dualCharacters![0], unit, 1),
@@ -123,6 +113,7 @@ function remapVersusCharacter(
   return {
     $schema: `${rawSchemaPath}/raw-db-versus.schema.json`,
     ...remapBaseCharacter(unit),
+    type: 'VS',
     captain: {
       name: '',
     },

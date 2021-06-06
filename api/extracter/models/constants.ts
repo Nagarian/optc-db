@@ -1,3 +1,4 @@
+export const CharacterColors = ['STR', 'DEX', 'QCK', 'PSY', 'INT'] as const
 export const CharacterTypes = ['STR', 'DEX', 'QCK', 'PSY', 'INT', 'DUAL', 'VS'] as const
 
 export const CharacterClasses = [
