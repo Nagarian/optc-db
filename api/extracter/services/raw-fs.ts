@@ -39,18 +39,11 @@ export async function writeToDisk(
     }
 
     if (mode === 'all' || mode === 'yaml') {
-      const type =
-        character.type === 'DUAL'
-          ? '.dual'
-          : character.type === 'VS'
-          ? '.versus'
-          : '.single'
-
-      const yamlFile = id.toString().padStart(4, '0').concat(type, '.yml')
+      const yamlFile = id.toString().padStart(4, '0').concat('.yml')
 
       await writeFile(
         join(filePath, yamlFile),
-        YAML.stringify(character, { simpleKeys: true }),
+        YAML.stringify({ ...character, $schema: undefined }, { simpleKeys: true }),
       )
     }
 

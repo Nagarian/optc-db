@@ -193,7 +193,7 @@ export declare namespace RawDB {
     japanName?: string
     frenchName?: string
     family: string[]
-    type: Type
+    // type: Type
     class: Class
     rarity: Rarity
     cost: number
