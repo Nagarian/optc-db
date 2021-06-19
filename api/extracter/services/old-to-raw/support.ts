@@ -2,12 +2,14 @@ import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
 import { extractNotes } from './notes'
 
-const AtkRegex = /Adds.+%.+ATK/i
-const HpRegex = /Adds.+%.+HP/i
-const RcvRegex = /Adds.+%.+RCV/i
-const supportValueRegex = /Adds (?<value>\d+|\?)%.+(ATK|HP|RCV)/i
 const supportReductionRegex =
-  /Reduces damage received from \[?(?<type>STR|DEX|QCK|PSY|INT)\]?.+by (?<value>\d+|\?)%/i
+  /Reduces damage received from \[?(?<type>STR|DEX|QCK|PSY|INT)\]? (characters|enemies) by (?<value>\d+|\?)%[,.]?/i
+
+const supportStatRegex = [
+  /Adds (?<value>\d+|\?)% of this character's base (?<value_type>ATK|HP|RCV) to the supported character's base (ATK|HP|RCV)[,.]?/i,
+  /Adds (?<value>\d+|\?)% of this character's base (?<value_type>ATK|HP|RCV) and (?<value_type_2>ATK|HP|RCV) to the supported character's base (ATK|HP|RCV) and (ATK|HP|RCV)[,.]?/i,
+  /Adds (?<value>\d+|\?)% of this character's base (?<value_type>ATK), (?<value_type_2>HP) and (?<value_type_3>RCV) to the supported character's base ATK, HP and RCV[,.]?/i,
+]
 
 export function extractSupport(
   unit: OldDB.ExtendedUnit,
@@ -15,47 +17,57 @@ export function extractSupport(
   if (!unit.detail.support?.length) return undefined
   const desc = unit.detail.support[0].description
   const lastDesc = desc[desc.length - 1]
-  let reductionType: RawDB.Type | undefined = undefined
+  let reductionType: RawDB.ColorType | undefined = undefined
 
-  const supportType: RawDB.SupportType[] = []
-  if (AtkRegex.test(lastDesc)) {
-    supportType.push('atk')
+  const statRegex = supportStatRegex.find(r => r.test(lastDesc))
+
+  let statsTypes: RawDB.StatsType[] = []
+
+  if (statRegex) {
+    const result = statRegex.exec(lastDesc)
+    statsTypes = [
+      result?.groups?.value_type,
+      result?.groups?.value_type_2,
+      result?.groups?.value_type_3,
+    ].filter(u => !!u).map(u => u!.toUpperCase()) as RawDB.StatsType[]
   }
-  if (HpRegex.test(lastDesc)) {
-    supportType.push('hp')
-  }
-  if (RcvRegex.test(lastDesc)) {
-    supportType.push('rcv')
-  }
+
   if (supportReductionRegex.test(lastDesc)) {
     reductionType = supportReductionRegex.exec(lastDesc)?.groups?.type as
-      | RawDB.Type
+      | RawDB.ColorType
       | undefined
-    supportType.push('def')
-  }
-  if (!supportType.length) {
-    supportType.push('other')
   }
 
-  return {
+  if (!statsTypes.length) {
+    return <RawDB.DescriptiveSupport>{
+      type: 'descriptive',
+      criteria: unit.detail.support[0].Characters,
+      levels: unit.detail.support[0].description,
+      notes: extractNotes(unit.detail.supportNotes),
+    }
+  }
+
+  return <RawDB.StatsSupport>{
+    type: 'stats',
+    defenseType: reductionType,
+    statsTypes: statsTypes,
     criteria: unit.detail.support[0].Characters,
-    type: supportType,
     levels: desc.map(d => {
-      const reduction = parseInt(
-        supportReductionRegex.exec(d)?.groups?.value ?? '',
-      )
+      const reductionExtraction = supportReductionRegex.exec(d)
+      const reduction = parseInt(reductionExtraction?.groups?.value ?? '')
 
-      const value = parseInt(supportValueRegex.exec(d)?.groups?.value ?? '')
+      const valueExtraction = statRegex?.exec(d)
+      const value = parseInt(valueExtraction?.groups?.value ?? '')
+
+      const desc = d
+        .replace(valueExtraction?.[0] ?? '', '')
+        .replace(reductionExtraction?.[0] ?? '', '')
+        .trim()
 
       return {
-        description: d,
+        description: desc || undefined,
         value: value === 0 ? value : value || undefined,
-        reduction: !reduction
-          ? undefined
-          : {
-              type: reductionType!,
-              value: reduction,
-            },
+        reduction: !reduction ? undefined : reduction,
       }
     }),
     notes: extractNotes(unit.detail.supportNotes),

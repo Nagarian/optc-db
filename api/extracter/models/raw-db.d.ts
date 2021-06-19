@@ -6,7 +6,7 @@ import {
   Rarities,
   RumbleStyles,
 } from './constants'
-import { Flags, LBPathTypes, SupportTypes } from './raw-constant'
+import { Flags, LBPathTypes, StatsTypes } from './raw-constant'
 
 export declare namespace RawDB {
   export type ColorType = typeof CharacterColors[number]
@@ -71,23 +71,31 @@ export declare namespace RawDB {
     notes?: string
   }
 
-  export type SupportType = typeof SupportTypes[number]
-
-  export type SupportLevel = {
+  export type StatSupportLevel = {
+    value: number
+    reduction?: number
     description?: string
-    value?: number
-    reduction?: {
-      type: Type
-      value: number
     }
-  }
 
-  export type Support = {
-    type: SupportType[]
+  export type StatsType = typeof StatsTypes[number]
+
+  export type StatsSupport = {
+    type: 'stats'
     criteria: string
-    levels: SupportLevel[]
+    statsTypes: StatsType[]
+    defenseType?: ColorType
+    levels: [StatSupportLevel, StatSupportLevel, StatSupportLevel, StatSupportLevel, StatSupportLevel]
     notes?: string
   }
+
+  export type DescriptiveSupport = {
+    type: 'descriptive'
+    criteria: string
+    levels: [string, string, string, string, string]
+    notes?: string
+  }
+
+  export type Support = DescriptiveSupport | StatsSupport
 
   export namespace LB {
     export type PathType = typeof LBPathTypes[number]

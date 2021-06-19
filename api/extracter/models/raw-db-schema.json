@@ -97,6 +97,35 @@
       ],
       "type": "string"
     },
+    "RawDB.DescriptiveSupport": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "string"
+        },
+        "levels": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "type": {
+          "const": "descriptive",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "criteria",
+        "levels"
+      ],
+      "type": "object"
+    },
     "RawDB.DualCharacter": {
       "additionalProperties": false,
       "properties": {
@@ -1358,6 +1387,24 @@
       ],
       "type": "object"
     },
+    "RawDB.StatSupportLevel": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "reduction": {
+          "type": "number"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "type": "object"
+    },
     "RawDB.Statistic": {
       "additionalProperties": false,
       "properties": {
@@ -1396,6 +1443,53 @@
       ],
       "type": "object"
     },
+    "RawDB.StatsSupport": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "string"
+        },
+        "defenseType": {
+          "$ref": "#/definitions/RawDB.ColorType"
+        },
+        "levels": {
+          "items": {
+            "$ref": "#/definitions/RawDB.StatSupportLevel"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "statsTypes": {
+          "items": {
+            "$ref": "#/definitions/RawDB.StatsType"
+          },
+          "type": "array"
+        },
+        "type": {
+          "const": "stats",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "criteria",
+        "statsTypes",
+        "levels"
+      ],
+      "type": "object"
+    },
+    "RawDB.StatsType": {
+      "enum": [
+        "ATK",
+        "HP",
+        "RCV"
+      ],
+      "type": "string"
+    },
     "RawDB.SuperSwap": {
       "additionalProperties": false,
       "properties": {
@@ -1432,71 +1526,14 @@
       "type": "object"
     },
     "RawDB.Support": {
-      "additionalProperties": false,
-      "properties": {
-        "criteria": {
-          "type": "string"
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.DescriptiveSupport"
         },
-        "levels": {
-          "items": {
-            "$ref": "#/definitions/RawDB.SupportLevel"
-          },
-          "type": "array"
-        },
-        "notes": {
-          "type": "string"
-        },
-        "type": {
-          "items": {
-            "$ref": "#/definitions/RawDB.SupportType"
-          },
-          "type": "array"
+        {
+          "$ref": "#/definitions/RawDB.StatsSupport"
         }
-      },
-      "required": [
-        "type",
-        "criteria",
-        "levels"
-      ],
-      "type": "object"
-    },
-    "RawDB.SupportLevel": {
-      "additionalProperties": false,
-      "properties": {
-        "description": {
-          "type": "string"
-        },
-        "reduction": {
-          "additionalProperties": false,
-          "properties": {
-            "type": {
-              "$ref": "#/definitions/RawDB.Type"
-            },
-            "value": {
-              "type": "number"
-            }
-          },
-          "required": [
-            "type",
-            "value"
-          ],
-          "type": "object"
-        },
-        "value": {
-          "type": "number"
-        }
-      },
-      "type": "object"
-    },
-    "RawDB.SupportType": {
-      "enum": [
-        "atk",
-        "hp",
-        "rcv",
-        "def",
-        "other"
-      ],
-      "type": "string"
+      ]
     },
     "RawDB.Swap": {
       "additionalProperties": false,
