@@ -1,4 +1,6 @@
-export const globalOnly : Record<number, number> = {
+import { OldDB } from '../models/old-db'
+
+export const globalOnly: Record<number, number> = {
   // 1120: 577, // Luffy // different image
   // 1121: 578,
   5001: 650, // nami // different image
@@ -65,7 +67,7 @@ export const globalOnly : Record<number, number> = {
   5062: 2830, // Robin 6+
   5063: 2909, // WB v2 6+
   5064: 3330, // Law/Chopper
-  5065: 4998, // MOTNS
+  5065: 3383, // MOTNS
   5066: 4999, // Makino
   5067: 3156, // Akainu v3
   5068: 3157,
@@ -73,16 +75,67 @@ export const globalOnly : Record<number, number> = {
 
 export const FirstGlobalOnlyId = 4986
 
-export const globalOnlyReverseMap = Object.entries(globalOnly)
-  .reduce<Record<number, number>>((agg, [realId, wrongId]) => ({ ...agg, [wrongId]: parseInt(realId) }), {})
+export const globalOnlyReverseMap = Object.entries(globalOnly).reduce<
+  Record<number, number>
+>((agg, [realId, wrongId]) => ({ ...agg, [wrongId]: parseInt(realId) }), {})
 
 export const globalOnlyWrongId = Object.entries(globalOnly)
   .filter(([, wrongId]) => wrongId >= FirstGlobalOnlyId)
-  .reduce<Record<number, number>>((agg, [realId, wrongId]) => ({ ...agg, [wrongId]: parseInt(realId) }), {})
+  .reduce<Record<number, number>>(
+    (agg, [realId, wrongId]) => ({ ...agg, [wrongId]: parseInt(realId) }),
+    {},
+  )
 
 export const globalOnlyMissingInDb = Object.entries(globalOnly)
   .filter(([, wrongId]) => wrongId < FirstGlobalOnlyId)
-  .reduce<Record<number, number>>((agg, [realId, wrongId]) => ({ ...agg, [wrongId]: parseInt(realId) }), {})
+  .reduce<Record<number, number>>(
+    (agg, [realId, wrongId]) => ({ ...agg, [wrongId]: parseInt(realId) }),
+    {},
+  )
 
-export const gloToJapConverter = Object.entries(globalOnly)
-  .reduce<Record<number, number>>((agg, [gloId, japId]) => ({ ...agg, [gloId]: japId >= FirstGlobalOnlyId ? null : japId }), {})
+export const gloToJapConverter = Object.entries(globalOnly).reduce<
+  Record<number, number>
+>(
+  (agg, [gloId, japId]) => ({
+    ...agg,
+    [gloId]: japId >= FirstGlobalOnlyId ? null : japId,
+  }),
+  {},
+)
+
+const remainingGlobalOnlyUnitMapping = {
+  'Monkey D. Luffy, Kung Fu Training': 4986,
+  'Monkey D. Luffy, To Become a True Kung Fu Master': 4987,
+  'Nefertari Vivi, Wake of an Endless Dream - Princess of Alabasta': 4988,
+  'Nefertari Vivi, Wake of an Endless Dream - Pirate Queen': 4989,
+  'Portgas D. Ace, Wake of an Endless Dream - Whitebeard Pirates': 4990,
+  'Portgas D. Ace, Wake of an Endless Dream - High Seas Pirate': 4991,
+  'Charlotte Pudding, White Summer Sweets': 4992,
+  'Charlotte Pudding, Devilish White Swimsuit': 4993,
+  'Coby [EXTRA], Navy HQ Petty Officer': 4994,
+  'War Hero Coby [EXTRA], Navy HQ Petty Officer': 4995,
+  'Sergeant Helmeppo [EXTRA]': 4996,
+  'Sengoku, Fatherly Buddha': 4997,
+  'Makino, Proprietor of a Relaxed Tavern': 4999,
+}
+
+export function checkGloJapMapping(units: OldDB.ExtendedUnit[]) {
+  const errors = []
+
+  for (const [name, id] of Object.entries(remainingGlobalOnlyUnitMapping)) {
+    const selectedUnit = units.find(unit => unit.name === name)
+
+    if (!selectedUnit) {
+      errors.push(`"${name}" hasn't been found`)
+    } else if (selectedUnit.dbId !== id) {
+      errors.push(
+        `"${name}" should be at ID ${id} but was ${selectedUnit.dbId}`,
+      )
+    }
+  }
+
+  if (errors.length > 0) {
+    console.error(errors)
+    throw new Error('Global -> Jap units have changed')
+  }
+}

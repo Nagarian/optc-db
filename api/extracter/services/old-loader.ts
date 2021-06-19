@@ -24,7 +24,7 @@ import { fixupImages } from './fixup/image'
 import { fixupVersusRumbleData, getRumble } from './fixup/rumble'
 import { fixupSpecificIssue } from './fixup/specific-issue'
 import { fixupVersusUnit } from './fixup/versus'
-import { globalOnlyWrongId } from './global-only'
+import { checkGloJapMapping, globalOnlyWrongId } from './global-only'
 
 const evolutionMap = getEvolutionMap()
 
@@ -38,6 +38,8 @@ export function LoadOldDb(): OldDB.ExtendedUnit[] {
     .filter(u => !isGhostUnit(u))
     .map(fixupVersusRumbleData)
     .map(fixupSpecificIssue)
+
+  checkGloJapMapping(db)
 
   db = db
     .concat(addGloOnly(db))
