@@ -82,6 +82,10 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
     /^Boosts base ATK by (?<value>\d+|\?) the turn after recovering (?<threshold>\d+,?\d*|\?) HP and reduces Hunger stack by (?<reduction>\d+|\?) stacks?$/i,
   ],
   'Last Tap': [/^Last Tap Ability Lv.(?<value>\d+|\?)$/i],
+  'Reduce Slot Barrier duration': [
+    /^Reduces Slot Barrier duration by (?<value>\d+|\?) turns? on this character$/i,
+    /^Reduces Slot Barrier duration (?<value>completely) on this character$/i,
+  ],
 }
 function extractPotentialLevel(
   type: RawDB.LB.PotentialType,
