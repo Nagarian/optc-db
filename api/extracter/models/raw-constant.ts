@@ -42,7 +42,7 @@ export const Flags = [
   'krr',
   /** Pirate Rumble Rare recruit */
   'prrr',
-  
+
   /** Rayleigh Shop */
   'shop',
   /** TM Shop */
@@ -62,11 +62,9 @@ export const Flags = [
   'inkable',
 ] as const
 
-export const SupportTypes = [
-  'atk',
-  'hp',
-  'rcv',
-  'def',
-  'other',
+export const StatsTypes = [
+  'ATK',
+  'HP',
+  'RCV',
 ] as const
 
