@@ -188,7 +188,8 @@
           "$ref": "#/definitions/RawDB.Statistics"
         },
         "type": {
-          "$ref": "#/definitions/RawDB.Type"
+          "const": "DUAL",
+          "type": "string"
         }
       },
       "required": [
@@ -1292,7 +1293,7 @@
           "$ref": "#/definitions/RawDB.Support"
         },
         "type": {
-          "$ref": "#/definitions/RawDB.Type"
+          "$ref": "#/definitions/RawDB.ColorType"
         }
       },
       "required": [
@@ -1515,18 +1516,6 @@
       ],
       "type": "object"
     },
-    "RawDB.Type": {
-      "enum": [
-        "STR",
-        "DEX",
-        "QCK",
-        "PSY",
-        "INT",
-        "DUAL",
-        "VS"
-      ],
-      "type": "string"
-    },
     "RawDB.Versus": {
       "additionalProperties": false,
       "properties": {
@@ -1633,7 +1622,8 @@
           "$ref": "#/definitions/RawDB.Statistics"
         },
         "type": {
-          "$ref": "#/definitions/RawDB.Type"
+          "const": "VS",
+          "type": "string"
         }
       },
       "required": [

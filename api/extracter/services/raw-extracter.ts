@@ -44,12 +44,12 @@ const rawSchemaPath = '../..'
 
 function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
   return {
+    $schema: `${rawSchemaPath}/raw-db-schema.json`,
     oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
     frenchName: extractFrenchName(unit),
     japanName: extractJapanName(unit),
     family: extractFamily(unit),
-    type: extractRealType(unit),
     class: extractClass(unit, true),
     rarity: unit.stars,
     stats: extractStats(unit),
@@ -70,9 +70,8 @@ function remapSingleCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.SingleCharacter {
   return {
-    $schema: `${rawSchemaPath}/raw-db-single.schema.json`,
-    ...remapBaseCharacter(unit),
     type: extractColorType(unit),
+    ...remapBaseCharacter(unit),
     captain: extractCaptain(unit),
     superType: !unit.detail.superSpecial
       ? undefined
@@ -92,9 +91,8 @@ function remapDualCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.DualCharacter {
   return {
-    $schema: `${rawSchemaPath}/raw-db-dual.schema.json`,
-    ...remapBaseCharacter(unit),
     type: 'DUAL',
+    ...remapBaseCharacter(unit),
     captain: extractCaptain(unit),
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
@@ -111,9 +109,8 @@ function remapVersusCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.VersusCharacter {
   return {
-    $schema: `${rawSchemaPath}/raw-db-versus.schema.json`,
-    ...remapBaseCharacter(unit),
     type: 'VS',
+    ...remapBaseCharacter(unit),
     captain: {
       name: '',
     },

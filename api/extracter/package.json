@@ -6,12 +6,7 @@
     "old-extract": "ts-node old-extract.ts",
     "old-schema": "ts-json-schema-generator -f ./tsconfig.json -o './models/old-db-schema.json' --path './models/old-db.d.ts' --type 'OldDB.ExtendedUnit'",
     "extract": "ts-node extract.ts",
-    "raw-schema": "npm run raw-schema:db && npm run raw-schema:single && npm run raw-schema:dual && npm run raw-schema:versus",
-    "raw-schema:base": "ts-json-schema-generator -f ./tsconfig.json --path './models/raw-db.d.ts' ",
-    "raw-schema:db": "npm run raw-schema:base -- -o './models/raw-db-schema.json' --type 'RawDB.Character'",
-    "raw-schema:single": "npm run raw-schema:base -- -o '../raw/characters/raw-db-single.schema.json' --type 'RawDB.SingleCharacter'",
-    "raw-schema:dual": "npm run raw-schema:base -- -o '../raw/characters/raw-db-dual.schema.json' --type 'RawDB.DualCharacter'",
-    "raw-schema:versus": "npm run raw-schema:base -- -o '../raw/characters/raw-db-versus.schema.json' --type 'RawDB.VersusCharacter'"
+    "raw-schema": "ts-json-schema-generator -f ./tsconfig.json --path './models/raw-db.d.ts' -o './models/raw-db-schema.json' --type 'RawDB.Character'"
   },
   "dependencies": {
     "@types/node": "^15.0.1",
