@@ -37,7 +37,7 @@ export async function downloadJapCharacters(units: OldDB.ExtendedUnit[]) {
   const bar = new ProgressBar(units.length)
   const promises: Promise<void>[] = []
 
-  for (const unit of units) {
+  for (const unit of units.filter(u => u.id < 5001)) {
     const japPath = getImagePath(unit.id, thumbnailJap, undefined)
 
     await mkdir(dirname(japPath), {
