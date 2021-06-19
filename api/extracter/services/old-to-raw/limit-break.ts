@@ -7,19 +7,23 @@ export function extractLimitBreak(
   if (!unit.detail.limit?.length && !unit.detail.potential?.length)
     return undefined
 
-  const potentials: RawDB.LB.Potential[] =
-    unit.detail.potential?.map(p => ({
-      type: p.Name,
-      levels: p.description.map(desc => extractPotentialLevel(p.Name, desc)),
-    })) ?? []
+  try {
+    const potentials: RawDB.LB.Potential[] =
+      unit.detail.potential?.map(p => ({
+        type: p.Name,
+        levels: p.description.map(desc => extractPotentialLevel(p.Name, desc)),
+      })) ?? []
 
-  const path =
-    unit.detail.limit?.map(lb => extractLBPathLevel(lb.description)) ?? []
+    const path =
+      unit.detail.limit?.map(lb => extractLBPathLevel(lb.description)) ?? []
 
-  return {
-    path,
-    potentials,
-    lastTap: extractLastTap(unit),
+    return {
+      path,
+      potentials,
+      lastTap: extractLastTap(unit),
+    }
+  } catch (error) {
+    throw new Error(`unit ${unit.dbId} has an error: ${error.message}`)
   }
 }
 
