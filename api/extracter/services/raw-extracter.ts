@@ -69,9 +69,10 @@ function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
 function remapSingleCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.SingleCharacter {
+  const { limitBreak, ...base } = remapBaseCharacter(unit)
   return {
     type: extractColorType(unit),
-    ...remapBaseCharacter(unit),
+    ...base,
     captain: extractCaptain(unit),
     superType: !unit.detail.superSpecial
       ? undefined
@@ -83,6 +84,7 @@ function remapSingleCharacter(
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
     support: extractSupport(unit),
+    limitBreak,
     rumble: extractRumble(unit),
   }
 }
@@ -90,30 +92,34 @@ function remapSingleCharacter(
 function remapDualCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.DualCharacter {
+  const { limitBreak, ...base } = remapBaseCharacter(unit)
   return {
     type: 'DUAL',
-    ...remapBaseCharacter(unit),
+    ...base,
     captain: extractCaptain(unit),
     special: extractSpecial(unit),
     sailor: extractSailor(unit),
-    rumble: extractRumble(unit),
     characters: {
       swap: extractSwap(unit),
       character1: extractDualUnit(unit.dualCharacters![0], unit, 1),
       character2: extractDualUnit(unit.dualCharacters![1], unit, 2),
     },
+    limitBreak,
+    rumble: extractRumble(unit),
   }
 }
 
 function remapVersusCharacter(
   unit: OldDB.ExtendedUnit,
 ): RawDB.VersusCharacter {
+  const { limitBreak, ...base } = remapBaseCharacter(unit)
   return {
     type: 'VS',
-    ...remapBaseCharacter(unit),
+    ...base,
     captain: {
       name: '',
     },
+    limitBreak,
     characters: {
       criteria: unit.detail.VSCondition!,
       character1: extractVersusUnit(unit.dualCharacters![0], unit, true),
