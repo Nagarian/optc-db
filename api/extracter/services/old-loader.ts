@@ -15,6 +15,7 @@ import { fixupDetail } from './fixup/detail'
 import { fixupDualVersusMapping, isGhostUnit } from './fixup/dual-versus'
 import {
   addGloOnly,
+  fixupGloJapSpecial,
   fixupGloOnlyEvolution,
   fixupGloOnlyFlags,
   fixupGloOnlyImages,
@@ -44,6 +45,7 @@ export function LoadOldDb(): OldDB.ExtendedUnit[] {
 
   db = db
     .concat(addGloOnly(db))
+    .map(fixupGloJapSpecial)
     .map(fixupSuperEvolutionMap)
     .map(fixupGloOnlyImages)
     .map(fixupGloOnlyEvolution)
