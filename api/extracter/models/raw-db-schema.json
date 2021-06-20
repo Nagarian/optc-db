@@ -1107,6 +1107,10 @@
     "RawDB.PirateRumble.Stats": {
       "additionalProperties": false,
       "properties": {
+        "cost": {
+          "description": "Specify cost only if different from those default value:\n- Legend: 55\n- Kizuna, TM, PR: 35\n- PR RR, < 4* without evolution: 20\n- Others: 30",
+          "type": "number"
+        },
         "def": {
           "type": "number"
         },

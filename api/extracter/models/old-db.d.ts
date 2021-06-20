@@ -494,6 +494,7 @@ export declare namespace OldDB {
       def: number
       rumbleType: RumbleType
       spd: number
+      cost?: number
     }
 
     export type TargetClass = {

@@ -41,3 +41,32 @@ export function fixupVersusRumbleData(
     ],
   }
 }
+
+const range = (start: number, end: number) =>
+  Array.from({ length: end - start }, (_, i) => i + start)
+
+const permanentlyDiscounted = [
+  // mugiwara psy batch
+  ...range(2935, 2952),
+  // original usopp & its evolutions
+  ...[13, 14, 15, 16, 1446],
+  // stampede usopp
+  ...[2679, 2680],
+]
+
+export function fixupRumbleCost(unit: OldDB.ExtendedUnit): OldDB.ExtendedUnit {
+  if (!permanentlyDiscounted.includes(unit.id) || !unit.rumble) {
+    return unit
+  }
+
+  return {
+    ...unit,
+    rumble: {
+      ...unit.rumble,
+      stats: {
+        ...unit.rumble.stats,
+        cost: 20,
+      },
+    },
+  }
+}
