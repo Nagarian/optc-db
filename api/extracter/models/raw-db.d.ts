@@ -209,7 +209,6 @@ export declare namespace RawDB {
     frenchName?: string
     family: string[]
     // type: Type
-    class: Class
     rarity: Rarity
     cost: number
     slots: number
@@ -227,6 +226,7 @@ export declare namespace RawDB {
 
   export type SingleCharacter = BaseCharacter & {
     type: ColorType
+    class: Class
     captain?: Captain
     superType?: SuperType
     special?: Special
@@ -237,6 +237,7 @@ export declare namespace RawDB {
 
   export type DualCharacter = BaseCharacter & {
     type: 'DUAL'
+    class: Class
     captain?: Captain
     special?: Special
     sailor?: Sailor[]

@@ -262,7 +262,7 @@
           "type": "array"
         },
         "special": {
-          "$ref": "#/definitions/RawDB.Special"
+          "$ref": "#/definitions/RawDB.DualUnitSpecial"
         },
         "stats": {
           "$ref": "#/definitions/RawDB.Statistics"
@@ -296,6 +296,31 @@
         "character1",
         "character2",
         "swap"
+      ],
+      "type": "object"
+    },
+    "RawDB.DualUnitSpecial": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "stages": {
+          "items": {
+            "$ref": "#/definitions/RawDB.SpecialStage"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "description"
       ],
       "type": "object"
     },
@@ -1602,9 +1627,6 @@
         "characters": {
           "$ref": "#/definitions/RawDB.VersusUnitNode"
         },
-        "class": {
-          "$ref": "#/definitions/RawDB.Class"
-        },
         "cost": {
           "type": "number"
         },
@@ -1671,7 +1693,6 @@
         "aliases",
         "captain",
         "characters",
-        "class",
         "cost",
         "family",
         "flags",
