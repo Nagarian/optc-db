@@ -19,6 +19,10 @@ export function extractDualUnit(
   const sailors = extractSailor(unit)
   const unitClass = extractClass(unit)
   const unitType = extractColorType(unit)
+  const { cooldown, maxLevel, ...dualSpecial } =
+    extractSpecial({ ...unit, cooldown: base.cooldown }, dualNumber) ||
+    extractSpecial(base, dualNumber) ||
+    {}
 
   return {
     name: unit.name.replace('[Dual Unit] ', ''),
@@ -28,9 +32,9 @@ export function extractDualUnit(
     type: unitType,
     stats: extractStats(unit),
     captain: extractCaptain(unit) || extractCaptain(base),
-    special:
-      extractSpecial({ ...unit, cooldown: base.cooldown }, dualNumber) ||
-      extractSpecial(base, dualNumber),
+    special: Object.keys(dualSpecial).length
+      ? (dualSpecial as RawDB.DualUnitSpecial)
+      : undefined,
     sailor: sailors?.length ? sailors : extractSailor(base),
   }
 }

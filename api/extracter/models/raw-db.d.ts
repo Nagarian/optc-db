@@ -66,6 +66,13 @@ export declare namespace RawDB {
     stages?: SpecialStage[]
   }
 
+  export type DualUnitSpecial = {
+    name: string
+    description: string
+    notes?: string
+    stages?: SpecialStage[]
+  }
+
   export type Sailor = {
     description: string
     notes?: string
@@ -148,7 +155,7 @@ export declare namespace RawDB {
     class: Class
     stats: Statistics
     captain?: Captain
-    special?: Special
+    special?: DualUnitSpecial
     sailor?: Sailor[]
   }
 
