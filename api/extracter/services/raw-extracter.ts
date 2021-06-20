@@ -13,7 +13,7 @@ import {
   extractFamily,
   extractFrenchName,
   extractJapanName,
-  extractRealType
+  extractRealType,
 } from './old-to-raw/old-db-helper'
 import { extractRumble } from './old-to-raw/rumble'
 import { extractSailor } from './old-to-raw/sailor'
@@ -50,7 +50,6 @@ function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
     frenchName: extractFrenchName(unit),
     japanName: extractJapanName(unit),
     family: extractFamily(unit),
-    class: extractClass(unit, true),
     rarity: unit.stars,
     stats: extractStats(unit),
     cost: unit.cost,
@@ -66,12 +65,26 @@ function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
   }
 }
 
-function remapSingleCharacter(
-  unit: OldDB.ExtendedUnit,
-): RawDB.SingleCharacter {
-  const { limitBreak, ...base } = remapBaseCharacter(unit)
+function remapSingleCharacter(unit: OldDB.ExtendedUnit): RawDB.SingleCharacter {
+  const {
+    $schema,
+    oldDbId,
+    name,
+    frenchName,
+    japanName,
+    family,
+    limitBreak,
+    ...base
+  } = remapBaseCharacter(unit)
   return {
+    $schema,
     type: extractColorType(unit),
+    oldDbId,
+    name,
+    frenchName,
+    japanName,
+    family,
+    class: extractClass(unit, true),
     ...base,
     captain: extractCaptain(unit),
     superType: !unit.detail.superSpecial
@@ -89,12 +102,26 @@ function remapSingleCharacter(
   }
 }
 
-function remapDualCharacter(
-  unit: OldDB.ExtendedUnit,
-): RawDB.DualCharacter {
-  const { limitBreak, ...base } = remapBaseCharacter(unit)
+function remapDualCharacter(unit: OldDB.ExtendedUnit): RawDB.DualCharacter {
+  const {
+    $schema,
+    oldDbId,
+    name,
+    frenchName,
+    japanName,
+    family,
+    limitBreak,
+    ...base
+  } = remapBaseCharacter(unit)
   return {
+    $schema,
     type: 'DUAL',
+    oldDbId,
+    name,
+    frenchName,
+    japanName,
+    family,
+    class: extractClass(unit, true),
     ...base,
     captain: extractCaptain(unit),
     special: extractSpecial(unit),
@@ -109,11 +136,10 @@ function remapDualCharacter(
   }
 }
 
-function remapVersusCharacter(
-  unit: OldDB.ExtendedUnit,
-): RawDB.VersusCharacter {
-  const { limitBreak, ...base } = remapBaseCharacter(unit)
+function remapVersusCharacter(unit: OldDB.ExtendedUnit): RawDB.VersusCharacter {
+  const { $schema, limitBreak, ...base } = remapBaseCharacter(unit)
   return {
+    $schema,
     type: 'VS',
     ...base,
     captain: {
