@@ -75,7 +75,7 @@ export declare namespace RawDB {
     value: number
     reduction?: number
     description?: string
-    }
+  }
 
   export type StatsType = typeof StatsTypes[number]
 
@@ -450,6 +450,14 @@ export declare namespace RawDB {
       def: number
       rumbleType: RumbleType
       spd: number
+      /**
+       * Specify cost only if different from those default value:
+       * - Legend: 55
+       * - Kizuna, TM, PR: 35
+       * - PR RR, < 4* without evolution: 20
+       * - Others: 30
+       */
+      cost?: number
     }
 
     export type TargetClass = {
