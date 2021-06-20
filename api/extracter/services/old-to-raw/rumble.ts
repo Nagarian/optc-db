@@ -11,11 +11,11 @@ export function extractRumble(
   const { ability, pattern, special, target, stats, resilience } = unit.rumble
 
   return {
-    ability,
-    pattern,
-    special,
-    target,
     stats,
+    target,
+    pattern,
     resilience,
+    ability,
+    special,
   }
 }
