@@ -15,9 +15,9 @@ const isDualCharacterSpecial = (
 ): special is OldDB.DualCharacterSpecial =>
   !!(special as OldDB.DualCharacterSpecial).character1
 
-const isGloJapSpecial = (
-  special: OldDB.UnitSpecial,
-): special is OldDB.GloJapSpecial => !!(special as OldDB.GloJapSpecial).global
+export const isGloJapSpecial = (
+  special?: OldDB.UnitSpecial,
+): special is OldDB.GloJapSpecial => !!(special as OldDB.GloJapSpecial)?.global
 
 export function extractSpecial(
   unit: OldDB.ExtendedUnit,
