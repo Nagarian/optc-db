@@ -1,5 +1,6 @@
 import { OldDB } from '../../models/old-db'
 import { flagNotes } from './flags'
+import { cleanHmtl } from './old-db-helper'
 
 const rootNotes: Record<number, string> = {
   3383: 'This unit has been given only for those who have dropped "Red Hair Pirates, Pirates Enjoying a Feast" on their debuting Sugo-Fest.',
@@ -64,23 +65,26 @@ export function extractNotes(notes?: string): string | undefined {
   if (!notes) return undefined
 
   return (
-    notes
-      .replace(/#\{(.+?)\}/g, (match, matchingContent: string) => {
-        const [key] = matchingContent.trim().split(/:/) ?? []
+    cleanHmtl(
+      notes
+        .replace(/#\{(.+?)\}/g, (match, matchingContent: string) => {
+          const [key] = matchingContent.trim().split(/:/) ?? []
 
-        if (!key) {
+          if (!key) {
+            return match
+          }
+
+          if (computableNotes.hasOwnProperty(key.trim())) {
+            return ''
+          } else if (notes.hasOwnProperty(key.trim())) {
+            console.error(`Unrecognized key: ${key}`)
+          }
+
           return match
-        }
-
-        if (computableNotes.hasOwnProperty(key.trim())) {
-          return ''
-        } else if (notes.hasOwnProperty(key.trim())) {
-          console.error(`Unrecognized key: ${key}`)
-        }
-
-        return match
-      })
-      .replace('<br>', '\n')
-      .trim() || undefined
+        })
+        .trim()
+        .replace(/#{/gi, '<code>')
+        .replace(/}/gi, '</code>'),
+    ).trim() || undefined
   )
 }

@@ -1,5 +1,6 @@
 import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
+import { extractDescription } from './description'
 import { extractNotes } from './notes'
 
 const isSimpleCaptain = (
@@ -30,7 +31,7 @@ export function extractCaptain(
   if (isSimpleCaptain(captain)) {
     return {
       name: '',
-      description: captain,
+      description: extractDescription(captain),
       notes: extractNotes(unit.detail.captainNotes),
     }
   }
@@ -38,7 +39,7 @@ export function extractCaptain(
   if (isDualCaptain(captain)) {
     return {
       name: '',
-      description: captain.combined,
+      description: extractDescription(captain.combined),
       notes: extractNotes(unit.detail.captainNotes),
     }
   }
@@ -51,11 +52,11 @@ export function extractCaptain(
     const upgrades = Object.entries(captain)
       .filter(([key, desc]) => key.startsWith('level'))
       .flatMap(([key, desc]) => (desc ? [desc] : []))
-      .map<RawDB.CaptainUpgrade>(description => ({ description }))
+      .map<RawDB.CaptainUpgrade>(description => ({ description: extractDescription(description) }))
 
     return {
       name: '',
-      description: captain.base,
+      description: extractDescription(captain.base),
       notes: extractNotes(unit.detail.captainNotes),
       upgrades,
     }

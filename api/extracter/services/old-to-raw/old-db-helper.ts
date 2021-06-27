@@ -1,3 +1,4 @@
+import Turndown from 'turndown'
 import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
 
@@ -86,6 +87,15 @@ export function extractFrenchName(
 
 export function extractJapanName(unit: OldDB.ExtendedUnit): string | undefined {
   return unit.aliases?.[0] || undefined
+}
+
+export function cleanHmtl(description: string) {
+  var t = new Turndown({ bulletListMarker: '-' })
+  return t
+    .turndown(description)
+    .replace(/\\\[/gi, '[')
+    .replace(/\\\]/gi, ']')
+    .trim()
 }
 
 // const isColorTypeRegex = /\[(STR|DEX|QCK|PSY|INT)\]/
