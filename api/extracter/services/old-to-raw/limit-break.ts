@@ -33,7 +33,7 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
     /^Boosts base ATK by (?<value>\d+|\?)$/i,
   ],
   'Critical Hit': [
-    /^If you hit a PERFECT with this character, there is a (?<threshold>\d+|\?)% chance to deal (?<value>\d+|\?)% of this character's attack in extra damage$/i,
+    /^If you hit a PERFECT with this character, there is an? (?<threshold>\d+|\?)% chance to deal (?<value>\d+|\?)% of this character's attack in extra damage$/i,
   ],
   'Reduce Slot Bind duration': [
     /^Reduces Slot Bind duration by (?<value>\d+|\?) turns? on this character$/i,
