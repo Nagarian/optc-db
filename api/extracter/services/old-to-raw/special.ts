@@ -1,5 +1,6 @@
 import { OldDB } from '../../models/old-db'
 import { RawDB } from '../../models/raw-db'
+import { extractDescription } from './description'
 import { extractNotes } from './notes'
 
 const isSimpleSpecial = (
@@ -36,7 +37,7 @@ export function extractSpecial(
   if (isSimpleSpecial(special)) {
     return {
       name: unit.detail.specialName || '',
-      description: special,
+      description: extractDescription(special),
       cooldown: cooldown[0],
       maxLevel: cooldown[1],
       notes: extractNotes(unit.detail.specialNotes),
@@ -44,6 +45,7 @@ export function extractSpecial(
   }
 
   if (isGloJapSpecial(special)) {
+    console.warn(`${unit.id} is an unexpected glo-jep diff special unit`)
     return {
       name: unit.detail.specialName || '',
       description: `- global: ${special.global}\n\n- japan:${special.japan}`,
@@ -62,7 +64,7 @@ export function extractSpecial(
         : special.character2
     return {
       name: unit.detail.specialName || '',
-      description,
+      description: extractDescription(description),
       cooldown: cooldown[0],
       maxLevel: cooldown[1],
       notes: extractNotes(unit.detail.specialNotes),
@@ -73,7 +75,7 @@ export function extractSpecial(
     const spe = special[special.length - 1]
     return {
       name: unit.detail.specialName || '',
-      description: spe.description,
+      description: extractDescription(spe.description),
       cooldown: spe.cooldown[0],
       maxLevel: spe.cooldown[0] - spe.cooldown[1] + 1,
       stages: special
