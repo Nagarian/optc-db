@@ -17,7 +17,12 @@ export function fixupSuperEvolutionMap(
   _index: number,
   _units: OldDB.ExtendedUnit[],
 ): OldDB.ExtendedUnit {
-  return fixSuperEvolution_Lucci(unit) ?? fixSuperEvolution_Robin(unit) ?? unit
+  return (
+    fixSuperEvolution_Lucci(unit) ??
+    fixSuperEvolution_Robin(unit) ??
+    fixSuperEvolution_SaboDex(unit) ??
+    unit
+  )
 }
 
 function fixSuperEvolution_Lucci(
@@ -72,6 +77,18 @@ function fixSuperEvolution_Robin(
     ...unit,
     evolutionMap: [...unit.evolutionMap, 5062],
   }
+}
+
+function fixSuperEvolution_SaboDex(unit: OldDB.ExtendedUnit) {
+  if (unit.id === 5022) {
+    if (unit.evolution) {
+      unit.evolution = undefined
+    } else {
+      console.warn('issue with unit 5022 has been fixed')
+    }
+  }
+
+  return unit
 }
 
 export function fixupGloOnlyImages(
