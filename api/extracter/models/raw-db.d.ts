@@ -91,7 +91,13 @@ export declare namespace RawDB {
     criteria: string
     statsTypes: StatsType[]
     defenseType?: ColorType
-    levels: [StatSupportLevel, StatSupportLevel, StatSupportLevel, StatSupportLevel, StatSupportLevel]
+    levels: [
+      StatSupportLevel,
+      StatSupportLevel,
+      StatSupportLevel,
+      StatSupportLevel,
+      StatSupportLevel,
+    ]
     notes?: string
   }
 
@@ -417,6 +423,7 @@ export declare namespace RawDB {
       duration?: number
       targeting: Targeting
       amount?: number
+      interval?: number
       level?: number
       range?: Range
       condition?: Condition

@@ -453,6 +453,7 @@ export declare namespace OldDB {
       duration?: number
       targeting: Targeting
       amount?: number
+      interval?: number
       level?: number
       range?: Range
       condition?: Condition
