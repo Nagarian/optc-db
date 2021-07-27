@@ -583,6 +583,9 @@
         "effect": {
           "$ref": "#/definitions/RawDB.PirateRumble.EffectEnum"
         },
+        "interval": {
+          "type": "number"
+        },
         "level": {
           "type": "number"
         },
@@ -688,6 +691,9 @@
         },
         "effect": {
           "$ref": "#/definitions/RawDB.PirateRumble.EffectEnum"
+        },
+        "interval": {
+          "type": "number"
         },
         "level": {
           "type": "number"
@@ -874,6 +880,9 @@
             "duration": {
               "type": "number"
             },
+            "interval": {
+              "type": "number"
+            },
             "level": {
               "type": "number"
             },
@@ -994,6 +1003,9 @@
         },
         "effect": {
           "$ref": "#/definitions/RawDB.PirateRumble.EffectEnum"
+        },
+        "interval": {
+          "type": "number"
         },
         "level": {
           "type": "number"
