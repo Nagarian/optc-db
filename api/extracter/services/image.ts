@@ -44,8 +44,14 @@ export async function downloadJapCharacters(units: OldDB.ExtendedUnit[]) {
       recursive: true,
     })
 
+    const idNormalized = unit.id.toString().padStart(4, '0')
+
     promises.push(
-      downloadImage(unit.images.thumbnail, japPath).then(() => bar.increment()),
+      downloadImage(
+        unit.images.thumbnail ??
+          `https://onepiece-treasurecruise.com/wp-content/uploads/f${idNormalized}.png`,
+        japPath,
+      ).then(() => bar.increment()),
     )
 
     if (unit.dualCharacters?.length) {
