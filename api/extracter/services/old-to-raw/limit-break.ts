@@ -44,7 +44,7 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
     /^If there are (?<threshold>\d+|\?) Shooter characters in your crew, reduces No Healing duration by (?<value>\d+|\?) turns?$/i,
   ],
   'Pinch Healing': [
-    /^If HP is below (?<threshold>\d+|\?)% at the start of the turn, (recovers|heals for) (?<value>\d+\.?\d*|\?)x this character's RCV at the end of the turn each time you hit a PERFECT with this character$/i,
+    /^If HP is below (?<threshold>\d+|\?)% at the start of the turn, (recovers|heals for) (?<value>\d+\.?\d*|\?)x this character's RCV at the end of the turn for each time you hit a PERFECT with this character$/i,
   ],
   'Barrier Penetration': [
     /^This character's normal attack will ignore barriers if HP is above (?<threshold>\d+|\?)% at the start of the turn$/i,
@@ -69,8 +69,8 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
     /^Reduce own Special Cooldown by (?<value>\d+|\?) turns? at the start of the fight$/i,
   ],
   'Double Special Activation': [
-    /^Once per an adventure, reduce own Special Cooldown by (?<value>\d+|\?) turns? after the first time this special is used$/i,
-    /^Once per an adventure, sets your Special Gauge to (?<value>MAX) after the first time this special is used$/i,
+    /^Once per adventure, reduce own Special Cooldown by (?<value>\d+|\?) turns? after the first time this special is used$/i,
+    /^Once per adventure, sets your Special Gauge to (?<value>MAX) after the first time this special is used$/i,
   ],
   'Reduce Ship Bind duration': [
     /^Reduce Ship Bind duration by (?<value>\d+|\?) turns?$/i,
