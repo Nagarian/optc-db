@@ -74,6 +74,7 @@ function GetExtendedUnit(unit: OldDB.BaseUnit): OldDB.ExtendedUnit {
     flags,
     family: DBfamily[unit.number] ?? undefined,
     pirateFest: unit.pirateFest?.class ? unit.pirateFest : undefined,
+    pirateFest2: undefined,
     evolutionMap: evolutionMap[dbId] ?? [dbId],
     aliases: DBalias[dbId],
     gamewith: DBgamewith[unit.number] ?? undefined,

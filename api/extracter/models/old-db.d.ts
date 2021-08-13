@@ -66,6 +66,13 @@ export declare namespace OldDB {
       minCP?: null
       maxCP?: null
     }
+    pirateFest2?: {
+      class?: RumbleStyle
+      DEF?: number | null
+      SPD?: number | null
+      minCP?: null
+      maxCP?: null
+    } | null
     incomplete?: boolean
     preview?: boolean
   }
