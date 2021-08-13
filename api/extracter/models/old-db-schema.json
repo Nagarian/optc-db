@@ -335,6 +335,40 @@
           },
           "type": "object"
         },
+        "pirateFest2": {
+          "anyOf": [
+            {
+              "additionalProperties": false,
+              "properties": {
+                "DEF": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "SPD": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "class": {
+                  "$ref": "#/definitions/OldDB.RumbleStyle"
+                },
+                "maxCP": {
+                  "type": "null"
+                },
+                "minCP": {
+                  "type": "null"
+                }
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
         "preview": {
           "type": "boolean"
         },

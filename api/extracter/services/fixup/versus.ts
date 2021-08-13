@@ -11,6 +11,7 @@ export function fixupVersusUnit(unit: OldDB.ExtendedUnit): OldDB.ExtendedUnit {
   const duplicated = {
     ...unit,
     pirateFest: undefined,
+    pirateFest2: undefined,
     detail: {
       ...untyped.detail,
       festAbility: undefined,
