@@ -6,7 +6,7 @@ export function extractLinks(
 ): RawDB.AffiliatedLinks | undefined {
   const officialJapan = extractOfficialJapan(unit)
 
-  if (!unit.gamewith || !officialJapan) return undefined
+  if (!unit.gamewith && !officialJapan) return undefined
 
   return {
     gamewithId: unit.gamewith,
