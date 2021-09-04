@@ -53,7 +53,9 @@ export async function writeToDisk(
   console.timeEnd(timerLabel)
 }
 
-export async function loadFromDisk(): Promise<RawDB.DBCharacter[]> {
+export async function loadFromDisk(
+  mode: WriteType,
+): Promise<RawDB.DBCharacter[]> {
   console.log('Loading RawDB from disk - starting')
   const timerLabel = 'Loading RawDB from disk done'
   console.time(timerLabel)
@@ -61,7 +63,11 @@ export async function loadFromDisk(): Promise<RawDB.DBCharacter[]> {
   const result: RawDB.DBCharacter[] = []
 
   for await (const file of walk(basePath)) {
-    const character = JSON.parse(await readFile(file, 'utf-8'))
+    const fileStr = await readFile(file, 'utf-8')
+    const character =
+      mode === 'json' || mode === 'all'
+        ? JSON.parse(fileStr)
+        : YAML.parse(fileStr)
     const id = parseInt(basename(file, extname(file)), 10)
     result.push([id, character])
   }
