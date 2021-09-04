@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "old-extract": "ts-node old-extract.ts",
-    "old-schema": "ts-json-schema-generator -f ./tsconfig.json -o './models/old-db-schema.json' --path './models/old-db.d.ts' --type 'OldDB.ExtendedUnit'",
+    "old-schema": "ts-json-schema-generator -f ./tsconfig.json -o './old-to-raw/models/old-db-schema.json' --path './old-to-raw/models/old-db.d.ts' --type 'OldDB.ExtendedUnit'",
     "extract": "ts-node extract.ts",
-    "raw-schema": "ts-json-schema-generator -f ./tsconfig.json --path './models/raw-db.d.ts' -o './models/raw-db-schema.json' --type 'RawDB.Character'"
+    "raw-schema": "ts-json-schema-generator -f ./tsconfig.json --path './raw-db/models/raw-db.d.ts' -o './raw-db/models/raw-db-schema.json' --type 'RawDB.Character'"
   },
   "dependencies": {
     "@types/node": "^15.0.1",
