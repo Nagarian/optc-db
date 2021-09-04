@@ -1,12 +1,13 @@
-import { downloadGloCharacters, downloadJapCharacters } from './services/image'
-import { LoadOldDb } from './services/old-loader'
-import { validate as oldValidate } from './services/old-validator'
-import { remapper } from './services/raw-extracter'
-import { writeToDisk } from './services/raw-fs'
-import { validate } from './services/raw-validator'
+import { downloadGloCharacters, downloadJapCharacters } from './raw-db/image'
+import { LoadOldDb } from './old-to-raw/old-loader'
+import { validate as oldValidate } from './old-to-raw/old-validator'
+import { remapper } from './old-to-raw/raw-extracter'
+import { writeToDisk } from './raw-db/raw-fs'
+import { validate } from './raw-db/raw-validator'
 
 async function main() {
   const oldDb = LoadOldDb()
+
   if (!oldValidate(oldDb)) {
     process.exit(-1)
   }

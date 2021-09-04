@@ -6,13 +6,15 @@ With the new structure, there will be two main folder `api/raw/**` and `api/extr
 ## TODO
 
 - [ ] Finish raw-db
-  - [ ] add pirateFest
+  - [x] add pirateFest
   - [x] add flags/dropLocation
   - [x] add raw validation
   - [x] add write to disk
-  - [ ] Improve support by removing stats supporter description
+  - [x] Improve support by removing stats supporter description
+  - [ ] add drop
+  - [x] clean HMTL from all input field
 - [x] add images download
 - [ ] add final-db generator
   - [ ] add enhancer
   - [ ] add final json format
-- [ ] Reorganize files
+- [x] Reorganize files
