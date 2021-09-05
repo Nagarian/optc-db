@@ -4,7 +4,6 @@ import {
   CharacterTypes,
   Potentials,
   Rarities,
-  RumbleStyles,
 } from '../../models/constants'
 import { Flags, LBPathTypes, StatsTypes } from './raw-constant'
 
@@ -14,7 +13,6 @@ export declare namespace RawDB {
   export type ClassKey = typeof CharacterClasses[number]
   export type Class = [ClassKey?, ClassKey?]
   export type Rarity = typeof Rarities[number]
-  export type RumbleStyle = typeof RumbleStyles[number]
 
   export type Flag = typeof Flags[number]
 
