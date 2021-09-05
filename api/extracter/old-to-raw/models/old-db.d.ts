@@ -2,7 +2,6 @@ import {
   Potentials,
   Rarities,
   CharacterClasses,
-  RumbleStyles,
   CharacterTypes,
 } from '../../models/constants'
 
@@ -12,7 +11,8 @@ export declare namespace OldDB {
 
   export type Rarity = typeof Rarities[number]
 
-  export type RumbleStyle = typeof RumbleStyles[number]
+  export type RumbleStyle = 'ATK' | 'DEF' | 'RCV' | 'DBF' | 'SPT'
+
 
   export type MultiClass = [Class, Class]
   export type DualClass = [[Class, Class], [Class, Class], [Class, Class]]
@@ -525,8 +525,14 @@ export declare namespace OldDB {
       global?: boolean
       nakama?: number
       gamewith?: number
-    } & {
-      [additionalKey: string]: number[]
+      slefty?: string
+      day?: number // booster
+      completion?: string //story
+      condition?: string //fortnight
+      challenge?: string
+      challengeData?: string[][]
+      showManual?: boolean
+      [stage: string]: number[]
     }
 
     export type BaseDrops = { [eventType: string]: BaseDropEvent[] }
@@ -544,24 +550,5 @@ export declare namespace OldDB {
     export type BookEventDrop = EventDrop & {
       category: Type
     }
-
-    // export type Drop = {
-    //   name: string
-    //   dropID: string
-    //   thumb: number
-    //   global: boolean
-    //   nakama: number
-    //   gamewith: number
-    //   slefty: string
-    //   day: number // booster
-    //   completion?: string //story
-    //   condition: string //fortnight
-    //   challenge: string
-    //   challengeData: string[][]
-    //   showManual: boolean
-    //   [stage: string]: number[]
-    // }
-
-    // export type DropDB = Record<string, Drop[]>
   }
 }

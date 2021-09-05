@@ -16,8 +16,6 @@ export const CharacterClasses = [
 
 export const Rarities = [1, 2, 3, 4, '4+', 5, '5+', 6, '6+'] as const
 
-export const RumbleStyles = ['ATK', 'DEF', 'RCV', 'DBF', 'SPT'] as const
-
 export const Potentials = [
   'Enrage/Reduce Increase Damage Taken duration',
   'Critical Hit',
