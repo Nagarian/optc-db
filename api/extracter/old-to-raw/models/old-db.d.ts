@@ -14,9 +14,10 @@ export declare namespace OldDB {
   export type RumbleStyle = 'ATK' | 'DEF' | 'RCV' | 'DBF' | 'SPT'
 
   export type MultiClass = [Class, Class]
-  export type DualClass = [[Class, Class], [Class, Class], [Class, Class]]
-  export type VersusClass = [[Class, Class], [Class, Class]]
-  export type UnitClass = Class | MultiClass | DualClass | VersusClass
+  export type SingleClass = Class | MultiClass
+  export type DualClass = [SingleClass, SingleClass, SingleClass]
+  export type VersusClass = [SingleClass, SingleClass]
+  export type UnitClass = SingleClass | DualClass | VersusClass
   export type UnitType = Type | [Type, Type]
 
   export type BaseUnit = {

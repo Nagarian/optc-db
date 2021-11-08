@@ -35,7 +35,7 @@ export function extractClass(
   }
 
   if (isDualClass(unit.class)) {
-    return unit.class[0]
+    return isSimpleClass(unit.class[0]) ? [unit.class[0]] : unit.class[0]
   }
 
   if (isVersusClass(unit.class)) {
