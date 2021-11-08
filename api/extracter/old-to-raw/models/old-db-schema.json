@@ -55,12 +55,7 @@
     },
     "OldDB.DualClass": {
       "items": {
-        "items": {
-          "$ref": "#/definitions/OldDB.Class"
-        },
-        "maxItems": 2,
-        "minItems": 2,
-        "type": "array"
+        "$ref": "#/definitions/OldDB.SingleClass"
       },
       "maxItems": 3,
       "minItems": 3,
@@ -1331,6 +1326,16 @@
     "OldDB.SimpleStageSpecial": {
       "type": "string"
     },
+    "OldDB.SingleClass": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.Class"
+        },
+        {
+          "$ref": "#/definitions/OldDB.MultiClass"
+        }
+      ]
+    },
     "OldDB.Type": {
       "enum": [
         "STR",
@@ -1346,10 +1351,7 @@
     "OldDB.UnitClass": {
       "anyOf": [
         {
-          "$ref": "#/definitions/OldDB.Class"
-        },
-        {
-          "$ref": "#/definitions/OldDB.MultiClass"
+          "$ref": "#/definitions/OldDB.SingleClass"
         },
         {
           "$ref": "#/definitions/OldDB.DualClass"
@@ -1797,12 +1799,7 @@
     },
     "OldDB.VersusClass": {
       "items": {
-        "items": {
-          "$ref": "#/definitions/OldDB.Class"
-        },
-        "maxItems": 2,
-        "minItems": 2,
-        "type": "array"
+        "$ref": "#/definitions/OldDB.SingleClass"
       },
       "maxItems": 2,
       "minItems": 2,
