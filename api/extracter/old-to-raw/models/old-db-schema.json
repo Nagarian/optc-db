@@ -134,8 +134,18 @@
           },
           "type": "array"
         },
-        "family": {
-          "$ref": "#/definitions/OldDB.UnitFamily"
+        "families": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "flags": {
           "$ref": "#/definitions/OldDB.UnitFlags"
@@ -392,6 +402,7 @@
         "dbId",
         "detail",
         "evolutionMap",
+        "families",
         "flags",
         "growth",
         "id",
@@ -1546,19 +1557,6 @@
       "type": [
         "number",
         "string"
-      ]
-    },
-    "OldDB.UnitFamily": {
-      "anyOf": [
-        {
-          "type": "string"
-        },
-        {
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        }
       ]
     },
     "OldDB.UnitFestAbility": {

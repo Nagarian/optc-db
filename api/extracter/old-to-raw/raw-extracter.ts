@@ -1,8 +1,9 @@
-import { RawDB } from '../raw-db/models/raw-db'
 import { OldDB } from '../old-to-raw/models/old-db'
+import { RawDB } from '../raw-db/models/raw-db'
 import { extractCaptain } from './remapper/captain'
 import { extractDualUnit } from './remapper/dual'
 import { extractEvolution } from './remapper/evolution'
+import { extractFamily } from './remapper/family'
 import { extractFlags } from './remapper/flags'
 import { extractLimitBreak } from './remapper/limit-break'
 import { extractLinks } from './remapper/links'
@@ -10,7 +11,6 @@ import { extractNotes, extractRootNotes } from './remapper/notes'
 import {
   extractClass,
   extractColorType,
-  extractFamily,
   extractFrenchName,
   extractJapanName,
   extractRealType,
@@ -65,15 +65,8 @@ function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
 }
 
 function remapSingleCharacter(unit: OldDB.ExtendedUnit): RawDB.SingleCharacter {
-  const {
-    oldDbId,
-    name,
-    frenchName,
-    japanName,
-    family,
-    limitBreak,
-    ...base
-  } = remapBaseCharacter(unit)
+  const { oldDbId, name, frenchName, japanName, family, limitBreak, ...base } =
+    remapBaseCharacter(unit)
   return {
     type: extractColorType(unit),
     oldDbId,
@@ -100,15 +93,8 @@ function remapSingleCharacter(unit: OldDB.ExtendedUnit): RawDB.SingleCharacter {
 }
 
 function remapDualCharacter(unit: OldDB.ExtendedUnit): RawDB.DualCharacter {
-  const {
-    oldDbId,
-    name,
-    frenchName,
-    japanName,
-    family,
-    limitBreak,
-    ...base
-  } = remapBaseCharacter(unit)
+  const { oldDbId, name, frenchName, japanName, family, limitBreak, ...base } =
+    remapBaseCharacter(unit)
   return {
     type: 'DUAL',
     oldDbId,

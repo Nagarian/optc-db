@@ -5,6 +5,7 @@ import {
   Potentials,
   Rarities,
 } from '../../models/constants'
+import { FamiliesKey } from '../../models/constants-families'
 import { Flags, LBPathTypes, StatsTypes } from './raw-constant'
 
 export declare namespace RawDB {
@@ -39,8 +40,15 @@ export declare namespace RawDB {
 
   export type Captain = {
     name: string
+    /**
+     * Always put the base description here, that also apply to TM characters
+     */
     description: string
     notes?: string
+    /**
+     * Put upgrade by ascending order like LB level (ie: 1 -> 6)
+     * Do not repeat the base description here
+     */
     upgrades?: CaptainUpgrade[]
   }
 
@@ -57,10 +65,16 @@ export declare namespace RawDB {
 
   export type Special = {
     name: string
+    /**
+     * Always put the latest special stage here
+     */
     description: string
     cooldown?: number
     maxLevel?: number
     notes?: string
+    /**
+     * Put stage by ascending order (ie: 1 -> 6) but without the latest you have already specified above
+     */
     stages?: SpecialStage[]
   }
 
@@ -205,12 +219,14 @@ export declare namespace RawDB {
     criteria: string
   }
 
+  export type Family = typeof FamiliesKey[number]
+
   export type BaseCharacter = {
     oldDbId?: number
     name: string
     japanName?: string
     frenchName?: string
-    family: string[]
+    family: Family[]
     // type: Type
     rarity: Rarity
     cost: number

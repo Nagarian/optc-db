@@ -11,7 +11,7 @@ export const isMultiClass = (
   Array.isArray(value) && value.length === 2 && !Array.isArray(value[0])
 
 export const isDualClass = (value: OldDB.UnitClass): value is OldDB.DualClass =>
-  Array.isArray(value) && value.length === 3 && Array.isArray(value[0])
+  Array.isArray(value) && value.length === 3 && !!value[0]
 
 export const isVersusClass = (
   value: OldDB.UnitClass,
@@ -65,18 +65,6 @@ export function extractRealType(unit: OldDB.ExtendedUnit): RawDB.Type {
   }
 
   return 'DUAL'
-}
-
-export function extractFamily(unit: OldDB.ExtendedUnit): string[] {
-  if (!unit.family) {
-    return []
-  }
-
-  if (typeof unit.family === 'string') {
-    return [unit.family]
-  }
-
-  return unit.family
 }
 
 export function extractFrenchName(
