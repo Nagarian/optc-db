@@ -78,4 +78,9 @@ const complexMapping: Record<number, string[]> = {
   ],
   3279: ['[Dual Unit] Marshall D. Teach, Two Overwhelming Abilities'],
   3280: ['[Dual Unit] Blackbeard, Two Overwhelming Abilities'],
+  3432: [
+    '[Dual Unit] Ulti',
+    '[Dual Unit] Page One',
+    '[Dual Unit] Ulti & Page One',
+  ],
 }
