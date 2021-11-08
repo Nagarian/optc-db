@@ -306,6 +306,8 @@ export declare namespace RawDB {
       | 'Haste'
       | 'Counter'
       | 'near'
+      | 'hit'
+      | 'heal'
 
     export type Direction = 'forward' | 'radial' | 'sideways'
     export type Size = 'large' | 'small' | 'medium'
