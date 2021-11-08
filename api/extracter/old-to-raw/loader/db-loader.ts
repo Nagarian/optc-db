@@ -23,7 +23,7 @@ interface DBWindow {
   details: OldDB.UnitDetail[]
   cooldowns: OldDB.UnitCooldown[]
   flags: OldDB.UnitFlags[]
-  families: OldDB.UnitFamily[]
+  families: OldDB.UnitFamily
   units: OldDB.BaseUnit[]
   drops: OldDB.Drop.BaseDrops
   aliases: OldDB.Aliases

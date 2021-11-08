@@ -13,7 +13,6 @@ export declare namespace OldDB {
 
   export type RumbleStyle = 'ATK' | 'DEF' | 'RCV' | 'DBF' | 'SPT'
 
-
   export type MultiClass = [Class, Class]
   export type DualClass = [[Class, Class], [Class, Class], [Class, Class]]
   export type VersusClass = [[Class, Class], [Class, Class]]
@@ -25,6 +24,7 @@ export declare namespace OldDB {
     type: UnitType
     class: UnitClass
     stars: Rarity
+    families: string[] | null
     cost: number
     combo: number
     slots: number
@@ -272,7 +272,7 @@ export declare namespace OldDB {
     japOnly: 1
   }>
 
-  export type UnitFamily = string | string[]
+  export type UnitFamily = Record<number, string[]>
 
   export type ExtendedUnit = BaseUnit & {
     id: number
@@ -282,7 +282,6 @@ export declare namespace OldDB {
     cooldown?: UnitCooldown
     detail: UnitDetail
     flags: UnitFlags
-    family?: UnitFamily
     evolutionMap: number[]
     dualCharacters?: ExtendedUnit[]
     gamewith?: number
