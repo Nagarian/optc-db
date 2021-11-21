@@ -138,8 +138,11 @@ export declare namespace RawDB {
 
     export type PotentialType = typeof Potentials[number]
 
+    export type PotentialVariant = 'up to'
+
     export type Potential = {
       type: PotentialType
+      variant?: PotentialVariant
       levels: PotentialLevel[]
     }
 

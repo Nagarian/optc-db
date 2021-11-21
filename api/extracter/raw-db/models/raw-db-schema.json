@@ -1108,6 +1108,9 @@
         },
         "type": {
           "$ref": "#/definitions/RawDB.LB.PotentialType"
+        },
+        "variant": {
+          "$ref": "#/definitions/RawDB.LB.PotentialVariant"
         }
       },
       "required": [
@@ -1153,6 +1156,10 @@
         "Nutrition/Reduce Hunger duration",
         "Last Tap"
       ],
+      "type": "string"
+    },
+    "RawDB.LB.PotentialVariant": {
+      "const": "up to",
       "type": "string"
     },
     "RawDB.PirateRumble.Ability": {
