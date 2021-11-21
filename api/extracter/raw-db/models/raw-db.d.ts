@@ -443,6 +443,7 @@ export declare namespace RawDB {
       range?: Range
       condition?: Condition
       defbypass?: boolean
+      repeat?: number
     }
 
     export type CommonEffect = BasicEffect & {
