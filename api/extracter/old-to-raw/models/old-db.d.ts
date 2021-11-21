@@ -467,6 +467,7 @@ export declare namespace OldDB {
       range?: Range
       condition?: Condition
       defbypass?: boolean
+      repeat?: number
     }
 
     export type CommonEffect = BasicEffect & {
