@@ -9,10 +9,7 @@ export function extractLimitBreak(
 
   try {
     const potentials: RawDB.LB.Potential[] =
-      unit.detail.potential?.map(p => ({
-        type: p.Name,
-        levels: p.description.map(desc => extractPotentialLevel(p.Name, desc)),
-      })) ?? []
+      unit.detail.potential?.map(extractPotential) ?? []
 
     const path =
       unit.detail.limit?.map(lb => extractLBPathLevel(lb.description)) ?? []
@@ -24,6 +21,18 @@ export function extractLimitBreak(
     }
   } catch (error) {
     throw new Error(`unit ${unit.dbId} has an error: ${error.message}`)
+  }
+}
+
+function extractPotential(potential: OldDB.UnitPotential): RawDB.LB.Potential {
+  const levels = potential.description.map(desc =>
+    extractPotentialLevel(potential.Name, desc),
+  )
+
+  return {
+    type: potential.Name,
+    variant: levels.map(([_, variant]) => variant).find(v => v),
+    levels: levels.map(([l]) => l),
   }
 }
 
@@ -84,6 +93,7 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
   ],
   'Nutrition/Reduce Hunger duration': [
     /^Boosts base ATK by (?<value>\d+|\?) the turn after recovering (?<threshold>\d+,?\d*|\?) HP and reduces Hunger stack by (?<reduction>\d+|\?) stacks?$/i,
+    /^Boosts base ATK by (?<variant>up to) (?<value>\d+|\?) the turn after recovering up to (?<threshold>\d+,?\d*|\?) HP and reduces Hunger stack by (?<reduction>\d+|\?) stacks?$/i,
   ],
   'Last Tap': [/^Last Tap Ability Lv.(?<value>\d+|\?)$/i],
   'Reduce Slot Barrier duration': [
@@ -94,7 +104,7 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
 function extractPotentialLevel(
   type: RawDB.LB.PotentialType,
   potentialDesc: string,
-): RawDB.LB.PotentialLevel {
+): [RawDB.LB.PotentialLevel, RawDB.LB.PotentialVariant?] {
   const regexes = potentialsRegex[type]
 
   const matchingRegex = regexes.find(regex => regex.test(potentialDesc))
@@ -119,11 +129,14 @@ function extractPotentialLevel(
     }
   }
 
-  return {
-    value: mapper(result?.groups?.value),
-    threshold: mapper(result?.groups?.threshold),
-    reduction: mapper(result?.groups?.reduction),
-  }
+  return [
+    {
+      value: mapper(result?.groups?.value),
+      threshold: mapper(result?.groups?.threshold),
+      reduction: mapper(result?.groups?.reduction),
+    },
+    result?.groups?.variant as RawDB.LB.PotentialVariant,
+  ]
 }
 
 const lbPathRegex: Record<RawDB.LB.PathType, RegExp> = {
