@@ -20,7 +20,6 @@ export function fixupSuperEvolutionMap(
   return (
     fixSuperEvolution_Lucci(unit) ??
     fixSuperEvolution_Robin(unit) ??
-    fixSuperEvolution_SaboDex(unit) ??
     unit
   )
 }
@@ -79,18 +78,6 @@ function fixSuperEvolution_Robin(
   }
 }
 
-function fixSuperEvolution_SaboDex(unit: OldDB.ExtendedUnit) {
-  if (unit.id === 5022) {
-    if (unit.evolution) {
-      unit.evolution = undefined
-    } else {
-      console.warn('issue with unit 5022 has been fixed')
-    }
-  }
-
-  return unit
-}
-
 export function fixupGloOnlyImages(
   unit: OldDB.ExtendedUnit,
   _index: number,
@@ -125,7 +112,7 @@ export function fixupGloOnlyEvolution(
       ...unit.evolution,
       evolution: Array.isArray(unit.evolution.evolution)
         ? unit.evolution.evolution.map(id => globalOnlyReverseMap[id])
-        : globalOnlyReverseMap[unit.evolution.evolution],
+        : globalOnlyReverseMap[unit.evolution.evolution] ?? unit.evolution.evolution,
     },
   }
 }
