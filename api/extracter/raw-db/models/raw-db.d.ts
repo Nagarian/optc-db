@@ -283,16 +283,6 @@ export declare namespace RawDB {
   export type DBCharacter = [number, Character]
 
   export namespace PirateRumble {
-    export type ColorType = '[STR]' | '[DEX]' | '[QCK]' | '[PSY]' | '[INT]'
-    export type ClassType =
-      | 'Slasher'
-      | 'Fighter'
-      | 'Striker'
-      | 'Shooter'
-      | 'Cerebral'
-      | 'Free Spirit'
-      | 'Driven'
-      | 'Powerhouse'
     export type RumbleStatType = 'SPD' | 'ATK' | 'DEF' | 'HP' | 'RCV'
     export type RumbleType = 'DBF' | 'ATK' | 'SPT' | 'DEF' | 'RCV'
     export type AdditionalCriteriaType =
@@ -349,7 +339,7 @@ export declare namespace RawDB {
     export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below'
 
     export type TargetType = 'self' | 'crew' | 'enemies'
-    export type TargetElement = ColorType | ClassType | TargetType
+    export type TargetElement = ColorType | ClassKey | TargetType
 
     export type Action = 'attack' | 'heal'
     export type Area = 'Self' | 'Small' | 'Large' | 'Medium'
@@ -413,7 +403,7 @@ export declare namespace RawDB {
     }
 
     export type DamageResilience = {
-      attribute?: ColorType | ClassType | 'all'
+      attribute?: ColorType | ClassKey | 'all'
       percentage: number
       type: 'damage'
     }

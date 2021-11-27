@@ -1304,35 +1304,12 @@
           "$ref": "#/definitions/RawDB.PirateRumble.RumbleStatType"
         },
         {
-          "$ref": "#/definitions/RawDB.PirateRumble.ColorType"
+          "$ref": "#/definitions/RawDB.ColorType"
         },
         {
           "$ref": "#/definitions/RawDB.PirateRumble.AdditionalCriteriaType"
         }
       ]
-    },
-    "RawDB.PirateRumble.ClassType": {
-      "enum": [
-        "Slasher",
-        "Fighter",
-        "Striker",
-        "Shooter",
-        "Cerebral",
-        "Free Spirit",
-        "Driven",
-        "Powerhouse"
-      ],
-      "type": "string"
-    },
-    "RawDB.PirateRumble.ColorType": {
-      "enum": [
-        "[STR]",
-        "[DEX]",
-        "[QCK]",
-        "[PSY]",
-        "[INT]"
-      ],
-      "type": "string"
     },
     "RawDB.PirateRumble.CommonEffect": {
       "additionalProperties": false,
@@ -1443,10 +1420,10 @@
         "attribute": {
           "anyOf": [
             {
-              "$ref": "#/definitions/RawDB.PirateRumble.ColorType"
+              "$ref": "#/definitions/RawDB.ColorType"
             },
             {
-              "$ref": "#/definitions/RawDB.PirateRumble.ClassType"
+              "$ref": "#/definitions/RawDB.ClassKey"
             },
             {
               "const": "all",
@@ -1861,10 +1838,10 @@
     "RawDB.PirateRumble.TargetElement": {
       "anyOf": [
         {
-          "$ref": "#/definitions/RawDB.PirateRumble.ColorType"
+          "$ref": "#/definitions/RawDB.ColorType"
         },
         {
-          "$ref": "#/definitions/RawDB.PirateRumble.ClassType"
+          "$ref": "#/definitions/RawDB.ClassKey"
         },
         {
           "$ref": "#/definitions/RawDB.PirateRumble.TargetType"
