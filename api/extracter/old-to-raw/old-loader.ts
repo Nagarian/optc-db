@@ -21,7 +21,6 @@ import {
   DBcooldown,
   DBdetail,
   DBevolution,
-  DBfamily,
   DBflag,
   DBgamewith,
   DBunit,

@@ -6,7 +6,7 @@ import {
   Rarities,
 } from '../../models/constants'
 import { FamiliesKey } from '../../models/constants-families'
-import { Flags, LBPathTypes, StatsTypes } from './raw-constant'
+import { EvolutionSkulls, Flags, LBPathTypes, StatsTypes } from './raw-constant'
 
 export declare namespace RawDB {
   export type ColorType = typeof CharacterColors[number]
@@ -28,7 +28,8 @@ export declare namespace RawDB {
     maxLvl?: Statistic
   }
 
-  export type EvolutionMaterial = string | number
+  export type EvolutionSkull = typeof EvolutionSkulls[number]
+  export type EvolutionMaterial = EvolutionSkull | number
   export type Evolution = {
     id: number
     evolvers: EvolutionMaterial[]

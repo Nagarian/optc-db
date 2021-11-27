@@ -343,10 +343,25 @@
       "type": "object"
     },
     "RawDB.EvolutionMaterial": {
-      "type": [
-        "string",
-        "number"
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.EvolutionSkull"
+        },
+        {
+          "type": "number"
+        }
       ]
+    },
+    "RawDB.EvolutionSkull": {
+      "enum": [
+        "skull",
+        "skullSTR",
+        "skullDEX",
+        "skullQCK",
+        "skullPSY",
+        "skullINT"
+      ],
+      "type": "string"
     },
     "RawDB.Family": {
       "enum": [
