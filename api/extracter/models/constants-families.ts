@@ -637,4 +637,12 @@ export const FamiliesKey = [
   'Ulti',
   'BlackMaria',
   'WhosWho',
+
+  //manually added
+  'EvolverPenguin',
+  'Crab',
+  'StripedDragon',
+  'Turtle',
+  'SeaHorse',
+  'JeweledPorc',
 ] as const

@@ -1,4 +1,4 @@
-import { RawDB } from "../../raw-db/models/raw-db";
+import { RawDB } from '../../raw-db/models/raw-db'
 
 export const familiesKey: Record<RawDB.Family, string[]> = {
   MonkeyDLuffy: ['Monkey D. Luffy'],
@@ -639,4 +639,10 @@ export const familiesKey: Record<RawDB.Family, string[]> = {
   Ulti: ['Ulti'],
   BlackMaria: ['Black Maria'],
   WhosWho: ["Who's Who", 'Whos Who'],
+  EvolverPenguin: ['Evolver Penguin'],
+  Crab: ['Crab'],
+  StripedDragon: ['Striped Dragon'],
+  Turtle: ['Turtle'],
+  SeaHorse: ['Sea Horse'],
+  JeweledPorc: ['Jeweled Porc'],
 }
