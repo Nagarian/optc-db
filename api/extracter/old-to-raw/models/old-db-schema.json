@@ -550,22 +550,23 @@
     },
     "OldDB.PirateFest.AdditionalCriteriaType": {
       "enum": [
-        "Critical Hit",
-        "Guard",
         "Accuracy",
-        "Blow Away",
-        "Special CT",
-        "Silence",
-        "Provoke",
-        "Paralysis",
-        "Damage Over Time",
         "Action Bind",
+        "Blow Away",
+        "Counter",
+        "Critical Hit",
+        "Damage Over Time",
+        "Guard",
         "Half Stats",
         "Haste",
-        "Counter",
-        "near",
+        "heal",
         "hit",
-        "heal"
+        "near",
+        "Paralysis",
+        "Provoke",
+        "Revive",
+        "Silence",
+        "Special CT"
       ],
       "type": "string"
     },
@@ -872,12 +873,13 @@
     "OldDB.PirateFest.EffectEnum": {
       "enum": [
         "buff",
+        "boon",
+        "cleanse",
         "debuff",
-        "penalty",
-        "hinderance",
         "damage",
-        "recharge",
-        "boon"
+        "hinderance",
+        "penalty",
+        "recharge"
       ],
       "type": "string"
     },
