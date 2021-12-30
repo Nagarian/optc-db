@@ -6,7 +6,6 @@ export function fixupSpecificIssue(
   _units: OldDB.ExtendedUnit[],
 ): OldDB.ExtendedUnit {
   fixWrongPotential(unit)
-  fixGlobalOnlySailor(unit)
   fixFestResilience(unit)
   return unit
 }
@@ -21,20 +20,6 @@ function fixWrongPotential(unit: OldDB.ExtendedUnit) {
     unit.detail.limit[14].description = `Acquire Sailor Ability 2: ${unit.detail.sailor.level1}`
   } else {
     console.warn('issue with unit 1538 has been fixed')
-  }
-}
-
-function fixGlobalOnlySailor(unit: OldDB.ExtendedUnit) {
-  if (unit.id !== 3326) {
-    return
-  }
-
-  // @ts-ignore
-  if (unit.detail.sailor['global']) {
-    // @ts-ignore
-    unit.detail.sailor.base = 'global only: ' + unit.detail.sailor.global
-    // @ts-ignore
-    delete unit.detail.sailor.global
   }
 }
 
