@@ -53,7 +53,7 @@ export declare namespace RawDB {
     upgrades?: CaptainUpgrade[]
   }
 
-  export type SuperType = {
+  export type SuperSpecial = {
     criteria: string
     description: string
     notes?: string
@@ -251,7 +251,7 @@ export declare namespace RawDB {
     type: ColorType
     class: Class
     captain?: Captain
-    superType?: SuperType
+    superSpecial?: SuperSpecial
     special?: Special
     sailor?: Sailor[]
     support?: Support

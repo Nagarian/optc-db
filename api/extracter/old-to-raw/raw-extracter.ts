@@ -77,7 +77,7 @@ function remapSingleCharacter(unit: OldDB.ExtendedUnit): RawDB.SingleCharacter {
     class: extractClass(unit, true),
     ...base,
     captain: extractCaptain(unit),
-    superType: !unit.detail.superSpecial
+    superSpecial: !unit.detail.superSpecial
       ? undefined
       : {
           criteria: unit.detail.superSpecialCriteria!,
