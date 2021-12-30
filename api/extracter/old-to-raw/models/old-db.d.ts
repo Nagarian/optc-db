@@ -271,6 +271,18 @@ export declare namespace OldDB {
     /** Manually added */
     gloOnly: 1
     japOnly: 1
+
+    tm: 1
+    kizuna: 1
+    rumble: 1
+    story: 1
+    fortnight: 1
+    coliseum: 1
+    arena: 1
+    raid: 1
+    ambush: 1
+
+    // events: 1
   }>
 
   export type UnitFamily = Record<number, string[]>

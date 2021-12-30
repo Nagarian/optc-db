@@ -44,31 +44,53 @@ export const LBDescriptionPattern = {
 }
 
 export const Flags = [
-  /** Rare recruit not limited */
-  'rr',
-  /** Limited Rare recruit */
-  'lrr',
-  /** Support Rare recruit */
-  'srr',
-  /** TM Rare recruit */
-  'tmrr',
-  /** Kizuna Rare recruit */
-  'krr',
-  /** Pirate Rumble Rare recruit */
-  'prrr',
+  // DROP Categories
 
-  /** Rayleigh Shop */
+  /** Rare recruit */
+  'sugo',
+  /** Limited Rare recruit */
+  'limited',
+  /** Support Rare recruit */
+  'support',
+
+  /** Drop Location: Treasure Map */
+  'tm',
+  /** Drop Location */
+  'kizuna',
+  /** Drop Location */
+  'rumble',
+  /** Drop Location */
+  'story',
+  /** Drop Location */
+  'fortnight',
+  /** Drop Location */
+  'coliseum',
+  /** Drop Location */
+  'arena',
+  /** Drop Location */
+  'raid',
+  /** Drop Location */
+  'ambush',
+  /** Drop Location: Blitz, point-events, quests from Events Island game mode */
+  'events',
+  /** Drop Location: Mostly character gifted */
+  'special',
+  /** Drop Location: Shop (Rayleigh bazaar, TM shop, ...) */
   'shop',
-  /** TM Shop */
-  'tmshop',
+
+  // other flags
+
+  /** 6*,6*+ and their pre-evolution
+   *
+   * Auto-computed, doesn't need to be manually added
+   */
+  'legend',
 
   /** Released only on Global */
   'gloex',
-  /** Released only on Global (Glo-first unit which has been release later on japan) */
+  /** Released only on Japan (Glo-first unit which has been release later on japan) */
   'japex',
 
-  /** Mostly character gifted */
-  'special',
   /** Character which has been removed from the game */
   'removed',
 
