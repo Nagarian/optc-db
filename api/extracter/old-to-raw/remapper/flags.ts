@@ -2,35 +2,51 @@ import { RawDB } from '../../raw-db/models/raw-db'
 import { OldDB } from '../models/old-db'
 
 export function extractFlags(unit: OldDB.ExtendedUnit): RawDB.Flag[] {
-  const result: RawDB.Flag[] = []
+  let result: RawDB.Flag[] = []
 
-  const add = (flag?: RawDB.Flag) => flag && result.push(flag)
+  const add = (flag?: RawDB.Flag | RawDB.Flag[]) => {
+    if (!flag) {
+      return
+    }
 
-  const rareRecruitStatus = extractRareRecruitFlag(unit.flags)
+    if (Array.isArray(flag)) {
+      result = [...result, ...flag]
+    } else {
+      result.push(flag)
+    }
+  }
 
-  add(rareRecruitStatus)
+  add(extractRareRecruitFlags(unit.flags))
   add(unit.flags.inkable && 'inkable')
   add(unit.flags.shop && 'shop')
-  add(unit.flags.tmshop && 'tmshop')
+  add(unit.flags.tmshop && ['tm', 'shop'])
   add(unit.flags.gloOnly && 'gloex')
   add(unit.flags.japOnly && 'japex')
 
   add(unit.flags.special && 'special')
   add(extractRemovedFlag(unit))
 
-  return result
+  add(unit.flags.ambush && 'ambush')
+  add(unit.flags.arena && 'arena')
+  add(unit.flags.coliseum && 'coliseum')
+  add(unit.flags.fortnight && 'fortnight')
+  add(unit.flags.kizuna && 'kizuna')
+  add(unit.flags.raid && 'raid')
+  add(unit.flags.tm && 'tm')
+
+  return [...new Set(result)]
 }
 
-function extractRareRecruitFlag(
+function extractRareRecruitFlags(
   unitFlags: OldDB.UnitFlags,
-): RawDB.Flag | undefined {
-  if (unitFlags.tmlrr) return 'tmrr'
-  if (unitFlags.kclrr) return 'krr'
-  if (unitFlags.pflrr) return 'prrr'
-  if (unitFlags.slrr) return 'srr'
+): RawDB.Flag[] | undefined {
+  if (unitFlags.tmlrr) return ['sugo', 'tm']
+  if (unitFlags.kclrr) return ['sugo', 'kizuna']
+  if (unitFlags.pflrr) return ['sugo', 'rumble']
+  if (unitFlags.slrr) return ['sugo', 'support']
   // we put lrr only here because too many units have it but they wouldn't
-  if (unitFlags.lrr || unitFlags.superlrr) return 'lrr'
-  if (unitFlags.rr || unitFlags.rro) return 'rr'
+  if (unitFlags.lrr || unitFlags.superlrr) return ['sugo', 'limited']
+  if (unitFlags.rr || unitFlags.rro) return ['sugo']
 
   return undefined
 }

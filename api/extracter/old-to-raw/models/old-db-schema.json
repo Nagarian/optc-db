@@ -1608,6 +1608,22 @@
     "OldDB.UnitFlags": {
       "additionalProperties": false,
       "properties": {
+        "ambush": {
+          "const": 1,
+          "type": "number"
+        },
+        "arena": {
+          "const": 1,
+          "type": "number"
+        },
+        "coliseum": {
+          "const": 1,
+          "type": "number"
+        },
+        "fortnight": {
+          "const": 1,
+          "type": "number"
+        },
         "gloOnly": {
           "const": 1,
           "description": "Manually added",
@@ -1631,6 +1647,10 @@
           "description": "Kizuna rare recruit",
           "type": "number"
         },
+        "kizuna": {
+          "const": 1,
+          "type": "number"
+        },
         "lrr": {
           "const": 1,
           "description": "limiter rare recruit",
@@ -1646,6 +1666,10 @@
           "description": "???",
           "type": "number"
         },
+        "raid": {
+          "const": 1,
+          "type": "number"
+        },
         "rr": {
           "const": 1,
           "description": "Rare recruit pools (include all other rr)",
@@ -1654,6 +1678,10 @@
         "rro": {
           "const": 1,
           "description": "rare recruit",
+          "type": "number"
+        },
+        "rumble": {
+          "const": 1,
           "type": "number"
         },
         "shop": {
@@ -1671,9 +1699,17 @@
           "description": "Special characters (gifted mostly)",
           "type": "number"
         },
+        "story": {
+          "const": 1,
+          "type": "number"
+        },
         "superlrr": {
           "const": 1,
           "description": "Super limited rare recruit",
+          "type": "number"
+        },
+        "tm": {
+          "const": 1,
           "type": "number"
         },
         "tmlrr": {
