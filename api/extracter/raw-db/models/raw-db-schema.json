@@ -2023,8 +2023,8 @@
         "stats": {
           "$ref": "#/definitions/RawDB.Statistics"
         },
-        "superType": {
-          "$ref": "#/definitions/RawDB.SuperType"
+        "superSpecial": {
+          "$ref": "#/definitions/RawDB.SuperSpecial"
         },
         "support": {
           "$ref": "#/definitions/RawDB.Support"
@@ -2200,23 +2200,7 @@
       ],
       "type": "string"
     },
-    "RawDB.SuperSwap": {
-      "additionalProperties": false,
-      "properties": {
-        "criteria": {
-          "type": "number"
-        },
-        "description": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "criteria",
-        "description"
-      ],
-      "type": "object"
-    },
-    "RawDB.SuperType": {
+    "RawDB.SuperSpecial": {
       "additionalProperties": false,
       "properties": {
         "criteria": {
@@ -2226,6 +2210,22 @@
           "type": "string"
         },
         "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "criteria",
+        "description"
+      ],
+      "type": "object"
+    },
+    "RawDB.SuperSwap": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "number"
+        },
+        "description": {
           "type": "string"
         }
       },
