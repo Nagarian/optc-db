@@ -57,11 +57,12 @@ export function extractSpecial(
 
   if (isDualCharacterSpecial(special)) {
     const description =
-      dualCharacterChosen === undefined
-        ? `- character 1: ${special.character1}\n\n- character 2:${special.character2}`
-        : dualCharacterChosen === 1
+      dualCharacterChosen === 1
         ? special.character1
-        : special.character2
+        : dualCharacterChosen === 2
+        ? special.character2
+        : undefined
+
     return {
       name: unit.detail.specialName || '',
       description: extractDescription(description),
