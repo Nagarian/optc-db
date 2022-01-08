@@ -1413,34 +1413,6 @@
         "captainNotes": {
           "type": "string"
         },
-        "festAbility": {
-          "items": {
-            "$ref": "#/definitions/OldDB.UnitFestAbility"
-          },
-          "maxItems": 5,
-          "minItems": 5,
-          "type": "array"
-        },
-        "festAttackPattern": {
-          "items": {
-            "$ref": "#/definitions/OldDB.UnitFestAbility"
-          },
-          "type": "array"
-        },
-        "festAttackTarget": {
-          "type": "string"
-        },
-        "festResistance": {
-          "type": "string"
-        },
-        "festSpecial": {
-          "items": {
-            "$ref": "#/definitions/OldDB.UnitFestSpecial"
-          },
-          "maxItems": 10,
-          "minItems": 10,
-          "type": "array"
-        },
         "lastTap": {
           "items": {
             "$ref": "#/definitions/OldDB.UnitLastTap"
@@ -1576,34 +1548,6 @@
         "number",
         "string"
       ]
-    },
-    "OldDB.UnitFestAbility": {
-      "additionalProperties": false,
-      "properties": {
-        "description": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "description"
-      ],
-      "type": "object"
-    },
-    "OldDB.UnitFestSpecial": {
-      "additionalProperties": false,
-      "properties": {
-        "cooldown": {
-          "type": "number"
-        },
-        "description": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "description",
-        "cooldown"
-      ],
-      "type": "object"
     },
     "OldDB.UnitFlags": {
       "additionalProperties": false,
