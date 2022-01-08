@@ -99,15 +99,6 @@ export declare namespace OldDB {
     description: [string, string, string, string, string]
   }
 
-  export type UnitFestAbility = {
-    description: string
-  }
-
-  export type UnitFestSpecial = {
-    description: string
-    cooldown: number
-  }
-
   export type UnitCooldown = [number, number]
 
   export type SimpleStageSpecial = string
@@ -192,28 +183,6 @@ export declare namespace OldDB {
     lastTapNotes?: string
     support: [UnitSupport]
     supportNotes: string
-    festAbility: [
-      UnitFestAbility,
-      UnitFestAbility,
-      UnitFestAbility,
-      UnitFestAbility,
-      UnitFestAbility,
-    ]
-    festSpecial: [
-      UnitFestSpecial,
-      UnitFestSpecial,
-      UnitFestSpecial,
-      UnitFestSpecial,
-      UnitFestSpecial,
-      UnitFestSpecial,
-      UnitFestSpecial,
-      UnitFestSpecial,
-      UnitFestSpecial,
-      UnitFestSpecial,
-    ]
-    festAttackPattern: UnitFestAbility[]
-    festAttackTarget: string
-    festResistance: string
     swap: string | UnitSuperSwap
     swapNotes: string
     superSpecial: string

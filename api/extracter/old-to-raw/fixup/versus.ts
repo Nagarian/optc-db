@@ -14,11 +14,6 @@ export function fixupVersusUnit(unit: OldDB.ExtendedUnit): OldDB.ExtendedUnit {
     pirateFest2: undefined,
     detail: {
       ...untyped.detail,
-      festAbility: undefined,
-      festSpecial: undefined,
-      festAttackPattern: undefined,
-      festAttackTarget: undefined,
-      festResistance: undefined,
     },
   }
 

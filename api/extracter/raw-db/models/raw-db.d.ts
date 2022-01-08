@@ -492,24 +492,4 @@ export declare namespace RawDB {
       criteria: Attribute
     }
   }
-
-  // export type DropAffiliatedLink = {
-  //   nakama?: number
-  //   gamewith?: number
-  //   slefty?: string
-  // }
-
-  // export type Stage = {
-  //   name: string
-  //   links?: DropAffiliatedLink
-  //   icon: number
-  //   global?: boolean
-  //   dropId: number
-  // }
-
-  // export type Drop = {
-  //   name: string
-  //   key: string
-  //   stages: Stage[]
-  // }
 }
