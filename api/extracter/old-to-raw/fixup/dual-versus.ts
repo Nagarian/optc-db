@@ -83,4 +83,9 @@ const complexMapping: Record<number, string[]> = {
     '[Dual Unit] Page One',
     '[Dual Unit] Ulti & Page One',
   ],
+  3508: [
+    '[Dual Unit] Kaido, Strongest Force in the World',
+    '[Dual Unit] Lead Performers, Strongest Force in the World',
+    '[Dual Unit] Kaido & Lead Performers, Strongest Force in the World'
+  ]
 }
