@@ -24,7 +24,7 @@ With the new structure, there will be two main folder `api/raw/**` and `api/extr
     - [x] rumble filler (basedOn & family until specified)
     - [ ] limit break sailor unlock lvl
     - [ ] limit break captain
-    - [ ] limit break potentials literral
+    - [x] limit break potentials literral
     - [ ] flags (legend)
     - [ ] versus combined description
     - [ ] family ID generator

@@ -5,10 +5,17 @@ import {
   Potentials,
   Rarities,
 } from '../../models/constants'
-import { Flags, LBPathTypes, StatsTypes } from './raw-constant'
+import { FamiliesKey } from '../../models/constants-families'
+import {
+  Flags,
+  LBPathTypes,
+  StatsTypes,
+  EvolutionSkulls,
+} from '../../raw-db/models/raw-constant'
 
 export declare namespace FinalDB {
   export type ColorType = typeof CharacterColors[number]
+  export type CharacterType = ColorType | 'DUAL' | 'VS'
   export type Type = typeof CharacterTypes[number]
   export type ClassKey = typeof CharacterClasses[number]
   export type Class = [ClassKey?, ClassKey?]
@@ -27,14 +34,22 @@ export declare namespace FinalDB {
     maxLvl?: Statistic
   }
 
-  export type EvolutionMaterial = string | number
   export type Evolution = {
+    map: number[]
+    from?: EvolutionCharacter[]
+    to?: EvolutionCharacter[]
+  }
+
+  export type EvolutionSkull = typeof EvolutionSkulls[number]
+  export type EvolutionMaterial = EvolutionSkull | number
+  export type EvolutionCharacter = {
     id: number
     evolvers: EvolutionMaterial[]
   }
 
   export type CaptainUpgrade = {
     description: string
+    unlockedAt?: number
   }
 
   export type Captain = {
@@ -44,7 +59,7 @@ export declare namespace FinalDB {
     upgrades?: CaptainUpgrade[]
   }
 
-  export type SuperType = {
+  export type SuperSpecial = {
     criteria: string
     description: string
     notes?: string
@@ -52,21 +67,21 @@ export declare namespace FinalDB {
 
   export type SpecialStage = {
     description: string
-    cooldown: number
+    cooldown: SpecialCooldown
+  }
+
+  export type SpecialCooldown = {
+    initial: number
+    max: number
+    lbMax?: number
+    keyLbMax?: number
   }
 
   export type Special = {
     name: string
     description: string
-    cooldown?: number
-    maxLevel?: number
-    notes?: string
-    stages?: SpecialStage[]
-  }
-
-  export type DualUnitSpecial = {
-    name: string
-    description: string
+    cooldown: SpecialCooldown
+    maxLevel: number
     notes?: string
     stages?: SpecialStage[]
   }
@@ -74,39 +89,33 @@ export declare namespace FinalDB {
   export type Sailor = {
     description: string
     notes?: string
+    unlockedAt?: number
   }
 
-  export type StatSupportLevel = {
-    value: number
+  export type SupportLevel = {
+    value?: number
     reduction?: number
-    description?: string
+    description: string
   }
 
   export type StatsType = typeof StatsTypes[number]
 
-  export type StatsSupport = {
-    type: 'stats'
+  export type SupportType = 'stats' | 'descriptive'
+
+  export type Support = {
+    type: SupportType
     criteria: string
-    statsTypes: StatsType[]
+    statsTypes?: StatsType[]
     defenseType?: ColorType
     levels: [
-      StatSupportLevel,
-      StatSupportLevel,
-      StatSupportLevel,
-      StatSupportLevel,
-      StatSupportLevel,
+      SupportLevel,
+      SupportLevel,
+      SupportLevel,
+      SupportLevel,
+      SupportLevel,
     ]
     notes?: string
   }
-
-  export type DescriptiveSupport = {
-    type: 'descriptive'
-    criteria: string
-    levels: [string, string, string, string, string]
-    notes?: string
-  }
-
-  export type Support = DescriptiveSupport | StatsSupport
 
   export namespace LB {
     export type PathType = typeof LBPathTypes[number]
@@ -117,6 +126,7 @@ export declare namespace FinalDB {
     }
 
     export type PotentialLevel = {
+      description: string
       threshold?: number
       value?: number
       reduction?: number
@@ -124,8 +134,11 @@ export declare namespace FinalDB {
 
     export type PotentialType = typeof Potentials[number]
 
+    export type PotentialVariant = 'up to'
+
     export type Potential = {
       type: PotentialType
+      variant?: PotentialVariant
       levels: PotentialLevel[]
     }
 
@@ -147,20 +160,22 @@ export declare namespace FinalDB {
   }
 
   export type AffiliatedLinks = {
-    gamewithId?: number
+    officialGlobal?: string
     officialJapan?: string
+    gamewith?: string
   }
 
-  export type DualUnitDetail = {
+  export type CharacterDetail = {
     name: string
     japanName?: string
     frenchName?: string
-    type: ColorType
+    type: CharacterType
     class: Class
     stats: Statistics
     captain?: Captain
-    special?: DualUnitSpecial
+    special?: Special
     sailor?: Sailor[]
+    rumble?: PirateRumble.Rumble
   }
 
   export type SuperSwap = {
@@ -174,121 +189,77 @@ export declare namespace FinalDB {
     notes?: string
   }
 
-  export type DualUnitNode = {
-    character1: DualUnitDetail
-    character2: DualUnitDetail
-    swap: Swap
-  }
-
   export type Versus = {
     description: string
     notes?: string
   }
 
-  export type VersusUnitDetail = {
-    name: string
-    japanName?: string
-    frenchName?: string
-    type: ColorType
-    class: Class
-    stats: Statistics
-    captain?: Captain
-    special?: Special
-    sailor?: Sailor[]
-    rumble?: PirateRumble.Rumble
+  export type MultiCharacterNode = CharacterDetail & {
     versus: Versus
   }
 
-  export type VersusUnitNode = {
-    character1: VersusUnitDetail
-    character2: VersusUnitDetail
-    criteria: string
+  export type MultiCharacterDetail = {
+    character1: MultiCharacterNode
+    character2: MultiCharacterNode
+    swap?: Swap
+    criteria?: string
   }
 
-  export type BaseCharacter = {
+  export type Family = typeof FamiliesKey[number]
+
+  export type FamilyNode = {
+    key: Family
+    aliases: string[]
+  }
+
+  export type CharacterFamily = {
+    id: number
+    characters: FamilyNode[]
+  }
+
+  export type Character = CharacterDetail & {
     id: number
     oldDbId?: number
-    name: string
-    japanName?: string
-    frenchName?: string
-    family: string[]
-    // type: Type
+    family: CharacterFamily
     rarity: Rarity
     cost: number
     slots: number
     maxLevel: number
     maxExp?: number
-    stats: Statistics
     flags: Flag[]
     links?: AffiliatedLinks
     aliases: string[]
     notes?: string
 
-    limitBreak?: LB.LimitBreak
-    evolution?: Evolution[]
-  }
-
-  export type SingleCharacter = BaseCharacter & {
-    type: ColorType
-    class: Class
-    captain?: Captain
-    superType?: SuperType
-    special?: Special
-    sailor?: Sailor[]
+    superSpecial?: SuperSpecial
     support?: Support
-    rumble?: PirateRumble.Rumble
-  }
+    characters?: MultiCharacterDetail
 
-  export type DualCharacter = BaseCharacter & {
-    type: 'DUAL'
-    class: Class
-    captain?: Captain
-    special?: Special
-    sailor?: Sailor[]
-    rumble?: PirateRumble.Rumble
-    characters: DualUnitNode
+    limitBreak?: LB.LimitBreak
+    evolution?: Evolution
   }
-
-  export type VersusCaptain = {
-    name: string
-  }
-
-  export type VersusCharacter = BaseCharacter & {
-    type: 'VS'
-    captain: VersusCaptain
-    characters: VersusUnitNode
-  }
-
-  export type Character = SingleCharacter | DualCharacter | VersusCharacter
 
   export namespace PirateRumble {
-    export type ColorType = '[STR]' | '[DEX]' | '[QCK]' | '[PSY]' | '[INT]'
-    export type ClassType =
-      | 'Slasher'
-      | 'Fighter'
-      | 'Striker'
-      | 'Shooter'
-      | 'Cerebral'
-      | 'Free Spirit'
-      | 'Driven'
-      | 'Powerhouse'
     export type RumbleStatType = 'SPD' | 'ATK' | 'DEF' | 'HP' | 'RCV'
     export type RumbleType = 'DBF' | 'ATK' | 'SPT' | 'DEF' | 'RCV'
     export type AdditionalCriteriaType =
-      | 'Critical Hit'
-      | 'Guard'
       | 'Accuracy'
-      | 'Blow Away'
-      | 'Special CT'
-      | 'Silence'
-      | 'Provoke'
-      | 'Paralysis'
-      | 'Damage Over Time'
       | 'Action Bind'
+      | 'Blow Away'
+      | 'Counter'
+      | 'Critical Hit'
+      | 'Damage Over Time'
+      | 'Guard'
       | 'Half Stats'
       | 'Haste'
-      | 'Counter'
+      | 'heal'
+      | 'hit'
       | 'near'
+      | 'Paralysis'
+      | 'Provoke'
+      | 'Revive'
+      | 'Silence'
+      | 'Special CT'
 
     export type Direction = 'forward' | 'radial' | 'sideways'
     export type Size = 'large' | 'small' | 'medium'
@@ -316,17 +287,18 @@ export declare namespace FinalDB {
 
     export type EffectEnum =
       | 'buff'
-      | 'debuff'
-      | 'penalty'
-      | 'hinderance'
-      | 'damage'
-      | 'recharge'
       | 'boon'
+      | 'cleanse'
+      | 'damage'
+      | 'debuff'
+      | 'hinderance'
+      | 'penalty'
+      | 'recharge'
 
     export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below'
 
     export type TargetType = 'self' | 'crew' | 'enemies'
-    export type TargetElement = ColorType | ClassType | TargetType
+    export type TargetElement = ColorType | ClassKey | TargetType
 
     export type Action = 'attack' | 'heal'
     export type Area = 'Self' | 'Small' | 'Large' | 'Medium'
@@ -367,12 +339,14 @@ export declare namespace FinalDB {
     export type Pattern = AttackPattern | HealPattern
 
     export type HealPattern = {
+      description: string
       action: 'heal'
       area: Area
       level: number
     }
 
     export type AttackPattern = {
+      description: string
       action: 'attack'
       type: PatternType
     }
@@ -384,18 +358,21 @@ export declare namespace FinalDB {
       | HealingResilience
 
     export type DebuffResilience = {
+      description: string
       attribute: Attribute
       chance: number
       type: 'debuff'
     }
 
     export type DamageResilience = {
-      attribute?: ColorType | ClassType | 'all'
+      description: string
+      attribute?: ColorType | ClassKey | 'all'
       percentage: number
       type: 'damage'
     }
 
     export type HealingResilience = {
+      description: string
       condition?: Condition
       amount: number
       interval: number
@@ -407,13 +384,10 @@ export declare namespace FinalDB {
       effects: Effect[]
     }
 
-    export type Effect =
-      | CommonEffect
-      | AttackEffectType
-      | RechargeEffectType
-      | EffectOverride
+    export type Effect = CommonEffect | AttackEffectType | RechargeEffectType
 
     export type BasicEffect = {
+      description: string
       attributes?: Attribute[]
       chance?: number
       duration?: number
@@ -424,6 +398,7 @@ export declare namespace FinalDB {
       range?: Range
       condition?: Condition
       defbypass?: boolean
+      repeat?: number
     }
 
     export type CommonEffect = BasicEffect & {
@@ -438,10 +413,6 @@ export declare namespace FinalDB {
     export type RechargeEffectType = CommonEffect & {
       effect: 'recharge'
       type: 'fixed' | 'percentage' | 'Special CT' | 'RCV'
-    }
-
-    export type EffectOverride = {
-      override?: Partial<BasicEffect>
     }
 
     export type Targeting = {
@@ -461,17 +432,11 @@ export declare namespace FinalDB {
       def: number
       rumbleType: RumbleType
       spd: number
-      /**
-       * Specify cost only if different from those default value:
-       * - Legend: 55
-       * - Kizuna, TM, PR: 35
-       * - PR RR, < 4* without evolution: 20
-       * - Others: 30
-       */
-      cost?: number
+      cost: number
     }
 
     export type TargetClass = {
+      description: string
       comparator?: TargetingPriority
       criteria: Attribute
     }
