@@ -121,7 +121,7 @@ function extractPotentialLevel(
         return undefined
       case 'MAX':
       case 'completely':
-        return 99
+        return 100
       case '':
         return 0
       default:
