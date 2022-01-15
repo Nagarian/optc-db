@@ -13,8 +13,32 @@ With the new structure, there will be two main folder `api/raw/**` and `api/extr
   - [x] Improve support by removing stats supporter description
   - [ ] add drop
   - [x] clean HMTL from all input field
+  - [ ] check for the extracted flags
+  - [ ] propagation of some flags
 - [x] add images download
 - [ ] add final-db generator
+  - [ ] images downloader v2
   - [ ] add enhancer
+    - [x] rumble literal descriptions
+    - [x] rumble cost
+    - [x] rumble filler (basedOn & family until specified)
+    - [ ] limit break sailor unlock lvl
+    - [ ] limit break captain
+    - [ ] limit break potentials literral
+    - [ ] flags (legend)
+    - [ ] versus combined description
+    - [ ] family ID generator
+    - [x] evolution tree generator
+    - [ ] images path generator
+    - [ ] affiliated links generator
+  - [ ] data validator
+    - [ ] list all units with missing infos (incomplete flag)
+    - [ ] missing potentials value
+    - [ ] captain upgrade missing info or 'Not Translated'
+  - [ ] add bulk editor placeholder
+    - [ ] limit break required materials extracter?
   - [ ] add final json format
+    - [ ] generic format
+    - [ ] specific oriented (ie: rumble only, support only, calculator only, ...)
+    - [ ] automate schema generation on script execution
 - [x] Reorganize files
