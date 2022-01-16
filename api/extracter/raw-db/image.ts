@@ -35,7 +35,7 @@ export async function downloadJapCharacters(units: OldDB.ExtendedUnit[]) {
   console.time('Download missing jap characters thumbnail End')
 
   const bar = new ProgressBar(units.length)
-  const promises: Promise<void>[] = []
+  const promises: Promise<number | undefined>[] = []
 
   for (const unit of units.filter(u => u.id < 5001)) {
     const japPath = getImagePath(unit.id, thumbnailJap, undefined)
@@ -46,12 +46,17 @@ export async function downloadJapCharacters(units: OldDB.ExtendedUnit[]) {
 
     const idNormalized = unit.id.toString().padStart(4, '0')
 
+    if (unit.flags.gloOnly) continue
+
     promises.push(
       downloadImage(
         unit.images.thumbnail ??
           `https://onepiece-treasurecruise.com/wp-content/uploads/f${idNormalized}.png`,
         japPath,
-      ).then(() => bar.increment()),
+      ).then(success => {
+        bar.increment()
+        return !success ? unit.id : undefined
+      }),
     )
 
     if (unit.dualCharacters?.length) {
@@ -69,7 +74,10 @@ export async function downloadJapCharacters(units: OldDB.ExtendedUnit[]) {
           downloadImage(
             dualUnit.images.thumbnail,
             getImagePath(unit.id, thumbnailJap, alternative),
-          ).then(() => bar.increment()),
+          ).then(success => {
+            bar.increment()
+            return !success ? unit.id : undefined
+          }),
         )
       }
 
@@ -80,9 +88,10 @@ export async function downloadJapCharacters(units: OldDB.ExtendedUnit[]) {
     }
   }
 
-  await Promise.all(promises)
+  const missingImages = (await Promise.all(promises)).filter(x => !!x) as number[]
 
   console.timeEnd('Download missing jap characters thumbnail End')
+  missingImages.length && console.log(`Missing ${missingImages.length} characters images`, ...missingImages)
 }
 
 export async function downloadGloCharacters(units: OldDB.ExtendedUnit[]) {
@@ -90,7 +99,7 @@ export async function downloadGloCharacters(units: OldDB.ExtendedUnit[]) {
   console.time('Download missing glo characters thumbnail End')
 
   const bar = new ProgressBar(units.length)
-  const promises: Promise<void>[] = []
+  const promises: Promise<number | undefined>[] = []
 
   for (const unit of units) {
     const gloPath = getImagePath(unit.id, thumbnailGlo, undefined)
@@ -101,17 +110,23 @@ export async function downloadGloCharacters(units: OldDB.ExtendedUnit[]) {
 
     const idNormalized = unit.id.toString().padStart(4, '0')
 
+    if (unit.flags.japOnly) continue
+
     promises.push(
       downloadImage(
         `https://onepiece-treasurecruise.com/wp-content/uploads/sites/2/f${idNormalized}.png`,
         gloPath,
-      ).then(() => bar.increment()),
+      ).then(success => {
+        bar.increment()
+        return !success ? unit.id : undefined
+      }),
     )
   }
 
-  await Promise.all(promises)
+  const missingImages = (await Promise.all(promises)).filter(x => !!x) as number[]
 
   console.timeEnd('Download missing glo characters thumbnail End')
+  missingImages.length && console.log(`Missing ${missingImages.length} characters images`, ...missingImages)
 }
 
 function downloadImage(
