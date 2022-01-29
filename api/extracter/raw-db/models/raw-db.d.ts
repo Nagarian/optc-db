@@ -325,6 +325,7 @@ export declare namespace RawDB {
       | 'enemies'
       | 'trigger'
       | 'defeat'
+      | 'character'
 
     export type ConditionTeam = 'crew' | 'enemies'
 
@@ -377,6 +378,7 @@ export declare namespace RawDB {
       type: ConditionType
       team?: ConditionTeam
       count?: number
+      families?: Family[]
     }
 
     export type Pattern = AttackPattern | HealPattern

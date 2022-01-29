@@ -1,5 +1,6 @@
 import { RawDB } from '../../../raw-db/models/raw-db'
-import { arrayToString, numberToString } from '../../helper'
+import { arrayToString, arrayToStringOr, numberToString } from '../../helper'
+import { familiesAliases } from '../family'
 
 // copy from characters/js/directives.js
 
@@ -231,6 +232,19 @@ export function conditionToString(
           return `When ${condition.count} characters on your crew are defeated, `
         default:
           return `When ${condition.count} characters are defeated, `
+      }
+    case 'character':
+      const families = arrayToStringOr(
+        condition.families?.map(f => familiesAliases[f]?.[0]),
+      )
+      const link = condition.families!.length > 1 ? 'are' : 'is'
+      switch (condition.team) {
+        case 'enemies':
+          return `When ${families} ${link} on the enemy team, `
+        case 'crew':
+          return `When ${families} ${link} on your crew, `
+        default:
+          throw new Error(`UNKNOWN CHARACTER CONDITION TEAM ${JSON.stringify(condition)}`)
       }
     default:
       throw new Error(`UNKNOWN CONDITION ${JSON.stringify(condition)}`)
