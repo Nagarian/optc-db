@@ -67,7 +67,7 @@ export const familiesKey: Record<RawDB.Family, string[]> = {
   Mikita: ['Mikita', 'Miss Valentine'],
   Galdino: ['Galdino', 'Mr. 3'],
   Marianne: ['Marianne', 'Miss Goldenweek'],
-  Bentham: ['Bentham', 'Mr. 2 Bon Clay'],
+  Bentham: ['Bentham', 'Mr. 2 Bon Clay', 'Bonclay'],
   NicoRobin: ['Nico Robin'],
   Mr9: ['Mr. 9'],
   Laboon: ['Laboon'],
@@ -645,4 +645,6 @@ export const familiesKey: Record<RawDB.Family, string[]> = {
   Turtle: ['Turtle'],
   SeaHorse: ['Sea Horse'],
   JeweledPorc: ['Jeweled Porc'],
+  Concelot: [ "Concelot" ],
+  Giovanni: [ "Giovanni" ],
 }

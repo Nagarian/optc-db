@@ -637,6 +637,8 @@ export const FamiliesKey = [
   'Ulti',
   'BlackMaria',
   'WhosWho',
+  'Concelot',
+  'Giovanni',
 
   //manually added
   'EvolverPenguin',
