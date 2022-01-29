@@ -749,6 +749,12 @@
         "count": {
           "type": "number"
         },
+        "families": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "stat": {
           "$ref": "#/definitions/OldDB.PirateFest.Attribute"
         },
@@ -790,7 +796,8 @@
         "crew",
         "enemies",
         "trigger",
-        "defeat"
+        "defeat",
+        "character"
       ],
       "type": "string"
     },

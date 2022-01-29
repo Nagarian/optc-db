@@ -326,6 +326,7 @@ export declare namespace OldDB {
       | 'enemies'
       | 'trigger'
       | 'defeat'
+      | 'character'
 
     export type ConditionTeam = 'crew' | 'enemies'
 
@@ -389,6 +390,7 @@ export declare namespace OldDB {
       type: ConditionType
       team?: ConditionTeam
       count?: number
+      families?: string[]
     }
 
     export type Pattern = AttackPattern | HealPattern

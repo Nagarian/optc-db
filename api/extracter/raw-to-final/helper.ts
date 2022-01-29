@@ -4,5 +4,12 @@ export function numberToString(num?: number): string {
 
 export function arrayToString(array?: any[]): string {
   //@ts-ignore
-  return array ? new Intl.ListFormat().format(array) : ''
+  return array ? new Intl.ListFormat('en').format(array) : ''
+}
+
+export function arrayToStringOr(array?: any[]): string {
+  return array
+    ? //@ts-ignore
+      new Intl.ListFormat('en', { type: 'disjunction' }).format(array)
+    : ''
 }

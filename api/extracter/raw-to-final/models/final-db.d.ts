@@ -282,6 +282,7 @@ export declare namespace FinalDB {
       | 'enemies'
       | 'trigger'
       | 'defeat'
+      | 'character'
 
     export type ConditionTeam = 'crew' | 'enemies'
 
@@ -334,6 +335,7 @@ export declare namespace FinalDB {
       type: ConditionType
       team?: ConditionTeam
       count?: number
+      families?: Family[]
     }
 
     export type Pattern = AttackPattern | HealPattern

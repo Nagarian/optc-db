@@ -1383,6 +1383,12 @@
         "count": {
           "type": "number"
         },
+        "families": {
+          "items": {
+            "$ref": "#/definitions/RawDB.Family"
+          },
+          "type": "array"
+        },
         "stat": {
           "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
         },
@@ -1424,7 +1430,8 @@
         "crew",
         "enemies",
         "trigger",
-        "defeat"
+        "defeat",
+        "character"
       ],
       "type": "string"
     },
