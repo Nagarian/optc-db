@@ -65,19 +65,34 @@
       "additionalProperties": false,
       "properties": {
         "character1": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "character2": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "combined": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "level1": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "level2": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         }
       },
       "required": [
@@ -492,16 +507,28 @@
       "additionalProperties": false,
       "properties": {
         "base": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "base2": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "level1": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "level2": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         }
       },
       "type": "object"
