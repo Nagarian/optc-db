@@ -143,17 +143,17 @@ export declare namespace OldDB {
 
   export type SimpleSailor = string
   export type LimitBrokenSailor = {
-    base?: string
-    base2?: string
-    level1?: string
-    level2?: string
+    base?: string | null
+    base2?: string | null
+    level1?: string | null
+    level2?: string | null
   }
   export type DualSailor = {
-    character1: string
-    character2: string
-    combined: string
-    level1?: string
-    level2?: string
+    character1: string | null
+    character2: string | null
+    combined: string | null
+    level1?: string | null
+    level2?: string | null
   }
   export type UnitSailor =
     | undefined

@@ -16,6 +16,7 @@ import {
   getRumble,
 } from './fixup/rumble'
 import { fixupSpecificIssue } from './fixup/specific-issue'
+import { fixupSupport } from './fixup/support'
 import { fixupVersusUnit } from './fixup/versus'
 import {
   DBalias,
@@ -36,6 +37,7 @@ const evolutionMap = getEvolutionMap()
 export function LoadOldDb(): OldDB.ExtendedUnit[] {
   let db = DBunit.filter(unit => unit.name)
     .map(GetExtendedUnit)
+    .map(fixupSupport)
     .map(fixupDetail)
     .map(fixupImages)
     .map(fixupFlags)

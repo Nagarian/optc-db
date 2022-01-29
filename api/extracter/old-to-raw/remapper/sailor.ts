@@ -17,7 +17,7 @@ export function extractSailor(
 
   const result: RawDB.Sailor[] = []
 
-  const tryAdd = (description: string | undefined) => {
+  const tryAdd = (description: string | undefined | null) => {
     if (description && description != 'None') {
       result.push({ description })
     }
