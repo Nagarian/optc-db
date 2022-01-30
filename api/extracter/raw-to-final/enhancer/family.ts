@@ -1,6 +1,45 @@
 import { RawDB } from '../../raw-db/models/raw-db'
+import { FinalDB } from '../models/final-db'
 
-export const familiesKey: Record<RawDB.Family, string[]> = {
+export function computeDBFamily(
+  db: RawDB.DBCharacter[],
+): Record<number, FinalDB.CharacterFamily> {
+  const result: Record<number, FinalDB.CharacterFamily> = {}
+  const families: [string, FinalDB.CharacterFamily][] = []
+
+  for (const [id, { family }] of db) {
+    if (!family.length) {
+      result[id] = {
+        id: families.length,
+        characters: [],
+      }
+
+      families.push(['', result[id]])
+
+      continue
+    }
+
+    const key = family.join('|')
+
+    const f = families.find(([k, fam]) => k === key)
+
+    if (f) {
+      result[id] = f[1]
+      continue
+    }
+
+    result[id] = {
+      id: families.length,
+      characters: family.map(f => ({ key: f, aliases: familiesAliases[f] })),
+    }
+
+    families.push([key, result[id]])
+  }
+
+  return result
+}
+
+export const familiesAliases: Record<RawDB.Family, string[]> = {
   MonkeyDLuffy: ['Monkey D. Luffy'],
   RoronoaZoro: ['Roronoa Zoro'],
   Nami: ['Nami'],

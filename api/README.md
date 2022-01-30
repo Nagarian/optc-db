@@ -15,6 +15,7 @@ With the new structure, there will be two main folder `api/raw/**` and `api/extr
   - [x] clean HMTL from all input field
   - [ ] check for the extracted flags
   - [ ] propagation of some flags
+  - [ ] split family on unit for VS character
 - [x] add images download
 - [ ] add final-db generator
   - [ ] images downloader v2
@@ -27,7 +28,7 @@ With the new structure, there will be two main folder `api/raw/**` and `api/extr
     - [x] limit break potentials literral
     - [ ] flags (legend)
     - [ ] versus combined description
-    - [ ] family ID generator
+    - [x] family ID generator
     - [x] evolution tree generator
     - [ ] images path generator
     - [ ] affiliated links generator

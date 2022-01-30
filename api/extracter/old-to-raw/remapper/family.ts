@@ -1,5 +1,5 @@
 import { RawDB } from '../../raw-db/models/raw-db'
-import { familiesKey } from '../../raw-to-final/enhancer/family'
+import { familiesAliases } from '../../raw-to-final/enhancer/family'
 import { OldDB } from '../models/old-db'
 
 export function extractFamily(unit: OldDB.ExtendedUnit): RawDB.Family[] {
@@ -10,7 +10,7 @@ export function extractFamily(unit: OldDB.ExtendedUnit): RawDB.Family[] {
 
   if (!unit.families) return []
 
-  return Object.entries(familiesKey)
+  return Object.entries(familiesAliases)
     .filter(([_, entries]) => entries.every(s => unit.families?.includes(s)))
     .map(([key]) => key as RawDB.Family)
 }
