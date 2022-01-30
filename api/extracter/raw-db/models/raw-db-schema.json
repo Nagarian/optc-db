@@ -17,7 +17,7 @@
     "RawDB.Captain": {
       "additionalProperties": false,
       "properties": {
-        "description": {
+        "baseDescription": {
           "description": "Always put the base description here, that also apply to TM characters",
           "type": "string"
         },
@@ -37,7 +37,7 @@
       },
       "required": [
         "name",
-        "description"
+        "baseDescription"
       ],
       "type": "object"
     },
