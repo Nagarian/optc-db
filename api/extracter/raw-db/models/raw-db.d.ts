@@ -44,7 +44,7 @@ export declare namespace RawDB {
     /**
      * Always put the base description here, that also apply to TM characters
      */
-    description: string
+    baseDescription: string
     notes?: string
     /**
      * Put upgrade by ascending order like LB level (ie: 1 -> 6)

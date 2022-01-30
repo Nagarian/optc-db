@@ -31,7 +31,7 @@ export function extractCaptain(
   if (isSimpleCaptain(captain)) {
     return {
       name: '',
-      description: extractDescription(captain),
+      baseDescription: extractDescription(captain),
       notes: extractNotes(unit.detail.captainNotes),
     }
   }
@@ -39,7 +39,7 @@ export function extractCaptain(
   if (isDualCaptain(captain)) {
     return {
       name: '',
-      description: extractDescription(captain.combined),
+      baseDescription: extractDescription(captain.combined),
       notes: extractNotes(unit.detail.captainNotes),
     }
   }
@@ -56,7 +56,7 @@ export function extractCaptain(
 
     return {
       name: '',
-      description: extractDescription(captain.base),
+      baseDescription: extractDescription(captain.base),
       notes: extractNotes(unit.detail.captainNotes),
       upgrades,
     }

@@ -49,7 +49,8 @@ export declare namespace FinalDB {
 
   export type CaptainUpgrade = {
     description: string
-    unlockedAt?: number
+    unlockedAt: number
+    keyLocked: boolean
   }
 
   export type Captain = {
