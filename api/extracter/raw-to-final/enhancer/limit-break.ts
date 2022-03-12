@@ -106,6 +106,10 @@ const potentialsDescription: Record<
     desc: 'Reduce own Sailor Despair duration <value>',
     valueUnit: 'turn',
   },
+  'Reduce Special Use Limit duration': {
+    desc: 'Reduces Special Limit duration <value>',
+    valueUnit: 'turn',
+  },
   'Reduce Healing Reduction duration': {
     desc: 'Reduce Healing Reduction duration <value>',
     valueUnit: 'turn',
