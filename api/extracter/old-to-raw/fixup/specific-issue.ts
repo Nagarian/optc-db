@@ -38,6 +38,30 @@ function fixRumbleFamilies(unit: OldDB.ExtendedUnit) {
       console.warn('issue with unit 3536 has been fixed')
     }
   }
+
+  if (unit.id === 3546) {
+    if (
+      (unit.rumble?.special?.[0]?.effects?.[2] as OldDB.PirateFest.BasicEffect)
+        ?.condition?.families?.[0] === 'Boa Hancock'
+    ) {
+      // @ts-ignore
+      unit.rumble.special[0].effects[2].condition.families = ['BoaHancock', 'BoaSandersonia']
+    } else {
+      console.warn('issue with unit 3546 has been fixed')
+    }
+  }
+
+  if (unit.id === 3561) {
+    if (
+      (unit.rumble?.special?.[0]?.effects?.[1] as OldDB.PirateFest.BasicEffect)
+        ?.condition?.families?.[0] === 'Boa Marigold'
+    ) {
+      // @ts-ignore
+      unit.rumble.special[0].effects[1].condition.families = ['BoaMarigold', 'BoaHancock']
+    } else {
+      console.warn('issue with unit 3546 has been fixed')
+    }
+  }
 }
 
 function fixWrongPotential(unit: OldDB.ExtendedUnit) {
