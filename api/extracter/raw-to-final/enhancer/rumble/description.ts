@@ -29,9 +29,8 @@ export function patternToString(input: RawDB.PirateRumble.Pattern): string {
         return ''
     }
   } else if (input.action === 'heal') {
-    return `*Level ${input.level} ${
-      input.area === 'Self' ? input.area : input.area + ' Range'
-    } Heal*`
+    const range = input.area === 'Self' ? input.area : input.area + ' Range'
+    return `*Level ${input.level} ${range} Heal*`
   }
 
   throw new Error('UNKNOWN')
@@ -83,15 +82,13 @@ export function effectToString(effect: RawDB.PirateRumble.Effect): string {
     return ''
   }
 
+  const attributes = arrayToString(effect.attributes)
+
   switch (effect.effect) {
     case 'buff':
-      return `Applies Lv.${effect.level} ${arrayToString(
-        effect.attributes,
-      )} up buff`
+      return `Applies Lv.${effect.level} ${attributes} up buff`
     case 'debuff':
-      return `Inflicts Lv.${effect.level} ${arrayToString(
-        effect.attributes,
-      )} down debuff`
+      return `Inflicts Lv.${effect.level} ${attributes} down debuff`
     case 'damage':
       return damageEffectToString(effect as RawDB.PirateRumble.AttackEffectType)
     case 'recharge':
@@ -100,16 +97,13 @@ export function effectToString(effect: RawDB.PirateRumble.Effect): string {
       )
     case 'hinderance':
       return effect.amount
-        ? `Removes ${numberToString(effect.amount)}% of ${arrayToString(
-            effect.attributes,
-          )}`
+        ? `Removes ${numberToString(effect.amount)}% of ${attributes}`
         : `${effect.chance}% chance to inflict ${
             effect.level ? 'Lv.' + effect.level + ' ' : ''
-          }${arrayToString(effect.attributes)}`
+          }${attributes}`
     case 'boon':
       let result = effect.chance ? `${effect.chance}% chance to ` : ''
-      const attrStr = arrayToString(effect.attributes)
-      switch (attrStr) {
+      switch (attributes) {
         case 'Provoke':
           result += 'Provoke enemies'
           break
@@ -119,26 +113,29 @@ export function effectToString(effect: RawDB.PirateRumble.Effect): string {
         case 'Counter':
           result += `${effect.chance ? 'g' : 'G'}rant ${effect.amount}x Counter`
           break
+        case 'Revive':
+          result += `${effect.chance ? 'r' : 'R'}evive to ${
+            effect.amount
+          }% HP after death`
+          break
         default:
-          result += `${'reduce ' + attrStr}`
+          result += `${'reduce ' + attributes}`
           break
       }
       return result
     case 'penalty':
-      const tmpStr = arrayToString(effect.attributes)
+      const tmpStr = attributes
       if (tmpStr === 'HP' && effect.amount) {
         return `${numberToString(effect.amount)}% health cut`
       } else if (effect.level) {
-        return `Inflicts Lv.${numberToString(effect.level)} ${arrayToString(
-          effect.attributes,
-        )} down penalty`
+        return `Inflicts Lv.${numberToString(
+          effect.level,
+        )} ${attributes} down penalty`
       } else {
-        return `${effect.chance}% chance to ${arrayToString(effect.attributes)}`
+        return `${effect.chance}% chance to ${attributes}`
       }
     case 'cleanse':
-      return `${effect.chance}% chance to cleanse ${arrayToString(
-        effect.attributes,
-      )} debuffs`
+      return `${effect.chance}% chance to cleanse ${attributes} debuffs`
     default:
       throw new Error(`UNKNOWN EFFECT ${JSON.stringify(effect)}`)
   }
@@ -166,7 +163,7 @@ function rechargeEffectToString(effect: RawDB.PirateRumble.RechargeEffectType) {
   if (effect.interval) {
     condition += ` every ${effect.interval} ${
       effect.interval == 1 ? 'second' : 'seconds'
-    } for ${effect.duration} ${effect.duration == 1 ? 'second' : 'seconds'}`
+    }`
   }
 
   if (effect.repeat) {
@@ -244,7 +241,9 @@ export function conditionToString(
         case 'crew':
           return `When ${families} ${link} on your crew, `
         default:
-          throw new Error(`UNKNOWN CHARACTER CONDITION TEAM ${JSON.stringify(condition)}`)
+          throw new Error(
+            `UNKNOWN CHARACTER CONDITION TEAM ${JSON.stringify(condition)}`,
+          )
       }
     default:
       throw new Error(`UNKNOWN CONDITION ${JSON.stringify(condition)}`)
