@@ -639,6 +639,18 @@ export const FamiliesKey = [
   'WhosWho',
   'Concelot',
   'Giovanni',
+  'Milky',
+  'Fukurokuju',
+  'Daikoku',
+  'Fujin',
+  'Raijin',
+  'Hanzo',
+  'Chome',
+  'JigokuBenten',
+  'Bishamon',
+  'Yazaemon',
+  'Kazekage',
+  'Sarutobi',
 
   //manually added
   'EvolverPenguin',
