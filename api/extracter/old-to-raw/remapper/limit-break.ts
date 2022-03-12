@@ -88,6 +88,9 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
     /^Reduces? own Sailor Despair duration by (?<value>\d+|\?) turns?$/i,
     /^Reduces? Sailor Despair duration by (?<value>\d+|\?) turns?$/i,
   ],
+  'Reduce Special Use Limit duration': [
+    /^Reduces Special Limit duration by (?<value>\d+|\?) turns?\.$/
+  ],
   'Reduce Healing Reduction duration': [
     /^Reduces Healing Reduction duration by (?<value>\d+|\?) turns?$/i,
   ],
