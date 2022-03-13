@@ -7,6 +7,8 @@ export function fixupSpecificIssue(
 ): OldDB.ExtendedUnit {
   fixWrongPotential(unit)
   fixRumbleFamilies(unit)
+  fixHelmepCaptain(unit)
+  fixKatakuriCaptain(unit)
   return unit
 }
 
@@ -74,6 +76,36 @@ function fixWrongPotential(unit: OldDB.ExtendedUnit) {
     unit.detail.limit[14].description = `Acquire Sailor Ability 2: ${unit.detail.sailor.level1}`
   } else {
     console.warn('issue with unit 1538 has been fixed')
+  }
+}
+
+function fixHelmepCaptain(unit: OldDB.ExtendedUnit) {
+  if (unit.id !== 3466) {
+    return
+  }
+
+  if (typeof unit.detail.captain === 'string') {
+    unit.detail.captain = {
+      base: 'Boosts ATK of Slasher and Free Spirit characters by 3x',
+      level1: unit.detail.captain
+    }
+  } else {
+    console.warn('issue with unit 3466 should has been fixed')
+  }
+}
+
+function fixKatakuriCaptain(unit: OldDB.ExtendedUnit) {
+  if (unit.id !== 2739) {
+    return
+  }
+
+  if (typeof unit.detail.captain === 'string') {
+    unit.detail.captain = {
+      base: unit.detail.captain,
+      level1: 'Boosts ATK of Slasher, Striker, Driven, Cerebral and Powerhouse characters by 2x, reduces damage received by 20% and makes [STR], [PSY], [RCV] and [TND] orbs beneficial for all characters. Has a chance to delay all enemies by 1 turn based on damage dealt in previous turn.'
+    }
+  } else {
+    console.warn('issue with unit 3466 should has been fixed')
   }
 }
 
