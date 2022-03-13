@@ -133,7 +133,7 @@ const potentialsDescription: Record<
 function computeDescriptionUnit(
   value: number | undefined,
   unit: DescriptionUnit | undefined,
-): string {
+): string | undefined {
   switch (unit) {
     case '%':
       return `${value ?? '?'}%`
@@ -145,6 +145,8 @@ function computeDescriptionUnit(
         : `by ${value ?? '?'} turn${value ?? 0 > 1 ? 's' : ''}`
     case 'x':
       return `${value ?? '?'}x`
+    case undefined:
+      return undefined
     default:
       throw new Error('Unhandled unit description')
   }
