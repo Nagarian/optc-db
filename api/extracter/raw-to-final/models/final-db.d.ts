@@ -196,7 +196,7 @@ export declare namespace FinalDB {
   }
 
   export type MultiCharacterNode = CharacterDetail & {
-    versus: Versus
+    versus?: Versus
   }
 
   export type MultiCharacterDetail = {
