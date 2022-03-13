@@ -8,50 +8,37 @@ import {
 } from './description'
 
 export function enhanceSingleRumble(
-  finalCharacter: FinalDB.Character,
   rawCharacter: RawDB.SingleCharacter | RawDB.DualCharacter,
   evolution: (RawDB.SingleCharacter | RawDB.DualCharacter)[],
-): FinalDB.Character {
+): FinalDB.PirateRumble.Rumble | undefined {
   let rumble = rawCharacter.rumble ?? evolution.find(e => !!e.rumble)?.rumble
-  if (!rumble) return finalCharacter
+  if (!rumble) return undefined
 
-  finalCharacter.rumble = extractFinalRumble(
+  return extractFinalRumble(
     rumble,
     costCalculator(rumble, rawCharacter.flags) ?? 0,
   )
-
-  return finalCharacter
 }
 
 export function enhanceVersusRumble(
-  finalCharacter: FinalDB.Character,
   rawCharacter: RawDB.VersusCharacter,
   evolution: RawDB.VersusCharacter[],
-): FinalDB.Character {
+  dualNode: 1 | 2
+): FinalDB.PirateRumble.Rumble | undefined {
   const characterWithRumbleData = rawCharacter.characters.character1.rumble
     ? rawCharacter
     : evolution.find(e => !!e.characters.character1.rumble)
 
-  if (!characterWithRumbleData) return finalCharacter
+  if (!characterWithRumbleData) return undefined
 
-  finalCharacter.rumble = undefined
-  finalCharacter.characters!.character1.rumble = extractFinalRumble(
-    characterWithRumbleData.characters.character1.rumble,
-    costCalculator(
-      characterWithRumbleData.characters.character1.rumble,
-      rawCharacter.flags,
-    ) ?? 0,
+  const rumble = dualNode === 1
+    ? characterWithRumbleData.characters.character1.rumble
+    : characterWithRumbleData.characters.character2.rumble
+
+  return extractFinalRumble(
+    rumble,
+    costCalculator(rumble, rawCharacter.flags) ?? 0,
   )
-
-  finalCharacter.characters!.character2.rumble = extractFinalRumble(
-    characterWithRumbleData.characters.character2.rumble,
-    costCalculator(
-      characterWithRumbleData.characters.character2.rumble,
-      rawCharacter.flags,
-    ) ?? 0,
-  )
-
-  return finalCharacter
 }
 
 export function extractFinalRumble(
