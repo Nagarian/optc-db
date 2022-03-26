@@ -228,7 +228,7 @@ export declare namespace FinalDB {
     maxLevel: number
     maxExp?: number
     flags: Flag[]
-    links?: AffiliatedLinks
+    links: AffiliatedLinks
     aliases: string[]
     notes?: string
 

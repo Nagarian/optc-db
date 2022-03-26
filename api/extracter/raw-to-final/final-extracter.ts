@@ -3,6 +3,7 @@ import { enhanceCaptain } from './enhancer/captain'
 import { computeDBEvolutions } from './enhancer/evolution'
 import { computeDBFamily } from './enhancer/family'
 import { enhanceLimitBreak } from './enhancer/limit-break'
+import { enhanceLinks } from './enhancer/links'
 import { enhanceSingleRumble, enhanceVersusRumble } from './enhancer/rumble'
 import { enhanceSailor } from './enhancer/sailor'
 import { enhanceSpecial } from './enhancer/special'
@@ -67,7 +68,7 @@ export function remapper(db: RawDB.DBCharacter[]): FinalDB.Character[] {
       family: family[id],
       flags: character.flags,
       limitBreak: enhanceLimitBreak(character.limitBreak),
-      links: character.links,
+      links: enhanceLinks(character),
       rarity: character.rarity,
       maxLevel: character.maxLevel,
       maxExp: character.maxExp,
