@@ -7,7 +7,7 @@ const isSimpleSailor = (
 
 export function extractSailor(
   unit: OldDB.ExtendedUnit,
-): RawDB.Sailor[] | undefined {
+): RawDB.Sailor | undefined {
   const sailor = unit.detail.sailor
   if (!sailor) return undefined
 
@@ -15,7 +15,7 @@ export function extractSailor(
     return [{ description: sailor }]
   }
 
-  const result: RawDB.Sailor[] = []
+  const result: RawDB.SailorDescription[] = []
 
   const tryAdd = (description: string | undefined | null) => {
     if (description && description != 'None') {
@@ -43,5 +43,7 @@ export function extractSailor(
     tryAdd(sailor.level2)
   }
 
-  return result.length ? result : undefined
+  return result.length === 1 || result.length === 2
+    ? (result as RawDB.Sailor)
+    : undefined
 }

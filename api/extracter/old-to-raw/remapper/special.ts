@@ -7,6 +7,10 @@ const isSimpleSpecial = (
   special: OldDB.UnitSpecial,
 ): special is OldDB.SimpleStageSpecial => typeof special === 'string'
 
+const isLevelLBSpecial = (
+  special: OldDB.UnitSpecial,
+): special is OldDB.LevelLBSpecial => !!(special as OldDB.LevelLBSpecial).base
+
 const isMultiStageSpecial = (
   special: OldDB.UnitSpecial,
 ): special is OldDB.MultiStageSpecial => Array.isArray(special)
@@ -28,7 +32,9 @@ export function extractSpecial(
   // if (!unit.cooldown || unit.cooldown.length !== 2)
   //   throw new Error(`missing cooldown for unit ${unit.dbId}`)
 
-  const special = unit.detail.special
+  const special = isLevelLBSpecial(unit.detail.special)
+    ? unit.detail.special.base
+    : unit.detail.special
   const cooldown =
     unit.cooldown?.length === 2
       ? [unit.cooldown[0], unit.cooldown[0] - unit.cooldown[1] + 1]
