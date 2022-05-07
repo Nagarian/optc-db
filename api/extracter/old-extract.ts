@@ -12,8 +12,8 @@ async function main() {
     process.exit(-1)
   }
 
-  await downloadJapCharacters(oldDb)
-  await downloadGloCharacters(oldDb)
+  // await downloadJapCharacters(oldDb)
+  // await downloadGloCharacters(oldDb)
 
   const rawDb = remapper(oldDb)
 

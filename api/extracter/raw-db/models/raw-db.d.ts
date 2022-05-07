@@ -35,7 +35,7 @@ export declare namespace RawDB {
     evolvers: EvolutionMaterial[]
   }
 
-  export type CaptainUpgrade = {
+  export type CaptainDescription = {
     description: string
   }
 
@@ -44,13 +44,13 @@ export declare namespace RawDB {
     /**
      * Always put the base description here, that also apply to TM characters
      */
-    baseDescription: string
+    description: string
     notes?: string
     /**
      * Put upgrade by ascending order like LB level (ie: 1 -> 6)
      * Do not repeat the base description here
      */
-    upgrades?: CaptainUpgrade[]
+    upgrades?: CaptainDescription[]
   }
 
   export type SuperSpecial = {
@@ -59,7 +59,7 @@ export declare namespace RawDB {
     notes?: string
   }
 
-  export type SpecialStage = {
+  export type SpecialDescription = {
     description: string
     cooldown: number
   }
@@ -76,20 +76,22 @@ export declare namespace RawDB {
     /**
      * Put stage by ascending order (ie: 1 -> 6) but without the latest you have already specified above
      */
-    stages?: SpecialStage[]
+    stages?: SpecialDescription[]
   }
 
   export type DualUnitSpecial = {
     name: string
     description: string
     notes?: string
-    stages?: SpecialStage[]
+    stages?: SpecialDescription[]
   }
 
-  export type Sailor = {
+  export type SailorDescription = {
     description: string
     notes?: string
   }
+
+  export type Sailor = [SailorDescription, SailorDescription?]
 
   export type StatSupportLevel = {
     value: number
@@ -166,7 +168,6 @@ export declare namespace RawDB {
 
   export type AffiliatedLinks = {
     gamewithId?: number
-    officialJapan?: string
   }
 
   export type DualUnitDetail = {
@@ -178,7 +179,7 @@ export declare namespace RawDB {
     stats: Statistics
     captain?: Captain
     special?: DualUnitSpecial
-    sailor?: Sailor[]
+    sailor?: Sailor
   }
 
   export type SuperSwap = {
@@ -191,6 +192,13 @@ export declare namespace RawDB {
     super?: SuperSwap
     notes?: string
   }
+
+  export type LevelLimitBreak = null | Partial<{
+    rumble: Partial<Omit<PirateRumble.Rumble, 'stats'>>
+    captain: CaptainDescription
+    special: SpecialDescription
+    sailor: [SailorDescription?, SailorDescription?]
+  }>
 
   export type DualUnitNode = {
     character1: DualUnitDetail
@@ -212,7 +220,7 @@ export declare namespace RawDB {
     stats: Statistics
     captain?: Captain
     special?: Special
-    sailor?: Sailor[]
+    sailor?: Sailor
     rumble?: PirateRumble.Rumble
     versus: Versus
   }
@@ -244,6 +252,7 @@ export declare namespace RawDB {
     notes?: string
 
     limitBreak?: LB.LimitBreak
+    levelLimitBreak?: LevelLimitBreak[]
     evolution?: Evolution[]
   }
 
@@ -253,7 +262,7 @@ export declare namespace RawDB {
     captain?: Captain
     superSpecial?: SuperSpecial
     special?: Special
-    sailor?: Sailor[]
+    sailor?: Sailor
     support?: Support
     rumble?: PirateRumble.Rumble
   }
@@ -263,7 +272,7 @@ export declare namespace RawDB {
     class: Class
     captain?: Captain
     special?: Special
-    sailor?: Sailor[]
+    sailor?: Sailor
     rumble?: PirateRumble.Rumble
     characters: DualUnitNode
   }
@@ -394,7 +403,6 @@ export declare namespace RawDB {
       type: PatternType
     }
 
-    export type ResilienceType = 'debuff' | 'healing' | 'damage'
     export type Resilience =
       | DebuffResilience
       | DamageResilience
@@ -402,6 +410,7 @@ export declare namespace RawDB {
 
     export type DebuffResilience = {
       attribute: Attribute
+      condition?: Condition
       chance: number
       type: 'debuff'
     }

@@ -2,7 +2,7 @@ import { RawDB } from '../../raw-db/models/raw-db'
 import { FinalDB } from '../models/final-db'
 
 export function enhanceSailor(
-  sailor: RawDB.Sailor[] | undefined,
+  sailor: RawDB.SailorDescription[] | undefined,
   limitBreak: RawDB.LB.LimitBreak | undefined,
 ): FinalDB.Sailor[] | undefined {
   if (!sailor) return undefined

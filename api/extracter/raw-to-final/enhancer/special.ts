@@ -47,7 +47,7 @@ function computeSpecialCooldown(
 
 function computeSpecialStage(
   special: FinalDB.SpecialCooldown,
-  stage: RawDB.SpecialStage,
+  stage: RawDB.SpecialDescription,
 ): FinalDB.SpecialStage {
   const delta = special.initial - stage.cooldown
 

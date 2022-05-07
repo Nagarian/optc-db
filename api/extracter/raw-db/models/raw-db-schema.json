@@ -7,9 +7,6 @@
       "properties": {
         "gamewithId": {
           "type": "number"
-        },
-        "officialJapan": {
-          "type": "string"
         }
       },
       "type": "object"
@@ -17,7 +14,7 @@
     "RawDB.Captain": {
       "additionalProperties": false,
       "properties": {
-        "baseDescription": {
+        "description": {
           "description": "Always put the base description here, that also apply to TM characters",
           "type": "string"
         },
@@ -30,18 +27,18 @@
         "upgrades": {
           "description": "Put upgrade by ascending order like LB level (ie: 1 -> 6) Do not repeat the base description here",
           "items": {
-            "$ref": "#/definitions/RawDB.CaptainUpgrade"
+            "$ref": "#/definitions/RawDB.CaptainDescription"
           },
           "type": "array"
         }
       },
       "required": [
         "name",
-        "baseDescription"
+        "description"
       ],
       "type": "object"
     },
-    "RawDB.CaptainUpgrade": {
+    "RawDB.CaptainDescription": {
       "additionalProperties": false,
       "properties": {
         "description": {
@@ -173,6 +170,12 @@
         "japanName": {
           "type": "string"
         },
+        "levelLimitBreak": {
+          "items": {
+            "$ref": "#/definitions/RawDB.LevelLimitBreak"
+          },
+          "type": "array"
+        },
         "limitBreak": {
           "$ref": "#/definitions/RawDB.LB.LimitBreak"
         },
@@ -201,10 +204,7 @@
           "$ref": "#/definitions/RawDB.PirateRumble.Rumble"
         },
         "sailor": {
-          "items": {
-            "$ref": "#/definitions/RawDB.Sailor"
-          },
-          "type": "array"
+          "$ref": "#/definitions/RawDB.Sailor"
         },
         "slots": {
           "type": "number"
@@ -255,10 +255,7 @@
           "type": "string"
         },
         "sailor": {
-          "items": {
-            "$ref": "#/definitions/RawDB.Sailor"
-          },
-          "type": "array"
+          "$ref": "#/definitions/RawDB.Sailor"
         },
         "special": {
           "$ref": "#/definitions/RawDB.DualUnitSpecial"
@@ -312,7 +309,7 @@
         },
         "stages": {
           "items": {
-            "$ref": "#/definitions/RawDB.SpecialStage"
+            "$ref": "#/definitions/RawDB.SpecialDescription"
           },
           "type": "array"
         }
@@ -1178,25 +1175,25 @@
     },
     "RawDB.LB.PotentialType": {
       "enum": [
-        "Enrage/Reduce Increase Damage Taken duration",
-        "Critical Hit",
         "Reduce Slot Bind duration",
         "Reduce No Healing duration",
-        "Pinch Healing",
         "Barrier Penetration",
+        "Pinch Healing",
+        "Enrage/Reduce Increase Damage Taken duration",
+        "Critical Hit",
+        "Cooldown Reduction",
+        "Double Special Activation",
         "[STR] Damage Reduction",
         "[DEX] Damage Reduction",
         "[QCK] Damage Reduction",
         "[PSY] Damage Reduction",
         "[INT] Damage Reduction",
-        "Cooldown Reduction",
-        "Double Special Activation",
         "Reduce Ship Bind duration",
         "Reduce Sailor Despair duration",
         "Reduce Special Use Limit duration",
         "Reduce Slot Barrier duration",
         "Reduce Healing Reduction duration",
-        "Nutrition/Reduce Hunger duration",
+        "Nutrition/Reduce Hunger stacks",
         "Last Tap"
       ],
       "type": "string"
@@ -1204,6 +1201,71 @@
     "RawDB.LB.PotentialVariant": {
       "const": "up to",
       "type": "string"
+    },
+    "RawDB.LevelLimitBreak": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "captain": {
+              "$ref": "#/definitions/RawDB.CaptainDescription"
+            },
+            "rumble": {
+              "additionalProperties": false,
+              "properties": {
+                "ability": {
+                  "items": {
+                    "$ref": "#/definitions/RawDB.PirateRumble.Ability"
+                  },
+                  "maxItems": 5,
+                  "minItems": 5,
+                  "type": "array"
+                },
+                "pattern": {
+                  "items": {
+                    "$ref": "#/definitions/RawDB.PirateRumble.Pattern"
+                  },
+                  "minItems": 1,
+                  "type": "array"
+                },
+                "resilience": {
+                  "items": {
+                    "$ref": "#/definitions/RawDB.PirateRumble.Resilience"
+                  },
+                  "type": "array"
+                },
+                "special": {
+                  "items": {
+                    "$ref": "#/definitions/RawDB.PirateRumble.Special"
+                  },
+                  "maxItems": 10,
+                  "minItems": 10,
+                  "type": "array"
+                },
+                "target": {
+                  "$ref": "#/definitions/RawDB.PirateRumble.TargetClass"
+                }
+              },
+              "type": "object"
+            },
+            "sailor": {
+              "items": {
+                "$ref": "#/definitions/RawDB.SailorDescription"
+              },
+              "maxItems": 2,
+              "minItems": 0,
+              "type": "array"
+            },
+            "special": {
+              "$ref": "#/definitions/RawDB.SpecialDescription"
+            }
+          },
+          "type": "object"
+        }
+      ]
     },
     "RawDB.PirateRumble.Ability": {
       "additionalProperties": false,
@@ -1489,6 +1551,9 @@
         },
         "chance": {
           "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Condition"
         },
         "type": {
           "const": "debuff",
@@ -1947,6 +2012,14 @@
       ]
     },
     "RawDB.Sailor": {
+      "items": {
+        "$ref": "#/definitions/RawDB.SailorDescription"
+      },
+      "maxItems": 2,
+      "minItems": 1,
+      "type": "array"
+    },
+    "RawDB.SailorDescription": {
       "additionalProperties": false,
       "properties": {
         "description": {
@@ -2003,6 +2076,12 @@
         "japanName": {
           "type": "string"
         },
+        "levelLimitBreak": {
+          "items": {
+            "$ref": "#/definitions/RawDB.LevelLimitBreak"
+          },
+          "type": "array"
+        },
         "limitBreak": {
           "$ref": "#/definitions/RawDB.LB.LimitBreak"
         },
@@ -2031,10 +2110,7 @@
           "$ref": "#/definitions/RawDB.PirateRumble.Rumble"
         },
         "sailor": {
-          "items": {
-            "$ref": "#/definitions/RawDB.Sailor"
-          },
-          "type": "array"
+          "$ref": "#/definitions/RawDB.Sailor"
         },
         "slots": {
           "type": "number"
@@ -2092,7 +2168,7 @@
         "stages": {
           "description": "Put stage by ascending order (ie: 1 -> 6) but without the latest you have already specified above",
           "items": {
-            "$ref": "#/definitions/RawDB.SpecialStage"
+            "$ref": "#/definitions/RawDB.SpecialDescription"
           },
           "type": "array"
         }
@@ -2103,7 +2179,7 @@
       ],
       "type": "object"
     },
-    "RawDB.SpecialStage": {
+    "RawDB.SpecialDescription": {
       "additionalProperties": false,
       "properties": {
         "cooldown": {
@@ -2354,6 +2430,12 @@
         "japanName": {
           "type": "string"
         },
+        "levelLimitBreak": {
+          "items": {
+            "$ref": "#/definitions/RawDB.LevelLimitBreak"
+          },
+          "type": "array"
+        },
         "limitBreak": {
           "$ref": "#/definitions/RawDB.LB.LimitBreak"
         },
@@ -2427,10 +2509,7 @@
           "$ref": "#/definitions/RawDB.PirateRumble.Rumble"
         },
         "sailor": {
-          "items": {
-            "$ref": "#/definitions/RawDB.Sailor"
-          },
-          "type": "array"
+          "$ref": "#/definitions/RawDB.Sailor"
         },
         "special": {
           "$ref": "#/definitions/RawDB.Special"

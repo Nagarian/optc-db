@@ -31,7 +31,7 @@ export function extractCaptain(
   if (isSimpleCaptain(captain)) {
     return {
       name: '',
-      baseDescription: extractDescription(captain),
+      description: extractDescription(captain),
       notes: extractNotes(unit.detail.captainNotes),
     }
   }
@@ -39,7 +39,7 @@ export function extractCaptain(
   if (isDualCaptain(captain)) {
     return {
       name: '',
-      baseDescription: extractDescription(captain.combined),
+      description: extractDescription(captain.combined),
       notes: extractNotes(unit.detail.captainNotes),
     }
   }
@@ -52,11 +52,11 @@ export function extractCaptain(
     const upgrades = Object.entries(captain)
       .filter(([key, desc]) => key.startsWith('level'))
       .flatMap(([key, desc]) => (desc ? [desc] : []))
-      .map<RawDB.CaptainUpgrade>(description => ({ description: extractDescription(description) }))
+      .map<RawDB.CaptainDescription>(description => ({ description: extractDescription(description) }))
 
     return {
       name: '',
-      baseDescription: extractDescription(captain.base),
+      description: extractDescription(captain.base),
       notes: extractNotes(unit.detail.captainNotes),
       upgrades,
     }

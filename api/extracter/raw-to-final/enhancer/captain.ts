@@ -10,7 +10,7 @@ export function enhanceCaptain(
   if (!limitBreak || !limitBreak.path.length) {
     return {
       name: captain.name,
-      description: captain.baseDescription,
+      description: captain.description,
       notes: captain.notes,
     }
   }
@@ -24,7 +24,7 @@ export function enhanceCaptain(
   if (!captainUpgradeIndexes.length && !captain.upgrades?.length) {
     return {
       name: captain.name,
-      description: captain.baseDescription,
+      description: captain.description,
       notes: captain.notes,
     }
   }
@@ -41,7 +41,7 @@ export function enhanceCaptain(
   }
 
   const upgrades: FinalDB.CaptainUpgrade[] = [
-    { description: captain.baseDescription },
+    { description: captain.description },
     ...captain.upgrades!,
   ]
     .reverse()

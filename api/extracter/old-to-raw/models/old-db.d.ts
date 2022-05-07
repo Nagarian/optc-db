@@ -40,6 +40,9 @@ export declare namespace OldDB {
     limitHP: number | null
     limitATK: number | null
     limitRCV: number | null
+    llbmaxHP: number | null
+    llbmaxATK: number | null
+    llbmaxRCV: number | null
     limitSlot: number
     limitCD: number
     limitexHP: number | null
@@ -114,11 +117,16 @@ export declare namespace OldDB {
     global: string
     japan: string
   }
+  export type LevelLBSpecial = {
+    base: SimpleStageSpecial | MultiStageSpecial | DualCharacterSpecial
+    llbbase: SimpleStageSpecial | MultiStageSpecial | DualCharacterSpecial
+  }
   export type UnitSpecial =
     | SimpleStageSpecial
     | MultiStageSpecial
     | DualCharacterSpecial
     | GloJapSpecial
+    | LevelLBSpecial
 
   export type SimpleCaptain = string
   export type DualCaptain = {
@@ -128,12 +136,14 @@ export declare namespace OldDB {
   }
   export type LimitBrokenCaptain = {
     base: string
-    level1: string
+    level1?: string
     level2?: string
     level3?: string
     level4?: string
     level5?: string
     level6?: string
+    llbbase?: string
+    llblevel1?: string
   }
   export type UnitCaptain =
     | undefined
@@ -147,6 +157,8 @@ export declare namespace OldDB {
     base2?: string | null
     level1?: string | null
     level2?: string | null
+    llblevel1?: string
+    llblevel2?: string
   }
   export type DualSailor = {
     character1: string | null
@@ -167,6 +179,15 @@ export declare namespace OldDB {
     superTurns: number
   }
 
+  export type UnitLevelLimitBreak = null | Partial<{
+    rAbility: boolean
+    rSpecial: boolean
+    rResilience: boolean
+    captain: UnitCaptain
+    special: UnitSpecial
+    sailor: UnitSailor
+  }>
+
   export type UnitDetail = Partial<{
     captain: UnitCaptain
     captainNotes: string
@@ -181,6 +202,7 @@ export declare namespace OldDB {
     potentialNotes: string
     lastTap?: UnitLastTap[]
     lastTapNotes?: string
+    lLimit?: UnitLevelLimitBreak[]
     support: [UnitSupport]
     supportNotes: string
     swap: string | UnitSuperSwap
@@ -308,8 +330,6 @@ export declare namespace OldDB {
 
     export type Attribute = RumbleStatType | ColorType | AdditionalCriteriaType
 
-    export type ResilienceType = 'debuff' | 'healing' | 'damage'
-
     export type ConditionComparator =
       | 'above'
       | 'below'
@@ -359,9 +379,7 @@ export declare namespace OldDB {
     }
     export type Unit = {
       ability: [Ability, Ability, Ability, Ability, Ability]
-      global?: Unit
       id: number
-      japan?: Unit
       pattern: [Pattern, ...Pattern[]]
       special: [
         Special,
@@ -378,6 +396,20 @@ export declare namespace OldDB {
       stats: Stats
       target: TargetClass
       resilience?: Resilience[]
+      llbability?: [Ability, Ability, Ability, Ability, Ability]
+      llbresilience?: Resilience[]
+      llbspecial?: [
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+        Special,
+      ]
     }
 
     export type Ability = {
@@ -413,6 +445,7 @@ export declare namespace OldDB {
 
     export type DebuffResilience = {
       attribute: Attribute
+      condition?: Condition
       chance: number
       type: 'debuff'
     }

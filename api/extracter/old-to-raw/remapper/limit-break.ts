@@ -19,7 +19,7 @@ export function extractLimitBreak(
       potentials,
       lastTap: extractLastTap(unit),
     }
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(`unit ${unit.dbId} has an error: ${error.message}`)
   }
 }
@@ -76,17 +76,21 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
   ],
   'Cooldown Reduction': [
     /^Reduce own Special Cooldown by (?<value>\d+|\?) turns? at the start of the fight$/i,
+    /^Reduces Special Cooldown of this character by (?<value>\d+|\?) turns? at the start of the fight$/i,
   ],
   'Double Special Activation': [
     /^Once per adventure, reduce own Special Cooldown by (?<value>\d+|\?) turns? after the first time this special is used$/i,
     /^Once per adventure, sets your Special Gauge to (?<value>MAX) after the first time this special is used$/i,
+    /^Once per adventure, reduces Special Cooldown of this character by (?<value>\d+|\?) turns? after the first time this special is used$/i,
+    /^Once per adventure, reduces Special Cooldown of this character (?<value>completely) after the first time this special is used$/i,
   ],
   'Reduce Ship Bind duration': [
-    /^Reduce Ship Bind duration by (?<value>\d+|\?) turns?$/i,
+    /^Reduces? Ship Bind duration by (?<value>\d+|\?) turns?$/i,
   ],
   'Reduce Sailor Despair duration': [
     /^Reduces? own Sailor Despair duration by (?<value>\d+|\?) turns?$/i,
     /^Reduces? Sailor Despair duration by (?<value>\d+|\?) turns?$/i,
+    /^Reduces? Sailor Despair duration by (?<value>\d+|\?) turns? on this character$/i,
   ],
   'Reduce Special Use Limit duration': [
     /^Reduces Special Limit duration by (?<value>\d+|\?) turns?\.$/
@@ -94,7 +98,7 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
   'Reduce Healing Reduction duration': [
     /^Reduces Healing Reduction duration by (?<value>\d+|\?) turns?$/i,
   ],
-  'Nutrition/Reduce Hunger duration': [
+  'Nutrition/Reduce Hunger stacks': [
     /^Boosts base ATK by (?<value>\d+|\?) the turn after recovering (?<threshold>\d+,?\d*|\?) HP and reduces Hunger stack by (?<reduction>\d+|\?) stacks?$/i,
     /^Boosts base ATK by (?<variant>up to) (?<value>\d+|\?) the turn after recovering up to (?<threshold>\d+,?\d*|\?) HP and reduces Hunger stack by (?<reduction>\d+|\?) stacks?$/i,
   ],

@@ -283,6 +283,24 @@
         "limitexSlot": {
           "type": "number"
         },
+        "llbmaxATK": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "llbmaxHP": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "llbmaxRCV": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
         "maxATK": {
           "type": [
             "number",
@@ -428,6 +446,9 @@
         "limitexHP",
         "limitexRCV",
         "limitexSlot",
+        "llbmaxATK",
+        "llbmaxHP",
+        "llbmaxRCV",
         "maxATK",
         "maxEXP",
         "maxHP",
@@ -457,6 +478,42 @@
       "required": [
         "global",
         "japan"
+      ],
+      "type": "object"
+    },
+    "OldDB.LevelLBSpecial": {
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/OldDB.SimpleStageSpecial"
+            },
+            {
+              "$ref": "#/definitions/OldDB.MultiStageSpecial"
+            },
+            {
+              "$ref": "#/definitions/OldDB.DualCharacterSpecial"
+            }
+          ]
+        },
+        "llbbase": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/OldDB.SimpleStageSpecial"
+            },
+            {
+              "$ref": "#/definitions/OldDB.MultiStageSpecial"
+            },
+            {
+              "$ref": "#/definitions/OldDB.DualCharacterSpecial"
+            }
+          ]
+        }
+      },
+      "required": [
+        "base",
+        "llbbase"
       ],
       "type": "object"
     },
@@ -495,11 +552,16 @@
         },
         "level6": {
           "type": "string"
+        },
+        "llbbase": {
+          "type": "string"
+        },
+        "llblevel1": {
+          "type": "string"
         }
       },
       "required": [
-        "base",
-        "level1"
+        "base"
       ],
       "type": "object"
     },
@@ -529,6 +591,12 @@
             "string",
             "null"
           ]
+        },
+        "llblevel1": {
+          "type": "string"
+        },
+        "llblevel2": {
+          "type": "string"
         }
       },
       "type": "object"
@@ -867,6 +935,9 @@
         },
         "chance": {
           "type": "number"
+        },
+        "condition": {
+          "$ref": "#/definitions/OldDB.PirateFest.Condition"
         },
         "type": {
           "const": "debuff",
@@ -1269,14 +1340,30 @@
           "minItems": 5,
           "type": "array"
         },
-        "global": {
-          "$ref": "#/definitions/OldDB.PirateFest.Unit"
-        },
         "id": {
           "type": "number"
         },
-        "japan": {
-          "$ref": "#/definitions/OldDB.PirateFest.Unit"
+        "llbability": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Ability"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "llbresilience": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Resilience"
+          },
+          "type": "array"
+        },
+        "llbspecial": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Special"
+          },
+          "maxItems": 10,
+          "minItems": 10,
+          "type": "array"
         },
         "pattern": {
           "items": {
@@ -1318,25 +1405,25 @@
     },
     "OldDB.PotentialKey": {
       "enum": [
-        "Enrage/Reduce Increase Damage Taken duration",
-        "Critical Hit",
         "Reduce Slot Bind duration",
         "Reduce No Healing duration",
-        "Pinch Healing",
         "Barrier Penetration",
+        "Pinch Healing",
+        "Enrage/Reduce Increase Damage Taken duration",
+        "Critical Hit",
+        "Cooldown Reduction",
+        "Double Special Activation",
         "[STR] Damage Reduction",
         "[DEX] Damage Reduction",
         "[QCK] Damage Reduction",
         "[PSY] Damage Reduction",
         "[INT] Damage Reduction",
-        "Cooldown Reduction",
-        "Double Special Activation",
         "Reduce Ship Bind duration",
         "Reduce Sailor Despair duration",
         "Reduce Special Use Limit duration",
         "Reduce Slot Barrier duration",
         "Reduce Healing Reduction duration",
-        "Nutrition/Reduce Hunger duration",
+        "Nutrition/Reduce Hunger stacks",
         "Last Tap"
       ],
       "type": "string"
@@ -1447,6 +1534,12 @@
         },
         "captainNotes": {
           "type": "string"
+        },
+        "lLimit": {
+          "items": {
+            "$ref": "#/definitions/OldDB.UnitLevelLimitBreak"
+          },
+          "type": "array"
         },
         "lastTap": {
           "items": {
@@ -1735,6 +1828,57 @@
       ],
       "type": "object"
     },
+    "OldDB.UnitLevelLimitBreak": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "captain": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/OldDB.SimpleCaptain"
+                },
+                {
+                  "$ref": "#/definitions/OldDB.DualCaptain"
+                },
+                {
+                  "$ref": "#/definitions/OldDB.LimitBrokenCaptain"
+                }
+              ]
+            },
+            "rAbility": {
+              "type": "boolean"
+            },
+            "rResilience": {
+              "type": "boolean"
+            },
+            "rSpecial": {
+              "type": "boolean"
+            },
+            "sailor": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/OldDB.SimpleSailor"
+                },
+                {
+                  "$ref": "#/definitions/OldDB.DualSailor"
+                },
+                {
+                  "$ref": "#/definitions/OldDB.LimitBrokenSailor"
+                }
+              ]
+            },
+            "special": {
+              "$ref": "#/definitions/OldDB.UnitSpecial"
+            }
+          },
+          "type": "object"
+        }
+      ]
+    },
     "OldDB.UnitPotential": {
       "additionalProperties": false,
       "properties": {
@@ -1769,6 +1913,9 @@
         },
         {
           "$ref": "#/definitions/OldDB.GloJapSpecial"
+        },
+        {
+          "$ref": "#/definitions/OldDB.LevelLBSpecial"
         }
       ]
     },

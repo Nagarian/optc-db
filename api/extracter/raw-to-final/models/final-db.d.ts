@@ -354,7 +354,6 @@ export declare namespace FinalDB {
       type: PatternType
     }
 
-    export type ResilienceType = 'debuff' | 'healing' | 'damage'
     export type Resilience =
       | DebuffResilience
       | DamageResilience

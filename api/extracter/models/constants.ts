@@ -17,25 +17,25 @@ export const CharacterClasses = [
 export const Rarities = [1, 2, 3, 4, '4+', 5, '5+', 6, '6+'] as const
 
 export const Potentials = [
-  'Enrage/Reduce Increase Damage Taken duration',
-  'Critical Hit',
   'Reduce Slot Bind duration',
   'Reduce No Healing duration',
-  'Pinch Healing',
   'Barrier Penetration',
+  'Pinch Healing',
+  'Enrage/Reduce Increase Damage Taken duration',
+  'Critical Hit',
+  'Cooldown Reduction',
+  'Double Special Activation',
   '[STR] Damage Reduction',
   '[DEX] Damage Reduction',
   '[QCK] Damage Reduction',
   '[PSY] Damage Reduction',
   '[INT] Damage Reduction',
-  'Cooldown Reduction',
-  'Double Special Activation',
   'Reduce Ship Bind duration',
   'Reduce Sailor Despair duration',
   'Reduce Special Use Limit duration',
   'Reduce Slot Barrier duration',
   'Reduce Healing Reduction duration',
-  'Nutrition/Reduce Hunger duration',
+  'Nutrition/Reduce Hunger stacks',
   'Last Tap',
 ] as const
 

@@ -13,10 +13,6 @@ export function getRumble(
     return undefined
   }
 
-  if (rumble.japan || rumble.global) {
-    throw new Error('Rumble Global/Japan specificity is not supported')
-  }
-
   return rumble
 }
 
