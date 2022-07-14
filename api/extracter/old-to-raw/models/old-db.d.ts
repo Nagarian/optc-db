@@ -97,6 +97,12 @@ export declare namespace OldDB {
     description: string[]
   }
 
+  export type UnitSuperTandem = {
+    condition?: string
+    characterCondition: string[]
+    description: string[]
+  }
+
   export type UnitSupport = {
     Characters: string
     description: [string, string, string, string, string]
@@ -200,8 +206,9 @@ export declare namespace OldDB {
     limitNotes: string // handled into rootNotes
     potential: UnitPotential[]
     potentialNotes: string
-    lastTap?: UnitLastTap[]
+    lastTap?: UnitLastTap
     lastTapNotes?: string
+    superTandem?: UnitSuperTandem
     lLimit?: UnitLevelLimitBreak[]
     support: [UnitSupport]
     supportNotes: string

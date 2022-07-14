@@ -159,10 +159,22 @@ export declare namespace RawDB {
       notes?: string
     }
 
+
+    export type SuperTandemLevel = {
+      criteria: string
+      description: string
+    }
+
+    export type SuperTandem = {
+      levels: SuperTandemLevel[]
+      notes?: string
+    }
+
     export type LimitBreak = {
       path: Path[]
       potentials: Potential[]
       lastTap?: LastTap
+      superTandem?: SuperTandem
     }
   }
 

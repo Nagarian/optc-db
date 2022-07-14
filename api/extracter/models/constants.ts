@@ -37,6 +37,7 @@ export const Potentials = [
   'Reduce Healing Reduction duration',
   'Nutrition/Reduce Hunger stacks',
   'Last Tap',
+  'Super Tandem',
 ] as const
 
 export const PowerSockets = [

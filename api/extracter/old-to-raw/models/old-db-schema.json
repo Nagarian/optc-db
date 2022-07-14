@@ -1424,7 +1424,8 @@
         "Reduce Slot Barrier duration",
         "Reduce Healing Reduction duration",
         "Nutrition/Reduce Hunger stacks",
-        "Last Tap"
+        "Last Tap",
+        "Super Tandem"
       ],
       "type": "string"
     },
@@ -1542,10 +1543,7 @@
           "type": "array"
         },
         "lastTap": {
-          "items": {
-            "$ref": "#/definitions/OldDB.UnitLastTap"
-          },
-          "type": "array"
+          "$ref": "#/definitions/OldDB.UnitLastTap"
         },
         "lastTapNotes": {
           "type": "string"
@@ -1601,6 +1599,9 @@
         },
         "superSpecialNotes": {
           "type": "string"
+        },
+        "superTandem": {
+          "$ref": "#/definitions/OldDB.UnitSuperTandem"
         },
         "support": {
           "items": {
@@ -1936,6 +1937,31 @@
         "base",
         "super",
         "superTurns"
+      ],
+      "type": "object"
+    },
+    "OldDB.UnitSuperTandem": {
+      "additionalProperties": false,
+      "properties": {
+        "characterCondition": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "condition": {
+          "type": "string"
+        },
+        "description": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "characterCondition",
+        "description"
       ],
       "type": "object"
     },
