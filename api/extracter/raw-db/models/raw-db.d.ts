@@ -310,6 +310,7 @@ export declare namespace RawDB {
       | 'Accuracy'
       | 'Action Bind'
       | 'Blow Away'
+      | 'Confusion'
       | 'Counter'
       | 'Critical Hit'
       | 'Damage Over Time'
@@ -322,8 +323,10 @@ export declare namespace RawDB {
       | 'Paralysis'
       | 'Provoke'
       | 'Revive'
+      | 'Shield'
       | 'Silence'
       | 'Special CT'
+      | 'takes damage'
 
     export type Direction = 'forward' | 'radial' | 'sideways'
     export type Size = 'large' | 'small' | 'medium'
@@ -395,11 +398,12 @@ export declare namespace RawDB {
 
     export type Condition = {
       comparator?: ConditionComparator
-      stat?: Attribute
-      type: ConditionType
-      team?: ConditionTeam
       count?: number
-      families?: Family[]
+      families?: string[]
+      relative?: boolean
+      stat?: Attribute
+      team?: ConditionTeam
+      type: ConditionType
     }
 
     export type Pattern = AttackPattern | HealPattern
@@ -452,17 +456,17 @@ export declare namespace RawDB {
       | EffectOverride
 
     export type BasicEffect = {
+      amount?: number
       attributes?: Attribute[]
       chance?: number
+      condition?: Condition
+      defbypass?: boolean
       duration?: number
-      targeting: Targeting
-      amount?: number
       interval?: number
       level?: number
       range?: Range
-      condition?: Condition
-      defbypass?: boolean
       repeat?: number
+      targeting: Targeting
     }
 
     export type CommonEffect = BasicEffect & {
@@ -489,6 +493,7 @@ export declare namespace RawDB {
       percentage?: number
       stat?: Attribute
       targets: TargetElement[]
+      excludes?: TargetElement[]
     }
 
     export type Range = {

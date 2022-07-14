@@ -1325,6 +1325,7 @@
         "Accuracy",
         "Action Bind",
         "Blow Away",
+        "Confusion",
         "Counter",
         "Critical Hit",
         "Damage Over Time",
@@ -1337,8 +1338,10 @@
         "Paralysis",
         "Provoke",
         "Revive",
+        "Shield",
         "Silence",
-        "Special CT"
+        "Special CT",
+        "takes damage"
       ],
       "type": "string"
     },
@@ -1500,9 +1503,12 @@
         },
         "families": {
           "items": {
-            "$ref": "#/definitions/RawDB.Family"
+            "type": "string"
           },
           "type": "array"
+        },
+        "relative": {
+          "type": "boolean"
         },
         "stat": {
           "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
@@ -2001,6 +2007,12 @@
       "properties": {
         "count": {
           "type": "number"
+        },
+        "excludes": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.TargetElement"
+          },
+          "type": "array"
         },
         "percentage": {
           "type": "number"
