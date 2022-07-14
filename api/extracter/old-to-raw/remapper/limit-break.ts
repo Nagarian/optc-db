@@ -18,6 +18,7 @@ export function extractLimitBreak(
       path,
       potentials,
       lastTap: extractLastTap(unit),
+      superTandem: extractSuperTandem(unit),
     }
   } catch (error: any) {
     throw new Error(`unit ${unit.dbId} has an error: ${error.message}`)
@@ -93,7 +94,7 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
     /^Reduces? Sailor Despair duration by (?<value>\d+|\?) turns? on this character$/i,
   ],
   'Reduce Special Use Limit duration': [
-    /^Reduces Special Limit duration by (?<value>\d+|\?) turns?\.$/
+    /^Reduces Special Limit duration by (?<value>\d+|\?) turns?\.$/,
   ],
   'Reduce Healing Reduction duration': [
     /^Reduces Healing Reduction duration by (?<value>\d+|\?) turns?$/i,
@@ -107,6 +108,7 @@ const potentialsRegex: Record<RawDB.LB.PotentialType, RegExp[]> = {
     /^Reduces Slot Barrier duration by (?<value>\d+|\?) turns? on this character$/i,
     /^Reduces Slot Barrier duration (?<value>completely) on this character$/i,
   ],
+  'Super Tandem': [/^Super Tandem Ability Lv.(?<value>\d+|\?)$/i],
 }
 function extractPotentialLevel(
   type: RawDB.LB.PotentialType,
@@ -188,15 +190,28 @@ function extractLastTap(
     return undefined
   }
 
-  if (unit.detail.lastTap.length > 1) {
-    throw new Error('More than 1 last tap detected')
+  return {
+    criteria: unit.detail.lastTap.condition,
+    levels: unit.detail.lastTap.description.map(str => ({ description: str })),
+    notes: unit.detail.lastTapNotes || undefined,
+  }
+}
+
+function extractSuperTandem(
+  unit: OldDB.ExtendedUnit,
+): RawDB.LB.SuperTandem | undefined {
+  const st = unit.detail.superTandem
+  if (!st) {
+    return undefined
   }
 
-  const lastTap = unit.detail.lastTap[0]
-
   return {
-    criteria: lastTap.condition,
-    levels: lastTap.description.map(str => ({ description: str })),
-    notes: unit.detail.lastTapNotes || undefined,
+    levels: st.description.map((d, i) => ({
+      criteria: st.condition
+        ? `${st.condition} ${st.characterCondition[i]}`
+        : st.characterCondition[i],
+      description: d,
+    })),
+    notes: undefined,
   }
 }

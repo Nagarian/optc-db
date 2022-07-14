@@ -1099,6 +1099,9 @@
             "$ref": "#/definitions/RawDB.LB.Potential"
           },
           "type": "array"
+        },
+        "superTandem": {
+          "$ref": "#/definitions/RawDB.LB.SuperTandem"
         }
       },
       "required": [
@@ -1194,13 +1197,48 @@
         "Reduce Slot Barrier duration",
         "Reduce Healing Reduction duration",
         "Nutrition/Reduce Hunger stacks",
-        "Last Tap"
+        "Last Tap",
+        "Super Tandem"
       ],
       "type": "string"
     },
     "RawDB.LB.PotentialVariant": {
       "const": "up to",
       "type": "string"
+    },
+    "RawDB.LB.SuperTandem": {
+      "additionalProperties": false,
+      "properties": {
+        "levels": {
+          "items": {
+            "$ref": "#/definitions/RawDB.LB.SuperTandemLevel"
+          },
+          "type": "array"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "levels"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.SuperTandemLevel": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "criteria",
+        "description"
+      ],
+      "type": "object"
     },
     "RawDB.LevelLimitBreak": {
       "anyOf": [
