@@ -465,22 +465,6 @@
       ],
       "type": "object"
     },
-    "OldDB.GloJapSpecial": {
-      "additionalProperties": false,
-      "properties": {
-        "global": {
-          "type": "string"
-        },
-        "japan": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "global",
-        "japan"
-      ],
-      "type": "object"
-    },
     "OldDB.LevelLBSpecial": {
       "additionalProperties": false,
       "properties": {
@@ -1923,9 +1907,6 @@
         },
         {
           "$ref": "#/definitions/OldDB.DualCharacterSpecial"
-        },
-        {
-          "$ref": "#/definitions/OldDB.GloJapSpecial"
         },
         {
           "$ref": "#/definitions/OldDB.LevelLBSpecial"
