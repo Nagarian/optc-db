@@ -20,10 +20,6 @@ const isDualCharacterSpecial = (
 ): special is OldDB.DualCharacterSpecial =>
   !!(special as OldDB.DualCharacterSpecial).character1
 
-export const isGloJapSpecial = (
-  special?: OldDB.UnitSpecial,
-): special is OldDB.GloJapSpecial => !!(special as OldDB.GloJapSpecial)?.global
-
 export function extractSpecial(
   unit: OldDB.ExtendedUnit,
   dualCharacterChosen: 1 | 2 | undefined = undefined,
@@ -44,17 +40,6 @@ export function extractSpecial(
     return {
       name: unit.detail.specialName || '',
       description: extractDescription(special),
-      cooldown: cooldown[0],
-      maxLevel: cooldown[1],
-      notes: extractNotes(unit.detail.specialNotes),
-    }
-  }
-
-  if (isGloJapSpecial(special)) {
-    console.warn(`${unit.id} is an unexpected glo-jep diff special unit`)
-    return {
-      name: unit.detail.specialName || '',
-      description: `- global: ${special.global}\n\n- japan:${special.japan}`,
       cooldown: cooldown[0],
       maxLevel: cooldown[1],
       notes: extractNotes(unit.detail.specialNotes),

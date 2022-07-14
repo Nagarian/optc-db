@@ -4,7 +4,6 @@ import {
   globalOnlyReverseMap
 } from '../loader/global-only'
 import { OldDB } from '../models/old-db'
-import { isGloJapSpecial } from '../remapper/special'
 
 export function addGloOnly(db: OldDB.ExtendedUnit[]): OldDB.ExtendedUnit[] {
   return db
@@ -130,36 +129,4 @@ export function fixupGloOnlyFlags(
       japOnly: globalOnlyMissingInDb[unit.id] ? 1 : undefined,
     },
   }
-}
-
-export function fixupGloJapSpecial(
-  unit: OldDB.ExtendedUnit,
-  _index: number,
-  _units: OldDB.ExtendedUnit[],
-): OldDB.ExtendedUnit {
-  if (!isGloJapSpecial(unit.detail.special)) {
-    return unit
-  }
-
-  if (globalOnly[unit.id]) {
-    return {
-      ...unit,
-      detail: {
-        ...unit.detail,
-        special: unit.detail.special.global,
-      },
-    }
-  }
-
-  if (globalOnlyReverseMap[unit.id]) {
-    return {
-      ...unit,
-      detail: {
-        ...unit.detail,
-        special: unit.detail.special.japan,
-      },
-    }
-  }
-
-  return unit
 }

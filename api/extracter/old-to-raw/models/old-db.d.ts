@@ -119,10 +119,6 @@ export declare namespace OldDB {
     character1: string
     character2: string
   }
-  export type GloJapSpecial = {
-    global: string
-    japan: string
-  }
   export type LevelLBSpecial = {
     base: SimpleStageSpecial | MultiStageSpecial | DualCharacterSpecial
     llbbase: SimpleStageSpecial | MultiStageSpecial | DualCharacterSpecial
@@ -131,7 +127,6 @@ export declare namespace OldDB {
     | SimpleStageSpecial
     | MultiStageSpecial
     | DualCharacterSpecial
-    | GloJapSpecial
     | LevelLBSpecial
 
   export type SimpleCaptain = string
