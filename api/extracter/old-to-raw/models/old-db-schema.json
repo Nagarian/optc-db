@@ -648,6 +648,7 @@
         "Accuracy",
         "Action Bind",
         "Blow Away",
+        "Confusion",
         "Counter",
         "Critical Hit",
         "Damage Over Time",
@@ -660,8 +661,10 @@
         "Paralysis",
         "Provoke",
         "Revive",
+        "Shield",
         "Silence",
-        "Special CT"
+        "Special CT",
+        "takes damage"
       ],
       "type": "string"
     },
@@ -850,6 +853,9 @@
           },
           "type": "array"
         },
+        "relative": {
+          "type": "boolean"
+        },
         "stat": {
           "$ref": "#/definitions/OldDB.PirateFest.Attribute"
         },
@@ -980,8 +986,8 @@
         "buff",
         "boon",
         "cleanse",
-        "debuff",
         "damage",
+        "debuff",
         "hinderance",
         "penalty",
         "recharge"
@@ -1298,6 +1304,12 @@
       "properties": {
         "count": {
           "type": "number"
+        },
+        "excludes": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.TargetElement"
+          },
+          "type": "array"
         },
         "percentage": {
           "type": "number"
