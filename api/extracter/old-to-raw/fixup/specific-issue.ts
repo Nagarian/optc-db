@@ -7,8 +7,7 @@ export function fixupSpecificIssue(
 ): OldDB.ExtendedUnit {
   fixWrongPotential(unit)
   fixRumbleFamilies(unit)
-  fixHelmepCaptain(unit)
-  fixKatakuriCaptain(unit)
+  fixllbbase(unit)
   return unit
 }
 
@@ -23,7 +22,7 @@ function fixRumbleFamilies(unit: OldDB.ExtendedUnit) {
       // @ts-ignore
       unit.rumble.special[0].effects[3].condition.families = ['Nekomamushi']
     } else {
-      console.warn('issue with unit 3534 has been fixed')
+      console.warn(`issue with unit ${unit.id} should has been fixed`)
     }
   }
 
@@ -37,7 +36,7 @@ function fixRumbleFamilies(unit: OldDB.ExtendedUnit) {
       // @ts-ignore
       unit.rumble.special[0].effects[1].condition.families = ['Inuarashi']
     } else {
-      console.warn('issue with unit 3536 has been fixed')
+      console.warn(`issue with unit ${unit.id} should has been fixed`)
     }
   }
 
@@ -47,9 +46,12 @@ function fixRumbleFamilies(unit: OldDB.ExtendedUnit) {
         ?.condition?.families?.[0] === 'Boa Hancock'
     ) {
       // @ts-ignore
-      unit.rumble.special[0].effects[2].condition.families = ['BoaHancock', 'BoaSandersonia']
+      unit.rumble.special[0].effects[2].condition.families = [
+        'BoaHancock',
+        'BoaSandersonia',
+      ]
     } else {
-      console.warn('issue with unit 3546 has been fixed')
+      console.warn(`issue with unit ${unit.id} should has been fixed`)
     }
   }
 
@@ -59,9 +61,12 @@ function fixRumbleFamilies(unit: OldDB.ExtendedUnit) {
         ?.condition?.families?.[0] === 'Boa Marigold'
     ) {
       // @ts-ignore
-      unit.rumble.special[0].effects[1].condition.families = ['BoaMarigold', 'BoaHancock']
+      unit.rumble.special[0].effects[1].condition.families = [
+        'BoaMarigold',
+        'BoaHancock',
+      ]
     } else {
-      console.warn('issue with unit 3546 has been fixed')
+      console.warn(`issue with unit ${unit.id} should has been fixed`)
     }
   }
 }
@@ -75,37 +80,23 @@ function fixWrongPotential(unit: OldDB.ExtendedUnit) {
     // @ts-ignore
     unit.detail.limit[14].description = `Acquire Sailor Ability 2: ${unit.detail.sailor.level1}`
   } else {
-    console.warn('issue with unit 1538 has been fixed')
+    console.warn(`issue with unit ${unit.id} should has been fixed`)
   }
 }
 
-function fixHelmepCaptain(unit: OldDB.ExtendedUnit) {
-  if (unit.id !== 3466) {
+function fixllbbase(unit: OldDB.ExtendedUnit) {
+  if (unit.id !== 1413 && unit.id !== 1816) {
     return
   }
 
-  if (typeof unit.detail.captain === 'string') {
-    unit.detail.captain = {
-      base: 'Boosts ATK of Slasher and Free Spirit characters by 3x',
-      level1: unit.detail.captain
-    }
+  // @ts-ignore
+  if (unit.detail.special.level1) {
+    // @ts-ignore
+    unit.detail.special.llbbase = unit.detail.special.level1
+    // @ts-ignore
+    delete unit.detail.special.level1
   } else {
-    console.warn('issue with unit 3466 should has been fixed')
-  }
-}
-
-function fixKatakuriCaptain(unit: OldDB.ExtendedUnit) {
-  if (unit.id !== 2739) {
-    return
-  }
-
-  if (typeof unit.detail.captain === 'string') {
-    unit.detail.captain = {
-      base: unit.detail.captain,
-      level1: 'Boosts ATK of Slasher, Striker, Driven, Cerebral and Powerhouse characters by 2x, reduces damage received by 20% and makes [STR], [PSY], [RCV] and [TND] orbs beneficial for all characters. Has a chance to delay all enemies by 1 turn based on damage dealt in previous turn.'
-    }
-  } else {
-    console.warn('issue with unit 3466 should has been fixed')
+    console.warn(`issue with unit ${unit.id} should has been fixed`)
   }
 }
 
