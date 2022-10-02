@@ -1,6 +1,6 @@
 import { OldDB } from '../old-to-raw/models/old-db'
 import { RawDB } from '../raw-db/models/raw-db'
-import { extractCaptain } from './remapper/captain'
+import { extractCaptain, extractCaptainUpgrade } from './remapper/captain'
 import { extractDualUnit } from './remapper/dual'
 import { extractEvolution } from './remapper/evolution'
 import { extractFamily } from './remapper/family'
@@ -43,6 +43,7 @@ export function remap(unit: OldDB.ExtendedUnit): RawDB.Character {
 const rawSchemaPath = '../..'
 
 function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
+  const captainUpgrades = extractCaptainUpgrade(unit)
   return {
     oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
@@ -60,7 +61,7 @@ function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
     notes: extractRootNotes(unit),
     aliases: unit.aliases?.slice(2) ?? [],
     evolution: extractEvolution(unit),
-    limitBreak: extractLimitBreak(unit),
+    limitBreak: extractLimitBreak(unit, captainUpgrades),
   }
 }
 

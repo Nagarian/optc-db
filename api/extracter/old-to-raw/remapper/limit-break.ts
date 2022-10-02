@@ -1,8 +1,10 @@
 import { OldDB } from '../models/old-db'
 import { RawDB } from '../../raw-db/models/raw-db'
+import { isLBCaptainPath } from '../../raw-db/helper'
 
 export function extractLimitBreak(
   unit: OldDB.ExtendedUnit,
+  captainUpgrades: RawDB.CaptainDescription[]
 ): RawDB.LB.LimitBreak | undefined {
   if (!unit.detail.limit?.length && !unit.detail.potential?.length)
     return undefined
@@ -13,6 +15,18 @@ export function extractLimitBreak(
 
     const path =
       unit.detail.limit?.map(lb => extractLBPathLevel(lb.description)) ?? []
+
+    const captainPath = path.filter(isLBCaptainPath)
+
+    if (captainPath.length !== captainUpgrades.length) {
+      console.log(captainPath, captainUpgrades)
+      throw new Error(`Unit ${unit.id} has LB path captain node divergence`)
+    }
+
+    for (const key in captainUpgrades) {
+      const upgrade = captainUpgrades[key]
+      captainPath[key].captain.description = upgrade.description
+    }
 
     return {
       path,
@@ -170,16 +184,27 @@ function extractLBPathLevel(pathLevelDesc: string): RawDB.LB.Path {
 
   const [type, regex] = entry
   const value = regex.exec(pathLevelDesc)![1]
+  const valueNum = value === '?' ? 0 : parseInt(value)
 
-  if (['atk', 'hp', 'rcv', 'slot', 'cooldown'].includes(type)) {
-    return {
-      type,
-      value: value === '?' ? undefined : parseInt(value),
-    }
-  }
-
-  return {
-    type,
+  switch (type) {
+    case 'atk':
+      return { atk: valueNum }
+    case 'hp':
+      return { hp: valueNum }
+    case 'rcv':
+      return { rcv: valueNum }
+    case 'key':
+      return { key: 1 }
+    case 'slot':
+      return { slot: valueNum }
+    case 'cooldown':
+      return { cooldown: valueNum }
+    case 'captain':
+      return { captain: { description: '' } }
+    case 'sailor':
+    case 'potential':
+    default:
+      return { type }
   }
 }
 

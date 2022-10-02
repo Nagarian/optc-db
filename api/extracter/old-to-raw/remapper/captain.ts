@@ -49,18 +49,43 @@ export function extractCaptain(
   }
 
   if (isLimitBrokenCaptain(captain)) {
+    return {
+      name: '',
+      description: extractDescription(captain.base),
+      notes: extractNotes(unit.detail.captainNotes),
+    }
+  }
+
+  return undefined
+}
+
+export function extractCaptainUpgrade(
+  unit: OldDB.ExtendedUnit,
+): RawDB.CaptainDescription[] {
+  const captain = unit.detail.captain
+
+  if (!captain) return []
+
+  if (isSimpleCaptain(captain)) {
+    return []
+  }
+
+  if (isDualCaptain(captain)) {
+    return []
+  }
+
+  if (isVersusCaptain(unit, captain)) {
+    return []
+  }
+
+  if (isLimitBrokenCaptain(captain)) {
     const upgrades = Object.entries(captain)
       .filter(([key, desc]) => key.startsWith('level'))
       .flatMap(([key, desc]) => (desc ? [desc] : []))
       .map<RawDB.CaptainDescription>(description => ({ description: extractDescription(description) }))
 
-    return {
-      name: '',
-      description: extractDescription(captain.base),
-      notes: extractNotes(unit.detail.captainNotes),
-      upgrades,
-    }
+    return upgrades
   }
 
-  return undefined
+  return []
 }
