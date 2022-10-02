@@ -158,6 +158,7 @@ export declare namespace OldDB {
     base2?: string | null
     level1?: string | null
     level2?: string | null
+    llbbase?: string
     llblevel1?: string
     llblevel2?: string
   }
@@ -317,6 +318,8 @@ export declare namespace OldDB {
       | 'Critical Hit'
       | 'Damage Over Time'
       | 'Guard'
+      | 'Half ATK'
+      | 'Half SPD'
       | 'Half Stats'
       | 'Haste'
       | 'heal'
@@ -365,7 +368,7 @@ export declare namespace OldDB {
       | 'penalty'
       | 'recharge'
 
-    export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below'
+    export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below' | 'exactly'
 
     export type TargetType = 'self' | 'crew' | 'enemies'
     export type TargetElement = ColorType | ClassType | TargetType

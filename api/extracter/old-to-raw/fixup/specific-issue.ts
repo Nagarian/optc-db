@@ -8,6 +8,9 @@ export function fixupSpecificIssue(
   fixWrongPotential(unit)
   fixRumbleFamilies(unit)
   fixllbbase(unit)
+  fixRumbleResilience(unit)
+  fixCaptinNotes(unit)
+  fixHelmeppoCaptain(unit)
   return unit
 }
 
@@ -95,6 +98,53 @@ function fixllbbase(unit: OldDB.ExtendedUnit) {
     unit.detail.special.llbbase = unit.detail.special.level1
     // @ts-ignore
     delete unit.detail.special.level1
+  } else {
+    console.warn(`issue with unit ${unit.id} should has been fixed`)
+  }
+}
+
+function fixRumbleResilience(unit: OldDB.ExtendedUnit) {
+  if (unit.id !== 3731) {
+    return
+  }
+
+  // @ts-ignore
+  if (unit.rumble?.resilience[0].attribute == 'Special Bind') {
+    // @ts-ignore
+    unit.rumble.resilience[0].attribute = 'Silence'
+  } else {
+    console.warn(`issue with unit ${unit.id} should has been fixed`)
+  }
+}
+
+function fixHelmeppoCaptain(unit: OldDB.ExtendedUnit) {
+  if (unit.id !== 3466) {
+    return
+  }
+
+  // @ts-ignore
+  if (!unit.detail.captain.level1) {
+    unit.detail.captain = {
+      base: 'Boosts ATK of Slasher and Free Spirit characters by 3x',
+      // @ts-ignore
+      level1: unit.detail.captain.base,
+    }
+  } else {
+    console.warn(`issue with unit ${unit.id} should has been fixed`)
+  }
+}
+
+function fixCaptinNotes(unit: OldDB.ExtendedUnit) {
+  if (unit.id !== 3719 && unit.id !== 3720) {
+    return
+  }
+
+  // @ts-ignore
+  if (unit.detail.captinNotes) {
+    // @ts-ignore
+    unit.detail.captainNotes = unit.detail.captinNotes
+    // @ts-ignore
+    delete unit.detail.captinNotes
   } else {
     console.warn(`issue with unit ${unit.id} should has been fixed`)
   }
