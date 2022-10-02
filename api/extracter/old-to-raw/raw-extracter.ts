@@ -1,10 +1,11 @@
 import { OldDB } from '../old-to-raw/models/old-db'
 import { RawDB } from '../raw-db/models/raw-db'
-import { extractCaptain, extractCaptainUpgrade } from './remapper/captain'
+import { extractCaptain, extractCaptainLBUpgrade } from './remapper/captain'
 import { extractDualUnit } from './remapper/dual'
 import { extractEvolution } from './remapper/evolution'
 import { extractFamily } from './remapper/family'
 import { extractFlags } from './remapper/flags'
+import { extractLevelLimitBreak } from './remapper/level-limit-break'
 import { extractLimitBreak } from './remapper/limit-break'
 import { extractLinks } from './remapper/links'
 import { extractNotes, extractRootNotes } from './remapper/notes'
@@ -43,7 +44,7 @@ export function remap(unit: OldDB.ExtendedUnit): RawDB.Character {
 const rawSchemaPath = '../..'
 
 function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
-  const captainUpgrades = extractCaptainUpgrade(unit)
+  const captainUpgrades = extractCaptainLBUpgrade(unit)
   return {
     oldDbId: unit.id >= 5000 ? unit.dbId : undefined,
     name: unit.name,
@@ -62,11 +63,12 @@ function remapBaseCharacter(unit: OldDB.ExtendedUnit): RawDB.BaseCharacter {
     aliases: unit.aliases?.slice(2) ?? [],
     evolution: extractEvolution(unit),
     limitBreak: extractLimitBreak(unit, captainUpgrades),
+    levelLimitBreak: extractLevelLimitBreak(unit),
   }
 }
 
 function remapSingleCharacter(unit: OldDB.ExtendedUnit): RawDB.SingleCharacter {
-  const { oldDbId, name, frenchName, japanName, family, limitBreak, ...base } =
+  const { oldDbId, name, frenchName, japanName, family, limitBreak, levelLimitBreak, ...base } =
     remapBaseCharacter(unit)
   return {
     type: extractColorType(unit),
@@ -90,11 +92,12 @@ function remapSingleCharacter(unit: OldDB.ExtendedUnit): RawDB.SingleCharacter {
     support: extractSupport(unit),
     limitBreak,
     rumble: extractRumble(unit),
+    levelLimitBreak,
   }
 }
 
 function remapDualCharacter(unit: OldDB.ExtendedUnit): RawDB.DualCharacter {
-  const { oldDbId, name, frenchName, japanName, family, limitBreak, ...base } =
+  const { oldDbId, name, frenchName, japanName, family, limitBreak, levelLimitBreak, ...base } =
     remapBaseCharacter(unit)
   return {
     type: 'DUAL',
@@ -115,11 +118,12 @@ function remapDualCharacter(unit: OldDB.ExtendedUnit): RawDB.DualCharacter {
     },
     limitBreak,
     rumble: extractRumble(unit),
+    levelLimitBreak,
   }
 }
 
 function remapVersusCharacter(unit: OldDB.ExtendedUnit): RawDB.VersusCharacter {
-  const { limitBreak, ...base } = remapBaseCharacter(unit)
+  const { limitBreak, levelLimitBreak, ...base } = remapBaseCharacter(unit)
   return {
     type: 'VS',
     ...base,
@@ -127,6 +131,7 @@ function remapVersusCharacter(unit: OldDB.ExtendedUnit): RawDB.VersusCharacter {
       name: '',
     },
     limitBreak,
+    levelLimitBreak,
     characters: {
       criteria: unit.detail.VSCondition!,
       character1: extractVersusUnit(unit.dualCharacters![0], unit, true),

@@ -59,7 +59,7 @@ export function extractCaptain(
   return undefined
 }
 
-export function extractCaptainUpgrade(
+export function extractCaptainLBUpgrade(
   unit: OldDB.ExtendedUnit,
 ): RawDB.CaptainDescription[] {
   const captain = unit.detail.captain
@@ -82,7 +82,39 @@ export function extractCaptainUpgrade(
     const upgrades = Object.entries(captain)
       .filter(([key, desc]) => key.startsWith('level'))
       .flatMap(([key, desc]) => (desc ? [desc] : []))
-      .map<RawDB.CaptainDescription>(description => ({ description: extractDescription(description) }))
+      .map<RawDB.CaptainDescription>(description => ({
+        description: extractDescription(description),
+      }))
+
+    return upgrades
+  }
+
+  return []
+}
+
+export function extractCaptainLevelLimitBreak(
+  captain: OldDB.UnitCaptain,
+): RawDB.CaptainDescription[] {
+  if (!captain) return []
+
+  if (isSimpleCaptain(captain)) {
+    return []
+  }
+
+  if (isDualCaptain(captain)) {
+    return []
+  }
+
+  if (isLimitBrokenCaptain(captain)) {
+    const upgrades = [captain.base]
+      .concat(
+        Object.entries(captain)
+          .filter(([key, desc]) => key.startsWith('level'))
+          .flatMap(([key, desc]) => (desc ? [desc] : [])),
+      )
+      .map<RawDB.CaptainDescription>(description => ({
+        description: extractDescription(description),
+      }))
 
     return upgrades
   }

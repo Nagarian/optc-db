@@ -1862,17 +1862,7 @@
               "type": "boolean"
             },
             "sailor": {
-              "anyOf": [
-                {
-                  "$ref": "#/definitions/OldDB.SimpleSailor"
-                },
-                {
-                  "$ref": "#/definitions/OldDB.DualSailor"
-                },
-                {
-                  "$ref": "#/definitions/OldDB.LimitBrokenSailor"
-                }
-              ]
+              "$ref": "#/definitions/OldDB.LimitBrokenSailor"
             },
             "special": {
               "$ref": "#/definitions/OldDB.UnitSpecial"
