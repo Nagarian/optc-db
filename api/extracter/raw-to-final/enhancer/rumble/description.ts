@@ -29,7 +29,8 @@ export function patternToString(input: RawDB.PirateRumble.Pattern): string {
         return ''
     }
   } else if (input.action === 'heal') {
-    const range = input.area === 'Self' ? input.area : input.area + ' Range'
+    let range = input.area === 'Self' ? input.area : input.area + ' Range'
+    range = range[0].toUpperCase() + range.slice(1)
     return `*Level ${input.level} ${range} Heal*`
   }
 
@@ -132,7 +133,7 @@ export function effectToString(effect: RawDB.PirateRumble.Effect): string {
           effect.level,
         )} ${attributes} down penalty`
       } else {
-        return `${effect.chance}% chance to ${attributes}`
+        return `${effect.chance || 100}% chance to ${attributes}`
       }
     case 'cleanse':
       return `${effect.chance}% chance to cleanse ${attributes} debuffs`
@@ -218,9 +219,21 @@ export function conditionToString(
       }
     case 'crew':
     case 'enemies':
-      return `When there are ${condition.count} or ${condition.comparator} ${condition.type} remaining,`
+      return `When there are ${condition.count} or ${condition.comparator} ${
+        condition.type
+      } ${
+        condition.relative
+          ? condition.type === 'crew'
+            ? 'than the enemy team'
+            : 'than your crew'
+          : ''
+      } remaining,`
     case 'trigger':
-      return `The first ${condition.count} times this character lands a ${condition.stat},`
+      return `The first ${condition.count} times this character ${
+        condition.stat === 'takes damage'
+          ? condition.stat
+          : 'lands a ' + condition.stat
+      },`
     case 'defeat':
       switch (condition.team) {
         case 'enemies':
@@ -261,6 +274,7 @@ export function targetToString(target: RawDB.PirateRumble.Targeting): string {
   if (!target) return ''
 
   let targetStr = arrayToString(target.targets)
+  const excludeStr = arrayToString(target.excludes)
   if (targetStr === 'crew') targetStr = 'crew member(s)'
   if (targetStr === 'enemies') {
     if (!target.count) {
@@ -278,6 +292,22 @@ export function targetToString(target: RawDB.PirateRumble.Targeting): string {
       ? ' character'
       : ' characters'
   }`
+  retVal =
+    retVal +
+    `${target.excludes ? ', excluding ' : ''}${
+      target.excludes ? excludeStr : ''
+    }${
+      target.excludes
+        ? target.excludes.includes('self') ||
+          target.excludes.includes('crew') ||
+          target.excludes.includes('enemies')
+          ? ''
+          : target.count === 1
+          ? ' character'
+          : ' characters'
+        : ''
+    }`
+
   retVal =
     retVal +
     (target.stat

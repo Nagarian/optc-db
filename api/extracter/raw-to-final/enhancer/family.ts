@@ -698,4 +698,7 @@ export const familiesAliases: Record<RawDB.Family, string[]> = {
   Yazaemon: [ "Yazaemon" ],
   Kazekage: [ "Kazekage" ],
   Sarutobi: [ "Sarutobi" ],
+  Uta: [ "Uta" ],
+  Gordon: [ "Gordon" ],
+  Sunny: [ "Sunny", "Thousand Sunny" ],
 }

@@ -651,6 +651,9 @@ export const FamiliesKey = [
   'Yazaemon',
   'Kazekage',
   'Sarutobi',
+  'Uta',
+  'Gordon',
+  'Sunny',
 
   //manually added
   'EvolverPenguin',

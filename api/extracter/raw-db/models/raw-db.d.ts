@@ -315,6 +315,8 @@ export declare namespace RawDB {
       | 'Critical Hit'
       | 'Damage Over Time'
       | 'Guard'
+      | 'Half ATK'
+      | 'Half SPD'
       | 'Half Stats'
       | 'Haste'
       | 'heal'
@@ -363,7 +365,7 @@ export declare namespace RawDB {
       | 'penalty'
       | 'recharge'
 
-    export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below'
+    export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below' | 'exactly'
 
     export type TargetType = 'self' | 'crew' | 'enemies'
     export type TargetElement = ColorType | ClassKey | TargetType
