@@ -36,16 +36,6 @@ export function extractSpecial(
       ? [unit.cooldown[0], unit.cooldown[0] - unit.cooldown[1] + 1]
       : [undefined, undefined]
 
-  if (isSimpleSpecial(special)) {
-    return {
-      name: unit.detail.specialName || '',
-      description: extractDescription(special),
-      cooldown: cooldown[0],
-      maxLevel: cooldown[1],
-      notes: extractNotes(unit.detail.specialNotes),
-    }
-  }
-
   if (isDualCharacterSpecial(special)) {
     const description =
       dualCharacterChosen === 1
@@ -57,6 +47,19 @@ export function extractSpecial(
     return {
       name: unit.detail.specialName || '',
       description: extractDescription(description),
+      cooldown: cooldown[0],
+      maxLevel: cooldown[1],
+      notes: extractNotes(unit.detail.specialNotes),
+    }
+  } else if (dualCharacterChosen) {
+    // for dual characters, if we don't have specific special description, that's signifies it's duplicated data from base special
+    return undefined
+  }
+
+  if (isSimpleSpecial(special)) {
+    return {
+      name: unit.detail.specialName || '',
+      description: extractDescription(special),
       cooldown: cooldown[0],
       maxLevel: cooldown[1],
       notes: extractNotes(unit.detail.specialNotes),
