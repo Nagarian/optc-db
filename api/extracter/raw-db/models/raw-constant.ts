@@ -1,10 +1,14 @@
+export const CommonLBPathTypes = [
+  'potential',
+  'sailor',
+] as const
+
 export const LBPathTypes = [
+  ...CommonLBPathTypes,
   'hp',
   'atk',
   'rcv',
-  'potential',
   'slot',
-  'sailor',
   'cooldown',
   'captain',
   'key',

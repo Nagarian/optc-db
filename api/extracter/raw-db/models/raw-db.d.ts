@@ -6,7 +6,7 @@ import {
   Rarities,
 } from '../../models/constants'
 import { FamiliesKey } from '../../models/constants-families'
-import { EvolutionSkulls, Flags, LBPathTypes, StatsTypes } from './raw-constant'
+import { CommonLBPathTypes, EvolutionSkulls, Flags, LBPathTypes, StatsTypes } from './raw-constant'
 
 export declare namespace RawDB {
   export type ColorType = typeof CharacterColors[number]
@@ -46,11 +46,6 @@ export declare namespace RawDB {
      */
     description: string
     notes?: string
-    /**
-     * Put upgrade by ascending order like LB level (ie: 1 -> 6)
-     * Do not repeat the base description here
-     */
-    upgrades?: CaptainDescription[]
   }
 
   export type SuperSpecial = {
@@ -127,11 +122,26 @@ export declare namespace RawDB {
 
   export namespace LB {
     export type PathType = typeof LBPathTypes[number]
+    export type CommonPathType = typeof CommonLBPathTypes[number]
 
-    export type Path = {
-      type: PathType
-      value?: number
-    }
+    export type HpPath = { hp: number }
+    export type AtkPath = { atk: number }
+    export type RcvPath = { rcv: number }
+    export type SlotPath = { slot: number }
+    export type CooldownPath = { cooldown: number }
+    export type KeyPath = { key: number }
+    export type CaptainPath = { captain: CaptainDescription }
+    export type CommonPath = { type: CommonPathType }
+
+    export type Path =
+      | HpPath
+      | AtkPath
+      | RcvPath
+      | SlotPath
+      | CooldownPath
+      | KeyPath
+      | CaptainPath
+      | CommonPath
 
     export type PotentialLevel = {
       threshold?: number

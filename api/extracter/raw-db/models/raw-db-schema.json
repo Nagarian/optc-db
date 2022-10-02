@@ -23,13 +23,6 @@
         },
         "notes": {
           "type": "string"
-        },
-        "upgrades": {
-          "description": "Put upgrade by ascending order like LB level (ie: 1 -> 6) Do not repeat the base description here",
-          "items": {
-            "$ref": "#/definitions/RawDB.CaptainDescription"
-          },
-          "type": "array"
         }
       },
       "required": [
@@ -1051,6 +1044,85 @@
       ],
       "type": "string"
     },
+    "RawDB.LB.AtkPath": {
+      "additionalProperties": false,
+      "properties": {
+        "atk": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "atk"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.CaptainPath": {
+      "additionalProperties": false,
+      "properties": {
+        "captain": {
+          "$ref": "#/definitions/RawDB.CaptainDescription"
+        }
+      },
+      "required": [
+        "captain"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.CommonPath": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/RawDB.LB.CommonPathType"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.CommonPathType": {
+      "enum": [
+        "potential",
+        "sailor"
+      ],
+      "type": "string"
+    },
+    "RawDB.LB.CooldownPath": {
+      "additionalProperties": false,
+      "properties": {
+        "cooldown": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "cooldown"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.HpPath": {
+      "additionalProperties": false,
+      "properties": {
+        "hp": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "hp"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.KeyPath": {
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "key"
+      ],
+      "type": "object"
+    },
     "RawDB.LB.LastTap": {
       "additionalProperties": false,
       "properties": {
@@ -1114,33 +1186,32 @@
       "type": "object"
     },
     "RawDB.LB.Path": {
-      "additionalProperties": false,
-      "properties": {
-        "type": {
-          "$ref": "#/definitions/RawDB.LB.PathType"
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.LB.HpPath"
         },
-        "value": {
-          "type": "number"
+        {
+          "$ref": "#/definitions/RawDB.LB.AtkPath"
+        },
+        {
+          "$ref": "#/definitions/RawDB.LB.RcvPath"
+        },
+        {
+          "$ref": "#/definitions/RawDB.LB.SlotPath"
+        },
+        {
+          "$ref": "#/definitions/RawDB.LB.CooldownPath"
+        },
+        {
+          "$ref": "#/definitions/RawDB.LB.KeyPath"
+        },
+        {
+          "$ref": "#/definitions/RawDB.LB.CaptainPath"
+        },
+        {
+          "$ref": "#/definitions/RawDB.LB.CommonPath"
         }
-      },
-      "required": [
-        "type"
-      ],
-      "type": "object"
-    },
-    "RawDB.LB.PathType": {
-      "enum": [
-        "hp",
-        "atk",
-        "rcv",
-        "potential",
-        "slot",
-        "sailor",
-        "cooldown",
-        "captain",
-        "key"
-      ],
-      "type": "string"
+      ]
     },
     "RawDB.LB.Potential": {
       "additionalProperties": false,
@@ -1208,6 +1279,30 @@
     "RawDB.LB.PotentialVariant": {
       "const": "up to",
       "type": "string"
+    },
+    "RawDB.LB.RcvPath": {
+      "additionalProperties": false,
+      "properties": {
+        "rcv": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "rcv"
+      ],
+      "type": "object"
+    },
+    "RawDB.LB.SlotPath": {
+      "additionalProperties": false,
+      "properties": {
+        "slot": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "slot"
+      ],
+      "type": "object"
     },
     "RawDB.LB.SuperTandem": {
       "additionalProperties": false,
