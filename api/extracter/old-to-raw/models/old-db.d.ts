@@ -187,7 +187,7 @@ export declare namespace OldDB {
     rResilience: boolean
     captain: UnitCaptain
     special: UnitSpecial
-    sailor: UnitSailor
+    sailor: LimitBrokenSailor
   }>
 
   export type UnitDetail = Partial<{

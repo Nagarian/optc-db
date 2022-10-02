@@ -82,3 +82,30 @@ export function extractSpecial(
 
   throw new Error(`unit ${unit.dbId} has an invalid special`)
 }
+
+export function extractSpecialDescription(
+  special: OldDB.UnitSpecial,
+): Partial<RawDB.Special> {
+  if (!special) return {}
+
+  if (isSimpleSpecial(special)) {
+    return {
+      description: extractDescription(special),
+    }
+  }
+
+  if (isMultiStageSpecial(special)) {
+    const spe = special[special.length - 1]
+    return {
+      description: extractDescription(spe.description),
+      stages: special
+        .slice(0, special.length - 1)
+        .map(({ description, cooldown: [initial] }) => ({
+          description,
+          cooldown: initial,
+        })),
+    }
+  }
+
+  throw new Error(`unit has an invalid special`)
+}

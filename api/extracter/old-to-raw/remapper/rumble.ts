@@ -17,10 +17,68 @@ export function extractRumble(
       criteria: extractAttribute(target.criteria),
     },
     pattern,
-    resilience: resilience?.map(extractResilience),
-    ability: ability.map(a => ({ ...a, effects: a.effects.map(extractEffect) })) as any,
-    special: special.map(s => ({ ...s, effects: s.effects.map(extractEffect) })) as any,
+    resilience: extractRumbleResilience(resilience),
+    ability: extractRumbleAbility(ability),
+    special: extractRumbleSpecial(special),
   }
+}
+
+export function extractRumbleResilience(
+  resilience: OldDB.PirateFest.Resilience[] | undefined,
+): RawDB.PirateRumble.Resilience[] | undefined {
+  return resilience?.map(extractResilience)
+}
+
+export function extractRumbleSpecial(
+  special: [
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+    OldDB.PirateFest.Special,
+  ],
+): [
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+  RawDB.PirateRumble.Special,
+] {
+  return special.map(s => ({
+    ...s,
+    effects: s.effects.map(extractEffect),
+  })) as any
+}
+
+export function extractRumbleAbility(
+  ability: [
+    OldDB.PirateFest.Ability,
+    OldDB.PirateFest.Ability,
+    OldDB.PirateFest.Ability,
+    OldDB.PirateFest.Ability,
+    OldDB.PirateFest.Ability,
+  ],
+): [
+  RawDB.PirateRumble.Ability,
+  RawDB.PirateRumble.Ability,
+  RawDB.PirateRumble.Ability,
+  RawDB.PirateRumble.Ability,
+  RawDB.PirateRumble.Ability,
+] {
+  return ability.map(a => ({
+    ...a,
+    effects: a.effects.map(extractEffect),
+  })) as any
 }
 
 function extractAttribute(
@@ -61,16 +119,19 @@ function extractEffect(
   }
 
   if ('targeting' in result && result.targeting) {
-    result.targeting =  { ...result.targeting }
+    result.targeting = { ...result.targeting }
     result.targeting.stat = extractAttribute(result.targeting.stat!) as any
-    result.targeting.targets = result.targeting.targets.map(t => extractAttribute(t as any)) as any
+    result.targeting.targets = result.targeting.targets.map(t =>
+      extractAttribute(t as any),
+    ) as any
   }
 
   return result as any
 }
 
-
-function extractResilience(resilience: OldDB.PirateFest.Resilience) : RawDB.PirateRumble.Resilience {
+function extractResilience(
+  resilience: OldDB.PirateFest.Resilience,
+): RawDB.PirateRumble.Resilience {
   const result = { ...resilience }
 
   if ('attribute' in result && result.attribute) {

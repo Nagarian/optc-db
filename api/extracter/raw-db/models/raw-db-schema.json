@@ -1339,69 +1339,95 @@
       "type": "object"
     },
     "RawDB.LevelLimitBreak": {
-      "anyOf": [
-        {
-          "type": "null"
+      "additionalProperties": false,
+      "properties": {
+        "captain": {
+          "items": {
+            "$ref": "#/definitions/RawDB.CaptainDescription"
+          },
+          "type": "array"
         },
-        {
+        "rumble": {
           "additionalProperties": false,
           "properties": {
-            "captain": {
-              "$ref": "#/definitions/RawDB.CaptainDescription"
-            },
-            "rumble": {
-              "additionalProperties": false,
-              "properties": {
-                "ability": {
-                  "items": {
-                    "$ref": "#/definitions/RawDB.PirateRumble.Ability"
-                  },
-                  "maxItems": 5,
-                  "minItems": 5,
-                  "type": "array"
-                },
-                "pattern": {
-                  "items": {
-                    "$ref": "#/definitions/RawDB.PirateRumble.Pattern"
-                  },
-                  "minItems": 1,
-                  "type": "array"
-                },
-                "resilience": {
-                  "items": {
-                    "$ref": "#/definitions/RawDB.PirateRumble.Resilience"
-                  },
-                  "type": "array"
-                },
-                "special": {
-                  "items": {
-                    "$ref": "#/definitions/RawDB.PirateRumble.Special"
-                  },
-                  "maxItems": 10,
-                  "minItems": 10,
-                  "type": "array"
-                },
-                "target": {
-                  "$ref": "#/definitions/RawDB.PirateRumble.TargetClass"
-                }
-              },
-              "type": "object"
-            },
-            "sailor": {
+            "ability": {
               "items": {
-                "$ref": "#/definitions/RawDB.SailorDescription"
+                "$ref": "#/definitions/RawDB.PirateRumble.Ability"
               },
-              "maxItems": 2,
-              "minItems": 0,
+              "maxItems": 5,
+              "minItems": 5,
+              "type": "array"
+            },
+            "pattern": {
+              "items": {
+                "$ref": "#/definitions/RawDB.PirateRumble.Pattern"
+              },
+              "minItems": 1,
+              "type": "array"
+            },
+            "resilience": {
+              "items": {
+                "$ref": "#/definitions/RawDB.PirateRumble.Resilience"
+              },
               "type": "array"
             },
             "special": {
-              "$ref": "#/definitions/RawDB.SpecialDescription"
+              "items": {
+                "$ref": "#/definitions/RawDB.PirateRumble.Special"
+              },
+              "maxItems": 10,
+              "minItems": 10,
+              "type": "array"
+            },
+            "target": {
+              "$ref": "#/definitions/RawDB.PirateRumble.TargetClass"
+            }
+          },
+          "type": "object"
+        },
+        "sailor": {
+          "additionalProperties": false,
+          "properties": {
+            "sailor1": {
+              "$ref": "#/definitions/RawDB.SailorDescription"
+            },
+            "sailor2": {
+              "$ref": "#/definitions/RawDB.SailorDescription"
+            }
+          },
+          "type": "object"
+        },
+        "special": {
+          "additionalProperties": false,
+          "properties": {
+            "cooldown": {
+              "type": "number"
+            },
+            "description": {
+              "description": "Always put the latest special stage here",
+              "type": "string"
+            },
+            "maxLevel": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "stages": {
+              "description": "Put stage by ascending order (ie: 1 -> 6) but without the latest you have already specified above",
+              "items": {
+                "$ref": "#/definitions/RawDB.SpecialDescription"
+              },
+              "type": "array"
             }
           },
           "type": "object"
         }
-      ]
+      },
+      "type": "object"
     },
     "RawDB.PirateRumble.Ability": {
       "additionalProperties": false,

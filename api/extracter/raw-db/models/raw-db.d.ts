@@ -215,11 +215,14 @@ export declare namespace RawDB {
     notes?: string
   }
 
-  export type LevelLimitBreak = null | Partial<{
+  export type LevelLimitBreak = Partial<{
     rumble: Partial<Omit<PirateRumble.Rumble, 'stats'>>
-    captain: CaptainDescription
-    special: SpecialDescription
-    sailor: [SailorDescription?, SailorDescription?]
+    captain: CaptainDescription[]
+    special: Partial<Special>
+    sailor: Partial<{
+      sailor1: SailorDescription
+      sailor2: SailorDescription
+    }>
   }>
 
   export type DualUnitNode = {

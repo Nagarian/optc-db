@@ -17,33 +17,34 @@ export function extractSailor(
 
   const result: RawDB.SailorDescription[] = []
 
-  const tryAdd = (description: string | undefined | null) => {
-    if (description && description != 'None') {
-      result.push({ description })
+  const tryAdd = (key: keyof OldDB.LimitBrokenSailor) => {
+    const tmp = extractSailorDescription(sailor, key)
+    if (tmp) {
+      result.push(tmp)
     }
   }
 
-  if ('base' in sailor) {
-    tryAdd(sailor.base)
-  }
-
-  if ('base2' in sailor) {
-    tryAdd(sailor.base2)
-  }
-
-  if ('combined' in sailor) {
-    tryAdd(sailor.combined)
-  }
-
-  if ('level1' in sailor) {
-    tryAdd(sailor.level1)
-  }
-
-  if ('level2' in sailor) {
-    tryAdd(sailor.level2)
-  }
+  tryAdd('base')
+  tryAdd('base2')
+  // @ts-ignore
+  tryAdd('combined')
+  tryAdd('level1')
+  tryAdd('level2')
 
   return result.length === 1 || result.length === 2
     ? (result as RawDB.Sailor)
     : undefined
+}
+
+export function extractSailorDescription(
+  sailor: OldDB.LimitBrokenSailor,
+  key: keyof OldDB.LimitBrokenSailor,
+): RawDB.SailorDescription | undefined {
+  const description = sailor[key]
+
+  if (description && description != 'None') {
+    return { description }
+  }
+
+  return undefined
 }
