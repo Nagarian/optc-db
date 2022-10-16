@@ -24,8 +24,19 @@ import { extractSupport } from './remapper/support'
 import { extractSwap } from './remapper/swap'
 import { extractVersusUnit } from './remapper/versus'
 
-export function remapper(db: OldDB.ExtendedUnit[]): RawDB.DBCharacter[] {
-  return db.map(unit => [unit.id, remap(unit)])
+export function remapper(db: OldDB.ExtendedUnit[], skipUnitInError: boolean = false): RawDB.DBCharacter[] {
+  return db.map(unit => {
+    try {
+      return [unit.id, remap(unit)]
+    } catch (error) {
+      if (skipUnitInError) {
+        console.error(error)
+        return null
+      } else {
+        throw error
+      }
+    }
+  }).filter(x => !!x) as any
 }
 
 export function remap(unit: OldDB.ExtendedUnit): RawDB.Character {
