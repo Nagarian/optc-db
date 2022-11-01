@@ -15,21 +15,41 @@ export function validate(db: OldDB.ExtendedUnit[]): boolean {
   console.log('unit in error:', new Set(errors.map(e => e.id)).size)
   console.log('errors count', errors.length)
 
-  const messageTypes = new Set(errors.map(x => x.message))
+  console.log('Errors by unit')
+  for (const id of new Set(errors.map(x => x.id))) {
+    console.error(`#${id} "${db.find(u => u.id === id)?.name}"`)
 
-  for (const messageType of messageTypes) {
+    const matching = errors
+      .filter(e => e.id === id)
+      .sort((a, b) => a.path.localeCompare(b.path))
+
+    for (const path of new Set(matching.map(x => x.path))) {
+      console.error(`  - ${path}`)
+
+      for (const error of matching.filter(m => m.path === path)) {
+        console.error(`    - ${error.message}`)
+      }
+    }
+  }
+
+  console.log('Errors by type')
+  for (const messageType of new Set(errors.map(x => x.message))) {
     const matching = errors.filter(e => e.message === messageType)
 
-    console.error(`- ${messageType} (${matching.length} occurence)`)
+    console.error(`- ${messageType} (${matching.length} occurences)`)
 
-    const groupByPath = new Set(matching.map(m => m.path))
-
-    for (const group of groupByPath) {
-      const ids = matching.filter(e => e.path === group).map(e => e.id)
+    for (const path of new Set(matching.map(m => m.path))) {
+      const ids = matching.filter(e => e.path === path).map(e => e.id)
 
       console.error(
-        `  - ${group} (${ids.length} occurence) ${JSON.stringify(ids)}`,
+        `  - ${path} (${ids.length} occurences) ${JSON.stringify(ids)}`,
       )
+    }
+  }
+
+  if (false || process.env.DEBUG) {
+    for (const id of new Set(errors.map(x => x.id))) {
+      console.log(JSON.stringify(db.find(u => u.id === id)))
     }
   }
 
