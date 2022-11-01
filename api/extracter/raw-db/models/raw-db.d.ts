@@ -6,7 +6,13 @@ import {
   Rarities,
 } from '../../models/constants'
 import { FamiliesKey } from '../../models/constants-families'
-import { CommonLBPathTypes, EvolutionSkulls, Flags, LBPathTypes, StatsTypes } from './raw-constant'
+import {
+  CommonLBPathTypes,
+  EvolutionSkulls,
+  Flags,
+  LBPathTypes,
+  StatsTypes,
+} from './raw-constant'
 
 export declare namespace RawDB {
   export type ColorType = typeof CharacterColors[number]
@@ -168,7 +174,6 @@ export declare namespace RawDB {
       levels: LastTapLevel[]
       notes?: string
     }
-
 
     export type SuperTandemLevel = {
       criteria: string
@@ -368,6 +373,17 @@ export declare namespace RawDB {
 
     export type ConditionTeam = 'crew' | 'enemies'
 
+    export type GpConditionType =
+      // | 'action'
+      // | 'attack'
+      | 'damage'
+      | 'dbfreceived'
+      // | 'debuff'
+      | 'defeat'
+      | 'dmgreceived'
+      | 'hitreceived'
+      | 'special'
+
     export type EffectEnum =
       | 'buff'
       | 'boon'
@@ -378,7 +394,12 @@ export declare namespace RawDB {
       | 'penalty'
       | 'recharge'
 
-    export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below' | 'exactly'
+    export type TargetingPriority =
+      | 'highest'
+      | 'lowest'
+      | 'above'
+      | 'below'
+      | 'exactly'
 
     export type TargetType = 'self' | 'crew' | 'enemies'
     export type TargetElement = ColorType | ClassKey | TargetType
@@ -405,6 +426,7 @@ export declare namespace RawDB {
       stats: Stats
       target: TargetClass
       resilience?: Resilience[]
+      gpStat?: GpStat
     }
 
     export type Ability = {
@@ -414,12 +436,43 @@ export declare namespace RawDB {
     export type Condition = {
       comparator?: ConditionComparator
       count?: number
-      families?: string[]
+      families?: Family[]
       relative?: boolean
       stat?: Attribute
       team?: ConditionTeam
       type: ConditionType
     }
+
+    export type GpBasicCondition = {
+      type: GpConditionType
+      count: number
+    }
+
+    export interface GpActionCondition extends GpBasicCondition {
+      type: 'action'
+      action: 'heal' | 'guard'
+    }
+
+    export interface GpAttackCondition extends GpBasicCondition {
+      type: 'attack'
+      attack: PatternType
+    }
+
+    export interface GpDebuffCondition extends GpBasicCondition {
+      type: 'debuff'
+      attribute: Attribute
+    }
+
+    export interface GpCommonCondition extends GpBasicCondition {
+      type: GpConditionType
+      team?: ConditionTeam
+    }
+
+    export type GpCondition =
+      | GpAttackCondition
+      | GpActionCondition
+      | GpDebuffCondition
+      | GpCommonCondition
 
     export type Pattern = AttackPattern | HealPattern
 
@@ -453,8 +506,8 @@ export declare namespace RawDB {
     }
 
     export type HealingResilience = {
-      condition?: Condition
       amount: number
+      condition?: Condition
       interval: number
       type: 'healing'
     }
@@ -478,6 +531,7 @@ export declare namespace RawDB {
       defbypass?: boolean
       duration?: number
       interval?: number
+      leader?: boolean
       level?: number
       range?: Range
       repeat?: number
@@ -490,7 +544,7 @@ export declare namespace RawDB {
 
     export type AttackEffectType = CommonEffect & {
       effect: 'damage'
-      type: 'fixed' | 'cut' | 'atk' | 'time'
+      type: 'fixed' | 'cut' | 'atk' | 'atkbase' | 'time'
     }
 
     export type RechargeEffectType = CommonEffect & {
@@ -533,6 +587,27 @@ export declare namespace RawDB {
     export type TargetClass = {
       comparator?: TargetingPriority
       criteria: Attribute
+    }
+
+    export type BurstSpecial = {
+      uses: number
+      effects: Effect[]
+    }
+
+    export type Burst = {
+      condition: [GpCondition, ...GpCondition[]]
+      special: [
+        BurstSpecial,
+        BurstSpecial,
+        BurstSpecial,
+        BurstSpecial,
+        BurstSpecial,
+      ]
+    }
+
+    export type GpStat = {
+      burst: Burst
+      ability: [Ability, Ability, Ability, Ability, Ability]
     }
   }
 }

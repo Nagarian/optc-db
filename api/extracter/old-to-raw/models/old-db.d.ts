@@ -358,6 +358,17 @@ export declare namespace OldDB {
 
     export type ConditionTeam = 'crew' | 'enemies'
 
+    export type GpConditionType =
+      // | 'action'
+      // | 'attack'
+      | 'damage'
+      | 'dbfreceived'
+      // | 'debuff'
+      | 'defeat'
+      | 'dmgreceived'
+      | 'hitreceived'
+      | 'special'
+
     export type EffectEnum =
       | 'buff'
       | 'boon'
@@ -368,7 +379,12 @@ export declare namespace OldDB {
       | 'penalty'
       | 'recharge'
 
-    export type TargetingPriority = 'highest' | 'lowest' | 'above' | 'below' | 'exactly'
+    export type TargetingPriority =
+      | 'highest'
+      | 'lowest'
+      | 'above'
+      | 'below'
+      | 'exactly'
 
     export type TargetType = 'self' | 'crew' | 'enemies'
     export type TargetElement = ColorType | ClassType | TargetType
@@ -418,6 +434,9 @@ export declare namespace OldDB {
         Special,
         Special,
       ]
+      gpability?: [Ability, Ability, Ability, Ability, Ability]
+      gpspecial?: [GpSpecial, GpSpecial, GpSpecial, GpSpecial, GpSpecial]
+      gpcondition?: [GpCondition, ...GpCondition[]]
     }
 
     export type Ability = {
@@ -433,6 +452,37 @@ export declare namespace OldDB {
       team?: ConditionTeam
       type: ConditionType
     }
+
+    export type GpBasicCondition = {
+      type: GpConditionType
+      count: number
+    }
+
+    export interface GpActionCondition extends GpBasicCondition {
+      type: 'action'
+      action: 'heal' | 'guard'
+    }
+
+    export interface GpAttackCondition extends GpBasicCondition {
+      type: 'attack'
+      attack: PatternType
+    }
+
+    export interface GpDebuffCondition extends GpBasicCondition {
+      type: 'debuff'
+      attribute: Attribute
+    }
+
+    export interface GpCommonCondition extends GpBasicCondition {
+      type: GpConditionType
+      team?: ConditionTeam
+    }
+
+    export type GpCondition =
+      | GpAttackCondition
+      | GpActionCondition
+      | GpDebuffCondition
+      | GpCommonCondition
 
     export type Pattern = AttackPattern | HealPattern
 
@@ -477,6 +527,11 @@ export declare namespace OldDB {
       effects: Effect[]
     }
 
+    export type GpSpecial = {
+      uses: number
+      effects: Effect[]
+    }
+
     export type Effect =
       | CommonEffect
       | AttackEffectType
@@ -491,6 +546,7 @@ export declare namespace OldDB {
       defbypass?: boolean
       duration?: number
       interval?: number
+      leader?: boolean
       level?: number
       range?: Range
       repeat?: number
@@ -503,7 +559,7 @@ export declare namespace OldDB {
 
     export type AttackEffectType = CommonEffect & {
       effect: 'damage'
-      type: 'fixed' | 'cut' | 'atk' | 'time'
+      type: 'fixed' | 'cut' | 'atk' | 'atkbase' | 'time'
     }
 
     export type RechargeEffectType = CommonEffect & {

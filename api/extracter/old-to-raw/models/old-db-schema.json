@@ -696,6 +696,9 @@
         "interval": {
           "type": "number"
         },
+        "leader": {
+          "type": "boolean"
+        },
         "level": {
           "type": "number"
         },
@@ -713,6 +716,7 @@
             "fixed",
             "cut",
             "atk",
+            "atkbase",
             "time"
           ],
           "type": "string"
@@ -807,6 +811,9 @@
         },
         "interval": {
           "type": "number"
+        },
+        "leader": {
+          "type": "boolean"
         },
         "level": {
           "type": "number"
@@ -1013,6 +1020,9 @@
             "interval": {
               "type": "number"
             },
+            "leader": {
+              "type": "boolean"
+            },
             "level": {
               "type": "number"
             },
@@ -1029,6 +1039,138 @@
           "type": "object"
         }
       },
+      "type": "object"
+    },
+    "OldDB.PirateFest.GpActionCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "heal",
+            "guard"
+          ],
+          "type": "string"
+        },
+        "count": {
+          "type": "number"
+        },
+        "type": {
+          "const": "action",
+          "type": "string"
+        }
+      },
+      "required": [
+        "action",
+        "count",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.GpAttackCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "attack": {
+          "$ref": "#/definitions/OldDB.PirateFest.PatternType"
+        },
+        "count": {
+          "type": "number"
+        },
+        "type": {
+          "const": "attack",
+          "type": "string"
+        }
+      },
+      "required": [
+        "attack",
+        "count",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.GpCommonCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "type": "number"
+        },
+        "team": {
+          "$ref": "#/definitions/OldDB.PirateFest.ConditionTeam"
+        },
+        "type": {
+          "$ref": "#/definitions/OldDB.PirateFest.GpConditionType"
+        }
+      },
+      "required": [
+        "count",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.GpCondition": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.GpAttackCondition"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.GpActionCondition"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.GpDebuffCondition"
+        },
+        {
+          "$ref": "#/definitions/OldDB.PirateFest.GpCommonCondition"
+        }
+      ]
+    },
+    "OldDB.PirateFest.GpConditionType": {
+      "enum": [
+        "damage",
+        "dbfreceived",
+        "defeat",
+        "dmgreceived",
+        "hitreceived",
+        "special"
+      ],
+      "type": "string"
+    },
+    "OldDB.PirateFest.GpDebuffCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "attribute": {
+          "$ref": "#/definitions/OldDB.PirateFest.Attribute"
+        },
+        "count": {
+          "type": "number"
+        },
+        "type": {
+          "const": "debuff",
+          "type": "string"
+        }
+      },
+      "required": [
+        "attribute",
+        "count",
+        "type"
+      ],
+      "type": "object"
+    },
+    "OldDB.PirateFest.GpSpecial": {
+      "additionalProperties": false,
+      "properties": {
+        "effects": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Effect"
+          },
+          "type": "array"
+        },
+        "uses": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "uses",
+        "effects"
+      ],
       "type": "object"
     },
     "OldDB.PirateFest.HealPattern": {
@@ -1139,6 +1281,9 @@
         },
         "interval": {
           "type": "number"
+        },
+        "leader": {
+          "type": "boolean"
         },
         "level": {
           "type": "number"
@@ -1337,6 +1482,29 @@
         "ability": {
           "items": {
             "$ref": "#/definitions/OldDB.PirateFest.Ability"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "gpability": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.Ability"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "gpcondition": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.GpCondition"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "gpspecial": {
+          "items": {
+            "$ref": "#/definitions/OldDB.PirateFest.GpSpecial"
           },
           "maxItems": 5,
           "minItems": 5,

@@ -1358,6 +1358,9 @@
               "minItems": 5,
               "type": "array"
             },
+            "gpStat": {
+              "$ref": "#/definitions/RawDB.PirateRumble.GpStat"
+            },
             "pattern": {
               "items": {
                 "$ref": "#/definitions/RawDB.PirateRumble.Pattern"
@@ -1510,6 +1513,9 @@
         "interval": {
           "type": "number"
         },
+        "leader": {
+          "type": "boolean"
+        },
         "level": {
           "type": "number"
         },
@@ -1527,6 +1533,7 @@
             "fixed",
             "cut",
             "atk",
+            "atkbase",
             "time"
           ],
           "type": "string"
@@ -1569,6 +1576,50 @@
         }
       ]
     },
+    "RawDB.PirateRumble.Burst": {
+      "additionalProperties": false,
+      "properties": {
+        "condition": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.GpCondition"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "special": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.BurstSpecial"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        }
+      },
+      "required": [
+        "condition",
+        "special"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.BurstSpecial": {
+      "additionalProperties": false,
+      "properties": {
+        "effects": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Effect"
+          },
+          "type": "array"
+        },
+        "uses": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "uses",
+        "effects"
+      ],
+      "type": "object"
+    },
     "RawDB.PirateRumble.CommonEffect": {
       "additionalProperties": false,
       "properties": {
@@ -1598,6 +1649,9 @@
         },
         "interval": {
           "type": "number"
+        },
+        "leader": {
+          "type": "boolean"
         },
         "level": {
           "type": "number"
@@ -1629,7 +1683,7 @@
         },
         "families": {
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/RawDB.Family"
           },
           "type": "array"
         },
@@ -1804,6 +1858,9 @@
             "interval": {
               "type": "number"
             },
+            "leader": {
+              "type": "boolean"
+            },
             "level": {
               "type": "number"
             },
@@ -1820,6 +1877,140 @@
           "type": "object"
         }
       },
+      "type": "object"
+    },
+    "RawDB.PirateRumble.GpActionCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "heal",
+            "guard"
+          ],
+          "type": "string"
+        },
+        "count": {
+          "type": "number"
+        },
+        "type": {
+          "const": "action",
+          "type": "string"
+        }
+      },
+      "required": [
+        "action",
+        "count",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.GpAttackCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "attack": {
+          "$ref": "#/definitions/RawDB.PirateRumble.PatternType"
+        },
+        "count": {
+          "type": "number"
+        },
+        "type": {
+          "const": "attack",
+          "type": "string"
+        }
+      },
+      "required": [
+        "attack",
+        "count",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.GpCommonCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "count": {
+          "type": "number"
+        },
+        "team": {
+          "$ref": "#/definitions/RawDB.PirateRumble.ConditionTeam"
+        },
+        "type": {
+          "$ref": "#/definitions/RawDB.PirateRumble.GpConditionType"
+        }
+      },
+      "required": [
+        "count",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.GpCondition": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.GpAttackCondition"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.GpActionCondition"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.GpDebuffCondition"
+        },
+        {
+          "$ref": "#/definitions/RawDB.PirateRumble.GpCommonCondition"
+        }
+      ]
+    },
+    "RawDB.PirateRumble.GpConditionType": {
+      "enum": [
+        "damage",
+        "dbfreceived",
+        "defeat",
+        "dmgreceived",
+        "hitreceived",
+        "special"
+      ],
+      "type": "string"
+    },
+    "RawDB.PirateRumble.GpDebuffCondition": {
+      "additionalProperties": false,
+      "properties": {
+        "attribute": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Attribute"
+        },
+        "count": {
+          "type": "number"
+        },
+        "type": {
+          "const": "debuff",
+          "type": "string"
+        }
+      },
+      "required": [
+        "attribute",
+        "count",
+        "type"
+      ],
+      "type": "object"
+    },
+    "RawDB.PirateRumble.GpStat": {
+      "additionalProperties": false,
+      "properties": {
+        "ability": {
+          "items": {
+            "$ref": "#/definitions/RawDB.PirateRumble.Ability"
+          },
+          "maxItems": 5,
+          "minItems": 5,
+          "type": "array"
+        },
+        "burst": {
+          "$ref": "#/definitions/RawDB.PirateRumble.Burst"
+        }
+      },
+      "required": [
+        "burst",
+        "ability"
+      ],
       "type": "object"
     },
     "RawDB.PirateRumble.HealPattern": {
@@ -1931,6 +2122,9 @@
         "interval": {
           "type": "number"
         },
+        "leader": {
+          "type": "boolean"
+        },
         "level": {
           "type": "number"
         },
@@ -1983,6 +2177,9 @@
           "maxItems": 5,
           "minItems": 5,
           "type": "array"
+        },
+        "gpStat": {
+          "$ref": "#/definitions/RawDB.PirateRumble.GpStat"
         },
         "pattern": {
           "items": {

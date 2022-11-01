@@ -8,7 +8,17 @@ export function extractRumble(
     return undefined
   }
 
-  const { ability, pattern, special, target, stats, resilience } = unit.rumble
+  const {
+    ability,
+    pattern,
+    special,
+    target,
+    stats,
+    resilience,
+    gpcondition,
+    gpability,
+    gpspecial,
+  } = unit.rumble
 
   return {
     stats,
@@ -20,6 +30,7 @@ export function extractRumble(
     resilience: extractRumbleResilience(resilience),
     ability: extractRumbleAbility(ability),
     special: extractRumbleSpecial(special),
+    gpStat: extractGpStat(gpability, gpspecial, gpcondition),
   }
 }
 
@@ -103,19 +114,20 @@ function extractAttribute(
 function extractEffect(
   effect: OldDB.PirateFest.Effect,
 ): RawDB.PirateRumble.Effect {
-  const result = { ...effect }
-
-  if ('override' in result && result.override) {
-    result.override = extractEffect(result.override as any) as any
+  if ('override' in effect && effect.override) {
+    return {
+      override: extractEffect(effect.override as any) as any,
+    }
   }
+
+  const result = { ...effect }
 
   if ('attributes' in result && result.attributes) {
     result.attributes = result.attributes.map(extractAttribute) as any
   }
 
   if ('condition' in result && result.condition?.stat) {
-    result.condition = { ...result.condition }
-    result.condition.stat = extractAttribute(result.condition.stat!) as any
+    result.condition = extractCondition(result.condition) as any
   }
 
   if ('targeting' in result && result.targeting) {
@@ -127,6 +139,22 @@ function extractEffect(
   }
 
   return result as any
+}
+
+function extractCondition(
+  condition: OldDB.PirateFest.Condition | undefined,
+): RawDB.PirateRumble.Condition | undefined {
+  if (!condition) {
+    return undefined
+  }
+
+  const stat = condition.stat ? extractAttribute(condition.stat) : undefined
+
+  return {
+    ...condition,
+    families: condition.families as any,
+    stat,
+  }
 }
 
 function extractResilience(
@@ -144,4 +172,59 @@ function extractResilience(
   }
 
   return result as any
+}
+
+function extractGpCondition(
+  condition: OldDB.PirateFest.GpCondition | undefined,
+): RawDB.PirateRumble.GpCondition | undefined {
+  if (!condition) {
+    return undefined
+  }
+
+  if (condition.type === 'debuff') {
+    return {
+      ...condition,
+      attribute: extractAttribute(condition.attribute),
+    }
+  }
+
+  return {
+    ...condition,
+  }
+}
+
+function extractGpStat(
+  gpability?: [
+    OldDB.PirateFest.Ability,
+    OldDB.PirateFest.Ability,
+    OldDB.PirateFest.Ability,
+    OldDB.PirateFest.Ability,
+    OldDB.PirateFest.Ability,
+  ],
+  gpspecial?: [
+    OldDB.PirateFest.GpSpecial,
+    OldDB.PirateFest.GpSpecial,
+    OldDB.PirateFest.GpSpecial,
+    OldDB.PirateFest.GpSpecial,
+    OldDB.PirateFest.GpSpecial,
+  ],
+  gpcondition?: [
+    OldDB.PirateFest.GpCondition,
+    ...OldDB.PirateFest.GpCondition[],
+  ],
+): RawDB.PirateRumble.GpStat | undefined {
+  if (!gpability || !gpspecial || !gpcondition) {
+    return undefined
+  }
+
+  return {
+    ability: extractRumbleAbility(gpability),
+    burst: {
+      condition: gpcondition.map(extractGpCondition) as any,
+      special: gpspecial.map(gps => ({
+        uses: gps.uses,
+        effects: gps.effects.map(extractEffect),
+      })) as any,
+    },
+  }
 }
