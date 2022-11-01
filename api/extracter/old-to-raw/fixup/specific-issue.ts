@@ -11,6 +11,8 @@ export function fixupSpecificIssue(
   fixRumbleResilience(unit)
   fixCaptinNotes(unit)
   fixHelmeppoCaptain(unit)
+  fixRumbleGpConditionAttack(unit)
+  fixRumbleGpConditionEnemy(unit)
   return unit
 }
 
@@ -72,6 +74,20 @@ function fixRumbleFamilies(unit: OldDB.ExtendedUnit) {
       console.warn(`issue with unit ${unit.id} should has been fixed`)
     }
   }
+
+  if (unit.id === 3745) {
+    if (
+      (unit.rumble?.special?.[0]?.effects?.[2] as OldDB.PirateFest.BasicEffect)
+        ?.condition?.families?.[0] === 'Kozuki Oden'
+    ) {
+      // @ts-ignore
+      unit.rumble.special[0].effects[2].condition.families = ['KozukiOden']
+      // @ts-ignore
+      unit.rumble.gpspecial[0].effects[1].condition.families = ['KozukiOden']
+    } else {
+      console.warn(`issue with unit ${unit.id} should has been fixed`)
+    }
+  }
 }
 
 function fixWrongPotential(unit: OldDB.ExtendedUnit) {
@@ -112,6 +128,34 @@ function fixRumbleResilience(unit: OldDB.ExtendedUnit) {
   if (unit.rumble?.resilience[0].attribute == 'Special Bind') {
     // @ts-ignore
     unit.rumble.resilience[0].attribute = 'Silence'
+  } else {
+    console.warn(`issue with unit ${unit.id} should has been fixed`)
+  }
+}
+
+function fixRumbleGpConditionEnemy(unit: OldDB.ExtendedUnit) {
+  if (unit.id !== 2534 && unit.id !== 3721) {
+    return
+  }
+
+  // @ts-ignore
+  if (unit.rumble?.gpcondition[0].team === 'enemy') {
+    // @ts-ignore
+    unit.rumble.gpcondition[0].team = 'enemies'
+  } else {
+    console.warn(`issue with unit ${unit.id} should has been fixed`)
+  }
+}
+
+function fixRumbleGpConditionAttack(unit: OldDB.ExtendedUnit) {
+  if (unit.id !== 3695) {
+    return
+  }
+
+  // @ts-ignore
+  if (unit.rumble?.gpcondition[0].attack === 'non-Special') {
+    // @ts-ignore
+    unit.rumble.gpcondition[0].attack = 'Normal'
   } else {
     console.warn(`issue with unit ${unit.id} should has been fixed`)
   }
