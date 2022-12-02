@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OPTC Character Founder</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .main {
+            display: grid;
+            grid-template-areas:
+                "input  input"
+                "canvas found"
+                "ids    sus"
+            ;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            grid-template-rows: auto 1fr auto;
+            height: 100%;
+            width: 100%;
+        }
+
+        #inputSrc {
+            grid-area: input;
+            display: flex;
+        }
+
+        #srcPanel {
+            grid-area: canvas;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #canvasOutput {
+            object-fit: contain;
+        }
+
+        #foundPanel {
+            grid-area: found;
+            overflow: auto;
+        }
+
+        #foundOutput {
+            object-fit: contain;
+        }
+
+        #foundIds {
+            grid-area: ids;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        #foundIds img {
+            width: 80px;
+            height: 80px;
+        }
+
+        #suspectIds {
+            grid-area: sus;
+        }
+
+        #suspectIds img {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="inputSrc" class="caption">
+            <input type="file" id="fileInput" name="file" />
+            <p id="status">OpenCV.js is loading...</p>
+        </div>
+        <div id="srcPanel">
+            <canvas id="canvasOutput"></canvas>
+        </div>
+        <div id="foundPanel">
+            <canvas id="foundOutput"></canvas>
+        </div>
+        <div id="foundIds"></div>
+        <div id="suspectIds"></div>
+    </div>
+    <script type="text/javascript">
+        const extractionSize = {
+            // top: 24,
+            // left: 16,
+            // width: 78,
+            // height: 65,
+            // top: 27,
+            // left: 21,
+            // width: 70,
+            // height: 60,
+            top: 28,
+            left: 28,
+            width: 62,
+            height: 56,
+            originalSize: 112,
+            croppedWidth: 10,
+            croppedHeight: 0,
+        }
+        extractionSize.croppedHeight = Math.floor((extractionSize.croppedWidth * extractionSize.height) / extractionSize.width)
+
+        const size = {
+            gridSubset: 100,
+            maxId: 5068,
+
+            gridHorizontal: 100,
+            gridVertical: 0,
+            width: extractionSize.croppedWidth,
+            height: extractionSize.croppedHeight,
+            maxWidth: 0,
+            maxHeight: 0,
+
+            tavernRatio: 0.158,
+            boxRatio: 0.175,
+        }
+        size.gridVertical = Math.ceil(size.maxId / size.gridHorizontal)
+        size.maxWidth = size.gridHorizontal * size.width
+        size.maxHeight = size.gridVertical * size.height
+
+        console.log('default settings')
+        console.table([size])
+
+        const ccanvas = document.createElement("canvas")
+
+        function initCharacterCanvas() {
+            ccanvas.width = size.maxWidth
+            ccanvas.height = size.maxHeight
+            let context = ccanvas.getContext('2d', { willReadFrequently: true })
+            let base_image = new Image()
+            base_image.src = `./img/cropped/japan-${extractionSize.croppedWidth}x${extractionSize.croppedHeight}.png`
+            base_image.onload = function () {
+                context.drawImage(base_image, 0, 0)
+                document.getElementById('status').innerHTML += '<br />Requirement has loaded'
+            }
+
+            return context
+        }
+
+
+        async function initCharacterCanvasv2() {
+            const url = `./img/cropped/japan-${extractionSize.croppedWidth}x${extractionSize.croppedHeight}.png`
+            const res = await fetch(url, { mode: 'cors' })
+            const imgBlob = await res.blob()
+            const img = await createImageBitmap(imgBlob, {
+                premultiplyAlpha: 'none',
+                colorSpaceConversion: 'none',
+            })
+
+            // @ts-ignore
+            const test = new OffscreenCanvas(img.width, img.height)
+            const ctx = test.getContext('2d')
+            ctx.drawImage(img, 0, 0, img.width, img.height)
+            const imageData = ctx.getImageData(0, 0, img.width, img.height)
+            const toto = cv.matFromImageData(imageData)
+        }
+
+        const characterCanvasContext = initCharacterCanvas()
+        const imageSourceInMemory = document.createElement("img")
+        const videoSourceInMemory = document.createElement("video")
+
+        function detectTavernSquare() {
+            const imgElement = imageSourceInMemory
+            const src = cv.imread(imgElement)
+            // cv.imshow('canvasOutput', src)
+
+            const copy_1 = src.clone()
+            const copy_2 = src.clone()
+
+            // we filter image to keep only yellow one
+            const colorMask = src.clone()
+            let low = new cv.Mat(src.rows, src.cols, src.type(), [150, 150, 0, 255])
+            let high = new cv.Mat(src.rows, src.cols, src.type(), [255, 255, 255, 255])
+            cv.inRange(src, low, high, colorMask)
+            cv.filter2D(colorMask, copy_1, cv.CV_8U, cv.Mat.eye(3, 3, cv.CV_32FC1), new cv.Point(-1, -1), 0, cv.BORDER_DEFAULT)
+            colorMask.delete()
+            low.delete()
+            high.delete()
+
+            // cv.cvtColor(copy_1, copy_1, cv.COLOR_RGBA2GRAY, 0);
+            cv.Canny(copy_1, copy_1, 50, 200, 3)
+
+            const contours = new cv.MatVector()
+            const hierarchy = new cv.Mat()
+
+            // cv.threshold(copy_1, copy_1, 177, 200, cv.THRESH_BINARY);
+            cv.findContours(copy_1, contours, hierarchy, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE);
+            hierarchy.delete()
+
+            const squares = []
+            const squaresToExtract = []
+            const squaresRoi = []
+            for (let i = 0; i < contours.size(); ++i) {
+                const cnt = contours.get(i)
+                const rect = cv.boundingRect(cnt)
+                const aspectRatio = rect.width / rect.height
+
+                // we keep only square
+                if (aspectRatio < 0.95 || aspectRatio > 1.05) continue;
+
+                const area = cv.contourArea(cnt, false)
+                const rectArea = rect.width * rect.height
+
+                const extent = area / rectArea
+
+                if (rect.width < 155 || rect.height < 155) continue;
+
+                // if (rect.width > 165 || rect.height > 165) continue;
+
+                const extractedSquare = {
+                    x: rect.x + Math.floor((extractionSize.left * rect.width) / extractionSize.originalSize),
+                    width: Math.floor((extractionSize.width * rect.width) / extractionSize.originalSize),
+                    y: rect.y + Math.floor((extractionSize.top * rect.width) / extractionSize.originalSize),
+                    height: Math.floor((extractionSize.height * rect.width) / extractionSize.originalSize),
+                }
+
+                // we skipped doublons
+                if (squaresToExtract.find(({ height, width, x, y }) =>
+                    height === extractedSquare.height
+                    && width === extractedSquare.width
+                    && x === extractedSquare.x
+                    && y === extractedSquare.y
+                )) continue;
+
+                squaresToExtract.push(extractedSquare)
+                squares.push({ ...rect, depth: cnt.depth() })
+                const imageRoi = src.roi(extractedSquare)
+                cv.resize(imageRoi, imageRoi, new cv.Size(size.width, size.height), 0, 0, cv.INTER_AREA)
+                squaresRoi.push(imageRoi)
+
+                cv.rectangle(
+                    copy_2,
+                    new cv.Point(rect.x, rect.y),
+                    new cv.Point(rect.x + rect.width, rect.y + rect.height),
+                    [0, 255, 0, 255],
+                    2, cv.LINE_AA, 0
+                )
+                cv.rectangle(
+                    copy_2,
+                    new cv.Point(extractedSquare.x, extractedSquare.y),
+                    new cv.Point(extractedSquare.x + extractedSquare.width, extractedSquare.y + extractedSquare.height),
+                    [255, 0, 0, 255],
+                    2, cv.LINE_AA, 0
+                )
+            }
+            console.table(squares)
+            console.table(squaresToExtract)
+
+            cv.imshow('canvasOutput', copy_2)
+            src.delete()
+            copy_1.delete()
+            copy_2.delete()
+            return squaresRoi
+        }
+
+        function findCharacterIds(squaresRoi) {
+            console.log("start finding", squaresRoi.length)
+            const characterMat = cv.imread(ccanvas)
+            const mask = new cv.Mat()
+            const mapp = characterMat.clone()
+
+            const subsetCharacterMats = computeSubsetCharacterMat().map(scm => ({
+                ...scm,
+                mat: characterMat.roi({ x: scm.x, y: scm.y, width: scm.width, height: scm.height })
+            }))
+            const foundIdsPanel = document.getElementById('foundIds')
+            const suspectIdsPanel = document.getElementById('suspectIds')
+            foundIdsPanel.innerHTML = ""
+            suspectIdsPanel.innerHTML = ""
+
+            console.time('Finding all matching')
+
+            const founded = []
+            for (const squareToSearch of squaresRoi) {
+                console.time('Finding matching')
+
+                const found = subsetCharacterMats.reduce((maxFound, { mat, stepX, stepY, x, y }) => {
+                    const dst = new cv.Mat()
+                    cv.matchTemplate(mat, squareToSearch, dst, cv.TM_CCOEFF_NORMED, mask)
+                    const result = cv.minMaxLoc(dst, mask)
+                    if (result.maxVal > maxFound.val) {
+                        maxFound.val = result.maxVal
+                        maxFound.loc = {
+                            ...result.maxLoc,
+                            realX: result.maxLoc.x + x,
+                            realY: result.maxLoc.y + y,
+                        }
+                    }
+                    dst.delete()
+                    return maxFound
+                }, { val: 0, loc: { x: 0, y: 0, realX: 0, realY: 0 } })
+
+                console.timeEnd('Finding matching')
+
+                // we add constant to be sure to being into right image
+                const id = ((Math.ceil((found.loc.realY + 5) / size.height) - 1) * size.gridHorizontal)
+                    + Math.ceil((found.loc.realX + 5) / size.width);
+
+                founded.push({ id, score: found.val, x: found.loc.realX, y: found.loc.realY })
+
+                if (found.val < 0.75) {
+                    suspectIdsPanel.innerHTML = `<img 
+                       alt="${id}"
+                        title="${id}"
+                        src="./img/glo/${Math.trunc(id / 1000)}/${Math.trunc((id % 1000) / 100)}00/${id.toString().padStart(4, '0')}.png"
+                        onerror="this.onerror=null; this.src='./img/jap/${Math.trunc(id / 1000)}/${Math.trunc((id % 1000) / 100)}00/${id.toString().padStart(4, '0')}.png'"
+                    />` + suspectIdsPanel.innerHTML;
+                    continue;
+                }
+
+                const point = new cv.Point(found.loc.realX, found.loc.realY)
+                const maxPoint = new cv.Point(found.loc.realX + size.width, found.loc.realY + size.height)
+                cv.rectangle(mapp, point, maxPoint, [255, 0, 0, 255], 2, cv.LINE_8, 0)
+
+                foundIdsPanel.innerHTML = `<img 
+                    alt="${id}"
+                    title="${id}"
+                    src="./img/glo/${Math.trunc(id / 1000)}/${Math.trunc((id % 1000) / 100)}00/${id.toString().padStart(4, '0')}.png"
+                    onerror="this.onerror=null; this.src='./img/jap/${Math.trunc(id / 1000)}/${Math.trunc((id % 1000) / 100)}00/${id.toString().padStart(4, '0')}.png'"
+                />` + foundIdsPanel.innerHTML;
+            }
+
+            console.log('Founded values')
+            console.table(founded.reverse())
+
+            console.timeEnd('Finding all matching')
+
+            cv.imshow('foundOutput', mapp)
+            subsetCharacterMats.map(({ mat }) => mat.delete())
+            characterMat.delete()
+            mask.delete()
+            mapp.delete()
+        }
+
+        function detectBox() {
+            const imgElement = imageSourceInMemory
+            const ci = cv.imread(imgElement)
+
+            const hlines = new cv.Mat()
+            const vlines = new cv.Mat()
+            const copy_1 = ci.clone()
+            const copy_lined = ci.clone()
+            cv.cvtColor(copy_1, copy_1, cv.COLOR_RGBA2GRAY, 0)
+            cv.Canny(copy_1, copy_1, 50, 200, 3)
+            cv.HoughLines(copy_1, hlines, 1, Math.PI / 180, 500, 0, 0, Math.PI / 2, Math.PI / 2 + 0.1)
+            cv.HoughLines(copy_1, vlines, 1, Math.PI / 180, 500, 0, 0, 0, 0.01)
+            cv.imshow('canvasOutput', copy_1)
+
+            for (let i = 0; i < (hlines.rows + vlines.rows); ++i) {
+                const rho = i < hlines.rows
+                    ? hlines.data32F[i * 2]
+                    : vlines.data32F[(i - hlines.rows) * 2]
+                const theta = i < hlines.rows
+                    ? hlines.data32F[i * 2 + 1]
+                    : vlines.data32F[(i - hlines.rows) * 2 + 1]
+                const a = Math.cos(theta)
+                const b = Math.sin(theta)
+                const x0 = a * rho
+                const y0 = b * rho
+                const startPoint = { x: x0 - 3000 * b, y: y0 + 3000 * a }
+                const endPoint = { x: x0 + 3000 * b, y: y0 - 3000 * a }
+                cv.line(copy_lined, startPoint, endPoint, [255, 255, 255, 255], 6)
+            }
+
+            hlines.delete(); vlines.delete();
+
+            // Find contour for each square
+            cv.cvtColor(copy_lined, copy_lined, cv.COLOR_RGBA2GRAY, 0)
+            const ksize = new cv.Size(3, 3)
+            const anchor = new cv.Point(-1, -1)
+            cv.blur(copy_lined, copy_lined, ksize, anchor, cv.BORDER_DEFAULT)
+            cv.threshold(copy_lined, copy_lined, 250, 200, cv.THRESH_BINARY)
+            const contours = new cv.MatVector()
+            const hierarchy = new cv.Mat()
+            cv.findContours(copy_lined, contours, hierarchy, cv.RETR_CCOMP, cv.CHAIN_APPROX_SIMPLE)
+            copy_lined.delete(); hierarchy.delete()
+
+            // Find each square
+            let squares = []
+            for (let i = 0; i < contours.size(); ++i) {
+                const rect = cv.boundingRect(contours.get(i))
+                const area = rect.width * rect.height
+                if (area > 17000 && area < 40000 && rect.height > 130) squares.push(rect)
+            }
+            squares = squares.reverse().slice(0, 25)
+            contours.delete()
+
+            for (const rect of squares) {
+                cv.rectangle(
+                    ci,
+                    new cv.Point(rect.x, rect.y),
+                    new cv.Point(rect.x + rect.width, rect.y + rect.height),
+                    [0, 255, 0, 255],
+                    2, cv.LINE_AA, 0
+                )
+            }
+
+            cv.imshow('canvasOutput', ci)
+
+            // Find type & position of each character
+            // const corner_info = findMatchingCorners(ci, squares, p_width, p_height, corners)
+            // const starting_y = corner_info.reduce((acc, ci) => !acc && ci ? ci.starting_y : acc, null)
+
+            // // Find precise character_imgs
+            // const character_imgs = squares.map((r, i) => {
+            //     const full_image = ci.roi({
+            //         x: 40 + (i % 5) * p_width,
+            //         y: starting_y + parseInt(i / 5) * p_height,
+            //         width: p_width,
+            //         height: p_height,
+            //     })
+            //     const dsize = new cv.Size(50, 50)
+            //     cv.resize(full_image, full_image, dsize, 0, 0, cv.INTER_AREA)
+            //     const res = full_image.roi({ x: 7, y: 10, width: 36, height: 32 })
+            //     full_image.delete()
+            //     return res
+            // })
+            // const res = character_imgs.map((img, i) => ({
+            //     type: corner_info[i]?.type,
+            //     img,
+            //     best: null,
+            //     best_score: 0,
+            // }))
+            ci.delete()
+        }
+
+        function detectWithThreshold() {
+            const imgElement = imageSourceInMemory
+            const src = cv.imread(imgElement)
+            const gray = new cv.Mat()
+
+            const ksize = new cv.Size(3, 3)
+            const anchor = new cv.Point(-1, -1)
+
+            // gray and threshold image
+            cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY, 0)
+            cv.blur(gray, gray, ksize, anchor, cv.BORDER_DEFAULT)
+            cv.threshold(gray, gray, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)
+
+            cv.imshow('canvasOutput', gray)
+
+            const contours = new cv.MatVector()
+            const hierarchy = new cv.Mat()
+
+            cv.findContours(gray, contours, hierarchy, cv.RETR_LIST, cv.CHAIN_APPROX_SIMPLE)
+            hierarchy.delete()
+
+            const squares = []
+            const squaresToExtract = []
+            const squaresRoi = []
+            for (let i = 0; i < contours.size(); ++i) {
+                const cnt = contours.get(i)
+                const rect = cv.boundingRect(cnt)
+                const aspectRatio = rect.width / rect.height
+
+                // we keep only square
+                if (aspectRatio < 0.95 || aspectRatio > 1.05) continue;
+
+                const area = cv.contourArea(cnt, false)
+                const rectArea = rect.width * rect.height
+
+                const extent = area / rectArea
+
+                if (rect.width < 155 || rect.height < 155) continue;
+
+                // if (rect.width > 165 || rect.height > 165) continue;
+
+                const extractedSquare = {
+                    x: rect.x + Math.floor((extractionSize.left * rect.width) / extractionSize.originalSize),
+                    width: Math.floor((extractionSize.width * rect.width) / extractionSize.originalSize),
+                    y: rect.y + Math.floor((extractionSize.top * rect.width) / extractionSize.originalSize),
+                    height: Math.floor((extractionSize.height * rect.width) / extractionSize.originalSize),
+                }
+
+                // we skipped doublons
+                if (squaresToExtract.find(({ height, width, x, y }) =>
+                    height === extractedSquare.height
+                    && width === extractedSquare.width
+                    && x === extractedSquare.x
+                    && y === extractedSquare.y
+                )) continue;
+
+                squaresToExtract.push(extractedSquare)
+                squares.push({ ...rect, depth: cnt.depth() })
+                const imageRoi = src.roi(extractedSquare)
+                cv.resize(imageRoi, imageRoi, new cv.Size(size.width, size.height), 0, 0, cv.INTER_AREA)
+                squaresRoi.push(imageRoi)
+
+                cv.rectangle(
+                    src,
+                    new cv.Point(rect.x, rect.y),
+                    new cv.Point(rect.x + rect.width, rect.y + rect.height),
+                    [0, 255, 0, 255],
+                    2, cv.LINE_AA, 0
+                )
+                cv.rectangle(
+                    src,
+                    new cv.Point(extractedSquare.x, extractedSquare.y),
+                    new cv.Point(extractedSquare.x + extractedSquare.width, extractedSquare.y + extractedSquare.height),
+                    [255, 0, 0, 255],
+                    2, cv.LINE_AA, 0
+                )
+            }
+            cv.imshow('canvasOutput', src)
+
+            src.delete(); gray.delete();
+        }
+
+
+        function detectFromPython() {
+            const imgElement = imageSourceInMemory
+            const src = cv.imread(imgElement)
+
+            // we filter image to keep only yellow one
+            const whiteMask = src.clone()
+            let low = new cv.Mat(src.rows, src.cols, src.type(), [240, 240, 240, 255])
+            let high = new cv.Mat(src.rows, src.cols, src.type(), [255, 255, 255, 255])
+            cv.inRange(src, low, high, whiteMask)
+            low.delete()
+            high.delete()
+
+            const yellowMask = src.clone()
+            low = new cv.Mat(src.rows, src.cols, src.type(), [150, 150, 0, 255])
+            high = new cv.Mat(src.rows, src.cols, src.type(), [255, 255, 255, 255])
+            cv.inRange(src, low, high, yellowMask)
+            low.delete()
+            high.delete()
+
+            const bitOr = new cv.Mat()
+            cv.bitwise_or(whiteMask, yellowMask, bitOr)
+            // cv.imshow('canvasOutput', bitOr)
+
+            const bitwised = new cv.Mat()
+            cv.bitwise_and(src, src, bitwised, bitOr)
+
+            // cv.filter2D(
+            //     bitwised,
+            //     bitwised,
+            //     -1,
+            //     [[-1, -1, -1], [-1, 9, -1], [-1, -1, -1]]
+            //     // cv.Mat.eye(3, 3, cv.CV_32FC1),
+            //     // new cv.Point(-1, -1),
+            //     // 0,
+            //     // cv.BORDER_DEFAULT
+            // )
+
+            cv.cvtColor(bitwised, bitwised, cv.COLOR_RGBA2GRAY)
+            cv.Canny(bitwised, bitwised, 50, 255)
+
+            const lines = new cv.Mat()
+            cv.HoughLinesP(bitwised, lines, 0.1, Math.PI / 10.0, 150, 5, 4)
+            const dst = cv.Mat.zeros(src.rows, src.cols, cv.CV_8UC3);
+
+            const ls = []
+            for (let i = 0; i < lines.rows; ++i) {
+                const [x1, y1, x2, y2] = [
+                    lines.data32S[i * 4],
+                    lines.data32S[i * 4 + 1],
+                    lines.data32S[i * 4 + 2],
+                    lines.data32S[i * 4 + 3]
+                ]
+
+                const horizontal = Math.abs(x2 - x1)
+                const vertical = Math.abs(y2 - y1)
+
+                ls.push({ x1, y1, x2, y2, horizontal, vertical })
+
+                const minimalLength = src.cols * 0.05
+
+                if (horizontal === 0 && vertical > minimalLength) {
+                    cv.line(dst, { x: x1, y: 0 }, { x: x2, y: src.rows }, [255, 0, 0, 255])
+                }
+
+                if (vertical === 0 && horizontal > minimalLength) {
+                    cv.line(dst, { x: 0, y: y1 }, { x: src.cols, y: y2 }, [255, 0, 0, 255])
+                }
+            }
+
+            console.table(ls)
+
+            // cv.cvtColor(bitwised, bitwised, cv.COLOR_RGBA2GRAY)
+
+            cv.threshold(bitwised, bitwised, 200, 255, cv.THRESH_BINARY)
+            const contours = new cv.MatVector()
+            const hierarchy = new cv.Mat()
+            cv.findContours(bitwised, contours, hierarchy, cv.RETR_TREE, cv.CHAIN_APPROX_SIMPLE)
+
+            const ratio = 50 // (src.cols * size.boxRatio) - 10
+            const squaresToExtract = []
+
+            for (let i = 0; i < contours.size(); ++i) {
+                const cnt = contours.get(i)
+                const rect = cv.boundingRect(cnt)
+                // cv.drawContours(dst, contours, i, [255, 0, 0, 255], 1, cv.LINE_8, hierarchy, 100)
+
+
+                const aspectRatio = rect.width / rect.height
+
+                // we keep only square
+                if (aspectRatio < 0.95 || aspectRatio > 1.05) continue;
+
+                const area = cv.contourArea(cnt, false)
+                const rectArea = rect.width * rect.height
+
+                const extent = area / rectArea
+
+                if (rect.width < ratio || rect.height < ratio) continue;
+                console.log("coucou")
+
+                // if (rect.width > 165 || rect.height > 165) continue;
+
+                const extractedSquare = {
+                    x: rect.x + Math.floor((extractionSize.left * rect.width) / extractionSize.originalSize),
+                    width: Math.floor((extractionSize.width * rect.width) / extractionSize.originalSize),
+                    y: rect.y + Math.floor((extractionSize.top * rect.width) / extractionSize.originalSize),
+                    height: Math.floor((extractionSize.height * rect.width) / extractionSize.originalSize),
+                }
+
+                // we skipped doublons
+                if (squaresToExtract.find(({ height, width, x, y }) =>
+                    height === extractedSquare.height
+                    && width === extractedSquare.width
+                    && x === extractedSquare.x
+                    && y === extractedSquare.y
+                )) continue;
+
+                squaresToExtract.push(extractedSquare)
+                // squares.push({ ...rect, depth: cnt.depth() })
+                // const imageRoi = src.roi(extractedSquare)
+                // cv.resize(imageRoi, imageRoi, new cv.Size(size.width, size.height), 0, 0, cv.INTER_AREA)
+                // squaresRoi.push(imageRoi)
+
+                cv.rectangle(
+                    src,
+                    new cv.Point(rect.x, rect.y),
+                    new cv.Point(rect.x + rect.width, rect.y + rect.height),
+                    [0, 255, 0, 255],
+                    2, cv.LINE_AA, 0
+                )
+                cv.rectangle(
+                    src,
+                    new cv.Point(extractedSquare.x, extractedSquare.y),
+                    new cv.Point(extractedSquare.x + extractedSquare.width, extractedSquare.y + extractedSquare.height),
+                    [255, 0, 0, 255],
+                    2, cv.LINE_AA, 0
+                )
+
+            }
+
+            cv.imshow('canvasOutput', dst)
+
+            whiteMask.delete()
+
+        }
+
+        function detectCorner() {
+            const imgElement = imageSourceInMemory
+            const ci = cv.imread(imgElement)
+
+            // const copy_1 = new cv.Mat()
+            const copy_1 = ci.clone()
+
+            const oldGray = new cv.Mat()
+            cv.cvtColor(copy_1, oldGray, cv.COLOR_RGBA2GRAY)
+
+            const [maxCorners, qualityLevel, minDistance, blockSize] = [500, 0.3, 50, 50];
+            const p0 = new cv.Mat()
+            const none = new cv.Mat()
+            cv.goodFeaturesToTrack(oldGray, p0, maxCorners, qualityLevel, minDistance, none, blockSize);
+
+            for (let i = 0; i < p0.rows; i++) {
+                const pt = new cv.Point(p0.data32F[i * 2], p0.data32F[i * 2 + 1])
+                cv.circle(copy_1, pt, 10, [255, 0, 0, 255], -1)
+            }
+
+            cv.imshow('canvasOutput', copy_1)
+        }
+
+        function detectFromPython2() {
+
+            const imgElement = imageSourceInMemory
+            const src = cv.imread(imgElement)
+
+            // we filter image to keep only yellow one
+            const whiteMask = src.clone()
+            let low = new cv.Mat(src.rows, src.cols, src.type(), [240, 240, 240, 255])
+            let high = new cv.Mat(src.rows, src.cols, src.type(), [255, 255, 255, 255])
+            cv.inRange(src, low, high, whiteMask)
+            low.delete()
+            high.delete()
+
+            const yellowMask = src.clone()
+            low = new cv.Mat(src.rows, src.cols, src.type(), [150, 150, 0, 255])
+            high = new cv.Mat(src.rows, src.cols, src.type(), [255, 255, 255, 255])
+            cv.inRange(src, low, high, yellowMask)
+            low.delete()
+            high.delete()
+
+            const bitOr = new cv.Mat()
+            cv.bitwise_or(whiteMask, yellowMask, bitOr)
+            // cv.imshow('canvasOutput', bitOr)
+
+            const bitwised = new cv.Mat()
+            cv.bitwise_and(src, src, bitwised, bitOr)
+
+            cv.cvtColor(bitwised, bitwised, cv.COLOR_RGBA2GRAY)
+            cv.Canny(bitwised, bitwised, 50, 255)
+
+            const lines = new cv.Mat()
+            cv.HoughLinesP(bitwised, lines, 0.1, Math.PI / 10.0, 150, 5, 4)
+
+            const dst = cv.Mat.zeros(src.rows, src.cols, cv.CV_8UC3);
+            const horizontals = []
+            const verticals = []
+
+            for (let i = 0; i < lines.rows; ++i) {
+                const [x1, y1, x2, y2] = [
+                    lines.data32S[i * 4],
+                    lines.data32S[i * 4 + 1],
+                    lines.data32S[i * 4 + 2],
+                    lines.data32S[i * 4 + 3]
+                ]
+
+                const horizontal = Math.abs(x2 - x1)
+                const vertical = Math.abs(y2 - y1)
+
+                // ls.push({ x1, y1, x2, y2, horizontal, vertical })
+
+                const minimalLength = src.cols * 0.05
+
+                if (horizontal === 0 && vertical > minimalLength) {
+                    verticals.push(x1)
+                    // cv.line(src, { x: x1, y: 0 }, { x: x2, y: src.rows }, [0, 255, 0, 255])
+                }
+
+                if (vertical === 0 && horizontal > minimalLength) {
+                    horizontals.push(y1)
+                    // cv.line(src, { x: 0, y: y1 }, { x: src.cols, y: y2 }, [0, 255, 0, 255])
+                }
+            }
+
+            const charWidth = src.cols * size.boxRatio
+            horizontals.sort((h1, h2) => h1 > h2 ? 1 : h1 === h2 ? 0 : -1)
+            verticals.sort((h1, h2) => h1 > h2 ? 1 : h1 === h2 ? 0 : -1)
+
+            const minH = horizontals.find(h1 => horizontals.find(h2 => charWidth === (h2 - h1)))
+            const minV = verticals.find(v1 => verticals.find(v2 => charWidth === (v2 - v1)))
+
+            const result = []
+            const squaresRoi = []
+            for (let xI = 0; xI < 5; xI++) {
+                const x = minV + (charWidth * xI)
+
+                for (let yI = 0; yI < 5; yI++) {
+                    const y = minH + (charWidth * yI)
+
+                    cv.rectangle(
+                        src,
+                        { x, y },
+                        { x: x + charWidth, y: y + charWidth },
+                        [255, 0, 0, 255],
+                        2, cv.LINE_AA, 0
+                    )
+                    result.push({ x, y })
+
+                    const extractedSquare = {
+                        x: x + Math.floor((extractionSize.left * charWidth) / extractionSize.originalSize),
+                        width: Math.floor((extractionSize.width * charWidth) / extractionSize.originalSize),
+                        y: y + Math.floor((extractionSize.top * charWidth) / extractionSize.originalSize),
+                        height: Math.floor((extractionSize.height * charWidth) / extractionSize.originalSize),
+                    }
+                    const imageRoi = src.roi(extractedSquare)
+                    cv.resize(imageRoi, imageRoi, new cv.Size(size.width, size.height), 0, 0, cv.INTER_AREA)
+
+
+
+                    cv.rectangle(
+                        src,
+                        { x: extractedSquare.x, y: extractedSquare.y },
+                        { x: extractedSquare.x + extractedSquare.width, y: extractedSquare.y + extractedSquare.height },
+                        [0, 255, 0, 255],
+                        2, cv.LINE_AA, 0
+                    )
+
+
+                    squaresRoi.push(imageRoi)
+                }
+            }
+
+            // const minH = Math.min(...horizontals)
+            // const maxH = Math.max(...horizontals)
+            // console.log(minH, maxH)
+
+            // for (let index = 0; index < 5; index++) {
+            //     const y = minH + (charWidth * index)
+            //     if (y > maxH) break
+            //     console.log(y)
+            //     cv.line(src, { x: 0, y }, { x: src.cols, y }, [255, 0, 0, 255])
+            // }
+
+            // const minV = Math.min(...verticals)
+            // const maxV = Math.max(...verticals)
+            // console.log(minV, maxV)
+
+            // for (let index = 0; index < 5; index++) {
+            //     const x = minV + (charWidth * index)
+            //     if (x > maxV) break
+            //     console.log(x)
+            //     cv.line(src, { x, y: 0 }, { x, y: src.rows }, [255, 0, 0, 255])
+            // }
+
+            // const keptH = []
+            // for (let index = 0; index < horizontals.length; index++) {
+            //     const cH = horizontals[index]
+            //     const match = horizontals.slice(index).find(h => Math.abs(h - cH) === charWidth)
+            //     if (match) {
+            //         keptH.push(cH)
+            //         keptH.push(match)
+            //         cv.line(src, { x: 0, y: cH }, { x: src.cols, y: cH }, [255, 0, 0, 255])
+            //         cv.line(src, { x: 0, y: match }, { x: src.cols, y: match }, [255, 0, 0, 255])
+            //     }
+            // }
+
+            // const keptV = []
+            // for (let index = 0; index < verticals.length; index++) {
+            //     const cV = verticals[index]
+            //     const match = verticals.slice(index).find(h => Math.abs(h - cV) === charWidth)
+            //     if (match) {
+            //         keptH.push(cV)
+            //         keptH.push(match)
+            //         cv.line(src, { x: cV, y: 0 }, { x: cV, y: src.rows }, [255, 0, 0, 255])
+            //         cv.line(src, { x: match, y: 0 }, { x: match, y: src.rows }, [255, 0, 0, 255])
+            //     }
+            // }
+            cv.imshow('canvasOutput', src)
+            return squaresRoi
+        }
+
+        function computeSubsetCharacterMat() {
+            const maxStepX = Math.ceil(size.gridHorizontal / size.gridSubset)
+            const maxStepY = Math.ceil(size.gridVertical / size.gridSubset)
+            const stepSizeWidth = (size.width * size.gridSubset)
+            const stepSizeHeight = (size.height * size.gridSubset)
+
+            const result = []
+
+            for (let stepX = 0; stepX < maxStepX; stepX++) {
+                for (let stepY = 0; stepY < maxStepY; stepY++) {
+                    const x = stepX * stepSizeWidth
+                    const y = stepY * stepSizeHeight
+                    const width = Math.min(stepSizeWidth, size.maxWidth - x)
+                    const height = Math.min(stepSizeHeight, size.maxHeight - y)
+                    result.push({
+                        stepX,
+                        stepY,
+                        x,
+                        y,
+                        width,
+                        height,
+                    })
+                }
+            }
+
+            console.log("subsetgrid length", result.length)
+
+            return result
+        }
+
+        function videoCapture() {
+            const height = videoSourceInMemory.videoHeight / 3
+            const width = videoSourceInMemory.videoWidth / 3
+            console.log(height, width)
+
+            const canvasFrame = document.createElement('canvas')
+            // const canvasFrame = document.getElementById('foundOutput')
+            const context = canvasFrame.getContext("2d", { willReadFrequently: true })
+            canvasFrame.height = height
+            canvasFrame.width = width
+            const fgmask = new cv.Mat(height, width, cv.CV_8UC1)
+            const fgbg = new cv.BackgroundSubtractorMOG2(500, 16, false)
+            const FPS = 30;
+
+            const [maxCorners, qualityLevel, minDistance, blockSize] = [50, 0.3, 50, 50];
+            const p0 = new cv.Mat()
+            const none = new cv.Mat()
+
+            function processVideo() {
+                if (videoSourceInMemory.paused || videoSourceInMemory.ended) {
+                    return;
+                }
+                const begin = Date.now()
+                context.drawImage(videoSourceInMemory, 0, 0, width, height)
+                const frame = cv.matFromImageData(context.getImageData(0, 0, width, height))
+                fgbg.apply(frame, fgmask)
+
+
+                cv.goodFeaturesToTrack(fgmask, p0, maxCorners, qualityLevel, minDistance, none, blockSize);
+
+                for (let i = 0; i < p0.rows; i++) {
+                    const pt = new cv.Point(p0.data32F[i * 2], p0.data32F[i * 2 + 1])
+                    cv.circle(frame, pt, 10, [255, 0, 0, 255], -1)
+                }
+
+                cv.imshow("foundOutput", frame)
+                frame.delete()
+
+                const delay = 1000 / FPS - (Date.now() - begin)
+                setTimeout(processVideo, delay)
+            }
+
+            setTimeout(processVideo, 0)
+
+            videoSourceInMemory.addEventListener('play', (e) => {
+                processVideo()
+            })
+        }
+
+        function detecBorder() {
+            const imgElement = imageSourceInMemory
+            const ci = cv.imread(imgElement)
+
+            // const copy_1 = new cv.Mat()
+            const dst = ci.clone()
+
+            const oldGray = new cv.Mat()
+            cv.cvtColor(dst, oldGray, cv.COLOR_RGBA2GRAY)
+
+            const not = new cv.Mat()
+            cv.bitwise_not(oldGray, not)
+
+            cv.Canny(not, not, 80, 120)
+
+            const lines = new cv.Mat()
+            cv.HoughLinesP(not, lines, 1, Math.PI / 2, 2, 30, 1)
+            const ls = []
+            for (let i = 0; i < lines.rows; ++i) {
+                const [x1, y1, x2, y2] = [
+                    lines.data32S[i * 4],
+                    lines.data32S[i * 4 + 1],
+                    lines.data32S[i * 4 + 2],
+                    lines.data32S[i * 4 + 3]
+                ]
+
+                if ((x2 - x1) < (imageSourceInMemory.width * 0.9)) continue
+
+                ls.push({ x1, y1, x2, y2, width: x2 - x1, screenwidth: imageSourceInMemory.width, percent: (x2 - x1) / imageSourceInMemory.width })
+
+                cv.line(dst, { x: x1, y: y1 }, { x: x2, y: y2 }, [255, 0, 0, 255], 10)
+            }
+
+            console.table(ls)
+
+            cv.imshow('canvasOutput', dst)
+
+        }
+
+        function lala() {
+            let video = document.getElementById('videoInput');
+            let cap = new cv.VideoCapture(video);
+
+            // parameters for ShiTomasi corner detection
+            let [maxCorners, qualityLevel, minDistance, blockSize] = [30, 0.3, 7, 7];
+
+            // parameters for lucas kanade optical flow
+            let winSize = new cv.Size(15, 15);
+            let maxLevel = 2;
+            let criteria = new cv.TermCriteria(cv.TERM_CRITERIA_EPS | cv.TERM_CRITERIA_COUNT, 10, 0.03);
+
+            // create some random colors
+            let color = [];
+            for (let i = 0; i < maxCorners; i++) {
+                color.push(new cv.Scalar(parseInt(Math.random() * 255), parseInt(Math.random() * 255),
+                    parseInt(Math.random() * 255), 255));
+            }
+
+            // take first frame and find corners in it
+            let oldFrame = new cv.Mat(video.height, video.width, cv.CV_8UC4);
+            cap.read(oldFrame);
+            let oldGray = new cv.Mat();
+            cv.cvtColor(oldFrame, oldGray, cv.COLOR_RGB2GRAY);
+            let p0 = new cv.Mat();
+            let none = new cv.Mat();
+            cv.goodFeaturesToTrack(oldGray, p0, maxCorners, qualityLevel, minDistance, none, blockSize);
+
+            // Create a mask image for drawing purposes
+            let zeroEle = new cv.Scalar(0, 0, 0, 255);
+            let mask = new cv.Mat(oldFrame.rows, oldFrame.cols, oldFrame.type(), zeroEle);
+
+            let frame = new cv.Mat(video.height, video.width, cv.CV_8UC4);
+            let frameGray = new cv.Mat();
+            let p1 = new cv.Mat();
+            let st = new cv.Mat();
+            let err = new cv.Mat();
+
+            const FPS = 30;
+            function processVideo() {
+                try {
+                    if (!streaming) {
+                        // clean and stop.
+                        frame.delete(); oldGray.delete(); p0.delete(); p1.delete(); err.delete(); mask.delete();
+                        return;
+                    }
+                    let begin = Date.now();
+
+                    // start processing.
+                    cap.read(frame);
+                    cv.cvtColor(frame, frameGray, cv.COLOR_RGBA2GRAY);
+
+                    // calculate optical flow
+                    cv.calcOpticalFlowPyrLK(oldGray, frameGray, p0, p1, st, err, winSize, maxLevel, criteria);
+
+                    // select good points
+                    let goodNew = [];
+                    let goodOld = [];
+                    for (let i = 0; i < st.rows; i++) {
+                        if (st.data[i] === 1) {
+                            goodNew.push(new cv.Point(p1.data32F[i * 2], p1.data32F[i * 2 + 1]));
+                            goodOld.push(new cv.Point(p0.data32F[i * 2], p0.data32F[i * 2 + 1]));
+                        }
+                    }
+
+                    // draw the tracks
+                    for (let i = 0; i < goodNew.length; i++) {
+                        cv.line(mask, goodNew[i], goodOld[i], color[i], 2);
+                        cv.circle(frame, goodNew[i], 5, color[i], -1);
+                    }
+                    cv.add(frame, mask, frame);
+
+                    cv.imshow('canvasOutput', frame);
+
+                    // now update the previous frame and previous points
+                    frameGray.copyTo(oldGray);
+                    p0.delete(); p0 = null;
+                    p0 = new cv.Mat(goodNew.length, 1, cv.CV_32FC2);
+                    for (let i = 0; i < goodNew.length; i++) {
+                        p0.data32F[i * 2] = goodNew[i].x;
+                        p0.data32F[i * 2 + 1] = goodNew[i].y;
+                    }
+
+                    // schedule the next one.
+                    let delay = 1000 / FPS - (Date.now() - begin);
+                    setTimeout(processVideo, delay);
+                } catch (err) {
+                    utils.printError(err);
+                }
+            };
+
+            // schedule the first one.
+            setTimeout(processVideo, 0);
+
+        }
+
+
+        function videoCaptureByRoiAndLine() {
+            const height = videoSourceInMemory.videoHeight
+            const width = videoSourceInMemory.videoWidth
+
+            const canvasFrame = document.createElement('canvas')
+            const context = canvasFrame.getContext("2d", { willReadFrequently: true })
+            canvasFrame.height = height
+            canvasFrame.width = width
+            const fgmask = new cv.Mat(height, width, cv.CV_8UC1)
+            const fgbg = new cv.BackgroundSubtractorMOG2(500, 16, false)
+            const FPS = 30;
+
+            const extractInit = { x: 40, y: 320, width: 945, height: 1040 }
+            const ratio = width / 1080
+
+            let detectedTopScreen = -1
+            let lineCount = -1
+            let nextLineCount = 5
+            let lastMinH = 0
+
+            function processVideo() {
+                if (videoSourceInMemory.paused || videoSourceInMemory.ended) {
+                    return;
+                }
+                const begin = Date.now()
+                context.drawImage(videoSourceInMemory, 0, 0, width, height)
+                const frame = cv.matFromImageData(context.getImageData(0, 0, width, height))
+                // const topScreen = detectTopScreen(frame)
+                const topScreen = detectedTopScreen < 0 ? detectTopScreen(frame) : detectedTopScreen
+                detectedTopScreen = topScreen
+                if (detectedTopScreen < 0) {
+                    const delay = 1000 / FPS - (Date.now() - begin)
+                    setTimeout(processVideo, delay)
+                    frame.delete()
+                    return
+                }
+
+                const roiSize = {
+                    x: extractInit.x * ratio,
+                    y: topScreen + extractInit.y * ratio,
+                    width: extractInit.width * ratio,
+                    height: extractInit.height * ratio,
+                }
+
+                // console.log(roiSize)
+                // console.log(height, width, topScreen)
+                const roi = frame.roi(roiSize)
+                const minH = detectHorizontalLine(roi)
+
+                if (minH > lastMinH) {
+                    lineCount++
+
+                    if ((lineCount === 0 || lineCount > 4) && lineCount % 5 === 0) {
+                        videoSourceInMemory.pause()
+                        const squares = extractSquare(minH, Math.round(roi.cols / 5), roi)
+                        nextLineCount = Math.ceil(squares.length / 5)
+                        findCharacterIds(squares)
+                        videoSourceInMemory.play()
+                    }
+                }
+
+                lastMinH = minH
+
+                const dsize = new cv.Size(Math.round(roi.cols / 2), Math.round(roi.rows / 2))
+                cv.resize(roi, roi, dsize, 0, 0, cv.INTER_AREA)
+                // fgbg.apply(roi, fgmask)
+
+                cv.imshow("foundOutput", roi)
+                frame.delete()
+                roi.delete()
+
+                const delay = 1000 / FPS - (Date.now() - begin)
+                setTimeout(processVideo, delay)
+            }
+
+            setTimeout(processVideo, 0)
+
+            videoSourceInMemory.addEventListener('play', (e) => {
+                processVideo()
+            })
+        }
+
+        function extractSquare(minH, characterSize, src) {
+            const squaresToExtract = []
+            for (let yI = 0; yI < 5; yI++) {
+                const y = minH + characterSize * yI
+
+                for (let xI = 0; xI < 5; xI++) {
+                    const x = 0 + characterSize * xI
+
+                    const square = {
+                        x: x + Math.floor((extractionSize.left * characterSize) / extractionSize.originalSize),
+                        width: Math.floor((extractionSize.width * characterSize) / extractionSize.originalSize),
+                        y: y + Math.floor((extractionSize.top * characterSize) / extractionSize.originalSize),
+                        height: Math.floor((extractionSize.height * characterSize) / extractionSize.originalSize),
+                    }
+
+                    if (y + characterSize > src.rows) continue
+
+                    const roi = src.roi(square)
+                    cv.resize(roi, roi, new cv.Size(size.width, size.height), 0, 0, cv.INTER_AREA)
+                    squaresToExtract.push(roi)
+
+                    cv.rectangle(
+                        src,
+                        new cv.Point(square.x, square.y),
+                        new cv.Point(square.x + square.width, square.y + square.height),
+                        [0, 255, 0, 255],
+                        2, cv.LINE_AA, 0
+                    )
+                }
+            }
+
+            return squaresToExtract.reverse()
+        }
+
+        function detectTopScreen(src) {
+            const oldGray = new cv.Mat()
+            cv.cvtColor(src, oldGray, cv.COLOR_RGBA2GRAY)
+
+            cv.threshold(oldGray, oldGray, 100, 200, cv.THRESH_BINARY)
+            cv.Canny(oldGray, oldGray, 90, 120)
+
+            const lines = new cv.Mat()
+            cv.HoughLinesP(oldGray, lines, 1, Math.PI / 2, 2, 30, 1)
+            let topBound = src.rows
+            let rows = []
+            for (let i = 0; i < lines.rows; ++i) {
+                const [x1, y1, x2, y2] = [
+                    lines.data32S[i * 4],
+                    lines.data32S[i * 4 + 1],
+                    lines.data32S[i * 4 + 2],
+                    lines.data32S[i * 4 + 3],
+                ]
+
+                if (x2 - x1 < src.cols * 0.8) continue
+                if (y1 !== y2) continue
+                if (y1 > topBound) continue
+                cv.line(src, { x: 0, y: y1 }, { x: src.cols, y: y2 }, [255, 0, 0, 255], 1)
+                rows.push({ x1, y1, x2, y2, width: x2 - x1, screenwidth: src.cols, percent: (x2 - x1) / src.cols })
+                // rows.push(y1)
+                topBound = y1
+            }
+
+            // console.table(rows)
+            // cv.imshow("foundOutput", oldGray)
+
+            oldGray.delete()
+            // not.delete()
+            lines.delete()
+
+            return topBound > (src.rows / 2)
+                ? -1
+                : topBound
+        }
+
+        function detectHorizontalLine(src) {
+            const whiteMask = src.clone()
+            let low = new cv.Mat(src.rows, src.cols, src.type(), [240, 240, 240, 255])
+            let high = new cv.Mat(src.rows, src.cols, src.type(), [255, 255, 255, 255])
+            cv.inRange(src, low, high, whiteMask)
+            low.delete()
+            high.delete()
+
+            const yellowMask = src.clone()
+            low = new cv.Mat(src.rows, src.cols, src.type(), [150, 150, 0, 255])
+            high = new cv.Mat(src.rows, src.cols, src.type(), [255, 255, 255, 255])
+            cv.inRange(src, low, high, yellowMask)
+            low.delete()
+            high.delete()
+
+            const bitOr = new cv.Mat()
+            cv.bitwise_or(whiteMask, yellowMask, bitOr)
+            whiteMask.delete()
+            yellowMask.delete()
+
+            const bitwised = new cv.Mat()
+            cv.bitwise_and(src, src, bitwised, bitOr)
+            bitOr.delete()
+
+            const lines = new cv.Mat()
+            cv.cvtColor(bitwised, bitwised, cv.COLOR_RGBA2GRAY)
+            cv.Canny(bitwised, bitwised, 50, 255)
+            // cv.HoughLinesP(bitwised, lines, 0.1, Math.PI / 10.0, 150, 5, 4)
+            cv.HoughLinesP(bitwised, lines, 1, Math.PI / 2, 2, 30, 1)
+            bitwised.delete()
+
+            const horizontals = []
+
+            for (let i = 0; i < lines.rows; ++i) {
+                const [x1, y1, x2, y2] = [
+                    lines.data32S[i * 4],
+                    lines.data32S[i * 4 + 1],
+                    lines.data32S[i * 4 + 2],
+                    lines.data32S[i * 4 + 3],
+                ]
+
+                const horizontalLength = Math.abs(x2 - x1)
+                const verticalLength = Math.abs(y2 - y1)
+                const minimalLength = src.cols * 0.10
+
+                if (verticalLength === 0 && horizontalLength > minimalLength) {
+                    // cv.line(src, { x: x1, y: y1 }, { x: x2, y: y2 }, [0, 255, 0, 255], 3)
+                    horizontals.push(y1)
+                }
+            }
+
+            const characterWidth = src.cols / 5
+            horizontals.sort((h1, h2) => (h1 > h2 ? 1 : h1 === h2 ? 0 : -1))
+
+            const minH = horizontals.find(h1 =>
+                horizontals.find(h2 => characterWidth === h2 - h1),
+            )
+
+            for (let index = 0; index < 6; index++) {
+                const y = minH + (index * characterWidth)
+                cv.line(src, { x: 0, y }, { x: src.cols, y }, [0, 255, 0, 255], 3)
+            }
+
+            // cv.imshow("foundOutput", src)
+
+            lines.delete()
+
+            return minH
+        }
+
+        let imgElement = imageSourceInMemory
+        let inputElement = document.getElementById('fileInput')
+        inputElement.addEventListener('change', (e) => {
+            if (e.target.files[0].type === "video/mp4") {
+                videoSourceInMemory.src = URL.createObjectURL(e.target.files[0])
+                videoSourceInMemory.load()
+                videoSourceInMemory.controls = true
+                videoSourceInMemory.muted = true
+                videoSourceInMemory.autoplay = true
+                document.getElementById('srcPanel').appendChild(videoSourceInMemory)
+            } else {
+                imgElement.src = URL.createObjectURL(e.target.files[0])
+            }
+
+            inputElement.value = ""
+        }, false)
+
+        videoSourceInMemory.addEventListener('canplay', (e) => {
+            // videoCapture()
+            videoCaptureByRoiAndLine()
+        })
+
+        imgElement.onload = function () {
+            // const squaresRoi = detectFromPython2()
+            // findCharacterIds(squaresRoi)
+            // detectWithThreshold()
+            // const squaresRoi = detectTavernSquare()
+            // findCharacterIds(squaresRoi)
+            // detectCorner()
+            detecBorder()
+        }
+
+        var Module = {
+            // https://emscripten.org/docs/api_reference/module.html#Module.onRuntimeInitialized
+            onRuntimeInitialized() {
+                document.getElementById('status').innerHTML += '<br/>OpenCV.js has loaded.'
+                initCharacterCanvasv2()
+            }
+        }
+    </script>
+    <script async src="opencv.js" type="text/javascript"></script>
+</body>
+
+</html>

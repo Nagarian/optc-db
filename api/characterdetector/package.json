@@ -1,0 +1,17 @@
+{
+  "name": "characterdetector",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "crop": "node ./index.js",
+    "demo": "http-server -p 8081 -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "sharp": "^0.31.1"
+  }
+}
