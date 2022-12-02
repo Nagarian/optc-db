@@ -184,8 +184,14 @@ export function damageEffectToString(
       result = `Deals Lv.${effect.level} Damage Over Time`
       break
     case 'atk':
-      result = `Deals ${effect.amount}x ATK in damage`
+      result = effect.leader
+        ? `Deals ${numberToString(effect.amount)}x Leader's ATK in damage`
+        : `Deals ${numberToString(effect.amount)}x ATK in damage`
       break
+    case 'atkbase':
+      result = effect.leader
+        ? `Deals ${numberToString(effect.amount)}x Leader's base ATK in damage`
+        : `Deals ${numberToString(effect.amount)}x base ATK in damage`
     case 'fixed':
       result = `Deals ${effect.amount} fixed damage`
       break
@@ -260,6 +266,31 @@ export function conditionToString(
       }
     default:
       throw new Error(`UNKNOWN CONDITION ${JSON.stringify(condition)}`)
+  }
+}
+
+export function gpconditionToString(input: RawDB.PirateRumble.GpCondition) {
+  switch (input.type) {
+    case 'damage':
+      return `After dealing damage ${input.count} times`
+    case 'action':
+      return `After ${input.action}ing ${input.count} times`
+    case 'debuff':
+      return `After landing ${input.attribute} ${input.count} times`
+    case 'attack':
+      return `After landing ${input.count} ${input.attack} attacks`
+    case 'defeat':
+      return `After ${input.count} ${input.team} are defeated`
+    case 'special':
+      return `After ${input.team} uses ${input.count} Rumble Specials`
+    case 'dbfreceived':
+      return `After ${input.count} debuffs recieved`
+    case 'dmgreceived':
+      return `After ${numberToString(input.count)} damage recieved`
+    case 'hitreceived':
+      return `After ${input.count} hits recieved`
+    default:
+      throw new Error(`UNKNOWN CONDITION ${JSON.stringify(input)}`)
   }
 }
 
