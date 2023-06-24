@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>OPTC Video</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .main {
+            display: grid;
+            grid-template-areas:
+                "input  input"
+                "canvas found"
+                "ids    sus"
+            ;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            grid-template-rows: auto 1fr auto;
+            height: 100%;
+            width: 100%;
+        }
+
+        #inputSrc {
+            grid-area: input;
+            display: flex;
+        }
+
+        #srcPanel {
+            grid-area: canvas;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #canvasOutput {
+            object-fit: contain;
+        }
+
+        #foundPanel {
+            grid-area: found;
+            overflow: auto;
+        }
+
+        #foundOutput {
+            object-fit: contain;
+        }
+
+        #foundIds {
+            grid-area: ids;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        #foundIds img {
+            width: 80px;
+            height: 80px;
+        }
+
+        #suspectIds {
+            grid-area: sus;
+        }
+
+        #suspectIds img {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="inputSrc" class="caption">
+            <input type="file" id="fileInput" name="file" />
+        </div>
+        <div id="srcPanel">
+            <video id="srcVideo">
+        </div>
+        <div id="foundPanel">
+            <canvas id="foundOutput"></canvas>
+        </div>
+        <div id="foundIds"></div>
+        <div id="suspectIds"></div>
+    </div>
+    <script type="text/javascript">
+        const video = document.getElementById("srcVideo")
+        const inputElement = document.getElementById('fileInput')
+        inputElement.addEventListener('change', (e) => {
+            video.src = URL.createObjectURL(e.target.files[0])
+            video.load()
+            video.controls = true
+            video.muted = true
+            video.autoplay = true
+            inputElement.value = ""
+        }, false)
+
+        const expectedFramerate = 60 // yourVideo's framerate
+
+        function handleKey(ev) {
+            let d = 0;
+
+            switch (ev.key) {
+                case ",": d = -5; break;  // normal
+                case ".": d = +5; break;
+                case "?": d = -10; break; // shift
+                case ":": d = +10; break;
+                case "<": d = -2; break;  // rightAlt
+                case ">": d = +2; break;
+                case " ": togglePlayback(); return;
+            }
+
+            if (d) {
+                if (video.paused) video.currentTime += Math.sign(d) * 1 / expectedFramerate
+                else video.currentTime += d
+            }
+            setTimeout(handleKey, 500)
+        }
+
+        document.onkeydown = handleKey 
+        document.onkeyup = () => clearTimeout(handleKey)
+
+        function togglePlayback() {
+            video.paused
+                ? video.play()
+                : video.pause()
+        }
+    </script>
+</body>
+
+</html>
