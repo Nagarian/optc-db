@@ -1,0 +1,49 @@
+type: QCK
+name: "Sanji - Parage Shot: The Storm"
+japanName: サンジ 整形ショット(パラージュショット)　“嵐”
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 486
+    atk: 207
+    rcv: 32
+  maxLvl:
+    hp: 2015
+    atk: 900
+    rcv: 217
+cost: 10
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - special
+  - fortnight
+links:
+  gamewithId: 8946
+aliases:
+  - Kimono Sanji
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x
+special:
+  name: "Parage Shot: The Storm"
+  description: Reduces the defense of all enemies by 50% for 2 turns, randomizes all orbs
+  cooldown: 15
+  maxLevel: 1
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Nico Robin, Usopp and Tony Tony Chopper
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

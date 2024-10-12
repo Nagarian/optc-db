@@ -1,0 +1,284 @@
+type: INT
+name: Shiryu - Second Ship Captain of the Blackbeard Pirates
+japanName: シリュウ 黒ひげ海賊団2番船船長
+family:
+  - Shiryu
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1146
+    atk: 571
+    rcv: 99
+  maxLvl:
+    hp: 2864
+    atk: 1427
+    rcv: 247
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 269099
+aliases:
+  - TM Shiryu TM
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Driven characters by 2.5x.
+special:
+  name: Vanishing Slash
+  description: Deals 20% of enemies' current HP in True damage to one enemy,
+    reduces ATK DOWN and Paralysis duration by 4 turns, removes Poison duration
+    completely, boosts the Color Affinity of Slasher and Driven characters by 2x
+    for 1 turn and reduces damage received by 90% for 1 turn.
+  cooldown: 34
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven and Slasher characters by 50
+  - description: Makes [PSY] orbs beneficial for Driven and Slasher characters
+support:
+  type: descriptive
+  criteria: "[INT] characters"
+  levels:
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      reduces Poison duration by 3 turns and recovers 500 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      reduces Poison duration by 4 turns and recovers 800 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      reduces Poison duration by 5 turns and recovers 1,200 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      reduces Poison duration by 7 turns and recovers 1,500 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      removes Poison duration completely and recovers 2,000 HP
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Slasher and Driven characters by 2.75x.
+    - type: sailor
+    - rcv: 20
+    - hp: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Slasher and Driven characters by 3x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - captain:
+        description: Boosts ATK of Slasher and Driven characters by 3.25x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Slasher and Driven characters by 3.5x.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Slasher and Driven characters by 3.75x.
+    - hp: 100
+    - hp: 120
+    - captain:
+        description: Boosts ATK of Slasher and Driven characters by 3.75x and reduces
+          Despair duration by 2 turns.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 70
+        - threshold: 50
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 3
+rumble:
+  stats:
+    def: 149
+    rumbleType: DBF
+    spd: 139
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Damage Over Time
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 13
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 15
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 16
+            level: 3
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            duration: 17
+            level: 3
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 19
+            level: 4
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            duration: 20
+            level: 5

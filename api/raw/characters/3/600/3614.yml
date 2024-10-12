@@ -1,0 +1,233 @@
+type: DEX
+name: Roronoa Zoro - Flame-Rending Swordsman
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1669
+    atk: 884
+    rcv: 90
+  maxLvl:
+    hp: 3338
+    atk: 1688
+    rcv: 181
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Slasher and Free Spirit characters by 3x and
+    boosts HP of Slasher and Free Spirit characters by 1.2x.
+special:
+  name: "Foxfire Style: Flame-Rend"
+  description: Reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction duration by 5 turns. If your Captain is a Slasher or Free Spirit
+    character, boosts Color Affinity of Slasher and Free Spirit characters by 2x
+    for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [QCK] orbs beneficial for Slasher and Free Spirit characters
+  - description: If this character has a [TND] orb and you attack with this
+      character, increases boost effects of Color Affinity buffs by +0.2x
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 40
+    - atk: 10
+    - type: potential
+    - hp: 50
+    - atk: 20
+    - rcv: 50
+    - slot: 1
+    - hp: 50
+    - atk: 30
+    - hp: 60
+    - type: sailor
+    - atk: 30
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 150
+    rumbleType: ATK
+    spd: 159
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 1000
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 3
+            duration: 12
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            level: 4
+            duration: 14
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            level: 5
+            duration: 15

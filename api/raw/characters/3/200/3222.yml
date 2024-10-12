@@ -1,0 +1,257 @@
+type: DEX
+name: Hiyori - Mysterious Beauty
+japanName: 日和 謎の美女
+family:
+  - KozukiHiyori
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1310
+    atk: 686
+    rcv: 140
+  maxLvl:
+    hp: 2882
+    atk: 1235
+    rcv: 308
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 252735
+aliases:
+  - Komurasaki
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [QCK] characters by 3x and their RCV by 1.2x
+special:
+  name: A Weeping Voice for Help
+  description: Recovers 8x character's RCV in HP at the end of each turn for 3
+    turns, boosts ATK of [DEX] and [QCK] characters by 1.75x for 1 turn and
+    changes [BLOCK] and Badly Matching orbs into Matching orbs. If the special
+    is activated with more than 50% health remaining, protects from defeat for 1
+    turn.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] and [QCK] characters by 30
+  - description: If your Captain is a [DEX] or [QCK] character, makes [DEX] orbs
+      beneficial for all characters
+support:
+  type: descriptive
+  criteria: Roronoa Zoro and Toko
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      recovers 500 HP and changes Badly Matching orb of the supported character
+      into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,000 HP and changes Badly Matching orb of the supported
+      character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,500 HP and changes Badly Matching orb of the supported
+      character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 2,000 HP and changes Badly Matching orb of the supported
+      character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 2,000 HP and changes [BLOCK] or Badly Matching orb of the
+      supported character into a Matching orb.
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - rcv: 40
+    - hp: 40
+    - type: sailor
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - hp: 50
+    - atk: 75
+    - rcv: 40
+    - hp: 60
+    - cooldown: 1
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 169
+    rumbleType: RCV
+    spd: 141
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 250
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 900
+          effect: recharge
+          targeting:
+            targets:
+              - DEX
+          type: fixed
+        - attributes:
+            - DEF
+          duration: 6
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            amount: 1000
+        - override:
+            duration: 7
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            amount: 1100
+        - override:
+            duration: 8
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            amount: 1200
+        - override:
+            duration: 9
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            amount: 1300
+        - override:
+            duration: 10
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1
+        - override:
+            amount: 1400
+        - override:
+            duration: 11
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            amount: 1500
+        - override:
+            duration: 12
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            amount: 1600
+        - override:
+            duration: 13
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            amount: 1700
+        - override:
+            duration: 14
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            amount: 1800
+        - override:
+            duration: 15

@@ -1,0 +1,96 @@
+type: QCK
+name: Nefeltari Vivi - Princess Coming of Age
+japanName: ネフェルタリ・ビビ 立志式の王女
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 953
+    atk: 565
+    rcv: 182
+  maxLvl:
+    hp: 2058
+    atk: 1299
+    rcv: 375
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 118575
+aliases:
+  - Limited Vivi
+  - Secret Vivi
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1x-3.25x depending on the
+    crew's current HP and recovers 1.5x character's RCV in HP at the end of each
+    turn
+  notes: "`captainProportional : higher : 1 + 2.25 * ((remaining HP) / (total HP))
+    : 3.25 : 1`"
+special:
+  name: The Mark of Friendship
+  description: Reduces Special Cooldown of all characters by 1 turn and changes
+    [BLOCK] orbs into [RCV] orbs and changes orbs of adjacent characters into
+    [RCV] orbs. If during that turn, you hit 2 PERFECTS, locks the chain
+    multiplier at 3x for 3 turns.
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 1 turn
+  - description: Makes [RCV] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji and Tony
+    Tony Chopper
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - atk: 20
+    - hp: 20
+    - hp: 40
+    - rcv: 30
+    - hp: 40
+    - hp: 60
+    - type: sailor
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

@@ -1,0 +1,169 @@
+type: PSY
+name: Germa 66 - Science Military Seeking Revenge
+japanName: ジェルマ６６ 報復の科学戦闘部隊
+family:
+  - VinsmokeJudge
+  - VinsmokeReiju
+  - VinsmokeIchiji
+  - VinsmokeNiji
+  - VinsmokeYonji
+class:
+  - Powerhouse
+  - Driven
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1613
+    atk: 966
+    rcv: 80
+  maxLvl:
+    hp: 3584
+    atk: 1610
+    rcv: 266
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 224884
+aliases:
+  - Vinsmoke Judge
+  - Vinsmoke Reiju
+  - Vinsmoke Ichiji
+  - Vinsmoke Niji
+  - Vinsmoke Yonji
+  - Legend Germa 66
+evolution:
+  - id: 3369
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 4x, boosts ATK of all other
+    characters by 3.75x and makes [TND] orbs beneficial for all characters. If a
+    [PSY] character has a [PSY] or [TND] orb, boosts their ATK by 5x instead. If
+    this character becomes your captain in the middle of an island, this
+    character's own normal attacks count as Type Effective against all Types.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Vinsmoke Sanji, Monkey D. Luffy, Nami, Tony Tony Chopper, Brook, Jinbe or
+    Carrot, excluding Support members."
+  description: Boosts Chain Multiplier Growth Rate by 1.25x for 1 turn, locks all
+    orbs for 1 turn and transforms all [PSY] characters into Super [PSY]
+    characters.
+special:
+  name: Calling Germa 66
+  description: Changes all orbs into [TND] orbs and boosts Orb Effects of [PSY]
+    characters by 2.25x for 2 turns. If this character is a Sailor, swaps this
+    unit with your captain for 2 turns.
+  cooldown: 19
+  maxLevel: 6
+  stages:
+    - description: Changes the orb of this character into a [TND] orb and boosts Orb
+        Effects of [PSY] characters by 2x for 1 turn. If this character is a
+        Sailor, swaps this unit with your captain for 1 turn.
+      cooldown: 16
+sailor:
+  - description: Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this
+      character
+  - description: Makes [TND] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [TND] orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [TND] orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [TND] orbs and makes [TND] orbs
+      beneficial for all characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [TND] orbs and makes [PSY] and
+      [TND] orbs beneficial for all characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [TND] orbs and makes [PSY],
+      [RCV] and [TND] orbs beneficial for all characters for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - hp: 5
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 15
+    - rcv: 10
+    - type: sailor
+    - atk: 15
+    - hp: 50
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 30
+    - atk: 30
+    - hp: 70
+    - hp: 100
+    - hp: 100
+    - rcv: 10
+    - rcv: 15
+    - rcv: 20
+    - type: sailor
+    - atk: 30
+    - hp: 150
+    - rcv: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

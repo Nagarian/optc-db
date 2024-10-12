@@ -1,0 +1,382 @@
+type: STR
+name: Sabo - Brotherly Bond
+japanName: サボ “絆”で結ばれた“義兄”
+family:
+  - Sabo
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 528
+    atk: 278
+    rcv: 51
+  maxLvl:
+    hp: 1427
+    atk: 922
+    rcv: 201
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 202414
+aliases:
+  - Str Sabo
+  - V2 Legend Lucy
+evolution:
+  - id: 2960
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 100
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 4x, boosts HP of all characters
+    by 1.2x, boosts Chain Multiplier Growth Rate by 1.5x and recovers 0.5x this
+    character's RCV at the end of the turn for each time you hit a PERFECT.
+special:
+  name: Revolutionary Strike - Flame Dragon King
+  description: Boosts the Color Affinity of [STR] characters by 2x for 1 turn. If
+    during that turn you score 3 PERFECT hits, boosts the Color Affinity of
+    [STR] characters by 2x for 1 turn. After 1 turn, adds 1.0x to Chain
+    multiplier for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+rumble:
+  stats:
+    def: 201
+    rumbleType: SPT
+    spd: 158
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 19
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 21
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 22
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 24
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 25
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - SPD
+          duration: 25
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Fighter
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,145 @@
+type: DEX
+name: Kizaru - Turbulent Flash
+japanName: 黄猿 怒涛の閃々
+family:
+  - Borsalino
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 830
+    atk: 290
+    rcv: 94
+  maxLvl:
+    hp: 2612
+    atk: 1362
+    rcv: 268
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 100396
+aliases:
+  - TM Kizaru
+  - TM Borsalino
+captain:
+  name: ""
+  description: Boosts ATK of [DEX], [PSY] and [INT] characters by 2x
+special:
+  name: Ama no Murakumo
+  description: Deals 20% of enemies' current HP in damage to one enemy, locks all
+    orbs for 1 turn and boosts ATK of Captain's Type characters by 1.75x for 3
+    turns
+  cooldown: 34
+  maxLevel: 8
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: "[DEX] characters"
+  levels:
+    - value: 3
+    - value: 6
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [DEX], [PSY] and [INT] characters by 2.25x
+    - type: sailor
+    - atk: 15
+    - hp: 40
+    - rcv: 15
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [DEX], [PSY] and [INT] characters by 2.25x
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 15
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [DEX], [PSY] and [INT] characters by 2.25x
+          and if there is a [DEX], [PSY] and [INT] character in your crew,
+          boosts Chain Multiplier Growth Rate by 1.1x
+    - cooldown: 2
+    - atk: 25
+    - hp: 60
+    - rcv: 20
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - hp: 55
+    - cooldown: 4
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [DEX], [PSY] and [INT] characters by 2.25x
+          and if there is a [DEX], [PSY] and [INT] character in your crew,
+          boosts Chain Multiplier Growth Rate by 1.2x
+    - atk: 30
+    - hp: 55
+    - type: sailor
+    - atk: 40
+    - hp: 50
+    - rcv: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [DEX], [PSY] and [INT] characters by 2.25x
+          and if there is a [DEX], [PSY] and [INT] character in your crew,
+          boosts Chain Multiplier Growth Rate by 1.3x
+    - atk: 50
+    - hp: 60
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [DEX], [PSY] and [INT] characters by 2.5x
+          and if there is a [DEX], [PSY] and [INT] character in your crew,
+          boosts Chain Multiplier Growth Rate by 1.5x
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - rcv: 75
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 35
+        - value: 1
+          threshold: 50
+        - value: 1.5
+          threshold: 50

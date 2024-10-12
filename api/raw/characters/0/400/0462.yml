@@ -1,0 +1,49 @@
+type: DEX
+name: Master Escape Artist Bentham - Mr. 2 Bon Clay
+japanName: 脱獄名人ベンサム Mr.2・ボン・クレー
+family:
+  - Bentham
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 921
+    atk: 460
+    rcv: 146
+  maxLvl:
+    hp: 1830
+    atk: 978
+    rcv: 323
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 3061
+aliases:
+  - Prison Break Expert Mr. 2 Bonclay
+  - Prison Break Expert Mr 2 Bonclay
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x
+special:
+  name: "Escape Dance: White Swan Arabesque"
+  description: Randomizes all orbs and changes the orb of this character into a
+    [DEX] orb, boosts ATK of Fighter characters by 1.25x for 2 turns
+  cooldown: 25
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

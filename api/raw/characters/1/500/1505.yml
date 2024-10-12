@@ -1,0 +1,55 @@
+type: STR
+name: Hody Jones
+japanName: ホーディ・ジョーンズ
+family:
+  - HodyJones
+class:
+  - Powerhouse
+  - Shooter
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 141
+    atk: 69
+    rcv: 0
+  maxLvl:
+    hp: 1041
+    atk: 594
+    rcv: 31
+cost: 18
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 52490
+aliases:
+  - ""
+evolution:
+  - id: 1506
+    evolvers:
+      - 118
+      - 95
+      - 99
+      - 300
+      - 304
+  - id: 1562
+    evolvers:
+      - 118
+      - 83
+      - 85
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Powerhouse characters by 2.25x if HP is below
+    30% at the start of the turn
+special:
+  name: Shark Arrows
+  description: Deals 15x character's ATK in [STR] True damage to all enemies,
+    makes PERFECTs harder to hit for 1 turn, reduces crew's current HP by 90%,
+    boosts ATK of this character by 2.25x for 1 turn.
+  cooldown: 22
+  maxLevel: 8

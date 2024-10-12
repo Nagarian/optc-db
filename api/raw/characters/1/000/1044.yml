@@ -1,0 +1,57 @@
+type: PSY
+name: Trafalgar Law - Worst Generation
+japanName: トラファルガー・ロー 最悪の世代
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 549
+    atk: 341
+    rcv: 138
+  maxLvl:
+    hp: 1378
+    atk: 813
+    rcv: 297
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 29651
+aliases:
+  - LLaw
+  - PLaw
+  - V1 Legend Law
+  - Shichibukai
+evolution:
+  - id: 1045
+    evolvers:
+      - 118
+      - 87
+      - 266
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 2x at the start
+    of the chain, by 3x after the 3rd PERFECT in a row and by 4x after the 5th
+    PERFECT in a row.
+special:
+  name: Gamma Knife
+  description: Makes Damage and Health Cutting Specials of all characters bypass
+    all defensive Buffs, Barriers and Defense, deals 50x character's ATK in
+    [PSY] damage to one enemy.
+  cooldown: 25
+  maxLevel: 6
+  stages:
+    - description: Makes Damage and Health Cutting Specials of Slasher and Free Spirit
+        characters bypass all defensive Buffs, Barriers and Defense, deals 20x
+        character's ATK in [PSY] damage to one enemy.
+      cooldown: 18

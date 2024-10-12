@@ -1,0 +1,55 @@
+type: STR
+name: Marco - Protector of His Will
+japanName: マルコ “意志”の守り手
+family:
+  - Marco
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 293
+    atk: 201
+    rcv: 99
+  maxLvl:
+    hp: 950
+    atk: 575
+    rcv: 200
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 93184
+aliases:
+  - ""
+evolution:
+  - id: 1987
+    evolvers:
+      - 83
+      - 94
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x and their RCV by 1.2x.
+    Recovers 2x character's RCV in HP at the end of each turn.
+special:
+  name: Establishing an Oath of Immortality
+  description: Reduces Bind and Chain Coefficient Reduction and ATK DOWN duration
+    by 5 turns, reduces damage received by 90% for 1 turn. If your crew has 3 or
+    more [STR] characters, adds 0.75x to Chain multiplier for 1 turn
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Reduces Bind and Chain Coefficient Reduction and ATK DOWN duration
+        by 3 turns, reduces damage received by 50% for 1 turn. If your crew has
+        3 or more [STR] characters, adds 0.5x to Chain multiplier for 1 turn
+      cooldown: 16
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 150 each

@@ -1,0 +1,101 @@
+type: QCK
+name: Emporio Ivankov - Revolutionary in Hell
+japanName: エンポリオ・イワンコフ “地獄”の革命家
+family:
+  - EmporioIvankov
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1148
+    atk: 550
+    rcv: 176
+  maxLvl:
+    hp: 2389
+    atk: 1244
+    rcv: 340
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 63203
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x, recovers 2x
+    character's RCV in HP at the end of each turn
+special:
+  name: Hair Removal Fist
+  description: Changes [BLOCK] and Badly Matching orbs into Matching orbs
+  cooldown: 15
+  maxLevel: 6
+  stages:
+    - description: Randomizes all orbs
+      cooldown: 9
+    - description: Changes [BLOCK] orbs into Matching orbs
+      cooldown: 12
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: When any other Free Spirit character uses a special, reduces
+      special cooldown of this character by 1 turn
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Inazuma and Bentham (Mr. 2 Bon Clay)
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 6
+      reduction: 3
+    - value: 8
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 50
+    - rcv: 15
+    - type: potential
+    - hp: 60
+    - atk: 10
+    - atk: 20
+    - rcv: 20
+    - hp: 90
+    - rcv: 25
+    - slot: 1
+    - atk: 20
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 30
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3

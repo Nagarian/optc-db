@@ -1,0 +1,213 @@
+type: INT
+name: Vinsmoke Reiju - Germa 66 Peach Poisonous Fang
+japanName: ヴィンスモーク・レイジュ ジェルマ６６　桃の毒牙
+family:
+  - VinsmokeReiju
+class:
+  - Powerhouse
+  - Shooter
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1056
+    atk: 351
+    rcv: 216
+  maxLvl:
+    hp: 2157
+    atk: 1356
+    rcv: 460
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 143714
+aliases:
+  - Pink Ranger
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and boosts ATK of [INT]
+    characters by 1.2x. Boosts RCV of Powerhouse characters by 1.2x.
+  notes: Attack boost stacks, so an [INT] Powerhouse character has a 3x ATK
+special:
+  name: "Pink Hornet: Peach Poison Fang"
+  description: If there are 6 Powerhouse characters in your crew, poisons all
+    enemies and reduces damage received by 70% for 2 turns. If your Captain's
+    orb or Friend Captain's orb is [TND], reduces enemies' Threshold Damage
+    Reduction, Percent Damage Reduction and Increased Defense Buffs duration by
+    5 turns.
+  cooldown: 20
+  maxLevel: 7
+  notes: Poison deals 75x character's ATK in Fixed damage at the end of each turn.
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, makes [INT] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Vinsmoke Judge, Vinsmoke Ichiji, Vinsmoke Niji, Vinsmoke Sanji and
+    Vinsmoke Yonji
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - hp: 50
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - hp: 50
+    - slot: 1
+    - atk: 40
+    - hp: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1.5
+          threshold: 30
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8
+rumble:
+  stats:
+    def: 183
+    rumbleType: ATK
+    spd: 172
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 0.35
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - duration: 30
+          effect: damage
+          level: 1
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.38
+        - override:
+            duration: 31
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            duration: 33
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            duration: 34
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.46
+        - override:
+            duration: 36
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            duration: 37
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.51
+        - override:
+            duration: 39
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            duration: 40
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.57
+        - override:
+            duration: 42
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 2
+            duration: 43

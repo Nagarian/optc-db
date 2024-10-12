@@ -1,0 +1,48 @@
+type: PSY
+name: Makino
+japanName: マキノ
+family:
+  - Makino
+class:
+  - Cerebral
+  - Fighter
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 286
+    atk: 82
+    rcv: 45
+  maxLvl:
+    hp: 828
+    atk: 390
+    rcv: 182
+cost: 13
+slots: 3
+maxExp: 130703
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 96638
+aliases:
+  - FN Makino
+evolution:
+  - id: 2021
+    evolvers:
+      - 81
+      - 87
+      - 92
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [INT] characters by 1.5x
+special:
+  name: Taste of "Treasure Payment"
+  description: Changes all orbs of top row characters into [INT] orbs, changes the
+    orbs of middle row characters into [RCV] orbs, changes all orbs of bottom
+    row characters into [PSY] orbs and boosts Orb Effects of all characters by
+    1.5x for 1 turn
+  cooldown: 16
+  maxLevel: 7

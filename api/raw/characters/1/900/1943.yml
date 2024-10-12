@@ -1,0 +1,245 @@
+type: STR
+name: Senor Pink - Real Man's Fight
+japanName: セニョール・ピンク 男の戦い
+family:
+  - SenorPink
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 922
+    atk: 652
+    rcv: 148
+  maxLvl:
+    hp: 2372
+    atk: 1258
+    rcv: 282
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 88929
+aliases:
+  - Raid Senor Pink
+  - Raid Senior Pink
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and recovers 1.5x
+    character's RCV in HP at the end of each turn
+special:
+  name: Manly Synchronized Swimming
+  description: Changes the orb of this character into a [STR] orb, reduces Chain
+    Multiplier Limit and Chain Coefficient Reduction duration by 3 turns. If
+    your Captain is a Free Spirit Character, boosts ATK against delayed enemies
+    by 1.75x for 1 turn
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Boosts base HP of Free Spirit characters by 50
+  - description: Boosts base RCV of Free Spirit characters by 50
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Lao G, Machvise and Diamante
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 20
+    - type: potential
+    - hp: 70
+    - hp: 80
+    - hp: 95
+    - type: sailor
+    - atk: 20
+    - type: sailor
+    - atk: 20
+    - cooldown: 1
+    - atk: 40
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20
+rumble:
+  stats:
+    def: 151
+    rumbleType: SPT
+    spd: 155
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Special CT
+          duration: 20
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          duration: 20
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 24
+        - override:
+            level: 3
+            duration: 24
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 25
+        - override:
+            level: 4
+            duration: 25
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 26
+        - override:
+            level: 4
+            duration: 26
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 27
+        - override:
+            level: 5
+            duration: 27
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 28
+        - override:
+            level: 5
+            duration: 28
+    - cooldown: 30
+      effects:
+        - override:
+            level: 4
+            duration: 30
+        - override:
+            level: 7
+            duration: 30

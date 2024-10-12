@@ -1,0 +1,119 @@
+type: STR
+name: Aladdin - Sun Pirates First Mate
+japanName: アラディン タイヨウの海賊団副船長
+family:
+  - Aladdin
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1120
+    atk: 812
+    rcv: 72
+  maxLvl:
+    hp: 2882
+    atk: 1382
+    rcv: 220
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 121102
+aliases:
+  - Aladinsjustsayian
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and their HP by 1.25x
+special:
+  name: The Fishman Preparing to Strike Back
+  description: Reduces Bind and Despair duration by 3 turns, locks all orbs for 1
+    turn, changes all orbs of right column characters into [RCV], [INT] and
+    [QCK] orbs, from top to bottom. If your Friend Captain's orb is [DEX],
+    boosts Orb Effects of all characters by 1.75x for 3 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Adds 2x character's ATK as Additional Damage
+  - description: Makes [QCK] and [DEX] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Jinbe and Charlotte Praline
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      orbs for Powerhouse characters for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs for Powerhouse characters for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs for Powerhouse characters for 1 turn and changes the orb of Captain
+      character into a [RCV] orb.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs for Powerhouse characters for 1 turn and changes the orb of Captain
+      character into a [RCV] orb.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs for Powerhouse characters for 1 turn and changes all orbs of right
+      column characters into [RCV], [INT] and [QCK] orbs, from top to bottom.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - hp: 25
+    - hp: 40
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 100
+    - atk: 20
+    - atk: 40
+    - slot: 1
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 100
+    - hp: 150
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

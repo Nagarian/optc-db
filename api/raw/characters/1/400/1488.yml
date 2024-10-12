@@ -1,0 +1,47 @@
+type: STR
+name: Don Krieg - Admiral of the Pirate Armada
+japanName: 首領・クリーク 海賊艦隊「提督」
+family:
+  - Krieg
+class:
+  - Driven
+  - Shooter
+rarity: 3
+stats:
+  combo: 7
+  minLvl:
+    hp: 177
+    atk: 106
+    rcv: 14
+  maxLvl:
+    hp: 1271
+    atk: 540
+    rcv: 55
+cost: 16
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 52209
+aliases:
+  - Colo Don Krieg
+  - Coliseum Don Krieg
+evolution:
+  - id: 1489
+    evolvers:
+      - 84
+      - 89
+      - 94
+      - 95
+      - 300
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.5x, reduces damage received by 20%
+special:
+  name: Great Battle Spear
+  description: Deals 20x character's ATK in [STR] damage to one enemy and removes
+    any Orb Rate Up and Orb Rate Down Buffs
+  cooldown: 20
+  maxLevel: 11

@@ -1,0 +1,384 @@
+type: STR
+name: Jack - Blasting Mammoth
+japanName: ジャック 吹き飛ばすマンモス
+family:
+  - Jack
+class:
+  - Striker
+  - Fighter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1761
+    atk: 611
+    rcv: 135
+  maxLvl:
+    hp: 3928
+    atk: 1681
+    rcv: 288
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 159702
+aliases:
+  - Mega/Super/6+ Jack
+  - V1 Legend Jack
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of all characters by 3.5x, their HP by 1.5x and
+    boosts EXP gained by 2x.
+  notes: EXP boost does not take effect if he becomes your captain in the middle
+    of the adventure.
+special:
+  name: Harmful Onslaught
+  description: Deals 25% of enemies' current HP in True damage to all enemies,
+    locks the chain multiplier at 3x for 1 turn and increases duration of any
+    team Percent Damage Reduction buffs, Threshold Damage Reduction buffs, End
+    of Turn Damage buffs and End of Turn Healing buffs by 1 turn.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 60
+  - description: Makes [QCK], [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Kaido
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - atk: 15
+    - type: sailor
+    - hp: 30
+    - hp: 50
+    - hp: 75
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 25
+    - type: sailor
+    - hp: 90
+    - hp: 120
+    - hp: 150
+    - rcv: 15
+    - rcv: 15
+    - rcv: 15
+    - cooldown: 1
+    - atk: 30
+    - atk: 35
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - atk: 100
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of all characters by 4x, their HP by 1.5x and
+          boosts EXP gained by 2x.
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 301
+    rumbleType: DEF
+    spd: 138
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: DEX
+      percentage: 30
+      type: damage
+    - amount: 100
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 2
+  special:
+    - cooldown: 22
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+        - amount: 5
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - amount: 20
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 22
+      effects:
+        - override:
+            level: 1
+            duration: 17
+        - override:
+            amount: 6
+        - override:
+            amount: 21
+    - cooldown: 22
+      effects:
+        - override:
+            level: 1
+            duration: 18
+        - override:
+            amount: 7
+        - override:
+            amount: 22
+    - cooldown: 22
+      effects:
+        - override:
+            level: 1
+            duration: 19
+        - override:
+            amount: 8
+        - override:
+            amount: 23
+    - cooldown: 22
+      effects:
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            amount: 9
+        - override:
+            amount: 24
+    - cooldown: 22
+      effects:
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            amount: 10
+        - override:
+            amount: 25
+    - cooldown: 22
+      effects:
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            amount: 11
+        - override:
+            amount: 26
+    - cooldown: 22
+      effects:
+        - override:
+            level: 3
+            duration: 23
+        - override:
+            amount: 12
+        - override:
+            amount: 27
+    - cooldown: 22
+      effects:
+        - override:
+            level: 3
+            duration: 24
+        - override:
+            amount: 13
+        - override:
+            amount: 28
+    - cooldown: 22
+      effects:
+        - override:
+            level: 4
+            duration: 25
+        - override:
+            amount: 15
+        - override:
+            amount: 30
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,91 @@
+type: PSY
+name: Charlotte Linlin - Devistation in the Land of Elbaf
+japanName: シャーロット・リンリン エルバフの地の悪神
+family:
+  - CharlotteLinlin
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 2020
+    atk: 1019
+    rcv: 57
+  maxLvl:
+    hp: 2814
+    atk: 1545
+    rcv: 211
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - ambush
+links:
+  gamewithId: 136828
+aliases:
+  - Young Big Mom
+  - Ambush Big Mom
+  - Invasion Big Mom
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Powerhouse characters by 2.75x and makes
+    [RCV] orbs beneficial for Driven and Powerhouse characters.
+special:
+  name: Natural Born Destroyer
+  description: Reduces ATK DOWN, Bind and Despair duration by 6 turns, changes
+    orbs of this and adjacent characters into [RCV] orbs, and boosts ATK of
+    Driven and Powerhouse characters by 2.25x after 12th hit in the chain for 3
+    turns.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of this character by 300 if this character is the
+      last in the chain to attack
+  - description: Boosts amount healed from [RCV] orbs by 250 each
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Mother Caramel and Streusen
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 55
+    - atk: 20
+    - type: potential
+    - atk: 25
+    - slot: 1
+    - rcv: 50
+    - type: sailor
+    - hp: 80
+    - cooldown: 1
+    - slot: 1
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - hp: 110
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

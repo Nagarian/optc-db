@@ -1,0 +1,201 @@
+type: INT
+name: Jesus Burgess - Champion on the Attack
+japanName: ジーザス・バージェス 襲いかかるチャンピオン
+family:
+  - JesusBurgess
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1420
+    atk: 705
+    rcv: 117
+  maxLvl:
+    hp: 2940
+    atk: 1389
+    rcv: 246
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 263876
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Fighter characters by 2.5x, by 3x instead
+    if they have a beneficial orb.
+special:
+  name: Elbow Assault
+  description: Reduces enemies' Barrier duration by 1 turn, changes [BLOCK] orbs
+    into [EMPTY] orbs, deals 100,000-1,000,000 [INT] damage to one enemy
+    depending on number of slots emptied and changes [EMPTY] orbs into Matching
+    orbs. If your Captain is a Driven or Fighter character, boosts ATK of Driven
+    and Fighter characters by 1.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+  notes: "The exact value used is chosen based on the number of BLOCK orbs
+    consumed: 0 orbs - 100,000 Damage; 1 orb - 100,000 Damage; 2 orbs - 200,000
+    Damage; 3 orbs - 300,000 Damage; 4 orbs - 500,000 Damage; 5 orbs - 800,000
+    Damage; 6 orbs - 1,000,000 Damage."
+sailor:
+  - description: Boosts base ATK of Driven and Fighter characters by 50
+  - description: If your Captain is a Driven or Fighter character, makes [PSY] orbs
+      beneficial for Driven and Fighter characters
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - atk: 40
+    - hp: 40
+    - cooldown: 1
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 2
+        - value: 80
+          reduction: 2
+        - value: 100
+          reduction: 3
+rumble:
+  stats:
+    def: 120
+    rumbleType: ATK
+    spd: 169
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.6
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.6
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 3

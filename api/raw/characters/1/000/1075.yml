@@ -1,0 +1,83 @@
+type: INT
+name: Ricky Mystery Swordsman
+japanName: リッキー 謎の剣闘士
+family:
+  - RikuDoldoIII
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1102
+    atk: 467
+    rcv: 199
+  maxLvl:
+    hp: 2689
+    atk: 900
+    rcv: 395
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 30738
+aliases:
+  - King Riku
+captain:
+  name: ""
+  description: Boosts ATK and HP of [INT] characters by 2x
+special:
+  name: Tenacious Sword of Destruction
+  description: Changes [QCK] and [PSY] orbs into [INT] orbs.
+  cooldown: 17
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Rebecca, Kyros (Toy Soldier) and Tank Lepanto
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 30
+    - rcv: 40
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - hp: 60
+    - cooldown: 1
+    - atk: 35
+    - cooldown: 3
+    - hp: 70
+    - type: sailor
+    - atk: 45
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

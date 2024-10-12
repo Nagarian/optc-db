@@ -1,0 +1,37 @@
+type: QCK
+name: Giant Shooter - Blue Pirates
+japanName: 巨人射撃隊 ブルーパイレーツ
+family:
+  - GiantBluePirates
+class:
+  - Shooter
+rarity: 2
+stats:
+  combo: 4
+  minLvl:
+    hp: 350
+    atk: 129
+    rcv: 53
+  maxLvl:
+    hp: 619
+    atk: 303
+    rcv: 68
+cost: 8
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 7574
+aliases: []
+evolution:
+  - id: 374
+    evolvers:
+      - 116
+      - 90
+      - 96
+special:
+  name: Crystal Shield STR
+  description: Reduces damage received from [STR] enemies by 50% for 1 turn
+  cooldown: 25
+  maxLevel: 14

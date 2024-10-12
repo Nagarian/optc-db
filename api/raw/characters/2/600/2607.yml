@@ -1,0 +1,107 @@
+type: INT
+name: "Viola - The World Council: Princess of Dressrosa"
+japanName: ヴィオラ “世界会議”ドレスローザ王国王女
+family:
+  - Viola
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 832
+    atk: 498
+    rcv: 173
+  maxLvl:
+    hp: 2082
+    atk: 1245
+    rcv: 434
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 156171
+aliases:
+  - Viola
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x and their HP and RCV by 1.2x.
+special:
+  name: Eye Whale
+  description: Changes orbs of this and adjacent characters into Matching orbs. If
+    HP is above 50% at the time the special is activated, boosts ATK of Cerebral
+    characters by 2x for 1 turn, by 1.75x otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of Cerebral characters by 40
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Cerebral characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 15
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - slot: 1
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - rcv: 20
+    - hp: 80
+    - atk: 40
+    - type: sailor
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 5
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 4
+        - value: 7
+        - value: 100
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,98 @@
+type: INT
+name: Sentomaru the Axe Naval HQ Fleet Officer
+japanName: 鉞の戦桃丸 海軍本部将校
+family:
+  - Sentomaru
+class:
+  - Striker
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1524
+    atk: 376
+    rcv: 90
+  maxLvl:
+    hp: 3205
+    atk: 1006
+    rcv: 362
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 37079
+aliases:
+  - Sentoumaru
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x, but boosts ATK of this
+    character by 2.75x. Reduces damage received by 10%
+special:
+  name: Leg-Locked Heave-Ho
+  description: Deals 100,000 Fixed damage to one enemy. Reduces Special Cooldown
+    of top row characters by 2 turns
+  cooldown: 22
+  maxLevel: 8
+  stages:
+    - description: Deals 500 Fixed damage to one enemy. Reduces Special Cooldown of
+        top row characters by 1 turn
+      cooldown: 11
+    - description: Deals 5,000 Fixed damage to one enemy. Reduces Special Cooldown of
+        top row characters by 1 turn
+      cooldown: 15
+sailor:
+  - description: Cannot be Blown Away
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Borsalino (Kizaru)
+  levels:
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of the supported character by 1 turn and changes the orb of the
+      supported character into a Matching orb.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of the supported character by 1 turn and changes orbs of the
+      supported and Friend Captain characters into Matching orbs.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of the supported character by 2 turns and changes orbs of the
+      supported and Friend Captain characters into Matching orbs.
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - hp: 30
+    - atk: 30
+    - slot: 1
+    - hp: 30
+    - atk: 50
+    - atk: 60
+    - atk: 100
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 9

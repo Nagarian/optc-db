@@ -1,0 +1,50 @@
+type: QCK
+name: Otsuru
+japanName: お鶴
+family:
+  - MissTsuru
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 753
+    atk: 465
+    rcv: 202
+  maxLvl:
+    hp: 1642
+    atk: 961
+    rcv: 356
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 178693
+aliases:
+  - Fortnight
+  - Otsuru
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and their HP by 1.2x
+special:
+  name: Skiruko Filled with Love
+  description: Removes Poison duration completely, reduces Despair and Burn
+    duration by 2 turns and recovers 3,000 HP.
+  cooldown: 19
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

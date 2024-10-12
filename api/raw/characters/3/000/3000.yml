@@ -1,0 +1,478 @@
+type: QCK
+name: Stussy - Behind-the-Scenes Dark Justice
+japanName: ステューシー 暗躍する闇の正義
+family:
+  - Stussy
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1232
+    atk: 646
+    rcv: 38
+  maxLvl:
+    hp: 2640
+    atk: 1320
+    rcv: 320
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 210445
+aliases:
+  - Limited Stussy
+  - Secret Stussy
+  - PF Stussy
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.25x at the start of the chain,
+    by 2.5x after 3 PERFECTs in a row.
+special:
+  name: Unarmed Assassination
+  description: Changes all orbs into [QCK] orbs, reduces enemies' Increased
+    Defense duration by 3 turns and reduces Increase Damage Taken duration by 3
+    turns.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: If this character has an [QCK] orb and you hit a PERFECT with them,
+      keep their [QCK] orb for the next turn
+limitBreak:
+  path:
+    - atk: 50
+    - rcv: 25
+    - rcv: 25
+    - type: potential
+    - atk: 75
+    - atk: 75
+    - hp: 100
+    - hp: 100
+    - slot: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 167
+    rumbleType: SPT
+    spd: 174
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 2.2
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 30
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK

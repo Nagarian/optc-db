@@ -1,0 +1,389 @@
+type: DEX
+name: Zorojuro - Fearsome Ronin
+japanName: ゾロ十郎 鬼気迫る浪人
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1701
+    atk: 986
+    rcv: 67
+  maxLvl:
+    hp: 3780
+    atk: 1644
+    rcv: 222
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 252730
+aliases:
+  - V3 Legend Zoro
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 5x, by 4.5x otherwise, their HP
+    by 1.5x, boosts ATK of all other characters by 4x and reduces Silence
+    duration by 10 turns. Deals 20% of enemies' current HP in damage to all
+    enemies at the start of every stage if total Damage Taken is 20,000 or more
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Kozuki
+    Hiyori (Komurasaki), Toko, Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji,
+    Tony Tony Chopper, Nico Robin, Franky or Brook, excluding Support members."
+  description: Deals 75x character's ATK in Typeless damage to all enemies, boosts
+    the Color Affinity of [DEX] characters by 2x for 1 turn and transforms all
+    [DEX] characters into Super [DEX] characters.
+special:
+  name: "Rend: Purgatory Onigiri"
+  description: Reduces Special Cooldown of all characters by 2 turns, makes own
+    attacks ignore damage reducing Barriers and Buffs, deals 100x character's
+    ATK in Typeless Fixed True damage to all enemies and boosts Orb Effects of
+    [DEX] characters by 2.5x-2.75x for 1 turn, based on total damage taken.
+  cooldown: 20
+  maxLevel: 6
+  notes: |-
+    0-19,999 Damage Taken: 2.5x orb boost  
+    20,000+ Damage Taken: 2.75x orb boost
+sailor:
+  - description: Makes [DEX] orbs beneficial for all characters
+  - description: Restores Special Cooldown of this character completely when it is rewinded
+support:
+  type: descriptive
+  criteria: "[DEX] characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [DEX] characters by 1.5x for
+      1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [DEX] characters by 1.55x
+      for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [DEX] characters by 1.6x for
+      1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [DEX] characters by 1.65x
+      for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [DEX] characters by 1.75x
+      for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - hp: 30
+    - type: sailor
+    - hp: 30
+    - hp: 30
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 30
+    - hp: 30
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 190
+    rumbleType: ATK
+    spd: 167
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - {}
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - {}
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - {}
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - {}
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.1
+        - override:
+            amount: 1.1
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.2
+        - override:
+            amount: 1.2
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.3
+        - override:
+            amount: 1.3
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.4
+        - override:
+            amount: 1.4
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.5
+        - override:
+            amount: 1.5
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.6
+        - override:
+            amount: 1.6
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.7
+        - override:
+            amount: 1.7
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.8
+        - override:
+            amount: 1.8
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 2
+        - override:
+            amount: 2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

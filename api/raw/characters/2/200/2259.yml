@@ -1,0 +1,42 @@
+type: STR
+name: Higuma - Leader of the Mountain Bandits
+japanName: ヒグマ 山賊棟梁
+family:
+  - Higuma
+class:
+  - Slasher
+  - Driven
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 766
+    atk: 628
+    rcv: 51
+  maxLvl:
+    hp: 1908
+    atk: 1049
+    rcv: 133
+cost: 30
+slots: 5
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 119586
+aliases:
+  - Secret Higuma
+  - Limited Higuma
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 2x and recovers
+    800 HP at the end of each turn
+special:
+  name: Baptism of Evil
+  description: Deals 800 Fixed True damage to all enemies, reduces Despair
+    duration by 5 turns and reduces enemies' Resilience and Enrage Buffs
+    duration by 5 turns.
+  cooldown: 12
+  maxLevel: 1

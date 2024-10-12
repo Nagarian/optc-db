@@ -1,0 +1,144 @@
+type: INT
+name: Blackbeard - The One Who Declares a New Era
+japanName: 黒ひげ 新時代の名を叫ぶ者
+family:
+  - MarshallDTeach
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1620
+    atk: 721
+    rcv: 92
+  maxLvl:
+    hp: 2951
+    atk: 1339
+    rcv: 168
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 166162
+aliases:
+  - TM BB
+  - TM Blackbeard
+  - TM Teach
+  - TM Marshal D. Teach
+captain:
+  name: ""
+  description: Increases damage received by 1.25x and boosts ATK of [INT]
+    characters by 1.75x
+  notes: The Special Rewind Restore can activate multiple times
+special:
+  name: Declaration of a New Era
+  description: Boosts ATK of [INT] characters by 2x for 1 turn, boosts Orb Effects
+    of [INT] characters by 2x for 1 turn, reduces Special Cooldown of [INT]
+    characters by 1 turn and makes Badly Matching and [BLOCK] orbs not reduce
+    damage for [INT] characters for 1 turn.
+  cooldown: 34
+  maxLevel: 8
+  notes: This special can only be activated if at most one other special has been
+    activated this turn and restricts activation of any other specials this turn
+    to one special
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 50
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Van Augur, Shiryu, Doc Q, Jesus Burgess, Laffitte
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Increases damage received by 1.25x and boosts ATK of [INT]
+          characters by 2x
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Increases damage received by 1.25x and boosts ATK of [INT]
+          characters by 2.5x
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 35
+    - rcv: 35
+    - captain:
+        description: Increases damage received by 1.25x and boosts ATK of [INT]
+          characters by 3x
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Increases damage received by 1.25x and boosts ATK of [INT]
+          characters by 3.5x
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 35
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Increases damage received by 1.25x and boosts ATK of [INT]
+          characters by 4x
+    - hp: 70
+    - hp: 100
+    - captain:
+        description: Increases damage received by 1.25x, boosts ATK of [INT] characters
+          by 4x and restores Special Cooldown of all characters by 2 turns when
+          they are rewinded
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7

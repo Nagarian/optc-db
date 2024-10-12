@@ -1,0 +1,138 @@
+type: PSY
+name: Trafalgar Law - Alliance to Liberate the Land of Wano
+japanName: トラファルガー・ロー ワノ国開く同盟
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Free Spirit
+  - Slasher
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1311
+    atk: 981
+    rcv: 170
+  maxLvl:
+    hp: 3218
+    atk: 1640
+    rcv: 317
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 217467
+aliases:
+  - V3 Legend Law
+  - PSY Law
+  - One Piece Day Law
+captain:
+  name: ""
+  description: If HP is above 99% at the start of the turn, boosts ATK of Free
+    Spirit, Fighter and Striker characters by 4.5x, by 4x otherwise, recovers
+    1,500 HP at the end of each turn and reduces damage received by 25%.
+special:
+  name: Emergency Operation Injection Shot
+  description: Changes [EMPTY], [BLOCK], [BOMB], [RCV], [G], Badly Matching orbs
+    into Matching orbs and changes the orb of this character into a Matching
+    orb. If your Captain is a Fighter, Slasher, Striker or Shooter character,
+    boosts Orb Effects of all characters by 2.25x for 2 turns. If your Captain
+    is a Free Spirit, Driven, Cerebral or Powerhouse character, sets Chain
+    Boundaries to 2.5x and 35.0x for 2 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When any other Free Spirit or Slasher character uses a special,
+      reduces special cooldown of this character by 1 turn
+  - description: Boosts amount healed from [RCV] orbs by 300 each
+support:
+  type: descriptive
+  criteria: Bepo and Donquixote Rosinante (Corazon)
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [RCV] and [G] orbs of Free Spirit characters
+      into Matching orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [BOMB], [RCV] and [G] orbs of Free Spirit
+      characters into Matching orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [EMPTY], [BOMB], [RCV] and [G] orbs of Free
+      Spirit characters into Matching orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [EMPTY], [BOMB], [RCV], [G] and Badly
+      Matching orbs of Free Spirit characters into Matching orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [EMPTY], [BLOCK], [BOMB], [RCV], [G] and
+      Badly Matching orbs of Free Spirit characters into Matching orbs.
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 10
+    - hp: 20
+    - type: potential
+    - atk: 10
+    - hp: 20
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - hp: 40
+    - hp: 40
+    - rcv: 20
+    - rcv: 20
+    - rcv: 30
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 70
+    - atk: 50
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

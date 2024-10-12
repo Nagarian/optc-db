@@ -1,0 +1,44 @@
+type: PSY
+name: Gild. Tesoro
+japanName: ギルド・テゾーロ
+family:
+  - GildTesoro
+class:
+  - Cerebral
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 187
+    atk: 156
+    rcv: 56
+  maxLvl:
+    hp: 1756
+    atk: 1094
+    rcv: 268
+cost: 30
+slots: 5
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 35076
+aliases:
+  - Raid Tesoro
+evolution:
+  - id: 1163
+    evolvers:
+      - 118
+      - 1180
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.75x and boosts amount of Beli
+    received by 1.5x
+special:
+  name: Gold-Gold Fruit
+  description: Deals 15x character's ATK in [PSY] damage to all enemies and if HP
+    is above 50%, changes all orbs into [PSY] orbs
+  cooldown: 25
+  maxLevel: 12

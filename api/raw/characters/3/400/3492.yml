@@ -1,0 +1,161 @@
+type: DUAL
+name: Nami & Usopp - Preparation for a Grand Battle
+japanName: ナミ＆ウソップ 大戦への戦闘準備
+family:
+  - Nami
+  - Usopp
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 965
+    atk: 520
+    rcv: 96
+  maxLvl:
+    hp: 1930
+    atk: 1040
+    rcv: 192
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 309207
+aliases:
+  - Nami&Usopp
+  - NamiUsopp
+  - Usopp&Nami
+  - UsoppNami
+  - Legend Nami and Usopp
+evolution:
+  - id: 3493
+    evolvers:
+      - 118
+      - 1180
+      - 100
+      - 103
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Shooter, Cerebral and Free Spirit characters by
+    4.25x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit
+    characters' ATK against delayed enemies by 1.2x and has a chance to delay
+    all enemies by 1 turn based on damage dealt in previous turn. At the
+    beginning of each Stage, increases the Attack Timer of all enemies by 1
+    turn.
+  notes: >-
+    Delay chance is based on damage dealt with normal attacks and does not
+    stack with any other delay specials or effects  
+
+    **Base Chances**  
+
+    **100,000 damage or more:** 20% chance to delay  
+
+    **1,000,000 damage or more:** 50% chance to delay  
+
+    **3,000,000 damage or more:** 100% chance to delay  
+
+    **5,000,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection
+special:
+  name: Encounter to Stop the Chase
+  description: Paralyzes (75%) all enemies for 5 turns, delays all enemies by 2
+    turns, reduces Paralysis and Silence duration by 6 turns, boosts the Color
+    Affinity of Shooter and Cerebral characters by 2.25x for 1 turn and becomes
+    Nami & Usopp for 3 turns. If your crew has Delay Status ATK Boost, increases
+    boost effects of Delay Status ATK Boost buffs by +0.3x.
+  cooldown: 20
+  maxLevel: 6
+  notes: Paralysis has a 75% chance to not reduce enemy Attack Timer.
+sailor:
+  - description: Boosts base ATK and HP of all characters by 75
+characters:
+  swap:
+    description: Reduces Silence duration completely on this character, reduces Bind
+      and Despair duration by 1 turn, changes the orb of this character into a
+      Matching orb and boosts ATK against delayed enemies by 1.5x for 1 turn.
+    super:
+      criteria: 4
+      description: Reduces Silence duration completely on this character, reduces Bind
+        and Despair duration by 2 turns, changes orbs of this and adjacent
+        characters into Matching orbs and boosts ATK against delayed enemies by
+        2x for 1 turn.
+  character1:
+    name: Nami - Preparation for a Grand Battle
+    japanName: ナミ 大戦への戦闘準備
+    class:
+      - Cerebral
+      - Free Spirit
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 844
+        atk: 369
+        rcv: 95
+      maxLvl:
+        hp: 1688
+        atk: 738
+        rcv: 190
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter, Cerebral and Free Spirit characters by
+        4.25x, their HP by 1.3x and has a chance to delay all enemies by 1 turn
+        based on damage dealt in previous turn.
+      notes: >-
+        Delay chance is based on damage dealt with normal attacks and does not
+        stack with any other delay specials or effects  
+
+        **Base Chances**  
+
+        **100,000 damage or more:** 20% chance to delay  
+
+        **1,000,000 damage or more:** 50% chance to delay  
+
+        **3,000,000 damage or more:** 100% chance to delay  
+
+        **5,000,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 50
+  character2:
+    name: Usopp - Preparation for a Grand Battle
+    japanName: ウソップ 大戦への戦闘準備
+    class:
+      - Cerebral
+      - Shooter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 964
+        atk: 370
+        rcv: 70
+      maxLvl:
+        hp: 1928
+        atk: 740
+        rcv: 140
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter, Cerebral and Free Spirit characters by
+        3.75x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit
+        characters' ATK against delayed enemies by 1.2x and has a chance to
+        delay all enemies by 1 turn based on damage dealt in previous turn.
+      notes: >-
+        Delay chance is based on damage dealt with normal attacks and does not
+        stack with any other delay specials or effects  
+
+        **Base Chances**  
+
+        **100,000 damage or more:** 20% chance to delay  
+
+        **1,000,000 damage or more:** 50% chance to delay  
+
+        **3,000,000 damage or more:** 100% chance to delay  
+
+        **5,000,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 50

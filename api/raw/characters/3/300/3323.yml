@@ -1,0 +1,49 @@
+type: STR
+name: "Demon Bamboo Vergo: Neo"
+japanName: 鬼竹のヴェルゴ「改」
+family:
+  - Vergo
+class:
+  - Fighter
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 280
+    atk: 158
+    rcv: 34
+  maxLvl:
+    hp: 1253
+    atk: 635
+    rcv: 112
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 266798
+aliases:
+  - Neo Vergo
+evolution:
+  - id: 3324
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x and their HP by 1.2x
+special:
+  name: Pure-Black Demon [Neo]
+  description: Deals 100x character's ATK in [STR] damage to one enemy, reduces
+    enemies' Percent Damage Reduction Buff duration by 5 turns, reduces damage
+    received by 50% for 1 turn and boosts ATK of Striker characters by 1.75x for
+    1 turn
+  cooldown: 28
+  maxLevel: 15

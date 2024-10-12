@@ -1,0 +1,126 @@
+type: DEX
+name: Perona - Ghost Princess Enjoying the Summer Festival
+japanName: ペローナ 夏祭りを楽しむゴーストプリンセス
+family:
+  - Perona
+class:
+  - Free Spirit
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1019
+    atk: 537
+    rcv: 131
+  maxLvl:
+    hp: 2548
+    atk: 1342
+    rcv: 328
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 222844
+aliases:
+  - Summer Perona
+  - Hanabi Perona
+  - Yukata Perona
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Driven characters by 2.5x and their HP by 1.2x.
+special:
+  name: Summer Night Festival Ghost Wink
+  description: Reduces ATK DOWN duration by 5 turns and reduces the defense of all
+    enemies by 80% for 1 turn. If your crew has 5 or more Free Spirit
+    characters, boosts ATK against enemies with reduced defense by 1.75x for 1
+    turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit and Driven characters by 50
+  - description: If your Captain is a Free Spirit character, makes [QCK] orbs
+      beneficial for Free Spirit characters
+support:
+  type: descriptive
+  criteria: Roronoa Zoro and Dracule Mihawk
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 10
+    - rcv: 10
+    - type: potential
+    - hp: 40
+    - rcv: 30
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - rcv: 60
+    - atk: 40
+    - slot: 1
+    - hp: 80
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      variant: up to
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

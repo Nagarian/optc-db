@@ -1,0 +1,41 @@
+type: INT
+name: Lapin
+japanName: ラパーン
+family:
+  - Lapin
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 200
+    atk: 200
+    rcv: 25
+  maxLvl:
+    hp: 550
+    atk: 550
+    rcv: 53
+cost: 15
+slots: 0
+maxExp: 90778
+maxLevel: 35
+flags:
+  - fortnight
+links:
+  gamewithId: 6663
+aliases:
+  - Lapahn
+  - Lapan
+  - Rapan
+evolution:
+  - id: 335
+    evolvers:
+      - 116
+      - 82
+      - 304
+special:
+  name: Light Healing
+  description: Recovers 5x character's RCV in HP
+  cooldown: 12
+  maxLevel: 5

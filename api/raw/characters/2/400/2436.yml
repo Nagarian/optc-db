@@ -1,0 +1,60 @@
+type: STR
+name: Orlumbus - Grand Fleet Commodore Dignity
+japanName: オオロンブス 大船団提督の威厳
+family:
+  - Orlumbus
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 811
+    atk: 812
+    rcv: 82
+  maxLvl:
+    hp: 2423
+    atk: 1328
+    rcv: 245
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 141973
+aliases:
+  - Support Orlumbus
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.25x, by 2.7x instead if they
+    have a beneficial orb
+special:
+  name: Adventurer's Assistance
+  description: Changes all orbs of all characters into Orlumbus' orb and locks all
+    orbs for 1 turn.
+  cooldown: 10
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: Hajrudin, Cavendish, Ideo, Bartolomeo, Leo and Sai
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV] orbs of Driven characters into the supported character's
+      orb.
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV] and [EMPTY] orbs of Driven characters into the supported
+      character's orb.
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV], [EMPTY] and [BOMB] orbs of Driven characters into the
+      supported character's orb.
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV], [TND], [EMPTY] and [BOMB] orbs of Driven characters into
+      the supported character's orb.
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV], [TND], [EMPTY] and [BOMB] orbs of Driven characters into
+      the supported character's orb and locks the supported character's orb for
+      1 turn.

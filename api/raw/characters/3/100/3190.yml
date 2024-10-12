@@ -1,0 +1,127 @@
+type: QCK
+name: Monkey D. Luffy - Delinquent Kids' Christmas
+japanName: モンキー・Ｄ・ルフィ やんちゃ小僧のクリスマス
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1110
+    atk: 559
+    rcv: 109
+  maxLvl:
+    hp: 2774
+    atk: 1397
+    rcv: 272
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 245119
+aliases:
+  - Limited Luffy
+  - Secret Luffy
+  - Kid Luffy
+  - Christmas Luffy
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.5x.
+special:
+  name: Glittering Gurgle Punch
+  description: Reduces crew's current HP by 1%, reduces enemies' Barrier duration
+    by 1 turn, reduces enemies' Resilience duration by 3 turns and boosts ATK of
+    all characters by 1.75x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base RCV of all characters by 30
+  - description: Makes [RCV] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Portgas D. Ace, Monkey D. Garp, Sabo and Dadan
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb and reduces
+      enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb and reduces
+      enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb and reduces
+      enemies' Resilience duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - slot: 1
+    - atk: 30
+    - hp: 30
+    - hp: 30
+    - type: sailor
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

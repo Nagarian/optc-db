@@ -1,0 +1,318 @@
+type: DEX
+name: X Drake - Former Drake Pirates
+japanName: X・ドレーク 元ドレーク海賊団
+family:
+  - XDrake
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 480
+    atk: 294
+    rcv: 42
+  maxLvl:
+    hp: 1149
+    atk: 792
+    rcv: 147
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 205049
+aliases:
+  - Dies Drake
+evolution:
+  - id: 2986
+    evolvers:
+      - 94
+      - 1180
+      - 91
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2x and their HP by 1.1x.
+special:
+  name: Heavy Attack Allosaurus
+  description: Deals 50x character's ATK in [DEX] damage to one enemy, reduces
+    Chain Multiplier Limit and Chain Coefficient Reduction duration by 5 turns
+    and locks all orbs for 1 turn. If your Captain is a [DEX] character, boosts
+    Orb Effects of [DEX] characters by 2.25x for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [DEX] characters by 50
+rumble:
+  stats:
+    def: 119
+    rumbleType: ATK
+    spd: 140
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.57
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 12
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.64
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 13
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.71
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 14
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.78
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.85
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.92
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.99
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 1.06
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 1.25
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX

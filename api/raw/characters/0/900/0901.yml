@@ -1,0 +1,90 @@
+type: DEX
+name: Cyborg Franky
+japanName: 鉄人（サイボーグ）フランキー
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 8
+  minLvl:
+    hp: 1269
+    atk: 618
+    rcv: 167
+  maxLvl:
+    hp: 2515
+    atk: 1172
+    rcv: 323
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 23062
+aliases:
+  - Colo Franky
+  - Coliseum Franky
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.75x if HP is above 99% at the
+    start of the turn
+special:
+  name: Franky Destroy Gun
+  description: Deals 6 hits of 2,000 Fixed damage to random enemies and for
+    Shooter and Free Spirit characters, randomizes Badly Matching orbs into [G]
+    orbs or Matching orbs
+  cooldown: 28
+  maxLevel: 13
+  notes: The orb shuffle only applies to Shooter and Free Spirit characters; other
+    classes are unaffected.
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+  - description: Makes [DEX] orbs beneficial for Shooter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper and Nico Robin
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - atk: 40
+    - cooldown: 4
+    - type: sailor
+    - hp: 50
+    - rcv: 50
+    - cooldown: 5
+    - hp: 80
+    - type: sailor
+    - slot: 2
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

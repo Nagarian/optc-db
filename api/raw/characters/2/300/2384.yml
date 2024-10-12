@@ -1,0 +1,62 @@
+type: PSY
+name: Basil Hawkins - Problematic Pirate Alliance
+japanName: バジル・ホーキンス 問題児達の海賊同盟
+family:
+  - BasilHawkins
+class:
+  - Fighter
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1331
+    atk: 701
+    rcv: 159
+  maxLvl:
+    hp: 2191
+    atk: 1307
+    rcv: 309
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 136516
+aliases:
+  - Limited Hawkins
+  - Secret Hawkins
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.5x
+special:
+  name: Allied "Magician" Grief
+  description: Reduces enemies' Damage Nullification duration by 1 turn and boosts
+    Orb Effects of all characters by 1.5x for 1 turn. If your captain is a [STR]
+    or [PSY] character, boosts the Color Affinity of all characters by 1.5x for
+    1 turn
+  cooldown: 12
+  maxLevel: 1
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - atk: 10
+    - slot: 1
+    - rcv: 50
+    - atk: 15
+    - atk: 20
+    - hp: 80
+    - atk: 35
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 8
+        - value: 10

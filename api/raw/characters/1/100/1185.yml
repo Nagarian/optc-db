@@ -1,0 +1,56 @@
+type: INT
+name: Haruta
+japanName: ハルタ
+family:
+  - Haruta
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 132
+    atk: 103
+    rcv: 34
+  maxLvl:
+    hp: 920
+    atk: 583
+    rcv: 177
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 35306
+aliases: []
+evolution:
+  - id: 1186
+    evolvers:
+      - 118
+      - 88
+      - 99
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 1.75x. Gives
+    chance of duplicating a drop upon completion of the island.
+  notes: Does not work if he was not your captain upon starting the island. Stacks
+    with other additional drop captains, giving you two chances of getting an
+    extra drop.
+special:
+  name: Extreme Speed - One Sword Style, Ten Slashes
+  description: Deals 15x character's ATK in [INT] damage to all enemies. Changes
+    the orb of this character into an [INT] orb. Reduces Special Cooldown of
+    Slasher and Cerebral characters by 1 turn
+  cooldown: 17
+  maxLevel: 6
+  stages:
+    - description: Deals 4x character's ATK in [INT] damage to all enemies. Changes
+        the orb of this character into an [INT] orb.
+      cooldown: 8
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded

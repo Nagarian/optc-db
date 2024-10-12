@@ -1,0 +1,118 @@
+type: DEX
+name: Gastino - Collaborator in the Emperor Assassination Plan
+japanName: ガスティーノ 「四皇暗殺作戦」連合軍
+family:
+  - CaesarClown
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1101
+    atk: 921
+    rcv: 47
+  maxLvl:
+    hp: 2911
+    atk: 1395
+    rcv: 247
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 125108
+aliases:
+  - Gangster Gastino
+  - Not Caesar Clown
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2.75x until the
+    first hit other than PERFECT and makes [STR] and [DEX] orbs beneficial for
+    Slasher and Cerebral characters
+special:
+  name: Blue Sword
+  description: Poisons all enemies. If your Captain is a Slasher or Cerebral
+    character, boosts ATK against Poisoned and Strongly Poisoned enemies by
+    1.75x for 3 turns
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Slasher and Cerebral characters by 75
+  - description: Adds 2x character's ATK as Additional Damage
+support:
+  type: descriptive
+  criteria: Capone Bege
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against Poisoned and Strongly Poisoned enemies by 1.1x for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against Poisoned and Strongly Poisoned enemies by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against Poisoned and Strongly Poisoned enemies by 1.3x for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against Poisoned and Strongly Poisoned enemies by 1.4x for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against Poisoned and Strongly Poisoned enemies by 1.5x for 1
+      turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 30
+    - cooldown: 1
+    - rcv: 50
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - hp: 80
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 30
+          threshold: 4
+        - value: 40
+          threshold: 5
+        - value: 50
+          threshold: 6
+        - value: 60
+          threshold: 7
+        - value: 70
+          threshold: 8
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

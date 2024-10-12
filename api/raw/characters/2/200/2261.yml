@@ -1,0 +1,155 @@
+type: DEX
+name: Red-Haired Shanks - Toast to the New Era
+japanName: 赤髪のシャンクス 新しい時代への祝杯
+family:
+  - Shanks
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1203
+    atk: 782
+    rcv: 110
+  maxLvl:
+    hp: 2578
+    atk: 1452
+    rcv: 280
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 119685
+aliases:
+  - TM Shanks
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 1.5x, by 2x
+    instead if HP is above 99%, recovers 1.5x character's RCV in HP at the end
+    of each turn and slightly boosts chances of getting Matching orbs for Free
+    Spirit and Cerebral characters
+special:
+  name: Great Pirate's Majesty
+  description: Reduces enemies' Barrier duration by 1 turn, reduces Burn duration
+    by 1 turn, boosts chances of getting Matching orbs for 1 turn, changes
+    [BLOCK] orbs into Matching orbs, randomizes all non-Matching orbs, and adds
+    60x character's ATK as Additional Typeless Damage for 1 turn.
+  cooldown: 30
+  maxLevel: 8
+sailor:
+  - description: Makes [DEX] orbs beneficial for all characters
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - captain:
+        description: Boosts ATK of Free Spirit and Cerebral characters by 1.5x, by 2.25x
+          instead if HP is above 99%, recovers 1.5x character's RCV in HP at the
+          end of each turn and slightly boosts chances of getting Matching orbs
+          for Free Spirit and Cerebral characters
+    - type: sailor
+    - rcv: 20
+    - rcv: 20
+    - rcv: 20
+    - captain:
+        description: Boosts ATK of Free Spirit and Cerebral characters by 1.5x, by 2.5x
+          instead if HP is above 99%, recovers 1.5x character's RCV in HP at the
+          end of each turn and slightly boosts chances of getting Matching orbs
+          for Free Spirit and Cerebral characters
+    - slot: 1
+    - cooldown: 1
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - captain:
+        description: Boosts ATK of Free Spirit and Cerebral characters by 2x, by 2.5x
+          instead if HP is above 99%, recovers 1.5x character's RCV in HP at the
+          end of each turn and slightly boosts chances of getting Matching orbs
+          for Free Spirit and Cerebral characters
+    - cooldown: 2
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - cooldown: 3
+    - slot: 1
+    - hp: 50
+    - hp: 60
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Free Spirit and Cerebral characters by 2x, by 2.5x
+          instead if HP is above 99%, recovers 1.75x character's RCV in HP at
+          the end of each turn and slightly boosts chances of getting Matching
+          orbs for Free Spirit and Cerebral characters
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 40
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Free Spirit and Cerebral characters by 2x, by 3x
+          instead if HP is above 99%, recovers 1.75x character's RCV in HP at
+          the end of each turn and slightly boosts chances of getting Matching
+          orbs for Free Spirit and Cerebral characters
+    - atk: 40
+    - atk: 50
+    - captain:
+        description: Boosts ATK of Free Spirit and Cerebral characters by 2.5x, by 3x
+          instead if HP is above 99%, recovers 1.75x character's RCV in HP at
+          the end of each turn and boosts chances of getting Matching orbs for
+          Free Spirit and Cerebral characters
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 100

@@ -1,0 +1,48 @@
+type: PSY
+name: Dismantler Franky
+japanName: 解体屋フランキー
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 1138
+    atk: 637
+    rcv: 71
+  maxLvl:
+    hp: 2453
+    atk: 1032
+    rcv: 198
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 6873
+aliases: []
+captain:
+  name: ""
+  description: Reduces damage received by 10% if HP is above 50% at the start of
+    the turn, boosts ATK of [PSY] characters by 2.5x and reduces ATK of every
+    other character by 20% if HP is above 50% at the start of the turn
+special:
+  name: Franky Centaur
+  description: Switches orbs between slots 2 times
+  cooldown: 14
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[PSY] characters"
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

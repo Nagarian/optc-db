@@ -1,0 +1,439 @@
+type: STR
+name: Kozuki Oden - Samurai Challenging the Dragon
+japanName: 光月おでん 龍に挑む侍
+family:
+  - KozukiOden
+class:
+  - Slasher
+  - Free Spirit
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 2219
+    atk: 994
+    rcv: 119
+  maxLvl:
+    hp: 4438
+    atk: 1744
+    rcv: 239
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 248546
+aliases:
+  - Mega/Super/6+ Oden
+  - V1 Legend Oden
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4.5x, their HP by 1.5x and changes
+    [DEX] and [TND] orbs into [WANO] orbs. If a character has a [WANO] orb,
+    boosts their ATK by 5x instead.
+  notes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all
+    characters, but boost by 2.5x instead, and can not be swapped by special
+    abilities."
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Kin'emon, Kurozumi Kanjuro, Raizo, Kikunojo, Ashura Doji (Shutenmaru),
+    Inuarashi, Nekomamushi, Kawamatsu, Denjiro (Kyoshiro), Kozuki Momonosuke,
+    Kozuki Hiyori (Komurasaki), Gol D. Roger and Edward Newgate (Whitebeard),
+    excluding Support members."
+  description: Boosts base ATK of top row characters by 1000 for 1 turn, changes
+    all orbs, including [BLOCK] orbs, of top row characters into [WANO] orbs and
+    transforms all [STR] characters into Super [STR] characters.
+special:
+  name: "Oden Two-Sword Style: Paradise Totsuka"
+  description: Changes [STR] orbs into [WANO] orbs for 2 turns, changes Matching
+    orbs into [STR] orbs and boosts Orb Effects of [STR], Slasher and Free
+    Spirit characters by 2.75x for 2 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: When any other Slasher or Free Spirit character uses a special,
+      reduces special cooldown of this character by 1 turn
+  - description: Makes [STR] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Edward Newgate (Whitebeard), Kin'emon, Kurozumi Kanjuro, Inuarashi,
+    Kozuki Momonosuke, Nekomamushi, Raizo, Kikunojo, Ashura Doji (Shutenmaru),
+    Gol D. Roger, Denjiro (Kyoshiro), Kawamatsu and Kozuki Hiyori (Komurasaki)
+  levels:
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [STR] orb.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [STR] orb.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [STR] orb and reduces Special Cooldown of
+      supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [STR] orb and reduces Special Cooldown of
+      supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [WANO] orb and reduces Special Cooldown of
+      supported character by 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - atk: 10
+    - atk: 10
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - cooldown: 1
+    - atk: 10
+    - atk: 20
+    - rcv: 20
+    - rcv: 30
+    - hp: 50
+    - hp: 50
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - hp: 200
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 150
+    rumbleType: ATK
+    spd: 226
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: DEX
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - HP
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1600
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            amount: 1.7
+        - override:
+            duration: 12
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            amount: 1.8
+        - override:
+            duration: 13
+            level: 4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1900
+        - override:
+            amount: 1.9
+        - override:
+            duration: 14
+            level: 4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            amount: 2
+        - override:
+            duration: 15
+            level: 5
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2400
+        - override:
+            amount: 2.1
+        - override:
+            duration: 16
+            level: 5
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2200
+        - override:
+            amount: 2.2
+        - override:
+            duration: 17
+            level: 6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2300
+        - override:
+            amount: 2.3
+        - override:
+            duration: 18
+            level: 6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2400
+        - override:
+            amount: 2.4
+        - override:
+            duration: 19
+            level: 7
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2500
+        - override:
+            amount: 2.5
+        - override:
+            duration: 20
+            level: 8
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+              - HP
+              - Critical Hit
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - STR
+          - attributes:
+              - Accuracy
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - STR
+          - attributes:
+              - ATK
+              - HP
+              - SPD
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - Slasher
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Slasher
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 4
+          - override:
+              level: 4
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 5
+          - override:
+              level: 5
+          - override:
+              level: 5
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 6
+          - override:
+              level: 6
+          - override:
+              level: 6
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 10
+          type: debuff
+          attribute: Critical Hit
+      special:
+        - uses: 2
+          effects:
+            - amount: 1500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+            - attributes:
+                - ATK
+              duration: 22
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - Slasher
+        - uses: 2
+          effects:
+            - override:
+                amount: 2000
+            - override:
+                level: 3
+                duration: 24
+        - uses: 2
+          effects:
+            - override:
+                amount: 2500
+            - override:
+                level: 5
+                duration: 26
+        - uses: 2
+          effects:
+            - override:
+                amount: 3000
+            - override:
+                level: 7
+                duration: 28
+        - uses: 2
+          effects:
+            - override:
+                amount: 3500
+            - override:
+                level: 10
+                duration: 30

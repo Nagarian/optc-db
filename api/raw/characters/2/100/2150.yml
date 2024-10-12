@@ -1,0 +1,94 @@
+type: STR
+name: Zeff - The Ferocious Fighting Cooks' Caretaker
+japanName: ゼフ 戦うコックさんの世話人
+family:
+  - Zeff
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1201
+    atk: 754
+    rcv: 78
+  maxLvl:
+    hp: 2820
+    atk: 1172
+    rcv: 356
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 110392
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Fighter characters by 2.5x and their HP by 1.2x
+special:
+  name: Chef's Long Kick
+  description: If your Captain is a Fighter character, boosts the Color Affinity
+    of Fighter characters by 1.75x for 1 turn
+  cooldown: 14
+  maxLevel: 7
+sailor:
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 3 turns
+  - description: Boosts this character's damage against [DEX] characters by 1.2x
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Fighter characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Fighter characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Fighter characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Fighter characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Fighter characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 10
+    - hp: 20
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - atk: 10
+    - atk: 20
+    - hp: 80
+    - slot: 1
+    - rcv: 40
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 6

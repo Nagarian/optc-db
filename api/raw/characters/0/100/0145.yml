@@ -1,0 +1,37 @@
+type: PSY
+name: Fighter Group Crew - Yellow Pirates
+japanName: 格闘隊 隊員 イエローパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 190
+    atk: 90
+    rcv: 16
+  maxLvl:
+    hp: 695
+    atk: 398
+    rcv: 41
+cost: 6
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 2202
+aliases: []
+evolution:
+  - id: 272
+    evolvers:
+      - 115
+      - 116
+      - 92
+special:
+  name: Iron Shield
+  description: Reduces damage received by 20% for 1 turn
+  cooldown: 25
+  maxLevel: 16

@@ -1,0 +1,49 @@
+type: QCK
+name: Sanji - Candy
+japanName: サンジ キャンディーちゃん
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1155
+    atk: 545
+    rcv: 76
+  maxLvl:
+    hp: 1802
+    atk: 951
+    rcv: 357
+cost: 18
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 10003
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x following a chain of [INT] >
+    [PSY] > [QCK] attacks no lower than Good
+special:
+  name: Maiden's Bloom
+  description: Randomizes [RCV], [STR] and [DEX] orbs into either [STR] or [QCK] orbs
+  cooldown: 12
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Caroline and Elizabeth
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10

@@ -1,0 +1,47 @@
+type: STR
+name: Don Sai
+japanName: 首領・サイ
+family:
+  - Sai
+class:
+  - Striker
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 130
+    atk: 130
+    rcv: 31
+  maxLvl:
+    hp: 1300
+    atk: 673
+    rcv: 130
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 30736
+aliases: []
+evolution:
+  - id: 1083
+    evolvers:
+      - 118
+      - 83
+      - 84
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Fighter characters by 1.2x
+special:
+  name: "Drill Dragon: Drill Nail"
+  description: Deals 20x character's ATK in [STR] damage to all enemies. Boosts
+    ATK of Striker and Fighter characters by 1.2x-1.75x for 2 turns, depending
+    on the current HP at the time the special was activated.
+  cooldown: 23
+  maxLevel: 8
+  notes: Below 30% -> 1.75 boost, between 30% and 70% -> 1.5, above 70% -> 1.2

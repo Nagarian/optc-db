@@ -1,0 +1,98 @@
+type: PSY
+name: Sabo - Back-to-Back Fire Fists
+japanName: サボ 背中合わせの火拳
+family:
+  - Sabo
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1355
+    atk: 456
+    rcv: 106
+  maxLvl:
+    hp: 2750
+    atk: 1475
+    rcv: 250
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 165179
+aliases:
+  - Stampede Sabo
+  - Raid Sabo
+captain:
+  name: ""
+  description: Boosts ATK of [PSY], [DEX] and [STR] characters by 2.75x. If you
+    defeat an enemy, increases ATK boost slightly. Stacks up to 5 times to a
+    maximum of 3.25x.
+  notes: If a character dies and revives, it counts as killing a character. If you
+    did not defeat an enemy, lose all ATK boost stacks.
+special:
+  name: "Burning Dragon Claw Fist: Blaze Dragon King"
+  description: Reduces Burn and ATK DOWN duration by 5 turns, boosts the Color
+    Affinity of [PSY], [DEX] and [STR] characters by 1.75x for 2 turns and makes
+    [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for [PSY], [DEX] and
+    [STR] characters for 2 turns
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base HP of [PSY] characters by 30
+  - description: Reduces Silence duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - rcv: 10
+    - atk: 40
+    - slot: 1
+    - hp: 50
+    - rcv: 50
+    - cooldown: 1
+    - type: sailor
+    - slot: 1
+    - atk: 70
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50

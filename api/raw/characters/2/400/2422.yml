@@ -1,0 +1,116 @@
+type: QCK
+name: Hajrudin the Pirate Mercenary - Spear of Elbaph
+japanName: 海賊傭兵　ハイルディン エルバフの槍
+family:
+  - Hajrudin
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1228
+    atk: 740
+    rcv: 89
+  maxLvl:
+    hp: 3022
+    atk: 1455
+    rcv: 188
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 140987
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Powerhouse characters by 3.25x, reduces
+    crew's current HP by 5% at the end of each turn, reduces own ATK multiplier
+    by approximately 0.06x at the end of each turn
+  notes: His ATK multiplier will be 3.25x on the first turn, 3.19x on the second,
+    3.13x on the third and so on. The reduction stops once the multiplier is 1x.
+    The multiplier affects all Driven and Powerhouse characters. You will not
+    die to the HP reduction
+special:
+  name: '"Gungnir" - The Decree of the Giant'
+  description: Reduces Bind, Paralysis and Chain Coefficient Reduction duration by
+    4 turns, reduces Special Cooldown of Driven and Powerhouse characters by 1
+    turn. If your Captain is a Driven or Powerhouse character, boosts ATK
+    against delayed enemies by 1.75x for 2 turns
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven characters by 30
+  - description: Boosts this character's damage against [DEX] characters by 2x
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Chinjao, Dagama, Abdullah, Jeet, Orlumbus, Blue Gilly, Suleiman,
+    Cavendish, Sai, Ideo and Elizabello II
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 10
+    - type: sailor
+    - hp: 50
+    - hp: 70
+    - hp: 80
+    - slot: 1
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

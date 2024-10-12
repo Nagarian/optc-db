@@ -1,0 +1,257 @@
+type: QCK
+name: Charlotte Cracker - General Who Manipulates Biscuit Warriors
+japanName: シャーロット・クラッカー ビスケット兵を従えし将星
+family:
+  - CharlotteCracker
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 500
+    atk: 400
+    rcv: 50
+  maxLvl:
+    hp: 1521
+    atk: 840
+    rcv: 200
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 144753
+aliases:
+  - V1 Legend Cracker
+evolution:
+  - id: 2465
+    evolvers:
+      - 118
+      - 266
+      - 94
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 3.75x. Boosts HP of Fighter,
+    Slasher, Striker and Shooter characters by 1.35x.
+special:
+  name: Roaring "Honey Pretzel"
+  description: Changes [EMPTY], [BOMB], [RCV], [G], [BLOCK] orbs into Matching
+    orbs and changes the orb of this character into a Matching orb. If your
+    Captain is a Fighter, Slasher, Shooter or Striker character, adds 1.1x to
+    Chain multiplier for 2 turns. If your Captain is a Free Spirit, Cerebral,
+    Powerhouse or Driven character, boosts the Color Affinity of Free Spirit,
+    Cerebral, Powerhouse and Driven characters by 1.75x for 2 turns.
+  cooldown: 23
+  maxLevel: 6
+sailor:
+  - description: When any other Powerhouse or Slasher character uses a special,
+      reduces special cooldown of this character by 1 turn
+rumble:
+  stats:
+    def: 168
+    rumbleType: ATK
+    spd: 167
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          level: 2
+          effect: buff
+          targeting:
+            targets:
+              - Slasher
+              - Powerhouse
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 37
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - Slasher
+              - Powerhouse
+        - amount: 25
+          effect: recharge
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+          type: Special CT
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.03
+        - {}
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.05
+        - {}
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.08
+        - override:
+            level: 2
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.11
+        - override:
+            level: 2
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.14
+        - override:
+            level: 2
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.16
+        - override:
+            level: 3
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.19
+        - override:
+            level: 3
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.22
+        - override:
+            level: 3
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 5
+        - {}
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

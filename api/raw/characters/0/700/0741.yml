@@ -1,0 +1,48 @@
+type: QCK
+name: Nero - Cipher Pol No. 9
+japanName: ネロ サイファーポールNo.9
+family:
+  - Nero
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 277
+    atk: 489
+    rcv: 51
+  maxLvl:
+    hp: 755
+    atk: 1050
+    rcv: 145
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 16729
+aliases: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight
+special:
+  name: Rankyaku - Sen
+  description: Deals 10x character's ATK in [QCK] damage to all enemies, boosts
+    ATK against enemies with increased defense by 1.3x for 2 turns
+  cooldown: 23
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Wanze and Jerry
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6

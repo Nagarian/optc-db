@@ -1,0 +1,50 @@
+type: PSY
+name: Edward Weevil
+japanName: エドワード・ウィーブル
+family:
+  - EdwardWeevil
+class:
+  - Slasher
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 1020
+    atk: 551
+    rcv: 30
+  maxLvl:
+    hp: 1900
+    atk: 1029
+    rcv: 61
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 148451
+aliases:
+  - TM Weevil
+evolution:
+  - id: 2510
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1x-1.5x depending on the crew's
+    current HP.
+  notes: "`captainProportional : higher : .5 + 1 * (remaining HP) / (total HP)) :
+    1.5 : 1`"
+special:
+  name: I Absolutely Won't Forgive Him
+  description: Reduces ATK DOWN duration by 20 turns and adds 300x character's ATK
+    as Additional Typeless Damage to own's attacks for 2 turns. If enemies have
+    All Debuff Protection or Delay Debuff Protection at the time the special was
+    activated, boosts ATK of all characters by 2x for 1 turn.
+  cooldown: 36
+  maxLevel: 8

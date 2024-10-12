@@ -1,0 +1,46 @@
+type: DEX
+name: Kaku - CP9 Dark Justice
+japanName: カク 闇の正義の「ＣＰ９」
+family:
+  - Kaku
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 151
+    atk: 132
+    rcv: 28
+  maxLvl:
+    hp: 1183
+    atk: 713
+    rcv: 178
+cost: 17
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 16961
+aliases: []
+evolution:
+  - id: 750
+    evolvers:
+      - 118
+      - 83
+      - 86
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.5x, boosts damage of [DEX]
+    specials by 1.5x
+special:
+  name: "Tempest Kick: Sky Slicer"
+  description: Deals random [DEX] damage to all enemies, randomizes all orbs
+  cooldown: 23
+  maxLevel: 8
+  notes: "`random : 10,000 : 90,000`"

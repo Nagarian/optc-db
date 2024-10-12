@@ -1,0 +1,45 @@
+type: QCK
+name: Nero
+japanName: ネロ
+family:
+  - Nero
+class:
+  - Shooter
+  - Driven
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 59
+    atk: 112
+    rcv: 20
+  maxLvl:
+    hp: 324
+    atk: 543
+    rcv: 83
+cost: 9
+slots: 1
+maxExp: 136167
+maxLevel: 35
+flags:
+  - fortnight
+links:
+  gamewithId: 16729
+aliases: []
+evolution:
+  - id: 741
+    evolvers:
+      - 117
+      - 79
+      - 90
+      - 96
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight
+special:
+  name: Rankyaku - Sen
+  description: Deals 10x character's ATK in [QCK] damage to all enemies, boosts
+    ATK against enemies with increased defense by 1.3x for 2 turns
+  cooldown: 23
+  maxLevel: 9

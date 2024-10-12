@@ -1,0 +1,97 @@
+type: QCK
+name: Inazuma - Snipping Through the Ground
+family:
+  - Inazuma
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1241
+    atk: 638
+    rcv: 173
+  maxLvl:
+    hp: 2783
+    atk: 1471
+    rcv: 266
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Kizuna Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 3.5x, boosts
+    HP of Free Spirit and Cerebral characters by 1.2x and recovers 2x
+    character's RCV in HP at the end of each turn.
+special:
+  name: Looming Ground
+  description: Reduces enemies' Resilience duration by 6 turns, reduces Paralysis
+    duration by 6 turns, recovers 15x character's RCV in HP, changes Badly
+    Matching orbs into Matching orbs, removes Poison duration completely and
+    locks the chain multiplier at 3.25x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [QCK] orbs beneficial for Free Spirit and Cerebral characters
+  - description: Boosts base ATK, HP and RCV of Free Spirit and Cerebral characters by 50
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+  criteria: Free Spirit characters
+  levels:
+    - value: 5
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 8
+      reduction: 4
+    - value: 9
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - rcv: 25
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - rcv: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

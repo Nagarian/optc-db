@@ -1,0 +1,306 @@
+type: PSY
+name: Nami - Captivating Santa Girl
+japanName: ナミ 魅惑のサンタガール
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1410
+    atk: 733
+    rcv: 191
+  maxLvl:
+    hp: 2273
+    atk: 1317
+    rcv: 351
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 133841
+aliases:
+  - TM Nami
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 1.5x, by 1.75x
+    instead if HP is above 50%
+special:
+  name: Mirage Tempo - Holy Night
+  description: Reduces Paralysis, ATK DOWN, Chain Multiplier Limit, Chain
+    Coefficient Reduction, Burn and Blindness duration by 3 turns. Changes
+    [BLOCK] and Badly Matching orbs into Matching orbs
+  cooldown: 33
+  maxLevel: 8
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: Makes [INT] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 3
+    - value: 6
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 20
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. Boosts ATK of Striker and Cerebral characters by 1.5x,
+          by 1.75x instead if HP is above 50%
+    - type: sailor
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. Boosts ATK of Striker and Cerebral characters by 1.5x,
+          by 2x instead if HP is above 50%
+    - slot: 1
+    - cooldown: 1
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. Boosts ATK of Striker and Cerebral characters by 1.75x,
+          by 2x instead if HP is above 50%
+    - cooldown: 2
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - cooldown: 3
+    - slot: 1
+    - hp: 40
+    - hp: 50
+    - cooldown: 4
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. Boosts ATK of Striker and Cerebral characters by 1.75x,
+          by 2.5x instead if HP is above 50%
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 20
+    - atk: 30
+    - atk: 40
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. Boosts ATK of Striker and Cerebral characters by 2x, by
+          2.75x instead if HP is above 50%
+    - atk: 40
+    - atk: 50
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. Boosts ATK of Striker and Cerebral characters by 2x, by
+          3x instead if HP is above 50%
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 128
+    rumbleType: RCV
+    spd: 129
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: above
+            count: 80
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+    - effects:
+        - {}
+        - override:
+            level: 3
+    - effects:
+        - {}
+        - override:
+            level: 4
+    - effects:
+        - {}
+        - override:
+            level: 5
+    - effects:
+        - {}
+        - override:
+            level: 6
+  special:
+    - cooldown: 41
+      effects:
+        - attributes:
+            - Damage Over Time
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - amount: 0.6
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 0.85
+          effect: recharge
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 11
+        - override:
+            amount: 0.64
+        - override:
+            amount: 0.91
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 12
+        - override:
+            amount: 0.67
+        - override:
+            amount: 0.96
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 13
+        - override:
+            amount: 0.71
+        - override:
+            amount: 1.02
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 14
+        - override:
+            amount: 0.75
+        - override:
+            amount: 1.08
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 15
+        - override:
+            amount: 0.79
+        - override:
+            amount: 1.14
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 16
+        - override:
+            amount: 0.82
+        - override:
+            amount: 1.19
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 17
+        - override:
+            amount: 0.86
+        - override:
+            amount: 1.25
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 18
+        - override:
+            amount: 0.9
+        - override:
+            amount: 1.31
+    - cooldown: 41
+      effects:
+        - override:
+            duration: 20
+        - override:
+            amount: 0.95
+        - override:
+            amount: 1.4

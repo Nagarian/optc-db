@@ -1,0 +1,55 @@
+type: INT
+name: Gecko Moria - Lord of Shadows
+japanName: ゲッコー・モリア 影操る主
+family:
+  - GeckoMoria
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 925
+    atk: 650
+    rcv: 47
+  maxLvl:
+    hp: 3054
+    atk: 1315
+    rcv: 153
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 238588
+aliases:
+  - Limited Moria
+  - Secret Moria
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x and recovers 1,000 HP at the
+    end of each turn.
+special:
+  name: Shadow Exchange
+  description: Randomizes all non-Matching orbs and boosts ATK of all characters
+    by 1.5x for 1 turn.
+  cooldown: 7
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: "[INT] Driven characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.1x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.15x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.2x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.25x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.3x until the next stage.

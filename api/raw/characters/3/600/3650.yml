@@ -1,0 +1,359 @@
+type: QCK
+name: Black Maria - Inescapable Spider Silk
+family:
+  - BlackMaria
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1645
+    atk: 831
+    rcv: 174
+  maxLvl:
+    hp: 3290
+    atk: 1662
+    rcv: 348
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Legend V1
+captain:
+  name: ""
+  description: If there is a [STR], [DEX] and [QCK] character in your crew, boosts
+    ATK of [STR], [DEX] and [QCK] characters by 5.25x, boosts HP and RCV of
+    [STR], [DEX] and [QCK] by 1.2x, makes [PSY], [INT], [RCV] and [TND] orbs
+    beneficial for all characters and reduces Paralysis duration by 10 turns.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Kaido,
+    King, Queen, Jack, Sasaki, Who's-Who, Page One and Ulti, excluding Support
+    members."
+  description: Changes the orb of this character into a [TND] orb, increases boost
+    effects of Orb Amplification buffs to 3x and transforms all Powerhouse
+    characters into Super Powerhouse characters.
+special:
+  name: Unavoidable Strikes
+  description: Deals 10% of enemies' current HP in damage to all enemies, delays
+    all enemies by 3 turns, changes [EMPTY], [BLOCK], [BOMB] and [G] orbs into
+    Matching orbs and boosts Orb Effects of [STR], [DEX] and [QCK] characters by
+    2.5x for 1 turn. If this character is your Captain or Friend/Guest Captain
+    or your Captain is a [STR] or [DEX] character, boosts ATK against delayed
+    enemies by 2.25x for 3 turns, by 2x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: If your Captain is a [STR] or [DEX] character, makes [QCK] and
+      [DEX] orbs beneficial for all characters
+  - description: If your Captain is a [STR] or [DEX] character, reduces Paralysis
+      duration by 2 turns
+support:
+  type: descriptive
+  criteria: Page One, Sasaki, Ulti and Who's-Who
+  levels:
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 20
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - hp: 20
+    - atk: 10
+    - hp: 30
+    - hp: 40
+    - atk: 20
+    - type: sailor
+    - hp: 50
+    - atk: 10
+    - atk: 20
+    - hp: 60
+    - type: potential
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 20
+    - atk: 20
+    - atk: 20
+    - hp: 70
+    - atk: 20
+    - rcv: 30
+    - atk: 40
+    - type: sailor
+    - hp: 90
+    - rcv: 30
+    - hp: 100
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 20
+    - hp: 50
+    - atk: 100
+    - hp: 100
+    - rcv: 30
+    - hp: 150
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Who's-Who,
+          Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [DEX] characters by 1.25x for 1 turn
+          and reduces enemies' Increased Defense duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Who's-Who,
+          Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [DEX] characters by 1.5x for 1 turn
+          and reduces enemies' Increased Defense duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Who's-Who,
+          Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [DEX] characters by 1.75x for 1 turn
+          and reduces enemies' Increased Defense duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Who's-Who,
+          Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [DEX] characters by 2x for 1 turn
+          and reduces enemies' Increased Defense duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Who's-Who,
+          Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [DEX] characters by 2.25x for 1 turn
+          and reduces enemies' Increased Defense duration by 2 turns.
+rumble:
+  stats:
+    def: 208
+    rumbleType: SPT
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+  resilience:
+    - amount: 200
+      interval: 5
+      type: healing
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+            - RCV
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 23
+      effects:
+        - attributes:
+            - ATK
+            - SPD
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - Haste
+          chance: 70
+          effect: boon
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 12
+        - override:
+            chance: 73
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            chance: 76
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            chance: 79
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            chance: 82
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            chance: 85
+    - cooldown: 23
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            chance: 88
+    - cooldown: 23
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            chance: 91
+    - cooldown: 23
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            chance: 94
+    - cooldown: 23
+      effects:
+        - override:
+            level: 6
+            duration: 20
+        - override:
+            chance: 100
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

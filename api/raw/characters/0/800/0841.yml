@@ -1,0 +1,46 @@
+type: PSY
+name: Monet
+japanName: モネ
+family:
+  - Monet
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 130
+    atk: 87
+    rcv: 47
+  maxLvl:
+    hp: 1078
+    atk: 593
+    rcv: 241
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 19811
+aliases: []
+evolution:
+  - id: 842
+    evolvers:
+      - 118
+      - 83
+      - 87
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn, deals 3x
+    character's ATK in [PSY] damage to all enemies at the end of each turn
+special:
+  name: Snow Rabbit
+  description: Delays all enemies by 1 turn, boosts ATK against delayed enemies by
+    1.25x for 2 turns
+  cooldown: 16
+  maxLevel: 7

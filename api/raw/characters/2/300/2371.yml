@@ -1,0 +1,102 @@
+type: STR
+name: Gourmet Knight Streusen - Big Mom Pirates, Head Chef
+japanName: 美食騎士シュトロイゼン ビッグ・マム海賊団　総料理長
+family:
+  - Streusen
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 866
+    atk: 801
+    rcv: 122
+  maxLvl:
+    hp: 2532
+    atk: 1260
+    rcv: 358
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 136392
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.75x and their RCV by 1.3x
+special:
+  name: Gourmetamorphosis
+  description: Removes Poison duration completely, reduces Bind and Despair
+    duration by 5 turns, changes [TND], [BLOCK], [BOMB] and Badly Matching orbs
+    into [RCV] orbs and makes [STR], [PSY] and [RCV] orbs beneficial for all
+    characters for 3 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Charlotte Linlin (Big Mom), Charlotte Pudding and Vinsmoke Sanji
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - hp: 40
+    - hp: 60
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

@@ -1,0 +1,101 @@
+type: PSY
+name: Maelstrom Spider Squard
+japanName: 大渦蜘蛛スクアード
+family:
+  - Squard
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 960
+    atk: 755
+    rcv: -1
+  maxLvl:
+    hp: 2755
+    atk: 1434
+    rcv: -150
+cost: 29
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 14403
+aliases:
+  - Maelstrom Spider Squardo
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 3x if HP is below 30% at the
+    start of the turn
+special:
+  name: Raging Greatsword
+  description: Reduces crew's current HP by 30%, deals 10x character's ATK in
+    Fixed damage to one enemy, boosts Orb Effects of all characters by 1.75x for
+    1 turn
+  cooldown: 21
+  maxLevel: 8
+sailor:
+  - description: Recovers 2 turns of Paralysis on self
+  - description: Reduces Blindness duration by 2 turns
+support:
+  type: descriptive
+  criteria: Edward Newgate (Whitebeard) and Marco
+  levels:
+    - Boosts the supported character's ATK by 1.1x against Akainu
+    - Boosts the supported character's ATK by 1.15x against Akainu
+    - Boosts the supported character's ATK by 1.2x against Akainu
+    - Boosts the supported character's ATK by 1.25x against Akainu
+    - Boosts the supported character's ATK by 1.3x against Akainu
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 40
+    - rcv: 35
+    - type: potential
+    - atk: 40
+    - hp: 40
+    - cooldown: 2
+    - hp: 60
+    - type: sailor
+    - atk: 60
+    - rcv: 40
+    - cooldown: 2
+    - rcv: 50
+    - slot: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 100

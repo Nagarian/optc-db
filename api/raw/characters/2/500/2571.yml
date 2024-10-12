@@ -1,0 +1,55 @@
+type: STR
+name: Donquixote Doflamingo - Future King
+japanName: ドンキホーテ・ドフラミンゴ いつの日か王になる男
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 896
+    atk: 452
+    rcv: 80
+  maxLvl:
+    hp: 2240
+    atk: 1130
+    rcv: 200
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 153187
+aliases:
+  - Doffy
+  - Kid Doffy
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.25x and their HP by 1.25x.
+    Reduces ATK of [PSY] characters by 50%. If a character has a [STR] orb,
+    boosts their ATK by 1.1x.
+  notes: All boosts are cumulative.
+special:
+  name: '"Power" to Get Revenge'
+  description: Deals 10% of enemies' current HP in damage to one enemy, boosts ATK
+    of this character by 1.5x for 3 turns and boosts Orb Effects of this
+    character by 1.5x for 3 turns and changes [PSY], [TND] and [BOMB] orbs into
+    [STR] orbs
+  cooldown: 18
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Donquixote Rosinante (Corazon)
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

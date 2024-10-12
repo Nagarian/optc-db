@@ -1,0 +1,426 @@
+type: STR
+name: Kaku - CP-AIGIS 0
+japanName: カク サイファーポール“イージス”ゼロ
+family:
+  - Kaku
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1582
+    atk: 559
+    rcv: 110
+  maxLvl:
+    hp: 3954
+    atk: 1398
+    rcv: 275
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 223752
+aliases:
+  - PF Kaku
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x and their HP by 1.2x.
+special:
+  name: "Kami Protector: Tempest Kick"
+  description: Deals 70x character's ATK in [STR] damage to one enemy, boosts ATK
+    of Slasher characters by 1.75x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of Slasher characters by 30
+limitBreak:
+  path:
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - type: potential
+    - atk: 100
+    - atk: 150
+    - rcv: 50
+    - hp: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 133
+    rumbleType: ATK
+    spd: 191
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 1.7
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 1.9
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 25
+      effects:
+        - amount: 2.2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - DEX

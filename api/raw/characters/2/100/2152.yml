@@ -1,0 +1,107 @@
+type: QCK
+name: Charlotte Pudding - Wicked Woman
+japanName: シャーロット・プリン 魔性の女
+family:
+  - CharlottePudding
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 975
+    atk: 723
+    rcv: 123
+  maxLvl:
+    hp: 2320
+    atk: 1180
+    rcv: 402
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 110393
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x and their HP by 1.3x. If you
+    don't attack with her, reduces damage received by 20% for that turn.
+special:
+  name: Memory Film
+  description: Changes all orbs of all characters into Pudding's orb, recovers
+    5,000 HP, reduces damage received by 80% for 1 turn and reduces Bind,
+    Despair, Paralysis and Increase Damage Taken duration by 4 turns
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 5 turns on this character
+  - description: If this character has an [QCK] orb and you hit a PERFECT with her,
+      keep her [QCK] orb for the next turn
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji and Vinsmoke Reiju
+  levels:
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 20% and slightly boosts chances of getting Matching orbs for 3 turns
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 20% and slightly boosts chances of getting Matching orbs for 3 turns
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 20% and boosts chances of getting Matching orbs for 3 turns
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 20% and boosts chances of getting Matching orbs for 3 turns
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 20% and greatly boosts chances of getting Matching orbs for 3 turns
+limitBreak:
+  path:
+    - rcv: 20
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - slot: 1
+    - rcv: 30
+    - hp: 60
+    - type: sailor
+    - hp: 60
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 100
+    - hp: 150
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

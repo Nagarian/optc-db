@@ -1,0 +1,90 @@
+type: STR
+name: Hajrudin the Pirate Mercenary - Elbaph "New Generation" Warrior
+japanName: 海賊傭兵　ハイルディン 「エルバフ」“新時代”の戦士
+family:
+  - Hajrudin
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1225
+    atk: 683
+    rcv: 89
+  maxLvl:
+    hp: 2840
+    atk: 1381
+    rcv: 206
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 54674
+aliases:
+  - Colo Hajrudin
+  - Coliseum Hajrudin
+captain:
+  name: ""
+  description: Boosts ATK of Cost 40 characters by 2.75x
+special:
+  name: Thunder Giant
+  description: Deals 300,000 Fixed damage to one enemy, boosts ATK of Cost 40
+    characters by 1.75x for 1 turn, reduces enemies' Barrier duration by 1 turn
+  cooldown: 30
+  maxLevel: 14
+sailor:
+  - description: Boosts base HP of all characters by 100
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Cavendish, Ideo, Elizabello II and Orlumbus
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - hp: 40
+    - hp: 60
+    - cooldown: 1
+    - hp: 80
+    - slot: 1
+    - cooldown: 1
+    - atk: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 2
+        - value: 50
+          reduction: 2
+        - value: 100
+          reduction: 3

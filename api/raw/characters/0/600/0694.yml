@@ -1,0 +1,37 @@
+type: STR
+name: Bazooka Corporal - Navy HQ
+japanName: バズーカ伍長 海軍本部
+family:
+  - BazookaCoporalNavy
+class:
+  - Shooter
+rarity: 2
+stats:
+  combo: 4
+  minLvl:
+    hp: 62
+    atk: 50
+    rcv: 14
+  maxLvl:
+    hp: 598
+    atk: 404
+    rcv: 64
+cost: 7
+slots: 0
+maxExp: 90778
+maxLevel: 35
+flags: []
+links:
+  gamewithId: 15646
+aliases: []
+evolution:
+  - id: 699
+    evolvers:
+      - 116
+      - 95
+      - 300
+special:
+  name: Hyper Burst
+  description: Deals 13x character's ATK in character's Type damage to all enemies
+  cooldown: 35
+  maxLevel: 18

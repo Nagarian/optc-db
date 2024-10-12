@@ -1,0 +1,169 @@
+type: INT
+name: Captain Kid - Supernova of the South Blue
+japanName: キャプテン・キッド “南の海”出身の超新星
+family:
+  - EustassKid
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 740
+    atk: 565
+    rcv: 144
+  maxLvl:
+    hp: 2154
+    atk: 1406
+    rcv: 204
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 62886
+aliases:
+  - Fortnight Kidd
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x at the start of the chain, by 3x
+    following a chain of [STR] > [DEX] > [INT] attacks no lower than Good
+special:
+  name: Iron Giant Palm Slam
+  description: Deals 20% of enemies' current HP in damage to one enemy and boosts
+    ATK of this character by 2x for 1 turn
+  cooldown: 20
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Killer
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+rumble:
+  stats:
+    def: 138
+    rumbleType: ATK
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 21
+      effects:
+        - amount: 0.3
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.37
+        - override:
+            level: 5
+            duration: 21
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            level: 5
+            duration: 22
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 6
+            duration: 23
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.57
+        - override:
+            level: 6
+            duration: 24
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.64
+        - override:
+            level: 7
+            duration: 25
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 7
+            duration: 26
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.77
+        - override:
+            level: 8
+            duration: 27
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.84
+        - override:
+            level: 8
+            duration: 28
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.95
+        - override:
+            level: 9
+            duration: 30

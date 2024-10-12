@@ -1,0 +1,39 @@
+type: INT
+name: Shu
+japanName: シュウ
+family:
+  - Shu
+class:
+  - Fighter
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 56
+    atk: 89
+    rcv: 23
+  maxLvl:
+    hp: 943
+    atk: 969
+    rcv: 150
+cost: 12
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 17364
+aliases:
+  - Raid Shu
+captain:
+  name: ""
+  description: Reduces damage received by 20%
+special:
+  name: Rust-Rust Fruit
+  description: Reduces any damage received above 3,000 HP by 80% for 1 turn
+  cooldown: 17
+  maxLevel: 10
+  notes: "The exact formula for the damage received is: 3,000 + ((total damage) -
+    3,000) \\* 0.2"

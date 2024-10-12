@@ -1,0 +1,98 @@
+type: PSY
+name: '"Poison Pink" Vinsmoke Reiju - Science Military Germa 66'
+japanName: “ポイズンピンク” ヴィンスモーク・レイジュ 科学戦闘部隊ジェルマ６６
+family:
+  - VinsmokeReiju
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1038
+    atk: 345
+    rcv: 212
+  maxLvl:
+    hp: 2121
+    atk: 1333
+    rcv: 452
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 74388
+aliases:
+  - Pink Ranger
+  - Super Reiju
+  - Mega Reiju
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.25x. Boosts ATK of Powerhouse
+    characters by 1.4x and their RCV by 1.2x
+  notes: Attack boost stacks, so a [PSY] Powerhouse character has a 3.15x ATK
+special:
+  name: Dangerous Butterfly
+  description: If your captain is a [PSY] or [INT] character, reduces ATK DOWN and
+    Silence duration by 3 turns and inflicts Toxic to all enemies. If your
+    Captain is a Powerhouse character, boosts ATK against enemies inflicted with
+    Toxic by 1.75x for 1 turn
+  cooldown: 20
+  maxLevel: 7
+  notes: >-
+    `toxic : 20x : 2x : 500,000`  
+
+    If enemies are both Poisoned and inflicted with Toxic, only the Toxic damage will damage the enemy at the end of the turn.
+sailor:
+  - description: Makes [INT] orbs beneficial for this character
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: descriptive
+  criteria: Vinsmoke Judge, Vinsmoke Ichiji, Vinsmoke Niji, Vinsmoke Sanji and
+    Vinsmoke Yonji
+  levels:
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 1,000 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 2,000 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 4,000 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 6,000 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 7,000 HP
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - hp: 50
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - hp: 50
+    - slot: 1
+    - atk: 40
+    - hp: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

@@ -1,0 +1,111 @@
+type: INT
+name: Kami Eneru - Merciless Lightning
+japanName: ゴッド・エネル 慈悲無き“雷”
+family:
+  - Enel
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1298
+    atk: 762
+    rcv: 150
+  maxLvl:
+    hp: 2740
+    atk: 1366
+    rcv: 288
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 202540
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 2.5x and recovers 5x
+    character's RCV in HP at the end of each turn.
+special:
+  name: God's Judgement Brought Down with Insolence
+  description: Reduces Special Cooldown of [STR] and [INT] characters by 2 turns,
+    changes [STR], [DEX], [QCK], [PSY] and [INT] orbs of [STR] and [INT]
+    characters into Matching orbs, reduces crew's current HP by 50% and deals
+    30x the amount of HP subtracted in Typeless damage to all enemies.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Boosts base ATK of [INT] characters by 50
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - hp: 50
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - rcv: 30
+    - hp: 50
+    - hp: 70
+    - type: sailor
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 8
+        - value: 10
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

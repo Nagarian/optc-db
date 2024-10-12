@@ -1,0 +1,179 @@
+type: DUAL
+name: Sabo & Koala - Youthful Revolutionary Aces
+japanName: サボ＆コアラ 革命軍の若きエース達
+family:
+  - Sabo
+  - Koala
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1315
+    atk: 629
+    rcv: 205
+  maxLvl:
+    hp: 3242
+    atk: 1611
+    rcv: 506
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 152488
+aliases:
+  - Sabo&Koala
+  - SaboKoala
+  - Koala&Sabo
+  - KoalaSabo
+  - Saboala
+  - S/K
+  - Legend Sabo and Koala
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 4x and their
+    HP and RCV by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an
+    additive 0.1x after each PERFECT in a row.
+special:
+  name: "Dragon Claw Fist and Fishman Karate: Revolutionary Strike"
+  description: Changes [BLOCK] and Badly Matching orbs into Matching orbs, boosts
+    ATK of Free Spirit and Cerebral characters by 2.25x for 1 turn, removes
+    Beneficial Orb Buff and Non-beneficial Orb Debuff duration completely and
+    becomes Sabo & Koala for 3 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [STR], [DEX], [QCK], [PSY], and [INT] orbs beneficial for
+      this character
+  - description: Boosts base ATK, HP and RCV of Free Spirit and Cerebral characters by 100
+characters:
+  swap:
+    description: Removes Despair and Paralysis duration completely on this character
+      and changes orb of this character into a Matching orb, boosts the Color
+      Affinity of Free Spirit and Cerebral characters by 1.5x for 1 turn.
+  character1:
+    name: Sabo - Youthful Revolutionary Aces
+    japanName: サボ 革命軍の若きエース達
+    class:
+      - Free Spirit
+      - Cerebral
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1258
+        atk: 610
+        rcv: 156
+      maxLvl:
+        hp: 3145
+        atk: 1524
+        rcv: 389
+    captain:
+      name: ""
+      description: Boosts ATK of Free Spirit and Cerebral characters by 3.25x and
+        their HP and RCV by 1.2x.
+    sailor:
+      - description: Makes [QCK] and [INT] orbs beneficial for this character
+      - description: Boosts base ATK, HP and RCV of Free Spirit and Cerebral characters
+          by 100
+  character2:
+    name: Koala - Youthful Revolutionary Aces
+    japanName: コアラ 革命軍の若きエース達
+    class:
+      - Free Spirit
+      - Cerebral
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1153
+        atk: 590
+        rcv: 182
+      maxLvl:
+        hp: 2882
+        atk: 1476
+        rcv: 454
+    captain:
+      name: ""
+      description: Boosts ATK of Free Spirit and Cerebral characters by 3x, their HP
+        by 1.2x. Boosts ATK of Free Spirit and Cerebral characters by an
+        additive 0.1x after each PERFECT in a row.
+    sailor:
+      - description: Makes [STR] and [PSY] orbs beneficial for this character
+      - description: Boosts base ATK, HP and RCV of Free Spirit and Cerebral characters
+          by 100
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - rcv: 5
+    - rcv: 10
+    - rcv: 10
+    - hp: 40
+    - hp: 40
+    - hp: 60
+    - atk: 10
+    - atk: 15
+    - atk: 15
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - rcv: 15
+    - cooldown: 1
+    - hp: 80
+    - hp: 80
+    - hp: 120
+    - atk: 20
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - rcv: 20
+    - rcv: 20
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

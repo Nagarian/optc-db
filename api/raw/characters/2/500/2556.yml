@@ -1,0 +1,105 @@
+type: DUAL
+name: Shanks & Beckman - Men Trying to Stop the War
+japanName: シャンクス＆ベックマン 戦争を止めようとする者達
+family:
+  - Shanks
+  - BenBeckman
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 882
+    atk: 452
+    rcv: 120
+  maxLvl:
+    hp: 1512
+    atk: 933
+    rcv: 244
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 151203
+aliases:
+  - Shanks&Ben Beckman
+  - Ben Beckman&Shanks
+  - ShanksBen Beckman
+  - Ben BeckmanShanks
+  - Shanks and Ben Beckman
+evolution:
+  - id: 2557
+    evolvers:
+      - 116
+      - 117
+      - 118
+      - 102
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 3x and boosts ATK of
+    all other characters by 2x.
+special:
+  name: Controlling the Battlefield
+  description: Changes all orbs, including [BLOCK] orbs, into [EMPTY] orbs, boosts
+    the Color Affinity of all characters by 3x for 1 turn, locks the chain
+    multiplier at 3x for 1 turn and becomes Shanks & Ben Beckman for 2 turns.
+  cooldown: 32
+  maxLevel: 9
+  notes: This special can only be activated if no other special has been activated
+    this turn and removes the ability to activate any other specials this turn.
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+characters:
+  swap:
+    description: Reduces Bind, Despair and Paralysis duration by 1 turn
+  character1:
+    name: Red-Haired Shanks - Men Trying to Stop the War
+    japanName: シャンクス 戦争を止めようとする者達
+    class:
+      - Cerebral
+      - Slasher
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 292
+        atk: 390
+        rcv: 52
+      maxLvl:
+        hp: 1369
+        atk: 779
+        rcv: 161
+    captain:
+      name: ""
+      description: Boosts ATK of [INT] characters by 2.5x and boosts ATK of all other
+        characters by 1.5x.
+    sailor:
+      - description: Reduces Blindness duration by 5 turns
+  character2:
+    name: Ben Beckman - Men Trying to Stop the War
+    japanName: ベックマン 戦争を止めようとする者達
+    class:
+      - Cerebral
+      - Striker
+    type: DEX
+    stats:
+      combo: 5
+      minLvl:
+        hp: 213
+        atk: 217
+        rcv: 44
+      maxLvl:
+        hp: 1203
+        atk: 669
+        rcv: 114
+    captain:
+      name: ""
+      description: Boosts ATK of [DEX] characters by 2.5x and boosts ATK of all other
+        characters by 1.5x.
+    sailor:
+      - description: Reduces Blindness duration by 5 turns

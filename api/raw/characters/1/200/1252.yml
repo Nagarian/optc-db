@@ -1,0 +1,52 @@
+type: INT
+name: Bohemian Knight Doma - Whitebeard Pirate Family
+japanName: 遊騎士ドーマ 白ひげ海賊団傘下
+family:
+  - Doma
+class:
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 201
+    atk: 102
+    rcv: 21
+  maxLvl:
+    hp: 2001
+    atk: 1201
+    rcv: 251
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 38050
+aliases:
+  - Colo Doma
+  - Coliseum Doma
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of [INT] characters by 2x
+special:
+  name: Reversed Twin Blades - Surprise Thrust
+  description: Changes orbs of adjacent characters into [INT] orbs. Deals 20x
+    character's ATK in [INT] damage to all enemies.
+  cooldown: 24
+  maxLevel: 11
+sailor:
+  - description: Reduces Silence duration by 1 turn on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

@@ -1,0 +1,33 @@
+type: INT
+name: Contemplative Guard
+japanName: 理論派獄卒
+family:
+  - JailerINT
+class:
+  - Striker
+  - Driven
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 55
+    atk: 39
+    rcv: 20
+  maxLvl:
+    hp: 994
+    atk: 727
+    rcv: 177
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 34754
+aliases: []
+special:
+  name: Poison Attack
+  description: Deals 3x character's ATK in [INT] damage to all enemies, Poisons all enemies
+  cooldown: 20
+  maxLevel: 6
+  notes: "`poison : 0.5x`"

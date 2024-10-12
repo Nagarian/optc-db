@@ -1,0 +1,87 @@
+type: DEX
+name: Gecko Moria - Ruler of the Florian Triangle
+japanName: ゲッコー・モリア 魔の三角地帯の支配者
+family:
+  - GeckoMoria
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1419
+    atk: 629
+    rcv: 79
+  maxLvl:
+    hp: 3023
+    atk: 1211
+    rcv: 229
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 34493
+aliases:
+  - Colo Gekko Moriah
+  - Coliseum Gekko Moriah
+  - Colo Moriah
+  - Coliseum Moriah
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.25x, recovers 3x character's
+    RCV in HP at the end of each turn
+special:
+  name: Horn Blade Shadow
+  description: Changes the orb of this character into a [DEX] orb and deals
+    300,000 Fixed damage to one enemy
+  cooldown: 30
+  maxLevel: 15
+sailor:
+  - description: If your Captain is a Driven character, boosts base ATK of this
+      character by 100
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Perona, Absalom and Hogback
+  levels:
+    - Reduces damage received from [QCK] characters by 1%.
+    - Reduces damage received from [QCK] characters by 1%.
+    - Reduces damage received from [QCK] characters by 2%.
+    - Reduces damage received from [QCK] characters by 3%.
+    - Reduces damage received from [QCK] characters by 4%.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 30
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - rcv: 20
+    - atk: 20
+    - hp: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 70
+    - type: sailor
+    - atk: 70
+    - cooldown: 7
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 5
+        - value: 7
+        - value: 100

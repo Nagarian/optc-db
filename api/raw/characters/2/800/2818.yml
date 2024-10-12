@@ -1,0 +1,271 @@
+type: DUAL
+name: Shanks & Mihawk - Strong Swordsman's Reunion
+japanName: シャンクス＆ミホーク 屈強な剣士らの再会
+family:
+  - Shanks
+  - DraculeMihawk
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 882
+    atk: 452
+    rcv: 120
+  maxLvl:
+    hp: 1512
+    atk: 933
+    rcv: 244
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 182473
+aliases:
+  - Shanks&Mihawk
+  - Mihawk&Shanks
+  - ShanksMihawk
+  - MihawkShanks
+  - Raid Shanks and Mihawk
+  - Mishanks
+evolution:
+  - id: 2819
+    evolvers:
+      - 118
+      - 96
+      - 1180
+      - 83
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3x, reduces damage received by
+    20% and makes [TND] and [RCV] orbs beneficial for Slasher characters
+special:
+  name: A Feast for the New Age
+  description: Reduces Bind, Silence and ATK DOWN duration by 2 turns and becomes
+    Shanks & Mihawk for 2 turns. If HP is below 50% at the time the special is
+    activated, delays all enemies by 2 turns and boosts ATK against delayed
+    enemies by 1.75x for 2 turns
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of [QCK] and [INT] characters by 50
+characters:
+  swap:
+    description: Boosts chances of getting [QCK], [INT] and [RCV] orbs for 1 turn
+      and randomizes all non-Matching orbs
+  character1:
+    name: Red-Haired Shanks - Strong Swordsman's Reunion
+    japanName: シャンクス 屈強な剣士らの再会
+    class:
+      - Slasher
+      - Free Spirit
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 292
+        atk: 238
+        rcv: 52
+      maxLvl:
+        hp: 1008
+        atk: 591
+        rcv: 161
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher characters by 2x and reduces damage received by 10%
+    sailor:
+      - description: Boosts base ATK of [QCK] characters by 50
+  character2:
+    name: Hawk Eyes Mihawk - Strong Swordsman's Reunion
+    japanName: ミホーク 屈強な剣士らの再会
+    class:
+      - Slasher
+      - Cerebral
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 213
+        atk: 217
+        rcv: 44
+      maxLvl:
+        hp: 906
+        atk: 669
+        rcv: 114
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher characters by 2.25x and makes [TND] and [RCV]
+        orbs beneficial for Slasher characters
+    sailor:
+      - description: Boosts base ATK of [INT] characters by 50
+rumble:
+  stats:
+    def: 180
+    rumbleType: SPT
+    spd: 180
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 38
+      effects:
+        - amount: 6
+          effect: recharge
+          type: percentage
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          effect: boon
+          duration: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 20
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          duration: 20
+          targeting:
+            targets:
+              - crew
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 21
+        - override:
+            duration: 21
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 23
+        - override:
+            duration: 23
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 24
+        - override:
+            duration: 24
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 26
+        - override:
+            duration: 26
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            level: 2
+            duration: 28
+        - override:
+            level: 2
+            duration: 28
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            level: 2
+            duration: 29
+        - override:
+            level: 2
+            duration: 29
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            level: 2
+            duration: 31
+        - override:
+            level: 2
+            duration: 31
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            level: 2
+            duration: 32
+        - override:
+            level: 2
+            duration: 32
+    - cooldown: 38
+      effects:
+        - {}
+        - {}
+        - override:
+            level: 3
+            duration: 34
+        - override:
+            level: 3
+            duration: 34

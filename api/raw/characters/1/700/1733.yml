@@ -1,0 +1,97 @@
+type: STR
+name: "Cat Viper: King of the Night - Whale Forest Guardian"
+japanName: “夜の王”ネコマムシ くじらの森の守護神
+family: []
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1200
+    atk: 678
+    rcv: 149
+  maxLvl:
+    hp: 2440
+    atk: 1375
+    rcv: 315
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 66571
+aliases:
+  - Nekopara
+  - Colo Nekomamushi
+  - Coliseum Nekomamushi
+  - Cat Viper
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x, boosts HP of Striker and
+    Powerhouse characters by 1.25x
+special:
+  name: Battle Guardian
+  description: Deals 50x character's ATK in Typeless Fixed True damage to one
+    enemy. If enemies have All Debuff Protection or Delay Debuff Protection at
+    the time the special was activated, boosts ATK of Striker and Powerhouse
+    characters by 1.75x for 1 turn and changes all orbs, including [BLOCK] orbs,
+    into Matching orbs
+  cooldown: 21
+  maxLevel: 13
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 30
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Pedro
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - hp: 70
+    - rcv: 20
+    - rcv: 20
+    - hp: 110
+    - type: sailor
+    - atk: 50
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

@@ -1,0 +1,36 @@
+type: STR
+name: Red Nomad - Shandian Warrior
+japanName: 赤の遊牧隊　隊員 シャンディアの戦士
+family:
+  - RedShandianWarrior
+class:
+  - Striker
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 79
+    atk: 45
+    rcv: 26
+  maxLvl:
+    hp: 494
+    atk: 302
+    rcv: 87
+cost: 6
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 11545
+aliases: []
+evolution:
+  - id: 490
+    evolvers:
+      - 115
+      - 300
+special:
+  name: Attack Boost STR
+  description: Boosts ATK of [STR] characters by 1.2x for 1 turn
+  cooldown: 25
+  maxLevel: 11

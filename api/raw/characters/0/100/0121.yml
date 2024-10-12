@@ -1,0 +1,35 @@
+type: STR
+name: Fighter Group Cabin Boy - Red Pirates
+japanName: 格闘隊 雑用 レッドパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 1
+stats:
+  combo: 6
+  minLvl:
+    hp: 79
+    atk: 54
+    rcv: 6
+  maxLvl:
+    hp: 327
+    atk: 141
+    rcv: 17
+cost: 2
+slots: 0
+maxExp: 2330
+maxLevel: 10
+flags: []
+links:
+  gamewithId: 2790
+aliases: []
+evolution:
+  - id: 142
+    evolvers:
+      - 89
+special:
+  name: Hyper Straight
+  description: Deals 10x character's ATK in character's Type damage to one enemy
+  cooldown: 40
+  maxLevel: 26

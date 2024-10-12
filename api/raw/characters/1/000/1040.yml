@@ -1,0 +1,48 @@
+type: STR
+name: Jozu - Whitebeard's Third Division Commander
+japanName: ジョズ 白ひげ海賊団３番隊隊長
+family:
+  - Jozu
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 626
+    atk: 252
+    rcv: 60
+  maxLvl:
+    hp: 1464
+    atk: 700
+    rcv: 169
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 29621
+aliases:
+  - Colo Jozu
+  - Coliseum Jozu
+evolution:
+  - id: 1041
+    evolvers:
+      - 118
+      - 83
+      - 84
+      - 95
+      - 300
+captain:
+  name: ""
+  description: Boosts ATK and HP of [STR] characters by 1.5x
+special:
+  name: Ice Throw
+  description: Deals 30x character's ATK in [STR] damage to all enemies. If HP is
+    below 30% at the time the special is activated, boosts ATK of all characters
+    by 1.5x for 1 turn.
+  cooldown: 29
+  maxLevel: 12

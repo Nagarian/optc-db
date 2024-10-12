@@ -1,0 +1,139 @@
+type: DUAL
+oldDbId: 3331
+name: Usopp & Chopper - Ex-Weakling Duo
+japanName: ウソップ＆チョッパー 脱・弱小コンビ
+family:
+  - Usopp
+  - TonyTonyChopper
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1021
+    atk: 555
+    rcv: 165
+  maxLvl:
+    hp: 2852
+    atk: 1417
+    rcv: 275
+cost: 30
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 274464
+aliases:
+  - Usopp&Chopper
+  - Chopper&Usopp
+  - UsoppChopper
+  - ChopperUsopp
+  - Raid Usopp and Chopper
+  - UsoCho
+captain:
+  name: ""
+  description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+    your crew, boosts ATK of all characters by 3.25x, their HP by 1.25x, boosts
+    chances of getting Matching orbs and makes [TND] and [RCV] orbs beneficial
+    for all characters.
+special:
+  name: Killer UsoCho Horn Explosion
+  description: Deals 80x character's ATK in [QCK] damage to one enemy and becomes
+    Usopp & Chopper for 2 turns. If the enemy is delayed, recovers 20% of crew's
+    MAX HP, boosts Orb Effects of all characters by 1.75x for 2 turns and boosts
+    ATK of all characters by 1.75x for 2 turns. Otherwise, delays all enemies by
+    1 turn, boosts Orb Effects of all characters by 1.5x for 1 turn and boosts
+    ATK of all characters by 1.5x for 1 turn.
+  cooldown: 28
+  maxLevel: 16
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+  - description: Boosts base ATK of top row characters by 40
+characters:
+  swap:
+    description: Recovers 3% of crew's MAX HP and adds 0.3x to Chain multiplier for 1 turn
+  character1:
+    name: Usopp - Ex-Weakling Duo
+    japanName: ウソップ 脱・弱小コンビ
+    class:
+      - Shooter
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 929
+        atk: 530
+        rcv: 105
+      maxLvl:
+        hp: 2422
+        atk: 1359
+        rcv: 235
+    captain:
+      name: ""
+      description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+        your crew, boosts ATK of all characters by 2.75x, their HP by 1.25x and
+        makes [TND] and [RCV] orbs beneficial for all characters.
+    sailor:
+      - description: Makes [STR] orbs beneficial for this character
+      - description: Boosts base ATK of top row characters by 40
+  character2:
+    name: Chopper - Ex-Weakling Duo
+    japanName: チョッパー 脱・弱小コンビ
+    class:
+      - Striker
+      - Powerhouse
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 929
+        atk: 521
+        rcv: 128
+      maxLvl:
+        hp: 2422
+        atk: 1332
+        rcv: 270
+    captain:
+      name: ""
+      description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+        your crew, boosts ATK of all characters by 2.75x, their HP by 1.25x and
+        boosts chances of getting Matching orbs.
+    sailor:
+      - description: Makes [STR] orbs beneficial for this character
+      - description: Boosts base ATK of top row characters by 40
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 30
+    - hp: 30
+    - hp: 45
+    - slot: 1
+    - atk: 35
+    - rcv: 25
+    - hp: 60
+    - atk: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7

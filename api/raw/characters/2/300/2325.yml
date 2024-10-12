@@ -1,0 +1,94 @@
+type: PSY
+name: Usoland - Leader of Operation S.O.P.
+japanName: ウソランド 「ＳＯＰ作戦」指揮官
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 912
+    atk: 516
+    rcv: 205
+  maxLvl:
+    hp: 2140
+    atk: 1288
+    rcv: 414
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 126506
+aliases:
+  - Limited Usoland
+  - Secret Usoland
+  - Limited Usopp
+  - Secret Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 3.75x following a chain of Good
+    > Great > PERFECT hits and reduces damage received by 7%.
+special:
+  name: "Green Star: Skull Bombgrass"
+  description: Deals 15% of enemies' current HP in damage to one enemy, reduces
+    enemies' Threshold Damage Reduction, ATK Up and End of Turn Damage/Percent
+    Cut Buffs duration by 7 turns. If enemies have Delay Debuff Protection or
+    All Debuff Protection at the time the special was activated, adds 0.75x to
+    Chain multiplier for 1 turn and makes [STR], [DEX] and [QCK] orbs beneficial
+    for Shooter characters for 3 turns
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: Boosts base ATK and HP of Shooter characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shooter characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 15
+    - type: potential
+    - rcv: 20
+    - hp: 30
+    - hp: 45
+    - cooldown: 1
+    - hp: 50
+    - hp: 60
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - atk: 45
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

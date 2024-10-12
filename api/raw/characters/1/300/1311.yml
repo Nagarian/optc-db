@@ -1,0 +1,51 @@
+type: INT
+name: Boa Marigold - Kuja Warrior
+japanName: ボア・マリーゴールド 九蛇の戦士
+family:
+  - BoaMarigold
+class:
+  - Slasher
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 245
+    atk: 116
+    rcv: 24
+  maxLvl:
+    hp: 1209
+    atk: 462
+    rcv: 99
+cost: 16
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 43752
+aliases:
+  - Colo Marigold
+  - Coliseum Marigold
+  - Colo Boa Marigold
+  - Coliseum Boa Marigold
+evolution:
+  - id: 1312
+    evolvers:
+      - 117
+      - 78
+      - 82
+      - 84
+      - 88
+captain:
+  name: ""
+  description: Boosts ATK and HP of Powerhouse characters by 1.5x
+special:
+  name: King Cobra Machetes
+  description: Deals 20x character's ATK in [INT] damage to all enemies. Reduces
+    enemies' Threshold Damage Reduction duration by 1 turn
+  cooldown: 25
+  maxLevel: 11
+  notes: Damage Threshold is the buff enemies gain that greatly reduces damage
+    received over a certain amount

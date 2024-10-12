@@ -1,0 +1,35 @@
+type: DEX
+name: Shooter Group Cabin Boy - Green Pirates
+japanName: 狙撃隊 雑用 グリーンパイレーツ
+family:
+  - ShooterGroupCrewPirates
+class:
+  - Shooter
+rarity: 1
+stats:
+  combo: 6
+  minLvl:
+    hp: 37
+    atk: 15
+    rcv: 26
+  maxLvl:
+    hp: 123
+    atk: 51
+    rcv: 81
+cost: 3
+slots: 0
+maxExp: 2330
+maxLevel: 10
+flags: []
+links:
+  gamewithId: 2355
+aliases: []
+evolution:
+  - id: 159
+    evolvers:
+      - 91
+special:
+  name: "[DEX] Slot Change [RCV]"
+  description: Changes [DEX] orbs into [RCV] orbs
+  cooldown: 15
+  maxLevel: 9

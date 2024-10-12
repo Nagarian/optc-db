@@ -1,0 +1,386 @@
+type: DEX
+name: Sir Crocodile - Ruler of the Kingdom of Sand
+japanName: サー・クロコダイル 砂の国を統べる者
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Driven
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1702
+    atk: 844
+    rcv: 135
+  maxLvl:
+    hp: 3404
+    atk: 1688
+    rcv: 270
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 305251
+aliases:
+  - Super Class (SC) Crocodile
+  - V2 TM Legend Croc
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Cerebral characters by 5x, boosts ATK of all
+    other characters by 3.75x otherwise and boosts HP of all characters by 1.3x.
+    If HP is above 70% at the start of the stage, deals 10% of enemies' current
+    HP in damage to all enemies at the start of every stage. If HP is above 70%
+    at the start of the turn, Cerebral characters who attack with a Type
+    advantage will gain a matching orb after attacking. If HP is below 50% at
+    the start of the turn, recovers 2,000 HP at the end of each turn and reduces
+    damage received by 20%.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Monkey
+    D. Luffy, Nefertari Vivi, Nico Robin, Daz Bones (Mr. 1), Zala (Miss
+    Doublefinger), Bentham (Mr. 2, Bon Clay), Galdino (Mr. 3), Marianne (Miss
+    Goldenweek), Babe (Mr. 4), Drophy (Miss Merry Christmas), Gem (Mr. 5) or
+    Mikita (Miss Valentine), excluding Support members or HP must be below 50%."
+  description: Deals 10% of enemies' current HP in damage to all enemies, changes
+    [EMPTY], [BLOCK], [BOMB], [RCV] and [G] orbs into Matching orbs, removes HP
+    conditions from this character's Abilities and transforms all Cerebral
+    characters into Super Cerebral characters.
+  notes: The HP condition removal applies to, but is not limited to, Captain and
+    Special abilities but does not affect Potential abilities. This effect can
+    be cleared by enemy buff clearing effects.
+special:
+  name: "Drastic Measures: Desert la Spada"
+  description: Reduces Special Cooldown of Cerebral characters by 1 turn and
+    boosts ATK of Cerebral characters by 2.5x for 1 turn. If HP is below 50% or
+    when this character's Special Counter is 1 at the time the special is
+    activated, sets Chain Boundaries to 3.0x and 40.0x for 3 turns, sets Chain
+    Boundaries to 2.5x and 35.0x for 2 turns otherwise.
+  cooldown: 20
+  maxLevel: 6
+  notes: Special Counter counts the amount of times that the character's special
+    has been used in the adventure. This count can not be reset by Accumulated
+    Value Clearing Enemy Effects.
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Makes [DEX] orbs beneficial for Cerebral characters
+support:
+  type: descriptive
+  criteria: Nico Robin and Daz Bones (Mr. 1)
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 3 turns.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 3 turns and sets Chain
+      Boundaries to 2.0x and 10.0x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 15
+    - hp: 10
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - rcv: 10
+    - atk: 20
+    - type: sailor
+    - atk: 20
+    - rcv: 20
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - hp: 60
+    - rcv: 20
+    - rcv: 30
+    - hp: 60
+    - atk: 30
+    - type: sailor
+    - hp: 90
+    - atk: 40
+    - hp: 90
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - hp: 50
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - rcv: 50
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Pinch Healing
+      levels:
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 15
+        - value: 1.5
+          threshold: 25
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 189
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          effect: buff
+          condition:
+            count: 5
+            stat: heal
+            type: trigger
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+        - override:
+            level: 2
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 2500
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1600
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: fixed
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 2750
+        - override:
+            amount: 1700
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 3000
+        - override:
+            amount: 1800
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 3250
+        - override:
+            amount: 1900
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 3500
+        - override:
+            amount: 2000
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 3750
+        - override:
+            amount: 2100
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 4000
+        - override:
+            amount: 2200
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 4250
+        - override:
+            amount: 2300
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 4500
+        - override:
+            amount: 2400
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 5000
+        - override:
+            amount: 2500
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

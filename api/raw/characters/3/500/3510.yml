@@ -1,0 +1,340 @@
+type: DEX
+name: Brook - Thunder Cloud Slicing Soul King
+japanName: ブルック 雷雲斬る“魂王”
+family:
+  - Brook
+class:
+  - Free Spirit
+  - Slasher
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1740
+    atk: 791
+    rcv: 221
+  maxLvl:
+    hp: 3390
+    atk: 1583
+    rcv: 443
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 117867
+aliases:
+  - Mega/Super/6+ Brook
+  - V1 Legend Brook
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x, by 3.25x instead if HP is
+    above 99% at the start of the turn, makes [STR] and [QCK] orbs beneficial
+    for all characters, deals 10% of enemies' current HP in damage to all
+    enemies at the end of each turn and revives the team after a GAME OVER once
+    per adventure.
+  notes: The revive is not Resilience since you can still die, it's similar to
+    using a gem to revive. This does not work when you are despaired as it
+    nullifies all captain effects.
+special:
+  name: "Three-Pace Hum: Soul Notch Slash"
+  description: Recovers 14,343 HP, recovers 4,343 HP at the end of the turn for 3
+    turns, adds 0.8x to Chain multiplier for 2 turns, reduces damage received by
+    90% for 1 turn, changes [BLOCK] orbs into Matching orbs and makes [STR],
+    [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 2
+    turns. If the HP of the enemy with the highest Maximum HP is below 434,300,
+    instantly defeats all enemies, otherwise, delays all enemies by 1 turn,
+    deals 20% of enemies' current HP in damage to all enemies.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Makes [RCV] and [TND] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Pedro, Monkey D. Luffy, Nami, Carrot and Tony Tony Chopper
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 10
+    - hp: 30
+    - type: potential
+    - rcv: 10
+    - atk: 15
+    - hp: 40
+    - type: sailor
+    - rcv: 10
+    - atk: 20
+    - hp: 40
+    - rcv: 10
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - atk: 30
+    - hp: 50
+    - rcv: 20
+    - atk: 30
+    - hp: 60
+    - hp: 60
+    - hp: 70
+    - rcv: 20
+    - atk: 30
+    - cooldown: 1
+    - type: sailor
+    - hp: 100
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - captain:
+        description: Boosts ATK of all characters by 2.5x, by 3.5x instead if HP is
+          above 99% at the start of the turn, makes [STR], [QCK], [RCV] and
+          [TND] orbs beneficial for all characters, deals 10% of enemies'
+          current HP in damage to all enemies at the end of each turn and
+          revives the team after a GAME OVER once per adventure.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 99
+rumble:
+  stats:
+    def: 129
+    rumbleType: RCV
+    spd: 139
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 2100
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: fixed
+        - attributes:
+            - DEF
+          effect: buff
+          duration: 30
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2200
+        - override:
+            level: 1
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2300
+        - override:
+            level: 1
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2400
+        - override:
+            level: 1
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2500
+        - override:
+            level: 2
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2600
+        - override:
+            level: 2
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2700
+        - override:
+            level: 2
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2800
+        - override:
+            level: 3
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2900
+        - override:
+            level: 3
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 3000
+        - override:
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

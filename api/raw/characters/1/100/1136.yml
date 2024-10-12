@@ -1,0 +1,49 @@
+type: QCK
+name: Fukuro World Government Spy Group
+japanName: フクロウ 世界政府直下暗躍諜報機関
+family:
+  - Fukuro
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 73
+    atk: 32
+    rcv: 38
+  maxLvl:
+    hp: 1462
+    atk: 730
+    rcv: 342
+cost: 20
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 34499
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and HP of [QCK] characters by 1.5x
+special:
+  name: "Stern Beast: Secret Technique: 'Owl Thrasher' Sneak Attack"
+  description: Changes [TND] and [RCV] orbs of [QCK] characters into [QCK] orbs
+  cooldown: 16
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Rob Lucci, Kalifa, Blueno, Jabra, Kaku and Kumadori
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

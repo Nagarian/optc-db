@@ -1,0 +1,399 @@
+type: INT
+name: "Shanks: Moon Knight - Happy Spooky Halloween!"
+japanName: シャンクス　ムーンナイト Happy Scary Halloween
+family:
+  - Shanks
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 719
+    atk: 445
+    rcv: 41
+  maxLvl:
+    hp: 1612
+    atk: 982
+    rcv: 98
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 233441
+aliases:
+  - V3 Legend Shanks
+  - Halloween (HWeen) Shanks
+evolution:
+  - id: 3118
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 4x-5x based on the timing of the
+    attack of the previous unit in the chain, boosts ATK of all other characters
+    by 3.75x, boosts HP of all characters by 1.3x and recovers 0.5x this
+    character's RCV at the end of the turn for each time you hit a PERFECT.
+special:
+  name: A Flash of Moonlight
+  description: Boosts the Color Affinity of Slasher and Cerebral characters by 2x
+    for 3 turns. If your crew has 4 or more [INT] characters, adds 1.0x to Chain
+    multiplier for 3 turns.
+  cooldown: 19
+  maxLevel: 6
+rumble:
+  stats:
+    def: 130
+    rumbleType: ATK
+    spd: 200
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 40
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 43
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 46
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 49
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 52
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 55
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 58
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 61
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1.7
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 64
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 4
+            targets:
+              - enemies
+        - amount: 2
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk

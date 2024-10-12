@@ -1,0 +1,41 @@
+type: INT
+name: Iceburg
+japanName: アイスバーグ
+family:
+  - Iceburg
+class:
+  - Shooter
+  - Cerebral
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 155
+    atk: 69
+    rcv: 38
+  maxLvl:
+    hp: 790
+    atk: 392
+    rcv: 167
+cost: 9
+slots: 2
+maxExp: 136167
+maxLevel: 35
+flags:
+  - sugo
+links:
+  gamewithId: 18187
+aliases:
+  - Iceberg
+evolution:
+  - id: 793
+    evolvers:
+      - 116
+      - 117
+      - 99
+special:
+  name: The Enthusiasm to Keep Skilled Workers in Line
+  description: Randomizes all orbs into either [STR], [QCK], [DEX], [PSY] or [INT]
+    orbs, switches orbs between slots 2 times and locks all orbs for 1 turn
+  cooldown: 22
+  maxLevel: 7

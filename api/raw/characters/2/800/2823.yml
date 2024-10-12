@@ -1,0 +1,284 @@
+type: STR
+name: X Drake - Animal Kingdom Pirates, Tobi Roppo
+japanName: X・ドレーク 百獣海賊団“飛び六胞”
+family:
+  - XDrake
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1294
+    atk: 562
+    rcv: 77
+  maxLvl:
+    hp: 3236
+    atk: 1406
+    rcv: 192
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 182710
+aliases:
+  - TM X Drake
+  - TM Drake
+  - Wano Drake
+  - Wano X Drake
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.75x
+special:
+  name: "Flying Six: Double Edge"
+  description: Changes Badly Matching orbs into Matching orbs, deals
+    100,000-2,500,000 Typeless damage to one enemy and reduces enemies' Barrier
+    duration by 1-5 turns depending on how many [STR], [DEX] or [QCK] orbs used
+    in attacks.
+  cooldown: 36
+  maxLevel: 8
+  notes: |-
+    0-9 Orbs: 1 turn reduction and 100,000 damage  
+    10-24 Orbs: 3 turns reduction and 1,500,000 damage  
+    25+ Orbs: 5 turns reduction and 2,500,000 damage
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 30
+  - description: If this character has an [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Basil Hawkins, Jack and Kaido
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Slasher characters by 2x and boosts chances of
+          getting [STR] orbs
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Slasher characters by 2.25x and boosts chances of
+          getting [STR] orbs
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 30
+    - rcv: 30
+    - captain:
+        description: Boosts ATK of Slasher characters by 2.5x and boosts chances of
+          getting [STR] orbs
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Slasher characters by 2.75x and boosts chances of
+          getting [STR] orbs
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Slasher characters by 3x and boosts chances of
+          getting [STR] orbs
+    - hp: 90
+    - hp: 110
+    - captain:
+        description: Boosts ATK of Slasher characters by 3.25x, reduces damage received
+          by 10% and boosts chances of getting [STR] orbs
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 40
+        - value: 3
+          threshold: 50
+        - value: 4
+          threshold: 60
+        - value: 5
+          threshold: 70
+        - value: 7
+          threshold: 80
+rumble:
+  stats:
+    def: 211
+    rumbleType: SPT
+    spd: 172
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - amount: 100
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 35
+            type: time
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 800
+          effect: damage
+          type: fixed
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          duration: 10
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 825
+        - override:
+            duration: 11
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 850
+        - override:
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 875
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 900
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 925
+        - override:
+            level: 4
+            duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 950
+        - override:
+            level: 4
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 975
+        - override:
+            level: 5
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            level: 7
+            duration: 20

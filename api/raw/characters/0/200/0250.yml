@@ -1,0 +1,45 @@
+type: PSY
+name: Marco
+japanName: マルコ
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 172
+    atk: 125
+    rcv: 64
+  maxLvl:
+    hp: 1030
+    atk: 676
+    rcv: 220
+cost: 18
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 4707
+aliases: []
+evolution:
+  - id: 251
+    evolvers:
+      - 118
+      - 87
+      - 94
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 3x if HP is above 99% at the
+    start of the turn
+special:
+  name: Blue Flame Rebirth
+  description: Recovers all missing HP
+  cooldown: 30
+  maxLevel: 11

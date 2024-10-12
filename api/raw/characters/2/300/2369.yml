@@ -1,0 +1,114 @@
+type: STR
+name: Charlotte Montd'Or - Minister of Cheese & 19th Son of the Charlotte Family
+japanName: シャーロット・モンドール チーズ大臣　シャーロット家１９男
+family:
+  - CharlotteMontdOr
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1013
+    atk: 902
+    rcv: 62
+  maxLvl:
+    hp: 2740
+    atk: 1390
+    rcv: 280
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 136391
+aliases:
+  - Montdor
+  - Mont Dor
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2x-2.75x based on the
+    timing of the attack of the previous unit in the chain and recovers 700 HP
+    at the end of each turn
+  notes: A hit below Good or a Miss will boost the ATK of the next unit by 2x, a
+    Good hit by 2.25x, a Great hit by 2.5x and a PERFECT hit by 2.75x.
+special:
+  name: Sealed Books
+  description: Reduces enemies' Percent Damage Reduction and Increased Defense
+    duration by 4 turns, reduces Silence, Increase Damage Taken and Burn
+    duration by 4 turns. If your captain is a [STR] or [PSY] character, boosts
+    the Color Affinity of [STR] and [PSY] characters by 1.75x for 2 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: If your captain is a [STR] or [PSY] character, makes [QCK] orbs
+      beneficial for [STR] and [PSY] characters
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+  criteria: Charlotte Katakuri, Charlotte Linlin (Big Mom), Charlotte Galette and
+    Charlotte Opera
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 9
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 30
+    - cooldown: 1
+    - rcv: 50
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - hp: 80
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

@@ -1,0 +1,56 @@
+type: INT
+name: "Tashigi - Navy HQ Officer: Flower of Justice"
+japanName: たしぎ 海軍本部少尉・正義の華
+family:
+  - Tashigi
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 932
+    atk: 428
+    rcv: 164
+  maxLvl:
+    hp: 1804
+    atk: 890
+    rcv: 378
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 18004
+aliases:
+  - Kimono Tashigi
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x and their RCV by 1.5x
+special:
+  name: Smile of a Natural Beauty
+  description: Delays all enemies by 1 turn, recovers a small random amount of HP
+  cooldown: 11
+  maxLevel: 1
+  notes: "`randomHeal : ? : ?`"
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - HP
+  criteria: Smoker
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 12
+      reduction: 5

@@ -1,0 +1,50 @@
+type: DEX
+name: Sabo - Bitter Refinement
+japanName: ビターな気品 サボ
+family:
+  - Sabo
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 284
+    atk: 133
+    rcv: 43
+  maxLvl:
+    hp: 900
+    atk: 403
+    rcv: 152
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 91340
+aliases:
+  - TM Sabo
+  - Valentines Sabo
+evolution:
+  - id: 1972
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.3x and their HP and RCV by
+    1.05x and if HP is above 70% or below 30% at the start of the turn, boosts
+    Chain Multiplier Growth Rate by 1.1x
+special:
+  name: Blissful Selection
+  description: If your Captain is a Cerebral character, changes [STR], [DEX],
+    [QCK], [INT] and [PSY] orbs of Cerebral characters into Matching orbs,
+    reduces the defense of all enemies by 80% for 1 turn and boosts ATK against
+    enemies with reduced defense by 1.75x for 1 turn
+  cooldown: 36
+  maxLevel: 8

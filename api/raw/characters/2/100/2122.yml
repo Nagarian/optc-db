@@ -1,0 +1,53 @@
+type: INT
+name: Neptune - Great Knight of the Sea
+japanName: ネプチューン 海の大騎士
+family:
+  - Neptune
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 377
+    atk: 153
+    rcv: 41
+  maxLvl:
+    hp: 1379
+    atk: 935
+    rcv: 133
+cost: 25
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 107869
+aliases:
+  - Colo Neptune
+  - Coliseum Neptune
+evolution:
+  - id: 2123
+    evolvers:
+      - 118
+      - 99
+      - 1180
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x and boosts EXP gained by 1.25x
+  notes: EXP boost does not take effect if he becomes your captain in the middle
+    of the adventure.
+special:
+  name: Great Ocean Current of Resuscitation
+  description: Reduces Despair and ATK DOWN duration by 5 turns and reduces
+    enemies' Resilience Buffs duration by 5 turns. Reduces the defense of all
+    enemies by 80% for 3 turns and boosts Orb Effects of Cerebral and Powerhouse
+    characters by 1.75x for 3 turns
+  cooldown: 30
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral characters by 50

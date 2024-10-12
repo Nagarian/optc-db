@@ -1,0 +1,87 @@
+type: QCK
+name: Lucky Roux - Red-Hair Pirates Officer
+japanName: ラッキー・ルウ 赤髪海賊団幹部
+family:
+  - LuckyRoux
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1086
+    atk: 489
+    rcv: 133
+  maxLvl:
+    hp: 2713
+    atk: 1222
+    rcv: 332
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 151194
+aliases:
+  - Limited Lucky Roux
+  - Secret Lucky Roux
+  - Limited Lucky Roo
+  - Secret Lucky Roo
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 1.25x and their HP by 1.2x
+special:
+  name: Meat Power Shot
+  description: Reduces Bind duration by 5 turns, changes orbs of Free Spirit,
+    Shooter and Slasher characters into [QCK] orbs. If you are on a Treasure
+    Map, boosts ATK of Free Spirit, Shooter and Slasher characters by
+    1.75x-2.25x for 1 turn depending on your Treasure Map Level.
+  cooldown: 12
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x ATK boost  
+    Level 11-20: 2x ATK boost  
+    Level 21+: 2.25x ATK boost
+support:
+  type: descriptive
+  criteria: Shanks and Ben Beckman
+  levels:
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 20
+    - hp: 40
+    - slot: 1
+    - rcv: 40
+    - atk: 30
+    - atk: 40
+    - rcv: 50
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7

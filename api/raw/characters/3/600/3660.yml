@@ -1,0 +1,98 @@
+type: PSY
+name: Robin - Archaeologist Gazing at the Sea
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1625
+    atk: 701
+    rcv: 97
+  maxLvl:
+    hp: 3350
+    atk: 1552
+    rcv: 243
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - Summer TM Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [PSY] characters by 3x and boosts RCV of
+    [DEX] and [PSY] characters by 1.3x.
+special:
+  name: Sunshine Spear Hands
+  description: Deals 50x character's ATK in [PSY] damage to one enemy, reduces
+    Silence and ATK DOWN duration by 5 turns, changes [BLOCK] orbs into Matching
+    orbs and boosts ATK of [DEX] and [PSY] characters by 2.25x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Nami, Tony Tony Chopper and Franky
+  levels:
+    - Once per adventure, when you reach the final stage, reduces Silence
+      duration by 1 turn on the supported character.
+    - Once per adventure, when you reach the final stage, reduces Silence
+      duration by 1 turn on the supported character.
+    - Once per adventure, when you reach the final stage, reduces Silence
+      duration by 2 turns on the supported character.
+    - Once per adventure, when you reach the final stage, reduces Silence
+      duration by 3 turns on the supported character.
+    - Once per adventure, when you reach the final stage, reduces Silence
+      duration by 3 turns on the supported character and reduces Special
+      Cooldown of supported character by 1 turn.
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - atk: 30
+    - rcv: 20
+    - atk: 40
+    - slot: 1
+    - hp: 30
+    - rcv: 20
+    - hp: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 75
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

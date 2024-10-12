@@ -1,0 +1,52 @@
+type: STR
+name: Dogstorm
+japanName: イヌアラシ
+family:
+  - Inuarashi
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 357
+    atk: 247
+    rcv: 34
+  maxLvl:
+    hp: 1291
+    atk: 829
+    rcv: 210
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 55743
+aliases:
+  - Inuyasha
+  - Dogstorm
+  - Doggo Storm
+  - V1 Legend Inuarashi
+evolution:
+  - id: 1571
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 100
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.75x and boosts Chain
+    Multiplier Growth Rate by 1.5x if HP is below 30% at the start of the turn,
+    boosts ATK of Cerebral characters by 2.5x otherwise
+special:
+  name: King Sword Shine
+  description: Reduces crew's current HP by 80%, deals 60x character's ATK in
+    [STR] damage to one enemy and adds 80x character's ATK as Additional
+    Typeless Damage for 1 turn
+  cooldown: 19
+  maxLevel: 6

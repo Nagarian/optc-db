@@ -1,0 +1,96 @@
+type: QCK
+name: Usopp - Straw Hat Pirates' Attack
+japanName: ウソップ 特攻の麦わらの一味
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1167
+    atk: 542
+    rcv: 174
+  maxLvl:
+    hp: 2301
+    atk: 954
+    rcv: 376
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - removed
+links:
+  gamewithId: 12649
+notes: "Strong World Batch has been entirely replaced. So this characte is now
+  available with a different artwork and id #1210."
+aliases:
+  - Strong World Usopp
+  - SW Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x and their RCV by 1.5x
+special:
+  name: Heavenly Dragon Star
+  description: Delays all enemies by 3 turns, deals 10% of enemies' current HP in
+    damage to all enemies
+  cooldown: 21
+  maxLevel: 8
+sailor:
+  - description: Boosts base RCV of Shooter characters by 10
+  - description: Boosts base ATK of Shooter characters by 50
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Vinsmoke Sanji
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - rcv: 30
+    - hp: 50
+    - atk: 30
+    - atk: 50
+    - hp: 80
+    - slot: 1
+    - rcv: 30
+    - hp: 120
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+          threshold: 6
+        - value: 1
+          threshold: 5
+        - value: 1
+          threshold: 4
+        - value: 2
+          threshold: 4
+        - value: 3
+          threshold: 4

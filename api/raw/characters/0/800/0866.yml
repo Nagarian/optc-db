@@ -1,0 +1,50 @@
+type: INT
+name: "Nico Robin - Cien Fleurs Wing: Flower"
+japanName: ニコ・ロビン 百花繚乱 ウイング“華”
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 238
+    atk: 203
+    rcv: 83
+  maxLvl:
+    hp: 1518
+    atk: 1061
+    rcv: 290
+cost: 15
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 20793
+aliases:
+  - Kimono Robin
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x
+special:
+  name: "Cien Fleur Wing: The Storm"
+  description: Boosts ATK of Slasher and Cerebral characters by 1.3x for 2 turns,
+    reduces Bind duration by 2 turns
+  cooldown: 24
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Franky and Brook
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

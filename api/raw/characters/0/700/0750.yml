@@ -1,0 +1,274 @@
+type: DEX
+name: Kaku - CP9's Strongest
+japanName: カク 歴代最強の「ＣＰ９」
+family:
+  - Kaku
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 8
+  minLvl:
+    hp: 1124
+    atk: 666
+    rcv: 147
+  maxLvl:
+    hp: 2440
+    atk: 1325
+    rcv: 272
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16961
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2x, boosts damage of [DEX] specials by 2x
+special:
+  name: "Tempest Kick: Sky Slicer"
+  description: Deals random [DEX] damage to all enemies, randomizes all orbs
+  cooldown: 23
+  maxLevel: 8
+  notes: "`random : 10,000 : 90,000`"
+sailor:
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn
+  - description: Boosts base ATK and HP of Slasher and Powerhouse characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kalifa, Rob Lucci, Blueno, Jabra, Fukuro, Kumadori, Spandam
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 11
+limitBreak:
+  path:
+    - atk: 50
+    - hp: 100
+    - rcv: 20
+    - type: potential
+    - hp: 100
+    - rcv: 30
+    - cooldown: 2
+    - type: sailor
+    - captain:
+        description: Boosts ATK of [DEX] characters by 2.25x and their HP by 1.25x and
+          boosts damage of [DEX] specials by 2x
+    - atk: 50
+    - slot: 1
+    - cooldown: 3
+    - cooldown: 4
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 119
+    rumbleType: ATK
+    spd: 140
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          condition:
+            count: 2
+            stat: Guard
+            type: trigger
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          condition:
+            count: 2
+            stat: Guard
+            type: trigger
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          condition:
+            count: 2
+            stat: Guard
+            type: trigger
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          condition:
+            count: 2
+            stat: Guard
+            type: trigger
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 7
+          condition:
+            count: 2
+            stat: Guard
+            type: trigger
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 31
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 33
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 34
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 36
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 37
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 39
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 40
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 42
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - amount: 45
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut

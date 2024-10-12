@@ -1,0 +1,50 @@
+type: STR
+name: Brook - Dressing Up for the Pirate Festival!
+japanName: ブルック Dress up for PIRATE FESTIVAL
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 940
+    atk: 480
+    rcv: 63
+  maxLvl:
+    hp: 2350
+    atk: 1201
+    rcv: 158
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 149421
+aliases:
+  - Dress Up Brook
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.75x their HP by 1.25x
+special:
+  name: Fashionable Soul
+  description: Delays all enemies by 1 turn and boosts Orb Effects of all
+    characters by 1.5x for 2 turns.
+  cooldown: 16
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin and Franky
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

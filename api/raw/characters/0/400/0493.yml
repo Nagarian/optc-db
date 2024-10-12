@@ -1,0 +1,37 @@
+type: PSY
+name: Yellow Hunter - Shandian Warrior
+japanName: 黄の狩猟隊　隊員 シャンディアの戦士
+family:
+  - YellowShandianWarrior
+class:
+  - Shooter
+rarity: 2
+stats:
+  combo: 4
+  minLvl:
+    hp: 38
+    atk: 20
+    rcv: 41
+  maxLvl:
+    hp: 210
+    atk: 115
+    rcv: 201
+cost: 5
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 11544
+aliases: []
+evolution:
+  - id: 495
+    evolvers:
+      - 117
+      - 81
+      - 87
+special:
+  name: Moderate Healing
+  description: Recovers 7x character's RCV in HP
+  cooldown: 20
+  maxLevel: 6

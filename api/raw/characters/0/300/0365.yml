@@ -1,0 +1,86 @@
+type: QCK
+name: Capone Gang Bege
+japanName: カポネ・ギャング・ベッジ
+family:
+  - CaponeBege
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 893
+    atk: 682
+    rcv: 110
+  maxLvl:
+    hp: 2122
+    atk: 1323
+    rcv: 313
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 7210
+aliases:
+  - Supernova Capone
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [QCK] characters by 2x
+special:
+  name: Gang Fortress
+  description: Changes [STR] and [DEX] orbs into [QCK] orbs
+  cooldown: 20
+  maxLevel: 11
+sailor:
+  - description: Boosts base RCV of all characters by 10
+  - description: Makes [PSY] and [INT] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Charlotte Chiffon, Vito and Gotti
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes [BLOCK] orbs of the supported character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      changes [BLOCK] orbs of the supported character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      changes [BLOCK] orbs of the supported character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      changes [BLOCK] orbs of the supported character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      changes [BLOCK] orbs of Shooter characters into Matching orbs.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 40
+    - hp: 40
+    - slot: 1
+    - cooldown: 2
+    - type: sailor
+    - rcv: 50
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50

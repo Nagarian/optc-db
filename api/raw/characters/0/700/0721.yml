@@ -1,0 +1,44 @@
+type: STR
+name: Jerry
+japanName: ジェリー
+family:
+  - Jerry
+class:
+  - Fighter
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 72
+    atk: 100
+    rcv: 32
+  maxLvl:
+    hp: 492
+    atk: 380
+    rcv: 104
+cost: 9
+slots: 1
+maxExp: 136167
+maxLevel: 35
+flags:
+  - fortnight
+links:
+  gamewithId: 16387
+aliases: []
+evolution:
+  - id: 722
+    evolvers:
+      - 117
+      - 78
+      - 89
+      - 95
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.5x if HP is above 99% at the
+    start of the turn
+special:
+  name: Screw Drop Kick
+  description: Randomizes all orbs, including [BLOCK] orbs
+  cooldown: 16
+  maxLevel: 10

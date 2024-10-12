@@ -1,0 +1,48 @@
+type: STR
+name: Kraken - Monster of the North
+japanName: クラーケン 北極の怪物
+family:
+  - Surume
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 1355
+    atk: 602
+    rcv: 118
+  maxLvl:
+    hp: 2700
+    atk: 1111
+    rcv: 33
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 7269
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: Kraken Tentacle Crush
+  description: Randomizes all orbs into either [STR] or [QCK] orbs, deals random
+    [STR] damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 1 : 15,000`"
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

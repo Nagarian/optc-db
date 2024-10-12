@@ -1,0 +1,93 @@
+type: PSY
+name: Treetop Pedro - Mokomo Dukedom
+japanName: 木の上のペドロ モコモ公国
+family:
+  - Pedro
+class:
+  - Cerebral
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1119
+    atk: 613
+    rcv: 92
+  maxLvl:
+    hp: 2316
+    atk: 1414
+    rcv: 179
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 87084
+aliases:
+  - Colo Pedro
+  - Coliseum Pedro
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x and makes [PSY] and [INT]
+    orbs beneficial for Cerebral characters
+special:
+  name: Explosive Reply
+  description: Reduces crew's current HP by 95%, deals 50x character's ATK in
+    Typeless Fixed True damage to all enemies, boosts the Color Affinity of
+    Cerebral characters by 1.75x for 2 turns
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of Cerebral characters by 35
+  - description: Makes [PSY] orbs beneficial for Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - rcv: 30
+    - cooldown: 1
+    - rcv: 40
+    - type: sailor
+    - rcv: 40
+    - slot: 1
+    - atk: 75
+    - hp: 100
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

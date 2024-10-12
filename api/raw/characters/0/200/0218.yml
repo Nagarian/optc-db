@@ -1,0 +1,44 @@
+type: DEX
+name: Roronoa Zoro - Streaming Wolf Swords
+japanName: ゾロ_刀狼流し（とうろうながし）
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 598
+    atk: 136
+    rcv: 5
+  maxLvl:
+    hp: 1902
+    atk: 582
+    rcv: 19
+cost: 15
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 4035
+aliases: []
+evolution:
+  - id: 219
+    evolvers:
+      - 118
+      - 86
+      - 102
+      - 94
+      - 91
+captain:
+  name: ""
+  description: Reduces damage received by 80% if HP is above 99% at the start of the turn
+special:
+  name: Streaming Wolf Swords
+  description: Reduces damage received from [STR] enemies by 100% for 1 turn
+  cooldown: 15
+  maxLevel: 8

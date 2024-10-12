@@ -1,0 +1,52 @@
+type: DEX
+name: Ice Witch Whitey Bay - Whitebeard Pirates Family
+japanName: “氷の魔女”ホワイティベイ 白ひげ海賊団傘下
+family:
+  - WhiteyBay
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 81
+    atk: 31
+    rcv: 31
+  maxLvl:
+    hp: 1931
+    atk: 913
+    rcv: 301
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 38342
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Driven characters by 2x and reduces RCV
+    of Slasher and Driven characters by 90%
+special:
+  name: Icebreaker Breakthrough Force
+  description: For Slasher and Driven characters, randomizes non-Matching orbs,
+    boosts ATK against enemies with increased defense by 1.3x for 1 turn
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of Driven characters by 10
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Edward Newgate (Whitebeard), Decalvan Brothers and Shuraiya Bascud
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

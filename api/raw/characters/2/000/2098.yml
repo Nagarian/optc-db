@@ -1,0 +1,252 @@
+type: QCK
+name: '"Gold Emperor" Gild Tesoro'
+japanName: '"黄金帝" ギルド・テゾーロ'
+family:
+  - GildTesoro
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 501
+    atk: 197
+    rcv: 71
+  maxLvl:
+    hp: 1859
+    atk: 791
+    rcv: 182
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 105086
+aliases:
+  - V2 Legend Gild Tesoro
+evolution:
+  - id: 2099
+    evolvers:
+      - 118
+      - 266
+      - 94
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: If you have a Striker, Shooter, Fighter, Slasher, Free Spirit,
+    Cerebral, Powerhouse and Driven character on your crew, boosts ATK of all
+    characters by 3.75x, their HP by 1.35x and boosts chances of getting
+    Matching orbs. Boosts ATK of all characters by 4.5 after scoring 4 GREATs in
+    a row. Scoring a PERFECT reduces ATK boost for the next attack by 30%.
+  notes: Scoring a PERFECT will reduce the ATK boost for the next character in the
+    chain, boosting ATK by 2.625x at the start of the chain, by 3.15x after
+    scoring 4 GREATs in a row, not for the rest of the battle.
+special:
+  name: Gon Inferno
+  description: Deals 200,000 Fixed damage to all enemies, changes all orbs of top
+    and bottom row characters into Matching orbs and locks the chain multiplier
+    at 3.25x for 1 turn.
+  cooldown: 16
+  maxLevel: 6
+rumble:
+  stats:
+    def: 304
+    rumbleType: DEF
+    spd: 128
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 100
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: above
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 850
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 875
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 900
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 925
+        - override:
+            level: 4
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 950
+        - override:
+            level: 4
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 975
+        - override:
+            level: 4
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 5
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1025
+        - override:
+            level: 5
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            level: 5
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 7
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

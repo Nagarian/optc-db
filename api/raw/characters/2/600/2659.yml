@@ -1,0 +1,136 @@
+type: QCK
+name: Smoker - An Unlikely Alliance
+japanName: スモーカー 寄せ集めの共同戦線
+family:
+  - Smoker
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1256
+    atk: 788
+    rcv: 139
+  maxLvl:
+    hp: 2601
+    atk: 1361
+    rcv: 203
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 161805
+aliases:
+  - Treasure Map Smoker
+  - TM Smoker
+  - Stampede Smoker
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Driven characters by 2x.
+  notes: Damage reduction is higher the lower the crew's HP is.
+special:
+  name: Armament Haki - White Blow
+  description: Deals 100x character's ATK in Typeless damage to one enemy and
+    boosts Orb Effects of Fighter and Driven characters by 2x for 1 turn. If
+    your Captain is a Fighter or Driven character, adds 0.7x to Chain multiplier
+    for 1 turn.
+  cooldown: 36
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Driven characters by 30
+  - description: Makes [DEX] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Sabo, Trafalgar D. Water Law, Boa Hancock and Buggy
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Fighter and Driven characters by 2x and reduces
+          damage received by 0%-10% depending on the crew's current HP.
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Fighter and Driven characters by 2.5x and reduces
+          damage received by 0%-15% depending on the crew's current HP.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 35
+    - rcv: 35
+    - captain:
+        description: Boosts ATK of Fighter and Driven characters by 2.75x and reduces
+          damage received by 0%-15% depending on the crew's current HP.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Fighter and Driven characters by 3x and reduces
+          damage received by 0%-20% depending on the crew's current HP.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 35
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Fighter and Driven characters by 3x and reduces
+          damage received by 0%-25% depending on the crew's current HP.
+    - hp: 70
+    - hp: 100
+    - captain:
+        description: Boosts ATK of Fighter and Driven characters by 3.25x and reduces
+          damage received by 0%-40% depending on the crew's current HP.
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7

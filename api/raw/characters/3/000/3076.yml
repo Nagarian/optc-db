@@ -1,0 +1,56 @@
+type: QCK
+name: Nefeltari Vivi - Dance Initiate
+japanName: ネフェルタリ・ビビ 演舞修める淑女
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 694
+    atk: 516
+    rcv: 67
+  maxLvl:
+    hp: 1250
+    atk: 930
+    rcv: 115
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 223980
+aliases:
+  - World Journey Vivi
+  - Chinese Vivi
+evolution:
+  - id: 3077
+    evolvers:
+      - 118
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: If HP is above 99% at the start of the turn, boosts ATK of Fighter
+    and Free Spirit characters by 3.5x, by 3x otherwise and recovers 5x
+    character's RCV in HP at the end of each turn.
+special:
+  name: Dancing Peacock
+  description: Reduces Burn duration by 5 turns and recovers 15x character's RCV
+    in HP at the end of each turn for 3 turns. If your captain is a Fighter or
+    Free Spirit character, boosts ATK of all characters by 1.75x for 1 turn and
+    if during that turn you score 4 PERFECT hits, boosts ATK of all characters
+    by 2x for 1 turn in the following turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Makes [STR] orbs beneficial for Fighter and Free Spirit characters

@@ -1,0 +1,180 @@
+type: STR
+name: Bartolomeo & Cavendish - The Straw Hats' Defenders
+japanName: バルトロメオ＆キャベンディッシュ “麦わら”を護る者達
+family:
+  - Bartolomeo
+  - Cavendish
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 923
+    atk: 601
+    rcv: 99
+  maxLvl:
+    hp: 2492
+    atk: 1154
+    rcv: 200
+cost: 50
+slots: 5
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 160439
+aliases:
+  - Cabbage
+  - Stampede Bartolomeo
+  - Stampede Cavendish
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Slasher characters by 1.75x
+special:
+  name: Brilliant Battle of Sword and Shield
+  description: Reduces damage received by 90% for 1 turn and boosts ATK of this
+    character by 2x for 1 turn.
+  cooldown: 17
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK of Driven and Slasher characters by 25
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+rumble:
+  stats:
+    def: 204
+    rumbleType: DEF
+    spd: 122
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 24
+      effects:
+        - amount: 0.5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 4
+          duration: 5
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.55
+        - override:
+            duration: 6
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            duration: 7
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            level: 5
+            duration: 8
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 5
+            duration: 9
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 5
+            duration: 10
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 6
+            duration: 11
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            level: 6
+            duration: 12
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 7
+            duration: 13
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 8
+            duration: 15

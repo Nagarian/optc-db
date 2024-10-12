@@ -1,0 +1,89 @@
+type: QCK
+name: Dellinger - Diamante Fighter
+japanName: デリンジャー ディアマンテ軍戦闘員
+family:
+  - Dellinger
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1062
+    atk: 668
+    rcv: 109
+  maxLvl:
+    hp: 2060
+    atk: 1429
+    rcv: 300
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 46259
+aliases:
+  - Colo Dellinger
+  - Coliseum Dellinger
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.75x, reduces HP of all
+    characters by 20%, Increases damage received by 2x
+special:
+  name: Deadly Fangs of Rage
+  description: Deals 20x character's ATK in [QCK] damage to one enemy, boosts ATK
+    of this character by 1.5x for 1 turn, boosts Orb Effects of this character
+    by 1.5x for 1 turn and changes the orb of this character into a [QCK] orb.
+  cooldown: 26
+  maxLevel: 15
+  notes: Boosted ATK and Orb Effectiveness only works for the Dellinger who uses
+    his Special.
+sailor:
+  - description: Makes [DEX] and [TND] orbs beneficial for this character
+  - description: Boosts base ATK of this character by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Lao G, Machvise, Diamante
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 20
+    - hp: 20
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - hp: 80
+    - cooldown: 1
+    - rcv: 30
+    - type: sailor
+    - atk: 30
+    - atk: 60
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

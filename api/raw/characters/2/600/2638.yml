@@ -1,0 +1,49 @@
+type: INT
+name: Tony Tony Chopper - Summertime Straw Hat Pirates
+family:
+  - TonyTonyChopper
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 756
+    atk: 401
+    rcv: 120
+  maxLvl:
+    hp: 1890
+    atk: 1002
+    rcv: 301
+cost: 1
+slots: 1
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 161533
+aliases:
+  - Summer Chopper
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.5x and their HP by 1.2x.
+special:
+  name: A Bundle of Festive Spirit
+  description: Recovers 4,000 HP, recovers 3x character's RCV in HP at the end of
+    each turn for 3 turns and reduces Bind duration by 3 turns.
+  cooldown: 18
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

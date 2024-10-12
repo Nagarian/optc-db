@@ -1,0 +1,283 @@
+type: STR
+name: Sir Crocodile - Behind the Unlikely Alliance
+japanName: サー・クロコダイル 共同戦線の暗躍者
+family:
+  - Crocodile
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1184
+    atk: 711
+    rcv: 111
+  maxLvl:
+    hp: 2806
+    atk: 1444
+    rcv: 251
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 191065
+aliases:
+  - Stampede Crocodile
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Driven and Cerebral characters by 2.25x-3x depending
+    on the crew's current HP.  
+
+    **Boosted Ability:** Boosts ATK of [STR], [QCK] and [PSY] characters by 2.25x-3.25x depending on the crew's current HP.
+  notes: "`captainProportional : lower : 2.25 + 0.75 * (1 - (remaining HP) /
+    (total HP)) : 2.25 : 3`"
+special:
+  name: The Enthusiasm Drowned Out by the Sandstorm
+  description: Reduces enemies' Percent Damage Reduction and Resilience duration
+    by 5 turns and locks all orbs for 1 turn. If your crew has 3 or more [STR],
+    [QCK] or [PSY] characters, boosts Orb Effects of [STR], [QCK] and [PSY]
+    characters by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven characters by 50
+  - description: Makes [STR] orbs beneficial for Driven characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 30
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - type: sailor
+    - hp: 100
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+rumble:
+  stats:
+    def: 125
+    rumbleType: DBF
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - PSY
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: below
+            count: 25
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+        - {}
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Guard
+          effect: debuff
+          level: 1
+          duration: 10
+          targeting:
+            targets:
+              - enemies
+        - amount: 16
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          duration: 10
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 11
+        - {}
+        - override:
+            duration: 11
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 12
+        - override:
+            amount: 17
+        - override:
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 13
+        - override:
+            amount: 17
+        - override:
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 14
+        - override:
+            amount: 18
+        - override:
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 15
+        - override:
+            amount: 19
+        - override:
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 16
+        - override:
+            amount: 19
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            amount: 20
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            amount: 21
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 19
+        - override:
+            amount: 22
+        - override:
+            level: 3
+            duration: 19

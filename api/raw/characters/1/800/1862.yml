@@ -1,0 +1,50 @@
+type: PSY
+name: "Kin'emon: Neo"
+japanName: 錦えもん「改」
+family:
+  - Kinemon
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 473
+    atk: 301
+    rcv: 35
+  maxLvl:
+    hp: 1138
+    atk: 771
+    rcv: 180
+cost: 25
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 80298
+aliases:
+  - Neo Kinemon
+  - Kai Kinemon
+  - Neo Kin'emon
+  - Kai Kin'emon
+evolution:
+  - id: 1863
+    evolvers:
+      - 118
+      - 98
+      - 98
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x, recovers 1x character's
+    RCV in HP at the end of each turn
+special:
+  name: Poof [Neo]
+  description: Reduces Special Cooldown of Slasher and Free Spirit characters by 1
+    turn and changes orbs of adjacent characters into Matching Orbs
+  cooldown: 16
+  maxLevel: 12

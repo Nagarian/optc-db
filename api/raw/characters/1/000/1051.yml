@@ -1,0 +1,49 @@
+type: PSY
+name: Jaguar D. Saul Navy Vice Admiral
+japanName: ハグワール・D・サウロ 海軍本部中将
+family:
+  - Saul
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1278
+    atk: 441
+    rcv: 110
+  maxLvl:
+    hp: 2448
+    atk: 929
+    rcv: 236
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 29916
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x
+special:
+  name: Dereshishishi Towards Hope
+  description: Reduces Bind duration by 4 turns and Reduces damage received by 50%
+    for 2 turns
+  cooldown: 23
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Nico Robin and Nico Olvia
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7

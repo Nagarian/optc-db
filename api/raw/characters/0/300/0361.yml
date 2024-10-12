@@ -1,0 +1,90 @@
+type: INT
+name: Red Flag X Drake
+japanName: 赤旗 X・ドレーク
+family:
+  - XDrake
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1432
+    atk: 611
+    rcv: 57
+  maxLvl:
+    hp: 3580
+    atk: 1098
+    rcv: 132
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 7208
+aliases:
+  - Supernova Drake
+  - Supernova X Drake
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 3x if HP is below 30% at the
+    start of the turn
+special:
+  name: Prehistoric Power
+  description: Deals 10x character's ATK in [INT] damage to all enemies. If the
+    special is activated with more than 50% health remaining, protects from
+    defeat for 1 turn.
+  cooldown: 28
+  maxLevel: 9
+sailor:
+  - description: Boosts base HP of Powerhouse characters by 100
+  - description: Makes [PSY] orbs beneficial for Powerhouse and Fighter characters
+support:
+  type: descriptive
+  criteria: Basil Hawkins, Scratchmen Apoo and Urouge
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 10% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 20% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 30% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 40% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 50% for 1 turn.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 2
+    - atk: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - cooldown: 5
+    - hp: 80
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

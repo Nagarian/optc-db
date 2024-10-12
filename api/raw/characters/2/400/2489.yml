@@ -1,0 +1,95 @@
+type: PSY
+name: Brook - Swordsmanship from the Freezing Afterlife
+japanName: ブルック 凍える黄泉の剣技
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1312
+    atk: 690
+    rcv: 162
+  maxLvl:
+    hp: 2514
+    atk: 1380
+    rcv: 321
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 146831
+aliases:
+  - Colo Brook
+  - Coliseum Brook
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 2.5x and their
+    HP by 1.25x.
+special:
+  name: "Soul Solid - Song of Scratches: Blizzard Slice"
+  description: Deals 90x character's ATK in Typeless Fixed True damage to all
+    enemies. If your crew has 5 or more Slasher characters at the time the
+    special is activated, reduces damage received from [INT] enemies by 100% for
+    1 turn and deals 15% of enemies' current HP in damage to all enemies at the
+    end of the turn for 2 turns.
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base HP of [PSY] characters by 40
+  - description: Boosts base ATK of Slasher and Free Spirit characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Slasher characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 25
+    - hp: 30
+    - type: potential
+    - rcv: 35
+    - atk: 20
+    - hp: 40
+    - slot: 1
+    - type: sailor
+    - hp: 40
+    - cooldown: 1
+    - rcv: 50
+    - atk: 30
+    - hp: 40
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50

@@ -1,0 +1,173 @@
+type: QCK
+name: Big Mom - Hungry Chase
+japanName: ビッグ・マム 空腹の追跡
+family:
+  - CharlotteLinlin
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 458
+    atk: 245
+    rcv: 35
+  maxLvl:
+    hp: 1944
+    atk: 731
+    rcv: 110
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 145819
+aliases:
+  - Raid Big Mom
+  - Thin Mom
+  - Raid Linlin
+  - Raid Charlotte Linlin
+evolution:
+  - id: 2473
+    evolvers:
+      - 118
+      - 85
+      - 266
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x, by 2.5x instead if HP is below
+    50% at the start of the turn, and reduces HP of all characters by 20%
+special:
+  name: Mama-Mash
+  description: Reduces crew's current HP by 50%, deals 100x the amount of HP
+    subtracted in Typeless damage to one enemy and randomizes all non-[RCV]
+    orbs.
+  cooldown: 21
+  maxLevel: 15
+sailor:
+  - description: Reduces HP of all characters by 30% and boosts base RCV of all
+      characters by 1.2x
+rumble:
+  stats:
+    def: 162
+    rumbleType: ATK
+    spd: 147
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          level: 1
+          effect: buff
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          level: 3
+          effect: buff
+          condition:
+            comparator: above
+            count: 60
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 17
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - HP
+          amount: 40
+          effect: penalty
+          targeting:
+            targets:
+              - self
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.78
+        - {}
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.85
+        - {}
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.93
+        - {}
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 1.01
+        - {}
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 1.09
+        - {}
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 1.16
+        - {}
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 1.24
+        - {}
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 1.32
+        - {}
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 1.45
+        - {}

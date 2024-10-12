@@ -1,0 +1,107 @@
+type: PSY
+name: Nico Robin - Nighttime Vacation on the Beach
+japanName: ニコ・ロビン 月夜のビーチでバカンス
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1045
+    atk: 819
+    rcv: 142
+  maxLvl:
+    hp: 2487
+    atk: 1387
+    rcv: 323
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 218711
+aliases:
+  - Summer Robin
+  - Swimsuit Robin
+  - Summer Nico Robin
+  - Swimsuit Nico Robin
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x and boosts chances of
+    getting [PSY] orbs.
+special:
+  name: A Smile in between Reading
+  description: Reduces enemies' Threshold Damage Reduction, Percent Damage
+    Reduction and Increased Defense duration by 5 turns, reduces Despair
+    duration by 5 turns and changes all orbs of all characters into Robin's orb.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP and RCV of [PSY] characters by 50
+  - description: Changes all orbs into [PSY] orbs at the start of the fight
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 20
+    - hp: 20
+    - type: potential
+    - hp: 50
+    - rcv: 30
+    - atk: 10
+    - slot: 1
+    - atk: 20
+    - atk: 20
+    - atk: 50
+    - type: sailor
+    - hp: 50
+    - hp: 70
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

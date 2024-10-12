@@ -1,0 +1,51 @@
+type: QCK
+name: '"Dragon" Momonosuke'
+japanName: “龍”　モモの助
+family:
+  - KozukiMomonosuke
+class:
+  - Free Spirit
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 646
+    atk: 259
+    rcv: 80
+  maxLvl:
+    hp: 1596
+    atk: 747
+    rcv: 160
+cost: 15
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 68613
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [QCK] characters by 1.75x, boosts chances of
+    getting [QCK] orbs
+special:
+  name: Dragon Child
+  description: Reduces damage received by 50% for 1 turn and switches orbs between
+    slots 2 times
+  cooldown: 12
+  maxLevel: 4
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Kin'emon
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

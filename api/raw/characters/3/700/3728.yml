@@ -1,0 +1,216 @@
+type: STR
+name: Luffy & Whitebeard - Sharing the Same Goal
+family:
+  - MonkeyDLuffy
+  - EdwardNewgate
+class:
+  - Striker
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1710
+    atk: 727
+    rcv: 98
+  maxLvl:
+    hp: 3420
+    atk: 1454
+    rcv: 196
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x, makes [TND] and [RCV] orbs
+    beneficial for all characters and reduces Paralysis and Despair duration 1
+    turn.
+special:
+  name: Assault to Save the Fire Fist
+  description: Deals 10% of enemies' current HP in damage to all enemies, reduces
+    enemies' Increased Defense, Percent Damage Reduction and Threshold Damage
+    Reduction duration by 3 turns and changes [BLOCK] orbs into [TND] orbs. If
+    there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew,
+    boosts ATK of all characters by 2.25x for 1 turn and boosts Orb Effects of
+    all characters by 2.25x for 1 turn, boosts ATK of all characters by 1.5x for
+    3 turns and boosts Orb Effects of all characters by 1.5x for 3 turns
+    otherwise.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 40
+  - description: Makes [TND] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: All characters
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 10
+    - atk: 20
+    - type: potential
+    - hp: 20
+    - atk: 30
+    - hp: 30
+    - slot: 1
+    - atk: 40
+    - rcv: 50
+    - hp: 60
+    - type: sailor
+    - hp: 80
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 151
+    rumbleType: ATK
+    spd: 175
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 10
+          effect: damage
+          repeat: 2
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: cut
+        - amount: 0.5
+          effect: damage
+          repeat: 2
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 12
+        - override:
+            amount: 0.57
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 14
+        - override:
+            amount: 0.64
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 16
+        - override:
+            amount: 0.71
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 18
+        - override:
+            amount: 0.78
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 20
+        - override:
+            amount: 0.85
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 22
+        - override:
+            amount: 0.92
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 24
+        - override:
+            amount: 0.99
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 26
+        - override:
+            amount: 1.06
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 30
+        - override:
+            amount: 1.2

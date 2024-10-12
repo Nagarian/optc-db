@@ -1,0 +1,50 @@
+type: QCK
+name: The Cat Viper - Guardian of the Whale Forest
+japanName: ネコマムシの旦那 くじらの森の守護神
+family: []
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 920
+    atk: 536
+    rcv: 48
+  maxLvl:
+    hp: 2300
+    atk: 1220
+    rcv: 120
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 114149
+aliases:
+  - FN Cat Viper
+  - FN Catviper
+  - FN Nekomamushi
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.25x and their HP by 1.1x
+special:
+  name: Cat Toy
+  description: Reduces Bind duration by 2 turns and changes the orb of this
+    character into a [QCK] orb. If your Captain is a Striker character, adds
+    0.5x to Chain multiplier for 2 turns.
+  cooldown: 20
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Pedro and Tony Tony Chopper
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 9

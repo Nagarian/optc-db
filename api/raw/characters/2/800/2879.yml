@@ -1,0 +1,145 @@
+type: PSY
+name: Nefeltari Vivi - Sprint to the South Gate of Alubarna
+japanName: ネフェルタリ・ビビ アルバーナ南門前への疾走
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1071
+    atk: 535
+    rcv: 123
+  maxLvl:
+    hp: 2678
+    atk: 1337
+    rcv: 308
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 189663
+aliases:
+  - TM Vivi
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x and their RCV by 1.1x
+special:
+  name: Desert Teardrop
+  description: Changes orbs of adjacent characters into [RCV] orbs, reduces Chain
+    Multiplier Limit and Chain Coefficient Reduction duration by 3 turns and
+    boosts ATK of all characters by 1.75x for 1 turn. If "Desert Teardrop" is
+    used again in the same turn the special is activated in, boosts ATK of all
+    characters by 2x for 1 turn.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: If your Captain is a [QCK] or [PSY] character, makes [RCV] orbs
+      beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji and Tony
+    Tony Chopper
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [PSY] characters by 2x, their RCV by 1.1x. If you use
+          "Desert Teardrop" in this turn boosts ATK of [PSY] characters by 2.25x
+          instead
+    - type: sailor
+    - rcv: 5
+    - hp: 5
+    - hp: 10
+    - captain:
+        description: Boosts ATK of [PSY] characters by 2.25x, their RCV by 1.1x. If you
+          use "Desert Teardrop" in this turn boosts ATK of [PSY] characters by
+          2.5x instead
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 40
+    - rcv: 50
+    - captain:
+        description: Boosts ATK of [PSY] characters by 2.25x, their RCV by 1.1x. If you
+          use "Desert Teardrop" in this turn boosts ATK of [PSY] characters by
+          2.75x instead
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of [PSY] characters by 2.5x, their RCV by 1.2x. If you
+          use "Desert Teardrop" in this turn boosts ATK of [PSY] characters by
+          3x instead
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [PSY] characters by 2.5x, their RCV by 1.2x. If you
+          use "Desert Teardrop" in this turn boosts ATK of [PSY] characters by
+          3.25x instead
+    - hp: 90
+    - hp: 110
+    - captain:
+        description: Boosts ATK of [PSY] characters by 2.75x, their RCV by 1.3x and
+          makes [RCV] orbs beneficial for [PSY] characters. If you use "Desert
+          Teardrop" in this turn boosts ATK of [PSY] characters by 3.75x
+          instead.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 100

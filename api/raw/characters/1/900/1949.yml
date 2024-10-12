@@ -1,0 +1,49 @@
+type: PSY
+name: Wadatsumi, the Giant Monk - Crewmember of the Flying Pirates
+japanName: 大入道ワダツミ フライング海賊団　船員
+family:
+  - Wadatsumi
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 895
+    atk: 612
+    rcv: 116
+  maxLvl:
+    hp: 1878
+    atk: 1279
+    rcv: 241
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 88588
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x, boosts HP of Fighter
+    characters by 1.5x
+special:
+  name: Expanding Superpower
+  description: Increases damage received by 2x for 2 turns and reduces Special
+    Cooldown of Fighter and Powerhouse characters by 2 turns
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Hody Jones and Vander Decken IX
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

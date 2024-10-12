@@ -1,0 +1,97 @@
+type: STR
+name: Monkey D. Garp - Between Evil and Justice
+japanName: モンキー・D・ガープ “悪”と“正義”の狭間
+family:
+  - MonkeyDGarp
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1062
+    atk: 564
+    rcv: 115
+  maxLvl:
+    hp: 2656
+    atk: 1411
+    rcv: 287
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 260423
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 1.5x.
+special:
+  name: Prepared to Cut Off the Hesitant
+  description: Reduces Silence and Chain Multiplier Limit duration by 5 turns. If
+    you are on a Treasure Map, boosts the Color Affinity of Powerhouse and Free
+    Spirit characters by 2.25x for 1 turn, boosts the Color Affinity of
+    Powerhouse and Free Spirit characters by 1.75x for 1 turn otherwise.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Makes [QCK] orbs beneficial for [STR] characters
+support:
+  type: descriptive
+  criteria: Sengoku and Portgas D. Ace
+  levels:
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn and boosts the Color Affinity of [STR] and
+      [QCK] characters by 1.1x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn and boosts the Color Affinity of [STR] and
+      [QCK] characters by 1.2x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - atk: 30
+    - rcv: 30
+    - slot: 1
+    - hp: 30
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50

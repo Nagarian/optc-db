@@ -1,0 +1,235 @@
+type: INT
+name: Nami - Straw Hat Pirates Enjoying the FES
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1430
+    atk: 714
+    rcv: 149
+  maxLvl:
+    hp: 2860
+    atk: 1428
+    rcv: 298
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - RED
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and Striker characters by 3x and boosts RCV of
+    [INT] and Striker characters by 1.5x.
+special:
+  name: Rushing to the Stage
+  description: Reduces Paralysis and Chain Coefficient Reduction duration by 5
+    turns and reduces Special Cooldown of 1 selected character by 2 turns. If
+    your Captain is an [INT] character, adds 0.9x to Chain multiplier for 1 turn
+    and after 1 turn, adds 1.1x to Chain multiplier for 1 turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Tony Tony Chopper, Nico Robin and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special, adds
+      0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.3x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.4x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.5x to Chain multiplier for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 30
+    - cooldown: 1
+    - rcv: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 134
+    rumbleType: DBF
+    spd: 127
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - ATK
+          duration: 6
+          effect: debuff
+          level: 2
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Accuracy
+          duration: 6
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 7
+        - override:
+            duration: 7
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 8
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 10
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 11
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 12
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 13
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            level: 6
+            duration: 14
+        - override:
+            level: 4
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            level: 7
+            duration: 15
+        - override:
+            level: 5
+            duration: 15

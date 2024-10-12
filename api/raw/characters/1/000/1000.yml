@@ -1,0 +1,56 @@
+type: DEX
+name: Corazon - Donquixote Pirates
+japanName: コラソン ドンキホーテ海賊団
+family:
+  - DonquixoteRosinante
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 406
+    atk: 196
+    rcv: 155
+  maxLvl:
+    hp: 1503
+    atk: 694
+    rcv: 320
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 26850
+aliases:
+  - Rocinante
+  - Rosinante
+  - Corasan
+  - Cora-san
+  - V1 Legend Corazon
+  - Donquixote Rosinante
+evolution:
+  - id: 1001
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1x-2x depending on the crew's
+    current HP. Recovers 1.5x this character's RCV at the end of the turn each
+    time you hit a Good. Recovers 0.5x this character's RCV at the end of the
+    turn each time you hit a Great
+  notes: "`captainProportional : higher : 1 + 1 * (remaining HP) / (total HP) : 2
+    : 1`"
+special:
+  name: Love Sacrifice
+  description: Recovers 25x character's RCV in HP. Reduces Bind and Despair
+    duration by 3 turns
+  cooldown: 23
+  maxLevel: 7

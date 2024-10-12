@@ -1,0 +1,214 @@
+type: QCK
+name: Roronoa Zoro - Pirate Within the Storm
+japanName: ロロノア・ゾロ 嵐の中の海賊
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1316
+    atk: 856
+    rcv: 71
+  maxLvl:
+    hp: 2924
+    atk: 1427
+    rcv: 237
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 276691
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3x and their HP by 1.2x.
+special:
+  name: Surprise Raid-Slash
+  description: Reduces Silence and ATK DOWN duration by 5 turns, locks all orbs
+    for 1 turn and boosts Orb Effects of all characters by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [STR], [DEX] and [QCK] characters by 50
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Vinsmoke Sanji, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky, Brook and Jinbe
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 25
+    - rcv: 25
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 107
+    rumbleType: ATK
+    spd: 156
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+          duration: 11
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 5
+            duration: 20

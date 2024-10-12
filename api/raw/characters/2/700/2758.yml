@@ -1,0 +1,95 @@
+type: INT
+name: "Sabo: Halloween Scythe-Wielding Grim Reaper - Happy Halloween!"
+japanName: サボ ハロウィンサイズ・グリムリーパー Happy Halloween
+family:
+  - Sabo
+class:
+  - Striker
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1190
+    atk: 760
+    rcv: 75
+  maxLvl:
+    hp: 2790
+    atk: 1488
+    rcv: 289
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 174349
+aliases:
+  - Halloween Sabo
+  - Shinigami Sabo
+  - Kizuna Sabo
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Fighter characters by 3x, their HP by
+    1.2x, makes [INT] orbs beneficial for Striker and Fighter characters.
+special:
+  name: Claws of the God of Death
+  description: Locks all orbs for 1 turn. If your crew has 6 [TND] orbs, boosts
+    Orb Effects of Striker, Fighter and Shooter characters by 2.25x for 1 turn,
+    by 1.75x for 3 turns otherwise.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Fighter characters by 50
+  - description: If your Captain is a Striker or Fighter character, makes [STR] orbs
+      beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy and Portgas D. Ace
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - hp: 50
+    - atk: 30
+    - type: potential
+    - hp: 100
+    - atk: 50
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - atk: 70
+    - hp: 100
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

@@ -1,0 +1,138 @@
+type: QCK
+name: Onami - Newbie Kunoichi
+japanName: おナミ 新米くの一
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1232
+    atk: 965
+    rcv: 198
+  maxLvl:
+    hp: 3104
+    atk: 1412
+    rcv: 412
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 177803
+aliases:
+  - Wano Nami
+  - Onami
+  - V2 Legend Nami
+evolution:
+  - id: 3275
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight. Boosts ATK of all characters by 3x. If your crew has 4 or more
+    characters of the same Type, boosts ATK of the Dominant Type characters by
+    3.75x and boosts the Color Affinity of the Dominant Type characters by 1.1x.
+special:
+  name: "Ninja Arts: Murderous Smile"
+  description: If HP is above 99% at the time the special is activated, removes
+    enemies' Defense Reduction Debuff Protection duration completely, reduces
+    the defense of all enemies by 100% for 2 turns and boosts ATK against
+    enemies with reduced defense by 2x for 2 turns. Otherwise, recovers 50% of
+    crew's MAX HP, reduces the defense of all enemies by 100% for 1 turn and
+    boosts ATK against enemies with reduced defense by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: If your crew has 4 or more characters of the same Type, boosts base
+      ATK of Dominant Type characters by 125
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji and Kin'emon
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 100% for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 100% for 2 turns
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - hp: 20
+    - type: potential
+    - hp: 20
+    - rcv: 5
+    - atk: 10
+    - atk: 10
+    - atk: 20
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - rcv: 15
+    - hp: 40
+    - atk: 30
+    - hp: 40
+    - rcv: 15
+    - rcv: 20
+    - atk: 30
+    - cooldown: 1
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - hp: 60
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Not Translated.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100

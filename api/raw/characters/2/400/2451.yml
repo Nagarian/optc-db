@@ -1,0 +1,216 @@
+type: DEX
+name: Vinsmoke Yonji - Germa Kingdom Fourth Son
+japanName: ヴィンスモーク・ヨンジ ジェルマ王家　四男
+family:
+  - VinsmokeYonji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 999
+    atk: 410
+    rcv: 155
+  maxLvl:
+    hp: 2447
+    atk: 1364
+    rcv: 358
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 143713
+aliases:
+  - Green Ranger
+evolution:
+  - id: 2452
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x and boosts ATK of
+    [DEX] characters by 1.2x. Boosts HP of Powerhouse characters by 1.2x.
+  notes: Attack boost stacks, so an [DEX] Powerhouse character has a 2.7x ATK
+special:
+  name: "Winch Guillotine: Winch Danton"
+  description: If there are 6 Powerhouse characters in your crew, reduces ATK
+    DOWN, Bind and Despair duration by 4 turns. If your Captain's orb or Friend
+    Captain's orb is [TND], boosts the Color Affinity of all characters by 1.75x
+    for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, makes [DEX] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Vinsmoke Judge, Vinsmoke Ichiji, Vinsmoke Niji and Vinsmoke Reiju
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - rcv: 15
+    - hp: 40
+    - atk: 30
+    - rcv: 25
+    - cooldown: 1
+    - hp: 60
+    - slot: 1
+    - atk: 50
+    - hp: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8
+rumble:
+  stats:
+    def: 156
+    rumbleType: ATK
+    spd: 169
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 11
+        - override:
+            duration: 16
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 12
+        - override:
+            duration: 17
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 13
+        - override:
+            duration: 18
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 14
+        - override:
+            duration: 19
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 15
+        - override:
+            duration: 20
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 3
+            duration: 25

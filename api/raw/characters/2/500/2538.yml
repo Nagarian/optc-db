@@ -1,0 +1,152 @@
+type: DUAL
+name: "Lucci & Kaku - CP9: Enforcers of Dark Justice"
+japanName: ルッチ＆カク ＣＰ９　闇の正義の執行者達
+family:
+  - RobLucci
+  - Kaku
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1154
+    atk: 604
+    rcv: 121
+  maxLvl:
+    hp: 2885
+    atk: 1511
+    rcv: 302
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 150047
+aliases:
+  - Lucci&Kaku
+  - Kaku&Lucci
+  - LucciKaku
+  - KakuLucci
+  - Lucci and Kaku
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x, by 3x instead if they
+    have a beneficial orb, and boosts damage of Powerhouse Typed specials by
+    1.5x.
+special:
+  name: Tempest Kick - Twin Beasts
+  description: Deals 50x character's ATK in character's Type damage to all enemies
+    and becomes Lucci & Kaku for 2 turns. If your Captain is a Powerhouse,
+    Fighter or Slasher character, boosts ATK of Powerhouse, Fighter and Slasher
+    characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of Powerhouse, Fighter and Slasher characters by 50
+  - description: If your Captain is a Powerhouse, Fighter or Slasher character,
+      removes Blindness duration completely
+characters:
+  swap:
+    description: Makes [TND] orbs beneficial for Powerhouse, Fighter or Slasher
+      characters for 1 turn and adds 0.3x to Chain multiplier for 1 turn.
+  character1:
+    name: "Lucci - CP9: Enforcers of Dark Justice"
+    japanName: ルッチ ＣＰ９　闇の正義の執行者達
+    class:
+      - Powerhouse
+      - Fighter
+    type: STR
+    stats:
+      combo: 6
+      minLvl:
+        hp: 1106
+        atk: 586
+        rcv: 80
+      maxLvl:
+        hp: 2765
+        atk: 1466
+        rcv: 199
+    captain:
+      name: ""
+      description: Boosts ATK of Powerhouse characters by 2.25x, by 2.75x instead if
+        they have a beneficial orb. Reduces RCV of all characters by 50%.
+    sailor:
+      - description: Boosts base ATK and HP of Powerhouse and Fighter characters by 30
+      - description: If your Captain is a Powerhouse, Fighter or Slasher character,
+          removes Blindness duration completely
+  character2:
+    name: "Kaku - CP9: Enforcers of Dark Justice"
+    japanName: カク ＣＰ９　闇の正義の執行者達
+    class:
+      - Powerhouse
+      - Slasher
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1078
+        atk: 570
+        rcv: 113
+      maxLvl:
+        hp: 2694
+        atk: 1424
+        rcv: 282
+    captain:
+      name: ""
+      description: Boosts ATK of Powerhouse characters by 2.25x and boosts damage of
+        Powerhouse Typed specials by 1.2x.
+    sailor:
+      - description: Boosts base ATK and HP of Powerhouse and Slasher characters by 30
+      - description: If your Captain is a Powerhouse, Fighter or Slasher character,
+          removes Blindness duration completely
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 40
+    - hp: 70
+    - type: sailor
+    - hp: 100
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - atk: 35
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

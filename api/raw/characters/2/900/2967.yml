@@ -1,0 +1,329 @@
+type: STR
+name: Trafalgar Law - Life's Meaning
+japanName: トラファルガー・ロー 命の理由
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 452
+    atk: 264
+    rcv: 49
+  maxLvl:
+    hp: 1112
+    atk: 762
+    rcv: 191
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 202538
+aliases:
+  - ""
+evolution:
+  - id: 2968
+    evolvers:
+      - 117
+      - 94
+      - 89
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x at the start of the chain, by
+    2.2x after scoring 3 GOODs or better in a row.
+special:
+  name: Betting on his Life - Gamma Knife
+  description: Deals 100,000 Fixed damage to all enemies, reduces Bind, Despair
+    and Paralysis duration by 5 turns and reduces enemies' Resilience duration
+    by 5 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [STR] characters by 50
+rumble:
+  stats:
+    def: 142
+    rumbleType: SPT
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Free Spirit
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1105
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 775
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 1195
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 865
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 1285
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 955
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 1375
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1045
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 1465
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1135
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 1555
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1225
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 1645
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1315
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 1735
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1405
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 1825
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1495
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 32
+      effects:
+        - amount: 2000
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1700
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - crew
+          type: fixed

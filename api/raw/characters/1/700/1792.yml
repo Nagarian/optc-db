@@ -1,0 +1,107 @@
+type: DEX
+name: Lucy - Corrida Coliseum C-Block Up-and-Comer
+japanName: ルーシー コリーダコロシアムＣブロックの風雲児
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 912
+    atk: 613
+    rcv: 99
+  maxLvl:
+    hp: 2059
+    atk: 1500
+    rcv: 271
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 70188
+aliases:
+  - Luffy
+  - Colo Luffy
+  - Coliseum Luffy
+  - Colo Lucy
+  - Coliseum Lucy
+captain:
+  name: ""
+  description: Boosts RCV of [STR], [DEX] and [QCK] characters by 1.2x and boosts
+    ATK of [STR], [DEX] and [QCK] characters by 3.25x after scoring 3 PERFECTs
+    in a row
+special:
+  name: Gomu Gomu no Hawk Rifle
+  description: Deals 20% of enemies' current HP in True damage to one enemy.
+    Changes all orbs of top row characters into [STR] orbs, changes the orbs of
+    middle row characters into [QCK] orbs, changes all orbs of bottom row
+    characters into [DEX] orbs and boosts Orb Effects of all characters by 1.75x
+    for 1 turn
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: If your Captain is a [STR] character, boosts this character's
+      damage against [STR] characters by 1.5x
+  - description: Boosts base ATK and HP of [DEX] and [QCK] characters by 75 if your
+      Captain is a [STR] character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Sabo, Cavendish and Bartolomeo
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 60
+    - rcv: 30
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 7
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

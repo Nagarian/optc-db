@@ -1,0 +1,249 @@
+type: DEX
+name: Nami - Navigator Mapping the World
+japanName: ナミ 世界地図を記す航海士
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 345
+    atk: 167
+    rcv: 102
+  maxLvl:
+    hp: 1627
+    atk: 654
+    rcv: 255
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 102769
+aliases:
+  - V1 Legend Nami
+evolution:
+  - id: 2076
+    evolvers:
+      - 118
+      - 118
+      - 97
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of [DEX] characters by 3.75x and makes [STR] and
+    [QCK] orbs beneficial for [DEX] characters
+special:
+  name: "Weather Egg: Thunderbreed Tempo"
+  description: If your Captain is a Free Spirit, Cerebral, Powerhouse or Driven
+    character, boosts the Color Affinity of Free Spirit, Cerebral, Powerhouse
+    and Driven characters by 1.75x for 1 turn and boosts Orb Effects of Free
+    Spirit, Cerebral, Powerhouse and Driven characters by 2x for 1 turn
+  cooldown: 21
+  maxLevel: 6
+rumble:
+  stats:
+    def: 99
+    rumbleType: DBF
+    spd: 139
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 1
+  resilience:
+    - amount: 100
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.64
+        - override:
+            duration: 11
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.67
+        - override:
+            duration: 12
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.71
+        - override:
+            duration: 13
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            duration: 14
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.79
+        - override:
+            duration: 15
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.82
+        - override:
+            duration: 16
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.86
+        - override:
+            duration: 17
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 18
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 19
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

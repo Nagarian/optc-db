@@ -1,0 +1,177 @@
+type: STR
+name: Flower Sword Vista - Whitebeard's "Son"
+japanName: 花剣のビスタ 白ひげの“息子”
+family:
+  - Vista
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 902
+    atk: 581
+    rcv: 31
+  maxLvl:
+    hp: 2572
+    atk: 1233
+    rcv: 83
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 94924
+aliases:
+  - FN Visa
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Slasher characters by 1 turn at the
+    start of the fight, boosts ATK of Slasher characters by 2.475x after scoring
+    3 Greats in a row, by 2.25x otherwise.
+special:
+  name: Fast Revolving Strike
+  description: Deals 15x character's ATK in [STR] damage to all enemies,
+    randomizes all non-Matching orbs, including [BLOCK] orbs, and delays all
+    enemies by 1 turn
+  cooldown: 16
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Edward Newgate (Whitebeard) and Marco
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+rumble:
+  stats:
+    def: 130
+    rumbleType: DBF
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.63
+        - override:
+            level: 1
+            duration: 21
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            level: 1
+            duration: 22
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.68
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.71
+        - override:
+            level: 2
+            duration: 24
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.74
+        - override:
+            level: 2
+            duration: 25
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.76
+        - override:
+            level: 3
+            duration: 26
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.79
+        - override:
+            level: 3
+            duration: 27
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.82
+        - override:
+            level: 4
+            duration: 28
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 5
+            duration: 29

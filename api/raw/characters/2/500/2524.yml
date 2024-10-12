@@ -1,0 +1,175 @@
+type: QCK
+name: Nami - Dressing Up for the Pirate Festival!
+japanName: ナミ Dress up for PIRATE FESTIVAL
+family:
+  - Nami
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 790
+    atk: 441
+    rcv: 101
+  maxLvl:
+    hp: 1976
+    atk: 1103
+    rcv: 253
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 150786
+aliases:
+  - Dress Up Nami
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], [PSY] and [INT] characters by 2.5x, boosts ATK
+    of all others by 2x and boosts HP and RCV of all characters by 1.2x
+special:
+  name: Gust Sword • Dress
+  description: Reduces damage received by 70% for 1 turn, randomizes all
+    non-Matching orbs, including [BLOCK] orbs and switches orbs between slots 2
+    times.
+  cooldown: 15
+  maxLevel: 4
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Vinsmoke Sanji, Usopp, Tony Tony
+    Chopper, Nico Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3
+rumble:
+  stats:
+    def: 137
+    rumbleType: DEF
+    spd: 109
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - PSY
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 20
+      effects:
+        - amount: 550
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          duration: 5
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - PSY
+              - INT
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 625
+        - override:
+            duration: 6
+            level: 1
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 700
+        - override:
+            duration: 7
+            level: 1
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 775
+        - override:
+            duration: 8
+            level: 1
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 850
+        - override:
+            duration: 9
+            level: 1
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 925
+        - override:
+            duration: 10
+            level: 1
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            duration: 11
+            level: 1
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1075
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            duration: 13
+            level: 2
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            duration: 15
+            level: 3

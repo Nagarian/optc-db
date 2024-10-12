@@ -1,0 +1,48 @@
+type: DEX
+name: Montd'Or - Bookkeeper
+japanName: モンドール 書司
+family:
+  - CharlotteMontdOr
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 290
+    atk: 420
+    rcv: 67
+  maxLvl:
+    hp: 850
+    atk: 1060
+    rcv: 180
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 174569
+aliases:
+  - Montdor
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2x.
+special:
+  name: Angry Shots
+  description: Locks all orbs for 2 turns and reduces Bind and Silence duration by 3 turns.
+  cooldown: 16
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Charlotte Galette and Charlotte Poire
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

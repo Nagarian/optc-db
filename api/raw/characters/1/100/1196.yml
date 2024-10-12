@@ -1,0 +1,95 @@
+type: PSY
+name: Ganfor - Kami of Skypiea
+japanName: ガン・フォール スカイピアの神
+family:
+  - Ganfor
+class:
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1111
+    atk: 611
+    rcv: 111
+  maxLvl:
+    hp: 2122
+    atk: 1222
+    rcv: 222
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 35525
+aliases:
+  - Colo Gan Fall
+  - Coliseum Gan Fall
+  - Colo Ganfor
+  - Coliseum Ganfor
+  - Ganfall
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x. Recovers 5x character's RCV
+    in HP at the end of each turn
+special:
+  name: Split Air Hole
+  description: Reduces crew's current HP by 60%, deals 8x the amount of HP
+    subtracted in Typeless damage to all enemies. Boosts ATK of Striker
+    characters by 1.75x for 1 turn
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker characters by 25
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Tony Tony Chopper and Conis
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 40
+    - type: potential
+    - rcv: 15
+    - atk: 20
+    - rcv: 25
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - hp: 80
+    - type: sailor
+    - atk: 40
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 50

@@ -1,0 +1,120 @@
+type: QCK
+name: Jewelry Bonney - Any Age, Any Time
+japanName: ジュエリー・ボニー 自在なる年齢
+family:
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 884
+    atk: 552
+    rcv: 148
+  maxLvl:
+    hp: 2211
+    atk: 1382
+    rcv: 371
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 156172
+aliases:
+  - Jewelry Bonney
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 2.25x, by
+    2.75x instead if HP is above 50%.
+special:
+  name: Intruding on the Holy Land
+  description: Reduces Bind duration by 7 turns on three characters and boosts Orb
+    Effects of bottom row characters by 2.25x for 2 turns.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Free Spirit and Cerebral characters by 50
+  - description: Makes [RCV] orbs beneficial for Free Spirit and Cerebral characters
+support:
+  type: descriptive
+  criteria: Bartholomew Kuma
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 3 turns.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 4 turns.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 5 turns.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - slot: 1
+    - rcv: 10
+    - rcv: 15
+    - rcv: 25
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

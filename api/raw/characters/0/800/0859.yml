@@ -1,0 +1,49 @@
+type: PSY
+name: Coby - Navy Petty Officer
+japanName: コビー 海軍本部曹長
+family:
+  - Coby
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 267
+    atk: 98
+    rcv: 27
+  maxLvl:
+    hp: 1193
+    atk: 561
+    rcv: 158
+cost: 18
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 20495
+aliases:
+  - Colo Coby
+  - Coliseum Coby
+evolution:
+  - id: 860
+    evolvers:
+      - 117
+      - 87
+      - 98
+      - 98
+      - 303
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.5x, reduces damage received by
+    0%-10% depending on the crew's current HP
+special:
+  name: Pleading at the Risk of One's Life
+  description: Changes orbs of adjacent characters into [RCV] orbs; if the special
+    is activated with more than 50% health remaining, protects from defeat for 1
+    turn
+  cooldown: 25
+  maxLevel: 11

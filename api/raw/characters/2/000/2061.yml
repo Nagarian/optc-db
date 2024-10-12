@@ -1,0 +1,49 @@
+type: STR
+name: Scratchmen Apoo - Light-Shaking Sound
+japanName: スクラッチメン・アプー 光を震わす爆音
+family:
+  - ScratchmenApoo
+class:
+  - Free Spirit
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 194
+    atk: 80
+    rcv: 21
+  maxLvl:
+    hp: 1282
+    atk: 673
+    rcv: 162
+cost: 12
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 99930
+aliases:
+  - Limted Apoo
+  - Secret Apoo
+evolution:
+  - id: 2062
+    evolvers:
+      - 117
+      - 78
+      - 89
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1.2x
+special:
+  name: Noise & Escape
+  description: Reduces Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 4 turns and reduces damage received from [DEX] enemies by 80%
+    for 1 turn
+  cooldown: 11
+  maxLevel: 1

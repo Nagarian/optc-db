@@ -1,0 +1,41 @@
+type: DEX
+name: '"Gashed" Albion'
+japanName: 深手の・アルビオン
+family:
+  - Albion
+class:
+  - Slasher
+  - Driven
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 120
+    atk: 110
+    rcv: 12
+  maxLvl:
+    hp: 985
+    atk: 840
+    rcv: 198
+cost: 15
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 51927
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Driven characters by 1x-2x depending on
+    the crew's current HP
+  notes: "`captainProportional : lower : 1 + 1 * (1 - (remaining HP) / (total HP))
+    : 1 : 2`"
+special:
+  name: Deep Claw Stab
+  description: Reduces crew's current HP by 90%, deals 1x the amount of HP
+    subtracted in Typeless damage to all enemies.
+  cooldown: 17
+  maxLevel: 8

@@ -1,0 +1,92 @@
+type: PSY
+name: Sugar - Donquixote Family's Key Figure
+japanName: シュガー ドンキホーテファミリー　最重要人物
+family:
+  - Sugar
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 542
+    atk: 293
+    rcv: 262
+  maxLvl:
+    hp: 1972
+    atk: 1120
+    rcv: 498
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 84575
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Cerebral characters by 2.25x and their RCV by 1.5x
+special:
+  name: March of the Decapitating Dolls
+  description: Changes [RCV], [TND] and [G] orbs into Matching orbs and boosts Orb
+    Effects of Driven characters by 1.75x for 3 turns. Locks all orbs for 1
+    turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Makes [RCV] orbs beneficial for Driven characters
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monet and Trebol
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 9
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - rcv: 25
+    - hp: 20
+    - hp: 40
+    - hp: 60
+    - slot: 1
+    - atk: 30
+    - atk: 40
+    - hp: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

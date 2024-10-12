@@ -1,0 +1,39 @@
+type: DEX
+name: Monkey D. Luffy - Gum-Gum Gatling
+japanName: モンキー・D・ルフィ ゴムゴムの銃乱打 (ガトリング)
+family:
+  - MonkeyDLuffy
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 212
+    atk: 100
+    rcv: 46
+  maxLvl:
+    hp: 1777
+    atk: 795
+    rcv: 270
+cost: 15
+slots: 3
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - shop
+  - special
+links:
+  gamewithId: 16538
+aliases: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Free Spirit and Fighter characters by 1.75x
+special:
+  name: Gum-Gum Gatling
+  description: Deals 10x character's ATK in [DEX] damage to all enemies, reduces
+    the defense of all enemies by 50% for 1 turn
+  cooldown: 15
+  maxLevel: 1

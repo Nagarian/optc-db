@@ -1,0 +1,163 @@
+type: STR
+name: Monkey D. Luffy - Let's Go to the Pirate Festival!
+japanName: モンキー・D・ルフィ Let’s go for PIRATE FESTIVAL
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 750
+    atk: 351
+    rcv: 38
+  maxLvl:
+    hp: 2278
+    atk: 1327
+    rcv: 128
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 102413
+aliases:
+  - Pizza Luffy
+captain:
+  name: ""
+  description: 'Boosts ATK of all characters by 2x. If you use "Gomu Gomu no
+    Octopus Stamp: Banquet" in this turn boosts ATK of all characters by 2.6x
+    instead.'
+special:
+  name: "Gomu Gomu no Octopus Stamp: Banquet"
+  description: Deals 15x character's ATK in [STR] damage to all enemies, recovers
+    2,000 HP and adds 0.5x to Chain multiplier for 1 turn.
+  cooldown: 17
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vinsmoke Sanji, Roronoa Zoro, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+rumble:
+  stats:
+    def: 102
+    rumbleType: ATK
+    spd: 150
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 20
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 300
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: fixed
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.56
+        - override:
+            amount: 350
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.61
+        - override:
+            amount: 400
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.67
+        - override:
+            amount: 450
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.73
+        - override:
+            amount: 500
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.79
+        - override:
+            amount: 550
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.84
+        - override:
+            amount: 600
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            amount: 650
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.96
+        - override:
+            amount: 700
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1.05
+        - override:
+            amount: 800

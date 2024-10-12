@@ -1,0 +1,149 @@
+type: PSY
+name: Edward Weevil - Warlord of the Sea
+japanName: エドワード・ウィーブル 王下七武海
+family:
+  - EdwardWeevil
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1820
+    atk: 891
+    rcv: 51
+  maxLvl:
+    hp: 3582
+    atk: 1370
+    rcv: 127
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 148451
+aliases:
+  - TM Weevil
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1x-2x depending on the crew's
+    current HP and their HP by 1.2x.
+  notes: "`captainProportional : higher : 2.25 + 1 * (remaining HP) / (total HP))
+    : 3.25 : 1`"
+special:
+  name: I Absolutely Won't Forgive Him
+  description: Reduces ATK DOWN duration by 20 turns and adds 300x character's ATK
+    as Additional Typeless Damage to own's attacks for 2 turns. If enemies have
+    All Debuff Protection or Delay Debuff Protection at the time the special was
+    activated, boosts ATK of all characters by 2x for 1 turn.
+  cooldown: 36
+  maxLevel: 8
+sailor:
+  - description: Boosts base HP of all characters by 50
+  - description: Boosts base ATK of all characters by 50
+support:
+  type: descriptive
+  criteria: Slasher characters
+  levels:
+    - Once per adventure, when you reach the final stage, adds 20x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 40x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 60x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 80x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 120x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - atk: 10
+    - atk: 15
+    - type: potential
+    - captain:
+        description: Boosts ATK of Slasher characters by 1x-2.25x depending on the
+          crew's current HP and their HP by 1.2x.
+    - type: sailor
+    - hp: 15
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Slasher characters by 1x-2.5x depending on the crew's
+          current HP and their HP by 1.2x.
+    - slot: 1
+    - cooldown: 1
+    - atk: 15
+    - atk: 15
+    - atk: 20
+    - captain:
+        description: Boosts ATK of Slasher characters by 1x-2.75x depending on the
+          crew's current HP and their HP by 1.2x.
+    - cooldown: 2
+    - rcv: 20
+    - rcv: 25
+    - rcv: 35
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Slasher characters by 1x-2.75x depending on the
+          crew's current HP and their HP by 1.3x.
+    - hp: 30
+    - hp: 30
+    - type: sailor
+    - atk: 35
+    - hp: 35
+    - hp: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Slasher characters by 1x-3x depending on the crew's
+          current HP and their HP by 1.3x.
+    - atk: 50
+    - atk: 50
+    - captain:
+        description: Boosts ATK of Slasher characters by 1x-3.25x depending on the
+          crew's current HP and their HP by 1.35x.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

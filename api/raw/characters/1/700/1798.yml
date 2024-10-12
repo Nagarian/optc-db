@@ -1,0 +1,103 @@
+type: DEX
+name: Jesus Burgess - Assassin in the Birdcage
+japanName: ジーザス・バージェス 鳥カゴの中の暗躍者
+family:
+  - JesusBurgess
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1093
+    atk: 554
+    rcv: 86
+  maxLvl:
+    hp: 2743
+    atk: 1364
+    rcv: 238
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 69424
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x, boosts HP of Powerhouse
+    and Driven characters by 1.25x
+special:
+  name: Shockwave Elbow
+  description: Deals 20% of enemies' current HP in damage to all enemies and
+    boosts ATK against delayed enemies by 1.5x for 2 turns.
+  cooldown: 21
+  maxLevel: 7
+  stages:
+    - description: Deals 10% of enemies' current HP in damage to all enemies
+      cooldown: 15
+    - description: Deals 20% of enemies' current HP in damage to all enemies
+      cooldown: 18
+sailor:
+  - description: Boosts base ATK and HP of [STR], [DEX] and [QCK] characters by 75
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: descriptive
+  criteria: Marshall D. Teach (Blackbeard), Laffitte, Van Augur and Doc Q
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - hp: 10
+    - atk: 30
+    - hp: 30
+    - atk: 50
+    - type: sailor
+    - hp: 60
+    - rcv: 30
+    - hp: 90
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 70
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3

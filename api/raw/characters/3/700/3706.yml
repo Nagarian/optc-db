@@ -1,0 +1,521 @@
+type: PSY
+name: Monkey D. Luffy - Ending the World
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 2178
+    atk: 898
+    rcv: 122
+  maxLvl:
+    hp: 4356
+    atk: 1796
+    rcv: 244
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+aliases:
+  - RED Secret Limited Super
+captain:
+  name: ""
+  description: Boosts ATK of [PSY], Fighter and Free Spirit characters by 5x. If
+    you use "Ending King Cobra" in this turn boosts ATK of [PSY], Fighter and
+    Free Spirit characters by 5.5x instead. If your crew has Roronoa Zoro,
+    Sanji, Usopp, Nami, Tony Tony Chopper, Nico Robin, Franky, Brook, Jinbe or
+    Shanks as a Sailor and they use their special, reduces Silence duration
+    completely on this character and advances Special Cooldown of this character
+    to MAX.
+  notes: Cooldown Reduction and Paralysis Reduction on special effect is limited
+    to 3 times per turn and 5 times per adventure. Effect only procs from
+    crewmates who belong to those Character Families, not Captains or
+    Friend/Guest Captains.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Roronoa
+    Zoro, Vinsmoke Sanji, Usopp, Nami, Tony Tony Chopper, Nico Robin, Franky,
+    Brook or Jinbe or Shanks, excluding Support members. 2 of Roronoa Zoro,
+    Vinsmoke Sanji, Usopp, Nami, Tony Tony Chopper, Nico Robin, Franky, Brook or
+    Jinbe are required or alternatively, 1 of Shanks is required."
+  description: Deals 120x character's ATK in Typeless True damage to one enemy,
+    reduces Special Cooldown of middle and bottom row characters by 2 turns and
+    transforms all [PSY] characters into Super [PSY] characters.
+special:
+  name: Ending King Cobra
+  description: Deals 200x character's ATK in Typeless True damage to one enemy,
+    and boosts ATK of [PSY], Fighter and Free Spirit characters by 3.25x for 1
+    turn. If your crew has ATK UP, boosts Orb Effects of [PSY], Fighter and Free
+    Spirit characters by 2.75x for 1 turn. If your crew has ATK UP and Orb
+    Amplification, changes all orbs, including [BLOCK] orbs, into Matching orbs
+    and increases boost effects of ATK UP and Orb Amplification buffs by +0.25x.
+    If this character has used their special 4 times or more and your crew does
+    not have ATK UP, boosts Orb Effects of [PSY], Fighter and Free Spirit
+    characters by 2.75x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Paralysis duration completely on this character and
+      restores Special Cooldown of this character completely when it is rewinded
+  - description: After each turn you take damage, reduces special cooldown of this
+      character by 4 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: All characters
+  levels:
+    - value: 9
+    - value: 10
+    - value: 11
+    - value: 12
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 10
+    - hp: 10
+    - hp: 10
+    - type: sailor
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - hp: 20
+    - hp: 30
+    - atk: 10
+    - rcv: 20
+    - hp: 40
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - hp: 50
+    - atk: 20
+    - hp: 80
+    - hp: 80
+    - hp: 80
+    - hp: 100
+    - atk: 20
+    - rcv: 40
+    - atk: 40
+    - atk: 40
+    - atk: 40
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 20
+    - rcv: 30
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 2
+          threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: On the last Stage, on the turn this character's special is used
+    levels:
+      - description: Boosts base ATK of this character by 750 for 1 turn and makes
+          normal attacks of this character deal damage to all enemies for 1
+          turn.
+      - description: Boosts base ATK of this character by 1,000 for 1 turn and makes
+          normal attacks of this character deal damage to all enemies for 1
+          turn.
+      - description: Boosts base ATK of this character by 1,250 for 1 turn and makes
+          normal attacks of this character deal damage to all enemies for 1
+          turn.
+      - description: Boosts base ATK of this character by 1,500 for 1 turn and makes
+          normal attacks of this character deal damage to all enemies for 1
+          turn.
+      - description: Boosts base ATK of this character by 2,000 for 1 turn and makes
+          normal attacks of this character deal damage to all enemies for 1
+          turn.
+rumble:
+  stats:
+    def: 318
+    rumbleType: DEF
+    spd: 123
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: INT
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - Guard
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 33
+      effects:
+        - attributes:
+            - ATK
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Provoke
+          duration: 11
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 150
+          duration: 21
+          effect: recharge
+          interval: 5
+          targeting:
+            targets:
+              - self
+          type: fixed
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 12
+        - override:
+            duration: 22
+        - override:
+            amount: 120
+            duration: 22
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            duration: 23
+        - override:
+            amount: 140
+            duration: 23
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            duration: 24
+        - override:
+            amount: 160
+            duration: 24
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            duration: 25
+        - override:
+            amount: 180
+            duration: 25
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            duration: 26
+        - override:
+            amount: 200
+            duration: 26
+    - cooldown: 33
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            duration: 27
+        - override:
+            amount: 220
+            duration: 27
+    - cooldown: 33
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            duration: 28
+        - override:
+            amount: 240
+            duration: 28
+    - cooldown: 33
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            duration: 29
+        - override:
+            amount: 260
+            duration: 29
+    - cooldown: 33
+      effects:
+        - override:
+            level: 5
+            duration: 25
+        - override:
+            duration: 30
+        - override:
+            amount: 300
+            duration: 30
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - HP
+              - Critical Hit
+              - Guard
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - PSY
+          - attributes:
+              - ATK
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - ATK
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Fighter
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Fighter
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 1
+          - override:
+              level: 2
+          - override:
+              level: 1
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 6
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 2
+    burst:
+      condition:
+        - count: 5
+          type: defeat
+          team: crew
+      special:
+        - uses: 1
+          effects:
+            - attributes:
+                - ATK
+              duration: 22
+              effect: buff
+              level: 5
+              targeting:
+                count: 1
+                priority: highest
+                stat: DEF
+                targets:
+                  - crew
+            - attributes:
+                - Counter
+              effect: boon
+              amount: 1
+              duration: 22
+              targeting:
+                count: 1
+                priority: highest
+                stat: DEF
+                targets:
+                  - crew
+            - attributes:
+                - Provoke
+              duration: 22
+              effect: boon
+              targeting:
+                count: 1
+                priority: highest
+                stat: DEF
+                targets:
+                  - crew
+            - amount: 500
+              duration: 22
+              effect: recharge
+              interval: 5
+              targeting:
+                targets:
+                  - self
+              type: fixed
+        - uses: 1
+          effects:
+            - override:
+                level: 7
+                duration: 24
+            - override:
+                amount: 1.5
+                duration: 24
+            - override:
+                duration: 24
+            - override:
+                amount: 625
+                duration: 24
+        - uses: 1
+          effects:
+            - override:
+                level: 10
+                duration: 26
+            - override:
+                amount: 2
+                duration: 26
+            - override:
+                duration: 26
+            - override:
+                amount: 750
+                duration: 26
+        - uses: 1
+          effects:
+            - override:
+                level: 12
+                duration: 28
+            - override:
+                amount: 2.5
+                duration: 28
+            - override:
+                duration: 28
+            - override:
+                amount: 875
+                duration: 28
+        - uses: 1
+          effects:
+            - override:
+                level: 15
+                duration: 30
+            - override:
+                amount: 3
+                duration: 30
+            - override:
+                duration: 30
+            - override:
+                amount: 1000
+                duration: 30

@@ -1,0 +1,62 @@
+type: DEX
+name: Sir Crocodile - He Who Forgives Everything
+japanName: サー・クロコダイル 全てを許す者
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 881
+    atk: 435
+    rcv: 70
+  maxLvl:
+    hp: 1762
+    atk: 869
+    rcv: 140
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 305251
+aliases:
+  - Super Class (SC) Crocodile
+  - V2 TM Legend Croc
+evolution:
+  - id: 3483
+    evolvers:
+      - 118
+      - 97
+      - 1180
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Cerebral characters by 5x, boosts ATK of all
+    other characters by 3.75x otherwise and boosts HP of all characters by 1.3x.
+    If HP is above 70% at the start of the stage, deals 10% of enemies' current
+    HP in damage to all enemies at the start of every stage. If HP is above 70%
+    at the start of the turn, Cerebral characters who attack with a Type
+    advantage will gain a matching orb after attacking. If HP is below 50% at
+    the start of the turn, recovers 2,000 HP at the end of each turn and reduces
+    damage received by 20%.
+special:
+  name: "Drastic Measures: Desert la Spada"
+  description: Reduces Special Cooldown of Cerebral characters by 1 turn and
+    boosts ATK of Cerebral characters by 2.5x for 1 turn. If HP is below 50% or
+    when this character's Special Counter is 1 at the time the special is
+    activated, sets Chain Boundaries to 3.0x and 40.0x for 3 turns, sets Chain
+    Boundaries to 2.5x and 35.0x for 2 turns otherwise.
+  cooldown: 20
+  maxLevel: 6
+  notes: Special Counter counts the amount of times that the character's special
+    has been used in the adventure. This count can not be reset by Accumulated
+    Value Clearing Enemy Effects.

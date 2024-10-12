@@ -1,0 +1,51 @@
+type: PSY
+name: Makino - Tavern Proprietor
+japanName: マキノ　酒場の店主
+family:
+  - Makino
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 710
+    atk: 320
+    rcv: 150
+  maxLvl:
+    hp: 1856
+    atk: 929
+    rcv: 331
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 96638
+aliases:
+  - FN Makino
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [INT] characters by 1.75x, by 2.5x instead
+    if they have a beneficial orb, and their HP by 1.2x
+special:
+  name: Taste of "Treasure Payment"
+  description: Changes all orbs of top row characters into [INT] orbs, changes the
+    orbs of middle row characters into [RCV] orbs, changes all orbs of bottom
+    row characters into [PSY] orbs and boosts Orb Effects of all characters by
+    1.5x for 1 turn
+  cooldown: 16
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Shanks
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

@@ -1,0 +1,234 @@
+type: DUAL
+name: Ivankov & Bon Clay - Impel Down's New Kama
+japanName: イワンコフ＆ボン・クレー インペルダウンの新人類
+family:
+  - Bentham
+  - EmporioIvankov
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 459
+    atk: 250
+    rcv: 72
+  maxLvl:
+    hp: 1148
+    atk: 624
+    rcv: 180
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 150049
+aliases:
+  - Ivankov&Bon Clay
+  - Bon Clay&Ivankov
+  - IvankovBon Clay
+  - Bon ClayIvankov
+  - Ivankov and Bon Clay
+evolution:
+  - id: 2540
+    evolvers:
+      - 98
+      - 95
+      - 1180
+      - 303
+      - 300
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x at the start of the
+    chain, by 3.43x after 4 PERFECTs in a row and recovers 3x character's RCV in
+    HP at the end of each turn.
+special:
+  name: The Cheer that will Summon a Miracle
+  description: Removes Poison, RCV DOWN and Blindness duration completely, reduces
+    Bind and Despair duration by 5 turns, recovers 13x character's RCV in HP at
+    the end of each turn for 5 turns and becomes Ivankov & Bon Clay for 2 turns.
+  cooldown: 22
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of Free Spirit characters by 75
+characters:
+  swap:
+    description: Reduces Paralysis duration by 1 turn and reduces damage received by
+      20% for 1 turn.
+  character1:
+    name: Ivankov - Impel Down's New Kama
+    japanName: イワンコフ インペルダウンの新人類
+    class:
+      - Free Spirit
+      - Fighter
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 418
+        atk: 234
+        rcv: 70
+      maxLvl:
+        hp: 1045
+        atk: 585
+        rcv: 175
+    captain:
+      name: ""
+      description: Boosts ATK of Free Spirit characters by 2x and recovers 2x
+        character's RCV in HP at the end of each turn.
+    sailor:
+      - description: Boosts base RCV of Free Spirit characters by 50
+  character2:
+    name: Bon Clay - Impel Down's New Kama
+    japanName: ボン・クレー インペルダウンの新人類
+    class:
+      - Free Spirit
+      - Fighter
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 448
+        atk: 247
+        rcv: 56
+      maxLvl:
+        hp: 1121
+        atk: 617
+        rcv: 140
+    captain:
+      name: ""
+      description: Boosts ATK of Free Spirit characters by 2.25x at the start of the
+        chain, by 2.7x after 4 PERFECTs in a row.
+    sailor:
+      - description: Boosts base ATK of Free Spirit characters by 50
+rumble:
+  stats:
+    def: 125
+    rumbleType: RCV
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 10
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: percentage
+        - attributes:
+            - Damage Over Time
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 22
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 11
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 11
+        - {}
+        - override:
+            duration: 12
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 11
+        - {}
+        - override:
+            duration: 13
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 12
+        - {}
+        - override:
+            duration: 14
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 12
+        - {}
+        - override:
+            duration: 15
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 13
+        - {}
+        - override:
+            duration: 16
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 13
+        - {}
+        - override:
+            duration: 17
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 14
+        - {}
+        - override:
+            duration: 18
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 15
+        - {}
+        - override:
+            duration: 19

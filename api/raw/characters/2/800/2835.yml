@@ -1,0 +1,184 @@
+type: DUAL
+name: Nami & Robin - Break Time for the Lovely Ladies
+japanName: ナミ＆ロビン リラックスタイムの紅二点
+family:
+  - Nami
+  - NicoRobin
+class:
+  - Free Spirit
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1390
+    atk: 946
+    rcv: 190
+  maxLvl:
+    hp: 3325
+    atk: 1571
+    rcv: 497
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 184672
+aliases:
+  - Nami&Robin
+  - NamiRobin
+  - Robin&Nami
+  - RobinNami
+  - Romi
+  - Boob Bait
+  - Legend Nami and Robin
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 4.5x, their HP and RCV
+    by 1.3x, reduces damage received by 20% and makes [DEX] and [INT] orbs
+    beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has
+    an [EMPTY] orb, boosts their ATK by 6x instead.
+special:
+  name: Mil Fleur Tempo
+  description: Deals 25% of enemies' current HP in damage to one enemy, boosts Orb
+    Effects of [DEX] and [INT] characters by 2.5x for 1 turn, reduces Paralysis
+    duration by 10 turns and becomes Nami & Robin for 3 turns
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Makes [DEX] and [INT] orbs beneficial for all characters
+  - description: Reduces Paralysis duration by 1 turn
+characters:
+  swap:
+    description: If this character has no stored orbs, stores current orbs and
+      changes all orbs into [EMPTY] orbs. If this character has stored orbs,
+      restores orbs into slots.
+    notes: The storing and emptying of orbs will work on all orbs, including
+      [BLOCK], [RAINBOW], [SEMLA] and [WANO]. However, you can not override
+      [RAINBOW], [SEMLA] or [WANO] orbs with other orbs. The Swap can not store
+      [EMPTY] orbs; if all orbs are empty, the swap will occur without any
+      additional effects if there's no stored orbs.
+  character1:
+    name: Nami - Break Time for the Lovely Ladies
+    japanName: ナミ リラックスタイムの紅二点
+    class:
+      - Free Spirit
+      - Striker
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1390
+        atk: 973
+        rcv: 163
+      maxLvl:
+        hp: 3246
+        atk: 1649
+        rcv: 401
+    captain:
+      name: ""
+      description: Boosts ATK of [DEX] and [INT] characters by 3.5x, by 3.75x instead
+        if they have a beneficial orb, their HP by 1.3x and makes [DEX] and
+        [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or
+        [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.
+    sailor:
+      - description: Makes [DEX] and [INT] orbs beneficial for all characters
+      - description: Reduces Paralysis duration by 1 turn
+  character2:
+    name: Robin - Break Time for the Lovely Ladies
+    japanName: ロビン リラックスタイムの紅二点
+    class:
+      - Free Spirit
+      - Cerebral
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1346
+        atk: 878
+        rcv: 190
+      maxLvl:
+        hp: 3122
+        atk: 1615
+        rcv: 433
+    captain:
+      name: ""
+      description: Boosts ATK of [DEX] and [INT] characters by 3.25x, their HP and RCV
+        by 1.3x, reduces damage received by 10% and makes [DEX] and [INT] orbs
+        beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character
+        has an [EMPTY] orb, boosts their ATK by 4x instead.
+    sailor:
+      - description: Makes [DEX] and [INT] orbs beneficial for all characters
+      - description: Reduces Paralysis duration by 1 turn
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 5
+    - hp: 10
+    - type: potential
+    - hp: 20
+    - rcv: 5
+    - atk: 5
+    - atk: 10
+    - atk: 15
+    - hp: 20
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - rcv: 15
+    - hp: 30
+    - atk: 25
+    - rcv: 15
+    - hp: 40
+    - rcv: 20
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - hp: 60
+    - atk: 40
+    - hp: 60
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 50
+    - atk: 50
+    - hp: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 200
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 35
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100

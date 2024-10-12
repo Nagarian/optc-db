@@ -1,0 +1,413 @@
+type: PSY
+name: Buddha Sengoku - Cunning Officer Leading the Navy Powerhouses
+family:
+  - Sengoku
+class:
+  - Cerebral
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2005
+    atk: 852
+    rcv: 107
+  maxLvl:
+    hp: 4010
+    atk: 1703
+    rcv: 214
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - V2
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4.5x, boosts HP of all characters
+    by 1.5x and makes [PSY], [TND] and Badly Matching orbs benedicial for all
+    characters. If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+    your crew, boosts ATK of all characters by 5.5x instead and reduces damage
+    received by 10%.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Sakazuki (Akainu), Kuzan (Aokiji), Borsalino (Kizaru), Issho (Fujitora),
+    Monkey D. Garp, Tsuru, Smoker, Tashigi, Hina and Coby, excluding Support
+    members."
+  description: Boosts base ATK of all characters by 1,250 for 1 turn and
+    transforms all [PSY] characters into Super [PSY] characters.
+special:
+  name: Golden Shining Strike
+  description: "If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+    your crew, select 1 character and: boosts ATK of selected characters by 4x
+    for 1 turn, boosts Orb Effects of selected characters by 4x for 1 turn,
+    changes orb of selected character into a Matching orb and changes all other
+    orbs into [TND] orbs. If your crew has 4 or more [PSY] characters, select 1
+    character and: boosts ATK of selected characters by 3.5x for 1 turn and
+    boosts Orb Effects of selected characters by 3.5x for 1 turn."
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, if this character has a [PSY] or [TND] orb and you attack with
+      this character, reduces enemies' [STR], [DEX], [QCK] and [INT] Resistance
+      by -15% for 1 turn.
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, makes [PSY], [TND] and [RCV] orbs beneficial for all
+      characters.
+support:
+  type: descriptive
+  criteria: Monkey D. Garp, Sakazuki (Akainu), Kuzan (Aokiji), Borsalino (Kizaru)
+    and Issho (Fujitora)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.15x for 1 turn and boosts Orb
+      Effects of the supported character by 1.15x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.3x for 1 turn and boosts Orb
+      Effects of the supported character by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.45x for 1 turn and boosts Orb
+      Effects of the supported character by 1.45x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.6x for 1 turn and boosts Orb
+      Effects of the supported character by 1.6x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.75x for 1 turn and boosts Orb
+      Effects of the supported character by 1.75x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - atk: 10
+    - type: potential
+    - hp: 20
+    - rcv: 10
+    - hp: 20
+    - hp: 20
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - atk: 20
+    - hp: 60
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 60
+    - rcv: 30
+    - atk: 20
+    - hp: 60
+    - hp: 60
+    - rcv: 30
+    - hp: 80
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 20
+    - rcv: 30
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 200
+    - cooldown: 1
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Sakazuki (Akainu), Kuzan (Aokiji), Borsalino
+          (Kizaru), Issho (Fujitora) or Monkey D. Garp."
+        description: Boosts Tandem ATK of top row characters by 2x and boosts ATK of all
+          other character by 1.1x for 1 turn.
+      - criteria: "Any 2 of the following: Sakazuki (Akainu), Kuzan (Aokiji), Borsalino
+          (Kizaru), Issho (Fujitora) or Monkey D. Garp."
+        description: Boosts Tandem ATK of top row characters by 2.1x and boosts ATK of
+          all other character by 1.2x for 1 turn.
+      - criteria: "Any 2 of the following: Sakazuki (Akainu), Kuzan (Aokiji), Borsalino
+          (Kizaru), Issho (Fujitora) or Monkey D. Garp."
+        description: Boosts Tandem ATK of top row characters by 2.2x and boosts ATK of
+          all other character by 1.3x for 1 turn.
+      - criteria: "Any 2 of the following: Sakazuki (Akainu), Kuzan (Aokiji), Borsalino
+          (Kizaru), Issho (Fujitora), Monkey D. Garp, Tsuru, Smoker, Tashigi,
+          Hina or Coby."
+        description: Boosts Tandem ATK of top row characters by 2.3x and boosts ATK of
+          all other character by 1.4x for 1 turn.
+      - criteria: "Any 2 of the following: Sakazuki (Akainu), Kuzan (Aokiji), Borsalino
+          (Kizaru), Issho (Fujitora), Monkey D. Garp, Tsuru, Smoker, Tashigi,
+          Hina or Coby."
+        description: Boosts Tandem ATK of top row characters by 2.5x and boosts ATK of
+          all other character by 1.5x for 1 turn.
+rumble:
+  stats:
+    def: 235
+    rumbleType: SPT
+    spd: 140
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Damage Over Time
+      chance: 100
+      type: debuff
+    - attribute: INT
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - Blow Away
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 7
+        - override:
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 8
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            duration: 9
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            duration: 10
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            level: 4
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            level: 4
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 7
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

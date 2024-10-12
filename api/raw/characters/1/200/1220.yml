@@ -1,0 +1,105 @@
+type: INT
+name: Byrnndi World - World Pirates Captain
+japanName: バーンディ・ワールド ワールド海賊団船長
+family:
+  - ByrnndiWorld
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1011
+    atk: 744
+    rcv: 52
+  maxLvl:
+    hp: 1990
+    atk: 1483
+    rcv: 170
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 36721
+aliases:
+  - Colo World
+  - Coliseum World
+  - Colo Byrnndi World
+  - Coliseum Byrnndi World
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1x. If you defeat an enemy,
+    increases ATK boost slightly. Stacks up to 10 times to a maximum of 3.25x.
+  notes: If a character dies and revives, it counts as killing a character. If you
+    did not defeat an enemy, lose all ATK boost stacks.
+special:
+  name: More More, 10 Times "Iron Hammer"
+  description: Deals 25x character's ATK in [INT] damage to one enemy. Reduces
+    crew's current HP by 50%. Boosts ATK of Shooter characters by 2x for 1 turn
+  cooldown: 34
+  maxLevel: 17
+  stages:
+    - description: Deals 7x character's ATK in [INT] damage to one enemy. Reduces
+        crew's current HP by 50%. Boosts ATK of Shooter characters by 1.2x for 1
+        turn
+      cooldown: 22
+    - description: Deals 15x character's ATK in [INT] damage to one enemy. Reduces
+        crew's current HP by 50%. Boosts ATK of Shooter characters by 1.5x for 1
+        turn
+      cooldown: 28
+sailor:
+  - description: Boosts base ATK of this character by 100 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Shooter characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - cooldown: 1
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - cooldown: 1
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

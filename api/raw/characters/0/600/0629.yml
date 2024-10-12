@@ -1,0 +1,43 @@
+type: INT
+name: Franky - Franky Family
+japanName: フランキー フランキー一家棟梁
+family:
+  - Franky
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 203
+    atk: 103
+    rcv: 23
+  maxLvl:
+    hp: 1712
+    atk: 831
+    rcv: 85
+cost: 17
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 14294
+aliases: []
+evolution:
+  - id: 739
+    evolvers:
+      - 117
+      - 82
+      - 83
+      - 99
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of Rarity 3 or less characters by 2x
+special:
+  name: Master Nail
+  description: Changes all orbs, including [BLOCK] orbs, into [EMPTY] orbs, deals
+    random [INT] damage to all enemies
+  cooldown: 23
+  maxLevel: 7

@@ -1,0 +1,48 @@
+type: DEX
+name: Shuraiya Bascud Pirate Executioner
+japanName: シュライヤ・バスクード 海賊処刑人
+family:
+  - ShuraiyaBascud
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 812
+    atk: 358
+    rcv: 80
+  maxLvl:
+    hp: 1474
+    atk: 742
+    rcv: 188
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 30771
+aliases:
+  - Shovel Guy
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.25x
+special:
+  name: Fighting Method of the Pirate Executioner
+  description: Deals 9x character's ATK in [DEX] damage to one enemy. Changes the
+    orb of this character into a [DEX] orb
+  cooldown: 13
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Driven characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

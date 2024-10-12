@@ -1,0 +1,551 @@
+type: PSY
+name: Trafalgar Law - Former Warlord of the Sea
+japanName: トラファルガー・ロー 元王下七武海
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Slasher
+  - Free Spirit
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1402
+    atk: 753
+    rcv: 291
+  maxLvl:
+    hp: 3110
+    atk: 1529
+    rcv: 482
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 29651
+aliases:
+  - Mega/Super/6+ Law
+  - V1 Legend Law
+  - Shichibukai
+captain:
+  name: ""
+  description: Boosts Slasher and Free Spirit character's ATK by 2.5x, by 3.5x
+    after 3 consecutive PERFECTs, by 4x after 5 consecutive PERFECTs. Recovers
+    1,000 HP at the end of each turn.
+special:
+  name: Sterben
+  description: Makes Damage and Health Cutting Specials of all characters bypass
+    all defensive Buffs, Barriers and Defense, deals 100x character's ATK in
+    [PSY] damage to one enemy and reduces Special Cooldown of all characters by
+    1 turn.
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: When HP is below 10% at the start of the turn, boosts base RCV of
+      Slasher and Free Spirit characters by 300
+  - description: Makes [INT], [RCV] and [TND] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Donquixote Rosinante (Corazon)
+  levels:
+    - Once per adventure, when you reach the final stage, recovers 1,000 HP and
+      reduces Special Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, recovers 1,500 HP and
+      reduces Special Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, recovers 2,000 HP and
+      reduces Special Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, recovers 2,500 HP and
+      reduces Special Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, recovers 3,000 HP and
+      reduces Special Cooldown of supported character by 1 turn.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 10
+    - atk: 10
+    - type: potential
+    - rcv: 10
+    - rcv: 15
+    - atk: 15
+    - type: sailor
+    - rcv: 15
+    - rcv: 20
+    - atk: 20
+    - cooldown: 1
+    - hp: 45
+    - hp: 55
+    - type: potential
+    - hp: 65
+    - hp: 75
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 35
+    - atk: 25
+    - cooldown: 1
+    - atk: 30
+    - atk: 50
+    - cooldown: 1
+    - hp: 85
+    - type: sailor
+    - hp: 95
+    - atk: 60
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts Slasher and Free Spirit character's ATK by 3.5x, by 4x after
+          3 consecutive PERFECTs, by 4.5x after 5 consecutive PERFECTs. Recovers
+          1,000 HP at the end of each turn.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+rumble:
+  stats:
+    def: 159
+    rumbleType: ATK
+    spd: 194
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Free Spirit
+        - attributes:
+            - RCV
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Free Spirit
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 950
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - duration: 30
+          effect: damage
+          level: 2
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 10
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 975
+        - override:
+            duration: 31
+        - override:
+            duration: 11
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            duration: 32
+        - override:
+            duration: 12
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1025
+        - override:
+            duration: 33
+        - override:
+            duration: 13
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            duration: 34
+        - override:
+            duration: 14
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1075
+        - override:
+            duration: 35
+        - override:
+            duration: 15
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            duration: 36
+        - override:
+            duration: 16
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1125
+        - override:
+            duration: 37
+        - override:
+            duration: 17
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            duration: 38
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            duration: 40
+            level: 3
+        - override:
+            duration: 20
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+                  - Free Spirit
+            - attributes:
+                - RCV
+              condition:
+                comparator: remaining
+                count: 70
+                type: time
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - Slasher
+                  - Free Spirit
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 4
+  - captain:
+      - description: Boosts Slasher and Free Spirit character's ATK by 4.5x, by 5x after
+          3 consecutive PERFECTs, by 5.25x after 5 consecutive PERFECTs and
+          recovers 1,000 HP at the end of each turn.
+      - description: Boosts Slasher and Free Spirit character's ATK by 5x, by 5.25x
+          after 3 consecutive PERFECTs and recovers 1,000 HP at the end of each
+          turn.
+  - rumble:
+      special:
+        - cooldown: 30
+          effects:
+            - amount: 1200
+              effect: damage
+              range:
+                direction: radial
+                size: small
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+            - duration: 30
+              effect: damage
+              level: 2
+              range:
+                direction: radial
+                size: small
+              targeting:
+                targets:
+                  - enemies
+              type: time
+            - attributes:
+                - DEF
+              duration: 10
+              effect: debuff
+              level: 3
+              range:
+                direction: radial
+                size: small
+              targeting:
+                targets:
+                  - enemies
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 1400
+            - override:
+                duration: 31
+            - override:
+                duration: 11
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 1600
+            - override:
+                duration: 32
+            - override:
+                duration: 12
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 1800
+            - override:
+                duration: 33
+            - override:
+                duration: 13
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 2000
+            - override:
+                duration: 34
+            - override:
+                level: 4
+                duration: 14
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 2200
+            - override:
+                duration: 35
+            - override:
+                level: 4
+                duration: 15
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 2400
+            - override:
+                duration: 36
+            - override:
+                duration: 16
+                level: 4
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 2600
+            - override:
+                duration: 37
+            - override:
+                duration: 17
+                level: 5
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 2800
+            - override:
+                duration: 38
+            - override:
+                duration: 18
+                level: 5
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 3000
+            - override:
+                duration: 40
+                level: 3
+            - override:
+                duration: 20
+                level: 6
+  - rumble:
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: INT
+          percentage: 40
+          type: damage
+    special:
+      description: Makes Damage and Health Cutting Specials of all characters bypass
+        all defensive Buffs, Barriers and Defense, inflicts all enemies with
+        Increase Damage Taken by 1.5x for 1 turn, , deals 100x character's ATK
+        in [PSY] damage to one enemy and reduces Special Cooldown of all
+        characters by 1 turn.
+    sailor:
+      sailor1:
+        description: Boosts base ATK of all characters by 100. When HP is below 30% at
+          the start of the turn, boosts base RCV of Slasher and Free Spirit
+          characters by 300.

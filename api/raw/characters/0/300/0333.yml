@@ -1,0 +1,37 @@
+type: PSY
+name: Dr. Kureha
+japanName: Dr.くれは
+family:
+  - Kureha
+class:
+  - Slasher
+  - Cerebral
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 35
+    atk: 32
+    rcv: 88
+  maxLvl:
+    hp: 200
+    atk: 200
+    rcv: 510
+cost: 20
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 6662
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] and [INT] characters by 1.5x
+special:
+  name: Doctor Stop
+  description: Recovers a random amount of HP
+  cooldown: 20
+  maxLevel: 6
+  notes: "`randomHeal : 2,000 : 5,000`"

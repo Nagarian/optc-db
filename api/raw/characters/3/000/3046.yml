@@ -1,0 +1,55 @@
+type: PSY
+name: Charlotte Pudding - Charlotte Family Vacation
+japanName: シャーロット・プリン シャーロット家のバカンス
+family:
+  - CharlottePudding
+class:
+  - Driven
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1029
+    atk: 403
+    rcv: 155
+  maxLvl:
+    hp: 2430
+    atk: 1245
+    rcv: 380
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 218708
+aliases:
+  - Summer Pudding
+  - Swimsuit Pudding
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x and reduces damage received
+    from [INT] enemies by 10%.
+special:
+  name: Mischievous Little Devil Smile
+  description: Reduces enemies' Resilience duration by 4 turns and reduces Despair
+    duration by 4 turns and makes [RCV] and [TND] orbs beneficial for [PSY]
+    characters for 2 turns.
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: If this character has an [PSY] orb and you hit a PERFECT with her,
+      keep her [PSY] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

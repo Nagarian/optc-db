@@ -1,0 +1,49 @@
+type: PSY
+name: Fujitora - Navy HQ Powerhouse
+japanName: 藤虎 海軍本部最高戦力
+family:
+  - Issho
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 303
+    atk: 165
+    rcv: 29
+  maxLvl:
+    hp: 1344
+    atk: 700
+    rcv: 144
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 56945
+aliases:
+  - Raid Issho
+  - Raid Fujitora
+evolution:
+  - id: 1595
+    evolvers:
+      - 118
+      - 83
+      - 87
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Deals 10% of enemies' current HP in damage to all enemies at the
+    end of each turn
+special:
+  name: "Gravity Blade: Fierce Tiger"
+  description: Deals 50x character's ATK in [PSY] True damage to all enemies,
+    changes orbs of adjacent characters into Matching Orbs, boosts Orb Effects
+    of Powerhouse characters by 2x for 1 turn
+  cooldown: 29
+  maxLevel: 16

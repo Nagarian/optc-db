@@ -1,0 +1,235 @@
+type: DEX
+name: Roronoa Zoro - Swordsman in Disguise
+japanName: ロロノア・ゾロ 変装する剣士
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1648
+    atk: 706
+    rcv: 91
+  maxLvl:
+    hp: 3296
+    atk: 1412
+    rcv: 181
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 293671
+aliases:
+  - Onigashima Zoro
+  - Limited Zoro
+  - Secret Zoro
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3x and their HP by 1.2x.
+special:
+  name: Slash and Tear
+  description: Reduces Despair and Paralysis duration by 5 turns, reduces enemies'
+    Barrier duration by 1 turn and boosts Orb Effects of all characters by 2x
+    for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Boosts this character's damage against [STR] characters by 2x
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy and Kin'emon
+  levels:
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn and reduces enemies' Barrier duration by 1
+      turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - atk: 30
+    - atk: 40
+    - rcv: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 146
+    rumbleType: ATK
+    spd: 163
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 0.8
+          effect: damage
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            amount: 0.9
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            amount: 1
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            amount: 1.1
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            amount: 1.2
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1
+        - override:
+            amount: 1.3
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            amount: 1.4
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            amount: 1.5
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            amount: 1.6
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            amount: 1.8

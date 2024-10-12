@@ -1,0 +1,98 @@
+type: INT
+name: Nefeltari Vivi - Resting in the Shade
+japanName: ネフェルタリ・ビビ 木陰で一休み
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 739
+    atk: 485
+    rcv: 141
+  maxLvl:
+    hp: 1998
+    atk: 1312
+    rcv: 382
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 158391
+aliases:
+  - Summer Vivi
+  - Swimsuit Vivi
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x at the start of the chain,
+    boosts ATK of [INT] characters by 4x following a chain of [DEX] > [PSY]
+    attacks no lower than Good and reduces damage received from [PSY] enemies by
+    30%
+special:
+  name: Beach Princess' Smile
+  description: Reduces Special Cooldown of all characters by 1 turn, reduces Chain
+    Multiplier Limit duration by 5 turns and changes [BLOCK], [DEX] and [PSY]
+    orbs into Matching orbs. If Vivi is your Captain or Friend/Guest Captain,
+    boosts ATK of [INT] characters by 2.25x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX], [PSY] and [INT] characters by 30
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - slot: 1
+    - hp: 60
+    - rcv: 50
+    - atk: 30
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,265 @@
+type: PSY
+name: "Nami - Straw Hat Pirates: Mark of Adventure"
+japanName: ナミ 麦わらの一味・冒険の軌跡
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 130
+    atk: 71
+    rcv: 41
+  maxLvl:
+    hp: 1170
+    atk: 570
+    rcv: 165
+cost: 9
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 199778
+aliases:
+  - Super Nami
+evolution:
+  - id: 2940
+    evolvers:
+      - 117
+      - 98
+      - 87
+      - 266
+      - 303
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn.
+special:
+  name: Sorcery Clima-Tact Mirage Tempo
+  description: Reduces Paralysis and Bind duration by 3 turns and changes orbs of
+    adjacent characters into Matching orbs.
+  cooldown: 16
+  maxLevel: 6
+  stages:
+    - description: Reduces Paralysis and Bind duration by 1 turn.
+      cooldown: 12
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+rumble:
+  stats:
+    def: 126
+    rumbleType: DBF
+    spd: 124
+    cost: 20
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 21
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 22
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 23
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 24
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 25
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 26
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 27
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 28
+          effect: debuff
+          level: 5
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 29
+          effect: debuff
+          level: 7
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies

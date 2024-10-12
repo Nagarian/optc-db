@@ -1,0 +1,271 @@
+type: DEX
+name: Kozuki Oden - Aspiring to the Grand Voyage
+family:
+  - KozukiOden
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1691
+    atk: 720
+    rcv: 111
+  maxLvl:
+    hp: 3382
+    atk: 1439
+    rcv: 222
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags: []
+aliases:
+  - Super Class Last Tap
+evolution:
+  - id: 3620
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 3.25x and
+    boosts HP of Slasher and Free Spirit characters by 1.2x.
+special:
+  name: Trampling Giant Legs
+  description: Reduces enemies' Barrier duration by 2 turns and deals 200x
+    character's ATK in [DEX] damage to one enemy. If your Captain is a Slasher
+    or Free Spirit character, increases duration of any Orb Amplification buffs
+    by 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [DEX] orbs beneficial for Slasher and Free Spirit characters.
+  - description: When any other Slasher or Free Spirit character uses a special,
+      reduces special cooldown of this character by 1 turn.
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - atk: 30
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - atk: 30
+    - hp: 50
+    - rcv: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: On the last Stage when character has a [DEX] or [TND] orb
+    levels:
+      - description: Boosts own base ATK by 150 for 1 turn.
+      - description: Boosts own base ATK by 300 for 1 turn.
+      - description: Boosts own base ATK by 450 for 1 turn.
+      - description: Boosts own base ATK by 600 for 1 turn.
+      - description: Boosts own base ATK by 750 for 1 turn.
+rumble:
+  stats:
+    def: 165
+    rumbleType: ATK
+    spd: 176
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 28
+      effects:
+        - duration: 6
+          effect: damage
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 700
+          effect: damage
+          targeting:
+            targets:
+              - QCK
+          type: fixed
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 0.75
+        - override:
+            amount: 750
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            amount: 0.8
+        - override:
+            amount: 800
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 9
+        - override:
+            amount: 0.85
+        - override:
+            amount: 850
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 10
+        - override:
+            amount: 0.9
+        - override:
+            amount: 900
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            amount: 0.95
+        - override:
+            amount: 950
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            amount: 1
+        - override:
+            amount: 1000
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            amount: 1.05
+        - override:
+            amount: 1050
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 1.1
+        - override:
+            amount: 1100
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            amount: 1.2
+        - override:
+            amount: 1200

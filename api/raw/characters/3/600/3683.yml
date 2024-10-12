@@ -1,0 +1,202 @@
+type: INT
+name: Brook - Straw Hat Pirates Enjoying the FES
+family:
+  - Brook
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1720
+    atk: 791
+    rcv: 76
+  maxLvl:
+    hp: 3440
+    atk: 1582
+    rcv: 152
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - RED
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and Free Spirit characters by 3x and boosts HP
+    of [INT] and Free Spirit characters by 1.35x.
+special:
+  name: "Blizzard Slice: Chilling the Dead"
+  description: Reduces enemies' Increased Defense, Percent Damage Reduction and
+    Threshold Damage Reduction duration by 5 turns, reduces ATK DOWN duration by
+    5 turns. If your Captain is an [INT] character, changes [BLOCK] orbs into
+    Matching orbs.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Boosts base HP of all characters by 100. If your crew has 6 [INT]
+      characters, boosts base ATK of top row characters by 100.
+support:
+  type: descriptive
+  criteria: Nami, Tony Tony Chopper and Nico Robin
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, randomizes
+      orb of supported character, including [BLOCK] orbs, into either [STR],
+      [DEX], [QCK], [PSY] or [INT] orbs.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, randomizes
+      orb of supported character, including [BLOCK] orbs, into either [STR],
+      [DEX], [QCK], [PSY] or [INT] orbs.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, randomizes
+      orb of supported character, including [BLOCK] orbs, into either [STR],
+      [DEX], [QCK], [PSY] or [INT] orbs.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, randomizes
+      orb of supported character, including [BLOCK] orbs, into either [STR],
+      [DEX], [QCK], [PSY] or [INT] orbs.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes the
+      orb of the supported character into a Matching orb.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - rcv: 20
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - rcv: 30
+    - type: sailor
+    - cooldown: 1
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 150
+    rumbleType: SPT
+    spd: 141
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - DEF
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - ATK
+            - Critical Hit
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 7
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 15

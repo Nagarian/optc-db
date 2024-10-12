@@ -1,0 +1,99 @@
+type: INT
+name: Napping Kyoshiro
+japanName: 居眠り狂死郎
+family:
+  - Denjiro
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1286
+    atk: 705
+    rcv: 114
+  maxLvl:
+    hp: 2972
+    atk: 1493
+    rcv: 207
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 178881
+aliases:
+  - Coliseum Kyoshiro
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2.75x, their HP by
+    1.2x and boosts chances of getting [INT] orbs.
+special:
+  name: Ready Swordsman
+  description: Changes [BLOCK] orbs into [EMPTY] orbs, deals 50x-80x character's
+    ATK in Typeless damage to all enemies, depending on number of [BLOCK] slots
+    emptied. Changes [EMPTY], [G] and [BOMB] orbs into [INT] orbs. If HP is
+    above 99% at the time the special is activated, reduces any damage received
+    above 3,000 HP by ?% for 1 turn and adds 0.9x to Chain multiplier for 1
+    turn. Otherwise, reduces damage received by 80% for 1 turn and adds 0.7x to
+    Chain multiplier for 1 turn.
+  cooldown: 30
+  maxLevel: 16
+  notes: "The exact multiplier used is chosen based on the number of [BLOCK] orbs
+    consumed: 0 orbs - 50x ATK; 1 orb - 50x ATK; 2 orbs - 57.5x ATK; 3 orbs -
+    65x ATK; 4 orbs - 70x ATK; 5 orbs - 75x ATK; 6 orbs - 80x ATK."
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 50
+  - description: Makes [INT] orbs beneficial for Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Slasher characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 30
+    - rcv: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - hp: 40
+    - rcv: 40
+    - type: sailor
+    - atk: 40
+    - hp: 40
+    - type: potential
+    - hp: 60
+    - rcv: 45
+    - atk: 80
+    - hp: 60
+    - cooldown: 1
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

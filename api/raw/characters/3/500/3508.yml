@@ -1,0 +1,356 @@
+type: DUAL
+name: Kaido & Lead Performers - Greatest Army in the World
+japanName: カイドウ＆大看板 世界最強の戦力
+family:
+  - Jack
+  - Kaido
+  - King
+  - Queen
+class:
+  - Powerhouse
+  - Driven
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1893
+    atk: 976
+    rcv: 87
+  maxLvl:
+    hp: 4675
+    atk: 1753
+    rcv: 162
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 312079
+aliases:
+  - Beast Pirates
+  - Animal Kingdom Pirates
+  - Legend Kaido Crew
+captain:
+  name: ""
+  description: Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters
+    by 2 turns at the start of the fight, reduces Super Swap cooldown of this
+    character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters
+    by 5x and their HP by 1.3x. If there are 6 Powerhouse characters in your
+    crew, deals 600x character's ATK in character's Type damage to all enemies
+    at the end of each turn.
+special:
+  name: Absolute Destruction
+  description: Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters
+    by 1 turn, deals 500x character's ATK in Typeless damage to all enemies and
+    becomes Kaido & Lead Performers for 3 turns. If your crew has 5 or more
+    Powerhouse characters, boosts the Color Affinity of [STR], [QCK] and
+    Powerhouse characters by 2.5x for 1 turn, by 2.25x otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Powerhouse characters by 100
+  - description: Cannot be Blown Away
+characters:
+  swap:
+    description: Changes the orb, including [BLOCK] orbs, of this character into a
+      Matching orb and removes Silence duration completely on this character.
+    super:
+      criteria: 8
+      description: Changes the orb, including [BLOCK] orbs, of this character into a
+        Matching orb, removes Silence duration completely on this character,
+        advances Special Cooldown of this character to MAX and deals 500,000
+        Fixed True damage, ignoring Normal Attack Only, to all enemies.
+  character1:
+    name: Kaido - Greatest Army in the World
+    japanName: カイドウ 世界最強の戦力
+    class:
+      - Powerhouse
+      - Driven
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1872
+        atk: 903
+        rcv: 50
+      maxLvl:
+        hp: 4192
+        atk: 1569
+        rcv: 144
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters
+        by 2 turns at the start of the fight, reduces Super Swap cooldown of
+        this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse
+        characters by 4.5x and their HP by 1.3x. If there are 6 Powerhouse
+        characters in your crew, deals 400x character's ATK in [STR] damage to
+        all enemies at the end of each turn.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Powerhouse characters by 50
+      - description: Cannot be Blown Away
+  character2:
+    name: Lead Performers - Greatest Army in the World
+    japanName: 大看板 世界最強の戦力
+    class:
+      - Powerhouse
+      - Driven
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1872
+        atk: 906
+        rcv: 49
+      maxLvl:
+        hp: 4192
+        atk: 1573
+        rcv: 142
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters
+        by 2 turns at the start of the fight, reduces Super Swap cooldown of
+        this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse
+        characters by 4.5x and their HP by 1.3x. If there are 6 Powerhouse
+        characters in your crew, deals 400x character's ATK in [QCK] damage to
+        all enemies at the end of each turn.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Powerhouse characters by 50
+      - description: Cannot be Blown Away
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - hp: 100
+    - atk: 20
+    - atk: 30
+    - rcv: 15
+    - rcv: 30
+    - type: sailor
+    - hp: 100
+    - hp: 150
+    - atk: 30
+    - atk: 30
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 150
+    - hp: 150
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+        - value: 200
+          reduction: 4
+        - value: 300
+          reduction: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 209
+    rumbleType: ATK
+    spd: 184
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: Cerebral
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 0.3
+          effect: damage
+          repeat: 4
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+          defbypass: true
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.35
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.4
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.45
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.5
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.55
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.6
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.65
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.7
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 0.8
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,91 @@
+type: STR
+name: Monkey D. Luffy - Gum-Gum Elephant Gun
+japanName: モンキー・D・ルフィ ゴムゴムの象銃（エレファント・ガン）
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1005
+    atk: 560
+    rcv: 113
+  maxLvl:
+    hp: 2255
+    atk: 1499
+    rcv: 284
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 2017
+aliases:
+  - Mega Luffy
+  - Super Luffy
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x and their HP by 1.25x, boosts
+    ATK of all characters by 2.8125x after scoring 4 PERFECTs in a row
+special:
+  name: "Gum Gum: Elephant Gun"
+  description: Deals 40x character's ATK in [STR] damage to all enemies and delays
+    all enemies by 1 turn
+  cooldown: 23
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of this character by 100 if this character is the
+      last in the chain to attack
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: All characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - cooldown: 1
+    - atk: 30
+    - rcv: 20
+    - type: potential
+    - hp: 30
+    - rcv: 30
+    - cooldown: 1
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - cooldown: 1
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4

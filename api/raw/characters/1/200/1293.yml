@@ -1,0 +1,57 @@
+type: PSY
+name: Boa Sandersonia - Kuja Warrior
+japanName: ボア・サンダーソニア 九蛇の戦士
+family:
+  - BoaSandersonia
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 93
+    atk: 39
+    rcv: 39
+  maxLvl:
+    hp: 693
+    atk: 393
+    rcv: 193
+cost: 16
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 39530
+aliases:
+  - Colo Sandersonia
+  - Coliseum Sandersonia
+  - Colo Boa Sandersonia
+  - Coliseum Boa Sandersonia
+evolution:
+  - id: 1294
+    evolvers:
+      - 117
+      - 80
+      - 81
+      - 86
+      - 87
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.75x, deals 2x the damage
+    taken from enemies in the previous turn in [PSY] damage to all enemies at
+    the end of each turn
+special:
+  name: Snake Dance
+  description: Changes orb of Captain character into a Matching orb and reduces
+    damage received from [PSY] enemies by 50%-100% for 1 turn.
+  cooldown: 26
+  maxLevel: 11
+  stages:
+    - description: Changes orb of Captain character into a Matching orb and reduces
+        damage received from [PSY] enemies by 40% for 1 turn
+      cooldown: 21
+  notes: "The exact multiplier used is chosen based on the crew's current HP at
+    the time the special is activated: above 50% HP, the multiplier used is 50%;
+    between 50% and 10%, it's 80%; below 10% HP, it's 100%."

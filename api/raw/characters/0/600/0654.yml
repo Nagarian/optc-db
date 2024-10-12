@@ -1,0 +1,86 @@
+type: DEX
+name: Duval - Rosy Life Riders Leader
+japanName: デュバル 人生バラ色ライダーズ ヘッド
+family:
+  - Duval
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 8
+  minLvl:
+    hp: 1420
+    atk: 658
+    rcv: 103
+  maxLvl:
+    hp: 2608
+    atk: 1113
+    rcv: 308
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 14749
+aliases:
+  - Raid Duval
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, boosts ATK of [DEX] characters by 2.75x if they have Matching
+    orbs
+special:
+  name: Heart-Smashing Horn
+  description: Deals 20% of enemies' current HP in damage to all enemies, reduces
+    damage received by 50% for 1 turn
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 20
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Vinsmoke Sanji
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 15
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - cooldown: 3
+    - rcv: 50
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - atk: 50
+    - hp: 80
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

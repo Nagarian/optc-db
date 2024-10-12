@@ -1,0 +1,283 @@
+type: QCK
+name: Kuja Pirates
+japanName: 九蛇海賊団
+family:
+  - BoaHancock
+  - BoaSandersonia
+  - BoaMarigold
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1279
+    atk: 721
+    rcv: 83
+  maxLvl:
+    hp: 3180
+    atk: 1481
+    rcv: 192
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 278434
+aliases:
+  - Kizuna Boa Crew
+evolution:
+  - id: 3352
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Free Spirit characters by 3.5x, their HP
+    by 1.25x and makes [QCK] orbs beneficial for Shooter and Free Spirit
+    characters.
+special:
+  name: Kuja Return
+  description: Reduces enemies' Increased Defense and Percent Damage Reduction
+    duration by 4 turns, boosts ATK of Shooter and Free Spirit characters by 2x
+    for 1 turn and boosts ATK against delayed enemies by 1.5x for 1 turn. If HP
+    is above 25,000 at the time the special is activated, delays all enemies by
+    1 turn.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter and Free Spirit characters by 30
+  - description: Makes [QCK] orbs beneficial for Shooter and Free Spirit characters
+support:
+  type: descriptive
+  criteria: "[QCK] characters"
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [RCV] and [G] orb of the supported character
+      into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [BOMB], [RCV] and [G] orb of the supported
+      character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [EMPTY], [BOMB], [RCV] and [G] orb of the
+      supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes Badly Matching, [EMPTY], [BOMB], [RCV] and
+      [G] orb of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes Badly Matching, [BLOCK], [EMPTY], [BOMB],
+      [RCV] and [G] orb of the supported character into a Matching orb.
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - atk: 25
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 70
+        - threshold: 50
+rumble:
+  stats:
+    def: 190
+    rumbleType: DBF
+    spd: 155
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 0.6
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          duration: 6
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          duration: 6
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 1
+            duration: 6
+        - override:
+            level: 1
+            duration: 6
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 2
+            duration: 10
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 3
+            duration: 10
+        - override:
+            level: 3
+            duration: 10

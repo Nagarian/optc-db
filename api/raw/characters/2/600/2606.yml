@@ -1,0 +1,209 @@
+type: INT
+name: Viola - Princess of Dressrosa
+japanName: ヴィオラ ドレスローザ王国王女
+family:
+  - Viola
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 383
+    atk: 229
+    rcv: 79
+  maxLvl:
+    hp: 957
+    atk: 572
+    rcv: 199
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 156171
+aliases:
+  - Viola
+evolution:
+  - id: 2607
+    evolvers:
+      - 266
+      - 93
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x and their HP and RCV by 1.2x.
+special:
+  name: Eye Whale
+  description: Changes orbs of this and adjacent characters into Matching orbs. If
+    HP is above 50% at the time the special is activated, boosts ATK of Cerebral
+    characters by 2x for 1 turn, by 1.75x otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of Cerebral characters by 40
+rumble:
+  stats:
+    def: 118
+    rumbleType: SPT
+    spd: 130
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          duration: 15
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 20
+        - override:
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 23
+        - override:
+            level: 2
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            level: 5
+            duration: 25

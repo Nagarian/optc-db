@@ -1,0 +1,80 @@
+type: INT
+name: Franky - Straw Hat Pirates
+japanName: フランキー 麦わらの一味
+family:
+  - Franky
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1623
+    atk: 765
+    rcv: 70
+  maxLvl:
+    hp: 2505
+    atk: 1149
+    rcv: 130
+cost: 18
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 14294
+aliases: []
+evolution:
+  - id: 1550
+    evolvers:
+      - skull
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x
+special:
+  name: Coup de Boo
+  description: Reduces Bind duration by 5 turns, randomizes all orbs
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 15
+  - description: Makes [TND] orbs beneficial for all characters
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 20
+    - type: potential
+    - hp: 45
+    - hp: 55
+    - hp: 65
+    - hp: 80
+    - atk: 20
+    - type: sailor
+    - atk: 20
+    - atk: 40
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20

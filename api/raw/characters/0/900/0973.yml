@@ -1,0 +1,59 @@
+type: PSY
+name: Sentomaru
+japanName: 戦桃丸
+family:
+  - Sentomaru
+class:
+  - Fighter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 105
+    atk: 38
+    rcv: 10
+  maxLvl:
+    hp: 1202
+    atk: 557
+    rcv: 137
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 25313
+aliases:
+  - Sentoumaru
+evolution:
+  - id: 974
+    evolvers:
+      - 117
+      - 971
+  - id: 974
+    evolvers:
+      - 87
+      - 968
+  - id: 974
+    evolvers:
+      - 98
+      - 970
+  - id: 974
+    evolvers:
+      - 87
+      - 969
+  - id: 974
+    evolvers:
+      - 117
+      - 972
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x if HP is above 99% at the
+    start of the turn
+special:
+  name: "Ironclad Thrust: Dwarf Guard of the World"
+  description: Deals 20,000 Fixed damage to one enemy. Changes the orb of Friend
+    Captain character into a Matching orb
+  cooldown: 22
+  maxLevel: 8

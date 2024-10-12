@@ -1,0 +1,280 @@
+type: QCK
+name: Kurozumi Kanjuro - Traitorous Samurai
+japanName: 黒炭カン十郎 裏切りの侍
+family:
+  - KurozumiKanjuro
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1348
+    atk: 827
+    rcv: 72
+  maxLvl:
+    hp: 2996
+    atk: 1379
+    rcv: 241
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 285657
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3x and their HP by 1.2x.
+special:
+  name: Hidden Name
+  description: Changes all orbs, including [BLOCK] orbs, into [BOMB] orbs, reduces
+    Chain Coefficient Reduction duration by 8 turns, adds 1.1x to Chain
+    multiplier for 1 turn and protects from defeat for 1 turn.
+  cooldown: 31
+  maxLevel: 7
+  stages:
+    - description: Changes orbs of adjacent characters into [BOMB] orbs, reduces Chain
+        Coefficient Reduction duration by 4 turns and adds 0.8x to Chain
+        multiplier for 1 turn. If the special is activated with more than 50%
+        health remaining, protects from defeat for 1 turn.
+      cooldown: 19
+sailor:
+  - description: Boosts base ATK of Driven characters by 50
+  - description: Makes [BOMB] orbs beneficial for Driven characters
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+  criteria: Driven characters
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 9
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - rcv: 20
+    - slot: 1
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 123
+    rumbleType: DBF
+    spd: 151
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 6
+          level: 1
+          effect: debuff
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 6
+          level: 1
+          effect: debuff
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - Paralysis
+          duration: 6
+          chance: 50
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 7
+            level: 1
+        - override:
+            duration: 7
+            level: 1
+        - override:
+            duration: 7
+            chance: 55
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 8
+            level: 2
+        - override:
+            duration: 8
+            level: 1
+        - override:
+            duration: 8
+            chance: 60
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 9
+            level: 3
+        - override:
+            duration: 9
+            level: 2
+        - override:
+            duration: 9
+            chance: 65
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 10
+            level: 3
+        - override:
+            duration: 10
+            level: 2
+        - override:
+            duration: 10
+            chance: 70
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 11
+            level: 4
+        - override:
+            duration: 11
+            level: 3
+        - override:
+            duration: 11
+            chance: 75
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 12
+            level: 5
+        - override:
+            duration: 12
+            level: 3
+        - override:
+            duration: 12
+            chance: 80
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 13
+            level: 5
+        - override:
+            duration: 13
+            level: 3
+        - override:
+            duration: 13
+            chance: 85
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 14
+            level: 6
+        - override:
+            duration: 14
+            level: 4
+        - override:
+            duration: 14
+            chance: 90
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 15
+            level: 8
+        - override:
+            duration: 15
+            level: 5
+        - override:
+            duration: 15
+            chance: 100

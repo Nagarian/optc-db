@@ -1,0 +1,106 @@
+type: STR
+name: Marco the Phoenix - Protector of His Will
+japanName: 不死鳥マルコ “意志”の守り手
+family:
+  - Marco
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 940
+    atk: 540
+    rcv: 173
+  maxLvl:
+    hp: 2145
+    atk: 1357
+    rcv: 402
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 93184
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and their RCV by 1.3x.
+    Recovers 3x character's RCV in HP at the end of each turn.
+special:
+  name: Establishing an Oath of Immortality
+  description: Reduces Bind and Chain Coefficient Reduction and ATK DOWN duration
+    by 5 turns, reduces damage received by 90% for 1 turn. If your crew has 3 or
+    more [STR] characters, adds 0.75x to Chain multiplier for 1 turn
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Reduces Bind and Chain Coefficient Reduction and ATK DOWN duration
+        by 3 turns, reduces damage received by 50% for 1 turn. If your crew has
+        3 or more [STR] characters, adds 0.5x to Chain multiplier for 1 turn
+      cooldown: 16
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+  - description: Makes [TND] and [RCV] orbs beneficial for Free Spirit characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Vista and Jozu
+  levels:
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 10
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - atk: 40
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - slot: 1
+    - rcv: 30
+    - hp: 70
+    - cooldown: 1
+    - atk: 60
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

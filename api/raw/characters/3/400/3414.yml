@@ -1,0 +1,99 @@
+type: INT
+name: Hina - Black Cage Watching the Summer Festival
+japanName: ヒナ 夏祭りを見回る黒檻
+family:
+  - Hina
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1334
+    atk: 679
+    rcv: 152
+  maxLvl:
+    hp: 2700
+    atk: 1357
+    rcv: 303
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 290847
+aliases:
+  - Kimono Hina
+  - Hanabi Hina
+  - Summer Hina
+  - Limited Hina
+  - Secret Hina
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 3x and their HP by 1.2x.
+special:
+  name: Summer Festival Surveillance
+  description: Reduces ATK DOWN duration by 5 turns, reduces enemies' Threshold
+    Damage Reduction duration by 5 turns and boosts the Color Affinity of
+    Striker and Cerebral characters by 2x for 2 turns.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base HP of Striker and Cerebral characters by 50
+  - description: If this character has an [INT] orb and you hit a PERFECT with them,
+      keep his [INT] orb for the next turn
+support:
+  type: descriptive
+  criteria: "[INT] Striker characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - hp: 20
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - rcv: 50
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

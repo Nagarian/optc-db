@@ -1,0 +1,61 @@
+type: STR
+name: Byrnndi World - More-More Fruit User
+japanName: バーンディ・ワールド モアモアの実の能力者
+family:
+  - ByrnndiWorld
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 162
+    atk: 135
+    rcv: 33
+  maxLvl:
+    hp: 1332
+    atk: 742
+    rcv: 157
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 73186
+aliases:
+  - Secret World
+  - Secret Byrnndi World
+  - Limited World
+  - Limited Byrnndi World
+evolution:
+  - id: 1824
+    evolvers:
+      - 118
+      - 84
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Shooter characters by 1.5x at the start of the
+    chain.  
+
+    Boosts ATK of Shooter characters by 1.65x after the 1st PERFECT in a row, by 1.815x after the 2nd PERFECT in a row, by 1.9965x after the 3rd PERFECT in a row, by 2.19615x after the 4th PERFECT in a row and by 2.415765x after the 5th PERFECT in a row.
+special:
+  name: "More More: Hundredfold Artillery Cannon"
+  description: Deals 500,000 Fixed damage to one enemy, removes ATK DOWN duration
+    completely and reduces enemies' Barrier duration by 1 turn
+  cooldown: 22
+  maxLevel: 5
+  stages:
+    - description: Deals 100,000 Fixed damage to one enemy and removes ATK DOWN
+        duration completely
+      cooldown: 14
+    - description: Deals 300,000 Fixed damage to one enemy and removes ATK DOWN
+        duration completely
+      cooldown: 18

@@ -1,0 +1,334 @@
+type: QCK
+name: Emporio Ivankov - Engineer of the Human Body
+japanName: エンポリオ・イワンコフ 人体のエンジニア
+family:
+  - EmporioIvankov
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 455
+    atk: 288
+    rcv: 67
+  maxLvl:
+    hp: 1131
+    atk: 771
+    rcv: 200
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 211230
+aliases:
+  - ""
+evolution:
+  - id: 3015
+    evolvers:
+      - 117
+      - 90
+      - 94
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 2.25x and recovers 500
+    HP at the end of each turn.
+special:
+  name: Emporio Energy Hormones
+  description: Reduces crew's current HP by 1%, boosts ATK of [QCK] and [INT]
+    characters by 1.75x for 3 turns and boosts the Color Affinity of [QCK] and
+    [INT] characters by 1.75x for 3 turns. After 3 turns, reduces ATK of all
+    characters by 50% for 10 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of [QCK] characters by 50
+rumble:
+  stats:
+    def: 105
+    rumbleType: ATK
+    spd: 158
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.63
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.66
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.69
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.72
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.75
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.78
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.81
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.84
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 16
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 16
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit

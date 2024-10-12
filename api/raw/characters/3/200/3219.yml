@@ -1,0 +1,105 @@
+type: PSY
+name: Koala - Brilliant Bandit in the Shadows
+japanName: コアラ 暗躍する華麗な盗賊
+family:
+  - Koala
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1516
+    atk: 765
+    rcv: 152
+  maxLvl:
+    hp: 2680
+    atk: 1429
+    rcv: 276
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 252549
+aliases:
+  - World Journey Koala
+  - Limited Koala
+  - Secret Koala
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 3x, makes [PSY]
+    orbs beneficial for Slasher and Cerebral characters and recovers 1,000 HP at
+    the end of each turn.
+special:
+  name: Strategic Meeting in the Dark Night
+  description: Reduces enemies' Threshold Damage Reduction duration by 5 turns,
+    reduces Bind duration by 5 turns and changes [BLOCK] and Badly Matching orbs
+    into Matching orbs. If your captain is a Slasher or Cerebral character, adds
+    1.0x to Chain multiplier for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base RCV of Slasher and Cerebral characters by 50
+  - description: If your captain is a Slasher or Cerebral character, makes [PSY]
+      orbs beneficial for Slasher and Cerebral characters
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 20
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - cooldown: 1
+    - hp: 50
+    - atk: 20
+    - atk: 20
+    - slot: 1
+    - atk: 40
+    - rcv: 20
+    - type: sailor
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50

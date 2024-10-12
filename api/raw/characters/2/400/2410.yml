@@ -1,0 +1,77 @@
+type: QCK
+name: Monkey D. Luffy - Loose Cannon on the Prairie
+japanName: モンキー・D・ルフィ 荒野の暴れん坊
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1301
+    atk: 721
+    rcv: 161
+  maxLvl:
+    hp: 2410
+    atk: 1359
+    rcv: 302
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 137915
+aliases:
+  - World Journey Luffy
+  - Cowboy Luffy
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 2.5x and their HP by 1.2x
+special:
+  name: Captain's Spinning Gun
+  description: Reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction Buffs duration by 3 turns. If your captain is a Fighter character,
+    changes [BLOCK] orbs into Matching orbs
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Free Spirit characters by 50
+  - description: If this character has an [QCK] orb and you hit a PERFECT with him,
+      keep his [QCK] orb for the next turn
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 50
+    - hp: 40
+    - cooldown: 1
+    - hp: 50
+    - atk: 30
+    - type: sailor
+    - slot: 1
+    - hp: 70
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 80
+        - threshold: 60
+        - threshold: 50

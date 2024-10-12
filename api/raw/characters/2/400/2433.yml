@@ -1,0 +1,137 @@
+type: STR
+name: "Jack - Eleph-Eleph Fruit: Ancient Model User"
+japanName: ジャック “ゾウゾウの実”古代種の能力者
+family:
+  - Jack
+class:
+  - Striker
+  - Fighter
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1622
+    atk: 580
+    rcv: 80
+  maxLvl:
+    hp: 3612
+    atk: 1631
+    rcv: 181
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 165297
+aliases:
+  - V1 Legend Jack
+evolution:
+  - id: 3448
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x, their HP by 1.25x and boosts
+    EXP gained by 2x.
+  notes: EXP boost does not take effect if he becomes your captain in the middle
+    of the adventure.
+special:
+  name: Savage Drought
+  description: Deals 20% of enemies' current HP in True damage to all enemies and
+    increases duration of any team Percent Damage Reduction buffs, Threshold
+    Damage Reduction buffs, End of Turn Damage buffs and End of Turn Healing
+    buffs by 1 turn.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 60
+  - description: Makes [QCK], [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Kaido
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - atk: 15
+    - type: sailor
+    - hp: 30
+    - hp: 50
+    - hp: 75
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 25
+    - type: sailor
+    - hp: 90
+    - hp: 120
+    - hp: 150
+    - rcv: 15
+    - rcv: 15
+    - rcv: 15
+    - cooldown: 1
+    - atk: 30
+    - atk: 35
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - atk: 100
+    - captain:
+        description: Boosts ATK of all characters by 3.5x, their HP by 1.5x and boosts
+          EXP gained by 2x.
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

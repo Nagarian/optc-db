@@ -1,0 +1,110 @@
+type: INT
+name: "Strawberry - Marineford in Chaos: Vice Admiral"
+japanName: ストロベリー 狂乱のマリンフォード“海軍中将”
+family:
+  - Strawberry
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 972
+    atk: 641
+    rcv: 172
+  maxLvl:
+    hp: 2391
+    atk: 1261
+    rcv: 362
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 114529
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2.25x and reduces
+    damage received by 10%
+special:
+  name: Heartful Twin Slashes
+  description: Reduces Bind, Despair, ATK DOWN and Chain Multiplier Limit duration
+    by 2 turns, reduces enemies' Barrier duration by 1 turn and deals 50,000
+    Fixed damage to one enemy
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: When any other [PSY] or [INT] character uses a special, reduces
+      special cooldown of this character by 3 turns
+  - description: Makes [TND] orbs beneficial for [PSY] and [INT] characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - hp: 40
+    - type: potential
+    - cooldown: 1
+    - hp: 50
+    - atk: 20
+    - atk: 20
+    - rcv: 30
+    - cooldown: 1
+    - type: sailor
+    - hp: 60
+    - atk: 40
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

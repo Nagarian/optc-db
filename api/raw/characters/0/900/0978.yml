@@ -1,0 +1,100 @@
+type: QCK
+name: Kizaru - Man of Light
+japanName: 黄猿　光人間
+family:
+  - Borsalino
+class:
+  - Shooter
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1179
+    atk: 665
+    rcv: 130
+  maxLvl:
+    hp: 2506
+    atk: 1410
+    rcv: 277
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 25111
+aliases:
+  - Raid Borsalino
+  - Raid Kizaru
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Shooter characters by 2 turns at the
+    start of the fight, boosts ATK of Shooter characters by 2.5x and boosts HP
+    of Shooter characters by 1.5x.
+special:
+  name: Yata no Kagami (Sacred Mirror)
+  description: Changes the orb of this character into a [QCK] orb. Reduces Special
+    Cooldown of Shooter and Fighter characters by 1 turn. Adds 0.5x to Chain
+    multiplier for 2 turns
+  cooldown: 25
+  maxLevel: 15
+  stages:
+    - description: Changes the orb of this character into a [QCK] orb. Reduces Special
+        Cooldown of Shooter and Fighter characters by 1 turn
+      cooldown: 19
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 20
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Sakazuki (Akainu) and Kuzan (Aokiji)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - hp: 20
+    - atk: 20
+    - rcv: 20
+    - type: sailor
+    - atk: 30
+    - hp: 30
+    - rcv: 20
+    - slot: 1
+    - hp: 60
+    - captain:
+        description: Reduces Special Cooldown of Shooter characters by 3 turns at the
+          start of the fight, boosts ATK of Shooter characters by 2.5x and
+          boosts HP of Shooter characters by 1.5x
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

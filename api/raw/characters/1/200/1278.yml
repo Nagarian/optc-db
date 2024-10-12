@@ -1,0 +1,90 @@
+type: PSY
+name: Death God Doc Q
+japanName: “死神”ドクＱ
+family:
+  - DocQ
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 609
+    atk: 549
+    rcv: 201
+  maxLvl:
+    hp: 1403
+    atk: 1290
+    rcv: 491
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 38769
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces RCV of all characters by 99%. Boosts ATK of Slasher and
+    Striker characters by 2.75x if HP is above 99% at the start of the turn
+special:
+  name: Reaping of Desperate Lives
+  description: Reduces crew's current HP by 10%. Changes [BLOCK], [TND] and [RCV]
+    orbs of Slasher and Striker characters into Matching Orbs.
+  cooldown: 10
+  maxLevel: 7
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+  - description: Boosts base ATK and HP of Striker characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Marshall D. Teach (Blackbeard), Jesus Burgess, Laffitte, Shiryu and Van Augur
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - atk: 25
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - hp: 50
+    - atk: 30
+    - type: sailor
+    - atk: 35
+    - rcv: 30
+    - rcv: 30
+    - hp: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

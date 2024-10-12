@@ -1,0 +1,229 @@
+type: QCK
+name: Aokiji - Three Admirals Defending Marineford
+family:
+  - Kuzan
+class:
+  - Striker
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1590
+    atk: 708
+    rcv: 124
+  maxLvl:
+    hp: 3180
+    atk: 1416
+    rcv: 248
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts HP of all characters by 1.5x and makes [INT] and [TND] orbs
+    beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and
+    [INT] character in your crew, boosts ATK of all characters by 4x. If this
+    character becomes your captain in the middle of an island, further boosts
+    ATK of all characters by 1.35x and reduces damage received by 10%.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Sengoku, Kuzan (Aokiji), Borsalino (Kizaru), Issho (Fujitora) and Monkey D.
+    Garp, excluding Support members."
+  description: Boosts Color Affinity of this character by 2.5x for 1 turn,
+    optionally removes Captain Swap duration completely and transforms all [QCK]
+    characters into Super [QCK] characters.
+special:
+  name: Impaling Partisan
+  description: Reduces ATK DOWN and Silence duration by 5 turns and reduces
+    enemies' Threshold Damage Reduction duration by 5 turns. If this character
+    is a Sailor, optionally swaps this unit with your captain for 1 turn. If
+    there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your crew,
+    increases boost effects of ATK UP and Orb Amplification buffs by +0.25x.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character.
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, if this character has a [TND] orb and you attack with this
+      character, reduces enemies' [STR], [DEX], [PSY] and [INT] Resistance by
+      -10% for 1 turn.
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Sengoku, Borsalino (Kizaru), Issho (Fujitora) and Sakazuki (Akainu)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - description: and when the supported character hits a PERFECT, reduces enemies'
+        Threshold Damage Reduction duration by 1 turn.
+      value: 7
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - atk: 20
+    - type: sailor
+    - rcv: 50
+    - slot: 1
+    - hp: 50
+    - atk: 40
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 60
+        - threshold: 50
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: When your crew has ATK UP and Orb Amplification
+    levels:
+      - description: Boosts own base ATK by 200 for 1 turn.
+      - description: Boosts own base ATK by 350 for 1 turn.
+      - description: Boosts own base ATK by 500 for 1 turn.
+      - description: Boosts own base ATK by 650 for 1 turn.
+      - description: Boosts own base ATK by 800 for 1 turn.
+rumble:
+  stats:
+    def: 234
+    rumbleType: DEF
+    spd: 113
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Guard
+            - DEF
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            amount: 7
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            amount: 8
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            amount: 9
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            amount: 10
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            amount: 11
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            amount: 12
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            amount: 13
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            amount: 14
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            amount: 15

@@ -1,0 +1,140 @@
+type: DUAL
+name: Shanks & Mihawk - World's Leading Two Swordsmen
+japanName: シャンクス＆ミホーク 世界を牽引する二大剣士
+family:
+  - Shanks
+  - DraculeMihawk
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1420
+    atk: 843
+    rcv: 212
+  maxLvl:
+    hp: 2542
+    atk: 1555
+    rcv: 322
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 182473
+aliases:
+  - Shanks&Mihawk
+  - Mihawk&Shanks
+  - ShanksMihawk
+  - MihawkShanks
+  - Raid Shanks and Mihawk
+  - Mishanks
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3x, reduces damage received by
+    20% and makes [TND] and [RCV] orbs beneficial for Slasher characters
+special:
+  name: A Feast for the New Age
+  description: Reduces Bind, Silence and ATK DOWN duration by 2 turns and becomes
+    Shanks & Mihawk for 2 turns. If HP is below 50% at the time the special is
+    activated, delays all enemies by 2 turns and boosts ATK against delayed
+    enemies by 1.75x for 2 turns
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of [QCK] and [INT] characters by 50
+  - description: Reduces Silence duration by 3 turns on this character
+characters:
+  swap:
+    description: Boosts chances of getting [QCK], [INT] and [RCV] orbs for 1 turn
+      and randomizes all non-Matching orbs
+  character1:
+    name: Red-Haired Shanks - World's Leading Two Swordsmen
+    japanName: シャンクス 世界を牽引する二大剣士
+    class:
+      - Slasher
+      - Free Spirit
+    type: QCK
+    stats:
+      combo: 5
+      minLvl:
+        hp: 920
+        atk: 551
+        rcv: 142
+      maxLvl:
+        hp: 2396
+        atk: 1206
+        rcv: 291
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher characters by 2.25x and reduces damage
+        received by 10%
+    sailor:
+      - description: Boosts base ATK of [QCK] characters by 50
+      - description: Reduces Silence duration by 3 turns on this character
+  character2:
+    name: Hawk Eyes Mihawk - World's Leading Two Swordsmen
+    japanName: ミホーク 世界を牽引する二大剣士
+    class:
+      - Slasher
+      - Cerebral
+    type: INT
+    stats:
+      combo: 5
+      minLvl:
+        hp: 802
+        atk: 652
+        rcv: 102
+      maxLvl:
+        hp: 2102
+        atk: 1332
+        rcv: 189
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher characters by 2.5x and makes [TND] and [RCV]
+        orbs beneficial for Slasher characters
+    sailor:
+      - description: Boosts base ATK of [INT] characters by 50
+      - description: Reduces Silence duration by 3 turns on this character
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 10
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - atk: 40
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - slot: 1
+    - cooldown: 1
+    - hp: 70
+    - cooldown: 1
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

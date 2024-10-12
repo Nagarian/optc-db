@@ -1,0 +1,98 @@
+type: INT
+name: Red-Haired Shanks - Red-Hair Pirates Leader
+japanName: 赤髪のシャンクス 赤髪海賊団大頭
+family:
+  - Shanks
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1600
+    atk: 692
+    rcv: 200
+  maxLvl:
+    hp: 2552
+    atk: 1440
+    rcv: 353
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - ambush
+links:
+  gamewithId: 46369
+aliases:
+  - Invasion Shanks
+  - Ambush Shanks
+captain:
+  name: ""
+  description: Boosts chances of getting Matching orbs, boosts ATK of Cerebral
+    characters by 2.5x
+special:
+  name: A Decision Made over Sake
+  description: Reduces Paralysis duration by 3 turns. Boosts Orb Effects of
+    Cerebral and Free Spirit characters by 2x for 1 turn. Makes [RCV] and [TND]
+    orbs beneficial for Cerebral and Free Spirit characters for 1 turn.
+  cooldown: 27
+  maxLevel: 13
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral and Free Spirit characters by 50
+  - description: Makes [INT] orbs beneficial for Cerebral characters
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+  criteria: Ben Beckman, Lucky Roux and Yasopp
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 6
+      reduction: 4
+    - value: 8
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - type: sailor
+    - rcv: 30
+    - cooldown: 1
+    - atk: 50
+    - type: sailor
+    - slot: 1
+    - hp: 130
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 50

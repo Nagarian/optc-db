@@ -1,0 +1,520 @@
+type: INT
+name: Marshall D. Teach - Emperor
+japanName: マーシャル・D・ティーチ 四皇
+family:
+  - MarshallDTeach
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 682
+    atk: 321
+    rcv: 33
+  maxLvl:
+    hp: 1700
+    atk: 1066
+    rcv: 110
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 202415
+aliases:
+  - Blackbeard
+  - V2 Legend BB
+evolution:
+  - id: 2964
+    evolvers:
+      - 118
+      - 304
+      - 1180
+      - 104
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of this character by 5x, boosts ATK of other [INT]
+    characters by 4.25x, their HP by 1.5x, reduces RCV of all characters by 85%
+    and reduces Special Cooldown of this character by 2 turns after each turn
+    you take damage.
+special:
+  name: Quake Strike of the New Emperor
+  description: Deals 10% of enemies' current HP in True damage to one enemy,
+    changes the orb of this character into a Matching orb, boosts ATK of this
+    character by 2x-4x for 1 turn, and boosts Orb Effects of this character by
+    2x-4x for 1 turn, depending on the number of times the character used their
+    own special.
+  cooldown: 15
+  maxLevel: 6
+  notes: "ATK and Orb boosts increase each time the character uses their own
+    special. 1st time: 2x, 2nd time: 3x, 3rd time or more: 4x."
+rumble:
+  stats:
+    def: 170
+    rumbleType: ATK
+    spd: 146
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 150
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 20
+      effects:
+        - amount: 0.3
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 16
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 0.4
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 17
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 18
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 19
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 21
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 22
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 24
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 25
+          effect: buff
+          level: 10
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 25
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

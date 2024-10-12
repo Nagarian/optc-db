@@ -1,0 +1,90 @@
+type: DEX
+name: Demon Sheriff Lafitte
+japanName: “鬼保安官”ラフィット
+family:
+  - Laffitte
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 917
+    atk: 415
+    rcv: 152
+  maxLvl:
+    hp: 2094
+    atk: 1132
+    rcv: 406
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 38772
+aliases:
+  - Lafitte
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn. Deals 7x
+    character's ATK in [DEX] damage to all enemies at the end of each turn.
+special:
+  name: Horrifying Suggestion
+  description: Reduces Bind and Despair duration by 2 turns. Makes Badly Matching
+    and [BLOCK] orbs not reduce damage for 4 turns
+  cooldown: 14
+  maxLevel: 7
+  notes: Ex. A [STR] character with a [QCK] orb will still deal regular damage
+sailor:
+  - description: Boosts base ATK of all characters by 100 if your Captain is a
+      Driven character
+  - description: Reduces Blindness duration by 3 turns
+support:
+  type: descriptive
+  criteria: Marshall D. Teach (Blackbeard), Jesus Burgess, Van Augur, Shiryu and Doc Q
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Bind, Despair or
+      Blindness, reduces Bind, Despair and Blindness duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - rcv: 20
+    - hp: 30
+    - rcv: 40
+    - atk: 15
+    - atk: 25
+    - hp: 40
+    - atk: 30
+    - rcv: 50
+    - hp: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

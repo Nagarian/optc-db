@@ -1,0 +1,396 @@
+type: PSY
+name: Kami Eneru - Overwhelming Power of the Kami
+japanName: ゴッド・エネル 絶望的な神の能力
+family:
+  - Enel
+class:
+  - Driven
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1503
+    atk: 622
+    rcv: 102
+  maxLvl:
+    hp: 3756
+    atk: 1556
+    rcv: 256
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+  - inkable
+links:
+  gamewithId: 256242
+aliases:
+  - Kami Eneru
+  - V2 Legend God Enel
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 4.25x, by 5x instead if they have
+    a beneficial orb, their HP by 1.3x and makes [INT], [RCV] and [TND] orbs
+    beneficial for [PSY] characters. At the start of the fight, this character
+    activates their own special.
+special:
+  name: Absolute Power of Lightning
+  description: Deals 15% of enemies' current HP in damage to all enemies, boosts
+    chances of getting Matching orbs for 99 turns, reduces Bind and Paralysis
+    duration by 5 turns, boosts the Color Affinity of [PSY] characters by 2.25x
+    for 1 turn and deals 0.5x the damage dealt by this character with normal
+    attacks to all enemies at the end of each turn for 99+ turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: "[PSY] Driven characters"
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [PSY] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [PSY] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [PSY] characters by 1.3x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [PSY] characters by 1.4x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [PSY] characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 10
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - atk: 10
+    - atk: 10
+    - type: sailor
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 30
+    - hp: 30
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 50
+    - hp: 100
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 206
+    rumbleType: SPT
+    spd: 169
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: INT
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 17
+      effects:
+        - amount: 0.5
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 8
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          duration: 8
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.55
+        - override:
+            duration: 9
+            level: 1
+        - override:
+            duration: 9
+            level: 1
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            duration: 10
+            level: 1
+        - override:
+            duration: 10
+            level: 1
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            duration: 11
+            level: 1
+        - override:
+            duration: 11
+            level: 2
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            duration: 12
+            level: 1
+        - override:
+            duration: 12
+            level: 2
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            duration: 13
+            level: 2
+        - override:
+            duration: 13
+            level: 3
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            duration: 14
+            level: 2
+        - override:
+            duration: 14
+            level: 3
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            duration: 15
+            level: 2
+        - override:
+            duration: 15
+            level: 3
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 16
+            level: 2
+        - override:
+            duration: 16
+            level: 4
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 17
+            level: 3
+        - override:
+            duration: 17
+            level: 5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

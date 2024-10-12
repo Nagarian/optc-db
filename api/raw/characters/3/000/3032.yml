@@ -1,0 +1,89 @@
+type: INT
+name: Orobi & Bonekichi - Straw Hats Undercover
+japanName: おロビ＆ホネ吉 潜伏する麦わらの一味
+family:
+  - NicoRobin
+  - Brook
+class:
+  - Fighter
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1610
+    atk: 530
+    rcv: 64
+  maxLvl:
+    hp: 3300
+    atk: 1410
+    rcv: 180
+cost: 50
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 217470
+aliases:
+  - Raid Nico Robin
+  - Raid Brook
+  - Raid O-Robi
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x.
+special:
+  name: Mil Fleur & Arrow-Notch Slash
+  description: Reduces Paralysis duration by 3 turns, reduces enemies' Threshold
+    Damage Reduction duration by 3 turns and changes [RCV] and [TND] orbs into
+    Matching orbs.
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Slasher characters by 50
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 20
+    - atk: 50
+    - type: potential
+    - slot: 1
+    - hp: 15
+    - rcv: 25
+    - atk: 100
+    - cooldown: 1
+    - hp: 25
+    - rcv: 30
+    - type: sailor
+    - cooldown: 1
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 3

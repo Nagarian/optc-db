@@ -1,0 +1,86 @@
+type: DEX
+name: Brook - Straw Hat Pirates
+japanName: ブルック 麦わらの一味
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 1000
+    atk: 442
+    rcv: 140
+  maxLvl:
+    hp: 1990
+    atk: 847
+    rcv: 316
+cost: 16
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 22659
+aliases: []
+evolution:
+  - id: 1551
+    evolvers:
+      - skull
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x
+special:
+  name: "Dying Chorus: Binks' Sake"
+  description: Recovers 6x character's RCV in HP at the end of each turn for 3 turns
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of all characters by 20
+  - description: Boosts this character's damage against [STR] characters by 2x
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 20
+    - hp: 40
+    - hp: 60
+    - hp: 80
+    - rcv: 20
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20

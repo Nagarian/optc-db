@@ -1,0 +1,94 @@
+type: STR
+name: Edward Weevil - Pursued Former Seven Warlords of the Sea
+japanName: エドワード・ウィーブル 追われる元七武海
+family:
+  - EdwardWeevil
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1363
+    atk: 681
+    rcv: 40
+  maxLvl:
+    hp: 3408
+    atk: 1459
+    rcv: 121
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 257120
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3.25x, boosts ATK of [DEX] and
+    [QCK] characters by 2.75x boosts HP of [STR], [DEX] and [QCK] characters by
+    1.2x.
+special:
+  name: Declaration of Eradication
+  description: Reduces Special Cooldown of [STR], [DEX] and [QCK] characters by 1
+    turn, changes [BLOCK] and Badly Matching orbs of [STR], [DEX] and [QCK]
+    characters into Matching orbs, locks all orbs for 1 turn and boosts Orb
+    Effects of [STR], [DEX] and [QCK] characters by 2x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Boosts base ATK of this character by 100 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 9
+limitBreak:
+  path:
+    - atk: 25
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - rcv: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

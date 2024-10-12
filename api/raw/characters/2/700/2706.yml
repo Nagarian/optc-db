@@ -1,0 +1,111 @@
+type: QCK
+name: Speed - Animal Kingdom Pirates, Headliner
+japanName: スピード 百獣海賊団“真打ち”
+family:
+  - Speed
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 806
+    atk: 859
+    rcv: 113
+  maxLvl:
+    hp: 2050
+    atk: 1270
+    rcv: 435
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 169226
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2.75x.
+special:
+  name: Horselike Smile
+  description: Reduces Special Cooldown of all characters by 2 turns and reduces
+    the defense of all enemies by 100% for 1 turn.
+  cooldown: 21
+  maxLevel: 7
+  stages:
+    - description: Reduces Special Cooldown of Fighter and Powerhouse characters by 1
+        turn and reduces the defense of all enemies by 50% for 1 turn.
+      cooldown: 14
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Makes [QCK] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - RCV
+  criteria: Kaido, Jack and Holdem
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - cooldown: 1
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - cooldown: 1
+    - rcv: 20
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - atk: 50
+    - slot: 1
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - atk: 50
+    - atk: 50
+    - hp: 150
+    - rcv: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

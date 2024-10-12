@@ -1,0 +1,52 @@
+type: DEX
+name: Magellan - Prison Ruler
+japanName: マゼラン 監獄の支配者
+family:
+  - Magellan
+class:
+  - Striker
+  - Shooter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 480
+    atk: 220
+    rcv: 24
+  maxLvl:
+    hp: 1552
+    atk: 755
+    rcv: 145
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 63199
+aliases:
+  - V1 Legend Magellan
+evolution:
+  - id: 1698
+    evolvers:
+      - 118
+      - 86
+      - 1180
+      - 302
+      - 267
+captain:
+  name: ""
+  description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+    crew, boosts ATK of all characters by 2.25x and their HP by 1.5x and deals
+    15% of enemies' current HP in damage to all enemies at the end of each turn
+special:
+  name: Venom Cloud
+  description: Inflicts Toxic to all enemies, recovers 13x character's RCV in HP
+    at the end of each turn for 3 turns
+  cooldown: 19
+  maxLevel: 6
+  notes: >-
+    `toxic : 50x : 2x : 2,000,000`  
+
+    If enemies are both Poisoned and inflicted with Toxic, only the Toxic damage will damage the enemy at the end of the turn.

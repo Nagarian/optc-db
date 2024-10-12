@@ -1,0 +1,111 @@
+type: STR
+name: Chopper - ONE PIECE STAMPEDE
+japanName: トニートニー・チョッパー ONE PIECE STAMPEDE
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1182
+    atk: 872
+    rcv: 140
+  maxLvl:
+    hp: 2488
+    atk: 1322
+    rcv: 355
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 161687
+aliases:
+  - Stampede Chopper
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x, boosts ATK of [QCK] and
+    [INT] characters by 2x and recovers 809 HP at the end of each turn.
+special:
+  name: Treasured Smile
+  description: Recovers 13x character's RCV in HP at the end of each turn for 3
+    turns and reduces Paralysis, Despair, Chain Multiplier Limit and Chain
+    Coefficient Reduction duration by 5 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of all characters by 30
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 10
+    - type: sailor
+    - hp: 50
+    - hp: 70
+    - hp: 80
+    - slot: 1
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

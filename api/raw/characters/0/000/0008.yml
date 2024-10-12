@@ -1,0 +1,94 @@
+type: DEX
+name: Roronoa Zoro - Ashura Ichibugin
+frenchName: Roronoa Zoro Brume Argentée
+japanName: ロロノア・ゾロ 阿修羅弌霧銀（あしゅらいちぶぎん）
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 9
+  minLvl:
+    hp: 724
+    atk: 667
+    rcv: 39
+  maxLvl:
+    hp: 2232
+    atk: 1332
+    rcv: 144
+cost: 15
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 2019
+aliases: []
+evolution:
+  - id: 1388
+    evolvers:
+      - skull
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK and HP of [DEX] characters by 2x
+special:
+  name: Ashura Ichibugin
+  description: Deals 15x character's ATK in [DEX] damage to all enemies
+  cooldown: 25
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: Boosts base ATK of [DEX] characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: "[DEX] characters"
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - type: sailor
+    - rcv: 30
+    - atk: 30
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - hp: 70
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40

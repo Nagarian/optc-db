@@ -1,0 +1,49 @@
+type: DEX
+name: Orlumbus
+japanName: オオロンブス
+family:
+  - Orlumbus
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 201
+    atk: 102
+    rcv: 22
+  maxLvl:
+    hp: 1461
+    atk: 668
+    rcv: 152
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 33764
+aliases: []
+evolution:
+  - id: 1127
+    evolvers:
+      - 83
+      - 86
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK and HP of [DEX] characters by 1.5x
+special:
+  name: Admiral Killer Bowling
+  description: Changes [BLOCK] orbs into [EMPTY] orbs, deals 20x-500x character's
+    ATK in Typeless damage to all enemies, depending on number of [BLOCK] slots
+    emptied. Changes [EMPTY] orbs into Matching orbs
+  cooldown: 20
+  maxLevel: 7
+  notes: "The exact multiplier used is chosen based on the number of [BLOCK] orbs
+    consumed: 0 orbs - Cannot Activate; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3
+    orbs - 100x ATK; 4 orbs - 200x ATK; 5 orbs - 300x ATK; 6 orbs - 500x ATK."

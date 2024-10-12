@@ -1,0 +1,53 @@
+type: STR
+name: Okiku - Teahouse Waitress
+japanName: お菊 茶屋の看板娘
+family:
+  - Kikunojo
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 301
+    atk: 231
+    rcv: 48
+  maxLvl:
+    hp: 854
+    atk: 476
+    rcv: 132
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - kizuna
+links:
+  gamewithId: 181588
+aliases:
+  - Kizuna Kikunojo
+  - Kizuna Okiku
+evolution:
+  - id: 2812
+    evolvers:
+      - 117
+      - 84
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.75x-2.25x depending on the crew's
+    current HP.
+  notes: "`captainProportional : higher : 1.75 + 0.5 * (remaining HP) / (total HP)
+    : 2.25 : 1.75`"
+special:
+  name: Poster Girl's Reception
+  description: Reduces Bind and Paralysis duration by 2 turns, reduces Special
+    Cooldown of all characters by 1 turn and reduces damage received by 70% for
+    1 turn
+  cooldown: 26
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 25

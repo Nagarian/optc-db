@@ -1,0 +1,308 @@
+type: QCK
+name: King - Incoming Pteranodon
+japanName: キング 迫る翼竜
+family:
+  - King
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1099
+    atk: 728
+    rcv: 89
+  maxLvl:
+    hp: 2918
+    atk: 1472
+    rcv: 301
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 256036
+aliases:
+  - Kizuna King
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3.5x, their HP by 1.2x and
+    reduces damage received by 10%.
+special:
+  name: Sky Attack
+  description: Changes orbs of adjacent characters into Matching Orbs, reduces
+    Chain Multiplier Limit and Chain Coefficient Reduction duration by 6 turns
+    and boosts ATK of [QCK] characters by 2.25x after 12th hit in the chain for
+    3 turns.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of [QCK] characters by 50
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Kaido, Jack and Queen
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - rcv: 25
+    - type: potential
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 126
+    rumbleType: ATK
+    spd: 194
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 50
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 50
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - enemies
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            chance: 55
+            duration: 12
+        - override:
+            amount: 1.1
+        - override:
+            chance: 55
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            chance: 60
+            duration: 13
+        - override:
+            amount: 1.2
+        - override:
+            chance: 60
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            chance: 65
+            duration: 14
+        - override:
+            amount: 1.3
+        - override:
+            chance: 65
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            chance: 70
+            duration: 15
+        - override:
+            amount: 1.4
+        - override:
+            chance: 70
+            duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            chance: 75
+            duration: 16
+        - override:
+            amount: 1.5
+        - override:
+            chance: 75
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            chance: 80
+            duration: 17
+        - override:
+            amount: 1.6
+        - override:
+            chance: 80
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            chance: 85
+            duration: 18
+        - override:
+            amount: 1.7
+        - override:
+            chance: 85
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            chance: 90
+            duration: 19
+        - override:
+            amount: 1.8
+        - override:
+            chance: 90
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2
+        - override:
+            chance: 100
+            duration: 20
+        - override:
+            amount: 2
+        - override:
+            chance: 100
+            duration: 20

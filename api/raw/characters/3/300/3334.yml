@@ -1,0 +1,494 @@
+type: QCK
+name: Monkey D. Luffy - Competing Captains
+japanName: モンキー・D・ルフィ 競い合う船長達
+family:
+  - MonkeyDLuffy
+class:
+  - Free Spirit
+  - Fighter
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1624
+    atk: 1002
+    rcv: 73
+  maxLvl:
+    hp: 3608
+    atk: 1670
+    rcv: 242
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - inkable
+links:
+  gamewithId: 275860
+aliases:
+  - Last tap LT Final Tap FT Luffy
+  - Legend Luffy
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], Fighter and Free Spirit characters by 5x,
+    their HP by 1.3x, boosts chances of getting [RCV] orbs, makes [RCV] orbs
+    beneficial for all characters and PERFECTs will consume [RCV] orbs.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Roronoa
+    Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky,
+    Brook or Jinbe, excluding Support members."
+  description: Reduces Special Cooldown of [QCK], Free Spirit and Fighter
+    characters by 1 turn, adds 1.0x to Chain multiplier for 1 turn and
+    transforms all [QCK] characters into Super [QCK] characters.
+special:
+  name: King Kong Gun - Hold Down
+  description: Deals 300x character's ATK in Typeless damage to all enemies and
+    boosts ATK of [QCK], Free Spirit and Fighter characters by 2.75x for 1 turn.
+    Boosts base ATK of this character by 0-1,000 for 1 turn, depending on how
+    many [RCV] orbs used in normal attacks.
+  cooldown: 19
+  maxLevel: 6
+  notes: Base ATK boost is equal to 100 x [RCV] orbs consumed up to a maximum of 1000.
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+  - description: Makes [QCK] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[QCK] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - type: potential
+    - atk: 5
+    - atk: 5
+    - hp: 10
+    - hp: 20
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 10
+    - hp: 70
+    - hp: 80
+    - hp: 90
+    - type: potential
+    - cooldown: 1
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - rcv: 20
+    - rcv: 20
+    - rcv: 30
+    - hp: 100
+    - hp: 100
+    - type: sailor
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - atk: 200
+  potentials:
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+  lastTap:
+    criteria: On the last Stage
+    levels:
+      - description: Boosts base ATK of this character by 300 for 1 turn.
+      - description: Boosts base ATK of this character by 500 for 1 turn and changes the
+          orb of this character into a Matching orb.
+      - description: Boosts base ATK of this character by 700 for 1 turn and changes the
+          orb, including [BLOCK] orbs, of this character into a Matching orb.
+      - description: Boosts base ATK of this character by 1000 for 1 turn and changes
+          the orb, including [BLOCK] orbs, of this character into a Matching
+          orb.
+      - description: Boosts base ATK of this character by 1000 for 1 turn and changes
+          the orb, including [BLOCK] orbs, of this character into a [WANO] orb.
+    notes: Base ATK boost will stack with special abilities that boost base ATK.
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 201
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            count: 1
+            type: defeat
+            team: crew
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 7
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          duration: 5
+          level: 1
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Haste
+          chance: 25
+          effect: boon
+          targeting:
+            count: 2
+            targets:
+              - QCK
+    - cooldown: 26
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 1.2
+        - override:
+            chance: 30
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 1.3
+        - override:
+            chance: 35
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 1.4
+        - override:
+            chance: 40
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.5
+        - override:
+            chance: 45
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 1.6
+        - override:
+            chance: 50
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 1.7
+        - override:
+            chance: 55
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.8
+        - override:
+            chance: 60
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.9
+        - override:
+            chance: 65
+    - cooldown: 26
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 2
+        - override:
+            chance: 70
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - SPD
+              - HP
+              - Guard
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - QCK
+          - attributes:
+              - ATK
+              - Critical Hit
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - STR
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - STR
+          - attributes:
+              - ATK
+              - DEF
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Free Spirit
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 5
+          - override:
+              level: 4
+          - override:
+              level: 3
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 6
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 6
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - attributes:
+                - ATK
+              duration: 21
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+            - amount: 2
+              effect: damage
+              targeting:
+                count: 4
+                targets:
+                  - enemies
+              type: atkbase
+              leader: true
+            - attributes:
+                - Haste
+              chance: 60
+              effect: boon
+              targeting:
+                count: 2
+                targets:
+                  - crew
+        - uses: 2
+          effects:
+            - override:
+                level: 3
+                duration: 23
+            - override:
+                amount: 2.5
+            - override:
+                chance: 70
+        - uses: 2
+          effects:
+            - override:
+                level: 4
+                duration: 25
+            - override:
+                amount: 3
+            - override:
+                chance: 80
+        - uses: 2
+          effects:
+            - override:
+                level: 5
+                duration: 27
+            - override:
+                amount: 3.5
+            - override:
+                chance: 90
+        - uses: 2
+          effects:
+            - override:
+                level: 7
+                duration: 29
+            - override:
+                amount: 4
+            - override:
+                chance: 100

@@ -1,0 +1,53 @@
+type: QCK
+name: '"Surgeon of Death" Trafalgar Law - Joker-Tracking Heart'
+japanName: “死の外科医”トラファルガー・ロー “ジョーカー”を狙う“ハート”
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Striker
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 429
+    atk: 232
+    rcv: 49
+  maxLvl:
+    hp: 1560
+    atk: 775
+    rcv: 202
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 68240
+aliases:
+  - Korean Law
+  - V2 Legend Law
+  - Shichibukai
+evolution:
+  - id: 1751
+    evolvers:
+      - 118
+      - 85
+      - 266
+      - 301
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 3x and recovers 0.5x this
+    character's RCV at the end of the turn for each time you hit a PERFECT
+special:
+  name: Injection Shot
+  description: Deals 300,000 Fixed damage to one enemy and boosts Orb Effects of
+    Striker characters by 2.25x for 1 turn
+  cooldown: 20
+  maxLevel: 6
+  stages:
+    - description: Deals 50,000 Fixed damage to one enemy and boosts Orb Effects of
+        Striker characters by 1.75x for 1 turn
+      cooldown: 15

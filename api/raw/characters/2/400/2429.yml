@@ -1,0 +1,51 @@
+type: INT
+name: Suleiman - Passenger of the Beautiful Pirates
+japanName: スレイマン 美しき海賊団の同乗者
+family:
+  - Suleiman
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 808
+    atk: 460
+    rcv: 92
+  maxLvl:
+    hp: 2020
+    atk: 1150
+    rcv: 230
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 141695
+aliases:
+  - Fortnight Suleiman
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x
+special:
+  name: Ghost Execution
+  description: Deals 15x character's ATK in [INT] damage to all enemies. If your
+    Captain is a Slasher character, changes [RCV], [TND], [EMPTY], [BLOCK] and
+    [BOMB] orbs of Slasher characters into Matching orbs and reduces the defense
+    of all enemies by 50% for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Cavendish
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

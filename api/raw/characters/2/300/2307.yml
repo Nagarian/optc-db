@@ -1,0 +1,53 @@
+type: DEX
+name: '"Phantom Gun" Vito - Firetank Pirates'
+japanName: “怪銃”ヴィト ファイアタンク海賊団
+family:
+  - Vito
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 222
+    atk: 101
+    rcv: 32
+  maxLvl:
+    hp: 970
+    atk: 805
+    rcv: 120
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 125111
+aliases:
+  - ""
+evolution:
+  - id: 2308
+    evolvers:
+      - 117
+      - 86
+      - 1180
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.25x and makes [DEX] orbs
+    beneficial for Shooter characters
+special:
+  name: Phantom Gun Shot
+  description: Deals 20% of enemies' current HP in damage to one enemy, changes
+    all orbs of top row characters into Matching orbs, reduces enemies'
+    Increased Defense and Percent Damage Reduction duration by 3 turns. If there
+    are 6 Shooter characters in your crew when the special is activated, reduces
+    damage received by 90% for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: If your Captain is a Shooter character, removes Blindness duration
+      completely

@@ -1,0 +1,80 @@
+type: PSY
+name: Nico Robin - Straw Hat Pirate
+japanName: ニコ・ロビン 麦わらの一味
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 938
+    atk: 430
+    rcv: 155
+  maxLvl:
+    hp: 1892
+    atk: 881
+    rcv: 351
+cost: 16
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 15622
+aliases: []
+evolution:
+  - id: 1549
+    evolvers:
+      - skull
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 1.5x
+special:
+  name: Cien Fleur - Wing
+  description: Reduces Bind and Despair duration by 3 turns
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 3 turns on this character
+  - description: Reduces Silence duration by 3 turns on this character
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - hp: 50
+    - cooldown: 1
+    - atk: 40
+    - type: sailor
+    - hp: 90
+    - slot: 1
+    - rcv: 30
+    - atk: 40
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

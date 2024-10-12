@@ -1,0 +1,53 @@
+type: PSY
+name: Vinsmoke Reiju - Lady Enjoying the Tropics
+japanName: ヴィンスモーク・レイジュ 南国でくつろぐ「いい女」
+family:
+  - VinsmokeReiju
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 909
+    atk: 496
+    rcv: 80
+  maxLvl:
+    hp: 1855
+    atk: 1266
+    rcv: 252
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 114688
+aliases:
+  - Swimsuit Reiju
+  - Summer Reiju
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x and their RCV by 1.2x. If you
+    defeat an enemy, increases ATK boost slightly. Stacks up to 8 times to a
+    maximum of 3x.
+  notes: If a character dies and revives, it counts as killing a character. If you
+    did not defeat an enemy, lose all ATK boost stacks.
+special:
+  name: Tropical Country Flowers
+  description: Delays all enemies by 2 turns, reduces Paralysis, Bind, Despair and
+    Silence duration by 2 turns and makes Badly Matching and [BLOCK] orbs not
+    reduce damage for 3 turns.
+  cooldown: 22
+  maxLevel: 8
+  stages:
+    - description: Delays all enemies by 1 turn and makes Badly Matching and [BLOCK]
+        orbs not reduce damage for 3 turns.
+      cooldown: 13
+    - description: Delays all enemies by 1 turn, reduces Paralysis, Bind, Despair and
+        Silence duration by 1 turn and makes Badly Matching and [BLOCK] orbs not
+        reduce damage for 3 turns.
+      cooldown: 17
+sailor:
+  - description: Reduces Silence duration by 2 turns on this character

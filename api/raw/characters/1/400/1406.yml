@@ -1,0 +1,89 @@
+type: PSY
+name: "Usopp - Straw Hat Pirates: Born Again"
+japanName: ウソップ 新生・麦わらの一味
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1147
+    atk: 446
+    rcv: 144
+  maxLvl:
+    hp: 2712
+    atk: 1142
+    rcv: 340
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 47362
+aliases:
+  - New World Usopp
+  - Timeskip Usopp
+  - TS Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.25x and their RCV by 1.5x
+special:
+  name: Assault Meteor Shower
+  description: Deals 10 hits of 2,000 Fixed damage to random enemies and if
+    enemies have Delay Debuff Protection or All Debuff Protection at the time
+    the special was activated, boosts ATK of Shooter characters by 1.75x for 1
+    turn and boosts Orb Effects of Shooter characters by 1.75x for 1 turn
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base ATK and
+      RCV of Shooter characters by 100
+  - description: Reduces Blindness duration by 3 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Nami and Tony Tony Chopper
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 5
+    - hp: 30
+    - rcv: 15
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - hp: 50
+    - slot: 1
+    - cooldown: 1
+    - type: sailor
+    - rcv: 30
+    - hp: 120
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

@@ -1,0 +1,119 @@
+type: DUAL
+name: Robin & Jinbe - Archaeologist and Helmsman
+japanName: ロビン＆ジンベエ 考古学者と操舵手
+family:
+  - NicoRobin
+  - Jinbe
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1098
+    atk: 403
+    rcv: 72
+  maxLvl:
+    hp: 2196
+    atk: 806
+    rcv: 144
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 309205
+aliases:
+  - Robin&Jinbe
+  - RobinJinbe
+  - Jinbe&Robin
+  - JinbeRobin
+  - Legend Robin and Jinbe
+evolution:
+  - id: 3495
+    evolvers:
+      - 118
+      - 1180
+      - 102
+      - 104
+      - 267
+captain:
+  name: ""
+  description: "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by
+    1.5x, their RCV by 1.3x, makes [DEX] and [INT] orbs beneficial for Fighter
+    and Cerebral characters and reduces damage received by 10%. At the start of
+    the fight, applies the following buff: Reduces any damage received above
+    10,000 HP by 60% for 99 turns."
+special:
+  name: Encounter of Gentle Strength
+  description: Reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 6 turns, reduces ATK DOWN duration by 6 turns, reduces
+    Special Cooldown of all characters by 2 turns, boosts base ATK of all
+    characters by 1000 for 1 turn and becomes Robin & Jinbe for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of all characters by 75
+characters:
+  swap:
+    description: Changes orbs of adjacent characters into Matching orbs and reduces
+      damage received by 15% for 1 turn.
+    super:
+      criteria: 5
+      description: Changes orbs of adjacent characters into Matching orbs, reduces
+        damage received by 70% for 1 turn and recovers 3,000 HP.
+  character1:
+    name: Robin - Archaeologist and Helmsman
+    japanName: ロビン 考古学者と操舵手
+    class:
+      - Fighter
+      - Cerebral
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1050
+        atk: 358
+        rcv: 72
+      maxLvl:
+        hp: 2100
+        atk: 716
+        rcv: 144
+    captain:
+      name: ""
+      description: "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by
+        1.5x, their RCV by 1.3x and makes [DEX] and [INT] orbs beneficial for
+        Fighter and Cerebral characters. At the start of the fight, applies the
+        following buff: Reduces any damage received above 10,000 HP by 60% for
+        99 turns."
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 50
+  character2:
+    name: Jinbe - Archaeologist and Helmsman
+    japanName: ジンベエ 考古学者と操舵手
+    class:
+      - Fighter
+      - Cerebral
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1100
+        atk: 393
+        rcv: 43
+      maxLvl:
+        hp: 2200
+        atk: 786
+        rcv: 86
+    captain:
+      name: ""
+      description: "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by
+        1.5x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral
+        characters and reduces damage received by 10%. At the start of the
+        fight, applies the following buff: Reduces any damage received above
+        10,000 HP by 60% for 99 turns."
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 50

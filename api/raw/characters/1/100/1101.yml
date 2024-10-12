@@ -1,0 +1,53 @@
+type: STR
+name: Black Arm Zephyr
+japanName: 黒腕のゼファー
+family:
+  - Zephyr
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 545
+    atk: 404
+    rcv: 0
+  maxLvl:
+    hp: 1384
+    atk: 822
+    rcv: 0
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 33488
+aliases:
+  - Colo Zephyr
+  - Coliseum Zephyr
+evolution:
+  - id: 1102
+    evolvers:
+      - 118
+      - 266
+      - 300
+      - 100
+      - 104
+  - id: 1102
+    evolvers:
+      - 1103
+      - 1105
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x until the first hit other
+    than PERFECT. Reduces crew's current HP by 10% at the end of each turn
+special:
+  name: Black Arm's Last Impact
+  description: Reduces crew's current HP by 80%, deals 10x the amount of HP
+    subtracted in Typeless damage to one enemy. Boosts ATK of [STR] and [INT]
+    characters by 1.75x for 1 turn
+  cooldown: 30
+  maxLevel: 16

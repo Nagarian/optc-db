@@ -1,0 +1,88 @@
+type: STR
+name: Heracles - Straw Hat Pirates Conspirator
+japanName: ヘラクレス 麦わらの一味の共犯者
+family:
+  - Heraclesn
+class:
+  - Striker
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 923
+    atk: 547
+    rcv: 91
+  maxLvl:
+    hp: 2091
+    atk: 1403
+    rcv: 328
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 54003
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x and boosts HP of Shooter and
+    Striker characters by 1.25x
+special:
+  name: Greenstone Threat
+  description: Deals 20% of enemies' current HP in damage to all enemies, changes
+    [STR], [DEX], [QCK], [PSY] and [INT] orbs of right column Shooter and
+    Striker characters into Matching orbs
+  cooldown: 19
+  maxLevel: 8
+sailor:
+  - description: Boosts base HP of [STR] characters by 150
+  - description: Makes [STR] orbs beneficial for all characters if your Captain is a
+      Striker or Shooter character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Usopp
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - rcv: 25
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - atk: 20
+    - atk: 30
+    - hp: 40
+    - hp: 40
+    - hp: 40
+    - cooldown: 1
+    - atk: 40
+    - type: sailor
+    - type: sailor
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

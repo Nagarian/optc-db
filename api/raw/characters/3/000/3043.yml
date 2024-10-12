@@ -1,0 +1,328 @@
+type: PSY
+name: Viola - Royal Time Off
+japanName: ヴィオラ 王族のオフタイム
+family:
+  - Viola
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 470
+    atk: 360
+    rcv: 52
+  maxLvl:
+    hp: 1171
+    atk: 835
+    rcv: 149
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 218712
+aliases:
+  - Summer Viola
+  - Swimsuit Viola
+  - Summer Violet
+  - Swimsuit Violet
+evolution:
+  - id: 3044
+    evolvers:
+      - 83
+      - 266
+      - 92
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x and reduces damage received by 10%.
+special:
+  name: The Smile of the Princess Cooling Down with the Sea Breeze
+  description: Reduces ATK DOWN duration by 7 turns and boosts Orb Effects of
+    [DEX] and [PSY] characters by 1.75x for 1 turn. If during that turn you
+    score 3 PERFECT hits, boosts Orb Effects of [DEX] and [PSY] characters by 2x
+    for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+rumble:
+  stats:
+    def: 117
+    rumbleType: RCV
+    spd: 128
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 0.9
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 1.05
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 1.2
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 1.35
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 1.5
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 1.65
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 1.8
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 1.95
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 2.1
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 30
+      effects:
+        - amount: 2.5
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Paralysis
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Free Spirit

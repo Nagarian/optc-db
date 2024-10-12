@@ -1,0 +1,51 @@
+type: STR
+name: Sanji - Strawtime Straw Hat Pirates' Summer Vacation Outfit
+japanName: サンジ 夏休み衣装の麦わらの一味
+family:
+  - VinsmokeSanji
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 752
+    atk: 500
+    rcv: 88
+  maxLvl:
+    hp: 1880
+    atk: 1250
+    rcv: 220
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 159293
+aliases:
+  - Summer Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.5x and their RCV by 1.2x.
+special:
+  name: The Chef's Recommended Summer Festival Food
+  description: Reduces RCV DOWN and Blindness duration by 10 turns, recovers 5,000
+    HP and randomizes all orbs, including [BLOCK] orbs, on Free Spirit
+    characters into either [STR], [RCV] or [TND] orbs.
+  cooldown: 18
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

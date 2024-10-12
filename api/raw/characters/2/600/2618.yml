@@ -1,0 +1,186 @@
+type: DUAL
+name: Sakazuki & Issho - Tiger and Dog
+japanName: サカズキ＆イッショウ 虎と犬
+family:
+  - Issho
+  - Sakazuki
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1859
+    atk: 803
+    rcv: 183
+  maxLvl:
+    hp: 3329
+    atk: 1530
+    rcv: 341
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 157669
+aliases:
+  - Sakazuki&Issho
+  - Issho&Sakazuki
+  - SakazukiIssho
+  - IsshoSakazuki
+  - Sakazuki and Issho
+  - Akainu&Fujitora
+  - Fujitora&Akainu
+  - AkainuFujitora
+  - FujitoraAkainu
+  - Fujitora and Akainu
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [INT] characters by 3.75x, makes
+    [STR] and [INT] orbs beneficial for [STR], [DEX] and [INT] characters and
+    deals 10% of enemies' current HP in damage to all enemies at the end of each
+    turn.
+special:
+  name: Heavenly Eruption
+  description: Instantly defeats all enemies with HP equal to or below 120x
+    character's ATK, randomizes all orbs into either [STR] or [INT] orbs, deals
+    20% of enemies' current HP in damage to all enemies and becomes Sakazuki &
+    Issho for 2 turns.
+  cooldown: 40
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK, HP and RCV of [STR], [DEX] and [INT] characters by 50
+  - description: When any other [STR], [DEX] or [INT] character uses a special,
+      reduces special cooldown of this character by 4 turns
+characters:
+  swap:
+    description: Boosts Orb Effects of [STR], [DEX] and [INT] characters by 1.5x for
+      1 turn and deals 7% of enemies' current HP in damage to all enemies at the
+      end of each turn for 1 turn.
+  character1:
+    name: Sakazuki - Tiger and Dog
+    japanName: サカズキ 虎と犬
+    class:
+      - Striker
+      - Driven
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1654
+        atk: 803
+        rcv: 78
+      maxLvl:
+        hp: 3041
+        atk: 1341
+        rcv: 161
+    captain:
+      name: ""
+      description: Boosts ATK of [STR] characters by 3.25x, boosts ATK of [DEX] and
+        [INT] characters by 2.5x and makes [STR] orbs beneficial for [DEX] and
+        [INT] characters.
+    sailor:
+      - description: Boosts base ATK and HP of [STR], [DEX] and [INT] characters by 25
+      - description: When any other [STR], [DEX] or [INT] character uses a special,
+          reduces special cooldown of this character by 4 turns
+  character2:
+    name: Issho - Tiger and Dog
+    japanName: イッショウ 虎と犬
+    class:
+      - Striker
+      - Driven
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1799
+        atk: 702
+        rcv: 121
+      maxLvl:
+        hp: 3251
+        atk: 1301
+        rcv: 241
+    captain:
+      name: ""
+      description: Boosts ATK of [INT] characters by 3.25x, boosts ATK of [STR] and
+        [DEX] characters by 2.5x and makes [INT] orbs beneficial for [STR] and
+        [DEX] characters.
+    sailor:
+      - description: Boosts base ATK and RCV of [STR], [DEX] and [INT] characters by 25
+      - description: When any other [STR], [DEX] or [INT] character uses a special,
+          reduces special cooldown of this character by 4 turns
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - cooldown: 1
+    - cooldown: 1
+    - atk: 15
+    - hp: 40
+    - rcv: 10
+    - cooldown: 1
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 20
+    - cooldown: 1
+    - cooldown: 2
+    - atk: 20
+    - hp: 50
+    - rcv: 30
+    - cooldown: 2
+    - slot: 1
+    - atk: 25
+    - hp: 50
+    - cooldown: 2
+    - cooldown: 2
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - atk: 40
+    - hp: 50
+    - rcv: 50
+    - cooldown: 2
+    - slot: 1
+    - cooldown: 2
+    - atk: 45
+    - hp: 60
+    - cooldown: 3
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 200
+          reduction: 3

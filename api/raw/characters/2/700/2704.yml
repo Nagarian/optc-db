@@ -1,0 +1,110 @@
+type: PSY
+name: Holdem - Animal Kingdom Pirates, Headliner
+japanName: ホールデム 百獣海賊団“真打ち”
+family:
+  - Holdem
+class:
+  - Powerhouse
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 921
+    atk: 946
+    rcv: 71
+  maxLvl:
+    hp: 2954
+    atk: 1232
+    rcv: 297
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 169222
+aliases:
+  - Hold'em
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Powerhouse characters by 3x, reduces
+    crew's current HP by 5% at the end of each turn, reduces own ATK multiplier
+    by 0.?x at the end of each turn.
+special:
+  name: The Lion's Attack on the Jewels
+  description: Reduces crew's current HP by 1%, reduces enemies' Threshold Damage
+    Reduction, Percent Damage Reduction and Barrier duration by 3 turns and
+    locks the chain multiplier at 2.5x for 1 turn
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 50
+  - description: Makes [PSY] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Kaido, Jack and Speed
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 50
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 20
+    - hp: 50
+    - atk: 20
+    - atk: 40
+    - cooldown: 1
+    - hp: 100
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 100
+    - hp: 150
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

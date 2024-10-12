@@ -1,0 +1,50 @@
+type: DEX
+name: Van Ogre - Blackbeard Pirates
+japanName: ヴァン・オーガー 黒ひげ海賊団
+family:
+  - VanAugur
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 87
+    atk: 55
+    rcv: 22
+  maxLvl:
+    hp: 2006
+    atk: 1050
+    rcv: 280
+cost: 25
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 57824
+aliases:
+  - Vaper
+  - Van Ogre
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x
+special:
+  name: Painless Bullet
+  description: Deals 10x character's ATK in [DEX] damage to one enemy, locks all
+    orbs for 1 turn and boosts ATK of Shooter characters by 1.5x for 1 turn
+  cooldown: 20
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Marshall D. Teach (Blackbeard), Doc Q, Jesus Burgess and Laffitte
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

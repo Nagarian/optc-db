@@ -1,0 +1,54 @@
+type: PSY
+name: Cavendish - Beautiful Captain Fulfilling the Demands of Fame
+japanName: キャベンディッシュ 人気に応える美しき船長
+family:
+  - Cavendish
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 748
+    atk: 484
+    rcv: 94
+  maxLvl:
+    hp: 1870
+    atk: 1210
+    rcv: 235
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 141694
+aliases:
+  - Fortnight Cavendish
+  - Fortnight Cabbage
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x, but boosts ATK of this
+    character by 2.75x
+special:
+  name: Swan Lake Sword
+  description: Deals 15x character's ATK in [PSY] damage to one enemy, changes the
+    orb of this character into a [PSY] orb, boosts Orb Effects of Slasher
+    characters by 1.5x for 1 turn and boosts ATK of Slasher characters by 1.5x
+    for 1 turn
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Suleiman, Bartolomeo
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

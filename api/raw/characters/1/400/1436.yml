@@ -1,0 +1,93 @@
+type: QCK
+name: Hyouzou - Fish-Man District Spirit
+japanName: ヒョウゾウ 魚人街の亡霊
+family:
+  - Hyouzou
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 9
+  minLvl:
+    hp: 1319
+    atk: 613
+    rcv: -333
+  maxLvl:
+    hp: 2941
+    atk: 1468
+    rcv: -333
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 50182
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x and boosts HP of
+    Powerhouse characters by 1.25x
+special:
+  name: Staggering Slash
+  description: Makes PERFECTs harder to hit for 1 turn, changes [STR], [QCK],
+    [DEX], [PSY] and [INT] orbs of Powerhouse characters into Matching orbs,
+    delays all enemies by 1 turn, recovers 20% of crew's MAX HP.
+  cooldown: 21
+  maxLevel: 7
+  notes: Decreases timing window to hit a PERFECT. (Animation remains the same)
+sailor:
+  - description: Boosts base ATK of all characters by 150 if there are 6 Powerhouse
+      characters in your crew
+  - description: Reduces Paralysis duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Hody Jones, Ikaros Much, Daruma, Dosun and Zeo
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 20
+    - hp: 30
+    - type: potential
+    - rcv: 20
+    - atk: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 1
+    - rcv: 30
+    - slot: 1
+    - hp: 60
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 7
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

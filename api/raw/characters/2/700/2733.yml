@@ -1,0 +1,87 @@
+type: INT
+name: Magellan - He Who Sends Souls to Hell
+japanName: マゼラン 地獄へ落とす毒の主
+family:
+  - Magellan
+class:
+  - Shooter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 745
+    atk: 401
+    rcv: 132
+  maxLvl:
+    hp: 2610
+    atk: 1230
+    rcv: 305
+cost: 30
+slots: 2
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 172417
+aliases:
+  - Kizuna Magellan
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.25x and recovers 3x character's
+    RCV in HP at the end of each turn.
+special:
+  name: "Poison Punishment: Hydra"
+  description: Poisons all enemies and boosts ATK against Poisoned enemies by 1.3x
+    for 99+ turns. Applies a Continuous Effect that poisons all enemies at the
+    start of every stage for 99+ turns.
+  cooldown: 21
+  maxLevel: 1
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] Characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 40
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - hp: 50
+    - rcv: 20
+    - slot: 1
+    - atk: 30
+    - hp: 50
+    - cooldown: 1
+    - atk: 50
+    - hp: 60
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

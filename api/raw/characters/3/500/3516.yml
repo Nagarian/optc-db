@@ -1,0 +1,239 @@
+type: INT
+name: Shanks & Buggy
+japanName: シャンクス＆バギー
+family:
+  - Buggy
+  - Shanks
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1669
+    atk: 644
+    rcv: 106
+  maxLvl:
+    hp: 3339
+    atk: 1288
+    rcv: 213
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 313586
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Striker characters by 2.5x, their HP by
+    1.3x and gives chance of duplicating a drop upon completion of the island.
+  notes: Does not work if this character was not your captain upon starting the
+    island. Stacks with other additional drop captains, giving you two chances
+    of getting an extra drop.
+special:
+  name: Slashes of the Apprentices
+  description: Deals 10% of enemies' current HP in damage to all enemies, reduces
+    Bind and Paralysis duration by 4 turns, boosts ATK of Slasher and Striker
+    characters by 2x for 1 turn and makes [STR], [DEX] and [QCK] orbs beneficial
+    for Slasher and Striker characters for 3 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - atk: 30
+    - slot: 1
+    - rcv: 50
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 178
+    rumbleType: DBF
+    spd: 124
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 800
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+            - SPD
+          effect: debuff
+          level: 1
+          duration: 6
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 900
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            level: 3
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 4
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 5
+            duration: 15

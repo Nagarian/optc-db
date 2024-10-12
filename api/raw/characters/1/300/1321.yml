@@ -1,0 +1,51 @@
+type: DEX
+name: Momonga Monster-Slaying Master General
+japanName: モモンガ 怪物斬りの名将
+family:
+  - Momonga
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 136
+    atk: 120
+    rcv: 35
+  maxLvl:
+    hp: 993
+    atk: 591
+    rcv: 172
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 43894
+aliases:
+  - ""
+evolution:
+  - id: 1322
+    evolvers:
+      - 118
+      - 80
+      - 83
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Slasher characters by 2.25x and reduces
+    damage received by 10% if there's a [STR], [DEX], [QCK], [INT] and [PSY]
+    character on your crew.
+special:
+  name: Front Line Dissection
+  description: Deals 15x character's ATK in [DEX] damage to all enemies. Boosts
+    ATK against delayed enemies by 1.5x for 2 turns
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Slasher and Cerebral characters by 75 if your
+      Captain is a Cerebral character

@@ -1,0 +1,141 @@
+type: INT
+name: Dark King Rayleigh
+japanName: 冥王レイリー
+family:
+  - SilversRayleigh
+class:
+  - Fighter
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1462
+    atk: 777
+    rcv: 277
+  maxLvl:
+    hp: 3001
+    atk: 1300
+    rcv: 500
+cost: 55
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 7311
+aliases:
+  - Silvers Rayleigh
+  - V1 Legend Rayliegh
+evolution:
+  - id: 1619
+    evolvers:
+      - skullINT
+      - 118
+      - 304
+      - 99
+      - 267
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 4x.
+special:
+  name: Dark King's Aura
+  description: Deals 20x character's ATK in [INT] damage to all enemies, reduces
+    Bind duration by 5 turns
+  cooldown: 23
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 2 turns
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, Despair or
+      Paralysis, reduces Bind, Despair and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, Despair or
+      Paralysis, reduces Bind, Despair and Paralysis duration by 2 turns.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - hp: 20
+    - atk: 15
+    - rcv: 15
+    - hp: 40
+    - hp: 50
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - type: sailor
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - hp: 70
+    - hp: 80
+    - cooldown: 1
+    - type: sailor
+    - hp: 90
+    - hp: 130
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts Chain Multiplier Growth Rate by 4x and boosts HP and RCV of
+          all characters by 1.2x.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 3
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1.5
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 2
+          threshold: 50

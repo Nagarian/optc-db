@@ -1,0 +1,49 @@
+type: QCK
+name: Wicka
+japanName: ウィッカ
+family:
+  - Wicca
+class:
+  - Fighter
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 8
+  minLvl:
+    hp: 101
+    atk: 88
+    rcv: 11
+  maxLvl:
+    hp: 1017
+    atk: 888
+    rcv: 219
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 44169
+aliases:
+  - Wicka
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Fighter and Free Spirit characters by 1
+    turn at the start of the fight. Gives chance of duplicating a drop upon
+    completion of the island.
+  notes: Does not work if she was not your captain upon starting the island.
+    Stacks with other additional drop captains, giving you two chances of
+    getting an extra drop.
+special:
+  name: The Work of Fairies
+  description: Deals 300 Fixed damage to all enemies. Boosts the Color Affinity of
+    Fighter and Free Spirit characters by 1.25x for 1 turn
+  cooldown: 16
+  maxLevel: 7
+  stages:
+    - description: Deals 6 Fixed damage to all enemies. Randomizes orbs of top row
+        characters
+      cooldown: 9
+    - description: Deals 15 Fixed damage to all enemies. Recovers 3x character's RCV in HP
+      cooldown: 11

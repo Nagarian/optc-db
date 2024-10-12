@@ -1,0 +1,49 @@
+type: QCK
+name: Fukaboshi - Three Strongest Royal Soldiers
+japanName: フカボシ 王国軍三強
+family:
+  - Fukaboshi
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 617
+    atk: 512
+    rcv: 155
+  maxLvl:
+    hp: 2015
+    atk: 1201
+    rcv: 238
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 64096
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Slightly boosts chances Powerhouse characters of getting Matching
+    orbs, boosts ATK of Powerhouse characters by 1.5x
+special:
+  name: Sun's Hope
+  description: Reduces crew's current HP by 50%, adds 25x character's ATK as
+    Additional Typeless Damage for 1 turn
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Shirahoshi and Neptune
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8

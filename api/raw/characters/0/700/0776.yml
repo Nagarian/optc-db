@@ -1,0 +1,49 @@
+type: PSY
+name: Lucky Roux
+japanName: ラッキー・ルウ
+family:
+  - LuckyRoux
+class:
+  - Shooter
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 303
+    atk: 169
+    rcv: 30
+  maxLvl:
+    hp: 904
+    atk: 460
+    rcv: 98
+cost: 13
+slots: 2
+maxExp: 136167
+maxLevel: 35
+flags:
+  - ambush
+  - coliseum
+links:
+  gamewithId: 17475
+aliases:
+  - Colo Lucky Roo
+  - Colo Lucky Roux
+  - Coliseum Lucky Roo
+evolution:
+  - id: 777
+    evolvers:
+      - 116
+      - 117
+      - 81
+      - 87
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 1.25x
+special:
+  name: Boisterous Lucky Shot!!
+  description: Recovers 5,000 HP, deals 15x character's ATK in [PSY] damage to one
+    enemy, seals himself for 3 turns
+  cooldown: 20
+  maxLevel: 11

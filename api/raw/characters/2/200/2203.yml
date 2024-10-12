@@ -1,0 +1,102 @@
+type: DEX
+name: Dr. Indigo - Legendary Pirate's Associate
+japanName: Dr.インディゴ 伝説の海賊の側近
+family:
+  - Indigo
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1012
+    atk: 469
+    rcv: 192
+  maxLvl:
+    hp: 2120
+    atk: 1238
+    rcv: 412
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 116163
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x and their RCV by 1.25x
+special:
+  name: Chemical Juggling
+  description: If HP is below 10%, recovers all missing HP. If your Captain is a
+    Driven character, removes Poison and Blindness duration completely and
+    reduces damage received by 50% for 3 turns.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: If your Captain is a Driven character, reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Shiki and Scarlet
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - hp: 40
+    - atk: 25
+    - cooldown: 1
+    - atk: 25
+    - type: sailor
+    - rcv: 20
+    - rcv: 30
+    - slot: 1
+    - hp: 60
+    - atk: 45
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

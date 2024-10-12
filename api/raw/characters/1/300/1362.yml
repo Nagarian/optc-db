@@ -1,0 +1,341 @@
+type: DEX
+name: "Roronoa Zoro Straw Hat Pirates: Born Again"
+japanName: ロロノア・ゾロ 新生・麦わらの一味
+family:
+  - RoronoaZoro
+class:
+  - Driven
+  - Slasher
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1587
+    atk: 751
+    rcv: 111
+  maxLvl:
+    hp: 3603
+    atk: 1518
+    rcv: 294
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 45711
+aliases:
+  - New World Zoro
+  - Timeskip Zoro
+  - TS Zoro
+  - V1 Legend Zoro
+evolution:
+  - id: 1921
+    evolvers:
+      - skullDEX
+      - 118
+      - 86
+      - 302
+      - 267
+captain:
+  name: ""
+  description: If you have 5 or more Slashers characters in your crew, boosts ATK
+    of Slasher characters by 2.5x and their HP by 1.5x. If you defeated an enemy
+    last turn, boosts ATK of Slasher characters by 3x instead and boosts ATK of
+    all other characters by 1.2x
+  notes: You only need to kill at least 1 character in the last turn to gain his
+    3x ATK boost. If a character dies and revives, you will retain the 3x ATK
+    boost
+special:
+  name: "Three Blade Style Secret Skill: Crossroad of Six Paths"
+  description: Deals 60x character's ATK in Typeless damage to all enemies. If
+    Zoro is your Captain or Friend/Guest Captain, boosts ATK of Slasher
+    characters by 2x for 1 turn. If he is a Sailor, boosts ATK of Slasher
+    characters by 1.75x for 1 turn instead
+  cooldown: 20
+  maxLevel: 5
+sailor:
+  - description: Makes [DEX] orbs beneficial for Slasher characters
+  - description: Makes [TND] orbs beneficial for Slasher characters
+support:
+  type: descriptive
+  criteria: Dracule Mihawk and Perona
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 2 turns.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - hp: 10
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - rcv: 35
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - hp: 60
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 100
+    - type: potential
+    - key: 1
+    - cooldown: 1
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 250
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+rumble:
+  stats:
+    def: 132
+    rumbleType: ATK
+    spd: 192
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          level: 1
+          duration: 10
+          effect: debuff
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.84
+        - override:
+            level: 1
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.87
+        - override:
+            level: 1
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.91
+        - override:
+            level: 1
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.95
+        - override:
+            level: 1
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.99
+        - override:
+            level: 1
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.02
+        - override:
+            level: 1
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.06
+        - override:
+            level: 1
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 1
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.15
+        - override:
+            level: 2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

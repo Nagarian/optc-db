@@ -1,0 +1,308 @@
+type: QCK
+name: Trafalgar Law - People of the "D"
+japanName: トラファルガー・ロー Dの一族
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Cerebral
+  - Striker
+rarity: 6+
+stats:
+  combo: 5
+  minLvl:
+    hp: 1610
+    atk: 809
+    rcv: 162
+  maxLvl:
+    hp: 3372
+    atk: 1551
+    rcv: 421
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 68240
+aliases:
+  - Mega/Super/6+ Law
+  - Korean Law
+  - V2 Legend Law
+  - Shichibukai
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 3x, their HP by 1.25x and
+    recovers 0.5x this character's RCV at the end of the turn for each time you
+    hit a PERFECT
+special:
+  name: Radio Knife
+  description: Reduces enemies' Barrier duration by 1 turn, deals 200,000 Fixed
+    damage to all enemies and boosts Orb Effects of Cerebral characters by 2.25x
+    for 1 turn
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Striker characters by 50
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Donquixote Rosinante (Corazon)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of all characters by 1.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of all characters by 1.55x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of all characters by 1.6x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of all characters by 1.65x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of all characters by 1.75x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - hp: 50
+    - cooldown: 1
+    - atk: 40
+    - atk: 50
+    - hp: 70
+    - hp: 70
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - hp: 90
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 2
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 2
+          threshold: 20
+        - value: 2
+          threshold: 30
+        - value: 2
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 3
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 148
+    rumbleType: ATK
+    spd: 196
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 8
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 2000
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2075
+        - override:
+            level: 2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2150
+        - override:
+            level: 2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2225
+        - override:
+            level: 2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2300
+        - override:
+            level: 2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2375
+        - override:
+            level: 2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2450
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2525
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2600
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2850
+        - override:
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

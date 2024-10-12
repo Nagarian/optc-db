@@ -1,0 +1,47 @@
+type: STR
+name: Vinsmoke Sanji
+japanName: ヴィンスモーク・サンジ
+family:
+  - VinsmokeSanji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 225
+    atk: 176
+    rcv: 37
+  maxLvl:
+    hp: 1194
+    atk: 749
+    rcv: 198
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 70377
+aliases:
+  - Raid Sanji
+evolution:
+  - id: 1815
+    evolvers:
+      - 118
+      - 95
+      - 1180
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x until the first hit
+    other than PERFECT and recovers 100 HP at the end of each turn
+special:
+  name: Joue Shoot
+  description: Deal 150x character's ATK in Typeless damage to one enemy, boosts
+    ATK of Powerhouse characters by 2x for 1 turn
+  cooldown: 30
+  maxLevel: 16

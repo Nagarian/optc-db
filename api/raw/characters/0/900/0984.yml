@@ -1,0 +1,47 @@
+type: PSY
+name: Paulie - Galley-La Company Dock One Foreman
+japanName: パウリー ガレーラカンパニー１番ドック職長
+family:
+  - Paulie
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 321
+    atk: 132
+    rcv: 30
+  maxLvl:
+    hp: 2404
+    atk: 1024
+    rcv: 243
+cost: 30
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 26490
+aliases:
+  - Colo Paulie
+  - Coliseum Paulie
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.25x
+special:
+  name: Shrouds and Rattling Knot
+  description: Delays all enemies by 1 turn and locks all orbs for 1 turn
+  cooldown: 22
+  maxLevel: 9
+support:
+  type: descriptive
+  criteria: Iceburg
+  levels:
+    - Reduces damage received from [INT] characters by 1%
+    - Reduces damage received from [INT] characters by 2%
+    - Reduces damage received from [INT] characters by 3%
+    - Reduces damage received from [INT] characters by 4%
+    - Reduces damage received from [INT] characters by 5%

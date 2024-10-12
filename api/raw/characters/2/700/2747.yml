@@ -1,0 +1,115 @@
+type: INT
+name: "Doflamingo: Halloween Night Walker - Happy Halloween!"
+japanName: ドフラミンゴ　ハロウィンナイトウォーカー Happy Halloween
+family:
+  - DonquixoteDoflamingo
+class:
+  - Shooter
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 954
+    atk: 988
+    rcv: 32
+  maxLvl:
+    hp: 3212
+    atk: 1478
+    rcv: 172
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 174233
+aliases:
+  - Halloween Doflamingo
+  - Halloween Doffy
+  - Doffy S. Pumpkins
+  - David S. Pumpkins
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Fighter characters by 2.25x, their HP by
+    1.5x and deals 5x the damage taken from enemies in the previous turn in
+    [INT] damage to all enemies at the end of each turn.
+special:
+  name: The Mocking King Sitting Atop of the Grave
+  description: Removes enemies' Resilience buff duration completely. If enemies
+    have Delay Debuff Protection or All Debuff Protection at the time the
+    special was activated, boosts ATK of Fighter and Shooter characters by 1.75x
+    for 1 turn and boosts Orb Effects of Fighter and Shooter characters by 1.75x
+    for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Shooter and Fighter characters by 30
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      Shooter and Fighter characters by 75
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: "[INT] characters"
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 10
+    - type: sailor
+    - hp: 50
+    - hp: 70
+    - hp: 80
+    - slot: 1
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 100
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,114 @@
+type: INT
+name: "Mr. 0 - Battles of the Great Era of Piracy: Utopia"
+japanName: Mr.0 大海賊時代の死闘「理想郷」
+family:
+  - Crocodile
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1131
+    atk: 540
+    rcv: 59
+  maxLvl:
+    hp: 2760
+    atk: 1457
+    rcv: 197
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 57878
+aliases:
+  - Crocodile
+  - Log Crocodile
+  - MrUtopia
+  - Mr Utopia
+  - Mr 0
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x and recovers 1.5x
+    character's RCV in HP at the end of each turn
+special:
+  name: Desert Spada
+  description: Deals 20x character's ATK in [INT] damage to all enemies, reduces
+    Special Cooldown of Striker characters by 1 turn and boosts ATK of Striker
+    characters by 1.5x for 1 turn and boosts Orb Effects of Striker characters
+    by 1.5x for 1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Reduces Silence duration by 3 turns of this character
+support:
+  type: descriptive
+  criteria: Daz Bones (Mr. 1), Nico Robin and Bentham (Mr. 2 Bon Clay)
+  levels:
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn and reduces Silence duration by
+      1 turn on the supported character.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn and reduces Silence duration by
+      2 turns on the supported character.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn and reduces Silence duration by
+      3 turns on the supported character.
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 40
+    - rcv: 10
+    - type: potential
+    - atk: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 30
+    - cooldown: 1
+    - hp: 60
+    - rcv: 40
+    - type: sailor
+    - atk: 45
+    - slot: 1
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 4
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

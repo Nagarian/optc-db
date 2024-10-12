@@ -1,0 +1,98 @@
+type: PSY
+name: Bellamy the Hyena - Assassin for the Current King of Dressrosa
+japanName: ハイエナのベラミー ドレスローザ現国王の刺客
+family:
+  - Bellamy
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1314
+    atk: 567
+    rcv: 87
+  maxLvl:
+    hp: 2800
+    atk: 1308
+    rcv: 242
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 80510
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.75x
+special:
+  name: Spring Death Knock
+  description: Reduces crew's current HP by 50%, deals 10x the amount of HP
+    subtracted in Typeless damage to one enemy, reduces enemies' Threshold
+    Damage Reduction, Increased Defense and ATK UP duration by 3 turns and
+    changes the orb of this character into a [PSY] orb
+  cooldown: 17
+  maxLevel: 8
+sailor:
+  - description: Boosts this character's damage against [INT] characters by 1.1x
+  - description: If this character has a [PSY] orb and you hit a PERFECT with him,
+      keep his [PSY] orb for the next turn
+support:
+  type: descriptive
+  criteria: Donquixote Doflamingo
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction and Increased Defense duration
+      by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction and Increased Defense duration
+      by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction and Increased Defense duration
+      by 2 turns.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - type: potential
+    - atk: 25
+    - atk: 30
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - rcv: 20
+    - cooldown: 1
+    - rcv: 30
+    - hp: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

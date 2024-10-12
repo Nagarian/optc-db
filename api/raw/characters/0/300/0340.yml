@@ -1,0 +1,46 @@
+type: STR
+name: Kraken - Surume
+japanName: クラーケン スルメ
+family:
+  - Surume
+class:
+  - Striker
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 99
+    atk: 99
+    rcv: 188
+  maxLvl:
+    hp: 1440
+    atk: 685
+    rcv: 133
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 7269
+aliases: []
+evolution:
+  - id: 341
+    evolvers:
+      - 117
+      - 78
+      - 84
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: Kraken Tentacle Crush
+  description: Randomizes all orbs into either [STR] or [QCK] orbs, deals random
+    [STR] damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 1 : 15,000`"

@@ -1,0 +1,102 @@
+type: PSY
+name: "Nami - Straw Hat Pirates: Mark of a Fierce Battle"
+japanName: ナミ 麦わらの一味・激戦の軌跡
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1167
+    atk: 567
+    rcv: 160
+  maxLvl:
+    hp: 2554
+    atk: 1240
+    rcv: 361
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 199778
+aliases:
+  - Super Nami
+captain:
+  name: ""
+  description: Recovers 5x character's RCV in HP at the end of each turn.
+special:
+  name: Sorcery Clima-Tact Mirage Tempo
+  description: Reduces Paralysis and Bind duration by 3 turns and changes orbs of
+    adjacent characters into Matching orbs.
+  cooldown: 16
+  maxLevel: 6
+  stages:
+    - description: Reduces Paralysis and Bind duration by 1 turn.
+      cooldown: 12
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Boosts base ATK, HP and RCV of all characters by 20
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin, Franky and Brook
+  levels:
+    - Reduces damage received from [INT] characters by 1%.
+    - Reduces damage received from [INT] characters by 2%.
+    - Reduces damage received from [INT] characters by 3%.
+    - Reduces damage received from [INT] characters by 4%.
+    - Reduces damage received from [INT] characters by 5%.
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - hp: 60
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - hp: 100
+    - hp: 150
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4

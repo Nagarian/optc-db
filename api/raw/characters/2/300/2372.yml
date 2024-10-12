@@ -1,0 +1,454 @@
+type: STR
+name: Dogstorm - Feast of Reconciliation
+japanName: イヌアラシ 手打の宴
+family:
+  - Inuarashi
+class:
+  - Cerebral
+  - Slasher
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1356
+    atk: 772
+    rcv: 172
+  maxLvl:
+    hp: 3345
+    atk: 1582
+    rcv: 421
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 55743
+aliases:
+  - Mega/Super/6+ Inuarashi
+  - Inuyasha
+  - Dogstorm
+  - Doggo Storm
+  - V1 Legend Inuarashi
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 3x and if HP is below 30% at
+    the start of the turn Boosts Chain Multiplier Growth Rate by 1.5x.
+special:
+  name: Slash of Reconciliation
+  description: Reduces crew's current HP by 80%, deals 20% of enemies' current HP
+    in damage to one enemy and adds 130x character's ATK as Additional Typeless
+    Damage for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of Cerebral characters by 200
+  - description: Boosts base ATK of this character by 200 if this character is the
+      last in the chain to attack
+support:
+  type: descriptive
+  criteria: Nekomamushi
+  levels:
+    - Once per adventure, when you reach the final stage, adds 50x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 70x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 90x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 110x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 130x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 2 turns
+limitBreak:
+  path:
+    - hp: 15
+    - atk: 10
+    - hp: 25
+    - type: potential
+    - rcv: 5
+    - atk: 20
+    - rcv: 10
+    - type: sailor
+    - hp: 30
+    - atk: 25
+    - hp: 35
+    - rcv: 10
+    - atk: 30
+    - rcv: 15
+    - type: potential
+    - hp: 40
+    - atk: 35
+    - hp: 50
+    - rcv: 15
+    - atk: 40
+    - rcv: 20
+    - hp: 60
+    - cooldown: 1
+    - hp: 70
+    - rcv: 25
+    - atk: 45
+    - type: sailor
+    - hp: 80
+    - hp: 90
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - captain:
+        description: Boosts ATK of Cerebral characters by 3.25x, makes [STR] orbs
+          beneficial for Cerebral characters and if HP is below 30% at the start
+          of the turn Boosts Chain Multiplier Growth Rate by 1.5x.
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 200
+          reduction: 3
+        - value: 250
+          reduction: 4
+        - value: 300
+          reduction: 5
+rumble:
+  stats:
+    def: 185
+    rumbleType: ATK
+    spd: 178
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          effect: buff
+          level: 9
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 30
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.37
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.43
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.5
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.57
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.64
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.7
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.77
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.84
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            amount: 1.95
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - SPD
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Cerebral
+            - attributes:
+                - ATK
+              effect: buff
+              level: 9
+              condition:
+                comparator: below
+                count: 65
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 7
+  - captain:
+      - description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight and boosts ATK of [PSY] and Cerebral characters by 4x. If
+          HP is below 30% at the start of the turn, boosts Chain Multiplier
+          Growth Rate by 1.5x.
+      - description: Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of [PSY] and Cerebral characters by 4.25x and
+          makes [STR], [DEX] and [QCK] orbs beneficial for [PSY] and Cerebral
+          characters. If HP is below 30% at the start of the turn, boosts Chain
+          Multiplier Growth Rate by 1.5x.
+  - rumble:
+      special:
+        - cooldown: 28
+          effects:
+            - amount: 20
+              attributes:
+                - HP
+              effect: penalty
+              targeting:
+                targets:
+                  - self
+            - amount: 1.95
+              effect: damage
+              range:
+                direction: sideways
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.05
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.15
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.25
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.35
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.45
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.55
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.65
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.75
+        - cooldown: 28
+          effects:
+            - {}
+            - override:
+                amount: 2.85
+  - rumble:
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: DEX
+          percentage: 40
+          type: damage
+    special:
+      description: Reduces crew's current HP by 80%, deals 20% of enemies' current HP
+        in damage to one enemy, reduces enemies' Percent Damage Reduction
+        duration by 6 turns, adds 200x character's ATK as Additional Typeless
+        Damage for 3 turns, sets Chain Boundaries to 2.25x and 35.0x for 3 turns
+        and reduces any damage received above 3,000 HP by 90% for 1 turn.

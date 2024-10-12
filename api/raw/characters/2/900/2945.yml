@@ -1,0 +1,242 @@
+type: PSY
+name: "Tony Tony Chopper - Straw Hat Pirates: Mark of Adventure"
+japanName: トニートニー・チョッパー 麦わらの一味・冒険の軌跡
+family:
+  - TonyTonyChopper
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 107
+    atk: 74
+    rcv: 48
+  maxLvl:
+    hp: 963
+    atk: 593
+    rcv: 192
+cost: 9
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 200108
+aliases:
+  - Super Chopper
+evolution:
+  - id: 2946
+    evolvers:
+      - 117
+      - 98
+      - 87
+      - 266
+      - 303
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.5x and their HP by 1.1x.
+special:
+  name: Full Support
+  description: Reduces damage received by 50% for 3 turns and recovers 3,000 HP at
+    the end of the turn for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+  stages:
+    - description: Reduces damage received by 50% for 1 turn.
+      cooldown: 16
+sailor:
+  - description: Boosts base RCV of all characters by 50
+rumble:
+  stats:
+    def: 108
+    rumbleType: RCV
+    spd: 127
+    cost: 20
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: heal
+      area: Small
+      level: 2
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - RCV
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - RCV
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - RCV
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - RCV
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1.2
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 1.4
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 1.6
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 1.8
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 2
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 2.2
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 2.4
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 2.6
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 2.8
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 32
+      effects:
+        - amount: 3
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV

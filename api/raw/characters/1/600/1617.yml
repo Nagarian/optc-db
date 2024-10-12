@@ -1,0 +1,49 @@
+type: STR
+name: Gecko Moria - Arch-Enemies of an Endless Dream
+japanName: ゲッコー・モリア 終わらぬ夢の宿敵
+family:
+  - GeckoMoria
+class:
+  - Driven
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 190
+    atk: 150
+    rcv: 0
+  maxLvl:
+    hp: 1390
+    atk: 699
+    rcv: 0
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 57879
+aliases:
+  - ""
+evolution:
+  - id: 1618
+    evolvers:
+      - 83
+      - 84
+      - 95
+      - 1180
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [INT] and [DEX] characters by 2x
+special:
+  name: 'Shadow Asgard: "Baptism" from the Royal Shichibukai'
+  description: For [STR], [INT] and [DEX] characters, randomizes all non-Matching
+    orbs and boosts ATK of [STR], [INT], [DEX] characters by 1.75x for 2 turns
+  cooldown: 24
+  maxLevel: 8
+sailor:
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn

@@ -1,0 +1,245 @@
+type: DEX
+name: Franky - Shipwright in Disguise
+japanName: フランキー 変装する船大工
+family:
+  - Franky
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1601
+    atk: 633
+    rcv: 118
+  maxLvl:
+    hp: 3043
+    atk: 1488
+    rcv: 235
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 294510
+aliases:
+  - Onigashima Franky
+  - Limited Franky
+  - Secret Franky
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of all characters by 3x and their HP by 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x and their HP by 1.3x.
+special:
+  name: Wild Ride! Black Rhino FR-U IV
+  description: Reduces enemies' Percent Damage Reduction duration by 5 turns,
+    reduces ATK DOWN duration by 5 turns, locks all orbs for 1 turn, boosts ATK
+    of all characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 75
+  - description: Boosts this character's damage against [QCK] characters by 1.1x
+support:
+  type: descriptive
+  criteria: Usopp and Kin'emon
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces ATK DOWN duration by 1 turn and boosts ATK of supported character
+      by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces ATK DOWN duration by 1 turn and boosts ATK of supported character
+      by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces ATK DOWN duration by 1 turn and boosts ATK of supported character
+      by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces ATK DOWN duration by 1 turn and boosts ATK of supported character
+      by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces ATK DOWN duration by 1 turn and boosts ATK of supported character
+      by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - rcv: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 100
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 140
+          reduction: 2
+        - value: 170
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 261
+    rumbleType: DEF
+    spd: 101
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 200
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - Provoke
+          duration: 11
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            duration: 20

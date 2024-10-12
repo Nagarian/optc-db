@@ -1,0 +1,55 @@
+type: DEX
+name: Usoland
+japanName: ウソランド
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 466
+    atk: 139
+    rcv: 51
+  maxLvl:
+    hp: 1551
+    atk: 637
+    rcv: 220
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 54006
+aliases:
+  - God Usopp
+  - Usoland
+  - V1 Legend Usopp
+evolution:
+  - id: 1532
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x if HP is below 50% or by 1.75x
+    if HP is below 30% at the start of the turn. Makes [STR], [DEX], [QCK],
+    [PSY], [INT], [RCV] and [TND] orbs beneficial for all characters.
+special:
+  name: "Long-Range Attack: Bagworm"
+  description: Delays all enemies by 5 turns, adds 0.3x to Chain multiplier for 4 turns
+  cooldown: 24
+  maxLevel: 4
+  stages:
+    - description: Delays all enemies by 3 turns
+      cooldown: 13
+    - description: Delays all enemies by 4 turns, adds 0.2x to Chain multiplier for 4 turns
+      cooldown: 18
+sailor:
+  - description: Removes Blindness duration completely

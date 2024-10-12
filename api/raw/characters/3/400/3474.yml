@@ -1,0 +1,436 @@
+type: QCK
+name: Charlotte Katakuri - Decisive Strike
+japanName: シャーロット・カタクリ 雌雄決する一撃
+family:
+  - CharlotteKatakuri
+class:
+  - Powerhouse
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1980
+    atk: 816
+    rcv: 112
+  maxLvl:
+    hp: 3960
+    atk: 1631
+    rcv: 223
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 301826
+aliases:
+  - Super Class (SC) Katakuri
+  - V4 Legend Katakuri
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 5x, boosts ATK of all other
+    characters by 3.75x otherwise, boosts HP of all characters by 1.3x, boosts
+    chances of getting Matching orbs and recovers 50% of damage taken from
+    enemies in the previous stage when entering a new stage.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Monkey
+    D. Luffy, Charlotte Linlin (Big Mom), Charlotte Cracker, Charlotte Smoothie,
+    Charlotte Perospero, Charlotte Daifuku, Charlotte Oven, Charlotte Amande,
+    Charlotte Opera, Charlotte Brûlée, Charlotte Montd'Or, Charlotte Galette,
+    Charlotte Bavarois, Charlotte Pudding or Charlotte Flampe, excluding Support
+    members or any character's Special abilities are used 4 times."
+  description: Increases duration of any Orb Amplification buffs by 1 turn,
+    changes all orbs, including [BLOCK] orbs, into Matching orbs and transforms
+    all Powerhouse characters into Super Powerhouse characters.
+special:
+  name: "Zangiri Mochi: Chop, Slice, Donut"
+  description: Deals 10% of enemies' current HP in damage to all enemies, boosts
+    base ATK of Powerhouse characters by 1000 for 1 turn and boosts Orb Effects
+    of Powerhouse characters by 2.25x-2.75x for 1 turn, based on total damage
+    taken. If your crew has Orb Amplification, boosts ATK of Powerhouse
+    characters by 2.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+  notes: |-
+    0-24,999 Damage Taken: 2.25x orb boost  
+    25,000-49,999 Damage Taken: 2.5x orb boost  
+    50,000+ Damage Taken: 2.75x orb boost
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 125
+  - description: If your Captain is a Powerhouse character, boosts base HP of
+      Powerhouse characters by 1.1x
+support:
+  type: descriptive
+  criteria: Charlotte Linlin (Big Mom), Charlotte Cracker, Charlotte Smoothie,
+    Charlotte Perospero, Charlotte Daifuku and Charlotte Oven
+  levels:
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts ATK of Powerhouse characters by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts ATK of Powerhouse characters by 1.3x for 1
+      turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts ATK of Powerhouse characters by 1.4x for 1
+      turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts ATK of Powerhouse characters by 1.5x for 1
+      turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts ATK of Powerhouse characters by 1.75x for
+      1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - rcv: 10
+    - type: sailor
+    - hp: 20
+    - rcv: 20
+    - rcv: 30
+    - rcv: 40
+    - type: potential
+    - cooldown: 1
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - hp: 40
+    - hp: 40
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - hp: 70
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+        - value: 200
+          reduction: 4
+        - value: 300
+          reduction: 5
+rumble:
+  stats:
+    def: 146
+    rumbleType: DBF
+    spd: 163
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: Cerebral
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 6
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1500
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Paralysis
+          chance: 40
+          duration: 11
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.5
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - Cerebral
+          type: atk
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1650
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            chance: 44
+            duration: 12
+        - override:
+            amount: 0.6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            chance: 48
+            duration: 13
+        - override:
+            amount: 0.7
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1950
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            chance: 52
+            duration: 14
+        - override:
+            amount: 0.8
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2100
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            chance: 56
+            duration: 15
+        - override:
+            amount: 0.9
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2250
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            chance: 60
+            duration: 16
+        - override:
+            amount: 1
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2400
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            chance: 64
+            duration: 17
+        - override:
+            amount: 1.1
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2550
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            chance: 68
+            duration: 18
+        - override:
+            amount: 1.2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2700
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            chance: 72
+            duration: 19
+        - override:
+            amount: 1.3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3000
+        - override:
+            level: 7
+            duration: 20
+        - override:
+            chance: 80
+            duration: 20
+        - override:
+            amount: 1.5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,36 @@
+type: INT
+name: Striker Group Crew - Black Pirates
+japanName: 突撃隊 隊員 ブラックパイレーツ
+family:
+  - StrikerGroupCrewPirates
+class:
+  - Striker
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 188
+    atk: 87
+    rcv: 18
+  maxLvl:
+    hp: 465
+    atk: 342
+    rcv: 65
+cost: 5
+slots: 0
+maxExp: 33626
+maxLevel: 25
+flags: []
+links:
+  gamewithId: 2354
+aliases: []
+evolution:
+  - id: 283
+    evolvers:
+      - 82
+      - 88
+special:
+  name: Hyper Spiral
+  description: Deals 10x character's ATK in character's Type damage to one enemy
+  cooldown: 40
+  maxLevel: 26

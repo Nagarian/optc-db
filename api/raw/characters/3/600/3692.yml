@@ -1,0 +1,102 @@
+type: QCK
+name: Charlotte Katakuri - Brother Saving His Sister
+family:
+  - CharlotteKatakuri
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1453
+    atk: 711
+    rcv: 153
+  maxLvl:
+    hp: 2982
+    atk: 1507
+    rcv: 221
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - RED Limited Secret Kizuna
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], Powerhouse and Cerebral characters by 3.5x,
+    boosts HP of [QCK], Powerhouse and Cerebral characters by 1.3x, makes [RCV]
+    orbs beneficial for all characters and makes PERFECTs consume RCV orbs.
+special:
+  name: Buzz Cut Mochi Takedown
+  description: Deals 20% of enemies' current HP in True damage to one enemy,
+    reduces ATK DOWN duration by 6 turns, reduces enemies' Resilience duration
+    by 6 turns and boosts Orb Effects of [QCK], Powerhouse and Cerebral
+    characters by 2x for 1 turn. After 1 turn, boosts Orb Effects of [QCK],
+    Powerhouse and Cerebral characters by 2.25x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: Makes [RCV] orbs beneficial for Slasher and Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - rcv: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - rcv: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 75
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 1
+        - value: 200
+          threshold: 3000
+          reduction: 2

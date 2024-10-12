@@ -1,0 +1,109 @@
+type: INT
+name: Baccarat - Golden Armor
+japanName: バカラ ゴールドアーマー
+family:
+  - Baccarat
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 981
+    atk: 465
+    rcv: 189
+  maxLvl:
+    hp: 2009
+    atk: 1217
+    rcv: 459
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 105796
+aliases:
+  - V2 Baccarat
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x. Gives chance of duplicating a
+    drop upon completion of the island.
+  notes: Does not work if she was not your captain upon starting the island.
+    Stacks with other additional drop captains, giving you two chances of
+    getting an extra drop.
+special:
+  name: Lucky Coin of Victory
+  description: Deals 77x character's ATK in Typeless damage to all enemies and
+    reduces ATK DOWN, Chain Multiplier Limit and Paralysis duration by 3 turns.
+    If your captain is an [INT] or [QCK] character, changes the orb of this
+    character into an [INT] orb and boosts Orb Effects of all characters by
+    1.75x for 1 turn
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: If this character has an [INT] orb and you hit a GOOD or GREAT with
+      her, keep her [INT] orb for the next turn
+  - description: Boosts base RCV of all characters by 40
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Gild Tesoro, Dice and Tanaka
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - rcv: 20
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - hp: 80
+    - type: sailor
+    - atk: 20
+    - slot: 1
+    - atk: 20
+    - atk: 20
+    - cooldown: 1
+    - atk: 30
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

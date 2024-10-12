@@ -1,0 +1,31 @@
+type: INT
+name: Armed Fighter Unit - Black Pirates
+japanName: 格闘隊　武装隊員 ブラックパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 633
+    atk: 405
+    rcv: 18
+  maxLvl:
+    hp: 1044
+    atk: 800
+    rcv: 30
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 2700
+aliases: []
+special:
+  name: Hyper Straight
+  description: Deals 10x character's ATK in character's Type damage to one enemy
+  cooldown: 40
+  maxLevel: 26

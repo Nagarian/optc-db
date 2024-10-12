@@ -1,0 +1,48 @@
+type: DEX
+name: Giolla
+japanName: ジョーラ
+family:
+  - Giolla
+class:
+  - Free Spirit
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 236
+    atk: 66
+    rcv: 41
+  maxLvl:
+    hp: 1463
+    atk: 494
+    rcv: 204
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 21541
+aliases:
+  - Giolla
+  - Jora
+evolution:
+  - id: 878
+    evolvers:
+      - 86
+      - 266
+      - 91
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts amount of Beli received by 2x
+special:
+  name: Heaven's Do Art
+  description: Reduces any damage received above 2,000 HP by 88% for 2 turns
+  cooldown: 21
+  maxLevel: 7
+  notes: "The exact formula for the damage received is: 2,000 + ((total damage) -
+    2,000) \\* 0.12"

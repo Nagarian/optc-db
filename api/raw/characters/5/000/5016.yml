@@ -1,0 +1,347 @@
+type: QCK
+oldDbId: 2784
+name: "Lucci: Beastman - Absolute Prevention of Evil"
+japanName: ルッチ 獣人 悪の絶対阻止
+family:
+  - RobLucci
+class:
+  - Shooter
+  - Powerhouse
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1587
+    atk: 772
+    rcv: 181
+  maxLvl:
+    hp: 3505
+    atk: 1590
+    rcv: 363
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+  - gloex
+links:
+  gamewithId: 68239
+aliases:
+  - Blucci
+  - Log Lucci
+  - Mega/Super/6+ Lucci
+  - V2 Legend Rob Lucci
+captain:
+  name: ""
+  description: >-
+    Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Shooter characters by 3.25x at the start of the
+    chain and reduces RCV of Shooter characters to 0.  
+
+    Boosts ATK of Shooter characters by 3.413x after the 1st PERFECT in a row, by 3.583x after the 2nd PERFECT in a row, by 3.762x after the 3rd PERFECT in a row, by 3.95x after the 4th PERFECT in a row and by 4.148x after the 5th PERFECT in a row.
+special:
+  name: "Tempest Kick: Victory Bird"
+  description: Reduces the defense of all enemies by 80% for 1 turn, deals 100x
+    character's ATK in [QCK] damage to one enemy, reduces Paralysis duration by
+    4 turns and boosts the Color Affinity of Shooter characters by 2x for 1 turn
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 50
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: descriptive
+  criteria: Shooter characters
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Shooter characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Shooter characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Shooter characters by 1.3x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Shooter characters by 1.4x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Shooter characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - hp: 50
+    - cooldown: 1
+    - atk: 40
+    - atk: 50
+    - hp: 70
+    - hp: 70
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - hp: 90
+    - type: potential
+    - key: 1
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - rcv: 25
+    - rcv: 25
+    - atk: 100
+    - captain:
+        description: >-
+          Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of Shooter characters by 3.5x at the start of
+          the chain and reduces RCV of Shooter characters to 0.  
+
+          Boosts ATK of Shooter characters by 3.675x after the 1st PERFECT in a row, by 3.859x after the 2nd PERFECT in a row, by 3.4052x after the 3rd PERFECT in a row, by 3.254x after the 4th PERFECT in a row and by 4.467x after the 5th PERFECT in a row.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 2
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 2
+          threshold: 20
+        - value: 2
+          threshold: 30
+        - value: 2
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 186
+    rumbleType: ATK
+    spd: 194
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 150
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          condition:
+            count: 3
+            stat: Critical Hit
+            type: trigger
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 32
+      effects:
+        - attributes:
+            - DEF
+          effect: debuff
+          duration: 10
+          level: 4
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1
+          effect: damage
+          type: atk
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - {}
+        - override:
+            amount: 1.05
+    - cooldown: 32
+      effects:
+        - {}
+        - override:
+            amount: 1.09
+    - cooldown: 32
+      effects:
+        - {}
+        - override:
+            amount: 1.14
+    - cooldown: 32
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.19
+    - cooldown: 32
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.24
+    - cooldown: 32
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.28
+    - cooldown: 32
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.33
+    - cooldown: 32
+      effects:
+        - override:
+            level: 6
+        - override:
+            amount: 1.38
+    - cooldown: 32
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 1.5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

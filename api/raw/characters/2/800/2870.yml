@@ -1,0 +1,102 @@
+type: STR
+name: Monkey D. Luffy - Dawn of Adventure
+japanName: モンキー・D・ルフィ 冒険の夜明け
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1051
+    atk: 560
+    rcv: 159
+  maxLvl:
+    hp: 2597
+    atk: 1391
+    rcv: 278
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 189630
+aliases:
+  - East Blue Luffy
+  - Secret Luffy
+  - Limited Luffy
+  - Throwback Luffy
+captain:
+  name: ""
+  description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+    your crew, boosts ATK of all characters by 3x, by 3.5x instead if they have
+    a beneficial orb, and increase the rate of Matching orbs
+special:
+  name: The Dream of Becoming the Pirate King
+  description: Boosts ATK of all characters by 1.75x for 1 turn, boosts Orb
+    Effects of all characters by 1.75x for 1 turn and randomizes all
+    non-Matching, non-[RCV] and non-[TND] orbs, including [BLOCK] orbs.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK and HP of all characters by 50
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 10
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - hp: 50
+    - hp: 50
+    - atk: 50
+    - slot: 1
+    - hp: 50
+    - rcv: 20
+    - rcv: 20
+    - type: sailor
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

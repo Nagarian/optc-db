@@ -1,0 +1,94 @@
+type: STR
+name: Berserker Wyper - Shandian Warrior
+japanName: 戦鬼ワイパー シャンディアの戦士
+family:
+  - Wyper
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1140
+    atk: 543
+    rcv: 15
+  maxLvl:
+    hp: 2095
+    atk: 1260
+    rcv: 99
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 19417
+aliases:
+  - Berserker Wiper, Warrior of Shandia
+  - Colo Wyper
+  - Coliseum Wyper
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1x-2.75x depending on the
+    crew's current HP, reduces crew's current HP by 10% at the end of each turn
+  notes: "`captainProportional : lower : 1 + 1.75 * (1 - (remaining HP) / (total
+    HP)) : 1 : 2.75`"
+special:
+  name: Burn Bazooka
+  description: Boosts ATK of Free Spirit characters by 1.5x for 1 turn, deals 15x
+    character's ATK in [STR] damage to all enemies
+  cooldown: 28
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK of Free Spirit characters by 50
+  - description: Makes [STR] orbs beneficial for Free Spirit characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Braham, Genbou, Kamakiri, Aisa and Raki
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - hp: 70
+    - atk: 30
+    - cooldown: 7
+    - hp: 110
+    - type: sailor
+    - slot: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 2
+        - value: 70
+          reduction: 2
+        - value: 150
+          reduction: 3

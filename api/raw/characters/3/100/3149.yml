@@ -1,0 +1,102 @@
+type: QCK
+name: Bepo & Shachi & Penguin
+japanName: ベポ＆シャチ＆ペンギン
+family:
+  - Bepo
+  - Sachi
+  - Penguin
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1173
+    atk: 666
+    rcv: 99
+  maxLvl:
+    hp: 2834
+    atk: 1476
+    rcv: 311
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 238594
+aliases:
+  - Limited Sachi
+  - Limited Penguin
+  - Limited Bepo
+  - Secret Sachi
+  - Secret Penguin
+  - Secret Bepo
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.75x and their RCV by 1.25x.
+special:
+  name: Three People to Worry About
+  description: Changes all orbs, including [BLOCK] orbs, into [QCK] orbs and
+    reduces Paralysis and Bind duration by 5 turns. If your Captain is a
+    Fighter, Powerhouse or Free Spirit character, reduces enemies' Threshold
+    Damage Reduction duration by 5 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of Fighter characters by 75
+  - description: Makes [QCK] orbs beneficial for Fighter characters
+support:
+  type: descriptive
+  criteria: Trafalgar D. Water Law
+  levels:
+    - Once per adventure, when the enemy applies Percent Damage Reduction,
+      reduces enemies' Percent Damage Reduction duration by 1 turn.
+    - Once per adventure, when the enemy applies Percent Damage Reduction,
+      reduces enemies' Percent Damage Reduction duration by 1 turn.
+    - Once per adventure, when the enemy applies Percent Damage Reduction,
+      reduces enemies' Percent Damage Reduction duration by 1 turn.
+    - Once per adventure, when the enemy applies Percent Damage Reduction,
+      reduces enemies' Percent Damage Reduction duration by 1 turn.
+    - Once per adventure, when the enemy applies Percent Damage Reduction,
+      reduces enemies' Percent Damage Reduction duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - rcv: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 100
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 140
+          reduction: 2
+        - value: 170
+          reduction: 2
+        - value: 200
+          reduction: 3

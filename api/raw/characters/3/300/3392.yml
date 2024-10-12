@@ -1,0 +1,102 @@
+type: STR
+name: Kin'emon - Confronting the Betrayer
+japanName: 錦えもん 裏切りへの制裁
+family:
+  - Kinemon
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1212
+    atk: 761
+    rcv: 56
+  maxLvl:
+    hp: 3011
+    atk: 1403
+    rcv: 231
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 287749
+aliases:
+  - Kin'emon
+  - Limited Kinemon
+  - Secret Kinemon
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3x and their HP by 1.2x.
+special:
+  name: Soul Pounce Attack
+  description: Deals 15% of enemies' current HP in damage to one enemy, reduces
+    Paralysis duration by 5 turns, reduces enemies' Percent Damage Reduction and
+    Threshold Damage Reduction duration by 5 turns, changes [BLOCK] and Badly
+    Matching orbs into Matching orbs and adds 0.9x to Chain multiplier for 1
+    turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Slasher characters by 75
+  - description: Makes [STR] orbs beneficial for Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - description: Boosts the supported character's ATK by 1.1x against Kanjuro.
+      value: 3
+    - description: Boosts the supported character's ATK by 1.2x against Kanjuro.
+      value: 4
+    - description: Boosts the supported character's ATK by 1.3x against Kanjuro.
+      value: 5
+    - description: Boosts the supported character's ATK by 1.4x against Kanjuro.
+      value: 6
+    - description: Boosts the supported character's ATK by 1.5x against Kanjuro.
+      value: 7
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - rcv: 25
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80

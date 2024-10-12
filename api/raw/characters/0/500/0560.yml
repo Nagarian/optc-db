@@ -1,0 +1,98 @@
+type: STR
+name: Franky - Straw Hat Pirates' Attack
+japanName: フランキー 特攻の麦わらの一味
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1525
+    atk: 660
+    rcv: 50
+  maxLvl:
+    hp: 2801
+    atk: 1395
+    rcv: 161
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - removed
+links:
+  gamewithId: 12651
+notes: "Strong World Batch has been entirely replaced. So this characte is now
+  available with a different artwork and id #1212."
+aliases:
+  - Strong World Franky
+  - SW Franky
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.25x, deals 2x character's ATK
+    in [STR] damage to all enemies at the end of each turn
+special:
+  name: Roar! Zarley Davison
+  description: Changes the orb of this character into a [STR] orb, boosts Orb
+    Effects of all characters by 1.5x for 2 turns
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Shooter characters by 20
+  - description: Reduces Blindness duration by 5 turns
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Nico Robin, Brook
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 30
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - rcv: 30
+    - hp: 40
+    - hp: 40
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - hp: 50
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - atk: 50
+    - cooldown: 5
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

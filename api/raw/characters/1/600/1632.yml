@@ -1,0 +1,223 @@
+type: PSY
+name: Fisher Tiger - Sun Pirates Captain
+japanName: フィッシャー・タイガー タイヨウの海賊団船長
+family:
+  - FisherTiger
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1250
+    atk: 630
+    rcv: 132
+  maxLvl:
+    hp: 2522
+    atk: 1386
+    rcv: 313
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 60067
+aliases:
+  - Secret Fisher Tiger
+  - Limited Fisher Tiger
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.75x
+special:
+  name: Rebellion against the "Prohibition" - Taboo
+  description: Boosts ATK of Powerhouse characters by 1.75x for 3 turns
+  cooldown: 21
+  maxLevel: 5
+sailor:
+  - description: When any other Powerhouse character uses a special, reduces special
+      cooldown of this character by 1 turn
+  - description: Boosts base ATK of Powerhouse characters by 50
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 4
+      reduction: 3
+    - value: 6
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 10
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - atk: 20
+    - hp: 40
+    - rcv: 30
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - hp: 60
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 147
+    rumbleType: ATK
+    spd: 147
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 70
+      type: debuff
+    - attribute: Cerebral
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - ATK
+          duration: 12
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+        - amount: 1
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 14
+        - override:
+            amount: 1.1
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 16
+        - override:
+            amount: 1.2
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            amount: 1.3
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            amount: 1.4
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 22
+        - override:
+            amount: 1.5
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 24
+        - override:
+            amount: 1.6
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 26
+        - override:
+            amount: 1.7
+    - cooldown: 30
+      effects:
+        - override:
+            level: 4
+            duration: 28
+        - override:
+            amount: 1.8
+    - cooldown: 30
+      effects:
+        - override:
+            level: 5
+            duration: 30
+        - override:
+            amount: 2

@@ -1,0 +1,495 @@
+type: DEX
+name: Portgas D. Ace - Black Clad Flame Fist
+japanName: ポートガス・D・エース 黒衣の火拳
+family:
+  - PortgasDAce
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 515
+    atk: 264
+    rcv: 152
+  maxLvl:
+    hp: 1922
+    atk: 758
+    rcv: 253
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 12647
+aliases:
+  - Strong World Ace
+  - SW Ace
+  - V1 Legend Ace
+evolution:
+  - id: 562
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Boosts HP of Shooter characters by 1.5x and boosts ATK of Shooter
+    characters by 2x, by 3x instead if they have a beneficial orb
+special:
+  name: "Great Flame Commandment: Flame Emperor"
+  description: Reduces crew's current HP by 40%, deals 15x the amount of HP
+    subtracted in Typeless damage to all enemies, locks all orbs for 1 turn
+  cooldown: 22
+  maxLevel: 6
+rumble:
+  stats:
+    def: 101
+    rumbleType: ATK
+    spd: 185
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 35
+      effects:
+        - amount: 70
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

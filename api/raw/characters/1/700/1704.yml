@@ -1,0 +1,105 @@
+type: INT
+name: Hannyabal - Ruler's Right-Hand Man (For Now)
+japanName: ハンニャバル 今は支配者の腹心
+family:
+  - Hannyabal
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1277
+    atk: 589
+    rcv: 57
+  maxLvl:
+    hp: 2910
+    atk: 1309
+    rcv: 221
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 63204
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x, recovers 2x character's RCV
+    in HP at the end of each turn
+special:
+  name: Inferno Hell Wheel
+  description: Reduces damage received by 50% for 2 turns and boosts ATK against
+    enemies inflicted with Toxic by 1.75x for 2 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character if your Captain is a Striker character
+  - description: Makes [RCV] and [TND] orbs beneficial for this character if your
+      Captain is a Driven character
+support:
+  type: descriptive
+  criteria: Magellan
+  levels:
+    - Once per adventure, when the supported character uses a Poison, Strong
+      Poison or Toxic special, boosts ATK against Poisoned enemies by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Poison, Strong
+      Poison or Toxic special, boosts ATK against Poisoned enemies by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Poison, Strong
+      Poison or Toxic special, boosts ATK against Poisoned enemies by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Poison, Strong
+      Poison or Toxic special, boosts ATK against Poisoned enemies by 1.2x for 2
+      turns.
+    - Once per adventure, when the supported character uses a Poison, Strong
+      Poison or Toxic special, boosts ATK against Poisoned enemies by 1.3x for 2
+      turns.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - atk: 20
+    - rcv: 10
+    - cooldown: 1
+    - atk: 20
+    - rcv: 20
+    - atk: 30
+    - type: sailor
+    - hp: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3

@@ -1,0 +1,235 @@
+type: DEX
+name: Shinobu & Momonosuke - Death-Risking Rescue
+japanName: しのぶ＆モモの助 命がけの救出
+family:
+  - KozukiMomonosuke
+  - Shinobu
+class:
+  - Cerebral
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1590
+    atk: 673
+    rcv: 110
+  maxLvl:
+    hp: 3180
+    atk: 1347
+    rcv: 221
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 309527
+aliases:
+  - Shinobu and Momonosuke
+  - Shinobu Momonosuke
+  - ShinobuMomonosuke
+  - Momonosuke&Shinobu
+  - MomonosukeShinobu
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Shooter characters by 2.5x and their RCV by 1.5x.
+special:
+  name: Kunoichi Protection
+  description: Reduces enemies' Resilience duration by 6 turns, locks all orbs for
+    1 turn and boosts Orb Effects of Shooter and Cerebral characters by 1.75x
+    for 1 turn. If during that turn you score 4 PERFECT hits, boosts Orb Effects
+    of Shooter and Cerebral characters by 1.75x for 1 turn in the following
+    turn. After 3 turns, boosts Orb Effects of Shooter and Cerebral characters
+    by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter and Cerebral characters by 50
+  - description: Reduces Blindness duration by 3 turns
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+    - value: 13
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - rcv: 30
+    - slot: 1
+    - atk: 30
+    - atk: 50
+    - hp: 60
+    - type: sailor
+    - hp: 70
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 113
+    rumbleType: SPT
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Damage Over Time
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 1
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 16
+          effect: recharge
+          targeting:
+            targets:
+              - Cerebral
+          type: percentage
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 1
+            duration: 17
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 1
+            duration: 18
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 19
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 21
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 22
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 23
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 4
+            duration: 24
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 25
+        - override:
+            level: 5
+            duration: 25

@@ -1,0 +1,176 @@
+type: STR
+name: Giolla - Trebol Army
+japanName: ジョーラ トレーボル軍
+family:
+  - Giolla
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 653
+    atk: 456
+    rcv: 157
+  maxLvl:
+    hp: 2040
+    atk: 936
+    rcv: 298
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 60688
+aliases:
+  - Jora
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.2x. Boosts ATK of all characters
+    by 3x after scoring 4 PERFECTs in a row
+special:
+  name: Sprouting with Beautiful Passion
+  description: Reduces damage received by 90% for 1 turn and randomizes all orbs,
+    including [BLOCK] orbs, into either [STR], [DEX] or [QCK] orbs
+  cooldown: 20
+  maxLevel: 7
+support:
+  type: descriptive
+  criteria: Shooter characters
+  levels:
+    - Reduces damage received from [DEX] characters by 1%.
+    - Reduces damage received from [DEX] characters by 1%.
+    - Reduces damage received from [DEX] characters by 2%.
+    - Reduces damage received from [DEX] characters by 2%.
+    - Reduces damage received from [DEX] characters by 3%.
+rumble:
+  stats:
+    def: 92
+    rumbleType: DBF
+    spd: 107
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 10
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 10
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 23
+      effects:
+        - override:
+            level: 1
+            duration: 11
+        - override:
+            level: 1
+            duration: 11
+    - cooldown: 23
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 1
+            duration: 14
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 1
+            duration: 15
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            level: 1
+            duration: 16
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            level: 1
+            duration: 17
+    - cooldown: 23
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 23
+      effects:
+        - override:
+            level: 6
+            duration: 20
+        - override:
+            level: 3
+            duration: 20

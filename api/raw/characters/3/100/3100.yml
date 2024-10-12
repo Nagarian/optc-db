@@ -1,0 +1,144 @@
+type: INT
+name: "Mihawk: Lord of the Never-Ending Night - Happy Spooky Halloween!"
+japanName: ミホーク　ディープナイト・ナイトロード Happy Scary Halloween
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+  - Cerebral
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1584
+    atk: 976
+    rcv: 81
+  maxLvl:
+    hp: 3520
+    atk: 1627
+    rcv: 271
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 229895
+aliases:
+  - Halloween (HWeen) Mihawk
+  - V3 Legend Mihawk
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [INT] characters by 5x until the first hit other
+    than PERFECT, by 4x otherwise, boosts their HP by 1.3x and reduces Paralysis
+    duration by 10 turns.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Roronoa
+    Zoro, Crocodile (Mr. 0), Donquixote Doflamingo, Bartholomew Kuma, Gecko
+    Moria, Boa Hancock, Jinbe, Marshall D. Teach (Blackbeard), Trafalgar D.
+    Water Law, Buggy or Edward Weevil, excluding Support members."
+  description: Changes all orbs into Matching orbs, adds 1000x character's ATK as
+    Additional Typeless Damage to own's attacks for 1 turn and transforms all
+    [INT] characters into Super [INT] characters.
+special:
+  name: A Flashing Light in the Night
+  description: Deals 15% of enemies' current HP in damage to one enemy, reduces
+    enemies' Percent Damage Reduction duration by 10 turns and boosts ATK of
+    [INT] characters by 2.25x for 1 turn. If during that turn you score 3
+    PERFECT hits, boosts ATK of [INT] characters by 2.5x for 1 turn in the
+    following turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 75
+  - description: Adds 5x character's ATK as Additional Damage
+support:
+  type: descriptive
+  criteria: Roronoa Zoro
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Percent Damage Reduction Buffs
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Percent Damage Reduction Buffs
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Percent Damage Reduction Buffs
+      duration by 2 turns.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Percent Damage Reduction Buffs
+      duration by 2 turns.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Percent Damage Reduction Buffs
+      duration by 3 turns.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - atk: 5
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - type: sailor
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - atk: 15
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - hp: 70
+    - hp: 70
+    - hp: 70
+    - hp: 100
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - cooldown: 1
+    - hp: 150
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

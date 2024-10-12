@@ -1,0 +1,540 @@
+type: STR
+name: Douglas Bullet - Monster Losing Sight of His Goal
+japanName: ダグラス・バレット 目的を失った怪物
+family:
+  - DouglasBullet
+class:
+  - Fighter
+  - Driven
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 2012
+    atk: 1121
+    rcv: 0
+  maxLvl:
+    hp: 4978
+    atk: 1809
+    rcv: 0
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 161561
+aliases:
+  - Stampede Bullet
+  - Mega/Super/6+ Bullet
+  - Legend Bullet
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [QCK] and [INT] characters by 4x, their HP by
+    1.2x, boosts ATK of this character by 4.75x, makes [STR], [QCK] and [INT]
+    orbs beneficial for [STR], [QCK] and [INT] characters and makes this
+    character's own normal attacks count as Type Effective against all Types.
+  notes: Bullet will make only his own attacks Type effective against all Types
+special:
+  name: Ultimate Fist
+  description: Deals 20% of enemies' current HP in True damage to all enemies and
+    deals 2x the damage dealt by this character with normal attacks to all
+    enemies at the end of each turn for 2 turns.
+  cooldown: 22
+  maxLevel: 6
+  notes: End of Turn damage is based on the damage dealt by the Bullet who
+    activated the buff and is dependent on how much damage in normal attacks by
+    that character per each turn the buff is active, and can change each turn.
+sailor:
+  - description: Boosts this character's damage against [QCK] characters by 2x
+  - description: Boosts base ATK of this character by 300 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR], [QCK] and [INT] characters"
+  levels:
+    - value: 1
+    - value: 3
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 40
+    - hp: 45
+    - hp: 50
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 15
+    - hp: 50
+    - atk: 30
+    - rcv: 15
+    - hp: 60
+    - cooldown: 2
+    - atk: 30
+    - rcv: 15
+    - rcv: 20
+    - type: sailor
+    - hp: 80
+    - hp: 100
+    - atk: 40
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 12
+          threshold: 90
+rumble:
+  stats:
+    def: 326
+    rumbleType: DEF
+    spd: 122
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 20
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          level: 2
+          effect: buff
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          duration: 15
+          level: 4
+          effect: buff
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 15
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 20
+      effects:
+        - override:
+            level: 3
+        - {}
+        - {}
+        - override:
+            amount: 11
+    - cooldown: 20
+      effects:
+        - override:
+            level: 4
+        - {}
+        - {}
+        - override:
+            amount: 12
+    - cooldown: 20
+      effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - {}
+        - override:
+            amount: 13
+    - cooldown: 20
+      effects:
+        - override:
+            level: 6
+        - override:
+            level: 5
+        - {}
+        - override:
+            amount: 14
+    - cooldown: 20
+      effects:
+        - override:
+            level: 7
+        - override:
+            level: 6
+        - {}
+        - override:
+            amount: 15
+    - cooldown: 20
+      effects:
+        - override:
+            level: 8
+        - override:
+            level: 6
+        - {}
+        - override:
+            amount: 16
+    - cooldown: 20
+      effects:
+        - override:
+            level: 9
+        - override:
+            level: 6
+        - {}
+        - override:
+            amount: 17
+    - cooldown: 20
+      effects:
+        - override:
+            level: 10
+        - override:
+            level: 7
+        - {}
+        - override:
+            amount: 18
+    - cooldown: 20
+      effects:
+        - override:
+            level: 11
+        - override:
+            level: 8
+        - {}
+        - override:
+            amount: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+                - HP
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - STR
+                  - QCK
+                  - INT
+            - attributes:
+                - ATK
+              effect: buff
+              level: 5
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 6
+  - captain:
+      - description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, Boosts ATK of [STR], [QCK] and [INT] characters by
+          4.75x, boosts HP of [STR], [QCK] and [INT] characters by 1.4x, boosts
+          ATK of this character by 5x, makes [STR], [QCK] and [INT] orbs
+          beneficial for [STR], [QCK] and [INT] characters and makes this
+          character's own normal attacks count as Type Effective against all
+          Types.
+  - rumble:
+      special:
+        - cooldown: 20
+          effects:
+            - attributes:
+                - ATK
+              duration: 15
+              level: 3
+              effect: buff
+              targeting:
+                targets:
+                  - self
+            - attributes:
+                - DEF
+              duration: 15
+              level: 4
+              effect: buff
+              targeting:
+                targets:
+                  - self
+            - attributes:
+                - Provoke
+              duration: 15
+              effect: boon
+              targeting:
+                targets:
+                  - self
+            - amount: 10
+              effect: damage
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: cut
+        - cooldown: 20
+          effects:
+            - override:
+                level: 4
+            - {}
+            - {}
+            - override:
+                amount: 11
+        - cooldown: 20
+          effects:
+            - override:
+                level: 5
+            - {}
+            - {}
+            - override:
+                amount: 13
+        - cooldown: 20
+          effects:
+            - override:
+                level: 6
+            - override:
+                level: 5
+            - {}
+            - override:
+                amount: 14
+        - cooldown: 20
+          effects:
+            - override:
+                level: 7
+            - override:
+                level: 5
+            - {}
+            - override:
+                amount: 16
+        - cooldown: 20
+          effects:
+            - override:
+                level: 8
+            - override:
+                level: 6
+            - {}
+            - override:
+                amount: 17
+        - cooldown: 20
+          effects:
+            - override:
+                level: 9
+            - override:
+                level: 6
+            - {}
+            - override:
+                amount: 19
+        - cooldown: 20
+          effects:
+            - override:
+                level: 10
+            - override:
+                level: 6
+            - {}
+            - override:
+                amount: 20
+        - cooldown: 20
+          effects:
+            - override:
+                level: 11
+            - override:
+                level: 7
+            - {}
+            - override:
+                amount: 22
+        - cooldown: 20
+          effects:
+            - override:
+                level: 12
+            - override:
+                level: 8
+            - {}
+            - override:
+                amount: 25
+  - rumble:
+      resilience:
+        - attribute: Paralysis
+          chance: 100
+          type: debuff
+        - attribute: DEX
+          percentage: 40
+          type: damage
+    special:
+      description: Reduces enemies' Damage Nullification and Barrier duration by 2
+        turns, deals 25% of enemies' current HP in True damage to all enemies
+        and deals 2x the damage dealt by this character with normal attacks to
+        all enemies at the end of each turn for 2 turns. If your crew has Normal
+        Attack Only at the time the special is activated, boosts ATK of [STR],
+        [QCK] and [INT] characters by 2.5x for 1 turn and boosts base ATK of
+        this character by 1,000 for 1 turn.

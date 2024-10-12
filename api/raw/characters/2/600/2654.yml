@@ -1,0 +1,182 @@
+type: INT
+name: Nico Robin - Archeologist Enjoying the Pirates Expo
+japanName: ニコ・ロビン 『海賊万博』を楽しむ考古学者
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 321
+    atk: 272
+    rcv: 45
+  maxLvl:
+    hp: 901
+    atk: 782
+    rcv: 156
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 161686
+aliases:
+  - Stampede Robin
+evolution:
+  - id: 2655
+    evolvers:
+      - 94
+      - 2662
+      - 304
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x and reduces damage received by 20%.
+special:
+  name: Mil Fleur
+  description: Boosts the Color Affinity of [STR], [QCK] and [INT] characters by
+    1.75x for 3 turns and locks all orbs for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of all characters by 30
+rumble:
+  stats:
+    def: 113
+    rumbleType: SPT
+    spd: 135
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 600
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - INT
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 625
+        - override:
+            duration: 21
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 650
+        - override:
+            duration: 22
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 675
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 700
+        - override:
+            level: 2
+            duration: 24
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 725
+        - override:
+            level: 2
+            duration: 25
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 750
+        - override:
+            level: 3
+            duration: 26
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 775
+        - override:
+            level: 3
+            duration: 27
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 800
+        - override:
+            level: 3
+            duration: 28
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            level: 5
+            duration: 29

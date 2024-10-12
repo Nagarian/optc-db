@@ -1,0 +1,406 @@
+type: STR
+name: Hancock & Nami & Robin - Mesmerizing Beauties
+family:
+  - Nami
+  - NicoRobin
+  - BoaHancock
+class:
+  - Free Spirit
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1656
+    atk: 734
+    rcv: 206
+  maxLvl:
+    hp: 3312
+    atk: 1468
+    rcv: 411
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+aliases:
+  - Secret Limited Super Type Legend
+  - Waifus Oiran Thot Trio
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Free Spirit characters by 4.5x-5.25x
+    depending on the crew's current HP, recovers 5x character's RCV in HP at the
+    end of each turn and allows HP Overfill up to 2x MAX.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: 5
+    Striker or Free Spirit characters, excluding Support members."
+  description: Recovers 25% of crew's MAX HP, allowing HP Overfill up to 2x MAX
+    HP, reduces Bind duration by 6 turns and transforms all [STR] characters
+    into Super [STR] characters.
+special:
+  name: Misleading Trap
+  description: Reduces Special Cooldown of all characters by 1 turn, reduces
+    Paralysis and ATK DOWN duration by 8 turns, allows HP Overfill up to 2x MAX
+    HP for 1 turn and recovers 60x character's RCV in HP. If HP is above 99% at
+    the time the special is activated, boosts Color Affinity of Striker and Free
+    Spirit characters by 2.75x for 1 turn, by 2.5x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Special Cooldown of all characters by 1 turn at the start
+      of the fight
+  - description: Recovers 1,000 HP at the end of each turn
+support:
+  type: descriptive
+  criteria: Striker and Free Spirit characters
+  levels:
+    - Once per adventure, when you reach the 2nd stage, reduces Special Cooldown
+      of supported character by 1 turn.
+    - Once per adventure, when you reach the 2nd stage, reduces Special Cooldown
+      of supported character by 1 turn.
+    - Once per adventure, when you reach the 2nd stage, reduces Special Cooldown
+      of supported character by 1 turn.
+    - Once per adventure, when you reach the 2nd stage, reduces Special Cooldown
+      of supported character by 1 turn.
+    - Once per adventure, when you reach the 2nd stage, reduces Special Cooldown
+      of supported character by 1 turn and changes the orb of the supported
+      character into a Matching orb.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - hp: 40
+    - hp: 50
+    - rcv: 10
+    - atk: 10
+    - rcv: 10
+    - type: sailor
+    - hp: 60
+    - atk: 10
+    - rcv: 10
+    - hp: 70
+    - type: potential
+    - cooldown: 1
+    - rcv: 10
+    - atk: 20
+    - atk: 20
+    - rcv: 20
+    - atk: 20
+    - hp: 80
+    - hp: 100
+    - atk: 30
+    - type: sailor
+    - atk: 40
+    - atk: 50
+    - rcv: 20
+    - hp: 100
+    - type: potential
+    - key: 1
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - rcv: 50
+  potentials:
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+  lastTap:
+    criteria: On the last Stage
+    levels:
+      - description: Boosts base ATK of this character by 1,000 for 1 turn and changes
+          the orb, including [BLOCK] orbs, of this character into a Matching
+          orb.
+      - description: Boosts base ATK of this character by 1,250 for 1 turn and changes
+          the orb, including [BLOCK] orbs, of this character into a Matching
+          orb.
+      - description: Boosts base ATK of this character by 1,500 for 1 turn and changes
+          the orb, including [BLOCK] orbs, of this character into a Matching
+          orb.
+      - description: Boosts base ATK of this character by 1,750 for 1 turn and changes
+          the orb, including [BLOCK] orbs, of this character into a Matching
+          orb.
+      - description: Boosts base ATK of this character by 2,000 for 1 turn and changes
+          the orb, including [BLOCK] orbs, of this character into a Matching
+          orb.
+rumble:
+  stats:
+    def: 146
+    rumbleType: DBF
+    spd: 164
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: DEX
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - Striker
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - Confusion
+          chance: 30
+          duration: 10
+          effect: hinderance
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1800
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 35
+        - override:
+            amount: 1900
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 40
+        - override:
+            amount: 2000
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 45
+        - override:
+            amount: 2100
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 50
+        - override:
+            amount: 2200
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 55
+        - override:
+            amount: 2300
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 60
+        - override:
+            amount: 2400
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 65
+        - override:
+            amount: 2500
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 70
+        - override:
+            amount: 2600
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 80
+        - override:
+            amount: 2800
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - HP
+              - SPD
+              - ATK
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - STR
+                - QCK
+          - attributes:
+              - ATK
+              - HP
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Striker
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Striker
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 1
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 6
+          - override:
+              level: 3
+          - override:
+              level: 2
+    burst:
+      condition:
+        - count: 6
+          type: dbfreceived
+      special:
+        - uses: 2
+          effects:
+            - attributes:
+                - Action Bind
+              chance: 60
+              duration: 6
+              effect: hinderance
+              targeting:
+                targets:
+                  - DEX
+                  - QCK
+            - amount: 2
+              effect: damage
+              targeting:
+                count: 2
+                priority: lowest
+                stat: Special CT
+                targets:
+                  - enemies
+              type: atkbase
+              leader: true
+        - uses: 2
+          effects:
+            - override:
+                chance: 70
+                duration: 7
+            - override:
+                amount: 2.25
+        - uses: 2
+          effects:
+            - override:
+                chance: 80
+                duration: 8
+            - override:
+                amount: 2.5
+        - uses: 2
+          effects:
+            - override:
+                chance: 90
+                duration: 9
+            - override:
+                amount: 2.75
+        - uses: 2
+          effects:
+            - override:
+                chance: 100
+                duration: 10
+            - override:
+                amount: 3

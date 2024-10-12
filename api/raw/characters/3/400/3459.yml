@@ -1,0 +1,258 @@
+type: PSY
+name: Streusen - Chef Who Leads a Life of Fluff
+japanName: シュトロイゼン ゆるふわ料理人
+family:
+  - Streusen
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 2313
+    atk: 703
+    rcv: 96
+  maxLvl:
+    hp: 4627
+    atk: 1405
+    rcv: 192
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 296433
+aliases:
+  - Limited Streusen
+  - Secret Streusen
+  - Rumble Streusen
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and Slasher characters by 2.5x and their RCV by 1.2x.
+special:
+  name: Head Chef's Abilities
+  description: Changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into [RCV] orbs,
+    locks all orbs for 1 turn and boosts RCV of all characters by 1.5x for 1
+    turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 30
+limitBreak:
+  path:
+    - atk: 50
+    - rcv: 100
+    - hp: 100
+    - type: potential
+    - atk: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 128
+    rumbleType: DBF
+    spd: 162
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: INT
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          duration: 6
+          targeting:
+            count: 3
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 6
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          duration: 6
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 24
+      effects:
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 24
+      effects:
+        - override:
+            level: 1
+            duration: 9
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            level: 1
+            duration: 9
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 10
+        - override:
+            level: 3
+            duration: 10
+        - override:
+            level: 1
+            duration: 10
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            level: 2
+            duration: 11
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            level: 4
+            duration: 12
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            level: 4
+            duration: 13
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            level: 5
+            duration: 14
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            level: 6
+            duration: 15
+        - override:
+            level: 3
+            duration: 15

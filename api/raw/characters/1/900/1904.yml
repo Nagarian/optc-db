@@ -1,0 +1,93 @@
+type: QCK
+name: Senor Pink - Watchdog of the Underworld
+japanName: セニョール・ピンク ドンキホーテファミリー　地下の世界への番人
+family:
+  - SenorPink
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1076
+    atk: 428
+    rcv: 128
+  maxLvl:
+    hp: 2972
+    atk: 1319
+    rcv: 265
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 84576
+aliases:
+  - Senor Pink
+  - Senior Pink
+  - Senor Thicc
+  - Senior Thicc
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x
+special:
+  name: Diaper Bomb
+  description: Reduces enemies' Barrier and Damage Nullification duration by 1
+    turn and deals 30x character's ATK in [QCK] damage to all enemies
+  cooldown: 14
+  maxLevel: 7
+sailor:
+  - description: Makes [DEX] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Lao G, Machvise and Diamante
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - hp: 10
+    - hp: 20
+    - hp: 40
+    - hp: 50
+    - hp: 80
+    - slot: 1
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

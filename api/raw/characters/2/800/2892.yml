@@ -1,0 +1,99 @@
+type: QCK
+name: Sogeking - Hero from Sniper Island
+japanName: そげキング 狙撃の島から来たヒーロー
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1078
+    atk: 558
+    rcv: 114
+  maxLvl:
+    hp: 2879
+    atk: 1348
+    rcv: 286
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 191369
+aliases:
+  - Limited Sogeking
+  - Secret Sogeking
+  - Limited Usopp
+  - Secret Usopp
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 2.75x at the start of
+    the chain, by 3x after 2 PERFECTs in a row and by 3.25x after 4 PERFECTs in
+    a row.
+special:
+  name: Shoot Through the Darkness - Firebird Star
+  description: Deals 150,000 Fixed damage to all enemies, reduces enemies' Percent
+    Damage Reduction duration by 3 turns, reduces Paralysis duration by 3 turns
+    and boosts Orb Effects of [QCK] and [PSY] characters by 1.75x for 1 turn. If
+    your crew has 5 or more [QCK] or [PSY] characters, if during that turn you
+    score 4 PERFECT hits, boosts Orb Effects of [QCK] and [PSY] characters by
+    2.25x for 1 turn in the following turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] characters by 40
+  - description: Removes Blindness duration completely
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Vinsmoke Sanji and Tony Tony Chopper
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - slot: 1
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 2
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 80
+        - threshold: 60
+        - threshold: 50

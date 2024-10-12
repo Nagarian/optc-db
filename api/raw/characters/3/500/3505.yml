@@ -1,0 +1,263 @@
+type: STR
+name: Foxy & Porche
+japanName: フォクシー＆ポルチェ
+family:
+  - Porche
+  - Foxy
+class:
+  - Fighter
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1558
+    atk: 654
+    rcv: 119
+  maxLvl:
+    hp: 3116
+    atk: 1308
+    rcv: 238
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 311550
+aliases:
+  - Rumble Foxy Porche FoxyPorche PorcheFoxy
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and their HP by 1.3x.
+special:
+  name: Combination Thrust
+  description: Reduces Bind and Despair duration by 3 turns. If enemies are
+    delayed at the time the special was activated, boosts ATK of all characters
+    by 2x for 1 turn and reduces Special Cooldown of this character by 7 turns.
+  cooldown: 16
+  maxLevel: 1
+sailor:
+  - description: Makes [PSY] and [INT] orbs beneficial for this character
+  - description: Boosts base ATK of this character by 300 if this character is the
+      first in the chain to attack.
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Fighter characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 200
+    - rcv: 100
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 2.5x, their HP by 1.3x and
+          boosts Shooter and Fighter characters' ATK against delayed enemies by
+          1.3x.
+    - type: potential
+    - cooldown: 3
+    - hp: 200
+    - atk: 200
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 115
+    rumbleType: DBF
+    spd: 158
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: debuff
+          duration: 6
+          level: 1
+          targeting:
+            count: 3
+            targets:
+              - DEX
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          effect: buff
+          duration: 6
+          level: 2
+          targeting:
+            count: 3
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 1.6
+        - override:
+            level: 2
+            duration: 7
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            amount: 1.7
+        - override:
+            level: 3
+            duration: 8
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+            duration: 9
+        - override:
+            amount: 1.8
+        - override:
+            level: 3
+            duration: 9
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 10
+        - override:
+            amount: 1.9
+        - override:
+            level: 4
+            duration: 10
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            amount: 2
+        - override:
+            level: 4
+            duration: 11
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            amount: 2.1
+        - override:
+            level: 5
+            duration: 12
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 2.2
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            amount: 2.3
+        - override:
+            level: 6
+            duration: 14
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            amount: 2.4
+        - override:
+            level: 7
+            duration: 15

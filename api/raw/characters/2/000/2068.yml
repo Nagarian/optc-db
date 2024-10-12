@@ -1,0 +1,102 @@
+type: PSY
+name: Tashigi - Haki-Wielding Swordswoman
+japanName: たしぎ　覇気使いの女剣士
+family:
+  - Tashigi
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 833
+    atk: 610
+    rcv: 176
+  maxLvl:
+    hp: 1921
+    atk: 1341
+    rcv: 411
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 100836
+aliases:
+  - Secret Tashigi
+  - Limited Tashigi
+  - Secret Thiccshigi
+  - Limited Thiccshigi
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.75x at the start of the
+    chain, by 3.4375x after scoring 3 PERFECTs in a row and recovers 1.25x
+    character's RCV in HP at the end of each turn
+special:
+  name: Spinning Jump Attack
+  description: Reduces ATK DOWN and Increase Damage Taken duration by 5 turns,
+    changes [BLOCK], [STR] and [QCK] orbs into Matching orbs and locks the chain
+    multiplier at 2.75x for 3 turns
+  cooldown: 15
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 50
+  - description: Makes [PSY] orbs beneficial for Slasher characters
+support:
+  type: descriptive
+  criteria: Smoker and Roronoa Zoro
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes
+      [STR] orbs of all characters into Matching Orbs
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes
+      [STR] and [QCK] orbs of all characters into Matching Orbs
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and changes [STR] and [QCK] orbs of all characters
+      into Matching Orbs
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and changes [STR] and [QCK] orbs of all characters
+      into Matching Orbs
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 2 turns and changes [STR] and [QCK] orbs of all
+      characters into Matching Orbs
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - rcv: 30
+    - atk: 40
+    - hp: 40
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

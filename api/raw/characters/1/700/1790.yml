@@ -1,0 +1,33 @@
+type: PSY
+name: Donquixote Pirate Crew - Low-Level Spy
+japanName: ドンキホーテ海賊団構成員 諜報部隊下級兵
+family:
+  - DonquixotePiratesMemberPSY
+class:
+  - Shooter
+  - Driven
+rarity: 3
+stats:
+  combo: 7
+  minLvl:
+    hp: 89
+    atk: 39
+    rcv: 9
+  maxLvl:
+    hp: 1336
+    atk: 663
+    rcv: 161
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 70555
+aliases:
+  - ""
+special:
+  name: Auto Light Recovery
+  description: Recovers 3x character's RCV in HP at the end of each turn for 3 turns
+  cooldown: 14
+  maxLevel: 7

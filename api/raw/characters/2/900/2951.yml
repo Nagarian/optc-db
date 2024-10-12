@@ -1,0 +1,227 @@
+type: PSY
+name: "Brook - Straw Hat Pirates: Mark of Adventure"
+japanName: ブルック 麦わらの一味・冒険の軌跡
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 139
+    atk: 72
+    rcv: 36
+  maxLvl:
+    hp: 1252
+    atk: 583
+    rcv: 147
+cost: 9
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 200111
+aliases:
+  - Super Brook
+evolution:
+  - id: 2952
+    evolvers:
+      - 117
+      - 98
+      - 87
+      - 266
+      - 303
+captain:
+  name: ""
+  description: Protects from defeat as long as HP is above 99%.
+special:
+  name: "Superstar - Three-Pace Hum: Notch Slash"
+  description: Deals 5,000 Fixed damage to all enemies and reduces enemies'
+    Threshold Damage Reduction and Resilience duration by 2 turns.
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 50
+rumble:
+  stats:
+    def: 112
+    rumbleType: SPT
+    spd: 137
+    cost: 20
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Blow Away
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Blow Away
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Blow Away
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Blow Away
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 9
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 10
+          targeting:
+            targets:
+              - PSY

@@ -1,0 +1,95 @@
+type: STR
+name: Captain Kid
+japanName: キャプテン・キッド
+family:
+  - EustassKid
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1138
+    atk: 651
+    rcv: 21
+  maxLvl:
+    hp: 3515
+    atk: 1298
+    rcv: 69
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 7207
+aliases:
+  - Supernova Kid
+  - Supernova Kidd
+  - Kidd
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x
+special:
+  name: Steel Magnetic Arm
+  description: Changes the orb of this character into a [STR] orb, deals 9x
+    character's ATK in [STR] damage to all enemies
+  cooldown: 11
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Striker characters by 75
+support:
+  type: descriptive
+  criteria: "[STR] characters"
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - hp: 40
+    - captain:
+        description: Boosts ATK of Striker characters by 2.5x and reduces damage
+          received by 7%
+    - hp: 50
+    - rcv: 20
+    - type: sailor
+    - rcv: 30
+    - rcv: 50
+    - hp: 60
+    - atk: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

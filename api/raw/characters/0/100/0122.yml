@@ -1,0 +1,35 @@
+type: QCK
+name: Fighter Group Cabin Boy - Blue Pirates
+japanName: 格闘隊 雑用 ブルーパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 1
+stats:
+  combo: 6
+  minLvl:
+    hp: 85
+    atk: 51
+    rcv: 6
+  maxLvl:
+    hp: 349
+    atk: 133
+    rcv: 16
+cost: 2
+slots: 0
+maxExp: 2330
+maxLevel: 10
+flags: []
+links:
+  gamewithId: 2204
+aliases: []
+evolution:
+  - id: 143
+    evolvers:
+      - 90
+special:
+  name: Iron Shield
+  description: Reduces damage received by 20% for 1 turn
+  cooldown: 25
+  maxLevel: 16

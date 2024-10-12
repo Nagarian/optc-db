@@ -1,0 +1,50 @@
+type: DEX
+name: Duval - Flying Fish Riders Leader
+japanName: デュバル トビウオライダーズ ヘッド
+family:
+  - Duval
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 664
+    atk: 424
+    rcv: 44
+  maxLvl:
+    hp: 1448
+    atk: 723
+    rcv: 103
+cost: 30
+slots: 2
+maxExp: 1123790
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 14749
+aliases:
+  - Raid Duval
+evolution:
+  - id: 654
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 97
+      - 102
+  - id: 654
+    evolvers:
+      - 18
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of [DEX] characters by 2.25x if they have Matching
+    orbs
+special:
+  name: Heart-Smashing Horn
+  description: Deals 20% of enemies' current HP in damage to all enemies, reduces
+    damage received by 50% for 1 turn
+  cooldown: 28
+  maxLevel: 15

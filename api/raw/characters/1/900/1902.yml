@@ -1,0 +1,85 @@
+type: INT
+name: Pica - Top Donquixote Family Officer
+japanName: ピーカ ドンキホーテファミリー最高幹部
+family:
+  - Pica
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 2310
+    atk: 168
+    rcv: 9
+  maxLvl:
+    hp: 4328
+    atk: 1250
+    rcv: 62
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 84574
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.75x and their HP by 2.25x
+special:
+  name: The Toughest Trump Card
+  description: Deals 20% of enemies' current HP in damage to one enemy, reduces
+    Bind and Despair duration by 4 turns, changes all orbs, including [BLOCK]
+    orbs, of Driven characters into [G] orbs
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Cannot be Blown Away
+  - description: Makes [INT] orbs beneficial for Driven characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Donquixote Doflamingo, Trebol and Diamante
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - rcv: 30
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - hp: 60
+    - hp: 65
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

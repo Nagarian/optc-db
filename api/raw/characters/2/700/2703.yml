@@ -1,0 +1,205 @@
+type: PSY
+name: Holdem
+japanName: ホールデム
+family:
+  - Holdem
+class:
+  - Powerhouse
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 342
+    atk: 194
+    rcv: 10
+  maxLvl:
+    hp: 930
+    atk: 951
+    rcv: 78
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 169222
+aliases:
+  - Hold'em
+evolution:
+  - id: 2704
+    evolvers:
+      - 94
+      - 1180
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Powerhouse characters by 2.75x, reduces
+    crew's current HP by 5% at the end of each turn, reduces own ATK multiplier
+    by 0.?x at the end of each turn.
+special:
+  name: The Lion's Attack on the Jewels
+  description: Reduces crew's current HP by 1%, reduces enemies' Threshold Damage
+    Reduction, Percent Damage Reduction and Barrier duration by 3 turns and
+    locks the chain multiplier at 2.5x for 1 turn
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 50
+rumble:
+  stats:
+    def: 136
+    rumbleType: DBF
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+              - Powerhouse
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 800
+          effect: damage
+          type: fixed
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          duration: 10
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          effect: debuff
+          duration: 10
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 825
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 850
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 875
+        - override:
+            duration: 13
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 900
+        - override:
+            duration: 14
+        - override:
+            level: 4
+            duration: 14
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 925
+        - override:
+            duration: 15
+        - override:
+            level: 5
+            duration: 15
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 950
+        - override:
+            duration: 16
+        - override:
+            level: 5
+            duration: 16
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 975
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            level: 5
+            duration: 17
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            level: 6
+            duration: 18
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            level: 3
+            duration: 19
+        - override:
+            level: 7
+            duration: 19

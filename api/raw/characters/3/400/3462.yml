@@ -1,0 +1,435 @@
+type: DEX
+name: "Koala: Rowdy Halloween Party - Night of Halloween"
+japanName: コアラ　ハロウィン・バトルパーティー Night of Halloween
+family:
+  - Koala
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1747
+    atk: 754
+    rcv: 154
+  maxLvl:
+    hp: 3494
+    atk: 1527
+    rcv: 308
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 297519
+aliases:
+  - Legend Secret Limited TM Halloween (HWeen) Koala
+captain:
+  name: ""
+  description: Boosts ATK of [DEX], Fighter and Free Spirit characters by 4.5x, by
+    5x instead if they have a beneficial orb, their RCV by 1.5x, makes [STR] and
+    [QCK] orbs beneficial for [DEX], Fighter and Free Spirit characters, reduces
+    damage received by 20% and restores Special Cooldown of all characters by 10
+    turns when they are rewinded.
+superSpecial:
+  criteria: This character must be captain and the crew must consist of 6 Fighter
+    or Free Spirit characters, excluding Support members.
+  description: Permanently boosts HP by a static 1.2x, recovers 30% of crew's MAX
+    HP, allowing HP Overfill up to 2x MAX HP and transforms all [DEX] characters
+    into Super [DEX] characters.
+special:
+  name: Sanctions Against Uninvited Guests
+  description: Reduces Counter-Heal duration by 10 turns and recovers 30,000 HP,
+    allowing HP Overfill up to 2x MAX HP. If HP is above 99% at the time the
+    special is activated, boosts the Color Affinity of [DEX], Fighter and Free
+    Spirit characters by 2.5x for 1 turn, by 2.25x for 1 turn otherwise. If MAX
+    HP is below 40,000 at the time the special is activated, permanently boosts
+    HP by a static 1.3x.
+  cooldown: 19
+  maxLevel: 6
+  notes: Static HP Boost is calculated at time of activation and does not change
+    with changes to team composition.
+sailor:
+  - description: Boosts base ATK and HP of Fighter and Free Spirit characters by 75
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Fighter and Free Spirit characters
+  levels:
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - hp: 20
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - atk: 15
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - hp: 60
+    - rcv: 20
+    - rcv: 30
+    - hp: 60
+    - atk: 30
+    - type: sailor
+    - hp: 90
+    - hp: 90
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - hp: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+        - value: 200
+          reduction: 4
+        - value: 300
+          reduction: 5
+rumble:
+  stats:
+    def: 125
+    rumbleType: ATK
+    spd: 187
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 8
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 9
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 10
+  special:
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: SPD
+            targets:
+              - enemies
+        - amount: 2.5
+          effect: recharge
+          targeting:
+            targets:
+              - DEX
+          type: RCV
+    - cooldown: 32
+      effects:
+        - override:
+            level: 6
+            duration: 12
+        - override:
+            level: 6
+            duration: 12
+        - override:
+            level: 6
+            duration: 12
+        - override:
+            amount: 2.6
+    - cooldown: 32
+      effects:
+        - override:
+            level: 7
+            duration: 13
+        - override:
+            level: 7
+            duration: 13
+        - override:
+            level: 7
+            duration: 13
+        - override:
+            amount: 2.7
+    - cooldown: 32
+      effects:
+        - override:
+            level: 8
+            duration: 14
+        - override:
+            level: 8
+            duration: 14
+        - override:
+            level: 8
+            duration: 14
+        - override:
+            amount: 2.8
+    - cooldown: 32
+      effects:
+        - override:
+            level: 9
+            duration: 15
+        - override:
+            level: 9
+            duration: 15
+        - override:
+            level: 9
+            duration: 15
+        - override:
+            amount: 2.9
+    - cooldown: 32
+      effects:
+        - override:
+            level: 10
+            duration: 16
+        - override:
+            level: 10
+            duration: 16
+        - override:
+            level: 10
+            duration: 16
+        - override:
+            amount: 3
+    - cooldown: 32
+      effects:
+        - override:
+            level: 11
+            duration: 17
+        - override:
+            level: 11
+            duration: 17
+        - override:
+            level: 11
+            duration: 17
+        - override:
+            amount: 3.1
+    - cooldown: 32
+      effects:
+        - override:
+            level: 12
+            duration: 18
+        - override:
+            level: 12
+            duration: 18
+        - override:
+            level: 12
+            duration: 18
+        - override:
+            amount: 3.2
+    - cooldown: 32
+      effects:
+        - override:
+            level: 13
+            duration: 19
+        - override:
+            level: 13
+            duration: 19
+        - override:
+            level: 13
+            duration: 19
+        - override:
+            amount: 3.3
+    - cooldown: 32
+      effects:
+        - override:
+            level: 15
+            duration: 20
+        - override:
+            level: 15
+            duration: 20
+        - override:
+            level: 15
+            duration: 20
+        - override:
+            amount: 3.5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

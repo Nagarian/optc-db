@@ -1,0 +1,246 @@
+type: QCK
+name: Vinsmoke Niji - Germa Kingdom Second Son
+japanName: ヴィンスモーク・ニジ ジェルマ王家　次男
+family:
+  - VinsmokeNiji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1131
+    atk: 509
+    rcv: 100
+  maxLvl:
+    hp: 2882
+    atk: 1405
+    rcv: 272
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 143712
+aliases:
+  - Blue Ranger
+evolution:
+  - id: 2450
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x and boosts ATK of
+    [QCK] characters by 1.2x. Boosts HP of Powerhouse characters by 1.2x.
+  notes: Attack boost stacks, so an [QCK] Powerhouse character has a 2.7x ATK
+special:
+  name: "Lightspeed Blade: Henry Blazer"
+  description: If there are 6 Powerhouse characters in your crew, boosts ATK
+    against enemies with reduced defense by 1.75x for 1 turn. If your Captain's
+    orb or Friend Captain's orb is [TND], changes all orbs, including [BLOCK]
+    orbs, into [TND] orbs and makes [TND] orbs beneficial for all characters for
+    1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, makes [QCK] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Vinsmoke Judge, Vinsmoke Ichiji, Vinsmoke Yonji and Vinsmoke Reiju
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 35
+    - hp: 45
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 15
+    - rcv: 25
+    - atk: 20
+    - cooldown: 1
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - hp: 90
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8
+rumble:
+  stats:
+    def: 148
+    rumbleType: ATK
+    spd: 178
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 0.3
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 50
+          duration: 10
+          effect: hinderance
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 10
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.37
+        - {}
+        - override:
+            duration: 11
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.43
+        - {}
+        - override:
+            duration: 12
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.5
+        - {}
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.57
+        - {}
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.64
+        - {}
+        - override:
+            level: 6
+            duration: 15
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.7
+        - {}
+        - override:
+            level: 6
+            duration: 16
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.77
+        - {}
+        - override:
+            level: 7
+            duration: 17
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.84
+        - {}
+        - override:
+            level: 7
+            duration: 18
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.95
+        - {}
+        - override:
+            level: 9
+            duration: 20

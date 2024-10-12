@@ -1,0 +1,258 @@
+type: STR
+name: "Kaido: Neo - Deity Who Protects the Land"
+japanName: カイドウ「改」 国守る「明王」
+family:
+  - Kaido
+class:
+  - Powerhouse
+  - Driven
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1560
+    atk: 658
+    rcv: 41
+  maxLvl:
+    hp: 3900
+    atk: 1644
+    rcv: 102
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - ambush
+links:
+  gamewithId: 198752
+aliases:
+  - Raid Kaido
+  - Neo Kaido
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3x, their HP by 1.25x and reduces
+    Special Cooldown of all characters by 2 turns at the start of the fight.
+special:
+  name: Dragon Tail
+  description: Deals 20%-40% of enemies' current HP in damage to all enemies
+    depending on the number of enemies on the stage when the special is
+    activated, changes orbs of this and adjacent characters into Matching orbs
+    and boosts ATK of [STR] characters by 2.25x after 12th hit in the chain for
+    2 turns.
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: If this character has an [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Jack, Basil Hawkins and Speed
+  levels:
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 15
+    - atk: 20
+    - type: potential
+    - hp: 60
+    - rcv: 20
+    - atk: 30
+    - slot: 1
+    - hp: 80
+    - rcv: 40
+    - cooldown: 1
+    - type: sailor
+    - slot: 1
+    - atk: 60
+    - type: potential
+    - atk: 40
+    - rcv: 40
+    - hp: 60
+    - atk: 60
+    - cooldown: 1
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 206
+    rumbleType: ATK
+    spd: 178
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: more
+            count: 2
+            type: enemies
+            relative: true
+          targeting:
+            targets:
+              - STR
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          condition:
+            count: 3
+            stat: Blow Away
+            type: trigger
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 20
+          effect: damage
+          type: cut
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 2
+          duration: 15
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 600
+          effect: damage
+          type: fixed
+          range:
+            direction: sideways
+            size: large
+          condition:
+            comparator: more
+            count: 2
+            type: enemies
+            relative: true
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - {}
+        - {}
+        - override:
+            amount: 625
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 21
+        - {}
+        - override:
+            amount: 650
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 21
+        - {}
+        - override:
+            amount: 675
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 22
+        - {}
+        - override:
+            amount: 700
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 22
+        - override:
+            level: 3
+        - override:
+            amount: 725
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 23
+        - override:
+            level: 3
+        - override:
+            amount: 750
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 23
+        - override:
+            level: 3
+        - override:
+            amount: 775
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 3
+        - override:
+            amount: 800
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 25
+        - override:
+            level: 4
+        - override:
+            amount: 900

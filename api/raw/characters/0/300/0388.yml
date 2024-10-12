@@ -1,0 +1,47 @@
+type: PSY
+name: Victoria Cindry
+japanName: ビクトリア・シンドリー
+family:
+  - VictoriaCindry
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 622
+    atk: 398
+    rcv: 231
+  maxLvl:
+    hp: 1402
+    atk: 661
+    rcv: 478
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 7732
+aliases: []
+captain:
+  name: ""
+  description: Boosts RCV of [PSY] characters by 1.5x
+special:
+  name: Square Plate Sword
+  description: Randomizes all orbs into either [PSY] or [INT] orbs, deals random
+    [PSY] damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 1 : 10,000`"
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Hogback
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

@@ -1,0 +1,98 @@
+type: INT
+name: Perospero - Candy Entering Enemy Territory
+japanName: ペロスペロー 敵地へ乗り込むアメ
+family:
+  - CharlottePerospero
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1187
+    atk: 639
+    rcv: 105
+  maxLvl:
+    hp: 2920
+    atk: 1438
+    rcv: 314
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 255291
+aliases:
+  - Secret Perospero
+  - Limited Perospero
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Driven and Cerebral characters by 3x, their HP by
+    1.2x and makes [INT] orbs beneficial for Driven and Cerebral characters.  
+
+    **Boosted Ability:** Boosts ATK of Driven and Cerebral characters by 5x, their HP by 1.25x and makes [INT] orbs beneficial for Driven and Cerebral characters.
+special:
+  name: Big Mom Pirates' Approach
+  description: Reduces Paralysis and Bind duration by 6 turns and reduces enemies'
+    Resilience duration by 6 turns. If HP is above 99% at the time the special
+    is activated, boosts ATK of Driven and Cerebral characters by 2.25x for 1
+    turn, by 2x for 2 turns otherwise.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven and Cerebral characters by 50
+  - description: Makes [INT] orbs beneficial for Driven characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Cerebral characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 25
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - rcv: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

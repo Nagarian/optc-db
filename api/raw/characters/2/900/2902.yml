@@ -1,0 +1,185 @@
+type: PSY
+name: Bartholomew Kuma - Rampage on Sabaody Archipelago
+japanName: バーソロミュー・くま シャボンディ諸島の襲撃者
+family:
+  - BartholomewKuma
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 341
+    atk: 199
+    rcv: 30
+  maxLvl:
+    hp: 1333
+    atk: 774
+    rcv: 113
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 193660
+aliases:
+  - 3D2Y Kuma
+  - 3D2Y Bartholomew Kuma
+evolution:
+  - id: 2903
+    evolvers:
+      - 117
+      - 87
+      - 266
+      - 98
+      - 1180
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.25x and their HP by 1.2x.
+special:
+  name: Reminiscing the 2 Years
+  description: Adds 0.6x to Chain multiplier for 3 turns and recovers 5,000 HP at
+    the end of the turn for 3 turns. After 2 turns, changes all orbs of Cerebral
+    and Powerhouse characters into Matching orbs.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of Cerebral characters by 50
+rumble:
+  stats:
+    def: 294
+    rumbleType: DEF
+    spd: 73
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 3
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          duration: 10
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - amount: 350
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 11
+        - override:
+            amount: 375
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 12
+        - override:
+            amount: 400
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 425
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            amount: 450
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            amount: 475
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            amount: 500
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            amount: 525
+    - cooldown: 24
+      effects:
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            amount: 550
+    - cooldown: 24
+      effects:
+        - override:
+            level: 6
+            duration: 20
+        - override:
+            amount: 800

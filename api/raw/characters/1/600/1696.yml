@@ -1,0 +1,220 @@
+type: DEX
+name: Bamboo Demon Vergo - Top Donquixote Family Officer
+japanName: 鬼竹のヴェルゴ ドンキホーテファミリー最高幹部
+family:
+  - Vergo
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1016
+    atk: 626
+    rcv: 108
+  maxLvl:
+    hp: 2265
+    atk: 1402
+    rcv: 245
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 63219
+aliases:
+  - Raid Vergo
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x and reduces damage received by 10%
+special:
+  name: The Darkest Demon
+  description: Deals 50x character's ATK in [DEX] damage to one enemy, boosts Orb
+    Effects of Striker characters by 1.75x for 1 turn and reduces damage
+    received by 50% for 1 turn
+  cooldown: 30
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker characters by 25
+support:
+  type: descriptive
+  criteria: Donquixote Doflamingo, Monet and Caesar Clown (Gastino)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of the supported character by 1.25x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of the supported character by 1.25x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of the supported character by 1.25x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of the supported character by 1.5x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts Orb Effects of the supported character by 1.75x for 1 turn
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - rcv: 20
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - cooldown: 1
+    - hp: 60
+    - type: sailor
+    - hp: 70
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 257
+    rumbleType: DEF
+    spd: 114
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 2
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 4
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            level: 4
+            duration: 11
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            level: 5
+            duration: 12
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            level: 6
+            duration: 13
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            level: 6
+            duration: 14
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            level: 7
+            duration: 15
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            level: 8
+            duration: 16
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            level: 8
+            duration: 17
+    - cooldown: 24
+      effects:
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            level: 9
+            duration: 18
+    - cooldown: 24
+      effects:
+        - override:
+            level: 6
+            duration: 20
+        - override:
+            level: 11
+            duration: 20

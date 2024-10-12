@@ -1,0 +1,99 @@
+type: DEX
+name: Roronoa Zoro - Straw Hat Pirates' Attack
+japanName: ロロノア・ゾロ 特攻の麦わらの一味
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1531
+    atk: 646
+    rcv: 60
+  maxLvl:
+    hp: 2900
+    atk: 1321
+    rcv: 171
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - removed
+links:
+  gamewithId: 12648
+notes: "Strong World Batch has been entirely replaced. So this characte is now
+  available with a different artwork and id #1175."
+aliases:
+  - Strong World Zoro
+  - SW Zoro
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 3x if HP is below 30% at the
+    start of the turn
+special:
+  name: Ashura Ugui
+  description: Changes orbs of adjacent characters into [DEX] orbs, deals 1,000
+    Fixed damage to all enemies
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Slasher characters by 20
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Tony Tony Chopper
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - cooldown: 1
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+    - atk: 50
+    - cooldown: 1
+    - hp: 60
+    - cooldown: 1
+    - hp: 90
+    - atk: 80
+    - cooldown: 1
+    - captain:
+        description: Boosts ATK of [DEX] characters by 2x, by 3x instead if HP is below
+          30% at the start of the turn
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - {}
+        - {}
+        - {}
+        - value: 7
+          threshold: 80

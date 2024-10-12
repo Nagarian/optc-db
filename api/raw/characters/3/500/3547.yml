@@ -1,0 +1,308 @@
+type: QCK
+name: Charlotte Perospero - Eldest Brother out to Finish the Job
+japanName: シャーロット・ペロスペロー とどめ狙う長男
+family:
+  - CharlottePerospero
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1665
+    atk: 739
+    rcv: 101
+  maxLvl:
+    hp: 3330
+    atk: 1479
+    rcv: 202
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+aliases:
+  - TM
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 1.5x and reduces
+    damage received by 4%. If you use "Fatal Arrow" on this character, boosts
+    ATK of Striker and Cerebral characters by 2.5x and reduces damage received
+    by 8% instead for 3 turns.
+special:
+  name: Fatal Arrow
+  description: Locks the chain multiplier at 2.75x for 3 turns and locks all orbs
+    for 3 turns. If your Captain is a [QCK] character, deals 350x character's
+    ATK in [QCK] damage to all enemies at the end of the turn for 2 turns.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: If this character has a [QCK] orb and you hit a PERFECT with them,
+      keep their [QCK] orb for the next turn.
+  - description: When any other Striker or Cerebral character uses a special,
+      reduces Special Cooldown of this character by 1 turn.
+support:
+  type: descriptive
+  criteria: Striker characters
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs for Striker characters for 1 turn.
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 1.75x and reduces
+          damage received by 5%. If you use "Fatal Arrow" on this character,
+          boosts ATK of Striker and Cerebral characters by 2.75x and reduces
+          damage received by 10% instead for 3 turns.
+    - type: sailor
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 2x and reduces
+          damage received by 6%. If you use "Fatal Arrow" on this character,
+          boosts ATK of Striker and Cerebral characters by 3x and reduces damage
+          received by 12% instead for 3 turns.
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 20
+    - hp: 30
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 2.25x and reduces
+          damage received by 7%. If you use "Fatal Arrow" on this character,
+          boosts ATK of Striker and Cerebral characters by 3.25x and reduces
+          damage received by 14% instead for 3 turns.
+    - cooldown: 2
+    - rcv: 40
+    - hp: 30
+    - hp: 40
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 2.5x and reduces
+          damage received by 8%. If you use "Fatal Arrow" on this character,
+          boosts ATK of Striker and Cerebral characters by 3.5x and reduces
+          damage received by 16% instead for 3 turns.
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - hp: 50
+    - rcv: 50
+    - hp: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 2.75x and reduces
+          damage received by 9%. If you use "Fatal Arrow" on this character,
+          boosts ATK of Striker and Cerebral characters by 3.75x and reduces
+          damage received by 18% instead for 3 turns.
+    - hp: 70
+    - hp: 80
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 3x and reduces
+          damage received by 10%. If you use "Fatal Arrow" on this character,
+          boosts ATK of Striker and Cerebral characters by 4x and reduces damage
+          received by 20% instead for 3 turns.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 11
+rumble:
+  stats:
+    def: 139
+    rumbleType: DBF
+    spd: 164
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 50
+          duration: 5
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 52
+            duration: 5
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 54
+            duration: 6
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 56
+            duration: 6
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 58
+            duration: 7
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 60
+            duration: 7
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 62
+            duration: 8
+        - override:
+            level: 4
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 64
+            duration: 8
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 66
+            duration: 9
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            chance: 70
+            duration: 10
+        - override:
+            level: 6
+            duration: 20

@@ -1,0 +1,84 @@
+type: PSY
+name: Yasopp - Red-Hair Pirates Officer
+japanName: ヤソップ 赤髪海賊団幹部
+family:
+  - Yasopp
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 942
+    atk: 547
+    rcv: 115
+  maxLvl:
+    hp: 2356
+    atk: 1367
+    rcv: 288
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 151193
+aliases:
+  - Limited Yasopp
+  - Secret Yasopp
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1.5x
+special:
+  name: The Sniper that Never Misses
+  description: Reduces enemies' Barrier duration by 1 turn and reduces ATK DOWN
+    duration by 3 turns. If you are on a Treasure Map, boosts ATK against
+    delayed enemies by 1.5x-2x for 1 turn depending on your Treasure Map Level.
+  cooldown: 10
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.5x ATK boost  
+    Level 11-20: 1.75x ATK boost  
+    Level 21+: 2x ATK boost
+support:
+  type: descriptive
+  criteria: Shanks and Ben Beckman
+  levels:
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, randomizes [EMPTY] orbs and boosts ATK of
+      supported character by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 10
+    - atk: 20
+    - slot: 1
+    - rcv: 20
+    - atk: 30
+    - hp: 100
+    - rcv: 50
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 10

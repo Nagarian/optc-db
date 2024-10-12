@@ -1,0 +1,87 @@
+type: PSY
+name: Fukaboshi - Prince of the Ryugu Kingdom
+japanName: フカボシ リュウグウ王国王子
+family:
+  - Fukaboshi
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1125
+    atk: 423
+    rcv: 133
+  maxLvl:
+    hp: 2554
+    atk: 1206
+    rcv: 323
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 52205
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x and boosts HP of
+    Powerhouse characters by 1.25x
+  notes: Boost stacks, so a Striker/Powerhouse character has a 2.5x ATK and 1.25x HP
+special:
+  name: Merman Gujutsu - Spear of the Ages
+  description: Delays all enemies by 1 turn and boosts ATK of Striker and
+    Powerhouse characters by 1.75x for 1 turn
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Neptune and Shirahoshi
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 40
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - hp: 40
+    - atk: 30
+    - hp: 50
+    - hp: 60
+    - rcv: 30
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

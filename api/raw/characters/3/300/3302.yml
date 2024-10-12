@@ -1,0 +1,91 @@
+type: INT
+name: Brook - Soul King's Hidden Strength
+japanName: ブルック ソウルキングの底力
+family:
+  - Brook
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 979
+    atk: 678
+    rcv: 93
+  maxLvl:
+    hp: 2711
+    atk: 1361
+    rcv: 295
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 270110
+aliases:
+  - Kizuna Brook
+  - Limited Brook
+  - Secret Brook
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Driven characters by 3x and their HP by 1.2x.
+special:
+  name: Soul Pounce Attack
+  description: Deals 100x character's ATK in [INT] damage to one enemy, reduces
+    Paralysis duration by 5 turns, reduces enemies' Increased Defense duration
+    by 5 turns and locks the chain multiplier at 3x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Driven characters by 30
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji, Nami and Tony Tony Chopper
+  levels:
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 2 turns.
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - rcv: 25
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - hp: 50
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

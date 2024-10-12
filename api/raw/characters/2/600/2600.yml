@@ -1,0 +1,307 @@
+type: DUAL
+name: Vivi & Rebecca - Benefactor's Bond
+japanName: ビビ＆レベッカ 恩人が結ぶ絆
+family:
+  - NefertariVivi
+  - Rebecca
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 704
+    atk: 314
+    rcv: 99
+  maxLvl:
+    hp: 1761
+    atk: 786
+    rcv: 248
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 155976
+aliases:
+  - Vivi&Rebecca
+  - ViviRebecca
+  - Rebecca&Vivi
+  - RebeccaVivi
+  - ViviBecca
+  - V1 Legend Vivi and Rebecca
+evolution:
+  - id: 2601
+    evolvers:
+      - 118
+      - 102
+      - 100
+      - 83
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.75x, their HP by 1.2x, their
+    Color Affinity by 2.5x, makes [PSY] and [INT] orbs beneficial for all
+    characters and reduces damage received by 20%.
+special:
+  name: Memories of their Adventures
+  description: Removes enemies' Increased Defense and Percent Damage Reduction
+    buffs duration completely, boosts the Color Affinity of Striker and Cerebral
+    characters by 2x for 2 turns and becomes Vivi & Rebecca for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75
+characters:
+  swap:
+    description: Changes [STR] and [DEX] orbs of Striker and Cerebral characters
+      into Matching orbs, recovers 2,000 HP at the end of each turn for 1 turn
+      and locks the chain multiplier at 2.5x for 1 turn.
+  character1:
+    name: Nefeltari Vivi - Benefactor's Bond
+    japanName: ビビ 恩人が結ぶ絆
+    class:
+      - Cerebral
+      - Free Spirit
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 598
+        atk: 291
+        rcv: 94
+      maxLvl:
+        hp: 1496
+        atk: 728
+        rcv: 236
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 1.75x, their HP by 1.2x, their
+        Color Affinity by 1.75x, makes [PSY] orbs beneficial for all characters
+        and reduces damage received by 20%.
+    sailor:
+      - description: Boosts base HP and RCV of Striker and Cerebral characters by 50
+  character2:
+    name: Rebecca - Benefactor's Bond
+    japanName: レベッカ 恩人が結ぶ絆
+    class:
+      - Cerebral
+      - Fighter
+    type: STR
+    stats:
+      combo: 5
+      minLvl:
+        hp: 621
+        atk: 295
+        rcv: 87
+      maxLvl:
+        hp: 1553
+        atk: 739
+        rcv: 219
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 1.75x, their HP by 1.2x, their
+        Color Affinity by 2x and makes [INT] orbs beneficial for all characters.
+    sailor:
+      - description: Boosts base ATK of Striker and Cerebral characters by 50
+rumble:
+  stats:
+    def: 139
+    rumbleType: SPT
+    spd: 170
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: heal
+      area: Large
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 20
+        - override:
+            duration: 20
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 21
+        - override:
+            duration: 21
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 23
+        - override:
+            duration: 23
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 25
+        - override:
+            level: 2
+            duration: 25
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 26
+        - override:
+            level: 2
+            duration: 26
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 28
+        - override:
+            level: 2
+            duration: 28
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 30
+        - override:
+            level: 3
+            duration: 30
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,53 @@
+type: PSY
+name: Urouge - Mad Monk Facing a General
+japanName: ウルージ 将星に挑む怪僧
+family:
+  - Urouge
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 722
+    atk: 334
+    rcv: 36
+  maxLvl:
+    hp: 1804
+    atk: 835
+    rcv: 91
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 148593
+aliases:
+  - Limited Urouge Again
+  - Secret Urouge Again
+evolution:
+  - id: 2515
+    evolvers:
+      - 118
+      - 87
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and reduces damage received by 3%
+special:
+  name: Karmic Punishment and Prayers
+  description: Deals 150x character's ATK in [PSY] damage to one enemy, reduces
+    Paralysis and Burn duration by 3 turns and reduces damage received by 80%
+    for 1 turn. If during that turn you score 4 PERFECT hits, boosts Orb Effects
+    of Fighter characters by 2.25x for 1 turn in the following turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: If your Captain is a Fighter character, reduces Blindness duration
+      by 3 turns

@@ -1,0 +1,90 @@
+type: DEX
+name: Roronoa Zoro - Bird Dance
+japanName: ロロノア・ゾロ 厄港鳥（ヤッコウドリ）
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 803
+    atk: 669
+    rcv: 55
+  maxLvl:
+    hp: 2501
+    atk: 1434
+    rcv: 233
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 2019
+aliases:
+  - Mega Zoro
+  - Super Zoro
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.5x
+special:
+  name: "Ittoriyu: Unfortunate Port Bird"
+  description: Deals 10% of enemies' current HP in damage to all enemies. Reduces
+    Special Cooldown of [DEX] characters by 1 turn.
+  cooldown: 12
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: Boosts base ATK of [DEX] characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: "[DEX] characters"
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - type: sailor
+    - rcv: 30
+    - atk: 30
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - hp: 70
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40

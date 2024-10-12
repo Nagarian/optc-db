@@ -1,0 +1,437 @@
+type: DUAL
+name: Ulti & Page One - Engaging a Dangerous Opponent
+japanName: うるティ＆ページワン 強敵への臨戦態勢
+family:
+  - PageOne
+  - Ulti
+class:
+  - Driven
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2338
+    atk: 812
+    rcv: 112
+  maxLvl:
+    hp: 4675
+    atk: 1683
+    rcv: 223
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 293284
+aliases:
+  - Ulti&Page One
+  - UltiPage One
+  - Page One&Ulti
+  - Page OneUlti
+  - Legend Ulti and Page One
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Powerhouse characters by 4.75x, by 5x
+    instead if they have a beneficial orb, and makes [DEX], [QCK], [RCV] and
+    [TND] orbs beneficial for all characters and deals 500x character's ATK in
+    character's Type damage to all enemies at the end of each turn. If there is
+    a Powerful Enemy, reduces damage received by 30%
+special:
+  name: No Rest for the Wicked
+  description: Deals 300x character's ATK in Typeless damage to all enemies,
+    changes all orbs into Matching orbs, removes Target Lock duration completely
+    and becomes Ulti & Page One for 3 turns. If your Captain is a Powerhouse or
+    Driven character, marks all enemies with 10,000,000 or more MAX HP as a
+    Powerful Enemy and boosts ATK against Powerful Enemies by 2.25x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+  notes: Powerful Enemy marker is not a debuff, so it bypasses debuff protection.
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for Driven and Powerhouse characters
+  - description: Boosts base ATK of Driven and Powerhouse characters by 100
+characters:
+  swap:
+    description: Reduces Paralysis duration completely on this character, changes
+      the orb of this character into a Matching orb and sets Chain Boundaries to
+      1.6x and 35.0x for 1 turn.
+    super:
+      criteria: 6
+      description: Reduces Paralysis duration completely on this character, changes
+        the orb of this character into a Matching orb and sets Chain Boundaries
+        to 2.5x and 35.0x for 2 turns.
+  character1:
+    name: Ulti - Engaging a Dangerous Opponent
+    japanName: うるティ 強敵への臨戦態勢
+    class:
+      - Driven
+      - Powerhouse
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 2137
+        atk: 710
+        rcv: 112
+      maxLvl:
+        hp: 4273
+        atk: 1450
+        rcv: 223
+    captain:
+      name: ""
+      description: Boosts ATK of Driven and Powerhouse characters by 4x, by 4.5x
+        instead if they have a beneficial orb, and makes [RCV] and [TND] orbs
+        beneficial for all characters. If there is a Powerful Enemy, reduces
+        damage received by 20%.
+    sailor:
+      - description: Makes [RCV] orbs beneficial for Driven and Powerhouse characters
+      - description: Boosts base ATK of Driven and Powerhouse characters by 100
+  character2:
+    name: Page One - Engaging a Dangerous Opponent
+    japanName: ページワン 強敵への臨戦態勢
+    class:
+      - Driven
+      - Powerhouse
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 2163
+        atk: 752
+        rcv: 94
+      maxLvl:
+        hp: 4271
+        atk: 1533
+        rcv: 188
+    captain:
+      name: ""
+      description: Boosts ATK of Driven and Powerhouse characters by 4.25x and makes
+        [RCV] and [TND] orbs beneficial for all characters. If there is a
+        Powerful Enemy, reduces damage received by 20%.
+    sailor:
+      - description: Makes [TND] orbs beneficial for Driven and Powerhouse characters
+      - description: Boosts base ATK of Driven and Powerhouse characters by 100
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - atk: 10
+    - atk: 20
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - cooldown: 1
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - rcv: 30
+    - rcv: 40
+    - atk: 50
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - hp: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 181
+    rumbleType: ATK
+    spd: 184
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: Powerhouse
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 7
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 11
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - Driven
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1
+          effect: damage
+          targeting:
+            targets:
+              - Powerhouse
+          type: atk
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 1.6
+        - override:
+            amount: 1.1
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            amount: 1.7
+        - override:
+            amount: 1.2
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 1.8
+        - override:
+            amount: 1.3
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            amount: 1.9
+        - override:
+            amount: 1.4
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 2
+        - override:
+            amount: 1.5
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            amount: 2.1
+        - override:
+            amount: 1.6
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            amount: 2.2
+        - override:
+            amount: 1.7
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            amount: 2.3
+        - override:
+            amount: 1.8
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 2.5
+        - override:
+            amount: 2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,321 @@
+type: DUAL
+name: Zeus & Prometheus & Big Mom - Those With Souls on Another Level
+japanName: ゼウス＆プロメテウス＆ビッグ・マム “魂の格が違う”者達
+family:
+  - CharlotteLinlin
+  - Zeus
+  - Prometheus
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 771
+    atk: 300
+    rcv: 21
+  maxLvl:
+    hp: 1927
+    atk: 751
+    rcv: 53
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 150046
+aliases:
+  - Zeus Big Mom
+  - Prometheus Big Mom
+  - Charlotte Linlin
+  - V2 Legend BM
+evolution:
+  - id: 2536
+    evolvers:
+      - 118
+      - 104
+      - 93
+      - 304
+      - 267
+captain:
+  name: ""
+  description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+    your crew, Increases damage received by 1.75x boosts ATK of all characters
+    by 4x and their HP by 2x. Recovers HP proportional to the number of enemies
+    you defeated in that turn ✕ crew's RCV at the end of the enemy turn.
+  notes: The amount healed each turn is equal to the number of enemies defeated
+    times the crew's total base RCV.
+special:
+  name: Heavenly Fire and Lightning Ring & Mama Mash
+  description: Boosts base ATK of all characters by 1-1,000 for 1 turn, depending
+    on your current HP and becomes Zeus & Prometheus & Big Mom for 3 turns. If
+    HP is above 50% at the time the special is activated, locks the chain
+    multiplier at 3.5x for 1 turn.
+  cooldown: 16
+  maxLevel: 7
+  notes: Base ATK boost is equal to current HP/100, the maximum effect at 100,000
+    HP will give a 1,000 base ATK boost.
+sailor:
+  - description: Makes [STR], [DEX], [QCK], [PSY], [INT], [TND] and [RCV] orbs
+      beneficial for this character
+characters:
+  swap:
+    description: Removes Paralysis duration completely on this character and changes
+      orb of this character into a Matching orb, boosts ATK of this character by
+      1.5x for 1 turn and boosts Orb Effects of this character by 1.5x for 1
+      turn.
+  character1:
+    name: Zeus & Big Mom - Those With Souls on Another Level
+    japanName: ゼウス＆ビッグ・マム “魂の格が違う”者達
+    class:
+      - Powerhouse
+      - Striker
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 707
+        atk: 288
+        rcv: 15
+      maxLvl:
+        hp: 1768
+        atk: 721
+        rcv: 37
+    captain:
+      name: ""
+      description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+        your crew, Increases damage received by 1.75x boosts ATK of all
+        characters by 3.25x and their HP by 2x. Recovers HP proportional to the
+        number of enemies you defeated in that turn ✕ crew's RCV at the end of
+        the enemy turn.
+      notes: The amount healed each turn is equal to the number of enemies defeated
+        times the crew's total base RCV.
+    sailor:
+      - description: Makes [STR], [PSY] and [RCV] orbs beneficial for this character
+  character2:
+    name: Prometheus & Big Mom - Those With Souls on Another Level
+    japanName: プロメテウス＆ビッグ・マム “魂の格が違う”者達
+    class:
+      - Powerhouse
+      - Striker
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 707
+        atk: 288
+        rcv: 15
+      maxLvl:
+        hp: 1768
+        atk: 721
+        rcv: 37
+    captain:
+      name: ""
+      description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+        your crew, Increases damage received by 1.75x boosts ATK of all
+        characters by 3.25x and their HP by 2x. Recovers HP proportional to the
+        number of enemies you defeated in that turn ✕ crew's RCV at the end of
+        the enemy turn.
+      notes: The amount healed each turn is equal to the number of enemies defeated
+        times the crew's total base RCV.
+    sailor:
+      - description: Makes [DEX], [QCK] and [TND] orbs beneficial for this character
+rumble:
+  stats:
+    def: 188
+    rumbleType: ATK
+    spd: 178
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.93
+        - {}
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.95
+        - {}
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.98
+        - {}
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.01
+        - {}
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.04
+        - {}
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.06
+        - {}
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.09
+        - override:
+            level: 2
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.12
+        - override:
+            level: 2
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.25
+        - override:
+            level: 3
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

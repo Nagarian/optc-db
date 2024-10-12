@@ -1,0 +1,104 @@
+type: DUAL
+name: Smoothie & Oven - Tea Party Protectors
+japanName: スムージー＆オーブン お茶会を守りし者達
+family:
+  - CharlotteOven
+  - CharlotteSmoothie
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 882
+    atk: 452
+    rcv: 120
+  maxLvl:
+    hp: 1512
+    atk: 933
+    rcv: 244
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 144757
+aliases:
+  - Smoothie&Oven
+  - Oven&Smoothie
+  - SmoothieOven
+  - OvenSmoothie
+  - TM Smoothie and Oven
+  - SmooThicc and Hawt
+evolution:
+  - id: 2469
+    evolvers:
+      - 116
+      - 117
+      - 118
+      - 101
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], [PSY] and [INT] characters by 2.5x and
+    recovers 1x character's RCV in HP at the end of each turn.
+special:
+  name: Burning Blade Slash
+  description: Boosts chances of getting [QCK] and [PSY] orbs for 2 turns,
+    randomizes all orbs, boosts Orb Effects of [QCK], [PSY] and [INT] characters
+    by 2x for 2 turns and becomes Smoothie & Oven for 2 turns
+  cooldown: 41
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK], [PSY] and [INT] characters by 50
+characters:
+  swap:
+    description: Makes [QCK] and [PSY] orbs beneficial for [QCK], [PSY] and [INT]
+      characters for 1 turn and deals 20x character's ATK in character's Type
+      damage to all enemies at the end of each turn for 1 turn.
+  character1:
+    name: Smoothie - Tea Party Protectors
+    japanName: スムージー お茶会を守りし者達
+    class:
+      - Powerhouse
+      - Slasher
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 292
+        atk: 238
+        rcv: 52
+      maxLvl:
+        hp: 1008
+        atk: 591
+        rcv: 161
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY] characters by 2x.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 25
+  character2:
+    name: Oven - Tea Party Protectors
+    japanName: オーブン お茶会を守りし者達
+    class:
+      - Powerhouse
+      - Fighter
+    type: QCK
+    stats:
+      combo: 6
+      minLvl:
+        hp: 213
+        atk: 217
+        rcv: 44
+      maxLvl:
+        hp: 906
+        atk: 669
+        rcv: 114
+    captain:
+      name: ""
+      description: Boosts ATK of [QCK] characters by 2x.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 25

@@ -1,0 +1,52 @@
+type: QCK
+name: Helmeppo, Friend to Courage - Navy HQ Sergeant
+japanName: 勇士の戦友ヘルメッポ 海軍本部軍曹
+family:
+  - Helmeppo
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 817
+    atk: 420
+    rcv: 89
+  maxLvl:
+    hp: 1971
+    atk: 1016
+    rcv: 322
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 56056
+aliases:
+  - Colo Helmeppo
+  - Coliseum Helmeppo
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Driven characters by 2x and their RCV by 1.5x
+special:
+  name: Firey Morale
+  description: If HP is below 5,000, boosts ATK of Driven and Slasher characters
+    by 1.75x for 1 turn and recovers 10x character's RCV in HP
+  cooldown: 20
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Coby
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

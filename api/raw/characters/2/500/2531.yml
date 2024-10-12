@@ -1,0 +1,341 @@
+type: DUAL
+name: "Zoro & Sanji - Peerless Straw Hat Pirates: Born Again"
+japanName: ゾロ＆サンジ 新生・麦わらの一味の双璧
+family:
+  - RoronoaZoro
+  - VinsmokeSanji
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 980
+    atk: 201
+    rcv: 12
+  maxLvl:
+    hp: 1980
+    atk: 840
+    rcv: 55
+cost: 60
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 149563
+aliases:
+  - Zoro&Sanji
+  - Sanji&Zoro
+  - ZoroSanji
+  - SanjiZoro
+  - Kizuna Zoro and Sanji
+  - Bond Zoro and Sanji
+  - Zanji
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Fighter characters by 3.75x and makes
+    [DEX], [QCK], [RCV] and [TND] orbs beneficial for Slasher and Fighter
+    characters.
+special:
+  name: Three Sword and Twin Black Leg Style - Pound Shoot
+  description: Deals 100x character's ATK in Typeless damage to all enemies, and
+    becomes Zoro & Sanji for 3 turns. If HP is above 99% at the time the special
+    is activated, boosts ATK of Slasher and Fighter characters by 2.75x for 1
+    turn, by 2x for 2 turns otherwise.
+  cooldown: 30
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Slasher and Fighter characters by 100
+  - description: Makes [RCV] and [TND] orbs beneficial for Slasher and Fighter characters
+characters:
+  swap:
+    description: Removes Slot Bind duration completely on this character and changes
+      orb of this character into a Matching orb
+  character1:
+    name: "Zoro - Peerless Straw Hat Pirates: Born Again"
+    japanName: ゾロ 新生・麦わらの一味の双璧
+    class:
+      - Slasher
+      - Driven
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 980
+        atk: 201
+        rcv: 12
+      maxLvl:
+        hp: 1980
+        atk: 823
+        rcv: 35
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Fighter characters by 2.75x and makes
+        [DEX] orbs beneficial for Slasher and Fighter characters. If you
+        defeated an enemy last turn, boosts ATK of Slasher and Fighter
+        characters by 3.3x instead.
+    sailor:
+      - description: Boosts base ATK of Slasher and Fighter characters by 100
+      - description: Makes [RCV] and [TND] orbs beneficial for Slasher and Fighter
+          characters
+  character2:
+    name: "Sanji - Peerless Straw Hat Pirates: Born Again"
+    japanName: サンジ 新生・麦わらの一味の双璧
+    class:
+      - Fighter
+      - Powerhouse
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 980
+        atk: 197
+        rcv: 23
+      maxLvl:
+        hp: 1980
+        atk: 801
+        rcv: 40
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Fighter characters by 2.75x, recovers 2x
+        character's RCV in HP at the end of each turn and makes [QCK] orbs
+        beneficial for Slasher and Fighter characters.
+    sailor:
+      - description: Boosts base ATK of Slasher and Fighter characters by 100
+      - description: Makes [RCV] and [TND] orbs beneficial for Slasher and Fighter
+          characters
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 100
+    - slot: 1
+    - hp: 100
+    - type: potential
+    - cooldown: 1
+    - hp: 150
+    - atk: 100
+    - rcv: 20
+    - type: sailor
+    - cooldown: 1
+    - hp: 250
+    - hp: 350
+    - atk: 100
+    - type: sailor
+    - slot: 1
+    - rcv: 30
+    - cooldown: 2
+    - rcv: 50
+    - type: potential
+    - hp: 400
+    - rcv: 100
+    - atk: 150
+    - atk: 200
+    - cooldown: 2
+    - cooldown: 3
+    - hp: 420
+    - hp: 500
+    - atk: 250
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 179
+    rumbleType: SPT
+    spd: 189
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 30
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 43
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 90
+            stat: HP
+            type: stat
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.62
+        - override:
+            duration: 21
+        - override:
+            duration: 21
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.63
+        - override:
+            duration: 23
+        - override:
+            duration: 23
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            level: 5
+            duration: 24
+        - override:
+            level: 5
+            duration: 24
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.67
+        - override:
+            level: 5
+            duration: 26
+        - override:
+            level: 5
+            duration: 26
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.69
+        - override:
+            level: 6
+            duration: 28
+        - override:
+            level: 6
+            duration: 28
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 6
+            duration: 29
+        - override:
+            level: 6
+            duration: 29
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.72
+        - override:
+            level: 6
+            duration: 31
+        - override:
+            level: 6
+            duration: 31
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.74
+        - override:
+            level: 7
+            duration: 32
+        - override:
+            level: 7
+            duration: 32
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 8
+            duration: 34
+        - override:
+            level: 8
+            duration: 34

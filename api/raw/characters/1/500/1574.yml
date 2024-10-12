@@ -1,0 +1,51 @@
+type: INT
+name: Shishilian
+japanName: シシリアン
+family:
+  - Sicilian
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 142
+    atk: 155
+    rcv: 19
+  maxLvl:
+    hp: 1202
+    atk: 658
+    rcv: 127
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 55823
+aliases:
+  - Sicilian
+  - Shishilian
+evolution:
+  - id: 1575
+    evolvers:
+      - 83
+      - 88
+      - 94
+      - 99
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.25x
+special:
+  name: Dash - Dive - Destroy
+  description: Delays all enemies by 1 turn, deals 25x character's ATK in [INT]
+    damage to all enemies and changes [STR], [DEX], [QCK], [INT] and [PSY] orbs
+    of Cerebral characters into Matching orbs.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base ATK of
+      this character by 200

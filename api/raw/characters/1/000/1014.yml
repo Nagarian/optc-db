@@ -1,0 +1,48 @@
+type: PSY
+name: Tony Tony Chopper - Animal King
+japanName: トニートニー・チョッパー 動物王
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 63
+    atk: 40
+    rcv: 44
+  maxLvl:
+    hp: 1154
+    atk: 719
+    rcv: 280
+cost: 16
+slots: 2
+maxExp: 1422664
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 27637
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x and Recovers 2x
+    character's RCV in HP at the end of each turn
+special:
+  name: Scapegoat Substitute
+  description: Binds himself for 1 turn and makes PERFECTs easier to hit for 2 turns
+  cooldown: 16
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Fighter characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7

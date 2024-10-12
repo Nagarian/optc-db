@@ -1,0 +1,61 @@
+type: DEX
+name: Tony Tony Chopper - Jumping Point
+japanName: トニートニー・チョッパー 飛力強化（ジャンピングポイント）
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 162
+    atk: 91
+    rcv: 29
+  maxLvl:
+    hp: 2334
+    atk: 892
+    rcv: 296
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 44770
+aliases:
+  - Colo Chopper
+  - Coliseum Chopper
+  - Colo Tony Tony Chopper
+  - Coliseum Tony Tony Chopper
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.25x
+special:
+  name: Flight Power Strengthening - Jump Point
+  description: Reduces Paralysis duration by 2 turns. Adds 0.5x to Chain
+    multiplier for 1 turn
+  cooldown: 25
+  maxLevel: 11
+  stages:
+    - description: Reduces Paralysis duration by 1 turn. Adds 0.2x to Chain multiplier
+        for 1 turn
+      cooldown: 18
+    - description: Reduces Paralysis duration by 2 turns. Adds 0.3x to Chain
+        multiplier for 1 turn
+      cooldown: 23
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Vinsmoke Sanji and Kureha (Doctorine)
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

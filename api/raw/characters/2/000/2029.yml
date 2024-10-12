@@ -1,0 +1,112 @@
+type: QCK
+name: Buddha Sengoku - One Who Leads the Way to Victory
+japanName: 仏のセンゴク
+family:
+  - Sengoku
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 989
+    atk: 632
+    rcv: 103
+  maxLvl:
+    hp: 2885
+    atk: 1402
+    rcv: 312
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 97001
+aliases:
+  - Sengoku
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [QCK] characters by 2.5x and their HP by 1.2x
+special:
+  name: Instant Suppression
+  description: Reduces Despair and ATK DOWN duration by 4 turns. If your crew has
+    4 or more [QCK] or [PSY] characters, boosts Orb Effects of all characters by
+    2x for 1 turn and makes [RCV] and [TND] orbs beneficial for all characters
+    for 1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Makes [DEX] orbs beneficial for this character
+  - description: Makes [PSY] orbs beneficial for [QCK] characters
+support:
+  type: descriptive
+  criteria: Monkey D. Garp
+  levels:
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Despair,
+      reduces ATK DOWN and Despair duration by 1 turn.
+limitBreak:
+  path:
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - rcv: 15
+    - cooldown: 1
+    - hp: 30
+    - atk: 40
+    - rcv: 20
+    - slot: 1
+    - type: sailor
+    - hp: 30
+    - atk: 50
+    - atk: 60
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 4
+          threshold: 25
+        - value: 5
+          threshold: 30
+        - value: 6
+          threshold: 35
+        - value: 7
+          threshold: 40
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

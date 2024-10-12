@@ -1,0 +1,54 @@
+type: INT
+name: Boa Marigold - Third Gorgon Sister
+japanName: ボア・マリーゴールド ゴルゴン三姉妹・三女
+family:
+  - BoaMarigold
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1136
+    atk: 411
+    rcv: 57
+  maxLvl:
+    hp: 2854
+    atk: 1033
+    rcv: 169
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 43752
+aliases:
+  - Colo Marigold
+  - Coliseum Marigold
+  - Colo Boa Marigold
+  - Coliseum Boa Marigold
+captain:
+  name: ""
+  description: Boosts ATK and HP of Powerhouse characters by 1.75x
+special:
+  name: King Cobra Machetes
+  description: Deals 20x character's ATK in [INT] damage to all enemies. Reduces
+    enemies' Threshold Damage Reduction duration by 1 turn
+  cooldown: 25
+  maxLevel: 11
+  notes: Damage Threshold is the buff enemies gain that greatly reduces damage
+    received over a certain amount
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Boa Hancock and Boa Sandersonia
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13

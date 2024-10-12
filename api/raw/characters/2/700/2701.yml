@@ -1,0 +1,172 @@
+type: DEX
+name: Jack - In Control of Kuri
+japanName: ジャック 「九里」の元締め
+family:
+  - Jack
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 340
+    atk: 192
+    rcv: 8
+  maxLvl:
+    hp: 927
+    atk: 946
+    rcv: 80
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 169217
+aliases:
+  - ""
+evolution:
+  - id: 2702
+    evolvers:
+      - 94
+      - 2662
+      - 302
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight and boosts ATK of Powerhouse characters by 2x.
+special:
+  name: Disaster Shotel
+  description: Deals 20% of enemies' current HP in damage to one enemy and reduces
+    Special Cooldown of all characters by 1 turn. If enemies have Delay Debuff
+    Protection or All Debuff Protection at the time the special was activated,
+    boosts Orb Effects of Striker and Powerhouse characters by 2x for 1 turn, by
+    1.75x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+rumble:
+  stats:
+    def: 151
+    rumbleType: ATK
+    spd: 129
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Powerhouse
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 24
+          effect: damage
+          type: cut
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 10
+          attributes:
+            - Special CT
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 25
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 26
+        - override:
+            amount: 11
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 27
+        - override:
+            amount: 11
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 28
+        - override:
+            amount: 12
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 29
+        - override:
+            amount: 13
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 30
+        - override:
+            amount: 13
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 32
+        - override:
+            amount: 14
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 33
+        - override:
+            amount: 14
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 35
+        - override:
+            amount: 16

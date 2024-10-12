@@ -1,0 +1,89 @@
+type: QCK
+name: Ideo Destruction Cannon
+japanName: イデオ 破壊砲
+family:
+  - Ideo
+class:
+  - Fighter
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1171
+    atk: 603
+    rcv: 123
+  maxLvl:
+    hp: 2404
+    atk: 1318
+    rcv: 294
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 33766
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x and their HP by 1.5x.
+    Recovers 2x character's RCV in HP at the end of each turn
+special:
+  name: Destruction Cannon
+  description: Deals 50x character's ATK in [QCK] damage to all enemies, boosts
+    ATK of Fighter and Shooter characters by 1.75x for 1 turn
+  cooldown: 23
+  maxLevel: 7
+  stages:
+    - description: Deals 30x character's ATK in [QCK] damage to all enemies, boosts
+        ATK of Fighter characters by 1.5x for 1 turn
+      cooldown: 18
+sailor:
+  - description: Boosts base ATK of Fighter characters by 50
+  - description: Boosts base ATK of this character by 200 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Sai, Hajrudin, Chinjao, Bartolomeo and Cavendish
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 20
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - cooldown: 2
+    - slot: 1
+    - rcv: 30
+    - hp: 80
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

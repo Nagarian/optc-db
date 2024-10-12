@@ -1,0 +1,122 @@
+type: PSY
+name: Belo Betty - During the Revolutionary Army Strategy Meeting Break
+japanName: ベロ・ベティ 革命軍作戦会議の合間にて
+family:
+  - BeloBetty
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1117
+    atk: 799
+    rcv: 89
+  maxLvl:
+    hp: 2482
+    atk: 1405
+    rcv: 318
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 186809
+aliases:
+  - Limited Belo Betty
+  - Secret Belo Betty
+  - Kizuna Belo Betty
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of [PSY] characters by 2.5x, by 3x instead if they have
+    a beneficial orb, and boosts chances of getting [PSY] orbs.  
+
+    **Boosted Ability:** Boosts ATK of [PSY] characters by 3x, by 4.2x instead if they have a beneficial orb, and boosts chances of getting [PSY] orbs.
+special:
+  name: Break from the Revolution
+  description: Reduces Bind and ATK DOWN duration by 5 turns, reduces the defense
+    of all enemies by 100% for 1 turn and boosts Orb Effects of Cerebral and
+    Free Spirit characters by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of Free Spirit and Cerebral characters by 75
+  - description: Makes [PSY] orbs beneficial for Free Spirit and Cerebral characters
+support:
+  type: descriptive
+  criteria: Sabo and Koala
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - hp: 50
+    - rcv: 10
+    - cooldown: 1
+    - hp: 50
+    - rcv: 20
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

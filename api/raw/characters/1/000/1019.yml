@@ -1,0 +1,48 @@
+type: DEX
+name: Peepley Lulu - Galley-La Company Dock One Foreman
+japanName: ピープリー・ルル ガレーラカンパニー１番ドック職長
+family:
+  - PeeplyLulu
+class:
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 155
+    atk: 93
+    rcv: 40
+  maxLvl:
+    hp: 1184
+    atk: 720
+    rcv: 280
+cost: 20
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 27624
+aliases:
+  - Colo Lulu
+  - Coliseum Lulu
+captain:
+  name: ""
+  description: Reduces damage received from [QCK] enemies by 50%
+special:
+  name: "Blacksmithing Measurement: Double Slash"
+  description: Randomizes all non-Matching orbs and deals 2,000 Fixed damage to one enemy
+  cooldown: 16
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Paulie and Iceburg
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11

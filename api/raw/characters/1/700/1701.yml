@@ -1,0 +1,52 @@
+type: QCK
+name: Emporio Ivankov - New Kama Land Prisoner
+japanName: エンポリオ・イワンコフ “ニューカマーランド”の囚人
+family:
+  - EmporioIvankov
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 166
+    atk: 110
+    rcv: 37
+  maxLvl:
+    hp: 1200
+    atk: 634
+    rcv: 208
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 63203
+aliases:
+  - ""
+evolution:
+  - id: 1702
+    evolvers:
+      - 118
+      - 83
+      - 85
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x
+special:
+  name: Hair Removal Fist
+  description: Changes [BLOCK] and Badly Matching orbs into Matching orbs
+  cooldown: 15
+  maxLevel: 6
+  stages:
+    - description: Randomizes all orbs
+      cooldown: 9
+    - description: Changes [BLOCK] orbs into Matching orbs
+      cooldown: 12
+sailor:
+  - description: Reduces Paralysis duration completely on this character

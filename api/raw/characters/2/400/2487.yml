@@ -1,0 +1,93 @@
+type: QCK
+name: Kin'emon - Tattoo of the Kozuki Clan Crest
+japanName: 錦えもん 背に見ゆる光月一族の家紋
+family:
+  - Kinemon
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1345
+    atk: 549
+    rcv: 73
+  maxLvl:
+    hp: 3362
+    atk: 1373
+    rcv: 182
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 147135
+aliases:
+  - Secret Kinemon
+  - Limited Kinemon
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.75x and their HP by 1.25x.
+special:
+  name: Foxfire Style - Continuous Flame Split
+  description: Deals 50x character's ATK in [QCK] damage to all enemies and
+    reduces crew's Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 7 turns. If your Captain is a Slasher character, boosts the
+    Color Affinity of Slasher characters by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Slasher characters by 50
+  - description: Makes [QCK] orbs beneficial for Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 20
+    - atk: 10
+    - atk: 30
+    - atk: 80
+    - type: sailor
+    - hp: 90
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+        - value: 8
+          threshold: 90

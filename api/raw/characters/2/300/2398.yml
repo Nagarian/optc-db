@@ -1,0 +1,104 @@
+type: DEX
+name: Big Emperor - Giant Robot Warrior
+japanName: “ビッグ皇帝（エンペラー）” 巨大ロボ戦士
+family:
+  - RoronoaZoro
+  - Usopp
+  - VinsmokeSanji
+  - TonyTonyChopper
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1290
+    atk: 650
+    rcv: 35
+  maxLvl:
+    hp: 3002
+    atk: 1203
+    rcv: 210
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 140043
+aliases:
+  - Pirate Docking 6
+  - Raid Big Emperor
+  - Raid Franky
+  - Raid Chopper
+  - Raid Usopp
+  - Raid Zoro
+  - Raid Sanji
+  - Not Robin
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x and their HP by 1.2x. If
+    you use "Tactics Fifteen "Big Emperor"" in this turn boosts ATK of Shooter
+    characters by 2.75x instead.
+special:
+  name: Tactics Fifteen "Big Emperor"
+  description: Increases damage received by 1.25x for 2 turns and boosts Orb
+    Effects of Shooter characters by 1.75x for 2 turns. If during that turn you
+    score 5 PERFECT hits, changes all orbs of Shooter characters into Matching
+    orbs for 1 turn in the following turn.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Makes [STR] and [QCK] orbs beneficial for this character
+  - description: Makes [TND] orbs beneficial for Shooter characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Shooter characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 30
+    - hp: 50
+    - hp: 60
+    - atk: 45
+    - slot: 1
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

@@ -1,0 +1,154 @@
+type: DEX
+name: Sir Crocodile - King of the Desert in the Paramount War
+japanName: サー・クロコダイル 頂上戦争の砂漠の王
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 307
+    atk: 156
+    rcv: 18
+  maxLvl:
+    hp: 1472
+    atk: 780
+    rcv: 122
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 168145
+aliases:
+  - Raid Crocodile
+evolution:
+  - id: 2698
+    evolvers:
+      - 118
+      - 102
+      - 86
+      - 302
+      - 2662
+captain:
+  name: ""
+  description: Boosts ATK of Rarity 4 or 4+ characters by 1.75x, boosts ATK of
+    Rarity 5 or 5+ characters by 2x and boosts ATK of Rarity 6 or 6+ characters
+    by 2.25x.
+special:
+  name: Battlefield Sables
+  description: Deals 50x character's ATK in Typeless True damage to all enemies,
+    changes [EMPTY], [BLOCK] and [BOMB] orbs into Matching orbs and reduces
+    Chain Multiplier Limit duration by 8 turns. If your Captain is a Striker or
+    Cerebral character, sets Chain Boundaries to 2.0x and 35.0x for 3 turns.
+  cooldown: 28
+  maxLevel: 16
+rumble:
+  stats:
+    def: 160
+    rumbleType: ATK
+    spd: 165
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 900
+          effect: damage
+          type: fixed
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          effect: debuff
+          duration: 15
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 950
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1000
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1050
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1100
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1150
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1200
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            level: 2
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 2
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 3

@@ -1,0 +1,88 @@
+type: QCK
+name: "Carrot: Kingsbird"
+japanName: 王の鳥　キャロット
+family:
+  - Carrot
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 941
+    atk: 461
+    rcv: 171
+  maxLvl:
+    hp: 2041
+    atk: 1250
+    rcv: 390
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 60677
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.25x and their RCV by 1.5x
+special:
+  name: Electric Fist
+  description: Boosts ATK of [QCK] characters by 2x for 1 turn
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of [QCK] characters by 75
+  - description: Makes [DEX] orbs beneficial for [QCK] characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Wanda and Pedro
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - atk: 40
+    - rcv: 20
+    - hp: 60
+    - cooldown: 1
+    - atk: 50
+    - slot: 1
+    - hp: 60
+    - cooldown: 1
+    - hp: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

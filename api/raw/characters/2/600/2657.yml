@@ -1,0 +1,105 @@
+type: QCK
+name: Brook - ONE PIECE STAMPEDE
+japanName: ブルック ONE PIECE STAMPEDE
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1120
+    atk: 812
+    rcv: 121
+  maxLvl:
+    hp: 2651
+    atk: 1382
+    rcv: 301
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 161688
+aliases:
+  - Stampede Brook
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x, boosts their HP by 1.2x and
+    boosts ATK of [STR] and [INT] characters by 2x.
+special:
+  name: "Song of Scratches: Freezing Rubble"
+  description: Deals 50x character's ATK in [QCK] damage to one enemy and boosts
+    ATK of [STR], [QCK] and [INT] characters by 1.5x for 1 turn. If during that
+    turn you score 4 PERFECT hits, boosts ATK of [STR], [QCK] and [INT]
+    characters by 2x for 2 turns in the following turn.
+  cooldown: 22
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 10 turns
+  - description: Adds 3x character's ATK as Additional Damage
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin and Franky
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - slot: 1
+    - type: sailor
+    - atk: 20
+    - rcv: 20
+    - hp: 100
+    - atk: 30
+    - atk: 50
+    - cooldown: 2
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7

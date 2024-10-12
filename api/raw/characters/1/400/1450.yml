@@ -1,0 +1,49 @@
+type: DEX
+name: Violet - Pursued Girl
+japanName: ヴァイオレット 追われる女
+family:
+  - Viola
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 643
+    atk: 349
+    rcv: 184
+  maxLvl:
+    hp: 1594
+    atk: 843
+    rcv: 403
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 50898
+aliases:
+  - Viola
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.75x. Recovers 0.5x
+    character's RCV at the end of the turn each time you hit a Great.
+special:
+  name: Clairvoyance
+  description: Reduces the defense of all enemies by 50% for 1 turn and if HP is
+    below 50%, randomizes all orbs into either [RCV] or [TND] orbs
+  cooldown: 22
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Vinsmoke Sanji
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

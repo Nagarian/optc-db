@@ -1,0 +1,200 @@
+type: DEX
+name: Lindbergh
+japanName: リンドバーグ
+family:
+  - Lindbergh
+class:
+  - Free Spirit
+  - Shooter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 464
+    atk: 235
+    rcv: 62
+  maxLvl:
+    hp: 1162
+    atk: 589
+    rcv: 156
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 152588
+aliases:
+  - ""
+evolution:
+  - id: 2563
+    evolvers:
+      - 83
+      - 266
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.25x.
+special:
+  name: Cool Shooter
+  description: If your Captain is a Free Spirit character, boosts Orb Effects of
+    Free Spirit characters by 2x for 1 turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP and RCV of Free Spirit characters by 50
+rumble:
+  stats:
+    def: 107
+    rumbleType: DBF
+    spd: 140
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 8
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Action Bind
+          duration: 5
+          chance: 50
+          effect: hinderance
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          effect: debuff
+          level: 1
+          duration: 20
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 22
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 9
+        - {}
+        - override:
+            duration: 24
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 10
+        - {}
+        - override:
+            level: 2
+            duration: 26
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 10
+        - {}
+        - override:
+            level: 2
+            duration: 28
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 11
+        - {}
+        - override:
+            level: 2
+            duration: 30
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 12
+        - {}
+        - override:
+            level: 3
+            duration: 32
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 13
+        - {}
+        - override:
+            level: 3
+            duration: 34
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 13
+        - {}
+        - override:
+            level: 3
+            duration: 36
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 15
+        - {}
+        - override:
+            level: 5
+            duration: 38

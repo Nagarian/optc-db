@@ -1,0 +1,35 @@
+type: PSY
+name: Fighter Group Cabin Boy - Yellow Pirates
+japanName: 格闘隊 雑用 イエローパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 1
+stats:
+  combo: 6
+  minLvl:
+    hp: 77
+    atk: 49
+    rcv: 8
+  maxLvl:
+    hp: 315
+    atk: 126
+    rcv: 24
+cost: 2
+slots: 0
+maxExp: 2330
+maxLevel: 10
+flags: []
+links:
+  gamewithId: 2202
+aliases: []
+evolution:
+  - id: 145
+    evolvers:
+      - 92
+special:
+  name: Iron Shield
+  description: Reduces damage received by 20% for 1 turn
+  cooldown: 25
+  maxLevel: 16

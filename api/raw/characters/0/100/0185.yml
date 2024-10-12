@@ -1,0 +1,37 @@
+type: DEX
+name: Saber Seaman - Navy
+japanName: サーベル一等兵 海軍
+family:
+  - SaberNavy
+class:
+  - Slasher
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 75
+    atk: 101
+    rcv: 26
+  maxLvl:
+    hp: 512
+    atk: 322
+    rcv: 84
+cost: 6
+slots: 0
+maxExp: 90778
+maxLevel: 35
+flags: []
+links:
+  gamewithId: 2526
+aliases: []
+evolution:
+  - id: 195
+    evolvers:
+      - 116
+      - 80
+      - 86
+special:
+  name: Light Healing
+  description: Recovers 5x character's RCV in HP
+  cooldown: 12
+  maxLevel: 5

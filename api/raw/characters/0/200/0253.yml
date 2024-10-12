@@ -1,0 +1,93 @@
+type: QCK
+name: Diamond Jozu
+japanName: ダイヤモンド・ジョズ
+family:
+  - Jozu
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1748
+    atk: 524
+    rcv: 69
+  maxLvl:
+    hp: 3300
+    atk: 987
+    rcv: 231
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 4864
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and HP of [QCK] characters by 2x
+special:
+  name: Brilliant Punk
+  description: Reduces damage received from [DEX] enemies by 100% for 1 turn
+  cooldown: 15
+  maxLevel: 8
+sailor:
+  - description: Cannot be Blown Away
+  - description: Boosts base HP of Fighter characters by 100
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - HP
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Vista and Marco
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 4
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 8
+      reduction: 2
+    - value: 10
+      reduction: 3
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 30
+    - atk: 15
+    - type: potential
+    - atk: 20
+    - atk: 25
+    - atk: 30
+    - atk: 35
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 45
+    - atk: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 2
+        - value: 80
+          reduction: 2
+        - value: 100
+          reduction: 3

@@ -1,0 +1,53 @@
+type: PSY
+name: Nefeltari Vivi - Sand-Sand Band Sub-Leader
+japanName: ネフェルタリ・ビビ 砂砂団　副リーダー
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 243
+    atk: 51
+    rcv: 187
+  maxLvl:
+    hp: 593
+    atk: 269
+    rcv: 488
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 15149
+aliases:
+  - Young Vivi
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn
+special:
+  name: Vivi's Important Security Guard
+  description: Deals 1-80,000 [PSY] damage, depending on the crew's current HP, to
+    one enemy, recovers 5x character's RCV in HP at the end of each turn for 5
+    turns
+  cooldown: 25
+  maxLevel: 10
+  notes: The exact damage is proportional to the crew's remaining HP and is higher
+    the lower the HP is. The formula used is 80,000 \* (1 - (current HP) /
+    (total HP))
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Koza
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

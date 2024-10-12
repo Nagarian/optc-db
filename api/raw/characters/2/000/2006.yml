@@ -1,0 +1,276 @@
+type: INT
+name: Shanks - Emperor Who Rewards Courage
+japanName: シャンクス 勇気に応える四皇
+family:
+  - Shanks
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 860
+    atk: 185
+    rcv: 20
+  maxLvl:
+    hp: 1999
+    atk: 788
+    rcv: 212
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 94531
+aliases:
+  - V2 Legend Shanks
+evolution:
+  - id: 2007
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 99
+      - 267
+captain:
+  name: ""
+  description: If your crew has 4 or more characters of the same Type, boosts ATK
+    of all characters by 3.5x, by 2.75x otherwise and boosts HP of all
+    characters by 1.3x.
+special:
+  name: Closing Declaration
+  description: Adds 0.9x to Chain multiplier for 1 turn. If your crew has 4 or
+    more characters of the same Type, boosts ATK of Dominant Type characters by
+    2.25x for 1 turn and changes all orbs, including [BLOCK] orbs, into Dominant
+    Type orbs
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: If your crew has 4 or more characters of the same Type, boosts base
+      ATK of Dominant Type characters by 125
+rumble:
+  stats:
+    def: 165
+    rumbleType: SPT
+    spd: 163
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            count: 4
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 25
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Critical Hit
+          duration: 9
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 16
+        - override:
+            duration: 10
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 17
+        - override:
+            duration: 12
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 18
+            level: 3
+        - override:
+            duration: 13
+            level: 3
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 19
+            level: 3
+        - override:
+            duration: 15
+            level: 3
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 20
+            level: 4
+        - override:
+            duration: 16
+            level: 4
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 21
+            level: 4
+        - override:
+            duration: 18
+            level: 4
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 22
+            level: 4
+        - override:
+            duration: 19
+            level: 4
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 23
+            level: 5
+        - override:
+            duration: 21
+            level: 5
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 25
+            level: 6
+        - override:
+            duration: 22
+            level: 6
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

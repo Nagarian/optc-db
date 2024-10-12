@@ -1,0 +1,112 @@
+type: QCK
+name: Master Caesar - Gas-Gas Fruit User
+japanName: Ｍ（マスター）・シーザー “ガスガスの実”の能力者
+family:
+  - CaesarClown
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1225
+    atk: 801
+    rcv: 121
+  maxLvl:
+    hp: 2904
+    atk: 1452
+    rcv: 232
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 211228
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 2.75x and reduces
+    damage received by 10%.
+special:
+  name: Blue Sword
+  description: Deals 10% of enemies' current HP in damage to one enemy, reduces
+    Special Cooldown of [QCK] and [INT] character's characters by 1 turn,
+    changes [BLOCK], [RCV] and [TND] orbs into Matching orbs, locks all orbs for
+    1 turn and adds 0.7x to Chain multiplier for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 30
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Donquixote Doflamingo, Vergo and Monet
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 30
+    - slot: 1
+    - hp: 50
+    - hp: 50
+    - hp: 70
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,145 @@
+type: QCK
+name: Jack the Drought
+japanName: 旱害のジャック
+family:
+  - Jack
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1110
+    atk: 404
+    rcv: 33
+  maxLvl:
+    hp: 3210
+    atk: 1550
+    rcv: 109
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 112497
+aliases:
+  - TM Jack
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x and reduces damage received by 5%
+special:
+  name: Genocide Shotel
+  description: Reduces enemies' Percent Damage Reduction, Increased Defense and
+    Damage Nullification duration by 2 turns and deals 300,000-1,500,000
+    Typeless Fixed True damage to one enemy, depending on the number of enemies
+    on the stage when the special is activated.
+  cooldown: 36
+  maxLevel: 8
+  notes: |-
+    **1 enemy:** 300,000 damage  
+    **2 enemies:** 500,000 damage  
+    **3 enemies:** 800,000 damage  
+    **4 enemies:** 1,100,000 damage  
+    **5 enemies:** 1,500,000 damage  
+    **6 enemies:** 2,000,000 damage
+sailor:
+  - description: Boosts base HP of all characters by 75
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Powerhouse characters
+  levels:
+    - value: 3
+    - value: 6
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - captain:
+        description: Boosts ATK of Powerhouse characters by 2.25x and reduces damage
+          received by 5%
+    - type: sailor
+    - rcv: 20
+    - rcv: 20
+    - rcv: 20
+    - captain:
+        description: Boosts ATK of Powerhouse characters by 2.25x and reduces damage
+          received by 7%
+    - slot: 1
+    - cooldown: 1
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - captain:
+        description: Boosts ATK of Powerhouse characters by 2.25x and reduces damage
+          received by 10%
+    - cooldown: 2
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - cooldown: 3
+    - slot: 1
+    - hp: 40
+    - hp: 50
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Powerhouse characters by 2.5x and reduces damage
+          received by 10%
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 40
+    - atk: 40
+    - atk: 40
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Powerhouse characters by 2.5x and reduces damage
+          received by 15%
+    - atk: 40
+    - atk: 50
+    - captain:
+        description: Boosts ATK of Powerhouse characters by 2.75x and reduces damage
+          received by 20%
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

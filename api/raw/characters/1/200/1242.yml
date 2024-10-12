@@ -1,0 +1,50 @@
+type: STR
+name: Koala - Revolutionary and Fish-Man Karate Assistant
+japanName: コアラ 革命軍・魚人空手師範代
+family:
+  - Koala
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 700
+    atk: 481
+    rcv: 137
+  maxLvl:
+    hp: 1426
+    atk: 1190
+    rcv: 357
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 37427
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 2x. Recovers 2x character's
+    RCV in HP at the end of each turn
+special:
+  name: Fishman Karate, Midair Upwards Kick
+  description: Deals 11x character's ATK in [STR] damage to one enemy. Adds 15x
+    character's ATK as Additional Typeless Damage for 1 turn
+  cooldown: 19
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Sabo and Hack
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

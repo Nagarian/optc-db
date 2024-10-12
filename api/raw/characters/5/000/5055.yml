@@ -1,0 +1,89 @@
+type: STR
+oldDbId: 4995
+name: War Hero Coby [EXTRA], Navy HQ Petty Officer
+family:
+  - Coby
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1250
+    atk: 650
+    rcv: 160
+  maxLvl:
+    hp: 2450
+    atk: 1210
+    rcv: 290
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - gloex
+aliases:
+  - Neo Coby
+  - Extra Coby
+  - EX Coby
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x, reduces damage received by
+    0%-30% depending on the crew's current HP
+special:
+  name: Pleading at the Risk of One's Life [EX]
+  description: Locks all orbs for 1 turn and changes orbs of adjacent characters
+    into [STR] orbs. If the special is activated with more than 50% health
+    remaining, protects from defeat for 1 turn
+  cooldown: 25
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: If this character has an [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - hp: 20
+    - rcv: 10
+    - hp: 30
+    - atk: 30
+    - hp: 40
+    - cooldown: 1
+    - atk: 35
+    - rcv: 10
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 6
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

@@ -1,0 +1,103 @@
+type: DEX
+name: Crocodile - Sand Entering the Battlefield
+japanName: クロコダイル 戦場に降り立つ砂
+family:
+  - Crocodile
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1216
+    atk: 631
+    rcv: 109
+  maxLvl:
+    hp: 2814
+    atk: 1449
+    rcv: 298
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 261141
+aliases:
+  - Secret Crocodile
+  - Limited Crocodile
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Driven and Cerebral characters by 3x, by 3.5x instead
+    if they have a beneficial orb, and their HP by 1.2x and reduces damage
+    received by 10%.  
+
+    **Boosted Ability:** Boosts ATK of Driven and Cerebral characters by 5x, their HP by 1.25x and reduces damage received by 20%.
+special:
+  name: Sand Assault
+  description: Reduces ATK DOWN and Despair duration by 6 turns and reduces
+    enemies' Increased Defense duration by 6 turns. If your Captain is a Driven
+    or Cerebral character, boosts the Color Affinity of Driven and Cerebral
+    characters by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven and Cerebral characters by 50
+  - description: Makes [DEX] orbs beneficial for Driven characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Driven characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 25
+    - rcv: 25
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80

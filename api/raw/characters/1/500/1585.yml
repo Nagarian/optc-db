@@ -1,0 +1,47 @@
+type: QCK
+name: Helmeppo - Navy HQ Sergeant
+japanName: ヘルメッポ 海軍本部軍曹
+family:
+  - Helmeppo
+class:
+  - Slasher
+  - Driven
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 124
+    atk: 77
+    rcv: 23
+  maxLvl:
+    hp: 905
+    atk: 492
+    rcv: 136
+cost: 16
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 56056
+aliases:
+  - Colo Helmeppo
+  - Coliseum Helmeppo
+evolution:
+  - id: 1586
+    evolvers:
+      - 117
+      - 79
+      - 85
+      - 96
+      - 301
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Slasher and Driven characters by 1.5x
+special:
+  name: Firey Morale
+  description: If HP is below 5,000, boosts ATK of Driven and Slasher characters
+    by 1.75x for 1 turn and recovers 10x character's RCV in HP
+  cooldown: 20
+  maxLevel: 10

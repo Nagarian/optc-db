@@ -1,0 +1,38 @@
+type: STR
+name: Germa Kingdom Clone Soldier (STR)
+japanName: ジェルマ王国複製兵・[力]
+family:
+  - GermaSoldierSTR
+class:
+  - Powerhouse
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 113
+    atk: 72
+    rcv: 12
+  maxLvl:
+    hp: 1536
+    atk: 891
+    rcv: 92
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 131810
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 1.5x and reduces damage received by 5%
+special:
+  name: Tough Body
+  description: Reduces damage received by 33% for 1 turn. Following the activation
+    of the special, if during that turn you score 5 PERFECT hits, reduces damage
+    received by 66% for 1 turn in the following turn
+  cooldown: 20
+  maxLevel: 7

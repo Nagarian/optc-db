@@ -1,0 +1,108 @@
+type: QCK
+name: Nami - Thriller Bark's Beautiful Bride
+japanName: ナミ スリラーバークの美しき花嫁
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 952
+    atk: 677
+    rcv: 105
+  maxLvl:
+    hp: 2417
+    atk: 1327
+    rcv: 355
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 191572
+aliases:
+  - Secret Nami
+  - Limited Nami
+  - Kizuna Nami
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.75x.
+special:
+  name: "Standing by her Friends: Swing Arm"
+  description: Reduces Silence duration by 5 turns, reduces enemies' Threshold
+    Damage Reduction duration by 5 turns and boosts the Color Affinity of [STR],
+    [DEX] and [QCK] characters by 1.75x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Makes [QCK] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji and Brook
+  levels:
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 2 turns on the supported character
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 15
+    - rcv: 15
+    - type: potential
+    - hp: 50
+    - atk: 20
+    - hp: 50
+    - atk: 20
+    - cooldown: 1
+    - hp: 50
+    - rcv: 20
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

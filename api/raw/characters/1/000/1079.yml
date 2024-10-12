@@ -1,0 +1,109 @@
+type: PSY
+name: Mansherry Tontatta Princess
+japanName: マンシェリー トンタッタ族王女
+family:
+  - Mansherry
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 642
+    atk: 371
+    rcv: 260
+  maxLvl:
+    hp: 1510
+    atk: 642
+    rcv: 557
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 30734
+aliases: []
+captain:
+  name: ""
+  description: Recovers 4x character's RCV in HP at the end of each turn
+special:
+  name: Chiyupopo
+  description: Recovers 50x character's RCV in HP. Removes Paralysis, Poison, RCV
+    DOWN and Blindness duration completely
+  cooldown: 24
+  maxLevel: 7
+  stages:
+    - description: Recovers 6x character's RCV in HP. Reduces Paralysis duration by 3 turns
+      cooldown: 14
+    - description: Recovers 15x character's RCV in HP. Removes Paralysis, Poison, RCV
+        DOWN and Blindness duration completely
+      cooldown: 19
+sailor:
+  - description: Reduces Paralysis duration by 1 turn on this character
+  - description: Reduces Silence duration by 2 turns on this character
+support:
+  type: descriptive
+  criteria: Characters with cost 29 or less
+  levels:
+    - Once per adventure, when you reach the final stage, recovers 500 HP at the
+      end of each turn for 3 turns
+    - Once per adventure, when you reach the final stage, recovers 700 HP at the
+      end of each turn for 3 turns
+    - Once per adventure, when you reach the final stage, recovers 1,000 HP at
+      the end of each turn for 3 turns
+    - Once per adventure, when you reach the final stage, recovers 1,200 HP at
+      the end of each turn for 3 turns
+    - Once per adventure, when you reach the final stage, recovers 1,500 HP at
+      the end of each turn for 3 turns
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - cooldown: 1
+    - atk: 30
+    - type: sailor
+    - hp: 55
+    - cooldown: 1
+    - atk: 45
+    - type: sailor
+    - hp: 65
+    - slot: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

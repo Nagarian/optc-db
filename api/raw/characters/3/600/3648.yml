@@ -1,0 +1,223 @@
+type: INT
+name: Magellan & Hannyabal - Warden and Under Warden of Impel Down
+family:
+  - Hannyabal
+  - Magellan
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1145
+    atk: 811
+    rcv: 101
+  maxLvl:
+    hp: 2996
+    atk: 1461
+    rcv: 234
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+aliases:
+  - Kizuna
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Driven characters by 3.75x, boosts HP of
+    Striker and Driven characters by 1.2x and makes [QCK] and [INT] orbs
+    beneficial for Striker and Driven characters.
+special:
+  name: Ironclad Coordination
+  description: Reduces enemies' Increased Defense duration by 5 turns, reduces
+    enemies' Barrier duration by 1 turn and inflicts Toxic to all enemies. If
+    your Captain is a Striker or Driven character, reduces ATK DOWN duration by
+    5 turns and boosts ATK against enemies inflicted with Toxic by 2.25x for 1
+    turn.
+  cooldown: 14
+  maxLevel: 1
+  notes: Toxic starts at 25x character's ATK and increases by 3x at the end of
+    every turn until 2,000,000 damage per turn.
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Driven characters by 50
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 7
+    - value: 8
+    - value: 9
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - rcv: 25
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1.5
+          threshold: 30
+rumble:
+  stats:
+    def: 198
+    rumbleType: DBF
+    spd: 133
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Damage Over Time
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - ATK
+            - SPD
+          duration: 4
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - duration: 4
+          effect: damage
+          level: 2
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: time
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 5
+        - override:
+            duration: 5
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 6
+        - override:
+            duration: 6
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 7
+        - override:
+            duration: 7
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 8
+        - override:
+            duration: 8
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            duration: 9
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 10
+        - override:
+            duration: 10
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            level: 6
+            duration: 13
+        - override:
+            duration: 13

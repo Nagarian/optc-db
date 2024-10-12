@@ -1,0 +1,33 @@
+type: INT
+name: General Zombie
+japanName: 将軍ゾンビ
+family:
+  - GeneralZombie
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 920
+    atk: 352
+    rcv: 0
+  maxLvl:
+    hp: 2610
+    atk: 605
+    rcv: 0
+cost: 12
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 8885
+aliases: []
+special:
+  name: Skills of the Ancient Warriors
+  description: Reduces crew's current HP to 1, deals 1,000 Fixed damage to all
+    enemies, boosts ATK of all characters by 1.2x for 1 turn
+  cooldown: 30
+  maxLevel: 16

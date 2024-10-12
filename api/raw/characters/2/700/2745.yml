@@ -1,0 +1,119 @@
+type: PSY
+name: "Reiju: Bride of Halloween Night - Happy Halloween!"
+japanName: レイジュ　ブライド・オブ・ハロウィンナイト Happy Halloween
+family:
+  - VinsmokeReiju
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 921
+    atk: 891
+    rcv: 88
+  maxLvl:
+    hp: 2749
+    atk: 1262
+    rcv: 321
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 174231
+aliases:
+  - Halloween Reiju
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Cerebral characters by 2.25x, by 3x
+    instead if they have a beneficial orb, and boosts HP of Shooter and Cerebral
+    characters by 1.2x.
+special:
+  name: Trick or Wedding
+  description: Removes Poison duration completely and reduces Paralysis and Burn
+    duration by 3 turns. If your Captain is a Shooter or Cerebral character,
+    changes all orbs of Shooter and Cerebral characters into Matching orbs and
+    boosts chances of getting Matching orbs for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of Shooter and Cerebral characters by 30
+  - description: If your Captain is a Shooter or Cerebral character, makes [QCK]
+      orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Shooter characters
+  levels:
+    - Once per adventure, when the supported character uses an Orb Controlling
+      or Orb Manipulation special, boosts chances of getting Matching orbs for 1
+      turn.
+    - Once per adventure, when the supported character uses an Orb Controlling
+      or Orb Manipulation special, boosts chances of getting Matching orbs for 1
+      turn.
+    - Once per adventure, when the supported character uses an Orb Controlling
+      or Orb Manipulation special, boosts chances of getting Matching orbs for 1
+      turn.
+    - Once per adventure, when the supported character uses an Orb Controlling
+      or Orb Manipulation special, boosts chances of getting Matching orbs for 1
+      turn.
+    - Once per adventure, when the supported character uses an Orb Controlling
+      or Orb Manipulation special, boosts chances of getting Matching orbs for 2
+      turns.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 50
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - rcv: 25
+    - hp: 50
+    - atk: 20
+    - atk: 40
+    - cooldown: 1
+    - hp: 100
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

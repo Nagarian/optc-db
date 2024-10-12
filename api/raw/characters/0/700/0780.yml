@@ -1,0 +1,52 @@
+type: STR
+name: Urouge - Fallen Monk Pirate Captain
+japanName: ウルージ 破戒僧海賊団船長
+family:
+  - Urouge
+class:
+  - Fighter
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 702
+    atk: 340
+    rcv: 38
+  maxLvl:
+    hp: 1580
+    atk: 790
+    rcv: 121
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 17476
+aliases:
+  - Supernova Urouge
+  - Colo Urouge
+  - Coliseum Urouge
+evolution:
+  - id: 781
+    evolvers:
+      - 118
+      - 84
+      - 94
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x if HP is below 30% at the start
+    of the turn
+special:
+  name: Precept Deification
+  description: Boosts ATK of this character by 1.5x-2x for 1 turn, depending on
+    the crew's current HP
+  cooldown: 19
+  maxLevel: 13
+  notes: "The exact multiplier used is chosen based on the crew's current HP at
+    the time the special is activated: above 50% HP, the multiplier used is
+    1.5x; between 20% HP and 50% HP, it's 1.75x; below 20% HP, it's 2x."

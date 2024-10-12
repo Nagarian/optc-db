@@ -1,0 +1,50 @@
+type: QCK
+name: Big Eater Jewelry Bonney - Supernova
+japanName: “大喰らい”ジュエリー・ボニー 超新星
+family:
+  - JewelryBonney
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 818
+    atk: 415
+    rcv: 156
+  maxLvl:
+    hp: 2295
+    atk: 734
+    rcv: 329
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 93421
+aliases:
+  - FN Bonney
+captain:
+  name: ""
+  description: Boosts RCV of Fighter characters by 1.2x and boosts ATK of Fighter
+    characters by 2x, by 2.25x instead if HP is above ?% at the start of the
+    turn
+special:
+  name: Gluttonous Meal
+  description: Changes [RCV] orbs into Matching orbs and recovers 15x character's
+    RCV in HP at the end of the turn for 2 turns
+  cooldown: 21
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 8

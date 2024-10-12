@@ -1,0 +1,91 @@
+type: INT
+name: Nico Robin
+japanName: ニコ・ロビン
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 736
+    atk: 430
+    rcv: 214
+  maxLvl:
+    hp: 1865
+    atk: 1055
+    rcv: 338
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 3058
+aliases: []
+captain:
+  name: ""
+  description: Boosts RCV of [INT] characters by 2x
+special:
+  name: Cien Fleur
+  description: Boosts ATK of [INT] characters by 2x for 1 turn
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 250
+support:
+  type: descriptive
+  criteria: "[INT] characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [INT] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [INT] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [INT] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [INT] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [INT] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 40
+    - atk: 25
+    - hp: 60
+    - type: sailor
+    - atk: 35
+    - slot: 1
+    - hp: 100
+    - atk: 70
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

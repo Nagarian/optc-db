@@ -1,0 +1,262 @@
+type: PSY
+name: "Usopp - Straw Hat Pirates: Mark of Adventure"
+japanName: ウソップ 麦わらの一味・冒険の軌跡
+family:
+  - Usopp
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 147
+    atk: 72
+    rcv: 34
+  maxLvl:
+    hp: 1326
+    atk: 576
+    rcv: 137
+cost: 9
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 199793
+aliases:
+  - Super Usopp
+evolution:
+  - id: 2942
+    evolvers:
+      - 303
+      - 117
+      - 81
+      - 2662
+      - 92
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.75x and their RCV by 1.1x.
+special:
+  name: "Black Kabuto: Gunpowder Star"
+  description: Delays all enemies by 2 turns, reduces Silence duration by 2 turns
+    and locks all orbs for 2 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 2 turns on this character
+rumble:
+  stats:
+    def: 126
+    rumbleType: DBF
+    spd: 124
+    cost: 20
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 5
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 6
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 8
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 9
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 10
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 12
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 13
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 15
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies

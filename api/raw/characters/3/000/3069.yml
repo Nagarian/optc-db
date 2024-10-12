@@ -1,0 +1,108 @@
+type: STR
+name: Capone "Gang" Bege - Assassination Plot at the Tea Party
+japanName: カポネ・“ギャング”ベッジ お茶会での暗殺計画
+family:
+  - CaponeBege
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1353
+    atk: 837
+    rcv: 70
+  maxLvl:
+    hp: 3006
+    atk: 1395
+    rcv: 234
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 225030
+aliases:
+  - WCI Capone
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2.5x and reduces damage
+    taken by 10%.
+special:
+  name: Manner-Questioning Bullet
+  description: Reduces Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 7 turns, reduces any damage received above 3,000 HP by 97% for 2
+    turns and recovers 30% of crew's MAX HP.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Cannot be Blown Away
+  - description: Boosts base HP of [STR] and [PSY] characters by 50
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Charlotte Chiffon, Vito and Gotti
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - atk: 30
+    - rcv: 20
+    - hp: 100
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

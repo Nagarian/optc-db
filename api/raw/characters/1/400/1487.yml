@@ -1,0 +1,88 @@
+type: DEX
+name: Destruction Cannon Ideo - XXX-Rank Boxer
+japanName: 破壊砲　イデオ ＸＸＸ級ボクサー
+family:
+  - Ideo
+class:
+  - Shooter
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1087
+    atk: 640
+    rcv: 119
+  maxLvl:
+    hp: 2099
+    atk: 1399
+    rcv: 302
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 52180
+aliases:
+  - Colo Ideo
+  - Coliseum Ideo
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Fighter characters by 3x if they have a
+    beneficial orb.
+special:
+  name: "Destruction Cannon: Hidden Bullet"
+  description: Increases damage received by 2x for 2 turns, deals 15x character's
+    ATK in [DEX] damage to one enemy, boosts Orb Effects of Fighter characters
+    by 2x for 1 turn
+  cooldown: 28
+  maxLevel: 16
+sailor:
+  - description: Makes [DEX] orbs beneficial for Fighter characters
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Blue Gilly, Abdullah, Jeet and Cavendish
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - rcv: 20
+    - type: potential
+    - hp: 40
+    - rcv: 30
+    - hp: 40
+    - slot: 1
+    - atk: 40
+    - type: sailor
+    - hp: 80
+    - atk: 50
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

@@ -1,0 +1,287 @@
+type: DEX
+name: Sasaki - Tobi Roppo Assembled
+japanName: ササキ 集結する“飛び六胞”
+family:
+  - Sasaki
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1859
+    atk: 709
+    rcv: 54
+  maxLvl:
+    hp: 3718
+    atk: 1417
+    rcv: 108
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 293290
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Driven characters by 3x and boosts HP
+    of [DEX] characters by 1.4x.
+special:
+  name: Executive's Conjecture
+  description: Reduces enemies' Threshold Damage Reduction and Resilience duration
+    by 5 turns, changes orbs of adjacent characters into Matching orbs and
+    boosts Orb Effects of Powerhouse and Driven characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Powerhouse and Driven characters by 50
+  - description: Makes [DEX] orbs beneficial for Driven and Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Driven characters
+  levels:
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 10
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - hp: 30
+    - slot: 1
+    - atk: 30
+    - atk: 40
+    - hp: 50
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 191
+    rumbleType: SPT
+    spd: 117
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - HP
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.2
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 1
+            duration: 9
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 1
+            duration: 10
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 5
+            duration: 15

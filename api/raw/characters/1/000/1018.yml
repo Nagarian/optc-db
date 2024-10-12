@@ -1,0 +1,93 @@
+type: PSY
+name: Brownbeard - Alligator Centaur
+japanName: 茶ひげ ワニのケンタウロス
+family:
+  - Brownbeard
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1127
+    atk: 444
+    rcv: 90
+  maxLvl:
+    hp: 2500
+    atk: 1000
+    rcv: 220
+cost: 30
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 27622
+aliases:
+  - Colo Brownbeard
+  - Coliseum Brownbeard
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x and their HP by 2x
+special:
+  name: Ravaging Cutlass Dance
+  description: Changes the orb of this character into a [PSY] orb. Deals 1x-75x
+    character's ATK in [PSY] damage, depending on the crew's current HP, to one
+    enemy. Boosts ATK of Slasher characters by 1.5x for 1 turn
+  cooldown: 26
+  maxLevel: 11
+  notes: "`specialProportional : lower : 75 * ( 1 - (remaining HP) / (total HP) )`"
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 30
+  - description: If this character has a [PSY] orb and you hit a PERFECT with him,
+      keep his [PSY] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Caesar Clown (Gastino)
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - atk: 30
+    - cooldown: 1
+    - hp: 40
+    - type: potential
+    - rcv: 30
+    - cooldown: 1
+    - rcv: 40
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - hp: 90
+    - cooldown: 1
+    - atk: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

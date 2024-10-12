@@ -1,0 +1,51 @@
+type: QCK
+name: Bobbin
+japanName: ボビン
+family:
+  - Bobbin
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 187
+    atk: 134
+    rcv: 41
+  maxLvl:
+    hp: 1312
+    atk: 739
+    rcv: 154
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 107234
+aliases:
+  - ""
+evolution:
+  - id: 2119
+    evolvers:
+      - 118
+      - 79
+      - 85
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 2x
+special:
+  name: Death-Inducing Lullaby
+  description: Reduces enemies' Threshold Damage Reduction, Percent Damage
+    Reduction, Increased Defense and End of Turn Heal duration by 5 turns,
+    crew's ATK DOWN duration by 5 turns and changes orbs of adjacent characters
+    into Matching Orbs.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of this character by 350 if this character is the
+      last in the chain to attack

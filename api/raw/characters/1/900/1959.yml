@@ -1,0 +1,103 @@
+type: DEX
+name: Shirahoshi - You're My Valentine
+japanName: しらほし You’re My Valentine
+family:
+  - Shirahoshi
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1024
+    atk: 422
+    rcv: 162
+  maxLvl:
+    hp: 2108
+    atk: 1154
+    rcv: 409
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 87126
+aliases:
+  - Valentines Shirahoshi
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x and reduces damage received by 15%.
+special:
+  name: An Important Confession from the Mermaid Princess
+  description: Reduces Paralysis, Silence and ATK DOWN duration by 5 turns,
+    recovers 7,000 HP at the end of the turn for 3 turns and changes all orbs of
+    top row characters into Matching orbs
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+support:
+  type: descriptive
+  criteria: Neptune and Fukaboshi
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Paralysis,
+      reduces ATK DOWN and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Paralysis,
+      reduces ATK DOWN and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Paralysis,
+      reduces ATK DOWN and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Paralysis,
+      reduces ATK DOWN and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Paralysis,
+      reduces ATK DOWN and Paralysis duration by 2 turns.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - hp: 20
+    - hp: 40
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - slot: 1
+    - rcv: 30
+    - hp: 80
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

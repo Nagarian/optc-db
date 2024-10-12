@@ -1,0 +1,37 @@
+type: DEX
+name: Fighter Group Crew - Green Pirates
+japanName: 格闘隊 隊員 グリーンパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 212
+    atk: 100
+    rcv: 9
+  maxLvl:
+    hp: 717
+    atk: 417
+    rcv: 31
+cost: 6
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 2784
+aliases: []
+evolution:
+  - id: 271
+    evolvers:
+      - 115
+      - 116
+      - 91
+special:
+  name: "[STR] Slot Change [DEX]"
+  description: Changes [STR] orbs into [DEX] orbs
+  cooldown: 15
+  maxLevel: 9

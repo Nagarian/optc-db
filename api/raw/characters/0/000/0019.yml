@@ -1,0 +1,43 @@
+type: QCK
+name: Chef Sanji - Hot Rock Stew
+frenchName: Chef Sanji Ragoût bouillonnant
+japanName: 料理人サンジ 焼き石シチュー
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 494
+    atk: 191
+    rcv: 54
+  maxLvl:
+    hp: 986
+    atk: 500
+    rcv: 209
+cost: 9
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 2018
+aliases: []
+evolution:
+  - id: 20
+    evolvers:
+      - 117
+      - 79
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 1.5x
+special:
+  name: Hot Rock Stew
+  description: Recovers 10x character's RCV in HP
+  cooldown: 23
+  maxLevel: 9

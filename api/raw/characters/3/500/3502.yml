@@ -1,0 +1,99 @@
+type: STR
+name: Kin'emon - With His Liege
+japanName: 錦えもん 主君と共に
+family:
+  - Kinemon
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1564
+    atk: 779
+    rcv: 84
+  maxLvl:
+    hp: 3129
+    atk: 1558
+    rcv: 168
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 311500
+aliases:
+  - Secret Limited TM Kinemon
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x.
+special:
+  name: Strong Flash
+  description: Deals 75x character's ATK in [STR] True damage to all enemies,
+    reduces Chain Multiplier Limit duration by 6 turns and boosts ATK of Slasher
+    and Cerebral characters by 2.25x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Cerebral characters by 30
+  - description: Changes all orbs into [STR] orbs at the start of the fight.
+support:
+  type: descriptive
+  criteria: Denjiro and Kozuki Oden
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier
+      Limit, reduces Chain Multiplier Limit duration by 1 turn and boosts ATK of
+      Slasher and Cerebral characters by 1.1x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier
+      Limit, reduces Chain Multiplier Limit duration by 1 turn and boosts ATK of
+      Slasher and Cerebral characters by 1.1x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier
+      Limit, reduces Chain Multiplier Limit duration by 1 turn and boosts ATK of
+      Slasher and Cerebral characters by 1.1x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier
+      Limit, reduces Chain Multiplier Limit duration by 1 turn and boosts ATK of
+      Slasher and Cerebral characters by 1.2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier
+      Limit, reduces Chain Multiplier Limit duration by 1 turn and boosts ATK of
+      Slasher and Cerebral characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - hp: 30
+    - slot: 1
+    - atk: 40
+    - hp: 50
+    - atk: 50
+    - type: sailor
+    - rcv: 30
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 50
+        - value: 5
+          threshold: 70
+        - value: 7
+          threshold: 80

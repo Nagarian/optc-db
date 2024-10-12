@@ -1,0 +1,118 @@
+type: INT
+name: Swift-Saber Haruta
+japanName: 疾風の小剣士ハルタ
+family:
+  - Haruta
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 833
+    atk: 490
+    rcv: 123
+  maxLvl:
+    hp: 2025
+    atk: 1309
+    rcv: 372
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 35306
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 1.75x. Gives
+    chance of duplicating a drop upon completion of the island.
+  notes: Does not work if he was not your captain upon starting the island. Stacks
+    with other additional drop captains, giving you two chances of getting an
+    extra drop.
+special:
+  name: Extreme Speed - One Sword Style, Ten Slashes
+  description: Deals 15x character's ATK in [INT] damage to all enemies. Changes
+    the orb of this character into an [INT] orb. Reduces Special Cooldown of
+    Slasher and Cerebral characters by 1 turn
+  cooldown: 17
+  maxLevel: 6
+  stages:
+    - description: Deals 4x character's ATK in [INT] damage to all enemies. Changes
+        the orb of this character into an [INT] orb.
+      cooldown: 8
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: If this character has an [INT] orb and you hit a PERFECT with him,
+      keep his [INT] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Cerebral characters
+  levels:
+    - value: 2
+    - value: 2
+    - value: 3
+    - value: 3
+    - value: 4
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 20
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 60
+    - hp: 80
+    - rcv: 30
+    - atk: 20
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - slot: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - captain:
+        description: Boosts ATK of Slasher and Cerebral characters by 3x. Gives chance
+          of duplicating a drop upon completion of the island.
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - {}
+        - {}
+        - {}
+        - {}
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

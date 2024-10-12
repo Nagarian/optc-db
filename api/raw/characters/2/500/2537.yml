@@ -1,0 +1,245 @@
+type: DUAL
+name: Lucci & Kaku - Users of Unimaginable Techniques
+japanName: ルッチ＆カク 人界を超える技の使い手達
+family:
+  - RobLucci
+  - Kaku
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 519
+    atk: 272
+    rcv: 54
+  maxLvl:
+    hp: 1298
+    atk: 680
+    rcv: 136
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 150047
+aliases:
+  - Lucci&Kaku
+  - Kaku&Lucci
+  - LucciKaku
+  - KakuLucci
+  - Lucci and Kaku
+evolution:
+  - id: 2538
+    evolvers:
+      - 84
+      - 86
+      - 266
+      - 300
+      - 302
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x, by 3x instead if they
+    have a beneficial orb, and boosts damage of Powerhouse Typed specials by
+    1.5x.
+special:
+  name: Tempest Kick - Twin Beasts
+  description: Deals 50x character's ATK in character's Type damage to all enemies
+    and becomes Lucci & Kaku for 2 turns. If your Captain is a Powerhouse,
+    Fighter or Slasher character, boosts ATK of Powerhouse, Fighter and Slasher
+    characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of Powerhouse, Fighter and Slasher characters by 50
+characters:
+  swap:
+    description: Makes [TND] orbs beneficial for Powerhouse, Fighter or Slasher
+      characters for 1 turn and adds 0.3x to Chain multiplier for 1 turn.
+  character1:
+    name: Lucci - Users of Unimaginable Techniques
+    japanName: ルッチ 人界を超える技の使い手達
+    class:
+      - Powerhouse
+      - Fighter
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 498
+        atk: 264
+        rcv: 36
+      maxLvl:
+        hp: 1244
+        atk: 660
+        rcv: 90
+    captain:
+      name: ""
+      description: Boosts ATK of Powerhouse characters by 2.25x, by 2.75x instead if
+        they have a beneficial orb. Reduces RCV of all characters by 50%.
+    sailor:
+      - description: Boosts base ATK and HP of Powerhouse and Fighter characters by 30
+  character2:
+    name: Kaku - Users of Unimaginable Techniques
+    japanName: カク 人界を超える技の使い手達
+    class:
+      - Powerhouse
+      - Slasher
+    type: DEX
+    stats:
+      combo: 5
+      minLvl:
+        hp: 485
+        atk: 256
+        rcv: 51
+      maxLvl:
+        hp: 1212
+        atk: 641
+        rcv: 127
+    captain:
+      name: ""
+      description: Boosts ATK of Powerhouse characters by 2.25x and boosts damage of
+        Powerhouse Typed specials by 1.2x.
+    sailor:
+      - description: Boosts base ATK and HP of Powerhouse and Slasher characters by 30
+rumble:
+  stats:
+    def: 214
+    rumbleType: SPT
+    spd: 155
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+              - Powerhouse
+        - attributes:
+            - HP
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 42
+      effects:
+        - amount: 0.4
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+              - Powerhouse
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.42
+        - override:
+            duration: 12
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            duration: 14
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.45
+        - override:
+            level: 5
+            duration: 16
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.47
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            level: 5
+            duration: 20
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 6
+            duration: 22
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.52
+        - override:
+            level: 6
+            duration: 24
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 7
+            duration: 26
+    - cooldown: 42
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            level: 8
+            duration: 28

@@ -1,0 +1,250 @@
+type: STR
+name: Akainu - Three Admirals Defending Marineford
+family:
+  - Sakazuki
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1636
+    atk: 733
+    rcv: 108
+  maxLvl:
+    hp: 3272
+    atk: 1466
+    rcv: 216
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts HP of all characters by 1.5x and makes [STR] and [TND] orbs
+    beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and
+    [INT] character in your crew, boosts ATK of all characters by 4x. If this
+    character becomes your captain in the middle of an island, further boosts
+    ATK of all characters by 1.35x and reduces damage received by 10%.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Sengoku, Kuzan (Aokiji), Borsalino (Kizaru), Issho (Fujitora) and Monkey D.
+    Garp, excluding Support members."
+  description: Boosts Color Affinity of this character by 2.5x for 1 turn,
+    optionally removes Captain Swap duration completely and transforms all [STR]
+    characters into Super [STR] characters.
+special:
+  name: Boiling Fist Strike
+  description: Reduces Bind duration by 5 turns, reduces enemies' Increased
+    Defense duration by 5 turns and boosts ATK against enemies inflicted with
+    Burn by 1.75x for 1 turn. If this character is a Sailor, optionally swaps
+    this unit with your captain for 1 turn. If there is a [STR], [DEX], [QCK],
+    [PSY] and [INT] character in your crew, inflicts all enemies with Burn that
+    will deal 100x enemies' ATK in damage for 1 turn that will ignore debuff
+    protection after each turn you take damage, inflicts all enemies with Burn
+    that will deal 100x enemies' ATK in damage for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, makes [STR] orbs beneficial for all characters.
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, if this character has a [TND] orb and you attack with this
+      character, reduces enemies' [STR], [QCK], [PSY] and [INT] Resistance by
+      -10% for 1 turn.
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Sengoku, Kuzan (Aokiji), Borsalino (Kizaru) and Issho (Fujitora)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - description: and when the supported character hits a PERFECT, reduces enemies'
+        Increased Defense duration by 1 turn.
+      value: 7
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 20
+    - type: potential
+    - rcv: 50
+    - type: sailor
+    - atk: 20
+    - slot: 1
+    - hp: 50
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: When your crew has ATK UP and Orb Amplification
+    levels:
+      - description: Boosts own base ATK by 200 for 1 turn.
+      - description: Boosts own base ATK by 350 for 1 turn.
+      - description: Boosts own base ATK by 500 for 1 turn.
+      - description: Boosts own base ATK by 650 for 1 turn.
+      - description: Boosts own base ATK by 800 for 1 turn.
+rumble:
+  stats:
+    def: 135
+    rumbleType: ATK
+    spd: 160
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 10
+          effect: damage
+          repeat: 2
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: cut
+        - amount: 0.5
+          effect: damage
+          repeat: 2
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 12
+        - override:
+            amount: 0.57
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 14
+        - override:
+            amount: 0.64
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 16
+        - override:
+            amount: 0.71
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 18
+        - override:
+            amount: 0.78
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 20
+        - override:
+            amount: 0.85
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 22
+        - override:
+            amount: 0.92
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 24
+        - override:
+            amount: 0.99
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 26
+        - override:
+            amount: 1.06
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 30
+        - override:
+            amount: 1.2

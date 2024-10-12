@@ -1,0 +1,94 @@
+type: QCK
+name: Onigumo - Justice Confronting Evil
+japanName: オニグモ “悪”を迎え撃つ“正義”
+family:
+  - Onigumo
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1076
+    atk: 547
+    rcv: 118
+  maxLvl:
+    hp: 2690
+    atk: 1367
+    rcv: 296
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 260422
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x.
+special:
+  name: Eight Sword Style Slash
+  description: Deals 12 hits of random Typeless damage to random enemies, reduces
+    Despair duration by 5 turns and removes Blindness duration completely.
+  cooldown: 8
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 30
+  - description: If this character has an [QCK] orb and you hit a PERFECT with him,
+      keep his [QCK] orb for the next turn
+support:
+  type: descriptive
+  criteria: Sakazuki (Akainu), Kuzan (Aokiji), Borsalino (Kizaru)
+  levels:
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - hp: 10
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - rcv: 30
+    - slot: 1
+    - hp: 30
+    - atk: 30
+    - rcv: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

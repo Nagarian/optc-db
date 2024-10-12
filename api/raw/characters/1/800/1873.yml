@@ -1,0 +1,112 @@
+type: STR
+name: Kyros - Hero of the Former Dressrosa Royal Family
+japanName: キュロス ドレスローザ旧王家の英雄
+family:
+  - Kyros
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1021
+    atk: 647
+    rcv: 118
+  maxLvl:
+    hp: 2096
+    atk: 1496
+    rcv: 301
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 80511
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Striker characters by 2.5x and their HP by 1.25x
+special:
+  name: The Forefront Reclaiming His Country
+  description: Deals 30x character's ATK in [STR] damage to one enemy, reduces
+    Bind and Despair duration by 2 turns and boosts ATK of Slasher characters by
+    1.75x for 3 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Adds 2x character's ATK as Additional Damage
+  - description: Boosts base ATK and HP of Slasher characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Rebecca
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 25
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - atk: 30
+    - hp: 50
+    - cooldown: 1
+    - hp: 65
+    - atk: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - hp: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 5
+        - value: 7
+        - value: 100

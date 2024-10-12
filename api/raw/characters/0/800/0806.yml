@@ -1,0 +1,89 @@
+type: INT
+name: Smoker the White Hunter - Navy HQ Captain
+japanName: 白猟のスモーカー 海軍本部大佐
+family:
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1549
+    atk: 640
+    rcv: 112
+  maxLvl:
+    hp: 2727
+    atk: 1289
+    rcv: 234
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 18811
+aliases:
+  - Colo Smoker
+  - Coliseum Smoker
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x, reduces damage received by
+    0%-30% depending on the crew's current HP
+special:
+  name: White Vine
+  description: Reduces crew's current HP by 20%, deals 10x the amount of HP
+    subtracted in [INT] damage to one enemy, boosts Orb Effects of all
+    characters by 1.75x for 1 turn
+  cooldown: 27
+  maxLevel: 13
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 100
+  - description: Makes [INT] orbs beneficial for Striker and Driven characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Tashigi and Hina
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - type: sailor
+    - rcv: 30
+    - cooldown: 4
+    - atk: 50
+    - type: sailor
+    - slot: 1
+    - hp: 130
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

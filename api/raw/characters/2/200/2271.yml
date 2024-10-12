@@ -1,0 +1,101 @@
+type: STR
+name: Wadatsumi, the Giant Monk - Sea Spirit
+japanName: 大入道ワダツミ 海坊主
+family:
+  - Wadatsumi
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1182
+    atk: 872
+    rcv: 18
+  maxLvl:
+    hp: 3221
+    atk: 1435
+    rcv: 62
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 121106
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.75x, reduces crew's RCV to 0
+special:
+  name: Mega Monk
+  description: Changes all orbs, including [BLOCK] orbs, of left column characters
+    into Matching orbs and adds 0.7x to Chain multiplier for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Cannot be Blown Away
+  - description: Makes [INT] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Hody Jones and Vander Decken IX
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 15
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - hp: 30
+    - type: potential
+    - hp: 50
+    - hp: 70
+    - slot: 1
+    - hp: 100
+    - atk: 20
+    - type: sailor
+    - atk: 25
+    - atk: 30
+    - cooldown: 1
+    - atk: 45
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - rcv: 50
+    - atk: 100
+    - hp: 150
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

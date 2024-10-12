@@ -1,0 +1,83 @@
+type: PSY
+name: Marco the Phoenix
+japanName: 不死鳥マルコ
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 951
+    atk: 618
+    rcv: 180
+  maxLvl:
+    hp: 2258
+    atk: 1100
+    rcv: 390
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 4707
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 3x if HP is above 99% at the
+    start of the turn
+special:
+  name: Blue Flame Rebirth
+  description: Recovers all missing HP
+  cooldown: 30
+  maxLevel: 11
+sailor:
+  - description: Reduces Paralysis duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Vista and Jozu
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 5
+    - hp: 50
+    - type: potential
+    - atk: 40
+    - rcv: 10
+    - hp: 60
+    - rcv: 15
+    - cooldown: 1
+    - hp: 80
+    - slot: 1
+    - atk: 50
+    - atk: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

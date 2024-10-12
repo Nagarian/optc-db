@@ -1,0 +1,49 @@
+type: QCK
+name: Killer
+japanName: キラー
+family:
+  - Killer
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 180
+    atk: 250
+    rcv: 0
+  maxLvl:
+    hp: 1228
+    atk: 895
+    rcv: -50
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 5979
+aliases:
+  - Supernova Killer
+evolution:
+  - id: 312
+    evolvers:
+      - 118
+      - 79
+      - 83
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3.5x after scoring 3 hits below Good in a row
+special:
+  name: Massacre Soldier
+  description: Deals 100x character's ATK in Fixed damage to one enemy, reduces
+    crew's current HP to 1
+  cooldown: 35
+  maxLevel: 11
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base ATK of
+      Cerebral characters by 50

@@ -1,0 +1,55 @@
+type: STR
+name: Dice
+japanName: ダイス
+family:
+  - Dice
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 84
+    atk: 58
+    rcv: -500
+  maxLvl:
+    hp: 1624
+    atk: 484
+    rcv: -500
+cost: 12
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 35202
+aliases: []
+evolution:
+  - id: 1169
+    evolvers:
+      - 117
+      - 84
+      - 95
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x if HP is below 30% at the
+    start of the turn
+special:
+  name: Trump Card Dealer
+  description: Boosts ATK of [STR] characters by 1.1x-1.75x for 1 turn depending
+    on the crew's current HP
+  cooldown: 24
+  maxLevel: 7
+  notes: >-
+    The exact multiplier used is chosen based on the crew's current HP at the
+    time the special is activated  
+
+    HP > 50%: 1.1x  
+
+    50% > HP > 30%: 1.25x  
+
+    30% > HP > 10%: 1.5x  
+
+    HP < 10%: 1.75x

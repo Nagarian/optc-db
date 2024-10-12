@@ -1,0 +1,176 @@
+type: STR
+oldDbId: 1923
+name: Silvers Rayleigh - First Mate of the Roger Pirates
+japanName: シルバーズ・レイリー ロジャー海賊団副船長
+family:
+  - SilversRayleigh
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 224
+    atk: 151
+    rcv: 40
+  maxLvl:
+    hp: 1258
+    atk: 714
+    rcv: 194
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 85582
+aliases:
+  - Global Rayleigh
+  - Raidleigh
+evolution:
+  - id: 5010
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2x
+special:
+  name: Maelstrom at Sea
+  description: Randomizes all non-Matching orbs, boosts ATK of all characters by
+    1.75x for 1 turn
+  cooldown: 30
+  maxLevel: 15
+rumble:
+  stats:
+    def: 158
+    rumbleType: SPT
+    spd: 154
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          level: 2
+          effect: buff
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          duration: 15
+          targeting:
+            targets:
+              - crew
+        - amount: 10
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 16
+        - {}
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            amount: 11
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            amount: 12
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            amount: 13
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 13
+    - cooldown: 25
+      effects:
+        - override:
+            level: 6
+            duration: 21
+        - override:
+            amount: 14
+    - cooldown: 25
+      effects:
+        - override:
+            level: 6
+            duration: 22
+        - override:
+            amount: 15
+    - cooldown: 25
+      effects:
+        - override:
+            level: 7
+            duration: 23
+        - override:
+            amount: 16
+    - cooldown: 25
+      effects:
+        - override:
+            level: 8
+            duration: 24
+        - override:
+            amount: 18

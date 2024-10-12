@@ -1,0 +1,283 @@
+type: PSY
+name: Tony Tony Chopper - Ship Doctor Entering Battle
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1665
+    atk: 739
+    rcv: 127
+  maxLvl:
+    hp: 3024
+    atk: 1468
+    rcv: 254
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+aliases:
+  - RED TM Treasure Map
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x and boosts HP of all characters by 1.1x.
+special:
+  name: Spinning Kick Scale Stomp
+  description: Deals 80x character's ATK in [PSY] damage to one enemy, reduces
+    Burn and Silence duration by 7 turns, reduces enemies' [PSY] Resistance by
+    -30% for 1 turn and recovers all missing HP.
+  cooldown: 42
+  maxLevel: 1
+  stages:
+    - description: Deals 30x character's ATK in [PSY] damage to one enemy, reduces
+        Burn and Silence duration by 4 turns and reduces enemies' [PSY]
+        Resistance by -15% for 1 turn. If HP is below 50% at the time the
+        special is activated, recovers missing HP to 51% MAX HP.
+      cooldown: 31
+    - description: Deals 50x character's ATK in [PSY] damage to one enemy, reduces
+        Burn and Silence duration by 5 turns and reduces enemies' [PSY]
+        Resistance by -20% for 1 turn. If HP is below 50% at the time the
+        special is activated, recovers missing HP to 75% MAX HP.
+      cooldown: 35
+sailor:
+  - description: Reduces Silence duration by 10 turns on this character
+  - description: Boosts base HP and RCV of all characters by 80
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: "[PSY] Fighter characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 5
+    - atk: 25
+    - rcv: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of all characters by 2.5x and boosts HP of all
+          characters by 1.1x.
+    - type: sailor
+    - atk: 25
+    - rcv: 15
+    - hp: 20
+    - captain:
+        description: Boosts ATK of all characters by 2.75x and boosts HP of all
+          characters by 1.1x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 25
+    - hp: 20
+    - rcv: 25
+    - captain:
+        description: Boosts ATK of all characters by 3x and boosts HP of all characters
+          by 1.2x.
+    - cooldown: 2
+    - hp: 40
+    - rcv: 40
+    - hp: 40
+    - cooldown: 3
+    - slot: 1
+    - hp: 50
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of all characters by 3.25x and boosts HP of all
+          characters by 1.2x.
+    - hp: 60
+    - atk: 30
+    - type: sailor
+    - atk: 40
+    - hp: 70
+    - hp: 100
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of all characters by 3.5x and boosts HP of all
+          characters by 1.2x.
+    - atk: 50
+    - cooldown: 7
+    - captain:
+        description: Boosts ATK of all characters by 3.5x, boosts HP of all characters
+          by 1.2x and reduces Burn duration by 2 turns.
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 127
+    rumbleType: RCV
+    spd: 144
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - amount: 1.5
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 35
+      effects:
+        - override:
+            duration: 12
+        - override:
+            amount: 1.6
+    - cooldown: 35
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            amount: 1.7
+    - cooldown: 35
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 1.8
+    - cooldown: 35
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            amount: 1.9
+    - cooldown: 35
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 2
+    - cooldown: 35
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            amount: 2.1
+    - cooldown: 35
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            amount: 2.2
+    - cooldown: 35
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            amount: 2.3
+    - cooldown: 35
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 2.4

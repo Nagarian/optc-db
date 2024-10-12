@@ -1,0 +1,94 @@
+type: PSY
+name: Tony Tony Chopper - Heavy Gong
+japanName: トニートニー・チョッパー ヘビーゴング
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 699
+    atk: 490
+    rcv: 90
+  maxLvl:
+    hp: 2336
+    atk: 1236
+    rcv: 346
+cost: 30
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 2021
+aliases:
+  - Mega Chopper
+  - Super Chopper
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x.
+special:
+  name: "Weight Gain: Heavy Gong"
+  description: Deals 10x-60x character's ATK in [PSY] damage, depending on the
+    crew's current HP, to one enemy. Changes [BLOCK] orbs of Fighter characters
+    into Matching orbs.
+  cooldown: 20
+  maxLevel: 9
+  notes: The exact damage is proportional to the crew's remaining HP and is higher
+    the higher the HP is. The formula used is 10x + (50x \* (current HP) /
+    (total HP))
+sailor:
+  - description: Makes [TND] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Fighter characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 40
+    - rcv: 30
+    - type: potential
+    - hp: 60
+    - cooldown: 1
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - slot: 1
+    - cooldown: 2
+    - atk: 50
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

@@ -1,0 +1,183 @@
+type: QCK
+name: Sanji - Dressing Up for the Pirate Festival!
+japanName: サンジ Dress up for PIRATE FESTIVAL
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 980
+    atk: 452
+    rcv: 65
+  maxLvl:
+    hp: 2464
+    atk: 1132
+    rcv: 162
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 149422
+aliases:
+  - Dress Up Sanji
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 1.5x their HP and RCV by 1.2x
+special:
+  name: The Chef's Attire
+  description: Reduces Burn duration by 2 turns, reduces enemies' Percent Damage
+    Reduction and Threshold Damage Reduction duration by 2 turns and randomizes
+    all orbs.
+  cooldown: 14
+  maxLevel: 4
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Captain by 1.025x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Captain by 1.05x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Captain by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Captain by 1.15x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Captain by 1.2x for 1 turn.
+rumble:
+  stats:
+    def: 124
+    rumbleType: DBF
+    spd: 139
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 10
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 11
+            level: 1
+        - override:
+            duration: 11
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 12
+            level: 1
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 13
+            level: 1
+        - override:
+            duration: 13
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 14
+            level: 1
+        - override:
+            duration: 14
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 15
+            level: 2
+        - override:
+            duration: 15
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 16
+            level: 2
+        - override:
+            duration: 16
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 17
+            level: 2
+        - override:
+            duration: 17
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 18
+            level: 2
+        - override:
+            duration: 18
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 20
+            level: 3
+        - override:
+            duration: 20
+            level: 3

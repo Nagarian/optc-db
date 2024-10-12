@@ -1,0 +1,507 @@
+type: QCK
+name: Black Arm Zephyr - The Man who Trained Every Navy Sailor
+japanName: 黒腕のゼファー 全ての海兵を育てた男
+family:
+  - Zephyr
+class:
+  - Shooter
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1724
+    atk: 782
+    rcv: 48
+  maxLvl:
+    hp: 3899
+    atk: 1594
+    rcv: 108
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 128087
+aliases:
+  - V1 Legend Zephyr
+  - Legend Z
+captain:
+  name: ""
+  description: If there are 6 Shooter characters in your crew, boosts ATK of
+    Shooter characters by 3.25x, by 3.9x instead if they have a beneficial orb,
+    and reduces damage received by 10%.
+special:
+  name: 'Destroying All Evil: "Smash Buster"'
+  description: Deals 30% of enemies' current HP in damage to one enemy, adds 50x
+    character's ATK as Additional Typeless Damage for 2 turns and changes orbs,
+    including [BLOCK] orbs, of Shooter characters into Matching orbs.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Adds 4x character's ATK as Additional Damage
+  - description: Makes [TND] and [RCV] orbs beneficial for Shooter characters
+support:
+  type: descriptive
+  criteria: Ain and Binz
+  levels:
+    - Once per adventure, when your orbs are shuffled by the enemy, changes
+      [QCK] orbs of Shooter characters into Matching orbs.
+    - Once per adventure, when your orbs are shuffled by the enemy, changes
+      [DEX] and [QCK] orbs of Shooter characters into Matching orbs.
+    - Once per adventure, when your orbs are shuffled by the enemy, changes
+      [STR], [DEX], [QCK], [PSY] and [INT] orbs of Shooter characters into
+      Matching orbs.
+    - Once per adventure, when your orbs are shuffled by the enemy, changes all
+      orbs of Shooter characters into Matching orbs.
+    - Once per adventure, when your orbs are shuffled by the enemy, changes all
+      orbs, including [BLOCK] orbs, of Shooter characters into Matching orbs.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 70
+    - hp: 70
+    - hp: 70
+    - atk: 25
+    - atk: 25
+    - cooldown: 1
+    - rcv: 15
+    - rcv: 15
+    - hp: 90
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Shooter characters by 3.5x, by 4x instead if they
+          have a beneficial orb, and reduces damage received by 10%.
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 250
+          reduction: 3
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 153
+    rumbleType: ATK
+    spd: 184
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 5
+            type: crew
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+        - {}
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 23
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - amount: 900
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 950
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 24
+        - override:
+            amount: 1000
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 25
+        - override:
+            amount: 1050
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 26
+        - override:
+            amount: 1100
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 27
+        - override:
+            amount: 1150
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 28
+        - override:
+            amount: 1200
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 29
+        - override:
+            amount: 1250
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 29
+        - override:
+            amount: 1300
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 32
+        - override:
+            amount: 1550
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+                - HP
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - Shooter
+            - attributes:
+                - ATK
+              condition:
+                comparator: less
+                count: 5
+                type: crew
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - self
+            - attributes:
+                - ATK
+              condition:
+                comparator: less
+                count: 3
+                type: crew
+              effect: buff
+              level: 7
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 2
+            - {}
+            - {}
+        - effects:
+            - override:
+                level: 3
+            - {}
+            - {}
+        - effects:
+            - override:
+                level: 4
+            - {}
+            - {}
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 5
+            - override:
+                level: 8
+  - captain:
+      - description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. If there are 6 Shooter characters in your crew, boosts
+          ATK of Shooter characters by 4.25x, by 5x instead if they have a
+          beneficial orb, and reduces damage received by 10%.
+      - description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of Shooter characters by 4.5x, by 5.25x
+          instead if they have a beneficial orb, boosts HP of Shooter characters
+          by 1.2x, reduces damage received by 10% and increases duration of any
+          Orb Amplification buffs applied by Specials by 1 turn.
+  - rumble:
+      special:
+        - cooldown: 25
+          effects:
+            - amount: 25
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: cut
+            - amount: 1000
+              effect: damage
+              range:
+                direction: radial
+                size: small
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 26
+            - override:
+                amount: 1150
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 27
+            - override:
+                amount: 1300
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 28
+            - override:
+                amount: 1450
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 29
+            - override:
+                amount: 1600
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 30
+            - override:
+                amount: 1750
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 31
+            - override:
+                amount: 1900
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 32
+            - override:
+                amount: 2050
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 33
+            - override:
+                amount: 2200
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 35
+            - override:
+                amount: 2550
+  - rumble:
+      resilience:
+        - attribute: Action Bind
+          chance: 100
+          type: debuff
+        - attribute: STR
+          percentage: 35
+          type: damage
+    special:
+      description: Deals 30% of enemies' current HP in damage to one enemy, boosts ATK
+        of Shooter characters by 2.25x for 3 turns, adds 100x character's ATK as
+        Additional Typeless Damage for 3 turns and changes orbs, including
+        [BLOCK] orbs, of Shooter characters into Matching orbs. If your crew has
+        Percent Damage Reduction at the time the special is activated, reduces
+        enemies' Increased Defense and Percent Damage Reduction duration by 3
+        turns and reduces Bind and Despair duration by 3 turns.
+    sailor:
+      sailor1:
+        description: Adds 10x character's ATK as Additional Damage.

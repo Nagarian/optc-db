@@ -1,0 +1,237 @@
+type: INT
+name: X Drake - Red Flag Remembering the Past
+japanName: Ｘ・ドレーク 過去思い出す赤旗
+family:
+  - XDrake
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1410
+    atk: 824
+    rcv: 66
+  maxLvl:
+    hp: 3134
+    atk: 1373
+    rcv: 220
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 272360
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3x and their HP by 1.2x.
+special:
+  name: Concerning About Sea Rumbles
+  description: Reduces Paralysis, Burn and Blindness duration by 3 turns and
+    boosts the Color Affinity of all characters by 1.75x for 1 turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of all characters by 30
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 30
+    - rcv: 25
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 40
+    - type: sailor
+    - hp: 60
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - atk: 40
+    - hp: 70
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100
+rumble:
+  stats:
+    def: 200
+    rumbleType: SPT
+    spd: 124
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+            - SPD
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            duration: 7
+            level: 1
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            duration: 8
+            level: 1
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 9
+            level: 1
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 10
+            level: 1
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 11
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 12
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            duration: 13
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 15
+            level: 3

@@ -1,0 +1,227 @@
+type: STR
+name: Shiki the Golden Lion Golden Lion Pirates
+japanName: 金獅子のシキ 金獅子海賊団
+family:
+  - Shiki
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1218
+    atk: 638
+    rcv: 138
+  maxLvl:
+    hp: 2424
+    atk: 1407
+    rcv: 292
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 33650
+aliases:
+  - Raid Shiki
+captain:
+  name: ""
+  description: Boosts ATK and HP of Driven characters by 2x
+special:
+  name: "Lion's Threat: Imperial Earth Bind"
+  description: Deals 30x character's ATK in Typeless damage to all enemies.
+    Changes [BLOCK], [G] and [BOMB] orbs of Driven characters into Matching
+    orbs. Boosts ATK of Driven characters by 1.75x for 1 turn.
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base HP of Driven characters by 50
+support:
+  type: descriptive
+  criteria: Driven characters
+  levels:
+    - Once per adventure, when you reach the final stage, boosts ATK of Driven
+      characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts ATK of Driven
+      characters by 1.15x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts ATK of Driven
+      characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts ATK of Driven
+      characters by 1.25x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts ATK of Driven
+      characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - rcv: 20
+    - cooldown: 1
+    - hp: 60
+    - slot: 1
+    - hp: 60
+    - cooldown: 1
+    - hp: 80
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 120
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 155
+    rumbleType: ATK
+    spd: 170
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 45
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.84
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.87
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.91
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.95
+        - override:
+            level: 2
+            duration: 24
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.99
+        - override:
+            level: 2
+            duration: 25
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1.02
+        - override:
+            level: 3
+            duration: 26
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1.06
+        - override:
+            level: 3
+            duration: 27
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 3
+            duration: 28
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 4
+            duration: 30

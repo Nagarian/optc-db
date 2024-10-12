@@ -1,0 +1,117 @@
+type: STR
+name: Destruction Cannon Ideo - Two-Time Champion of the New World Central MMA League
+japanName: 破壊砲　イデオ 新世界セントラル格闘会 Ｖ２覇者
+family:
+  - Ideo
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1028
+    atk: 726
+    rcv: 143
+  maxLvl:
+    hp: 2529
+    atk: 1428
+    rcv: 302
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 140988
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight boosts ATK of Driven and Fighter characters by 2.5x, but boosts
+    ATK of this character by 2.75x
+special:
+  name: The Fist of Humanity and Duty
+  description: Delays all enemies by 2 turns. If your Captain is a [DEX] or [INT]
+    character, changes [G], [EMPTY] and [BLOCK] orbs into Matching orbs and
+    locks the chain multiplier at 2.75x for 3 turns. If your Captain is a [QCK]
+    or [PSY] character, changes [RCV], [TND] and [BOMB] orbs into Matching orbs
+    and locks the chain multiplier at 3x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [QCK] orbs beneficial for this character
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Chinjao, Dagama, Abdullah, Jeet, Orlumbus, Blue Gilly, Suleiman,
+    Cavendish, Sai, Elizabello II and Hajrudin
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 25
+    - hp: 30
+    - hp: 35
+    - type: potential
+    - rcv: 15
+    - rcv: 15
+    - rcv: 20
+    - type: sailor
+    - hp: 40
+    - slot: 1
+    - hp: 55
+    - cooldown: 1
+    - atk: 50
+    - atk: 55
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

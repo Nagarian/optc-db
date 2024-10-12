@@ -1,0 +1,103 @@
+type: QCK
+name: Diamante - Dressrosa King's Family
+japanName: ディアマンテ ドレスローザ現国王のファミリー
+family:
+  - Diamante
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1156
+    atk: 604
+    rcv: 69
+  maxLvl:
+    hp: 2401
+    atk: 1487
+    rcv: 230
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 69404
+aliases:
+  - Mr Diamante
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Driven characters by 2.5x
+special:
+  name: Snake Sword
+  description: Delays all enemies by 2 turns, reduces enemies' Percent Damage
+    Reduction and Increased Defense duration by 3 turns and changes [STR],
+    [DEX], [QCK], [PSY] and [INT] orbs of right column characters into Matching
+    orbs
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts this character's damage against [STR] characters by 1.1x
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Donquixote Doflamingo, Pica, Trebol and Vergo
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - rcv: 30
+    - atk: 40
+    - hp: 90
+    - slot: 1
+    - type: potential
+    - key: 1
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - rcv: 25
+    - rcv: 25
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

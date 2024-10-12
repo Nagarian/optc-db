@@ -1,0 +1,105 @@
+type: PSY
+name: Emporio Ivankov - Surprising Entrance
+japanName: エンポリオ・イワンコフ 予想外の登場
+family:
+  - EmporioIvankov
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1334
+    atk: 676
+    rcv: 155
+  maxLvl:
+    hp: 2669
+    atk: 1353
+    rcv: 310
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - Secret TM Limited Ivankov
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 2.25x at the
+    start of the chain, by 2.8125x after the 4th PERFECTs in a row, their HP by
+    1.25x and recovers 800 HP at the end of each turn.
+special:
+  name: Surprising Giant Face
+  description: Reduces Despair duration by 5 turns and locks all orbs for 2 turns.
+    If your crew has ATK UP, increases duration of any ATK boosting buffs by 1
+    turn. If your crew has 6 characters with [RCV] orbs, boosts ATK of all
+    characters by 2.25x for 1 turn, by 1.75x otherwise.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+  - description: Boosts amount healed from [RCV] orbs by 300 each
+support:
+  type: descriptive
+  criteria: Bentham (Mr. 2 Bon Clay) and Inazuma
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      all orbs for 1 turn and recovers 500 HP.
+    - Once per adventure, when the supported character uses their special, locks
+      all orbs for 1 turn and recovers 600 HP.
+    - Once per adventure, when the supported character uses their special, locks
+      all orbs for 1 turn and recovers 700 HP.
+    - Once per adventure, when the supported character uses their special, locks
+      all orbs for 1 turn and recovers 800 HP.
+    - Once per adventure, when the supported character uses their special, locks
+      all orbs for 1 turn and recovers 1,000 HP.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - atk: 40
+    - atk: 50
+    - rcv: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 25
+        - value: 1.5
+          threshold: 30

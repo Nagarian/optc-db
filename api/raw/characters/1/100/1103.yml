@@ -1,0 +1,53 @@
+type: INT
+name: Ain - Neo Marines
+japanName: アイン ＮＥＯ海軍
+family:
+  - Ain
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 197
+    atk: 101
+    rcv: 54
+  maxLvl:
+    hp: 1078
+    atk: 492
+    rcv: 217
+cost: 18
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 33489
+aliases:
+  - Colo Ain
+  - Coliseum Ain
+evolution:
+  - id: 1104
+    evolvers:
+      - 117
+      - 82
+      - 88
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Cerebral characters by 1.5x
+special:
+  name: Return Return Fruit
+  description: Recovers 36% of crew's MAX HP and randomizes all orbs, including [BLOCK] orbs
+  cooldown: 27
+  maxLevel: 11
+  stages:
+    - description: Recovers 12% of crew's MAX HP and randomizes all orbs, including
+        [BLOCK] orbs
+      cooldown: 21
+    - description: Recovers 24% of crew's MAX HP and randomizes all orbs, including
+        [BLOCK] orbs
+      cooldown: 24

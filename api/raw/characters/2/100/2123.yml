@@ -1,0 +1,102 @@
+type: INT
+name: King Neptune, The Sea God - Great Knight of the Sea
+japanName: 海神ネプチューン 海の大騎士
+family:
+  - Neptune
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1328
+    atk: 890
+    rcv: 119
+  maxLvl:
+    hp: 2598
+    atk: 1401
+    rcv: 250
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 107869
+aliases:
+  - Colo Neptune
+  - Coliseum Neptune
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x, boosts EXP gained by 1.5x and
+    recovers 5x character's RCV in HP at the end of each turn
+  notes: EXP boost does not take effect if he becomes your captain in the middle
+    of the adventure.
+special:
+  name: Great Ocean Current of Resuscitation
+  description: Reduces Despair and ATK DOWN duration by 5 turns and reduces
+    enemies' Resilience Buffs duration by 5 turns. Reduces the defense of all
+    enemies by 80% for 3 turns and boosts Orb Effects of Cerebral and Powerhouse
+    characters by 1.75x for 3 turns
+  cooldown: 30
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral characters by 50
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn
+support:
+  type: descriptive
+  criteria: Shirahoshi and Fukaboshi
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Despair duration by 1 turn and reduces enemies' Resilience
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Despair duration by 1 turn and reduces enemies' Resilience
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Despair duration by 2 turns and reduces enemies' Resilience
+      duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - slot: 1
+    - rcv: 10
+    - hp: 40
+    - atk: 30
+    - hp: 50
+    - cooldown: 1
+    - atk: 35
+    - rcv: 10
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,44 @@
+type: INT
+name: Nami - Tornado Tempo
+frenchName: Nami Tornado Tempo
+japanName: ナミ トルネード=テンポ
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 336
+    atk: 192
+    rcv: 62
+  maxLvl:
+    hp: 783
+    atk: 453
+    rcv: 160
+cost: 7
+slots: 2
+maxExp: 136167
+maxLevel: 35
+flags:
+  - sugo
+links:
+  gamewithId: 2020
+aliases: []
+evolution:
+  - id: 12
+    evolvers:
+      - 117
+      - 88
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 1.5x
+special:
+  name: Tornado Tempo
+  description: Deals 15x character's ATK in [INT] damage to one enemy
+  cooldown: 23
+  maxLevel: 9

@@ -1,0 +1,45 @@
+type: PSY
+name: Franky
+japanName: フランキー
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 128
+    atk: 128
+    rcv: 28
+  maxLvl:
+    hp: 1220
+    atk: 680
+    rcv: 112
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 6873
+aliases: []
+evolution:
+  - id: 337
+    evolvers:
+      - 117
+      - 81
+      - 87
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Reduces damage received by 10% if HP is above 50% at the start of
+    the turn, boosts ATK of [PSY] characters by 2x and reduces ATK of every
+    other character by 20% if HP is above 50% at the start of the turn
+special:
+  name: Franky Centaur
+  description: Switches orbs between slots 2 times
+  cooldown: 14
+  maxLevel: 9

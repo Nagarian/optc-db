@@ -1,0 +1,51 @@
+type: INT
+name: Franky - Dressing Up for the Pirate Festival!
+japanName: フランキー Dress up for PIRATE FESTIVAL
+family:
+  - Franky
+class:
+  - Striker
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1001
+    atk: 522
+    rcv: 40
+  maxLvl:
+    hp: 2502
+    atk: 1305
+    rcv: 98
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 150790
+aliases:
+  - Dress Up Franky
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x
+special:
+  name: Franky Super Hair Set
+  description: Makes [INT] orbs beneficial for all characters for 1 turn, locks
+    all orbs for 1 turn and boosts ATK against enemies with reduced defense by
+    1.5x for 1 turn.
+  cooldown: 16
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Vinsmoke Sanji, Usopp, Nico
+    Robin, Tony Tony Chopper and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

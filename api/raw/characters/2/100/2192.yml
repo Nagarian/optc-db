@@ -1,0 +1,54 @@
+type: PSY
+name: Bartholomew Kuma - Incomplete Human Weapon
+japanName: バーソロミュー・くま 未完の人間兵器
+family:
+  - BartholomewKuma
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 402
+    atk: 172
+    rcv: 32
+  maxLvl:
+    hp: 1733
+    atk: 755
+    rcv: 129
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 114954
+aliases:
+  - Colo Kuma
+  - Coliseum Kuma
+evolution:
+  - id: 2193
+    evolvers:
+      - 118
+      - 98
+      - 1180
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x and recovers 1.5x
+    character's RCV in HP at the end of each turn
+special:
+  name: Erasing Palm Strike
+  description: Reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 3 turns and changes orbs of adjacent characters into
+    [RCV] orbs. If there are 2 enemies or more on the stage when the special is
+    activated, instantly defeats one enemy with HP equal to or below 350x
+    character's ATK, deals 20% of enemies' current HP in True damage to one
+    enemy otherwise
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base HP of Shooter characters by 75

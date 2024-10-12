@@ -1,0 +1,122 @@
+type: INT
+name: "Beckman: Evening Respite - Happy Spooky Halloween!"
+japanName: ベックマン　夜の一服 Happy Scary Halloween
+family:
+  - BenBeckman
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 968
+    atk: 745
+    rcv: 72
+  maxLvl:
+    hp: 2522
+    atk: 1394
+    rcv: 315
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 233443
+aliases:
+  - Halloween Beckman
+  - Secret Beckman
+  - Limited Beckman
+  - Kizuna Beckman
+  - Halloween Ben Beckman
+  - Secret Ben Beckman
+  - Limited Ben Beckman
+  - Kizuna Ben Beckman
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.75x.
+special:
+  name: Gapless Intimidation
+  description: Reduces enemies' Barrier duration by 1 turn, reduces Chain
+    Multiplier Limit and Chain Coefficient Reduction duration by 5 turns and
+    boosts Orb Effects of all characters by 2x for 1 turn.
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Cerebral characters by 50
+  - description: If your Captain is a Striker or Cerebral character, makes [PSY]
+      orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Shanks, Yasopp and Lucky Roux
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces Chain Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces Chain Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      or Chain Coefficient Reduction, reduces Chain Multiplier Limit and Chain
+      Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      or Chain Coefficient Reduction, reduces Chain Multiplier Limit and Chain
+      Coefficient Reduction duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      or Chain Coefficient Reduction, reduces Chain Multiplier Limit and Chain
+      Coefficient Reduction duration by 3 turns.
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 20
+    - type: potential
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - slot: 1
+    - hp: 50
+    - hp: 50
+    - rcv: 30
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

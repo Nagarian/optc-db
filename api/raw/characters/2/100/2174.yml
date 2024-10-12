@@ -1,0 +1,55 @@
+type: QCK
+name: Jack
+japanName: ジャック
+family:
+  - Jack
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 444
+    atk: 177
+    rcv: 8
+  maxLvl:
+    hp: 1427
+    atk: 465
+    rcv: 41
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 112497
+aliases:
+  - TM Jack
+evolution:
+  - id: 2175
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.75x and reduces damage
+    received by 5%
+special:
+  name: Genocide Shotel
+  description: Reduces enemies' Percent Damage Reduction, Increased Defense and
+    Damage Nullification duration by 2 turns and deals 300,000-1,500,000
+    Typeless Fixed True damage to one enemy, depending on the number of enemies
+    on the stage when the special is activated.
+  cooldown: 36
+  maxLevel: 8
+  notes: |-
+    **1 enemy:** 300,000 damage  
+    **2 enemies:** 500,000 damage  
+    **3 enemies:** 800,000 damage  
+    **4 enemies:** 1,100,000 damage  
+    **5 enemies:** 1,500,000 damage  
+    **6 enemies:** 2,000,000 damage

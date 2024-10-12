@@ -1,0 +1,60 @@
+type: STR
+name: Donquixote Doflamingo - "Joker"
+japanName: ドンキホーテ・ドフラミンゴ “ジョーカー”
+family:
+  - DonquixoteDoflamingo
+class:
+  - Striker
+  - Driven
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1557
+    atk: 713
+    rcv: 84
+  maxLvl:
+    hp: 3172
+    atk: 1540
+    rcv: 258
+cost: 50
+slots: 2
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 93531
+aliases:
+  - Story Doflamingo
+  - Super Doflamingo
+  - Mega Doflamingo
+  - Story Doffy
+  - Super Doffy
+  - Mega Doffy
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x and their HP by 1.3x. If
+    you use "Fullbright" on this Doflamingo boosts ATK of Striker characters by
+    3x for 3 turns instead
+  notes: Using Doflamingo's special will change his own captain boost to 3x. If
+    both Doflamingo's specials are used, the total ATK boost will be 9x
+special:
+  name: Fullbright
+  description: Deals 20% of enemies' current HP in damage to all enemies, changes
+    the orb of this character into a [STR] orb and deals 10% of enemies' current
+    HP in damage to all enemies at the end of each turn for 2 turns. If HP is
+    below 50% at the time the special is activated, boosts ATK of Striker and
+    Driven characters by 1.75x for 1 turn
+  cooldown: 20
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Trebol, Pica, Vergo and Diamante
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

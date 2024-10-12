@@ -1,0 +1,275 @@
+type: QCK
+name: Shiki - Plan to Tear the World Asunder
+japanName: シキ 世界転覆の陰謀
+family:
+  - Shiki
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 524
+    atk: 204
+    rcv: 65
+  maxLvl:
+    hp: 1920
+    atk: 801
+    rcv: 164
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 116162
+aliases:
+  - V1 Legend Shiki
+evolution:
+  - id: 2201
+    evolvers:
+      - 118
+      - 266
+      - 94
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [DEX], [INT] and [QCK] characters by 2.75x at the
+    start of the chain, boosts ATK of [DEX], [INT] and [QCK] characters by 4x
+    following a chain of [DEX] > [INT] > [QCK] attacks no lower than Good and
+    boosts HP by 1.35x. Makes [TND] and [RCV] orbs beneficial for all characters
+special:
+  name: "Lion's Threat: Earth Bind"
+  description: Reduces crew's current HP by 99%, deals 30x the amount of HP
+    subtracted in Typeless damage to all enemies and changes all orbs, including
+    [BLOCK] orbs, into [RCV] orbs
+  cooldown: 19
+  maxLevel: 6
+rumble:
+  stats:
+    def: 143
+    rumbleType: DBF
+    spd: 171
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - QCK
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 80
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 38
+      effects:
+        - amount: 850
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Action Bind
+          chance: 45
+          duration: 6
+          effect: hinderance
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 900
+        - override:
+            duration: 16
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 950
+        - override:
+            duration: 17
+        - override:
+            chance: 46
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            duration: 18
+        - override:
+            chance: 46
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            duration: 19
+        - override:
+            chance: 47
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            duration: 20
+        - override:
+            chance: 48
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            duration: 21
+        - override:
+            chance: 48
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            duration: 22
+        - override:
+            chance: 49
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            duration: 23
+        - override:
+            chance: 49
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            duration: 24
+            level: 2
+        - override:
+            chance: 51
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

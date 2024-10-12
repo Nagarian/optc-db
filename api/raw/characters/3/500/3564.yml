@@ -1,0 +1,93 @@
+type: QCK
+name: Dogstorm - Sulong Challenging the Dragon
+japanName: イヌアラシ 龍に立ち向かう“月の獅子”
+family:
+  - Inuarashi
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1720
+    atk: 704
+    rcv: 82
+  maxLvl:
+    hp: 3440
+    atk: 1409
+    rcv: 164
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - TM Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and Slasher characters by 2.5x and their HP by
+    1.3x. Attacks will ignore damage reducing Barriers and Buffs.
+special:
+  name: Electrical Slash
+  description: Reduces ATK DOWN duration by 5 turns, reduces Silence duration by 3
+    turns and boosts Orb Effects of [QCK] and Slasher characters by 2x for 2
+    turns.
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 6 turns on this character
+  - description: Boosts base ATK of Slasher characters by 70
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Izo, Kin'emon, Kozuki Momonosuke, Cat Viper, Raizo, Kikunojo, Kozuki
+    Oden, Denjiro, Kawamatsu, Kozuki Hiyori, Ashura Doji
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - description: and when the supported character hits a PERFECT, reduces enemies'
+        Increased Defense duration by 1 turn.
+      value: 9
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - rcv: 20
+    - hp: 30
+    - atk: 40
+    - slot: 1
+    - rcv: 30
+    - atk: 40
+    - hp: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 3

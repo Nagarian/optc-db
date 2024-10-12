@@ -1,0 +1,94 @@
+type: INT
+name: Nami - Thunderbolt Tempo
+frenchName: Nami Fulguro Tempo
+japanName: ナミ サンダーボルト=テンポ
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 494
+    atk: 437
+    rcv: 154
+  maxLvl:
+    hp: 1262
+    atk: 1088
+    rcv: 387
+cost: 15
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 2020
+aliases: []
+evolution:
+  - id: 1389
+    evolvers:
+      - skull
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK and HP of [INT] characters by 1.5x
+special:
+  name: Thunderbolt Tempo
+  description: Deals 15x character's ATK in [INT] damage to all enemies
+  cooldown: 25
+  maxLevel: 6
+sailor:
+  - description: Makes [RCV] orbs beneficial for [INT] characters
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 40
+    - type: sailor
+    - hp: 60
+    - atk: 40
+    - rcv: 20
+    - slot: 1
+    - atk: 50
+    - rcv: 30
+    - hp: 80
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

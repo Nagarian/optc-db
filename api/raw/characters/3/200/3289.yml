@@ -1,0 +1,90 @@
+type: QCK
+name: Nami - Mind of a Cook
+japanName: ナミ 心は料理人
+family:
+  - Nami
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1379
+    atk: 661
+    rcv: 80
+  maxLvl:
+    hp: 2966
+    atk: 1384
+    rcv: 231
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 266409
+aliases:
+  - Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 2x, their HP by
+    1.2x, makes [RCV] orbs beneficial for Fighter and Free Spirit characters and
+    PERFECTs will consume [RCV] orbs. If this character becomes your captain in
+    the middle of an island, boosts ATK of Fighter and Free Spirit characters by
+    4x instead
+special:
+  name: Long-Awaited of Physical Beauty
+  description: Reduces crew's current HP by 70%, changes all orbs into [RCV] orbs,
+    reduces Silence duration by 5 turns, reduces enemies' Resilience duration by
+    5 turns, adds 0.7x to Chain multiplier for 1 turn. If this character is a
+    Sailor, swaps this unit with your captain for 2 turns.
+  cooldown: 21
+  maxLevel: 8
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Makes [RCV] orbs beneficial for Free Spirit characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Free Spirit characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - rcv: 20
+    - atk: 40
+    - slot: 1
+    - rcv: 30
+    - cooldown: 1
+    - atk: 80
+    - hp: 50
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

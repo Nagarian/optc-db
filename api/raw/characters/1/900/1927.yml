@@ -1,0 +1,456 @@
+type: STR
+name: Sir Crocodile - After the Dream of Utopia
+japanName: サー・クロコダイル 理想郷の夢のあと
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Driven
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1802
+    atk: 782
+    rcv: 180
+  maxLvl:
+    hp: 3701
+    atk: 1502
+    rcv: 330
+cost: 65
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16216
+aliases:
+  - Mega/Super/6+ Crocodile
+  - V1 Legend Crocodile
+  - Shichibukai
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x-3.5x depending on the
+    crew's current HP.
+  notes: "`captainProportional : lower : 2 + 1.5 * (1 - (remaining HP) / (total
+    HP)) : 2 : 3.5`"
+special:
+  name: Desert Girasol
+  description: Deals 20% of enemies' current HP in damage to all enemies and
+    boosts ATK of Cerebral characters by 2x for 1 turn
+  cooldown: 21
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Cerebral characters by 50
+  - description: Makes [DEX] orbs beneficial for Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - atk: 15
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: sailor
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - atk: 15
+    - rcv: 20
+    - hp: 50
+    - type: potential
+    - hp: 60
+    - hp: 70
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - hp: 75
+    - rcv: 30
+    - cooldown: 1
+    - atk: 50
+    - rcv: 30
+    - hp: 75
+    - type: sailor
+    - hp: 80
+    - atk: 55
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 200
+          reduction: 3
+        - value: 250
+          reduction: 4
+        - value: 300
+          reduction: 5
+rumble:
+  stats:
+    def: 126
+    rumbleType: ATK
+    spd: 174
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          effect: buff
+          level: 8
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 19
+      effects:
+        - amount: 12
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 13
+        - override:
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 14
+        - override:
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 15
+        - override:
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 3
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 19
+        - override:
+            level: 3
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 3
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Cerebral
+            - attributes:
+                - ATK
+              effect: buff
+              level: 9
+              condition:
+                comparator: below
+                count: 60
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 4
+            - {}
+        - effects:
+            - override:
+                level: 5
+            - {}
+        - effects:
+            - override:
+                level: 6
+            - {}
+        - effects:
+            - override:
+                level: 7
+            - {}
+  - captain:
+      - description: Reduces Special Cooldown of Cerebral characters by 2 turns at the
+          start of the fight, boosts ATK of Cerebral characters by 4x-5.5x
+          depending on the crew's current HP and reduces damage received by 15%.
+  - rumble:
+      special:
+        - cooldown: 19
+          effects:
+            - amount: 12
+              effect: damage
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: cut
+            - attributes:
+                - Critical Hit
+              duration: 20
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 13
+            - override:
+                level: 2
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 14
+            - override:
+                level: 2
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 15
+            - override:
+                level: 2
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 16
+            - override:
+                level: 2
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 17
+            - override:
+                level: 2
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 18
+            - override:
+                level: 3
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 19
+            - override:
+                level: 3
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 20
+            - override:
+                level: 3
+        - cooldown: 19
+          effects:
+            - override:
+                amount: 24
+            - override:
+                level: 5
+  - rumble:
+      resilience:
+        - amount: 200
+          interval: 5
+          type: healing
+        - attribute: DEX
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 20% of enemies' current HP in damage to all enemies, boosts
+        ATK of Cerebral characters by 2x for 1 turn, boosts Orb Effects of
+        Cerebral characters by 2x for 1 turn and changes all orbs, including
+        [BLOCK] orbs, of top row and bottom row characters into Matching orbs.
+        If HP is below 50% when the special is activated, sets Chain Boundaries
+        to 2.5x and 25.0x for 1 turn.

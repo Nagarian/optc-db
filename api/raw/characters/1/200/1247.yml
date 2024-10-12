@@ -1,0 +1,84 @@
+type: STR
+name: Portgas D. Ace - Fire Fist Rockin' Marineford
+japanName: ポートガス・D・エース マリンフォードに舞う“火拳”
+family:
+  - PortgasDAce
+class:
+  - Fighter
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1403
+    atk: 793
+    rcv: 121
+  maxLvl:
+    hp: 2120
+    atk: 1281
+    rcv: 246
+cost: 25
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 37432
+notes: This Limit Break is exclusive to Global ONLY
+aliases:
+  - Marineford Ace
+captain:
+  name: ""
+  description: Boosts HP of Fighter characters by 1.2x and their ATK by 2x, by
+    2.75x instead if they have a beneficial orb
+  notes: "This LB captain ability is different on Global: Boosts HP of Fighter
+    characters by 1.2x and their ATK by 2x, by 3x instead if they have a
+    beneficial orb"
+special:
+  name: Firefly Light, Fiery Doll
+  description: Reduces crew's current HP by 90%, deals 55x character's ATK in
+    Typeless damage to all enemies and boosts ATK of Fighter characters by 1.3x
+    for 1 turn. If "Gomu Gomu no Stamp Gatling" is used again in the same turn
+    the special is activated in, boosts ATK of Fighter characters by 2x instead.
+  cooldown: 17
+  maxLevel: 1
+sailor:
+  - description: Makes [STR] orbs beneficial for Fighter characters
+  - description: When HP is below 10% at the start of the turn, boosts base ATK of
+      Fighter characters by 100
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 30
+    - type: potential
+    - cooldown: 2
+    - rcv: 30
+    - atk: 30
+    - type: sailor
+    - hp: 40
+    - atk: 50
+    - hp: 50
+    - cooldown: 3
+    - type: sailor
+    - captain:
+        description: Boosts HP of Fighter characters by 1.2x and their ATK by 3x, by 4x
+          instead if they have a beneficial orb, and makes [STR] and [DEX] orbs
+          beneficial for Fighter characters
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

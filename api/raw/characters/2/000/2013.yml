@@ -1,0 +1,107 @@
+type: STR
+name: Big Eater Jewelry Bonney - Captive Supernova
+japanName: “大喰らい”ジュエリー・ボニー 囚われの超新星
+family:
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 837
+    atk: 642
+    rcv: 184
+  maxLvl:
+    hp: 2410
+    atk: 1333
+    rcv: 354
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 95530
+aliases:
+  - Secret Bonney
+  - Limited Bonney
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.25x, by 3.25x instead if
+    they have a [RCV] orb, boosts chances of getting [RCV] orbs, makes [RCV]
+    orbs beneficial for Free Spirit characters and reduces RCV of all characters
+    by 80%
+special:
+  name: A Small Dine and Dash
+  description: Reduces Bind and Paralysis duration by 10 turns, recovers 50x
+    character's RCV in HP and changes [BLOCK] and [BOMB] orbs into [RCV] orbs.
+    If your Captain is a Free Spirit Character, reduces RCV DOWN, Silence and
+    Blindness duration by 5 turns
+  cooldown: 18
+  maxLevel: 6
+  stages:
+    - description: Reduces Bind and Paralysis duration by 3 turns and changes [BLOCK]
+        and [BOMB] orbs into [RCV] orbs. If your Captain is a Free Spirit
+        Character, reduces RCV DOWN and Blindness duration by 5 turns
+      cooldown: 11
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: Makes [RCV] orbs beneficial for all characters
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 6
+      reduction: 1
+    - value: 7
+      reduction: 2
+    - value: 8
+      reduction: 3
+    - value: 9
+      reduction: 4
+    - value: 12
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 10
+    - hp: 20
+    - type: potential
+    - hp: 50
+    - rcv: 20
+    - hp: 60
+    - rcv: 20
+    - atk: 30
+    - rcv: 30
+    - hp: 80
+    - cooldown: 1
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 25
+        - value: 1.5
+          threshold: 30

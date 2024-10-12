@@ -1,0 +1,52 @@
+type: PSY
+name: Atmos - Whitebeard's Thirteenth Division Commander
+japanName: アトモス 白ひげ海賊団１３番隊隊長
+family:
+  - Atmos
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 51
+    atk: 35
+    rcv: 35
+  maxLvl:
+    hp: 2213
+    atk: 1113
+    rcv: 213
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 52633
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x
+special:
+  name: Buffalo Roar
+  description: Reduces Despair duration by 3 turns, boosts ATK of this character
+    by 1.5x for 1 turn
+  cooldown: 19
+  maxLevel: 9
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 20 if your Captain is a
+      Powerhouse character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Haruta, Speed Jil and Kingdew
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8

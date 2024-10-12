@@ -1,0 +1,49 @@
+type: STR
+name: Sentomaru the Axe - Sailor
+japanName: 鉞の戦桃丸 海兵
+family:
+  - Sentomaru
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 945
+    atk: 485
+    rcv: 95
+  maxLvl:
+    hp: 2170
+    atk: 1150
+    rcv: 205
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 51929
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x and boosts HP of Powerhouse
+    characters by 1.25x
+special:
+  name: Warning of the New World
+  description: Delays all enemies by 1 turn. Changes the orb of this character
+    into Matching orb
+  cooldown: 18
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Borsalino (Kizaru)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8

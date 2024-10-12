@@ -1,0 +1,52 @@
+type: QCK
+name: Kaku - Cipher Pol No. 9
+japanName: カク サイファーポールNo.9
+family:
+  - Kaku
+class:
+  - Slasher
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 175
+    atk: 80
+    rcv: 36
+  maxLvl:
+    hp: 1224
+    atk: 643
+    rcv: 120
+cost: 12
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 14303
+aliases: []
+evolution:
+  - id: 631
+    evolvers:
+      - 117
+      - 90
+      - 96
+      - 301
+      - 101
+  - id: 736
+    evolvers:
+      - 118
+      - 78
+      - 94
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x
+special:
+  name: "Tempest Kick: Slaughter"
+  description: Randomizes all orbs into either [QCK] or [DEX] orbs, deals random
+    [QCK] damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 5,000 : 15,000`"

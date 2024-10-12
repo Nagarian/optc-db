@@ -1,0 +1,528 @@
+type: QCK
+name: Marco the Phoenix - Blue-Flamed Mythical Beast
+japanName: 不死鳥マルコ 蒼炎の幻獣
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1692
+    atk: 756
+    rcv: 303
+  maxLvl:
+    hp: 3150
+    atk: 1424
+    rcv: 500
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 14400
+aliases:
+  - Mega/Super/6+ Marco
+  - V1 Legend Marco
+captain:
+  name: ""
+  description: Reduces damage received by 30% if HP is above 70% at the start of
+    the turn. Boosts ATK of [QCK] and [PSY] characters by 3.5x, by 4x instead if
+    HP is above 99% at the start the turn.
+special:
+  name: Blue Flame Leg Strike
+  description: Recovers 100x character's RCV in HP and boosts Orb Effects of all
+    characters by 2x for 1 turn.
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] and [PSY] characters by 50
+  - description: Makes [QCK], [PSY] and [TND] orbs beneficial for [QCK] and [PSY] characters
+support:
+  type: descriptive
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      recovers 500 HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,000 HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,500 HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 2,500 HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 4,000 HP.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 10
+    - rcv: 15
+    - type: potential
+    - hp: 25
+    - hp: 30
+    - hp: 35
+    - type: sailor
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - hp: 40
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - rcv: 20
+    - hp: 50
+    - atk: 35
+    - atk: 40
+    - cooldown: 1
+    - rcv: 20
+    - hp: 60
+    - cooldown: 1
+    - rcv: 20
+    - hp: 70
+    - atk: 45
+    - type: sailor
+    - atk: 50
+    - atk: 55
+    - type: potential
+    - key: 1
+    - atk: 25
+    - rcv: 25
+    - atk: 50
+    - cooldown: 2
+    - hp: 50
+    - hp: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 166
+    rumbleType: DEF
+    spd: 144
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 200
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 3
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 3
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          level: 2
+          effect: debuff
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.65
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.53
+        - {}
+        - override:
+            amount: 1.76
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.55
+        - {}
+        - override:
+            amount: 1.86
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.58
+        - override:
+            level: 3
+        - override:
+            amount: 1.97
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.61
+        - override:
+            level: 3
+        - override:
+            amount: 2.08
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.64
+        - override:
+            level: 3
+        - override:
+            amount: 2.19
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.66
+        - override:
+            level: 4
+        - override:
+            amount: 2.29
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.69
+        - override:
+            level: 4
+        - override:
+            amount: 2.4
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.72
+        - override:
+            level: 5
+        - override:
+            amount: 2.51
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 6
+        - override:
+            amount: 2.7
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - Guard
+              effect: buff
+              level: 4
+              condition:
+                comparator: above
+                count: 50
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - QCK
+                  - PSY
+            - attributes:
+                - ATK
+              effect: buff
+              level: 7
+              condition:
+                comparator: above
+                count: 50
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 7
+        - effects:
+            - override:
+                level: 8
+  - captain:
+      - description: If HP is above 70% at the start of the turn, reduces damage
+          received by 30%, recovers 1,500 HP at the end of each turn otherwise.
+          Boosts ATK of [QCK] and [PSY] characters by 4.5x, by 5.25x instead if
+          HP is above 99% at the start the turn. Makes [QCK] and [PSY] orbs
+          beneficial for [QCK] and [PSY] characters.
+  - rumble:
+      special:
+        - cooldown: 23
+          effects:
+            - amount: 0.75
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              duration: 20
+              level: 2
+              effect: debuff
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+            - amount: 1.5
+              effect: recharge
+              targeting:
+                targets:
+                  - self
+              type: RCV
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 0.82
+            - override:
+                duration: 21
+            - override:
+                amount: 1.7
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 0.89
+            - override:
+                duration: 22
+            - override:
+                amount: 1.9
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 0.96
+            - override:
+                duration: 23
+            - override:
+                amount: 2.1
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 1.03
+            - override:
+                level: 3
+                duration: 24
+            - override:
+                amount: 2.3
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 1.1
+            - override:
+                level: 3
+                duration: 25
+            - override:
+                amount: 2.5
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 1.17
+            - override:
+                level: 3
+                duration: 26
+            - override:
+                amount: 2.7
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 1.24
+            - override:
+                level: 4
+                duration: 27
+            - override:
+                amount: 2.9
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 1.31
+            - override:
+                level: 4
+                duration: 28
+            - override:
+                amount: 3.1
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 1.5
+            - override:
+                level: 6
+                duration: 29
+            - override:
+                amount: 3.5
+  - rumble:
+      resilience:
+        - attribute: STR
+          percentage: 40
+          type: damage
+        - amount: 250
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          interval: 3
+          type: healing
+    special:
+      description: Recovers 100x character's RCV in HP, allowing HP Overfill up to 2x
+        MAX HP, reduces Chain Coefficient Reduction and ATK DOWN duration by 7
+        turns and boosts Orb Effects of all characters by 2x for 1 turn. If your
+        crew has Orb Amplification, increases boost effects of Orb Amplification
+        buffs by +0.3x.

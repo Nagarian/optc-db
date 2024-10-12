@@ -1,0 +1,58 @@
+type: QCK
+name: Sanji - Departure from the Vinsmokes
+japanName: サンジ ヴィンスモークからの訣別
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 200
+    atk: 92
+    rcv: 21
+  maxLvl:
+    hp: 2012
+    atk: 1280
+    rcv: 228
+cost: 1
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 135621
+aliases:
+  - Support Sanji
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x and boosts EXP and amount of
+    Beli received by 1.2x
+special:
+  name: Kick of Separation
+  description: Deals 20,000 Fixed damage to one enemy and changes orbs of adjacent
+    characters into [RCV] orbs
+  cooldown: 10
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb and recovers
+      300 HP
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb and recovers
+      500 HP
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb and recovers
+      700 HP
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [RCV] orb and recovers
+      1,000 HP

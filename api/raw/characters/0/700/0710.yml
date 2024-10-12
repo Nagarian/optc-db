@@ -1,0 +1,53 @@
+type: PSY
+name: "Franky - Voyage Log: Straw Hat Pirates"
+japanName: フランキー 航海の記録・麦わらの一味
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 242
+    atk: 100
+    rcv: 34
+  maxLvl:
+    hp: 1330
+    atk: 597
+    rcv: 151
+cost: 12
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+  - removed
+links:
+  gamewithId: 16021
+notes: Voyage Log/Dream Batch has been removed, except Log Luffy and Nami,
+  Usopp, Zoro and Chopper (only on global).
+aliases:
+  - Log Franky
+  - Endless Dream Franky
+  - Franky, Wake of an Endless Dream - Straw Hat Pirates
+evolution:
+  - id: 711
+    evolvers:
+      - 117
+      - 87
+      - 94
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.5x
+special:
+  name: Coup de Vent
+  description: Changes [BLOCK] orbs into [EMPTY] orbs, boosts ATK of Shooter
+    characters by 1.25x for 3 turns, deals 15x character's ATK in [PSY] damage
+    to all enemies
+  cooldown: 23
+  maxLevel: 4

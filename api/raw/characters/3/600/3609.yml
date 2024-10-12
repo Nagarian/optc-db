@@ -1,0 +1,471 @@
+type: STR
+name: Kaido - Hell Made Manifest
+family:
+  - Kaido
+class:
+  - Striker
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2729
+    atk: 885
+    rcv: 37
+  maxLvl:
+    hp: 5459
+    atk: 1771
+    rcv: 75
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+aliases:
+  - Super Secret Limited Super Tandem Legend
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Powerhouse characters by 5.25x, boosts HP
+    of Striker and Powerhouse characters by 1.5x, boosts chances of getting
+    [STR] and [TND] orbs and makes [STR] and [TND] orbs beneficial for Striker
+    and Powerhouse characters. If this character has a [WANO] orb and you attack
+    with this character, ignores Debuff Protection and inflicts all enemies with
+    Increase Damage Taken by 1.5x for 1 turn.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: 6
+    Striker characters or King, Queen, Jack, Sasaki, X Drake, Black Maria,
+    Who's-Who, Page One, Ulti, or Charlotte Linlin (Big Mom), excluding Support
+    members."
+  description: Deals 200x character's ATK in Typeless damage to all enemies,
+    changes all orbs of top row and middle row characters into [WANO] orbs,
+    changes all orbs of bottom row characters into [TND] orbs and transforms all
+    Striker characters into Super Striker characters.
+special:
+  name: Conquerer of Three Worlds Ragnaraku
+  description: Deals 20% of enemies' current HP in damage to all enemies, changes
+    [STR] orbs into [WANO] orbs for 2 turns, boosts ATK against enemies
+    inflicted with Increase Damage Taken by 2x for 1 turn and boosts Orb Effects
+    of Striker and Powerhouse characters by 2.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Striker and Powerhouse characters by 125
+  - description: Makes [STR] and [TND] orbs beneficial for Striker and Powerhouse characters
+support:
+  type: descriptive
+  criteria: Jack, King and Queen
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.05x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.1x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.15x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.2x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.25x until the next stage.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 20
+    - rcv: 10
+    - type: potential
+    - hp: 30
+    - rcv: 10
+    - hp: 40
+    - atk: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 10
+    - hp: 50
+    - hp: 60
+    - rcv: 10
+    - type: potential
+    - cooldown: 1
+    - atk: 30
+    - atk: 30
+    - rcv: 10
+    - atk: 30
+    - hp: 60
+    - rcv: 20
+    - atk: 30
+    - hp: 70
+    - type: sailor
+    - rcv: 30
+    - hp: 70
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 8
+          threshold: 70
+        - value: 10
+          threshold: 80
+        - value: 10
+          threshold: 100
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "On the last Stage. Any 2 of the following: King, Queen or Jack."
+        description: Boosts Tandem ATK of Striker characters by 1.25x and increases
+          boost effects of Increase Damage Taken debuffs by +0.25x.
+      - criteria: "On the last Stage. Any 2 of the following: King, Queen, Jack, Sasaki,
+          X Drake, Black Maria, Who's-Who, Page One or Ulti."
+        description: Boosts Tandem ATK of Striker characters by 1.5x and increases boost
+          effects of Increase Damage Taken debuffs by +0.25x.
+      - criteria: "On the last Stage. Any 2 of the following: King, Queen, Jack, Sasaki,
+          X Drake, Black Maria, Who's-Who, Page One or Ulti."
+        description: Boosts Tandem ATK of Striker characters by 1.5x and increases boost
+          effects of Increase Damage Taken debuffs by +0.5x.
+      - criteria: "On the last Stage. Any 2 of the following: King, Queen, Jack, Sasaki,
+          X Drake, Black Maria, Who's-Who, Page One, Ulti or Striker characters.
+          One of King, Queen, Jack, Sasaki, X Drake, Black Maria, Who's-Who,
+          Page One or Ulti is required."
+        description: Boosts Tandem ATK of Striker characters by 1.75x and increases
+          boost effects of Increase Damage Taken debuffs by +0.5x.
+      - criteria: "On the last Stage. Any 2 of the following: King, Queen, Jack, Sasaki,
+          X Drake, Black Maria, Who's-Who, Page One, Ulti or Striker characters.
+          One of King, Queen, Jack, Sasaki, X Drake, Black Maria, Who's-Who,
+          Page One or Ulti is required."
+        description: Boosts Tandem ATK of Striker characters by 2x and increases boost
+          effects of Increase Damage Taken debuffs by +0.75x.
+rumble:
+  stats:
+    def: 225
+    rumbleType: DBF
+    spd: 159
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 100
+      type: debuff
+    - attribute: DEX
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            comparator: after
+            count: 60
+            type: time
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 2
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: atk
+        - amount: 20
+          effect: damage
+          targeting:
+            count: 3
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Half Stats
+          chance: 50
+          duration: 10
+          effect: hinderance
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            amount: 22
+        - override:
+            chance: 55
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            amount: 24
+        - override:
+            chance: 60
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            amount: 26
+        - override:
+            chance: 65
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.8
+        - override:
+            amount: 28
+        - override:
+            chance: 70
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3
+        - override:
+            amount: 30
+        - override:
+            chance: 75
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.2
+        - override:
+            amount: 32
+        - override:
+            chance: 80
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.4
+        - override:
+            amount: 34
+        - override:
+            chance: 85
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.6
+        - override:
+            amount: 36
+        - override:
+            chance: 90
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 4
+        - override:
+            amount: 40
+        - override:
+            chance: 100
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - STR
+          - attributes:
+              - ATK
+              - SPD
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - STR
+          - attributes:
+              - ATK
+              - SPD
+              - Guard
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - INT
+          - attributes:
+              - HP
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Powerhouse
+          - attributes:
+              - ATK
+              - RCV
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Powerhouse
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 4
+          - override:
+              level: 2
+          - override:
+              level: 4
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 5
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 6
+          - override:
+              level: 3
+          - override:
+              level: 6
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 9
+          type: attack
+          attack: Full
+      special:
+        - uses: 2
+          effects:
+            - amount: 3000
+              effect: damage
+              targeting:
+                count: 2
+                priority: highest
+                stat: HP
+                targets:
+                  - enemies
+              type: fixed
+            - attributes:
+                - ATK
+              duration: 22
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - Powerhouse
+        - uses: 2
+          effects:
+            - override:
+                amount: 3750
+            - override:
+                level: 3
+                duration: 24
+        - uses: 2
+          effects:
+            - override:
+                amount: 4500
+            - override:
+                level: 5
+                duration: 26
+        - uses: 2
+          effects:
+            - override:
+                amount: 5250
+            - override:
+                level: 7
+                duration: 28
+        - uses: 2
+          effects:
+            - override:
+                amount: 6000
+            - override:
+                level: 10
+                duration: 30

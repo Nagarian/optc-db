@@ -1,0 +1,105 @@
+type: PSY
+name: Sangoro - Beauty Before One's Very Eyes
+japanName: サン五郎 眼前の美人
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1136
+    atk: 566
+    rcv: 102
+  maxLvl:
+    hp: 2830
+    atk: 1415
+    rcv: 255
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 251065
+aliases:
+  - Limited Sanji
+  - Secret Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.5x.
+special:
+  name: Pulverizing Legs
+  description: Reduces Paralysis and Chain Multiplier Limit duration by 4 turns.
+    If you are on a Treasure Map, locks the chain multiplier at 3x for 1 turn,
+    locks the chain multiplier at 2.75x for 1 turn otherwise.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: Makes [INT] orbs beneficial for [PSY] characters
+support:
+  type: descriptive
+  criteria: Kozuki Hiyori (Komurasaki)
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.75x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - type: potential
+    - rcv: 20
+    - hp: 30
+    - hp: 30
+    - slot: 1
+    - hp: 30
+    - rcv: 30
+    - atk: 50
+    - type: sailor
+    - atk: 80
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

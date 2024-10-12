@@ -1,0 +1,91 @@
+type: INT
+name: Franky - Franky Rocket Launcher
+japanName: フランキー フランキ～～～ロケットランチャ――
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1655
+    atk: 803
+    rcv: 91
+  maxLvl:
+    hp: 2687
+    atk: 1359
+    rcv: 244
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 14294
+aliases:
+  - Mega Franky
+  - Super Franky
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x, reduces damage received by 10%
+special:
+  name: Franky's Rocket Launcher
+  description: Deals 35x character's ATK in [INT] damage to all enemies. Changes
+    [TND] and [RCV] orbs of Shooter and Free Spirit characters into Matching
+    Orbs.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 15
+  - description: Makes [TND] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin and Brook
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 20
+    - type: potential
+    - hp: 45
+    - hp: 55
+    - hp: 65
+    - hp: 80
+    - atk: 20
+    - type: sailor
+    - atk: 20
+    - atk: 40
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20

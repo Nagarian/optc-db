@@ -1,0 +1,51 @@
+type: DEX
+name: Vinsmoke Yonji
+japanName: ヴィンスモーク・ヨンジ
+family:
+  - VinsmokeYonji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 218
+    atk: 77
+    rcv: 38
+  maxLvl:
+    hp: 1128
+    atk: 492
+    rcv: 198
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 74385
+aliases:
+  - Green Ranger
+evolution:
+  - id: 1840
+    evolvers:
+      - 86
+      - 266
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.75x, boosts ATK of Powerhouse
+    characters by 1.2x and boosts HP of Powerhouse characters by 1.2x
+  notes: Attack boost stacks, so a [DEX] Powerhouse character has a 2.1x ATK
+special:
+  name: Burst End Kick
+  description: If your Captain is a [DEX] or [PSY] character, boosts ATK against
+    delayed enemies by 1.75x for 1 turn. If your Captain is a Powerhouse
+    character, adds 40x character's ATK as Additional Damage for 1 turn
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character

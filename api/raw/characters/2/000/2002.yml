@@ -1,0 +1,42 @@
+type: QCK
+name: Senor Pink - Donquixote Family Fighter Brigade
+japanName: セニョール・ピンク ドンキホーテファミリー　格闘集団
+family:
+  - SenorPink
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 592
+    atk: 270
+    rcv: 45
+  maxLvl:
+    hp: 2378
+    atk: 1112
+    rcv: 225
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 93532
+aliases:
+  - Story Senor Pink
+  - Story Senior Pink
+captain:
+  name: ""
+  description: Increases damage received by 1.2x. Reduces Special Cooldown of all
+    characters by 2 turns at the start of the fight and boosts ATK of all
+    characters by 2.5x.
+special:
+  name: The Man Standing Tall
+  description: Reduces Bind, Despair and Paralysis duration by 3 turns and deals
+    ?x character's ATK in Typeless damage, depending on the crew's current HP,
+    to all enemies.
+  cooldown: 18
+  maxLevel: 6
+  notes: "`specialProportional : lower : ? * ( 1 - (remaining HP) / (total HP) )`"

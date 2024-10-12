@@ -1,0 +1,120 @@
+type: PSY
+name: Rebecca - Royal Vacation
+japanName: レベッカ 王族のバカンス
+family:
+  - Rebecca
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1056
+    atk: 812
+    rcv: 159
+  maxLvl:
+    hp: 2506
+    atk: 1318
+    rcv: 343
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 218710
+aliases:
+  - Summer Rebecca
+  - Swimsuit Rebecca
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x and their RCV by 1.2x.
+special:
+  name: Smiling at the Sunflowers Blooming on the Beach
+  description: Reduces enemies' Barrier duration by 1 turn, reduces Silence
+    duration by 7 turns and boosts the Color Affinity of all characters by 1.75x
+    for 3 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of [PSY] characters by 50
+  - description: Reduces Silence duration by 7 turns on this character
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Viola (Violet), Riku Doldo III (Ricky) and Kyros (Toy Soldier)
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - slot: 1
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: sailor
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

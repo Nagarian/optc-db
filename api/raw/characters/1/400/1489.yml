@@ -1,0 +1,52 @@
+type: STR
+name: Don Krieg - East Blue Overlord
+japanName: 首領・クリーク 東の海の覇者
+family:
+  - Krieg
+class:
+  - Driven
+  - Shooter
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 1200
+    atk: 476
+    rcv: 30
+  maxLvl:
+    hp: 2707
+    atk: 1225
+    rcv: 106
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 52209
+aliases:
+  - Colo Don Krieg
+  - Coliseum Don Krieg
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x, reduces damage received by 20%
+special:
+  name: Great Battle Spear
+  description: Deals 20x character's ATK in [STR] damage to one enemy and removes
+    any Orb Rate Up and Orb Rate Down Buffs
+  cooldown: 20
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Pearl and Gin
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

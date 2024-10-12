@@ -1,0 +1,210 @@
+type: QCK
+name: Shiryu - Traitorous Head Jailer
+japanName: シリュウ 裏切りの看守長
+family:
+  - Shiryu
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1583
+    atk: 565
+    rcv: 108
+  maxLvl:
+    hp: 3958
+    atk: 1412
+    rcv: 271
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 266804
+aliases:
+  - Limited Shiryu
+  - Secret Shiryu
+  - Rumble Shiryu
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.75x.
+special:
+  name: Back-to-Back Slash
+  description: Deals 100,000 Fixed True damage to one enemy and boosts Orb Effects
+    of Driven characters by 1.75x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven characters by 50
+limitBreak:
+  path:
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - type: potential
+    - hp: 100
+    - rcv: 100
+    - hp: 100
+    - atk: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 126
+    rumbleType: ATK
+    spd: 202
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 3
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1000
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: damage
+          targeting:
+            targets:
+              - STR
+          type: fixed
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            amount: 1100
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            amount: 1200
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            amount: 1300
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            amount: 1400
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            amount: 1500
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            amount: 1600
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            amount: 1700
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            amount: 1800
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2
+        - override:
+            amount: 2000

@@ -1,0 +1,116 @@
+type: INT
+name: Scarlet - Legendary Pirate's Associate
+japanName: スカーレット 伝説の海賊の側近
+family:
+  - Scarlet
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1329
+    atk: 569
+    rcv: 66
+  maxLvl:
+    hp: 2630
+    atk: 1412
+    rcv: 132
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 116164
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 3.25x following
+    a chain of Good > Great > PERFECT hits
+special:
+  name: Natural Strength
+  description: If HP is below 10%, boosts Orb Effects of all characters by 2x for
+    1 turn. If your Captain is a Driven character, locks all orbs for 1 turn and
+    reduces enemies' ATK Up, Enrage and End of Turn Damage/Percent Cut duration
+    by 5 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: If your Captain is a Driven character, boosts base ATK of this
+      character by 100
+  - description: Boosts base ATK of all characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Shiki and Indigo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - atk: 40
+    - hp: 30
+    - cooldown: 1
+    - hp: 50
+    - type: sailor
+    - rcv: 10
+    - hp: 70
+    - slot: 1
+    - atk: 60
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 5
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

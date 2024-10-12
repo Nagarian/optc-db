@@ -1,0 +1,181 @@
+type: INT
+name: "Doflamingo: Nightwalker - Happy Halloween!"
+japanName: ドフラミンゴ　ナイトウォーカー Happy Halloween
+family:
+  - DonquixoteDoflamingo
+class:
+  - Shooter
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 143
+    atk: 176
+    rcv: 8
+  maxLvl:
+    hp: 971
+    atk: 1026
+    rcv: 46
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 174233
+aliases:
+  - Halloween Doflamingo
+  - Halloween Doffy
+  - Doffy S. Pumpkins
+  - David S. Pumpkins
+evolution:
+  - id: 2747
+    evolvers:
+      - 94
+      - 1180
+      - 304
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Fighter characters by 2.25x and deals 5x
+    the damage taken from enemies in the previous turn in [INT] damage to all
+    enemies at the end of each turn.
+special:
+  name: The Mocking King Sitting Atop of the Grave
+  description: Removes enemies' Resilience buff duration completely. If enemies
+    have Delay Debuff Protection or All Debuff Protection at the time the
+    special was activated, boosts ATK of Fighter and Shooter characters by 1.75x
+    for 1 turn and boosts Orb Effects of Fighter and Shooter characters by 1.75x
+    for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Shooter and Fighter characters by 30
+rumble:
+  stats:
+    def: 137
+    rumbleType: DBF
+    spd: 151
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Shooter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Guard
+          level: 1
+          duration: 15
+          effect: debuff
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Critical Hit
+          level: 2
+          duration: 15
+          effect: buff
+          targeting:
+            targets:
+              - Fighter
+              - Shooter
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            level: 3
+            duration: 19
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            level: 3
+            duration: 20
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 23
+        - override:
+            level: 4
+            duration: 23
+    - cooldown: 30
+      effects:
+        - override:
+            level: 4
+            duration: 25
+        - override:
+            level: 5
+            duration: 25

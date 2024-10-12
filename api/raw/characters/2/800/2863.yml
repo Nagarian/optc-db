@@ -1,0 +1,229 @@
+type: DUAL
+name: Krieg & Gin - Survivors From the Grand Line
+japanName: クリーク＆ギン “偉大なる航路”からの生還者達
+family:
+  - Gin
+  - Krieg
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 555
+    atk: 279
+    rcv: 32
+  maxLvl:
+    hp: 1211
+    atk: 734
+    rcv: 100
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 187986
+aliases:
+  - Krieg&Gin
+  - Gin&Krieg
+  - KriegGin
+  - GinKrieg
+  - Krieg and Gin
+  - Don Krieg
+evolution:
+  - id: 2864
+    evolvers:
+      - 84
+      - 85
+      - 266
+      - 300
+      - 301
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [QCK] characters by 3.25x and boosts ATK of
+    all other characters by 2.5x and reduces damage taken by 20%.
+special:
+  name: Man-Demon War Spear
+  description: Deals 50x character's ATK in character's Type damage to all
+    enemies, reduces Paralysis duration by 5 turns, reduces enemies' Increased
+    Defense duration by 5 turns and becomes Krieg & Gin for 2 turns. If enemies
+    have Delay Debuff Protection or All Debuff Protection at the time the
+    special was activated, boosts Orb Effects of all characters by 2x for 1
+    turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 50
+characters:
+  swap:
+    description: Changes orb of this character into a Matching orb and reduces
+      damage received by 20% for 1 turn.
+  character1:
+    name: Krieg - Survivors From the Grand Line
+    japanName: クリーク “偉大なる航路”からの生還者達
+    class:
+      - Powerhouse
+      - Striker
+    type: STR
+    stats:
+      combo: 5
+      minLvl:
+        hp: 534
+        atk: 260
+        rcv: 29
+      maxLvl:
+        hp: 1166
+        atk: 689
+        rcv: 88
+    captain:
+      name: ""
+      description: Boosts ATK of [STR] characters by 2.5x and boosts ATK of all other
+        characters by 2x and reduces damage taken by 10%.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25
+  character2:
+    name: Gin - Survivors From the Grand Line
+    japanName: ギン “偉大なる航路”からの生還者達
+    class:
+      - Striker
+      - Powerhouse
+    type: QCK
+    stats:
+      combo: 5
+      minLvl:
+        hp: 521
+        atk: 254
+        rcv: 30
+      maxLvl:
+        hp: 1133
+        atk: 677
+        rcv: 94
+    captain:
+      name: ""
+      description: Boosts ATK of [QCK] characters by 2.5x and boosts ATK of all other
+        characters by 2x and reduces damage taken by 10%.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25
+rumble:
+  stats:
+    def: 163
+    rumbleType: ATK
+    spd: 161
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 2
+          condition:
+            comparator: above
+            count: 60
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 33
+          effect: damage
+          type: cut
+          range:
+            direction: radial
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 0.5
+          effect: damage
+          type: atk
+          range:
+            direction: radial
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 34
+        - override:
+            amount: 0.53
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 35
+        - override:
+            amount: 0.55
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 37
+        - override:
+            amount: 0.58
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 38
+        - override:
+            amount: 0.61
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 40
+        - override:
+            amount: 0.64
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 41
+        - override:
+            amount: 0.66
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 43
+        - override:
+            amount: 0.69
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 44
+        - override:
+            amount: 0.72
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 47
+        - override:
+            amount: 0.8

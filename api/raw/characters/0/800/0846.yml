@@ -1,0 +1,96 @@
+type: QCK
+name: Buffalo - Donquixote Pirates
+japanName: バッファロー ドンキホーテ海賊団
+family:
+  - Buffalo
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 10
+  minLvl:
+    hp: 1050
+    atk: 600
+    rcv: 173
+  maxLvl:
+    hp: 2769
+    atk: 1096
+    rcv: 296
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 19806
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x after the 11th hit in the
+    chain, by 2.5x after the 22nd hit, by 2.75x after the 30th hit, by 3.5x
+    after the 40th hit
+special:
+  name: "Gust: Matasaburo"
+  description: Randomizes all orbs and changes the orb of this character into a [QCK] orb
+  cooldown: 13
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of all characters by 30
+  - description: Boosts this character's damage against [DEX] characters by 2x
+support:
+  type: descriptive
+  criteria: Gladius, Baby 5 and Pica
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.2x after 17th hit in the chain for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.4x after 17th hit in the chain for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.6x after 17th hit in the chain for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.8x after 17th hit in the chain for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 2x after 17th hit in the chain for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - rcv: 30
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - hp: 80
+    - atk: 100
+    - type: sailor
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,117 @@
+type: INT
+name: Brannew - Arguing Against Absolute Justice
+japanName: ブランニュー 絶対正義とのせめぎ合い
+family:
+  - Brannew
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 921
+    atk: 542
+    rcv: 125
+  maxLvl:
+    hp: 2428
+    atk: 1243
+    rcv: 336
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 97002
+aliases:
+  - Brannew
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 2.5x and reduces damage
+    received by 7%
+special:
+  name: Reporting on a Bizarre Incident
+  description: Reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 4 turns and makes [QCK], [PSY], [RCV] and [TND] orbs
+    beneficial for [STR] and [INT] characters for 3 turns
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 50
+  - description: Boosts base ATK of Slasher characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Sengoku
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - description: When the supported character hits a PERFECT, reduces enemies'
+        Percent Damage Reduction duration by 1 turn.
+      value: 5
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 40
+    - rcv: 10
+    - type: potential
+    - atk: 25
+    - rcv: 15
+    - atk: 30
+    - cooldown: 1
+    - rcv: 30
+    - slot: 1
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - hp: 30
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

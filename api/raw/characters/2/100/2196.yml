@@ -1,0 +1,242 @@
+type: INT
+name: Blackbeard - Warlord of the Sea
+japanName: 黒ひげ 王下七武海
+family:
+  - MarshallDTeach
+class:
+  - Driven
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 500
+    atk: 153
+    rcv: -83
+  maxLvl:
+    hp: 1770
+    atk: 720
+    rcv: -83
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 115685
+aliases:
+  - Raid Blackbeard V2
+  - Raid BB
+evolution:
+  - id: 2197
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 99
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x and boosts their HP by 1.2x
+special:
+  name: The Signal of Changing Times
+  description: Reduces enemies' Threshold Damage Reduction, Percent Damage
+    Reduction, End of Turn Damage/Percent Cut, End of Turn Heal, Increased
+    Defense, Damage Nullification, ATK Up, Enrage, Resilience and Barrier Buffs
+    duration by 1 turn. Boosts ATK of all characters by 2x for 1 turn if HP is
+    below 10% at the time the special is activated.
+  cooldown: 23
+  maxLevel: 15
+rumble:
+  stats:
+    def: 116
+    rumbleType: DBF
+    spd: 130
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: buff
+          level: 10
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 37
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 19
+            level: 3
+        - override:
+            duration: 19
+            level: 3
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 20
+            level: 3
+        - override:
+            duration: 20
+            level: 3
+        - override:
+            duration: 20
+        - override:
+            duration: 20
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 21
+            level: 3
+        - override:
+            duration: 21
+            level: 3
+        - override:
+            duration: 21
+            level: 2
+        - override:
+            duration: 21
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 22
+            level: 4
+        - override:
+            duration: 22
+            level: 3
+        - override:
+            duration: 22
+            level: 2
+        - override:
+            duration: 22
+            level: 2
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 23
+            level: 4
+        - override:
+            duration: 23
+            level: 4
+        - override:
+            duration: 23
+            level: 2
+        - override:
+            duration: 23
+            level: 2
+    - cooldown: 37
+      effects:
+        - override:
+            duration: 24
+            level: 5
+        - override:
+            duration: 24
+            level: 5
+        - override:
+            duration: 24
+            level: 3
+        - override:
+            duration: 24
+            level: 3

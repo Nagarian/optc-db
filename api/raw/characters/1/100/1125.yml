@@ -1,0 +1,98 @@
+type: PSY
+name: Suleiman the Beheader
+japanName: 首はねスレイマン
+family:
+  - Suleiman
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 903
+    atk: 713
+    rcv: 144
+  maxLvl:
+    hp: 2000
+    atk: 1410
+    rcv: 336
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 33765
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3.5x, reduces own ATK
+    multiplier by 0.1x at the end of each turn
+  notes: His ATK multiplier will be 3.5x on the first turn, 3.4x on the second,
+    3.3x on the third and so on. The reduction stops once the multiplier is
+    1.0x. The multiplier affects all Slasher characters.
+special:
+  name: Idle Execution
+  description: Deals 13x character's ATK in [PSY] damage to all enemies, changes
+    orbs of this and Captain characters into Matching orbs.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Slasher characters by 60
+  - description: Makes [PSY] orbs beneficial for Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Cavendish
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 30
+    - cooldown: 2
+    - atk: 35
+    - type: sailor
+    - atk: 50
+    - cooldown: 2
+    - atk: 60
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

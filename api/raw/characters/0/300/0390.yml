@@ -1,0 +1,94 @@
+type: QCK
+name: Emporio Ivankov - Queen of Kamabakka Queendom (Retired)
+japanName: エンポリオ・イワンコフ カマバッカ王国女王【永久欠番】
+family:
+  - EmporioIvankov
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1642
+    atk: 470
+    rcv: 132
+  maxLvl:
+    hp: 3030
+    atk: 1155
+    rcv: 290
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 8286
+aliases:
+  - Raid Ivankov
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x following a chain of [DEX] >
+    [INT] > [QCK] attacks no lower than Good
+special:
+  name: Hell Wink
+  description: Randomizes all orbs into either [RCV], [STR], [DEX] or [QCK] orbs,
+    makes [STR], [DEX] and [QCK] orbs beneficial for all characters for 1 turn
+    and changes the orb of this character into a [QCK] orb
+  cooldown: 17
+  maxLevel: 10
+sailor:
+  - description: Makes [STR], [DEX] and [RCV] orbs beneficial for this character
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Bentham (Mr. 2 Bon Clay) and Inazuma
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - rcv: 20
+    - rcv: 30
+    - hp: 60
+    - type: potential
+    - atk: 40
+    - hp: 80
+    - atk: 40
+    - type: sailor
+    - atk: 40
+    - slot: 1
+    - atk: 40
+    - atk: 40
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 25
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

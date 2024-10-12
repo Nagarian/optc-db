@@ -1,0 +1,231 @@
+type: STR
+name: Kid & Killer - The Worst vs. The Strongest
+japanName: キッド＆キラー “最悪”対“最強”
+family:
+  - Killer
+  - EustassKid
+class:
+  - Striker
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 999
+    atk: 722
+    rcv: 112
+  maxLvl:
+    hp: 2676
+    atk: 1311
+    rcv: 217
+cost: 50
+slots: 5
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 160271
+aliases:
+  - Stampede Eustass Kid
+  - Stampede Kidd
+  - Stampede Killer
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Striker characters by 2.5x
+special:
+  name: Kid & Killer Special
+  description: Reduces Bind duration by 4 turns and boosts ATK of Striker and
+    Slasher characters by 1.75x for 1 turn.
+  cooldown: 16
+  maxLevel: 5
+sailor:
+  - description: Makes [DEX] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 20
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - hp: 30
+    - rcv: 30
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - cooldown: 1
+    - atk: 40
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 50
+        - value: 2
+          threshold: 60
+        - value: 3
+          threshold: 70
+        - value: 4
+          threshold: 80
+        - value: 5
+          threshold: 90
+rumble:
+  stats:
+    def: 156
+    rumbleType: SPT
+    spd: 165
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+              - Striker
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 450
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+            - Blow Away
+          effect: buff
+          level: 1
+          duration: 20
+          targeting:
+            targets:
+              - Slasher
+              - Striker
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 500
+        - override:
+            duration: 21
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 550
+        - override:
+            duration: 22
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 600
+        - override:
+            duration: 23
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 650
+        - override:
+            duration: 24
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 700
+        - override:
+            duration: 25
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 750
+        - override:
+            level: 2
+            duration: 26
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 800
+        - override:
+            level: 2
+            duration: 27
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 2
+            duration: 28
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 3
+            duration: 30

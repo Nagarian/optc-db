@@ -1,0 +1,50 @@
+type: STR
+name: Roronoa Zoro - Summertime Straw Hat Pirates
+family:
+  - RoronoaZoro
+class:
+  - Free Spirit
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 979
+    atk: 524
+    rcv: 42
+  maxLvl:
+    hp: 2448
+    atk: 1311
+    rcv: 105
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 161527
+aliases:
+  - Summer Zoro
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x.
+special:
+  name: Swordsman's Summer Festival Booze
+  description: Makes [STR], [RCV] and [TND] orbs beneficial for Free Spirit
+    characters for 2 turns and boosts the Color Affinity of Free Spirit
+    characters by 1.5x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

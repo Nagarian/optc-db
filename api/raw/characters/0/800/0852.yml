@@ -1,0 +1,48 @@
+type: QCK
+name: Slimmed-Down Wapol
+japanName: スリムアップワポル
+family:
+  - Wapol
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 837
+    atk: 505
+    rcv: 95
+  maxLvl:
+    hp: 1923
+    atk: 867
+    rcv: 247
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 20242
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x
+special:
+  name: "Snow Country Specialty: Snow Powder Makeup"
+  description: Deals 20x character's ATK in character's Type damage to one enemy,
+    locks all orbs for 1 turn
+  cooldown: 25
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: "[QCK] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

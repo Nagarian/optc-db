@@ -1,0 +1,52 @@
+type: INT
+name: Dr. Hiriluk - The Quack Doctor's Dream
+japanName: Dr.ヒルルク ヤブ医者の叶えたい夢
+family:
+  - Hiriluk
+class:
+  - Free Spirit
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 796
+    atk: 334
+    rcv: 136
+  maxLvl:
+    hp: 1990
+    atk: 835
+    rcv: 340
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 146867
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 2.25x and their HP and
+    RCV by 1.2x.
+special:
+  name: Entrusting his Dream with this Final Cup
+  description: Reduces crew's current HP by 50%, reduces Despair, Paralysis and
+    Chain Coefficient Reduction duration by 3 turns and changes [TND] and [RCV]
+    orbs of all characters into Matching Orbs.
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Kureha (Doctorine) and Tony Tony Chopper
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

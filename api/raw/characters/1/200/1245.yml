@@ -1,0 +1,88 @@
+type: QCK
+name: Monkey D. Luffy - Straw Hat Rockin' Marineford
+japanName: モンキー・D・ルフィ マリンフォードに舞う“麦わら”
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 340
+    atk: 195
+    rcv: 22
+  maxLvl:
+    hp: 1890
+    atk: 1242
+    rcv: 309
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 37431
+notes: This Limit Break is exclusive to Global ONLY
+aliases:
+  - Log Luffy
+  - Marineford Luffy
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.75x, by 3x instead if HP is below 10%
+  notes: "This LB captain ability is different on Global: Boosts ATK of Fighter
+    characters by 1.75x, by 3.25x instead if HP is below 10%"
+special:
+  name: Gomu Gomu no Stamp Gatling
+  description: Deals random [QCK] damage to all enemies and boosts ATK of Fighter
+    characters by 1.3x for 1 turn. If "Firefly Light, Fiery Doll" is used again
+    in the same turn the special is activated in, boosts ATK of Fighter
+    characters by 2x instead.
+  cooldown: 23
+  maxLevel: 7
+  notes: Firefly Light, Fiery Doll is Event Ace's special ability.
+sailor:
+  - description: Makes [QCK] orbs beneficial for Fighter characters
+  - description: Reduces Paralysis duration by 1 turn
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 30
+    - type: potential
+    - cooldown: 2
+    - rcv: 30
+    - atk: 30
+    - type: sailor
+    - hp: 40
+    - atk: 50
+    - hp: 50
+    - cooldown: 3
+    - type: sailor
+    - captain:
+        description: Boosts ATK of Fighter characters by 3x, by 4x instead if HP is
+          below 30%, and makes [QCK] and [DEX] orbs beneficial for Fighter
+          characters.
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

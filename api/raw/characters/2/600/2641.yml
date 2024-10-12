@@ -1,0 +1,49 @@
+type: PSY
+name: Brook - Summertime Straw Hat Pirates
+family:
+  - Brook
+class:
+  - Free Spirit
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 833
+    atk: 457
+    rcv: 89
+  maxLvl:
+    hp: 2082
+    atk: 1143
+    rcv: 222
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 161528
+aliases:
+  - Summer Brook
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x and their HP by 1.2x.
+special:
+  name: Skeleton's Summer Body
+  description: Adds 0.4x to Chain multiplier for 2 turns and reduces the defense
+    of all enemies by 80% for 2 turns.
+  cooldown: 16
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

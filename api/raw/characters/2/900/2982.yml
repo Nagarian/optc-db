@@ -1,0 +1,135 @@
+type: DEX
+name: Basil Hawkins the Magician - Subordinate to the Dragon
+japanName: “魔術師”バジル・ホーキンス 龍につき従う者
+family:
+  - BasilHawkins
+class:
+  - Cerebral
+  - Slasher
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1684
+    atk: 901
+    rcv: 132
+  maxLvl:
+    hp: 3724
+    atk: 1585
+    rcv: 251
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 203899
+aliases:
+  - V1 Legend Hawkins
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 3x, boosts ATK of all other
+    characters by 2.75x, boosts HP of all characters by 1.3x and deals 10% of
+    enemies' current HP in damage to all enemies at the end of each turn.
+    Recovers 50% of damage taken from enemies in the previous stage when
+    entering a new stage. At the beginning of each Stage, increases the Attack
+    Timer of all enemies by 1 turn.
+superSpecial:
+  criteria: This character must be captain and an active Support ability must have
+    been activated by being inflicted by an enemy action.
+  description: Reduces any damage received above 500 HP by ?% for 1 turn and
+    transforms all [DEX] characters into Super [DEX] characters.
+special:
+  name: Strawman's Pursuit
+  description: Deals 500x character's ATK in Typeless damage to one enemy, changes
+    orbs of this and adjacent characters into Matching orbs and adds 20x the
+    damage taken from enemies before the special is activated as Additional
+    Typeless Damage for 3 turns.
+  cooldown: 16
+  maxLevel: 6
+  notes: The amount of damage possible caps at 50,000 damage taken, so 1,000,000
+    Additional Damage.
+sailor:
+  - description: Makes [STR], [QCK], [TND] and [RCV] orbs beneficial for this character
+  - description: Reduces Paralysis and Silence duration completely on this character
+support:
+  type: descriptive
+  criteria: Kaido
+  levels:
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 500 HP.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 1,000 HP.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 1,500 HP.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 2,000 HP.
+    - Once per adventure, when you reach the final stage, changes orbs of the
+      supported and adjacent characters into Matching orbs and recovers 3,000
+      HP.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - type: sailor
+    - rcv: 5
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - rcv: 30
+    - cooldown: 1
+    - hp: 70
+    - hp: 70
+    - hp: 70
+    - type: sailor
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 60
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - atk: 25
+    - hp: 100
+    - atk: 25
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

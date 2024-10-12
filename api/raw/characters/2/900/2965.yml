@@ -1,0 +1,299 @@
+type: STR
+name: Boa Hancock - Affection for Straw Hat Luffy
+japanName: ボア・ハンコック 麦わらのルフィへの恋慕
+family:
+  - BoaHancock
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 470
+    atk: 254
+    rcv: 48
+  maxLvl:
+    hp: 1164
+    atk: 724
+    rcv: 189
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 202539
+aliases:
+  - ""
+evolution:
+  - id: 2966
+    evolvers:
+      - 117
+      - 83
+      - 84
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x and their RCV by 1.2x.
+special:
+  name: Full-body Perfume Femur
+  description: Reduces ATK DOWN and Silence duration by 5 turns, changes [BLOCK],
+    [BOMB] and Badly Matching orbs into Matching orbs and locks all orbs for 1
+    turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+rumble:
+  stats:
+    def: 111
+    rumbleType: RCV
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Fighter
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 0.75
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 0.83
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 0.91
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 0.99
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 1.07
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 1.15
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 1.23
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 1.31
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 1.39
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 36
+      effects:
+        - amount: 1.5
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR

@@ -1,0 +1,551 @@
+type: PSY
+name: Germa 66 - True Power of Science
+japanName: ジェルマ６６ 科学の力の真髄
+family:
+  - VinsmokeJudge
+  - VinsmokeReiju
+  - VinsmokeIchiji
+  - VinsmokeNiji
+  - VinsmokeYonji
+class:
+  - Powerhouse
+  - Driven
+rarity: 6+
+stats:
+  combo: 6
+  minLvl:
+    hp: 1651
+    atk: 1042
+    rcv: 100
+  maxLvl:
+    hp: 3666
+    atk: 1668
+    rcv: 333
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 224884
+aliases:
+  - Mega/Super/6+ Germa
+  - Vinsmoke Judge
+  - Vinsmoke Ichiji
+  - Vinsmoke Niji
+  - Vinsmoke Yonji
+  - Vinsmoke Reiju
+  - Legend Germa 66
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 4.5x, boosts ATK of all other
+    characters by 4x, makes [TND] orbs beneficial for all characters and boosts
+    chances of getting [TND] orbs. If a [PSY] character has a [PSY] or [TND]
+    orb, boosts their ATK by 5x instead. If this character becomes your captain
+    in the middle of an island, this character's own normal attacks count as
+    Type Effective against all Types.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Vinsmoke Sanji, Monkey D. Luffy, Nami, Tony Tony Chopper, Brook, Jinbe or
+    Carrot, excluding Support members."
+  description: Boosts Chain Multiplier Growth Rate by 1.25x for 1 turn, locks all
+    orbs for 1 turn and transforms all [PSY] characters into Super [PSY]
+    characters.
+special:
+  name: Germa 66
+  description: Changes all orbs, including [BLOCK] orbs, into [TND] orbs and
+    boosts Orb Effects of [PSY] characters by 2.25x for 3 turns. If this
+    character is a Sailor, swaps this unit with your captain for 3 turns.
+  cooldown: 19
+  maxLevel: 6
+  stages:
+    - description: Changes the orb of this character into a [TND] orb and boosts Orb
+        Effects of [PSY] characters by 2x for 1 turn. If this character is a
+        Sailor, swaps this unit with your captain for 1 turn.
+      cooldown: 13
+    - description: Changes all orbs into [TND] orbs and boosts Orb Effects of [PSY]
+        characters by 2.25x for 2 turns. If this character is a Sailor, swaps
+        this unit with your captain for 2 turns.
+      cooldown: 16
+sailor:
+  - description: Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this
+      character
+  - description: Makes [TND] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [TND] orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [TND] orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [TND] orbs and makes [TND] orbs
+      beneficial for all characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [TND] orbs and makes [PSY] and
+      [TND] orbs beneficial for all characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [TND] orbs and makes [PSY],
+      [RCV] and [TND] orbs beneficial for all characters for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - hp: 5
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 15
+    - rcv: 10
+    - type: sailor
+    - atk: 15
+    - hp: 50
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 30
+    - atk: 30
+    - hp: 70
+    - hp: 100
+    - hp: 100
+    - rcv: 10
+    - rcv: 15
+    - rcv: 20
+    - type: sailor
+    - atk: 30
+    - hp: 150
+    - rcv: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 153
+    rumbleType: ATK
+    spd: 187
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: INT
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1500
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 80
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 1600
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 81
+          duration: 12
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 1700
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 82
+          duration: 13
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 1800
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 83
+          duration: 14
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 1900
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 84
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 2000
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 85
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 2100
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 86
+          duration: 17
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 2200
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 87
+          duration: 18
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 2300
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 88
+          duration: 19
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+    - cooldown: 27
+      effects:
+        - amount: 2500
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 100
+          duration: 20
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - INT
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

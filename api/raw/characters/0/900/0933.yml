@@ -1,0 +1,241 @@
+type: PSY
+name: Pica - Donquixote Pirates
+japanName: ピーカ ドンキホーテ海賊団
+family:
+  - Pica
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1660
+    atk: 552
+    rcv: 5
+  maxLvl:
+    hp: 4050
+    atk: 1180
+    rcv: 9
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 23506
+aliases:
+  - Raid Pica
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x and their HP by 1.5x
+special:
+  name: Rock Domination Wall
+  description: Changes [EMPTY] and Badly Matching orbs into Matching orbs. Deals
+    20% of enemies' current HP in damage to all enemies
+  cooldown: 31
+  maxLevel: 15
+  stages:
+    - description: Changes [EMPTY] and Badly Matching orbs of Driven and Powerhouse
+        characters into Matching orbs. Deals 10% of enemies' current HP in
+        damage to all enemies
+      cooldown: 25
+sailor:
+  - description: Boosts base ATK of Powerhouse and Driven characters by 30
+support:
+  type: descriptive
+  criteria: Donquixote Doflamingo, Gladius, Buffalo and Baby 5
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes [EMPTY] orbs of Powerhouse characters into Matching orbs
+    - Once per adventure, when the supported character uses their special,
+      changes [EMPTY] orbs of Powerhouse characters into Matching orbs
+    - Once per adventure, when the supported character uses their special,
+      changes [EMPTY] orbs of Powerhouse characters into Matching orbs
+    - Once per adventure, when the supported character uses their special,
+      changes [EMPTY] and Badly Matching orbs of Powerhouse characters into
+      Matching orbs
+    - Once per adventure, when the supported character uses their special,
+      changes [EMPTY] and Badly Matching orbs of Powerhouse and Driven
+      characters into Matching orbs
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 20
+    - type: potential
+    - hp: 25
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 1
+    - hp: 60
+    - slot: 1
+    - hp: 70
+    - hp: 90
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 120
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 279
+    rumbleType: DEF
+    spd: 104
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+        - attributes:
+            - DEF
+          condition:
+            comparator: above
+            count: 80
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 6
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Guard
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 7
+        - {}
+        - override:
+            level: 6
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 8
+        - {}
+        - override:
+            level: 6
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 10
+        - {}
+        - override:
+            level: 7
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 11
+        - {}
+        - override:
+            level: 7
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 12
+        - {}
+        - override:
+            level: 8
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 14
+        - {}
+        - override:
+            level: 8
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 15
+        - {}
+        - override:
+            level: 9
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 16
+        - {}
+        - override:
+            level: 9
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 18
+        - {}
+        - override:
+            level: 10

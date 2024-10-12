@@ -1,0 +1,98 @@
+type: DEX
+name: Ace - Delinquent Kids' Christmas
+japanName: エース やんちゃ小僧のクリスマス
+family:
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1170
+    atk: 562
+    rcv: 98
+  maxLvl:
+    hp: 2926
+    atk: 1405
+    rcv: 244
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 245117
+aliases:
+  - Limited Ace
+  - Secret Ace
+  - Kid Ace
+  - Christmas Ace
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1.5x.
+special:
+  name: Superb Blow
+  description: Deals 30x character's ATK in [DEX] damage to one enemy and reduces
+    the defense of all enemies by 100% for 1 turn. If you are on a Treasure Map,
+    boosts ATK against enemies with reduced defense by 2x for 1 turn, by 1.5x
+    for 1 turn otherwise.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 30
+  - description: Makes [RCV] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Monkey D. Garp, Sabo and Dadan
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - hp: 20
+    - atk: 40
+    - slot: 1
+    - hp: 30
+    - rcv: 30
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70

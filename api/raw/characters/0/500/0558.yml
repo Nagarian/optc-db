@@ -1,0 +1,86 @@
+type: INT
+name: Nico Robin - Straw Hat Pirates' Attack
+japanName: ニコ・ロビン 特攻の麦わらの一味
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1098
+    atk: 551
+    rcv: 180
+  maxLvl:
+    hp: 2076
+    atk: 1099
+    rcv: 400
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - removed
+links:
+  gamewithId: 12650
+notes: "Strong World Batch has been entirely replaced. So this characte is now
+  available with a different artwork and id #1208."
+aliases:
+  - Strong World Robin
+  - SW Robin
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [INT] characters by 2x
+special:
+  name: Ochenta Fleur - Cuatro Manus Shock
+  description: Boosts chances of getting [INT] orbs for 3 turns
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 3 turns
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Franky, Brook
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - atk: 30
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - {}
+        - {}
+        - {}
+        - {}

@@ -1,0 +1,51 @@
+type: INT
+name: Koala - Be My Valentine
+japanName: コアラ Be My Valentine
+family:
+  - Koala
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 137
+    atk: 103
+    rcv: 54
+  maxLvl:
+    hp: 1023
+    atk: 579
+    rcv: 197
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 87128
+aliases:
+  - Valentines Koala
+evolution:
+  - id: 1953
+    evolvers:
+      - 83
+      - 94
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x
+special:
+  name: Vigorous Straight Fist
+  description: Reduces Bind and Despair duration by 3 turns and changes the orb of
+    this character into a [RCV] orb. If your Captain is a Cerebral character,
+    adds 0.7x to Chain multiplier for 1 turn and changes all orbs of bottom row
+    characters into Matching orbs
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: If this character has a [RCV] orb and you hit a PERFECT with her,
+      keep her [RCV] orb for the next turn

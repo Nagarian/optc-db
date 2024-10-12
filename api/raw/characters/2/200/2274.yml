@@ -1,0 +1,49 @@
+type: PSY
+name: Camie - Mermaid Cafe Waitress
+japanName: ケイミー マーメイドカフェのウェイトレス
+family:
+  - Camie
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 245
+    atk: 232
+    rcv: 52
+  maxLvl:
+    hp: 632
+    atk: 711
+    rcv: 171
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 121104
+aliases:
+  - ""
+evolution:
+  - id: 2275
+    evolvers:
+      - 117
+      - 81
+      - 94
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn
+special:
+  name: Heartwarming Soup
+  description: Reduces Paralysis, Silence, Increase Damage Taken and Burn duration
+    by 2 turns. If the enemy is delayed, boosts ATK against delayed enemies by
+    1.75x for 1 turn, delays all enemies by 1 turn otherwise.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 2 turns on this character

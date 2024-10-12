@@ -1,0 +1,264 @@
+type: INT
+name: Fujitora
+japanName: 藤虎
+family:
+  - Issho
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 430
+    atk: 250
+    rcv: 77
+  maxLvl:
+    hp: 1890
+    atk: 754
+    rcv: 204
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 30744
+aliases:
+  - Issho
+  - V1 Legend Fujitora
+evolution:
+  - id: 1085
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts HP of Driven characters by 1.5x and boosts ATK of Driven
+    characters by 1.5x, by 3x instead if they have a beneficial orb. Makes [TND]
+    and [RCV] orbs beneficial for Driven characters
+special:
+  name: "Gravito: Heavens Fall"
+  description: Deals 20% of enemies' current HP in damage to all enemies. Deals
+    20% of enemies' current HP in damage to all enemies at the end of the turn
+    for 3 turns
+  cooldown: 24
+  maxLevel: 8
+  notes: Does not stack with other 'end of turn damage' abilities
+rumble:
+  stats:
+    def: 119
+    rumbleType: ATK
+    spd: 104
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 150
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - Driven
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 39
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 40
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 41
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 42
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 43
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 44
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 45
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 46
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 47
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 36
+      effects:
+        - amount: 49
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

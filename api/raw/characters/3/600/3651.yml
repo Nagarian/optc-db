@@ -1,0 +1,51 @@
+type: STR
+name: Who's-Who - Obstructing Tobi Roppo
+family:
+  - WhosWho
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 928
+    atk: 449
+    rcv: 64
+  maxLvl:
+    hp: 1857
+    atk: 898
+    rcv: 128
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+aliases:
+  - Legend V1
+evolution:
+  - id: 3652
+    evolvers: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts HP of all characters by 1.3x and deals 0x-600x
+    character's ATK in Typeless damage to one enemy at the end of each turn
+    depending on how many PERFECTs scored that turn. If there is a [STR], [DEX]
+    and [QCK] character in your crew, boosts ATK of [STR], [DEX] and [QCK]
+    characters by 4.5x. If there are no [PSY] or [INT] characters on your crew,
+    boosts ATK of [STR], [DEX] and [QCK] characters by 5.4x instead.
+  notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+    PERFECTs - ?x ATK; 1 PERFECT - ?x ATK; 2 PERFECTs - ?x ATK; 3 PERFECTs - ?x
+    ATK; 4 PERFECTs - ?x ATK; 5 PERFECTs - ?x ATK; 6 PERFECTs - 600x ATK."
+special:
+  name: Mighty Fangs
+  description: Deals 200x character's ATK in [STR] damage to one enemy, reduces
+    Special Cooldown of [STR], [DEX] and [QCK] characters by 2 turns and boosts
+    Color Affinity of [STR], [DEX] and [QCK] characters by 2.25x for 1 turn. If
+    this character is your Captain or Friend/Guest Captain or your Captain is a
+    [DEX] or [QCK] character, adds 1.6x to Chain multiplier for 3 turns, adds
+    1.4x to Chain multiplier for 1 turn otherwise.
+  cooldown: 20
+  maxLevel: 6

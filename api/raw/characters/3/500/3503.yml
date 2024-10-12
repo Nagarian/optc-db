@@ -1,0 +1,103 @@
+type: STR
+name: Denjiro - With His Liege
+japanName: 傳ジロー 主君と共に
+family:
+  - Denjiro
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1653
+    atk: 735
+    rcv: 81
+  maxLvl:
+    hp: 3306
+    atk: 1470
+    rcv: 162
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 311499
+aliases:
+  - Secret Limited TM Denjiro
+captain:
+  name: ""
+  description: Boosts HP of Slasher characters by 1.5x.
+special:
+  name: Mow Down Flash
+  description: Deals 10% of enemies' current HP in damage to all enemies. If your
+    crew has 4 or more [STR] characters, adds 0.7x to Chain multiplier for 1
+    turn and boosts Orb Effects of Slasher and Cerebral characters by 2x for 1
+    turn. If your crew has 4 or more [DEX] or [QCK] characters, adds 0.5x to
+    Chain multiplier for 1 turn and boosts the Color Affinity of Slasher and
+    Cerebral characters by 1.75x for 3 turns.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of Slasher and Cerebral characters by 30
+  - description: If this character has an [STR] orb and you hit a PERFECT with them,
+      keep their [STR] orb for the next turn.
+support:
+  type: descriptive
+  criteria: Kin'emon and Kozuki Oden
+  levels:
+    - Once per adventure, when the supported character uses their special, deals
+      1% of enemies' current HP in damage to all enemies at the end of the turn
+      for 3 turns.
+    - Once per adventure, when the supported character uses their special, deals
+      2% of enemies' current HP in damage to all enemies at the end of the turn
+      for 3 turns.
+    - Once per adventure, when the supported character uses their special, deals
+      3% of enemies' current HP in damage to all enemies at the end of the turn
+      for 3 turns.
+    - Once per adventure, when the supported character uses their special, deals
+      4% of enemies' current HP in damage to all enemies at the end of the turn
+      for 3 turns.
+    - Once per adventure, when the supported character uses their special, deals
+      5% of enemies' current HP in damage to all enemies at the end of the turn
+      for 3 turns.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - type: potential
+    - atk: 20
+    - hp: 30
+    - atk: 30
+    - slot: 1
+    - atk: 30
+    - hp: 50
+    - rcv: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 50
+        - value: 5
+          threshold: 70
+        - value: 7
+          threshold: 80

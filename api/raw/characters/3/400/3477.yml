@@ -1,0 +1,215 @@
+type: STR
+name: Charlotte Cracker - Unexpected Strike
+japanName: シャーロット・クラッカー 不意を衝く一撃
+family:
+  - CharlotteCracker
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1484
+    atk: 649
+    rcv: 119
+  maxLvl:
+    hp: 2968
+    atk: 1399
+    rcv: 238
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 302578
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 3.25x and boosts HP of
+    Driven characters by 1.5x.
+special:
+  name: Thousand Arm Thrust
+  description: Changes the orb, including [BLOCK] orb, of this character into a
+    Matching orb, boosts the Color Affinity of Driven and Powerhouse characters
+    by 1.75x for 1 turn and reduces enemies' Percent Damage Reduction and
+    Threshold Damage Reduction duration by 2 turns. If your crew has Affinity
+    Boost, reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction duration by 3 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven and Powerhouse characters by 40
+  - description: Boosts this character's damage against [QCK] characters by 2x
+support:
+  type: descriptive
+  criteria: Powerhouse characters
+  levels:
+    - Reduces damage received from [DEX] characters by 1%.
+    - Reduces damage received from [DEX] characters by 2%.
+    - Reduces damage received from [DEX] characters by 3%.
+    - Reduces damage received from [DEX] characters by 4%.
+    - Reduces damage received from [DEX] characters by 5%.
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 30
+    - rcv: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - atk: 40
+    - rcv: 40
+    - type: sailor
+    - hp: 40
+    - rcv: 40
+    - type: potential
+    - hp: 50
+    - hp: 60
+    - atk: 50
+    - atk: 75
+    - cooldown: 1
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100
+rumble:
+  stats:
+    def: 203
+    rumbleType: SPT
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+    - effects:
+        - override:
+            level: 1
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - ATK
+            - SPD
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 24
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 25

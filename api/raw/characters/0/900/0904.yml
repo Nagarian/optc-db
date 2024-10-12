@@ -1,0 +1,50 @@
+type: STR
+name: Yokozuna
+japanName: ヨコヅナ
+family:
+  - Yokozuna
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 520
+    atk: 170
+    rcv: 45
+  maxLvl:
+    hp: 1852
+    atk: 700
+    rcv: 162
+cost: 20
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 23128
+aliases:
+  - Colo Yokozuna
+  - Coliseum Yokozuna
+captain:
+  name: ""
+  description: Protects from defeat as long as HP is above 50%
+special:
+  name: Yokozuna Slap!
+  description: Deals 20x character's ATK in [STR] damage to one enemy, delays all
+    enemies by 1 turn
+  cooldown: 23
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Franky and Iceburg
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11

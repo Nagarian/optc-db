@@ -1,0 +1,94 @@
+type: DEX
+name: King
+japanName: キング
+family:
+  - King
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1258
+    atk: 711
+    rcv: 123
+  maxLvl:
+    hp: 3159
+    atk: 1480
+    rcv: 148
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 206935
+aliases:
+  - Coliseum King
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 3x, their HP by 1.2x and reduces
+    damage received by 10%.
+special:
+  name: Pteranodon Attack
+  description: Delays all enemies by 2 turns, reduces enemies' Increased Defense
+    duration by 5 turns and reduces Despair duration by 5 turns. If your captain
+    is a [DEX] character, boosts ATK against delayed enemies by 1.75x for 1
+    turn.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Kaido and Jack
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - cooldown: 1
+    - atk: 40
+    - rcv: 40
+    - type: sailor
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - rcv: 45
+    - hp: 60
+    - hp: 60
+    - atk: 80
+    - cooldown: 1
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 80
+        - threshold: 70
+        - threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

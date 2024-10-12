@@ -1,0 +1,416 @@
+type: INT
+name: '"Mad Monk" Urouge - Fallen Monk Calamity'
+family:
+  - Urouge
+class:
+  - Powerhouse
+  - Striker
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 2237
+    atk: 778
+    rcv: 93
+  maxLvl:
+    hp: 4474
+    atk: 1556
+    rcv: 186
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - Rumble Secret Limited Legend
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 5x if you use "Amplified
+    Strike" in this turn, by 4.25x otherwise, their HP by 1.75x, boosts ATK of
+    all other characters by 4x, makes crew immune to Blow Away and advances
+    Special Cooldown of this character by 3 turns after each turn you take
+    damage. Every turn Damage Taken exceeds 30,000, activates "Amplified Strike"
+    and reset stacks.
+special:
+  name: Amplified Strike
+  description: Deals 200x character's ATK in [INT] damage to one enemy, reduces
+    Paralysis duration by 5 turns and reduces Special Cooldown of Powerhouse
+    characters by 1 turn. If your Captain is a Powerhouse character, locks the
+    chain multiplier at 3.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base ATK of
+      this character by 400
+  - description: Reduces Silence duration by 1 turn
+support:
+  type: descriptive
+  criteria: "[INT] Powerhouse characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into an
+      [INT] orb and locks the chain multiplier at 2.1x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into an
+      [INT] orb and locks the chain multiplier at 2.2x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into an
+      [INT] orb and locks the chain multiplier at 2.3x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into an
+      [INT] orb and locks the chain multiplier at 2.4x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into an
+      [INT] orb and locks the chain multiplier at 2.5x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 10
+    - hp: 10
+    - hp: 10
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - atk: 30
+    - atk: 30
+    - type: potential
+    - cooldown: 1
+    - rcv: 50
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - hp: 40
+    - type: sailor
+    - atk: 50
+    - hp: 50
+    - hp: 60
+    - hp: 70
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 50
+    - atk: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 295
+    rumbleType: DEF
+    spd: 114
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          effect: debuff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+        - override:
+            level: 3
+  special:
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+            - DEF
+            - Critical Hit
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - amount: 2
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - PSY
+          type: atk
+    - cooldown: 33
+      effects:
+        - override:
+            level: 1
+            duration: 11
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 2.2
+    - cooldown: 33
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            amount: 2.4
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 2.6
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            amount: 2.8
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 3
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            amount: 3.2
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            amount: 3.4
+    - cooldown: 33
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            amount: 3.6
+    - cooldown: 33
+      effects:
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            level: 6
+            duration: 20
+        - override:
+            amount: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

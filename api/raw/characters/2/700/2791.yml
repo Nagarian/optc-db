@@ -1,0 +1,187 @@
+type: QCK
+name: Orobi
+japanName: おロビ
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 541
+    atk: 320
+    rcv: 63
+  maxLvl:
+    hp: 1352
+    atk: 800
+    rcv: 158
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 179438
+aliases:
+  - Wano Robin
+  - TM Robin
+  - Orobi
+evolution:
+  - id: 2792
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 1.5x
+special:
+  name: Novice Geisha's Dance Practice
+  description: Reduces Paralysis, Bind and Silence duration by 3 turns and reduces
+    enemies' Threshold Damage Reduction and Percent Damage Reduction duration by
+    3 turns. If HP is above 50% at the time the special is activated, reduces
+    damage received from [STR] and [PSY] enemies by 100% for 1 turn.
+  cooldown: 36
+  maxLevel: 8
+rumble:
+  stats:
+    def: 114
+    rumbleType: DEF
+    spd: 159
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 40
+      effects:
+        - attributes:
+            - Accuracy
+          effect: debuff
+          duration: 15
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: debuff
+          duration: 15
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 40
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 40
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 40
+      effects:
+        - override:
+            duration: 18
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+            duration: 19
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+            duration: 20
+        - override:
+            level: 4
+            duration: 20
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+            duration: 21
+        - override:
+            level: 5
+            duration: 21
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+            duration: 22
+        - override:
+            level: 5
+            duration: 22
+    - cooldown: 40
+      effects:
+        - override:
+            level: 4
+            duration: 23
+        - override:
+            level: 5
+            duration: 23
+    - cooldown: 40
+      effects:
+        - override:
+            level: 5
+            duration: 24
+        - override:
+            level: 7
+            duration: 24

@@ -1,0 +1,240 @@
+type: INT
+name: Vasco Shot
+japanName: バスコ・ショット
+family:
+  - VascoShot
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1255
+    atk: 668
+    rcv: 158
+  maxLvl:
+    hp: 2496
+    atk: 1362
+    rcv: 329
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 263875
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Shooter characters by 3x and their RCV by 1.2x.
+special:
+  name: Heavy Drinker Drunkard
+  description: Reduces Despair and Silence duration by 4 turns, reduces enemies'
+    Threshold Damage Reduction duration by 4 turns, reduces damage received by
+    50% for 3 turns, recovers 7x character's RCV in HP at the end of each turn
+    for 3 turns.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven and Shooter characters by 30
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - atk: 30
+    - rcv: 30
+    - hp: 30
+    - cooldown: 1
+    - rcv: 40
+    - atk: 40
+    - type: sailor
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - atk: 45
+    - hp: 120
+    - rcv: 40
+    - atk: 50
+    - cooldown: 1
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 203
+    rumbleType: SPT
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 6
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 7
+            level: 1
+        - override:
+            duration: 7
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 8
+            level: 1
+        - override:
+            duration: 8
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 9
+            level: 2
+        - override:
+            duration: 9
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 10
+            level: 2
+        - override:
+            duration: 10
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 11
+            level: 3
+        - override:
+            duration: 11
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 12
+            level: 3
+        - override:
+            duration: 12
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 13
+            level: 3
+        - override:
+            duration: 13
+            level: 3
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 14
+            level: 4
+        - override:
+            duration: 14
+            level: 3
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 15
+            level: 5
+        - override:
+            duration: 15
+            level: 3

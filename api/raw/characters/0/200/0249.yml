@@ -1,0 +1,97 @@
+type: STR
+name: Tony Tony Chopper - Post-Rampage
+japanName: トニートニー・チョッパー 暴走後
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1808
+    atk: 851
+    rcv: -350
+  maxLvl:
+    hp: 3660
+    atk: 1500
+    rcv: -900
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 5209
+aliases:
+  - Raid Monster Chopper
+  - MC
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3x and reduces HP of [STR]
+    characters by 70%
+special:
+  name: Rampage
+  description: Deals random [STR] damage to one enemy, boosts ATK of [STR]
+    characters by 1.75x for 1 turn
+  cooldown: 30
+  maxLevel: 16
+  notes: "`random : 2,000 : 200,000`"
+sailor:
+  - description: Boosts base ATK of all characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 30
+    - atk: 40
+    - atk: 40
+    - type: potential
+    - atk: 30
+    - atk: 50
+    - atk: 40
+    - atk: 30
+    - cooldown: 2
+    - atk: 70
+    - slot: 1
+    - cooldown: 3
+    - atk: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 9
+          threshold: 50

@@ -1,0 +1,359 @@
+type: INT
+name: Gecko Moria - Relentless Nightmare
+japanName: ゲッコー・モリア 襲い掛かる悪夢
+family:
+  - GeckoMoria
+class:
+  - Driven
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1594
+    atk: 982
+    rcv: 79
+  maxLvl:
+    hp: 3542
+    atk: 1637
+    rcv: 264
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 263869
+aliases:
+  - V1 Legend Moria
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Driven characters by 4.5x, by 5x
+    instead if they have a beneficial orb, their HP by 1.3x, recovers 0.5x this
+    character's RCV at the end of the turn for each time you hit a PERFECT and
+    recovers HP proportional to the number of enemies you defeated in that turn
+    ✕ 50% crew's RCV at the end of the enemy turn.
+superSpecial:
+  criteria: This character must be captain and the crew must consist of 6
+    Powerhouse or Driven characters, excluding Support members.
+  description: Deals 75x character's ATK in Typeless damage to all enemies,
+    reduces Special Cooldown of Powerhouse and Driven characters by 1 turn,
+    locks all orbs for 1 turn and transforms all [INT] characters into Super
+    [INT] characters.
+special:
+  name: Corpse and Shadows Fierce Attack
+  description: Changes all orbs into Matching orbs, boosts Orb Effects of
+    Powerhouse and Driven characters by 2.5x for 1 turn and reduces any damage
+    received above 2,000 HP by 100% for 1 turn. After 1 turn, boosts the Color
+    Affinity of Powerhouse and Driven characters by 2.25x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 1 turn
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: "[INT] Driven characters"
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Driven characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Driven characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Driven characters by 1.3x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Driven characters by 1.4x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Driven characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - hp: 10
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - hp: 30
+    - atk: 10
+    - atk: 10
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - hp: 30
+    - hp: 50
+    - hp: 70
+    - hp: 70
+    - hp: 100
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 202
+    rumbleType: DBF
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+        - override:
+            level: 3
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 700
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Half Stats
+          chance: 100
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 800
+        - override:
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 900
+        - override:
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            duration: 15
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            duration: 19
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

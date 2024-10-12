@@ -1,0 +1,213 @@
+type: DEX
+name: Izo
+japanName: イゾウ
+family:
+  - Izo
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 232
+    atk: 130
+    rcv: 50
+  maxLvl:
+    hp: 1300
+    atk: 634
+    rcv: 172
+cost: 18
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 4861
+aliases: []
+evolution:
+  - id: 257
+    evolvers:
+      - 118
+      - 86
+      - 94
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [DEX] characters by 2x
+special:
+  name: Beautiful Dual Flintlocks
+  description: Changes [STR] and [QCK] orbs into [DEX] orbs
+  cooldown: 20
+  maxLevel: 11
+rumble:
+  stats:
+    def: 113
+    rumbleType: SPT
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 30
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 33
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 36
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 39
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 42
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 45
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 48
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 51
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 54
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 60
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT

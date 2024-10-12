@@ -1,0 +1,353 @@
+type: DUAL
+name: Sanji & Judge - Destiny of Father and Son
+japanName: サンジ＆ジャッジ 父子の因縁
+family:
+  - VinsmokeSanji
+  - VinsmokeJudge
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 434
+    atk: 289
+    rcv: 55
+  maxLvl:
+    hp: 2022
+    atk: 831
+    rcv: 161
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 143675
+aliases:
+  - Yellow Ranger
+  - Black Ranger
+  - Sanji&Judge
+  - SanjiJudge
+  - Judge&Sanji
+  - JudgeSanji
+  - SanJudge
+  - Judgji
+  - Judji
+  - S/J
+  - Legend Sanji and Judge
+evolution:
+  - id: 2446
+    evolvers:
+      - 118
+      - 103
+      - 98
+      - 303
+      - 267
+captain:
+  name: ""
+  description: If there are 6 Powerhouse characters in your crew, boosts ATK of
+    Powerhouse characters by 4.25x. If there is a [STR], [DEX], [QCK], [PSY] and
+    [INT] character in your crew, boosts HP of Powerhouse characters by 1.25x
+    and makes [PSY], [RCV] and [TND] orbs beneficial for all characters.
+special:
+  name: Crack & Strike
+  description: Boosts ATK of Powerhouse characters by 2x for 1 turn, boosts Orb
+    Effects of Powerhouse characters by 2x for 1 turn, reduces Paralysis
+    duration by 5 turns and becomes Sanji & Judge for 3 turns
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Powerhouse characters by 75
+characters:
+  swap:
+    description: Removes Silence duration completely on this character, changes orb,
+      including [BLOCK] orbs, of this character into a [TND] orb and boosts
+      Chain Multiplier Growth Rate by 1.25x for 1 turn.
+  character1:
+    name: Sanji - Destiny of Father and Son
+    japanName: サンジ 父子の因縁
+    class:
+      - Powerhouse
+      - Fighter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 300
+        atk: 274
+        rcv: 39
+      maxLvl:
+        hp: 1512
+        atk: 809
+        rcv: 142
+    captain:
+      name: ""
+      description: If there are 6 Powerhouse characters in your crew, boosts ATK of
+        Powerhouse characters by 3.5x, their HP by 1.25x and makes [RCV] and
+        [TND] orbs beneficial for Powerhouse characters.
+    sailor:
+      - description: Makes [TND] and [RCV] orbs beneficial for this character
+  character2:
+    name: Judge - Destiny of Father and Son
+    japanName: ジャッジ 父子の因縁
+    class:
+      - Powerhouse
+      - Driven
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 342
+        atk: 268
+        rcv: 34
+      maxLvl:
+        hp: 1754
+        atk: 798
+        rcv: 108
+    captain:
+      name: ""
+      description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+        your crew, boosts ATK of all characters by 3.5x, their HP by 1.25x and
+        makes [PSY] orbs beneficial for all characters.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Powerhouse characters by 50
+rumble:
+  stats:
+    def: 237
+    rumbleType: SPT
+    spd: 186
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: Cerebral
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - ATK
+          effect: buff
+          level: 8
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1000
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 4
+            duration: 20
+        - override:
+            duration: 20
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1750
+        - override:
+            level: 4
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1900
+        - override:
+            level: 4
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2050
+        - override:
+            level: 5
+            duration: 23
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2200
+        - override:
+            level: 5
+            duration: 24
+        - override:
+            level: 2
+            duration: 24
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2500
+        - override:
+            level: 6
+            duration: 25
+        - override:
+            level: 3
+            duration: 25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

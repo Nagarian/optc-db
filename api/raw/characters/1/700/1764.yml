@@ -1,0 +1,483 @@
+type: QCK
+name: Kuzan - Ex-Naval HQ Top Force
+japanName: クザン 元海軍本部最高戦力
+family:
+  - Kuzan
+class:
+  - Shooter
+  - Striker
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1558
+    atk: 751
+    rcv: 198
+  maxLvl:
+    hp: 3478
+    atk: 1501
+    rcv: 420
+cost: 65
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 35281
+aliases:
+  - Mega/Super/6+ Kuzan
+  - V1 Legend Aokiji
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x and their HP by 1.25x. If you
+    defeat an enemy, increases ATK boost slightly. Stacks up to 5 times to a
+    maximum of 3.5x.
+  notes: If a character dies and revives, it counts as killing a character. If you
+    did not defeat an enemy, lose all ATK boost stacks.
+special:
+  name: Determined Man's Ice Attack
+  description: Increases duration of any ATK boosting buffs and Orb Amplification
+    buffs by 1 turn, locks the chain multiplier at 2.5x for 1 turn and deals
+    100,000 Fixed True damage to all enemies.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Makes [QCK] orbs beneficial for this Striker and Shooter characters
+  - description: If this character has an [QCK] orb and you hit a PERFECT with him,
+      keep his [QCK] orb for the next turn
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+  criteria: Smoker, Sengoku and Monkey D. Garp
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - rcv: 10
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - rcv: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - atk: 50
+    - type: sailor
+    - atk: 50
+    - hp: 40
+    - slot: 1
+    - hp: 60
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - hp: 150
+    - captain:
+        description: Boosts ATK of all characters by 3x and their HP by 1.25x. If you
+          defeat an enemy, increases ATK boost slightly. Stacks up to 5 times to
+          a maximum of 4x.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 178
+    rumbleType: SPT
+    spd: 180
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 1450
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Action Bind
+          chance: 85
+          duration: 5
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1550
+        - {}
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1650
+        - {}
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1750
+        - {}
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1850
+        - {}
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1950
+        - {}
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2050
+        - {}
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2150
+        - {}
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2250
+        - {}
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2500
+        - {}
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+                - SPD
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - Shooter
+            - attributes:
+                - ATK
+              effect: buff
+              level: 3
+              condition:
+                count: 2
+                stat: Critical Hit
+                type: trigger
+              targeting:
+                targets:
+                  - crew
+        - effects:
+            - override:
+                level: 2
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 3
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 7
+  - captain:
+      - description: Reduces Special Cooldown of this character by 3 turns at the start
+          of the fight, reduces Special Cooldown of all other characters by 1
+          turn at the start of the fight, boosts ATK of all characters by 4.5x
+          and boosts HP of all characters by 1.35x. If you defeat an enemy,
+          increases ATK boost slightly. Stacks up to 5 times to a maximum of
+          5.25x. At the start of Stage 3, boosts ATK of all characters by 1.75x
+          for 2 turns and boosts Orb Effects of all characters by 1.75x for 2
+          turns.
+      - description: Reduces Special Cooldown of this character by 3 turns at the start
+          of the fight, reduces Special Cooldown of all other characters by 1
+          turn at the start of the fight, boosts ATK of all characters by 4.25x
+          and boosts HP of all characters by 1.25x. If you defeat an enemy,
+          increases ATK boost slightly. Stacks up to 5 times to a maximum of 5x.
+          At the start of Stage 3, boosts ATK of all characters by 2x for 2
+          turns and boosts Orb Effects of all characters by 2x for 2 turns.
+  - rumble:
+      special:
+        - cooldown: 33
+          effects:
+            - amount: 1450
+              effect: damage
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+            - attributes:
+                - Action Bind
+              chance: 85
+              duration: 5
+              effect: hinderance
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+            - attributes:
+                - ATK
+                - SPD
+              duration: 10
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - Shooter
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1550
+            - {}
+            - override:
+                duration: 11
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1650
+            - {}
+            - override:
+                level: 2
+                duration: 12
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1750
+            - {}
+            - override:
+                level: 2
+                duration: 13
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1850
+            - {}
+            - override:
+                level: 3
+                duration: 14
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1950
+            - {}
+            - override:
+                level: 3
+                duration: 15
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 2050
+            - {}
+            - override:
+                level: 4
+                duration: 16
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 2150
+            - {}
+            - override:
+                level: 4
+                duration: 17
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 2250
+            - {}
+            - override:
+                level: 5
+                duration: 18
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 2500
+            - {}
+            - override:
+                level: 5
+                duration: 19
+  - special:
+      description: Increases duration of any ATK boosting buffs and Orb Amplification
+        buffs by 1 turn, sets Chain Boundaries to 2.75x and 35.0x for 1 turn and
+        deals 1,000,000 Fixed True damage to all enemies.

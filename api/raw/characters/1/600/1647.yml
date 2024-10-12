@@ -1,0 +1,46 @@
+type: STR
+name: "Pica: Neo - Donquixote Pirates"
+japanName: ピーカ「改」 ドンキホーテ海賊団
+family:
+  - Pica
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1630
+    atk: 582
+    rcv: 1
+  maxLvl:
+    hp: 4020
+    atk: 1210
+    rcv: 5
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 60100
+aliases:
+  - Kai Pica
+  - STR Pica
+  - Neo Pica
+  - Raid Pica
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x and their HP by 1.5x
+special:
+  name: Rock Domination Wall [Neo]
+  description: Changes [EMPTY] and Badly Matching orbs into Matching orbs. Deals
+    20% of enemies' current HP in damage to all enemies
+  cooldown: 26
+  maxLevel: 10
+  stages:
+    - description: Changes [EMPTY] and Badly Matching orbs of Driven and Powerhouse
+        characters into Matching orbs. Deals 10% of enemies' current HP in
+        damage to all enemies
+      cooldown: 20

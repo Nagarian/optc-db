@@ -1,0 +1,98 @@
+type: DEX
+name: Elizabeth - Straw Hat Pirates Conspirator
+japanName: エリザベス 麦わらの一味の共犯者
+family:
+  - Elizabeth
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 8
+  minLvl:
+    hp: 821
+    atk: 380
+    rcv: 157
+  maxLvl:
+    hp: 2681
+    atk: 810
+    rcv: 381
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 54002
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts HP and RCV of all characters by 1.2x, boosts ATK of all
+    characters by 2.5x following a chain of [STR] > [DEX] > [QCK] attacks no
+    lower than Good
+special:
+  name: Soft and Gentle Fluffy Kisses
+  description: Recovers 13x character's RCV in HP, adds 0.5x to Chain multiplier
+    and reduces the defense of all enemies by 100% for 1 turn
+  cooldown: 22
+  maxLevel: 8
+sailor:
+  - description: Restores special cooldown of this character by 2 turns when it is rewinded
+  - description: Boosts base HP of all characters by 100
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vinsmoke Sanji
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - cooldown: 1
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - slot: 1
+    - hp: 100
+    - atk: 50
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

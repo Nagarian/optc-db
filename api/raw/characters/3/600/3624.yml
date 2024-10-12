@@ -1,0 +1,87 @@
+type: DEX
+name: Vista - Clashing Young Pirate
+family:
+  - Vista
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1284
+    atk: 643
+    rcv: 154
+  maxLvl:
+    hp: 2924
+    atk: 1481
+    rcv: 251
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Kizuna Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of [DEX], Slasher and Free Spirit characters by 3x,
+    boosts HP of [DEX], Slasher and Free Spirit characters by 1.2x and makes
+    [DEX] orbs beneficial for [DEX], Slasher and Free Spirit characters.
+special:
+  name: Stealing Slash
+  description: Reduces Paralysis duration by 6 turns, reduces enemies' Resilience
+    duration by 6 turns and changes [BLOCK], [RCV], [TND] and Badly Matching
+    orbs into Matching orbs. If your crew has ATK UP, increases boost effects of
+    ATK UP buffs by +0.25x; boosts ATK of [DEX], Slasher and Free Spirit
+    characters by 2x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Slasher and Free Spirit characters by 60
+  - description: Boosts base HP of Slasher and Free Spirit characters by 60
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,95 @@
+type: STR
+name: Mad Monk Urouge - Fallen Monk Pirate Captain
+japanName: 怪僧ウルージ 破戒僧海賊団船長
+family:
+  - Urouge
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1512
+    atk: 755
+    rcv: 83
+  maxLvl:
+    hp: 2824
+    atk: 1324
+    rcv: 203
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 17476
+aliases:
+  - Supernova Urouge
+  - Colo Urouge
+  - Coliseum Urouge
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x if HP is below 30% at the
+    start of the turn
+special:
+  name: Precept Deification
+  description: Boosts ATK of this character by 1.5x-2x for 1 turn, depending on
+    the crew's current HP
+  cooldown: 19
+  maxLevel: 13
+  notes: "The exact multiplier used is chosen based on the crew's current HP at
+    the time the special is activated: above 50% HP, the multiplier used is
+    1.5x; between 20% HP and 50% HP, it's 1.75x; below 20% HP, it's 2x."
+sailor:
+  - description: Reduces Paralysis duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Powerhouse characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - hp: 70
+    - cooldown: 1
+    - atk: 20
+    - slot: 1
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

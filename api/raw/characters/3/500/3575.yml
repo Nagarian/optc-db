@@ -1,0 +1,54 @@
+type: QCK
+name: Brook - Gallant Skeletal Gentleman
+japanName: ブルック 颯爽と現れるガイコツ紳士
+family:
+  - Brook
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 860
+    atk: 396
+    rcv: 70
+  maxLvl:
+    hp: 1720
+    atk: 840
+    rcv: 135
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+aliases:
+  - V2 Legend
+evolution:
+  - id: 3576
+    evolvers:
+      - 118
+      - 1180
+      - 301
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Free Spirit characters by 5x and makes [QCK],
+    [RCV] and [TND] orbs beneficial for Free Spirit characters if HP is below
+    30% at the start of the turn, boosts ATK of Free Spirit characters by 4.5x
+    otherwise, boosts HP and RCV of Free Spirit characters by 1.3x and prevents
+    defeat for 1 turn once per adventure.
+  notes: Resilience activates when taking damage from an enemy that would kill
+    you. This will not activate from damage taken from debuffs.
+special:
+  name: "Soul Solid: Soul Notch Slash"
+  description: Reduces Special Cooldown of Free Spirit characters by 1 turn,
+    boosts base ATK of Free Spirit characters by 1000 for 1 turn and adds 1.6x
+    to Chain multiplier for 1 turn. If HP is below 30% at the time the special
+    is activated, changes all orbs, including [BLOCK] orbs, into Matching orbs
+    and reduces damage received by 95% for 1 turn.
+  cooldown: 19
+  maxLevel: 6

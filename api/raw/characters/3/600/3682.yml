@@ -1,0 +1,346 @@
+type: INT
+name: Tony Tony Chopper - Inspirational Live Performance
+family:
+  - TonyTonyChopper
+class:
+  - Cerebral
+  - Fighter
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1690
+    atk: 712
+    rcv: 206
+  maxLvl:
+    hp: 3380
+    atk: 1424
+    rcv: 412
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Legend V2 RED
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [INT] and Cerebral characters by 5x, boosts HP
+    of [INT] and Cerebral characters by 1.35x, makes [RCV] and [TND] orbs
+    beneficial for [INT] and Cerebral characters, recovers 4,000 HP at the end
+    of each turn, boosts EXP and amount of Beli received by 1.25x and guarantees
+    duplicating all Cotton Candy drops upon completion of the island.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Monkey
+    D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Nico Robin, Franky,
+    Brook, Jinbe, Bepo or Bartolomeo, excluding Support members."
+  description: Reduces Special Cooldown of all characters by 1 turn, permanently
+    boosts HP by a static 1.2x, recovers 30% of crew's MAX HP, allowing HP
+    Overfill up to 2x MAX HP and transforms all [INT] characters into Super
+    [INT] characters.
+special:
+  name: Cheering the Stage
+  description: Recovers 50x character's RCV in HP, allowing HP Overfill up to 2x
+    MAX HP, reduces Bind and Despair duration by 6 turns, reduces enemies'
+    Cerebral Resistance by -50% for 1 turn and boosts Color Affinity of [INT]
+    and Cerebral characters by 2.25x for 1 turn. If during that turn you score 3
+    PERFECT hits, boosts Color Affinity of [INT] and Cerebral characters by 2.5x
+    for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for [INT] characters
+  - description: Recovers 800 HP at the end of each turn
+support:
+  type: descriptive
+  criteria: Nami, Nico Robin and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of Cerebral characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of Cerebral characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of Cerebral characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of Cerebral characters by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of Cerebral characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 10
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - atk: 15
+    - rcv: 10
+    - hp: 20
+    - rcv: 10
+    - type: sailor
+    - atk: 15
+    - hp: 20
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 40
+    - rcv: 30
+    - atk: 20
+    - hp: 50
+    - rcv: 40
+    - atk: 30
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - hp: 80
+    - hp: 100
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 20
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - hp: 200
+    - rcv: 30
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 2
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 169
+    rumbleType: RCV
+    spd: 146
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - RCV
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            count: 4
+            stat: heal
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - RCV
+            - Guard
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - amount: 3
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 3.1
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 3.2
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 3.3
+    - cooldown: 29
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 3.4
+    - cooldown: 29
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 3.5
+    - cooldown: 29
+      effects:
+        - override:
+            level: 6
+        - override:
+            amount: 3.6
+    - cooldown: 29
+      effects:
+        - override:
+            level: 6
+        - override:
+            amount: 3.7
+    - cooldown: 29
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 3.8
+    - cooldown: 29
+      effects:
+        - override:
+            level: 8
+        - override:
+            amount: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

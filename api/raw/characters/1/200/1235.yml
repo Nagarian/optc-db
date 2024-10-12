@@ -1,0 +1,50 @@
+type: PSY
+name: Maynard Naval HQ Vice Admiral
+japanName: メイナード 海軍本部中将
+family:
+  - Maynard
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 120
+    atk: 140
+    rcv: 34
+  maxLvl:
+    hp: 1172
+    atk: 614
+    rcv: 153
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 37051
+aliases:
+  - ""
+evolution:
+  - id: 1236
+    evolvers:
+      - 266
+      - 94
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.75x, deals 3x character's ATK
+    in damage to all enemies at the end of each turn
+special:
+  name: Sword of Silence
+  description: Deals 10x-35x character's ATK in [PSY] damage, depending on the
+    crew's current HP, to one enemy. Delays all enemies by 1 turn
+  cooldown: 20
+  maxLevel: 8
+  notes: "`specialProportional : higher : 10x + (25x * (remaining HP) / (total HP))`"
+sailor:
+  - description: Reduces Blindness duration by 3 turns

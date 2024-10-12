@@ -1,0 +1,172 @@
+type: STR
+name: The Fighting King, Elizabello II - Kingdom of Prodence
+japanName: “戦う王”エリザベローII世 プロデンス王国
+family:
+  - Elizabello
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 931
+    atk: 495
+    rcv: 90
+  maxLvl:
+    hp: 2151
+    atk: 1200
+    rcv: 192
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 55148
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2x at the start
+    of the chain and by 3x after the 5th PERFECT in a row
+special:
+  name: Battle Royale Rush
+  description: Changes the orb of this character into a [STR] orb, deals 10 hits
+    of 15x character's ATK in Typeless damage to random enemies and adds 0.3x to
+    Chain multiplier for 1 turn
+  cooldown: 24
+  maxLevel: 9
+  stages:
+    - description: Changes the orb of this character into a [STR] orb, deals 10 hits
+        of 3x character's ATK in Typeless damage to random enemies
+      cooldown: 17
+sailor:
+  - description: Boosts base ATK of this character by 350 if this character is the
+      last in the chain to attack
+support:
+  type: descriptive
+  criteria: Dagama, Chinjao, Sai, Ideo and Hajrudin
+  levels:
+    - Once per adventure, when the enemy enables an End of Turn Damage buff,
+      reduces Increase Damage Taken duration by 1 turn.
+    - Once per adventure, when the enemy enables an End of Turn Damage buff,
+      reduces Increase Damage Taken duration by 1 turn.
+    - Once per adventure, when the enemy enables an End of Turn Damage buff,
+      reduces Increase Damage Taken duration by 1 turn and recovers 1,000 HP.
+    - Once per adventure, when the enemy enables an End of Turn Damage buff,
+      reduces Increase Damage Taken duration by 3 turns and recovers 2,000 HP.
+    - Once per adventure, when the enemy enables an End of Turn Damage buff,
+      reduces Increase Damage Taken duration by 3 turns and recovers 3,000 HP.
+rumble:
+  stats:
+    def: 136
+    rumbleType: ATK
+    spd: 101
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 43
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.94
+        - override:
+            level: 1
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 0.97
+        - override:
+            level: 1
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 1.01
+        - override:
+            level: 1
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 1.05
+        - override:
+            level: 1
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 1.09
+        - override:
+            level: 1
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 1.12
+        - override:
+            level: 2
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 1.16
+        - override:
+            level: 2
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 2
+    - cooldown: 43
+      effects:
+        - override:
+            amount: 1.35
+        - override:
+            level: 3

@@ -1,0 +1,485 @@
+type: DUAL
+name: Nami & Usopp - Climate Control and Sniping Combined
+japanName: ナミ＆ウソップ 天候と狙撃のコンビネーション
+family:
+  - Nami
+  - Usopp
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1921
+    atk: 1038
+    rcv: 188
+  maxLvl:
+    hp: 4268
+    atk: 1730
+    rcv: 376
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 309207
+aliases:
+  - Nami&Usopp
+  - NamiUsopp
+  - Usopp&Nami
+  - UsoppNami
+  - Legend Nami and Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter, Cerebral and Free Spirit characters by
+    4.25x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit
+    characters' ATK against delayed enemies by 1.2x and has a chance to delay
+    all enemies by 1 turn based on damage dealt in previous turn. At the
+    beginning of each Stage, increases the Attack Timer of all enemies by 1
+    turn.
+  notes: >-
+    Delay chance is based on damage dealt with normal attacks and does not
+    stack with any other delay specials or effects  
+
+    **Base Chances**  
+
+    **100,000 damage or more:** 20% chance to delay  
+
+    **1,000,000 damage or more:** 50% chance to delay  
+
+    **3,000,000 damage or more:** 100% chance to delay  
+
+    **5,000,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection
+special:
+  name: Encounter to Stop the Chase
+  description: Paralyzes (75%) all enemies for 5 turns, delays all enemies by 2
+    turns, reduces Paralysis and Silence duration by 6 turns, boosts the Color
+    Affinity of Shooter and Cerebral characters by 2.25x for 1 turn and becomes
+    Nami & Usopp for 3 turns. If your crew has Delay Status ATK Boost, increases
+    boost effects of Delay Status ATK Boost buffs by +0.3x.
+  cooldown: 20
+  maxLevel: 6
+  notes: Paralysis has a 75% chance to not reduce enemy Attack Timer.
+sailor:
+  - description: Boosts base ATK and HP of all characters by 75
+  - description: Makes [TND] orbs beneficial for all characters
+characters:
+  swap:
+    description: Reduces Silence duration completely on this character, reduces Bind
+      and Despair duration by 1 turn, changes the orb of this character into a
+      Matching orb and boosts ATK against delayed enemies by 1.5x for 1 turn.
+    super:
+      criteria: 4
+      description: Reduces Silence duration completely on this character, reduces Bind
+        and Despair duration by 2 turns, changes orbs of this and adjacent
+        characters into Matching orbs and boosts ATK against delayed enemies by
+        2x for 1 turn.
+  character1:
+    name: Nami - Climate Control and Sniping Combined
+    japanName: ナミ 天候と狙撃のコンビネーション
+    class:
+      - Cerebral
+      - Free Spirit
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1686
+        atk: 736
+        rcv: 186
+      maxLvl:
+        hp: 3373
+        atk: 1473
+        rcv: 373
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter, Cerebral and Free Spirit characters by
+        4.25x, their HP by 1.3x and has a chance to delay all enemies by 1 turn
+        based on damage dealt in previous turn.
+      notes: >-
+        Delay chance is based on damage dealt with normal attacks and does not
+        stack with any other delay specials or effects  
+
+        **Base Chances**  
+
+        **100,000 damage or more:** 20% chance to delay  
+
+        **1,000,000 damage or more:** 50% chance to delay  
+
+        **3,000,000 damage or more:** 100% chance to delay  
+
+        **5,000,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 50
+      - description: Makes [TND] orbs beneficial for all characters
+  character2:
+    name: Usopp - Climate Control and Sniping Combined
+    japanName: ウソップ 天候と狙撃のコンビネーション
+    class:
+      - Cerebral
+      - Shooter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1922
+        atk: 738
+        rcv: 138
+      maxLvl:
+        hp: 3844
+        atk: 1573
+        rcv: 276
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter, Cerebral and Free Spirit characters by
+        3.75x, their HP by 1.3x, boosts Shooter, Cerebral and Free Spirit
+        characters' ATK against delayed enemies by 1.2x and has a chance to
+        delay all enemies by 1 turn based on damage dealt in previous turn.
+      notes: >-
+        Delay chance is based on damage dealt with normal attacks and does not
+        stack with any other delay specials or effects  
+
+        **Base Chances**  
+
+        **100,000 damage or more:** 20% chance to delay  
+
+        **1,000,000 damage or more:** 50% chance to delay  
+
+        **3,000,000 damage or more:** 100% chance to delay  
+
+        **5,000,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 50
+      - description: Makes [TND] orbs beneficial for all characters
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 10
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - hp: 10
+    - atk: 10
+    - rcv: 10
+    - rcv: 10
+    - hp: 10
+    - hp: 20
+    - hp: 20
+    - atk: 20
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - atk: 30
+    - hp: 40
+    - hp: 50
+    - atk: 40
+    - atk: 40
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - rcv: 30
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 150
+    - hp: 150
+    - atk: 50
+    - atk: 50
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 160
+    rumbleType: DBF
+    spd: 181
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: Free Spirit
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 5
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 6
+        - override:
+            level: 3
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 60
+          duration: 11
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Critical Hit
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            chance: 62
+            duration: 12
+        - override:
+            level: 1
+            duration: 22
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            chance: 64
+            duration: 13
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            chance: 66
+            duration: 14
+        - override:
+            level: 3
+            duration: 24
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2
+        - override:
+            chance: 68
+            duration: 15
+        - override:
+            level: 3
+            duration: 25
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            chance: 71
+            duration: 16
+        - override:
+            level: 4
+            duration: 26
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            chance: 73
+            duration: 17
+        - override:
+            level: 5
+            duration: 27
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            chance: 75
+            duration: 18
+        - override:
+            level: 5
+            duration: 28
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            chance: 77
+            duration: 19
+        - override:
+            level: 6
+            duration: 29
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            chance: 80
+            duration: 20
+        - override:
+            level: 7
+            duration: 30
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,92 @@
+type: STR
+name: Foxfire Kin'emon
+japanName: 狐火の錦えもん
+family:
+  - Kinemon
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1095
+    atk: 708
+    rcv: 131
+  maxLvl:
+    hp: 2075
+    atk: 1433
+    rcv: 321
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 43751
+aliases:
+  - Colo Kinemon
+  - Coliseum Kinemon
+  - Colo Kin'emon
+  - Coliseum Kin'emon
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x, recovers 2x
+    character's RCV in HP at the end of each turn
+special:
+  name: Poof
+  description: Reduces Special Cooldown of Slasher and Free Spirit characters by 1
+    turn and if HP is above 70%, changes orbs of adjacent characters into
+    Matching Orbs
+  cooldown: 16
+  maxLevel: 12
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 30
+  - description: Makes [DEX] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Kurozumi Kanjuro, Kozuki Momonosuke and Raizo
+  levels:
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 2 turns.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 10
+    - type: sailor
+    - type: potential
+    - hp: 20
+    - rcv: 20
+    - atk: 20
+    - hp: 20
+    - rcv: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 5
+        - value: 7
+        - value: 100

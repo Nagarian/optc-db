@@ -1,0 +1,59 @@
+type: PSY
+name: Gol D. Roger
+japanName: ゴール・D・ロジャー
+family:
+  - GolDRoger
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 787
+    atk: 475
+    rcv: 33
+  maxLvl:
+    hp: 1749
+    atk: 1056
+    rcv: 73
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 248545
+aliases:
+  - World Cruise Roger
+  - V1 Legend Roger
+evolution:
+  - id: 3177
+    evolvers:
+      - 118
+      - 87
+      - 266
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: Nullifies Remove Beneficial Effects and Remove Accumulated Value
+    effects once per adventure. Boosts ATK of all characters by 4.5x and their
+    HP by 1.3x and removes Despair duration completely. If you use "Divine
+    Departure" on this Roger boosts ATK of all characters by 5x for 3 turns
+    instead.
+special:
+  name: Divine Departure
+  description: Deals 1,000,000 Fixed True damage, ignoring Normal Attack Only, to
+    all enemies and boosts ATK of all characters by 2x-3x for 1 turn depending
+    on the amount of normal attack damage dealt before this special was
+    activated. If this character is your Captain/Friend Captain, increases
+    duration of any Orb Amplification buffs by 1 turn.
+  cooldown: 19
+  maxLevel: 6
+  notes: |-
+    0-1,499,999 damage: 2x ATK boost  
+    1,500,000-2,999,999 damage: 2.5x ATK boost  
+    3,000,000+ damage: 3x ATK boost

@@ -1,0 +1,290 @@
+type: DEX
+name: Shinobu - Moment of Respite
+family:
+  - Shinobu
+class:
+  - Cerebral
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1580
+    atk: 710
+    rcv: 125
+  maxLvl:
+    hp: 3160
+    atk: 1420
+    rcv: 250
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Summer Yukata
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [DEX] characters by 3.25x and boosts HP of [DEX]
+    characters by 1.2x.
+special:
+  name: Pinwheel in the Night
+  description: Reduces enemies' Threshold Damage Reduction duration by 6 turns and
+    adds 1.1x to Chain multiplier for 1 turn. After 1 turn, locks all orbs for 1
+    turn. If HP is above 90% at the time the special is activated, boosts Orb
+    Effects of all characters by 2x for 1 turn, by 1.75x for 2 turns otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: If this character has an [WANO] orb and you hit a PERFECT with
+      them, keep their [WANO] orb for the next turn
+  - description: Makes [DEX] and [TND] orbs beneficial for Shooter and Cerebral characters
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Izo, Kinemon, Kozuki Momonosuke, Raizo, Kikunojo, Kozuki Oden,
+    Denjiro, Kawamatsu, Kozuki Hiyori, Ashura Doji and Kozuki Toki
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 6
+      reduction: 3
+    - value: 8
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - atk: 20
+    - slot: 1
+    - hp: 50
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 60
+        - threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 75
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+rumble:
+  stats:
+    def: 112
+    rumbleType: ATK
+    spd: 163
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - {}
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 33
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+        - override:
+            amount: 0.6
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 13
+        - override:
+            duration: 13
+        - override:
+            amount: 0.7
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 14
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 0.8
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            amount: 0.9
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 16
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 1
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            amount: 1.1
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            amount: 1.2
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 19
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 1.3
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 20
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 1.5

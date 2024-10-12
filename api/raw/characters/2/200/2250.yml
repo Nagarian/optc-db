@@ -1,0 +1,485 @@
+type: PSY
+name: Monkey D. Garp - Pirate King's Arch-Nemesis
+japanName: モンキー・D・ガープ 海賊王の宿敵
+family:
+  - MonkeyDGarp
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 920
+    atk: 450
+    rcv: 90
+  maxLvl:
+    hp: 1890
+    atk: 905
+    rcv: 193
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 118896
+aliases:
+  - V1 Legend Garp
+evolution:
+  - id: 2251
+    evolvers:
+      - 118
+      - 98
+      - 1180
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x at the start of the chain and
+    their HP by 1.5x, boosts ATK of all characters by 4x following a chain of
+    Good > Great > PERFECT hits, makes [PSY] and [RCV] orbs beneficial for all
+    characters. Reduces ATK based on how many Striker, Shooter or Cerebral
+    characters you have on your crew.
+  notes: ATK reduction is 0.2x for each Striker, Shooter or Cerebral class on your
+    team. This stacks if you have each class on your team, so a team with a
+    Striker, Shooter, and Cerebral character will get a 99.2% ATK reduction from
+    Garp.
+special:
+  name: Fist of Love
+  description: Deals 30% of enemies' current HP in True damage to one enemy, locks
+    the chain multiplier at 3x for 1 turn and reduces Silence duration by 3
+    turns
+  cooldown: 21
+  maxLevel: 6
+  stages:
+    - description: Deals 10% of enemies' current HP in True damage to one enemy, locks
+        the chain multiplier at 3x for 1 turn and reduces Silence duration by 1
+        turn
+      cooldown: 15
+rumble:
+  stats:
+    def: 186
+    rumbleType: ATK
+    spd: 147
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Guard
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Guard
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Guard
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Guard
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Guard
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 33
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 34
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 35
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 36
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 38
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 39
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 40
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 41
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 43
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - amount: 45
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          duration: 9
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

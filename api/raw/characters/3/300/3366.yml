@@ -1,0 +1,232 @@
+type: PSY
+name: Tony Tony Chopper - MUGIWARA 56
+japanName: トニートニー・チョッパー ＭＵＧＩＷＡＲＡ５６
+family:
+  - TonyTonyChopper
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1128
+    atk: 578
+    rcv: 228
+  maxLvl:
+    hp: 2256
+    atk: 1393
+    rcv: 405
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 282916
+aliases:
+  - Secret Chopper
+  - Limited Chopper
+  - Mugiwara Chopper
+  - Germa Chopper
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 3x and their RCV by 1.2x.
+special:
+  name: Cool Pose
+  description: Reduces Paralysis and Burn duration by 5 turns, changes orbs of
+    adjacent characters into [RCV] orbs and changes [BLOCK] orbs into [RCV] orbs
+    and boosts the Color Affinity of [PSY] characters by 1.75x for 4 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When any other Free Spirit character uses a special, reduces
+      special cooldown of this character by 1 turn
+  - description: Makes [RCV] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy and Usopp
+  levels:
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 2 turns.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 25
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - hp: 40
+    - type: sailor
+    - hp: 60
+    - slot: 1
+    - atk: 40
+    - cooldown: 1
+    - hp: 70
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+rumble:
+  stats:
+    def: 115
+    rumbleType: RCV
+    spd: 130
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 3
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 1
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 600
+          effect: recharge
+          targeting:
+            targets:
+              - PSY
+          type: fixed
+        - amount: 1100
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 700
+        - override:
+            amount: 1200
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 800
+        - override:
+            amount: 1300
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 900
+        - override:
+            amount: 1400
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            amount: 1500
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            amount: 1600
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            amount: 1700
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            amount: 1800
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            amount: 1900
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            amount: 2000

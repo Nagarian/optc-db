@@ -1,0 +1,275 @@
+type: INT
+name: Gecko Moria - Invading Lord of Shadows
+family:
+  - GeckoMoria
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1665
+    atk: 739
+    rcv: 54
+  maxLvl:
+    hp: 3804
+    atk: 1528
+    rcv: 108
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+aliases:
+  - TM
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Powerhouse characters by 2x and boosts HP
+    of Driven and Powerhouse characters by 1.35x.
+special:
+  name: March of the Undead
+  description: Reduces Silence duration on Driven and Powerhouse characters by 5
+    turns, reduces enemies' Resilience and End of Turn Heal duration by 5 turns,
+    boosts base ATK of Driven and Powerhouse characters by 900 for 1 turn and
+    adds 1.1x to Chain multiplier for 1 turn.
+  cooldown: 35
+  maxLevel: 1
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Powerhouse characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 10
+    - hp: 10
+    - rcv: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Driven and Powerhouse characters by 2.25x and boosts
+          HP of Driven and Powerhouse characters by 1.35x.
+    - type: sailor
+    - hp: 30
+    - atk: 10
+    - atk: 20
+    - captain:
+        description: Boosts ATK of Driven and Powerhouse characters by 2.5x and boosts
+          HP of Driven and Powerhouse characters by 1.35x.
+    - slot: 1
+    - cooldown: 1
+    - atk: 10
+    - rcv: 30
+    - hp: 40
+    - captain:
+        description: Boosts ATK of Driven and Powerhouse characters by 2.75x and boosts
+          HP of Driven and Powerhouse characters by 1.35x.
+    - cooldown: 2
+    - hp: 40
+    - rcv: 30
+    - rcv: 40
+    - cooldown: 3
+    - slot: 1
+    - hp: 50
+    - hp: 60
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Driven and Powerhouse characters by 3x and boosts HP
+          of Driven and Powerhouse characters by 1.35x.
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - atk: 40
+    - atk: 50
+    - hp: 70
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Driven and Powerhouse characters by 3.25x and boosts
+          HP of Driven and Powerhouse characters by 1.35x.
+    - hp: 100
+    - cooldown: 7
+    - captain:
+        description: Boosts ATK of Driven and Powerhouse characters by 3.5x, boosts HP
+          of Driven and Powerhouse characters by 1.35x. If you don't attack with
+          this character, reduces damage received by 20% for that turn.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 166
+    rumbleType: ATK
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1500
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+          chance: 55
+          duration: 6
+          effect: hinderance
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            chance: 57
+            duration: 7
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            chance: 59
+            duration: 8
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            chance: 61
+            duration: 9
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1900
+        - override:
+            chance: 63
+            duration: 10
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            chance: 65
+            duration: 11
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2100
+        - override:
+            chance: 67
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2200
+        - override:
+            chance: 69
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2300
+        - override:
+            chance: 71
+            duration: 14
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2500
+        - override:
+            chance: 75
+            duration: 15

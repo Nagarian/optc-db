@@ -1,0 +1,237 @@
+type: QCK
+name: Hody Jones - Threat of the Fish-Man
+japanName: ホーディ・ジョーンズ 魚人の脅威
+family:
+  - HodyJones
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1919
+    atk: 698
+    rcv: 47
+  maxLvl:
+    hp: 3838
+    atk: 1396
+    rcv: 95
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 302553
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK and HP of Driven and Powerhouse characters by 2.25x.
+special:
+  name: Strong Jaw Crunch
+  description: Reduces Bind duration by 5 turns, changes all orbs, including
+    [BLOCK] orbs, of Driven and Powerhouse characters into Matching orbs and
+    boosts ATK of Driven and Powerhouse characters by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of Driven and Powerhouse characters by 50
+  - description: Boosts base HP of Driven and Powerhouse characters by 100
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Powerhouse characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 30
+    - slot: 1
+    - hp: 50
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - atk: 40
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 142
+    rumbleType: ATK
+    spd: 153
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 50
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 55
+            duration: 7
+        - override:
+            amount: 0.6
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 60
+            duration: 8
+        - override:
+            amount: 0.7
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 65
+            duration: 9
+        - override:
+            amount: 0.8
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 70
+            duration: 10
+        - override:
+            amount: 0.9
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 75
+            duration: 11
+        - override:
+            amount: 1
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 80
+            duration: 12
+        - override:
+            amount: 1.1
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 85
+            duration: 13
+        - override:
+            amount: 1.2
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 90
+            duration: 14
+        - override:
+            amount: 1.3
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 100
+            duration: 15
+        - override:
+            amount: 1.5

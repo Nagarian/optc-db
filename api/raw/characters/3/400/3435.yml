@@ -1,0 +1,243 @@
+type: INT
+name: Who's-Who - Tobi Roppo Assembled
+japanName: フーズ・フー 集結する“飛び六胞”
+family:
+  - WhosWho
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1569
+    atk: 701
+    rcv: 105
+  maxLvl:
+    hp: 3138
+    atk: 1401
+    rcv: 210
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 293288
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 3x and boosts HP of Powerhouse
+    and Driven characters by 1.4x.
+special:
+  name: Asking "Who'll be the next All-Star"
+  description: Reduces Despair and Paralysis duration by 5 turns, changes orbs of
+    adjacent characters into Matching orbs and boosts ATK of Powerhouse and
+    Driven characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of Driven and Powerhouse characters by 50
+  - description: Makes [INT] orbs beneficial for Driven and Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Driven characters
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 40
+    - hp: 50
+    - rcv: 20
+    - slot: 1
+    - hp: 50
+    - hp: 60
+    - atk: 70
+    - type: sailor
+    - rcv: 30
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 138
+    rumbleType: DBF
+    spd: 136
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 20
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 6
+          effect: debuff
+          level: 1
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 20
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 20
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 20
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 20
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 20
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 20
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 20
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 20
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 20
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            level: 5
+            duration: 15

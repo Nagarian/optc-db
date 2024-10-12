@@ -1,0 +1,200 @@
+type: STR
+name: Diamante - Donquixote Pirates
+japanName: ディアマンテ ドンキホーテ海賊団
+family:
+  - Diamante
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1443
+    atk: 812
+    rcv: 50
+  maxLvl:
+    hp: 2840
+    atk: 1421
+    rcv: 174
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 26797
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.25x and reduces Special
+    Cooldown of all characters by 2 turns at the start of the fight
+special:
+  name: "Hira Release: Death Enjambre"
+  description: Delays all enemies by 2 turns, deals 50x character's ATK in
+    Typeless damage to all enemies at the end of the turn for 5 turns
+  cooldown: 23
+  maxLevel: 7
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 40
+    - hp: 20
+    - rcv: 30
+    - type: potential
+    - hp: 50
+    - cooldown: 1
+    - atk: 40
+    - type: sailor
+    - hp: 50
+    - cooldown: 1
+    - hp: 50
+    - atk: 40
+    - hp: 60
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 106
+    rumbleType: ATK
+    spd: 157
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          level: 1
+          effect: buff
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 0.75
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 2
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            level: 2
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 3
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 0.95
+        - override:
+            level: 3
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 4
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1.05
+        - override:
+            level: 4
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 5
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 6

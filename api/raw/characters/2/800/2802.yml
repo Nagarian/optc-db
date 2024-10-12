@@ -1,0 +1,194 @@
+type: DUAL
+name: Luffytaro & Zorojuro - Land of Wano Savior
+japanName: ルフィ太郎＆ゾロ十郎 ワノ国の救世主達
+family:
+  - MonkeyDLuffy
+  - RoronoaZoro
+class:
+  - Free Spirit
+  - Slasher
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1762
+    atk: 732
+    rcv: 182
+  maxLvl:
+    hp: 3722
+    atk: 1628
+    rcv: 412
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 181039
+aliases:
+  - Wano Luffy and Zoro
+  - Luffy&Zoro
+  - LuffyZoro
+  - Zoro&Luffy
+  - ZoroLuffy
+  - Legend Luffy and Zoro
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 4x, their HP by
+    1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a
+    Type advantage will gain a [WANO] orb after attacking.
+  notes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all
+    characters, but boost by 2.5x instead, and can not be swapped by special
+    abilities."
+special:
+  name: Gomu Gomu no Toro Red Hawk
+  description: Deals 250x character's ATK in character's Type damage to all
+    enemies, locks the chain multiplier at 3x for 1 turn and becomes Luffy &
+    Zoro for 3 turns. Boosts Orb Effects of Slasher and Free Spirit characters
+    by 2x-2.75x for 1 turn, depending on how many [WANO] or [TND] orbs were used
+    in attacks.
+  cooldown: 18
+  maxLevel: 6
+  notes: |-
+    0-7 Orbs: 2x orb boost  
+    8-14 Orbs: 2.5x orb boost  
+    15+ Orbs: 2.75x orb boost
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75
+  - description: Makes [TND] orbs beneficial for all characters
+characters:
+  swap:
+    description: Changes orb of this character into a [TND] orb and reduces Bind,
+      Despair, Silence and Slot Bind duration by 1 turn
+  character1:
+    name: Luffytaro - Land of Wano Savior
+    japanName: ルフィ太郎 ワノ国の救世主達
+    class:
+      - Free Spirit
+      - Slasher
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1753
+        atk: 712
+        rcv: 172
+      maxLvl:
+        hp: 3422
+        atk: 1430
+        rcv: 378
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Free Spirit characters by 3x, their HP by
+        1.3x and boosts chances of getting [WANO] orbs. Characters who attack
+        with a Type advantage will gain a [WANO] orb after attacking.
+      notes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all
+        characters, but boost by 2.5x instead, and can not be swapped by special
+        abilities."
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75
+      - description: Makes [TND] orbs beneficial for all characters
+  character2:
+    name: Zorojuro - Land of Wano Savior
+    japanName: ゾロ十郎 ワノ国の救世主達
+    class:
+      - Free Spirit
+      - Slasher
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1753
+        atk: 702
+        rcv: 173
+      maxLvl:
+        hp: 3422
+        atk: 1502
+        rcv: 354
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Free Spirit characters by 3.25x and their
+        HP by 1.3x. Characters who attack with a Type advantage will gain a
+        [WANO] orb after attacking.
+      notes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all
+        characters, but boost by 2.5x instead, and can not be swapped by special
+        abilities."
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75
+      - description: Makes [TND] orbs beneficial for all characters
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 5
+    - hp: 10
+    - type: potential
+    - hp: 20
+    - rcv: 5
+    - atk: 5
+    - atk: 10
+    - atk: 15
+    - hp: 20
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - rcv: 15
+    - hp: 30
+    - atk: 25
+    - hp: 40
+    - rcv: 15
+    - rcv: 20
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 50
+    - atk: 50
+    - hp: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 200
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

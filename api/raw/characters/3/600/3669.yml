@@ -1,0 +1,236 @@
+type: PSY
+name: Monkey D. Luffy - Captain Shining at Sea
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1304
+    atk: 997
+    rcv: 81
+  maxLvl:
+    hp: 3475
+    atk: 1574
+    rcv: 198
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+aliases:
+  - Summer Kizuna
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [PSY] characters by 3.75x, boosts HP of
+    [DEX] and [PSY] characters by 1.2x and makes [STR], [QCK] and [RCV] orbs
+    beneficial for all characters. If this character becomes your captain in the
+    middle of an island, boosts ATK of [DEX] and [PSY] characters by 5x.
+special:
+  name: Sunshine Gum-Gum Pistol
+  description: Deals 100x character's ATK in Typeless damage to all enemies,
+    reduces Special Cooldown of all characters by 1 turn, reduces enemies'
+    Percent Damage Reduction duration by 5 turns and reduces Bind duration by 5
+    turns. If this character is a Sailor, swaps this unit with your captain for
+    1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky, Jinbe and Brook
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - rcv: 25
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 127
+    rumbleType: ATK
+    spd: 193
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 1
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 5
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 600
+          effect: damage
+          repeat: 4
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 700
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 800
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 900
+        - override:
+            level: 2
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 2
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            level: 3
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 3
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 3
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            level: 4
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 5

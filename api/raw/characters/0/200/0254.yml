@@ -1,0 +1,44 @@
+type: INT
+name: Vista
+japanName: ビスタ
+family:
+  - Vista
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 290
+    atk: 206
+    rcv: 15
+  maxLvl:
+    hp: 1388
+    atk: 806
+    rcv: 100
+cost: 18
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 4863
+aliases: []
+evolution:
+  - id: 255
+    evolvers:
+      - 118
+      - 88
+      - 94
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK and HP of [INT] characters by 2x
+special:
+  name: Rose Rondo
+  description: Deals 5,000 Fixed damage to all enemies
+  cooldown: 15
+  maxLevel: 6

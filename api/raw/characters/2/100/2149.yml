@@ -1,0 +1,50 @@
+type: STR
+name: Zeff - Baratie Owner
+japanName: ゼフ 「バラティエ」オーナー
+family:
+  - Zeff
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 488
+    atk: 309
+    rcv: 35
+  maxLvl:
+    hp: 1220
+    atk: 773
+    rcv: 89
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 110392
+aliases:
+  - ""
+evolution:
+  - id: 2150
+    evolvers:
+      - 94
+      - 1180
+      - 300
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Fighter characters by 2.25x and their HP by 1.2x
+special:
+  name: Chef's Long Kick
+  description: If your Captain is a Fighter character, boosts the Color Affinity
+    of Fighter characters by 1.75x for 1 turn
+  cooldown: 14
+  maxLevel: 7
+sailor:
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 3 turns

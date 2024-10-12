@@ -1,0 +1,221 @@
+type: QCK
+name: Lucy - Unexpected Champion
+japanName: ルーシー 優勝掴むダークホース
+family:
+  - Sabo
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 987
+    atk: 566
+    rcv: 109
+  maxLvl:
+    hp: 2468
+    atk: 1415
+    rcv: 273
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 252789
+aliases:
+  - Sabo
+  - Pirate Rumble Lucy
+  - Pirate Rumble Sabo
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [QCK] characters by 2.5x. If you defeat an
+    enemy, increases ATK boost slightly. Stacks up to 3 times to a maximum of
+    3.5x.
+special:
+  name: Strong Attack
+  description: Reduces Despair and ATK DOWN duration by 2 turns, deals 10% of
+    enemies' current HP in True damage to one enemy and boosts Orb Effects of
+    all characters by 1.75x for 1 turn. After 2 turns, boosts ATK of all
+    characters by 1.75x for 1 turn.
+  cooldown: 17
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Adds 3x character's ATK as Additional Damage
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[QCK] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 100
+    - rcv: 100
+    - captain:
+        description: Boosts ATK of [DEX] and [QCK] characters by 2.5x and their HP by
+          1.3x and boosts chances of getting Matching orbs for [DEX] and [QCK]
+          characters. If you defeat an enemy, increases ATK boost slightly.
+          Stacks up to 3 times to a maximum of 3.5x.
+    - type: potential
+    - cooldown: 3
+    - atk: 100
+    - hp: 400
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 197
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - DEF
+          duration: 5
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 1.1
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 1.2
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 1.3
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 1.4
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 1.5
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 1.6
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 1.7
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 1.8
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            amount: 2

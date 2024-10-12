@@ -1,0 +1,106 @@
+type: QCK
+oldDbId: 2769
+name: Sakazuki - Admirals in a Fleeting Moment of Calm
+japanName: サカズキ 束の間の平穏と大将たち
+family:
+  - Sakazuki
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1652
+    atk: 689
+    rcv: 82
+  maxLvl:
+    hp: 2980
+    atk: 1421
+    rcv: 169
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - gloex
+links:
+  gamewithId: 177160
+aliases:
+  - Kimono Akainu
+  - Kimono Sakazuki
+  - Blitz Battle Akainu
+  - Blitz Battle Sakazuki
+  - Limited Akainu
+  - Limited Sakazuki
+  - Secret Akainu
+  - Secret Sakazuki
+captain:
+  name: ""
+  description: If your crew has 4 or more characters of the same Type, boosts ATK
+    of all characters by 3x, by 2.5x otherwise and boosts RCV of all characters
+    by 1.2x.
+special:
+  name: Absolute Pruning
+  description: Reduces the defense of all enemies by 100% for 2 turns and reduces
+    crew's Paralysis and ATK DOWN duration by 5 turns. If your crew has 4 or
+    more [QCK] or [PSY] characters, boosts ATK against enemies with reduced
+    defense by 1.75x for 2 turns.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Makes [DEX] orbs beneficial for this character
+  - description: Boosts base ATK and HP of [QCK] and [PSY] characters by 50
+support:
+  type: descriptive
+  criteria: Kuzan (Aokiji) and Borsalino (Kizaru)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 90% for 1 turn.
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - rcv: 25
+    - rcv: 25
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - hp: 80
+    - atk: 40
+    - type: sailor
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

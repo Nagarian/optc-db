@@ -1,0 +1,478 @@
+type: PSY
+name: Boa Hancock - Time Off on the Beach
+japanName: ボア・ハンコック ビーチでオフタイム
+family:
+  - BoaHancock
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 489
+    atk: 350
+    rcv: 77
+  maxLvl:
+    hp: 1227
+    atk: 894
+    rcv: 192
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 218639
+aliases:
+  - Summer Boa Hancock
+  - Swimsuit Boa Hancock
+  - V3 Legend Boa
+evolution:
+  - id: 3038
+    evolvers:
+      - 118
+      - 266
+      - 94
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 4x-5x depending on the amount
+    healed in the last turn, boosts ATK of all other characters by 3.75x, boosts
+    chances of getting [RCV] orbs and makes [RCV] orbs beneficial for all
+    characters.
+  notes: The range of ATK boost is from 4x to 5x. The exact boost is calculated as
+    4 + (HP recovered in the previous turn) \* (1/7000) and maxes at 7k HP
+    healed. This ignores your max HP, so it doesn't stop counting if you
+    over-heal.
+special:
+  name: Sweet Breeze of the Mero Mero Blowing Across the Beach
+  description: Reduces Special Cooldown of all characters by 2 turns, inflicts
+    Melo-Melo to all enemies for 15 hits and recovers 11x character's RCV in HP
+    at the end of each turn for 5 turns.
+  cooldown: 19
+  maxLevel: 6
+  notes: Melo-Melo state prevents enemies from attacking until 15 combo hits are
+    dealt to that character.
+rumble:
+  stats:
+    def: 149
+    rumbleType: DBF
+    spd: 160
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1500
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 1750
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 2000
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 12
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 2250
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 12
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 2500
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 5
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 13
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 2750
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 6
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 13
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 3000
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 7
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 14
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 3250
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 8
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 14
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 3500
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 9
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - amount: 4000
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 11
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - PSY

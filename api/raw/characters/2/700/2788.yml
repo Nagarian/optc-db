@@ -1,0 +1,155 @@
+type: INT
+name: Bonekichi
+japanName: ホネ吉
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 570
+    atk: 264
+    rcv: 37
+  maxLvl:
+    hp: 1426
+    atk: 661
+    rcv: 92
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 179385
+aliases:
+  - Wano Brook
+evolution:
+  - id: 2789
+    evolvers:
+      - 94
+      - 2662
+      - 304
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 2x.
+special:
+  name: Appear Gashadokuro
+  description: Removes all positive buffs on your team, reduces Despair and
+    Silence duration by 3 turns and adds 0.7x to Chain multiplier for 2 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of [QCK] and [INT] characters by 50
+rumble:
+  stats:
+    def: 199
+    rumbleType: DEF
+    spd: 102
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 9
+          effect: damage
+          type: cut
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: debuff
+          duration: 10
+          level: 5
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            duration: 11
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 6
+            duration: 12
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 7
+            duration: 13
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 7
+            duration: 14
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 8
+            duration: 15
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 9
+            duration: 16
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 10
+            duration: 17
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 10
+            duration: 18
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 12
+            duration: 19

@@ -1,0 +1,112 @@
+type: QCK
+name: Vinsmoke Niji - Science Military Germa 66
+japanName: ヴィンスモーク・ニジ 科学戦闘部隊ジェルマ６６
+family:
+  - VinsmokeNiji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1112
+    atk: 500
+    rcv: 98
+  maxLvl:
+    hp: 2834
+    atk: 1382
+    rcv: 267
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 74386
+aliases:
+  - Blue Ranger
+evolution:
+  - id: 2141
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.25x, boosts ATK of Powerhouse
+    characters by 1.3x and boosts HP of Powerhouse characters by 1.2x
+  notes: Attack boost stacks, so a [QCK] Powerhouse character has a 2.925x ATK
+special:
+  name: Blitz Needle
+  description: If your Captain is a [QCK] or [PSY] character, boosts ATK of all
+    characters by 1.75x for 2 turns. If your Captain is a Powerhouse character,
+    locks all orbs for 1 turn
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of all characters by 20
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vinsmoke Judge, Vinsmoke Ichiji, Vinsmoke Yonji and Vinsmoke Reiju
+  levels:
+    - description: When the supported character hits a PERFECT, reduces enemies' ATK
+        UP and Enrage duration by 1 turn.
+      value: 1
+    - description: When the supported character hits a PERFECT, reduces enemies' ATK
+        UP and Enrage duration by 1 turn.
+      value: 2
+    - description: When the supported character hits a PERFECT, reduces enemies' ATK
+        UP and Enrage duration by 1 turn.
+      value: 3
+    - description: When the supported character hits a PERFECT, reduces enemies' ATK
+        UP and Enrage duration by 1 turn.
+      value: 4
+    - description: When the supported character hits a PERFECT, reduces enemies' ATK
+        UP and Enrage duration by 1 turn.
+      value: 5
+limitBreak:
+  path:
+    - hp: 35
+    - hp: 45
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 15
+    - rcv: 25
+    - atk: 20
+    - cooldown: 1
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - hp: 90
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 9
+          threshold: 30
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

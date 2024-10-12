@@ -1,0 +1,379 @@
+type: DEX
+name: Monkey D. Luffy - Celebrate the Astonishing Cruise
+japanName: モンキー・D・ルフィ Celebrate 6th Anniversary Cruise
+family:
+  - MonkeyDLuffy
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1182
+    atk: 564
+    rcv: 95
+  maxLvl:
+    hp: 2954
+    atk: 1409
+    rcv: 238
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 203460
+aliases:
+  - 6th Anni Luffy
+  - TM Luffy
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x.
+special:
+  name: The Brave Future Pirate King
+  description: Reduces ATK DOWN, Bind and Despair duration by 4 turns, changes
+    Badly Matching, [RCV] and [TND] orbs into Matching orbs and boosts Orb
+    Effects of all characters by 2x for 1 turn.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] characters by 56
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of all characters by 1.75x.
+    - type: sailor
+    - rcv: 5
+    - hp: 5
+    - hp: 10
+    - captain:
+        description: Boosts ATK of all characters by 2x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 40
+    - rcv: 50
+    - captain:
+        description: Boosts ATK of all characters by 2.25x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of all characters by 2.5x.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of all characters by 2.75x.
+    - hp: 90
+    - hp: 110
+    - captain:
+        description: Boosts ATK of all characters by 3.25x and reduces Paralysis
+          duration by 1 turn.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 128
+    rumbleType: ATK
+    spd: 174
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Free Spirit
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 11
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.54
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 12
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.58
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 13
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.62
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 14
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.66
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 16
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.74
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 17
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.78
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 18
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.82
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 19
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 32
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX

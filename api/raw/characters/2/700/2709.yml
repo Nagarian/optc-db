@@ -1,0 +1,89 @@
+type: DEX
+name: Trafalgar Law - Assailant Who Sees Through Mystery
+japanName: トラファルガー・ロー 謎を見抜く襲撃者
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1283
+    atk: 766
+    rcv: 132
+  maxLvl:
+    hp: 2531
+    atk: 1428
+    rcv: 357
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 168820
+aliases:
+  - Raid Law
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [PSY] characters by 2.25x, by 3x instead if
+    they have a beneficial orb.
+special:
+  name: Room - Shambles Assault
+  description: Deals 200,000 fixed True damage to one enemy and reduces enemies'
+    Percent Damage Reduction, Increased Defense and Resilience Buffs duration by
+    2 turns. If your Captain is a [DEX] or [PSY] character, adds 0.8x to Chain
+    multiplier for 1 turn.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of [DEX] and [PSY] characters by 50
+  - description: If this character has an [DEX] orb and you hit a PERFECT with him,
+      keep his [DEX] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Slasher Characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - slot: 1
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

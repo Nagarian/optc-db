@@ -1,0 +1,220 @@
+type: PSY
+name: Charlotte Katakuri - Overwhelming Power of Mochi
+japanName: シャーロット・カタクリ 圧倒的なパワー誇るモチ
+family:
+  - CharlotteKatakuri
+class:
+  - Shooter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1118
+    atk: 735
+    rcv: 89
+  maxLvl:
+    hp: 2798
+    atk: 1512
+    rcv: 281
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 270152
+aliases:
+  - Kizuna Katakuri
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 3.5x, their HP by 1.25x and
+    reduces damage received by 20%.
+special:
+  name: Unstoppable Mochi Blade Bullets
+  description: Reduces Paralysis duration by 5 turns, reduces enemies' Percent
+    Damage Reduction duration by 5 turns, changes [BLOCK], [RCV] and [TND] orbs
+    into Matching orbs and locks the chain multiplier at 2.75x for 3 turns.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Makes [PSY] orbs beneficial for Shooter characters
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Shooter characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - rcv: 25
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 295
+    rumbleType: DEF
+    spd: 125
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 4
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+  special:
+    - cooldown: 24
+      effects:
+        - amount: 0.6
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 1
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 1
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 2
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 2
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 4
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 5

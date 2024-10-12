@@ -1,0 +1,39 @@
+type: INT
+name: Fujitora - Navy HQ Admiral
+japanName: 藤虎 海軍本部大将
+family:
+  - Issho
+class:
+  - Slasher
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 896
+    atk: 425
+    rcv: 30
+  maxLvl:
+    hp: 2690
+    atk: 1276
+    rcv: 120
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 70445
+aliases:
+  - Story Issho
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Rarity 3 or less characters by 2.5x
+special:
+  name: Floating Interval
+  description: Deals random [INT] damage to all enemies, reduces Special Cooldown
+    of all characters by 1 turn and boosts ATK of all characters by 1.5x for 1
+    turn
+  cooldown: 25
+  maxLevel: 7

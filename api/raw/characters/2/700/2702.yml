@@ -1,0 +1,108 @@
+type: DEX
+name: Jack - Town-Menacing Duel
+japanName: ジャック 町を脅かす決闘
+family:
+  - Jack
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 912
+    atk: 921
+    rcv: 75
+  maxLvl:
+    hp: 2940
+    atk: 1470
+    rcv: 220
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 169217
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight and boosts ATK of Powerhouse characters by 2.25x.
+special:
+  name: Disaster Shotel
+  description: Deals 20% of enemies' current HP in damage to one enemy and reduces
+    Special Cooldown of all characters by 1 turn. If enemies have Delay Debuff
+    Protection or All Debuff Protection at the time the special was activated,
+    boosts Orb Effects of Striker and Powerhouse characters by 2x for 1 turn, by
+    1.75x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: Makes [DEX] orbs beneficial for Powerhouse characters
+support:
+  type: descriptive
+  criteria: Kaido
+  levels:
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 2 turns.
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 10
+    - type: sailor
+    - hp: 50
+    - hp: 70
+    - hp: 80
+    - slot: 1
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

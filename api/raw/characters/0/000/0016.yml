@@ -1,0 +1,99 @@
+type: PSY
+name: Sogeking
+frenchName: Sniperking
+japanName: そげキング
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 638
+    atk: 260
+    rcv: 189
+  maxLvl:
+    hp: 1506
+    atk: 690
+    rcv: 479
+cost: 15
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 2022
+aliases:
+  - Usopp
+evolution:
+  - id: 1446
+    evolvers:
+      - skull
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK and HP of [PSY] characters by 1.5x
+special:
+  name: Fire Bird Star
+  description: Delays all enemies by 3 turns, deals 15x character's ATK in [PSY]
+    damage to all enemies
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 20
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+  criteria: Shooter characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 40
+    - slot: 1
+    - hp: 60
+    - hp: 80
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+          threshold: 6
+        - value: 1
+          threshold: 5
+        - value: 1
+          threshold: 4
+        - value: 2
+          threshold: 4
+        - value: 3
+          threshold: 4
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

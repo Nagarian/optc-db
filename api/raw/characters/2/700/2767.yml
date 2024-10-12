@@ -1,0 +1,78 @@
+type: DEX
+name: Underground Broker, Joker - Donquixote Doflamingo
+japanName: 闇のブローカー“ジョーカー” ドンキホーテ・ドフラミンゴ
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 733
+    atk: 420
+    rcv: 56
+  maxLvl:
+    hp: 1328
+    atk: 891
+    rcv: 105
+cost: 30
+slots: 3
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 176340
+aliases:
+  - Doffy
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Driven characters by 2.5x and recovers
+    500 HP at the end of each turn.
+special:
+  name: Devil Fruit "SMILE" Business
+  description: Changes [EMPTY] and Badly Matching orbs into Matching orbs, locks
+    all orbs for 1 turn and boosts ATK of all characters by 2x after 12th hit in
+    the chain for 1 turn.
+  cooldown: 20
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven and Cerebral characters by 30
+  - description: Adds 3x character's ATK as Additional Damage
+limitBreak:
+  path:
+    - rcv: 150
+    - hp: 200
+    - atk: 200
+    - type: potential
+    - cooldown: 3
+    - hp: 400
+    - atk: 200
+    - slot: 1
+    - cooldown: 4
+    - type: sailor
+    - hp: 600
+    - atk: 300
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Cerebral and Driven characters by 2.5x, by 3x instead
+          if they have a beneficial orb, and recovers 1,000 HP at the end of
+          each turn.
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

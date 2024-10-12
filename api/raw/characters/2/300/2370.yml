@@ -1,0 +1,155 @@
+type: STR
+name: Gourmet Knight Streusen
+japanName: 美食騎士シュトロイゼン
+family:
+  - Streusen
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 230
+    atk: 230
+    rcv: 34
+  maxLvl:
+    hp: 876
+    atk: 810
+    rcv: 134
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 136392
+aliases:
+  - ""
+evolution:
+  - id: 2371
+    evolvers:
+      - 117
+      - 84
+      - 94
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.25x and their RCV by 1.2x
+special:
+  name: Gourmetamorphosis
+  description: Removes Poison duration completely, reduces Bind and Despair
+    duration by 5 turns, changes [TND], [BLOCK], [BOMB] and Badly Matching orbs
+    into [RCV] orbs and makes [STR], [PSY] and [RCV] orbs beneficial for all
+    characters for 3 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+rumble:
+  stats:
+    def: 91
+    rumbleType: RCV
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 1.25
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Critical Hit
+          duration: 5
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.42
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.59
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.76
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.93
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 2.1
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 2.27
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 2.44
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 2.61
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 2.8
+        - override:
+            level: 2

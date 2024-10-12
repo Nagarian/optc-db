@@ -1,0 +1,47 @@
+type: INT
+name: Commander Scarlet Golden Lion Pirates
+japanName: スカーレット隊長 金獅子海賊団
+family:
+  - Scarlet
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1271
+    atk: 467
+    rcv: 30
+  maxLvl:
+    hp: 2302
+    atk: 980
+    rcv: 92
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 33122
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 3.5x after the 5th PERFECT in a row.
+special:
+  name: Crash Drumming
+  description: Deals random [INT] damage to one enemy. Boosts ATK of this
+    character by 1.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Shiki, Indigo
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

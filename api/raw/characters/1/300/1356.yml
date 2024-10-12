@@ -1,0 +1,47 @@
+type: STR
+name: Pekoms
+japanName: ペコムズ
+family:
+  - Pekoms
+class:
+  - Powerhouse
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 99
+    atk: 66
+    rcv: 33
+  maxLvl:
+    hp: 909
+    atk: 666
+    rcv: 156
+cost: 12
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 45766
+aliases:
+  - ""
+evolution:
+  - id: 1357
+    evolvers:
+      - 78
+      - 78
+      - 78
+      - 84
+      - 84
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.5x
+special:
+  name: Serious Threat
+  description: Changes [RCV] and [EMPTY] orbs of Fighter characters into Matching
+    orbs. Makes PERFECTs easier to hit for 1 turn.
+  cooldown: 18
+  maxLevel: 9
+  notes: Increases timing window to hit a PERFECT. (Animation remains the same)

@@ -1,0 +1,467 @@
+type: QCK
+name: Kami Eneru - Ascent to the Endless Varse
+japanName: ゴッド・エネル “限りない大地”への還幸
+family:
+  - Enel
+class:
+  - Shooter
+  - Striker
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1274
+    atk: 708
+    rcv: 181
+  maxLvl:
+    hp: 3029
+    atk: 1539
+    rcv: 432
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 57875
+aliases:
+  - Mega/Super/6+ Enel
+  - Kami Eneru
+  - V1 Legend God Enel
+captain:
+  name: ""
+  description: Reduces HP of all characters by 20%, reduces damage received by
+    13%, boosts chances of getting [RCV] orbs, makes [RCV] orbs beneficial for
+    all characters, boosts ATK of all characters by 2x-3.75x depending on the
+    amount healed in the last turn.
+  notes: The range of ATK boost is from 2x to 3.75x. The exact boost is calculated
+    as 2 + \* 0.000175 and maxes at 10k HP healed. This ignores your max HP, so
+    it doesn't stop counting if you over-heal.
+special:
+  name: Kingdom Come
+  description: Deals 25x Excess Healing done before the special is activated in
+    Typeless damage to all enemies.
+  cooldown: 21
+  maxLevel: 6
+  notes: The Excess Healing is counted from the last time the special is used and
+    accumulates when you heal more than your maximum HP. For example, if you are
+    at max HP and you heal 1,000 HP, you will add 25k damage to the special. The
+    amount of damage possible caps at 5,000,000 damage (9,000,000 with LLB).
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters
+  - description: Boosts amount healed from [RCV] orbs by 300 each
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - RCV
+  criteria: "[QCK] characters"
+  levels:
+    - value: 5
+      reduction: 1
+    - value: 8
+      reduction: 2
+    - value: 12
+      reduction: 3
+    - value: 15
+      reduction: 4
+    - value: 20
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 15
+    - type: potential
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: sailor
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - cooldown: 1
+    - atk: 20
+    - hp: 40
+    - hp: 40
+    - hp: 50
+    - cooldown: 1
+    - hp: 50
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - key: 1
+    - hp: 25
+    - atk: 50
+    - hp: 25
+    - rcv: 20
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - rcv: 50
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 229
+    rumbleType: DEF
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 3
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 55
+      effects:
+        - amount: 2050
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          duration: 30
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2075
+        - override:
+            duration: 31
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2100
+        - override:
+            duration: 32
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2125
+        - override:
+            duration: 33
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2150
+        - override:
+            duration: 34
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2175
+        - override:
+            duration: 35
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2200
+        - override:
+            duration: 36
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2225
+        - override:
+            duration: 37
+            level: 3
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2250
+        - override:
+            duration: 38
+            level: 3
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 2400
+        - override:
+            duration: 40
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - DEF
+              effect: buff
+              level: 3
+              targeting:
+                count: 1
+                priority: highest
+                stat: RCV
+                targets:
+                  - crew
+        - effects:
+            - override:
+                level: 4
+            - {}
+        - effects:
+            - override:
+                level: 5
+            - {}
+        - effects:
+            - override:
+                level: 6
+            - {}
+        - effects:
+            - override:
+                level: 7
+            - {}
+  - captain:
+      - description: Reduces HP of all characters by 20%, reduces damage received by
+          15%, boosts ATK of all characters by 4.5x-5.25x depending on the
+          amount healed in the last turn and boosts chances of getting [RCV]
+          orbs, makes [RCV] orbs beneficial for all characters, characters who
+          attack with a Type advantage will gain a [RCV] orb after attacking and
+          allows HP Overfill up to 2x MAX HP.
+  - rumble:
+      special:
+        - cooldown: 45
+          effects:
+            - amount: 2500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+            - attributes:
+                - DEF
+              duration: 30
+              effect: debuff
+              level: 3
+              targeting:
+                targets:
+                  - enemies
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 2600
+            - override:
+                duration: 31
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 2700
+            - override:
+                duration: 32
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 2800
+            - override:
+                duration: 33
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 2900
+            - override:
+                duration: 34
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 3000
+            - override:
+                duration: 35
+                level: 4
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 3100
+            - override:
+                duration: 36
+                level: 4
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 3200
+            - override:
+                duration: 37
+                level: 4
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 3300
+            - override:
+                duration: 38
+                level: 4
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 3500
+            - override:
+                duration: 40
+                level: 5
+  - rumble:
+      resilience:
+        - attribute: Paralysis
+          chance: 100
+          type: debuff
+        - attribute: STR
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 30x Excess Healing done before the special is activated in
+        Typeless damage to all enemies, boosts Orb Effects of Shooter and
+        Striker characters by 2.25x for 1 turn and adds 1.1x to Chain multiplier
+        for 1 turn. If your crew has Orb Amplification, increases boost effects
+        of Orb Amplification buffs by +0.3x. If your crew has Normal Attack
+        Only, reduces Ship Bind and Paralysis duration by 5 turns.

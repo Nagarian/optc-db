@@ -1,0 +1,104 @@
+type: DEX
+name: Akainu - Critical Moment of an Era
+japanName: 赤犬 時代の節目
+family:
+  - Sakazuki
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1306
+    atk: 755
+    rcv: 87
+  maxLvl:
+    hp: 2826
+    atk: 1452
+    rcv: 245
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 183992
+aliases:
+  - Limited Akainu
+  - Limited Sakazuki
+  - Secret Akainu
+  - Secret Sakazuki
+  - Kizuna Akainu
+  - Kizuna Sakazuki
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of [DEX] characters by 2.5x. If a character has a [DEX]
+    orb, boosts their ATK by an additional 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of [DEX] characters by 3.5x. If a character has a [DEX] orb, boosts their ATK by an additional 1.2x.
+special:
+  name: "Magma Rain: Meteor Volcano"
+  description: Changes all orbs into [DEX] orbs. If your Captain is a [DEX]
+    character, locks the chain multiplier at 3x for 1 turn and boosts ATK of all
+    characters by 1.75x for 1 turn. Otherwise, locks the chain multiplier at
+    2.5x for 2 turns and boosts ATK of all characters by 1.75x for 2 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [STR] and [QCK] orbs beneficial for this character
+  - description: Makes [DEX] orbs beneficial for Fighter characters
+support:
+  type: descriptive
+  criteria: Sengoku, Kuzan (Aokiji) and Borsalino (Kizaru)
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.75x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 50
+    - atk: 20
+    - hp: 50
+    - atk: 20
+    - cooldown: 1
+    - hp: 50
+    - rcv: 50
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

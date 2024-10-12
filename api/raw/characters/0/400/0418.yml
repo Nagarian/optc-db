@@ -1,0 +1,90 @@
+type: DEX
+name: Donquixote Doflamingo - Warlord of the Sea
+japanName: ドンキホーテ・ドフラミンゴ 王下七武海
+family:
+  - DonquixoteDoflamingo
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 932
+    atk: 721
+    rcv: 118
+  maxLvl:
+    hp: 2311
+    atk: 1500
+    rcv: 255
+cost: 50
+slots: 2
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 9035
+aliases:
+  - Raid Doffy
+  - Raid Doflamingo
+captain:
+  name: ""
+  description: Boosts ATK and HP of Slasher characters by 2x
+special:
+  name: Overheat
+  description: Switches orbs between slots 2 times, boosts Orb Effects of all
+    characters by 2x for 1 turn
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of Slasher characters by 30
+  - description: Boosts base HP of Slasher characters by 60
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Vergo, Trebol, Pica and Diamante
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - hp: 40
+    - rcv: 30
+    - type: sailor
+    - atk: 30
+    - hp: 50
+    - rcv: 40
+    - atk: 40
+    - hp: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

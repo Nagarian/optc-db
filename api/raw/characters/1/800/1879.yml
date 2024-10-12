@@ -1,0 +1,225 @@
+type: PSY
+name: Man-Eating Bartolomeo - Captain of the Barto Club Pirates
+japanName: 人食いのバルトロメオ 海賊団「バルトクラブ」船長
+family:
+  - Bartolomeo
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1388
+    atk: 631
+    rcv: 133
+  maxLvl:
+    hp: 3170
+    atk: 1359
+    rcv: 220
+cost: 50
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 81717
+aliases:
+  - Raid Bartolomeo
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x and their HP by 1.35x and
+    reduces damage received by 10%. If you use "Barrier Crash" in this turn
+    boosts ATK of all characters by 2.75x instead.
+special:
+  name: Barrier Crash
+  description: Reduces any damage received above 3,000 HP by 97% for 2 turns,
+    recovers 50% of crew's MAX HP, reduces enemies' ATK Up, Enrage, End of Turn
+    Damage/Percent Cut and Resilience Buffs duration by 5 turns.
+  cooldown: 33
+  maxLevel: 16
+  stages:
+    - description: Reduces any damage received above 5,000 HP by 97% for 2 turns,
+        recovers 20% of crew's MAX HP, reduces enemies' ATK Up and Enrage Buffs
+        duration by 5 turns.
+      cooldown: 28
+sailor:
+  - description: Boosts base HP of all characters by 150
+support:
+  type: descriptive
+  criteria: Striker characters
+  levels:
+    - Reduces damage received from [INT] characters by 1%
+    - Reduces damage received from [INT] characters by 1%
+    - Reduces damage received from [INT] characters by 2%
+    - Reduces damage received from [INT] characters by 2%
+    - Reduces damage received from [INT] characters by 3%
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 25
+    - type: potential
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - hp: 45
+    - rcv: 20
+    - rcv: 30
+    - cooldown: 1
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 268
+    rumbleType: DEF
+    spd: 121
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 1100
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1225
+        - override:
+            level: 6
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            level: 7
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1475
+        - override:
+            level: 8
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 9
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1725
+        - override:
+            level: 10
+            duration: 20
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1850
+        - override:
+            level: 11
+            duration: 21
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1975
+        - override:
+            level: 12
+            duration: 22
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 2100
+        - override:
+            level: 13
+            duration: 23
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 2350
+        - override:
+            level: 15
+            duration: 24

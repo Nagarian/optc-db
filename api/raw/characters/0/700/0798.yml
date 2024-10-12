@@ -1,0 +1,50 @@
+type: PSY
+name: Kung Fu Dugong - Sea Animal Pirates
+japanName: クンフージュゴン 海獣海賊団
+family:
+  - Dugong
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 50
+    atk: 355
+    rcv: 95
+  maxLvl:
+    hp: 450
+    atk: 1115
+    rcv: 225
+cost: 18
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 18770
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x after scoring 3 PERFECTs in a row
+special:
+  name: Dugong Secret! Fist of the Black Fin
+  description: Removes Poison duration completely, following the activation of the
+    special, if during that turn you score 6 PERFECT hits, boosts ATK of Fighter
+    characters by 1.75x for 1 turn in the following turn
+  cooldown: 20
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

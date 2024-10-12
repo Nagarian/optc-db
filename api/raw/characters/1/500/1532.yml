@@ -1,0 +1,349 @@
+type: DEX
+name: God Usopp
+japanName: ゴッド・ウソップ
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1493
+    atk: 566
+    rcv: 162
+  maxLvl:
+    hp: 3141
+    atk: 1291
+    rcv: 441
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 54006
+aliases:
+  - God Usopp
+  - Usoland
+  - V1 Legend Usopp
+evolution:
+  - id: 1543
+    evolvers:
+      - skullDEX
+      - 118
+      - 86
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x if HP is below 50% or by 1.75x
+    if HP is below 30% at the start of the turn. Makes [STR], [DEX], [QCK],
+    [PSY], [INT], [RCV] and [TND] orbs beneficial for all characters.
+special:
+  name: "Long-Range Attack: Bagworm"
+  description: Delays all enemies by 5 turns, adds 0.3x to Chain multiplier for 4 turns
+  cooldown: 24
+  maxLevel: 4
+  stages:
+    - description: Delays all enemies by 3 turns
+      cooldown: 13
+    - description: Delays all enemies by 4 turns, adds 0.2x to Chain multiplier for 4 turns
+      cooldown: 18
+sailor:
+  - description: Removes Blindness duration completely
+  - description: Boosts base HP of Shooter characters by 100
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Heracles'n, Monkey D. Luffy, Roronoa Zoro, Nico Robin and Franky
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - atk: 15
+    - hp: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - hp: 30
+    - atk: 15
+    - type: sailor
+    - atk: 15
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - rcv: 10
+    - atk: 20
+    - hp: 40
+    - atk: 20
+    - hp: 40
+    - rcv: 25
+    - hp: 50
+    - atk: 25
+    - hp: 70
+    - atk: 30
+    - atk: 40
+    - hp: 80
+    - rcv: 25
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 30
+rumble:
+  stats:
+    def: 115
+    rumbleType: DBF
+    spd: 138
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+        - {}
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 20
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          chance: 75
+          duration: 6
+          effect: hinderance
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 21
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 22
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 23
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 25
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 26
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 27
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 29
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 30
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 32
+        - {}
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

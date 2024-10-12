@@ -1,0 +1,46 @@
+type: DEX
+name: Roronoa Zoro
+frenchName: Roronoa Zoro
+japanName: ロロノア・ゾロ
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 126
+    atk: 75
+    rcv: 15
+  maxLvl:
+    hp: 488
+    atk: 239
+    rcv: 56
+cost: 4
+slots: 0
+maxExp: 26184
+maxLevel: 20
+flags:
+  - sugo
+links:
+  gamewithId: 2019
+aliases: []
+evolution:
+  - id: 6
+    evolvers:
+      - 115
+      - 80
+  - id: 7
+    evolvers:
+      - 116
+      - 80
+      - 97
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.5x
+special:
+  name: Oni Giri
+  description: Deals 7x character's ATK in [DEX] damage to one enemy
+  cooldown: 12
+  maxLevel: 4

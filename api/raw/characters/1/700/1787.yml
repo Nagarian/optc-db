@@ -1,0 +1,34 @@
+type: QCK
+name: Donquixote Pirate Crew - Low-Level Berserker
+japanName: ドンキホーテ海賊団構成員 特攻部隊下級兵
+family:
+  - DonquixotePiratesMemberQCK
+class:
+  - Shooter
+  - Driven
+rarity: 3
+stats:
+  combo: 7
+  minLvl:
+    hp: 118
+    atk: 43
+    rcv: 9
+  maxLvl:
+    hp: 1656
+    atk: 602
+    rcv: 124
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 70553
+aliases:
+  - ""
+special:
+  name: Risky Attack
+  description: Reduces crew's current HP by 50%, deals 5x the amount of HP
+    subtracted in Typeless damage to one enemy
+  cooldown: 15
+  maxLevel: 7

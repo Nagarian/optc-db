@@ -1,0 +1,94 @@
+type: QCK
+name: Jinbe - Honor to the Captain
+japanName: ジンベエ 船長への面目
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1622
+    atk: 698
+    rcv: 114
+  maxLvl:
+    hp: 3127
+    atk: 1411
+    rcv: 210
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 156212
+aliases:
+  - Coliseum Jinbe
+  - Coliseum Jimbe
+  - Colo Jinbe
+  - Colo Jimbe
+  - Coliseum Jinbei
+  - Coliseum Jimbei
+  - Colo Jinbei
+  - Colo Jimbei
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Cerebral characters by 2.75x and their HP by 1.3x.
+special:
+  name: Intruding on the Holy Land
+  description: Adds 0.5x to Chain multiplier for 2 turns and reduces any damage
+    received above 3,000 HP by 97% for 2 turns. If your Captain is a Fighter or
+    Cerebral character, removes enemies' Threshold Damage Reduction buff
+    duration completely.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50
+  - description: Cannot be blown away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Nami, Tony Tony Chopper, Brook and Carrot
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - hp: 50
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - hp: 50
+    - hp: 70
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

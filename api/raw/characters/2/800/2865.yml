@@ -1,0 +1,214 @@
+type: DUAL
+name: Klahadore & Django - Secret Assassination Plot
+japanName: クラハドール＆ジャンゴ “お嬢様暗殺計画”
+family:
+  - Django
+  - Kuro
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 515
+    atk: 233
+    rcv: 49
+  maxLvl:
+    hp: 1114
+    atk: 630
+    rcv: 150
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 188556
+aliases:
+  - Kuro&Django
+  - Django&Kuro
+  - KuroDjango
+  - DjangoKuro
+  - Kuro and Django
+evolution:
+  - id: 2866
+    evolvers:
+      - 96
+      - 97
+      - 1180
+      - 301
+      - 302
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x, by 3x instead if they
+    have a beneficial orb, and makes [DEX] orbs beneficial for Slasher
+    characters.
+special:
+  name: Calculated Cooperative Assassination
+  description: Deals 96x character's ATK in Typeless damage to all enemies,
+    reduces Despair duration by 5 turns, changes [RCV], [TND], [EMPTY] and
+    [BLOCK] orbs into Matching orbs, boosts ATK against delayed enemies by 1.75x
+    for 2 turns and becomes Kuro & Django for 2 turns.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+characters:
+  swap:
+    description: Reduces Paralysis and Bind duration by 1 turn.
+  character1:
+    name: Klahadore - Secret Assassination Plot
+    japanName: クラハドール “お嬢様暗殺計画”
+    class:
+      - Slasher
+      - Cerebral
+    type: QCK
+    stats:
+      combo: 6
+      minLvl:
+        hp: 440
+        atk: 240
+        rcv: 31
+      maxLvl:
+        hp: 1102
+        atk: 618
+        rcv: 99
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher characters by 2.25x, by 2.75x instead if they
+        have a beneficial orb.
+    sailor:
+      - description: Reduces Blindness duration by 5 turns
+  character2:
+    name: Django - Secret Assassination Plot
+    japanName: ジャンゴ “お嬢様暗殺計画”
+    class:
+      - Slasher
+      - Cerebral
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 431
+        atk: 230
+        rcv: 60
+      maxLvl:
+        hp: 1089
+        atk: 602
+        rcv: 138
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher characters by 2.5x and makes [DEX] orbs
+        beneficial for Slasher characters.
+    sailor:
+      - description: Reduces Blindness duration by 5 turns
+rumble:
+  stats:
+    def: 146
+    rumbleType: DBF
+    spd: 183
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 0.3
+          effect: damage
+          type: atk
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Silence
+          effect: hinderance
+          chance: 96
+          duration: 10
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.35
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.39
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.44
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.49
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.54
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.58
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.63
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.68
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.8
+        - {}

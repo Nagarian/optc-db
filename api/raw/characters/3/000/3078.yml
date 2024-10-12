@@ -1,0 +1,367 @@
+type: PSY
+name: Soul King Brook - A Musician Who Fights With Soul
+japanName: “ソウルキング”ブルック 魂で戦う音楽家
+family:
+  - Brook
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1285
+    atk: 548
+    rcv: 83
+  maxLvl:
+    hp: 3212
+    atk: 1370
+    rcv: 208
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 224848
+aliases:
+  - Raid Brook
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 3x, their HP by 1.2x and
+    makes [INT] orbs beneficial for Free Spirit characters.
+special:
+  name: Gavotte Bond en Avant
+  description: Reduces enemies' Threshold Damage Reduction duration by 3 turns and
+    reduces Silence duration by 3 turns. If the enemy is delayed, boosts ATK
+    against delayed enemies by 1.75x for 1 turn, delays all enemies by 1 turn
+    otherwise.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 30
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 20
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - atk: 20
+    - hp: 30
+    - slot: 1
+    - atk: 40
+    - cooldown: 1
+    - hp: 50
+    - atk: 80
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 4
+          threshold: 25
+        - value: 5
+          threshold: 30
+        - value: 6
+          threshold: 35
+        - value: 7
+          threshold: 40
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 100
+rumble:
+  stats:
+    def: 217
+    rumbleType: SPT
+    spd: 140
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 15
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.05
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 16
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 17
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.15
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 18
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 19
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.25
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 21
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 22
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 23
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 35
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+            - Action Bind
+          duration: 24
+          effect: boon
+          targeting:
+            targets:
+              - PSY

@@ -1,0 +1,394 @@
+type: QCK
+name: Franky - Super Weapon from a Future Land
+japanName: フランキー 未来国の超兵器
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1922
+    atk: 802
+    rcv: 64
+  maxLvl:
+    hp: 4378
+    atk: 1616
+    rcv: 138
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 87123
+aliases:
+  - Shogun Franky
+  - General Franky
+  - V1 Legend Franky
+evolution:
+  - id: 2300
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: >-
+    If there are 6 characters in your crew with Fighter, Slasher,
+    Shooter or Striker classes, boosts ATK of all characters by 3x and their HP
+    by 1.3x.  
+
+    **Action:** Franky brings the entire crew into General Franky for 1 turn and becomes immune to Blow Away inflicted to the crew. During this turn, boosts ATK of all characters by 4x instead and reduces damage taken by 38%
+  notes: >-
+    All characters on your crew must have one of the 4 classes listed, but
+    you do not need one of each. Franky Captain Action lasts one turn and can be
+    reactivated after a 4 turns cooldown. Only 1 Franky Captain Action can be
+    activated at once.  
+
+    During transformation:  
+
+    If you attack with a Fighter character, deal 1.25x damage to targeted enemy  
+
+    If you attack with a Slasher character, deal full damage to targeted enemy, but deal 0.1x damage to all enemies in the same row as the targeted enemy  
+
+    If you attack with a Striker character, deal 0.5x damage to all enemies on the stage  
+
+    If you attack with a Shooter character, deal 0.75x damage to targeted enemy but deal 0.3x damage to all other enemies on the stage
+special:
+  name: Franky Cannon
+  description: Deals 10% of enemies' current HP in damage to all enemies,
+    randomizes all non-Matching orbs, including [BLOCK] orbs, and boosts ATK of
+    Fighter, Slasher, Shooter and Striker characters by 2x for 1 turn
+  cooldown: 21
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter, Slasher, Fighter and
+      Striker characters by 50
+  - description: Makes [QCK] orbs beneficial for Shooter, Slasher, Fighter and
+      Striker characters
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Usopp and Nico Robin
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of Fighter, Slasher, Shooter and
+      Striker characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of Fighter, Slasher, Shooter and
+      Striker characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of Fighter, Slasher, Shooter and
+      Striker characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of Fighter, Slasher, Shooter and
+      Striker characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of Fighter, Slasher, Shooter and
+      Striker characters by 1.4x for 1 turn.
+limitBreak:
+  path:
+    - atk: 2
+    - atk: 2
+    - atk: 38
+    - type: potential
+    - hp: 38
+    - hp: 38
+    - hp: 38
+    - type: sailor
+    - rcv: 1
+    - rcv: 1
+    - rcv: 38
+    - atk: 3
+    - atk: 38
+    - atk: 38
+    - type: potential
+    - hp: 38
+    - hp: 38
+    - hp: 38
+    - hp: 38
+    - hp: 38
+    - hp: 38
+    - hp: 38
+    - cooldown: 1
+    - atk: 38
+    - rcv: 38
+    - hp: 38
+    - type: sailor
+    - atk: 38
+    - hp: 38
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: >-
+          If there are 6 characters in your crew with Fighter, Slasher,
+          Shooter or Striker classes, boosts ATK of all characters by 3.25x and
+          their HP by 1.3x.  
+
+          **Action:** Franky brings the entire crew into General Franky for 1 turn and becomes immune to Blow Away inflicted to the crew. During this turn, boosts ATK of all characters by 4x instead and reduces damage taken by 38%
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 267
+    rumbleType: DEF
+    spd: 126
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+              - Striker
+              - Shooter
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 18
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+              - Striker
+              - Shooter
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          condition:
+            comparator: more
+            count: 3
+            type: enemies
+            relative: true
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+              - Striker
+              - Shooter
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 1
+            duration: 11
+        - override:
+            level: 1
+            duration: 11
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 1
+            duration: 14
+        - override:
+            level: 1
+            duration: 14
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 1
+            duration: 15
+        - override:
+            level: 1
+            duration: 15
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 1
+            duration: 16
+        - override:
+            level: 1
+            duration: 16
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 25
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 20
+        - override:
+            level: 3
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

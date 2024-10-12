@@ -1,0 +1,85 @@
+type: PSY
+name: Coby, Hero of the Battlefield - Navy Petty Officer
+japanName: 戦火の勇士コビー 海軍本部曹長
+family:
+  - Coby
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1121
+    atk: 500
+    rcv: 104
+  maxLvl:
+    hp: 2239
+    atk: 1048
+    rcv: 261
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 20495
+aliases:
+  - Colo Coby
+  - Coliseum Coby
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x, reduces damage received by
+    0%-30% depending on the crew's current HP
+special:
+  name: Pleading at the Risk of One's Life
+  description: Changes orbs of adjacent characters into [RCV] orbs; if the special
+    is activated with more than 50% health remaining, protects from defeat for 1
+    turn
+  cooldown: 25
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Boosts amount healed from [RCV] orbs by 200 each
+support:
+  type: descriptive
+  criteria: Helmeppo
+  levels:
+    - Reduces damage received from [INT] characters by 1%.
+    - Reduces damage received from [INT] characters by 2%.
+    - Reduces damage received from [INT] characters by 3%.
+    - Reduces damage received from [INT] characters by 4%.
+    - Reduces damage received from [INT] characters by 5%.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - hp: 70
+    - rcv: 50
+    - cooldown: 3
+    - hp: 110
+    - type: sailor
+    - slot: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

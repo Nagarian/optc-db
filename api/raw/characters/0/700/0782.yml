@@ -1,0 +1,47 @@
+type: INT
+name: Tashigi - Flower of Justice
+japanName: たしぎ 正義の華
+family:
+  - Tashigi
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 132
+    atk: 65
+    rcv: 49
+  maxLvl:
+    hp: 999
+    atk: 495
+    rcv: 205
+cost: 13
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 18004
+aliases:
+  - Kimono Tashigi
+evolution:
+  - id: 783
+    evolvers:
+      - 117
+      - 93
+      - 94
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts RCV of Slasher characters by 1.5x
+special:
+  name: Smile of a Natural Beauty
+  description: Delays all enemies by 1 turn, recovers a small random amount of HP
+  cooldown: 11
+  maxLevel: 1
+  notes: "`randomHeal : ? : ?`"

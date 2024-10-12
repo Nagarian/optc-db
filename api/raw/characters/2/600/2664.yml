@@ -1,0 +1,87 @@
+type: QCK
+name: Sanji - First Class Cook in Shining Armor
+japanName: サンジ 銀鎧の一流コック
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1241
+    atk: 594
+    rcv: 134
+  maxLvl:
+    hp: 3025
+    atk: 1389
+    rcv: 252
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - japex
+links:
+  gamewithId: 162830
+aliases:
+  - Armor Sanji
+  - Knight Sanji
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [QCK] characters by 2.75x, their HP by
+    1.3x, lowers chances of getting [PSY] orbs, makes [STR] and [QCK] orbs
+    beneficial for [STR] and [QCK] characters. If there is a [STR], [QCK] and
+    [PSY] character in your crew, boosts Chain Multiplier Growth Rate by 1.5x.
+special:
+  name: Chivalrous Kick
+  description: Reduces any damage received above 6,000 HP by 90% for 1 turn and
+    changes all orbs, including [BLOCK] orbs, into [QCK] orbs. If enemies have
+    All Debuff Protection or Delay Debuff Protection at the time the special was
+    activated, boosts Orb Effects of [STR] and [QCK] characters by 2x for 2
+    turns, by 1.75x for 2 turns otherwise.
+  cooldown: 15
+  maxLevel: 1
+sailor:
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+  - description: Makes [TND] orbs beneficial for all characters
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - rcv: 25
+    - rcv: 25
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - hp: 80
+    - atk: 40
+    - type: sailor
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

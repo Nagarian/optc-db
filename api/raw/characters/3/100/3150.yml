@@ -1,0 +1,527 @@
+type: STR
+name: Eustass Kid - Unyielding Prisoner
+japanName: ユースタス・キッド 屈しない囚人
+family:
+  - EustassKid
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1186
+    atk: 562
+    rcv: 95
+  maxLvl:
+    hp: 2964
+    atk: 1404
+    rcv: 238
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 236847
+aliases:
+  - TM Kid TM
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x.
+special:
+  name: Throwing Rocks With All My Might
+  description: Deal 100x character's ATK in [STR] damage to one enemy and changes
+    Badly Matching, [TND], [RCV] and [BOMB] orbs into Matching orbs. If your
+    crew is inflicted with Bind at the time the special was activated, boosts
+    ATK of all characters by 2x for 1 turn. If your crew is inflicted with
+    Despair at the time the special was activated, boosts Orb Effects of all
+    characters by 1.75x for 1 turn. If your crew is inflicted with Paralysis at
+    the time the special was activated, boosts the Color Affinity of all
+    characters by 1.75x for 1 turn.
+  cooldown: 34
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [STR] characters by 50
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [STR] characters by 2.25x.
+    - type: sailor
+    - rcv: 20
+    - hp: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of [STR] characters by 2.5x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - captain:
+        description: Boosts ATK of [STR] characters by 2.75x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of [STR] characters by 3x.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [STR] characters by 3.5x and restores Special
+          Cooldown of all characters by 1 turn when they are rewinded.
+    - hp: 100
+    - hp: 120
+    - captain:
+        description: Boosts ATK of [STR] characters by 3.75x and restores Special
+          Cooldown of all characters by 2 turns when they are rewinded.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+rumble:
+  stats:
+    def: 136
+    rumbleType: DBF
+    spd: 167
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 12
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 13
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 14
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 15
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 16
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 17
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 18
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 19
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 19
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies

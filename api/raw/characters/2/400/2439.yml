@@ -1,0 +1,60 @@
+type: STR
+name: Usoland - Savior of the Tontattas
+japanName: ウソランド トンタッタ族の救世主
+family:
+  - Usopp
+class:
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1409
+    atk: 621
+    rcv: 30
+  maxLvl:
+    hp: 2201
+    atk: 1189
+    rcv: 45
+cost: 20
+slots: 3
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 143197
+aliases:
+  - Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1.5x, by 2.75x instead if
+    HP is below ?% at the start of the turn
+special:
+  name: Usoland's Great Scream
+  description: Reduces crew's current HP by 50%, delays all enemies by 1 turn,
+    removes all positive buffs on your team and reduces Bind, Despair, Paralysis
+    and Silence duration by 1 turn.
+  cooldown: 7
+  maxLevel: 1
+sailor:
+  - description: Reduces Silence duration by 2 turns on this character
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - atk: 15
+    - slot: 1
+    - rcv: 25
+    - atk: 20
+    - atk: 25
+    - hp: 60
+    - atk: 30
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 60
+        - threshold: 50

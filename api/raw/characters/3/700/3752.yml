@@ -1,0 +1,361 @@
+type: QCK
+name: Orochi - Assaulting Eight-Headed Snake
+family:
+  - KurozumiOrochi
+class:
+  - Driven
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2164
+    atk: 783
+    rcv: 104
+  maxLvl:
+    hp: 4328
+    atk: 1566
+    rcv: 257
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - Secret Limited Rumble Legend V1
+captain:
+  name: ""
+  description: "Boosts ATK of Driven and Powerhouse characters by 4.5x, boosts HP
+    of Driven and Powerhouse characters by 1.75x, increases damage received by
+    1.5x, reduces Special Cooldown of this character by 3 turns after each turn
+    you take damage and allows HP Overfill up to 2x MAX HP. If total Damage
+    Taken is 50,000 or more, boosts ATK of Driven and Powerhouse characters by
+    5.25x instead, recovers 2,000 HP at the end of each turn, reduces damage
+    received by 10% and removes the following effect from this character's
+    Captain Ability: increases damage received by 1.5x."
+special:
+  name: Inescapable Eight-Headed Assault
+  description: Reduces Special Cooldown of all characters by 1 turn, deals 100x
+    character's ATK in Typeless damage to all enemies, boosts Orb Effects of
+    Driven and Powerhouse characters by 2.25x-2.5x for 1 turn, based on total
+    damage taken and boosts Color Affinity of Driven and Powerhouse characters
+    by 2.25x-2.5x for 1 turn, based on total damage taken. If your Captain is a
+    Driven or Powerhouse character, increases boost effects of Increase Damage
+    Taken debuffs by +0.3x. If the special is activated with more than 70%
+    health remaining, protects from defeat for 2 turns if HP is above 70%.
+  cooldown: 20
+  maxLevel: 6
+  notes: |-
+    0-49,999 Damage Taken: 2.25x orb/affinity boost  
+    50,000+ Damage Taken: 2.5x orb/affinity boost.
+sailor:
+  - description: When any other Driven or Powerhouse character uses a special,
+      reduces special cooldown of this character by 1 turn.
+  - description: Makes [QCK] and [RCV] orbs beneficial for Driven and Powerhouse characters.
+support:
+  type: descriptive
+  criteria: Kurozumi Kanjuro and Kaido
+  levels:
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Color Affinity of Driven and Powerhouse
+      characters by 1.35x for 1 turn and recovers 1,000 HP.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Color Affinity of Driven and Powerhouse
+      characters by 1.45x for 1 turn and recovers 1,250 HP.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Color Affinity of Driven and Powerhouse
+      characters by 1.55x for 1 turn and recovers 1,500 HP.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Color Affinity of Driven and Powerhouse
+      characters by 1.65x for 1 turn and recovers 1,750 HP.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Color Affinity of Driven and Powerhouse
+      characters by 1.75x for 1 turn and recovers 2,000 HP.
+limitBreak:
+  path: []
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 2
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 1
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 250
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+rumble:
+  stats:
+    def: 190
+    rumbleType: DBF
+    spd: 133
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 200
+      interval: 5
+      type: healing
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - SPD
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 17
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Silence
+          chance: 55
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            priority: highest
+            stat: Special CT
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            count: 4
+            targets:
+              - enemies
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 19
+        - override:
+            chance: 60
+        - override:
+            duration: 12
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 21
+        - override:
+            chance: 65
+        - override:
+            duration: 13
+            level: 2
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 23
+        - override:
+            chance: 70
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 25
+        - override:
+            chance: 75
+        - override:
+            duration: 15
+            level: 3
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 27
+        - override:
+            chance: 80
+        - override:
+            duration: 16
+            level: 3
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 29
+        - override:
+            chance: 85
+        - override:
+            duration: 17
+            level: 4
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 31
+        - override:
+            chance: 90
+        - override:
+            duration: 18
+            level: 4
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 33
+        - override:
+            chance: 95
+        - override:
+            duration: 19
+            level: 5
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 35
+        - override:
+            chance: 100
+        - override:
+            duration: 20
+            level: 6
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

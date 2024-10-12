@@ -1,0 +1,43 @@
+type: PSY
+name: Kaya
+japanName: カヤ
+family:
+  - Kaya
+class:
+  - Shooter
+  - Cerebral
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 115
+    atk: 50
+    rcv: 72
+  maxLvl:
+    hp: 370
+    atk: 180
+    rcv: 330
+cost: 9
+slots: 1
+maxExp: 136167
+maxLevel: 35
+flags:
+  - sugo
+links:
+  gamewithId: 11787
+aliases: []
+evolution:
+  - id: 502
+    evolvers:
+      - 117
+      - 87
+      - 92
+      - 94
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of [PSY] characters by 1.2x
+special:
+  name: Studying Medicine
+  description: Recovers 5x character's RCV in HP at the end of each turn for 4 turns
+  cooldown: 21
+  maxLevel: 6

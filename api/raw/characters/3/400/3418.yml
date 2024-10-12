@@ -1,0 +1,102 @@
+type: STR
+name: Mr. 2 Bon Clay - Kama Twirling Through Hell
+japanName: Mr.2・ボン・クレー 地獄で廻るオカマ
+family:
+  - Bentham
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1128
+    atk: 595
+    rcv: 203
+  maxLvl:
+    hp: 2824
+    atk: 1445
+    rcv: 281
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 291863
+aliases:
+  - Limited Bon Clay
+  - Secret Bon Clay
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Fighter and Free Spirit characters by 3x and their HP
+    and RCV by 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x and their HP and RCV by 1.3x.
+special:
+  name: Great Roundhouse Kick
+  description: Reduces enemies' Threshold Damage Reduction and Resilience duration
+    by 6 turns and reduces Silence duration by 6 turns. If enemies have Delay
+    Debuff Protection or All Debuff Protection at the time the special was
+    activated, boosts the Color Affinity of Fighter and Free Spirit characters
+    by 2x for 1 turn, by 1.75x for 2 turns otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Free Spirit characters by 50
+  - description: Reduces Silence duration completely on this character
+support:
+  type: descriptive
+  criteria: Emporio Ivankov, Inazuma, Buggy, Galdino (Mr. 3), Crocodile (Mr. 0),
+    Daz Bones (Mr. 1)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - atk: 25
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

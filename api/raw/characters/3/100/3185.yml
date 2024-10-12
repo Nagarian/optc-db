@@ -1,0 +1,255 @@
+type: PSY
+name: Dark King Rayleigh - Unexpected Ambush
+japanName: 冥王レイリー 思わぬ伏兵
+family:
+  - SilversRayleigh
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1306
+    atk: 856
+    rcv: 72
+  maxLvl:
+    hp: 2902
+    atk: 1426
+    rcv: 241
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 248701
+aliases:
+  - World Cruise Rayleigh
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 3x and reduces damage received by 10%.
+special:
+  name: Dark King's Presence
+  description: Deals 200,000 Fixed damage to all enemies, reduces enemies'
+    Threshold Damage Reduction and Percent Damage Reduction duration by 5 turns
+    and boosts the Color Affinity of [STR] and [PSY] characters by 2x for 1
+    turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Makes [PSY] orbs beneficial for all characters
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Buggy, Shanks, Crocus and Gol D. Roger
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 30
+    - type: potential
+    - atk: 10
+    - hp: 20
+    - hp: 30
+    - slot: 1
+    - atk: 10
+    - hp: 50
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+rumble:
+  stats:
+    def: 190
+    rumbleType: SPT
+    spd: 130
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 17
+            level: 1
+        - override:
+            duration: 17
+            level: 1
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 18
+            level: 1
+        - override:
+            duration: 18
+            level: 1
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 19
+            level: 2
+        - override:
+            duration: 19
+            level: 1
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 20
+            level: 2
+        - override:
+            duration: 20
+            level: 1
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 21
+            level: 3
+        - override:
+            duration: 21
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 22
+            level: 3
+        - override:
+            duration: 22
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 23
+            level: 3
+        - override:
+            duration: 23
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 24
+            level: 4
+        - override:
+            duration: 24
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 25
+            level: 5
+        - override:
+            duration: 25
+            level: 3

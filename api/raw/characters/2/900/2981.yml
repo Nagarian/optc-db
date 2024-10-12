@@ -1,0 +1,578 @@
+type: DEX
+name: Basil Hawkins - Subordinate to the Dragon
+japanName: バジル・ホーキンス 龍につき従う者
+family:
+  - BasilHawkins
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 782
+    atk: 280
+    rcv: 40
+  maxLvl:
+    hp: 1696
+    atk: 913
+    rcv: 144
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 203899
+aliases:
+  - V1 Legend Hawkins
+evolution:
+  - id: 2982
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 3x, boosts ATK of all other
+    characters by 2.75x, boosts HP of all characters by 1.3x and deals 10% of
+    enemies' current HP in damage to all enemies at the end of each turn.
+    Recovers 50% of damage taken from enemies in the previous stage when
+    entering a new stage. At the beginning of each Stage, increases the Attack
+    Timer of all enemies by 1 turn.
+special:
+  name: Strawman's Pursuit
+  description: Deals 500x character's ATK in Typeless damage to one enemy, changes
+    orbs of this and adjacent characters into Matching orbs and adds 20x the
+    damage taken from enemies before the special is activated as Additional
+    Typeless Damage for 3 turns.
+  cooldown: 16
+  maxLevel: 6
+  notes: The amount of damage possible caps at 50,000 damage taken, so 1,000,000
+    Additional Damage.
+rumble:
+  stats:
+    def: 285
+    rumbleType: DEF
+    spd: 119
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.3
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.34
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.38
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.42
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.46
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.5
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.54
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.58
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.62
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 0.7
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

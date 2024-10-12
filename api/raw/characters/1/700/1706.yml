@@ -1,0 +1,121 @@
+type: STR
+name: Mr. 2 Bon Clay - A Friend in Hell
+japanName: Mr.2　ボン・クレー “地獄”の友達（ダチ）
+family:
+  - Bentham
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1145
+    atk: 542
+    rcv: 170
+  maxLvl:
+    hp: 2402
+    atk: 1202
+    rcv: 355
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 63205
+aliases:
+  - Mr 2
+  - Mr 2 Bonclay
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x at the start of the chain
+    and boosts ATK of [STR] characters by 3.125x after scoring 3 PERFECTs in a
+    row
+special:
+  name: A Speech Left in Hell
+  description: Removes all positive buffs on your team. If the special is
+    activated with more than 50% health remaining, protects from defeat for 1
+    turn
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 5
+      reduction: 1
+    - value: 7
+      reduction: 2
+    - value: 10
+      reduction: 3
+    - value: 12
+      reduction: 4
+    - value: 15
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 15
+    - rcv: 15
+    - hp: 50
+    - type: potential
+    - hp: 70
+    - rcv: 15
+    - atk: 15
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - hp: 130
+    - atk: 50
+    - type: sailor
+    - slot: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,46 @@
+type: DEX
+name: Kyros
+japanName: キュロス
+family:
+  - Kyros
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 192
+    atk: 152
+    rcv: 43
+  maxLvl:
+    hp: 1106
+    atk: 713
+    rcv: 189
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 30737
+aliases: []
+evolution:
+  - id: 1081
+    evolvers:
+      - 86
+      - 266
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Cost 20 or less characters by 2.5x
+special:
+  name: Trueno Bastardo
+  description: Deals 15x character's ATK in [DEX] damage to one enemy, changes the
+    orb of this character into a [DEX] orb and boosts ATK of this character by
+    2x for 1 turn
+  cooldown: 18
+  maxLevel: 7

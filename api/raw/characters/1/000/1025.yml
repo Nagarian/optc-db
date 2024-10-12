@@ -1,0 +1,117 @@
+type: INT
+name: Don Chin Jao Kano Kingdom Gang
+frenchName: Don Chinjao
+japanName: 首領・チンジャオ 花ノ国のギャング
+family:
+  - Chinjao
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1433
+    atk: 746
+    rcv: 68
+  maxLvl:
+    hp: 2818
+    atk: 1424
+    rcv: 185
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 28723
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x and boosts HP of Striker
+    characters by 2x
+  notes: A character with both classes will get both boosts
+special:
+  name: Eight-Impact Fist! Blow of Resentment
+  description: Boosts Orb Effects of all characters by 1.25x-1.75x for 2 turns,
+    depending on the crew's current HP at the time the special was activated.
+  cooldown: 19
+  maxLevel: 7
+  notes: Below 30% -> 1.75x orb boost, between 30% and 70% -> 1.5x, above 70% -> 1.25x
+sailor:
+  - description: Boosts base ATK and HP of Powerhouse and Striker characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Sai and Boo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 50
+    - rcv: 30
+    - rcv: 30
+    - type: potential
+    - rcv: 40
+    - rcv: 40
+    - atk: 50
+    - type: sailor
+    - cooldown: 1
+    - captain:
+        description: Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of Powerhouse characters by 2.25x and boosts
+          HP of Striker characters by 2x
+    - cooldown: 1
+    - hp: 50
+    - atk: 50
+    - slot: 1
+    - type: potential
+    - key: 1
+    - atk: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - cooldown: 5
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

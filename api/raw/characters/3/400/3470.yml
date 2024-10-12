@@ -1,0 +1,231 @@
+type: STR
+name: "Rebecca: Halloween Sweets Party - Night of Halloween"
+japanName: レベッカ　ハロウィン・スイーツパーティー Night of Halloween
+family:
+  - Rebecca
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1438
+    atk: 642
+    rcv: 102
+  maxLvl:
+    hp: 2752
+    atk: 1435
+    rcv: 292
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 298340
+aliases:
+  - Kizuna Rebecca
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Free Spirit characters by 3.5x and their
+    HP and RCV by 1.2x.
+special:
+  name: Girl Enjoying The Party
+  description: Reduces the defense of all enemies by 100% for 2 turns, adds 1.0x
+    to Chain multiplier for 2 turns and reduces any damage received above 3,000
+    HP by ?% for 1 turn. If HP is above 99% at the time the special is
+    activated, boosts ATK against enemies with reduced defense by 1.75x for 2
+    turns.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Makes [STR] orbs beneficial for Srtiker and Free Spirit characters
+  - description: Makes [DEX] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - atk: 25
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 128
+    rumbleType: ATK
+    spd: 174
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 1
+            targets:
+              - QCK
+          type: atk
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 6
+        - override:
+            amount: 0.8
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 0.9
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 7
+        - override:
+            amount: 1
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            amount: 1.1
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 8
+        - override:
+            amount: 1.2
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            amount: 1.3
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            amount: 1.4
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 10
+        - override:
+            amount: 1.5
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 10
+        - override:
+            amount: 1.7

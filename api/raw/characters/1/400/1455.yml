@@ -1,0 +1,54 @@
+type: PSY
+name: Don Chin Jao - Happosui Army
+japanName: 首領・チンジャオ 八宝水軍
+family:
+  - Chinjao
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 613
+    atk: 321
+    rcv: 24
+  maxLvl:
+    hp: 1249
+    atk: 660
+    rcv: 134
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 50809
+aliases:
+  - Colo Don Chinjao
+  - Coliseum Don Chinjao
+  - Colo Chinjao
+  - Coliseum Chinjao
+evolution:
+  - id: 1456
+    evolvers:
+      - 118
+      - 266
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.5x until the first hit other
+    than PERFECT and recovers 120 HP at the end of each turn
+special:
+  name: Legend Told to the Grandchild
+  description: Deals 25% of enemies' current HP in damage to one enemy, reduces
+    damage received by 70% for 1 turn
+  cooldown: 30
+  maxLevel: 16
+  stages:
+    - description: Deals 20% of enemies' current HP in damage to one enemy, reduces
+        damage received by 50% for 1 turn
+      cooldown: 25

@@ -1,0 +1,89 @@
+type: INT
+name: Shiryu of the Rain
+japanName: 雨のシリュウ
+family:
+  - Shiryu
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1168
+    atk: 622
+    rcv: -300
+  maxLvl:
+    hp: 2500
+    atk: 1490
+    rcv: -300
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 38770
+aliases:
+  - Shiliew
+captain:
+  name: ""
+  description: Boosts ATK and HP of Slasher characters by 2x
+special:
+  name: Handling Hell
+  description: Has a small chance to instantly defeat each enemy
+  cooldown: 25
+  maxLevel: 7
+  notes: "`instantKill : 25%`"
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Marshall D. Teach (Blackbeard), Jesus Burgess, Laffitte, Van Augur and Doc Q
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - cooldown: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - hp: 30
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - rcv: 40
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

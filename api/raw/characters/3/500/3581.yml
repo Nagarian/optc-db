@@ -1,0 +1,46 @@
+type: INT
+name: Urouge - Fallen Monk Calamity
+family:
+  - Urouge
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1660
+    atk: 402
+    rcv: 54
+  maxLvl:
+    hp: 2320
+    atk: 804
+    rcv: 108
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - rumble
+aliases:
+  - Rumble Secret Limited Legend
+evolution:
+  - id: 3582
+    evolvers: []
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 5x if you use "Amplified
+    Strike" in this turn, by 4.25x otherwise, their HP by 1.75x, boosts ATK of
+    all other characters by 4x, makes crew immune to Blow Away and advances
+    Special Cooldown of this character by 3 turns after each turn you take
+    damage. Every turn Damage Taken exceeds 30,000, activates "Amplified Strike"
+    and reset stacks.
+special:
+  name: Amplified Strike
+  description: Deals 200x character's ATK in [INT] damage to one enemy, reduces
+    Paralysis duration by 5 turns and reduces Special Cooldown of Powerhouse
+    characters by 1 turn. If your Captain is a Powerhouse character, locks the
+    chain multiplier at 3.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 6

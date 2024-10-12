@@ -1,0 +1,88 @@
+type: DEX
+name: Black Cage Hina - Navy HQ Captain
+japanName: 黒檻のヒナ 海軍本部大佐
+family:
+  - Hina
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 920
+    atk: 488
+    rcv: 159
+  maxLvl:
+    hp: 1901
+    atk: 912
+    rcv: 357
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 18812
+aliases:
+  - Colo Hina
+  - Coliseum Hina
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [DEX] characters by 1.5x, deals 1x
+    character's ATK in [DEX] damage to all enemies at the end of each turn
+special:
+  name: "Black Spear Formation: All-Out Attack!"
+  description: Deals 8 hits of random [DEX] damage to random enemies, boosts ATK
+    of all characters by 1.1x for 3 turns
+  cooldown: 27
+  maxLevel: 11
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 2 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Fullbody, Django and Smoker
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - hp: 70
+    - rcv: 50
+    - cooldown: 8
+    - hp: 110
+    - type: sailor
+    - slot: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

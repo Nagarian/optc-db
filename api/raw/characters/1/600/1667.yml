@@ -1,0 +1,90 @@
+type: QCK
+name: Kyros - Riku Royal Army Commander
+japanName: キュロス リク王軍軍隊長
+family:
+  - Kyros
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1220
+    atk: 670
+    rcv: 157
+  maxLvl:
+    hp: 2710
+    atk: 1390
+    rcv: 225
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 61261
+aliases:
+  - Colo Kyros
+  - Coliseum Kyros
+captain:
+  name: ""
+  description: Boosts HP of Striker characters by 1.2x and boosts ATK of Striker
+    characters by 2.25x, by 2.75x instead if HP is below 30% at the start of the
+    turn
+special:
+  name: Trueno Bastardo
+  description: Changes orbs of adjacent characters into Matching Orbs and if HP is
+    above 70%, boosts Orb Effects of Striker and Powerhouse characters by 1.5x
+    for 1 turn
+  cooldown: 21
+  maxLevel: 16
+sailor:
+  - description: Adds 2x character's ATK as Additional Damage
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Rebecca and Riku Doldo III (Ricky)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - rcv: 20
+    - type: potential
+    - hp: 30
+    - rcv: 30
+    - hp: 30
+    - hp: 40
+    - atk: 40
+    - type: sailor
+    - hp: 50
+    - atk: 50
+    - hp: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

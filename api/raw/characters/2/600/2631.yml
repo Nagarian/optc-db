@@ -1,0 +1,362 @@
+type: PSY
+name: Princess Shirahoshi - Promise of Reunion
+japanName: しらほし姫 再会の約束
+family:
+  - Shirahoshi
+class:
+  - Striker
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1268
+    atk: 572
+    rcv: 273
+  maxLvl:
+    hp: 2680
+    atk: 1216
+    rcv: 600
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 52204
+aliases:
+  - Mega/Super/6+ Shirahoshi
+  - V1 Legend Shirahoshi-hime
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x, but boosts ATK of this
+    character by 1.25x, recovers 5x character's RCV in HP at the end of each
+    turn and if you don't attack with her, reduces damage received by 15% for
+    that turn.
+special:
+  name: A Glimpse of Poseidon's Power
+  description: Changes all orbs, including [BLOCK] orbs, into [RAINBOW] orbs,
+    recovers 125x character's RCV in HP and reduces RCV DOWN and No Healing
+    duration by 15 turns.
+  cooldown: 21
+  maxLevel: 5
+  stages:
+    - description: Changes orbs, including [BLOCK] orbs, of adjacent characters into
+        [RAINBOW] orbs, recovers 14x character's RCV in HP and reduces RCV DOWN
+        and No Healing duration by 5 turns.
+      cooldown: 13
+  notes: Rainbow orbs are the beneficial form of [BLOCK] orbs. They can not be
+    shuffled or swapped by you or your opponent. They count as beneficial orbs
+    to any character. They do not count as [STR] orbs for Sakazuki but do act
+    like Matching orbs for Black Clad Ace or Fujitora captain abilities.
+sailor:
+  - description: Changes all orbs into [RAINBOW] orbs at the start of the fight.
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Fukaboshi and Neptune
+  levels:
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 500 HP
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 800 HP
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 1,200 HP
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 1,500 HP
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [RAINBOW] orb and recovers 2,000 HP
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - hp: 45
+    - cooldown: 1
+    - hp: 50
+    - hp: 55
+    - hp: 60
+    - hp: 65
+    - hp: 70
+    - atk: 30
+    - type: sailor
+    - atk: 60
+    - atk: 70
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - captain:
+        description: Boosts ATK of all characters by 3.25x, but boosts ATK of this
+          character by 1.25x, recovers 5x character's RCV in HP at the end of
+          each turn and if you don't attack with her, reduces damage received by
+          15% for that turn.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10
+rumble:
+  stats:
+    def: 157
+    rumbleType: RCV
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 3
+    - action: heal
+      area: Self
+      level: 3
+    - action: heal
+      area: Medium
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - RCV
+          effect: buff
+          level: 19
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 21
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 23
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 25
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 29
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 1.65
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+            - DEF
+          effect: buff
+          level: 2
+          duration: 20
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.74
+        - {}
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.82
+        - {}
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.91
+        - {}
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 2.09
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 2.17
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 2.26
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 2.35
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 2.8
+        - override:
+            level: 5
+        - override:
+            level: 5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

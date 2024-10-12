@@ -1,0 +1,49 @@
+type: PSY
+name: Orlumbus - Yonta Maria Fleet Commodore
+japanName: オオロンブス ヨンタマリア大船団提督
+family:
+  - Orlumbus
+class:
+  - Striker
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 624
+    atk: 303
+    rcv: 22
+  maxLvl:
+    hp: 1425
+    atk: 613
+    rcv: 119
+cost: 25
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 56054
+aliases:
+  - Colo Orlumbus
+  - Coliseum Orlumbus
+evolution:
+  - id: 1584
+    evolvers:
+      - 118
+      - 98
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: Admiral Hug
+  description: Locks all orbs for 1 turn. If there are 4 enemies or more on the
+    stage when the special is activated, boosts Orb Effects of Striker
+    characters by 2x for 1 turn, otherwise boosts Orb Effects of Striker
+    characters by 1.5x for 1 turn
+  cooldown: 29
+  maxLevel: 15

@@ -1,0 +1,205 @@
+type: QCK
+name: Blueno & Coby - Appearing From Mid-Air
+family:
+  - Coby
+  - Blueno
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1447
+    atk: 757
+    rcv: 132
+  maxLvl:
+    hp: 2894
+    atk: 1513
+    rcv: 264
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - RED
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3.25x, boosts HP of [QCK]
+    characters by 1.2x and makes [INT] orbs beneficial for [QCK] characters.
+special:
+  name: Air Door Assistance
+  description: Reduces Bind and Chain Coefficient Reduction duration by 5 turns,
+    reduces enemies' Resilience duration by 5 turns, reduces damage received by
+    85% for 1 turn and boosts ATK of [QCK] characters by 2.25x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of [QCK] characters by 100
+  - description: Boosts base ATK of top row characters by 125
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[QCK] characters"
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - hp: 50
+    - type: potential
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - atk: 30
+    - slot: 1
+    - cooldown: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 60
+        - threshold: 50
+rumble:
+  stats:
+    def: 104
+    rumbleType: ATK
+    spd: 160
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Shooter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 0.5
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - amount: 20
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            amount: 22
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            amount: 24
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            amount: 26
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            amount: 28
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1
+        - override:
+            amount: 30
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            amount: 32
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            amount: 34
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            amount: 36
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            amount: 40

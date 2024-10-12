@@ -1,0 +1,49 @@
+type: STR
+name: Sir Crocodile - General of Sand
+japanName: サー・クロコダイル 砂の武将
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 89
+    atk: 41
+    rcv: 24
+  maxLvl:
+    hp: 2142
+    atk: 1149
+    rcv: 208
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 22986
+aliases:
+  - Kimono Crocodile
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Driven characters by 2x
+special:
+  name: "Ground Death: Thirst"
+  description: Deals 10% of enemies' current HP in damage to all enemies,
+    randomizes all orbs and changes the orb of this character into a [STR] orb
+  cooldown: 27
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Cerebral characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

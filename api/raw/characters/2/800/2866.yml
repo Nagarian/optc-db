@@ -1,0 +1,160 @@
+type: DUAL
+name: Kuro & Django - Captains of the Black Cat Pirates
+japanName: クロ＆ジャンゴ クロネコ海賊団の船長達
+family:
+  - Django
+  - Kuro
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1102
+    atk: 628
+    rcv: 138
+  maxLvl:
+    hp: 2778
+    atk: 1461
+    rcv: 350
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 188556
+aliases:
+  - Kuro&Django
+  - Django&Kuro
+  - KuroDjango
+  - DjangoKuro
+  - Kuro and Django
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x, by 3x instead if they
+    have a beneficial orb, and makes [DEX] orbs beneficial for Slasher
+    characters.
+special:
+  name: Calculated Cooperative Assassination
+  description: Deals 96x character's ATK in Typeless damage to all enemies,
+    reduces Despair duration by 5 turns, changes [RCV], [TND], [EMPTY] and
+    [BLOCK] orbs into Matching orbs, boosts ATK against delayed enemies by 1.75x
+    for 2 turns and becomes Kuro & Django for 2 turns.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+  - description: Makes [DEX] orbs beneficial for Slasher characters
+characters:
+  swap:
+    description: Reduces Paralysis and Bind duration by 1 turn.
+  character1:
+    name: Kuro - Captains of the Black Cat Pirates
+    japanName: クロ クロネコ海賊団の船長達
+    class:
+      - Slasher
+      - Cerebral
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1102
+        atk: 628
+        rcv: 138
+      maxLvl:
+        hp: 2520
+        atk: 1359
+        rcv: 277
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher characters by 2.25x, by 2.75x instead if they
+        have a beneficial orb.
+    sailor:
+      - description: Reduces Blindness duration by 5 turns
+      - description: Makes [DEX] orbs beneficial for Slasher characters
+  character2:
+    name: Django - Captains of the Black Cat Pirates
+    japanName: ジャンゴ クロネコ海賊団の船長達
+    class:
+      - Slasher
+      - Cerebral
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1102
+        atk: 628
+        rcv: 138
+      maxLvl:
+        hp: 2318
+        atk: 1325
+        rcv: 322
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher characters by 2.5x and makes [DEX] orbs
+        beneficial for Slasher characters.
+    sailor:
+      - description: Reduces Blindness duration by 5 turns
+      - description: Makes [DEX] orbs beneficial for Slasher characters
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 50
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - hp: 50
+    - hp: 50
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 4
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 6
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

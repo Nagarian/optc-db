@@ -1,0 +1,96 @@
+type: INT
+name: General Smoothie - 14th Daughter of the Charlotte Family
+japanName: 将星スムージー シャーロット家１４女
+family:
+  - CharlotteSmoothie
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1409
+    atk: 691
+    rcv: 178
+  maxLvl:
+    hp: 2578
+    atk: 1341
+    rcv: 320
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 137944
+aliases:
+  - Colo Smoothie
+  - Coliseum Smoothie
+  - SmooThicc
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Powerhouse characters by 2.25x, by 2.75x
+    instead if they have a beneficial orb, and boosts their HP by 1.25x.
+special:
+  name: Juice Slash
+  description: Deals 100x character's ATK in [INT] damage to one enemy, makes
+    [DEX], [QCK] and [INT] orbs beneficial for Slasher and Powerhouse characters
+    for 1 turn. If your captain is a Slasher or Powerhouse character, boosts the
+    Color Affinity of Slasher and Powerhouse characters by 1.75x for 3 turns
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Powerhouse characters by 50
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Charlotte Linlin (Big Mom), Charlotte Katakuri, Charlotte Daifuku and
+    Charlotte Cracker
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - rcv: 15
+    - rcv: 25
+    - cooldown: 1
+    - type: sailor
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - slot: 1
+    - atk: 40
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80

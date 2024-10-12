@@ -1,0 +1,182 @@
+type: INT
+name: Zeo - Fish-Man District Spirit
+japanName: ゼオ 魚人街の亡霊
+family:
+  - Zeo
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1078
+    atk: 441
+    rcv: 96
+  maxLvl:
+    hp: 2424
+    atk: 1362
+    rcv: 279
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 50183
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.25x and reduces damage received by 20%
+special:
+  name: Flail Hidden From God
+  description: Makes PERFECTs easier to hit, locks all orbs for 1 turn and locks
+    the chain multiplier at 2.5x for 1 turn
+  cooldown: 17
+  maxLevel: 8
+  notes: Increases timing window to hit a PERFECT. (Animation remains the same)
+sailor:
+  - description: If your Captain is a Powerhouse character, removes Blindness
+      duration completely
+  - description: Makes [TND] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Hody Jones, Hyouzou, Ikaros Much, Daruma and Dosun
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - atk: 30
+    - hp: 40
+    - cooldown: 1
+    - rcv: 40
+    - slot: 1
+    - hp: 50
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 151
+    rumbleType: SPT
+    spd: 127
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - Critical Hit
+            - Accuracy
+          duration: 25
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+    - cooldown: 28
+      effects:
+        - override:
+            level: 6
+    - cooldown: 28
+      effects:
+        - override:
+            level: 7
+    - cooldown: 28
+      effects:
+        - override:
+            level: 8
+    - cooldown: 28
+      effects:
+        - override:
+            level: 9
+    - cooldown: 28
+      effects:
+        - override:
+            level: 10

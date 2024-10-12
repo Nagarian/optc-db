@@ -1,0 +1,214 @@
+type: PSY
+name: Monet - Donquixote Pirates
+japanName: モネ ドンキホーテ海賊団
+family:
+  - Monet
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1020
+    atk: 540
+    rcv: 199
+  maxLvl:
+    hp: 2131
+    atk: 1001
+    rcv: 433
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 19811
+aliases: []
+captain:
+  name: ""
+  description: Recovers 5x character's RCV in HP at the end of each turn, deals 5x
+    character's ATK in [PSY] damage to all enemies at the end of each turn
+special:
+  name: Snow Rabbit
+  description: Delays all enemies by 1 turn, boosts ATK against delayed enemies by
+    1.25x for 2 turns
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of all characters by 10
+  - description: Makes RCV and [TND] orbs beneficial for this character
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - RCV
+  criteria: Donquixote Doflamingo, Sugar and Vergo
+  levels:
+    - value: 5
+      reduction: 1
+    - value: 8
+      reduction: 2
+    - value: 12
+      reduction: 3
+    - value: 15
+      reduction: 4
+    - value: 20
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 20
+    - hp: 40
+    - type: potential
+    - atk: 30
+    - hp: 60
+    - atk: 50
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - hp: 80
+    - atk: 70
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40
+rumble:
+  stats:
+    def: 132
+    rumbleType: DBF
+    spd: 141
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          condition:
+            comparator: less
+            count: 5
+            type: crew
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Special CT
+          duration: 10
+          effect: debuff
+          level: 2
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 15
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 34
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 16
+    - cooldown: 34
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 17
+    - cooldown: 34
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 18
+    - cooldown: 34
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 20
+    - cooldown: 34
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 21
+    - cooldown: 34
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 22
+    - cooldown: 34
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 24
+    - cooldown: 34
+      effects:
+        - override:
+            level: 6
+        - override:
+            amount: 25
+    - cooldown: 34
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 27

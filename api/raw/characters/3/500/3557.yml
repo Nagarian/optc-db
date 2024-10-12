@@ -1,0 +1,232 @@
+type: QCK
+name: Kawamatsu - Samurai Challenging the Dragon
+japanName: 河松 龍に立ち向かう侍
+family:
+  - Kawamatsu
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1606
+    atk: 781
+    rcv: 97
+  maxLvl:
+    hp: 3212
+    atk: 1562
+    rcv: 194
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 3.25x and their
+    HP by 1.2x.
+special:
+  name: "Kappa Style: River of Sea"
+  description: Deals 60x character's ATK in [QCK] damage to all enemies, reduces
+    Despair and Silence duration by 5 turns and adds 0.9x to Chain multiplier
+    for 3 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 50
+support:
+  type: descriptive
+  criteria: Izo, Kin'emon, Kurozumi Kanjuro, Dogstorm, Kozuki Momonosuke, Cat
+    Viper, Raizo, Kikunojo, Shutenmaru, Kozuki Oden, Denjiro, Kozuki Hiyori
+  levels:
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 2 turns on the supported character.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 2 turns on the supported character.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 3 turns on the supported character.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 20
+    - rcv: 20
+    - type: potential
+    - rcv: 30
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - atk: 30
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 130
+    rumbleType: DBF
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 6
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 2
+            duration: 7
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 8
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 9
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 4
+            duration: 10
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 4
+            duration: 11
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 5
+            duration: 12
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 6
+            duration: 14
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 7
+            duration: 15

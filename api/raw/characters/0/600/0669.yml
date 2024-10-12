@@ -1,0 +1,140 @@
+type: PSY
+name: Sabo - Revolutionary Army
+japanName: サボ 革命軍
+family:
+  - Sabo
+class:
+  - Free Spirit
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1440
+    atk: 752
+    rcv: 252
+  maxLvl:
+    hp: 2985
+    atk: 1422
+    rcv: 451
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 15191
+aliases:
+  - V1 Legend Sabo
+evolution:
+  - id: 1492
+    evolvers:
+      - skullPSY
+      - 118
+      - 87
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts HP and RCV of all characters by 1.2x, boosts ATK of Free
+    Spirit characters by 2x-2.75x depending on the crew's current HP.
+  notes: >-
+    `captainProportional : higher : 2 + 0.75 * (remaining HP) / (total HP) :
+    2.75 : 2`  
+
+    `captainProportional : higher : ? + ? * (remaining HP) / (total HP) : 3.25 : ?`
+special:
+  name: Dragon's Claw
+  description: Boosts ATK of Free Spirit characters by 1.5x for 1 turn. If during
+    that turn you score 6 PERFECT hits, boosts ATK of Free Spirit characters by
+    2x for 1 turn in the following turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 50
+  - description: Makes [INT] orbs beneficial for Free Spirit characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy and Koala
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 14
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 25
+    - hp: 25
+    - hp: 25
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - hp: 70
+    - cooldown: 1
+    - atk: 30
+    - hp: 80
+    - hp: 90
+    - type: sailor
+    - atk: 50
+    - atk: 60
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - rcv: 25
+    - rcv: 50
+    - captain:
+        description: Boosts HP and RCV of all characters by 1.2x, boosts ATK of Free
+          Spirit characters by ?x-3.25x depending on the crew's current HP.
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 0.75
+          threshold: 40
+        - value: 1
+          threshold: 40
+        - value: 1.25
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+        - value: 2
+          threshold: 50

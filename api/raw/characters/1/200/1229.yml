@@ -1,0 +1,55 @@
+type: INT
+name: Sentomaru Naval HQ Fleet Officer
+japanName: 戦桃丸 海軍本部将校
+family:
+  - Sentomaru
+class:
+  - Striker
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 251
+    atk: 96
+    rcv: 30
+  maxLvl:
+    hp: 1603
+    atk: 442
+    rcv: 140
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 37079
+aliases:
+  - Sentoumaru
+evolution:
+  - id: 1230
+    evolvers:
+      - 98
+      - 99
+      - 300
+      - 303
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x and own ATK by 2x.
+special:
+  name: Leg-Locked Heave-Ho
+  description: Deals 100,000 Fixed damage to one enemy. Reduces Special Cooldown
+    of top row characters by 2 turns
+  cooldown: 22
+  maxLevel: 8
+  stages:
+    - description: Deals 500 Fixed damage to one enemy. Reduces Special Cooldown of
+        top row characters by 1 turn
+      cooldown: 11
+    - description: Deals 5,000 Fixed damage to one enemy. Reduces Special Cooldown of
+        top row characters by 1 turn
+      cooldown: 15
+sailor:
+  - description: Cannot be Blown Away

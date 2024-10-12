@@ -1,0 +1,219 @@
+type: STR
+name: Portgas D. Ace - Memories of the Land of Wano
+japanName: ポートガス・D・エース ワノ国の思い出
+family:
+  - PortgasDAce
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1259
+    atk: 538
+    rcv: 161
+  maxLvl:
+    hp: 2644
+    atk: 1488
+    rcv: 264
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Secret Kizuna Limited Ace
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Shooter and Free Spirit characters by 3x and their HP
+    and RCV by 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of Shooter and Free Spirit characters by 5.25x and their HP and RCV by 1.25x.
+special:
+  name: Sunset View Along With Otama
+  description: Reduces ATK DOWN duration by 6 turns and changes [BLOCK], [BOMB],
+    [RCV], [TND] and Badly Matching orbs into Matching orbs. If MAX HP is above
+    50,000 at the time the special is activated, boosts ATK of Shooter and Free
+    Spirit characters by 2.25x for 1 turn, by 2x for 2 turns otherwise.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [STR] orbs beneficial for Shooter and Free Spirit characters
+  - description: Boosts this character's damage against [DEX] characters by 1.1x
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shooter characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 127
+    rumbleType: ATK
+    spd: 201
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 70
+      type: debuff
+    - attribute: Driven
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          duration: 16
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 1
+            duration: 17
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            level: 3
+            duration: 20
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            level: 4
+            duration: 22
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            level: 4
+            duration: 23
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            level: 5
+            duration: 24
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            level: 6
+            duration: 25

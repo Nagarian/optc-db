@@ -1,0 +1,107 @@
+type: INT
+name: Page One - Rampaging Spinosaurus
+japanName: ページワン 暴れるスピノサウルス
+family:
+  - PageOne
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1335
+    atk: 633
+    rcv: 119
+  maxLvl:
+    hp: 3203
+    atk: 1392
+    rcv: 209
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 230433
+aliases:
+  - Coliseum Page One
+  - Coliseum Page 1
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Powerhouse characters by 2.5x and their HP by 1.2x.
+special:
+  name: Dinosaur Claws
+  description: Reduces damage received by 80% for 1 turn and reduces Chain
+    Multiplier Limit duration by 5 turns. Locks the chain multiplier at 3x-3.5x
+    for 1 turn, depending on the number of specials used on the turn when the
+    special is activated.
+  cooldown: 28
+  maxLevel: 15
+  notes: |-
+    **0-2 specials:** 3x chain lock  
+    **3-4 specials:** 3.25x chain lock  
+    **5 specials:** 3.5x chain lock
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 50
+  - description: Cannot be blown away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Kaido, Jack, King, X Drake and Basil Hawkins
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - cooldown: 1
+    - atk: 40
+    - rcv: 40
+    - type: sailor
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - rcv: 45
+    - hp: 60
+    - hp: 60
+    - atk: 80
+    - cooldown: 1
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80

@@ -1,0 +1,179 @@
+type: QCK
+name: Roronoa Zoro - Swordsman Cutting Through the New World
+japanName: ロロノア・ゾロ 新世界を切り開く剣士
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 378
+    atk: 343
+    rcv: 37
+  maxLvl:
+    hp: 1306
+    atk: 720
+    rcv: 83
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 105737
+aliases:
+  - Raid Zoro
+evolution:
+  - id: 2097
+    evolvers:
+      - 118
+      - 96
+      - 1180
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts Slasher and Driven character's ATK by 2.25x, by 2.5x after 2
+    consecutive PERFECTs, by 2.75x after 5 consecutive PERFECTs.
+special:
+  name: "One Sword Style: Great Dragon Shock"
+  description: Deals 55x character's ATK in Typeless Fixed True damage to one
+    enemy, reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 5 turns. If HP is full at the time the special was
+    activated, boosts the Color Affinity of Slasher and Driven characters by 2x
+    for 1 turn, by 1.75x for 2 turns otherwise
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: If this character has a [QCK] orb and you hit a GOOD or GREAT with
+      him, keep his [QCK] orb for the next turn
+rumble:
+  stats:
+    def: 121
+    rumbleType: ATK
+    spd: 176
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 80
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 950
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1050
+        - {}
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1150
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            level: 2
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            level: 2
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            level: 3
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1550
+        - override:
+            level: 3
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1650
+        - override:
+            level: 3
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1750
+        - override:
+            level: 4
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1950
+        - override:
+            level: 5

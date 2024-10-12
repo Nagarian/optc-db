@@ -1,0 +1,48 @@
+type: DEX
+name: Dr. Indigo Golden Lion Pirates
+japanName: Dr.インディゴ 金獅子海賊団
+family:
+  - Indigo
+class:
+  - Cerebral
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 903
+    atk: 432
+    rcv: 163
+  maxLvl:
+    hp: 1796
+    atk: 911
+    rcv: 352
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 33121
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x.
+special:
+  name: Mass Juggling
+  description: Reduces crew's current HP by 80%, deals 6x the amount of HP
+    subtracted in Typeless damage to all enemies. Reduces damage received by 80%
+    for 1 turn.
+  cooldown: 24
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Shiki, Scarlet
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 8

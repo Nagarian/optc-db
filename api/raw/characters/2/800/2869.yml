@@ -1,0 +1,94 @@
+type: PSY
+name: Komurasaki - Oiran with the Kitsune Mask
+japanName: 小紫 狐面の花魁
+family:
+  - KozukiHiyori
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1297
+    atk: 432
+    rcv: 134
+  maxLvl:
+    hp: 3056
+    atk: 1209
+    rcv: 301
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 189052
+aliases:
+  - Coliseum Komurasaki
+  - Coliseum Hiyori
+  - Coliseum Kozuki Hiyori
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2.75x, their HP by
+    1.2x and recovers 5x character's RCV in HP at the end of each turn.
+special:
+  name: Skillful Oiran Performance
+  description: Reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction duration by 2 turns, reduces Bind and ATK DOWN duration by 2
+    turns, recovers 20% of crew's MAX HP, changes orbs, including [BLOCK] orbs,
+    of adjacent characters into Matching Orbs.
+  cooldown: 28
+  maxLevel: 16
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Boosts base HP of Slasher and Cerebral characters by 100
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 11
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 30
+    - rcv: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - hp: 40
+    - rcv: 40
+    - type: sailor
+    - atk: 40
+    - hp: 40
+    - type: potential
+    - hp: 60
+    - rcv: 45
+    - atk: 80
+    - hp: 60
+    - cooldown: 1
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100

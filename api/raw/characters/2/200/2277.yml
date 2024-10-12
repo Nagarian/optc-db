@@ -1,0 +1,185 @@
+type: INT
+name: Buggy the Genius Jester - Warlord of the Sea
+japanName: 千両道化のバギー 王下七武海
+family:
+  - Buggy
+class:
+  - Driven
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 523
+    atk: 500
+    rcv: 120
+  maxLvl:
+    hp: 1720
+    atk: 1180
+    rcv: 270
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 121549
+aliases:
+  - Fortnight Buggy
+  - Fortnight Baggy
+captain:
+  name: ""
+  description: Boosts ATK of Rarity 4 or less characters by 2.5x and reduces
+    damage received by 10%
+special:
+  name: Pirate Charisma
+  description: Boosts ATK of Rarity 4 or less characters by 1.75x for 1 turn,
+    changes the orb of this character into an [INT] orb and delays all enemies
+    by 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: If this character has an [INT] orb and you hit a PERFECT with him,
+      keep his [INT] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Alvida, Galdino (Mr. 3), Mohji, Richie and Cabaji
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+rumble:
+  stats:
+    def: 104
+    rumbleType: SPT
+    spd: 119
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 18
+      effects:
+        - attributes:
+            - Blow Away
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+            level: 2
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 13
+            level: 2
+        - override:
+            duration: 13
+            level: 3
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 14
+            level: 2
+        - override:
+            duration: 14
+            level: 4
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 15
+            level: 2
+        - override:
+            duration: 15
+            level: 4
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 16
+            level: 3
+        - override:
+            duration: 16
+            level: 5
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 17
+            level: 3
+        - override:
+            duration: 17
+            level: 6
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 18
+            level: 3
+        - override:
+            duration: 18
+            level: 6
+    - cooldown: 18
+      effects:
+        - override:
+            duration: 20
+            level: 5
+        - override:
+            duration: 20
+            level: 8

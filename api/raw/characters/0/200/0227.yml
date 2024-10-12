@@ -1,0 +1,88 @@
+type: DEX
+name: Hawk Eyes Mihawk
+japanName: 鷹の目のミホーク
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1916
+    atk: 782
+    rcv: 5
+  maxLvl:
+    hp: 3760
+    atk: 1285
+    rcv: 15
+cost: 50
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 4143
+aliases:
+  - Raidhawk
+  - Raid Mihawk
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x
+special:
+  name: Black Blade Ship Cutter
+  description: Deals 30% of enemies' current HP in damage to all enemies
+  cooldown: 32
+  maxLevel: 16
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - rcv: 20
+    - atk: 20
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - hp: 40
+    - rcv: 20
+    - rcv: 30
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Slasher characters by 2.5x and their HP by 1.3x
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

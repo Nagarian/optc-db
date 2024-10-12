@@ -1,0 +1,410 @@
+type: DEX
+name: Soba Mask - Phantom of the Germa 66
+japanName: おそばマスク 幻のジェルマ６６
+family:
+  - VinsmokeSanji
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1483
+    atk: 533
+    rcv: 65
+  maxLvl:
+    hp: 3264
+    atk: 1386
+    rcv: 194
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 204323
+aliases:
+  - Raid Sanji
+  - Raid Sobamask
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 3x and makes [TND] orbs
+    beneficial for [DEX] characters.
+special:
+  name: Comet O-Soba Kick
+  description: Deals 10% of enemies' current HP in damage to one enemy, changes
+    orbs of this and adjacent characters into [TND] orbs and adds 0.5x to Chain
+    multiplier for 1 turn. If your crew has 3 or more [DEX] characters and if
+    during that turn you score 3 PERFECT hits, adds 1.1x to Chain multiplier for
+    1 turn in the following turn.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] characters by 50
+  - description: Makes [TND] orbs beneficial for [DEX] characters
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+  criteria: Usopp and Franky
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - atk: 40
+    - cooldown: 1
+    - hp: 50
+    - rcv: 30
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 6
+          threshold: 30
+        - value: 7
+          threshold: 40
+        - value: 8
+          threshold: 40
+rumble:
+  stats:
+    def: 171
+    rumbleType: SPT
+    spd: 157
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 0.8
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.85
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 12
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.9
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 13
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 0.95
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 14
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 1
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 1.05
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 16
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 1.1
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 17
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 1.15
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 18
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 1.2
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 19
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 27
+      effects:
+        - amount: 1.3
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - DEX

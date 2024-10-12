@@ -1,0 +1,364 @@
+type: STR
+name: Who's-Who - Assaulting Ancient Fangs
+family:
+  - WhosWho
+class:
+  - Powerhouse
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1827
+    atk: 893
+    rcv: 123
+  maxLvl:
+    hp: 3654
+    atk: 1785
+    rcv: 246
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Legend V1
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts HP of all characters by 1.3x and deals 0x-600x
+    character's ATK in Typeless damage to one enemy at the end of each turn
+    depending on how many PERFECTs scored that turn. If there is a [STR], [DEX]
+    and [QCK] character in your crew, boosts ATK of [STR], [DEX] and [QCK]
+    characters by 4.5x. If there are no [PSY] or [INT] characters on your crew,
+    boosts ATK of [STR], [DEX] and [QCK] characters by 5.4x instead.
+  notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+    PERFECTs - ?x ATK; 1 PERFECT - ?x ATK; 2 PERFECTs - ?x ATK; 3 PERFECTs - ?x
+    ATK; 4 PERFECTs - ?x ATK; 5 PERFECTs - ?x ATK; 6 PERFECTs - 600x ATK."
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Kaido,
+    King, Queen, Jack, Sasaki, Black Maria, Page One and Ulti, excluding Support
+    members."
+  description: Changes the orb of this character into a [TND] orb, makes [TND]
+    orbs beneficial for all characters for 1 turn and boosts Chain Multiplier
+    Growth Rate by 1.25x for 1 turn and transforms all Powerhouse characters
+    into Super Powerhouse characters.
+special:
+  name: Mighty Fangs
+  description: Deals 200x character's ATK in [STR] damage to one enemy, reduces
+    Special Cooldown of [STR], [DEX] and [QCK] characters by 2 turns and boosts
+    Color Affinity of [STR], [DEX] and [QCK] characters by 2.25x for 1 turn. If
+    this character is your Captain or Friend/Guest Captain or your Captain is a
+    [DEX] or [QCK] character, adds 1.6x to Chain multiplier for 3 turns, adds
+    1.4x to Chain multiplier for 1 turn otherwise.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: If your Captain is a [DEX] or [QCK] character, makes [STR] and
+      [QCK] orbs beneficial for all characters
+  - description: If your Captain is a [DEX] or [QCK] character, restores Special
+      Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Page One, Sasaki, Ulti and Black Maria
+  levels:
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and reduces Special Cooldown of
+      supported character by 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 10
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - hp: 50
+    - type: sailor
+    - rcv: 20
+    - atk: 10
+    - hp: 60
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - atk: 20
+    - rcv: 20
+    - hp: 70
+    - hp: 80
+    - atk: 20
+    - hp: 100
+    - rcv: 20
+    - type: sailor
+    - rcv: 20
+    - atk: 30
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 20
+    - atk: 30
+    - hp: 150
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - hp: 200
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Black
+          Maria, Page One or Ulti."
+        description: Boosts Tandem ATK of [DEX] and [QCK] characters by 1.25x for 1 turn
+          and reduces enemies' Percent Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Black
+          Maria, Page One or Ulti."
+        description: Boosts Tandem ATK of [DEX] and [QCK] characters by 1.5x for 1 turn
+          and reduces enemies' Percent Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Black
+          Maria, Page One or Ulti."
+        description: Boosts Tandem ATK of [DEX] and [QCK] characters by 1.75x for 1 turn
+          and reduces enemies' Percent Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Black
+          Maria, Page One or Ulti."
+        description: Boosts Tandem ATK of [DEX] and [QCK] characters by 2x for 1 turn
+          and reduces enemies' Percent Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Sasaki, Black
+          Maria, Page One or Ulti."
+        description: Boosts Tandem ATK of [DEX] and [QCK] characters by 2.25x for 1 turn
+          and reduces enemies' Percent Damage Reduction duration by 2 turns.
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 223
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: STR
+      percentage: 30
+      type: damage
+    - amount: 300
+      interval: 5
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - DEF
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 0.2
+          effect: damage
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+          defbypass: true
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            amount: 0.3
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2
+        - override:
+            amount: 0.4
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            amount: 0.5
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            amount: 0.6
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            amount: 0.7
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            amount: 0.8
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            amount: 0.9
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            amount: 1
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.8
+        - override:
+            amount: 1.2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

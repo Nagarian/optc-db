@@ -1,0 +1,373 @@
+type: QCK
+name: Charlotte Smoothie - Juice-Wringing General
+family:
+  - CharlotteSmoothie
+class:
+  - Powerhouse
+  - Slasher
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2017
+    atk: 832
+    rcv: 112
+  maxLvl:
+    hp: 4035
+    atk: 1664
+    rcv: 224
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - Rumble Secret Limited Legend
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Slasher and Powerhouse characters by 4.5x, by 5x
+    instead if they have a beneficial orb, boosts HP of Slasher and Powerhouse
+    characters by 1.3x, makes crew immune to Blow Away and makes [STR] and [DEX]
+    orbs beneficial for Slasher and Powerhouse characters.
+special:
+  name: Giant Liquid Strike
+  description: Deals 20% of enemies' current HP in True damage to all enemies,
+    reduces enemies' Percent Damage Reduction duration by 6 turns and reduces
+    Despair and ATK DOWN duration by 6 turns. If your Captain is a Powerhouse
+    character, sets Chain Boundaries to 2.5x and 35.0x for 3 turns and increases
+    duration of any base ATK boosting buffs by 2 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: When any other Slasher or Powerhouse character uses a special,
+      reduces special cooldown of this character by 1 turn
+  - description: Makes [DEX] orbs beneficial for Slasher and Powerhouse characters
+support:
+  type: descriptive
+  criteria: Charlotte Linlin (Big Mom), Charlotte Katakuri and Charlotte Cracker
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [RCV] and Badly Matching orbs of the
+      suppported character into a [QCK] orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [RCV], [TND] and Badly Matching orbs of the
+      suppported character into a [QCK] orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [RCV], [TND], [BOMB], [G] and Badly Matching
+      orbs of the suppported character into a [QCK] orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [RCV], [TND], [BOMB], [G], [EMPTY] and Badly
+      Matching orbs of the suppported character into a [QCK] orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [RCV], [TND], [BOMB], [G], [EMPTY], [BLOCK]
+      and Badly Matching orbs of the suppported character into a [QCK] orb and
+      reduces ATK DOWN duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - atk: 20
+    - rcv: 20
+    - hp: 20
+    - rcv: 30
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - rcv: 50
+    - hp: 40
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - hp: 40
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 20
+    - hp: 200
+    - atk: 100
+    - hp: 200
+    - cooldown: 1
+    - rcv: 30
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+rumble:
+  stats:
+    def: 152
+    rumbleType: DBF
+    spd: 157
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 70
+          duration: 11
+          effect: hinderance
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 20
+          attributes:
+            - Special CT
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: Special CT
+            targets:
+              - enemies
+        - amount: 2
+          effect: damage
+          repeat: 2
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 73
+            duration: 12
+        - override:
+            amount: 23
+        - override:
+            amount: 2.1
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 76
+            duration: 13
+        - override:
+            amount: 26
+        - override:
+            amount: 2.2
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 79
+            duration: 14
+        - override:
+            amount: 29
+        - override:
+            amount: 2.3
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 82
+            duration: 15
+        - override:
+            amount: 32
+        - override:
+            amount: 2.4
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 85
+            duration: 16
+        - override:
+            amount: 35
+        - override:
+            amount: 2.5
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 88
+            duration: 17
+        - override:
+            amount: 38
+        - override:
+            amount: 2.6
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 91
+            duration: 18
+        - override:
+            amount: 41
+        - override:
+            amount: 2.7
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 94
+            duration: 19
+        - override:
+            amount: 44
+        - override:
+            amount: 2.8
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 100
+            duration: 20
+        - override:
+            amount: 50
+        - override:
+            amount: 3
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

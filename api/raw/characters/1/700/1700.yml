@@ -1,0 +1,101 @@
+type: PSY
+name: Jinbe - Warlord in Hell
+japanName: ジンベエ “地獄”の七武海
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1056
+    atk: 620
+    rcv: 132
+  maxLvl:
+    hp: 2188
+    atk: 1392
+    rcv: 320
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 63200
+aliases:
+  - Jinbe, Hell's Warlord of the Sea
+  - Jimbei, Hell's Warlord of the Sea
+  - Jimbe, Hell's Warlord of the Sea
+  - Jinbei, Hell's Warlord of the Sea
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and their HP by 1.3x
+special:
+  name: Gentle Ultrasound Wave
+  description: Adds 0.3x to Chain multiplier for 2 turns, reduces Chain Multiplier
+    Limit and Chain Coefficient Reduction duration by 3 turns
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Fighter characters by 75
+  - description: Boosts base HP of all characters by 40 if your Captain is a Fighter
+      character
+support:
+  type: descriptive
+  criteria: Fighter and Powerhouse characters
+  levels:
+    - Once per adventure, when the supported character uses their special, adds
+      0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.15x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.15x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.2x to Chain multiplier for 1 turn.
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - rcv: 20
+    - type: potential
+    - atk: 25
+    - hp: 60
+    - rcv: 20
+    - cooldown: 1
+    - atk: 30
+    - hp: 70
+    - rcv: 20
+    - slot: 1
+    - type: sailor
+    - hp: 90
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3

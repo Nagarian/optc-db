@@ -1,0 +1,238 @@
+type: DEX
+name: Sanji - Black-Leg Racing to His Side
+family:
+  - VinsmokeSanji
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1766
+    atk: 764
+    rcv: 101
+  maxLvl:
+    hp: 3532
+    atk: 1528
+    rcv: 202
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Fighter and Free Spirit characters by 3x and
+    boosts HP of Fighter and Free Spirit characters by 1.2x.
+special:
+  name: Striking Into the Enemy
+  description: Adds 1.1x to Chain multiplier for 1 turn. If your Captain is a
+    Fighter or Free Spirit character, reduces Bind, Paralysis and Silence
+    duration by 5 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: If this character has a [TND] orb and you attack with this
+      character, increases boost effects of Chain Addition buffs by +0.2x
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Free Spirit characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - slot: 1
+    - hp: 40
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+rumble:
+  stats:
+    def: 144
+    rumbleType: ATK
+    spd: 165
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          repeat: 2
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 6
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            level: 1
+            duration: 9
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.95
+        - override:
+            level: 2
+            duration: 11
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.05
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 4
+            duration: 15

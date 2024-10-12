@@ -1,0 +1,48 @@
+type: QCK
+name: Pell - The guardian falcon of Alabasta
+japanName: ペル アラバスタの守護神ファルコン
+family:
+  - Pell
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 941
+    atk: 358
+    rcv: 104
+  maxLvl:
+    hp: 1585
+    atk: 695
+    rcv: 186
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 11788
+aliases: []
+captain:
+  name: ""
+  description: Protects from defeat as long as HP is above 30%
+special:
+  name: Flying Claw
+  description: Boosts ATK of [QCK] characters by 1.25x for 3 turns
+  cooldown: 21
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Nefertari Vivi, Chaka and Nefertari Cobra
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

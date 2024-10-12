@@ -1,0 +1,46 @@
+type: QCK
+name: Rob Lucci - Dock One Sawyer, Treenail Specialist
+japanName: ロブ・ルッチ 1番ドック木びき・木釘職職長
+family:
+  - RobLucci
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 1107
+    atk: 654
+    rcv: 69
+  maxLvl:
+    hp: 2220
+    atk: 1203
+    rcv: 177
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 6484
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x
+special:
+  name: Taciturn Combo
+  description: Deals 25x character's ATK in [QCK] damage to one enemy
+  cooldown: 25
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kalifa and Kaku
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

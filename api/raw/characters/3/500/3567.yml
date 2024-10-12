@@ -1,0 +1,287 @@
+type: STR
+name: Kurozumi Kanjuro - Headless Samurai Warriors
+japanName: 黒炭カン十郎 描く首無し武者
+family:
+  - KurozumiKanjuro
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1555
+    atk: 753
+    rcv: 115
+  maxLvl:
+    hp: 3110
+    atk: 1506
+    rcv: 230
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+aliases:
+  - TM
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.25x, their HP by 1.2x and
+    reduces damage received by 4%.
+special:
+  name: Traitor's Onslaught
+  description: Reduces the defense of all enemies by 80% for 2 turns and reduces
+    enemies' Threshold Damage Reduction, Increased Defense and Resilience
+    duration by 4 turns. If your Captain's orb is [STR], boosts ATK against
+    enemies with reduced defense by 1.75x for 1 turn. If your Captain is a
+    Driven character, boosts the Color Affinity of [STR] characters by 2x for 1
+    turn.
+  cooldown: 34
+  maxLevel: 8
+sailor:
+  - description: Boosts this character's damage against [QCK] characters by 2.25x.
+  - description: Boosts base ATK, HP and RCV of Driven characters by 60
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Driven characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Driven characters by 2.5x, their HP by 1.2x and
+          reduces damage received by 5%.
+    - type: sailor
+    - rcv: 30
+    - atk: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Driven characters by 2.75x, their HP by 1.2x and
+          reduces damage received by 6%.
+    - slot: 1
+    - cooldown: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 40
+    - captain:
+        description: Boosts ATK of Driven characters by 3x, their HP by 1.2x and reduces
+          damage received by 7%.
+    - cooldown: 2
+    - atk: 20
+    - hp: 30
+    - hp: 40
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - rcv: 50
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Driven characters by 3.25x, their HP by 1.2x and
+          reduces damage received by 8%.
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - hp: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Driven characters by 3.5x, their HP by 1.2x and
+          reduces damage received by 9%.
+    - hp: 70
+    - hp: 80
+    - captain:
+        description: Boosts ATK of Driven characters by 3.75x, their HP by 1.2x and
+          reduces damage received by 10%.
+    - type: potential
+    - key: 1
+    - hp: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 75
+    - rcv: 50
+    - hp: 200
+    - atk: 75
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 7
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 117
+    rumbleType: ATK
+    spd: 191
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+            - DEF
+          duration: 6
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 3
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 4
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 5
+            duration: 15

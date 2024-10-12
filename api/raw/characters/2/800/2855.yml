@@ -1,0 +1,54 @@
+type: INT
+name: Charlotte Custard - Sweet Party!
+japanName: シャーロット・カスタード スイ―ティーパーティー！
+family:
+  - CharlotteCustard
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 982
+    atk: 481
+    rcv: 183
+  maxLvl:
+    hp: 2067
+    atk: 1302
+    rcv: 382
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 187867
+aliases:
+  - Sweet Party Custard
+captain:
+  name: ""
+  description: Boosts ATK of [DEX], [PSY] and [INT] characters by 2.25x, their HP
+    by 1.25x and recovers 3x character's RCV in HP at the end of each turn.
+special:
+  name: Custard's Sweet Temptation
+  description: Changes all orbs of all characters into this character's orb, adds
+    0.5x to Chain multiplier for 1 turn and locks all orbs for 2 turns.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX], [PSY] and [INT] characters by 30
+support:
+  type: descriptive
+  criteria: "[INT] characters"
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs for [INT] characters for 1 turn.

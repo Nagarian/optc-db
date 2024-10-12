@@ -1,0 +1,97 @@
+type: QCK
+name: Great Advisor Tsuru Navy HQ Vice Admiral
+japanName: “大参謀”つる 海軍本部中将
+family:
+  - Tsuru
+class:
+  - Cerebral
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 832
+    atk: 467
+    rcv: 175
+  maxLvl:
+    hp: 1960
+    atk: 1252
+    rcv: 419
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 43906
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Recovers 1.5x this character's RCV at the end of the turn each time
+    you hit a Good. Recovers 0.1x this character's RCV at the end of the turn
+    for each time you hit a PERFECT
+special:
+  name: A Decree of the Veteran
+  description: Deals 10 hits of random [QCK] damage to random enemies. Boosts ATK
+    of all characters by 1.5x for 1 turn
+  cooldown: 21
+  maxLevel: 5
+  notes: "`random : 1,000 : 32,000 : for each hit`"
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Reduces Blindness duration by 3 turns
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monkey D. Garp and Sengoku
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 30
+    - hp: 60
+    - type: potential
+    - atk: 30
+    - hp: 80
+    - cooldown: 1
+    - rcv: 10
+    - hp: 80
+    - atk: 60
+    - type: sailor
+    - captain:
+        description: Boosts ATK of all characters by 1.2x, recovers 1.5x this
+          character's RCV at the end of the turn each time you hit a Good.
+          Recovers 0.3x this character's RCV at the end of the turn for each
+          time you hit a PERFECT
+    - cooldown: 2
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3

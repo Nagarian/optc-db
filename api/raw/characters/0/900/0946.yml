@@ -1,0 +1,49 @@
+type: INT
+name: Rakuyo - Whitebeard's Seventh Division Commander
+japanName: ラクヨウ 白ひげ海賊団７番隊隊長
+family:
+  - Rakuyo
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 58
+    atk: 27
+    rcv: 33
+  maxLvl:
+    hp: 2077
+    atk: 1055
+    rcv: 218
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 25016
+aliases: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Striker characters by 1.75x
+special:
+  name: Lock-on Iron Ball
+  description: Changes orbs of this and Friend Captain character into an [INT] orb
+  cooldown: 20
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

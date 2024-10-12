@@ -1,0 +1,343 @@
+type: QCK
+name: "Kami Eneru - Battles of the Great Era of Piracy: Endless Varse"
+japanName: ゴッド・エネル 大海賊時代の死闘「限りない大地」
+family:
+  - Enel
+class:
+  - Shooter
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1189
+    atk: 681
+    rcv: 170
+  maxLvl:
+    hp: 2890
+    atk: 1503
+    rcv: 414
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 57875
+aliases:
+  - Kami Eneru
+  - V1 Legend God Enel
+evolution:
+  - id: 2232
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Reduces HP of all characters by 20%, boosts chances of getting
+    [RCV] orbs, makes [RCV] orbs beneficial for all characters, boosts ATK of
+    all characters by 2x-3.25x depending on the amount healed in the last turn.
+  notes: The range of ATK boost is from 2x to 3.25x. The exact boost is calculated
+    as 2 + (HP recovered in the previous turn) \* 0.000125 and maxes at 10k HP
+    healed. This ignores your max HP, so it doesn't stop counting if you
+    over-heal.
+special:
+  name: Heavy Thunder
+  description: Deals 10x Excess Healing done before the special is activated in
+    Typeless damage to all enemies.
+  cooldown: 21
+  maxLevel: 6
+  notes: The Excess Healing is counted from the last time the special is used and
+    accumulates when you heal more than your maximum HP. For example, if you are
+    at max HP and you heal 1,000 HP, you will add 10k damage to the special. The
+    amount of damage possible caps at 2,000,000 damage.
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters
+  - description: Boosts amount healed from [RCV] orbs by 300 each
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - RCV
+  criteria: "[QCK] characters"
+  levels:
+    - value: 5
+      reduction: 1
+    - value: 8
+      reduction: 2
+    - value: 12
+      reduction: 3
+    - value: 15
+      reduction: 4
+    - value: 20
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 15
+    - type: potential
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: sailor
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - cooldown: 1
+    - atk: 20
+    - hp: 40
+    - hp: 40
+    - hp: 50
+    - cooldown: 1
+    - hp: 50
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - key: 1
+    - hp: 25
+    - atk: 50
+    - hp: 25
+    - rcv: 20
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - rcv: 50
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 204
+    rumbleType: DEF
+    spd: 140
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 3
+  resilience:
+    - attribute: Paralysis
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 55
+      effects:
+        - amount: 1600
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          duration: 30
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1625
+        - override:
+            level: 1
+            duration: 31
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1650
+        - override:
+            level: 1
+            duration: 32
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1675
+        - override:
+            level: 1
+            duration: 33
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 1
+            duration: 34
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1725
+        - override:
+            level: 1
+            duration: 35
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1750
+        - override:
+            level: 1
+            duration: 36
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1775
+        - override:
+            level: 2
+            duration: 37
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            level: 2
+            duration: 38
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 1950
+        - override:
+            level: 3
+            duration: 40
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

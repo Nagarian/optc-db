@@ -1,0 +1,50 @@
+type: DEX
+name: Kingbaum
+japanName: キングバーム
+family:
+  - KingBaum
+class:
+  - Free Spirit
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 644
+    atk: 551
+    rcv: 86
+  maxLvl:
+    hp: 2150
+    atk: 1181
+    rcv: 198
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 118919
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2x and their HP by 1.2x
+special:
+  name: Enclosing the Forest with a Trackless Path
+  description: Reduces Bind, Despair and Paralysis duration by 1 turn. If your
+    Captain is a Free Spirit character, reduces enemies' ATK Up and Increased
+    Defense duration by 1 turn.
+  cooldown: 11
+  maxLevel: 4
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Nami
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 9

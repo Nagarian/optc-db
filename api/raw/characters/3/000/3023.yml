@@ -1,0 +1,95 @@
+type: PSY
+name: Tony Tony Chopper - Number 5, His Heart Healed
+japanName: トニートニー・チョッパー 心癒された５人目
+family:
+  - TonyTonyChopper
+class:
+  - Striker
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 896
+    atk: 517
+    rcv: 158
+  maxLvl:
+    hp: 2242
+    atk: 1294
+    rcv: 395
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 214592
+aliases:
+  - Grand Line Chopper
+  - Throwback Chopper
+  - Limited Chopper
+  - Secret Chopper
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [PSY] and [INT] characters by 2.5x.
+special:
+  name: A Man's Determination
+  description: Reduces Paralysis and Silence duration by 5 turns and changes
+    [BLOCK] orbs into [RCV] orbs. If your Captain is a [STR] or [INT] character,
+    reduces damage received by 80% for 1 turn.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Adds 2x character's ATK as Additional Damage
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 20
+    - atk: 10
+    - type: potential
+    - rcv: 30
+    - atk: 30
+    - hp: 20
+    - rcv: 40
+    - slot: 1
+    - rcv: 60
+    - atk: 60
+    - hp: 30
+    - type: sailor
+    - hp: 40
+    - type: potential
+  potentials:
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

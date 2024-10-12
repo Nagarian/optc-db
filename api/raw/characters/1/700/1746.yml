@@ -1,0 +1,54 @@
+type: PSY
+name: Boa Hancock - Straw Hat Luffy's Contributor
+japanName: ボア・ハンコック 麦わらのルフィの協力者
+family:
+  - BoaHancock
+class:
+  - Shooter
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 294
+    atk: 255
+    rcv: 77
+  maxLvl:
+    hp: 1326
+    atk: 790
+    rcv: 189
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 66496
+aliases:
+  - Korean Boa
+  - V1 Legend Boa Hancock
+  - Shichibukai
+evolution:
+  - id: 1747
+    evolvers:
+      - 118
+      - 266
+      - 94
+      - 98
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x-3.25x based on the timing
+    of the attack of the previous unit in the chain and recovers 1,000 HP at the
+    end of each turn. Greatly reduces chances of getting [TND] and [RCV] orbs
+  notes: A hit below Good or a Miss will boost the ATK of the next unit by 2.5x, a
+    Good hit by 2.75x, a Great hit by 3x and a PERFECT hit by 3.25x. This bonus
+    is applied only to Shooter characters.
+special:
+  name: Pistol Kisses
+  description: Deals 6 hits of 20,000 Fixed damage to random enemies, delays all
+    enemies by 1 turn and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs
+    beneficial for Shooter characters for 2 turns
+  cooldown: 20
+  maxLevel: 6

@@ -1,0 +1,121 @@
+type: INT
+name: "Luffy: Halloween Night Demon Lord - Happy Halloween!"
+japanName: ルフィ　ハロウィンナイト・デーモンロード Happy Halloween
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1422
+    atk: 436
+    rcv: 128
+  maxLvl:
+    hp: 3150
+    atk: 1411
+    rcv: 281
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 174235
+aliases:
+  - Halloween Luffy
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.75x and makes [TND] orbs
+    beneficial for Fighter characters.
+special:
+  name: Demon Lord's Gomu Gomu no Elephant Gun
+  description: Binds self for 7 turns, deals 25% of enemies' current HP in damage
+    to one enemy, reduces Despair duration by 4 turns and changes all orbs,
+    including [BLOCK] orbs, into [TND] orbs. If your crew has Orb Amplification,
+    locks the chain multiplier at 2.75x for 3 turns, locks the chain multiplier
+    at 3x for 1 turn otherwise.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: If your Captain is a Fighter character, makes [TND] orbs beneficial
+      for Fighter characters
+  - description: If your Captain is a Fighter character, boosts base HP of Fighter
+      characters by 1.1x
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Fighter characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 12
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - rcv: 20
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - rcv: 50
+    - cooldown: 1
+    - hp: 100
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

@@ -1,0 +1,169 @@
+type: QCK
+name: Speed
+japanName: スピード
+family:
+  - Speed
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 312
+    atk: 182
+    rcv: 49
+  maxLvl:
+    hp: 812
+    atk: 884
+    rcv: 120
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 169226
+aliases:
+  - ""
+evolution:
+  - id: 2706
+    evolvers:
+      - 94
+      - 1180
+      - 301
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2.5x.
+special:
+  name: Horselike Smile
+  description: Reduces Special Cooldown of all characters by 2 turns and reduces
+    the defense of all enemies by 100% for 1 turn.
+  cooldown: 21
+  maxLevel: 7
+  stages:
+    - description: Reduces Special Cooldown of Fighter and Powerhouse characters by 1
+        turn and reduces the defense of all enemies by 50% for 1 turn.
+      cooldown: 14
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+rumble:
+  stats:
+    def: 139
+    rumbleType: SPT
+    spd: 151
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          duration: 15
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 14
+          effect: recharge
+          type: Special CT
+          targeting:
+            targets:
+              - Fighter
+              - Striker
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            amount: 15
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            amount: 15
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 16
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 16
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 21
+        - override:
+            amount: 17
+    - cooldown: 26
+      effects:
+        - override:
+            level: 6
+            duration: 22
+        - override:
+            amount: 17
+    - cooldown: 26
+      effects:
+        - override:
+            level: 7
+            duration: 23
+        - override:
+            amount: 18
+    - cooldown: 26
+      effects:
+        - override:
+            level: 8
+            duration: 24
+        - override:
+            amount: 20

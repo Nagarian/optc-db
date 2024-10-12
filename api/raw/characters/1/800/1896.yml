@@ -1,0 +1,60 @@
+type: STR
+name: Eneru - Skypiea's One and Only Kami
+japanName: エネル スカイピア唯一神
+family:
+  - Enel
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 125
+    atk: 189
+    rcv: 69
+  maxLvl:
+    hp: 1227
+    atk: 733
+    rcv: 176
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 84400
+aliases:
+  - Colo Enel
+  - Coliseum Enel
+  - Colo Eneru
+  - Coliseum Eneru
+  - Colo Kami Enel
+  - Coliseum Kami Enel
+evolution:
+  - id: 1897
+    evolvers:
+      - 118
+      - 95
+      - 1180
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.25x-2.25x depending on the
+    crew's current HP
+  notes: "`captainProportional : higher : 1.25 + 1 * ((remaining HP) / (total HP))
+    : 2.25 : 1.25`"
+special:
+  name: "30,000,000 Volt: Hino"
+  description: Changes the orb of this character into a [STR] orb, reduces ATK
+    DOWN, Chain Multiplier Limit and Paralysis duration by 5 turns. If your
+    Captain is a Driven character, adds 0.7x to Chain multiplier for 1 turn
+  cooldown: 28
+  maxLevel: 15
+  stages:
+    - description: Changes the orb of this character into a [STR] orb, reduces ATK
+        DOWN, Chain Multiplier Limit and Paralysis duration by 2 turns. If your
+        Captain is a Driven character, adds 0.3x to Chain multiplier for 1 turn
+      cooldown: 23

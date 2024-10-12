@@ -1,0 +1,55 @@
+type: DEX
+name: Ann - Diva
+japanName: アン 歌姫
+family:
+  - Ann
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 842
+    atk: 398
+    rcv: 107
+  maxLvl:
+    hp: 2106
+    atk: 996
+    rcv: 267
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 162836
+aliases:
+  - Fortnight Ann
+  - Stampede Ann
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and recovers 2x
+    character's RCV in HP at the end of each turn.
+special:
+  name: Diva on Stage
+  description: Reduces Silence and Paralysis duration by 3 turns and reduces
+    Special Cooldown of Free Spirit characters by 1 turn.
+  cooldown: 18
+  maxLevel: 9
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

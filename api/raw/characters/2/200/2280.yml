@@ -1,0 +1,50 @@
+type: DEX
+name: Vinsmoke Judge - King of Germa
+japanName: ヴィンスモーク・ジャッジ ジェルマ王国　国王
+family:
+  - VinsmokeJudge
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 239
+    atk: 193
+    rcv: 35
+  maxLvl:
+    hp: 1167
+    atk: 652
+    rcv: 110
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 121667
+aliases:
+  - Raid Judge
+evolution:
+  - id: 2281
+    evolvers:
+      - 118
+      - 97
+      - 1180
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [PSY] characters by 2x and their HP by 1.2x
+special:
+  name: Electro-Magnetic Shaft
+  description: Deals 200,000 Fixed damage to one enemy, reduces crew's Increase
+    Damage Taken, Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 5 turns. If your crew has 3 or more [DEX] characters, boosts the
+    Color Affinity of [STR], [DEX] and [PSY] characters by 2x for 1 turn
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] characters by 30

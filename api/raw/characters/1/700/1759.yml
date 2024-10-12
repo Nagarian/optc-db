@@ -1,0 +1,93 @@
+type: QCK
+name: Brook - 20th Anniversary Memorial Treasure
+japanName: ブルック 20th Anniversary Memorial Treasure
+family:
+  - Brook
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1076
+    atk: 569
+    rcv: 148
+  maxLvl:
+    hp: 2274
+    atk: 1336
+    rcv: 333
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 65831
+aliases:
+  - 20th Anniversary Brook
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and their RCV by 1.2x
+special:
+  name: "Party Music: Quinte Tierce Fantasia"
+  description: Delays all enemies by 1 turn, reduces Paralysis, Bind and Despair
+    duration by 1 turn.
+  cooldown: 11
+  maxLevel: 5
+sailor:
+  - description: Makes [RCV] orbs beneficial for this character
+  - description: Reduces Silence duration by 2 turns on this character
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Vinsmoke Sanji, Nami and Tony Tony Chopper
+  levels:
+    - Once per adventure, when the supported character uses a Paralysis or
+      Despair reducing special, reduces Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses a Paralysis or
+      Despair reducing special, reduces Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses a Paralysis or
+      Despair reducing special, reduces Despair duration by 2 turns.
+    - Once per adventure, when the supported character uses a Paralysis or
+      Despair reducing special, reduces Despair duration by 2 turns.
+    - Once per adventure, when the supported character uses a Paralysis or
+      Despair reducing special, reduces Paralysis and Despair duration by 2
+      turns.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 10
+    - hp: 20
+    - hp: 30
+    - type: sailor
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

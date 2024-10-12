@@ -1,0 +1,450 @@
+type: PSY
+name: Cat Viper - Feast of Reconciliation
+japanName: ネコマムシ 手打の宴
+family: []
+class:
+  - Striker
+  - Powerhouse
+rarity: 6+
+stats:
+  combo: 6
+  minLvl:
+    hp: 1588
+    atk: 624
+    rcv: 138
+  maxLvl:
+    hp: 3592
+    atk: 1524
+    rcv: 392
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 60679
+aliases:
+  - Mega/Super/6+ Nekomamushi
+  - Cat Viper
+  - Nekopara
+  - V1 Legend Nekomamushi
+captain:
+  name: ""
+  description: Boosts HP of Striker characters by 1.25x, boosts chances of getting
+    [STR], [QCK], [DEX], [PSY] and [INT] orbs and boosts ATK of Striker
+    characters by 3.75x if they have a [STR], [QCK], [DEX], [INT], [PSY] or
+    [RAINBOW] orb.
+special:
+  name: Spear Strike of Reconciliation
+  description: Deals 60x character's ATK in [PSY] damage to one enemy, reduces
+    Bind and ATK DOWN duration by 3 turns and makes [STR], [DEX], [QCK], [PSY]
+    and [INT] orbs beneficial for Striker characters for 1 turn.
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker characters by 70
+  - description: Makes [INT] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Tony Tony Chopper, Inuarashi and Pedro
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Bind or ATK DOWN,
+      reduces Bind and ATK DOWN duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Bind or ATK DOWN,
+      reduces Bind and ATK DOWN duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Bind or ATK DOWN,
+      reduces Bind and ATK DOWN duration by 2 turns
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - hp: 15
+    - hp: 20
+    - hp: 25
+    - type: sailor
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - type: potential
+    - rcv: 20
+    - cooldown: 1
+    - hp: 45
+    - hp: 55
+    - hp: 65
+    - atk: 25
+    - atk: 40
+    - hp: 70
+    - hp: 80
+    - rcv: 30
+    - rcv: 40
+    - type: sailor
+    - atk: 45
+    - atk: 55
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - captain:
+        description: Boosts HP of Striker characters by 1.25x, greatly boosts chances of
+          getting [STR], [QCK], [DEX], [PSY] and [INT] orbs, makes [PSY] orbs
+          beneficial for Striker characters and boosts ATK of Striker characters
+          by 3.75x if they have a [STR], [QCK], [DEX], [INT], [PSY] or [RAINBOW]
+          orb.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 194
+    rumbleType: ATK
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 1.05
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.09
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.12
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.16
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.2
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.24
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.27
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.31
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.35
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Striker
+            - attributes:
+                - ATK
+              effect: buff
+              level: 5
+              condition:
+                comparator: below
+                count: 65
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - Striker
+        - effects:
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 7
+  - captain:
+      - description: Boosts chances of getting [STR], [QCK], [DEX], [PSY] and [INT]
+          orbs, boosts HP of [STR] and Striker characters by 1.35x, boosts ATK
+          of [STR] and Striker characters by 5x, makes [PSY] and [INT] orbs
+          beneficial for [STR] and Striker characters and reduces damage
+          received by 10%.
+      - description: Greatly boosts chances of getting [STR], [QCK], [DEX], [PSY] and
+          [INT] orbs, boosts HP of [STR] and Striker characters by 1.5x, boosts
+          ATK of [STR] and Striker characters by 5x, makes [PSY] and [INT] orbs
+          beneficial for [STR] and Striker characters and reduces damage
+          received by 10%. If HP is below 30% at the start of the turn, adds
+          0.3x to Chain multiplier.
+  - rumble:
+      special:
+        - cooldown: 33
+          effects:
+            - amount: 1.3
+              effect: damage
+              range:
+                direction: forward
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - DEF
+              duration: 15
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - Striker
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1.4
+            - {}
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1.5
+            - {}
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1.6
+            - {}
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1.7
+            - override:
+                level: 2
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1.8
+            - override:
+                level: 2
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 1.9
+            - override:
+                level: 2
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 2
+            - override:
+                level: 3
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 2.1
+            - override:
+                level: 3
+        - cooldown: 33
+          effects:
+            - override:
+                amount: 2.2
+            - override:
+                level: 4
+  - rumble:
+      resilience:
+        - attribute: Action Bind
+          chance: 100
+          type: debuff
+        - attribute: INT
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 60x character's ATK in [PSY] damage to one enemy, makes
+        [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for [STR] and
+        Striker characters for 1 turn, adds 1.5x to Chain multiplier for 1 turn
+        and reduces Bind and ATK DOWN duration by 6 turns.

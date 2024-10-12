@@ -1,0 +1,89 @@
+type: INT
+name: Rob Lucci - Dark Justice-Upholding Weapon
+japanName: ロブ・ルッチ "闇の正義" を掲げる兵器
+family:
+  - RobLucci
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 974
+    atk: 840
+    rcv: 97
+  maxLvl:
+    hp: 2535
+    atk: 1429
+    rcv: 301
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 95430
+aliases:
+  - Raid Lucci
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and set crew's RCV to 0.
+    If you defeated an enemy in the last turn, boosts ATK of Fighter characters
+    by 3x instead and boosts ATK of all other characters by 1.2x
+  notes: If a character dies and revives, it counts as killing a character. If you
+    did not defeat an enemy, lose all ATK boost stacks.
+special:
+  name: "Sai Dai Rin: Rokuogan (Ultimate Radius: Rokuogan)"
+  description: Deals 100x character's ATK in [INT] damage to one enemy and if
+    there is only one enemy on the stage when the special is activated, delays
+    that enemy by 1 turn and boosts ATK against delayed enemies by 1.75x for 1
+    turn
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of Fighter characters by 100
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kalifa, Kaku, Jabra, Kumadori and Blueno
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 15
+    - atk: 10
+    - type: potential
+    - cooldown: 1
+    - rcv: 55
+    - atk: 30
+    - hp: 20
+    - hp: 30
+    - atk: 30
+    - atk: 30
+    - atk: 45
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

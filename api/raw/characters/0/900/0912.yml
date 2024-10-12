@@ -1,0 +1,91 @@
+type: DEX
+name: Sanji - Chef of Love
+japanName: サンジ 男を懸けた愛の料理人
+family:
+  - VinsmokeSanji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1498
+    atk: 634
+    rcv: 85
+  maxLvl:
+    hp: 2926
+    atk: 1349
+    rcv: 201
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 23377
+aliases:
+  - 3D2Y Sanji
+  - Timeskip Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x and their HP by 1.5x.
+    Recovers 2x character's RCV in HP at the end of each turn
+special:
+  name: "Diable Jambe: Premier Hachis"
+  description: Deals 20x character's ATK in [DEX] damage to one enemy, boosts ATK
+    of Powerhouse characters by 2x for 1 turn
+  cooldown: 25
+  maxLevel: 8
+  stages:
+    - description: Deals 13x character's ATK in [DEX] damage to one enemy, boosts ATK
+        of Powerhouse characters by 1.2x for 1 turn
+      cooldown: 15
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 75
+  - description: Makes [DEX] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Nami, Nico Robin, Emporio Ivankov and Elizabeth
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - type: sailor
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - cooldown: 2
+    - atk: 30
+    - rcv: 30
+    - slot: 1
+    - hp: 80
+    - type: sailor
+    - cooldown: 3
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

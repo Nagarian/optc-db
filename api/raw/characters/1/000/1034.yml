@@ -1,0 +1,52 @@
+type: STR
+name: Bartolomeo
+japanName: バルトロメオ
+family:
+  - Bartolomeo
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 403
+    atk: 278
+    rcv: 58
+  maxLvl:
+    hp: 1623
+    atk: 813
+    rcv: 232
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 28771
+aliases:
+  - V1 Legend Bartolomeo
+evolution:
+  - id: 1035
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 1.25x-2.75x depending on how
+    many Strikers are on your team. If you don't attack with Bartolomeo, reduces
+    damage received by 30% for that turn.
+  notes: "ATK boost with 1 Striker is 1.25x. With 2 Strikers: 1.5x. With 3
+    Strikers: 1.75x. With 4 Strikers: 2x. With 5 Strikers: 2.5x. With 6
+    Strikers: 2.75x"
+special:
+  name: Bari Bari No Pistol
+  description: Protects from defeat for 1 turn and deals 1x-150x character's ATK
+    in Typeless damage, depending on the crew's current HP, to one enemy.
+  cooldown: 23
+  maxLevel: 6
+  notes: "`specialProportional : lower : 150 * ( 1 - (remaining HP) / (total HP) )`"

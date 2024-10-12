@@ -1,0 +1,478 @@
+type: QCK
+name: Aokiji - Uncompromised Determination and Justice
+japanName: 青キジ 譲れぬ“信念”と“正義”
+family:
+  - Kuzan
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 840
+    atk: 320
+    rcv: 51
+  maxLvl:
+    hp: 1920
+    atk: 801
+    rcv: 163
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - japex
+links:
+  gamewithId: 198749
+aliases:
+  - Korean Kuzan
+  - V3 Legend Aokiji
+evolution:
+  - id: 2930
+    evolvers:
+      - 118
+      - 266
+      - 301
+      - 101
+      - 267
+captain:
+  name: ""
+  description: If there are only [STR], [DEX] or [QCK] characters in your crew,
+    boosts Chain Multiplier Growth Rate by 4x and boosts ATK of [STR], [DEX] and
+    [QCK] characters by 1.75x and makes [STR], [DEX] and [QCK] orbs beneficial
+    for [STR], [DEX] and [QCK] characters.
+special:
+  name: Ice World
+  description: Boosts Orb Effects of [STR], [DEX] and [QCK] characters by 2.25x
+    for 1 turn, boosts the Color Affinity of [STR], [DEX] and [QCK] characters
+    by 1.75x for 1 turn and makes PERFECTs easier to hit for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+rumble:
+  stats:
+    def: 120
+    rumbleType: ATK
+    spd: 194
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Full
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 15
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 15
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 15
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 15
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 15
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 0.85
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 0.91
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 0.96
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 1.02
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 1.08
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 1.14
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 1.19
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 1.25
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 1.31
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

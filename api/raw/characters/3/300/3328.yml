@@ -1,0 +1,214 @@
+type: INT
+name: Smoker - Striking a Warlord of the Sea
+japanName: スモーカー 七武海への一撃
+family:
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1664
+    atk: 573
+    rcv: 115
+  maxLvl:
+    hp: 4144
+    atk: 1426
+    rcv: 234
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 274549
+aliases:
+  - Rumble Smoker
+  - Limited Smoker
+  - Secret Smoker
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.75x.
+special:
+  name: Jitte Protecting Subordinates
+  description: Deals 15% of enemies' current HP in damage to all enemies and adds
+    0.7x to Chain multiplier for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker characters by 50
+limitBreak:
+  path:
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - type: potential
+    - hp: 100
+    - rcv: 100
+    - hp: 100
+    - atk: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 202
+    rumbleType: DBF
+    spd: 151
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 10
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 50
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            chance: 55
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            chance: 60
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            chance: 65
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            chance: 70
+            duration: 15
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            chance: 75
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            chance: 80
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            chance: 85
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            chance: 90
+            duration: 19
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 2
+        - override:
+            chance: 100
+            duration: 20

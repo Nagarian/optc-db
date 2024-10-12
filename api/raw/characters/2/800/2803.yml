@@ -1,0 +1,244 @@
+type: QCK
+name: Sangoro
+japanName: サン五郎
+family:
+  - VinsmokeSanji
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 593
+    atk: 287
+    rcv: 22
+  maxLvl:
+    hp: 1746
+    atk: 861
+    rcv: 172
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 181109
+aliases:
+  - Wano Sanji
+  - Black Ranger
+  - Sanji Black
+  - Sobamask
+  - V3 Legend Sanji
+evolution:
+  - id: 2804
+    evolvers:
+      - 118
+      - 101
+      - 301
+      - 2662
+      - 267
+captain:
+  name: ""
+  description: >-
+    Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of all characters by 3.5x, boosts chances of
+    getting [TND] orbs, and makes [TND] orbs beneficial for all characters. If a
+    character has a [TND] orb, boosts their ATK by 4.25x instead.  
+
+    **Action:** Sanji becomes Transparent and prevents all debuffs to himself (including, but not limited to, Bind, Despair, Silence, Slot Bind, Special Rewind, and Paralysis), makes own normal attacks ignore defense, damage reducing Barriers and Buffs, and adds 500x character's ATK as Additional Typeless Damage to own's attacks.
+  notes: Sanji Captain Action lasts for 3 turns and can be reactivated after 6 turns.
+special:
+  name: Assault! O-Soba Mask
+  description: Changes all orbs, including [BLOCK] orbs, into [TND] orbs and
+    boosts ATK of all characters by 1.75x for 1 turn. If "Fire! Soba Mask" is
+    used again in the same turn the special is activated in, boosts ATK of all
+    characters by 2.5x for 1 turn.
+  cooldown: 16
+  maxLevel: 6
+rumble:
+  stats:
+    def: 126
+    rumbleType: ATK
+    spd: 185
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 37
+      effects:
+        - amount: 0.95
+          effect: damage
+          type: atk
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 2
+          duration: 15
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 0.99
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.02
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.06
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.1
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.14
+        - {}
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.17
+        - override:
+            level: 3
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.21
+        - override:
+            level: 3
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.25
+        - override:
+            level: 3
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.35
+        - override:
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

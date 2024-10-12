@@ -1,0 +1,95 @@
+type: DEX
+name: Brook - Musician Playing at Sea
+family:
+  - Brook
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1314
+    atk: 684
+    rcv: 164
+  maxLvl:
+    hp: 2884
+    atk: 1485
+    rcv: 245
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Summer Kizuna Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x, boosts HP of all characters by
+    1.25x and boosts all characters' ATK against enemies with reduced defense by
+    1.25x.
+special:
+  name: Rave On! Summer Live Performance!
+  description: Reduces the defense of all enemies by 100% for 1 turn, makes [RCV]
+    and [TND] orbs matching for all characters by 1 turn and reduces Silence and
+    Despair duration by 6 turns. If there are 3 or more enemies on the stage
+    when the Special is activated, sets Chain Boundaries to 3.0x and 25.0x for 1
+    turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 6 turns on this character
+  - description: Makes [STR] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy and Usopp
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 25
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - rcv: 25
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - hp: 50
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50

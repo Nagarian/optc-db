@@ -1,0 +1,51 @@
+type: QCK
+name: Portgas D. Ace - Mt. Corvo's Brothers 3, Cup of Sworn Brotherhood
+japanName: ポートガス・Ｄ・エース コルボ山の悪ガキ３兄弟“兄弟盃”
+family:
+  - PortgasDAce
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 571
+    atk: 295
+    rcv: 200
+  maxLvl:
+    hp: 1072
+    atk: 559
+    rcv: 385
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 11642
+aliases:
+  - Kid Ace
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 1.5x
+special:
+  name: Cheeky Punk Kid Kick
+  description: Reduces Bind duration by 4 turns, deals 3x character's ATK in [QCK]
+    damage to one enemy
+  cooldown: 11
+  maxLevel: 1
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy and Sabo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

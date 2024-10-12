@@ -1,0 +1,91 @@
+type: QCK
+name: Charlotte Oven - Burning Fists at the FES
+family:
+  - CharlotteOven
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1448
+    atk: 703
+    rcv: 156
+  maxLvl:
+    hp: 2970
+    atk: 1501
+    rcv: 225
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - RED Limited Secret Kizuna
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], Fighter and Powerhouse characters by 3.5x,
+    boosts HP of [QCK], Fighter and Powerhouse characters by 1.3x and deals 5x
+    character's ATK in [QCK] damage to all enemies at the end of each turn.
+special:
+  name: Searing Strike
+  description: Reduces Bind and Despair duration by 6 turns and boosts Color
+    Affinity of [QCK], Fighter and Powerhouse characters by 2x for 1 turn. If
+    your crew has Color Affinity when the special is activated, increases boost
+    effects of Color Affinity buffs by +0.25x
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [QCK] orbs beneficial for Fighter and Powerhouse characters
+  - description: Boosts base ATK, HP and RCV of Fighter and Powerhouse characters by 50
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Powerhouse characters
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 25
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - type: sailor
+    - rcv: 25
+    - atk: 25
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - hp: 50
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

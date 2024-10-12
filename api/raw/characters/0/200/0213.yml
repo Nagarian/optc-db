@@ -1,0 +1,43 @@
+type: STR
+name: Laboon
+japanName: ラブーン
+family:
+  - Laboon
+class:
+  - Fighter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 650
+    atk: 300
+    rcv: 150
+  maxLvl:
+    hp: 1100
+    atk: 500
+    rcv: 200
+cost: 18
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 3747
+aliases: []
+evolution:
+  - id: 214
+    evolvers:
+      - 117
+      - 78
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Protects from defeat as long as HP is above 50%
+special:
+  name: Sorrowful Charge
+  description: Deals 20x character's ATK in [STR] damage to all enemies
+  cooldown: 20
+  maxLevel: 6

@@ -1,0 +1,53 @@
+type: DEX
+name: Jesus Burgess - Corrida Coliseum A-Block Champion
+japanName: ジーザス・バージェス コリーダコロシアムＡブロックの“チャンピオン”
+family:
+  - JesusBurgess
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 209
+    atk: 143
+    rcv: 29
+  maxLvl:
+    hp: 1164
+    atk: 633
+    rcv: 120
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 69424
+aliases:
+  - ""
+evolution:
+  - id: 1798
+    evolvers:
+      - 83
+      - 94
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x
+special:
+  name: Shockwave Elbow
+  description: Deals 20% of enemies' current HP in damage to all enemies and
+    boosts ATK against delayed enemies by 1.5x for 2 turns.
+  cooldown: 21
+  maxLevel: 7
+  stages:
+    - description: Deals 10% of enemies' current HP in damage to all enemies
+      cooldown: 15
+    - description: Deals 20% of enemies' current HP in damage to all enemies
+      cooldown: 18
+sailor:
+  - description: Boosts base ATK and HP of [STR], [DEX] and [QCK] characters by 75

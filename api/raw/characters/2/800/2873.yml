@@ -1,0 +1,98 @@
+type: PSY
+name: Usopp - Number 3, the Village Protector
+japanName: ウソップ 村守る３人目
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1102
+    atk: 432
+    rcv: 175
+  maxLvl:
+    hp: 2024
+    atk: 1297
+    rcv: 338
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 189633
+aliases:
+  - East Blue Usopp
+  - Secret Usopp
+  - Limited Usopp
+  - Throwback Usopp
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [STR] characters by 2.75x.
+special:
+  name: The Will of the Warrior of the Sea
+  description: Reduces enemies' Increased Defense and Percent Damage Reduction
+    duration by 3 turns, boosts ATK against delayed enemies by 1.75x for 1 turn
+    and changes [EMPTY] and Badly Matching orbs into [TND] orbs. If your Captain
+    is a [STR] or [PSY] character, makes [TND] orbs beneficial for all
+    characters for 1 turn.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of top row characters by 40
+  - description: Reduces Blindness duration by 3 turns
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - rcv: 20
+    - slot: 1
+    - atk: 30
+    - type: sailor
+    - hp: 45
+    - rcv: 20
+    - atk: 40
+    - hp: 60
+    - rcv: 40
+    - type: potential
+  potentials:
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

@@ -1,0 +1,117 @@
+type: DEX
+name: Treetop Pedro - Former Captain of the Nox Pirates
+japanName: 木の上のペドロ 元ノックス海賊団“船長”
+family:
+  - Pedro
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 2586
+    atk: 1372
+    rcv: 312
+  maxLvl:
+    hp: 2586
+    atk: 1372
+    rcv: 312
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 132777
+aliases:
+  - Limited Pedro
+  - Secret Pedro
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight. Boosts ATK of Slasher characters by 2.75x and if you have 5 or
+    more Slashers characters in your crew, boosts Chain Multiplier Growth Rate
+    by 1.3x
+special:
+  name: Dawn-break Sword
+  description: Deals 10% of enemies' current HP in damage to one enemy and reduces
+    the defense of all enemies by 100% for 1 turn, and if your crew has 5 or
+    more Slasher characters at the time the special is activated, boosts ATK
+    against enemies with reduced defense by 2x for 1 turn and changes orbs of
+    adjacent characters into Matching Orbs.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: If this character has a [DEX] orb and you hit a PERFECT with him,
+      keep his [DEX] orb for the next turn
+  - description: Makes [DEX] orbs beneficial for Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - rcv: 20
+    - hp: 80
+    - atk: 20
+    - cooldown: 1
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

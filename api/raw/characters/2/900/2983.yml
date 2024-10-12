@@ -1,0 +1,363 @@
+type: DEX
+name: Page One
+japanName: ページワン
+family:
+  - PageOne
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 510
+    atk: 250
+    rcv: 43
+  maxLvl:
+    hp: 1235
+    atk: 714
+    rcv: 153
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 205050
+aliases:
+  - Page 1
+evolution:
+  - id: 2984
+    evolvers:
+      - 83
+      - 266
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2x, by 2.5x instead if HP is above 50%.
+special:
+  name: Charge Spinosaurus
+  description: Deals 70x character's ATK in Typeless damage to one enemy, reduces
+    ATK DOWN, Burn and Blindness duration by 5 turns and reduces Special
+    Cooldown of [STR] and [DEX] characters by 2 turns.
+  cooldown: 19
+  maxLevel: 7
+  stages:
+    - description: Deals 40x character's ATK in Typeless damage to one enemy, reduces
+        ATK DOWN, Burn and Blindness duration by 2 turns and reduces Special
+        Cooldown of [STR] and [DEX] characters by 1 turn.
+      cooldown: 13
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+rumble:
+  stats:
+    def: 152
+    rumbleType: SPT
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 10
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 11
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 12
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 13
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 14
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 15
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 21
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 16
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 17
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 18
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 24
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 26
+      effects:
+        - amount: 20
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+          type: Special CT
+        - attributes:
+            - SPD
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          duration: 25
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX

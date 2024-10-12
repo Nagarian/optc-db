@@ -1,0 +1,100 @@
+type: PSY
+name: Franky - Shipwright Entering Battle
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1471
+    atk: 709
+    rcv: 153
+  maxLvl:
+    hp: 3004
+    atk: 1498
+    rcv: 230
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - RED Secret Limited Kizuna
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of [PSY], Shooter and Free Spirit characters by 3.25x,
+    boosts HP of [PSY], Shooter and Free Spirit characters by 1.3x and reduces
+    damage received by 5%.  
+
+    **Boosted Ability:** Boosts ATK of [PSY], Shooter and Free Spirit characters by 5.25x, boosts HP of [PSY], Shooter and Free Spirit characters by 1.4x and reduces damage received by 10%.
+special:
+  name: Shoulder-Mounted Rocket Launcher
+  description: Reduces Special Cooldown of [PSY], Shooter and Free Spirit
+    characters by 3 turns, deals 250x character's ATK in Typeless damage to all
+    enemies at the end of the turn for 2 turns and reduces Paralysis, Burn and
+    Silence duration by 5 turns.
+  cooldown: 27
+  maxLevel: 6
+  stages:
+    - description: Reduces Special Cooldown of [PSY], Shooter and Free Spirit
+        characters by 1 turn, deals 50x character's ATK in Typeless damage to
+        all enemies at the end of the turn for 2 turns and reduces Paralysis,
+        Burn and Silence duration by 2 turns.
+      cooldown: 13
+    - description: Reduces Special Cooldown of [PSY], Shooter and Free Spirit
+        characters by 2 turns, deals 100x character's ATK in Typeless damage to
+        all enemies at the end of the turn for 2 turns and reduces Paralysis,
+        Burn and Silence duration by 5 turns.
+      cooldown: 19
+sailor:
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Shooter characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - atk: 25
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - atk: 25
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - hp: 50
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 80
+        - threshold: 60
+        - threshold: 50

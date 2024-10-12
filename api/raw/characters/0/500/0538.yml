@@ -1,0 +1,47 @@
+type: PSY
+name: Domino - Impel Down Vice Head Jailer
+japanName: ドミノ インペルダウン副看守長
+family:
+  - Domino
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 634
+    atk: 301
+    rcv: 265
+  maxLvl:
+    hp: 1800
+    atk: 694
+    rcv: 449
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 12098
+aliases: []
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 2x, recovers 2x character's
+    RCV in HP at the end of each turn
+special:
+  name: Sea Stone Handcuffs
+  description: Reduces Bind and Despair duration by 1 turn, locks all orbs for 1 turn
+  cooldown: 25
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Magellan, Sadie and Hannyabal
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

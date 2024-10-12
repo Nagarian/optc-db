@@ -1,0 +1,37 @@
+type: PSY
+name: Pistol Seaman - Navy
+japanName: ピストル一等兵 海軍
+family:
+  - PistolNavy
+class:
+  - Shooter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 75
+    atk: 23
+    rcv: 52
+  maxLvl:
+    hp: 139
+    atk: 100
+    rcv: 170
+cost: 6
+slots: 0
+maxExp: 33626
+maxLevel: 25
+flags: []
+links:
+  gamewithId: 2528
+aliases: []
+evolution:
+  - id: 197
+    evolvers:
+      - 116
+      - 81
+      - 87
+special:
+  name: Light Healing
+  description: Recovers 5x character's RCV in HP
+  cooldown: 12
+  maxLevel: 5

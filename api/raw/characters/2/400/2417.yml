@@ -1,0 +1,352 @@
+type: DUAL
+name: Bartolomeo & Cavendish - Bickering Rebels
+japanName: バルトロメオ＆キャベンディッシュ いがみ合う反逆者たち
+family:
+  - Bartolomeo
+  - Cavendish
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 391
+    atk: 287
+    rcv: 71
+  maxLvl:
+    hp: 1856
+    atk: 825
+    rcv: 228
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 140990
+aliases:
+  - Bartolomeo&Cavendish
+  - BartolomeoCavendish
+  - Cavendish&Bartolomeo
+  - CavendishBartolomeo
+  - Barto
+  - Cabbage
+  - Baggage
+  - Cabarto
+  - Bartendish
+  - B/C
+  - Bartocabbage
+  - BartoCav
+  - Legend Cavendish and Bartolomeo
+evolution:
+  - id: 2418
+    evolvers:
+      - 118
+      - 302
+      - 301
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 4.25x, reduces damage received
+    by 25% and makes [STR], [DEX] and [QCK] orbs beneficial for Driven
+    characters
+special:
+  name: Beautiful Sword Barrier Barrage
+  description: Deals 75x character's ATK in Typeless damage to all enemies,
+    reduces any damage received above 5,000 HP by 97% for 1 turn, boosts ATK of
+    Driven characters by 2.25x for 1 turn and becomes Bartolomeo & Cavendish for
+    3 turns
+  cooldown: 21
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of Driven characters by 100
+characters:
+  swap:
+    description: Boosts Orb Effects of this character by 1.5x for 1 turn, reduces
+      damage received by 25% for 1 turn, recovers 5% of crew's MAX HP and
+      changes orb of this character into a Matching orb.
+  character1:
+    name: Bartolomeo - Bickering Rebels
+    japanName: バルトロメオ いがみ合う反逆者たち
+    class:
+      - Driven
+      - Striker
+    type: DEX
+    stats:
+      combo: 5
+      minLvl:
+        hp: 327
+        atk: 232
+        rcv: 62
+      maxLvl:
+        hp: 1598
+        atk: 738
+        rcv: 201
+    captain:
+      name: ""
+      description: Boosts ATK of Driven characters by 3.25x. If you don't attack with
+        Bartolomeo, reduces damage received by 25% for that turn.
+    sailor:
+      - description: Boosts base HP of Driven characters by 50
+  character2:
+    name: Cavendish - Bickering Rebels
+    japanName: キャベンディッシュ いがみ合う反逆者たち
+    class:
+      - Driven
+      - Slasher
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 327
+        atk: 271
+        rcv: 56
+      maxLvl:
+        hp: 1598
+        atk: 801
+        rcv: 188
+    captain:
+      name: ""
+      description: Boosts ATK of Driven characters by 3.25x, but boosts ATK of this
+        character by 3.75x
+    sailor:
+      - description: Boosts base ATK of Driven characters by 50
+rumble:
+  stats:
+    def: 311
+    rumbleType: DEF
+    spd: 137
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+  resilience:
+    - amount: 250
+      interval: 5
+      type: healing
+    - attribute: Powerhouse
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - ATK
+          level: 4
+          effect: buff
+          targeting:
+            targets:
+              - self
+    - effects:
+        - {}
+        - override:
+            level: 5
+    - effects:
+        - {}
+        - override:
+            level: 6
+    - effects:
+        - {}
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 8
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          effect: buff
+          level: 3
+          duration: 15
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          duration: 15
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 4
+            duration: 20
+        - override:
+            level: 4
+            duration: 20
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 4
+            duration: 21
+        - override:
+            level: 4
+            duration: 21
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 5
+            duration: 23
+        - override:
+            level: 5
+            duration: 23
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 5
+            duration: 25
+        - override:
+            level: 5
+            duration: 25
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 5
+            duration: 26
+        - override:
+            level: 5
+            duration: 26
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 6
+            duration: 28
+        - override:
+            level: 6
+            duration: 28
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 7
+            duration: 30
+        - override:
+            level: 7
+            duration: 30
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

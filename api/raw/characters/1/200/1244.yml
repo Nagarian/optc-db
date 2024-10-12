@@ -1,0 +1,51 @@
+type: INT
+name: Hack Revolutionary and Fish-Man Karate Master
+japanName: ハック 革命軍・魚人空手師範
+family:
+  - Hack
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 849
+    atk: 523
+    rcv: 51
+  maxLvl:
+    hp: 1872
+    atk: 1201
+    rcv: 172
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 37426
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.75x and boosts ATK of
+    Powerhouse characters by 1.3x
+  notes: Attack boost stacks, so a Fighter/Powerhouse character has a 2.275x ATK
+special:
+  name: Fishman karate, KO blow
+  description: Deals 15x character's ATK in [INT] damage to all enemies. Changes
+    the orb of this character into an [INT] orb and changes orbs of adjacent
+    characters into [G] orbs
+  cooldown: 20
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Sabo and Koala
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

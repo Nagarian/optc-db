@@ -1,0 +1,48 @@
+type: STR
+name: Gasparde Gasparde Pirates
+japanName: ガスパーデ ガスパーデ海賊団
+family:
+  - Gasparde
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 1437
+    atk: 516
+    rcv: 63
+  maxLvl:
+    hp: 2501
+    atk: 1002
+    rcv: 198
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 30770
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Cost 20 or less characters by 2x and boosts HP of
+    Powerhouse characters by 1.2x
+special:
+  name: Emerald Porcupine Robe
+  description: Deals 20x character's ATK in [STR] damage to one enemy. Boosts ATK
+    of Powerhouse characters by 1.5x for 1 turn.
+  cooldown: 26
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

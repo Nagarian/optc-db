@@ -1,0 +1,48 @@
+type: PSY
+name: Monkey D. Luffy - Wild Pirate
+japanName: モンキー・D・ルフィ 野生の海賊
+family:
+  - MonkeyDLuffy
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 226
+    atk: 154
+    rcv: 51
+  maxLvl:
+    hp: 1104
+    atk: 602
+    rcv: 143
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - shop
+links:
+  gamewithId: 39075
+aliases:
+  - Wild Luffy
+evolution:
+  - id: 1285
+    evolvers:
+      - 95
+      - 96
+      - 97
+      - 303
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 1.5x and their HP by 1.2x
+special:
+  name: Wild Hunt
+  description: Reduces Bind and Silence duration by 3 turns. Randomizes
+    non-Matching orbs, including [BLOCK] orbs
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Reduces Silence duration by 3 turns of this character

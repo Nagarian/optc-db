@@ -1,0 +1,45 @@
+type: DEX
+name: Caesar Clown
+japanName: シーザー・クラウン
+family:
+  - CaesarClown
+class:
+  - Driven
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 71
+    atk: 141
+    rcv: 71
+  maxLvl:
+    hp: 989
+    atk: 740
+    rcv: 204
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 19810
+aliases: []
+evolution:
+  - id: 838
+    evolvers:
+      - 83
+      - 86
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x
+special:
+  name: Gas Robe
+  description: Poisons all enemies, boosts ATK of Driven characters by 1.75x for 2 turns
+  cooldown: 25
+  maxLevel: 8
+  notes: "`poison : 0.5x`"

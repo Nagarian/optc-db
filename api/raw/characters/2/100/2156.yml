@@ -1,0 +1,91 @@
+type: INT
+name: Pekoms - Returning Home
+japanName: ペコムズ 故郷への帰国
+family:
+  - Pekoms
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 965
+    atk: 854
+    rcv: 109
+  maxLvl:
+    hp: 2560
+    atk: 1417
+    rcv: 301
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 110395
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.75x, protects from defeat as
+    long as HP is above ?%
+special:
+  name: Flicker Power Knuckle
+  description: Deals 20% of enemies' current HP in True damage to one enemy and
+    removes enemies' Increased Defense buff duration completely
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+  - description: Makes [INT] orbs beneficial for Fighter characters
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - HP
+  criteria: Pedro and Nekomamushi
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 8
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 20
+    - rcv: 15
+    - type: potential
+    - atk: 20
+    - hp: 30
+    - atk: 30
+    - hp: 30
+    - hp: 30
+    - slot: 1
+    - hp: 40
+    - hp: 60
+    - type: sailor
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,110 @@
+type: PSY
+name: Nami - A Welcoming Embrace
+japanName: ナミ 歓迎の抱擁
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1165
+    atk: 824
+    rcv: 93
+  maxLvl:
+    hp: 2588
+    atk: 1373
+    rcv: 311
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 225017
+aliases:
+  - WCI Nami
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2.5x and their RCV by 1.2x.
+special:
+  name: Trembling Tears
+  description: Reduces Bind, Despair and Burn duration by 2 turns, reduces Special
+    Cooldown of all characters by 1 turn and boosts the Color Affinity of [STR]
+    and [PSY] characters by 1.75x for 1 turn.
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy and Vinsmoke Sanji
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 30
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - atk: 20
+    - slot: 1
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - hp: 90
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

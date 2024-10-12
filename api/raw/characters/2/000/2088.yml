@@ -1,0 +1,52 @@
+type: INT
+name: Sanji - Let's Go to the Pirate Festival!
+japanName: サンジ Let’s go for PIRATE FESTIVAL
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 708
+    atk: 333
+    rcv: 51
+  maxLvl:
+    hp: 1990
+    atk: 1252
+    rcv: 201
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 102414
+aliases:
+  - Pizza Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 1.5x and their HP by 1.2x
+special:
+  name: Kicking in Table Manners
+  description: Changes [RCV] and [TND] orbs into Matching orbs, boosts Orb Effects
+    of all characters by 1.5x for 1 turn.
+  cooldown: 17
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

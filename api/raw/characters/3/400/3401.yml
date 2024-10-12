@@ -1,0 +1,213 @@
+type: INT
+name: Baby 5 - Summer Night Vacation
+japanName: ベビー５ サマーナイトバカンス
+family:
+  - Baby5
+class:
+  - Cerebral
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1407
+    atk: 661
+    rcv: 156
+  maxLvl:
+    hp: 2813
+    atk: 1321
+    rcv: 311
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 289191
+aliases:
+  - Swimsuit Baby 5
+  - Summer Baby 5
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Shooter characters by 3x and their HP by 1.2x.
+special:
+  name: Pretty Maiden at the Water's Edge
+  description: Changes the orb, including [BLOCK] orbs, of this character into a
+    [SUPERBOMB] orb, reduces Burn duration by 4 turns, reduces enemies' Percent
+    Damage Reduction duration by 4 turns and boosts Orb Effects of Cerebral and
+    Shooter characters by 1.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 40
+  - description: Makes [BOMB] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Sai
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces Burn duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Burn duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Burn duration by 2 turns.
+    - Once per adventure, when the supported character uses their special,
+      reduces Burn duration by 2 turns.
+    - Once per adventure, when the supported character uses their special,
+      reduces Burn duration by 3 turns.
+limitBreak:
+  path:
+    - atk: 30
+    - atk: 30
+    - rcv: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - hp: 30
+    - rcv: 30
+    - cooldown: 1
+    - hp: 40
+    - rcv: 40
+    - type: sailor
+    - atk: 40
+    - hp: 50
+    - type: potential
+    - atk: 50
+    - rcv: 40
+    - hp: 60
+    - atk: 75
+    - cooldown: 1
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 146
+    rumbleType: DBF
+    spd: 142
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.1
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 50
+          duration: 5
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.2
+        - override:
+            chance: 55
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            chance: 60
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            chance: 65
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            chance: 70
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            chance: 75
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            chance: 80
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            chance: 85
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            chance: 90
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1
+        - override:
+            chance: 100

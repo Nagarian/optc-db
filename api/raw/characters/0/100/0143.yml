@@ -1,0 +1,37 @@
+type: QCK
+name: Fighter Group Crew - Blue Pirates
+japanName: 格闘隊 隊員 ブルーパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 220
+    atk: 93
+    rcv: 10
+  maxLvl:
+    hp: 727
+    atk: 412
+    rcv: 31
+cost: 6
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 2204
+aliases: []
+evolution:
+  - id: 270
+    evolvers:
+      - 115
+      - 116
+      - 90
+special:
+  name: Iron Shield
+  description: Reduces damage received by 20% for 1 turn
+  cooldown: 25
+  maxLevel: 16

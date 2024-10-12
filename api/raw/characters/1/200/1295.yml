@@ -1,0 +1,47 @@
+type: STR
+name: "Kalifa: Glamorous Mummy"
+japanName: カリファ　グラマラスミイラ
+family:
+  - Kalifa
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 96
+    atk: 83
+    rcv: 44
+  maxLvl:
+    hp: 836
+    atk: 422
+    rcv: 277
+cost: 13
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 40554
+aliases:
+  - Halloween Kalifa
+evolution:
+  - id: 1296
+    evolvers:
+      - 117
+      - 78
+      - 84
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [STR] characters by 1.5x
+special:
+  name: Mysterious Hour of the Dark Night
+  description: Reduces Paralysis duration by 3 turns, removes Poison duration
+    completely and reduces the defense of all enemies by 100% for 1 turn
+  cooldown: 16
+  maxLevel: 1

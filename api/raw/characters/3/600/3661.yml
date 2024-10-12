@@ -1,0 +1,90 @@
+type: PSY
+name: Tony Tony Chopper - Ship Doctor Floating in the Sea
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1542
+    atk: 703
+    rcv: 111
+  maxLvl:
+    hp: 3084
+    atk: 1406
+    rcv: 222
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - Summer TM Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [PSY] characters by 2.5x, by 3.125x after
+    the 4th PERFECTs in a row, boosts HP of [DEX] and [PSY] characters by 1.25x
+    and recovers 800 HP at the end of each turn.
+special:
+  name: Sparkling Ocean Splashes
+  description: Applies PERFECTs Harder to Hit and Chain Coefficient Reduction
+    Immunity for 3 turns and boosts Color Affinity of [DEX] and [PSY] characters
+    by 1.75x for 1 turn. If during that turn you score 2 PERFECT hits, boosts
+    base ATK of [DEX] and [PSY] characters by 900 for 1 turn in the following
+    turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [PSY] orbs beneficial for all characters
+  - description: Changes all orbs into [PSY] orbs at the start of the fight
+support:
+  type: descriptive
+  criteria: Nami, Nico Robin and Franky
+  levels:
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 70% and makes PERFECTs slightly easier to hit for 1 turn.
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 70% and makes PERFECTs slightly easier to hit for 1 turn.
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 70% and makes PERFECTs slightly easier to hit for 1 turn.
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 70% and makes PERFECTs slightly easier to hit for 1 turn.
+    - Once per adventure, when you reach the final stage, reduces crew's current
+      HP by 70% and makes PERFECTs easier to hit for 1 turn.
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - rcv: 20
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 40
+    - atk: 40
+    - rcv: 20
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,239 @@
+type: QCK
+name: Sasaki - Superb Armored Division
+japanName: ササキ 鉄壁の“装甲部隊”
+family:
+  - Sasaki
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1630
+    atk: 740
+    rcv: 82
+  maxLvl:
+    hp: 3260
+    atk: 1480
+    rcv: 164
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+aliases:
+  - Fortnight
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Powerhouse characters by 3x and
+    reduces damage received by 15%.
+special:
+  name: Barrage of the Armored Division
+  description: Reduces Increase Damage Taken and Despair duration by 5 turns,
+    changes [STR], [DEX], [QCK], [INT] and [PSY] orbs of Free Spirit and
+    Powerhouse characters into Matching orbs and reduces damage received by 25%
+    for 10 turns. If your crew has Percent Damage Reduction at the time the
+    special is activated, boosts Orb Effects of Free Spirit and Powerhouse
+    characters by 2x for 1 turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 40
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: X Drake, Page One, Ulti, Black Maria and Who's-Who
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 10% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 15% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 20% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 25% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 30% for 1 turn.
+limitBreak:
+  path:
+    - atk: 30
+    - atk: 30
+    - rcv: 30
+    - type: potential
+    - slot: 1
+    - hp: 20
+    - hp: 30
+    - rcv: 50
+    - cooldown: 1
+    - hp: 30
+    - rcv: 60
+    - type: sailor
+    - hp: 40
+    - atk: 40
+    - type: potential
+    - hp: 40
+    - hp: 50
+    - atk: 50
+    - atk: 75
+    - cooldown: 1
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - threshold: 10
+        - threshold: 20
+        - threshold: 30
+        - threshold: 40
+        - value: 1
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 160
+    rumbleType: ATK
+    spd: 148
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 3
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 50
+          duration: 6
+          effect: hinderance
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            chance: 52
+            duration: 6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1
+        - override:
+            chance: 54
+            duration: 6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            chance: 56
+            duration: 7
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            chance: 58
+            duration: 7
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            chance: 60
+            duration: 8
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            chance: 62
+            duration: 8
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            chance: 64
+            duration: 9
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            chance: 66
+            duration: 9
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            chance: 70
+            duration: 10

@@ -1,0 +1,181 @@
+type: DUAL
+name: Sanji & Judge - Parting of Father and Son
+japanName: サンジ＆ジャッジ 父子の訣別
+family:
+  - VinsmokeSanji
+  - VinsmokeJudge
+class:
+  - Powerhouse
+  - Fighter
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1927
+    atk: 811
+    rcv: 143
+  maxLvl:
+    hp: 4028
+    atk: 1642
+    rcv: 288
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 143675
+aliases:
+  - Yellow Ranger
+  - Black Ranger
+  - Sanji&Judge
+  - SanjiJudge
+  - Judge&Sanji
+  - JudgeSanji
+  - SanJudge
+  - Judgji
+  - Judji
+  - S/J
+  - Legend Sanji and Judge
+captain:
+  name: ""
+  description: If there are 6 Powerhouse characters in your crew, boosts ATK of
+    Powerhouse characters by 4.25x. If there is a [STR], [DEX], [QCK], [PSY] and
+    [INT] character in your crew, boosts HP of Powerhouse characters by 1.25x
+    and makes [PSY], [RCV] and [TND] orbs beneficial for all characters.
+special:
+  name: Crack & Strike
+  description: Boosts ATK of Powerhouse characters by 2x for 1 turn, boosts Orb
+    Effects of Powerhouse characters by 2x for 1 turn, reduces Paralysis
+    duration by 5 turns and becomes Sanji & Judge for 3 turns
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Powerhouse characters by 75
+  - description: Makes [PSY], [TND] and [RCV] orbs beneficial for Powerhouse characters
+characters:
+  swap:
+    description: Removes Silence duration completely on this character, changes orb,
+      including [BLOCK] orbs, of this character into a [TND] orb and boosts
+      Chain Multiplier Growth Rate by 1.25x for 1 turn.
+  character1:
+    name: Sanji - Parting of Father and Son
+    japanName: サンジ 父子の訣別
+    class:
+      - Powerhouse
+      - Fighter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1398
+        atk: 782
+        rcv: 128
+      maxLvl:
+        hp: 2856
+        atk: 1592
+        rcv: 256
+    captain:
+      name: ""
+      description: If there are 6 Powerhouse characters in your crew, boosts ATK of
+        Powerhouse characters by 3.5x, their HP by 1.25x and makes [RCV] and
+        [TND] orbs beneficial for Powerhouse characters.
+    sailor:
+      - description: Makes [TND] and [RCV] orbs beneficial for this character
+      - description: Makes [PSY], [TND] and [RCV] orbs beneficial for Powerhouse characters
+  character2:
+    name: Judge - Parting of Father and Son
+    japanName: ジャッジ 父子の訣別
+    class:
+      - Powerhouse
+      - Driven
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1601
+        atk: 756
+        rcv: 99
+      maxLvl:
+        hp: 3214
+        atk: 1548
+        rcv: 198
+    captain:
+      name: ""
+      description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+        your crew, boosts ATK of all characters by 3.5x, their HP by 1.25x and
+        makes [PSY] orbs beneficial for all characters.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Powerhouse characters by 50
+      - description: Makes [PSY], [TND] and [RCV] orbs beneficial for Powerhouse characters
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - atk: 15
+    - atk: 15
+    - atk: 20
+    - hp: 50
+    - hp: 50
+    - hp: 60
+    - hp: 70
+    - type: potential
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 15
+    - atk: 20
+    - atk: 25
+    - atk: 30
+    - atk: 35
+    - hp: 80
+    - hp: 120
+    - rcv: 20
+    - atk: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 100

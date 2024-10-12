@@ -1,0 +1,98 @@
+type: INT
+name: Roronoa Zoro - Straw Hat Pirates Enjoying the FES
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1542
+    atk: 748
+    rcv: 101
+  maxLvl:
+    hp: 3084
+    atk: 1496
+    rcv: 202
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - RED
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [INT] and Slasher characters by 3x and boosts HP
+    of [INT] and Slasher characters by 1.2x.
+special:
+  name: Assaulting Aerial Slash
+  description: Reduces Special Cooldown of all characters by 1 turn, deals 10% of
+    enemies' current HP in damage to all enemies, reduces enemies' Threshold
+    Damage Reduction duration by 5 turns, reduces Paralysis and Chain Multiplier
+    Limit duration by 5 turns and locks the chain multiplier at 3.25x for 3
+    turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+  - description: Boosts base ATK of all characters by 100
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji, Franky and Jinbe
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, changes the orb of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, changes the orb of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, changes the orb of the supported character into a Matching orb
+      and locks the chain multiplier at 2.25x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, changes the orb of the supported character into a Matching orb
+      and locks the chain multiplier at 2.25x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, changes the orb of the supported character into a Matching orb
+      and locks the chain multiplier at 2.5x for 2 turns.
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - rcv: 20
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 40
+    - atk: 40
+    - rcv: 20
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

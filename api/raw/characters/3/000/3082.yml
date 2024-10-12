@@ -1,0 +1,344 @@
+type: STR
+name: Usoland - The Sniper's Path
+japanName: ウソランド 狙撃手の花道
+family:
+  - Usopp
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 948
+    atk: 538
+    rcv: 123
+  maxLvl:
+    hp: 2370
+    atk: 1344
+    rcv: 308
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 225570
+aliases:
+  - PF Usopp
+captain:
+  name: ""
+  description: If HP is above 70% at the start of the turn, boosts ATK of [STR]
+    characters by 3.5x, by 2.5x otherwise.
+special:
+  name: Specialty Explosive Star
+  description: Reduces Special Cooldown of [STR] characters by 2 turns, reduces
+    Bind and ATK DOWN duration by 5 turns and boosts ATK against delayed enemies
+    by 1.75x for 1 turn.
+  cooldown: 19
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [STR] characters by 30
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 50
+    - rcv: 100
+    - captain:
+        description: If HP is above 70% at the start of the turn, boosts ATK of [STR]
+          characters by 3.5x, by 2.5x otherwise, their HP by 1.25x and recovers
+          2x character's RCV in HP at the end of each turn.
+    - type: potential
+    - cooldown: 3
+    - atk: 150
+    - hp: 200
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 192
+    rumbleType: DBF
+    spd: 153
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+  special:
+    - cooldown: 24
+      effects:
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.33
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.36
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.39
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.42
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.45
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.48
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.51
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.54
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 24
+      effects:
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+            - Guard
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - DEX

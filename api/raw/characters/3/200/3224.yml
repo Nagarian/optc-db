@@ -1,0 +1,54 @@
+type: DEX
+name: Zorojuro - Swordsman Missing a Katana
+japanName: ゾロ十郎 刀奪われた剣士
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 771
+    atk: 449
+    rcv: 35
+  maxLvl:
+    hp: 1713
+    atk: 998
+    rcv: 79
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 252730
+aliases:
+  - V3 Legend Zoro
+evolution:
+  - id: 3225
+    evolvers:
+      - 118
+      - 302
+      - 1180
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 5x, by 4.5x otherwise, their HP
+    by 1.5x, boosts ATK of all other characters by 4x and reduces Silence
+    duration by 10 turns. Deals 20% of enemies' current HP in damage to all
+    enemies at the start of every stage if total Damage Taken is 20,000 or more
+special:
+  name: "Rend: Purgatory Onigiri"
+  description: Reduces Special Cooldown of all characters by 2 turns, makes own
+    attacks ignore damage reducing Barriers and Buffs, deals 100x character's
+    ATK in Typeless Fixed True damage to all enemies and boosts Orb Effects of
+    [DEX] characters by 2.5x-2.75x for 1 turn, based on total damage taken.
+  cooldown: 20
+  maxLevel: 6
+  notes: |-
+    0-19,999 Damage Taken: 2.5x orb boost  
+    20,000+ Damage Taken: 2.75x orb boost

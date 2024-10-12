@@ -1,0 +1,47 @@
+type: INT
+name: Musshuru
+japanName: ムッシュール
+family:
+  - Musshuru
+class:
+  - Driven
+  - Fighter
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 103
+    atk: 110
+    rcv: 34
+  maxLvl:
+    hp: 729
+    atk: 530
+    rcv: 189
+cost: 16
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 30798
+aliases:
+  - Colo Musshuru
+  - Coliseum Musshuru
+evolution:
+  - id: 1087
+    evolvers:
+      - 117
+      - 88
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Driven characters by 1.5x
+special:
+  name: Lot Stiffen
+  description: Randomizes all orbs, including [BLOCK] orbs. boosts Orb Effects of
+    all characters by 1.5x for 2 turns
+  cooldown: 20
+  maxLevel: 11

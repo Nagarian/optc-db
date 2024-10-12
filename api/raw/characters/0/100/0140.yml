@@ -1,0 +1,35 @@
+type: INT
+name: Shooter Group Cabin Boy - Black Pirates
+japanName: 狙撃隊 雑用 ブラックパイレーツ
+family:
+  - ShooterGroupCrewPirates
+class:
+  - Shooter
+rarity: 1
+stats:
+  combo: 6
+  minLvl:
+    hp: 41
+    atk: 22
+    rcv: 23
+  maxLvl:
+    hp: 139
+    atk: 64
+    rcv: 74
+cost: 3
+slots: 0
+maxExp: 2330
+maxLevel: 10
+flags: []
+links:
+  gamewithId: 2341
+aliases: []
+evolution:
+  - id: 161
+    evolvers:
+      - 93
+special:
+  name: Hyper Shot
+  description: Deals 5x character's ATK in character's Type damage to all enemies
+  cooldown: 35
+  maxLevel: 26

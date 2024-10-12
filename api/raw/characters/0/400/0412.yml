@@ -1,0 +1,91 @@
+type: STR
+name: Bartholomew Kuma - Warlord of the Sea
+japanName: バーソロミュー・くま 王下七武海
+family:
+  - BartholomewKuma
+class:
+  - Shooter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1445
+    atk: 644
+    rcv: 82
+  maxLvl:
+    hp: 2734
+    atk: 1205
+    rcv: 262
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 9031
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and HP of [STR] characters by 2x
+special:
+  name: Ursa Shock
+  description: Changes orbs of adjacent characters into [STR] orbs, deals 1,000
+    Fixed damage to all enemies
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 50
+  - description: Makes [STR] orbs beneficial for Shooter characters
+support:
+  type: descriptive
+  criteria: Sentomaru and Borsalino (Kizaru)
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orbs of the supported and adjacent
+      characters into Matching orbs.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - cooldown: 3
+    - rcv: 30
+    - slot: 1
+    - cooldown: 4
+    - type: sailor
+    - atk: 50
+    - hp: 140
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

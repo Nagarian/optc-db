@@ -1,0 +1,216 @@
+type: STR
+name: Blamenco
+japanName: ブラメンコ
+family:
+  - Blamenco
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 204
+    atk: 192
+    rcv: 34
+  maxLvl:
+    hp: 1150
+    atk: 775
+    rcv: 150
+cost: 18
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 4862
+aliases: []
+evolution:
+  - id: 259
+    evolvers:
+      - 118
+      - 84
+      - 94
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [STR] characters by 2x
+special:
+  name: Pocket Mallet
+  description: Changes [DEX] and [QCK] orbs into [STR] orbs
+  cooldown: 20
+  maxLevel: 11
+rumble:
+  stats:
+    def: 186
+    rumbleType: DEF
+    spd: 110
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 11
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 12
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 13
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 14
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 15
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 16
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 17
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 18
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 19
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Provoke
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - self

@@ -1,0 +1,451 @@
+type: INT
+name: Eustass "Captain" Kid - Demonic Figure
+family:
+  - EustassKid
+class:
+  - Driven
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1923
+    atk: 882
+    rcv: 111
+  maxLvl:
+    hp: 3847
+    atk: 1765
+    rcv: 223
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Super Tandem Legend
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Striker and Driven characters by 3
+    turns at the start of the fight, boosts ATK of Striker and Driven characters
+    by 5.25x, boosts HP of Striker and Driven characters by 1.65x, makes [QCK],
+    [INT] and [TND] orbs beneficial for Striker and Driven characters and
+    reduces crew's current HP by 10% at the end of each turn.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Killer,
+    Heat or Wire, excluding Support members or HP must be below 50%."
+  description: Deals 100x character's ATK in Typeless True damage to all enemies,
+    reduces Special Cooldown of Striker and Driven characters by 1 turn,
+    increases boost effects of ATK UP buffs applied by Striker and Driven
+    characters by 0.25x for 1 turn and transforms all Driven characters into
+    Super Driven characters.
+special:
+  name: Punk Vice
+  description: Deals 20% of enemies' current HP in True damage to all enemies,
+    increases Chain Tap Timing Bonus of Striker and Driven characters by
+    +0.2x-0.6x for 1 turn depending on Tap Timing, boosts ATK of Striker and
+    Driven characters by 2.75x for 1 turn, changes [STR], [DEX], [QCK], [PSY],
+    [INT] and [BLOCK] orbs of Striker and Driven characters into [TND] orbs and
+    barriers Striker and Driven character's orbs for 1 PERFECT hit. If your crew
+    has ATK UP, boosts Orb Effects of Striker and Driven characters by 2.5x for
+    2 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [TND] orbs beneficial for Striker and Driven characters
+  - description: Boosts base ATK, HP and RCV of Striker and Driven characters by 100
+support:
+  type: descriptive
+  criteria: Killer, Heat or Wire
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.2x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.25x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.3x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.35x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.5x until the next stage.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - type: potential
+    - hp: 40
+    - atk: 10
+    - rcv: 10
+    - hp: 50
+    - rcv: 10
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 60
+    - hp: 70
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - atk: 20
+    - hp: 80
+    - atk: 30
+    - hp: 100
+    - rcv: 20
+    - type: sailor
+    - atk: 30
+    - rcv: 20
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 20
+    - atk: 50
+    - hp: 100
+    - rcv: 30
+    - hp: 200
+    - atk: 50
+    - hp: 200
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Driven characters. Any 1 of the following:
+          Killer, Heat, Wire or Monkey D. Luffy."
+        description: Boosts Tandem ATK of Striker and Driven characters by 1.25x for 1
+          turn and reduces the defense of all enemies by 50% for 1 turn.
+      - criteria: "Any 2 of the following: Driven characters. Any 1 of the following:
+          Killer, Heat, Wire or Monkey D. Luffy."
+        description: Boosts Tandem ATK of Striker and Driven characters by 1.5x for 1
+          turn and reduces the defense of all enemies by 50% for 1 turn.
+      - criteria: "Any 2 of the following: Driven characters. Any 1 of the following:
+          Killer, Heat, Wire or Monkey D. Luffy."
+        description: Boosts Tandem ATK of Striker and Driven characters by 1.5x for 1
+          turn and reduces the defense of all enemies by 80% for 1 turn.
+      - criteria: "Any 2 of the following: Striker or Driven characters. Any 1 of the
+          following: Killer, Heat, Wire or Monkey D. Luffy."
+        description: Boosts Tandem ATK of Striker and Driven characters by 1.75x for 1
+          turn and reduces the defense of all enemies by 80% for 1 turn.
+      - criteria: "Any 1 of the following: Striker or Driven characters. Any 1 of the
+          following: Killer, Heat, Wire or Monkey D. Luffy."
+        description: Boosts Tandem ATK of Striker and Driven characters by 2x for 1 turn
+          and reduces the defense of all enemies by 100% for 1 turn.
+rumble:
+  stats:
+    def: 188
+    rumbleType: ATK
+    spd: 169
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 33
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - amount: 2.2
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 10
+          effect: hinderance
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 33
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 2.3
+        - override:
+            chance: 73
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 33
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 2.4
+        - override:
+            chance: 76
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 2.5
+        - override:
+            chance: 79
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            amount: 2.6
+        - override:
+            chance: 82
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 2.7
+        - override:
+            chance: 85
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            amount: 2.8
+        - override:
+            chance: 88
+        - override:
+            level: 6
+            duration: 14
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            amount: 2.9
+        - override:
+            chance: 91
+        - override:
+            level: 6
+            duration: 14
+    - cooldown: 33
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 3
+        - override:
+            chance: 94
+        - override:
+            level: 7
+            duration: 15
+    - cooldown: 33
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 3.2
+        - override:
+            chance: 100
+        - override:
+            level: 8
+            duration: 15
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

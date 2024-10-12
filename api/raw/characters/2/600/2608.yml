@@ -1,0 +1,182 @@
+type: QCK
+name: Connie - Any Age, Any Time
+japanName: コニー 自在なる年齢
+family:
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 406
+    atk: 254
+    rcv: 68
+  maxLvl:
+    hp: 1017
+    atk: 635
+    rcv: 170
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 156172
+aliases:
+  - Jewelry Bonney
+evolution:
+  - id: 2609
+    evolvers:
+      - 266
+      - 90
+      - 96
+      - 90
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 2x, by 2.5x
+    instead if HP is above 50%.
+special:
+  name: Intruding on the Holy Land
+  description: Reduces Bind duration by 7 turns on three characters and boosts Orb
+    Effects of bottom row characters by 2.25x for 2 turns.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Free Spirit and Cerebral characters by 50
+rumble:
+  stats:
+    def: 110
+    rumbleType: RCV
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 13
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: percentage
+        - attributes:
+            - Action Bind
+          effect: boon
+          duration: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          duration: 20
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 21
+    - cooldown: 35
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 22
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 14
+        - {}
+        - override:
+            duration: 23
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 14
+        - {}
+        - override:
+            duration: 24
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 14
+        - {}
+        - override:
+            duration: 25
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 15
+        - {}
+        - override:
+            level: 2
+            duration: 26
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 15
+        - {}
+        - override:
+            level: 2
+            duration: 27
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 16
+        - {}
+        - override:
+            level: 2
+            duration: 28
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 17
+        - {}
+        - override:
+            level: 3
+            duration: 29

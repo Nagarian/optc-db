@@ -1,0 +1,97 @@
+type: QCK
+name: Nico Robin - 20th Anniversary Memorial Treasure
+japanName: ニコ・ロビン 20th Anniversary Memorial Treasure
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 878
+    atk: 478
+    rcv: 189
+  maxLvl:
+    hp: 2126
+    atk: 1200
+    rcv: 404
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 62646
+aliases:
+  - 20th Anniversary Robin
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x and their RCV by 1.3x
+special:
+  name: "Mil Fleur: Gigantesco Mano"
+  description: Binds self for 1 turn, changes [BLOCK] orbs into [EMPTY] orbs,
+    deals 15x-450x character's ATK in Typeless damage to all enemies and boosts
+    ATK against enemies with reduced defense by 1.5x for 2 turns
+  cooldown: 17
+  maxLevel: 5
+  notes: "The exact multiplier used is chosen based on the number of [BLOCK] orbs
+    consumed: 0 orbs - 15x ATK; 1 orb - 36x ATK; 2 orbs - 60x ATK; 3 orbs - 105x
+    ATK; 4 orbs - 195x ATK; 5 orbs - 300x ATK; 6 orbs - 450x ATK."
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters if your Captain is a
+      Fighter character
+  - description: Makes [DEX] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Tony Tony Chopper and Franky
+  levels:
+    - Once per adventure, when the supported character uses a Defense Reducing
+      special, boosts ATK against enemies with reduced defense by 1.1x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Defense Reducing
+      special, boosts ATK against enemies with reduced defense by 1.1x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Defense Reducing
+      special, boosts ATK against enemies with reduced defense by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Defense Reducing
+      special, boosts ATK against enemies with reduced defense by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Defense Reducing
+      special, boosts ATK against enemies with reduced defense by 1.3x for 1
+      turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 20
+    - rcv: 30
+    - type: potential
+    - hp: 50
+    - atk: 30
+    - hp: 40
+    - type: sailor
+    - hp: 50
+    - cooldown: 1
+    - rcv: 30
+    - hp: 60
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

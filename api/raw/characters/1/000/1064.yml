@@ -1,0 +1,34 @@
+type: INT
+name: Sneaky Archer Kuja Warrior
+japanName: 謀略の女射手 九蛇の戦士
+family:
+  - FemaleArcherINT
+class:
+  - Shooter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 58
+    atk: 28
+    rcv: 44
+  maxLvl:
+    hp: 901
+    atk: 549
+    rcv: 266
+cost: 10
+slots: 1
+maxExp: 674274
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 30555
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and HP of [INT] characters by 1.2x
+special:
+  name: Auto Repair
+  description: Recovers 3x character's RCV in HP at the end of each turn for 5 turns
+  cooldown: 28
+  maxLevel: 11

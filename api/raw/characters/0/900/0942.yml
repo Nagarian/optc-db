@@ -1,0 +1,46 @@
+type: STR
+name: Franky - Mech-Animal Fighting Cyborg
+japanName: フランキー メカアニマルと戦う改造人間
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 220
+    atk: 112
+    rcv: 22
+  maxLvl:
+    hp: 1603
+    atk: 686
+    rcv: 131
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 24702
+aliases:
+  - Timeskip Franky
+  - 3D2Y Franky
+evolution:
+  - id: 943
+    evolvers:
+      - 118
+      - 83
+      - 84
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK and HP of [STR] characters by 1.5x
+special:
+  name: "Future Country's Big Incident: The Nightmare of Baldimore"
+  description: Reduces damage received from [QCK] enemies by 100% for 1 turn
+  cooldown: 15
+  maxLevel: 8

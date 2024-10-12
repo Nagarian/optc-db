@@ -1,0 +1,115 @@
+type: PSY
+name: Big Eater Jewelry Bonney
+japanName: 大喰らい ジュエリー・ボニー
+family:
+  - JewelryBonney
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1248
+    atk: 401
+    rcv: 158
+  maxLvl:
+    hp: 3000
+    atk: 720
+    rcv: 400
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 7211
+aliases:
+  - Supernova Bonney
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 2x
+special:
+  name: Big Eater
+  description: For 2 turns, boosts the amount healed by [RCV] orbs by 1.5x, then
+    2x, then 2.5x from the third crew member onward
+  cooldown: 13
+  maxLevel: 6
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 50 each
+  - description: If this character has a [RCV] orb and you hit a PERFECT with her,
+      keep her [RCV] orb for the next turn
+support:
+  type: descriptive
+  criteria: "[PSY] characters"
+  levels:
+    - Once per adventure, when you reach the final stage, randomizes supported
+      character's orb.
+    - Once per adventure, when you reach the final stage, randomizes supported
+      character's orb.
+    - Once per adventure, when you reach the final stage, randomizes supported
+      character's orb.
+    - Once per adventure, when you reach the final stage, randomizes supported
+      character's orb.
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [RCV] orb.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - atk: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - hp: 40
+    - hp: 60
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 6
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

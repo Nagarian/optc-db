@@ -1,0 +1,217 @@
+type: DEX
+name: Dogstorm Three Musketeers - Guardian Sulongs
+japanName: イヌアラシ三銃士 要守る“月の獅子”
+family:
+  - Sicilian
+  - Concelot
+  - Giovanni
+class:
+  - Slasher
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1587
+    atk: 788
+    rcv: 98
+  maxLvl:
+    hp: 3174
+    atk: 1576
+    rcv: 196
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Sulong
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight. Boosts ATK of Fighter and Slasher characters by 2.25x and
+    their HP by 1.2x.
+special:
+  name: Assaulting Sulong
+  description: Reduces Special Cooldown of all characters by 1 turn, reduces Bind
+    duration by 5 turns, reduces enemies' Increased Defense duration by 5 turns
+    and boosts the Color Affinity of Fighter and Slasher characters by 2x for 1
+    turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Boosts base ATK, HP and RCV of Fighter and Slasher characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 20
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - atk: 30
+    - hp: 40
+    - slot: 1
+    - rcv: 30
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 112
+    rumbleType: ATK
+    spd: 164
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 1500
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Damage Over Time
+          duration: 6
+          level: 1
+          chance: 100
+          effect: hinderance
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            level: 1
+            duration: 9
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1900
+        - override:
+            level: 1
+            duration: 10
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            level: 1
+            duration: 11
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2100
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2200
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2300
+        - override:
+            level: 1
+            duration: 14
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2500
+        - override:
+            level: 2
+            duration: 15

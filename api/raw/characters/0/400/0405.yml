@@ -1,0 +1,47 @@
+type: STR
+name: Absalom of the Graveyard
+japanName: 墓場のアブサロム
+family:
+  - Absalom
+class:
+  - Shooter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 1271
+    atk: 545
+    rcv: 77
+  maxLvl:
+    hp: 2601
+    atk: 1008
+    rcv: 192
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 8884
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x
+special:
+  name: Clear-Clear Fruit
+  description: Reduces damage received by 50% for 2 turns, boosts RCV of all
+    characters by 2x for 2 turns
+  cooldown: 23
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Hogback, Perona, Gecko Moria
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

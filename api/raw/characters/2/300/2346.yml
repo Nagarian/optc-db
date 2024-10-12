@@ -1,0 +1,106 @@
+type: INT
+name: Charlotte Galette - Big Mom Pirates
+japanName: シャーロット・ガレット ビッグ・マム海賊団
+family:
+  - CharlotteGalette
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1001
+    atk: 494
+    rcv: 198
+  maxLvl:
+    hp: 2210
+    atk: 1235
+    rcv: 420
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 131993
+aliases:
+  - Charlotte Gallette
+  - Charlotte Galete
+  - Charlotte Gallete
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 2.5x and makes [QCK]
+    and [INT] orbs beneficial for [QCK] and [INT] characters
+special:
+  name: Left-Handed Haul
+  description: Delays all enemies by 1 turn, reduces Special Cooldown of 1
+    selected character by 2 turns. If your Captain is a [QCK] or [INT]
+    character, locks the chain multiplier at 3x for 1 turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 20
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Charlotte Amande, Charlotte Opera and Bobbin
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - rcv: 5
+    - hp: 20
+    - rcv: 15
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 30
+    - atk: 50
+    - hp: 50
+    - slot: 1
+    - cooldown: 1
+    - type: sailor
+    - rcv: 30
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 8
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

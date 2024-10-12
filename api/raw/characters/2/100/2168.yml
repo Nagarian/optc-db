@@ -1,0 +1,64 @@
+type: INT
+name: Dogstorm - Mokomo Dukedom's Greatest Warrior
+japanName: イヌアラシ モコモ公国一の戦士
+family:
+  - Inuarashi
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 221
+    atk: 94
+    rcv: 17
+  maxLvl:
+    hp: 1250
+    atk: 703
+    rcv: 121
+cost: 12
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 112362
+aliases:
+  - Secret Inuarashi
+  - Limited Inuarashi
+  - Secret Dogstorm
+  - Limited Dogstorm
+  - Secret Dog Storm
+  - Limited Dog Storm
+evolution:
+  - id: 2169
+    evolvers:
+      - 117
+      - 82
+      - 93
+      - 99
+      - 104
+captain:
+  name: ""
+  description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+    crew, boosts ATK of all characters by 2x. If you use "Lightning
+    Counterattack" in this turn and there's a [STR], [DEX], [QCK], [PSY] and
+    [INT] character in your crew, boosts ATK of all characters by 2.75x instead,
+    by 1.375x otherwise.
+special:
+  name: Lightning Counterattack
+  description: Reduces Silence duration by 4 turns and reduces enemies' Threshold
+    Damage Reduction duration by 3 turns. If you are on a Treasure Map, boosts
+    Orb Effects of all characters by 1.75x-2.25x for 1 turn, depending on your
+    Treasure Map Level
+  cooldown: 12
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x orb boost  
+    Level 11-20: 2x orb boost  
+    Level 21+: 2.25x orb boost
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character

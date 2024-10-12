@@ -1,0 +1,375 @@
+type: PSY
+name: Boa Hancock - Straw Hat Luffy's Supporter
+japanName: ボア・ハンコック 麦わらのルフィの支援者
+family:
+  - BoaHancock
+class:
+  - Free Spirit
+  - Fighter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1459
+    atk: 761
+    rcv: 255
+  maxLvl:
+    hp: 3070
+    atk: 1477
+    rcv: 496
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 66496
+aliases:
+  - Mega/Super/6+ Hancock
+  - Korean Boa
+  - V1 Legend Boa Hancock
+  - Shichibukai
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 3x-3.75x based on the
+    timing of the attack of the previous unit in the chain and recovers 1,200 HP
+    at the end of each turn.
+  notes: A hit below Good or a Miss will boost the ATK of the next unit by 3x, a
+    Good hit by 3.25x, a Great hit by 3.5x and a PERFECT hit by 3.75x. This
+    bonus is applied only to Free Spirit characters.
+special:
+  name: Melo-Melo Combination
+  description: Deals 12 hits of 25,000 Fixed damage to random enemies, delays all
+    enemies by 1 turn and boosts the Color Affinity of Free Spirit characters by
+    2x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character if your Captain is a Free Spirit character
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Boa Marigold and Boa Sandersonia
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 9
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - rcv: 10
+    - hp: 40
+    - atk: 20
+    - rcv: 10
+    - hp: 50
+    - atk: 20
+    - type: sailor
+    - rcv: 15
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 15
+    - hp: 50
+    - atk: 25
+    - rcv: 15
+    - hp: 60
+    - atk: 25
+    - cooldown: 1
+    - rcv: 15
+    - hp: 70
+    - atk: 25
+    - rcv: 30
+    - hp: 80
+    - atk: 30
+    - hp: 90
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 3.25x-3.75x based on the
+          timing of the attack of the previous unit in the chain, their HP by
+          1.3x, and recovers 1,200 HP at the end of each turn
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 2
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 2
+          threshold: 20
+        - value: 2
+          threshold: 30
+        - value: 2
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 148
+    rumbleType: SPT
+    spd: 150
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - amount: 200
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 1100
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+        - attributes:
+            - Critical Hit
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            level: 2
+            duration: 11
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            level: 3
+            duration: 19
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            level: 3
+            duration: 20
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            level: 5
+            duration: 22
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 6
+            duration: 23
+        - override:
+            level: 4
+            duration: 23
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

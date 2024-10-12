@@ -1,0 +1,96 @@
+type: DEX
+name: Thousand-Armed Cracker
+japanName: 千手のクラッカー
+family:
+  - CharlotteCracker
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1167
+    atk: 739
+    rcv: 101
+  maxLvl:
+    hp: 2835
+    atk: 1510
+    rcv: 210
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 110168
+aliases:
+  - Raid Cracker
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.75x and their HP by 1.25x
+special:
+  name: Honey Pretzel
+  description: Reduces Chain Multiplier Limit duration by 5 turns, changes all
+    orbs, including [BLOCK] orbs, into [DEX] orbs, makes [DEX] orbs beneficial
+    for all characters for 1 turn and deals 20% of enemies' current HP in True
+    damage to one enemy.
+  cooldown: 30
+  maxLevel: 16
+  stages:
+    - description: Changes all orbs into [DEX] orbs, makes [DEX] orbs beneficial for
+        Cerebral characters and deals 10% of enemies' current HP in True damage
+        to one enemy.
+      cooldown: 26
+sailor:
+  - description: Boosts base ATK of Cerebral characters by 75
+  - description: Boosts base HP of [DEX] characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[DEX] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - rcv: 25
+    - type: sailor
+    - atk: 30
+    - hp: 40
+    - cooldown: 1
+    - atk: 30
+    - rcv: 35
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 8
+          threshold: 50

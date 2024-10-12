@@ -1,0 +1,332 @@
+type: INT
+name: "Robin: Halloween Avatar of the Night - Night of Halloween"
+japanName: ロビン ハロウィン・アバター・ザ・ナイト Night of Halloween
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1194
+    atk: 524
+    rcv: 126
+  maxLvl:
+    hp: 2984
+    atk: 1310
+    rcv: 316
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 297566
+aliases:
+  - TM Robin
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Fighter characters by 2.5x at the start
+    of the chain, by 2.75x after 3 PERFECTs in a row.
+special:
+  name: Moonlight Illusion
+  description: Recovers 10x character's RCV in HP at the end of each turn for 2
+    turns and boosts ATK of [INT], Fighter and Cerebral characters by 1.75x for
+    1 turn. If during that turn you score 3 PERFECT hits, boosts ATK of [INT],
+    Fighter and Cerebral characters by 2x for 2 turns in the following turn. If
+    HP is above 50,000 or there are 4 enemies or more on the stage at the time
+    the special is activated, reduces damage received by 100% for 1 turn.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Boosts base HP and RCV of Fighter and Cerebral characters by 100
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Cerebral and Fighter characters by 2.75x at the start
+          of the chain, by 3x after 3 PERFECTs in a row.
+    - type: sailor
+    - hp: 10
+    - atk: 10
+    - hp: 10
+    - captain:
+        description: Boosts ATK of Cerebral and Fighter characters by 3x at the start of
+          the chain, by 3.25x after 3 PERFECTs in a row.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - hp: 30
+    - captain:
+        description: Boosts ATK of Cerebral and Fighter characters by 3.25x at the start
+          of the chain, by 3.5x after 3 PERFECTs in a row.
+    - cooldown: 2
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - cooldown: 3
+    - slot: 1
+    - hp: 30
+    - atk: 40
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Cerebral and Fighter characters by 3.5x at the start
+          of the chain, by 3.75x after 3 PERFECTs in a row.
+    - rcv: 40
+    - rcv: 40
+    - type: sailor
+    - atk: 40
+    - atk: 50
+    - rcv: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Cerebral and Fighter characters by 3.75x at the start
+          of the chain, by 4x after 3 PERFECTs in a row.
+    - hp: 30
+    - hp: 40
+    - captain:
+        description: Boosts ATK of Cerebral and Fighter characters by 3.75x at the start
+          of the chain, by 4x after 3 PERFECTs in a row, recovers 1,000 HP at
+          the end of the turn.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 145
+    rumbleType: DBF
+    spd: 158
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 20
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            count: 3
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            count: 3
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            count: 4
+            targets:
+              - PSY
+    - cooldown: 20
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 20
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 20
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 20
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 20
+      effects:
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            level: 4
+            duration: 16
+    - cooldown: 20
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            level: 4
+            duration: 17
+    - cooldown: 20
+      effects:
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 20
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 20
+      effects:
+        - override:
+            level: 7
+            duration: 20
+        - override:
+            level: 7
+            duration: 20
+        - override:
+            level: 7
+            duration: 20

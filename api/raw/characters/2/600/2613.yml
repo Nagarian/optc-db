@@ -1,0 +1,46 @@
+type: STR
+name: Kaido - One of the Four Emperors
+japanName: カイドウ 四皇
+family:
+  - Kaido
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 942
+    atk: 547
+    rcv: 115
+  maxLvl:
+    hp: 2356
+    atk: 1278
+    rcv: 288
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 157345
+aliases:
+  - Secret Kaido
+  - Limited Kaido
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.5x.
+special:
+  name: Rejected Proclamation
+  description: Randomizes orbs of Striker and Driven characters into either [STR]
+    or [DEX] orbs and locks all orbs for 1 turn. If you are on a Treasure Map,
+    boosts Orb Effects of Striker and Driven characters by 1.75x-2.25x for 1
+    turn depending on your Treasure Map Level.
+  cooldown: 13
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x ATK boost  
+    Level 11-20: 2x ATK boost  
+    Level 21+: 2.25x ATK boost

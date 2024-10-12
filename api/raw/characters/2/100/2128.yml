@@ -1,0 +1,51 @@
+type: DEX
+name: Randolph - Brulee's Forces
+japanName: ランドルフ ブリュレ一派
+family:
+  - Randolph
+class:
+  - Slasher
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 864
+    atk: 492
+    rcv: 72
+  maxLvl:
+    hp: 2158
+    atk: 1201
+    rcv: 190
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 108425
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2x and boosts Chain Multiplier
+    Growth Rate by 1.3x
+special:
+  name: Cutting Lifelines
+  description: Reduces Special Cooldown of right column characters by 1 turn and
+    makes [DEX] and [RCV] orbs beneficial for Slasher and Striker characters for
+    1 turn
+  cooldown: 14
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Charlotte Brûlée
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

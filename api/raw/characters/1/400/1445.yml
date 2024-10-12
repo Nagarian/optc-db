@@ -1,0 +1,540 @@
+type: QCK
+name: Boa Hancock - Snake Princess
+japanName: ボア・ハンコック 蛇姫
+family:
+  - BoaHancock
+class:
+  - Free Spirit
+  - Shooter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1559
+    atk: 803
+    rcv: 303
+  maxLvl:
+    hp: 3002
+    atk: 1480
+    rcv: 507
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 9034
+aliases:
+  - Mega/Super/6+ Boa Hancock
+  - Shichibukai
+  - V1 Legend Boa Hancock
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 2.25x-2.75x, depending
+    on the crew's current HP. If HP is below 50%, boosts RCV of [QCK] and [PSY]
+    characters by 1.5x.
+  notes: "`captainProportional : higher : 2.25 + 0.5 * (remaining HP) / (total HP)
+    : 2.75 : 2.25`"
+special:
+  name: Perfume Femur
+  description: Boosts ATK and RCV of [QCK] and [PSY] characters by 1.75x for 1
+    turn and delays all enemies by 1 turn. Changes the orb of your Captain
+    character into a [RCV] orb. If HP is above 50%, changes all orbs of left
+    column characters into Matching orbs.
+  cooldown: 17
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] and [PSY] characters by 30
+  - description: Boosts base ATK of [QCK] and [PSY] characters by 75
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Boa Sandersonia, Boa Marigold
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      recovers 500 HP and changes orbs of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,000 HP and changes orbs of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,500 HP and changes orbs of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 2,000 HP and changes orbs of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 2,500 HP and changes all orbs of left column characters into
+      Matching orbs.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - hp: 60
+    - hp: 70
+    - hp: 80
+    - hp: 90
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 50
+    - rcv: 20
+    - atk: 50
+    - rcv: 20
+    - hp: 100
+    - rcv: 80
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 125
+    rumbleType: RCV
+    spd: 173
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          condition:
+            comparator: above
+            count: 60
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - RCV
+          effect: buff
+          level: 5
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - QCK
+              - PSY
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 8
+        - override:
+            level: 8
+    - effects:
+        - override:
+            level: 9
+        - override:
+            level: 9
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 550
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.75
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 575
+        - override:
+            level: 2
+        - override:
+            amount: 0.8
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 600
+        - override:
+            level: 2
+        - override:
+            amount: 0.84
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 625
+        - override:
+            level: 2
+        - override:
+            amount: 0.89
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 650
+        - override:
+            level: 2
+        - override:
+            amount: 0.94
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 675
+        - override:
+            level: 2
+        - override:
+            amount: 0.99
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 700
+        - override:
+            level: 3
+        - override:
+            amount: 1.03
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 725
+        - override:
+            level: 3
+        - override:
+            amount: 1.08
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 750
+        - override:
+            level: 3
+        - override:
+            amount: 1.13
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 4
+        - override:
+            amount: 1.25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+              effect: buff
+              level: 5
+              condition:
+                comparator: above
+                count: 50
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - QCK
+                  - PSY
+            - attributes:
+                - RCV
+              effect: buff
+              level: 5
+              condition:
+                comparator: below
+                count: 50
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - QCK
+                  - PSY
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 7
+        - effects:
+            - override:
+                level: 8
+            - override:
+                level: 8
+        - effects:
+            - override:
+                level: 10
+            - override:
+                level: 10
+  - captain:
+      - description: Boosts ATK of [QCK] and [PSY] characters by 5x, boosts HP of [QCK]
+          and [PSY] characters by 1.3x, makes [QCK] and [PSY] orbs beneficial
+          for [QCK] and [PSY] characters. If HP is below 50%, boosts RCV of
+          [QCK] and [PSY] characters by 1.5x, reduces damage received by 20% and
+          makes PERFECTs consume [RCV] orbs.
+  - rumble:
+      special:
+        - cooldown: 34
+          effects:
+            - amount: 1500
+              effect: damage
+              targeting:
+                count: 3
+                targets:
+                  - enemies
+              type: fixed
+            - attributes:
+                - SPD
+              duration: 20
+              effect: debuff
+              level: 2
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+            - amount: 1.5
+              effect: recharge
+              targeting:
+                targets:
+                  - crew
+              type: RCV
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 1650
+            - override:
+                level: 2
+            - override:
+                amount: 1.65
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 1800
+            - override:
+                level: 2
+            - override:
+                amount: 1.8
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 1950
+            - override:
+                level: 3
+            - override:
+                amount: 1.95
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 2100
+            - override:
+                level: 3
+            - override:
+                amount: 2.1
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 2250
+            - override:
+                level: 4
+            - override:
+                amount: 2.25
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 2400
+            - override:
+                level: 4
+            - override:
+                amount: 2.4
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 2550
+            - override:
+                level: 4
+            - override:
+                amount: 2.55
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 2700
+            - override:
+                level: 5
+            - override:
+                amount: 2.7
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 3000
+            - override:
+                level: 6
+            - override:
+                amount: 3
+  - rumble:
+      resilience:
+        - attribute: Action Bind
+          chance: 100
+          type: debuff
+        - attribute: STR
+          percentage: 40
+          type: damage
+    special:
+      description: Inflicts Melo-Melo to all enemies for 2 hits, delays all enemies by
+        1 turn, boosts ATK and RCV of [QCK] and [PSY] characters by 2.25x for 2
+        turns, makes [RCV] and [TND] orbs beneficial for all characters for 2
+        turns, changes orbs of right column characters into [RCV] orbs and
+        changes orbs of left column characters into Matching orbs.

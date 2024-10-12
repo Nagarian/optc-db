@@ -1,0 +1,136 @@
+type: INT
+name: Red-Haired Shanks - Emperor Who Will Change the World's Fate
+japanName: 赤髪のシャンクス 世界の運命を変える四皇
+family:
+  - Shanks
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1780
+    atk: 721
+    rcv: 190
+  maxLvl:
+    hp: 3230
+    atk: 1524
+    rcv: 360
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 94531
+aliases:
+  - V2 Legend Shanks
+captain:
+  name: ""
+  description: If your crew has 4 or more characters of the same Type, boosts ATK
+    of all characters by 3.5x, by 2.75x otherwise and boosts HP of all
+    characters by 1.3x.
+special:
+  name: Closing Declaration
+  description: Adds 0.9x to Chain multiplier for 1 turn. If your crew has 4 or
+    more characters of the same Type, boosts ATK of Dominant Type characters by
+    2.25x for 1 turn and changes all orbs, including [BLOCK] orbs, into Dominant
+    Type orbs
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: If your crew has 4 or more characters of the same Type, boosts base
+      ATK of Dominant Type characters by 125
+  - description: Makes [PSY] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - hp: 45
+    - hp: 45
+    - hp: 45
+    - hp: 45
+    - type: potential
+    - rcv: 15
+    - rcv: 15
+    - rcv: 15
+    - atk: 25
+    - rcv: 15
+    - hp: 60
+    - atk: 25
+    - cooldown: 1
+    - rcv: 20
+    - hp: 75
+    - hp: 105
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - captain:
+        description: If your crew has 4 or more characters of the same Type, boosts ATK
+          of all characters by 3.75x, by 3x otherwise and boosts HP of all
+          characters by 1.3x.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 2
+          threshold: 30

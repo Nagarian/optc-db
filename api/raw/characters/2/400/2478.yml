@@ -1,0 +1,182 @@
+type: PSY
+name: Mr. 1 - Human Sword Assassin
+japanName: Mr.1 刃物人間の暗殺者
+family:
+  - DazBones
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 631
+    atk: 195
+    rcv: 57
+  maxLvl:
+    hp: 1511
+    atk: 502
+    rcv: 141
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 146579
+aliases:
+  - Daz Bones
+evolution:
+  - id: 2479
+    evolvers:
+      - 94
+      - 1180
+      - 303
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2.25x.
+special:
+  name: Spiral Hollow
+  description: Deals 20% of enemies' current HP in True damage to one enemy,
+    randomizes all non-Matching orbs, including [BLOCK] orbs, makes Badly
+    Matching and [BLOCK] orbs not reduce damage for 3 turns and reduces enemies'
+    Threshold Damage Reduction, Percent Damage Reduction and Increased Defense
+    duration by 3 turns.
+  cooldown: 18
+  maxLevel: 8
+sailor:
+  - description: If your Captain is a Slasher character, boosts base ATK of this
+      character by 150
+rumble:
+  stats:
+    def: 235
+    rumbleType: DEF
+    spd: 117
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+              - Cerebral
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          targeting:
+            targets:
+              - Slasher
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 9
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - Slasher
+              - Cerebral
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 10
+        - override:
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 12
+        - override:
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 13
+        - override:
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 15
+        - override:
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 16
+        - override:
+            duration: 20
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 18
+        - override:
+            duration: 21
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 20
+        - override:
+            duration: 22
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 21
+        - override:
+            duration: 23
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 2
+            duration: 24

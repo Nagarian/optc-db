@@ -1,0 +1,551 @@
+type: STR
+name: Akainu - Uncompromised Determination and Justice
+japanName: 赤犬 譲れぬ“信念”と“正義”
+family:
+  - Sakazuki
+class:
+  - Fighter
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 624
+    atk: 344
+    rcv: 20
+  maxLvl:
+    hp: 1942
+    atk: 935
+    rcv: 84
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - japex
+links:
+  gamewithId: 239241
+aliases:
+  - Sakazuki
+  - V3 Legend Akainu V3
+evolution:
+  - id: 3157
+    evolvers:
+      - 118
+      - 266
+      - 300
+      - 100
+      - 267
+captain:
+  name: ""
+  description: If there are only [STR], [DEX] or [QCK] characters in your crew,
+    boosts ATK of [STR], [DEX] and [QCK] characters by 4x, by 4.5x instead if
+    they have a beneficial orb, their HP by 1.5x and makes [PSY], [INT], [RCV]
+    and [TND] orbs beneficial for [STR], [DEX] and [QCK] characters.
+special:
+  name: Magma World
+  description: Reduces enemies' Barrier duration by 3 turns, reduces the defense
+    of all enemies by 100% for 1 turn, boosts ATK of [STR], [DEX] and [QCK]
+    characters by 2.25x for 1 turn and boosts ATK against enemies with reduced
+    defense by 1.75x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 188
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+  special:
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 2
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 21
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 2.3
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 22
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 12
+          effect: debuff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 2.6
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 23
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 12
+          effect: debuff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 2.9
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 24
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 13
+          effect: debuff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 3.2
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 25
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 13
+          effect: debuff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 3.5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 26
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 14
+          effect: debuff
+          level: 4
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 3.8
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 27
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 14
+          effect: debuff
+          level: 4
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 4.1
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 28
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 4.4
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 29
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: RCV
+            targets:
+              - enemies
+          type: atk
+        - duration: 30
+          effect: damage
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time

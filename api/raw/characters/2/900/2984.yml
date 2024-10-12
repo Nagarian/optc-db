@@ -1,0 +1,120 @@
+type: DEX
+name: Page One - Animal Kingdom Pirates, Tobi Roppo
+japanName: ページワン 百獣海賊団“飛び六胞”
+family:
+  - PageOne
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1223
+    atk: 702
+    rcv: 141
+  maxLvl:
+    hp: 2900
+    atk: 1340
+    rcv: 270
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 205050
+aliases:
+  - Page 1
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.25x, by 2.75x instead if HP is above 50%.
+special:
+  name: Charge Spinosaurus
+  description: Deals 70x character's ATK in Typeless damage to one enemy, reduces
+    ATK DOWN, Burn and Blindness duration by 5 turns and reduces Special
+    Cooldown of [STR] and [DEX] characters by 2 turns.
+  cooldown: 19
+  maxLevel: 7
+  stages:
+    - description: Deals 40x character's ATK in Typeless damage to one enemy, reduces
+        ATK DOWN, Burn and Blindness duration by 2 turns and reduces Special
+        Cooldown of [STR] and [DEX] characters by 1 turn.
+      cooldown: 13
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Makes [INT] orbs beneficial for [DEX] characters
+support:
+  type: descriptive
+  criteria: X Drake, Kaido and Basil Hawkins
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - slot: 1
+    - hp: 100
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

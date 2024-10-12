@@ -1,0 +1,46 @@
+type: INT
+name: Vergo
+japanName: ヴェルゴ
+family:
+  - Vergo
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 282
+    atk: 150
+    rcv: 19
+  maxLvl:
+    hp: 1515
+    atk: 782
+    rcv: 89
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 19812
+aliases: []
+evolution:
+  - id: 840
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: Demon Bamboo
+  description: Changes the orb of this character into an [INT] orb, boosts ATK of
+    this character by 2x for 1 turn, deals 15x character's ATK in [INT] damage
+    to one enemy
+  cooldown: 18
+  maxLevel: 7

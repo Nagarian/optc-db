@@ -1,0 +1,39 @@
+type: STR
+name: Jack - Emperor Kaido's Right-Hand Man
+japanName: ジャック 四皇カイドウの腹心
+family:
+  - Jack
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 1127
+    atk: 550
+    rcv: 21
+  maxLvl:
+    hp: 2544
+    atk: 1366
+    rcv: 116
+cost: 20
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 117422
+aliases:
+  - Story Jack
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and their HP by 1.2x
+    and recovers ?x character's RCV in HP at the end of each turn
+special:
+  name: The Start of Destruction
+  description: If the HP of the enemy with the highest current HP is above 50%,
+    deals 25% of enemies' current HP in damage to one enemy, otherwise, deals
+    120x character's ATK in Typeless damage to one enemy.
+  cooldown: 18
+  maxLevel: 6

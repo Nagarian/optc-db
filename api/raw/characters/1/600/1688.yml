@@ -1,0 +1,90 @@
+type: DEX
+name: Franky - 20th Anniversary Memorial Treasure
+japanName: フランキー 20th Anniversary Memorial Treasure
+family:
+  - Franky
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 10
+  minLvl:
+    hp: 1487
+    atk: 559
+    rcv: 69
+  maxLvl:
+    hp: 3095
+    atk: 1255
+    rcv: 205
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 62645
+aliases:
+  - 20th Anniversary Franky
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and reduces damage received by 15%
+special:
+  name: Franky Iron BOXING
+  description: Changes the orb of this character into a [DEX] orb, deals 15 hits
+    of random Typeless damage to random enemies and reduces the defense of all
+    enemies by 100% for 2 turns
+  cooldown: 19
+  maxLevel: 5
+  notes: "`random : ? : ? : for each hit`"
+sailor:
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+  - description: Boosts base ATK of Fighter characters by 60
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Nico Robin and Usopp
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn and changes orb of
+      the supported character into a Matching orb.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - rcv: 20
+    - type: potential
+    - hp: 20
+    - cooldown: 1
+    - hp: 60
+    - type: sailor
+    - atk: 30
+    - cooldown: 1
+    - rcv: 30
+    - hp: 80
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

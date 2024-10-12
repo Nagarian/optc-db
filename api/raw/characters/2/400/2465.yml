@@ -1,0 +1,148 @@
+type: QCK
+name: Charlotte Cracker - Thousand-Armed Attacks
+japanName: シャーロット・クラッカー 千手の如き猛攻
+family:
+  - CharlotteCracker
+class:
+  - Powerhouse
+  - Slasher
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1300
+    atk: 784
+    rcv: 180
+  maxLvl:
+    hp: 3412
+    atk: 1574
+    rcv: 350
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 144753
+aliases:
+  - V1 Legend Cracker
+evolution:
+  - id: 3298
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 3.75x. Boosts HP of Fighter,
+    Slasher, Striker and Shooter characters by 1.35x.
+special:
+  name: Roaring "Honey Pretzel"
+  description: Changes [EMPTY], [BOMB], [RCV], [G], [BLOCK] orbs into Matching
+    orbs and changes the orb of this character into a Matching orb. If your
+    Captain is a Fighter, Slasher, Shooter or Striker character, adds 1.1x to
+    Chain multiplier for 2 turns. If your Captain is a Free Spirit, Cerebral,
+    Powerhouse or Driven character, boosts the Color Affinity of Free Spirit,
+    Cerebral, Powerhouse and Driven characters by 1.75x for 2 turns.
+  cooldown: 23
+  maxLevel: 6
+sailor:
+  - description: When any other Powerhouse or Slasher character uses a special,
+      reduces special cooldown of this character by 1 turn
+  - description: Boosts base ATK, HP and RCV of Slasher and Powerhouse characters by 100
+support:
+  type: descriptive
+  criteria: Charlotte Katakuri and Charlotte Smoothie
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 1 turn and adds 0.3x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 1 turn and adds 0.4x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 2 turns and adds 0.4x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 2 turns and adds 0.5x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 3 turns and adds 0.7x to Chain
+      multiplier for 1 turn.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 70
+    - hp: 70
+    - hp: 70
+    - atk: 25
+    - atk: 25
+    - cooldown: 1
+    - rcv: 15
+    - rcv: 15
+    - hp: 90
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+        - value: 8
+          threshold: 90

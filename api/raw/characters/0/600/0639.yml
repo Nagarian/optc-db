@@ -1,0 +1,83 @@
+type: QCK
+name: Bohemian Knight Doma
+japanName: 遊騎士ドーマ
+family:
+  - Doma
+class:
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1020
+    atk: 695
+    rcv: 150
+  maxLvl:
+    hp: 2134
+    atk: 1268
+    rcv: 328
+cost: 29
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 14405
+aliases: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, boosts ATK of Slasher characters by 2x
+special:
+  name: Bohemian Reverse Slash
+  description: Changes [PSY] and [INT] orbs into [QCK] orbs, reduces Bind duration by 1 turn
+  cooldown: 20
+  maxLevel: 10
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 2 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher Characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 30
+    - atk: 40
+    - hp: 40
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - atk: 60
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

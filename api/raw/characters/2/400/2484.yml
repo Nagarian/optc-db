@@ -1,0 +1,181 @@
+type: STR
+name: Ryuma - Zombie General Swordsman
+japanName: リューマ 豪剣の将軍ゾンビ
+family:
+  - ShimotsukiRyuma
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 598
+    atk: 199
+    rcv: 61
+  maxLvl:
+    hp: 1432
+    atk: 512
+    rcv: 150
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 146584
+aliases:
+  - ""
+evolution:
+  - id: 2485
+    evolvers:
+      - 94
+      - 1180
+      - 300
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x and boosts HP of Slasher
+    characters by 1.2x.
+special:
+  name: Polka Remise
+  description: If your Captain is a Slasher character, boosts ATK of Slasher
+    characters by 1.75x for 1 turn and boosts Orb Effects of Slasher characters
+    by 1.75x for 1 turn.
+  cooldown: 23
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Slasher characters by 50
+rumble:
+  stats:
+    def: 111
+    rumbleType: SPT
+    spd: 152
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          duration: 20
+          targeting:
+            targets:
+              - Slasher
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.63
+        - override:
+            duration: 21
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.66
+        - override:
+            duration: 22
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.69
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.72
+        - override:
+            level: 3
+            duration: 24
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 3
+            duration: 25
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.78
+        - override:
+            level: 4
+            duration: 26
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.81
+        - override:
+            level: 4
+            duration: 27
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.84
+        - override:
+            level: 4
+            duration: 28
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 5
+            duration: 29

@@ -1,0 +1,372 @@
+type: QCK
+name: Emporio Ivankov
+japanName: エンポリオ・イワンコフ
+family:
+  - EmporioIvankov
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 302
+    atk: 125
+    rcv: 53
+  maxLvl:
+    hp: 1682
+    atk: 512
+    rcv: 161
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 8286
+aliases:
+  - Raid Ivankov
+evolution:
+  - id: 390
+    evolvers:
+      - 118
+      - 85
+      - 94
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x following a chain of [DEX] >
+    [INT] > [QCK] attacks no lower than Good
+special:
+  name: Hell Wink
+  description: Randomizes all orbs into either [RCV], [STR], [DEX] or [QCK] orbs,
+    makes [STR], [DEX] and [QCK] orbs beneficial for all characters for 1 turn
+    and changes the orb of this character into a [QCK] orb
+  cooldown: 17
+  maxLevel: 10
+rumble:
+  stats:
+    def: 270
+    rumbleType: DEF
+    spd: 130
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 18
+      effects:
+        - amount: 0.3
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 10
+          effect: debuff
+          level: 4
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.34
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 4
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.37
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 5
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.41
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 6
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.45
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 7
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.49
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 8
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.52
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 9
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.56
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 10
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 10
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: debuff
+          level: 12
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies

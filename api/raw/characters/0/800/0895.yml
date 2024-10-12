@@ -1,0 +1,44 @@
+type: DEX
+name: Brook - Gentlemanly Skeleton
+japanName: ブルック 紳士なガイコツ
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 148
+    atk: 96
+    rcv: 37
+  maxLvl:
+    hp: 1067
+    atk: 491
+    rcv: 196
+cost: 10
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - special
+links:
+  gamewithId: 22659
+aliases: []
+evolution:
+  - id: 896
+    evolvers:
+      - 117
+      - 86
+      - 91
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x
+special:
+  name: "Dying Chorus: Binks' Sake"
+  description: Recovers 6x character's RCV in HP at the end of each turn for 3 turns
+  cooldown: 21
+  maxLevel: 7

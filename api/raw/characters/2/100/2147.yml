@@ -1,0 +1,292 @@
+type: PSY
+name: Vinsmoke Sanji - Germa Kingdom's Sacrifice
+japanName: ヴィンスモーク・サンジ ジェルマ王国の生け贄
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 666
+    atk: 333
+    rcv: 33
+  maxLvl:
+    hp: 1600
+    atk: 1060
+    rcv: 130
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 110391
+aliases:
+  - V2 Legend Sanji
+evolution:
+  - id: 2148
+    evolvers:
+      - 118
+      - 103
+      - 1180
+      - 303
+      - 267
+captain:
+  name: ""
+  description: If there are only Fighter characters in your crew, boosts Chain
+    Multiplier Growth Rate by 4x and boosts ATK of Fighter characters by 1.75x.
+    Lowers chances of getting Matching orbs depending on the crew's current HP.
+  notes: At 1 HP, the rate of Matching orbs is ?% (lower) and at full HP, the rate
+    of Matching orbs is ?%
+special:
+  name: Full Course of Hell
+  description: Deals 150x character's ATK in [PSY] damage to one enemy. If HP is
+    above 50% at the time the special is activated, boosts ATK of Fighter
+    characters by 2.25x for 1 turn. If Sanji is your Captain or Friend/Guest
+    Captain, reduces Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 10 turns
+  cooldown: 17
+  maxLevel: 6
+rumble:
+  stats:
+    def: 128
+    rumbleType: ATK
+    spd: 183
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 37
+      effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 80
+            stat: HP
+            type: stat
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+        - amount: 0.7
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: atk
+        - amount: 0.7
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: atk
+        - amount: 0.7
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 37
+      effects:
+        - override: {}
+        - override:
+            amount: 0.72
+        - override:
+            amount: 0.72
+        - override:
+            amount: 0.72
+    - cooldown: 37
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 0.73
+        - override:
+            amount: 0.73
+        - override:
+            amount: 0.73
+    - cooldown: 37
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 0.75
+        - override:
+            amount: 0.75
+        - override:
+            amount: 0.75
+    - cooldown: 37
+      effects:
+        - override:
+            level: 8
+        - override:
+            amount: 0.77
+        - override:
+            amount: 0.77
+        - override:
+            amount: 0.77
+    - cooldown: 37
+      effects:
+        - override:
+            level: 9
+        - override:
+            amount: 0.79
+        - override:
+            amount: 0.79
+        - override:
+            amount: 0.79
+    - cooldown: 37
+      effects:
+        - override:
+            level: 9
+        - override:
+            amount: 0.8
+        - override:
+            amount: 0.8
+        - override:
+            amount: 0.8
+    - cooldown: 37
+      effects:
+        - override:
+            level: 10
+        - override:
+            amount: 0.82
+        - override:
+            amount: 0.82
+        - override:
+            amount: 0.82
+    - cooldown: 37
+      effects:
+        - override:
+            level: 10
+        - override:
+            amount: 0.84
+        - override:
+            amount: 0.84
+        - override:
+            amount: 0.84
+    - cooldown: 37
+      effects:
+        - override:
+            level: 12
+        - override:
+            amount: 0.95
+        - override:
+            amount: 0.95
+        - override:
+            amount: 0.95
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

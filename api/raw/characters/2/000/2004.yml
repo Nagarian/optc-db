@@ -1,0 +1,62 @@
+type: STR
+name: Heavenly Demon Doflamingo - Donquixote Family Boss
+japanName: 天夜叉ドフラミンゴ ドフラミンゴファミリー　ボス
+family:
+  - DonquixoteDoflamingo
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1345
+    atk: 638
+    rcv: 72
+  maxLvl:
+    hp: 2953
+    atk: 1476
+    rcv: 216
+cost: 30
+slots: 2
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 93531
+aliases:
+  - Story Doflamingo
+  - Story Doffy
+evolution:
+  - id: 2126
+    evolvers:
+      - skull
+      - 89
+      - 95
+      - 95
+      - 300
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.25x and their HP by 1.5x. If
+    you use "Bullet Thread" on this Doflamingo boosts ATK of Slasher characters
+    by 2.75x for 3 turns instead
+  notes: Using Doflamingo's special will change his own captain boost to 2.75x. If
+    both Doflamingo's specials are used, the total ATK boost will be 7.5625x
+special:
+  name: Bullet Thread
+  description: Changes the orb of this character into a [STR] orb, boosts ATK of
+    this character by 2x for 1 turn and deals 30x character's ATK in Typeless
+    damage to all enemies
+  cooldown: 19
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Trebol, Pica, Vergo and Diamante
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

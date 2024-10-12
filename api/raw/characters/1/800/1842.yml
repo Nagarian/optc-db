@@ -1,0 +1,150 @@
+type: DEX
+name: Wet-Haired Caribou - Next-Generation Supernova
+japanName: 濡れ髪のカリブー 次世代の超新星
+family:
+  - Caribou
+class:
+  - Driven
+  - Shooter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 723
+    atk: 921
+    rcv: -300
+  maxLvl:
+    hp: 1598
+    atk: 1402
+    rcv: -300
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 75882
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.5x, deals 4x character's ATK
+    in [DEX] damage to all enemies at the end of each turn
+special:
+  name: Fathomless Infinite Hell
+  description: Boosts ATK of Driven characters by 1.5x for 1 turn, reduces
+    enemies' Threshold Damage Reduction by 2 turns and ATK Up duration by 3
+    turns
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 5 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Coribou
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+rumble:
+  stats:
+    def: 161
+    rumbleType: DBF
+    spd: 113
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 18
+      effects:
+        - attributes:
+            - ATK
+            - SPD
+          duration: 10
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 18
+      effects:
+        - override:
+            level: 2
+            duration: 11
+    - cooldown: 18
+      effects:
+        - override:
+            level: 3
+            duration: 12
+    - cooldown: 18
+      effects:
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 18
+      effects:
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 18
+      effects:
+        - override:
+            level: 5
+            duration: 15
+    - cooldown: 18
+      effects:
+        - override:
+            level: 6
+            duration: 16
+    - cooldown: 18
+      effects:
+        - override:
+            level: 7
+            duration: 17
+    - cooldown: 18
+      effects:
+        - override:
+            level: 8
+            duration: 18
+    - cooldown: 18
+      effects:
+        - override:
+            level: 10
+            duration: 19

@@ -1,0 +1,215 @@
+type: DEX
+name: Big Eater Jewelry Bonney - Captain of the Bonney Pirates
+japanName: “大食らい”ジュエリー・ボニー ボニー海賊団船長
+family:
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 871
+    atk: 556
+    rcv: 167
+  maxLvl:
+    hp: 2381
+    atk: 1295
+    rcv: 360
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 185638
+aliases:
+  - Raid Bonney
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x, makes [RCV] orbs
+    beneficial for Free Spirit characters and boosts chances of getting [RCV]
+    orbs. If a Free Spirit character has an [RCV] orb, boosts their ATK by 3x
+    instead.
+special:
+  name: Age Manipulation Master
+  description: Reduces enemies' Threshold Damage Reduction and Increased Defense
+    duration by 5 turns, boosts RCV of all characters by 1.5x for 1 turn,
+    changes all orbs into [RCV] orbs.
+  cooldown: 27
+  maxLevel: 13
+sailor:
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+  - description: Makes [RCV] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: "[DEX] Characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 10
+    - atk: 30
+    - type: potential
+    - hp: 50
+    - rcv: 15
+    - atk: 40
+    - slot: 1
+    - hp: 80
+    - rcv: 20
+    - cooldown: 1
+    - type: sailor
+    - slot: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 128
+    rumbleType: RCV
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 3
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - RCV
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 19
+      effects:
+        - amount: 0.3
+          effect: recharge
+          type: RCV
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 3
+          duration: 10
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.38
+        - {}
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.46
+        - override:
+            level: 4
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 5
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.62
+        - override:
+            level: 5
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 6
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.78
+        - override:
+            level: 7
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.86
+        - override:
+            level: 7
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.94
+        - override:
+            level: 8
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 10

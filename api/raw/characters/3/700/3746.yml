@@ -1,0 +1,99 @@
+type: STR
+name: Cat Viper - Dragon Felling Sulong
+family: []
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1686
+    atk: 762
+    rcv: 90
+  maxLvl:
+    hp: 3372
+    atk: 1524
+    rcv: 180
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR], Slasher and Powerhouse characters by 3x and
+    boosts HP of [STR], Slasher and Powerhouse characters by 1.2x.
+special:
+  name: Moonlit Gleaming Sulong Claws
+  description: Reduces enemies' Barrier duration by 2 turns and reduces enemies'
+    Threshold Damage Reduction duration by 5 turns. If your crew has 5 or more
+    Slasher characters, boosts Orb Effects of [STR] and Slasher characters by
+    2.25x for 2 turns. If your crew has Orb Amplification, boosts base ATK of
+    [STR] and Slasher characters by 800 for 2 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Slasher characters by 70
+  - description: If this character has a [TND] or [WANO] orb and you attack with
+      this character, reduces enemies' Slasher Resistance by -10% for 1 turn.
+support:
+  type: descriptive
+  criteria: Izo, Kin'emon, Dogstorm, Kozuki Momonosuke, Raizo, Kikunojo, Kozuki
+    Oden, Denjiro, Kawamatsu, Kozuki Hiyori and Ashura Doji
+  levels:
+    - Once per adventure, when the supported character uses an ATK Boost
+      special, boosts Orb Effects of Slasher characters by 1.15x for 1 turn.
+    - Once per adventure, when the supported character uses an ATK Boost
+      special, boosts Orb Effects of Slasher characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses an ATK Boost
+      special, boosts Orb Effects of Slasher characters by 1.45x for 1 turn.
+    - Once per adventure, when the supported character uses an ATK Boost
+      special, boosts Orb Effects of Slasher characters by 1.6x for 1 turn.
+    - Once per adventure, when the supported character uses an ATK Boost
+      special, boosts Orb Effects of Slasher characters by 1.75x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - atk: 20
+    - slot: 1
+    - hp: 50
+    - hp: 100
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70

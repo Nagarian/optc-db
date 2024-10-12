@@ -1,0 +1,255 @@
+type: INT
+name: Big Mom - Grieving Emperor
+japanName: ビッグ・マム 嘆きの四皇
+family:
+  - CharlotteLinlin
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1083
+    atk: 722
+    rcv: 76
+  maxLvl:
+    hp: 2600
+    atk: 1595
+    rcv: 310
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 197090
+aliases:
+  - Kizuna Big Mom
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [QCK] and [INT] characters by 3x, their HP by
+    1.25x and recovers HP proportional to the number of enemies you defeated in
+    that turn ✕ 0.05 ✕ crew's RCV at the end of the enemy turn.
+special:
+  name: The Harmony that Interweaves the Souls
+  description: Removes all positive buffs on your team and changes the orb of this
+    character into a Matching orb. If enemies have All Debuff Protection, boosts
+    ATK of all characters by 2x for 1 turn, and boosts the Color Affinity of
+    [STR], [QCK] and [INT] characters by 1.75x for 1 turn
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of Powerhouse and Fighter characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] Characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - hp: 50
+    - slot: 1
+    - hp: 50
+    - rcv: 20
+    - rcv: 20
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 100
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 140
+          reduction: 2
+        - value: 170
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 214
+    rumbleType: DBF
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 30
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 38
+      effects:
+        - amount: 0.45
+          effect: damage
+          type: atk
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Action Bind
+          effect: hinderance
+          chance: 25
+          duration: 5
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Guard
+          effect: debuff
+          level: 2
+          duration: 10
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.48
+        - {}
+        - override:
+            duration: 11
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.5
+        - {}
+        - override:
+            duration: 12
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.53
+        - {}
+        - override:
+            duration: 13
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.56
+        - {}
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.59
+        - {}
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.61
+        - {}
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.64
+        - {}
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.67
+        - {}
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.75
+        - {}
+        - override:
+            level: 5
+            duration: 19

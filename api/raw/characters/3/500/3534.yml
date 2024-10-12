@@ -1,0 +1,445 @@
+type: DEX
+name: Dogstorm - Flash in the Moonlit Night
+japanName: イヌアラシ 月夜に煌めく閃光
+family:
+  - Inuarashi
+class:
+  - Fighter
+  - Slasher
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 2011
+    atk: 817
+    rcv: 117
+  maxLvl:
+    hp: 4022
+    atk: 1635
+    rcv: 235
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - V2 Legend Sulong Inuarashi
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns and advances
+    Special Cooldown of this character to MAX at the start of the fight. Reduces
+    Special Cooldown of this character by 5 turns at the start of Stage 3.
+    Boosts ATK of Fighter, Slasher, Striker and Shooter characters by 4x and
+    boosts ATK of [STR], [DEX] and [QCK] characters by an additional 1.25x. For
+    10 turns at the start of the fight, boosts chances of getting Matching orbs
+    and, if HP is above 50% at the start of the turn, attacks will ignore damage
+    reducing Barriers and Buffs.
+  notes: Attacks are still affected by DEF value. DEF boost buffs (Blue shield)
+    still reduce your damage and you can not kill through Resilience, but Damage
+    Negating (Yellow shield), % Damage Reduction (Rainbow shield), Barriers and
+    Threshold Damage Reduction are ignored. Enemy attacks will go through YOUR
+    defensive buffs.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Cat
+    Viper, excluding Support members or you must reach the Boss Stage before 10
+    turns pass."
+  description: Deals 100x character's ATK in Typeless True damage to all enemies,
+    reduces Special Cooldown of Fighter, Slasher, Striker and Shooter characters
+    by 1 turn and transforms all Fighter characters into Super Fighter
+    characters.
+special:
+  name: Brightly Shining King of the Day
+  description: Reduces Special Cooldown of all characters by 2 turns and boosts
+    ATK of Fighter, Slasher, Striker and Shooter characters by 2.5x for 1 turn.
+    If during that turn you score 2 PERFECT hits, boosts Orb Effects of [STR],
+    [DEX] and [QCK] characters by 2.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 5 turns when it is rewinded
+  - description: Boosts base ATK, HP and RCV of Fighter and Slasher characters by 100
+support:
+  type: descriptive
+  criteria: Cat Viper, Wanda and Carrot
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Fighter, Slasher, Striker and Shooter characters by 1.5x for
+      1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Fighter, Slasher, Striker and Shooter characters by 1.55x
+      for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Fighter, Slasher, Striker and Shooter characters by 1.6x for
+      1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Fighter, Slasher, Striker and Shooter characters by 1.65x
+      for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Fighter, Slasher, Striker and Shooter characters by 1.75x
+      for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 30
+    - rcv: 40
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - atk: 40
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - rcv: 40
+    - hp: 100
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 20
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 30
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 211
+    rumbleType: SPT
+    spd: 150
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Damage Over Time
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            families:
+              - Nekomamushi
+            team: crew
+            type: character
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 5
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Counter
+          effect: boon
+          amount: 0.2
+          duration: 16
+          targeting:
+            count: 2
+            targets:
+              - DEX
+        - amount: 1
+          effect: damage
+          condition:
+            families:
+              - Nekomamushi
+            team: crew
+            type: character
+          targeting:
+            count: 3
+            targets:
+              - QCK
+          type: atk
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 0.3
+            duration: 17
+        - override:
+            amount: 1.1
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            level: 0.4
+            duration: 18
+        - override:
+            amount: 1.2
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            level: 1
+            duration: 14
+        - override:
+            level: 0.5
+            duration: 19
+        - override:
+            amount: 1.3
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            level: 0.6
+            duration: 20
+        - override:
+            amount: 1.4
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            level: 2
+            duration: 16
+        - override:
+            level: 0.7
+            duration: 21
+        - override:
+            amount: 1.5
+    - cooldown: 29
+      effects:
+        - override:
+            level: 5
+            duration: 17
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            level: 0.8
+            duration: 22
+        - override:
+            amount: 1.6
+    - cooldown: 29
+      effects:
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            level: 0.9
+            duration: 23
+        - override:
+            amount: 1.7
+    - cooldown: 29
+      effects:
+        - override:
+            level: 6
+            duration: 19
+        - override:
+            level: 3
+            duration: 19
+        - override:
+            level: 1
+            duration: 24
+        - override:
+            amount: 1.8
+    - cooldown: 29
+      effects:
+        - override:
+            level: 7
+            duration: 20
+        - override:
+            level: 4
+            duration: 20
+        - override:
+            level: 1.2
+            duration: 25
+        - override:
+            amount: 2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

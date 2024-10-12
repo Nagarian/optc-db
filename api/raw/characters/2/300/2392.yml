@@ -1,0 +1,58 @@
+type: DEX
+name: Iceburg - Encouraging Senior Disciple
+japanName: アイスバーグ 背中を押す兄弟子
+family:
+  - Iceburg
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 831
+    atk: 759
+    rcv: 110
+  maxLvl:
+    hp: 2427
+    atk: 1192
+    rcv: 321
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 137913
+aliases:
+  - Support Iceburg
+  - Support Iceberg
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x and recovers 500 HP at the
+    end of each turn.
+special:
+  name: Senior Apprentice's Assistance
+  description: Makes [DEX] orbs beneficial for Shooter characters for 3 turns.
+  cooldown: 8
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: Franky
+  levels:
+    - Once per adventure, when an enemy inflicts you with Despair or Silence,
+      reduces Despair and Silence duration by 1 turn on the supported character.
+    - Once per adventure, when an enemy inflicts you with Despair or Silence,
+      reduces Despair and Silence duration by 2 turns on the supported
+      character.
+    - Once per adventure, when an enemy inflicts you with Despair or Silence,
+      reduces Despair and Silence duration by 3 turns on the supported
+      character.
+    - Once per adventure, when an enemy inflicts you with Despair or Silence,
+      reduces Despair and Silence duration by 3 turns on the supported character
+      and reduces Special Cooldown of the supported character by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair or Silence,
+      reduces Despair and Silence duration by 3 turns on the supported character
+      and reduces Special Cooldown of the supported character by 2 turns.

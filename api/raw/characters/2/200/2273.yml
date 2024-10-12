@@ -1,0 +1,113 @@
+type: PSY
+name: Hatchan - Opening of the Feast
+japanName: はっちゃん 宴の始まり
+family:
+  - Hatchan
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1001
+    atk: 812
+    rcv: 99
+  maxLvl:
+    hp: 2621
+    atk: 1344
+    rcv: 288
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 121105
+aliases:
+  - Hachi
+  - Hatchi
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Powerhouse characters by 1.75x and boosts
+    Chain Multiplier Growth Rate by 2x
+special:
+  name: The Octopus' Strange Sword
+  description: Deals 6 hits of 30x character's ATK in Typeless damage to random
+    enemies, reduces the defense of all enemies by 100% for 1 turn, changes
+    [BLOCK], [TND], [G] and [BOMB] orbs into [RCV] orbs. If your Captain is a
+    Powerhouse character, boosts ATK against enemies with reduced defense by
+    1.75x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Slasher and Powerhouse characters by 50
+  - description: If this character has a [PSY] orb and you hit a PERFECT with him,
+      keep his [PSY] orb for the next turn
+support:
+  type: descriptive
+  criteria: Nami, Camie and Pappagu
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes [BOMB], [G] and [TND] orbs of the supported character into [RCV]
+      orbs.
+    - Once per adventure, when the supported character uses their special,
+      changes [BOMB], [G] and [TND] orbs of the supported character into [RCV]
+      orbs.
+    - Once per adventure, when the supported character uses their special,
+      changes [BLOCK], [BOMB], [G] and [TND] orbs of the supported character
+      into [RCV] orbs.
+    - Once per adventure, when the supported character uses their special,
+      changes [BLOCK], [BOMB], [G] and [TND] orbs of the supported character
+      into [RCV] orbs.
+    - Once per adventure, when the supported character uses their special,
+      changes orbs, including [BLOCK] orbs, of the supported and adjacent
+      characters into [RCV] orbs.
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 15
+    - rcv: 10
+    - type: potential
+    - hp: 45
+    - atk: 20
+    - slot: 1
+    - rcv: 15
+    - type: sailor
+    - hp: 60
+    - atk: 25
+    - rcv: 25
+    - hp: 75
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

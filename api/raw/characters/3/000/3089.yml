@@ -1,0 +1,50 @@
+type: STR
+name: Aladdin - Last Bastion
+japanName: アラディン 最後の砦
+family:
+  - Aladdin
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1124
+    atk: 562
+    rcv: 105
+  maxLvl:
+    hp: 2810
+    atk: 1406
+    rcv: 263
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 228316
+aliases:
+  - Secret Aladdin
+  - Limited Aladdin
+  - Secret Aladin
+  - Limited Aladin
+  - Secret Aladine
+  - Limited Aladine
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.5x.
+special:
+  name: Family Protecting Blow
+  description: Reduces enemies' Threshold Damage Reduction duration by 5 turns and
+    reduces the defense of all enemies by 100% for 1 turn. If you are on a
+    Treasure Map, boosts ATK against enemies with reduced defense by 1.75x-2.25x
+    for 1 turn depending on your Treasure Map Level.
+  cooldown: 13
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x Conditional boost  
+    Level 11-20: 2x Conditional boost  
+    Level 21+: 2.25x Conditional boost

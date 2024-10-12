@@ -1,0 +1,50 @@
+type: PSY
+name: "Kizaru - Marineford at War: Admiral"
+japanName: 黄猿 戦火のマリンフォード“海軍大将”
+family:
+  - Borsalino
+class:
+  - Shooter
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 250
+    atk: 188
+    rcv: 24
+  maxLvl:
+    hp: 1026
+    atk: 701
+    rcv: 148
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 114527
+aliases:
+  - Borsalino
+evolution:
+  - id: 2187
+    evolvers:
+      - 83
+      - 266
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Shooter and Fighter characters by 1.75x
+special:
+  name: Amaterasu Descent
+  description: Reduces Special Cooldown of [PSY] and [INT] characters by 1 turn
+    and changes orbs of adjacent characters into Matching Orbs. If your Captain
+    is a [PSY] or [INT] character, locks the chain multiplier at 3x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 30

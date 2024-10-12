@@ -1,0 +1,114 @@
+type: QCK
+name: Kaku - Giraffe Swordsman
+japanName: カク キリンの力を得た剣術使い
+family:
+  - Kaku
+class:
+  - Striker
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1080
+    atk: 516
+    rcv: 128
+  maxLvl:
+    hp: 2700
+    atk: 1290
+    rcv: 320
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 146586
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.25x and their HP and RCV by 1.2x.
+special:
+  name: Extreme Nose Gun - "Kirimanjaro"
+  description: Deals 200,000 Fixed damage to one enemy, changes all orbs of all
+    characters into Kaku's orb and reduces ATK DOWN, Bind and Paralysis duration
+    by 5 turns.
+  cooldown: 20
+  maxLevel: 8
+  stages:
+    - description: Deals 50,000 Fixed damage to one enemy, changes all orbs of
+        adjacent characters into Kaku's orb and reduces ATK DOWN, Bind and
+        Paralysis duration by 3 turns.
+      cooldown: 17
+sailor:
+  - description: Boosts this character's damage against [DEX] characters by 2x
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Rob Lucci, Jabra, Blueno, Fukuro, Kalifa and Kumadori
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - slot: 1
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

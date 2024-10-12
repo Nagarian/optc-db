@@ -1,0 +1,51 @@
+type: STR
+name: "Tony Tony Chopper - Heavy Gong: Beast"
+japanName: トニートニー・チョッパー 重量ゴング“獣”
+family:
+  - TonyTonyChopper
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 303
+    atk: 168
+    rcv: 70
+  maxLvl:
+    hp: 2171
+    atk: 900
+    rcv: 231
+cost: 15
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 21529
+aliases:
+  - Kimono Chopper
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.2x, recovers 1,000 HP at the end
+    of the turn
+special:
+  name: "Heavy Gong: The Storm"
+  description: Deals 15x character's ATK in [STR] damage to one enemy, reduces
+    Bind duration by 3 turns
+  cooldown: 24
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

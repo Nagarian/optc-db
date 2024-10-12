@@ -1,0 +1,73 @@
+type: DEX
+name: Jinbe - Helmsman Riding the Ocean
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1510
+    atk: 709
+    rcv: 104
+  maxLvl:
+    hp: 3020
+    atk: 1417
+    rcv: 208
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+aliases:
+  - Raid
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x, by 3.75x instead if HP is
+    below 30% at the start of the turn and boost HP of all characters by 1.2x.
+special:
+  name: Sunshine Shark Brick Fist
+  description: Reduces crew's current HP by 50%, deals 30x the amount of HP
+    subtracted in Typeless damage to all enemies, reduces enemies' Percent
+    Damage Reduction duration by 3 turns, reduces Paralysis and Burn duration by
+    3 turns. If the enemy is inflicted with Defense Reduction, boosts ATK
+    against enemies with reduced defense by 2x for 1 turn; reduces the defense
+    of all enemies by 100% for 1 turn otherwise.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters
+  - description: Boosts base HP of [DEX] and [PSY] characters by 100
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Vinsmoke Sanji, Nami, Usopp, Tony Tony
+    Chopper, Nico Robin, Franky and Brook
+  levels:
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 14
+limitBreak:
+  path: []
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 150
+          reduction: 2
+    - type: Double Special Activation
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 100

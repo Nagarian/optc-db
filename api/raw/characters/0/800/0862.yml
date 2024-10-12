@@ -1,0 +1,84 @@
+type: QCK
+name: Lady Alvida - Beauty of her Age
+japanName: レディー・アルビダ 絶世の美女
+family:
+  - Alvida
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 967
+    atk: 466
+    rcv: 148
+  maxLvl:
+    hp: 2092
+    atk: 1000
+    rcv: 307
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 20292
+aliases:
+  - Colo Alvida
+  - Coliseum Alvida
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x, reduces damage received by 10%
+special:
+  name: Bewitching Lovely Iron Mace
+  description: Deals 13x character's ATK in [QCK] damage to one enemy, reduces
+    damage received by 75% for 1 turn, boosts Orb Effects of all characters by
+    1.5x for 1 turn
+  cooldown: 23
+  maxLevel: 10
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 20
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: "[QCK] characters"
+  levels:
+    - Reduces damage received from [STR] characters by 1%
+    - Reduces damage received from [STR] characters by 2%
+    - Reduces damage received from [STR] characters by 3%
+    - Reduces damage received from [STR] characters by 4%
+    - Reduces damage received from [STR] characters by 5%
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - type: sailor
+    - type: potential
+    - atk: 10
+    - hp: 50
+    - atk: 30
+    - rcv: 40
+    - cooldown: 1
+    - slot: 1
+    - atk: 60
+    - type: sailor
+    - cooldown: 2
+    - hp: 70
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

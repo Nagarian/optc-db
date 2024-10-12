@@ -1,0 +1,216 @@
+type: STR
+name: Soba Mask - Vanishing Warrior
+japanName: おそばマスク 消える戦士
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1666
+    atk: 716
+    rcv: 83
+  maxLvl:
+    hp: 3333
+    atk: 1433
+    rcv: 167
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 309526
+aliases:
+  - Sobamask
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x, their HP by 1.25x and makes
+    [RCV] orbs beneficial for all characters.
+special:
+  name: Abrupt Blow
+  description: Reduces Bind and Despair duration by 2 turns, boosts ATK of all
+    characters by 2x for 1 turn and adds 0.5x to Chain multiplier for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 40
+  - description: Makes [RCV] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Nami and Nico Robin
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      boosts ATK of all characters by 1.1x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      boosts ATK of all characters by 1.2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      boosts ATK of all characters by 1.3x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      boosts ATK of all characters by 1.4x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      boosts ATK of all characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 30
+    - type: potential
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - hp: 50
+    - hp: 70
+    - type: sailor
+    - hp: 80
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 105
+    rumbleType: ATK
+    spd: 175
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 5
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - amount: 1.6
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+            duration: 5
+        - override:
+            amount: 1.7
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+            duration: 6
+        - override:
+            amount: 1.8
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+            duration: 6
+        - override:
+            amount: 1.9
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 7
+        - override:
+            amount: 2
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            amount: 2.1
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            amount: 2.2
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            amount: 2.3
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            amount: 2.4
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+            duration: 10
+        - override:
+            amount: 2.5

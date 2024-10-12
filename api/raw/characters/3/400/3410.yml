@@ -1,0 +1,59 @@
+type: DEX
+name: Kizaru - A Light Shining Over Absolute Justice
+japanName: 黄猿 “絶対的正義”を照らす光
+family:
+  - Borsalino
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 860
+    atk: 417
+    rcv: 90
+  maxLvl:
+    hp: 1720
+    atk: 835
+    rcv: 181
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 289956
+aliases:
+  - Borsalino
+  - V2 Legend Kizaru
+evolution:
+  - id: 3411
+    evolvers:
+      - 118
+      - 80
+      - 1180
+      - 302
+      - 267
+captain:
+  name: ""
+  description: 'Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of [STR], [DEX] and [QCK] characters by 4.5x and
+    their HP by 1.3x. If you use "Yasakani no Magatama: Flash" in this turn
+    boosts ATK of [STR], [DEX] and [QCK] characters by 5x instead.'
+special:
+  name: "Yasakami no Magatama: Flash"
+  description: Reduces Special Cooldown of all characters by 1 turn, reduces
+    Silence duration by 10 turns, boosts the Color Affinity of [STR], [DEX] and
+    [QCK] characters by 2x for 1 turn and adds 1.4x to Chain multiplier for 1
+    turn.
+  cooldown: 19
+  maxLevel: 6
+  stages:
+    - description: Reduces Special Cooldown of all characters by 1 turn, reduces
+        Silence duration by 5 turns, boosts the Color Affinity of [STR], [DEX]
+        and [QCK] characters by 1.75x for 1 turn and adds 0.7x to Chain
+        multiplier for 1 turn.
+      cooldown: 14

@@ -1,0 +1,46 @@
+type: QCK
+name: Black Cage Hina
+japanName: 黒檻のヒナ
+family:
+  - Hina
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1088
+    atk: 422
+    rcv: 149
+  maxLvl:
+    hp: 2270
+    atk: 905
+    rcv: 300
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 4659
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x
+special:
+  name: Kimono Sleeve Cage
+  description: Locks all orbs for 1 turn
+  cooldown: 22
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Smoker
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

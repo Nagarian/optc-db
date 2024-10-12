@@ -1,0 +1,77 @@
+type: STR
+name: Donquixote Doflamingo - North Blue Darkness
+japanName: ドンキホーテ・ドフラミンゴ “北の海”の闇
+family:
+  - DonquixoteDoflamingo
+class:
+  - Cerebral
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 941
+    atk: 603
+    rcv: 152
+  maxLvl:
+    hp: 1997
+    atk: 1418
+    rcv: 344
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 38724
+aliases:
+  - Young Doffy
+  - Donquixote Doflamingo
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Driven characters by 1 turn at the
+    start of the fight. Boosts ATK of Driven characters by 2.5x
+special:
+  name: Five Color Strings (Goshikito)
+  description: Deals 25x character's ATK in Typeless damage to all enemies. Makes
+    [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for Driven characters
+    for 3 turns
+  cooldown: 17
+  maxLevel: 3
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Makes [RCV] and [TND] orbs beneficial for Driven characters
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 15
+    - type: potential
+    - hp: 60
+    - type: sailor
+    - hp: 100
+    - cooldown: 3
+    - slot: 1
+    - hp: 140
+    - atk: 15
+    - atk: 30
+    - type: sailor
+    - atk: 45
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100

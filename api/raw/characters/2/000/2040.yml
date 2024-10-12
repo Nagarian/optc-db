@@ -1,0 +1,54 @@
+type: STR
+name: Edward Newgate - Memories from Before the Great Era of Piracy
+japanName: エドワード・ニューゲート 大海賊時代前夜の記憶
+family:
+  - EdwardNewgate
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 202
+    atk: 102
+    rcv: 22
+  maxLvl:
+    hp: 1212
+    atk: 523
+    rcv: 108
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 98727
+aliases:
+  - Whitebeard
+  - Limited Whitebeard
+  - Kimono Whitebeard
+evolution:
+  - id: 2041
+    evolvers:
+      - 115
+      - 115
+      - 89
+      - 95
+      - 300
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2x
+special:
+  name: The Gentle Breeze of the Feast
+  description: Randomizes all orbs, into either [G] or [RCV] orbs and boosts ATK
+    of this character by 2.25x for 1 turn. If your Captain is a Fighter
+    character, locks all orbs for 1 turn.
+  cooldown: 10
+  maxLevel: 1
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters if your Captain is a
+      Fighter character
+  - description: Boosts base ATK, HP and RCV of Fighter characters by 40

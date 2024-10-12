@@ -1,0 +1,97 @@
+type: INT
+name: Monet - White Christmas Party
+japanName: モネ ホワイトクリスマス・パーティ
+family:
+  - Monet
+class:
+  - Cerebral
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1107
+    atk: 642
+    rcv: 101
+  maxLvl:
+    hp: 2477
+    atk: 1282
+    rcv: 360
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 180210
+aliases:
+  - Chirstmas Monet
+  - Secret Monet
+  - Limited Monet
+  - Kizuna Monet
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of [INT] characters by 2.75x and makes [STR] and [DEX]
+    orbs beneficial for [INT] characters.  
+
+    **Boosted Ability:** Boosts ATK of [INT] characters by 3.5x, their Color Affinity by 1.2x and makes [STR] and [DEX] orbs beneficial for all characters.
+special:
+  name: The Gift of a Wink
+  description: Reduces Special Cooldown of all characters by 1 turn, delays all
+    enemies by 1 turn and adds 0.7x to Chain multiplier for 1 turn. If HP is
+    above 99% at the time the special is activated, boosts ATK against delayed
+    enemies by 1.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Donquixote Doflamingo, Caesar Clown (Gastino), Vergo, Sugar
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 50
+    - rcv: 20
+    - type: potential
+    - hp: 50
+    - atk: 20
+    - rcv: 20
+    - atk: 20
+    - cooldown: 1
+    - hp: 50
+    - atk: 30
+    - hp: 50
+    - atk: 30
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

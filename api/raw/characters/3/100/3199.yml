@@ -1,0 +1,94 @@
+type: INT
+name: Brook - Number 8, the Promise Keeper
+japanName: ブルック 約束守る８人目
+family:
+  - Brook
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 924
+    atk: 516
+    rcv: 154
+  maxLvl:
+    hp: 2260
+    atk: 1340
+    rcv: 385
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 246091
+aliases:
+  - Limited Brook
+  - Secret Brook
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 2.75x.
+special:
+  name: The Purpose Of Living Until Today
+  description: Recovers 4,343 HP and reduces RCV DOWN duration by 5 turns. If your
+    Captain is a [STR] or [INT] character, boosts Orb Effects of all characters
+    by 2x for 1 turn. If the special is activated with more than 50% health
+    remaining, protects from defeat for 1 turn.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 4
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 8
+      reduction: 3
+    - value: 10
+      reduction: 4
+limitBreak:
+  path:
+    - hp: 20
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - hp: 30
+    - atk: 30
+    - slot: 1
+    - rcv: 30
+    - hp: 40
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

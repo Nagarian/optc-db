@@ -1,0 +1,47 @@
+type: INT
+name: "Escaped Prisoner: Galdino Prison Break Alliance"
+japanName: 脱走囚　ギャルディーノ 脱獄同盟
+family:
+  - Galdino
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 932
+    atk: 323
+    rcv: 138
+  maxLvl:
+    hp: 2052
+    atk: 753
+    rcv: 357
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 41932
+aliases:
+  - Mr 3
+  - Mr. 3
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x. If you don't attack with
+    Mr. 3, reduces damage received by 10% for that turn.
+special:
+  name: Extra Large Candle Wall
+  description: Reduces damage received by 60% for 2 turns
+  cooldown: 20
+  maxLevel: 9
+support:
+  type: descriptive
+  criteria: Buggy
+  levels:
+    - Reduces damage received from [PSY] characters by 1%.
+    - Reduces damage received from [PSY] characters by 1%.
+    - Reduces damage received from [PSY] characters by 2%.
+    - Reduces damage received from [PSY] characters by 2%.
+    - Reduces damage received from [PSY] characters by 3%.

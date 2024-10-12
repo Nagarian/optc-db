@@ -1,0 +1,355 @@
+type: DEX
+name: Iron Mask Duval
+japanName: 鉄仮面のデュバル
+family:
+  - Duval
+class:
+  - Shooter
+  - Driven
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 132
+    atk: 133
+    rcv: 25
+  maxLvl:
+    hp: 725
+    atk: 505
+    rcv: 77
+cost: 10
+slots: 1
+maxExp: 226945
+maxLevel: 35
+flags:
+  - raid
+links:
+  gamewithId: 14749
+aliases:
+  - Raid Duval
+evolution:
+  - id: 653
+    evolvers:
+      - 116
+      - 117
+      - 80
+      - 91
+      - 97
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [DEX] characters by 2x if they have Matching
+    orbs
+special:
+  name: Heart-Smashing Horn
+  description: Deals 20% of enemies' current HP in damage to all enemies, reduces
+    damage received by 50% for 1 turn
+  cooldown: 28
+  maxLevel: 15
+rumble:
+  stats:
+    def: 287
+    rumbleType: DEF
+    spd: 123
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 23
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 24
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 25
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 12
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 26
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 13
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 27
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 14
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 28
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 29
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 30
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 17
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 31
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 18
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 23
+      effects:
+        - amount: 32
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter

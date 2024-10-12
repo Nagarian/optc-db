@@ -1,0 +1,39 @@
+type: STR
+name: Fighting Fish
+japanName: 闘魚
+family:
+  - FightingFish
+class:
+  - Fighter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 177
+    atk: 122
+    rcv: 24
+  maxLvl:
+    hp: 1239
+    atk: 854
+    rcv: 171
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 70601
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.75x. Makes [TND] and [RCV]
+    orbs beneficial for Powerhouse characters
+special:
+  name: Piercing Twin Horns
+  description: Boosts ATK of this character by 1.3x for 1 turn, changes the orb of
+    this character into a [STR] orb and deals 5x character's ATK in [STR] damage
+    to all enemies
+  cooldown: 25
+  maxLevel: 7

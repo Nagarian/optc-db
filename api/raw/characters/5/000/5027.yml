@@ -1,0 +1,49 @@
+type: STR
+oldDbId: 3312
+name: "Monkey D. Garp: Neo"
+japanName: モンキー・D・ガープ「改」
+family:
+  - MonkeyDGarp
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 280
+    atk: 235
+    rcv: 50
+  maxLvl:
+    hp: 1442
+    atk: 822
+    rcv: 131
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 266802
+aliases:
+  - Neo Garp
+evolution:
+  - id: 5028
+    evolvers:
+      - 118
+      - 84
+      - 300
+      - 100
+      - 266
+captain:
+  name: ""
+  description: Boosts ATK and HP of Fighter characters by 1.5x
+special:
+  name: Meteor Fist Shower [Neo]
+  description: Randomizes all orbs into either [STR] or [RCV] orbs, reduces Bind
+    and Despair duration by 3 turns and boosts ATK of Fighter characters by
+    1.75x for 1 turn.
+  cooldown: 28
+  maxLevel: 15

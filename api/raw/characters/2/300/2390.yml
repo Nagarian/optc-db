@@ -1,0 +1,65 @@
+type: QCK
+name: Conis - Angel Unafraid of Judgment
+japanName: コニス 裁きを恐れぬ天使
+family:
+  - Conis
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 624
+    atk: 673
+    rcv: 144
+  maxLvl:
+    hp: 1821
+    atk: 1056
+    rcv: 422
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 137912
+aliases:
+  - Support Conis
+  - Support Konis
+captain:
+  name: ""
+  description: Boosts ATK and RCV of all Striker and Free Spirit characters by 1.5x.
+special:
+  name: Angel's Message
+  description: Removes Blindness duration completely and reduces Bind duration by 5 turns.
+  cooldown: 9
+  maxLevel: 1
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Ganfor, Aisa, Wyper, Nami, Vinsmoke Sanji and Usopp
+  levels:
+    - description: Boosts the supported character's ATK by 1.5x against Enel. When the
+        supported character hits a PERFECT, reduces enemies' Increased Defense
+        duration by 1 turn.
+      value: 3
+    - description: Boosts the supported character's ATK by 1.5x against Enel. When the
+        supported character hits a PERFECT, reduces enemies' Increased Defense
+        duration by 1 turn.
+      value: 6
+    - description: Boosts the supported character's ATK by 1.5x against Enel. When the
+        supported character hits a PERFECT, reduces enemies' Increased Defense
+        duration by 1 turn.
+      value: 9
+    - description: Boosts the supported character's ATK by 1.5x against Enel. When the
+        supported character hits a PERFECT, reduces enemies' Increased Defense
+        duration by 1 turn.
+      value: 12
+    - description: Boosts the supported character's ATK by 1.5x against Enel. When the
+        supported character hits a PERFECT, reduces enemies' Increased Defense
+        duration by 1 turn.
+      value: 15

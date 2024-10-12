@@ -1,0 +1,326 @@
+type: PSY
+name: Roronoa Zoro - MUGIWARA 56
+japanName: ロロノア・ゾロ ＭＵＧＩＷＡＲＡ５６
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1578
+    atk: 748
+    rcv: 88
+  maxLvl:
+    hp: 3156
+    atk: 1496
+    rcv: 176
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 283146
+aliases:
+  - TM Zoro
+  - Mugiwara Zoro
+  - Germa Zoro
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x.
+special:
+  name: Three Sword Surprise
+  description: Reduces enemies' Threshold Damage Reduction duration by 6 turns,
+    boosts Orb Effects of [PSY] and Free Spirit characters by 2.25x for 1 turn
+    and boosts ATK of [PSY] and Free Spirit characters by 1.5x for 1 turn. If
+    your crew has ATK UP, boosts Orb Effects of [PSY] and Free Spirit characters
+    by 2.25x for 2 turns. If your crew has ATK UP and Orb Amplification,
+    increases duration of any Orb Amplification buffs by 2 turns.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: When any other Free Spirit character uses a special, reduces
+      special cooldown of this character by 1 turn
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 2.75x.
+    - type: sailor
+    - rcv: 20
+    - hp: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 3x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 3.25x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 3.5x.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 3.75x.
+    - hp: 100
+    - hp: 120
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 4x and reduces Silence
+          duration by 2 turns.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 8
+          threshold: 70
+        - value: 10
+          threshold: 80
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 126
+    rumbleType: ATK
+    spd: 161
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 1
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+          duration: 6
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+          duration: 6
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 0.9
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            amount: 1
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            amount: 1.1
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 10
+        - override:
+            level: 2
+            duration: 10
+        - override:
+            amount: 1.2
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            amount: 1.3
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 12
+        - override:
+            level: 3
+            duration: 12
+        - override:
+            amount: 1.4
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 1.5
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            amount: 1.6
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            amount: 1.8

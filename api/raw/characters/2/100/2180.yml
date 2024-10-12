@@ -1,0 +1,300 @@
+type: DUAL
+name: Whitebeard & Marco - Paramount War Frontline
+japanName: 白ひげ＆マルコ 頂上戦争への布陣
+family:
+  - Marco
+  - EdwardNewgate
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 342
+    atk: 298
+    rcv: 75
+  maxLvl:
+    hp: 1612
+    atk: 846
+    rcv: 266
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 114524
+aliases:
+  - Whitebeard&Marco
+  - WhitebeardMarco
+  - Marco&Whitebeard
+  - MarcoWhitebeard
+  - WBM
+  - Legend Whitebeard and Marco
+  - Warco
+evolution:
+  - id: 2181
+    evolvers:
+      - 118
+      - 103
+      - 104
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [INT] characters by 4.25x, boosts ATK of
+    all other characters by 3x, boosts RCV of all characters by 1.5x, reduces
+    damage received by 20% and makes [PSY] and [INT] orbs beneficial for all
+    characters
+special:
+  name: Immortal Blue Flame Shockwave
+  description: Deals 30% of enemies' current HP in damage to all enemies, recovers
+    20,000 HP, randomizes all orbs into either [PSY], [INT] or [RCV] orbs and
+    becomes Whitebeard & Marco for 3 turns
+  cooldown: 23
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 100
+characters:
+  swap:
+    description: Reduces Paralysis and Silence duration by 1 turn, makes [RCV] orbs
+      beneficial for all characters for 1 turn and changes orb of this character
+      into a [RCV] orb
+  character1:
+    name: Whitebeard - Paramount War Frontline
+    japanName: 白ひげ 頂上戦争への布陣
+    class:
+      - Striker
+      - Powerhouse
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 368
+        atk: 298
+        rcv: 37
+      maxLvl:
+        hp: 1730
+        atk: 888
+        rcv: 148
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY] characters by 3.5x, boosts ATK of all other
+        characters by 2.75x, reduces damage received by 20% and makes [PSY] orbs
+        beneficial for all characters
+    sailor:
+      - description: Boosts base ATK of [PSY] and [INT] characters by 75
+  character2:
+    name: Marco - Paramount War Frontline
+    japanName: マルコ 頂上戦争への布陣
+    class:
+      - Fighter
+      - Powerhouse
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 262
+        atk: 277
+        rcv: 78
+      maxLvl:
+        hp: 1460
+        atk: 811
+        rcv: 241
+    captain:
+      name: ""
+      description: Boosts ATK of [INT] characters by 3.5x, boosts ATK of all other
+        characters by 2.75x, boosts RCV of all characters by 1.25x and makes
+        [INT] orbs beneficial for all characters
+    sailor:
+      - description: Boosts base HP and RCV of [PSY] and [INT] characters by 75
+rumble:
+  stats:
+    def: 243
+    rumbleType: DEF
+    spd: 130
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 25
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - amount: 1.1
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 27
+      effects:
+        - override: {}
+        - override:
+            amount: 1.21
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 26
+        - override:
+            amount: 1.31
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 27
+        - override:
+            amount: 1.42
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 28
+        - override:
+            amount: 1.53
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 28
+        - override:
+            amount: 1.64
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 29
+        - override:
+            amount: 1.74
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 30
+        - override:
+            amount: 1.85
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 31
+        - override:
+            amount: 1.96
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 32
+        - override:
+            amount: 2.15
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,180 @@
+type: DUAL
+name: Sanji & Zoro - Peerless Straw Hat Pirates
+japanName: 麦わらの一味の双璧 サンジ&ソロ
+family:
+  - RoronoaZoro
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1012
+    atk: 322
+    rcv: 82
+  maxLvl:
+    hp: 2897
+    atk: 1442
+    rcv: 262
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 94640
+aliases:
+  - Sanji&Zoro
+  - Zoro&Sanji
+  - SanjiZoro
+  - ZoroSanji
+  - TM Sanji and Zoro
+  - Zanji
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [PSY] characters by 3.75x and makes [PSY]
+    and [DEX] orbs beneficial for [PSY] and [DEX] characters
+special:
+  name: Armée de L'Air Power Shoot
+  description: Deals 30x character's ATK in character's Type True damage to one
+    enemy, boosts Orb Effects of [PSY] and [DEX] characters by 2.25x for 1 turn
+    and becomes Sanji & Zoro for 1 turn
+  cooldown: 39
+  maxLevel: 4
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] and [PSY] characters by 50
+  - description: Makes [TND] orbs beneficial for [DEX] and [PSY] characters
+characters:
+  swap:
+    description: Randomizes all non-Matching orbs of [PSY] and [DEX] characters and
+      adds 0.5x to Chain multiplier for 1 turn
+  character1:
+    name: Sanji - Peerless Straw Hat Pirates
+    japanName: 麦わらの一味の双璧 サンジ
+    class:
+      - Fighter
+      - Powerhouse
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 901
+        atk: 245
+        rcv: 62
+      maxLvl:
+        hp: 2621
+        atk: 1268
+        rcv: 242
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of [DEX] and [PSY] characters by 2 turns
+        at the start of the fight. Boosts ATK of [PSY] characters by 2.75x and
+        boosts ATK of [DEX] characters by 2x
+    sailor:
+      - description: Boosts base ATK of [PSY] characters by 30
+      - description: Makes [TND] orbs beneficial for [DEX] and [PSY] characters
+  character2:
+    name: Zoro - Peerless Straw Hat Pirates
+    japanName: 麦わらの一味の双璧 ソロ
+    class:
+      - Slasher
+      - Driven
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 851
+        atk: 268
+        rcv: 45
+      maxLvl:
+        hp: 2482
+        atk: 1322
+        rcv: 182
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of [DEX] and [PSY] characters by 2 turns
+        at the start of the fight. Boosts ATK of [DEX] characters by 2.75x and
+        boosts ATK of [PSY] characters by 2x
+    sailor:
+      - description: Boosts base ATK of [DEX] characters by 30
+      - description: Makes [TND] orbs beneficial for [DEX] and [PSY] characters
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - cooldown: 1
+    - cooldown: 1
+    - atk: 15
+    - hp: 40
+    - rcv: 10
+    - cooldown: 1
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 20
+    - cooldown: 1
+    - cooldown: 2
+    - atk: 25
+    - hp: 50
+    - rcv: 30
+    - cooldown: 2
+    - slot: 1
+    - atk: 30
+    - hp: 50
+    - cooldown: 2
+    - cooldown: 2
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - hp: 50
+    - rcv: 50
+    - cooldown: 2
+    - slot: 1
+    - cooldown: 2
+    - atk: 50
+    - hp: 60
+    - cooldown: 3
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 150
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 35
+        - value: 1
+          threshold: 50
+        - value: 1.5
+          threshold: 50

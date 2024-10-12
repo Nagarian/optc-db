@@ -1,0 +1,122 @@
+type: QCK
+name: Ashura Doji - Akazaya Samurai
+japanName: アシュラ童子 赤鞘の侍
+family:
+  - AshuraDoji
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1722
+    atk: 749
+    rcv: 64
+  maxLvl:
+    hp: 3444
+    atk: 1497
+    rcv: 272
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - arena
+links:
+  gamewithId: 285898
+aliases:
+  - Arena Ashura Doji
+  - Arena Shutenmaru
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3x and their HP by 1.2x.
+special:
+  name: Slash of Regret
+  description: Reduces the defense of all enemies by 100% for 1 turn, reduces
+    Silence duration by 6 turns, reduces enemies' Threshold Damage Reduction
+    duration by 6 turns, deals 120x character's ATK in Typeless damage to all
+    enemies, boosts ATK against enemies with reduced defense by 2x for 1 turn
+    and boosts base ATK of [QCK], Slasher and Powerhouse characters by 500 for 1
+    turn.
+  cooldown: 41
+  maxLevel: 15
+  stages:
+    - description: Reduces Silence duration by 4 turns, reduces enemies' Threshold
+        Damage Reduction duration by 4 turns, deals 80x character's ATK in
+        Typeless damage to all enemies, boosts ATK against enemies with reduced
+        defense by 2x for 1 turn and boosts base ATK of [QCK], Slasher and
+        Powerhouse characters by 300 for 1 turn.
+      cooldown: 29
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Reduces Silence duration by 6 turns on this character
+support:
+  type: descriptive
+  criteria: Kin'emon, Denjiro (Kyoshiro), Kikunojo, Raizo, Inuarashi, Nekomamushi,
+    Kurozumi Kanjuro, Kawamatsu and Kozuki Oden
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 50
+    - hp: 30
+    - hp: 40
+    - cooldown: 1
+    - slot: 1
+    - rcv: 30
+    - rcv: 50
+    - type: potential
+    - hp: 50
+    - cooldown: 1
+    - hp: 60
+    - hp: 80
+    - rcv: 65
+    - slot: 1
+    - type: potential
+    - atk: 60
+    - atk: 70
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70

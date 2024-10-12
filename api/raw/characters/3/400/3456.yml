@@ -1,0 +1,260 @@
+type: QCK
+name: "Bonney: Halloween Buffet Banquet - Night of Halloween"
+japanName: ボニー　ハロウィン・ディナービュッフェ Night of Halloween
+family:
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1359
+    atk: 698
+    rcv: 115
+  maxLvl:
+    hp: 2731
+    atk: 1374
+    rcv: 291
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 295624
+aliases:
+  - ""
+  - HW Bonney
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 3x, boosts HP
+    of [QCK] characters by 1.2x and PERFECTs will consume [RCV] orbs.
+special:
+  name: All-You-Can-Eat Halloween Dinner
+  description: Reduces the defense of all enemies by 100% for 1 turn, reduces Bind
+    and Despair duration by 5 turns and recovers 4,000 HP at the end of the turn
+    for 5 turns. If your crew is inflicted with Bind at the time the special was
+    activated, boosts ATK of Free Spirit and Fighter characters by 2.25x for 1
+    turn, by 1.75x otherwise.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Free Spirit characters by 50
+  - description: Makes [RCV] orbs beneficial for Fighter and Free Spirit characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[QCK] characters"
+  levels:
+    - value: 3
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - hp: 10
+    - type: potential
+    - atk: 20
+    - rcv: 50
+    - hp: 20
+    - slot: 1
+    - hp: 40
+    - hp: 60
+    - atk: 30
+    - type: sailor
+    - hp: 70
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - hp: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 105
+    rumbleType: ATK
+    spd: 158
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 0.5
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 4
+            duration: 11
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 7
+            duration: 15

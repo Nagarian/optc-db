@@ -1,0 +1,214 @@
+type: DEX
+name: Coby - White Christmas Night
+japanName: コビー ホワイトナイトクリスマス
+family:
+  - Coby
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1164
+    atk: 763
+    rcv: 143
+  maxLvl:
+    hp: 2562
+    atk: 1374
+    rcv: 315
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 241557
+aliases:
+  - Christmas Koby
+  - Cristmas Coby
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x and their HP by 1.2x
+special:
+  name: Pledge to Protect the Peace on a Snowy Night
+  description: Recovers 5,000 HP, and reduces Bind and Despair duration by 3 turns
+    and boosts ATK of all characters by 1.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Fighter and Cerebral characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Fighter and Cerebral character
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - hp: 40
+    - atk: 40
+    - cooldown: 1
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 164
+    rumbleType: RCV
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 17
+      effects:
+        - amount: 2
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            level: 3
+            duration: 12
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 2.7
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 2.8
+        - override:
+            level: 4
+            duration: 14
+    - cooldown: 17
+      effects:
+        - override:
+            amount: 3
+        - override:
+            level: 5
+            duration: 15

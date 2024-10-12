@@ -1,0 +1,55 @@
+type: QCK
+name: Cavendish
+japanName: キャベンディッシュ
+family:
+  - Cavendish
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 504
+    atk: 277
+    rcv: 148
+  maxLvl:
+    hp: 1603
+    atk: 808
+    rcv: 287
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 33767
+aliases:
+  - Hakuba
+  - Cabbage
+  - V1 Legend Cavendish
+evolution:
+  - id: 1123
+    evolvers:
+      - 118
+      - 85
+      - 266
+      - 301
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x, but boosts
+    ATK of this character by 4x
+  notes: Cavendish only boosts Friend or Sub Cavendish by 2.5x for a total of 10x
+    boost with two Cavendish captains
+special:
+  name: Slicing Winds of Rommel
+  description: Removes all positive buffs on your team. Deals 15x character's ATK
+    in Typeless damage to all enemies. Boosts ATK of this character by 2.25x for
+    2 turns, boosts Orb Effects of this character by 1.5x for 2 turns, locks own
+    orb for 2 turns and changes the orb of this character into a [QCK] orb.
+  cooldown: 20
+  maxLevel: 6
+  notes: Boosted ATK and Orb Effectiveness only works for the character who uses
+    their own Special.

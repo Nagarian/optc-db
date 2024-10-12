@@ -1,0 +1,501 @@
+type: DEX
+name: Eustass Kid - Dragon-Challenging Magnetic Captain
+japanName: ユースタス・キッド 龍に挑む磁場の“キャプテン”
+family:
+  - EustassKid
+class:
+  - Driven
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1711
+    atk: 988
+    rcv: 111
+  maxLvl:
+    hp: 3768
+    atk: 1647
+    rcv: 223
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 203898
+aliases:
+  - Kidd
+  - V1 Legend Kid
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 4x, boosts ATK of all other
+    characters by 3.75x, changes [TND] orbs into [BOMB] orbs, boosts chances of
+    getting [TND] orbs and makes [BOMB] and [SUPERBOMB] orbs beneficial for all
+    characters. If a [DEX] character has a [BOMB] or [SUPERBOMB] orb, boosts
+    their ATK by 5x instead. [BOMB] and [SUPERBOMB] orbs will deal 0 damage to
+    the crew.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Monkey
+    D. Luffy, Roronoa Zoro, Trafalgar D. Water Law, Killer, Basil Hawkins,
+    Capone Bege, Jewelry Bonney, Scratchmen Apoo, X Drake or Urouge, excluding
+    Support members."
+  description: Deals 100x character's ATK in Typeless Fixed True damage to all
+    enemies, changes all orbs, including [BLOCK] orbs, into [BOMB] orbs and
+    transforms all [DEX] characters into Super [DEX] characters.
+special:
+  name: Captain's Steel Arm
+  description: Changes [STR], [DEX], [BOMB] and [SUPERBOMB] orbs into [EMPTY]
+    orbs, deals 500,000-3,000,000 Typeless damage to all enemies depending on
+    number of slots emptied, changes [EMPTY] orbs into [SUPERBOMB] orbs and
+    boosts ATK of [DEX] characters by 2.5x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+  notes: |-
+    0 slots emptied: 500,000 damage  
+    1-6 slots emptied: deals 500,000 damage per slot emptied.
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] characters by 75
+  - description: Makes [BOMB] and [SUPERBOMB] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: "[DEX] Characters"
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb and makes [BOMB] orbs beneficial for all characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb and makes [BOMB] orbs beneficial for all characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb, including [BLOCK] orbs, of the
+      supported character into a [BOMB] orb and makes [BOMB] orbs beneficial for
+      all characters for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 30
+    - hp: 50
+    - hp: 50
+    - hp: 70
+    - hp: 70
+    - atk: 20
+    - atk: 20
+    - type: sailor
+    - hp: 100
+    - hp: 110
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 25
+    - rcv: 25
+    - rcv: 50
+    - atk: 25
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 277
+    rumbleType: DEF
+    spd: 122
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 0.88
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 0.96
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 1.04
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 1.12
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 21
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.28
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 23
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.36
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 24
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.44
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 25
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

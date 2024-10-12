@@ -1,0 +1,48 @@
+type: QCK
+name: Pica - Stone-Assimilation Man
+japanName: ピーカ 岩石同化人間
+family:
+  - Pica
+class:
+  - Powerhouse
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 310
+    atk: 101
+    rcv: 1
+  maxLvl:
+    hp: 1555
+    atk: 598
+    rcv: 5
+cost: 12
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 100142
+aliases:
+  - Story Pica
+evolution:
+  - id: 2052
+    evolvers:
+      - 117
+      - 90
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: If you have 5 or more Fighter characters in your crew, boosts ATK
+    of Fighter characters by 2x and reduces damage received by 5%
+special:
+  name: Bitestone
+  description: Deals 35x character's ATK in [QCK] damage to one enemy and boosts
+    ATK of Fighter characters by 1.75x for 2 turns. If Pica is your Captain or
+    Friend/Guest Captain, reduces damage received by 20% for 1 turn. If he is a
+    Sailor, Increases damage received by 2x for 1 turn instead.
+  cooldown: 23
+  maxLevel: 7

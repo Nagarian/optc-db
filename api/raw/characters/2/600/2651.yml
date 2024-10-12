@@ -1,0 +1,140 @@
+type: STR
+name: Douglas Bullet - Demon Heir
+japanName: ダグラス・バレット 鬼の跡目
+family:
+  - DouglasBullet
+class:
+  - Fighter
+  - Driven
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1621
+    atk: 1072
+    rcv: 49
+  maxLvl:
+    hp: 3810
+    atk: 1612
+    rcv: 235
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 161561
+aliases:
+  - Legend Bullet
+evolution:
+  - id: 2681
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [QCK] and [INT] characters by 4x, their HP by
+    1.2x, boosts ATK of this character by 4.5x and makes [STR], [QCK] and [INT]
+    orbs beneficial for [STR], [QCK] and [INT] characters. This character's own
+    normal attacks count as Type Effective against all Types.
+  notes: Bullet will make only his own attacks Type effective against all Types
+special:
+  name: "Armor Assimilation: Union Armado"
+  description: Deals 20% of enemies' current HP in True damage to one enemy and
+    deals 2x the damage dealt by this character with normal attacks to all
+    enemies at the end of each turn for 2 turns.
+  cooldown: 22
+  maxLevel: 6
+  notes: End of Turn damage is based on the damage dealt by the Bullet who
+    activated the buff and is dependent on how much damage in normal attacks by
+    that character per each turn the buff is active, and can change each turn.
+sailor:
+  - description: Boosts this character's damage against [QCK] characters by 2x
+  - description: Boosts base ATK of this character by 300 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR], [QCK] and [INT] characters"
+  levels:
+    - value: 1
+    - value: 3
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 40
+    - hp: 45
+    - hp: 50
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 15
+    - hp: 50
+    - atk: 30
+    - rcv: 15
+    - hp: 60
+    - cooldown: 2
+    - atk: 30
+    - rcv: 15
+    - rcv: 20
+    - type: sailor
+    - hp: 80
+    - hp: 100
+    - atk: 40
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 12
+          threshold: 90

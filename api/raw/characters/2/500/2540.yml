@@ -1,0 +1,148 @@
+type: DUAL
+name: Ivankov & Bon Clay - New Kama Cheering for a Miracle
+japanName: イワンコフ＆ボン・クレー 奇跡を招く新人類
+family:
+  - Bentham
+  - EmporioIvankov
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1021
+    atk: 555
+    rcv: 160
+  maxLvl:
+    hp: 2552
+    atk: 1387
+    rcv: 401
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 150049
+aliases:
+  - Ivankov&Bon Clay
+  - Bon Clay&Ivankov
+  - IvankovBon Clay
+  - Bon ClayIvankov
+  - Ivankov and Bon Clay
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x at the start of the
+    chain, by 3.43x after 4 PERFECTs in a row and recovers 3x character's RCV in
+    HP at the end of each turn.
+special:
+  name: The Cheer that will Summon a Miracle
+  description: Removes Poison, RCV DOWN and Blindness duration completely, reduces
+    Bind and Despair duration by 5 turns, recovers 13x character's RCV in HP at
+    the end of each turn for 5 turns and becomes Ivankov & Bon Clay for 2 turns.
+  cooldown: 22
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of Free Spirit characters by 75
+  - description: Reduces Silence duration by 5 turns on this character
+characters:
+  swap:
+    description: Reduces Paralysis duration by 1 turn and reduces damage received by
+      20% for 1 turn.
+  character1:
+    name: Ivankov - New Kama Cheering for a Miracle
+    japanName: イワンコフ 奇跡を招く新人類
+    class:
+      - Free Spirit
+      - Fighter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 929
+        atk: 520
+        rcv: 155
+      maxLvl:
+        hp: 2322
+        atk: 1299
+        rcv: 388
+    captain:
+      name: ""
+      description: Boosts ATK of Free Spirit characters by 2x and recovers 2x
+        character's RCV in HP at the end of each turn.
+    sailor:
+      - description: Boosts base RCV of Free Spirit characters by 50
+      - description: Reduces Silence duration by 5 turns on this character
+  character2:
+    name: Bon Clay - New Kama Cheering for a Miracle
+    japanName: ボン・クレー 奇跡を招く新人類
+    class:
+      - Free Spirit
+      - Fighter
+    type: STR
+    stats:
+      combo: 6
+      minLvl:
+        hp: 996
+        atk: 549
+        rcv: 125
+      maxLvl:
+        hp: 2490
+        atk: 1372
+        rcv: 355
+    captain:
+      name: ""
+      description: Boosts ATK of Free Spirit characters by 2.25x at the start of the
+        chain, by 2.7x after 4 PERFECTs in a row.
+    sailor:
+      - description: Boosts base ATK of Free Spirit characters by 50
+      - description: Reduces Silence duration by 5 turns on this character
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 30
+    - hp: 30
+    - hp: 45
+    - slot: 1
+    - atk: 35
+    - rcv: 25
+    - hp: 60
+    - atk: 60
+    - type: sailor
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - atk: 50
+    - rcv: 25
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1.5
+          threshold: 30
+    - type: Reduce No Healing duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7

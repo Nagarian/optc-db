@@ -1,0 +1,51 @@
+type: INT
+name: X Drake
+japanName: X・ドレーク
+family:
+  - XDrake
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 242
+    atk: 112
+    rcv: 32
+  maxLvl:
+    hp: 1515
+    atk: 688
+    rcv: 88
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 7208
+aliases:
+  - Supernova Drake
+  - Supernova X Drake
+evolution:
+  - id: 361
+    evolvers:
+      - 118
+      - 82
+      - 83
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 3x if HP is below 30% at the
+    start of the turn
+special:
+  name: Prehistoric Power
+  description: Deals 10x character's ATK in [INT] damage to all enemies. If the
+    special is activated with more than 50% health remaining, protects from
+    defeat for 1 turn.
+  cooldown: 28
+  maxLevel: 9
+sailor:
+  - description: Boosts base HP of Powerhouse characters by 100

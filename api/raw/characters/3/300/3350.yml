@@ -1,0 +1,387 @@
+type: INT
+name: Komurasaki - Oiran's Finale
+japanName: 小紫 花魁の最期
+family:
+  - KozukiHiyori
+class:
+  - Slasher
+  - Cerebral
+rarity: 6+
+stats:
+  combo: 5
+  minLvl:
+    hp: 1600
+    atk: 772
+    rcv: 243
+  maxLvl:
+    hp: 3377
+    atk: 1444
+    rcv: 456
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 177804
+aliases:
+  - Mega/Super/6+ Komurasaki
+  - Not Hiyori
+  - V1 Legend Hiyori
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 4.25x, makes [QCK] and
+    [INT] orbs beneficial for [QCK] and [INT] characters, recovers 0.5x this
+    character's RCV at the end of the turn for each time you hit a PERFECT and
+    reduces damage received by 20%. Boosts amount of Beli received by 2x
+special:
+  name: Strong Woman's Pride
+  description: Randomizes all orbs into either [QCK] or [INT] orbs. Boosts ATK of
+    [QCK] and [INT] characters by 2x for 2 turns and boosts Orb Effects of [QCK]
+    and [INT] characters by 2x for 2 turns. If the special is activated with
+    more than 50% health remaining, protects from defeat for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Makes [QCK] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 5
+    - hp: 10
+    - type: potential
+    - hp: 20
+    - rcv: 5
+    - atk: 5
+    - atk: 10
+    - atk: 15
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - rcv: 15
+    - hp: 30
+    - atk: 25
+    - hp: 40
+    - rcv: 15
+    - rcv: 20
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 4.25x, boosts chances
+          of getting [QCK] and [INT] orbs, makes [QCK] and [INT] orbs beneficial
+          for [QCK] and [INT] characters, recovers 0.5x this character's RCV at
+          the end of the turn for each time you hit a PERFECT and reduces damage
+          received by 20%. Boosts amount of Beli received by 2x
+    - cooldown: 2
+    - rcv: 50
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 153
+    rumbleType: RCV
+    spd: 154
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 3
+  resilience:
+    - amount: 250
+      interval: 5
+      type: healing
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 1
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Critical Hit
+          effect: buff
+          duration: 11
+          level: 2
+          targeting:
+            targets:
+              - QCK
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          duration: 11
+          level: 2
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            level: 4
+            duration: 15
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            level: 4
+            duration: 16
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 5
+            duration: 17
+        - override:
+            level: 5
+            duration: 17
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 6
+            duration: 19
+        - override:
+            level: 6
+            duration: 19
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 7
+            duration: 20
+        - override:
+            level: 7
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

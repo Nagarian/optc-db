@@ -1,0 +1,127 @@
+type: QCK
+name: Rebecca - Celebrate the Fabulous Cruise
+japanName: レベッカ The 7th Anniversary Cruise
+family:
+  - Rebecca
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1295
+    atk: 834
+    rcv: 77
+  maxLvl:
+    hp: 2878
+    atk: 1390
+    rcv: 257
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 276693
+aliases:
+  - Wano
+  - Anniversary
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x and reduces damage received by 10%.
+special:
+  name: Smiling Under the Cherry Tree
+  description: Reduces Bind and Despair duration by 5 turns, changes orbs of
+    adjacent characters into Matching orbs, reduces damage received by 70% for 1
+    turn and increases duration of any ATK boosting buffs by 1 turn.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of [QCK] characters by 50
+  - description: Makes [QCK] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: "[QCK] characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts ATK of [QCK] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts ATK of [QCK] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts ATK of [QCK] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts ATK of [QCK] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts ATK of [QCK] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - rcv: 25
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - hp: 50
+    - rcv: 25
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

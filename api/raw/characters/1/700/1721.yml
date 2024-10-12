@@ -1,0 +1,242 @@
+type: QCK
+name: "Big Boss Jinbe - Neptune's Army Soldier: Ryugu Kingdom"
+japanName: “親分”ジンベエ リュウグウ王国ネプチューン軍兵士
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1220
+    atk: 614
+    rcv: 132
+  maxLvl:
+    hp: 2594
+    atk: 1330
+    rcv: 320
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 63375
+aliases:
+  - Secret Jinbe
+  - Secret Jimbe
+  - Young Jinbe
+  - Young Jimbe
+  - Jinbei
+  - Jimbei
+  - Jimbe
+  - Limited Jinbe
+  - Limited Jimbe
+captain:
+  name: ""
+  description: Boosts HP of Fighter characters by 1.4x and boosts ATK of Fighter
+    characters by 2.5x, by 2.75x instead if they have a beneficial orb.
+special:
+  name: Passive Aggressive Boss
+  description: If your Captain is a Fighter character, changes orbs of adjacent
+    characters into Matching orbs and locks the chain multiplier at 2.5x for 1
+    turn
+  cooldown: 10
+  maxLevel: 5
+sailor:
+  - description: Makes [STR] and [DEX] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Fighter characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - rcv: 20
+    - atk: 15
+    - rcv: 20
+    - hp: 50
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - hp: 80
+    - rcv: 30
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 241
+    rumbleType: DEF
+    spd: 110
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 70
+      type: debuff
+    - attribute: Cerebral
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - DEF
+          duration: 7
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 7
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            duration: 9
+        - override:
+            duration: 9
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 21
+        - override:
+            duration: 21
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 23
+        - override:
+            duration: 23
+    - cooldown: 25
+      effects:
+        - override:
+            level: 6
+            duration: 25
+        - override:
+            duration: 25

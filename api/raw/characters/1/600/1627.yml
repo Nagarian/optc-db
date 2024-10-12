@@ -1,0 +1,56 @@
+type: DEX
+name: Machvise - Super-Weight-Man
+japanName: マッハ・バイス 超体重人間
+family:
+  - Machvise
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 140
+    atk: 70
+    rcv: 16
+  maxLvl:
+    hp: 1540
+    atk: 590
+    rcv: 98
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 59480
+aliases:
+  - Colo Mach Vise
+  - Coliseum Mach Vise
+  - Colo Machvise
+  - Coliseum Machvise
+evolution:
+  - id: 1628
+    evolvers:
+      - 118
+      - 97
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x
+special:
+  name: Thousand Ton Destruction
+  description: Reduces Chain Multiplier Limit duration by 5 turns and boosts the
+    Color Affinity of Striker characters by 1.75x for 1 turn
+  cooldown: 31
+  maxLevel: 15
+  stages:
+    - description: Reduces Chain Multiplier Limit duration by 1 turn and boosts the
+        Color Affinity of Striker characters by 1.25x for 1 turn
+      cooldown: 23
+    - description: Reduces Chain Multiplier Limit duration by 3 turns and boosts the
+        Color Affinity of Striker characters by 1.5x for 1 turn
+      cooldown: 27

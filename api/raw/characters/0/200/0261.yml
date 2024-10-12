@@ -1,0 +1,136 @@
+type: STR
+name: Whitebeard
+japanName: 白ひげ
+family:
+  - EdwardNewgate
+class:
+  - Striker
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 3148
+    atk: 978
+    rcv: 110
+  maxLvl:
+    hp: 3900
+    atk: 1360
+    rcv: 235
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 5166
+aliases:
+  - Edward Newgate
+  - V1 Legend WB
+  - Yonko
+evolution:
+  - id: 1413
+    evolvers:
+      - skullSTR
+      - 118
+      - 84
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x if HP is below 30% at the start
+    of the turn
+special:
+  name: Seaquake
+  description: Deals 30% of enemies' current HP in damage to all enemies
+  cooldown: 25
+  maxLevel: 9
+sailor:
+  - description: Boosts base ATK of Striker and Powerhouse characters by 60
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - atk: 5
+    - hp: 5
+    - rcv: 10
+    - type: potential
+    - rcv: 15
+    - hp: 20
+    - atk: 25
+    - type: sailor
+    - atk: 10
+    - hp: 15
+    - atk: 20
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - type: potential
+    - rcv: 20
+    - atk: 20
+    - hp: 45
+    - hp: 50
+    - hp: 65
+    - atk: 25
+    - hp: 40
+    - hp: 70
+    - hp: 80
+    - atk: 30
+    - rcv: 40
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 200
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 2
+        - value: 100
+          reduction: 3
+        - value: 150
+          reduction: 4
+        - value: 200
+          reduction: 5

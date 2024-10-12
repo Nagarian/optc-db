@@ -1,0 +1,166 @@
+type: STR
+name: Coby - Escort to the World Council
+japanName: 海軍本部大佐コビー “世界会議”への護衛
+family:
+  - Coby
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 488
+    atk: 254
+    rcv: 54
+  maxLvl:
+    hp: 1220
+    atk: 635
+    rcv: 136
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 156169
+aliases:
+  - Koby
+evolution:
+  - id: 2605
+    evolvers:
+      - 266
+      - 89
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.25x.
+special:
+  name: Hastened Hero
+  description: Reduces Despair and Paralysis duration by 5 turns and recovers 9x
+    character's RCV in HP at the end of each turn for 3 turns. If HP is above
+    50% at the time the special is activated, reduces damage received from [QCK]
+    and [DEX] enemies by 100% for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 10 turns
+rumble:
+  stats:
+    def: 245
+    rumbleType: DEF
+    spd: 120
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - DEX
+              - QCK
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 21
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 22
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 24
+        - override:
+            level: 5
+            duration: 24

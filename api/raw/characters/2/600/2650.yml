@@ -1,0 +1,288 @@
+type: STR
+name: Bullet - Former Crewmember of the Roger Pirates
+japanName: バレット 元ロジャー海賊団
+family:
+  - DouglasBullet
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 672
+    atk: 342
+    rcv: 25
+  maxLvl:
+    hp: 1681
+    atk: 1099
+    rcv: 58
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 161561
+aliases:
+  - Legend Bullet
+evolution:
+  - id: 2651
+    evolvers:
+      - 118
+      - 300
+      - 2662
+      - 100
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [QCK] and [INT] characters by 4x, their HP by
+    1.2x, boosts ATK of this character by 4.5x and makes [STR], [QCK] and [INT]
+    orbs beneficial for [STR] and [INT] characters. This character's own normal
+    attacks count as Type Effective against all Types.
+  notes: Bullet will make only his own attacks Type effective against all Types
+special:
+  name: "Armor Assimilation: Union Armado"
+  description: Deals 20% of enemies' current HP in True damage to one enemy and
+    deals 2x the damage dealt by this character with normal attacks to all
+    enemies at the end of each turn for 2 turns.
+  cooldown: 22
+  maxLevel: 6
+  notes: End of Turn damage is based on the damage dealt by the Bullet who
+    activated the buff and is dependent on how much damage in normal attacks by
+    that character per each turn the buff is active, and can change each turn.
+sailor:
+  - description: Boosts this character's damage against [QCK] characters by 2x
+rumble:
+  stats:
+    def: 301
+    rumbleType: DEF
+    spd: 117
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 40
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 20
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          level: 1
+          effect: buff
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          duration: 15
+          level: 3
+          effect: buff
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 15
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 9
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 20
+      effects:
+        - override:
+            level: 2
+        - {}
+        - {}
+        - override:
+            amount: 10
+    - cooldown: 20
+      effects:
+        - override:
+            level: 3
+        - {}
+        - {}
+        - override:
+            amount: 11
+    - cooldown: 20
+      effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - {}
+        - override:
+            amount: 12
+    - cooldown: 20
+      effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+        - {}
+        - override:
+            amount: 13
+    - cooldown: 20
+      effects:
+        - override:
+            level: 6
+        - override:
+            level: 5
+        - {}
+        - override:
+            amount: 14
+    - cooldown: 20
+      effects:
+        - override:
+            level: 7
+        - override:
+            level: 5
+        - {}
+        - override:
+            amount: 15
+    - cooldown: 20
+      effects:
+        - override:
+            level: 8
+        - override:
+            level: 5
+        - {}
+        - override:
+            amount: 16
+    - cooldown: 20
+      effects:
+        - override:
+            level: 9
+        - override:
+            level: 6
+        - {}
+        - override:
+            amount: 17
+    - cooldown: 20
+      effects:
+        - override:
+            level: 10
+        - override:
+            level: 7
+        - {}
+        - override:
+            amount: 18
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

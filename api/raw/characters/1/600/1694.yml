@@ -1,0 +1,106 @@
+type: PSY
+name: "Dogstorm: King of the Day - Mokomo Dukedom"
+japanName: “昼の王”イヌアラシ モコモ公国
+family:
+  - Inuarashi
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1188
+    atk: 688
+    rcv: 148
+  maxLvl:
+    hp: 2330
+    atk: 1405
+    rcv: 301
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 62896
+aliases:
+  - Colo Inuarashi
+  - Coliseum Inuarashi
+  - Dog Storm
+  - Dogstorm
+  - Doggo
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.75x
+special:
+  name: King's Lightning Burial
+  description: Reduces crew's current HP by 50%, deals 50,000 Fixed damage to one
+    enemy, boosts ATK of this character by 1.75x for 1 turn, boosts Orb Effects
+    of this character by 1.75x for 1 turn and changes the orb of this character
+    into a [PSY] orb.
+  cooldown: 24
+  maxLevel: 16
+  notes: Boosted ATK and Orb Effectiveness only works for the character who uses
+    their own Special.
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      Slasher characters by 50
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      Cerebral characters by 50
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Sicilian and Wanda
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 15
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - rcv: 15
+    - hp: 60
+    - rcv: 20
+    - atk: 40
+    - type: sailor
+    - hp: 80
+    - atk: 50
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

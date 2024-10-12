@@ -1,0 +1,45 @@
+type: STR
+name: Iron-Mace Alvida
+frenchName: Alvida à la Massue
+japanName: 金棒のアルビダ
+family:
+  - Alvida
+class:
+  - Striker
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 184
+    atk: 154
+    rcv: 5
+  maxLvl:
+    hp: 1412
+    atk: 755
+    rcv: 61
+cost: 10
+slots: 0
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - fortnight
+links:
+  gamewithId: 2105
+aliases: []
+evolution:
+  - id: 30
+    evolvers:
+      - 117
+      - 78
+      - 89
+      - 100
+captain:
+  name: ""
+  description: Reduces damage received from [STR] enemies by 30%
+special:
+  name: Iron Mace Beauty
+  description: Deals 7x character's ATK in [STR] damage to one enemy
+  cooldown: 15
+  maxLevel: 7

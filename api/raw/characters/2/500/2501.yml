@@ -1,0 +1,58 @@
+type: INT
+name: Koshiro - Young Swordsman's Master
+japanName: コウシロウ 幼き剣豪の師
+family:
+  - Koshiro
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 631
+    atk: 589
+    rcv: 125
+  maxLvl:
+    hp: 2028
+    atk: 1164
+    rcv: 364
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 147729
+aliases:
+  - Support Koshiro
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Slasher characters by 1.75x
+special:
+  name: Slicing Straw Paper in the Air
+  description: Reduces Special Cooldown of top row characters by 1 turn and
+    reduces Bind and Despair duration by 3 turns.
+  cooldown: 11
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: Roronoa Zoro
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense and Resilience
+      Buffs duration by 1 turn and adds 0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense and Resilience
+      Buffs duration by 1 turn and adds 0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense and Resilience
+      Buffs duration by 2 turns and adds 0.3x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense and Resilience
+      Buffs duration by 3 turns and adds 0.5x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense and Resilience
+      Buffs duration by 4 turns and adds 0.7x to Chain multiplier for 1 turn.

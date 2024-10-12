@@ -1,0 +1,110 @@
+type: QCK
+name: Nefeltari Vivi - Dancing Princess
+japanName: ネフェルタリ・ビビ 演舞極める王女
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1230
+    atk: 916
+    rcv: 113
+  maxLvl:
+    hp: 2400
+    atk: 1650
+    rcv: 250
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 223980
+aliases:
+  - World Journey Vivi
+  - Chinese Vivi
+captain:
+  name: ""
+  description: If HP is above 99% at the start of the turn, boosts ATK of Fighter
+    and Free Spirit characters by 3.5x, by 3x otherwise and recovers 5x
+    character's RCV in HP at the end of each turn.
+special:
+  name: Dancing Peacock
+  description: Reduces Burn duration by 5 turns and recovers 15x character's RCV
+    in HP at the end of each turn for 3 turns. If your captain is a Fighter or
+    Free Spirit character, boosts ATK of all characters by 1.75x for 1 turn and
+    if during that turn you score 4 PERFECT hits, boosts ATK of all characters
+    by 2x for 1 turn in the following turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Makes [STR] orbs beneficial for Fighter and Free Spirit characters
+  - description: Reduces Blindness duration by 5 turns
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 10
+    - atk: 15
+    - type: potential
+    - hp: 60
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - hp: 100
+    - slot: 1
+    - rcv: 20
+    - atk: 25
+    - type: sailor
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

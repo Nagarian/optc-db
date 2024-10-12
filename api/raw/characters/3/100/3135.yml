@@ -1,0 +1,192 @@
+type: VS
+name: Kaido VS Big Mom - The Two Threats
+japanName: カイドウＶＳビッグ・マム 二つの脅威
+family:
+  - CharlotteLinlin
+  - Kaido
+rarity: 6
+stats:
+  combo: 0
+  minLvl:
+    hp: 2050
+    atk: 1050
+    rcv: 70
+  maxLvl:
+    hp: 4555
+    atk: 1750
+    rcv: 233
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 234110
+aliases:
+  - VS Kaido
+  - VS BM
+  - Legend Kaido VS BM
+captain:
+  name: ""
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - atk: 5
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - atk: 15
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - hp: 70
+    - hp: 70
+    - hp: 70
+    - hp: 100
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+characters:
+  criteria: When the crew consumes/uses 10 [TND], [RCV] or [SEMLA] orbs with
+    normal attacks.
+  character1:
+    name: Kaido - The Two Threats
+    japanName: カイドウ 二つの脅威
+    class:
+      - Driven
+      - Powerhouse
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1699
+        atk: 995
+        rcv: 65
+      maxLvl:
+        hp: 3776
+        atk: 1658
+        rcv: 218
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of all characters by 2 turns at the start
+        of the fight, boosts ATK of [STR], [DEX] and [INT] characters by 5x,
+        their HP by 1.3x, deals 20% of enemies' current HP in damage to all
+        enemies at the end of each turn, boosts chances of getting [TND] orbs
+        and makes [TND] orbs beneficial for all characters.
+    special:
+      name: Beast Blow • Soul Rending Blow
+      description: Deals 20% of enemies' current HP in True damage to all enemies,
+        changes [BLOCK] and [RCV] orbs into [TND] orbs, boosts ATK of [STR],
+        [DEX] and [INT] characters by 2.25x for 1 turn. If during that turn you
+        score 3 PERFECT hits, boosts Orb Effects of [STR], [DEX] and [INT]
+        characters by 2.5x for 1 turn.
+      cooldown: 20
+      maxLevel: 6
+    sailor:
+      - description: Cannot be Blown Away
+      - description: Makes [TND], [RCV] and [SEMLA] orbs beneficial for [STR] and [INT]
+          characters
+    versus:
+      description: Deals 500x character's ATK in Typeless damage to all enemies at the
+        end of the turn for 3 turns and deals 3x the damage dealt by this
+        character with normal attacks in Typeless damage to the enemy with the
+        highest current HP at the end of the turn for 3 turns.
+  character2:
+    name: Big Mom - The Two Threats
+    japanName: ビッグ・マム 二つの脅威
+    class:
+      - Driven
+      - Powerhouse
+    type: INT
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1737
+        atk: 989
+        rcv: 67
+      maxLvl:
+        hp: 3860
+        atk: 1649
+        rcv: 222
+    captain:
+      name: ""
+      description: Boosts ATK of [STR], [PSY] and [INT] characters by 5x, their HP by
+        1.5x, boosts chances of getting [RCV] orbs, makes [RCV] and [SEMLA] orbs
+        beneficial for all characters and PERFECTs will consume [RCV] and
+        [SEMLA] orbs.
+    special:
+      name: Beast Blow • Soul Rending Blow
+      description: Deals 20% of enemies' current HP in True damage to all enemies,
+        changes [BLOCK] and [TND] orbs into [RCV] orbs, boosts ATK of [STR],
+        [PSY] and [INT] characters by 2.25x for 1 turn. If during that turn you
+        score 3 PERFECT hits, boosts Orb Effects of [STR], [PSY] and [INT]
+        characters by 2.5x for 1 turn.
+      cooldown: 20
+      maxLevel: 6
+    sailor:
+      - description: Cannot be Blown Away
+      - description: Makes [TND], [RCV] and [SEMLA] orbs beneficial for [STR] and [INT]
+          characters
+    versus:
+      description: Makes own normal attacks ignore damage reducing Barriers, Buffs and
+        DEF for 3 turns, changes [RCV] orbs into [SEMLA] orbs for 3 turns and
+        recovers HP proportional to the number of enemies you defeated in that
+        turn ✕ 15x character's RCV at the end of the enemy turn.

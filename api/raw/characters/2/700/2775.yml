@@ -1,0 +1,260 @@
+type: QCK
+name: Komurasaki
+japanName: 小紫
+family:
+  - KozukiHiyori
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 369
+    atk: 211
+    rcv: 87
+  maxLvl:
+    hp: 1540
+    atk: 790
+    rcv: 230
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 177804
+aliases:
+  - Thot
+  - Kozuki Hiyori
+  - V1 Legend Komurasaki
+evolution:
+  - id: 2776
+    evolvers:
+      - 118
+      - 301
+      - 2662
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 4x, makes [QCK] and
+    [INT] orbs beneficial for [QCK] and [INT] characters, recovers 0.5x this
+    character's RCV at the end of the turn for each time you hit a PERFECT and
+    reduces damage received by 20%. Boosts amount of Beli received by 2x
+special:
+  name: Oiran's Bewitching Smile
+  description: Randomizes all orbs into either [QCK] or [INT] orbs. If HP is above
+    99% at the time the special is activated, boosts ATK of [QCK] and [INT]
+    characters by 2x for 2 turns and boosts Orb Effects of [QCK] and [INT]
+    characters by 2x for 2 turns. Otherwise, boosts ATK of [QCK] and [INT]
+    characters by 2x for 1 turn and boosts Orb Effects of [QCK] and [INT]
+    characters by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+rumble:
+  stats:
+    def: 128
+    rumbleType: RCV
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 3
+  resilience:
+    - amount: 100
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+        - attributes:
+            - DEF
+          level: 1
+          effect: buff
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 0.65
+          effect: recharge
+          type: RCV
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - QCK
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 80
+            stat: HP
+            type: stat
+          level: 2
+          duration: 15
+          effect: buff
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.74
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.82
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.91
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.09
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.17
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.26
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.35
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.45
+        - override:
+            level: 2
+        - override:
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

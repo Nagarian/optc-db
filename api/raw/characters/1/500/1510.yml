@@ -1,0 +1,54 @@
+type: INT
+name: Speed Jil - Whitebeard's Fourteenth Division Commander
+japanName: スピード・ジル 白ひげ海賊団１４番隊隊長
+family:
+  - SpeedJil
+class:
+  - Driven
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 49
+    atk: 50
+    rcv: 30
+  maxLvl:
+    hp: 2140
+    atk: 1214
+    rcv: 188
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 52634
+aliases:
+  - Speed Jiru
+  - Genocide Jil
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Striker characters by 2x
+special:
+  name: Acceleration Lance
+  description: Deals 12,500 Fixed damage to one enemy
+  cooldown: 14
+  maxLevel: 8
+sailor:
+  - description: When HP is above 70% at the start of the turn, boosts base ATK of
+      Striker characters by 20
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Haruta, Atmos and Kingdew
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

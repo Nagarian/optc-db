@@ -1,0 +1,116 @@
+type: QCK
+name: Bonekichi - The Ghostly Skeletal Apparition
+japanName: ホネ吉 妖怪“がしゃどくろ”
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1171
+    atk: 606
+    rcv: 167
+  maxLvl:
+    hp: 2810
+    atk: 1334
+    rcv: 287
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - arena
+links:
+  gamewithId: 253754
+aliases:
+  - Arena Brook
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3x and their HP by 1.2x.
+special:
+  name: Gashadokuro Spreading Fear
+  description: Deals 100x character's ATK in Typeless damage to all enemies at the
+    end of the turn for 3 turns and delays all enemies by 2 turns and reduces
+    the defense of all enemies by 100% for 1 turn. If there is only 1 enemy on
+    the stage when the special is activated, boosts ATK against enemies with
+    reduced defense by 2x for 1 turn. If there are 2 or more enemies on the
+    stage when the special is activated, boosts ATK against delayed enemies by
+    2x for 1 turn. If enemies have All Debuff Protection, reduces any damage
+    received above 3,000 HP by ?% for 2 turns.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of [QCK] characters by 50
+  - description: If this character has a [QCK] orb and you hit a PERFECT with him,
+      keep his [QCK] orb for the next turn
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Toko and Kozuki Hiyori (Komurasaki)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - atk: 40
+    - hp: 40
+    - cooldown: 1
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 45
+    - hp: 80
+    - atk: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70

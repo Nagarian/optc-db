@@ -1,0 +1,461 @@
+type: QCK
+name: Sugar - Shocked Creator of Toys
+japanName: シュガー お目々が飛び出るオモチャの主
+family:
+  - Sugar
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 714
+    atk: 276
+    rcv: 65
+  maxLvl:
+    hp: 1613
+    atk: 896
+    rcv: 212
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 211226
+aliases:
+  - V1 Legend Sugar
+evolution:
+  - id: 3009
+    evolvers:
+      - 118
+      - 96
+      - 1180
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Cost 40 or less characters by 4.5x, boosts ATK of all
+    other characters by 3x, boosts HP of all characters by 1.2x and makes [QCK]
+    and [INT] orbs beneficial for all characters.
+special:
+  name: Toy Revenge
+  description: Select up to 5 characters to become Toy Bears for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+  notes: Toy Bears have 40 cost and 2500 base ATK. Toy Bears will automatically
+    attack after Sugar attacks. Sugar and Toy Bears will ignore barriers and
+    gain +0.7x chain addition on HOBBY-HOBBY hit, instead of +0.3x for PERFECTs.
+    Toy Bears are immune to some debuffs including, but not limited to, Bind,
+    Stun, Paralysis and Burn. Auto-attacking Toy Bears will hit a HOBBY-HOBBY
+    tap timing, which is similar to a PERFECT.
+rumble:
+  stats:
+    def: 140
+    rumbleType: DBF
+    spd: 195
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: debuff
+          level: 4
+          targeting:
+            count: 3
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: debuff
+          level: 5
+          targeting:
+            count: 3
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: debuff
+          level: 6
+          targeting:
+            count: 3
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: debuff
+          level: 7
+          targeting:
+            count: 3
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: debuff
+          level: 8
+          targeting:
+            count: 3
+            targets:
+              - STR
+  special:
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 15
+          effect: debuff
+          level: 3
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 16
+          effect: debuff
+          level: 3
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 17
+          effect: debuff
+          level: 4
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 18
+          effect: debuff
+          level: 4
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 19
+          effect: debuff
+          level: 5
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 5
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 21
+          effect: debuff
+          level: 6
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 22
+          effect: debuff
+          level: 6
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 23
+          effect: debuff
+          level: 7
+          targeting:
+            count: 2
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - attributes:
+            - DEF
+          duration: 18
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 24
+          effect: debuff
+          level: 9
+          targeting:
+            count: 2
+            targets:
+              - STR
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

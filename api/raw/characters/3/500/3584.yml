@@ -1,0 +1,99 @@
+type: DEX
+name: Nami - Tearful Plea
+family:
+  - Nami
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1497
+    atk: 717
+    rcv: 113
+  maxLvl:
+    hp: 2994
+    atk: 1434
+    rcv: 226
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - TM Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of [DEX], [PSY] and [QCK] characters by 1.5x.
+special:
+  name: Unwavering Trust
+  description: Reduces enemies' Threshold Damage Reduction and Increased Defense
+    duration by 5 turns. If during that turn you score 3 PERFECT hits, boosts
+    ATK of [DEX], [PSY] and [QCK] characters by 2x for 1 turn in the following
+    turn. If your crew has ATK UP, increases boost effects of ATK UP buffs by
+    +0.25x, boosts ATK of [DEX], [PSY] and [QCK] characters by 1.75x for 1 turn
+    otherwise.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base RCV of all characters by 75
+  - description: Makes [TND] orbs beneficial for all characters.
+support:
+  type: descriptive
+  criteria: Usopp and Tony Tony Chopper
+  levels:
+    - Once per adventure, when the supported character uses their special, if
+      during that turn you score 3 PERFECT hits, boosts ATK of [DEX] characters
+      by 1.35x for 1 turn in the following turn.
+    - Once per adventure, when the supported character uses their special, if
+      during that turn you score 3 PERFECT hits, boosts ATK of [DEX] characters
+      by 1.45x for 1 turn in the following turn.
+    - Once per adventure, when the supported character uses their special, if
+      during that turn you score 3 PERFECT hits, boosts ATK of [DEX] characters
+      by 1.55x for 1 turn in the following turn.
+    - Once per adventure, when the supported character uses their special, if
+      during that turn you score 3 PERFECT hits, boosts ATK of [DEX] characters
+      by 1.65x for 1 turn in the following turn.
+    - Once per adventure, when the supported character uses their special, if
+      during that turn you score 3 PERFECT hits, boosts ATK of [DEX] characters
+      by 1.75x for 1 turn in the following turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 10
+    - atk: 20
+    - type: potential
+    - rcv: 10
+    - hp: 50
+    - hp: 50
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50

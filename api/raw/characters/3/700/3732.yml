@@ -1,0 +1,95 @@
+type: QCK
+name: Smoker - Swapped Navy Officer
+family:
+  - Smoker
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1623
+    atk: 689
+    rcv: 100
+  maxLvl:
+    hp: 3246
+    atk: 1378
+    rcv: 200
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - Secret Limited TM Treasure Map Tashigi
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3.25x, boost HP of [QCK]
+    characters by 1.2x and makes [PSY] and [INT] orbs beneficial for all
+    characters.
+special:
+  name: Advancing White Smoke
+  description: Reduces Special Cooldown of all characters by 1 turn, deals 35x
+    character's ATK in [QCK] damage to one enemy, reduces Silence duration by 5
+    turns, makes [STR] and [DEX] orbs beneficial for all characters for 3 turns,
+    boosts Color Affinity of [QCK] characters by 2x for 1 turn and reduces
+    enemies' [QCK] Resistance by -10% for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: descriptive
+  criteria: Hina, Monkey D. Garp and Sengoku
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [STR] and [DEX] orbs beneficial for [QCK]
+      characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [STR] and [DEX] orbs beneficial for [QCK]
+      characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [STR] and [DEX] orbs beneficial for [QCK]
+      characters for 2 turns.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [STR] and [DEX] orbs beneficial for [QCK]
+      characters for 2 turns.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [STR] and [DEX] orbs beneficial for [QCK]
+      characters for 3 turns.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 50
+    - atk: 50
+    - atk: 50
+    - slot: 1
+    - hp: 10
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - rcv: 20
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

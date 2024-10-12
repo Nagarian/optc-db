@@ -1,0 +1,146 @@
+type: DEX
+name: Marco the Phoenix - Whitebeard's "Son"
+japanName: 不死鳥マルコ 白ひげの“息子”
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 800
+    atk: 535
+    rcv: 152
+  maxLvl:
+    hp: 2202
+    atk: 1012
+    rcv: 314
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 94923
+aliases:
+  - FN Marco
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x and reduces damage received by 5%
+special:
+  name: Sharing Vigorous Inspiration
+  description: Changes orbs of adjacent characters into [RCV] orbs, reduces
+    Paralysis and Despair duration by 2 turns and reduces damage received by 40%
+    for 1 turn
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Edward Newgate (Whitebeard) and Vista
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+rumble:
+  stats:
+    def: 114
+    rumbleType: RCV
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 10
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: percentage
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 11
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 12
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 13
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 14
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 15
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 16
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 17
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 18
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 21

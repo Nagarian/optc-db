@@ -1,0 +1,100 @@
+type: INT
+name: Vinsmoke Reiju - Science Military Germa 66
+japanName: ヴィンスモーク・レイジュ 科学戦闘部隊ジェルマ６６
+family:
+  - VinsmokeReiju
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 822
+    atk: 336
+    rcv: 201
+  maxLvl:
+    hp: 1984
+    atk: 1312
+    rcv: 432
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 74388
+aliases:
+  - Pink Ranger
+evolution:
+  - id: 2139
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.25x. Boosts ATK of Powerhouse
+    characters by 1.3x and their RCV by 1.2x
+  notes: Attack boost stacks, so an [INT] Powerhouse character has a 2.925x ATK
+special:
+  name: Dangerous Healing
+  description: If your captain is an [INT] or [PSY] character, recovers 7,000 HP,
+    removes Poison duration completely and reduces Paralysis, Despair and
+    Silence duration by 3 turns. If your Captain is a Powerhouse character,
+    reduces damage received by 70% for 2 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: descriptive
+  criteria: Vinsmoke Judge, Vinsmoke Ichiji, Vinsmoke Niji, Vinsmoke Sanji and
+    Vinsmoke Yonji
+  levels:
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 1,000 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 2,000 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 4,000 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 6,000 HP
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      recovers 7,000 HP
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - hp: 50
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - hp: 50
+    - slot: 1
+    - atk: 40
+    - hp: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

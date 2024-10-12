@@ -1,0 +1,101 @@
+type: INT
+name: Nico Robin - Number 6, Her Wish Shouted Aloud
+japanName: ニコ・ロビン 願い叫ぶ６人目
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1026
+    atk: 512
+    rcv: 138
+  maxLvl:
+    hp: 2566
+    atk: 1282
+    rcv: 345
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 214595
+aliases:
+  - Grand Line Robin
+  - Throwback Robin
+  - Limited Robin
+  - Secret Robin
+  - Crybaby Robin
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [PSY] and [INT] characters by 2.5x.
+special:
+  name: Crying to her Friends
+  description: Reduces ATK DOWN and Burn duration by 5 turns and reduces enemies'
+    Increased Defense duration by 3 turns. If your Captain is a [STR] or [INT]
+    character, reduces enemies' Barrier duration by 2 turns.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - HP
+  criteria: "[INT] characters"
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 8
+      reduction: 3
+    - value: 10
+      reduction: 4
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - atk: 10
+    - type: potential
+    - rcv: 20
+    - atk: 20
+    - hp: 40
+    - slot: 1
+    - rcv: 30
+    - rcv: 40
+    - hp: 80
+    - atk: 30
+    - type: sailor
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

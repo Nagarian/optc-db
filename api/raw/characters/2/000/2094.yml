@@ -1,0 +1,52 @@
+type: DEX
+name: Brook - Let's Go to the Pirate Festival!
+japanName: ブルック Let’s go for PIRATE FESTIVAL
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 698
+    atk: 304
+    rcv: 57
+  maxLvl:
+    hp: 2022
+    atk: 1175
+    rcv: 222
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 106873
+aliases:
+  - Pizza Brook
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.75x
+special:
+  name: An Enchanted Bliss that Pierces the Bones
+  description: Reduces Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 3 turns and reduces damage received by 60% for 1 turn
+  cooldown: 16
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Vinsmoke Sanji, Nami, Usopp, Tony Tony
+    Chopper, Nico Robin and Franky
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

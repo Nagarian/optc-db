@@ -1,0 +1,48 @@
+type: INT
+name: Crocus - Twin Cape Lighthouse Keeper
+japanName: クロッカス 双子岬の灯台守
+family:
+  - Crocus
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 820
+    atk: 249
+    rcv: 160
+  maxLvl:
+    hp: 1224
+    atk: 509
+    rcv: 320
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 13134
+aliases: []
+captain:
+  name: ""
+  description: Recovers 5x character's RCV in HP at the end of each turn
+special:
+  name: Merciful Painkiller
+  description: Removes Poison duration completely, reduces Bind and Despair
+    duration by 2 turns
+  cooldown: 21
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10

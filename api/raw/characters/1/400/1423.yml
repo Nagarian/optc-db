@@ -1,0 +1,56 @@
+type: QCK
+name: "T-Bone - Captain: Navy Headquarters"
+japanName: Tボーン 海軍本部大佐
+family:
+  - TBone
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 99
+    atk: 98
+    rcv: 50
+  maxLvl:
+    hp: 1752
+    atk: 1199
+    rcv: 300
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 48806
+aliases:
+  - Colo T-Bone
+  - Coliseum T-Bone
+  - TBone
+  - Colo TBone
+  - Coliseum TBone
+  - T Bone
+  - Colo T Bone
+  - Coliseum T Bone
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.75x and recovers 918 HP at the
+    end of each turn,
+special:
+  name: For the Sake of Justice
+  description: If HP is below 500, reduces damage received by 99% for 1 turn
+  cooldown: 26
+  maxLevel: 13
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Sengoku
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

@@ -1,0 +1,111 @@
+type: STR
+name: Dice - Golden Armor
+japanName: ダイス ゴールドアーマー
+family:
+  - Dice
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1213
+    atk: 601
+    rcv: 65
+  maxLvl:
+    hp: 2812
+    atk: 1418
+    rcv: 182
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 105797
+aliases:
+  - V2 Dice
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x and boosts ATK of
+    [STR] characters by 1.2x
+  notes: Attack boost stacks, so a [STR] Powerhouse character has a 2.7x ATK
+special:
+  name: Furious Armored Tank
+  description: Deals 15% of enemies' current HP in damage to one enemy and reduces
+    enemies' Barrier duration by 1 turn. If your captain is a [STR] or [QCK]
+    character, changes the orb of this character into a [STR] orb and boosts ATK
+    of all characters by 1.75x for 1 turn
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: If this character has a [STR] orb and you hit a GOOD or GREAT with
+      him, keep his [STR] orb for the next turn
+  - description: Boosts base ATK of all characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Gild Tesoro, Baccarat and Tanaka
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - atk: 60
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - slot: 1
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - type: sailor
+    - hp: 100
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - key: 1
+    - atk: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

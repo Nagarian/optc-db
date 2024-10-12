@@ -1,0 +1,376 @@
+type: INT
+name: Jack the Drought - Animal Kingdom Pirates, Lead Performer
+japanName: 旱害のジャック 百獣海賊団大看板
+family:
+  - Jack
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1355
+    atk: 844
+    rcv: 69
+  maxLvl:
+    hp: 3011
+    atk: 1406
+    rcv: 230
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 234488
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and reduces damage
+    received by 10%.
+special:
+  name: Double Drought Strike
+  description: Deals 200,000 Fixed damage to one enemy, reduces Bind and ATK Down
+    duration by 5 turns and boosts Orb Effects of all characters by 2x for 1
+    turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of Powerhouse characters by 50
+  - description: Makes [STR], [DEX] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kaido, King and Queen
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - rcv: 30
+    - hp: 50
+    - slot: 1
+    - hp: 50
+    - hp: 100
+    - atk: 30
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - hp: 200
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 150
+    rumbleType: ATK
+    spd: 144
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 2
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 5
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 2.1
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 6
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 2.2
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 7
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 2.3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 8
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 2.4
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 9
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 2.5
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 2.6
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 2.7
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 12
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 2.8
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 13
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies

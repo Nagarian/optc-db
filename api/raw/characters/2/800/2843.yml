@@ -1,0 +1,89 @@
+type: DEX
+name: Perona - Attentive Princess
+japanName: ペローナ 世話焼きプリンセス
+family:
+  - Perona
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1054
+    atk: 367
+    rcv: 165
+  maxLvl:
+    hp: 2574
+    atk: 1242
+    rcv: 357
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 184713
+aliases:
+  - Raid Perona
+captain:
+  name: ""
+  description: If there is a [DEX] and [INT] character in your crew, boosts ATK of
+    [DEX] and [INT] characters by 2.5x.
+special:
+  name: Kamikaze Rap
+  description: Reduces Bind and Despair duration by 3 turns, reduces the defense
+    of all enemies by 100% for 1 turn and changes [BLOCK] orbs into Matching
+    orbs and changes orbs of adjacent characters into Matching orbs.
+  cooldown: 26
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] and [INT] characters by 25
+  - description: Boosts this character's damage against [STR] characters by 2x.
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 20
+    - rcv: 10
+    - rcv: 20
+    - captain:
+        description: If there is a [DEX] and [INT] character in your crew, boosts ATK of
+          [DEX] and [INT] characters by 3x.
+    - type: potential
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - hp: 60
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

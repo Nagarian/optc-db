@@ -1,0 +1,251 @@
+type: PSY
+name: Usopp - MUGIWARA 56
+japanName: ウソップ ＭＵＧＩＷＡＲＡ５６
+family:
+  - Usopp
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1321
+    atk: 578
+    rcv: 178
+  maxLvl:
+    hp: 2627
+    atk: 1421
+    rcv: 311
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 284389
+aliases:
+  - Mugiwara Usopp
+  - Germa Usopp
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Free Spirit characters by 3x and their HP by 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x and their HP by 1.3x.
+special:
+  name: Never Missing Gunpowder Star
+  description: Reduces ATK DOWN and Chain Coefficient Reduction duration by 5
+    turns, reduces enemies' Resilience duration by 5 turns and changes [BLOCK]
+    orbs into Matching orbs. If your crew has Chain Addition, increases boost
+    effects of Chain Addition buffs by +0.2x, adds 1.0x to Chain multiplier for
+    1 turn otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When any other Free Spirit character uses a special, reduces
+      special cooldown of this character by 1 turn
+  - description: Makes [PSY] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Tony Tony Chopper and Franky
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces crew's Chain Coefficient Reduction duration by 1 turn
+      and adds 0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces crew's Chain Coefficient Reduction duration by 1 turn
+      and adds 0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces crew's Chain Coefficient Reduction duration by 1 turn
+      and adds 0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces crew's Chain Coefficient Reduction duration by 1 turn
+      and adds 0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces crew's Chain Coefficient Reduction duration by 2 turns
+      and adds 0.3x to Chain multiplier for 1 turn.
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - rcv: 25
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+rumble:
+  stats:
+    def: 132
+    rumbleType: DBF
+    spd: 129
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 1
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 500
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Action Bind
+          chance: 20
+          duration: 5
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 550
+        - override:
+            chance: 23
+            duration: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 600
+        - override:
+            chance: 26
+            duration: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 650
+        - override:
+            chance: 29
+            duration: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 700
+        - override:
+            chance: 32
+            duration: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 750
+        - override:
+            chance: 35
+            duration: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 800
+        - override:
+            chance: 38
+            duration: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 850
+        - override:
+            chance: 41
+            duration: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 900
+        - override:
+            chance: 44
+            duration: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            chance: 50
+            duration: 5

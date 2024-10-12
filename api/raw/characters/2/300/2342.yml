@@ -1,0 +1,98 @@
+type: PSY
+name: Charlotte Opera - Minister of Cream
+japanName: シャーロット・オペラ 生クリーム大臣
+family:
+  - CharlotteOpera
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1413
+    atk: 875
+    rcv: 17
+  maxLvl:
+    hp: 3620
+    atk: 1430
+    rcv: 120
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 131994
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Fighter characters by 2x, deals 10% of
+    enemies' current HP in damage to all enemies at the end of each turn
+special:
+  name: Cream Flame
+  description: Deals 80x character's ATK in Typeless damage to all enemies. If
+    your crew has Orb Amplification, boosts the Color Affinity of Fighter,
+    Slasher, Striker, Shooter and Cerebral characters by 1.75x for 1 turn,
+    boosts Orb Effects of Fighter, Slasher, Striker, Shooter and Cerebral
+    characters by 1.75x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Cannot be blown away
+  - description: Makes [PSY] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Charlotte Galette, Charlotte Amande and Bobbin
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 30
+    - cooldown: 1
+    - rcv: 50
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - hp: 80
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 3
+        - value: 5
+        - value: 8
+        - value: 10
+        - value: 100

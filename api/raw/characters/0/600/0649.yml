@@ -1,0 +1,131 @@
+type: QCK
+name: Marco the Phoenix - Whitebeard 1st Div. Commander
+japanName: 不死鳥マルコ 白ひげ海賊団１番隊隊長
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1555
+    atk: 734
+    rcv: 258
+  maxLvl:
+    hp: 3013
+    atk: 1402
+    rcv: 455
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 14400
+aliases:
+  - LMarco
+  - QMarco
+  - V1 Legend Marco
+evolution:
+  - id: 2868
+    evolvers:
+      - skullQCK
+      - 118
+      - 96
+      - 301
+      - 267
+captain:
+  name: ""
+  description: Reduces damage received by 30% if HP is above 70% at the start of
+    the turn, boosts ATK of [QCK] and [PSY] characters by 2.75x if HP is above
+    70% at the start the turn
+special:
+  name: Blue Flame Kick
+  description: Recovers 100x character's RCV in HP, boosts Orb Effects of all
+    characters by 1.5x for 2 turns
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] and [PSY] characters by 50
+  - description: Makes [QCK], [PSY] and [TND] orbs beneficial for [QCK] and [PSY] characters
+support:
+  type: descriptive
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      recovers 500 HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,000 HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,500 HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 2,500 HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 4,000 HP.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 10
+    - rcv: 15
+    - type: potential
+    - hp: 25
+    - hp: 30
+    - hp: 35
+    - type: sailor
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - hp: 40
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - rcv: 20
+    - hp: 50
+    - atk: 35
+    - atk: 40
+    - cooldown: 1
+    - rcv: 20
+    - hp: 60
+    - cooldown: 1
+    - rcv: 20
+    - hp: 70
+    - atk: 45
+    - type: sailor
+    - atk: 50
+    - atk: 55
+    - type: potential
+    - key: 1
+    - atk: 25
+    - rcv: 25
+    - atk: 50
+    - cooldown: 2
+    - hp: 50
+    - hp: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

@@ -1,0 +1,100 @@
+type: DUAL
+name: Smoker & Tashigi - Straw Hat Pursuer
+japanName: スモーカー＆たしぎ 麦わらを追う海兵
+family:
+  - Tashigi
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 264
+    atk: 138
+    rcv: 30
+  maxLvl:
+    hp: 1858
+    atk: 1421
+    rcv: 325
+cost: 15
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 93182
+aliases:
+  - Smoker&Tashigi
+  - Tashigi&Smoker
+  - SmokerTashigi
+  - TashigiSmoker
+  - Smoker and Tashigi
+  - Smoshigi
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and [PSY] characters by 2.75x, reduces damage
+    received by 7%, recovers 1,000 HP at the end of each turn and makes [TND],
+    [INT] and [PSY] orbs beneficial for [INT] and [PSY] characters
+special:
+  name: White Slash
+  description: Deals 5,000 Fixed damage to one enemy, changes the orb of this
+    character into a Matching orb, reduces damage received by 50% for 1 turn,
+    boosts ATK of [PSY] and [INT] characters by 1.5x for 1 turn and becomes
+    Smoker & Tashigi for 2 turns
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] and [PSY] characters by 75
+characters:
+  swap:
+    description: Recovers 2x character's RCV
+  character1:
+    name: Smoker - Straw Hat Pursuer
+    japanName: スモーカー 麦わらを追う海兵
+    class:
+      - Striker
+      - Driven
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 194
+        atk: 98
+        rcv: 15
+      maxLvl:
+        hp: 1828
+        atk: 1348
+        rcv: 62
+    captain:
+      name: ""
+      description: Boosts ATK of [INT] and [PSY] characters by 2.5x, reduces damage
+        received by 7% and makes [INT] and [PSY] orbs beneficial for [INT] and
+        [PSY] characters
+    sailor:
+      - description: Boosts base ATK of [INT] and [PSY] characters by 50
+  character2:
+    name: Tashigi - Straw Hat Pursuer
+    japanName: たしぎ 麦わらを追う海兵
+    class:
+      - Slasher
+      - Cerebral
+    type: PSY
+    stats:
+      combo: 6
+      minLvl:
+        hp: 188
+        atk: 89
+        rcv: 19
+      maxLvl:
+        hp: 1704
+        atk: 1028
+        rcv: 324
+    captain:
+      name: ""
+      description: Boosts ATK of [INT] and [PSY] characters by 2.5x and recovers 300
+        HP at the end of each turn
+    sailor:
+      - description: Boosts base RCV of [INT] and [PSY] characters by 30

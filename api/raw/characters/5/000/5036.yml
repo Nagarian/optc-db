@@ -1,0 +1,107 @@
+type: DEX
+oldDbId: 3317
+name: "Edward Newgate: Neo - Grand Pirate Whitebeard"
+japanName: エドワード・ニューゲート「改」 大海賊“白ひげ”
+family:
+  - EdwardNewgate
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1797
+    atk: 762
+    rcv: 10
+  maxLvl:
+    hp: 4002
+    atk: 1570
+    rcv: 20
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - gloex
+  - ambush
+links:
+  gamewithId: 268124
+aliases:
+  - Neo Whitebeard
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.75x if HP is below 50% at the
+    start of the turn
+special:
+  name: Earth Shattering Fist [Neo]
+  description: Deals 40% of enemies' current HP in damage to all enemies and
+    reduces any damage received above 5,000 HP by 95% for 2 turns.
+  cooldown: 36
+  maxLevel: 13
+  stages:
+    - description: Deals 10% of enemies' current HP in damage to all enemies and
+        reduces any damage received above 5,000 HP by 70% for 1 turn.
+      cooldown: 23
+    - description: Deals 20% of enemies' current HP in damage to all enemies and
+        reduces any damage received above 5,000 HP by 80% for 2 turns.
+      cooldown: 28
+sailor:
+  - description: When HP is below 50% at the start of the turn, boosts base ATK of
+      this character by 150
+  - description: If your Captain is a Powerhouse character, makes [DEX] orbs
+      beneficial for Powerhouse characters
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 6
+      reduction: 4
+    - value: 8
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - type: potential
+    - hp: 60
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - hp: 80
+    - atk: 50
+    - atk: 50
+    - type: sailor
+    - slot: 1
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 180
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

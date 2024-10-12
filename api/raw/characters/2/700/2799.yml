@@ -1,0 +1,76 @@
+type: INT
+name: Wapol - Holy Night Ruckus
+japanName: ワポル 聖夜のカバ騒ぎ
+family:
+  - Wapol
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1045
+    atk: 420
+    rcv: 98
+  maxLvl:
+    hp: 2302
+    atk: 1218
+    rcv: 156
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 181495
+aliases:
+  - Christmas Wapol
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x and reduces damage received by
+    10% and boosts amount of Beli received by 1.5x.
+special:
+  name: Wapol Special
+  description: Barriers your captain's orb for 1 PERFECT hit. If your crew has 3
+    or more characters with [STR], [DEX] or [QCK] orbs, locks the chain
+    multiplier at 2.75x for 1 turn. If your crew has 3 or more characters with
+    [PSY] or [INT] orbs, boosts ATK against enemies with reduced defense by
+    1.75x for 1 turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 20
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - atk: 25
+    - atk: 25
+    - atk: 30
+    - slot: 1
+    - rcv: 15
+    - rcv: 15
+    - hp: 50
+    - hp: 50
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

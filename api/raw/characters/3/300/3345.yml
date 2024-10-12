@@ -1,0 +1,244 @@
+type: STR
+name: Jinbe - Straw Hat Pirates' Helmsman
+japanName: ジンベエ 「麦わらの一味」操舵手
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1250
+    atk: 846
+    rcv: 80
+  maxLvl:
+    hp: 2778
+    atk: 1410
+    rcv: 267
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 276690
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3x and reduces damage received by 10%.
+special:
+  name: A Promiseful Appearance
+  description: Reduces Bind duration by 5 turns and reduces enemies' Threshold
+    Damage Reduction duration by 5 turns. If HP is below 51% at the start of the
+    turn, recovers 50% of crew's MAX HP and boosts the Color Affinity of [STR],
+    [DEX] and [QCK] characters by 2x for 1 turn, boosts the Color Affinity of
+    [STR], [DEX] and [QCK] characters by 1.75x for 2 turns otherwise.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of [STR], [DEX] and [QCK] characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Vinsmoke Sanji, Nami, Usopp, Tony Tony
+    Chopper, Nico Robin, Franky and Brook
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 7
+      reduction: 2
+    - value: 10
+      reduction: 3
+    - value: 12
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 25
+    - atk: 10
+    - hp: 50
+    - type: potential
+    - atk: 15
+    - atk: 25
+    - rcv: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 136
+    rumbleType: ATK
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+          duration: 6
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 24
+      effects:
+        - override:
+            level: 1
+            duration: 6
+        - override:
+            amount: 1
+    - cooldown: 24
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 1.1
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 7
+        - override:
+            amount: 1.2
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            amount: 1.3
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 8
+        - override:
+            amount: 1.4
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            amount: 1.5
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            amount: 1.6
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 10
+        - override:
+            amount: 1.7
+    - cooldown: 24
+      effects:
+        - override:
+            level: 5
+            duration: 10
+        - override:
+            amount: 1.8

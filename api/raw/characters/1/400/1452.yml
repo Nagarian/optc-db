@@ -1,0 +1,49 @@
+type: DEX
+name: Sanji - Escort to the Next Town
+japanName: サンジ となり町までの護衛
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 923
+    atk: 543
+    rcv: 92
+  maxLvl:
+    hp: 2030
+    atk: 1203
+    rcv: 208
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 50899
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2x, by 2.5x instead if they have
+    a beneficial orb. Slightly boosts chances of getting [DEX] orbs
+special:
+  name: "Diable Jambe: Love Shot"
+  description: Deals 15x character's ATK in [DEX] damage to one enemy and boosts
+    chances of getting [DEX] orbs for 2 turns
+  cooldown: 20
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Viola (Violet)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8

@@ -1,0 +1,239 @@
+type: INT
+name: Carrot - Will-Bearing Sulong
+japanName: キャロット 想いを引き継ぐ“月の獅子（スーロン）”
+family:
+  - Carrot
+class:
+  - Slasher
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1655
+    atk: 556
+    rcv: 72
+  maxLvl:
+    hp: 3142
+    atk: 1481
+    rcv: 131
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 177805
+aliases:
+  - Raid Carrot
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight. Boosts ATK of [QCK] and [INT] characters by 3x.
+special:
+  name: Electric Charge Drive
+  description: Reduces enemies' Increased Defense duration by 3 turns, reduces
+    Increase Damage Taken duration by 3 turns, deals 30x character's ATK in
+    [INT] damage to all enemies and boosts ATK of [QCK] and [INT] characters by
+    1.75x for 1 turn. If "Electric Charge Drive" is used again in the same turn
+    the special is activated in, boosts ATK of [QCK] and [INT] characters by
+    2.25x for 1 turn.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: When any other [QCK] or [INT] character uses a special, reduces
+      special cooldown of this character by 3 turns
+  - description: Makes [QCK] and [RCV] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 10
+    - atk: 30
+    - type: potential
+    - hp: 50
+    - rcv: 15
+    - atk: 40
+    - slot: 1
+    - hp: 80
+    - rcv: 20
+    - cooldown: 1
+    - type: sailor
+    - slot: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 2
+          threshold: 10
+        - value: 3
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 7
+          threshold: 50
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 125
+    rumbleType: ATK
+    spd: 179
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 18
+      effects:
+        - amount: 0.4
+          effect: damage
+          type: atk
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Paralysis
+          chance: 50
+          duration: 10
+          effect: hinderance
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 25
+          effect: recharge
+          type: Special CT
+          targeting:
+            targets:
+              - self
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.44
+        - {}
+        - override:
+            amount: 27
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.47
+        - {}
+        - override:
+            amount: 30
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.51
+        - {}
+        - override:
+            amount: 33
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.55
+        - {}
+        - override:
+            amount: 35
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.59
+        - {}
+        - override:
+            amount: 38
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.62
+        - {}
+        - override:
+            amount: 41
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.66
+        - {}
+        - override:
+            amount: 43
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.7
+        - {}
+        - override:
+            amount: 46
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.8
+        - {}
+        - override:
+            amount: 50

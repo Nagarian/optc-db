@@ -1,0 +1,241 @@
+type: QCK
+name: Monkey D. Luffy - Gum-Gum Power's Potential
+japanName: モンキー・D・ルフィ ゴムゴムの力の可能性
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 555
+    atk: 212
+    rcv: 54
+  maxLvl:
+    hp: 2092
+    atk: 821
+    rcv: 132
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 100007
+aliases:
+  - G4
+  - Gear 4 Tankman
+  - Gear 4 Boundman
+  - V4 Luffy
+  - Second Mistake
+  - Gear Change Luffy
+  - Gear Shift Luffy
+  - Legend Luffy
+  - V2G4
+  - G4V2
+  - V2 G4
+  - G4 V2
+  - Legend G4
+evolution:
+  - id: 2074
+    evolvers:
+      - 118
+      - 266
+      - 85
+      - 101
+      - 267
+captain:
+  name: ""
+  description: >-
+    **Always Active:** Boosts HP of all characters by 1.25x, boosts
+    chances of getting [STR], [QCK], [PSY] orbs.  
+
+    **Gear 2 Captain:** Boosts ATK of all characters by 3x, slightly boosts chances of getting [RCV] orbs and makes [QCK] orbs beneficial for all characters  
+
+    **Gear 3 Captain:** Boosts ATK of all characters by 3.5x after 2 consecutive PERFECTs, boosts chances of getting [RCV] orbs and makes [STR] orbs beneficial for all characters  
+
+    **Gear 4 - Boundman Captain:** Boosts ATK of all characters by 4x, reduces damage received by 20%, boosts chances of getting [RCV] orbs and makes [STR], [QCK] and [PSY] orbs beneficial for all characters  
+
+    **Gear 4 - Tankman Captain:** Boosts ATK of this character by 4.25x, boosts ATK of all other characters by 4x, reduces damage received by 50% and makes [STR], [QCK] and [PSY] orbs beneficial for all characters  
+
+    **Action:** Based on how full Gear Power Gauge is, transforms Luffy. If Gear Power is above 50%, changes between Gear 2 and Gear 3. If Gear Power is full, changes into Gear 4 - Boundman. This can be used an unlimited number of times per turn.
+  notes: In order to increase Gear Power Gauge level, you must hit a PERFECT with
+    Luffy or consume [RCV] orbs. MAX Gear Power Gauge level is 8. Hitting a
+    PERFECT with Luffy and consuming a [RCV] orb increases Gauge level by 1. If
+    Luffy gets swapped out in battle, Gear Gauge Power will go to 0. While in
+    Gear 4, Luffy will stay in that form until Gauge Power goes to 0. Attacking
+    with any character while in Gear 4 reduces Gear Power Gauge by 3.
+special:
+  name: Gomu Gomu no Kong Organ
+  description: Deals 150x character's ATK in Typeless damage to all enemies,
+    boosts ATK of all characters by 2x for 1 turn, makes [RCV] and [TND] orbs
+    beneficial for all characters for 3 turns. If Luffy is Captain or
+    Friend/Guest Captain, transform into Gear 4
+  cooldown: 19
+  maxLevel: 6
+  notes: If you use this special after consuming 10 [RCV] orbs since the start of
+    the fight, transform into Tankman, otherwise transform into Boundman
+rumble:
+  stats:
+    def: 119
+    rumbleType: ATK
+    spd: 179
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 60
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 40
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 1.58
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 1.65
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 1.73
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 1.81
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 1.89
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 1.96
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 2.04
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 2.12
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 2.25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

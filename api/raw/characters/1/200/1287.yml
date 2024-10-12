@@ -1,0 +1,48 @@
+type: PSY
+name: Baby 5 Donquixote Family Member
+japanName: ベビー５ ドンキホーテファミリーの一員
+family:
+  - Baby5
+class:
+  - Striker
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 274
+    atk: 158
+    rcv: 146
+  maxLvl:
+    hp: 784
+    atk: 579
+    rcv: 372
+cost: 15
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 39525
+aliases:
+  - Kid Baby 5
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 1.5x
+special:
+  name: Handgun Legs
+  description: Deals 10% of enemies' current HP in damage to all enemies. Boosts
+    ATK of Shooter characters by 1.5x for 1 turn
+  cooldown: 18
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Trafalgar D. Water Law and Buffalo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

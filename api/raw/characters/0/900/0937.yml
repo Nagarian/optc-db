@@ -1,0 +1,94 @@
+type: QCK
+name: "Monkey D. Luffy - Crew's Promise: 3D2Y"
+japanName: モンキー・Ｄ・ルフィ 仲間との誓い『３Ｄ２Ｙ』
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1173
+    atk: 712
+    rcv: 99
+  maxLvl:
+    hp: 2406
+    atk: 1415
+    rcv: 257
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 24703
+aliases:
+  - Timeskip Luffy
+  - 3D2Y Luffy
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 3.5x and boosts HP by 1.25x
+special:
+  name: Gum-Gum Giant Jet Shell
+  description: Deals 20x character's ATK in [QCK] damage to one enemy and makes
+    PERFECTs easier to hit for 3 turns
+  cooldown: 19
+  maxLevel: 6
+  notes: Increases timing window to hit a PERFECT. (Animation remains the same)
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky, Brook, Silvers Rayleigh and Jinbe
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 20
+    - hp: 40
+    - type: potential
+    - atk: 30
+    - cooldown: 2
+    - hp: 70
+    - type: sailor
+    - rcv: 30
+    - slot: 1
+    - hp: 90
+    - atk: 50
+    - cooldown: 3
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

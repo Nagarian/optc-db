@@ -1,0 +1,48 @@
+type: DEX
+name: Scratchmen Apoo
+japanName: スクラッチメン・アプー
+family:
+  - ScratchmenApoo
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 209
+    atk: 122
+    rcv: 39
+  maxLvl:
+    hp: 1126
+    atk: 652
+    rcv: 184
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 7209
+aliases:
+  - Supernova Apoo
+evolution:
+  - id: 359
+    evolvers:
+      - 118
+      - 80
+      - 83
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.5x if HP is above 99% at the
+    start of the turn
+special:
+  name: Scratch Body
+  description: Changes [TND] and [RCV] orbs into [DEX] orbs, deals random [DEX]
+    damage to all enemies
+  cooldown: 20
+  maxLevel: 9
+  notes: "`random : 5,000 : 20,000`"

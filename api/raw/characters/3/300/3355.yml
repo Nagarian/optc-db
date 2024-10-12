@@ -1,0 +1,591 @@
+type: VS
+name: Whitebeard VS Shanks - Broken Negotiation
+japanName: 白ひげＶＳシャンクス 決裂した交渉
+family:
+  - Shanks
+  - EdwardNewgate
+rarity: 6
+stats:
+  combo: 0
+  minLvl:
+    hp: 2000
+    atk: 1050
+    rcv: 75
+  maxLvl:
+    hp: 4444
+    atk: 1750
+    rcv: 251
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 279475
+aliases:
+  - WhitebeardShanks
+  - ShanksWhitebeard
+  - VS Shanks
+  - VS WB
+  - Legend Whitebeard VS Shanks
+captain:
+  name: ""
+limitBreak:
+  path:
+    - atk: 5
+    - hp: 10
+    - hp: 10
+    - type: potential
+    - rcv: 10
+    - hp: 20
+    - hp: 20
+    - atk: 10
+    - atk: 15
+    - hp: 30
+    - hp: 30
+    - atk: 15
+    - atk: 20
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 40
+    - hp: 40
+    - rcv: 30
+    - rcv: 40
+    - atk: 25
+    - atk: 30
+    - hp: 60
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - atk: 40
+    - hp: 80
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 50
+    - rcv: 25
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+        - value: 200
+          reduction: 4
+        - value: 300
+          reduction: 5
+characters:
+  criteria: When the crew consumes/uses 10 [PSY] or [INT] orbs with normal attacks.
+  character1:
+    name: Whitebeard - Broken Negotiation
+    japanName: 白ひげ 決裂した交渉
+    class:
+      - Striker
+      - Powerhouse
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 2000
+        atk: 1050
+        rcv: 75
+      maxLvl:
+        hp: 4444
+        atk: 1750
+        rcv: 251
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY], [INT] and Striker characters by 5x, their HP
+        by 1.2x, boosts chances of getting [INT] orbs, makes [INT] orbs
+        beneficial for all characters and reduces damage received by 20%.
+    special:
+      name: Mighty Blow • Slashing Blow
+      description: Boosts base ATK of [PSY], [INT] and Striker characters by 1000 for
+        1 turn and boosts ATK of [PSY], [INT] and Striker characters by 2.5x for
+        1 turn. If the HP of the enemy with the highest Maximum HP is above 80%,
+        deals 30% of enemies' current HP in damage to all enemies, otherwise,
+        boosts Orb Effects of [PSY], [INT] and Striker characters by 2x for 1
+        turn.
+      cooldown: 20
+      maxLevel: 6
+    sailor:
+      - description: Makes [INT] orbs beneficial for all characters
+      - description: Boosts base ATK, HP and RCV of all characters by 100
+    rumble:
+      stats:
+        def: 295
+        rumbleType: DEF
+        spd: 103
+      target:
+        criteria: near
+      pattern:
+        - action: attack
+          type: Normal
+        - action: heal
+          area: Medium
+          level: 2
+        - action: attack
+          type: Power
+        - action: attack
+          type: Full
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: PSY
+          percentage: 30
+          type: damage
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - INT
+            - attributes:
+                - ATK
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - INT
+            - attributes:
+                - DEF
+              effect: buff
+              level: 3
+              condition:
+                comparator: below
+                count: 50
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 2
+            - override:
+                level: 2
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 3
+            - override:
+                level: 3
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 4
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 5
+            - override:
+                level: 7
+      special:
+        - cooldown: 18
+          effects:
+            - amount: 10
+              effect: damage
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: cut
+            - attributes:
+                - DEF
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - INT
+              duration: 6
+            - attributes:
+                - ATK
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - INT
+              duration: 6
+            - amount: 1
+              effect: damage
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 1
+                duration: 7
+            - override:
+                level: 1
+                duration: 7
+            - {}
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 1
+                duration: 8
+            - override:
+                level: 1
+                duration: 8
+            - {}
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 1
+                duration: 9
+            - override:
+                level: 2
+                duration: 9
+            - {}
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 1
+                duration: 10
+            - override:
+                level: 2
+                duration: 10
+            - {}
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 2
+                duration: 11
+            - override:
+                level: 3
+                duration: 11
+            - {}
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 2
+                duration: 12
+            - override:
+                level: 3
+                duration: 12
+            - {}
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 2
+                duration: 13
+            - override:
+                level: 3
+                duration: 13
+            - {}
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 2
+                duration: 14
+            - override:
+                level: 4
+                duration: 14
+            - {}
+        - cooldown: 18
+          effects:
+            - {}
+            - override:
+                level: 3
+                duration: 15
+            - override:
+                level: 5
+                duration: 15
+            - {}
+    versus:
+      description: Reduces damage received by 90% for 1 turn and deals 30% of enemies'
+        current HP in True damage to all enemies.
+  character2:
+    name: Shanks - Broken Negotiation
+    japanName: シャンクス 決裂した交渉
+    class:
+      - Slasher
+      - Cerebral
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 2000
+        atk: 1050
+        rcv: 75
+      maxLvl:
+        hp: 4444
+        atk: 1750
+        rcv: 251
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY], [INT] and Slasher characters by 5x, their HP
+        by 1.5x, boosts chances of getting [PSY] orbs, makes [PSY] orbs
+        beneficial for all characters and recovers 0.5x this character's RCV at
+        the end of the turn for each time you hit a PERFECT.
+    special:
+      name: Mighty Blow • Slashing Blow
+      description: Boosts base ATK of [PSY], [INT] and Slasher characters by 1000 for
+        1 turn and boosts Orb Effects of [PSY], [INT] and Slasher characters by
+        2.5x for 1 turn and changes all orbs, including [BLOCK] orbs, into
+        Matching orbs. After 1 turn, reduces the defense of all enemies by 100%
+        for 1 turn.
+      cooldown: 20
+      maxLevel: 6
+    sailor:
+      - description: Makes [PSY] orbs beneficial for all characters
+      - description: Boosts base ATK, HP and RCV of all characters by 100
+    rumble:
+      stats:
+        def: 217
+        rumbleType: DEF
+        spd: 132
+      target:
+        criteria: near
+      pattern:
+        - action: attack
+          type: Normal
+        - action: heal
+          area: Medium
+          level: 2
+        - action: attack
+          type: Power
+        - action: attack
+          type: Full
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: INT
+          percentage: 30
+          type: damage
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - PSY
+            - attributes:
+                - ATK
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - PSY
+            - attributes:
+                - DEF
+              effect: buff
+              level: 3
+              condition:
+                comparator: below
+                count: 30
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 2
+            - override:
+                level: 2
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 3
+            - override:
+                level: 3
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 4
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 5
+            - override:
+                level: 7
+      special:
+        - cooldown: 29
+          effects:
+            - attributes:
+                - DEF
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - PSY
+              duration: 11
+            - amount: 500
+              effect: damage
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+            - amount: 1000
+              effect: damage
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - cooldown: 29
+          effects:
+            - override:
+                level: 1
+                duration: 12
+            - override:
+                amount: 550
+            - override:
+                amount: 1100
+        - cooldown: 29
+          effects:
+            - override:
+                level: 1
+                duration: 13
+            - override:
+                amount: 600
+            - override:
+                amount: 1200
+        - cooldown: 29
+          effects:
+            - override:
+                level: 1
+                duration: 14
+            - override:
+                amount: 650
+            - override:
+                amount: 1300
+        - cooldown: 29
+          effects:
+            - override:
+                level: 2
+                duration: 15
+            - override:
+                amount: 700
+            - override:
+                amount: 1400
+        - cooldown: 29
+          effects:
+            - override:
+                level: 2
+                duration: 16
+            - override:
+                amount: 750
+            - override:
+                amount: 1500
+        - cooldown: 29
+          effects:
+            - override:
+                level: 2
+                duration: 17
+            - override:
+                amount: 800
+            - override:
+                amount: 1600
+        - cooldown: 29
+          effects:
+            - override:
+                level: 3
+                duration: 18
+            - override:
+                amount: 850
+            - override:
+                amount: 1700
+        - cooldown: 29
+          effects:
+            - override:
+                level: 3
+                duration: 19
+            - override:
+                amount: 900
+            - override:
+                amount: 1800
+        - cooldown: 29
+          effects:
+            - override:
+                level: 3
+                duration: 19
+            - override:
+                amount: 1000
+            - override:
+                amount: 2000
+    versus:
+      description: Reduces the defense of all enemies by 100% for 3 turns and boosts
+        ATK against enemies with reduced defense by 1.75x for 3 turns.

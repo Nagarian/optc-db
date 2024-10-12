@@ -1,0 +1,228 @@
+type: DEX
+name: Daruma - Fish-Man District Spirit
+japanName: ダルマ 魚人街の亡霊
+family:
+  - Daruma
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 931
+    atk: 531
+    rcv: 55
+  maxLvl:
+    hp: 2341
+    atk: 1430
+    rcv: 270
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 50184
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 4 turns at the start
+    of the fight, boosts ATK of Powerhouse and Fighter characters by 1.5x
+special:
+  name: Fire Daruma Cutter
+  description: Reduces Paralysis and Silence duration by 2 turns, deals 10% of
+    enemies' current HP in damage to one enemy, boosts ATK of Powerhouse
+    characters by 1.75x for 1 turn
+  cooldown: 22
+  maxLevel: 8
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Boosts base ATK, HP and RCV of Powerhouse characters by 20
+support:
+  type: descriptive
+  criteria: Hody Jones, Hyouzou, Ikaros Much, Dosun and Zeo
+  levels:
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 2 turns on the supported character.
+    - Once per adventure, when an enemy inflicts you with Silence or Paralysis,
+      reduces Silence and Paralysis duration by 2 turns on the supported
+      character.
+    - Once per adventure, when an enemy inflicts you with Silence or Paralysis,
+      reduces Silence and Paralysis duration by 3 turns on the supported
+      character.
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - hp: 10
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 1
+    - rcv: 10
+    - slot: 1
+    - rcv: 30
+    - rcv: 40
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 5
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 7
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 136
+    rumbleType: DBF
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 20
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 22
+        - override:
+            level: 2
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 3
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 26
+        - override:
+            level: 3
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 28
+        - override:
+            level: 4
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 30
+        - override:
+            level: 5
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 32
+        - override:
+            level: 5
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 34
+        - override:
+            level: 6
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 36
+        - override:
+            level: 6
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 40
+        - override:
+            level: 8

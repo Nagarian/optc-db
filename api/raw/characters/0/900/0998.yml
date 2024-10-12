@@ -1,0 +1,46 @@
+type: STR
+name: Diamante
+japanName: ディアマンテ
+family:
+  - Diamante
+class:
+  - Driven
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 698
+    atk: 452
+    rcv: 48
+  maxLvl:
+    hp: 1500
+    atk: 866
+    rcv: 90
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 26797
+aliases: []
+evolution:
+  - id: 999
+    evolvers:
+      - 118
+      - 83
+      - 84
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x and reduces Special Cooldown
+    of all characters by 1 turn at the start of the fight
+special:
+  name: "Hira Release: Death Enjambre"
+  description: Delays all enemies by 2 turns, deals 50x character's ATK in
+    Typeless damage to all enemies at the end of the turn for 5 turns
+  cooldown: 23
+  maxLevel: 7

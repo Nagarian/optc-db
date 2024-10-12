@@ -1,0 +1,42 @@
+type: INT
+name: Crocus
+japanName: クロッカス
+family:
+  - Crocus
+class:
+  - Striker
+  - Cerebral
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 202
+    atk: 60
+    rcv: 41
+  maxLvl:
+    hp: 886
+    atk: 301
+    rcv: 203
+cost: 9
+slots: 1
+maxExp: 136167
+maxLevel: 35
+flags:
+  - sugo
+links:
+  gamewithId: 13134
+aliases: []
+evolution:
+  - id: 588
+    evolvers:
+      - 117
+      - 304
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn
+special:
+  name: Merciful Painkiller
+  description: Removes Poison duration completely, reduces Bind and Despair
+    duration by 2 turns
+  cooldown: 21
+  maxLevel: 8

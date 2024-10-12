@@ -1,0 +1,117 @@
+type: VS
+name: Whitebeard VS Shanks - Discussion of the Emperors
+japanName: 白ひげＶＳシャンクス 四皇同士の話し合い
+family:
+  - Shanks
+  - EdwardNewgate
+rarity: 5
+stats:
+  combo: 0
+  minLvl:
+    hp: 905
+    atk: 478
+    rcv: 39
+  maxLvl:
+    hp: 2012
+    atk: 1062
+    rcv: 87
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 279475
+aliases:
+  - WhitebeardShanks
+  - ShanksWhitebeard
+  - VS Shanks
+  - VS WB
+  - Legend Whitebeard VS Shanks
+evolution:
+  - id: 3355
+    evolvers:
+      - 118
+      - 103
+      - 104
+      - 266
+      - 267
+captain:
+  name: ""
+characters:
+  criteria: When the crew consumes/uses 10 [PSY] or [INT] orbs with normal attacks.
+  character1:
+    name: Whitebeard - Discussion of the Emperors
+    japanName: 白ひげ 四皇同士の話し合い
+    class:
+      - Striker
+      - Powerhouse
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 905
+        atk: 478
+        rcv: 39
+      maxLvl:
+        hp: 1760
+        atk: 1009
+        rcv: 72
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY], [INT] and Striker characters by 5x, their HP
+        by 1.2x, boosts chances of getting [INT] orbs, makes [INT] orbs
+        beneficial for all characters and reduces damage received by 20%.
+    special:
+      name: Mighty Blow • Slashing Blow
+      description: Boosts base ATK of [PSY], [INT] and Striker characters by 1000 for
+        1 turn and boosts ATK of [PSY], [INT] and Striker characters by 2.5x for
+        1 turn. If the HP of the enemy with the highest Maximum HP is above 80%,
+        deals 30% of enemies' current HP in damage to all enemies, otherwise,
+        boosts Orb Effects of [PSY], [INT] and Striker characters by 2x for 1
+        turn.
+      cooldown: 20
+      maxLevel: 6
+    sailor:
+      - description: Makes [INT] orbs beneficial for all characters
+    versus:
+      description: Reduces damage received by 90% for 1 turn and deals 30% of enemies'
+        current HP in True damage to all enemies.
+  character2:
+    name: Shanks - Discussion of the Emperors
+    japanName: シャンクス 四皇同士の話し合い
+    class:
+      - Slasher
+      - Cerebral
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 905
+        atk: 478
+        rcv: 39
+      maxLvl:
+        hp: 1690
+        atk: 1005
+        rcv: 85
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY], [INT] and Slasher characters by 5x, their HP
+        by 1.5x, boosts chances of getting [PSY] orbs, makes [PSY] orbs
+        beneficial for all characters and recovers 0.5x this character's RCV at
+        the end of the turn for each time you hit a PERFECT.
+    special:
+      name: Mighty Blow • Slashing Blow
+      description: Boosts base ATK of [PSY], [INT] and Slasher characters by 1000 for
+        1 turn and boosts Orb Effects of [PSY], [INT] and Slasher characters by
+        2.5x for 1 turn and changes all orbs, including [BLOCK] orbs, into
+        Matching orbs. After 1 turn, reduces the defense of all enemies by 100%
+        for 1 turn.
+      cooldown: 20
+      maxLevel: 6
+    sailor:
+      - description: Makes [PSY] orbs beneficial for all characters
+    versus:
+      description: Reduces the defense of all enemies by 100% for 3 turns and boosts
+        ATK against enemies with reduced defense by 1.75x for 3 turns.

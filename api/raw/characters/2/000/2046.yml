@@ -1,0 +1,168 @@
+type: STR
+name: Yasopp - Harbor Town Pirate
+japanName: ヤソップ 港村の海賊
+family:
+  - Yasopp
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 603
+    atk: 324
+    rcv: 82
+  maxLvl:
+    hp: 1820
+    atk: 1115
+    rcv: 275
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 98272
+aliases:
+  - Yasopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.25x and their HP by 1.2x
+special:
+  name: Exquisite Aim
+  description: Deals 20x character's ATK in Typeless True damage to one enemy. If
+    your crew has 4 or more characters of the same Type, boosts Orb Effects of
+    Dominant Type characters by 1.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: If this character has a [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shanks, Ben Beckman and Lucky Roux
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+rumble:
+  stats:
+    def: 103
+    rumbleType: ATK
+    spd: 148
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 20
+      effects:
+        - amount: 0.45
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - amount: 10
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            amount: 11
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            amount: 12
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.59
+        - override:
+            amount: 13
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.64
+        - override:
+            amount: 14
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.69
+        - override:
+            amount: 15
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.73
+        - override:
+            amount: 16
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.78
+        - override:
+            amount: 17
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 0.83
+        - override:
+            amount: 18
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1
+        - override:
+            amount: 20

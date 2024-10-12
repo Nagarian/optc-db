@@ -1,0 +1,49 @@
+type: DEX
+name: Chopper's Snow Day
+japanName: チョッパーの雪遊び
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 130
+    atk: 30
+    rcv: 50
+  maxLvl:
+    hp: 1920
+    atk: 614
+    rcv: 293
+cost: 15
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 20488
+aliases:
+  - Winter Chopper
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.5x, reduces damage received by 10%
+special:
+  name: "Guard Point: Winter Coat"
+  description: Reduces damage received by 50% for 3 turns, slightly boosts chances
+    of getting [DEX] orbs for 3 turns
+  cooldown: 30
+  maxLevel: 14
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro and Nami
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

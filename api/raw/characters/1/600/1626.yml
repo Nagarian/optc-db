@@ -1,0 +1,50 @@
+type: PSY
+name: Dosun - Deep-Sea Fish-Man
+japanName: ドスン 深海の魚人海賊
+family:
+  - Dosun
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 91
+    atk: 60
+    rcv: 21
+  maxLvl:
+    hp: 2050
+    atk: 1155
+    rcv: 274
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 59330
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x following a chain of
+    Good > Great > PERFECT hits
+special:
+  name: The Calm Before The Storm
+  description: Deals 20x character's ATK in [PSY] damage to one enemy, boosts ATK
+    of [PSY] characters by 1.5x for 1 turn
+  cooldown: 15
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Hody Jones, Hyouzou, Ikaros Much, Zeo and Daruma
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8

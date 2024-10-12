@@ -1,0 +1,59 @@
+type: PSY
+name: Charlotte Brulee
+japanName: シャーロット・ブリュレ
+family:
+  - CharlotteBrulee
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 99
+    atk: 150
+    rcv: 59
+  maxLvl:
+    hp: 891
+    atk: 783
+    rcv: 214
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 107232
+aliases:
+  - Brulee
+evolution:
+  - id: 2115
+    evolvers:
+      - 83
+      - 87
+      - 92
+      - 98
+      - 1180
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 1.2x and deals 10% of
+    enemies' current HP in damage to all enemies at the end of each turn
+special:
+  name: Light Reflecting a Virtual Image
+  description: Changes [TND] and [RCV] orbs of this character into [PSY] orbs,
+    changes all other orbs, including [BLOCK] orbs, of all characters into
+    Brûlée's orb. Adds 30x character's ATK as Additional Typeless Damage for 5
+    turns
+  cooldown: 22
+  maxLevel: 7
+  stages:
+    - description: Changes [TND] and [RCV] orbs of this character into [PSY] orbs,
+        changes all other orbs, including [BLOCK] orbs, of all characters into
+        Brûlée's orb. Adds 30x character's ATK as Additional Typeless Damage for
+        3 turns
+      cooldown: 18
+  notes: Upon activating the special, all orbs will be changed to the orb Brûlée
+    has, including [RAINBOW] and [BLOCK] orbs.
+sailor:
+  - description: Makes [PSY] orbs beneficial for Cerebral characters

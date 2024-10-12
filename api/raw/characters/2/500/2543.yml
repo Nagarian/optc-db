@@ -1,0 +1,237 @@
+type: DUAL
+name: Mr. 0 & Miss All Sunday - Leaders of Baroque Works
+japanName: Mr.0＆ミス・オールサンデー バロックワークスを率いる者達
+family:
+  - NicoRobin
+  - Crocodile
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 490
+    atk: 258
+    rcv: 62
+  maxLvl:
+    hp: 1225
+    atk: 644
+    rcv: 155
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 150050
+aliases:
+  - Mr. 0&Miss All Sunday
+  - Miss All Sunday&Mr. 0
+  - Mr. 0Miss All Sunday
+  - Miss All SundayMr. 0
+  - Mr. 0 and Miss All Sunday
+  - Crocodile&Robin
+  - Robin&Crocodile
+  - CrocodileRobin
+  - RobinCrocodile
+  - Crocodile and Robin
+  - CrocRobin
+evolution:
+  - id: 2544
+    evolvers:
+      - 91
+      - 93
+      - 94
+      - 102
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 3x, reduces damage received by
+    20% and makes [DEX] orbs beneficial for Cerebral characters.
+special:
+  name: "Disorderly Bloom: Pesado"
+  description: Reduces damage received by 80% for 1 turn, boosts the Color
+    Affinity of all characters by 1.75x for 1 turn and becomes Mr. 0 & Miss All
+    Sunday for 2 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral characters by 50
+characters:
+  swap:
+    description: Slightly boosts chances of getting Matching orbs for 1 turn.
+  character1:
+    name: Mr. 0 - Leaders of Baroque Works
+    japanName: Mr.0 バロックワークスを率いる者達
+    class:
+      - Cerebral
+      - Slasher
+    type: DEX
+    stats:
+      combo: 6
+      minLvl:
+        hp: 447
+        atk: 254
+        rcv: 58
+      maxLvl:
+        hp: 1193
+        atk: 635
+        rcv: 145
+    captain:
+      name: ""
+      description: Boosts ATK of Cerebral characters by 2.5x and makes [DEX] orbs
+        beneficial for Cerebral characters.
+    sailor:
+      - description: Restores Special Cooldown of this character by 2 turns when it is
+          rewinded
+  character2:
+    name: Miss All Sunday - Leaders of Baroque Works
+    japanName: ミス・オールサンデー バロックワークスを率いる者達
+    class:
+      - Cerebral
+      - Slasher
+    type: INT
+    stats:
+      combo: 5
+      minLvl:
+        hp: 361
+        atk: 232
+        rcv: 60
+      maxLvl:
+        hp: 904
+        atk: 580
+        rcv: 149
+    captain:
+      name: ""
+      description: Boosts ATK of Cerebral characters by 2.25x and reduces damage
+        received by 15%.
+    sailor:
+      - description: Reduces Silence duration by 2 turns on this character
+rumble:
+  stats:
+    def: 120
+    rumbleType: ATK
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 0.3
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 10
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.34
+        - override:
+            duration: 11
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.38
+        - override:
+            duration: 12
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.42
+        - override:
+            duration: 13
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.46
+        - override:
+            duration: 14
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.58
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.62
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 5
+            duration: 20

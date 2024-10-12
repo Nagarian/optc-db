@@ -1,0 +1,142 @@
+type: INT
+name: "Ace: Trickster Flame Wolf - Happy Halloween!"
+japanName: エース　トリックスター・フレイムウルフ Happy Halloween
+family:
+  - PortgasDAce
+class:
+  - Shooter
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2098
+    atk: 921
+    rcv: 69
+  maxLvl:
+    hp: 4320
+    atk: 1629
+    rcv: 137
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 174225
+aliases:
+  - Halloween (HWeen) Ace
+  - Furry Ace
+  - V2 Legend Ace
+evolution:
+  - id: 3742
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Shooter characters by 4x, their HP by
+    1.5x, makes [PSY] and [INT] orbs beneficial for Fighter and Shooter
+    characters, reduces Silence duration by 10 turns and restores Special
+    Cooldown of all characters by 10 turns when they are rewinded.
+  notes: The Silence and Special Rewind reduction can activate multiple times
+special:
+  name: Flame Emperor - Flame of Halloween
+  description: Reduces Bind duration by 10 turns and boosts ATK of Fighter and
+    Shooter characters by 2.5x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Shooter characters by 75
+  - description: Makes [PSY], [RCV], [TND] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy and Sabo
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 2 turns
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 2 turns
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 3 turns
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 10
+    - hp: 10
+    - hp: 10
+    - atk: 10
+    - atk: 15
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 10
+    - atk: 25
+    - type: potential
+    - rcv: 15
+    - hp: 20
+    - atk: 30
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Fighter and Shooter characters by 4.5x, their HP by
+          1.5x, makes [PSY] and [INT] orbs beneficial for Fighter and Shooter
+          characters, reduces Silence duration by 10 turns and restores Special
+          Cooldown of all characters by 10 turns when they are rewinded.
+    - cooldown: 1
+    - rcv: 50
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

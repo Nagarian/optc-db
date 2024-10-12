@@ -1,0 +1,106 @@
+type: INT
+name: Kuzan - Admirals in a Fleeting Moment of Calm
+japanName: クザン 束の間の平穏と大将たち
+family:
+  - Kuzan
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1489
+    atk: 689
+    rcv: 152
+  maxLvl:
+    hp: 2742
+    atk: 1412
+    rcv: 320
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - japex
+links:
+  gamewithId: 177151
+aliases:
+  - Kimono Aokiji
+  - Kimono Kuzan
+  - Blitz Battle Aokiji
+  - Blitz Battle Kuzan
+  - Limited Aokiji
+  - Limited Kuzan
+  - Secret Aokiji
+  - Secret Kuzan
+captain:
+  name: ""
+  description: If your crew has 4 or more characters of the same Type, boosts ATK
+    of all characters by 3x, by 2.5x otherwise and boosts RCV of all characters
+    by 1.2x.
+special:
+  name: Boat Rest & Recuperation
+  description: Recovers 30x character's RCV in HP and reduces enemies' Threshold
+    Damage Reduction, Percent Damage Reduction and Increased Defense duration by
+    5 turns. If your crew has 4 or more [STR] or [INT] characters, boosts the
+    Color Affinity of [STR] and [INT] characters by 1.75x for 2 turns.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Makes [DEX] orbs beneficial for this character
+  - description: Boosts base ATK and HP of [STR] and [INT] characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Sakazuki (Akainu), Borsalino (Kizaru) and Tsuru
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - description: When the supported character hits a PERFECT, reduces enemies'
+        Percent Damage Reduction duration by 1 turn.
+      value: 5
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - rcv: 25
+    - rcv: 25
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - hp: 80
+    - atk: 40
+    - type: sailor
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

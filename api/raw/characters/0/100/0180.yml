@@ -1,0 +1,35 @@
+type: DEX
+name: Saber Apprentice - Navy
+japanName: サーベル三等兵 海軍
+family:
+  - SaberNavy
+class:
+  - Slasher
+rarity: 1
+stats:
+  combo: 6
+  minLvl:
+    hp: 45
+    atk: 75
+    rcv: 13
+  maxLvl:
+    hp: 293
+    atk: 194
+    rcv: 44
+cost: 4
+slots: 0
+maxExp: 17456
+maxLevel: 20
+flags: []
+links:
+  gamewithId: 2526
+aliases: []
+evolution:
+  - id: 185
+    evolvers:
+      - 80
+special:
+  name: Light Healing
+  description: Recovers 5x character's RCV in HP
+  cooldown: 12
+  maxLevel: 5

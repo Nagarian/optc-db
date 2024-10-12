@@ -1,0 +1,516 @@
+type: DEX
+name: Magellan - Judgment of Hell
+japanName: マゼラン 地獄の審判
+family:
+  - Magellan
+class:
+  - Striker
+  - Shooter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1510
+    atk: 733
+    rcv: 299
+  maxLvl:
+    hp: 3842
+    atk: 1589
+    rcv: 328
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 63199
+aliases:
+  - Mega/Super/6+ Magellan
+  - V1 Legend Magellan
+captain:
+  name: ""
+  description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+    crew, boosts ATK of all characters by 2.25x and their HP by 1.5x and deals
+    15% of enemies' current HP in damage to all enemies at the end of each turn.
+    If 300,000 damage was dealt to enemies in the last turn, poisons all
+    enemies.
+  notes: >-
+    `poison : 50x`  
+
+    Limit Break EX: `poison : 150x`  
+
+    To poison all enemies, the damage dealt with normal attacks must exceed 300,000 and the poison does not bypass immunity.
+special:
+  name: "Venom Demon: Hell's Judgement"
+  description: Inflicts Toxic to all enemies, recovers 13x character's RCV in HP
+    at the end of each turn for 3 turns. If enemies are inflicted with Toxic or
+    Poison upon activation of the special, delays all enemies by 1 turn.
+  cooldown: 19
+  maxLevel: 6
+  notes: >-
+    `toxic : 50x (70x with LLB) : 2x : 3,000,000 (5,000,000 with LLB)`  
+
+    Delay effect will not trigger from the Toxic in Magellan's special; the enemy must already be poisoned.  
+
+    If enemies are both Poisoned and inflicted with Toxic, only the Toxic damage will damage the enemy at the end of the turn.
+sailor:
+  - description: Cannot be blown away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Striker characters
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+    - value: 13
+limitBreak:
+  path:
+    - atk: 15
+    - hp: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - hp: 30
+    - atk: 15
+    - type: sailor
+    - atk: 15
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - rcv: 10
+    - atk: 20
+    - hp: 40
+    - atk: 30
+    - hp: 60
+    - rcv: 15
+    - cooldown: 1
+    - rcv: 15
+    - hp: 90
+    - atk: 40
+    - atk: 45
+    - hp: 90
+    - rcv: 20
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - rcv: 25
+    - rcv: 50
+    - captain:
+        description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+          crew, boosts ATK of all characters by 3x and their HP by 1.5x and
+          deals 15% of enemies' current HP in damage to all enemies at the end
+          of each turn. If 300,000 damage was dealt to enemies in the last turn,
+          poisons all enemies.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 2
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 2
+          threshold: 20
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 30
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 177
+    rumbleType: DBF
+    spd: 154
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - HP
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - {}
+        - override:
+            level: 4
+    - effects:
+        - {}
+        - override:
+            level: 5
+    - effects:
+        - {}
+        - override:
+            level: 6
+    - effects:
+        - {}
+        - override:
+            level: 7
+  special:
+    - cooldown: 30
+      effects:
+        - duration: 30
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - Special CT
+          duration: 30
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 32
+        - override:
+            duration: 31
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 34
+        - override:
+            duration: 33
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 36
+        - override:
+            duration: 34
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 38
+            level: 2
+        - override:
+            duration: 36
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 40
+            level: 2
+        - override:
+            duration: 38
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 42
+            level: 2
+        - override:
+            duration: 39
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 44
+            level: 3
+        - override:
+            duration: 41
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 46
+            level: 3
+        - override:
+            duration: 42
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 48
+            level: 3
+        - override:
+            duration: 44
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - DEF
+              effect: debuff
+              level: 3
+              targeting:
+                targets:
+                  - QCK
+            - attributes:
+                - HP
+              condition:
+                comparator: more
+                count: 5
+                type: crew
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - crew
+        - effects:
+            - {}
+            - override:
+                level: 5
+        - effects:
+            - {}
+            - override:
+                level: 6
+        - effects:
+            - {}
+            - override:
+                level: 7
+        - effects:
+            - {}
+            - override:
+                level: 8
+  - captain:
+      - description: Boosts ATK of all characters by 4.25x and boosts HP of all
+          characters by 1.5x and deals 15% of enemies' current HP in damage to
+          all enemies at the end of each turn. If 300,000 damage was dealt to
+          enemies in the last turn, poisons all enemies. If there's a [STR],
+          [DEX], [QCK], [PSY] and [INT] character in your crew, reduces damage
+          received by 10% and recovers 0.5x this character's RCV at the end of
+          the turn for each time you hit a PERFECT.
+      - description: Boosts ATK of all characters by 4.75x and boosts HP of all
+          characters by 1.5x and deals 15% of enemies' current HP in damage to
+          all enemies at the end of each turn. If 300,000 damage was dealt to
+          enemies in the last turn, poisons all enemies. If there's a [STR],
+          [DEX], [QCK], [PSY] and [INT] character in your crew, reduces damage
+          received by 20% and recovers 1x this character's RCV at the end of the
+          turn for each time you hit a PERFECT.
+  - rumble:
+      special:
+        - cooldown: 30
+          effects:
+            - duration: 30
+              effect: damage
+              level: 2
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: time
+            - attributes:
+                - Special CT
+              duration: 31
+              effect: debuff
+              level: 2
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 32
+            - override:
+                duration: 32
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 34
+            - override:
+                duration: 34
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 36
+            - override:
+                duration: 35
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 38
+            - override:
+                duration: 37
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 40
+                level: 3
+            - override:
+                duration: 39
+                level: 3
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 42
+                level: 23
+            - override:
+                duration: 40
+                level: 3
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 44
+                level: 3
+            - override:
+                duration: 42
+                level: 3
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 46
+                level: 3
+            - override:
+                duration: 43
+                level: 3
+        - cooldown: 30
+          effects:
+            - override:
+                duration: 48
+                level: 4
+            - override:
+                duration: 45
+                level: 4
+  - rumble:
+      resilience:
+        - amount: 200
+          interval: 5
+          type: healing
+        - attribute: QCK
+          percentage: 40
+          type: damage
+    special:
+      description: Inflicts Toxic to all enemies, delays all enemies by 1 turn, boosts
+        ATK against enemies inflicted with Poison, Strong Poison or Toxic by 2x
+        for 3 turns, recovers 20x character's RCV in HP at the end of each turn
+        for 3 turns. If enemies are inflicted with Toxic or Poison upon
+        activation of the special, boosts ATK of all characters by 2x for 3
+        turns.

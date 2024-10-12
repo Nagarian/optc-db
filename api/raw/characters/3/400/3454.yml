@@ -1,0 +1,443 @@
+type: INT
+name: "Perona: Halloween Ghost Princess - Night of Halloween"
+japanName: ペローナ　ハロウィン・ゴーストプリンセス Night of Halloween
+family:
+  - Perona
+class:
+  - Free Spirit
+  - Shooter
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1715
+    atk: 743
+    rcv: 106
+  maxLvl:
+    hp: 3431
+    atk: 1487
+    rcv: 360
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 295543
+aliases:
+  - V1 Legend Perona
+  - Halloween (HWeen) Perona
+captain:
+  name: ""
+  description: Boosts ATK of [INT], Shooter and Free Spirit characters by 4x and
+    their HP by 1.3x. If enemies are inflicted with Negative, boosts ATK against
+    enemies inflicted with Negative by 1.3x, boosts ATK against delayed enemies,
+    enemies with reduced defense and Poisoned enemies by 1.25x otherwise.
+superSpecial:
+  criteria: This character must be captain and a special ability must be used 2 times.
+  description: Ignores debuff protection and inflicts enemies with Negative for 10
+    turns, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching orbs
+    and transforms all [INT] characters into Super [INT] characters.
+  notes: Negative reduces the ATK and DEF of enemies by 20%. More info about how
+    ATK reduction is calculated will be updated here soon.
+special:
+  name: Ghost Dance Night Party
+  description: Changes Badly Matching, [EMPTY], [BLOCK], [BOMB], [RCV], [TND] and
+    [G] orbs into Matching orbs, boosts ATK against delayed enemies, enemies
+    inflicted with Negative, enemies with reduced defense, Poisoned enemies,
+    Strongly Poisoned enemies and enemies inflicted with Toxic by 2x for 3 turns
+    and locks the chain multiplier at 3.25x for 3 turns. If HP is below 80% at
+    the time the special is activated, ignores debuff protection and inflicts
+    enemies with Negative for 1 turn. If your crew has Chain Lock, increases
+    boost effects of Chain Lock buffs/debuffs by +0.5x and increases duration of
+    any Chain Multiplier Limit, Chain Lock, or Chain Boundary debuffs by 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: If your Captain is a Free Spirit character, boosts base HP of Free
+      Spirit characters by 1.1x
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - hp: 20
+    - rcv: 20
+    - rcv: 30
+    - hp: 30
+    - type: potential
+    - cooldown: 1
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - hp: 70
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - hp: 150
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 102
+    rumbleType: ATK
+    spd: 183
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: SPD
+            targets:
+              - enemies
+        - amount: 1.5
+          effect: recharge
+          targeting:
+            targets:
+              - INT
+          type: RCV
+    - cooldown: 30
+      effects:
+        - override:
+            level: 6
+            duration: 12
+        - override:
+            level: 6
+            duration: 12
+        - override:
+            level: 6
+            duration: 12
+        - override:
+            amount: 1.6
+    - cooldown: 30
+      effects:
+        - override:
+            level: 7
+            duration: 13
+        - override:
+            level: 7
+            duration: 13
+        - override:
+            level: 7
+            duration: 13
+        - override:
+            amount: 1.7
+    - cooldown: 30
+      effects:
+        - override:
+            level: 8
+            duration: 14
+        - override:
+            level: 8
+            duration: 14
+        - override:
+            level: 8
+            duration: 14
+        - override:
+            amount: 1.8
+    - cooldown: 30
+      effects:
+        - override:
+            level: 9
+            duration: 15
+        - override:
+            level: 9
+            duration: 15
+        - override:
+            level: 9
+            duration: 15
+        - override:
+            amount: 1.9
+    - cooldown: 30
+      effects:
+        - override:
+            level: 10
+            duration: 16
+        - override:
+            level: 10
+            duration: 16
+        - override:
+            level: 10
+            duration: 16
+        - override:
+            amount: 2
+    - cooldown: 30
+      effects:
+        - override:
+            level: 11
+            duration: 17
+        - override:
+            level: 11
+            duration: 17
+        - override:
+            level: 11
+            duration: 17
+        - override:
+            amount: 2.1
+    - cooldown: 30
+      effects:
+        - override:
+            level: 12
+            duration: 18
+        - override:
+            level: 12
+            duration: 18
+        - override:
+            level: 12
+            duration: 18
+        - override:
+            amount: 2.2
+    - cooldown: 30
+      effects:
+        - override:
+            level: 13
+            duration: 19
+        - override:
+            level: 13
+            duration: 19
+        - override:
+            level: 13
+            duration: 19
+        - override:
+            amount: 2.3
+    - cooldown: 30
+      effects:
+        - override:
+            level: 15
+            duration: 20
+        - override:
+            level: 15
+            duration: 20
+        - override:
+            level: 15
+            duration: 20
+        - override:
+            amount: 2.5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

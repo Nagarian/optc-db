@@ -1,0 +1,114 @@
+type: STR
+name: Trebol - Special Officer's Guardian
+japanName: トレーボル ドンキホーテファミリー　特別幹部の守護者
+family:
+  - Trebol
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 792
+    atk: 408
+    rcv: 182
+  maxLvl:
+    hp: 2312
+    atk: 1382
+    rcv: 354
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 84573
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3.5x, reduces crew's current HP
+    by 10% at the end of each turn, reduces own ATK multiplier by 0.04x at the
+    end of each turn
+  notes: His ATK multiplier will be 3.5x on the first turn, 3.?x on the second,
+    3.?x on the third and so on. The reduction stops once the multiplier is ?x.
+    The multiplier affects all Driven characters. You will not die to the HP
+    reduction
+special:
+  name: Beta Betton Meteora
+  description: Reduces enemies' Threshold Damage Reduction, Percent Damage
+    Reduction and Increased Defense duration by 4 turns. If there are 6 Driven
+    characters in your crew when the special is activated, boosts ATK of Driven
+    characters by 2x for 1 turn and reduces Special Cooldown of top row
+    characters by 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of top row characters by 100
+  - description: Makes [TND] orbs beneficial for Driven characters
+support:
+  type: descriptive
+  criteria: Sugar
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction and Threshold Damage Reduction
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction and Threshold Damage Reduction
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction and Threshold Damage Reduction
+      duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 40
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - atk: 10
+    - atk: 20
+    - slot: 1
+    - atk: 30
+    - hp: 80
+    - atk: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

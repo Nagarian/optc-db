@@ -1,0 +1,101 @@
+type: DEX
+name: Roronoa Zoro - Number 1, the Promise Keeper
+japanName: ロロノア・ゾロ 約束守る１人目
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1321
+    atk: 553
+    rcv: 167
+  maxLvl:
+    hp: 2612
+    atk: 1390
+    rcv: 225
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 189631
+aliases:
+  - East Blue Zoro
+  - Secret Zoro
+  - Limited Zoro
+  - Throwback Zoro
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [STR] characters by 2.75x.
+special:
+  name: Ambitions of Becoming a Great Swordsman
+  description: Reduces Bind and Despair duration by 3 turns, reduces the defense
+    of all enemies by 80% for 1 turn and reduces Special Cooldown of all
+    characters by 1 turn. If your Captain is a [STR] or [DEX] character, locks
+    the chain multiplier at 2.75x for 1 turn.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+  criteria: "[DEX] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - atk: 20
+    - slot: 1
+    - rcv: 20
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 2
+        - value: 70
+          reduction: 2
+        - value: 100
+          reduction: 3

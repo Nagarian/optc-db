@@ -1,0 +1,190 @@
+type: DUAL
+name: Red-Hair Pirates - Pirates Fighting for Their Friends
+japanName: 赤髪海賊団 友のため戦う海賊団
+family:
+  - Shanks
+  - LuckyRoux
+  - BenBeckman
+  - Yasopp
+class:
+  - Slasher
+  - Cerebral
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1676
+    atk: 942
+    rcv: 159
+  maxLvl:
+    hp: 4040
+    atk: 1625
+    rcv: 360
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 187986
+aliases:
+  - Legend Red Hair Pirates
+  - Shanks Crew
+  - ShanksCrew
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4.5x, their HP by 1.2x, makes [QCK]
+    and [PSY] orbs beneficial for all characters, reduces Silence duration by 10
+    turns and reduces damage taken by 20%. Deals 0x-1000x character's ATK in
+    Typeless damage to all enemies at the end of each turn depending on how many
+    PERFECTs scored that turn.
+  notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+    PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs -
+    32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 350x ATK; 6 PERFECTs - 1000x
+    ATK"
+special:
+  name: Anger for their Friend
+  description: Deals 20% of enemies' current HP in True damage to all enemies,
+    locks the chain multiplier at 3.5x for 3 turns and becomes Red Hair Pirates
+    for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Boosts base ATK of this character by 250 if this character is the
+      last in the chain to attack
+characters:
+  swap:
+    description: Changes orbs of adjacent characters into Matching Orbs and boosts
+      ATK of all characters by 1.5x for 1 turn.
+  character1:
+    name: Shanks - Pirates Fighting for Their Friends
+    japanName: 赤髪海賊団 友のため戦う海賊団
+    class:
+      - Slasher
+      - Cerebral
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1582
+        atk: 866
+        rcv: 110
+      maxLvl:
+        hp: 3756
+        atk: 1512
+        rcv: 295
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.5x, their HP by 1.2x, makes [QCK]
+        orbs beneficial for all characters, reduces Silence duration by 10
+        turns.
+      notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+        PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs
+        - 32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 350x ATK; 6 PERFECTs -
+        1000x ATK"
+    sailor:
+      - description: Reduces Silence duration completely on this character
+      - description: Boosts base ATK of this character by 250 if this character is the
+          last in the chain to attack
+  character2:
+    name: Beckman & Lucky Roux & Yasopp - Pirates Fighting for Their Friends
+    japanName: 赤髪海賊団 友のため戦う海賊団
+    class:
+      - Shooter
+      - Cerebral
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1582
+        atk: 859
+        rcv: 126
+      maxLvl:
+        hp: 3756
+        atk: 1431
+        rcv: 322
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.25x, their HP by 1.2x, makes
+        [PSY] orbs beneficial for all characters, reduces Silence duration by 10
+        turns and reduces damage taken by 10%.
+      notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+        PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs
+        - 32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 350x ATK; 6 PERFECTs -
+        1000x ATK"
+    sailor:
+      - description: Reduces Silence duration completely on this character
+      - description: Boosts base ATK of this character by 250 if this character is the
+          last in the chain to attack
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - hp: 40
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - atk: 30
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - atk: 30
+    - rcv: 15
+    - rcv: 20
+    - rcv: 20
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - hp: 200
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+        - value: 200
+          reduction: 4
+        - value: 300
+          reduction: 5

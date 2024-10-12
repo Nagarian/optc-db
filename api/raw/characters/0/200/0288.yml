@@ -1,0 +1,31 @@
+type: INT
+name: Armed Shooter Unit - Black Pirates
+japanName: 狙撃隊　武装隊員 ブラックパイレーツ
+family:
+  - ShooterGroupCrewPirates
+class:
+  - Shooter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 280
+    atk: 137
+    rcv: 174
+  maxLvl:
+    hp: 500
+    atk: 400
+    rcv: 297
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 2341
+aliases: []
+special:
+  name: Hyper Shot
+  description: Deals 5x character's ATK in character's Type damage to all enemies
+  cooldown: 35
+  maxLevel: 26

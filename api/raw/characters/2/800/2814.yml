@@ -1,0 +1,356 @@
+type: QCK
+name: "Sabo: Revolutionary Army Chief of Staff - The True Identity of
+  Flame-Flame Fruit Winner Lucy"
+japanName: 革命軍参謀総長サボ “メラメラの実”を手にしたルーシーの正体
+family:
+  - Sabo
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1363
+    atk: 744
+    rcv: 228
+  maxLvl:
+    hp: 3408
+    atk: 1596
+    rcv: 410
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 69286
+aliases:
+  - Mega/Super/6+ Sabo
+  - Legend Lucy
+captain:
+  name: ""
+  description: If there is a [STR], [DEX] and [QCK] character in your crew,
+    reduces Special Cooldown of all characters by 1 turn at the start of the
+    fight, boosts ATK of [STR], [DEX] and [QCK] characters by 2.75x and their HP
+    by 1.3x and makes [STR], [DEX] and [QCK] orbs beneficial for [STR], [DEX]
+    and [QCK] characters. If there are no [PSY] or [INT] characters on your
+    crew, boosts ATK of [STR], [DEX] and [QCK] characters by 3.85x instead.
+  notes: Sabo boosts ATK by 3.85x if you have [STR], [DEX] and [QCK] characters
+    and no [PSY] or [INT] characters at all.
+special:
+  name: Brother's Red "Fire Fist"
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 1.75x for 1 turn
+    and reduces Special Cooldown of all characters by 1 turn. If during that
+    turn you score 3 PERFECT hits, boosts ATK of [STR], [DEX] and [QCK]
+    characters by 2x for 1 turn in the following turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Boosts base ATK, HP and RCV of [STR], [DEX] and [QCK] characters by 50
+support:
+  type: descriptive
+  criteria: Koala, Rebecca and Hack
+  levels:
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Special Rewind,
+      reduces Special Cooldown of the supported character by 3 turns.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - rcv: 5
+    - hp: 30
+    - atk: 10
+    - type: sailor
+    - hp: 35
+    - hp: 45
+    - rcv: 10
+    - atk: 15
+    - atk: 20
+    - rcv: 15
+    - type: potential
+    - atk: 25
+    - cooldown: 1
+    - hp: 60
+    - hp: 75
+    - atk: 30
+    - atk: 35
+    - hp: 85
+    - rcv: 20
+    - rcv: 25
+    - rcv: 30
+    - atk: 35
+    - type: sailor
+    - hp: 100
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: If there is a [STR], [DEX] and [QCK] character in your crew,
+          reduces Special Cooldown of all characters by 2 turns at the start of
+          the fight, boosts ATK of [STR], [DEX] and [QCK] characters by 3x and
+          their HP by 1.3x and makes [STR], [DEX] and [QCK] orbs beneficial for
+          [STR], [DEX] and [QCK] characters. If there are no [PSY] or [INT]
+          characters on your crew, boosts ATK of [STR], [DEX] and [QCK]
+          characters by 4.5x instead.
+    - cooldown: 1
+    - rcv: 50
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 184
+    rumbleType: SPT
+    spd: 188
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 3
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 0.65
+          effect: damage
+          type: atk
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.67
+        - override:
+            duration: 16
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.68
+        - override:
+            duration: 17
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            duration: 18
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.72
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.74
+        - override:
+            level: 4
+            duration: 20
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 4
+            duration: 21
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.77
+        - override:
+            level: 5
+            duration: 22
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.79
+        - override:
+            level: 5
+            duration: 23
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 6
+            duration: 25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

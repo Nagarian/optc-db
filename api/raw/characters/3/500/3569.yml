@@ -1,0 +1,259 @@
+type: DEX
+name: Shinobu - Mature Charm
+japanName: しのぶ 男惑わす熟女の魅力
+family:
+  - Shinobu
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1288
+    atk: 621
+    rcv: 150
+  maxLvl:
+    hp: 2896
+    atk: 1414
+    rcv: 246
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Kizuna Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 3x, their HP
+    by 1.2x and makes [DEX] and [QCK] orbs beneficial for all characters.
+special:
+  name: "Kinpo: Ball-Crusher"
+  description: Reduces Paralysis duration by 6 turns, reduces enemies' Increased
+    Defense duration by 6 turns, changes [BLOCK], [RCV] and Badly Matching orbs
+    into Matching orbs and reduces damage received by 90% for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [DEX] orbs beneficial for Free Spirit and Cerebral characters
+  - description: Boosts base ATK, HP and RCV of Free Spirit and Cerebral characters by 50
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 4
+      reduction: 3
+    - value: 6
+      reduction: 4
+    - value: 8
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 170
+    rumbleType: SPT
+    spd: 171
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 70
+      type: debuff
+    - attribute: Free Spirit
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - RCV
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - ATK
+            - Critical Hit
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            count: 3
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            count: 3
+            targets:
+              - Cerebral
+        - attributes:
+            - Haste
+          chance: 80
+          effect: boon
+          targeting:
+            count: 2
+            targets:
+              - Cerebral
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 6
+        - override:
+            level: 1
+            duration: 6
+        - override:
+            chance: 82
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            chance: 84
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 7
+        - override:
+            level: 2
+            duration: 7
+        - override:
+            chance: 86
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            chance: 88
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 8
+        - override:
+            level: 3
+            duration: 8
+        - override:
+            chance: 90
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            level: 3
+            duration: 9
+        - override:
+            chance: 92
+    - cooldown: 30
+      effects:
+        - override:
+            level: 4
+            duration: 9
+        - override:
+            level: 4
+            duration: 9
+        - override:
+            chance: 94
+    - cooldown: 30
+      effects:
+        - override:
+            level: 4
+            duration: 10
+        - override:
+            level: 4
+            duration: 10
+        - override:
+            chance: 96
+    - cooldown: 30
+      effects:
+        - override:
+            level: 5
+            duration: 10
+        - override:
+            level: 5
+            duration: 10
+        - override:
+            chance: 100

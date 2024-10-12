@@ -1,0 +1,55 @@
+type: PSY
+name: Captain Karoo and the Supersonic Duck Squadron
+japanName: カルー隊長と超カルガモ部隊
+family:
+  - Karoo
+  - Cowboy
+  - BourbonJr
+  - Stomp
+  - IvanX
+  - Centaur
+  - Hikoichi
+class:
+  - Striker
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 378
+    atk: 383
+    rcv: 138
+  maxLvl:
+    hp: 1412
+    atk: 702
+    rcv: 461
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 10833
+aliases:
+  - Captain Karue and the Supersonic Duck Squadron
+  - Captain Carue and the Supersonic Duck Squadron
+captain:
+  name: ""
+  description: Boosts ATK of Evolver and Booster characters by 2.5x if HP is above
+    50% at the start of the turn
+special:
+  name: Support Incoming! Supersonic Duck Squadron!
+  description: Randomizes all orbs into either [STR], [DEX], [QCK], [PSY] or [INT]
+    orbs, switches orbs between slots 3 times
+  cooldown: 26
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: "[PSY] characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

@@ -1,0 +1,50 @@
+type: STR
+name: Kaido
+japanName: カイドウ
+family:
+  - Kaido
+class:
+  - Powerhouse
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1020
+    atk: 502
+    rcv: 30
+  maxLvl:
+    hp: 1900
+    atk: 888
+    rcv: 61
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 136910
+aliases:
+  - TM Kaido
+evolution:
+  - id: 2387
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.2x
+special:
+  name: King of the Beasts’ Mace
+  description: Removes all positive buffs on your team, deals 20% of enemies'
+    current HP in True damage to one enemy, boosts Orb Effects of all characters
+    by 1.5x for 0-6 turns and boosts ATK of this character by 3.25x for 0-6
+    turns, depending on how many [RCV] orbs used in normal attacks
+  cooldown: 35
+  maxLevel: 8
+  notes: ATK and Orb amplification buff duration is equal to the amount of [RCV]
+    orbs consumed prior to the time the special was activated with a maximum of
+    6 turns.

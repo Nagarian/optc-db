@@ -1,0 +1,194 @@
+type: DUAL
+name: Shirahoshi & Mansherry - Christmas Tree Decorated by Two
+japanName: しらほし＆マンシェリー 二人で飾るクリスマスツリー
+family:
+  - Shirahoshi
+  - Mansherry
+class:
+  - Cerebral
+  - Striker
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1286
+    atk: 854
+    rcv: 187
+  maxLvl:
+    hp: 2858
+    atk: 1424
+    rcv: 624
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 241499
+aliases:
+  - Shirahoshi&Mansherry
+  - ShirahoshiMansherry
+  - Mansherry&Shirahoshi
+  - MansherryShirahoshi
+  - ShiraMan
+  - Christmas (Xmas) ShiraSherry
+  - V2 Legend Shirahoshi and Mansherry
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 3.5x-4.5x
+    depending on the crew's current HP, boosts HP of all characters by 1.2x,
+    recovers 1x this character's RCV at the end of the turn for each time you
+    hit a PERFECT, 1.5x this character's RCV at the end of the turn each time
+    you hit a GREAT, 2x this character's RCV at the end of the turn each time
+    you hit a GOOD and allows HP Overfill up to 2x MAX HP.
+  notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+special:
+  name: Sharing the Joy
+  description: Removes Paralysis, Poison, RCV DOWN and Blindness duration
+    completely, reduces Despair and Burn duration by 7 turns, changes all orbs
+    into [RAINBOW] orbs, adds 1.2x to Chain multiplier for 1 turn, recovers 50x
+    character's RCV in HP and becomes Shirahoshi & Mansherry for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75
+  - description: Makes [STR] orbs beneficial for all characters
+characters:
+  swap:
+    description: Allows HP Overfill up to 2x MAX HP for 1 turn, reduces Slot Bind,
+      Silence, Bind and Despair duration by 1 turn and recovers 1,500 HP.
+  character1:
+    name: Shirahoshi - Christmas Tree Decorated by Two
+    japanName: しらほし 二人で飾るクリスマスツリー
+    class:
+      - Cerebral
+      - Striker
+    type: QCK
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1271
+        atk: 833
+        rcv: 150
+      maxLvl:
+        hp: 2824
+        atk: 1388
+        rcv: 500
+    captain:
+      name: ""
+      description: Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x
+        depending on the crew's current HP, boosts HP of all characters by 1.2x,
+        recovers 0.5x this character's RCV at the end of the turn for each time
+        you hit a PERFECT, 0.75x this character's RCV at the end of the turn
+        each time you hit a GREAT and 1x this character's RCV at the end of the
+        turn each time you hit a GOOD.
+      notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+    sailor:
+      - description: Boosts base ATK of Striker and Cerebral characters by 50
+      - description: Makes [STR] orbs beneficial for all characters
+  character2:
+    name: Mansherry - Christmas Tree Decorated by Two
+    japanName: マンシェリー 二人で飾るクリスマスツリー
+    class:
+      - Cerebral
+      - Striker
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1271
+        atk: 790
+        rcv: 157
+      maxLvl:
+        hp: 2824
+        atk: 1316
+        rcv: 524
+    captain:
+      name: ""
+      description: Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x
+        depending on the crew's current HP, boosts HP of all characters by 1.2x,
+        recovers 0.5x this character's RCV at the end of the turn for each time
+        you hit a PERFECT, 0.75x this character's RCV at the end of the turn
+        each time you hit a GREAT and 1x this character's RCV at the end of the
+        turn each time you hit a GOOD.
+      notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+    sailor:
+      - description: Boosts base HP and RCV of Striker and Cerebral characters by 50
+      - description: Makes [STR] orbs beneficial for all characters
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - atk: 10
+    - rcv: 5
+    - rcv: 5
+    - hp: 50
+    - hp: 50
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 30
+    - atk: 30
+    - rcv: 5
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - hp: 100
+    - hp: 100
+    - type: sailor
+    - rcv: 20
+    - rcv: 20
+    - hp: 150
+    - atk: 70
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 25
+    - rcv: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Nutrition/Reduce Hunger stacks
+      variant: up to
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

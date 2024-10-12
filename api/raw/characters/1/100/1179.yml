@@ -1,0 +1,40 @@
+type: STR
+name: Devil Oars
+japanName: 魔人オーズ
+family:
+  - Oars
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1920
+    atk: 977
+    rcv: -444
+  maxLvl:
+    hp: 4400
+    atk: 1402
+    rcv: -444
+cost: 50
+slots: 2
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - shop
+links:
+  gamewithId: 35056
+aliases:
+  - Oz
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.75x if HP is above 99% at the
+    start of the turn. Reduces damage received by 50%
+special:
+  name: Not Rubber Gum-Gum Jet Gatling
+  description: Deals random Typeless damage to all enemies. Randomizes all orbs,
+    including [BLOCK] orbs.
+  cooldown: 17
+  maxLevel: 1
+  notes: "`random : 30,000 : 150,000`"

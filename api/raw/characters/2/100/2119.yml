@@ -1,0 +1,100 @@
+type: QCK
+name: Bobbin - Big Mom Pirates
+japanName: ボビン ビッグ・マム海賊団
+family:
+  - Bobbin
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1244
+    atk: 676
+    rcv: 109
+  maxLvl:
+    hp: 2446
+    atk: 1365
+    rcv: 276
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 107234
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 2.5x
+special:
+  name: Death-Inducing Lullaby
+  description: Reduces enemies' Threshold Damage Reduction, Percent Damage
+    Reduction, Increased Defense and End of Turn Heal duration by 5 turns,
+    crew's ATK DOWN duration by 5 turns and changes orbs of adjacent characters
+    into Matching Orbs.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of this character by 350 if this character is the
+      last in the chain to attack
+  - description: Reduces Silence duration by 1 turn
+support:
+  type: descriptive
+  criteria: "[QCK] characters"
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes orbs
+      of adjacent characters into Matching Orbs
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes orbs
+      of adjacent characters into Matching Orbs
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes orbs
+      of adjacent characters into Matching Orbs
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes orbs
+      of adjacent characters into Matching Orbs
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes orbs
+      of the supported and adjacent characters into Matching Orbs
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 30
+    - hp: 20
+    - type: potential
+    - atk: 30
+    - rcv: 20
+    - atk: 50
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - rcv: 30
+    - hp: 50
+    - cooldown: 1
+    - hp: 60
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

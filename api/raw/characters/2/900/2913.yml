@@ -1,0 +1,305 @@
+type: INT
+name: Shirahoshi - Commitment to Protecting an Island
+japanName: しらほし 島守る献身
+family:
+  - Shirahoshi
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 993
+    atk: 516
+    rcv: 142
+  maxLvl:
+    hp: 2482
+    atk: 1291
+    rcv: 356
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 194771
+aliases:
+  - TM Shirahoshi
+  - Treasure Map Shirahoshi
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x, but boosts ATK of this character by 1.5x
+special:
+  name: The Voice Calling the Hero
+  description: Reduces damage received by 50% for 1-6 turns and recovers 8,000 HP
+    at the end of the turn for 1-6 turns, equal to the number of enemies on the
+    stage when the special is activated.
+  cooldown: 36
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Neptune
+  levels:
+    - value: 1
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of all characters by 2.25x, but boosts ATK of this
+          character by 2x and recovers 1x character's RCV in HP at the end of
+          each turn
+    - type: sailor
+    - rcv: 5
+    - hp: 5
+    - hp: 10
+    - captain:
+        description: Boosts ATK of all characters by 2.5x, but boosts ATK of this
+          character by 2x and recovers 1x character's RCV in HP at the end of
+          each turn
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 40
+    - rcv: 50
+    - captain:
+        description: Boosts ATK of all characters by 2.5x, but boosts ATK of this
+          character by 2x and recovers 1.5x character's RCV in HP at the end of
+          each turn
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of all characters by 2.5x, but boosts ATK of this
+          character by 2x and recovers 1.5x character's RCV in HP at the end of
+          each turn
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of all characters by 2.75x, but boosts ATK of this
+          character by 2x and recovers 1.5x character's RCV in HP at the end of
+          each turn
+    - hp: 90
+    - hp: 110
+    - captain:
+        description: Boosts ATK of all characters by 3x, but boosts ATK of this
+          character by 2x and recovers 2x character's RCV in HP at the end of
+          each turn
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 50
+        - value: 0.6
+          threshold: 50
+        - value: 0.7
+          threshold: 50
+        - value: 1
+          threshold: 50
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 222
+    rumbleType: DEF
+    spd: 122
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 100
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          condition:
+            comparator: more
+            count: 3
+            type: enemies
+            relative: true
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          duration: 10
+          targeting:
+            targets:
+              - crew
+        - amount: 0.35
+          effect: recharge
+          type: RCV
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          duration: 10
+          condition:
+            comparator: more
+            count: 3
+            type: enemies
+            relative: true
+          targeting:
+            targets:
+              - crew
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 11
+        - {}
+        - override:
+            duration: 11
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 12
+        - {}
+        - override:
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 13
+        - {}
+        - override:
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 14
+        - {}
+        - override:
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 15
+        - {}
+        - override:
+            duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 16
+        - {}
+        - override:
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - {}
+        - override:
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - {}
+        - override:
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 20
+        - {}
+        - override:
+            level: 2
+            duration: 20

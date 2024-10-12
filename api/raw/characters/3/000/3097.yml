@@ -1,0 +1,115 @@
+type: STR
+name: Sengoku - Former Navy HQ Fleet Admiral
+japanName: センゴク 元海軍本部元帥
+family:
+  - Sengoku
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1203
+    atk: 672
+    rcv: 93
+  maxLvl:
+    hp: 2801
+    atk: 1461
+    rcv: 321
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 229394
+aliases:
+  - Limited Sengoku
+captain:
+  name: ""
+  description: >-
+    Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Fighter and Cerebral characters by 3x and their
+    HP by 1.2x.  
+
+    **Boosted Ability:** Reduces Special Cooldown of all characters by 2 turns at the start of the fight, boosts ATK of Fighter and Cerebral characters by 5x and their HP by 1.25x.
+special:
+  name: The Day When Times Changed
+  description: Reduces Bind, Silence and ATK DOWN duration by 6 turns and changes
+    [BLOCK] and Badly Matching orbs into Matching orbs. If your Captain is a
+    Fighter or Cerebral character, boosts Orb Effects of Fighter and Cerebral
+    characters by 2.25x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Fighter and Cerebral characters by 75
+  - description: Makes [DEX] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Fighter Characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - hp: 50
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

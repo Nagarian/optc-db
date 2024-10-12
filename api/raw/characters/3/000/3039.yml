@@ -1,0 +1,289 @@
+type: PSY
+name: Rebecca - Royal Time Off
+japanName: レベッカ 王族のオフタイム
+family:
+  - Rebecca
+class:
+  - Free Spirit
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 435
+    atk: 350
+    rcv: 70
+  maxLvl:
+    hp: 1068
+    atk: 824
+    rcv: 171
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 218710
+aliases:
+  - Summer Rebecca
+  - Swimsuit Rebecca
+evolution:
+  - id: 3040
+    evolvers:
+      - 83
+      - 266
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x and their RCV by 1.2x.
+special:
+  name: Smiling at the Sunflowers Blooming on the Beach
+  description: Reduces enemies' Barrier duration by 1 turn, reduces Silence
+    duration by 7 turns and boosts the Color Affinity of all characters by 1.75x
+    for 3 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of [PSY] characters by 50
+rumble:
+  stats:
+    def: 147
+    rumbleType: SPT
+    spd: 130
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 21
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 23
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 24
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Critical Hit
+          duration: 25
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 25
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Free Spirit

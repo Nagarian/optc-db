@@ -1,0 +1,49 @@
+type: PSY
+name: Suleiman
+japanName: スレイマン
+family:
+  - Suleiman
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 102
+    atk: 151
+    rcv: 34
+  maxLvl:
+    hp: 981
+    atk: 780
+    rcv: 201
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 33765
+aliases: []
+evolution:
+  - id: 1125
+    evolvers:
+      - 118
+      - 83
+      - 87
+      - 98
+      - 303
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3x, reduces own ATK multiplier
+    by 0.1x at the end of each turn
+  notes: His ATK multiplier will be 3x on the first turn, 2.9x on the second, 2.8x
+    on the third and so on. The reduction stops once the multiplier is 1.0x. The
+    multiplier affects all Slasher characters.
+special:
+  name: Idle Execution
+  description: Deals 13x character's ATK in [PSY] damage to all enemies, changes
+    orbs of this and Captain characters into Matching orbs.
+  cooldown: 20
+  maxLevel: 7

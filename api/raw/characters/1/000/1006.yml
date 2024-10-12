@@ -1,0 +1,46 @@
+type: STR
+name: Jean Bart - Heart Pirates
+japanName: ジャンバール ハートの海賊団
+family:
+  - JeanBart
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1337
+    atk: 488
+    rcv: 44
+  maxLvl:
+    hp: 2614
+    atk: 1069
+    rcv: 153
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 26912
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and HP of Powerhouse characters by 1.5x
+special:
+  name: Rush to Freedom
+  description: Boosts ATK of this character by 1.75x for 1 turn
+  cooldown: 15
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Trafalgar D. Water Law, Sachi, Penguin and Bepo
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

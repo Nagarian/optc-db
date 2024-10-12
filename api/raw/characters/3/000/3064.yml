@@ -1,0 +1,528 @@
+type: DUAL
+name: Luffy & Sanji - One-Sided Duel
+japanName: ルフィ＆サンジ 反撃なき決闘
+family:
+  - MonkeyDLuffy
+  - VinsmokeSanji
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 792
+    atk: 457
+    rcv: 55
+  maxLvl:
+    hp: 1759
+    atk: 1015
+    rcv: 123
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 224880
+aliases:
+  - Luffy&Sanji
+  - LuffySanji
+  - Sanji&Luffy
+  - SanjiLuffy
+  - Legend Luffy and Sanji
+evolution:
+  - id: 3065
+    evolvers:
+      - 118
+      - 118
+      - 100
+      - 103
+      - 267
+captain:
+  name: ""
+  description: If HP is above 99% at the start of the turn, boosts ATK of all
+    characters by 5x, by 4.5x otherwise, boosts HP of all characters by 1.2x,
+    recovers 2,000 HP at the end of each turn and allows HP Overfill up to 2x
+    MAX HP.
+  notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+special:
+  name: Cross Fists and Legs
+  description: Changes all orbs, including [BLOCK] orbs, into [RCV] orbs, recovers
+    50x character's RCV in HP, allowing HP Overfill up to 2x MAX HP and becomes
+    Luffy & Sanji for 3 turns. If HP is above 99% at the time the special is
+    activated, boosts ATK of all characters by 2.5x for 1 turn, by 2x for 1 turn
+    otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+characters:
+  swap:
+    description: Reduces Bind, Despair and Paralysis duration by 1 turn, makes [RCV]
+      orbs beneficial for all characters for 1 turn and changes orb of this
+      character into a [RCV] orb.
+  character1:
+    name: Luffy - One-Sided Duel
+    japanName: ルフィ 反撃なき決闘
+    class:
+      - Free Spirit
+      - Fighter
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 727
+        atk: 411
+        rcv: 50
+      maxLvl:
+        hp: 1615
+        atk: 914
+        rcv: 111
+    captain:
+      name: ""
+      description: If HP is above 99% at the start of the turn, boosts ATK of all
+        characters by 4x, by 3.5x otherwise, boosts HP of all characters by 1.2x
+        and allows HP Overfill up to 2x MAX HP.
+      notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of all characters by 50
+  character2:
+    name: Sanji - One-Sided Duel
+    japanName: サンジ 反撃なき決闘
+    class:
+      - Free Spirit
+      - Fighter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 727
+        atk: 394
+        rcv: 53
+      maxLvl:
+        hp: 1615
+        atk: 877
+        rcv: 117
+    captain:
+      name: ""
+      description: If HP is above 99% at the start of the turn, boosts ATK of all
+        characters by 3.75x, by 3.25x otherwise, boosts HP of all characters by
+        1.2x, recovers 1,000 HP at the end of each turn and allows HP Overfill
+        up to 2x MAX HP.
+      notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of all characters by 50
+rumble:
+  stats:
+    def: 175
+    rumbleType: ATK
+    spd: 210
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 2
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 2.1
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 2.2
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 2.3
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 2.4
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 2.5
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 2.6
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 2.7
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 2.8
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - amount: 3.5
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - crew
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

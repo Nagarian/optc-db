@@ -1,0 +1,92 @@
+type: QCK
+name: Portgas D. Ace - Flame Mirror
+frenchName: Portgas D. Ace Pyro-miroir
+japanName: ポートガス・D・エース 鏡火炎（きょうかえん）
+family:
+  - PortgasDAce
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1728
+    atk: 501
+    rcv: 140
+  maxLvl:
+    hp: 2886
+    atk: 1020
+    rcv: 279
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 2015
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x
+special:
+  name: Flame Mirror
+  description: Deals 25x character's ATK in [QCK] damage to all enemies
+  cooldown: 25
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of [QCK] characters by 50
+  - description: Makes [DEX] orbs beneficial for [QCK] characters
+support:
+  type: descriptive
+  criteria: "[QCK] characters"
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [QCK] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [QCK] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [QCK] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [QCK] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [QCK] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 100
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - hp: 100
+    - cooldown: 4
+    - atk: 100
+    - type: sailor
+    - cooldown: 5
+    - slot: 1
+    - hp: 100
+    - captain:
+        description: Boosts ATK of [QCK] characters by 2.5x and their HP by 1.5x
+    - cooldown: 5
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

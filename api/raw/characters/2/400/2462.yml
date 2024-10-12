@@ -1,0 +1,54 @@
+type: STR
+name: Franky - Stag Beetle Robot
+japanName: フランキー クワガタロボ
+family:
+  - Franky
+class:
+  - Shooter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 643
+    atk: 320
+    rcv: 32
+  maxLvl:
+    hp: 1612
+    atk: 801
+    rcv: 79
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 144558
+aliases:
+  - Limited Franky
+  - Secret Franky
+evolution:
+  - id: 2463
+    evolvers:
+      - 118
+      - 84
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x, their HP by 1.2x and
+    makes [RCV] orbs beneficial for Powerhouse characters.
+special:
+  name: Weapons Left
+  description: Deals 10 hits of random Typeless damage to random enemies. If
+    enemies have ATK UP, Enrage, End of Turn Damage/Percent Cut or End of Turn
+    Heal at the time the special was activated, boosts ATK of Powerhouse
+    characters by 2.25x for 1 turn, boosts ATK of Powerhouse characters by 1.75x
+    for 1 turn otherwise.
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of Powerhouse characters by 100

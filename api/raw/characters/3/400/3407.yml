@@ -1,0 +1,235 @@
+type: STR
+name: Koala - Summer Night Vacation
+japanName: コアラ サマーナイトバカンス
+family:
+  - Koala
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1250
+    atk: 833
+    rcv: 82
+  maxLvl:
+    hp: 2778
+    atk: 1389
+    rcv: 274
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 289189
+aliases:
+  - Swimsuit Koala
+  - Summer Koala
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Cerebral characters by 3x and reduces
+    damage received by 10%.
+special:
+  name: Healthy Maiden in the Water
+  description: Reduces Bind and ATK DOWN duration by 5 turns and boosts the Color
+    Affinity of Fighter and Cerebral characters by 1.75x for 1 turn. If during
+    that turn you score 3 PERFECT hits, boosts the Color Affinity of Fighter and
+    Cerebral characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Fighter and Cerebral characters by 50
+  - description: Makes [STR] orbs beneficial for Fighter and Cerebral characters
+support:
+  type: descriptive
+  criteria: Sabo and Belo Betty
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind, reduces crew's
+      Bind duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces crew's
+      Bind duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces crew's
+      Bind duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces crew's
+      Bind duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or ATK DOWN,
+      reduces crew's Bind and ATK DOWN duration by 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - atk: 10
+    - hp: 50
+    - rcv: 20
+    - slot: 1
+    - atk: 20
+    - hp: 70
+    - atk: 20
+    - type: sailor
+    - rcv: 20
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+rumble:
+  stats:
+    def: 146
+    rumbleType: SPT
+    spd: 131
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.1
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 11
+          level: 1
+          effect: buff
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.2
+        - override:
+            level: 1
+            amount: 12
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            level: 2
+            amount: 13
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 2
+            amount: 14
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 3
+            amount: 15
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 4
+            amount: 16
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 4
+            amount: 17
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 5
+            amount: 18
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 5
+            amount: 19
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 7
+            amount: 20

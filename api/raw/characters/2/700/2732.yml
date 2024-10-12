@@ -1,0 +1,49 @@
+type: INT
+name: Magellan - All-Consuming Master of Poison
+japanName: マゼラン 全てを奪う毒の主
+family:
+  - Magellan
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 286
+    atk: 202
+    rcv: 54
+  maxLvl:
+    hp: 799
+    atk: 444
+    rcv: 154
+cost: 15
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - kizuna
+links:
+  gamewithId: 172417
+aliases:
+  - Kizuna Magellan
+evolution:
+  - id: 2733
+    evolvers:
+      - 118
+      - 93
+      - 94
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x.
+special:
+  name: "Poison Punishment: Hydra"
+  description: Poisons all enemies and boosts ATK against Poisoned enemies by 1.3x
+    for 99+ turns. Applies a Continuous Effect that poisons all enemies at the
+    start of every stage for 99+ turns.
+  cooldown: 21
+  maxLevel: 1
+sailor:
+  - description: Reduces Paralysis duration completely on this character

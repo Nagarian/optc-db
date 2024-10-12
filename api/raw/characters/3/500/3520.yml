@@ -1,0 +1,218 @@
+type: INT
+name: Admiral Sengoku - Cunning Officer Upholding Justice in the Great Era of Piracy
+japanName: センゴク大将 大海賊時代に抗う智将
+family:
+  - Sengoku
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1639
+    atk: 779
+    rcv: 67
+  maxLvl:
+    hp: 3278
+    atk: 1559
+    rcv: 134
+cost: 30
+slots: 5
+maxExp: 2000000
+maxLevel: 99
+flags: []
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Striker characters by 3.25x, their HP by
+    1.2x and makes [INT] orbs beneficial for Fighter and Striker characters.
+special:
+  name: Raised Fist of Justice
+  description: Reduces enemies' Percent Damage Reduction duration by 5 turns,
+    makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+    characters for 1 turn, recovers 5x character's RCV in HP and changes all
+    orbs of right column characters into [INT] orbs. If your Friend Captain's
+    orb is [STR], sets Chain Boundaries to 2.5x and 25.0x for 1 turn.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of Fighter and Striker characters by 60
+  - description: Makes [INT] orbs beneficial for Fighter and Striker characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Fighter characters
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - cooldown: 2
+    - type: potential
+    - type: sailor
+    - hp: 100
+    - atk: 50
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 272
+    rumbleType: DEF
+    spd: 119
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          duration: 11
+          targeting:
+            targets:
+              - INT
+        - amount: 6
+          effect: recharge
+          targeting:
+            targets:
+              - INT
+          type: percentage
+    - cooldown: 24
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 7
+    - cooldown: 24
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 8
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 9
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            amount: 10
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 11
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            amount: 12
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            amount: 13
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 14
+    - cooldown: 24
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 15

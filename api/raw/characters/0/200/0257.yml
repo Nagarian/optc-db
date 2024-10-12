@@ -1,0 +1,97 @@
+type: DEX
+name: Flintlock Pistols Izo
+japanName: 短筒使いのイゾウ
+family:
+  - Izo
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1224
+    atk: 585
+    rcv: 136
+  maxLvl:
+    hp: 2550
+    atk: 1068
+    rcv: 319
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 4861
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [DEX] characters by 2x
+  notes: Attack boost stacks, so a [DEX] Shooter character has a 2.4x ATK
+special:
+  name: Beautiful Dual Flintlocks
+  description: Changes [STR] and [QCK] orbs into [DEX] orbs
+  cooldown: 20
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] characters by 50
+  - description: Boosts base ATK of Shooter characters by 50
+support:
+  type: descriptive
+  criteria: Portgas D. Ace, Marco and Edward Newgate (Whitebeard)
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes Badly Matching orbs of the supported
+      character into a Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes Badly Matching orbs of the supported
+      character into a Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes Badly Matching orbs of the supported
+      character into a Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes Badly Matching orbs of the supported
+      character into a Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes Badly Matching orbs into Matching orbs.
+limitBreak:
+  path:
+    - cooldown: 1
+    - atk: 30
+    - hp: 90
+    - type: potential
+    - cooldown: 2
+    - rcv: 20
+    - rcv: 40
+    - type: sailor
+    - atk: 50
+    - hp: 150
+    - captain:
+        description: Boosts ATK and RCV of [DEX] characters by 2x and boosts ATK of
+          Shooter characters by 1.2x
+    - cooldown: 2
+    - atk: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3

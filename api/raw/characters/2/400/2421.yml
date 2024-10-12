@@ -1,0 +1,163 @@
+type: QCK
+name: Hajrudin - Spear of Elbaph
+japanName: ハイルディン エルバフの槍
+family:
+  - Hajrudin
+class:
+  - Driven
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 301
+    atk: 205
+    rcv: 12
+  maxLvl:
+    hp: 1292
+    atk: 768
+    rcv: 92
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 140987
+aliases:
+  - ""
+evolution:
+  - id: 2422
+    evolvers:
+      - 85
+      - 96
+      - 1180
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Powerhouse characters by 2.75x, reduces
+    crew's current HP by 5% at the end of each turn, reduces own ATK multiplier
+    by approximately 0.06x at the end of each turn
+  notes: His ATK multiplier will be 2.75x on the first turn, 2.69x on the second,
+    2.63x on the third and so on. The reduction stops once the multiplier is 1x.
+    The multiplier affects all Driven and Powerhouse characters. You will not
+    die to the HP reduction
+special:
+  name: '"Gungnir" - The Decree of the Giant'
+  description: Reduces Bind, Paralysis and Chain Coefficient Reduction duration by
+    4 turns, reduces Special Cooldown of Driven and Powerhouse characters by 1
+    turn. If your Captain is a Driven or Powerhouse character, boosts ATK
+    against delayed enemies by 1.75x for 2 turns
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven characters by 30
+rumble:
+  stats:
+    def: 142
+    rumbleType: ATK
+    spd: 137
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 0.55
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          duration: 10
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.6
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.64
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.69
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.74
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.79
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.83
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.88
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.93
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 2

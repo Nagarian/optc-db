@@ -1,0 +1,94 @@
+type: INT
+name: Franky - Straw Hat Pirates Enjoying the FES
+family:
+  - Franky
+class:
+  - Powerhouse
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1625
+    atk: 736
+    rcv: 84
+  maxLvl:
+    hp: 3250
+    atk: 1472
+    rcv: 168
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - RED
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and Shooter characters by 3x and deals 5x
+    character's ATK in [INT] damage to all enemies at the end of each turn.
+special:
+  name: Aimed Ouchie Finger
+  description: Reduces enemies' Increased Defense and Resilience duration by 5
+    turns and boosts Orb Effects of [INT] characters by 2x for 3 turns. If your
+    crew has Orb Amplification, increases boost effects of Orb Amplification
+    buffs by +0.25x.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of all characters by 75
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Vinsmoke Sanji and Jinbe
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience duration by 2 turns.
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - atk: 30
+    - rcv: 20
+    - atk: 40
+    - slot: 1
+    - hp: 30
+    - rcv: 20
+    - hp: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

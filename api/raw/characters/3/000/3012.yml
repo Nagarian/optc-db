@@ -1,0 +1,403 @@
+type: QCK
+name: Jewelry Bonney - Worst Generation in Hiding
+japanName: ジュエリー・ボニー 身を潜める“最悪”
+family:
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 450
+    atk: 290
+    rcv: 71
+  maxLvl:
+    hp: 1107
+    atk: 774
+    rcv: 212
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 211229
+aliases:
+  - ""
+evolution:
+  - id: 3013
+    evolvers:
+      - 117
+      - 85
+      - 266
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x and their RCV by 1.2x.
+special:
+  name: Smiling from Success
+  description: Reduces Bind and Despair duration by 5 turns and boosts ATK of
+    [QCK] characters by 1.75x for 1 turn. After 1 turn, boosts ATK of [QCK]
+    characters by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of [QCK] characters by 100
+rumble:
+  stats:
+    def: 110
+    rumbleType: RCV
+    spd: 136
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 0.55
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.6
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.65
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.7
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.75
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.8
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.85
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.9
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 0.95
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - cooldown: 35
+      effects:
+        - amount: 1.2
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit

@@ -1,0 +1,146 @@
+type: STR
+name: Hawk Eyes Mihawk - The Man Who Sits Atop the World's Swordsmen
+japanName: 鷹の目のミホーク 世界中の剣士の頂点に立つ男
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 847
+    atk: 332
+    rcv: 57
+  maxLvl:
+    hp: 2990
+    atk: 1403
+    rcv: 186
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 72510
+aliases:
+  - Hawk
+  - TM Mihawk
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.2x and their HP by 1.1x. If
+    you use "Black Blade • The Ultimate Sword" in this turn boosts ATK of
+    Slasher characters by 1.62x instead.
+special:
+  name: Black Blade • The Ultimate Sword
+  description: Deals 100x character's ATK in Typeless damage to all enemies. If
+    your Captain is a Slasher character, boosts Orb Effects of Slasher
+    characters by 2x for 1 turn and locks the chain multiplier at 2.75x for 1
+    turn
+  cooldown: 37
+  maxLevel: 9
+sailor:
+  - description: Boosts base ATK of Slasher characters by 50
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 11
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - captain:
+        description: Boosts ATK of Slasher characters by 1.35x and their HP by 1.1x. If
+          you use "Black Blade • The Ultimate Sword" in this turn boosts ATK of
+          Slasher characters by 1.8225x instead.
+    - type: sailor
+    - atk: 15
+    - hp: 40
+    - rcv: 10
+    - captain:
+        description: Boosts ATK of Slasher characters by 1.6x and their HP by 1.1x. If
+          you use "Black Blade • The Ultimate Sword" in this turn boosts ATK of
+          Slasher characters by 2.16x instead.
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 15
+    - captain:
+        description: Boosts ATK of Slasher characters by 1.8x and their HP by 1.2x. If
+          you use "Black Blade • The Ultimate Sword" in this turn boosts ATK of
+          Slasher characters by 2.43x instead.
+    - cooldown: 2
+    - atk: 25
+    - hp: 60
+    - rcv: 20
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - hp: 65
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Slasher characters by 2x and their HP by 1.2x. If you
+          use "Black Blade • The Ultimate Sword" in this turn boosts ATK of
+          Slasher characters by 2.7x instead.
+    - atk: 35
+    - hp: 70
+    - type: sailor
+    - atk: 40
+    - hp: 75
+    - rcv: 30
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Slasher characters by 2x and their HP by 1.3x. If you
+          use "Black Blade • The Ultimate Sword" in this turn boosts ATK of
+          Slasher characters by 2.7x instead.
+    - atk: 50
+    - hp: 80
+    - captain:
+        description: Boosts ATK of Slasher characters by 2.5x and their HP by 1.3x. If
+          you use "Black Blade • The Ultimate Sword" in this turn boosts ATK of
+          Slasher characters by 3.5x instead.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 25
+        - value: 7
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

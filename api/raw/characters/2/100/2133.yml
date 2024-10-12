@@ -1,0 +1,48 @@
+type: DEX
+name: Jozu - Sand-Proof Diamond
+japanName: ジョズ 砂を吹き飛ばす金剛石
+family:
+  - Jozu
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 256
+    atk: 70
+    rcv: 14
+  maxLvl:
+    hp: 1810
+    atk: 601
+    rcv: 98
+cost: 12
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 108926
+aliases:
+  - Limited Jozu
+  - Secret Jozu
+evolution:
+  - id: 2134
+    evolvers:
+      - 117
+      - 80
+      - 91
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.2x
+special:
+  name: Destroy - Charge
+  description: Reduces ATK DOWN duration by 3 turns, makes [PSY] orbs beneficial
+    for all characters for 3 turns and locks all orbs for 1 turn
+  cooldown: 10
+  maxLevel: 1

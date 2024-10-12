@@ -1,0 +1,178 @@
+type: DEX
+name: Sabo Dragon Claws
+japanName: サボ 竜の爪
+family:
+  - Sabo
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 233
+    atk: 140
+    rcv: 34
+  maxLvl:
+    hp: 1296
+    atk: 686
+    rcv: 186
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 29787
+aliases:
+  - Raid Sabo
+evolution:
+  - id: 1047
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x following a chain of
+    Good > Great > PERFECT hits
+special:
+  name: "Dragon Claw Fist: Dragon's Breath"
+  description: Deals random Typeless damage to all enemies. Adds 55x character's
+    ATK as Additional Typeless Damage for 2 turns
+  cooldown: 30
+  maxLevel: 17
+  notes: "`random : 10,000 : 30,000`"
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 0.85
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          level: 1
+          effect: debuff
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          duration: 15
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 16
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.94
+        - override:
+            duration: 17
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.99
+        - override:
+            duration: 18
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.04
+        - override:
+            duration: 19
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.09
+        - override:
+            duration: 20
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.13
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.18
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.23
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.35
+        - override:
+            level: 3
+            duration: 25

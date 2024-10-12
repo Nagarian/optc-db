@@ -1,0 +1,556 @@
+type: PSY
+name: Jinbe - Attack From the Sea
+japanName: ジンベエ 海からの襲撃
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1091
+    atk: 562
+    rcv: 111
+  maxLvl:
+    hp: 2728
+    atk: 1405
+    rcv: 277
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 228560
+aliases:
+  - TM Jinbe
+  - TM Jinbei
+  - TM Jimbe
+  - TM Jimbei
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [PSY] and [INT] characters by 1.75x.
+special:
+  name: "Fish-Man Karate Secret Technique: Vagabond Drill"
+  description: Reduces Paralysis and Silence duration by 7 turns. If HP is above
+    99% at the time the special is activated, boosts the Color Affinity of
+    [STR], [PSY] and [INT] characters by 2x for 1 turn, by 1.75x otherwise.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Reduces Silence duration by 7 turns on this character
+  - description: Makes [STR] and [INT] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Nami, Tony Tony Chopper, Brook and Carrot
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [STR], [PSY] and [INT] characters by 2x.
+    - type: sailor
+    - rcv: 20
+    - hp: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of [STR], [PSY] and [INT] characters by 2.5x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - captain:
+        description: Boosts ATK of [STR], [PSY] and [INT] characters by 2.75x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of [STR], [PSY] and [INT] characters by 3x.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [STR], [PSY] and [INT] characters by 3.25x.
+    - hp: 100
+    - hp: 120
+    - captain:
+        description: Boosts ATK of [STR], [PSY] and [INT] characters by 3.5x and reduces
+          Despair duration by 1 turn.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 208
+    rumbleType: SPT
+    spd: 146
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 21
+          effect: debuff
+          level: 1
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 22
+          effect: debuff
+          level: 1
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 23
+          effect: debuff
+          level: 1
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 24
+          effect: debuff
+          level: 2
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 25
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 25
+          effect: debuff
+          level: 2
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 26
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 26
+          effect: debuff
+          level: 2
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 27
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 27
+          effect: debuff
+          level: 2
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 28
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 28
+          effect: debuff
+          level: 2
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 29
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - SPD
+          duration: 29
+          effect: debuff
+          level: 3
+          targeting:
+            count: 2
+            targets:
+              - Free Spirit
+              - Cerebral

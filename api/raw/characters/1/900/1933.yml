@@ -1,0 +1,61 @@
+type: DEX
+name: Boa Hancock - Runaway Slave
+japanName: ボア・ハンコック 逃亡奴隷
+family:
+  - BoaHancock
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 210
+    atk: 210
+    rcv: 25
+  maxLvl:
+    hp: 2530
+    atk: 805
+    rcv: 260
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 86346
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.75x and boosts ATK of Free
+    Spirit characters by 1.5x
+  notes: The bonus is cumulative. Fighter + Free Spirit characters get a 2.625x bonus.
+special:
+  name: "The Trio Crawling Away from the Heavens: The Eldest Daughter"
+  description: 'Makes [DEX] orbs beneficial for Fighter characters for 1 turn and
+    boosts ATK of Fighter characters by 1.5x for 1 turn. If "The Trio Crawling
+    Away from the Heavens: The Third Daughter" is used again in the same turn
+    the special is activated in, boosts ATK of Fighter characters by 1.75x
+    instead.'
+  cooldown: 21
+  maxLevel: 9
+  notes: This special is boosted if you use Boa Marigold's [1932] special in the
+    same turn
+sailor:
+  - description: Boosts base ATK of this character by 100 if this character is the
+      1st in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Boa Sandersonia and Boa Marigold
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

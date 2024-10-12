@@ -1,0 +1,142 @@
+type: STR
+name: Kaido, King of the Beasts
+japanName: 百獣のカイドウ
+family:
+  - Kaido
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1820
+    atk: 802
+    rcv: 51
+  maxLvl:
+    hp: 3279
+    atk: 1510
+    rcv: 110
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 136910
+aliases:
+  - TM Kaido
+captain:
+  name: ""
+  description: Boosts ATK of this character by 1.75x and boosts ATK of Driven and
+    Powerhouse characters by 1.5x and their HP by 1.2x
+special:
+  name: King of the Beasts’ Mace
+  description: Removes all positive buffs on your team, deals 20% of enemies'
+    current HP in True damage to one enemy, boosts Orb Effects of all characters
+    by 1.5x for 0-6 turns and boosts ATK of this character by 3.25x for 0-6
+    turns, depending on how many [RCV] orbs used in normal attacks
+  cooldown: 35
+  maxLevel: 8
+  notes: ATK and Orb amplification buff duration is equal to the amount of [RCV]
+    orbs consumed prior to the time the special was activated with a maximum of
+    6 turns.
+sailor:
+  - description: Boosts base ATK of Powerhouse and Driven characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Jack and Donquixote Doflamingo
+  levels:
+    - value: 1
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - atk: 10
+    - atk: 15
+    - type: potential
+    - captain:
+        description: Boosts ATK of this character by 2.5x and boosts ATK of Driven and
+          Powerhouse characters by 1.5x and their HP by 1.2x
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of this character by 3x and boosts ATK of Driven and
+          Powerhouse characters by 1.5x and their HP by 1.2x
+    - slot: 1
+    - cooldown: 1
+    - atk: 15
+    - atk: 15
+    - atk: 20
+    - captain:
+        description: Boosts ATK of this character by 3x and boosts ATK of Driven and
+          Powerhouse characters by 2x and their HP by 1.2x
+    - cooldown: 2
+    - rcv: 30
+    - rcv: 30
+    - rcv: 30
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of this character by 3x and boosts ATK of Driven and
+          Powerhouse characters by 2.25x and their HP by 1.2x
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 35
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of this character by 3x and boosts ATK of Driven and
+          Powerhouse characters by 2.5x and their HP by 1.2x
+    - hp: 70
+    - hp: 100
+    - captain:
+        description: Boosts ATK of this character by 3.25x and boosts ATK of Driven and
+          Powerhouse characters by 2.75x and their HP by 1.2x
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 70
+        - value: 10
+          threshold: 80

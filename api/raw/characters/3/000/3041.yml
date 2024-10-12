@@ -1,0 +1,358 @@
+type: PSY
+name: Nico Robin - Time Off in the Shade
+japanName: ニコ・ロビン 木陰でオフタイム
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 426
+    atk: 359
+    rcv: 65
+  maxLvl:
+    hp: 1057
+    atk: 831
+    rcv: 154
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 218711
+aliases:
+  - Summer Robin
+  - Swimsuit Robin
+  - Summer Nico Robin
+  - Swimsuit Nico Robin
+evolution:
+  - id: 3042
+    evolvers:
+      - 117
+      - 87
+      - 1180
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x and boosts chances of getting
+    [PSY] orbs.
+special:
+  name: A Smile in between Reading
+  description: Reduces enemies' Threshold Damage Reduction, Percent Damage
+    Reduction and Increased Defense duration by 5 turns, reduces Despair
+    duration by 5 turns and changes all orbs of all characters into Robin's orb.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP and RCV of [PSY] characters by 50
+rumble:
+  stats:
+    def: 128
+    rumbleType: DBF
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 12
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 13
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 14
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 18
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 19
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - Driven
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 20
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - Driven

@@ -1,0 +1,58 @@
+type: INT
+name: Killer - Linchpin of the Alliance
+japanName: キラー 同盟締結の立役者
+family:
+  - Killer
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 201
+    atk: 198
+    rcv: 23
+  maxLvl:
+    hp: 975
+    atk: 856
+    rcv: 102
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 115701
+aliases:
+  - Limited Killer
+  - Secret Killer
+evolution:
+  - id: 2199
+    evolvers:
+      - 118
+      - 88
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x and their HP by 1.2x. If you
+    defeat an enemy, increases ATK boost slightly. Stacks up to 3 times to a
+    maximum of 3x.
+  notes: If a character dies and revives, it counts as killing a character. If you
+    did not defeat an enemy, lose all ATK boost stacks.
+special:
+  name: Soaring Massacre Blades
+  description: If the HP of the enemy with the highest Maximum HP is above 50%,
+    deals 20% of enemies' current HP in damage to one enemy and boosts the Color
+    Affinity of all characters by 1.5x for 3 turns, otherwise, deals 100x
+    character's ATK in [INT] damage to one enemy and boosts the Color Affinity
+    of all characters by 1.75x for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of this character by 200 if this character is the
+      last in the chain to attack

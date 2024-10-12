@@ -1,0 +1,91 @@
+type: QCK
+name: Tashigi G-5 Captain
+japanName: たしぎ 海軍ＧＬ第５支部「Ｇ‐５」大佐
+family:
+  - Tashigi
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 998
+    atk: 339
+    rcv: 185
+  maxLvl:
+    hp: 1990
+    atk: 937
+    rcv: 479
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 37082
+aliases:
+  - Thiccshigi
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 1.6x and their RCV by 1.3x
+  notes: Attack boost stacks, so a Slasher/Cerebral character has a 2.56x ATK
+special:
+  name: Cutting Drizzle
+  description: Deals 15x character's ATK in [QCK] damage to all enemies. Boosts
+    the Color Affinity of Slasher and Cerebral characters by 1.5x for 2 turns
+  cooldown: 23
+  maxLevel: 9
+sailor:
+  - description: Boosts base RCV of Slasher characters by 30
+  - description: Boosts base ATK and HP of all characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Smoker and Roronoa Zoro
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 10
+    - hp: 60
+    - type: potential
+    - atk: 20
+    - cooldown: 2
+    - hp: 80
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - cooldown: 2
+    - hp: 80
+    - atk: 60
+    - atk: 70
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

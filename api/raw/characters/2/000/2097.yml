@@ -1,0 +1,98 @@
+type: QCK
+name: Roronoa Zoro - Master Swordsman Felling the New World
+japanName: ロロノア・ゾロ 新世界を斬り伏せる剣豪　
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1268
+    atk: 674
+    rcv: 69
+  maxLvl:
+    hp: 3211
+    atk: 1471
+    rcv: 175
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 105737
+aliases:
+  - Raid Zoro
+captain:
+  name: ""
+  description: Boosts Slasher and Driven character's ATK by 2.75x and their HP by
+    1.2x, by 3x after 2 consecutive PERFECTs, by 3.3x after 5 consecutive
+    PERFECTs.
+special:
+  name: "One Sword Style: Great Dragon Shock"
+  description: Deals 55x character's ATK in Typeless Fixed True damage to one
+    enemy, reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 5 turns. If HP is full at the time the special was
+    activated, boosts the Color Affinity of Slasher and Driven characters by 2x
+    for 1 turn, by 1.75x for 2 turns otherwise
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: If this character has a [QCK] orb and you hit a GOOD or GREAT with
+      him, keep his [QCK] orb for the next turn
+  - description: Boosts base ATK, HP and RCV of Slasher and Driven characters by 50
+support:
+  type: descriptive
+  criteria: Slasher characters
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Slasher characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Slasher characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Slasher characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Slasher characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Slasher characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 15
+    - hp: 10
+    - type: potential
+    - hp: 15
+    - hp: 20
+    - rcv: 15
+    - atk: 20
+    - atk: 30
+    - hp: 20
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

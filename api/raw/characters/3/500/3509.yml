@@ -1,0 +1,232 @@
+type: QCK
+name: Orochi - Irate Shogun
+japanName: オロチ 怒りの将軍
+family:
+  - KurozumiOrochi
+class:
+  - Shooter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1080
+    atk: 588
+    rcv: 115
+  maxLvl:
+    hp: 2387
+    atk: 1529
+    rcv: 283
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 312284
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces HP of all characters by 20% and boosts ATK of Shooter and
+    Powerhouse characters by 4x.
+special:
+  name: Raging Gunpoint
+  description: Changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into [EMPTY]
+    orbs, deals ? [QCK] damage to one enemy depending on number of [STR], [DEX],
+    [QCK], [PSY] or [INT] slots emptied and changes all orbs into Matching orbs.
+    If there is less than 100,000 normal attack damage dealt when the Special is
+    activated, reduces Special Cooldown of top row characters by 2 turns and
+    boosts Orb Effects of Shooter and Powerhouse characters by 2.5x for 1 turn,
+    boosts Orb Effects of Shooter and Powerhouse characters by 2x for 1 turn.
+  cooldown: 16
+  maxLevel: 6
+  notes: "The exact multiplier used is chosen based on the number of BLOCK orbs
+    consumed: 0 orbs - 35x ATK; 1 orb - 52.5x ATK; 2 orbs - 105x ATK; 3 orbs -
+    157.5x ATK; 4 orbs - 210x ATK; 5 orbs - 262.5x ATK; 6 orbs - 350x ATK."
+sailor:
+  - description: When any other Shooter or Powerhouse character uses a special,
+      reduces special cooldown of this character by 1 turn
+  - description: Boosts base ATK of top row characters by 150
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shooter characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - rcv: 25
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 60
+        - threshold: 50
+rumble:
+  stats:
+    def: 153
+    rumbleType: DBF
+    spd: 153
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 50
+          duration: 6
+          effect: hinderance
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            chance: 52
+            duration: 7
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            chance: 54
+            duration: 8
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            chance: 56
+            duration: 9
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1
+        - override:
+            chance: 58
+            duration: 10
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            chance: 61
+            duration: 11
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            chance: 63
+            duration: 12
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            chance: 65
+            duration: 13
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            chance: 67
+            duration: 14
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            chance: 70
+            duration: 15

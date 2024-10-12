@@ -1,0 +1,53 @@
+type: DEX
+oldDbId: 3314
+name: "Emporio Ivankov: Neo"
+japanName: エンポリオ・イワンコフ「改」
+family:
+  - EmporioIvankov
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 312
+    atk: 125
+    rcv: 53
+  maxLvl:
+    hp: 1720
+    atk: 522
+    rcv: 181
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 266801
+aliases:
+  - Neo Ivankov
+evolution:
+  - id: 5034
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x following a chain of [STR] >
+    [QCK] > [DEX] attacks no lower than Good
+special:
+  name: Hell Wink [Neo]
+  description: Reduces Special Cooldown of all characters by 1 turn, randomizes
+    all non-[DEX] orbs into either [RCV], [STR], [DEX] or [QCK] orbs, changes
+    [BLOCK] orbs into [DEX] orbs, changes the orb, including [BLOCK] orbs, of
+    this character into a [DEX] orb, makes [RCV] and [DEX] orbs beneficial for
+    all characters for 1 turn and boosts ATK of Free Spirit characters by 1.75x
+    for 1 turn.
+  cooldown: 28
+  maxLevel: 15

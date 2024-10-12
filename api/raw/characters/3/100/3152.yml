@@ -1,0 +1,129 @@
+type: DEX
+name: Zorojuro - Three-Sword Style Ronin
+japanName: ゾロ十郎 三刀流の浪人
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1162
+    atk: 671
+    rcv: 92
+  maxLvl:
+    hp: 2846
+    atk: 1482
+    rcv: 308
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 238592
+aliases:
+  - Secret Zoro
+  - Limited Zoro
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Slasher and Powerhouse characters by 3x, by 3.25x
+    instead if they have a beneficial orb, their HP by 1.25x and makes [DEX]
+    orbs beneficial for [STR] characters.  
+
+    **Boosted Ability:** Boosts ATK of Slasher and Powerhouse characters by 5x, their HP by 1.25x and makes [DEX] orbs beneficial for all characters.
+special:
+  name: Straw-Cutting Attack
+  description: Deals 50x character's ATK in Typeless True damage to all enemies,
+    reduces Special Cooldown of Slasher and Powerhouse characters by 1 turn and
+    reduces Despair duration by 6 turns. If enemies have Delay Debuff Protection
+    or All Debuff Protection at the time the special was activated, boosts Orb
+    Effects of Slasher and Powerhouse characters by 2.25x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of Slasher and Powerhouse characters by 75
+  - description: Makes [DEX] orbs beneficial for Slasher characters
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Tama, Kikunojo, Miss Tsuru
+  levels:
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Slasher and Powerhouse
+      characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Slasher and Powerhouse
+      characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Slasher and Powerhouse
+      characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Slasher and Powerhouse
+      characters by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Slasher and Powerhouse
+      characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - hp: 50
+    - rcv: 25
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

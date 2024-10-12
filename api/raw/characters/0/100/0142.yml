@@ -1,0 +1,37 @@
+type: STR
+name: Fighter Group Crew - Red Pirates
+japanName: 格闘隊 隊員 レッドパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 200
+    atk: 103
+    rcv: 10
+  maxLvl:
+    hp: 707
+    atk: 428
+    rcv: 29
+cost: 6
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 2790
+aliases: []
+evolution:
+  - id: 269
+    evolvers:
+      - 115
+      - 116
+      - 89
+special:
+  name: Hyper Straight
+  description: Deals 10x character's ATK in character's Type damage to one enemy
+  cooldown: 40
+  maxLevel: 26

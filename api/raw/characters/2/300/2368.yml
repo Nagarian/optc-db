@@ -1,0 +1,173 @@
+type: STR
+name: Charlotte Montd'Or
+japanName: シャーロット・モンドール
+family:
+  - CharlotteMontdOr
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 340
+    atk: 220
+    rcv: 13
+  maxLvl:
+    hp: 1020
+    atk: 915
+    rcv: 75
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 136391
+aliases:
+  - Montdor
+  - Mont Dor
+evolution:
+  - id: 2369
+    evolvers:
+      - 117
+      - 84
+      - 1180
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2x-2.5x based on the
+    timing of the attack of the previous unit in the chain
+  notes: A hit below Good or a Miss will boost the ATK of the next unit by 2x, a
+    Good hit by ?x, a Great hit by ?x and a PERFECT hit by 2.5x.
+special:
+  name: Sealed Books
+  description: Reduces enemies' Percent Damage Reduction and Increased Defense
+    duration by 4 turns, reduces Silence, Increase Damage Taken and Burn
+    duration by 4 turns. If your captain is a [STR] or [PSY] character, boosts
+    the Color Affinity of [STR] and [PSY] characters by 1.75x for 2 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+rumble:
+  stats:
+    def: 125
+    rumbleType: DBF
+    spd: 136
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - PSY
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 49
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Action Bind
+          chance: 30
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 17
+        - {}
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 19
+        - {}
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 21
+            level: 3
+        - {}
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 23
+            level: 3
+        - {}
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 25
+            level: 4
+        - {}
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 27
+            level: 4
+        - {}
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 29
+            level: 5
+        - {}
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 31
+            level: 5
+        - {}
+    - cooldown: 49
+      effects:
+        - override:
+            duration: 34
+            level: 7
+        - {}

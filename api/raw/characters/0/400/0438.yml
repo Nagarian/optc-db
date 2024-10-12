@@ -1,0 +1,42 @@
+type: DEX
+name: Perona ~Sweets~ - Ghost Princess
+japanName: ペローナ　スイート ゴーストプリンセス
+family:
+  - Perona
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 856
+    atk: 359
+    rcv: 186
+  maxLvl:
+    hp: 1568
+    atk: 741
+    rcv: 466
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 10445
+aliases:
+  - Valentine Perona
+captain:
+  name: ""
+  description: Boosts RCV of [DEX] characters by 5x if HP is below 30% at the
+    start of the turn
+special:
+  name: Negative Horo "Sweet"
+  description: Recovers 3x character's RCV in HP, reduces damage received by 80%
+    for 1 turn, Poisons enemies for 1,000 for a single turn
+  cooldown: 18
+  maxLevel: 1
+  notes: Poison damage deals 1,000 damage exactly and will ignore enemy armor at
+    the end of your turn

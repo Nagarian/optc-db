@@ -1,0 +1,48 @@
+type: PSY
+name: Curly Dadan - Dadan Family Boss
+japanName: カーリー・ダダン ダダン一家　棟梁
+family:
+  - Dadan
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1080
+    atk: 578
+    rcv: 36
+  maxLvl:
+    hp: 2394
+    atk: 912
+    rcv: 247
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 53572
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight. Boosts ATK of Slasher characters by 2x
+special:
+  name: Break by the Fireplace
+  description: Deals 10% of enemies' current HP in damage to one enemy. If HP is
+    full at the time the special was activated, changes all orbs of top row
+    characters into Matching orbs
+  cooldown: 17
+  maxLevel: 10
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Portgas D. Ace and Sabo
+  levels:
+    - Reduces damage received from [INT] characters by 1%.
+    - Reduces damage received from [INT] characters by 1%.
+    - Reduces damage received from [INT] characters by 2%.
+    - Reduces damage received from [INT] characters by 2%.
+    - Reduces damage received from [INT] characters by 3%.

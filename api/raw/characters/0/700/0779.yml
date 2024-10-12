@@ -1,0 +1,84 @@
+type: QCK
+name: Rebecca - Coliseum Sword Fighter
+japanName: レベッカ コロシアム専属剣闘士
+family:
+  - Rebecca
+class:
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 920
+    atk: 441
+    rcv: 150
+  maxLvl:
+    hp: 1947
+    atk: 853
+    rcv: 374
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 17474
+aliases:
+  - Colo Rebecca
+  - Coliseum Rebecca
+captain:
+  name: ""
+  description: Reduces damage received by 25%
+special:
+  name: Undefeated Sword Technique
+  description: Deals 1x-125x character's ATK in [QCK] damage, depending on the
+    crew's current HP, to one enemy, and changes the orb of this character into
+    a [QCK] orb
+  cooldown: 26
+  maxLevel: 11
+  notes: "`specialProportional : lower : 125 * ( 1 - (remaining HP) / (total HP) )`"
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: Boosts amount healed from [RCV] orbs by 300 each
+support:
+  type: descriptive
+  criteria: Kyros (Toy Soldier)
+  levels:
+    - Reduces damage received from [STR] characters by 1%.
+    - Reduces damage received from [STR] characters by 2%.
+    - Reduces damage received from [STR] characters by 3%.
+    - Reduces damage received from [STR] characters by 4%.
+    - Reduces damage received from [STR] characters by 5%.
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - type: potential
+    - hp: 50
+    - hp: 60
+    - type: sailor
+    - cooldown: 4
+    - rcv: 50
+    - cooldown: 6
+    - atk: 50
+    - type: sailor
+    - slot: 1
+    - hp: 90
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

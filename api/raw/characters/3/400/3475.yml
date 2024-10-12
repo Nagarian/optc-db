@@ -1,0 +1,273 @@
+type: STR
+name: Caesar Clown - No Oxygen Hell
+japanName: シーザー・クラウン 無酸素の地獄
+family:
+  - CaesarClown
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1446
+    atk: 687
+    rcv: 157
+  maxLvl:
+    hp: 2892
+    atk: 1374
+    rcv: 313
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 302552
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3x and their HP by 1.3x.
+special:
+  name: "Blue Flame Sword: Burn and Slash"
+  description: Poisons all enemies and reduces Despair and Chain Multiplier Limit
+    duration by 5 turns. If your captain is a Driven character, sets Chain
+    Boundaries to 2.0x and 35.0x for 3 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Boosts base ATK, HP and RCV of Driven characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - rcv: 30
+    - slot: 1
+    - atk: 30
+    - atk: 40
+    - hp: 70
+    - type: sailor
+    - hp: 80
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 103
+    rumbleType: DBF
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - ATK
+            - SPD
+          duration: 12
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 12
+          effect: debuff
+          level: 1
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            duration: 14
+        - override:
+            level: 1
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 16
+        - override:
+            level: 1
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            level: 1
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 20
+        - override:
+            level: 1
+            duration: 20
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 24
+        - override:
+            level: 2
+            duration: 24
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 26
+        - override:
+            level: 2
+            duration: 26
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 28
+        - override:
+            level: 2
+            duration: 28
+    - cooldown: 25
+      effects:
+        - override:
+            level: 6
+            duration: 30
+        - override:
+            level: 3
+            duration: 30

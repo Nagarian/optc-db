@@ -1,0 +1,49 @@
+type: INT
+name: Doc Q - Blackbeard Pirates
+japanName: ドクＱ 黒ひげ海賊団
+family:
+  - DocQ
+class:
+  - Free Spirit
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 51
+    atk: 59
+    rcv: 31
+  maxLvl:
+    hp: 1502
+    atk: 1138
+    rcv: 340
+cost: 25
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 57825
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [INT] characters by 1.5x
+special:
+  name: Vile Fruit
+  description: For each enemy, has an extremely small chance to instantly defeat that enemy.
+  cooldown: 24
+  maxLevel: 7
+  notes: "`instantKill : <1%`"
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Marshall D. Teach (Blackbeard), Jesus Burgess, Laffitte and Van Augur
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

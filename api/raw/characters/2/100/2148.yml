@@ -1,0 +1,136 @@
+type: PSY
+name: Vinsmoke Sanji - Germa Kingdom's Savior
+japanName: ヴィンスモーク・サンジ ジェルマ王国の救世主
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1579
+    atk: 1040
+    rcv: 110
+  maxLvl:
+    hp: 3450
+    atk: 1520
+    rcv: 376
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 110391
+aliases:
+  - V2 Legend Sanji
+evolution:
+  - id: 3211
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: If there are only Fighter characters in your crew, boosts Chain
+    Multiplier Growth Rate by 4x and boosts ATK of Fighter characters by 1.75x.
+    Lowers chances of getting Matching orbs depending on the crew's current HP.
+  notes: At 1 HP, the rate of Matching orbs is ?% (lower) and at full HP, the rate
+    of Matching orbs is ?%
+special:
+  name: Full Course of Hell
+  description: Deals 150x character's ATK in [PSY] damage to one enemy. If HP is
+    above 50% at the time the special is activated, boosts ATK of Fighter
+    characters by 2.25x for 1 turn. If Sanji is your Captain or Friend/Guest
+    Captain, reduces Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 10 turns
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Boosts this character's damage against [INT] characters by 1.2x
+  - description: Makes [PSY] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Nami and Vinsmoke Reiju
+  levels:
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 15
+    - value: 18
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - rcv: 10
+    - atk: 10
+    - rcv: 15
+    - hp: 20
+    - rcv: 20
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 30
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - hp: 60
+    - atk: 50
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - rcv: 50
+    - captain:
+        description: If there are only Fighter characters in your crew, reduces Special
+          Cooldown of all characters by 1 turn at the start of the fight, boosts
+          Chain Multiplier Growth Rate by 4x and boosts ATK of Fighter
+          characters by 1.75x and their HP by 1.2x. Boosts chances of getting
+          Matching orbs inversely depending on the crew's current HP.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

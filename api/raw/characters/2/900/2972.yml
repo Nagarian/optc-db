@@ -1,0 +1,108 @@
+type: INT
+name: Donquixote Doflamingo - Hope-Crushing Heavenly Demon
+japanName: ドンキホーテ・ドフラミンゴ 希望絶つ天夜叉
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1315
+    atk: 768
+    rcv: 130
+  maxLvl:
+    hp: 2826
+    atk: 1407
+    rcv: 260
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 202543
+aliases:
+  - Doffy
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 2.75x.
+special:
+  name: Cruel Athlete
+  description: Reduces Silence duration by 2 turns and reduces enemies' ATK UP,
+    Increased Defense and Threshold Damage Reduction duration by 2 turns. If
+    your Captain is a [STR] or [INT] character, boosts the Color Affinity of
+    [STR] and [INT] characters by 1.75x for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Diamante, Pica and Trebol
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - slot: 1
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 100
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

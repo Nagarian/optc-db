@@ -1,0 +1,101 @@
+type: DEX
+name: Cavendish - Rebel in the Birdcage
+japanName: キャベンディッシュ 鳥カゴの中の反逆者
+family:
+  - Cavendish
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1099
+    atk: 622
+    rcv: 132
+  maxLvl:
+    hp: 2046
+    atk: 1466
+    rcv: 314
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 69430
+aliases:
+  - Cabbage
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x and their RCV by 1.2x
+special:
+  name: "Beautiful Sword: Round Table"
+  description: Changes [BLOCK] orbs into Matching orbs, locks all orbs for 1 turn,
+    boosts ATK against enemies with reduced defense by 1.75x for 2 turns
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Makes [INT] and [PSY] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of [STR], [DEX] and [QCK] characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Bartolomeo
+  levels:
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - atk: 50
+    - slot: 1
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

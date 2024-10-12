@@ -1,0 +1,52 @@
+type: STR
+name: Akainu Navy HQ Powerhouse
+japanName: 赤犬 海軍本部最高戦力
+family:
+  - Sakazuki
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 442
+    atk: 300
+    rcv: 18
+  maxLvl:
+    hp: 1700
+    atk: 881
+    rcv: 49
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 43909
+aliases:
+  - Sakazuki
+  - V1 Legend Akainu
+evolution:
+  - id: 1314
+    evolvers:
+      - 118
+      - 266
+      - 95
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x. If a character has a [STR]
+    orb, boosts their ATK by 3.9375x instead. Boosts chances of getting [STR]
+    orbs
+  notes: If a character has a [STR] orb, regardless of Type, they will have a
+    3.9375x ATK boost
+special:
+  name: Meteor Volcano
+  description: Deals 125x character's ATK in Typeless damage to all enemies and
+    randomizes non-[STR] orbs. Boosts ATK of Cost 50 or higher characters by
+    1.75x for 2 turns
+  cooldown: 25
+  maxLevel: 8

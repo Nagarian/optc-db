@@ -1,0 +1,99 @@
+type: DEX
+name: Foxfire Kin'emon - Wano Country Samurai
+japanName: 狐火の錦えもん ワノ国の侍
+family:
+  - Kinemon
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1066
+    atk: 530
+    rcv: 119
+  maxLvl:
+    hp: 2349
+    atk: 1377
+    rcv: 294
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 55766
+aliases:
+  - Kin'emon
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn. Boosts
+    ATK of all characters by 3.5x following a chain of Good > Great > PERFECT
+    hits
+special:
+  name: Flaming Flash
+  description: Deals 60x character's ATK in Typeless damage to all enemies and
+    changes all orbs of all characters into Kinemon's orb.
+  cooldown: 19
+  maxLevel: 7
+  notes: Upon activating the special, all orbs will be changed to the orb Kinemon
+    has, including [RAINBOW] and [BLOCK] orbs. This will not override other
+    [BLOCK] orbs.
+sailor:
+  - description: Makes [STR] and [QCK] orbs beneficial for this character
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Kozuki Momonosuke
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes orbs of the supported character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      changes orbs of the supported character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      changes orbs of the supported character into a Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      changes orbs of the supported character into a Matching orb and reduces
+      Burn duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes orbs of the supported character into a Matching orb and reduces
+      Burn duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - cooldown: 1
+    - atk: 30
+    - hp: 60
+    - rcv: 20
+    - slot: 1
+    - rcv: 30
+    - atk: 50
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

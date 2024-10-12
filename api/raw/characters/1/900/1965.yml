@@ -1,0 +1,175 @@
+type: QCK
+name: Devil Oars - Reborn Legend
+japanName: 蘇る伝説 魔人オーズ
+family:
+  - Oars
+class:
+  - Driven
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1690
+    atk: 825
+    rcv: 0
+  maxLvl:
+    hp: 2975
+    atk: 1454
+    rcv: 0
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 91452
+aliases:
+  - Devil Oars
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.75x if HP is above 70% at
+    the start of the turn
+special:
+  name: Gomu Gomu no Butt Stomp
+  description: Deals ?x character's ATK in Typeless damage to all enemies, delays
+    all enemies by 1 turn and changes orbs of adjacent characters into [RCV]
+    orbs
+  cooldown: 21
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Gecko Moria
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+rumble:
+  stats:
+    def: 161
+    rumbleType: DBF
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.3
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.32
+        - override:
+            level: 1
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.33
+        - override:
+            level: 1
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.35
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.37
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.39
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.42
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.44
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.55
+        - override:
+            level: 5
+            duration: 25

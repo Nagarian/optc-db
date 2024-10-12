@@ -1,0 +1,52 @@
+type: QCK
+name: Soul King Brook - Pirate
+japanName: “ソウルキング”ブルック 海賊
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 1043
+    atk: 434
+    rcv: 143
+  maxLvl:
+    hp: 2043
+    atk: 1043
+    rcv: 304
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 54305
+aliases:
+  - Brook
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x and boosts HP of Free Spirit
+    characters by 1.3x
+special:
+  name: Dawn of A Big Star
+  description: Boosts ATK of Free Spirit characters by 1.5x for 1 turn and makes
+    Badly Matching and [BLOCK] orbs not reduce damage for 1 turn
+  cooldown: 13
+  maxLevel: 7
+  notes: Ex. A [STR] character with a [QCK] orb will still deal regular damage
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

@@ -1,0 +1,54 @@
+type: QCK
+name: Magellan - Terrifying Poison
+japanName: マゼラン 毒の恐怖
+family:
+  - Magellan
+class:
+  - Shooter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 719
+    atk: 356
+    rcv: 41
+  maxLvl:
+    hp: 1798
+    atk: 889
+    rcv: 102
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 263373
+aliases:
+  - V2 Legend Magellan
+evolution:
+  - id: 3278
+    evolvers:
+      - 118
+      - 301
+      - 2662
+      - 101
+      - 267
+captain:
+  name: ""
+  description: If HP is above 70% at the start of the turn, boosts ATK of [QCK]
+    characters by 5x, by 4.5x otherwise, boosts HP of all characters by 1.3x,
+    boosts ATK of all other characters by 4x and reduces Paralysis duration by
+    10 turns. Recovers 25% of damage taken from enemies in the previous stage
+    when entering a new stage.
+special:
+  name: "Poison Punishment: Poison Spider Cloud"
+  description: Deals 10% of enemies' current HP in True damage to all enemies,
+    reduces Bind and Burn duration by 3 turns, boosts the Color Affinity of all
+    characters by 2x for 1 turn and inflicts Toxic to all enemies. If enemies
+    are inflicted with Toxic or Poison upon activation of the special, boosts
+    ATK of all characters by 2.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+  notes: "`toxic : 50x : 2x : 3,000,000`"

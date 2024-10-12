@@ -1,0 +1,111 @@
+type: DEX
+name: Garp the Fist - Legendary Man Standing in the Way
+japanName: ゲンコツのガープ 立ち塞がる伝説
+family:
+  - MonkeyDGarp
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1105
+    atk: 480
+    rcv: 55
+  maxLvl:
+    hp: 1578
+    atk: 880
+    rcv: 100
+cost: 60
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+  - shop
+links:
+  gamewithId: 157670
+aliases:
+  - Ticket Garp
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x, their HP by 1.2x and makes
+    [STR] and [DEX] orbs beneficial for all characters. If this character
+    becomes your captain in the middle of an island, boosts ATK of all
+    characters by 4x instead
+special:
+  name: Parental Fist
+  description: Deals 200x character's ATK in [DEX] damage to one enemy. If your
+    Captain is a Fighter or Powerhouse character, reduces Special Cooldown of
+    Fighter and Powerhouses characters by 2 turns and reduces enemies' Barrier
+    and Damage Nullification duration by 3 turns. If this character is a Sailor,
+    swaps this unit with your captain for 2 turns.
+  cooldown: 32
+  maxLevel: 1
+  stages:
+    - description: Deals 50x character's ATK in [DEX] damage to one enemy. If your
+        Captain is a Fighter or Powerhouse character, reduces Special Cooldown
+        of Fighter and Powerhouses characters by 1 turn and reduces enemies'
+        Barrier and Damage Nullification duration by 1 turn. If this character
+        is a Sailor, swaps this unit with your captain for 1 turn.
+      cooldown: 28
+  notes: This is the same type of ability as raid boss Shiki's swap. You cannot
+    use it if another effect swaps your captain. (Such as if Shiki swaps first)
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 100
+    - slot: 1
+    - hp: 100
+    - type: potential
+    - cooldown: 1
+    - hp: 150
+    - atk: 100
+    - rcv: 20
+    - type: sailor
+    - cooldown: 2
+    - hp: 250
+    - hp: 350
+    - atk: 100
+    - type: sailor
+    - slot: 1
+    - rcv: 30
+    - cooldown: 4
+    - rcv: 50
+    - type: potential
+    - hp: 400
+    - rcv: 100
+    - atk: 150
+    - atk: 200
+    - cooldown: 4
+    - cooldown: 5
+    - hp: 420
+    - hp: 500
+    - atk: 250
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

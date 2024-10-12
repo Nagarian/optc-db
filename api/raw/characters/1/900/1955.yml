@@ -1,0 +1,126 @@
+type: QCK
+name: Nami - You're My Valentine
+japanName: ナミ You’re My Valentine
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 949
+    atk: 544
+    rcv: 152
+  maxLvl:
+    hp: 2014
+    atk: 1355
+    rcv: 358
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 87125
+aliases:
+  - Valentines Nami
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x, by 3x instead if they have
+    a beneficial orb
+special:
+  name: Thunder Trap
+  description: Deals 10% of enemies' current HP in damage to all enemies and
+    changes the orb of this character into a [RCV] orb. Boosts ATK of Cerebral
+    characters by 1.75x for 1 turn. If during that turn you score 5 PERFECT
+    hits, boosts ATK of Cerebral characters by 2.25x for 1 turn in the following
+    turn.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: If this character has a [RCV] orb and you hit a PERFECT with her,
+      keep her [RCV] orb for the next turn
+  - description: Makes [QCK] orbs beneficial for Cerebral characters
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Usopp, Vinsmoke Sanji, Brook, Tony Tony
+    Chopper and Franky
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 2 turns.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 20
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - atk: 20
+    - hp: 60
+    - rcv: 30
+    - slot: 1
+    - hp: 80
+    - atk: 40
+    - type: sailor
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - cooldown: 4
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Nutrition/Reduce Hunger stacks
+      variant: up to
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

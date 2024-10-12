@@ -1,0 +1,330 @@
+type: QCK
+name: Gecko Moria - Fierce Fight Until Dawn
+japanName: ゲッコー・モリア 夜明けをかけた激闘
+family:
+  - GeckoMoria
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1204
+    atk: 572
+    rcv: 109
+  maxLvl:
+    hp: 3010
+    atk: 1429
+    rcv: 272
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 305429
+aliases:
+  - TM Moria
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Driven characters by 2.25x and their HP by 1.1x.
+special:
+  name: Black Box - Bat Shards
+  description: Reduces enemies' Barrier duration by 1 turn, deals ?x character's
+    ATK in [QCK] damage to all enemies, reduces enemies' Resilience and
+    Increased Defense duration by 5 turns and boosts Orb Effects of Powerhouse
+    and Driven characters by 2x for 1 turn. If your captain is a Powerhouse or
+    Driven character, boosts ATK against enemies inflicted with Poison, Strong
+    Poison or Toxic by 2x for 1 turn.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK and HP of Powerhouse and Driven characters by 75
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Powerhouse and Driven characters by 2.5x and their HP
+          by 1.1x.
+    - type: sailor
+    - hp: 10
+    - atk: 10
+    - hp: 10
+    - captain:
+        description: Boosts ATK of Powerhouse and Driven characters by 2.75x and their
+          HP by 1.2x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - atk: 30
+    - hp: 30
+    - captain:
+        description: Boosts ATK of Powerhouse and Driven characters by 3x and their HP
+          by 1.2x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - cooldown: 3
+    - slot: 1
+    - hp: 30
+    - atk: 50
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Powerhouse and Driven characters by 3.25x and their
+          HP by 1.3x.
+    - rcv: 40
+    - rcv: 40
+    - type: sailor
+    - atk: 50
+    - atk: 50
+    - rcv: 40
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Powerhouse and Driven characters by 3.5x and their HP
+          by 1.5x.
+    - hp: 30
+    - hp: 40
+    - captain:
+        description: Boosts ATK of Powerhouse and Driven characters by 3.5x, their HP by
+          1.5x and makes [QCK] orbs beneficial for Powerhouse and Driven
+          characters.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 50
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 186
+    rumbleType: DBF
+    spd: 145
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 100
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 10
+        - override:
+            chance: 32
+            duration: 10
+        - override:
+            level: 1
+            duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 11
+        - override:
+            chance: 34
+            duration: 11
+        - override:
+            level: 1
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 11
+        - override:
+            chance: 36
+            duration: 11
+        - override:
+            level: 1
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            chance: 38
+            duration: 12
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            chance: 40
+            duration: 13
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            chance: 42
+            duration: 13
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            chance: 44
+            duration: 14
+        - override:
+            level: 3
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            chance: 46
+            duration: 14
+        - override:
+            level: 3
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            chance: 50
+            duration: 15
+        - override:
+            level: 4
+            duration: 20

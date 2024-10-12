@@ -1,0 +1,50 @@
+type: INT
+name: Count Butler - King's Power
+japanName: バトラー伯爵（王なる力）
+family:
+  - CountButler
+class:
+  - Driven
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 1175
+    atk: 606
+    rcv: 50
+  maxLvl:
+    hp: 2152
+    atk: 1100
+    rcv: 220
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 27634
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.75x and boosts ATK of
+    Powerhouse characters by 1.5x
+  notes: The bonus is cumulative. Driven Powerhouse characters get a 2.625x bonus.
+special:
+  name: Evil Beast's Horn Pierce
+  description: Boosts ATK of this character by 1.3x for 5 turns, reduces damage
+    received by 20% for 5 turns, deals 13x character's ATK in [INT] damage to
+    one enemy
+  cooldown: 23
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Driven characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

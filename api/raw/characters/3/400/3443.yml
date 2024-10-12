@@ -1,0 +1,314 @@
+type: INT
+name: Monkey D. Luffy - Straw Hat in Disguise
+japanName: モンキー・D・ルフィ 変装する麦わら
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1273
+    atk: 569
+    rcv: 98
+  maxLvl:
+    hp: 3182
+    atk: 1421
+    rcv: 246
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 293712
+aliases:
+  - Onigashima Luffy
+  - TM Luffy
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x and their HP by 1.1x.
+special:
+  name: "Gomu Gomu no Elephant Gun: Crush"
+  description: Reduces Silence, ATK DOWN and Blindness duration by 5 turns,
+    changes [BLOCK] orbs into Matching orbs and boosts ATK of all characters by
+    2x for 1 turn.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Boosts base ATK, HP and RCV of all characters by 56
+support:
+  type: descriptive
+  criteria: Yamato, Eustass Kid and Trafalgar D. Water Law
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes the
+      orb of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, changes the
+      orb of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and changes the orb of the supported character
+      into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and changes the orb of the supported character
+      into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and changes the orb, including [BLOCK] orbs, of
+      the supported character into a Matching orb.
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of all characters by 2.25x and their HP by 1.1x.
+    - type: sailor
+    - hp: 10
+    - rcv: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of all characters by 2.5x and their HP by 1.15x.
+    - slot: 1
+    - cooldown: 1
+    - atk: 10
+    - atk: 30
+    - hp: 30
+    - captain:
+        description: Boosts ATK of all characters by 2.75x and their HP by 1.15x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 40
+    - cooldown: 3
+    - slot: 1
+    - hp: 40
+    - atk: 50
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of all characters by 3x and their HP by 1.2x.
+    - hp: 90
+    - hp: 100
+    - type: sailor
+    - atk: 50
+    - atk: 60
+    - rcv: 20
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of all characters by 3.25x and their HP by 1.2x.
+    - rcv: 30
+    - rcv: 40
+    - captain:
+        description: Boosts ATK of all characters by 3.25x, their HP by 1.2x and reduces
+          Silence duration by 1 turn.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 2
+          threshold: 50
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 181
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 7
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 500
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - amount: 0.1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 550
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 0.2
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 600
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 0.3
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 650
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 0.4
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 700
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            amount: 0.5
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 750
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 0.6
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 800
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            amount: 0.7
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            amount: 0.8
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 900
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 0.9
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 1

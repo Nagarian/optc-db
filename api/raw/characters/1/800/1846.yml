@@ -1,0 +1,87 @@
+type: STR
+name: Garp the Fist - Hero of the Navy
+japanName: ゲンコツのガープ 海軍の英雄
+family:
+  - MonkeyDGarp
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1773
+    atk: 611
+    rcv: 3
+  maxLvl:
+    hp: 3710
+    atk: 1550
+    rcv: 10
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - ambush
+links:
+  gamewithId: 75037
+aliases:
+  - Invasion Garp
+  - Ambush Garp
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.75x and reduces damage received by 15%
+special:
+  name: Crushing Armament Fist
+  description: Reduces the defense of all enemies by 100% for 1 turn. If the
+    targeted enemy has less than or equal to 25% of their MAX HP, instantly
+    defeats them, otherwise, deals 30% of enemies' current HP in damage to one
+    enemy
+  cooldown: 32
+  maxLevel: 18
+sailor:
+  - description: Boosts base ATK of Free Spirit and Fighter characters by 50
+  - description: Makes [STR] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Sengoku and Kuzan (Aokiji)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 11
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - type: sailor
+    - rcv: 30
+    - atk: 50
+    - atk: 50
+    - type: sailor
+    - slot: 1
+    - hp: 130
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

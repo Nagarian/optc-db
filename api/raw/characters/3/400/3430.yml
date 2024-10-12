@@ -1,0 +1,459 @@
+type: PSY
+name: Yamato - Son of Kaido
+japanName: ヤマト カイドウの息子
+family:
+  - Yamato
+class:
+  - Free Spirit
+  - Striker
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 2181
+    atk: 854
+    rcv: 132
+  maxLvl:
+    hp: 4362
+    atk: 1708
+    rcv: 263
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - inkable
+links:
+  gamewithId: 293283
+aliases:
+  - Last tap LT Final Tap FT Yamato
+  - Mega/Super/6+ Yamato
+  - V1 Legend Yamato
+  - Kaido's Daughter
+  - Tomato
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [PSY], Free Spirit and Striker characters by
+    4.75x, their HP by 1.3x, adds 0.3x to Chain multiplier and reduces Bind
+    duration by 10 turns. Boosts ATK of [PSY], Free Spirit and Striker
+    characters by an additive 0.05x after each PERFECT in a row, up to 5x.
+superSpecial:
+  criteria: This character must be captain and your crew must have Chain Addition,
+    Chain Limit, Chain Lock or Chain Boundary.
+  description: Locks all orbs for 1 turn, boosts Chain Multiplier Growth Rate by
+    1.25x for 1 turn and transforms all [PSY] characters into Super [PSY]
+    characters.
+special:
+  name: "Extraordinary Power: Thunder Bagua"
+  description: Deals 20% of enemies' current HP in damage to all enemies, inflicts
+    all enemies with Increase Damage Taken by 1.75x for 1 turn, makes PERFECTs
+    easier to hit for 1 turn, adds 1.3x to Chain multiplier for 1 turn and
+    changes [BLOCK] and Matching orbs into [WANO] orbs.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 100
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy and Kozuki Oden
+  levels:
+    - description: Boosts the supported character's ATK by 1.1x against Kaido.
+      value: 2
+    - description: Boosts the supported character's ATK by 1.2x against Kaido.
+      value: 4
+    - description: Boosts the supported character's ATK by 1.3x against Kaido.
+      value: 6
+    - description: Boosts the supported character's ATK by 1.4x against Kaido.
+      value: 8
+    - description: Boosts the supported character's ATK by 1.5x against Kaido.
+      value: 10
+limitBreak:
+  path:
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - hp: 30
+    - hp: 30
+    - rcv: 10
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - hp: 40
+    - rcv: 10
+    - type: potential
+    - cooldown: 1
+    - hp: 50
+    - hp: 60
+    - atk: 20
+    - atk: 20
+    - hp: 70
+    - hp: 80
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - hp: 100
+    - rcv: 30
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 2000
+          reduction: 1
+        - value: 100
+          threshold: 2000
+          reduction: 1
+        - value: 150
+          threshold: 2000
+          reduction: 2
+        - value: 200
+          threshold: 2000
+          reduction: 2
+        - value: 300
+          threshold: 2000
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+  lastTap:
+    criteria: On the last Stage, on the turn this character's special is used
+    levels:
+      - description: Boosts Chain Multiplier Growth Rate by 1.3x and changes the orb of
+          this character into a Matching orb.
+      - description: Boosts Chain Multiplier Growth Rate by 1.5x and changes the orb of
+          this character into a Matching orb.
+      - description: Boosts Chain Multiplier Growth Rate by 1.7x and changes the orb of
+          this character into a Matching orb.
+      - description: Boosts Chain Multiplier Growth Rate by 2x and changes the orb of
+          this character into a Matching orb.
+      - description: Boosts Chain Multiplier Growth Rate by 2x and changes the orb of
+          this character into a [WANO] orb.
+    notes: Chain multiplier boost will stack with special abilities that boost Chain
+      multiplier.
+rumble:
+  stats:
+    def: 163
+    rumbleType: ATK
+    spd: 186
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: INT
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            count: 5
+            stat: hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - Half Stats
+          chance: 50
+          duration: 11
+          effect: hinderance
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 3
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 5
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 55
+            duration: 12
+        - override:
+            amount: 3.2
+        - override:
+            level: 5
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 60
+            duration: 13
+        - override:
+            amount: 3.4
+        - override:
+            level: 6
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 65
+            duration: 14
+        - override:
+            amount: 3.6
+        - override:
+            level: 6
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 70
+            duration: 15
+        - override:
+            amount: 3.8
+        - override:
+            level: 7
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 75
+            duration: 16
+        - override:
+            amount: 4
+        - override:
+            level: 7
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 80
+            duration: 17
+        - override:
+            amount: 4.2
+        - override:
+            level: 8
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 85
+            duration: 18
+        - override:
+            amount: 4.4
+        - override:
+            level: 8
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 90
+            duration: 19
+        - override:
+            amount: 4.6
+        - override:
+            level: 9
+    - cooldown: 28
+      effects:
+        - override:
+            chance: 100
+            duration: 20
+        - override:
+            amount: 5
+        - override:
+            level: 10
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+              - HP
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - PSY
+          - attributes:
+              - Accuracy
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - PSY
+          - attributes:
+              - SPD
+              - HP
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - QCK
+          - attributes:
+              - ATK
+              - Special CT
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Striker
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 1
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 4
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 5
+          - override:
+              level: 6
+          - override:
+              level: 4
+          - override:
+              level: 2
+    burst:
+      condition:
+        - count: 15
+          type: action
+          action: heal
+      special:
+        - uses: 2
+          effects:
+            - amount: 2.5
+              effect: damage
+              targeting:
+                count: 3
+                targets:
+                  - enemies
+              type: atkbase
+              leader: true
+            - amount: 2
+              effect: recharge
+              targeting:
+                targets:
+                  - QCK
+                  - PSY
+              type: RCV
+        - uses: 2
+          effects:
+            - override:
+                amount: 3.13
+            - override:
+                amount: 2.5
+        - uses: 2
+          effects:
+            - override:
+                amount: 3.75
+            - override:
+                amount: 3
+        - uses: 2
+          effects:
+            - override:
+                amount: 4.38
+            - override:
+                amount: 3.5
+        - uses: 2
+          effects:
+            - override:
+                amount: 5
+            - override:
+                amount: 4

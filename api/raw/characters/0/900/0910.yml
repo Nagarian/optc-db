@@ -1,0 +1,86 @@
+type: PSY
+name: Chopper Mask - Defender of Peace
+japanName: チョッパーマスク 世界の平和を守るヒーロー
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1234
+    atk: 447
+    rcv: 170
+  maxLvl:
+    hp: 2500
+    atk: 912
+    rcv: 404
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 23378
+aliases:
+  - 3D2Y Chopper
+  - Timeskip Chopper
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x, their RCV by 1.5x, makes
+    [INT] orbs beneficial for [PSY] characters
+special:
+  name: Hero of Justice! Chopper Mask!!
+  description: Recovers 5,000 HP, boosts ATK of [PSY] characters by 1.5x for 2 turns
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [RCV] orbs beneficial for this character
+  - description: Boosts base ATK of Cost 30 or less characters by 300
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - hp: 30
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - cooldown: 2
+    - hp: 40
+    - atk: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

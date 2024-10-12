@@ -1,0 +1,82 @@
+type: PSY
+name: Perona - Three-Sword Style Swordsman's Savior
+japanName: ペローナ 三刀流の剣士の恩人
+family:
+  - Perona
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1102
+    atk: 503
+    rcv: 172
+  maxLvl:
+    hp: 1904
+    atk: 905
+    rcv: 286
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 147451
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Cerebral characters by 2.5x and their RCV by 1.25x.
+special:
+  name: Hollow Farewell
+  description: Reduces the defense of all enemies by 100% for 2 turns, reduces
+    Special Cooldown of right column characters by 2 turns and changes all orbs
+    of top row characters into [QCK] orbs, changes the orbs of middle row
+    characters into [PSY] orbs, changes all orbs of bottom row characters into
+    [INT] orbs.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: descriptive
+  criteria: Roronoa Zoro and Dracule Mihawk
+  levels:
+    - Once per adventure, when you reach the final stage, makes PERFECTs
+      slightly easier to hit for 2 turns.
+    - Once per adventure, when you reach the final stage, makes PERFECTs
+      slightly easier to hit for 2 turns.
+    - Once per adventure, when you reach the final stage, changes [STR] orbs of
+      Slasher characters into [DEX] and [INT] orbs and makes PERFECTs slightly
+      easier to hit for 2 turns.
+    - Once per adventure, when you reach the final stage, changes [STR] and
+      [QCK] orbs of Slasher characters into [DEX] and [INT] orbs and makes
+      PERFECTs slightly easier to hit for 2 turns.
+    - Once per adventure, when you reach the final stage, changes [STR], [QCK]
+      and [PSY] orbs of Slasher characters into [DEX] and [INT] orbs and makes
+      PERFECTs slightly easier to hit for 2 turns.
+limitBreak:
+  path:
+    - type: potential
+    - rcv: 100
+    - hp: 300
+    - atk: 200
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 10

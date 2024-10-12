@@ -1,0 +1,147 @@
+type: DUAL
+name: Admiral Sengoku & Vice Admiral Garp - Dawn of the Great Era of Piracy
+japanName: センゴク大将＆ガープ中将 大海賊時代の夜明け
+family:
+  - MonkeyDGarp
+  - Sengoku
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1456
+    atk: 789
+    rcv: 157
+  maxLvl:
+    hp: 2800
+    atk: 1530
+    rcv: 300
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 150065
+aliases:
+  - Sengoku&Garp
+  - Garp&Sengoku
+  - SengokuGarp
+  - GarpSengoku
+  - Raid Sengoku and Garp
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 3x and their HP by 1.2x, but
+    boosts ATK of this character by 4x and makes [DEX], [INT], [RCV] and [TND]
+    orbs beneficial for Fighter characters
+special:
+  name: Twin Fists of Justice
+  description: Removes all positive buffs on your team and reduces Despair
+    duration by 2 turns. Boosts ATK of Fighter characters by 1.75x for 1 turn
+    and boosts Orb Effects of Fighter characters by 1.75x for 1 turn and becomes
+    Sengoku & Garp for 3 turns
+  cooldown: 31
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of all characters by 40 if your Captain is a
+      Fighter character
+  - description: Boosts base ATK of this character by 200 if this character is the
+      last in the chain to attack
+characters:
+  swap:
+    description: Boosts ATK of Fighter characters by 1.2x for 1 turn and changes orb
+      of this character into a Matching orb
+  character1:
+    name: Admiral Sengoku - Dawn of the Great Era of Piracy
+    japanName: センゴク大将 大海賊時代の夜明け
+    class:
+      - Fighter
+      - Cerebral
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 921
+        atk: 668
+        rcv: 132
+      maxLvl:
+        hp: 2332
+        atk: 1301
+        rcv: 280
+    captain:
+      name: ""
+      description: Boosts ATK of Fighter characters by 2.5x and their HP by 1.2x and
+        makes [INT] orbs beneficial for Fighter characters
+    sailor:
+      - description: Boosts base ATK of all characters by 40 if your Captain is a
+          Fighter character
+      - description: Boosts base ATK of this character by 200 if this character is the
+          last in the chain to attack
+  character2:
+    name: Vice Admiral Garp - Dawn of the Great Era of Piracy
+    japanName: ガープ中将 大海賊時代の夜明け
+    class:
+      - Fighter
+      - Free Spirit
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 940
+        atk: 540
+        rcv: 70
+      maxLvl:
+        hp: 2145
+        atk: 1357
+        rcv: 180
+    captain:
+      name: ""
+      description: Boosts ATK of Fighter characters by 2.25x and their HP by 1.2x, but
+        boosts ATK of this character by 3x and makes [DEX] orbs beneficial for
+        Fighter characters
+    sailor:
+      - description: Boosts base ATK of all characters by 40 if your Captain is a
+          Fighter character
+      - description: Boosts base ATK of this character by 200 if this character is the
+          last in the chain to attack
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 10
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - atk: 40
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - slot: 1
+    - cooldown: 1
+    - hp: 70
+    - cooldown: 1
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 7
+          threshold: 70

@@ -1,0 +1,54 @@
+type: PSY
+name: Momonosuke
+japanName: モモの助
+family:
+  - KozukiMomonosuke
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 102
+    atk: 76
+    rcv: 60
+  maxLvl:
+    hp: 830
+    atk: 309
+    rcv: 269
+cost: 13
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 55822
+aliases:
+  - ""
+evolution:
+  - id: 1579
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 103
+captain:
+  name: ""
+  description: Protects from defeat as long as HP is above 50%
+special:
+  name: Miraculous Flying Dragon
+  description: Switches orbs between slots 1 time and adds 0.5x to Chain
+    multiplier for 1 turn
+  cooldown: 14
+  maxLevel: 6
+  stages:
+    - description: Adds 0.2x to Chain multiplier for 1 turn
+      cooldown: 8
+    - description: Switches orbs between slots 1 time and adds 0.3x to Chain
+        multiplier for 1 turn
+      cooldown: 11
+sailor:
+  - description: Makes [STR], [QCK], [DEX] and [INT] orbs beneficial for this character

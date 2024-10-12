@@ -1,0 +1,109 @@
+type: INT
+name: "Yasopp: Sharpshooter in the Night - Happy Spooky Halloween!"
+japanName: ヤソップ　闇夜の狙撃 Happy Scary Halloween
+family:
+  - Yasopp
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 931
+    atk: 721
+    rcv: 81
+  maxLvl:
+    hp: 2500
+    atk: 1354
+    rcv: 332
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 233442
+aliases:
+  - Halloween Yasopp
+  - Secret Yasopp
+  - Limited Yasopp
+  - Kizuna Yasopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.75x.
+special:
+  name: Precision Sniping in the Dark Night
+  description: Reduces Special Cooldown of all characters by 2 turns, reduces Bind
+    and Despair duration by 5 turns and reduces enemies' Increased Defense
+    duration by 5 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: descriptive
+  criteria: Shanks, Ben Beckman, Lucky Roux
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - type: potential
+    - hp: 50
+    - atk: 20
+    - atk: 20
+    - slot: 1
+    - rcv: 30
+    - rcv: 30
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

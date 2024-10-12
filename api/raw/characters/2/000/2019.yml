@@ -1,0 +1,51 @@
+type: DEX
+name: Red-Haired Shanks - Pirate with a Straw Hat
+japanName: 赤髪のシャンクス　麦わら帽子の海賊
+family:
+  - Shanks
+class:
+  - Free Spirit
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 794
+    atk: 482
+    rcv: 82
+  maxLvl:
+    hp: 2154
+    atk: 1218
+    rcv: 185
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 96639
+aliases:
+  - FN Shanks
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x and their HP by 1.2x at
+    the start of the chain, by 2.6x after the 3rd PERFECT in a row
+special:
+  name: Treasure Trust
+  description: Reduces Bind and Despair duration by 2 turns. If your Captain is a
+    Free Spirit character, changes [BLOCK] orbs into Matching orbs
+  cooldown: 12
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Lucky Roux, Ben Beckman and Yasopp
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

@@ -1,0 +1,172 @@
+type: INT
+name: Tashigi - Captain's Kindness Towards the Injured
+japanName: たしぎ 怪我人に優しい大佐
+family:
+  - Tashigi
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 319
+    atk: 201
+    rcv: 38
+  maxLvl:
+    hp: 1029
+    atk: 739
+    rcv: 132
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 184772
+aliases:
+  - ""
+evolution:
+  - id: 2841
+    evolvers:
+      - 266
+      - 93
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 2.25x and their HP by 1.25x.
+special:
+  name: "Open Brigade: Shigure Cut"
+  description: Makes [STR], [PSY], [RCV] and [TND] orbs beneficial for [DEX] and
+    [INT] characters for 3 turns. If your crew has 5 or more characters with
+    [DEX] or [INT] orbs, boosts ATK of [DEX] and [INT] characters by 2.25x for 1
+    turn, by 2x otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] and [INT] characters by 30
+rumble:
+  stats:
+    def: 155
+    rumbleType: SPT
+    spd: 150
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+              - INT
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 33
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - amount: 0.55
+          effect: damage
+          type: atk
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 16
+        - override:
+            amount: 0.57
+    - cooldown: 33
+      effects:
+        - override:
+            duration: 18
+        - override:
+            amount: 0.58
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            amount: 0.6
+    - cooldown: 33
+      effects:
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            amount: 0.62
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 22
+        - override:
+            amount: 0.64
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 24
+        - override:
+            amount: 0.65
+    - cooldown: 33
+      effects:
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            amount: 0.67
+    - cooldown: 33
+      effects:
+        - override:
+            level: 4
+            duration: 27
+        - override:
+            amount: 0.69
+    - cooldown: 33
+      effects:
+        - override:
+            level: 5
+            duration: 29
+        - override:
+            amount: 0.75

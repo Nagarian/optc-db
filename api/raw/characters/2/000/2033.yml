@@ -1,0 +1,55 @@
+type: PSY
+name: "Monkey D. Luffy - Gear Four: Tankman"
+japanName: モンキー・D・ルフィ ギア４　「タンクマン」
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1441
+    atk: 741
+    rcv: 14
+  maxLvl:
+    hp: 3439
+    atk: 1439
+    rcv: 39
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 97742
+aliases:
+  - Tankman
+  - Raid Tankman
+  - Raid Luffy
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x and their HP by 1.5x
+special:
+  name: The Heavy Tank's Critical Breakthrough
+  description: Boosts ATK of all characters by 1.5x for 1 turn. If your Captain is
+    a [PSY] character, boosts Orb Effects of all characters by 1.5x for 1 turn,
+    adds 0.3x to Chain multiplier for 1 turn, adds 20x character's ATK as
+    Additional Typeless Damage for 1 turn and reduces damage received by 40% for
+    1 turn.
+  cooldown: 28
+  maxLevel: 15
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Nami, Tony Tony Chopper and Carrot
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - description: Boosts the supported character's ATK by 1.2x against Charlotte Cracker
+      value: 12

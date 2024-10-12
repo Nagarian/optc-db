@@ -1,0 +1,241 @@
+type: PSY
+name: Sanji - Burning Black-Leg
+japanName: サンジ 燃える黒足
+family:
+  - VinsmokeSanji
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1616
+    atk: 781
+    rcv: 96
+  maxLvl:
+    hp: 3233
+    atk: 1563
+    rcv: 192
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 3x until the
+    first hit other than PERFECT and recovers 300 HP at the end of each turn.
+special:
+  name: Cranium-Crushing Concasser
+  description: Reduces enemies' Resilience and Percent Damage Reduction duration
+    by 5 turns. If your Captain is a Free Spirit character, sets Chain
+    Boundaries to 2.25x and 35.0x for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 60
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky, Jinbe and Brook
+  levels:
+    - Once per adventure, when you reach the final stage, greatly boosts chances
+      of getting Matching orbs for 1 turn.
+    - Once per adventure, when you reach the final stage, greatly boosts chances
+      of getting Matching orbs for 1 turn.
+    - Once per adventure, when you reach the final stage, greatly boosts chances
+      of getting Matching orbs for 2 turns.
+    - Once per adventure, when you reach the final stage, greatly boosts chances
+      of getting Matching orbs for 2 turns.
+    - Once per adventure, when you reach the final stage, greatly boosts chances
+      of getting Matching orbs for 2 turns and reduces enemies' Resilience
+      duration by 1 turn.
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 10
+    - hp: 50
+    - type: potential
+    - rcv: 50
+    - atk: 15
+    - atk: 20
+    - slot: 1
+    - hp: 50
+    - hp: 60
+    - atk: 25
+    - type: sailor
+    - atk: 30
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 75
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+rumble:
+  stats:
+    def: 110
+    rumbleType: ATK
+    spd: 167
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 3
+  special:
+    - cooldown: 34
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - amount: 1500
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 34
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 1600
+    - cooldown: 34
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 1700
+    - cooldown: 34
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 1800
+    - cooldown: 34
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            amount: 1900
+    - cooldown: 34
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 2000
+    - cooldown: 34
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            amount: 2100
+    - cooldown: 34
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            amount: 2200
+    - cooldown: 34
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 2300
+    - cooldown: 34
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 2500

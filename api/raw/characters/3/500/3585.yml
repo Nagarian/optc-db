@@ -1,0 +1,105 @@
+type: PSY
+name: Otama - Into the Battle With Komachiyo
+family:
+  - Tama
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1525
+    atk: 687
+    rcv: 118
+  maxLvl:
+    hp: 3050
+    atk: 1374
+    rcv: 236
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - TM Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 1.5x.
+special:
+  name: Desperate Bite
+  description: Deals 5,000 Fixed True damage to all enemies, reduces Despair
+    duration by 5 turns and reduces enemies' Resilience and ATK UP duration by 5
+    turns. After 1 turn, boosts Orb Effects of Fighter and Free Spirit
+    characters by 2x for 1 turn.
+  cooldown: 10
+  maxLevel: 1
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters.
+  - description: Changes all orbs into [RCV] orbs at the start of the fight.
+support:
+  type: descriptive
+  criteria: Nami, Usopp, Tony Tony Chopper, Portgas D. Ace, Kozuki Momonosuke,
+    Charlotte Linlin (Big Mom) and Kikunojo
+  levels:
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, recovers 6% of crew's MAX HP.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, recovers 7% of crew's MAX HP.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, recovers 8% of crew's MAX HP.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, recovers 9% of crew's MAX HP and reduces enemies' Resilience
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, recovers 10% of crew's MAX HP and reduces enemies' Resilience
+      duration by 2 turns.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - atk: 30
+    - hp: 50
+    - rcv: 20
+    - slot: 1
+    - hp: 50
+    - hp: 100
+    - rcv: 20
+    - type: sailor
+    - atk: 40
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

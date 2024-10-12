@@ -1,0 +1,98 @@
+type: QCK
+name: Franky - Number 7, the Wish Fulfiller
+japanName: フランキー 願い叶える７人目
+family:
+  - Franky
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1265
+    atk: 540
+    rcv: 89
+  maxLvl:
+    hp: 3162
+    atk: 1350
+    rcv: 223
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 246092
+aliases:
+  - Limited Franky
+  - Secret Franky
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [QCK] characters by 2.75x.
+special:
+  name: Man's Spirit
+  description: Reduces ATK DOWN and Paralysis duration by 5 turns and reduces
+    enemies' Resilience duration by 3 turns. If your Captain is a [STR] or [QCK]
+    character, boosts the Color Affinity of all characters by 1.75x for 1 turn.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+  criteria: "[QCK] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - hp: 30
+    - atk: 30
+    - slot: 1
+    - rcv: 30
+    - hp: 40
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70

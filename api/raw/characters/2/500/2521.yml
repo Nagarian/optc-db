@@ -1,0 +1,176 @@
+type: DEX
+name: Usopp - Dressing Up for the Pirate Festival!
+japanName: ウソップ Dress up for PIRATE FESTIVAL
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 884
+    atk: 407
+    rcv: 96
+  maxLvl:
+    hp: 2210
+    atk: 1019
+    rcv: 242
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 149420
+aliases:
+  - Dress Up Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.75x their HP by 1.25x
+special:
+  name: Obsession for Fashion
+  description: Recovers 4,000 HP. If your captain is a [DEX] character, boosts the
+    Color Affinity of all characters by 1.5x for 1 turn.
+  cooldown: 16
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3
+rumble:
+  stats:
+    def: 183
+    rumbleType: DEF
+    spd: 102
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 16
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 10
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Critical Hit
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 11
+            level: 1
+        - override:
+            duration: 11
+            level: 1
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 12
+            level: 1
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 13
+            level: 1
+        - override:
+            duration: 13
+            level: 1
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 14
+            level: 1
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 15
+            level: 2
+        - override:
+            duration: 15
+            level: 2
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 16
+            level: 2
+        - override:
+            duration: 16
+            level: 2
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 17
+            level: 2
+        - override:
+            duration: 17
+            level: 2
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 18
+            level: 2
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 16
+      effects:
+        - override:
+            duration: 19
+            level: 3
+        - override:
+            duration: 19
+            level: 3

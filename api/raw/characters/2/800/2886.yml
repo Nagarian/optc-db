@@ -1,0 +1,257 @@
+type: QCK
+name: "Cipher Pol No. 9: Neo - Spandam & His Reliable Subordinates"
+japanName: サイファーポールNo.9「改」 スパンダム＆頼もしき部下達
+family:
+  - Kalifa
+  - RobLucci
+  - Kaku
+  - Blueno
+  - Jabra
+  - Fukuro
+  - Kumadori
+  - Spandam
+class:
+  - Driven
+  - Slasher
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1388
+    atk: 579
+    rcv: 96
+  maxLvl:
+    hp: 3470
+    atk: 1448
+    rcv: 239
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - ambush
+links:
+  gamewithId: 191375
+aliases:
+  - Raid CP9
+  - Raid Lucci
+  - Raid Kaku
+  - Raid Kalifa
+  - Raid Blueno
+  - Raid Kumadori
+  - Raid Fukuro
+  - Raid Jabra
+  - Raid Spandam
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Slasher characters by 3x and their HP by
+    1.2x. If this character becomes your captain in the middle of an island,
+    boosts ATK of Driven and Slasher characters by 3.75x, boosts ATK of this
+    character by 4.25x instead, restores Special Cooldown of all characters by 2
+    turns when they are rewinded and reduces Paralysis duration by 2 turns.
+special:
+  name: Authority over Buster Call [Neo]
+  description: Reduces enemies' Percent Damage Reduction and Resilience duration
+    by 5 turns and changes [EMPTY], [BLOCK] and [BOMB] orbs of Driven and
+    Slasher characters into Matching orbs. If this character is a Sailor, swaps
+    this unit with your captain for 2 turns.
+  cooldown: 26
+  maxLevel: 13
+sailor:
+  - description: Boosts this character's damage against [STR] characters by 1.2x
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Driven characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 15
+    - atk: 20
+    - type: potential
+    - hp: 60
+    - rcv: 20
+    - atk: 30
+    - slot: 1
+    - hp: 80
+    - rcv: 40
+    - cooldown: 1
+    - type: sailor
+    - slot: 1
+    - atk: 60
+    - type: potential
+    - atk: 40
+    - rcv: 40
+    - hp: 60
+    - atk: 60
+    - cooldown: 1
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+rumble:
+  stats:
+    def: 212
+    rumbleType: DBF
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          duration: 15
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          duration: 15
+          targeting:
+            targets:
+              - DEX
+              - QCK
+        - amount: 5
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 38
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+        - {}
+    - cooldown: 38
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+        - {}
+    - cooldown: 38
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            amount: 6
+    - cooldown: 38
+      effects:
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+        - override:
+            amount: 6
+    - cooldown: 38
+      effects:
+        - override:
+            duration: 20
+        - override:
+            duration: 20
+        - override:
+            amount: 7
+    - cooldown: 38
+      effects:
+        - override:
+            duration: 21
+        - override:
+            duration: 21
+        - override:
+            amount: 7
+    - cooldown: 38
+      effects:
+        - override:
+            duration: 22
+        - override:
+            duration: 22
+        - override:
+            amount: 8
+    - cooldown: 38
+      effects:
+        - override:
+            duration: 23
+        - override:
+            duration: 23
+        - override:
+            amount: 8
+    - cooldown: 38
+      effects:
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            amount: 10

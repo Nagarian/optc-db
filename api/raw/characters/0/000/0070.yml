@@ -1,0 +1,44 @@
+type: DEX
+name: Smoker the White Hunter
+frenchName: Smoker le chasseur blanc
+japanName: 白猟のスモーカー
+family:
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 872
+    atk: 515
+    rcv: 154
+  maxLvl:
+    hp: 1736
+    atk: 1070
+    rcv: 334
+cost: 15
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 2078
+aliases: []
+evolution:
+  - id: 268
+    evolvers:
+      - 117
+      - 80
+      - 86
+      - 91
+      - 102
+captain:
+  name: ""
+  description: Reduces damage received by 20%
+special:
+  name: White Out
+  description: Reduces damage received by 50% for 3 turns
+  cooldown: 22
+  maxLevel: 8

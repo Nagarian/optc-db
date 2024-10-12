@@ -1,0 +1,50 @@
+type: STR
+oldDbId: 4994
+name: Coby [EXTRA], Navy HQ Petty Officer
+family:
+  - Coby
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 450
+    atk: 240
+    rcv: 35
+  maxLvl:
+    hp: 1380
+    atk: 710
+    rcv: 140
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - gloex
+aliases:
+  - Neo Coby
+  - Extra Coby
+  - EX Coby
+evolution:
+  - id: 5055
+    evolvers:
+      - 117
+      - 84
+      - 95
+      - 95
+      - 300
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.5x, reduces damage received
+    by 0%-10% depending on the crew's current HP
+special:
+  name: Pleading at the Risk of One's Life [EX]
+  description: Locks all orbs for 1 turn and changes orbs of adjacent characters
+    into [STR] orbs. If the special is activated with more than 50% health
+    remaining, protects from defeat for 1 turn
+  cooldown: 25
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50

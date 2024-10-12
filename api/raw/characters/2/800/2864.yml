@@ -1,0 +1,158 @@
+type: DUAL
+name: Krieg & Gin - Rulers of the East Blue
+japanName: クリーク＆ギン “東の海”の覇者達
+family:
+  - Gin
+  - Krieg
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1199
+    atk: 722
+    rcv: 92
+  maxLvl:
+    hp: 2900
+    atk: 1532
+    rcv: 281
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 187986
+aliases:
+  - Krieg&Gin
+  - Gin&Krieg
+  - KriegGin
+  - GinKrieg
+  - Krieg and Gin
+  - Don Krieg
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [QCK] characters by 3.25x and boosts ATK of
+    all other characters by 2.5x and reduces damage taken by 20%.
+special:
+  name: Man-Demon War Spear
+  description: Deals 50x character's ATK in character's Type damage to all
+    enemies, reduces Paralysis duration by 5 turns, reduces enemies' Increased
+    Defense duration by 5 turns and becomes Krieg & Gin for 2 turns. If enemies
+    have Delay Debuff Protection or All Debuff Protection at the time the
+    special was activated, boosts Orb Effects of all characters by 2x for 1
+    turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 50
+  - description: Makes [QCK] orbs beneficial for Powerhouse characters
+characters:
+  swap:
+    description: Changes orb of this character into a Matching orb and reduces
+      damage received by 20% for 1 turn.
+  character1:
+    name: Krieg - Rulers of the East Blue
+    japanName: クリーク “東の海”の覇者達
+    class:
+      - Powerhouse
+      - Striker
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1154
+        atk: 677
+        rcv: 76
+      maxLvl:
+        hp: 2860
+        atk: 1429
+        rcv: 197
+    captain:
+      name: ""
+      description: Boosts ATK of [STR] characters by 2.5x and boosts ATK of all other
+        characters by 2x and reduces damage taken by 10%.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25
+      - description: Makes [QCK] orbs beneficial for Powerhouse characters
+  character2:
+    name: Gin - Rulers of the East Blue
+    japanName: ギン “東の海”の覇者達
+    class:
+      - Striker
+      - Powerhouse
+    type: QCK
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1121
+        atk: 665
+        rcv: 82
+      maxLvl:
+        hp: 2678
+        atk: 1358
+        rcv: 251
+    captain:
+      name: ""
+      description: Boosts ATK of [QCK] characters by 2.5x and boosts ATK of all other
+        characters by 2x and reduces damage taken by 10%.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 25
+      - description: Makes [QCK] orbs beneficial for Powerhouse characters
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - hp: 50
+    - hp: 50
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

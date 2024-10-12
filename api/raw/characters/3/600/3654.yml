@@ -1,0 +1,377 @@
+type: DEX
+name: Sasaki - Gleaming Robust Horns
+family:
+  - Sasaki
+class:
+  - Powerhouse
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2031
+    atk: 848
+    rcv: 104
+  maxLvl:
+    hp: 4062
+    atk: 1495
+    rcv: 208
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Legend V1
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts HP of all characters by 1.5x. If there is a [STR],
+    [DEX] and [QCK] character in your crew, boosts ATK of [STR], [DEX] and [QCK]
+    characters by 4.5x. If there are no [PSY] or [INT] characters on your crew,
+    boosts ATK of [STR], [DEX] and [QCK] characters by 5.4x instead and makes
+    [RCV] and [TND] orbs beneficial for all characters.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Kaido,
+    King, Queen, Jack, Black Maria, Who's-Who, Page One and Ulti, excluding
+    Support members."
+  description: Changes the orb of this character into a [TND] orb, deals 80x
+    character's ATK in Typeless damage to all enemies, reduces Special Cooldown
+    of [STR], [DEX] and [QCK] characters by 1 turn and reduces enemies'
+    Powerhouse Resistance by -50% for 1 turn and transforms all Powerhouse
+    characters into Super Powerhouse characters.
+special:
+  name: Beatdown Horns
+  description: Deals 100x character's ATK in [DEX] damage to all enemies, reduces
+    damage received by 90% for 1 turn and boosts ATK of [STR], [DEX] and [QCK]
+    characters by 2.5x for 1 turn. If this character is your Captain or
+    Friend/Guest Captain or your Captain is a [STR] or [QCK] character, boosts
+    base ATK of [STR], [DEX] and [QCK] characters by 1,250 for 3 turns, boosts
+    base ATK of [STR], [DEX] and [QCK] characters by 1,000 for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: If your Captain is a [STR] or [QCK] character, makes [DEX] and
+      [STR] orbs beneficial for all characters
+  - description: If your Captain is a [STR] or [QCK] character, reduces Burn
+      duration by 2 turns
+support:
+  type: descriptive
+  criteria: Page One, Ulti, Black Maria and Who's-Who
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of [STR], [DEX] and [QCK] characters by 100 for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of [STR], [DEX] and [QCK] characters by 200 for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of [STR], [DEX] and [QCK] characters by 300 for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of [STR], [DEX] and [QCK] characters by 400 for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of [STR], [DEX] and [QCK] characters by 500 for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 10
+    - type: potential
+    - hp: 40
+    - atk: 10
+    - rcv: 10
+    - hp: 50
+    - rcv: 10
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 60
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - hp: 70
+    - rcv: 10
+    - atk: 20
+    - hp: 80
+    - atk: 30
+    - rcv: 10
+    - hp: 100
+    - type: sailor
+    - atk: 40
+    - rcv: 20
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Black Maria,
+          WHo's-Who, Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [QCK] characters by 1.25x for 1 turn
+          and reduces enemies' Threshold Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Black Maria,
+          WHo's-Who, Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [QCK] characters by 1.5x for 1 turn
+          and reduces enemies' Threshold Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Black Maria,
+          WHo's-Who, Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [QCK] characters by 1.75x for 1 turn
+          and reduces enemies' Threshold Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Black Maria,
+          WHo's-Who, Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [QCK] characters by 2x for 1 turn
+          and reduces enemies' Threshold Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Kaido, King, Queen, Jack, Black Maria,
+          WHo's-Who, Page One or Ulti."
+        description: Boosts Tandem ATK of [STR] and [QCK] characters by 2.25x for 1 turn
+          and reduces enemies' Threshold Damage Reduction duration by 2 turns.
+rumble:
+  stats:
+    def: 337
+    rumbleType: DEF
+    spd: 116
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 5
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - ATK
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Counter
+          effect: boon
+          amount: 0.2
+          duration: 20
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - self
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 12
+        - override:
+            amount: 0.3
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            amount: 0.4
+    - cooldown: 24
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 0.5
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            amount: 0.6
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 0.7
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            amount: 0.8
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            amount: 0.9
+    - cooldown: 24
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            amount: 1
+    - cooldown: 24
+      effects:
+        - override:
+            level: 6
+            duration: 20
+        - override:
+            amount: 1.2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

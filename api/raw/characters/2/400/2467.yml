@@ -1,0 +1,67 @@
+type: PSY
+name: Pound - Blessing for a Daughter
+japanName: パウンド 娘への祝福
+family:
+  - Pound
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1331
+    atk: 701
+    rcv: 150
+  maxLvl:
+    hp: 2341
+    atk: 1121
+    rcv: 300
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 144755
+aliases:
+  - Limited Pound
+  - Secret Pound
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.5x
+special:
+  name: Attacking with All His Might in Order to Protect His Daughter
+  description: Reduces Silence and Increase Damage Taken duration by 2 turns and
+    reduces enemies' Percent Damage Reduction duration by 3 turns.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Reduces Silence duration by 2 turns on this character
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - atk: 10
+    - slot: 1
+    - rcv: 50
+    - atk: 15
+    - atk: 20
+    - hp: 80
+    - atk: 35
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 40
+        - value: 0.75
+          threshold: 40
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+        - value: 1.25
+          threshold: 50

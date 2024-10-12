@@ -1,0 +1,356 @@
+type: DUAL
+name: Dogstorm & Cat Viper - Clashing Kings
+japanName: イヌアラシ＆ネコマムシ 克ち合う二人の王
+family:
+  - Inuarashi
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 798
+    atk: 365
+    rcv: 89
+  maxLvl:
+    hp: 1995
+    atk: 913
+    rcv: 222
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 153870
+aliases:
+  - Inuarashi&Nekomamushi
+  - InuarashiNekomamushi
+  - Nekomamushi&Inuarashi
+  - NekomamushiInuarashi
+  - Dogstorm
+  - Cat Viper
+  - CatDog
+  - DogCat
+  - Cat Dog
+  - InuNeko
+  - Legend Inuarashi and Nekomamushi
+evolution:
+  - id: 2577
+    evolvers:
+      - 118
+      - 300
+      - 303
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Striker characters by 3.5x-4x based on
+    the timing of the attack of the previous unit in the chain, makes [STR] and
+    [PSY] orbs beneficial for Cerebral and Striker characters and recovers 1.5x
+    their RCV at the end of the turn for each time you hit a PERFECT.
+special:
+  name: Two-King Onslaught
+  description: Boosts ATK of Cerebral and Striker characters by 1.75x for 1 turn
+    and boosts the Color Affinity of Cerebral and Striker characters by 1.75x
+    for 1 turn, and becomes Inuarashi & Nekomamushi for 3 turns. If during that
+    turn, you hit 2 PERFECTS, boosts Orb Effects of Cerebral and Striker
+    characters by 2.25x for 1 turn in the following turn.
+  cooldown: 22
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of this character by 250 if this character is the
+      last in the chain to attack
+characters:
+  swap:
+    description: Removes Despair and Slot Bind duration completely on this character
+      and reduces Paralysis duration by 1 turn.
+  character1:
+    name: Inuarashi - Clashing Kings
+    japanName: イヌアラシ 克ち合う二人の王
+    class:
+      - Slasher
+      - Cerebral
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 700
+        atk: 349
+        rcv: 84
+      maxLvl:
+        hp: 1749
+        atk: 873
+        rcv: 210
+    captain:
+      name: ""
+      description: Boosts ATK of Cerebral characters by 3x-3.3x based on the timing of
+        the attack of the previous unit in the chain, boosts ATK of Striker
+        characters by 3x and makes [STR] orbs beneficial for Cerebral and
+        Striker characters.
+    sailor:
+      - description: Boosts base ATK of this character by 150 if this character is the
+          last in the chain to attack
+  character2:
+    name: Nekomamushi - Clashing Kings
+    japanName: ネコマムシ 克ち合う二人の王
+    class:
+      - Striker
+      - Powerhouse
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 777
+        atk: 332
+        rcv: 78
+      maxLvl:
+        hp: 1942
+        atk: 831
+        rcv: 194
+    captain:
+      name: ""
+      description: Boosts ATK of Striker characters by 3x-3.3x based on the timing of
+        the attack of the previous unit in the chain, boosts ATK of Cerebral
+        characters by 3x and makes [PSY] orbs beneficial for Cerebral and
+        Striker characters.
+    sailor:
+      - description: Boosts base ATK of this character by 150 if this character is the
+          last in the chain to attack
+rumble:
+  stats:
+    def: 226
+    rumbleType: SPT
+    spd: 170
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 45
+            type: time
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          condition:
+            comparator: first
+            count: 45
+            type: time
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 0.55
+          effect: damage
+          type: atk
+          targeting:
+            targets:
+              - enemies
+          range:
+            direction: forward
+            size: small
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          duration: 15
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - amount: 0.25
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.58
+        - override:
+            duration: 16
+        - override:
+            amount: 0.27
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            duration: 17
+        - override:
+            amount: 0.28
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.63
+        - override:
+            duration: 18
+        - override:
+            amount: 0.3
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.66
+        - override:
+            level: 3
+            duration: 19
+        - override:
+            amount: 0.32
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.69
+        - override:
+            level: 3
+            duration: 20
+        - override:
+            amount: 0.34
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.71
+        - override:
+            level: 3
+            duration: 21
+        - override:
+            amount: 0.35
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.74
+        - override:
+            level: 4
+            duration: 22
+        - override:
+            amount: 0.37
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.77
+        - override:
+            level: 4
+            duration: 23
+        - override:
+            amount: 0.39
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            level: 6
+            duration: 25
+        - override:
+            amount: 0.45
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

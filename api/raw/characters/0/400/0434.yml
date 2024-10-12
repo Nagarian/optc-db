@@ -1,0 +1,48 @@
+type: INT
+name: Caroline
+japanName: キャロライン
+family:
+  - Caroline
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 772
+    atk: 389
+    rcv: 177
+  maxLvl:
+    hp: 1890
+    atk: 915
+    rcv: 300
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 10004
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x following a chain of [PSY] >
+    [INT] > [INT] attacks no lower than Good
+special:
+  name: New Kama Karate Maiden's Awakening
+  description: Boosts Orb Effects of all characters by 1.25x for 3 turns
+  cooldown: 21
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Vinsmoke Sanji and Elizabeth
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

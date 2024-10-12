@@ -1,0 +1,35 @@
+type: DEX
+name: Fighter Group Cabin Boy - Green Pirates
+japanName: 格闘隊 雑用 グリーンパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 1
+stats:
+  combo: 6
+  minLvl:
+    hp: 85
+    atk: 54
+    rcv: 5
+  maxLvl:
+    hp: 357
+    atk: 138
+    rcv: 13
+cost: 2
+slots: 0
+maxExp: 2330
+maxLevel: 10
+flags: []
+links:
+  gamewithId: 2784
+aliases: []
+evolution:
+  - id: 144
+    evolvers:
+      - 91
+special:
+  name: "[STR] Slot Change [DEX]"
+  description: Changes [STR] orbs into [DEX] orbs
+  cooldown: 15
+  maxLevel: 9

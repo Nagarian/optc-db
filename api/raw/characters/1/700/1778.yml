@@ -1,0 +1,97 @@
+type: QCK
+name: Kizaru - Sojourner from the Sacred Land
+japanName: 黄猿 聖地からの光臨
+family:
+  - Borsalino
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1230
+    atk: 1342
+    rcv: 315
+  maxLvl:
+    hp: 2613
+    atk: 1342
+    rcv: 315
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 68472
+aliases:
+  - Secret Kizaru
+  - Secret Borsalino
+  - Limited Kizaru
+  - Limited Borsalino
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and their HP by 1.2x.
+    Recovers 1.5x character's RCV in HP at the end of each turn
+special:
+  name: Devil Destroyer's Light Arrow
+  description: Deals 50x character's ATK in Typeless True damage to one enemy,
+    changes [BLOCK], [STR] and [INT] orbs of Free Spirit characters into
+    Matching orbs and adds 0.2x to Chain multiplier for 3 turns
+  cooldown: 15
+  maxLevel: 5
+sailor:
+  - description: Makes [DEX] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of Shooter and Free Spirit characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - atk: 30
+    - rcv: 30
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - hp: 60
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

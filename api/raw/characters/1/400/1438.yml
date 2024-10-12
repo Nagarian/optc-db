@@ -1,0 +1,201 @@
+type: PSY
+name: Ikaros Much - Fish-Man District Spirit
+japanName: イカロス・ムッヒ 魚人街の亡霊
+family:
+  - IkarosMuch
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 8
+  minLvl:
+    hp: 1132
+    atk: 429
+    rcv: 99
+  maxLvl:
+    hp: 2506
+    atk: 1292
+    rcv: 303
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 50181
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Striker characters by 1.6x
+  notes: The bonus is cumulative. Powerhouse + Striker characters get a 2.56x bonus.
+special:
+  name: Squid Spear
+  description: Reduces crew's current HP by 50%, boosts Orb Effects of Powerhouse
+    characters by 1.75x for 1 turn and boosts ATK against delayed enemies by
+    1.5x for 1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Makes [STR], [QCK], [DEX] and [INT] orbs beneficial for this
+      character if there are 6 Powerhouse characters in your crew
+  - description: Boosts base ATK, HP and RCV of Powerhouse characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Hody Jones, Hyouzou, Daruma, Dosun and Zeo
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 5
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - cooldown: 1
+    - hp: 50
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - cooldown: 2
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 25
+        - value: 1.5
+          threshold: 30
+rumble:
+  stats:
+    def: 115
+    rumbleType: ATK
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 800
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 855
+        - override:
+            level: 2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 910
+        - override:
+            level: 2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 965
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1020
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1075
+        - override:
+            level: 4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1130
+        - override:
+            level: 4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1185
+        - override:
+            level: 4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1240
+        - override:
+            level: 5
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 6

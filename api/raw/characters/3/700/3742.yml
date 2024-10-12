@@ -1,0 +1,553 @@
+type: INT
+name: "Ace: Riot Flame Wolf - Happy Halloween!"
+family:
+  - PortgasDAce
+class:
+  - Shooter
+  - Fighter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 2256
+    atk: 1037
+    rcv: 111
+  maxLvl:
+    hp: 4512
+    atk: 1728
+    rcv: 222
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Halloween Legend V2 Ace
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [INT], Fighter and Shooter characters by 4.5x,
+    boosts HP of [INT], Fighter and Shooter characters by 1.5x, makes [PSY],
+    [INT] and [TND] orbs beneficial for [INT], Fighter and Shooter characters,
+    reduces Silence duration by 10 turns and restores Special Cooldown of all
+    characters by 10 turns when they are rewinded.
+special:
+  name: Night of the Jack O' Flame Emperor
+  description: Deals 200x character's ATK in [INT] damage to all enemies, reduces
+    Bind duration by 10 turns and boosts ATK of [INT], Fighter and Shooter
+    characters by 2.5x for 1 turn. If your crew has ATK UP, boosts Color
+    Affinity of [INT], Fighter and Shooter characters by 2.25x for 1 turn. If
+    your crew has 6 characters with [TND] orbs, increases or decreases boost
+    effects of Chain Lock and Chain Boundary buffs to 3.75x.
+  cooldown: 18
+  maxLevel: 6
+  notes: The upper and lower values of Chain Lock, Chain Limit and Chain Boundary
+    buffs will be changed to 3.75x.
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Shooter characters by 75
+  - description: Makes [PSY], [RCV], [TND] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy and Sabo
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 2 turns
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 2 turns
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 3 turns
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 10
+    - hp: 10
+    - hp: 10
+    - atk: 10
+    - atk: 15
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 10
+    - atk: 25
+    - type: potential
+    - rcv: 15
+    - hp: 20
+    - atk: 30
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [INT], Fighter and Shooter characters by
+          4.75x, boosts HP of [INT], Fighter and Shooter characters by 1.5x,
+          makes [PSY], [INT] and [TND] orbs beneficial for [INT], Fighter and
+          Shooter characters, reduces Silence duration by 10 turns and restores
+          Special Cooldown of all characters by 10 turns when they are rewinded.
+    - cooldown: 1
+    - rcv: 50
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 152
+    rumbleType: SPT
+    spd: 174
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Shooter
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Shooter
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          level: 4
+          effect: buff
+          targeting:
+            targets:
+              - Fighter
+              - Shooter
+          duration: 10
+        - attributes:
+            - Action Bind
+          duration: 6
+          effect: boon
+          targeting:
+            targets:
+              - Fighter
+              - Shooter
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 11
+        - override:
+            duration: 7
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            duration: 12
+        - override:
+            duration: 8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            duration: 13
+        - override:
+            duration: 9
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            duration: 14
+        - override:
+            duration: 10
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            duration: 11
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 5
+            duration: 16
+        - override:
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            level: 5
+            duration: 17
+        - override:
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            level: 6
+            duration: 20
+        - override:
+            duration: 15
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+                - ATK
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - Fighter
+                  - Shooter
+            - attributes:
+                - Special CT
+              condition:
+                comparator: remaining
+                count: 70
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Fighter
+                  - Shooter
+        - effects:
+            - override:
+                level: 3
+            - {}
+        - effects:
+            - override:
+                level: 4
+            - {}
+        - effects:
+            - override:
+                level: 5
+            - {}
+        - effects:
+            - override:
+                level: 6
+            - {}
+  - captain:
+      - description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [INT], Fighter and Shooter characters by
+          4.75x, boosts HP of [INT], Fighter and Shooter characters by 1.5x,
+          makes [PSY], [INT] and [TND] orbs beneficial for [INT], Fighter and
+          Shooter characters, reduces Silence duration by 10 turns and restores
+          Special Cooldown of all characters by 10 turns when they are rewinded.
+      - description: Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of [INT], Fighter and Shooter characters by
+          5x, boosts HP of [INT], Fighter and Shooter characters by 1.5x, makes
+          [PSY], [INT] and [TND] orbs beneficial for [INT], Fighter and Shooter
+          characters, reduces Silence duration by 10 turns and restores Special
+          Cooldown of all characters by 10 turns when they are rewinded.
+  - rumble:
+      special:
+        - cooldown: 27
+          effects:
+            - amount: 1.75
+              effect: damage
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              level: 5
+              effect: buff
+              targeting:
+                targets:
+                  - Fighter
+                  - Shooter
+              duration: 10
+            - attributes:
+                - Action Bind
+              duration: 6
+              effect: boon
+              targeting:
+                targets:
+                  - Fighter
+                  - Shooter
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.85
+            - override:
+                duration: 11
+            - override:
+                duration: 7
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.95
+            - override:
+                duration: 12
+            - override:
+                duration: 8
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 2.05
+            - override:
+                duration: 13
+            - override:
+                duration: 9
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 2.15
+            - override:
+                duration: 14
+            - override:
+                duration: 10
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 2.25
+            - override:
+                level: 6
+                duration: 15
+            - override:
+                duration: 11
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 2.35
+            - override:
+                level: 6
+                duration: 16
+            - override:
+                duration: 12
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 2.45
+            - override:
+                level: 6
+                duration: 17
+            - override:
+                duration: 13
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 2.55
+            - override:
+                level: 6
+                duration: 18
+            - override:
+                duration: 14
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 2.75
+            - override:
+                level: 7
+                duration: 20
+            - override:
+                duration: 15
+  - rumble:
+      resilience:
+        - attribute: Action Bind
+          chance: 100
+          type: debuff
+        - attribute: PSY
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 200x character's ATK in [INT] damage to all enemies, reduces
+        Bind duration by 10 turns and boosts ATK of [INT], Fighter and Shooter
+        characters by 2.5x for 1 turn. If your crew has ATK UP, boosts Color
+        Affinity of [INT], Fighter and Shooter characters by 2.25x for 1 turn.
+        If your crew has 6 characters with [TND] orbs, increases boost effects
+        of Orb Amplification buffs to 3x and increases or decreases boost
+        effects of Chain Lock and Chain Boundary buffs to 3.75x.

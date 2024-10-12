@@ -1,0 +1,450 @@
+type: PSY
+name: Trafalgar Law - Alliance to Change the Land of Wano
+japanName: トラファルガー・ロー ワノ国変える同盟
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 502
+    atk: 304
+    rcv: 65
+  maxLvl:
+    hp: 1313
+    atk: 993
+    rcv: 182
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 217467
+aliases:
+  - V3 Legend Law
+  - PSY Law
+  - One Piece Day Law
+evolution:
+  - id: 3027
+    evolvers:
+      - 118
+      - 266
+      - 303
+      - 103
+      - 267
+captain:
+  name: ""
+  description: If HP is above 99% at the start of the turn, boosts ATK of Free
+    Spirit, Fighter and Striker characters by 4.5x, by 4x otherwise, recovers
+    1,500 HP at the end of each turn and reduces damage received by 25%.
+special:
+  name: Emergency Operation Injection Shot
+  description: Changes [EMPTY], [BLOCK], [BOMB], [RCV], [G], Badly Matching orbs
+    into Matching orbs and changes the orb of this character into a Matching
+    orb. If your Captain is a Fighter, Slasher, Striker or Shooter character,
+    boosts Orb Effects of all characters by 2.25x for 2 turns. If your Captain
+    is a Free Spirit, Driven, Cerebral or Powerhouse character, sets Chain
+    Boundaries to 2.5x and 35.0x for 2 turns.
+  cooldown: 19
+  maxLevel: 6
+rumble:
+  stats:
+    def: 167
+    rumbleType: ATK
+    spd: 165
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+            - Guard
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+            - Guard
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+            - Guard
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+            - Guard
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+            - Guard
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 1100
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 15
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 1200
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 15
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 1300
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 16
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 1400
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 17
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 1500
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 18
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 1600
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 19
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 1700
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 19
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 1800
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 20
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 1900
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 21
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - amount: 2200
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Silence
+            - Paralysis
+            - Action Bind
+          duration: 22
+          effect: boon
+          targeting:
+            targets:
+              - crew
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

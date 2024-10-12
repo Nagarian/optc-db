@@ -1,0 +1,50 @@
+type: DEX
+name: Daruma - New Fish-Man Pirates
+japanName: ダルマ 新魚人海賊団
+family:
+  - Daruma
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 174
+    atk: 133
+    rcv: 21
+  maxLvl:
+    hp: 1002
+    atk: 606
+    rcv: 105
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 50184
+aliases:
+  - ""
+evolution:
+  - id: 1440
+    evolvers:
+      - 118
+      - 83
+      - 86
+      - 102
+      - 302
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Powerhouse and Fighter characters by 1.2x
+special:
+  name: Fire Daruma Cutter
+  description: Reduces Paralysis and Silence duration by 2 turns, deals 10% of
+    enemies' current HP in damage to one enemy, boosts ATK of Powerhouse
+    characters by 1.75x for 1 turn
+  cooldown: 22
+  maxLevel: 8
+sailor:
+  - description: Reduces Silence duration completely on this character

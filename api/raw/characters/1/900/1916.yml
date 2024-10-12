@@ -1,0 +1,147 @@
+type: QCK
+name: "Monkey D. Luffy: Gear Four - Enemy of the Gods"
+japanName: モンキー・D・ルフィ　ギア４ 神の天敵
+family:
+  - MonkeyDLuffy
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 998
+    atk: 314
+    rcv: 58
+  maxLvl:
+    hp: 3429
+    atk: 1428
+    rcv: 187
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 85568
+aliases:
+  - G4
+  - TM Luffy
+  - TM G4
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Free Spirit characters by 2x after
+    scoring 2 PERFECTs in a row
+special:
+  name: Gomu Gomu no Leo Bazooka
+  description: Randomizes all orbs, including [BLOCK] orbs, changes the orb of
+    this character into a [QCK] orb, deals 300x character's ATK in Typeless
+    damage to one enemy and boosts the Color Affinity of all characters by 1.75x
+    for 1 turn
+  cooldown: 37
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 30
+  - description: Boosts base ATK, HP and RCV of Powerhouse characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - captain:
+        description: Boosts ATK of Powerhouse and Free Spirit characters by 2x after
+          scoring 2 PERFECTs in a row and reduces damage received by 2%
+    - type: sailor
+    - atk: 15
+    - hp: 40
+    - rcv: 10
+    - captain:
+        description: Boosts ATK of Powerhouse and Free Spirit characters by 2x after
+          scoring 2 PERFECTs in a row and reduces damage received by 4%
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 15
+    - captain:
+        description: Boosts ATK of Powerhouse and Free Spirit characters by 2x after
+          scoring 2 PERFECTs in a row, boosts by 3x after scoring 4 PERFECTs in
+          a row and reduces damage received by 4%
+    - cooldown: 2
+    - atk: 25
+    - hp: 60
+    - rcv: 20
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - hp: 55
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Powerhouse and Free Spirit characters by 2x after
+          scoring 2 PERFECTs in a row, boosts by 3.25x after scoring 4 PERFECTs
+          in a row and reduces damage received by 4%
+    - atk: 30
+    - hp: 70
+    - type: sailor
+    - atk: 40
+    - hp: 70
+    - rcv: 40
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Powerhouse and Free Spirit characters by 2x after
+          scoring 2 PERFECTs in a row, boosts by 3.5x after scoring 4 PERFECTs
+          in a row and reduces damage received by 4%
+    - atk: 50
+    - hp: 70
+    - captain:
+        description: Boosts ATK of Powerhouse and Free Spirit characters by 2x after
+          scoring 2 PERFECTs in a row, boosts by 4x after scoring 4 PERFECTs in
+          a row and reduces damage received by 4%
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3

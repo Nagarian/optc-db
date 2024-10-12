@@ -1,0 +1,140 @@
+type: STR
+name: Monkey D. Luffy - Future-Surpassing Python
+japanName: モンキー・D・ルフィ 未来を超える大蛇
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1621
+    atk: 1005
+    rcv: 135
+  maxLvl:
+    hp: 3330
+    atk: 1650
+    rcv: 295
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 202413
+aliases:
+  - V2 Legend Snakeman
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 4x, boosts ATK of all other
+    characters by 3.75x, boosts HP and RCV of all characters by 1.3x and makes
+    [RCV] orbs beneficial for all characters. If a [STR] character has a [STR]
+    or [RCV] orb, boosts their ATK by 5x instead.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Portgas
+    D. Ace, Sabo, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper,
+    Nico Robin, Franky or Brook, excluding Support members."
+  description: Deals 75x character's ATK in Typeless damage to all enemies, boosts
+    ATK of all characters by 2x for 1 turn and transforms all [STR] characters
+    into Super [STR] characters.
+special:
+  name: Gomu Gomu no Black Mamba
+  description: Deals 100x character's ATK in Typeless Fixed True damage to all
+    enemies, changes all orbs into Matching orbs and boosts Orb Effects of all
+    characters by 2.5x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+  - description: Makes [STR] and [RCV] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR] Characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - atk: 15
+    - atk: 15
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 30
+    - hp: 30
+    - hp: 50
+    - hp: 70
+    - rcv: 30
+    - rcv: 30
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - hp: 70
+    - hp: 90
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100

@@ -1,0 +1,92 @@
+type: INT
+name: Full-Power Shishilian - Mokomo Dukedom
+japanName: 全力のシシリアン モコモ公国
+family:
+  - Sicilian
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1122
+    atk: 690
+    rcv: 158
+  maxLvl:
+    hp: 2270
+    atk: 1421
+    rcv: 328
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 74132
+aliases:
+  - Sicilian
+  - Shishilian
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x, by 3x instead if HP is
+    below 30% at the start of the turn
+special:
+  name: Explosive Spirit
+  description: Reduces crew's current HP by 50%, boosts ATK of [INT] characters by
+    2x for 1 turn and randomizes non-Matching orbs, including [BLOCK] orbs
+  cooldown: 25
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of Slasher characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Inuarashi, Wanda and Pedro
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - type: sailor
+    - atk: 20
+    - hp: 40
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - hp: 50
+    - rcv: 30
+    - atk: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 30
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20

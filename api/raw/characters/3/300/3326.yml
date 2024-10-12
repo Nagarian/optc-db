@@ -1,0 +1,95 @@
+type: INT
+name: "Heracles-un: Neo - Hero of the Forest"
+japanName: ヘラクレスン「改」 森の勇者
+family:
+  - Heraclesn
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1222
+    atk: 780
+    rcv: 108
+  maxLvl:
+    hp: 2588
+    atk: 1310
+    rcv: 300
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 266796
+aliases:
+  - Neo Heracles'n
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of Cerebral characters by 1.5x and recovers
+    1x character's RCV in HP at the end of each turn
+special:
+  name: Pop Green [Neo]
+  description: Reduces Bind and Silence duration by 4 turns, boosts ATK of
+    Cerebral characters by 1.75x for 1 turn and changes all orbs of left column
+    characters into [PSY], [INT] and [RCV] orbs, changes all orbs of right
+    column characters into [DEX], [STR] and [QCK] orbs, switches orbs between
+    slots 2 times
+  cooldown: 24
+  maxLevel: 14
+  notes: "The special is not based on chance; the orbs are always changed with the
+    same pattern. Starting from the top left orb and proceeding clockwise, after
+    the special is used the orbs will be: [PSY], [DEX], [STR], [QCK], [RCV] and
+    [INT]"
+sailor:
+  - description: Boosts base ATK of Cerebral characters by 40
+  - description: Reduces Silence duration by 4 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shooter characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - hp: 50
+    - rcv: 30
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

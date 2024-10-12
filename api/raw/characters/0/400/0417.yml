@@ -1,0 +1,291 @@
+type: DEX
+name: Donquixote Doflamingo
+japanName: ドンキホーテ・ドフラミンゴ
+family:
+  - DonquixoteDoflamingo
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 200
+    atk: 186
+    rcv: 30
+  maxLvl:
+    hp: 1061
+    atk: 790
+    rcv: 145
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 9035
+aliases:
+  - Raid Doffy
+  - Raid Doflamingo
+evolution:
+  - id: 418
+    evolvers:
+      - 118
+      - 83
+      - 86
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x
+special:
+  name: Overheat
+  description: Switches orbs between slots 2 times, boosts Orb Effects of all
+    characters by 2x for 1 turn
+  cooldown: 28
+  maxLevel: 15
+rumble:
+  stats:
+    def: 128
+    rumbleType: SPT
+    spd: 161
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+  special:
+    - cooldown: 18
+      effects:
+        - amount: 0.45
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 10
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.49
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 10
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.52
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 11
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.56
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 12
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 13
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.64
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 14
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.67
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 15
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.71
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 15
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.75
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 16
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT
+    - cooldown: 18
+      effects:
+        - amount: 0.85
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 18
+          effect: recharge
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+          type: Special CT

@@ -1,0 +1,53 @@
+type: QCK
+name: Nico Robin - Celebrate 20th Anniversary Cruise
+japanName: ニコ・ロビン Celebrate 20th Anniversary Cruise
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 601
+    atk: 335
+    rcv: 66
+  maxLvl:
+    hp: 1043
+    atk: 604
+    rcv: 257
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 62646
+aliases:
+  - 20th Anniversary Robin
+evolution:
+  - id: 1684
+    evolvers:
+      - 79
+      - 85
+      - 90
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x and their RCV by 1.3x
+special:
+  name: "Mil Fleur: Gigantesco Mano"
+  description: Binds self for 1 turn, changes [BLOCK] orbs into [EMPTY] orbs,
+    deals 15x-450x character's ATK in Typeless damage to all enemies and boosts
+    ATK against enemies with reduced defense by 1.5x for 2 turns
+  cooldown: 17
+  maxLevel: 5
+  notes: "The exact multiplier used is chosen based on the number of [BLOCK] orbs
+    consumed: 0 orbs - 15x ATK; 1 orb - 36x ATK; 2 orbs - 60x ATK; 3 orbs - 105x
+    ATK; 4 orbs - 195x ATK; 5 orbs - 300x ATK; 6 orbs - 450x ATK."
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters if your Captain is a
+      Fighter character

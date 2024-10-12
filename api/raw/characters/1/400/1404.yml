@@ -1,0 +1,499 @@
+type: QCK
+name: "Monkey D. Luffy - Straw Hat Pirates: Born Again"
+japanName: モンキー・D・ルフィ 新生・麦わらの一味
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1369
+    atk: 762
+    rcv: 168
+  maxLvl:
+    hp: 3080
+    atk: 1550
+    rcv: 390
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 47356
+aliases:
+  - New World Luffy
+  - Timeskip Luffy
+  - TS Luffy
+  - TSL
+  - Legend Luffy
+evolution:
+  - id: 1593
+    evolvers:
+      - skullQCK
+      - skullPSY
+      - 98
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and reduces damage
+    received by 15%. If you use "Gomu Gomu no Red Hawk" on this Luffy, boosts
+    ATK of Free Spirit characters by 4x for 3 turns instead.
+  notes: Using Luffy's special will change his own captain boost to 4x. If both
+    Luffy's specials are used, the total ATK boost will be 16x
+special:
+  name: Gomu Gomu no Red Hawk
+  description: Deals 60x character's ATK in [QCK] damage to one enemy and makes
+    [QCK], [DEX] and [PSY] orbs beneficial for 3 turns
+  cooldown: 18
+  maxLevel: 6
+  stages:
+    - description: Deals 25x character's ATK in [QCK] damage to one enemy and makes
+        [QCK], [DEX] and [PSY] orbs beneficial for Fighter and Free Spirit
+        characters for 1 turn
+      cooldown: 13
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 75
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Nami, Vinsmoke Sanji, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special, makes
+      [DEX] orbs beneficial for all characters for 1 turn
+    - Once per adventure, when the supported character uses their special, makes
+      [DEX] orbs beneficial for all characters for 1 turn
+    - Once per adventure, when the supported character uses their special, makes
+      [DEX] and [QCK] orbs beneficial for all characters for 1 turn
+    - Once per adventure, when the supported character uses their special, makes
+      [DEX] and [QCK] orbs beneficial for all characters for 1 turn
+    - Once per adventure, when the supported character uses their special, makes
+      [DEX], [QCK] and [PSY] orbs beneficial for all characters for 1 turn
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - rcv: 25
+    - atk: 30
+    - rcv: 35
+    - atk: 50
+    - hp: 30
+    - atk: 60
+    - hp: 40
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - type: potential
+    - key: 1
+    - atk: 100
+    - atk: 155
+    - hp: 100
+    - hp: 100
+    - rcv: 75
+    - hp: 150
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 9
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 215
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 4
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 2.5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: penalty
+          level: 10
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          duration: 15
+          effect: penalty
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 2.59
+        - {}
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 2.68
+        - {}
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 2.77
+        - {}
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 2.86
+        - {}
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 2.95
+        - {}
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 3.04
+        - {}
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 3.13
+        - {}
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 3.22
+        - {}
+        - {}
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 3.4
+        - {}
+        - {}
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - self
+            - attributes:
+                - ATK
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - Fighter
+                  - Free Spirit
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 2
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 5
+  - captain:
+      - description: Boosts ATK of Free Spirit characters by 4x, reduces damage received
+          by 20% and recovers 1,000 HP at the end of each turn. If you use "Gomu
+          Gomu no Red Hawk" on this character, boosts ATK of Free Spirit
+          characters by 5x for 3 turns instead.
+  - rumble:
+      special:
+        - cooldown: 28
+          effects:
+            - amount: 3
+              effect: damage
+              targeting:
+                count: 2
+                priority: highest
+                stat: HP
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              duration: 10
+              effect: penalty
+              level: 5
+              targeting:
+                targets:
+                  - self
+            - attributes:
+                - DEF
+              duration: 15
+              effect: penalty
+              level: 3
+              targeting:
+                targets:
+                  - self
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 3.1
+            - {}
+            - {}
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 3.2
+            - {}
+            - {}
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 3.3
+            - {}
+            - {}
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 3.4
+            - {}
+            - {}
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 3.5
+            - {}
+            - {}
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 3.6
+            - {}
+            - {}
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 3.7
+            - {}
+            - {}
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 3.8
+            - {}
+            - {}
+        - cooldown: 28
+          effects:
+            - override:
+                amount: 4
+            - {}
+            - {}
+  - rumble:
+      resilience:
+        - attribute: Paralysis
+          chance: 100
+          type: debuff
+        - attribute: STR
+          percentage: 35
+          type: damage
+    special:
+      description: Deals ?x character's ATK in [QCK] damage to one enemy, makes [QCK],
+        [DEX] and [PSY] orbs beneficial for all characters for 3 turns, reduces
+        the defense of all enemies by 80% for 3 turns and boosts ATK of Free
+        Spirit characters by 1.75x for 3 turns. If your Captain is a Free Spirit
+        character, boosts ATK against enemies with reduced defense by 1.75x for
+        3 turns.
+      stages:
+        - description: Deals ?x character's ATK in [QCK] damage to one enemy, makes [QCK],
+            [DEX] and [PSY] orbs beneficial for Fighter and Free Spirit
+            characters for 1 turn and boosts ATK of Free Spirit characters by
+            1.75x for 1 turn.
+          cooldown: 13

@@ -1,0 +1,49 @@
+type: PSY
+name: Doctor Hogback - Zombie Artist
+japanName: 没人形の芸術家 ドクトル・ホグバック
+family:
+  - Hogback
+class:
+  - Driven
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 720
+    atk: 238
+    rcv: 100
+  maxLvl:
+    hp: 2160
+    atk: 954
+    rcv: 302
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 91453
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.25x and boosts chances of
+    getting [RCV] orbs
+special:
+  name: Affirmative Miracle
+  description: Boosts ATK against delayed enemies by 1.5x for 1 turn
+  cooldown: 15
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Gecko Moria and Victoria Cindry
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

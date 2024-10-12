@@ -1,0 +1,387 @@
+type: STR
+name: Sweet 3 Generals - Big Mom's Children
+japanName: スイート３将星 ビッグ・マムの子供達
+family:
+  - CharlotteKatakuri
+  - CharlotteCracker
+  - CharlotteSmoothie
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 718
+    atk: 452
+    rcv: 41
+  maxLvl:
+    hp: 1595
+    atk: 1005
+    rcv: 91
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 224881
+aliases:
+  - Charlotte Katakuri
+  - Charlotte Cracker
+  - Charlotte Smoothie
+  - Sweet 3 Generals
+  - Legend Sweet 3 Commanders
+evolution:
+  - id: 3073
+    evolvers:
+      - 118
+      - 300
+      - 2662
+      - 100
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 4.25x, boosts ATK of all other
+    characters by 3.75x, boosts HP of all characters by 1.3x and reduces Despair
+    duration by 10 turns. If you defeated an enemy last turn, boosts ATK of
+    [STR] characters by 5x instead.
+special:
+  name: Sweet 3 Consecutive Strike
+  description: Adds 1.1x to Chain multiplier for 1 turn, boosts ATK of [STR]
+    characters by 2x for 1 turn and boosts the Color Affinity of [STR]
+    characters by 2x for 1 turn
+  cooldown: 20
+  maxLevel: 6
+rumble:
+  stats:
+    def: 129
+    rumbleType: ATK
+    spd: 181
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1.7
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 5
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 1.73
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 6
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 1.76
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 7
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 1.79
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 8
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 1.82
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 9
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 1.85
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 10
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 1.88
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 11
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 1.91
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 12
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 1.94
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 13
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 28
+      effects:
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 15
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

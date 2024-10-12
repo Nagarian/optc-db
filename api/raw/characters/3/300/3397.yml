@@ -1,0 +1,101 @@
+type: STR
+name: Jack the Drought - Trampling Disaster
+japanName: 旱害のジャック 踏み荒らす災害
+family:
+  - Jack
+class:
+  - Driven
+  - Powerhouse
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1404
+    atk: 851
+    rcv: 90
+  maxLvl:
+    hp: 3443
+    atk: 1591
+    rcv: 201
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 287777
+aliases:
+  - Kizuna Jack
+  - 5+ Jack 5+
+  - Super Jack
+  - Mega Jack
+captain:
+  name: ""
+  description: Boosts ATK of [STR], Driven and Powerhouse characters by 3.5x,
+    their HP by 1.5x and reduces damage received by 20%.
+special:
+  name: Trampling Down Nose
+  description: Deals 100x character's ATK in [STR] damage to all enemies, reduces
+    Paralysis and ATK DOWN duration by 6 turns and boosts the Color Affinity of
+    [STR], Driven and Powerhouse characters by 2x for 3 turns.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of Driven and Powerhouse characters by 50
+  - description: Makes [STR] orbs beneficial for Driven and Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - rcv: 25
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - rcv: 25
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - hp: 100
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

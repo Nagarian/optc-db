@@ -1,0 +1,162 @@
+type: DEX
+name: Roronoa Zoro - Swordsman Cutting Through the Pirates Expo
+japanName: ロロノア・ゾロ 『海賊万博』で切り開く剣士
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 506
+    atk: 263
+    rcv: 47
+  maxLvl:
+    hp: 1265
+    atk: 658
+    rcv: 119
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 164102
+aliases:
+  - Stampede Zoro
+evolution:
+  - id: 2674
+    evolvers:
+      - 94
+      - 2662
+      - 302
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.25x and their HP by 1.2x.
+special:
+  name: Three Sword Style - Ultra Tiger Hunting • Opposing the Tiger
+  description: Deals 200,000 fixed damage to one enemy, changes the orbs of this
+    and top row characters into Matching orbs. If your crew has 5 or more [DEX]
+    or [PSY] characters, boosts Orb Effects of [DEX] and [PSY] characters by 2x
+    for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [DEX] and [PSY] characters by 50
+rumble:
+  stats:
+    def: 112
+    rumbleType: ATK
+    spd: 148
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          targeting:
+            targets:
+              - DEX
+              - PSY
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 1150
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          duration: 10
+          level: 1
+          effect: debuff
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1275
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1400
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1525
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1650
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1775
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1900
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2025
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2150
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2400
+        - override:
+            level: 3

@@ -1,0 +1,89 @@
+type: QCK
+name: Eneru, Lightning Incarnate - 200,000,000 Volt Amaru
+japanName: エネル　雷人間 ２億Ｖ　雷神
+family:
+  - Enel
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1288
+    atk: 670
+    rcv: 90
+  maxLvl:
+    hp: 2524
+    atk: 1470
+    rcv: 234
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 13688
+aliases:
+  - Raid Enel the Lightning Human, 200 Million Volt Thunder God
+  - God Enel
+  - Kami Eneru
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.25x, recovers 5x character's
+    RCV in HP at the end of each turn
+special:
+  name: 200,000,000 Volt Amaru
+  description: Reduces crew's current HP by 90%, deals 20,000 Fixed damage to all
+    enemies, boosts ATK of [QCK] characters by 2x for 1 turn
+  cooldown: 32
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of [QCK] characters by 60
+  - description: If this character has an [QCK] orb and you hit a PERFECT with him,
+      keep his [QCK] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: "[QCK] characters"
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - hp: 25
+    - hp: 35
+    - hp: 40
+    - type: sailor
+    - atk: 40
+    - hp: 40
+    - cooldown: 1
+    - hp: 50
+    - rcv: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

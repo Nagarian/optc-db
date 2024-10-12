@@ -1,0 +1,51 @@
+type: STR
+name: Wyper - Shandian Warrior
+japanName: ワイパー シャンディアの戦士
+family:
+  - Wyper
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 229
+    atk: 151
+    rcv: 10
+  maxLvl:
+    hp: 1198
+    atk: 611
+    rcv: 33
+cost: 18
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 19417
+aliases:
+  - Wiper, Warrior of Shandia
+  - Colo Wyper
+  - Coliseum Wyper
+evolution:
+  - id: 833
+    evolvers:
+      - 117
+      - 89
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1x-2.5x depending on the
+    crew's current HP, reduces crew's current HP by 10% at the end of each turn
+  notes: "`captainProportional : lower : 1 + 1.5 * (1 - (remaining HP) / (total
+    HP)) : 1 : 2.5`"
+special:
+  name: Burn Bazooka
+  description: Boosts ATK of Free Spirit characters by 1.5x for 1 turn, deals 15x
+    character's ATK in [STR] damage to all enemies
+  cooldown: 28
+  maxLevel: 11

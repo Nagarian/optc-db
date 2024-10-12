@@ -1,0 +1,102 @@
+type: DUAL
+oldDbId: 2399
+name: Crocodile & Daz - Revived Duo
+japanName: クロコダイル＆ダズ 再興の二人
+family:
+  - Crocodile
+  - DazBones
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 250
+    atk: 140
+    rcv: 22
+  maxLvl:
+    hp: 1895
+    atk: 1489
+    rcv: 216
+cost: 15
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - gloex
+links:
+  gamewithId: 151644
+aliases:
+  - Crocodile&Daz
+  - Daz&Crocodile
+  - CrocodileDaz
+  - DazCrocodile
+  - Crocodile and Daz
+  - Crocobones
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [DEX] characters by 2.5x, by 2.75x instead
+    if they have a beneficial orb, reduces damage received by 20% and makes
+    [TND], [RCV], [STR] and [DEX] orbs beneficial for [STR] and [DEX] characters
+special:
+  name: Neverending Sand and Blades
+  description: Deals 10% of enemies' current HP in damage to one enemy, reduces
+    damage received by 50% for 1 turn, changes the orb of this character into a
+    Matching orb, boosts ATK of [STR] and [DEX] characters by 1.5x for 1 turn
+    and becomes Crocodile & Daz for 2 turns
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [STR] and [DEX] characters by 50
+characters:
+  swap:
+    description: Randomizes all non-Matching orbs, including [BLOCK] orbs, reduces
+      Bind duration by 1 turn
+  character1:
+    name: Crocodile - Revived Pirate
+    japanName: クロコダイル 再興の二人
+    class:
+      - Striker
+      - Driven
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1
+        atk: 1
+        rcv: 1
+      maxLvl:
+        hp: 1755
+        atk: 1389
+        rcv: 106
+    captain:
+      name: ""
+      description: Boosts ATK of [STR] and [DEX] characters by 2x, by 2.75x instead if
+        they have a beneficial orb, and makes [TND] and [DEX] orbs beneficial
+        for [STR] and [DEX] characters
+    sailor:
+      - description: Boosts base ATK, HP and RCV of [DEX] characters by 30
+  character2:
+    name: Daz - Revived Assassin
+    japanName: ダズ 再興の二人
+    class:
+      - Slasher
+      - Cerebral
+    type: STR
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1
+        atk: 1
+        rcv: 1
+      maxLvl:
+        hp: 1891
+        atk: 1351
+        rcv: 81
+    captain:
+      name: ""
+      description: Boosts ATK of [STR] and [DEX] characters by 2.5x and reduces damage
+        received by 10%
+    sailor:
+      - description: Boosts base ATK, HP and RCV of [STR] characters by 30

@@ -1,0 +1,60 @@
+type: INT
+name: Reiju - Summer Night Vacation
+japanName: レイジュ サマーナイトバカンス
+family:
+  - VinsmokeReiju
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 687
+    atk: 428
+    rcv: 48
+  maxLvl:
+    hp: 1527
+    atk: 952
+    rcv: 107
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 289187
+aliases:
+  - Swimsuit Reiju
+  - Summer Reiju
+  - Legend Reiju
+evolution:
+  - id: 3403
+    evolvers:
+      - 118
+      - 266
+      - 94
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [INT], Cerebral and Powerhouse characters by 5x and
+    their HP by 1.2x. If a crew member uses a special that inflicts Poison,
+    Strong Poison or Toxic, inflict enemies with Poison Pink. If your crew is
+    inflicted with Poison, Strong Poison or Toxic, activates "Lustrous Devilish
+    Woman" in the following turn.
+special:
+  name: Lustrous Devilish Woman
+  description: Boosts ATK of [INT], Cerebral and Powerhouse characters by 2.25x
+    for 3 turns, and removes Paralysis and Poison duration completely. If
+    enemies are inflicted with Poison, Strong Poison, Toxic or Poison Pink,
+    poison deals 30% of enemies' current HP in damage to all enemies and removes
+    enemies' Poison duration completely. Otherwise, inflicts enemies with Poison
+    Pink.
+  cooldown: 20
+  maxLevel: 6
+  notes: >-
+    Poison HP Cut deals damage in the same way as other poisons.  
+
+    Poison Pink deals 20% of enemies' current HP in damage at the end of each turn and recovers 20% crew's MAX HP at the end of each turn. Poison Pink is derivative of Normal Poison, so it fulfills Poison Status ATK Boosts and is affected by Poison Debuff Immunity.

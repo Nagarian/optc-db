@@ -1,0 +1,49 @@
+type: DEX
+name: Kumadori World Government Spy Group
+japanName: クマドリ 世界政府直下暗躍諜報機関
+family:
+  - Kumadori
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 84
+    atk: 35
+    rcv: 32
+  maxLvl:
+    hp: 1707
+    atk: 803
+    rcv: 277
+cost: 20
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 34498
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Striker characters by 1.5x
+special:
+  name: "Lack of Pure Chi: Lion Finger Gun Sneak Attack"
+  description: Randomizes all orbs, including [BLOCK] orbs, into either [STR],
+    [DEX], [QCK], [PSY], or [INT] orbs
+  cooldown: 15
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Kalifa, Rob Lucci, Kaku, Jabra, Fukuro, Blueno and Spandam
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12

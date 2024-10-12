@@ -1,0 +1,149 @@
+type: QCK
+name: Soba Mask
+japanName: おそばマスク
+family:
+  - VinsmokeSanji
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1732
+    atk: 834
+    rcv: 165
+  maxLvl:
+    hp: 3622
+    atk: 1597
+    rcv: 264
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 181109
+aliases:
+  - Wano Sanji
+  - Black Ranger
+  - Sanji Black
+  - Sobamask
+  - V3 Legend Sanji
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of all characters by 3.5x, boosts chances of
+    getting [TND] orbs, and makes [TND] orbs beneficial for all characters. If a
+    character has a [TND] orb, boosts their ATK by 4.25x instead.
+  notes: Sanji Captain Action lasts for 3 turns and can be reactivated after 6 turns.
+special:
+  name: Assault! O-Soba Mask
+  description: Changes all orbs, including [BLOCK] orbs, into [TND] orbs and
+    boosts ATK of all characters by 1.75x for 1 turn. If "Fire! Soba Mask" is
+    used again in the same turn the special is activated in, boosts ATK of all
+    characters by 2.5x for 1 turn.
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 4 turns
+support:
+  type: descriptive
+  criteria: Franky and Usopp
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - hp: 20
+    - type: potential
+    - hp: 20
+    - rcv: 5
+    - atk: 10
+    - atk: 10
+    - atk: 20
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - rcv: 10
+    - hp: 40
+    - atk: 30
+    - hp: 40
+    - rcv: 10
+    - rcv: 15
+    - atk: 30
+    - rcv: 20
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - hp: 60
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 20
+    - hp: 50
+    - atk: 100
+    - hp: 100
+    - rcv: 20
+    - hp: 100
+    - atk: 100
+    - captain:
+        description: >-
+          Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of all characters by 3.5x, greatly boosts
+          chances of getting [TND] orbs and makes [TND] orbs beneficial for all
+          characters. If a character has a [TND] orb, boosts their ATK by 4.25x
+          instead.  
+
+          **Action:** Sanji becomes Transparent and prevents all debuffs to himself (including, but not limited to, Bind, Despair, Silence, Slot Bind, Special Rewind, and Paralysis), makes own normal attacks ignore defense, damage reducing Barriers and Buffs, and adds 500x character's ATK as Additional Typeless Damage to own's attacks.
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 35
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

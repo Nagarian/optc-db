@@ -1,0 +1,123 @@
+type: STR
+name: Reiju - Celebrate the Fabulous Cruise
+japanName: レイジュ The 7th Anniversary Cruise
+family:
+  - VinsmokeReiju
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1253
+    atk: 828
+    rcv: 83
+  maxLvl:
+    hp: 2784
+    atk: 1380
+    rcv: 276
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 276695
+aliases:
+  - Wano
+  - Anniversary
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x and their HP by 1.2x.
+special:
+  name: Having a Voluptuous Time
+  description: Reduces enemies' Percent Damage Reduction and Increased Defense
+    duration by 5 turns, changes [EMPTY], [BLOCK] and [BOMB] orbs into Matching
+    orbs, recovers 30% of crew's MAX HP and increases duration of any Orb
+    Amplification buffs by 1 turn.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of [STR] characters by 50
+  - description: Makes [STR] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: "[STR] characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts Orb Effects of [STR] characters by 1.1x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts Orb Effects of [STR] characters by 1.1x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts Orb Effects of [STR] characters by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts Orb Effects of [STR] characters by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes the orb of the supported character into a
+      Matching orb and boosts Orb Effects of [STR] characters by 1.3x for 1
+      turn.
+limitBreak:
+  path:
+    - rcv: 25
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

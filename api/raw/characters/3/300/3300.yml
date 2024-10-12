@@ -1,0 +1,480 @@
+type: DUAL
+name: Firetank Pirates - Gang Protecting His Family
+japanName: ファイアタンク海賊団 家族守るギャング
+family:
+  - CaponeBege
+  - CharlotteChiffon
+  - Vito
+  - Gotti
+class:
+  - Shooter
+  - Driven
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1685
+    atk: 921
+    rcv: 151
+  maxLvl:
+    hp: 4181
+    atk: 1600
+    rcv: 345
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+  - inkable
+links:
+  gamewithId: 270106
+aliases:
+  - Legend Capone Bege Crew
+  - FireTank
+  - Charlotte Chiffon
+  - Vito
+  - Gotti
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Shooter and Driven characters by 5x, their HP by
+    1.3x, reduces damage received by 60%, recovers 5x character's RCV in HP at
+    the end of each turn, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs
+    beneficial for Shooter and Driven characters and makes crew immune to Blow
+    Away.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x, their HP by 1.3x, reduces damage received by 60%, recovers 5x character's RCV in HP at the end of each turn, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters and makes crew immune to Blow Away.
+special:
+  name: Coordinated-Bonding Shooting
+  description: Reduces Silence duration by 5 turns, reduces enemies' Percent
+    Damage Reduction and Threshold Damage Reduction duration by 5 turns, changes
+    [BLOCK], [RCV], [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching
+    orbs, barriers Shooter and Driven character's orbs for 1 PERFECT hit, boosts
+    ATK of Shooter and Driven characters by 2.5x for 2 turns and becomes Fire
+    Tank Pirates for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter and Driven characters by 100
+  - description: Reduces Silence duration completely on this character
+characters:
+  swap:
+    description: Removes Silence duration completely on this character, reduces
+      damage received by 25% for 1 turn, recovers 5% of crew's MAX HP and
+      changes orb of this character into a Matching orb.
+  character1:
+    name: Capone Bege - Gang Protecting His Family
+    japanName: ファイアタンク海賊団 家族守るギャング
+    class:
+      - Shooter
+      - Driven
+    type: DEX
+    stats:
+      combo: 6
+      minLvl:
+        hp: 1685
+        atk: 921
+        rcv: 151
+      maxLvl:
+        hp: 4650
+        atk: 1899
+        rcv: 467
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter and Driven characters by 3.75x, but boosts
+        ATK of this character by 4.5x, their HP by 1.3x, reduces damage received
+        by 20%, makes [PSY], [DEX] and [QCK] orbs beneficial for Shooter and
+        Driven characters and makes crew immune to Blow Away.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Shooter and Driven characters by 50
+      - description: Reduces Silence duration completely on this character
+  character2:
+    name: Vito & Gotti & Chiffon - Gang Protecting His Family
+    japanName: ファイアタンク海賊団 家族守るギャング
+    class:
+      - Shooter
+      - Driven
+    type: PSY
+    stats:
+      combo: 6
+      minLvl:
+        hp: 1685
+        atk: 921
+        rcv: 151
+      maxLvl:
+        hp: 4650
+        atk: 1841
+        rcv: 486
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter and Driven characters by 4.25x, their HP by
+        1.3x, recovers 3x character's RCV in HP at the end of each turn, makes
+        [PSY], [DEX] and [STR] orbs beneficial for Shooter and Driven characters
+        and makes crew immune to Blow Away.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Shooter and Driven characters by 100
+      - description: Reduces Silence duration completely on this character
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - hp: 50
+    - hp: 100
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - rcv: 15
+    - rcv: 30
+    - hp: 100
+    - hp: 150
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 295
+    rumbleType: DEF
+    spd: 125
+  target:
+    comparator: highest
+    criteria: DEF
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 250
+      interval: 5
+      type: healing
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+              - Driven
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+              - Driven
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+              - Driven
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+        - override:
+            level: 1
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 500
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Blow Away
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 1.1
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 600
+        - override:
+            duration: 12
+            level: 1
+        - override:
+            amount: 1.24
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 700
+        - override:
+            duration: 13
+            level: 1
+        - override:
+            amount: 1.38
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 800
+        - override:
+            duration: 14
+            level: 2
+        - override:
+            amount: 1.52
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 900
+        - override:
+            duration: 15
+            level: 2
+        - override:
+            amount: 1.66
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            duration: 16
+            level: 3
+        - override:
+            amount: 1.8
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            duration: 17
+            level: 3
+        - override:
+            amount: 1.94
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            duration: 18
+            level: 3
+        - override:
+            amount: 2.08
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            duration: 19
+            level: 4
+        - override:
+            amount: 2.22
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            duration: 20
+            level: 5
+        - override:
+            amount: 2.5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

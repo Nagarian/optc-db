@@ -1,0 +1,214 @@
+type: DEX
+name: Dracule Mihawk
+japanName: ジュラキュール・ミホーク
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 324
+    atk: 201
+    rcv: 1
+  maxLvl:
+    hp: 1998
+    atk: 814
+    rcv: 7
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 4143
+aliases:
+  - Raidhawk
+  - Raid Mihawk
+  - Hawk
+evolution:
+  - id: 227
+    evolvers:
+      - 118
+      - 83
+      - 86
+      - 86
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x
+special:
+  name: Black Blade Ship Cutter
+  description: Deals 30% of enemies' current HP in damage to all enemies
+  cooldown: 32
+  maxLevel: 16
+rumble:
+  stats:
+    def: 126
+    rumbleType: ATK
+    spd: 158
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Slasher
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 31
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 32
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 33
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 35
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 36
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 37
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 39
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 40
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 26
+      effects:
+        - amount: 43
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut

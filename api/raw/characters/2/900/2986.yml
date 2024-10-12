@@ -1,0 +1,116 @@
+type: DEX
+name: '"Red Flag" X Drake - Former Drake Pirates'
+japanName: “赤旗”X・ドレーク 元ドレーク海賊団
+family:
+  - XDrake
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1137
+    atk: 780
+    rcv: 135
+  maxLvl:
+    hp: 2848
+    atk: 1399
+    rcv: 259
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 205049
+aliases:
+  - Dies Drake
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.5x and their HP by 1.25x.
+special:
+  name: Heavy Attack Allosaurus
+  description: Deals 50x character's ATK in [DEX] damage to one enemy, reduces
+    Chain Multiplier Limit and Chain Coefficient Reduction duration by 5 turns
+    and locks all orbs for 1 turn. If your Captain is a [DEX] character, boosts
+    Orb Effects of [DEX] characters by 2.25x for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [DEX] characters by 50
+  - description: Makes [PSY] orbs beneficial for [DEX] characters
+support:
+  type: descriptive
+  criteria: Page One, Kaido and Basil Hawkins
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces Chain Coefficient Reduction duration by 1 turn on the
+      supported character.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces Chain Coefficient Reduction duration by 1 turn on the
+      supported character.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      and Chain Coefficient Reduction, reduces Chain Multiplier Limit and Chain
+      Coefficient Reduction duration by 1 turn on the supported character.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      and Chain Coefficient Reduction, reduces Chain Multiplier Limit and Chain
+      Coefficient Reduction duration by 1 turn on the supported character.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      and Chain Coefficient Reduction, reduces Chain Multiplier Limit and Chain
+      Coefficient Reduction duration by 2 turns on the supported character.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - atk: 20
+    - slot: 1
+    - atk: 30
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

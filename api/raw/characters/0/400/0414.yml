@@ -1,0 +1,87 @@
+type: INT
+name: Gecko Moria - Warlord of the Sea
+japanName: ゲッコー・モリア 王下七武海
+family:
+  - GeckoMoria
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1845
+    atk: 612
+    rcv: 33
+  maxLvl:
+    hp: 3900
+    atk: 1120
+    rcv: 118
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 9033
+aliases:
+  - Gekko Moriah Warlord of the Sea
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 3x if HP is above 99% at the
+    start of the turn
+special:
+  name: Doppelman
+  description: Changes [STR] and [DEX] orbs into [INT] orbs
+  cooldown: 20
+  maxLevel: 11
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Hogback, Perona and Absalom
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 10
+    - hp: 30
+    - type: potential
+    - atk: 30
+    - atk: 50
+    - atk: 80
+    - hp: 70
+    - slot: 1
+    - atk: 100
+    - type: sailor
+    - atk: 210
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

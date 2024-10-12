@@ -1,0 +1,356 @@
+type: STR
+name: Rob Lucci - CP9 Dark Justice
+japanName: ロブ・ルッチ 闇の正義の「ＣＰ９」
+family:
+  - RobLucci
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 496
+    atk: 300
+    rcv: 89
+  maxLvl:
+    hp: 1656
+    atk: 800
+    rcv: 245
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 16960
+aliases:
+  - V1 Legend Lucci
+evolution:
+  - id: 748
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x, by 3x instead if they
+    have a beneficial orb, reduces crew's RCV to 0
+special:
+  name: Rokuougan
+  description: Deals 35x character's ATK in [STR] damage to one enemy, boosts
+    chances of getting Matching orbs for 3 turns
+  cooldown: 25
+  maxLevel: 11
+rumble:
+  stats:
+    def: 99
+    rumbleType: ATK
+    spd: 189
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          effect: buff
+          level: 10
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          effect: buff
+          level: 11
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          effect: buff
+          level: 12
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          effect: buff
+          level: 13
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          effect: buff
+          level: 15
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 2400
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 2575
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 2750
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 2925
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 3100
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 3275
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 3450
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 3625
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 3800
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - amount: 4100
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

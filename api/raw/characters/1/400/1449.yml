@@ -1,0 +1,47 @@
+type: DEX
+name: Violet - Dancer Girl
+japanName: ヴァイオレット 踊り娘
+family:
+  - Viola
+class:
+  - Fighter
+  - Cerebral
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 88
+    atk: 43
+    rcv: 89
+  maxLvl:
+    hp: 804
+    atk: 403
+    rcv: 234
+cost: 13
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 50898
+aliases:
+  - Viola
+evolution:
+  - id: 1450
+    evolvers:
+      - 116
+      - 80
+      - 86
+      - 91
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.5x. Recovers 0.3x
+    character's RCV at the end of the turn each time you hit a Great.
+special:
+  name: Clairvoyance
+  description: Reduces the defense of all enemies by 50% for 1 turn and if HP is
+    below 50%, randomizes all orbs into either [RCV] or [TND] orbs
+  cooldown: 22
+  maxLevel: 9

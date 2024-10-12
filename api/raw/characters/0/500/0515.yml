@@ -1,0 +1,388 @@
+type: PSY
+name: Heracles-un
+japanName: ヘラクレスン
+family:
+  - Heraclesn
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 330
+    atk: 89
+    rcv: 34
+  maxLvl:
+    hp: 1698
+    atk: 569
+    rcv: 160
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 11960
+aliases:
+  - Raid Heracles-un
+  - Raid Heracles
+evolution:
+  - id: 516
+    evolvers:
+      - 118
+      - 87
+      - 266
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of Shooter characters by 1.5x
+special:
+  name: Pop Green
+  description: Changes all orbs of left column characters into [INT], [PSY] and
+    [RCV] orbs, changes all orbs of right column characters into [STR], [DEX]
+    and [QCK] orbs, switches orbs between slots 3 times and locks all orbs for 1
+    turn
+  cooldown: 24
+  maxLevel: 14
+  notes: "The special is not based on chance; the orbs are always changed with the
+    same pattern. Starting from the top left orb and proceeding clockwise, after
+    the special is used the orbs will be: [INT], [STR], [DEX], [QCK], [RCV] and
+    [PSY]"
+rumble:
+  stats:
+    def: 143
+    rumbleType: DBF
+    spd: 145
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 1050
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1150
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1250
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1350
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1450
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 19
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1550
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1650
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 21
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1750
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 22
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1850
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 23
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 2050
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 25
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies

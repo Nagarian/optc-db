@@ -1,0 +1,52 @@
+type: DEX
+name: Charlotte Oven
+japanName: シャーロット・オーブン
+family:
+  - CharlotteOven
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 190
+    atk: 165
+    rcv: 20
+  maxLvl:
+    hp: 1340
+    atk: 830
+    rcv: 90
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 107231
+aliases:
+  - ""
+evolution:
+  - id: 2121
+    evolvers:
+      - 86
+      - 86
+      - 266
+      - 94
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Fighter characters by 1.5x and reduces
+    damage received by ?%
+  notes: The bonus is cumulative. Powerhouse + Fighter characters get a 2.25x bonus
+special:
+  name: Grilled Scorch Blow
+  description: If enemies are delayed at the time the special was activated,
+    boosts ATK of Fighter, Striker, Shooter, Cerebral and Powerhouse characters
+    by 2x for 1 turn, boosts Fighter and Powerhouse characters by 1.75x for 3
+    turns otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts this character's damage against [STR] characters by 2x

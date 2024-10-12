@@ -1,0 +1,236 @@
+type: PSY
+name: Sanji - Cook Entering Battle
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1593
+    atk: 777
+    rcv: 101
+  maxLvl:
+    hp: 3186
+    atk: 1554
+    rcv: 201
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - RED Secret Limited TM Treasure Map
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and Fighter characters by 3x, boost HP of [PSY]
+    and Fighter characters by 1.2x and makes [RCV] and [TND] orbs beneficial for
+    all characters.
+special:
+  name: Breakthrough Diable Jambe Concasser
+  description: Reduces Despair and ATK DOWN duration by 4 turns, changes orbs of
+    adjacent characters into Matching orbs and adds 1.1x to Chain Multiplier for
+    1 turn. If HP is above 51% at the time the special is activated, reduces
+    crew's current HP by 50% crew's MAX HP and reduces Special Cooldown of this
+    character by 6 turns.
+  cooldown: 19
+  maxLevel: 7
+  stages:
+    - description: Reduces Despair and ATK DOWN duration by 2 turns, changes the orb
+        of this character into a Matching orb and adds 0.75x to Chain Multiplier
+        for 1 turn.
+      cooldown: 13
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 75
+  - description: Makes [RCV] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: "[PSY] Fighter characters"
+  levels:
+    - Once per adventure, when you reach the final stage, adds 0.1x to Chain
+      Multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.15x to Chain
+      Multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.2x to Chain
+      Multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.25x to Chain
+      Multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.3x to Chain
+      Multiplier for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 25
+    - hp: 25
+    - atk: 50
+    - type: potential
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - atk: 30
+    - slot: 1
+    - cooldown: 1
+    - rcv: 25
+    - hp: 50
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 113
+    rumbleType: ATK
+    spd: 162
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+        - amount: 300
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          repeat: 2
+          type: fixed
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 400
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 500
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 600
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 700
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 800
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 900
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1000
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 1100
+    - cooldown: 29
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1200

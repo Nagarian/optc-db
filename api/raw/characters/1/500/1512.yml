@@ -1,0 +1,52 @@
+type: STR
+name: Kingdew - Whitebeard's Eleventh Division Commander
+japanName: キングデュー 白ひげ海賊団１１番隊隊長
+family:
+  - Kingdew
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 45
+    atk: 60
+    rcv: 26
+  maxLvl:
+    hp: 2119
+    atk: 1311
+    rcv: 160
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 52635
+aliases:
+  - Heman
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2x
+special:
+  name: Enlightened Spirit
+  description: Removes Poison duration completely, boosts ATK of Powerhouse
+    characters by 1.5x for 1 turn if HP is below 30%
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [RCV] orbs beneficial for this character if your Captain is a
+      Powerhouse character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Haruta, Speed Jil and Atmos
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8

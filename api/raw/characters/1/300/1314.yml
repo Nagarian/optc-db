@@ -1,0 +1,385 @@
+type: STR
+name: Sakazuki
+japanName: サカズキ
+family:
+  - Sakazuki
+class:
+  - Driven
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1642
+    atk: 835
+    rcv: 32
+  maxLvl:
+    hp: 3500
+    atk: 1600
+    rcv: 99
+cost: 55
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 43909
+aliases:
+  - V1 Legend Akainu
+evolution:
+  - id: 2578
+    evolvers:
+      - skullSTR
+      - 118
+      - 95
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x. If a character has a [STR]
+    orb, boosts their ATK by 3.9375x instead. Boosts chances of getting [STR]
+    orbs
+  notes: If a character has a [STR] orb, regardless of Type, they will have a
+    3.9375x ATK boost
+special:
+  name: Meteor Volcano
+  description: Deals 125x character's ATK in Typeless damage to all enemies and
+    randomizes non-[STR] orbs. Boosts ATK of Cost 50 or higher characters by
+    1.75x for 2 turns
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: Boosts this character's damage against [QCK] characters by 2x
+support:
+  type: descriptive
+  criteria: "[STR] characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orbs of the supported character into a
+      [STR] orb and boosts ATK of [STR] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orbs of the supported character into a
+      [STR] orb and boosts ATK of [STR] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orbs of the supported character into a
+      [STR] orb and boosts ATK of [STR] characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orbs of the supported character into a
+      [STR] orb and boosts ATK of [STR] characters by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes all orbs into [STR] orbs and boosts ATK of
+      [STR] characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - hp: 40
+    - hp: 40
+    - hp: 40
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 20
+    - rcv: 20
+    - slot: 1
+    - hp: 60
+    - hp: 60
+    - hp: 60
+    - atk: 25
+    - atk: 25
+    - atk: 30
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 2
+        - value: 80
+          reduction: 2
+        - value: 100
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 188
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 100
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 600
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1150
+          effect: damage
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 2000
+          effect: damage
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 625
+        - override:
+            amount: 1200
+        - override:
+            amount: 2050
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 650
+        - override:
+            amount: 1250
+        - override:
+            amount: 2100
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 675
+        - override:
+            amount: 1300
+        - override:
+            amount: 2150
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 700
+        - override:
+            amount: 1350
+        - override:
+            amount: 2200
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 725
+        - override:
+            amount: 1400
+        - override:
+            amount: 2250
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 750
+        - override:
+            amount: 1450
+        - override:
+            amount: 2300
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 775
+        - override:
+            amount: 1500
+        - override:
+            amount: 2350
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 800
+        - override:
+            amount: 1550
+        - override:
+            amount: 2400
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            amount: 1650
+        - override:
+            amount: 2600
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

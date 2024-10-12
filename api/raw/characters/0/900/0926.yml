@@ -1,0 +1,93 @@
+type: QCK
+name: Security Chief Miss Sadie - Jailer Beasts Commander
+japanName: 獄卒長サディちゃん 獄卒獣の指揮官
+family:
+  - Sadie
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 920
+    atk: 488
+    rcv: 159
+  maxLvl:
+    hp: 1901
+    atk: 912
+    rcv: 357
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 24018
+aliases:
+  - Colo Sadie
+  - Coliseum Sadie
+  - Secuurity Chief Sadie-chan
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x
+special:
+  name: Let's go, Jailer Beasts!
+  description: Deals 15x character's ATK in [QCK] damage to one enemy, boosts ATK
+    against enemies with reduced defense by 1.3x for 3 turns
+  cooldown: 22
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: If your Captain is a Free Spirit or Striker character, removes
+      Blindness duration completely
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Hannyabal and Magellan
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - hp: 70
+    - rcv: 50
+    - cooldown: 4
+    - hp: 110
+    - type: sailor
+    - slot: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1.5
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 2
+          threshold: 50

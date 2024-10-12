@@ -1,0 +1,106 @@
+type: INT
+name: Nico Robin - Flame of the Revolution
+japanName: ニコ・ロビン 革命の灯火（ともしび）
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 946
+    atk: 593
+    rcv: 178
+  maxLvl:
+    hp: 2011
+    atk: 1156
+    rcv: 400
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 23380
+aliases:
+  - 3D2Y Robin
+  - Timeskip Robin
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x and their RCV by 1.75x if
+    HP is below 30% at the start of the turn
+special:
+  name: "Cien Fleur: Big Tree"
+  description: Delays all enemies by 1 turn, locks all orbs for 1 turn, deals
+    5,000 Fixed damage to all enemies, reduces crew's current HP to 1
+  cooldown: 15
+  maxLevel: 7
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      Cerebral characters by 40
+  - description: Makes RCV and [PSY] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Franky and Brook
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 1
+    - hp: 20
+    - hp: 40
+    - type: potential
+    - rcv: 30
+    - atk: 40
+    - atk: 40
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 40
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 4
+        - value: 6
+        - value: 9
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

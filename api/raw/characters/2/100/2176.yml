@@ -1,0 +1,139 @@
+type: QCK
+name: The Cat Viper
+japanName: ネコマムシの旦那
+family: []
+class:
+  - Striker
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 408
+    atk: 264
+    rcv: 24
+  maxLvl:
+    hp: 1020
+    atk: 660
+    rcv: 60
+cost: 13
+slots: 3
+maxExp: 130703
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 114149
+aliases:
+  - FN Cat Viper
+  - FN Catviper
+  - FN Nekomamushi
+evolution:
+  - id: 2177
+    evolvers:
+      - 117
+      - 79
+      - 85
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: Cat Toy
+  description: Reduces Bind duration by 2 turns and changes the orb of this
+    character into a [QCK] orb. If your Captain is a Striker character, adds
+    0.5x to Chain multiplier for 2 turns.
+  cooldown: 20
+  maxLevel: 7
+rumble:
+  stats:
+    def: 229
+    rumbleType: DEF
+    spd: 106
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 17
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 11
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 12
+            level: 2
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 13
+            level: 2
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 14
+            level: 3
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 15
+            level: 3
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 16
+            level: 4
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 17
+            level: 4
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 18
+            level: 5
+    - cooldown: 17
+      effects:
+        - override:
+            duration: 20
+            level: 6

@@ -1,0 +1,49 @@
+type: STR
+name: Curiel - Whitebeard's Tenth Division Commander
+japanName: クリエル 白ひげ海賊団１０番隊隊長
+family:
+  - Curiel
+class:
+  - Shooter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 33
+    atk: 39
+    rcv: 30
+  maxLvl:
+    hp: 1706
+    atk: 1251
+    rcv: 212
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 25018
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.5x and their RCV by 1.2x
+special:
+  name: Twin Cannons
+  description: Randomizes all orbs into either [STR] or [INT]. Deals random [STR] damage
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 7,000 : 18,000`"
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

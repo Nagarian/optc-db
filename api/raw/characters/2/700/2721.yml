@@ -1,0 +1,97 @@
+type: DEX
+name: Hody Jones - Monster Made from Hatred
+japanName: ホーディ・ジョーンズ 怨念が作り上げたバケモノ
+family:
+  - HodyJones
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1603
+    atk: 700
+    rcv: 70
+  maxLvl:
+    hp: 2950
+    atk: 1465
+    rcv: 220
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 170375
+aliases:
+  - Coliseum Hody Jones
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Powerhouse and Striker characters by 2.75x and
+    reduces crew's RCV to 0.
+special:
+  name: Trident of Revenge
+  description: Deals 20% of enemies' current HP in damage to one enemy and reduces
+    Bind, Despair and Silence duration by 5 turns.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK and HP of Striker and Powerhouse characters by 50
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Hyouzou, Ikaros Much, Daruma, Zeo and Dosun
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - hp: 30
+    - type: sailor
+    - cooldown: 1
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - cooldown: 1
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 50
+        - value: 5
+          threshold: 70
+        - value: 7
+          threshold: 80

@@ -1,0 +1,396 @@
+type: DEX
+name: Hiyori - Princess Enjoying Fireworks at Night
+family:
+  - KozukiHiyori
+class:
+  - Cerebral
+  - Slasher
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1605
+    atk: 736
+    rcv: 213
+  maxLvl:
+    hp: 3210
+    atk: 1472
+    rcv: 425
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Summer Yukata Legend
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [STR] characters by 5x, by 5.25x if they
+    have a [WANO] orb, boosts HP of [DEX] and [STR] characters by 1.25x,
+    recovers 0.5x this character's RCV at the end of the turn for each time you
+    hit a PERFECT and reduces damage received by 15%.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: 6
+    Slasher or Cerebral characters, excluding Support members."
+  description: Reduces Special Cooldown of Slasher and Cerebral characters by 1
+    turn, reduces enemies' Resilience duration by 7 turns and transforms all
+    [DEX] characters into Super [DEX] characters.
+special:
+  name: Genuine Smile
+  description: Changes all orbs, including [BLOCK] orbs, into [WANO] orbs, locks
+    all orbs for 1 turn, reduces Bind, Despair and Chain Coefficient Reduction
+    duration by 7 turns and recovers 50x character's RCV in HP.
+  cooldown: 20
+  maxLevel: 6
+  stages:
+    - description: Changes adjacent orbs, including [BLOCK] orbs, into [WANO] orbs,
+        reduces Bind, Despair and Chain Coefficient Reduction duration by 3
+        turns and recovers 20x character's RCV in HP.
+      cooldown: 15
+sailor:
+  - description: Changes all orbs into [WANO] orbs at the start of the fight
+  - description: If this character has a [WANO] orb and you attack with this
+      character, reduces enemies' Slasher and Cerebral Resistance by -15% for 1
+      turn.
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Kinemon, Kozuki Momonosuke, Toko, Kozuki Oden, Denjiro,
+    Kozuki Toki
+  levels:
+    - Once per adventure, when you reach the final stage, changes orbs of the
+      supported character into a [WANO] orb and recovers 500 HP
+    - Once per adventure, when you reach the final stage, changes orbs of the
+      supported character into a [WANO] orb and recovers 800 HP
+    - Once per adventure, when you reach the final stage, changes orbs of the
+      supported character into a [WANO] orb and recovers 1,200 HP
+    - Once per adventure, when you reach the final stage, changes orbs of the
+      supported character into a [WANO] orb and recovers 1,500 HP
+    - Once per adventure, when you reach the final stage, changes orbs of the
+      supported character into a [WANO] orb and recovers 2,000 HP
+limitBreak:
+  path:
+    - hp: 20
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 20
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - hp: 30
+    - type: sailor
+    - hp: 40
+    - atk: 20
+    - hp: 50
+    - atk: 30
+    - type: potential
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 20
+    - atk: 20
+    - hp: 60
+    - hp: 70
+    - atk: 30
+    - hp: 80
+    - rcv: 20
+    - type: sailor
+    - rcv: 20
+    - atk: 30
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 20
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 200
+    - hp: 200
+    - rcv: 30
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+rumble:
+  stats:
+    def: 132
+    rumbleType: SPT
+    spd: 148
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Counter
+          effect: boon
+          amount: 0.2
+          duration: 15
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+            - SPD
+          duration: 11
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Cerebral
+        - duration: 6
+          effect: damage
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            duration: 12
+        - override:
+            duration: 7
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 4
+            duration: 13
+        - override:
+            duration: 8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            duration: 9
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 5
+            duration: 16
+        - override:
+            level: 2
+            duration: 11
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 6
+            duration: 17
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 6
+            duration: 18
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 7
+            duration: 19
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 8
+            duration: 20
+        - override:
+            level: 3
+            duration: 15
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

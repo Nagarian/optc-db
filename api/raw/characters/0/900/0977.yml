@@ -1,0 +1,119 @@
+type: QCK
+name: Kizaru
+japanName: 黄猿
+family:
+  - Borsalino
+class:
+  - Shooter
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 221
+    atk: 169
+    rcv: 36
+  maxLvl:
+    hp: 1241
+    atk: 741
+    rcv: 160
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 25111
+aliases:
+  - Raid Borsalino
+  - Raid Kizaru
+evolution:
+  - id: 978
+    evolvers:
+      - 118
+      - 85
+      - 266
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x
+special:
+  name: Yata no Kagami (Sacred Mirror)
+  description: Changes the orb of this character into a [QCK] orb. Reduces Special
+    Cooldown of Shooter and Fighter characters by 1 turn. Adds 0.5x to Chain
+    multiplier for 2 turns
+  cooldown: 25
+  maxLevel: 15
+  stages:
+    - description: Changes the orb of this character into a [QCK] orb. Reduces Special
+        Cooldown of Shooter and Fighter characters by 1 turn
+      cooldown: 19
+rumble:
+  stats:
+    def: 159
+    rumbleType: SPT
+    spd: 225
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+              - Fighter
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 21
+      effects:
+        - amount: 15
+          effect: recharge
+          targeting:
+            targets:
+              - Shooter
+              - Fighter
+          type: Special CT
+    - cooldown: 20
+      effects: []
+    - cooldown: 19
+      effects: []
+    - cooldown: 18
+      effects: []
+    - cooldown: 17
+      effects: []
+    - cooldown: 16
+      effects: []
+    - cooldown: 15
+      effects: []
+    - cooldown: 14
+      effects: []
+    - cooldown: 13
+      effects: []
+    - cooldown: 12
+      effects: []

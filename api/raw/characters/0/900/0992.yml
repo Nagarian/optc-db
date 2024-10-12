@@ -1,0 +1,45 @@
+type: QCK
+name: Gladius
+japanName: グラディウス
+family:
+  - Gladius
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 102
+    atk: 161
+    rcv: 32
+  maxLvl:
+    hp: 1079
+    atk: 813
+    rcv: 154
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 26627
+aliases: []
+evolution:
+  - id: 993
+    evolvers:
+      - 118
+      - 83
+      - 85
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x
+special:
+  name: Punk Rock Fest
+  description: Deals 20% of enemies' current HP in damage to all enemies and
+    changes the orb of this character into a [QCK] orb
+  cooldown: 20
+  maxLevel: 6

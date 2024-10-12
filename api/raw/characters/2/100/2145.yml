@@ -1,0 +1,172 @@
+type: STR
+name: Rebecca - Beautiful Gladiator Wishing for Power
+japanName: レベッカ 力を望む美少女剣闘士
+family:
+  - Rebecca
+class:
+  - Striker
+  - Slasher
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 271
+    atk: 102
+    rcv: 24
+  maxLvl:
+    hp: 882
+    atk: 603
+    rcv: 152
+cost: 13
+slots: 3
+maxExp: 130703
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 109805
+aliases:
+  - ""
+evolution:
+  - id: 2146
+    evolvers:
+      - 117
+      - 78
+      - 84
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 1.5x and their HP by 1.2x
+special:
+  name: A Moment of Determination
+  description: Reduces enemies' Threshold Damage Reduction duration by 2 turns and
+    reduces any damage received above 3,000 HP by 80% for 2 turns
+  cooldown: 18
+  maxLevel: 7
+rumble:
+  stats:
+    def: 180
+    rumbleType: DEF
+    spd: 104
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+              - Striker
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 21
+      effects:
+        - attributes:
+            - Guard
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Critical Hit
+          duration: 10
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 12
+            level: 3
+        - override:
+            duration: 12
+            level: 3
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 13
+            level: 3
+        - override:
+            duration: 13
+            level: 3
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 14
+            level: 4
+        - override:
+            duration: 14
+            level: 4
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 15
+            level: 5
+        - override:
+            duration: 15
+            level: 5
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 16
+            level: 5
+        - override:
+            duration: 16
+            level: 5
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 17
+            level: 6
+        - override:
+            duration: 17
+            level: 6
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 18
+            level: 7
+        - override:
+            duration: 18
+            level: 7
+    - cooldown: 21
+      effects:
+        - override:
+            duration: 19
+            level: 8
+        - override:
+            duration: 19
+            level: 8

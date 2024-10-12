@@ -1,0 +1,40 @@
+type: STR
+name: Hody Jones - Awakened
+japanName: ホーディ・ジョーンズ 覚醒
+family:
+  - HodyJones
+class:
+  - Powerhouse
+  - Shooter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 1014
+    atk: 494
+    rcv: 29
+  maxLvl:
+    hp: 2741
+    atk: 1294
+    rcv: 104
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 52490
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Powerhouse characters by 2.25x, by 2.5x instead
+    if HP is below 30% at the start of the turn
+special:
+  name: Shark Arrows
+  description: Deals 15x character's ATK in [STR] True damage to all enemies,
+    makes PERFECTs harder to hit for 1 turn, reduces crew's current HP by 90%,
+    boosts ATK of this character by 2.25x for 1 turn.
+  cooldown: 22
+  maxLevel: 8

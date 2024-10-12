@@ -1,0 +1,191 @@
+type: STR
+name: Marco - Blue Flame in the Paramount War
+japanName: マルコ 頂上戦争の蒼炎
+family:
+  - Marco
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 566
+    atk: 348
+    rcv: 57
+  maxLvl:
+    hp: 1416
+    atk: 870
+    rcv: 144
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 168135
+aliases:
+  - Limited Marco
+  - Secret Marco
+evolution:
+  - id: 2696
+    evolvers:
+      - 118
+      - 84
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x, by 2.5x instead if HP is
+    below 50% at the start of the turn.
+special:
+  name: Soaring Blue Flames
+  description: Reduces crew's current HP to 1, boosts the Color Affinity of
+    Powerhouse characters by 2x for 1 turn and removes Blindness, Poison, RCV
+    DOWN and No Healing duration completely
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 75
+rumble:
+  stats:
+    def: 113
+    rumbleType: SPT
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+    - attribute: Cerebral
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 20
+      effects:
+        - amount: 10
+          effect: recharge
+          type: Special CT
+          targeting:
+            count: 1
+            priority: lowest
+            stat: Special CT
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          duration: 16
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 12
+        - override:
+            duration: 17
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 14
+        - override:
+            duration: 18
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 22
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 26
+        - override:
+            level: 4
+            duration: 24
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 30
+        - override:
+            level: 5
+            duration: 25

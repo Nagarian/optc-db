@@ -1,0 +1,52 @@
+type: DEX
+name: Gin - Battle Commander of the Pirate Armada
+japanName: ギン 海賊艦隊　戦闘“総隊長”
+family:
+  - Gin
+class:
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 110
+    atk: 69
+    rcv: 32
+  maxLvl:
+    hp: 1228
+    atk: 801
+    rcv: 191
+cost: 20
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 48804
+aliases:
+  - Colo Gin
+  - Coliseum Gin
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 1x-2.25x depending on the
+    crew's current HP
+  notes: "`captainProportional : higher : 1 + 1.25 * (remaining HP) / (total HP) :
+    2.25 : 1`"
+special:
+  name: General Commander's Fight
+  description: Deals 500 Fixed damage to all enemies and reduces Special Cooldown
+    of Striker characters by 1 turn.
+  cooldown: 16
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Krieg
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

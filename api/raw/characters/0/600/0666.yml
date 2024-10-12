@@ -1,0 +1,49 @@
+type: QCK
+name: Koza - Sand-Sand Band Leader
+japanName: コーザ 砂砂団　リーダー
+family:
+  - Koza
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 445
+    atk: 230
+    rcv: 123
+  maxLvl:
+    hp: 1000
+    atk: 503
+    rcv: 341
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 15150
+aliases:
+  - Young Koza
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.75x, reduces HP and RCV of all
+    characters by 80%
+special:
+  name: Let's Go! Suna Suna Clan!!
+  description: Changes the orb of this character into a [QCK] orb, boosts ATK
+    against enemies with reduced defense by 1.3x for 2 turns
+  cooldown: 19
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Nefertari Vivi
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

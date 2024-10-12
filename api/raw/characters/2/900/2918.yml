@@ -1,0 +1,54 @@
+type: STR
+name: "Diamante - Corrida Coliseum Finals: Battle Royale"
+japanName: ディアマンテ コリーダコロシアム決勝戦バトルロイヤル
+family:
+  - Diamante
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1300
+    atk: 515
+    rcv: 92
+  maxLvl:
+    hp: 3250
+    atk: 1288
+    rcv: 229
+cost: 1
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 196359
+aliases:
+  - Support Diamante
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 1.75x and their HP by 1.2x.
+special:
+  name: Carnage - Corrida Glaive
+  description: Boosts ATK of [STR] characters by 1.75x for 1 turn and changes
+    [BOMB] orbs into Matching orbs.
+  cooldown: 11
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: "[STR] Characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [TND] orbs of the supported character into
+      Matching orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [TND] orbs of the supported character into
+      Matching orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [TND] orbs into Matching orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [TND] and [RCV] orbs into Matching orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [TND], [RCV] and [BOMB] orbs into Matching
+      orbs.

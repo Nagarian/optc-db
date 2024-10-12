@@ -1,0 +1,116 @@
+type: DEX
+name: Baron Tamago - Pedro's Arch-Rival
+japanName: タマゴ男爵 ペドロの宿敵
+family:
+  - BaronTamago
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1054
+    atk: 878
+    rcv: 98
+  maxLvl:
+    hp: 2920
+    atk: 1267
+    rcv: 351
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 110394
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x, by 2.75x instead if they
+    have a beneficial orb
+special:
+  name: Legs Benedict
+  description: Deals 75x character's ATK in [DEX] Fixed True damage to one enemy.
+    If your Captain is a Fighter character, changes all orbs, including [BLOCK]
+    orbs, of Fighter characters into Matching orbs
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: When HP is above 50% at the start of the turn, boosts base ATK of
+      Fighter characters by 120
+  - description: Makes [DEX] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Charlotte Montd'Or and Pekoms
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 20
+    - rcv: 10
+    - type: potential
+    - hp: 30
+    - rcv: 10
+    - hp: 30
+    - hp: 40
+    - atk: 40
+    - slot: 1
+    - hp: 40
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - atk: 50
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 120
+          reduction: 2
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 5
+        - value: 7
+        - value: 100

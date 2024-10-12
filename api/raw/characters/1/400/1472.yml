@@ -1,0 +1,58 @@
+type: PSY
+name: Princess Shirahoshi
+japanName: しらほし姫
+family:
+  - Shirahoshi
+class:
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 433
+    atk: 131
+    rcv: 60
+  maxLvl:
+    hp: 1296
+    atk: 620
+    rcv: 286
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 52204
+aliases:
+  - V1 Legend Shirahoshi-hime
+evolution:
+  - id: 1473
+    evolvers:
+      - 118
+      - 266
+      - 98
+      - 267
+      - 303
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x, but boosts ATK of this
+    character by 1.125x, recovers 5x character's RCV in HP at the end of each
+    turn and if you don't attack with her, reduces damage received by 10% for
+    that turn.
+special:
+  name: Tears of Courage
+  description: Changes all orbs, including [BLOCK] orbs, into [RAINBOW] orbs,
+    recovers 100x character's RCV in HP.
+  cooldown: 22
+  maxLevel: 5
+  stages:
+    - description: Changes orbs, including [BLOCK] orbs, of adjacent characters into
+        [RAINBOW] orbs, recovers 9x character's RCV in HP.
+      cooldown: 13
+  notes: Rainbow orbs are the beneficial form of [BLOCK] orbs. They can not be
+    shuffled by you or your opponent. They count as beneficial orbs to any
+    character. They do not count as [STR] orbs for Sakazuki but do act like
+    Matching orbs for Black Clad Ace or Fujitora captain abilities.
+sailor:
+  - description: Changes all orbs into [RAINBOW] orbs at the start of the fight.

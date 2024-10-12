@@ -1,0 +1,49 @@
+type: STR
+name: Akainu
+japanName: 赤犬
+family:
+  - Sakazuki
+class:
+  - Driven
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 286
+    atk: 216
+    rcv: 0
+  maxLvl:
+    hp: 1618
+    atk: 816
+    rcv: 49
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 41278
+aliases:
+  - Raid Sakazuki
+  - Raid Akainu
+evolution:
+  - id: 1298
+    evolvers:
+      - 118
+      - 94
+      - 300
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x following a chain of [STR] >
+    [STR] > [STR] attacks no lower than Good
+special:
+  name: Great Eruption
+  description: Deals 50x character's ATK in [STR] damage to all enemies. Changes
+    orbs of [STR] characters into [STR] orbs. Boosts the Color Affinity of [STR]
+    characters by 1.75x for 1 turn
+  cooldown: 32
+  maxLevel: 16

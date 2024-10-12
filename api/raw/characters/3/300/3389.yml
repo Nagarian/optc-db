@@ -1,0 +1,275 @@
+type: DEX
+name: Kaido - Intercepting Dragon
+japanName: カイドウ 迎え撃つ龍
+family:
+  - Kaido
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1866
+    atk: 776
+    rcv: 56
+  maxLvl:
+    hp: 3731
+    atk: 1551
+    rcv: 111
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 286976
+aliases:
+  - TM Kaido
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.5x.
+special:
+  name: "Mow Down: Blast Breath"
+  description: Reduces enemies' Damage Nullification duration by 2 turns, changes
+    the orb, including [BLOCK] orbs, of this character into a [WANO] orb, boosts
+    ATK of this character by 3x for 1 turn and boosts Orb Effects of this
+    character by 3x for 1 turn.
+  cooldown: 34
+  maxLevel: 8
+  notes: This special can only be activated if 1 other special at most has been
+    activated this turn and removes the ability to activate more than 1 other
+    special this turn.
+sailor:
+  - description: Boosts base ATK of [DEX] characters by 75
+  - description: Reduces Silence duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Charlotte Linlin (Big Mom), King, Queen and Jack
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [DEX] characters by 2.75x.
+    - type: sailor
+    - hp: 10
+    - hp: 20
+    - hp: 30
+    - captain:
+        description: Boosts ATK of [DEX] characters by 3x.
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - atk: 30
+    - hp: 40
+    - captain:
+        description: Boosts ATK of [DEX] characters by 3.25x.
+    - cooldown: 2
+    - hp: 60
+    - hp: 70
+    - hp: 80
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of [DEX] characters by 3.5x.
+    - hp: 90
+    - hp: 100
+    - type: sailor
+    - atk: 40
+    - atk: 40
+    - rcv: 20
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [DEX] characters by 3.75x.
+    - rcv: 30
+    - rcv: 50
+    - captain:
+        description: Reduces Special Cooldown of [DEX] characters by 2 turns at the
+          start of the fight and boosts ATK of [DEX] characters by 4x.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 165
+    rumbleType: ATK
+    spd: 113
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 8
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 10
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          level: 1
+          effect: buff
+          targeting:
+            targets:
+              - self
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 0.9
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 1
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 1.1
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.2
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.3
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 1.4
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 1.5
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.6
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.8

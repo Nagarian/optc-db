@@ -1,0 +1,66 @@
+type: QCK
+name: Dagama - Tactician's Orders
+japanName: ダガマ 軍師の采配
+family:
+  - Dagama
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 798
+    atk: 734
+    rcv: 110
+  maxLvl:
+    hp: 2358
+    atk: 1244
+    rcv: 331
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 141974
+aliases:
+  - Support Dagama
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight and boosts ATK of Slasher and Driven characters by 2.25x
+special:
+  name: Tactician's Twin Blade Slash
+  description: Reduces Bind and ATK DOWN duration by 2 turns and boosts ATK of
+    Slasher and Driven characters by 1.5x for 1 turn.
+  cooldown: 10
+  maxLevel: 1
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Elizabello II, Chinjao, Sai, Ideo and Hajrudin
+  levels:
+    - description: boosts the supported character's ATK by 1.5x against Bartolomeo and
+        when the supported character hits a PERFECT, reduces enemies' End of
+        Turn Damage/Percent Cut duration by 5 turns.
+      value: 5
+    - description: boosts the supported character's ATK by 1.5x against Bartolomeo and
+        when the supported character hits a PERFECT, reduces enemies' End of
+        Turn Damage/Percent Cut duration by 5 turns.
+      value: 7
+    - description: boosts the supported character's ATK by 1.5x against Bartolomeo and
+        when the supported character hits a PERFECT, reduces enemies' End of
+        Turn Damage/Percent Cut duration by 5 turns.
+      value: 10
+    - description: boosts the supported character's ATK by 1.5x against Bartolomeo and
+        when the supported character hits a PERFECT, reduces enemies' End of
+        Turn Damage/Percent Cut duration by 5 turns.
+      value: 15
+    - description: boosts the supported character's ATK by 1.5x against Bartolomeo and
+        when the supported character hits a PERFECT, reduces enemies' End of
+        Turn Damage/Percent Cut duration by 5 turns.
+      value: 20

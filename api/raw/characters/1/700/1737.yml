@@ -1,0 +1,47 @@
+type: INT
+name: Trebol - Top Donquixote Family Officer
+japanName: トレーボル ドンキホーテファミリー最高幹部
+family:
+  - Trebol
+class:
+  - Cerebral
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 975
+    atk: 476
+    rcv: 97
+  maxLvl:
+    hp: 2540
+    atk: 1220
+    rcv: 120
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 66025
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.25x and their HP by 1.2x.
+    Reduces damage received by 10%
+special:
+  name: Sticky Sticky Burning Explosion
+  description: Delays all enemies by 1 turn and deals 20x character's ATK in [INT]
+    damage to all enemies at the end of the turn for 2 turns
+  cooldown: 19
+  maxLevel: 8
+support:
+  type: descriptive
+  criteria: Donquixote Doflamingo and Sugar
+  levels:
+    - Reduces damage received from [DEX] characters by 1%.
+    - Reduces damage received from [DEX] characters by 1%.
+    - Reduces damage received from [DEX] characters by 2%.
+    - Reduces damage received from [DEX] characters by 2%.
+    - Reduces damage received from [DEX] characters by 3%.

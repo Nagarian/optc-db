@@ -1,0 +1,48 @@
+type: INT
+name: Shiryu
+japanName: シリュウ
+family:
+  - Shiryu
+class:
+  - Driven
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 132
+    atk: 142
+    rcv: -300
+  maxLvl:
+    hp: 1244
+    atk: 689
+    rcv: -300
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 38770
+aliases:
+  - Shiliew
+evolution:
+  - id: 1276
+    evolvers:
+      - 118
+      - 88
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK and HP of Slasher characters by 1.5x
+special:
+  name: Handling Hell
+  description: Has a small chance to instantly defeat each enemy
+  cooldown: 25
+  maxLevel: 7
+  notes: "`instantKill : 25%`"
+sailor:
+  - description: Reduces Silence duration completely on this character

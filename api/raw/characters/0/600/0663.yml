@@ -1,0 +1,51 @@
+type: PSY
+name: Nefeltari Vivi - Princess of Alabasta Kingdom
+japanName: ネフェルタリ・ビビ アラバスタ王国王女
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Striker
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 11
+    atk: 11
+    rcv: 11
+  maxLvl:
+    hp: 285
+    atk: 104
+    rcv: 225
+cost: 9
+slots: 1
+maxExp: 136167
+maxLevel: 35
+flags:
+  - fortnight
+links:
+  gamewithId: 15149
+aliases:
+  - Young Vivi
+evolution:
+  - id: 664
+    evolvers:
+      - 117
+      - 81
+      - 87
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Recovers 2x character's RCV in HP at the end of each turn
+special:
+  name: Vivi's Important Security Guard
+  description: Deals 1-80,000 [PSY] damage, depending on the crew's current HP, to
+    one enemy, recovers 5x character's RCV in HP at the end of each turn for 5
+    turns
+  cooldown: 25
+  maxLevel: 10
+  notes: The exact damage is proportional to the crew's remaining HP and is higher
+    the lower the HP is. The formula used is 80,000 \* (1 - (current HP) /
+    (total HP))

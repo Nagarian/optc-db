@@ -1,0 +1,160 @@
+type: STR
+name: Capone "Gang" Bege - Castle Man
+japanName: カポネ・“ギャング”ベッジ 城人間
+family:
+  - CaponeBege
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 567
+    atk: 225
+    rcv: 40
+  maxLvl:
+    hp: 2100
+    atk: 678
+    rcv: 119
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 147433
+aliases:
+  - Raid Capone
+evolution:
+  - id: 2504
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x, by 2.5x instead if HP is
+    above 50% at the start of the turn, and if you don't attack with him,
+    reduces damage received by 20% for that turn.
+special:
+  name: Manipulating the Castle's Interior
+  description: If there are 6 Shooter characters in your crew, boosts ATK of
+    Shooter characters by 2x for 1 turn. If HP is below 50% at the time the
+    special is activated, recovers missing HP to 51% MAX HP.
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 30
+rumble:
+  stats:
+    def: 158
+    rumbleType: RCV
+    spd: 151
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - amount: 20
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: percentage
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 11
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 20

@@ -1,0 +1,42 @@
+type: STR
+name: Iron Fist Fullbody
+frenchName: Fullbody au poing d'acier
+japanName: 鉄拳のフルボディ
+family:
+  - Fullbody
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 6
+  minLvl:
+    hp: 103
+    atk: 100
+    rcv: 49
+  maxLvl:
+    hp: 153
+    atk: 160
+    rcv: 84
+cost: 3
+slots: 0
+maxExp: 7532
+maxLevel: 15
+flags:
+  - fortnight
+links:
+  gamewithId: 2215
+aliases: []
+evolution:
+  - id: 230
+    evolvers:
+      - 116
+      - 78
+      - 89
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 1.5x
+special:
+  name: Hyper Straight
+  description: Deals 10x character's ATK in character's Type damage to one enemy
+  cooldown: 40
+  maxLevel: 26

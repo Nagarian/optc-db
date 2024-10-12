@@ -1,0 +1,93 @@
+type: INT
+name: Marco - Tranquil Blue Flames
+japanName: マルコ 静かなる蒼炎
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1332
+    atk: 753
+    rcv: 178
+  maxLvl:
+    hp: 2194
+    atk: 1359
+    rcv: 330
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 148297
+aliases:
+  - Limited Marco
+  - Secret Marco
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [INT] characters by 2.5x and their HP by
+    1.2x. If you use "Phoenix Claw" on this Marco boosts ATK of [PSY] and [INT]
+    characters by 3.5x for 3 turns instead.
+special:
+  name: Phoenix Claw
+  description: Deals 50x character's ATK in Typeless damage to one enemy, reduces
+    Despair duration by 3 turns, reduces enemies' Threshold Damage Reduction
+    duration by 4 turns. If this character is your Captain or Friend/Guest
+    Captain, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs of all characters
+    into Matching orbs and if you are on a Treasure Map, boosts ATK of [PSY] and
+    [INT] characters by 1.75x-2.25x for 1 turn depending on your Treasure Map
+    Level.
+  cooldown: 14
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x ATK boost  
+    Level 11-20: 2x ATK boost  
+    Level 21+: 2.25x ATK boost
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+  criteria: "[PSY] characters"
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 6
+      reduction: 4
+    - value: 8
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - atk: 10
+    - slot: 1
+    - rcv: 50
+    - atk: 15
+    - atk: 20
+    - hp: 80
+    - atk: 35
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 50
+        - value: 4
+          threshold: 60
+        - value: 5
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 100

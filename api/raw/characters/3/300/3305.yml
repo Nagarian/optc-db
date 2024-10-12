@@ -1,0 +1,211 @@
+type: STR
+name: Bartolomeo - Bull Charging Towards His Dream
+japanName: バルトロメオ 憧れ求める猛牛
+family:
+  - Bartolomeo
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1310
+    atk: 620
+    rcv: 136
+  maxLvl:
+    hp: 2673
+    atk: 1319
+    rcv: 306
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 272363
+aliases:
+  - Anniversary Bartolomeo
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3x and reduces damage received by 20%.
+special:
+  name: Barrier in the Raid
+  description: Reduces Chain Coefficient Reduction duration by 4 turns and reduces
+    enemies' Increased Defense duration by 4 turns. If you have used 10 or more
+    [RCV] orbs with normal attacks, adds 1.0x to Chain multiplier for 2 turns
+    and reduces damage received by 80% for 2 turns, adds 0.8x to Chain
+    multiplier for 1 turn otherwise.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Makes [STR] orbs beneficial for all characters
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 30
+    - hp: 30
+    - atk: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - hp: 30
+    - atk: 30
+    - cooldown: 1
+    - rcv: 40
+    - hp: 40
+    - type: sailor
+    - atk: 40
+    - hp: 50
+    - type: potential
+    - hp: 60
+    - atk: 50
+    - rcv: 40
+    - atk: 75
+    - cooldown: 1
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 300
+    rumbleType: DEF
+    spd: 124
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 19
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 13
+            level: 1
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 14
+            level: 1
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 15
+            level: 1
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 16
+            level: 1
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 17
+            level: 1
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 18
+            level: 1
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 19
+            level: 1
+    - cooldown: 19
+      effects:
+        - override: {}
+        - override:
+            duration: 20
+            level: 2

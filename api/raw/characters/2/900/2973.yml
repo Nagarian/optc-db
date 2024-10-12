@@ -1,0 +1,113 @@
+type: INT
+name: Nami - Celebrate the Astonishing Cruise
+japanName: ナミ Celebrate 6th Anniversary Cruise
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 991
+    atk: 550
+    rcv: 132
+  maxLvl:
+    hp: 2478
+    atk: 1374
+    rcv: 329
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 202545
+aliases:
+  - 6th Anni Nami
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 2x and their RCV by 1.75x.
+special:
+  name: Elegant Queen
+  description: Reduces crew's current HP by 70% and reduces Special Cooldown of
+    top row characters by 3 turns. If your crew has 5 or more [INT] characters,
+    locks the chain multiplier at 3x for 1 turn, locks the chain multiplier at
+    2.5x for 1 turn otherwise.
+  cooldown: 15
+  maxLevel: 1
+sailor:
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy and Tony Tony Chopper
+  levels:
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 2 turns
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 2 turns
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and reduces Special Cooldown of
+      supported character by 2 turns
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 10
+    - hp: 30
+    - type: potential
+    - rcv: 30
+    - atk: 20
+    - cooldown: 1
+    - rcv: 50
+    - atk: 30
+    - slot: 1
+    - rcv: 70
+    - hp: 50
+    - type: sailor
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

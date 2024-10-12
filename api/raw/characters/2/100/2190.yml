@@ -1,0 +1,56 @@
+type: INT
+name: Rebecca - Lively Summer Girl
+japanName: レベッカ 元気ハツラツ夏娘
+family:
+  - Rebecca
+class:
+  - Striker
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 106
+    atk: 85
+    rcv: 45
+  maxLvl:
+    hp: 901
+    atk: 501
+    rcv: 131
+cost: 13
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 115137
+aliases:
+  - Swimsuit Rebecca
+  - Summer Rebecca
+evolution:
+  - id: 2191
+    evolvers:
+      - 117
+      - 88
+      - 93
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Slasher characters by 1x-2.25x depending
+    on the crew's current HP and reduces damage received by 7%
+  notes: "`captainProportional : higher : 1 + 1.25 * ((remaining HP) / (total HP))
+    : 2.25 : 1`"
+special:
+  name: Heart-Throbbing Beach Volleyball
+  description: Reduces enemies' Threshold Damage Reduction duration by 5 turns and
+    boosts ATK of Slasher and Striker characters by 1.75x for 1 turn. If your
+    Captain is a Slasher or Striker character, reduces RCV DOWN and Increase
+    Damage Taken duration by 3 turns.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: If your Captain is a Slasher or Striker character, reduces
+      Blindness duration by 5 turns

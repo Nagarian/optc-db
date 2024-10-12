@@ -1,0 +1,55 @@
+type: STR
+name: Jozu - Diamond Body
+japanName: ジョズ ダイヤモンドの体
+family:
+  - Jozu
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 631
+    atk: 383
+    rcv: 35
+  maxLvl:
+    hp: 1402
+    atk: 851
+    rcv: 78
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 257243
+aliases:
+  - ""
+evolution:
+  - id: 3255
+    evolvers:
+      - 1180
+      - 89
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2.5x and reduces
+    damage received by 10%.
+special:
+  name: Diamond Tackle
+  description: Reduces Special Cooldown of Fighter and Powerhouse characters by 2
+    turns and reduces Despair and ATK DOWN duration by 5 turns and reduces
+    damage received by 90% for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Reduces Special Cooldown of Fighter and Powerhouse characters by 1
+        turn and reduces Despair and ATK DOWN duration by 2 turns and reduces
+        damage received by 60% for 1 turn.
+      cooldown: 15
+sailor:
+  - description: Boosts base HP of Fighter and Powerhouse characters by 50

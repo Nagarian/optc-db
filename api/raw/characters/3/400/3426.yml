@@ -1,0 +1,58 @@
+type: STR
+name: Bartholomew Kuma - All Repelling Paws
+japanName: バーソロミュー・くま 全てを弾く肉球
+family:
+  - BartholomewKuma
+class:
+  - Powerhouse
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1058
+    atk: 358
+    rcv: 35
+  maxLvl:
+    hp: 2168
+    atk: 770
+    rcv: 87
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 292617
+aliases:
+  - Legend Kuma
+  - Good Boy
+  - Rumble Kuma
+  - PR Kuma
+evolution:
+  - id: 3427
+    evolvers:
+      - 118
+      - 78
+      - 1180
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [STR] characters by 5x until the first hit other
+    than PERFECT, by 4.5x otherwise, boosts their HP by 1.5x, deals 100x the
+    damage taken from enemies in the previous turn in Typeless damage to all
+    enemies at the end of each turn and makes crew immune to Blow Away.
+special:
+  name: "Destructive Annihilation: Ursa Shock"
+  description: Deals 50x the damage taken from enemies before the special is
+    activated in Typeless damage to all enemies. If MAX HP is above 60,000,
+    boosts the Color Affinity of [STR] characters by 2.5x for 1 turn, by 2.25x
+    otherwise.
+  cooldown: 19
+  maxLevel: 6
+  notes: The amount of damage possible caps at 200,000 damage taken, so 10,000,000
+    AOE Typeless damage.

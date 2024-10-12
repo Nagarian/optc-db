@@ -1,0 +1,231 @@
+type: STR
+name: Dogstorm - Drought-Repelling King of the Day
+japanName: イヌアラシ 旱害に立ち向かう“昼の王”
+family:
+  - Inuarashi
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1278
+    atk: 840
+    rcv: 78
+  maxLvl:
+    hp: 2840
+    atk: 1400
+    rcv: 260
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 248704
+aliases:
+  - World Cruise Inuarashi
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.75x. If HP is below 50% at the
+    start of the turn, boosts Chain Multiplier Growth Rate by 1.5x.
+special:
+  name: Plea of No Resistance
+  description: Reduces Paralysis and ATK DOWN duration by 4 turns, changes all
+    orbs of right column characters into Matching orbs and boosts ATK against
+    delayed enemies by 2x for 1 turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: If HP is below ?%, boosts base ATK of Slasher and Cerebral characters by 50
+  - description: Makes [DEX] orbs beneficial for [STR] characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Sicilian and Nekomamushi
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 30
+    - type: potential
+    - atk: 10
+    - rcv: 20
+    - rcv: 20
+    - slot: 1
+    - hp: 50
+    - hp: 100
+    - atk: 30
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 109
+    rumbleType: ATK
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Cerebral
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.55
+        - override:
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 20

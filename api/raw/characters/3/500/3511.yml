@@ -1,0 +1,230 @@
+type: QCK
+name: Zorojuro & Sangoro
+japanName: ゾロ十郎＆サン五郎
+family:
+  - RoronoaZoro
+  - VinsmokeSanji
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1106
+    atk: 732
+    rcv: 110
+  maxLvl:
+    hp: 2818
+    atk: 1519
+    rcv: 244
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 312712
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Powerhouse characters by 3.5x, their HP
+    by 1.3x and makes [STR], [QCK] and [RCV] orbs beneficial for Slasher and
+    Powerhouse characters.
+special:
+  name: Combination of Legs and Blades
+  description: Inflicts all enemies with Increase Damage Taken by 1.3x for 2
+    turns, deals 100x character's ATK in Typeless damage to all enemies, changes
+    [BLOCK] orbs into [RCV] orbs and sets Chain Boundaries to 2.25x and 35.0x
+    for 2 turns.
+  cooldown: 28
+  maxLevel: 14
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Powerhouse characters by 50
+  - description: Makes [RCV] orbs beneficial for Slasher and Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: All characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - atk: 25
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 200
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 169
+    rumbleType: ATK
+    spd: 170
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 1.5
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Haste
+          chance: 80
+          effect: boon
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            chance: 82
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            chance: 84
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            chance: 86
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            chance: 88
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 2
+        - override:
+            chance: 90
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            chance: 92
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            chance: 94
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            chance: 96
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            chance: 100

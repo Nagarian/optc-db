@@ -1,0 +1,99 @@
+type: STR
+name: Abdullah and Jeet Ex-Bounty Hunter
+japanName: アブドーラ＆ジェット 元賞金稼ぎ
+family:
+  - Abdullah
+  - Jeet
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 920
+    atk: 673
+    rcv: 156
+  maxLvl:
+    hp: 1970
+    atk: 1345
+    rcv: 343
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 28754
+aliases:
+  - Abdullah and Jeet, Former Bounty Hunters
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Slasher characters by 2.25x and reduces
+    Special Cooldown of Slasher and Striker characters by 2 turns at the start
+    of the fight
+special:
+  name: Surprise Pincer Attack
+  description: Reduces Special Cooldown of Slasher and Striker characters by 1
+    turn. Changes Badly Matching orbs of Slasher and Striker characters into
+    [RCV] orbs.
+  cooldown: 11
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of Slasher and Striker characters by 50
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy and Trafalgar D. Water Law
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - rcv: 30
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - atk: 30
+    - type: sailor
+    - hp: 70
+    - rcv: 30
+    - atk: 40
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 25
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50

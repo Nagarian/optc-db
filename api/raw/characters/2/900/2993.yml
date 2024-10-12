@@ -1,0 +1,46 @@
+type: DEX
+name: Gyukimaru
+japanName: 牛鬼丸
+family:
+  - Onimaru
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1090
+    atk: 560
+    rcv: 112
+  maxLvl:
+    hp: 2726
+    atk: 1400
+    rcv: 279
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 207681
+aliases:
+  - Secret Gyukimaru
+  - Limited Gyukimaru
+captain:
+  name: ""
+  description: Boosts HP of Slasher characters by 1.5x.
+special:
+  name: Bandit's Naginatajutsu Technique
+  description: Reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction duration by 3 turns. If you are on a Treasure Map, boosts Orb
+    Effects of [DEX] characters by 1.75x-2.25x for 1 turn depending on your
+    Treasure Map Level.
+  cooldown: 13
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x Orb boost  
+    Level 11-20: 2x Orb boost  
+    Level 21+: 2.25x Orb boost

@@ -1,0 +1,235 @@
+type: PSY
+name: Tony Tony Chopper - Long-Awaited Christmas
+japanName: トニートニー・チョッパー 待ちわびるクリスマス
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 873
+    atk: 351
+    rcv: 164
+  maxLvl:
+    hp: 1600
+    atk: 772
+    rcv: 250
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 180650
+aliases:
+  - V1 Legend Chopper
+  - Christmas (Xmas) Chopper
+evolution:
+  - id: 2797
+    evolvers:
+      - 118
+      - 303
+      - 2662
+      - 103
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3.5x and their HP by 1.25x.
+    Guarantees duplicating all Cotton Candy drops upon completion of the island.
+  notes: Does not work if he was not your captain upon starting the island. Stacks
+    with other additional drop captains, giving you multiple extra drops.
+special:
+  name: The Doctor Decorating the Tree Top
+  description: Reduces Paralysis, Burn, Bind, Despair, Silence, ATK DOWN, Increase
+    Damage Taken, RCV DOWN and Blindness duration by 5 turns, removes Poison
+    duration completely and recovers 12,024 HP at the end of the turn for 3
+    turns.
+  cooldown: 21
+  maxLevel: 6
+rumble:
+  stats:
+    def: 123
+    rumbleType: RCV
+    spd: 127
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 3
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 0.35
+          effect: recharge
+          type: RCV
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Paralysis
+            - Silence
+            - Action Bind
+          effect: boon
+          duration: 5
+          targeting:
+            targets:
+              - crew
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.37
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.38
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.4
+        - {}
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.42
+        - override:
+            duration: 6
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.44
+        - override:
+            duration: 6
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.45
+        - override:
+            duration: 6
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.47
+        - override:
+            duration: 7
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            duration: 7
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            duration: 7
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

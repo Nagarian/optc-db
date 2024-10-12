@@ -1,0 +1,91 @@
+type: INT
+name: Ain - Zephyr's Final Pupil
+japanName: アイン ゼファー最後の教え子
+family:
+  - Ain
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1019
+    atk: 447
+    rcv: 169
+  maxLvl:
+    hp: 1986
+    atk: 870
+    rcv: 357
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 33489
+aliases:
+  - Colo Ain
+  - Coliseum Ain
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Cerebral characters by 1.75x
+special:
+  name: Return Return Fruit
+  description: Recovers 36% of crew's MAX HP and randomizes all orbs, including [BLOCK] orbs
+  cooldown: 27
+  maxLevel: 11
+  stages:
+    - description: Recovers 12% of crew's MAX HP and randomizes all orbs, including
+        [BLOCK] orbs
+      cooldown: 21
+    - description: Recovers 24% of crew's MAX HP and randomizes all orbs, including
+        [BLOCK] orbs
+      cooldown: 24
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Zephyr and Binz
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - rcv: 50
+    - slot: 1
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

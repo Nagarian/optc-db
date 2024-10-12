@@ -1,0 +1,51 @@
+type: DEX
+name: Lafitte
+japanName: ラフィット
+family:
+  - Laffitte
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 109
+    atk: 92
+    rcv: 51
+  maxLvl:
+    hp: 995
+    atk: 506
+    rcv: 202
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 38772
+aliases:
+  - Lafitte
+evolution:
+  - id: 1270
+    evolvers:
+      - 83
+      - 86
+      - 94
+      - 97
+      - 302
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn. Deals 3x
+    character's ATK in [DEX] damage to all enemies at the end of each turn.
+special:
+  name: Horrifying Suggestion
+  description: Reduces Bind and Despair duration by 2 turns. Makes Badly Matching
+    and [BLOCK] orbs not reduce damage for 4 turns
+  cooldown: 14
+  maxLevel: 7
+  notes: Ex. A [STR] character with a [QCK] orb will still deal regular damage
+sailor:
+  - description: Boosts base ATK of all characters by 100 if your Captain is a
+      Driven character

@@ -1,0 +1,49 @@
+type: DEX
+name: Ghost Princess Perona
+japanName: ペローナ ゴーストプリンセス
+family:
+  - Perona
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 887
+    atk: 377
+    rcv: 198
+  maxLvl:
+    hp: 1598
+    atk: 791
+    rcv: 430
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 8440
+aliases: []
+captain:
+  name: ""
+  description: Boosts RCV of [DEX] characters by 2x
+special:
+  name: Negative Hollow
+  description: Reduces damage received by 90% for 1 turn, reduces the defense of
+    all enemies by 80% for 1 turn, Poisons enemies for 1,000 damage for 1 turn
+  cooldown: 23
+  maxLevel: 10
+  notes: Poison damage deals 1,000 damage exactly and will ignore enemy armor at
+    the end of your turn
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Gecko Moria, Hogback and Absalom
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

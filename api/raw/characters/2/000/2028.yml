@@ -1,0 +1,51 @@
+type: QCK
+name: Sengoku - One Who Leads the Way to Victory
+japanName: センゴク 勝利を導く智将
+family:
+  - Sengoku
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 340
+    atk: 94
+    rcv: 38
+  maxLvl:
+    hp: 1210
+    atk: 710
+    rcv: 121
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 97001
+aliases:
+  - Sengoku
+evolution:
+  - id: 2029
+    evolvers:
+      - 1180
+      - 90
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [QCK] characters by 2x
+special:
+  name: Instant Suppression
+  description: Reduces Despair and ATK DOWN duration by 4 turns. If your crew has
+    4 or more [QCK] or [PSY] characters, boosts Orb Effects of all characters by
+    2x for 1 turn and makes [RCV] and [TND] orbs beneficial for all characters
+    for 1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Makes [DEX] orbs beneficial for this character

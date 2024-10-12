@@ -1,0 +1,53 @@
+type: PSY
+name: Jinbe - Warrior Shark
+japanName: ジンベエ 鮫の武人
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 84
+    atk: 34
+    rcv: 29
+  maxLvl:
+    hp: 1990
+    atk: 1020
+    rcv: 298
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 22177
+aliases:
+  - Kimono Jinbe
+  - Kimono Jimbei
+  - Kimono Jinbei
+  - Kimono Jimbe
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x, reduces damage received by 10%
+special:
+  name: "Arabesque Brick Fist: Sun"
+  description: Deals 10% of enemies' current HP in damage to all enemies, boosts
+    ATK of Fighter characters by 1.5x for 1 turn if HP is below 30% when the
+    special is activated
+  cooldown: 27
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

@@ -1,0 +1,48 @@
+type: DEX
+name: Blamenco - Whitebeard's Sixth Division Commander
+japanName: ブラメンコ 白ひげ海賊団６番隊隊長
+family:
+  - Blamenco
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 66
+    atk: 40
+    rcv: 18
+  maxLvl:
+    hp: 2394
+    atk: 1268
+    rcv: 126
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 25489
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [STR] characters by 1.75x and their RCV by 1.2x
+special:
+  name: Hidden King Mallet
+  description: Randomizes all orbs and changes the orb of this character into a [DEX] orb
+  cooldown: 15
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

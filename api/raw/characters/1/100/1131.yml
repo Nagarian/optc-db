@@ -1,0 +1,97 @@
+type: STR
+name: Elizabello II King of Prodence
+japanName: エリザベローII世 プロデンス王国国王
+family:
+  - Elizabello
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1070
+    atk: 724
+    rcv: 131
+  maxLvl:
+    hp: 2152
+    atk: 1400
+    rcv: 303
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 33762
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 1.5x and their HP by 2x
+special:
+  name: King Punch
+  description: Deals 25x character's ATK in Typeless damage to all enemies
+  cooldown: 26
+  maxLevel: 7
+  stages:
+    - description: Deals 7x character's ATK in Typeless damage to all enemies
+      cooldown: 12
+    - description: Deals 15x character's ATK in Typeless damage to all enemies
+      cooldown: 20
+  notes: For each turn AFTER Elizabello's special reaches stage 3, damage is
+    boosted by 23.75x per turn for an additional 20 turns, for a max damage of
+    500x character's ATK in damage to all enemies.
+sailor:
+  - description: When HP is above 99% at the start of the turn, boosts base ATK of
+      this character by 50
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Riku Doldo III (Ricky)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - hp: 40
+    - hp: 50
+    - slot: 1
+    - rcv: 60
+    - hp: 60
+    - type: sailor
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 4
+        - value: 7
+        - value: 10
+        - value: 15

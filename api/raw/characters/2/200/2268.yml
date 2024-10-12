@@ -1,0 +1,52 @@
+type: DEX
+name: Charlotte Praline
+japanName: シャーロット・プラリネ
+family:
+  - CharlottePraline
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 321
+    atk: 272
+    rcv: 45
+  maxLvl:
+    hp: 901
+    atk: 782
+    rcv: 156
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 121103
+aliases:
+  - ""
+evolution:
+  - id: 2269
+    evolvers:
+      - 117
+      - 86
+      - 1180
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [DEX] characters by 2x. Recovers 1x
+    character's RCV in HP at the end of each turn
+special:
+  name: A Hug for All Her Loved Ones
+  description: Reduces enemies' Increased Defense, Percent Damage Reduction and
+    Threshold Damage Reduction Buffs duration by 5 turns, changes all orbs of
+    left column characters into [DEX], [STR] and [PSY] orbs, from top to bottom.
+    If your Captain's orb is [RCV], recovers 13x character's RCV in HP at the
+    end of each turn for 3 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of [STR], [DEX] and [PSY] characters by 50

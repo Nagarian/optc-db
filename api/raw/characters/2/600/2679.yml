@@ -1,0 +1,213 @@
+type: STR
+name: Usopp - Sniper Lying at the Pirates Expo
+japanName: ウソップ 『海賊万博』でホラ吹く狙撃手
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 255
+    atk: 156
+    rcv: 37
+  maxLvl:
+    hp: 1273
+    atk: 781
+    rcv: 188
+cost: 15
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 164535
+aliases:
+  - Stampede Usopp
+evolution:
+  - id: 2680
+    evolvers:
+      - 116
+      - 117
+      - 78
+      - 84
+      - 95
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.5x and makes [STR], [DEX],
+    [PSY], [RCV], and [TND] orbs beneficial for Shooter characters.
+special:
+  name: "Green Star-Treasure Aim: Impact Wolf Grass"
+  description: Deals 7% of enemies' current HP in damage to all enemies and delays
+    all enemies by 1-6 turns depending on the number of enemies on the stage
+    when the special is activated.
+  cooldown: 12
+  maxLevel: 1
+  notes: The delay is exactly equal to the number of enemies on the stage.
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+rumble:
+  stats:
+    def: 122
+    rumbleType: DBF
+    spd: 140
+    cost: 20
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 9
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Action Bind
+          effect: hinderance
+          condition:
+            comparator: more
+            count: 2
+            type: enemies
+            relative: true
+          chance: 15
+          duration: 10
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Action Bind
+          effect: hinderance
+          condition:
+            comparator: more
+            count: 5
+            type: enemies
+            relative: true
+          chance: 25
+          duration: 10
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - {}
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 35
+      effects:
+        - {}
+        - override:
+            chance: 16
+            duration: 12
+        - override:
+            chance: 26
+            duration: 12
+    - cooldown: 35
+      effects:
+        - {}
+        - override:
+            chance: 16
+            duration: 13
+        - override:
+            chance: 26
+            duration: 13
+    - cooldown: 35
+      effects:
+        - {}
+        - override:
+            chance: 17
+            duration: 14
+        - override:
+            chance: 27
+            duration: 14
+    - cooldown: 35
+      effects:
+        - {}
+        - override:
+            chance: 17
+            duration: 15
+        - override:
+            chance: 27
+            duration: 15
+    - cooldown: 35
+      effects:
+        - {}
+        - override:
+            chance: 18
+            duration: 16
+        - override:
+            chance: 28
+            duration: 16
+    - cooldown: 35
+      effects:
+        - {}
+        - override:
+            chance: 18
+            duration: 17
+        - override:
+            chance: 28
+            duration: 17
+    - cooldown: 35
+      effects:
+        - {}
+        - override:
+            chance: 19
+            duration: 18
+        - override:
+            chance: 29
+            duration: 18
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 10
+        - override:
+            chance: 20
+            duration: 19
+        - override:
+            chance: 30
+            duration: 19

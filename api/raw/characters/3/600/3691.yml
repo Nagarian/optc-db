@@ -1,0 +1,86 @@
+type: QCK
+name: Charlotte Brulee - Mirrors at the FES
+family: []
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1443
+    atk: 688
+    rcv: 171
+  maxLvl:
+    hp: 2884
+    atk: 1478
+    rcv: 247
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - RED Limited Secret Kizuna
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of Slasher and Cerebral characters by 3x.
+special:
+  name: Charge from the Mirror
+  description: Reduces Special Cooldown of all characters by 1 turn, reduces
+    Paralysis and Chain Coefficient Reduction duration by 6 turns, changes all
+    orbs, including [BLOCK] orbs into [RCV] orbs and adds 1.1x to Chain
+    multiplier for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: Makes [RCV] orbs beneficial for Slasher and Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - rcv: 25
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - hp: 50
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

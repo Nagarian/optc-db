@@ -1,0 +1,46 @@
+type: PSY
+name: Jewelry Bonney
+japanName: ジュエリー・ボニー
+family:
+  - JewelryBonney
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 277
+    atk: 80
+    rcv: 44
+  maxLvl:
+    hp: 1370
+    atk: 440
+    rcv: 220
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 7211
+aliases:
+  - Supernova Bonney
+evolution:
+  - id: 363
+    evolvers:
+      - 118
+      - 81
+      - 83
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 2x
+special:
+  name: Big Eater
+  description: For 2 turns, boosts the amount healed by [RCV] orbs by 1.5x, then
+    2x, then 2.5x from the third crew member onward
+  cooldown: 13
+  maxLevel: 6

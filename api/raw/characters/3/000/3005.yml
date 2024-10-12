@@ -1,0 +1,52 @@
+type: QCK
+name: Gecko Moria - Nightmare of 1,000 Shadows
+japanName: ゲッコー・モリア 1000の影が見せる悪夢
+family:
+  - GeckoMoria
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1198
+    atk: 541
+    rcv: 100
+  maxLvl:
+    hp: 2996
+    atk: 1352
+    rcv: 250
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 211355
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x and their HP by 1.2x.
+special:
+  name: Nightmare Baptism
+  description: Deals 1,000 Fixed damage to all enemies and reduces Paralysis, ATK
+    DOWN and Chain Coefficient Reduction duration by 3 turns.
+  cooldown: 23
+  maxLevel: 15
+sailor:
+  - description: Reduces Blindness duration by 3 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[QCK] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

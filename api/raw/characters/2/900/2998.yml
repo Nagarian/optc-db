@@ -1,0 +1,94 @@
+type: INT
+name: Grandma Nyon
+japanName: ニョン婆
+family:
+  - Gloriosa
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 962
+    atk: 671
+    rcv: 90
+  maxLvl:
+    hp: 2418
+    atk: 1308
+    rcv: 361
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 208223
+aliases:
+  - Limited Glorisa
+  - Secret Glorisa
+  - Kizuna Glorisa
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.75x.
+special:
+  name: Love is Always a Hurricane
+  description: Reduces Bind duration by 3 turns, reduces enemies' Increased
+    Defense and Threshold Damage Reduction duration by 3 turns and locks the
+    chain multiplier at 2.75x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 40
+  - description: Makes [STR] and [INT] orbs beneficial for [STR] and [INT] characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Fighter characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 50
+    - rcv: 10
+    - type: potential
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - cooldown: 1
+    - hp: 50
+    - rcv: 30
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50

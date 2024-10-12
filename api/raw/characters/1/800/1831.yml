@@ -1,0 +1,52 @@
+type: PSY
+name: Vinsmoke Judge
+japanName: ヴィンスモーク・ジャッジ
+family:
+  - VinsmokeJudge
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 808
+    atk: 177
+    rcv: 12
+  maxLvl:
+    hp: 1906
+    atk: 782
+    rcv: 162
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 74384
+aliases:
+  - Yellow Ranger
+  - V1 Legend Judge
+evolution:
+  - id: 1832
+    evolvers:
+      - 118
+      - 103
+      - 98
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Increase the rate of [PSY] orbs, reduces damage received by 15%,
+    boosts HP of all characters by 1.25x and if there is a [STR], [DEX], [QCK],
+    [PSY] and [INT] character in your crew, boosts ATK of all characters by
+    2.25x, by 3.9375x instead if they have a beneficial orb
+special:
+  name: Dengi Crack
+  description: Reduces bind duration by 7 turns and boosts Orb Effects of all
+    characters by 2x for 1 turn. If this character is the captain or the Friend
+    captain, slightly boosts the rate of [PSY] orbs and randomly shuffles all
+    orbs, including [BLOCK] orbs
+  cooldown: 19
+  maxLevel: 6

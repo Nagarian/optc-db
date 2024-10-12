@@ -1,0 +1,48 @@
+type: QCK
+name: Sugar
+japanName: シュガー
+family:
+  - Sugar
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 102
+    atk: 55
+    rcv: 68
+  maxLvl:
+    hp: 952
+    atk: 420
+    rcv: 321
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 21543
+aliases: []
+evolution:
+  - id: 872
+    evolvers:
+      - 83
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [QCK] characters by 1.5x
+special:
+  name: Hobby-Hobby Fruit
+  description: Instantly defeats all enemies with current HP equal to or below 20%
+    their MAX HP
+  cooldown: 16
+  maxLevel: 7
+  notes: The special bypasses all known protective buffs. If the enemy can revive
+    after being defeated, however, the special will only reduce the enemies' HP
+    to 0 and trigger their revive effect.

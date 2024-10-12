@@ -1,0 +1,52 @@
+type: PSY
+name: Usopp - Impact
+japanName: ウソップ（衝撃（インパクト））
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 733
+    atk: 361
+    rcv: 97
+  maxLvl:
+    hp: 1185
+    atk: 669
+    rcv: 265
+cost: 18
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 4039
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.5x
+special:
+  name: Impact
+  description: Boosts ATK of [PSY] characters by 2x for 1 turn
+  cooldown: 17
+  maxLevel: 6
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 1
+      reduction: 2
+    - value: 2
+      reduction: 2
+    - value: 2
+      reduction: 3
+    - value: 3
+      reduction: 3

@@ -1,0 +1,114 @@
+type: DUAL
+name: Black Rhino FR-U4 & Brachio-Tank 5 - Rendezvous Point
+japanName: クロサイＦＲ-Ｕ４号＆ブラキオタンク５号 落ち合う約束の場所
+family:
+  - TonyTonyChopper
+  - Franky
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1081
+    atk: 396
+    rcv: 79
+  maxLvl:
+    hp: 2162
+    atk: 792
+    rcv: 158
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+aliases:
+  - Iron Pirate Legend
+evolution:
+  - id: 3574
+    evolvers:
+      - 118
+      - 118
+      - 102
+      - 103
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4x, their HP by 1.5x and reduces
+    ATK DOWN and Burn duration by 10 turns. Boosts ATK of Class 1 Fighter,
+    Shooter, Slasher and Striker characters by 1.25x. Boosts Color Affinity of
+    Class 1 Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.
+special:
+  name: General Franky Docking
+  description: Recovers 30% of crew's MAX HP, reduces Poison duration completely,
+    boosts ATK of Fighter, Slasher, Shooter and Striker characters by 2.5x for 1
+    turn, boosts Orb Effects of Free Spirit, Cerebral, Powerhouse and Driven
+    characters by 2.5x for 1 turn and becomes Black Rhino FR-U4 & Brachio-Tank 5
+    for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and
+      Striker characters
+characters:
+  swap:
+    description: Changes the orb of this character into a Matching orb, reduces
+      Despair duration completely on this character, boosts Color Affinity of
+      all characters by 1.5x for 1 turn and recovers 25% of damage taken from
+      enemies on the stage when entering a new stage for 1 stage.
+    super:
+      criteria: 4
+      description: Changes the orb of this character into a Matching orb, reduces
+        Despair duration completely on this character, boosts Color Affinity of
+        all characters by 2x for 1 turn and recovers 50% of damage taken from
+        enemies on the stage when entering a new stage for 1 stage.
+  character1:
+    name: Black Rhino FR-U4 - Rendezvous Point
+    class:
+      - Free Spirit
+      - Fighter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 950
+        atk: 383
+        rcv: 67
+      maxLvl:
+        hp: 1900
+        atk: 776
+        rcv: 134
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces
+        ATK DOWN duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter,
+        Slasher, Striker and Free Spirit characters by 1.25x.
+    sailor:
+      - description: Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and
+          Striker characters
+  character2:
+    name: Brachio-Tank 5 - Rendezvous Point
+    class:
+      - Free Spirit
+      - Shooter
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 910
+        atk: 380
+        rcv: 68
+      maxLvl:
+        hp: 1820
+        atk: 760
+        rcv: 136
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces
+        Burn duration by 10 turns. Boosts Color Affinity of Class 1 Fighter,
+        Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.
+    sailor:
+      - description: Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and
+          Striker characters

@@ -1,0 +1,60 @@
+type: QCK
+name: Magellan - Venom-Venom Fruit User
+japanName: マゼラン “ドクドクの実”の能力者
+family:
+  - Magellan
+class:
+  - Shooter
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 341
+    atk: 133
+    rcv: 84
+  maxLvl:
+    hp: 1367
+    atk: 818
+    rcv: 179
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 132841
+aliases:
+  - Colo Magellan
+  - Coliseum Magellan
+evolution:
+  - id: 2354
+    evolvers:
+      - 118
+      - 96
+      - 1180
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Striker characters by 2.25x and recovers
+    1.5x character's RCV in HP at the end of each turn.
+special:
+  name: Chloro Ball
+  description: Strongly Poisons one enemy, Poisons all other enemies, reduces the
+    defense of all enemies by 100% for 2 turns, reduces enemies' Threshold
+    Damage Reduction and Percent Damage Reduction duration by 2 turns and boosts
+    ATK against Poisoned and Strongly Poisoned enemies by 1.75x for 1 turn
+  cooldown: 27
+  maxLevel: 15
+  stages:
+    - description: Poisons all enemies, reduces enemies' Threshold Damage Reduction
+        and Percent Damage Reduction duration by 1 turn and boosts ATK against
+        Poisoned enemies by 1.5x for 1 turn
+      cooldown: 23
+  notes: Strong Poison deals 300x character's ATK in Fixed damage at the end of
+    each turn. Regular Poison deals 0.5x character's ATK in Fixed damage at the
+    end of each turn.
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character

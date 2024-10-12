@@ -1,0 +1,55 @@
+type: INT
+oldDbId: 3325
+name: "Heracles-un: Neo"
+japanName: ヘラクレスン「改」
+family:
+  - Heraclesn
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 430
+    atk: 340
+    rcv: 43
+  maxLvl:
+    hp: 1480
+    atk: 840
+    rcv: 130
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 266796
+aliases:
+  - Neo Heracles'n
+evolution:
+  - id: 5058
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of Cerebral characters by 1.5x
+special:
+  name: Pop Green [Neo]
+  description: Reduces Bind and Silence duration by 4 turns, boosts ATK of
+    Cerebral characters by 1.75x for 1 turn and changes all orbs of left column
+    characters into [PSY], [INT] and [RCV] orbs, changes all orbs of right
+    column characters into [DEX], [STR] and [QCK] orbs, switches orbs between
+    slots 2 times
+  cooldown: 24
+  maxLevel: 14
+  notes: "The special is not based on chance; the orbs are always changed with the
+    same pattern. Starting from the top left orb and proceeding clockwise, after
+    the special is used the orbs will be: [PSY], [DEX], [STR], [QCK], [RCV] and
+    [INT]"

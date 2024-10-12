@@ -1,0 +1,58 @@
+type: INT
+name: Jewelry Bonney - Big Eater Joining the Fray
+japanName: ジュエリー・ボニー 乗り込む大喰らい
+family:
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 689
+    atk: 431
+    rcv: 48
+  maxLvl:
+    hp: 1530
+    atk: 958
+    rcv: 106
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 272338
+aliases:
+  - V1 Legend Bonney
+  - Anniversary Bonney
+evolution:
+  - id: 3307
+    evolvers:
+      - 118
+      - 304
+      - 2662
+      - 104
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 4.5x, by 5x instead if they have
+    a [RCV] orb, boosts ATK of all other characters by 3.75x and makes [RCV]
+    orbs beneficial for all characters. Characters who attack with a Type
+    advantage will gain a [RCV] orb after attacking.
+special:
+  name: Age-Controlling Hand
+  description: Reduces Slot Bind and Silence duration by 10 turns, reduces Special
+    Cooldown of all characters by 1 turn, reduces the defense of all enemies by
+    100% for 1 turn, changes [EMPTY], [BLOCK] and Badly Matching orbs into [RCV]
+    orbs and boosts ATK of [INT] characters by 2.5x for 1 turn. Locks the chain
+    multiplier at 3x-3.5x for 1 turn, depending on how many [RCV] orbs used in
+    normal attacks.
+  cooldown: 19
+  maxLevel: 6
+  notes: |-
+    **0-7 orbs consumed:** 3x chain lock  
+    **8-14 orbs consumed:** 3.25x chain lock  
+    **15+ orbs consumed:** 3.5x chain lock

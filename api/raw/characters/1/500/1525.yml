@@ -1,0 +1,91 @@
+type: QCK
+name: "Suleiman the Beheader - Class-A War Criminal: Dias Naval Battle"
+japanName: 首はねスレイマン ディアス海戦Ａ級戦犯
+family:
+  - Suleiman
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 174
+    atk: 147
+    rcv: 47
+  maxLvl:
+    hp: 2087
+    atk: 1347
+    rcv: 247
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 53589
+aliases:
+  - Colo Suleiman
+  - Coliseum Suleiman
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3.25x, reduces own ATK
+    multiplier by 0.0625x at the end of each turn until it is 2x
+special:
+  name: Sorrowful Execution
+  description: Deals 3 hits of random Typeless damage to random enemies, delays
+    all enemies by 1 turn, boosts ATK against delayed enemies by 1.3x for 2
+    turns
+  cooldown: 30
+  maxLevel: 15
+  notes: "`random : 50,000 : 150,000 : per hit`"
+sailor:
+  - description: Boosts base ATK of Slasher and Cerebral characters by 50
+  - description: Makes [QCK] orbs beneficial for Slasher characters
+support:
+  type: descriptive
+  criteria: Cavendish
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 75
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - hp: 55
+    - type: sailor
+    - cooldown: 2
+    - rcv: 50
+    - slot: 1
+    - hp: 75
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

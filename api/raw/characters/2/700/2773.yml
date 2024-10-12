@@ -1,0 +1,292 @@
+type: QCK
+name: Onami
+japanName: おナミ
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 232
+    atk: 295
+    rcv: 75
+  maxLvl:
+    hp: 1254
+    atk: 987
+    rcv: 212
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 177803
+aliases:
+  - Wano Nami
+  - Onami
+  - V2 Legend Nami
+evolution:
+  - id: 2774
+    evolvers:
+      - 118
+      - 301
+      - 1180
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight. Boosts ATK of all characters by 3x. If your crew has 4 or more
+    characters of the same Type, boosts ATK of the Dominant Type characters by
+    3.75x and boosts the Color Affinity of the Dominant Type characters by 1.1x.
+special:
+  name: "Ninja Arts: Murderous Smile"
+  description: If HP is above 99% at the time the special is activated, removes
+    enemies' Defense Reduction Debuff Protection duration completely, reduces
+    the defense of all enemies by 100% for 2 turns and boosts ATK against
+    enemies with reduced defense by 2x for 2 turns. Otherwise, recovers 50% of
+    crew's MAX HP, reduces the defense of all enemies by 100% for 1 turn and
+    boosts ATK against enemies with reduced defense by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+rumble:
+  stats:
+    def: 100
+    rumbleType: RCV
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 100
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          level: 1
+          effect: buff
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          effect: debuff
+          level: 2
+          duration: 10
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          level: 1
+          duration: 10
+          effect: buff
+          targeting:
+            targets:
+              - crew
+        - amount: 1.1
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          effect: recharge
+          type: RCV
+          targeting:
+            targets:
+              - self
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+        - override:
+            amount: 1.21
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+        - override:
+            amount: 1.31
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 13
+        - override:
+            duration: 13
+        - override:
+            amount: 1.42
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 14
+        - override:
+            duration: 14
+        - override:
+            amount: 1.53
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 15
+        - override:
+            duration: 15
+        - override:
+            amount: 1.64
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            amount: 1.74
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            amount: 1.85
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            amount: 1.96
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            duration: 19
+        - override:
+            amount: 2.15
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

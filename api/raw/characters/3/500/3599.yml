@@ -1,0 +1,240 @@
+type: INT
+name: Charlotte Pudding - The Real Reason
+family:
+  - CharlottePudding
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1590
+    atk: 695
+    rcv: 128
+  maxLvl:
+    hp: 3180
+    atk: 1389
+    rcv: 257
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x and reduces damage received by
+    30% if HP is above 99% at the start of the turn.
+special:
+  name: Tearful Persuasion
+  description: Boosts ATK of Striker and Driven characters by 2x for 1 turn,
+    reduces Bind duration by 5 turns and reduces enemies' Damage Nullification
+    duration by 2 turns.
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Boosts ATK of Striker and Driven characters by 1.75x for 1 turn,
+        reduces Bind duration by 3 turns and reduces enemies' Damage
+        Nullification duration by 1 turn.
+      cooldown: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: When any other Striker and Driven character uses a special, reduces
+      special cooldown of this character by 1 turn
+support:
+  type: descriptive
+  criteria: Charlotte Linlin (Big Mom), Vinsmoke Sanji and Charlotte Chiffon
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind, changes the orb
+      of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with Bind, changes the orb
+      of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with Bind, changes the orb,
+      including [BLOCK] orbs, of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with Bind, changes the orb,
+      including [BLOCK] orbs, of the supported character into a Matching orb.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn and changes the orb, including [BLOCK] orbs, of the
+      supported character into a Matching orb.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - rcv: 30
+    - type: potential
+    - atk: 30
+    - rcv: 20
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 114
+    rumbleType: SPT
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Damage Over Time
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - amount: 5
+          attributes:
+            - Special CT
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: lowest
+            percentage: 100
+            stat: Special CT
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 17
+        - override:
+            amount: 6
+    - cooldown: 30
+      effects:
+        - override:
+            level: 1
+            duration: 18
+        - override:
+            amount: 7
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            amount: 8
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            amount: 9
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 21
+        - override:
+            amount: 10
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 22
+        - override:
+            amount: 11
+    - cooldown: 30
+      effects:
+        - override:
+            level: 3
+            duration: 23
+        - override:
+            amount: 12
+    - cooldown: 30
+      effects:
+        - override:
+            level: 4
+            duration: 24
+        - override:
+            amount: 13
+    - cooldown: 30
+      effects:
+        - override:
+            level: 5
+            duration: 25
+        - override:
+            amount: 15

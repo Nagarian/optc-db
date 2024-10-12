@@ -1,0 +1,320 @@
+type: DEX
+name: Kaido - Supreme Commander of the Animal Kingdom Pirates
+japanName: カイドウ 百獣海賊団総督
+family:
+  - Kaido
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 540
+    atk: 221
+    rcv: 12
+  maxLvl:
+    hp: 2210
+    atk: 986
+    rcv: 53
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 168818
+aliases:
+  - Lazy Mode
+  - V1 Legend Kaido
+evolution:
+  - id: 2700
+    evolvers:
+      - 118
+      - 302
+      - 2662
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Striker and Powerhouse characters by 2
+    turns at the start of the fight boosts ATK of Striker and Powerhouse
+    characters by 4x, their HP by 1.25x, and deals 400x character's ATK in [DEX]
+    damage to all enemies at the end of each turn. At the start of the fight,
+    this character activates their own special.
+  notes: Preemptive Special Activation will not reset the special cooldown.
+special:
+  name: Boro Breath
+  description: Deals 20% of enemies' current HP in damage to all enemies and deals
+    400x character's ATK in [DEX] damage to all enemies at the end of each turn
+    for 99+ turns. Applies a Continuous Effect that deals 20% of enemies'
+    current HP in damage to all enemies at the start of every stage for 99+
+    turns.
+  cooldown: 22
+  maxLevel: 6
+  notes: The continuous special effect that triggers at the start of each stage
+    will not stack with other continuous special effects.
+rumble:
+  stats:
+    def: 191
+    rumbleType: ATK
+    spd: 126
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Powerhouse
+        - attributes:
+            - ATK
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          effect: penalty
+          level: 6
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 55
+      effects:
+        - amount: 20
+          effect: damage
+          type: cut
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.7
+          effect: damage
+          type: atk
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 55
+      effects:
+        - {}
+        - override:
+            amount: 1.74
+    - cooldown: 55
+      effects:
+        - {}
+        - override:
+            amount: 1.77
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 21
+        - override:
+            amount: 1.81
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 21
+        - override:
+            amount: 1.85
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 22
+        - override:
+            amount: 1.89
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 22
+        - override:
+            amount: 1.92
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 23
+        - override:
+            amount: 1.96
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 23
+        - override:
+            amount: 2
+    - cooldown: 55
+      effects:
+        - override:
+            amount: 25
+        - override:
+            amount: 2.1
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - ATK
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - ATK
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - INT
+          - attributes:
+              - Guard
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - INT
+          - attributes:
+              - HP
+              - ATK
+              - RCV
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Powerhouse
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 4
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 4
+    burst:
+      condition:
+        - count: 6
+          team: crew
+          type: special
+      special:
+        - uses: 2
+          effects:
+            - amount: 20
+              effect: damage
+              targeting:
+                count: 2
+                priority: lowest
+                stat: HP
+                targets:
+                  - enemies
+              type: cut
+            - attributes:
+                - Blow Away
+              duration: 21
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - DEX
+                  - INT
+        - uses: 2
+          effects:
+            - override:
+                amount: 25
+            - override:
+                level: 3
+                duration: 22
+        - uses: 2
+          effects:
+            - override:
+                amount: 30
+            - override:
+                level: 5
+                duration: 23
+        - uses: 2
+          effects:
+            - override:
+                amount: 35
+            - override:
+                level: 7
+                duration: 24
+        - uses: 2
+          effects:
+            - override:
+                amount: 40
+            - override:
+                level: 10
+                duration: 25

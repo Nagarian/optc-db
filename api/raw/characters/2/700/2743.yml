@@ -1,0 +1,131 @@
+type: PSY
+name: "Koala: Charitable Red Riding Hood - Happy Halloween!"
+japanName: コアラ　施しの赤ずきん Happy Halloween
+family:
+  - Koala
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 811
+    atk: 853
+    rcv: 103
+  maxLvl:
+    hp: 2222
+    atk: 1229
+    rcv: 420
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 174232
+aliases:
+  - Halloween Koala
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Cerebral characters by 2.5x recovers
+    1,000 HP at the end of each turn.
+special:
+  name: Little Devil's Treat and Smile
+  description: Reduces Increase Damage Taken duration by 5 turns, reduces damage
+    received by 50% for 3 turns, recovers 10x character's RCV in HP at the end
+    of each turn for 3 turns.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of Fighter and Cerebral characters by 30
+  - description: If your Captain is a Fighter or Cerebral character, makes [DEX]
+      orbs beneficial for all characters
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Sabo, Morley, Belo Betty, Karasu and Lindbergh
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 50
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 20
+    - hp: 50
+    - atk: 20
+    - atk: 40
+    - cooldown: 1
+    - hp: 100
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

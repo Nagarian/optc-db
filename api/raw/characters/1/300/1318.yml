@@ -1,0 +1,93 @@
+type: STR
+name: Garp the Fist Navy HQ Vice Admiral
+japanName: ゲンコツのガープ 海軍本部中将
+family:
+  - MonkeyDGarp
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 901
+    atk: 602
+    rcv: 106
+  maxLvl:
+    hp: 2110
+    atk: 1474
+    rcv: 290
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 43908
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2.5x
+special:
+  name: Super Large Iron Ball
+  description: Deals 30x character's ATK in [STR] Fixed True damage to all
+    enemies. Delays all enemies by 1 turn. Reduces the defense of all enemies by
+    80% for 1 turn.
+  cooldown: 22
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of all characters by 75
+  - description: Boosts base ATK of this character by 150 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Coby and Helmeppo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 5
+    - hp: 30
+    - rcv: 15
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 2
+    - atk: 50
+    - hp: 50
+    - slot: 1
+    - cooldown: 4
+    - type: sailor
+    - rcv: 30
+    - hp: 120
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

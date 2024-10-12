@@ -1,0 +1,52 @@
+type: DEX
+name: "Vinsmoke Niji - Germa Resurrection Plan: Masterpiece"
+japanName: ヴィンスモーク・ニジ ジェルマの復活計画　最高傑作
+family:
+  - VinsmokeNiji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 694
+    atk: 379
+    rcv: 33
+  maxLvl:
+    hp: 1410
+    atk: 1122
+    rcv: 66
+cost: 15
+slots: 4
+maxExp: 355666
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 99703
+aliases:
+  - Kid Niji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.75x and their HP by 1.2x
+special:
+  name: Scornful Gang Up (Second Son)
+  description: Deals 15x character's ATK in [DEX] damage to one enemy, changes the
+    orbs of middle row characters into [PSY] orbs and boosts ATK of Cost 15 or
+    less characters by 1.75x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Vinsmoke Ichiji, Vinsmoke Yonji, Vinsmoke Judge and Vinsmoke Reiju
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

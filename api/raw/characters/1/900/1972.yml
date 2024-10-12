@@ -1,0 +1,148 @@
+type: DEX
+name: Sabo - Sweet Dignity
+japanName: スウィートな品格 サボ
+family:
+  - Sabo
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 771
+    atk: 274
+    rcv: 109
+  maxLvl:
+    hp: 2140
+    atk: 1340
+    rcv: 349
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 91340
+aliases:
+  - TM Sabo
+  - Valentines Sabo
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.5x and their HP and RCV by
+    1.05x and if HP is above 70% or below 30% at the start of the turn, boosts
+    Chain Multiplier Growth Rate by 1.2x
+special:
+  name: Blissful Selection
+  description: If your Captain is a Cerebral character, changes [STR], [DEX],
+    [QCK], [INT] and [PSY] orbs of Cerebral characters into Matching orbs,
+    reduces the defense of all enemies by 80% for 1 turn and boosts ATK against
+    enemies with reduced defense by 1.75x for 1 turn
+  cooldown: 36
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral characters by 30
+  - description: Makes [DEX] orbs beneficial for Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - captain:
+        description: Boosts ATK of Cerebral characters by 1.5x and their HP and RCV by
+          1.1x and if HP is above 70% or below 30% at the start of the turn,
+          boosts Chain Multiplier Growth Rate by 1.2x
+    - type: sailor
+    - atk: 15
+    - hp: 40
+    - rcv: 10
+    - captain:
+        description: Boosts ATK of Cerebral characters by 1.75x and their HP and RCV by
+          1.1x and if HP is above 70% or below 30% at the start of the turn,
+          boosts Chain Multiplier Growth Rate by 1.2x
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 20
+    - captain:
+        description: Boosts ATK of Cerebral characters by 1.75x and their HP and RCV by
+          1.1x and if HP is above 70% or below 30% at the start of the turn,
+          boosts Chain Multiplier Growth Rate by 1.3x
+    - cooldown: 2
+    - atk: 25
+    - hp: 50
+    - rcv: 30
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - hp: 50
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Cerebral characters by 2x and their HP and RCV by
+          1.1x and if HP is above 70% or below 30% at the start of the turn,
+          boosts Chain Multiplier Growth Rate by 1.3x
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - hp: 50
+    - rcv: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Cerebral characters by 2x and their HP and RCV by
+          1.2x and if HP is above 70% or below 30% at the start of the turn,
+          boosts Chain Multiplier Growth Rate by 1.4x
+    - atk: 50
+    - hp: 60
+    - captain:
+        description: Boosts ATK of Cerebral characters by 2.25x and their HP and RCV by
+          1.2x and if HP is above 70% or below 30% at the start of the turn,
+          boosts Chain Multiplier Growth Rate by 1.5x
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+        - value: 250
+          reduction: 2
+        - value: 300
+          reduction: 3

@@ -1,0 +1,225 @@
+type: QCK
+name: Hannyabal - Pride of the Under Warden
+japanName: ハンニャバル 副署長の誇り
+family:
+  - Hannyabal
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1011
+    atk: 540
+    rcv: 112
+  maxLvl:
+    hp: 2528
+    atk: 1349
+    rcv: 279
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 258230
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x.
+special:
+  name: Expandable Straw Sword
+  description: Changes [EMPTY], [BOMB], [RCV] and [TND] orbs into Matching orbs,
+    reduces Despair duration by 4 turns, makes PERFECTs easier to hit for 1 turn
+    and boosts ATK against Poisoned enemies, Strongly Poisoned enemies and
+    enemies inflicted with Toxic by 1.75x for 2 turns. If the special is
+    activated with more than 50% health remaining, protects from defeat for 1
+    turn.
+  cooldown: 18
+  maxLevel: 1
+sailor:
+  - description: Boosts base HP of [QCK] characters by 50
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: "[QCK] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - atk: 100
+    - rcv: 100
+    - captain:
+        description: Boosts ATK of [QCK] characters by 3x and recovers 0.5x this
+          character's RCV at the end of the turn for each time you hit a
+          PERFECT.
+    - type: potential
+    - cooldown: 3
+    - atk: 100
+    - hp: 400
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 202
+    rumbleType: SPT
+    spd: 164
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 22
+      effects:
+        - attributes:
+            - ATK
+          duration: 5
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - amount: 0.5
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 22
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 0.6
+    - cooldown: 22
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 0.7
+    - cooldown: 22
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 0.8
+    - cooldown: 22
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 0.9
+    - cooldown: 22
+      effects:
+        - override:
+            level: 6
+        - override:
+            amount: 1
+    - cooldown: 22
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 1.1
+    - cooldown: 22
+      effects:
+        - override:
+            level: 8
+        - override:
+            amount: 1.2
+    - cooldown: 22
+      effects:
+        - override:
+            level: 9
+        - override:
+            amount: 1.3
+    - cooldown: 22
+      effects:
+        - override:
+            level: 10
+        - override:
+            amount: 1.5

@@ -1,0 +1,45 @@
+type: QCK
+name: Blue Gilly
+japanName: ブルーギリー
+family:
+  - BlueGilly
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 197
+    atk: 138
+    rcv: 37
+  maxLvl:
+    hp: 1330
+    atk: 689
+    rcv: 162
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 28761
+aliases: []
+evolution:
+  - id: 1027
+    evolvers:
+      - 85
+      - 96
+      - 301
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Fighter characters by 1.5x
+special:
+  name: Shooting Moon
+  description: Changes orb of Captain character into Matching orb and switches
+    orbs between slots 3 times
+  cooldown: 11
+  maxLevel: 7

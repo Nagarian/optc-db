@@ -1,0 +1,329 @@
+type: DEX
+name: Nami - Cat Burglar Swindling the New World
+japanName: ナミ “新世界”を欺く泥棒猫
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1457
+    atk: 706
+    rcv: 314
+  maxLvl:
+    hp: 3040
+    atk: 1452
+    rcv: 511
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 102769
+aliases:
+  - Mega/Super/6+ Nami
+  - V1 Legend Nami
+  - Zeus
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of [DEX] characters by 3.75x, by 4x instead if
+    they have a beneficial orb, and makes [STR] and [QCK] orbs beneficial for
+    [DEX] characters.
+special:
+  name: Zeus Breeze Tempo
+  description: Reduces Paralysis and Burn duration by 3 turns. Boosts the Color
+    Affinity of Free Spirit, Cerebral, Powerhouse and Driven characters by 1.75x
+    for 1 turn and boosts Orb Effects of Free Spirit, Cerebral, Powerhouse and
+    Driven characters by 2x for 1 turn
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Monkey D. Luffy, Carrot and Tony Tony Chopper
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - hp: 40
+    - hp: 40
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - rcv: 15
+    - rcv: 15
+    - hp: 50
+    - hp: 60
+    - cooldown: 1
+    - atk: 30
+    - atk: 30
+    - rcv: 25
+    - rcv: 25
+    - hp: 65
+    - type: sailor
+    - hp: 80
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 50
+    - hp: 100
+    - atk: 100
+    - hp: 200
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight and boosts ATK of [DEX] characters by 3.75x, by 4.5x
+          instead if they have a beneficial orb, and makes [STR], [QCK] and
+          [RCV] orbs beneficial for [DEX] characters.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10
+rumble:
+  stats:
+    def: 124
+    rumbleType: DBF
+    spd: 144
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 1
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 0.7
+          effect: damage
+          type: atk
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Paralysis
+          effect: hinderance
+          duration: 15
+          chance: 30
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.74
+        - override:
+            duration: 16
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.77
+        - override:
+            duration: 17
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.81
+        - override:
+            duration: 18
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            duration: 19
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.89
+        - override:
+            duration: 20
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.92
+        - override:
+            duration: 21
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.96
+        - override:
+            duration: 22
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 23
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 24
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

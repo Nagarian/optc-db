@@ -1,0 +1,206 @@
+type: STR
+name: Vinsmoke Ichiji - Germa 66 Crimson Flash
+japanName: ヴィンスモーク・イチジ ジェルマ６６　紅き閃光
+family:
+  - VinsmokeIchiji
+class:
+  - Powerhouse
+  - Shooter
+rarity: 5+
+stats:
+  combo: 6
+  minLvl:
+    hp: 1296
+    atk: 582
+    rcv: 99
+  maxLvl:
+    hp: 3118
+    atk: 1474
+    rcv: 260
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 143711
+aliases:
+  - Red Ranger
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and boosts ATK of [STR]
+    characters by 1.2x. Boosts HP of Powerhouse characters by 1.2x.
+  notes: Attack boost stacks, so an [STR] Powerhouse character has a 3x ATK
+special:
+  name: "Sparking Valkyrie: Spark Light Fists"
+  description: If there are 6 Powerhouse characters in your crew, deals 120x
+    character's ATK in Typeless damage to all enemies at the end of the turn for
+    3 turns. If your Captain's orb or Friend Captain's orb is [TND], removes
+    enemies' Defense Reduction Debuff Protection duration completely, delays all
+    enemies by 2 turns and reduces the defense of all enemies by 100% for 1
+    turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, makes [STR] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vinsmoke Judge, Vinsmoke Niji, Vinsmoke Yonji and Vinsmoke Reiju
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 15
+    - hp: 40
+    - atk: 30
+    - hp: 50
+    - cooldown: 1
+    - rcv: 25
+    - slot: 1
+    - hp: 60
+    - atk: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8
+rumble:
+  stats:
+    def: 175
+    rumbleType: ATK
+    spd: 181
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 700
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 9
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 800
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 900
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1000
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1100
+        - {}
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 3
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 3
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            level: 3
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 3
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 5

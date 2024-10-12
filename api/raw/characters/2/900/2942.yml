@@ -1,0 +1,102 @@
+type: PSY
+name: "Usopp - Straw Hat Pirates: Mark of a Fierce Battle"
+japanName: ウソップ 麦わらの一味・激戦の軌跡
+family:
+  - Usopp
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1323
+    atk: 573
+    rcv: 132
+  maxLvl:
+    hp: 2894
+    atk: 1250
+    rcv: 301
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 199793
+aliases:
+  - Super Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x and their RCV by 1.5x.
+special:
+  name: "Black Kabuto: Gunpowder Star"
+  description: Delays all enemies by 2 turns, reduces Silence duration by 2 turns
+    and locks all orbs for 2 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 2 turns on this character
+  - description: If your Captain is a [PSY] character, reduces Blindness duration by 5 turns
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin, Franky and Brook
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - hp: 60
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - rcv: 50
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

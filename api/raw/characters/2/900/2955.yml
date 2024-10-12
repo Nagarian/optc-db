@@ -1,0 +1,395 @@
+type: STR
+name: "Carrot - Awakened True Nature: Sulong"
+japanName: キャロット 目覚める本性“月の獅子（スーロン）”
+family:
+  - Carrot
+class:
+  - Fighter
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1096
+    atk: 712
+    rcv: 82
+  maxLvl:
+    hp: 2754
+    atk: 1497
+    rcv: 317
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 201503
+aliases:
+  - Kizuna Carrot
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of [STR] and [INT] characters by 2.75x-3.25x
+    based on the timing of the attack of the previous unit in the chain.
+  notes: A hit below Good or a Miss will boost the ATK of the next unit by 2.75x,
+    a Good hit by 2.92x, a Great hit by 3.08x and a PERFECT hit by 3.25x.
+special:
+  name: Electrical Airstep
+  description: Deals 15% of enemies' current HP in True damage to one enemy and
+    removes enemies' Increased Defense buff duration completely. If your captain
+    is a [STR] or [INT] character, boosts ATK of all characters by 1.75x for 1
+    turn and adds 0.65x to Chain multiplier for 1 turn.
+  cooldown: 30
+  maxLevel: 15
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Adds 3x character's ATK as Additional Damage
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 25
+    - rcv: 10
+    - hp: 50
+    - type: potential
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - rcv: 10
+    - atk: 50
+    - type: sailor
+    - rcv: 30
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+rumble:
+  stats:
+    def: 148
+    rumbleType: DBF
+    spd: 169
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+  special:
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 12
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 12
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 13
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 13
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 14
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 14
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 15
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 16
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 17
+          effect: debuff
+          level: 5
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 18
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 18
+          effect: debuff
+          level: 5
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 19
+          effect: debuff
+          level: 5
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 19
+          effect: debuff
+          level: 6
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 38
+      effects:
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 6
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 7
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - DEX

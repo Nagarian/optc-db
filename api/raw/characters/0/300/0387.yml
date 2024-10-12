@@ -1,0 +1,44 @@
+type: PSY
+name: Cindry
+japanName: シンドリーちゃん
+family:
+  - VictoriaCindry
+class:
+  - Shooter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 76
+    atk: 58
+    rcv: 60
+  maxLvl:
+    hp: 806
+    atk: 458
+    rcv: 259
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 7732
+aliases: []
+evolution:
+  - id: 388
+    evolvers:
+      - 117
+      - 81
+      - 87
+      - 385
+captain:
+  name: ""
+  description: Boosts RCV of [PSY] characters by 1.5x
+special:
+  name: Square Plate Sword
+  description: Randomizes all orbs into either [PSY] or [INT] orbs, deals random
+    [PSY] damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 1 : 10,000`"

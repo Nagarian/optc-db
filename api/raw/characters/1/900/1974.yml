@@ -1,0 +1,110 @@
+type: STR
+name: Basil Hawkins the Magician - Practitioner of Curses
+japanName: “魔術師”バジル・ホーキンス 呪詛の実行者
+family:
+  - BasilHawkins
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 935
+    atk: 632
+    rcv: 168
+  maxLvl:
+    hp: 2518
+    atk: 1450
+    rcv: 297
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 92474
+aliases:
+  - Secret Hawkins
+  - Limited Hawkins
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x, by 3.25x instead if they
+    have a beneficial orb, and makes [STR] orbs beneficial for Cerebral
+    characters
+special:
+  name: Raging Strike
+  description: Deals 20% of enemies' current HP in damage to one enemy and changes
+    [TND], [EMPTY] and Badly Matching orbs into Matching orbs and if your
+    Captain is a Cerebral character, removes Paralysis duration completely
+  cooldown: 20
+  maxLevel: 6
+  stages:
+    - description: Deals 10% of enemies' current HP in damage to one enemy and changes
+        [TND], [EMPTY] and Badly Matching orbs into Matching orbs and if your
+        Captain is a Cerebral character, reduces Paralysis duration by 2 turns
+      cooldown: 14
+    - description: Deals 15% of enemies' current HP in damage to one enemy and changes
+        [TND], [EMPTY] and Badly Matching orbs into Matching orbs and if your
+        Captain is a Cerebral character, reduces Paralysis duration by 5 turns
+      cooldown: 17
+sailor:
+  - description: Boosts base ATK of Cerebral characters by 75
+  - description: Adds 2x character's ATK as Additional Damage
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Urouge, Scratchmen Apoo and X Drake
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 10
+    - rcv: 20
+    - type: potential
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - atk: 30
+    - slot: 1
+    - hp: 80
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 2
+        - value: 80
+          reduction: 2
+        - value: 120
+          reduction: 3

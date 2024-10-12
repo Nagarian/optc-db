@@ -1,0 +1,53 @@
+type: PSY
+name: Kingdew
+japanName: キングデュー
+family:
+  - Kingdew
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 232
+    atk: 94
+    rcv: 38
+  maxLvl:
+    hp: 1123
+    atk: 522
+    rcv: 161
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 35305
+aliases:
+  - Heman
+evolution:
+  - id: 1184
+    evolvers:
+      - 87
+      - 94
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x
+special:
+  name: Brass Knuckle Destruction
+  description: Changes [PSY] orbs into [EMPTY] orbs, deals 13x-230x character's
+    ATK in [PSY] damage to one enemy
+  cooldown: 23
+  maxLevel: 7
+  notes: "The exact multiplier used is chosen based on the number of [PSY] orbs
+    consumed: 1 orb will give a 13x multiplier, 2 orbs 19x, 3 orbs 26x, 4 orbs
+    65x, 5 orbs 130x, 6 orbs 230x. It's not possible to activate the special
+    without consuming at least one [PSY] orb."
+sailor:
+  - description: If HP is above 99% at the start of the turn, boosts base ATK of
+      [PSY] characters by 75

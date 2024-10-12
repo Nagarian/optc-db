@@ -1,0 +1,235 @@
+type: QCK
+name: Caesar Clown - Gas-Gas Fruit User
+japanName: シーザー・クラウン “ガスガスの実”の能力者
+family:
+  - CaesarClown
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 512
+    atk: 260
+    rcv: 33
+  maxLvl:
+    hp: 1237
+    atk: 813
+    rcv: 133
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 211228
+aliases:
+  - ""
+evolution:
+  - id: 3011
+    evolvers:
+      - 83
+      - 266
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 2.5x and reduces damage
+    received by 10%.
+special:
+  name: Blue Sword
+  description: Deals 10% of enemies' current HP in damage to one enemy, reduces
+    Special Cooldown of [QCK] and [INT] character's characters by 1 turn,
+    changes [BLOCK], [RCV] and [TND] orbs into Matching orbs, locks all orbs for
+    1 turn and adds 0.7x to Chain multiplier for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 30
+rumble:
+  stats:
+    def: 240
+    rumbleType: DEF
+    spd: 110
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 35
+      effects:
+        - duration: 16
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 17
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 18
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 19
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 20
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 21
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 22
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 23
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 24
+          effect: damage
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time
+    - cooldown: 35
+      effects:
+        - duration: 25
+          effect: damage
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - INT
+          type: time

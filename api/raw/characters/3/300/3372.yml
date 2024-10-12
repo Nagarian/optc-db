@@ -1,0 +1,252 @@
+type: PSY
+name: Franky - MUGIWARA 56
+japanName: フランキー ＭＵＧＩＷＡＲＡ５６
+family:
+  - Franky
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1623
+    atk: 621
+    rcv: 112
+  maxLvl:
+    hp: 3121
+    atk: 1457
+    rcv: 216
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 284390
+aliases:
+  - Mugiwara Franky
+  - Germa Franky
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Free Spirit characters by 3x and their HP by 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x and their HP by 1.3x.
+special:
+  name: Super Cyborg Punch
+  description: Reduces Silence duration by 4 turns, adds 1.0x to Chain multiplier
+    for 4 turns, reduces the defense of all enemies by 100% for 2 turns, changes
+    Badly Matching, [G], [EMPTY] and [BOMB] orbs into Matching orbs and locks
+    all orbs for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When any other Free Spirit character uses a special, reduces
+      special cooldown of this character by 1 turn
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: descriptive
+  criteria: Usopp and Nico Robin
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn.
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - rcv: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+rumble:
+  stats:
+    def: 259
+    rumbleType: DEF
+    spd: 92
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: Damage Over Time
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 1
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - Damage Over Time
+          duration: 12
+          level: 1
+          chance: 100
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+          duration: 6
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 14
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 16
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 18
+        - override:
+            level: 1
+            duration: 9
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 20
+        - override:
+            level: 1
+            duration: 10
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 22
+        - override:
+            level: 2
+            duration: 11
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 24
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 26
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 28
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 30
+        - override:
+            level: 3
+            duration: 15

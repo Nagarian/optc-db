@@ -1,0 +1,75 @@
+type: INT
+name: Sanji - ONE PIECE STAMPEDE
+japanName: サンジ ONE PIECE STAMPEDE
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1678
+    atk: 719
+    rcv: 154
+  maxLvl:
+    hp: 3091
+    atk: 1328
+    rcv: 303
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 162422
+aliases:
+  - Stampede Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 3.25x, their HP by 1.2x and
+    makes [INT] orbs beneficial for Fighter characters.
+special:
+  name: Diable Jambe Pirate Expo Concasse
+  description: Deals 90x character's ATK in Typeless damage to one enemy. If your
+    Captain is a [STR], [QCK] or [INT] character, boosts ATK of [STR], [QCK] and
+    [INT] characters by 1.75x for 2 turns and boosts Orb Effects of [STR], [QCK]
+    and [INT] characters by 1.75x for 2 turns.
+  cooldown: 17
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of Fighter characters by 40
+  - description: Makes [INT] orbs beneficial for Fighter characters
+limitBreak:
+  path:
+    - hp: 90
+    - hp: 120
+    - cooldown: 1
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - cooldown: 1
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

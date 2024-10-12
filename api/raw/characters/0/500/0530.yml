@@ -1,0 +1,143 @@
+type: PSY
+name: Shanks - Black Clad Emperor
+japanName: シャンクス 黒衣の四皇
+family:
+  - Shanks
+class:
+  - Slasher
+  - Cerebral
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1537
+    atk: 736
+    rcv: 261
+  maxLvl:
+    hp: 3140
+    atk: 1400
+    rcv: 418
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 11948
+aliases:
+  - Strong World Shanks
+  - SW Shanks
+  - V1 Legend Shanks
+  - Yonko
+evolution:
+  - id: 1707
+    evolvers:
+      - skullPSY
+      - 118
+      - 98
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts chances of getting [PSY] orbs, boosts ATK of [PSY]
+    characters by 2x-2.75x depending on the crew's current HP
+  notes: "`captainProportional : higher : 2 + 0.75 * (remaining HP) / (total HP) :
+    2.75 : 2`"
+special:
+  name: "Conqueror's Haki: Emperor"
+  description: Deals 35x character's ATK in [PSY] damage to all enemies, reduces
+    the defense of all enemies by 100% for 2 turns
+  cooldown: 25
+  maxLevel: 6
+sailor:
+  - description: Makes [INT] orbs beneficial for [PSY] characters
+  - description: Adds 3x character's ATK as Additional Damage
+support:
+  type: descriptive
+  criteria: "[PSY] characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR] orbs of [PSY] characters into [PSY]
+      orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR] orbs of [PSY] characters into [PSY]
+      orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR] and [DEX] orbs of [PSY] characters
+      into [PSY] orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR], [DEX] and [QCK] orbs of [PSY]
+      characters into [PSY] orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs
+      of [PSY] characters into [PSY] orbs.
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 15
+    - type: potential
+    - hp: 20
+    - hp: 25
+    - hp: 30
+    - type: sailor
+    - hp: 35
+    - hp: 40
+    - hp: 45
+    - hp: 50
+    - hp: 55
+    - hp: 60
+    - type: potential
+    - atk: 15
+    - atk: 20
+    - atk: 25
+    - atk: 30
+    - atk: 35
+    - atk: 40
+    - atk: 45
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 30
+    - rcv: 50
+    - type: sailor
+    - hp: 90
+    - atk: 75
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - captain:
+        description: Boosts ATK of [PSY] characters by 3.5x, boosts their HP by 1.3x and
+          boosts chance of getting [PSY] orbs depending on the crew's current
+          HP.
+    - cooldown: 6
+    - atk: 200
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - threshold: 50
+        - threshold: 70
+        - threshold: 80
+        - value: 10
+          threshold: 90

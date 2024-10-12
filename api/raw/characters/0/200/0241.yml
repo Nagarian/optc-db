@@ -1,0 +1,37 @@
+type: INT
+name: Bazooka Millions - Baroque Works
+japanName: バズーカミリオンズ バロックワークス
+family:
+  - BazookaBaroqueWorks
+class:
+  - Shooter
+rarity: 2
+stats:
+  combo: 4
+  minLvl:
+    hp: 203
+    atk: 113
+    rcv: 10
+  maxLvl:
+    hp: 640
+    atk: 388
+    rcv: 20
+cost: 5
+slots: 0
+maxExp: 33626
+maxLevel: 25
+flags: []
+links:
+  gamewithId: 4927
+aliases: []
+evolution:
+  - id: 246
+    evolvers:
+      - 115
+      - 93
+      - 99
+special:
+  name: "[QCK] Slot Change [INT]"
+  description: Changes [QCK] orbs into [INT] orbs
+  cooldown: 15
+  maxLevel: 9

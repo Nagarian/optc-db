@@ -1,0 +1,48 @@
+type: INT
+name: Coby - Supply Ship Officer
+japanName: コビー 補給艦責任者
+family:
+  - Coby
+class:
+  - Driven
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 241
+    atk: 65
+    rcv: 46
+  maxLvl:
+    hp: 1348
+    atk: 692
+    rcv: 185
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 85561
+aliases:
+  - Secret Coby
+  - Limited Coby
+evolution:
+  - id: 1926
+    evolvers:
+      - 118
+      - 88
+      - 99
+      - 304
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.5x
+special:
+  name: Unshameful Fist of Justice
+  description: Reduces Bind duration completely for one character, locks all orbs
+    for 1 turn and boosts ATK of Driven characters by 1.75x for 3 turns
+  cooldown: 19
+  maxLevel: 5

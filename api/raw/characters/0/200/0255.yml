@@ -1,0 +1,89 @@
+type: INT
+name: Flower Sword Vista
+japanName: 花剣のビスタ
+family:
+  - Vista
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1314
+    atk: 732
+    rcv: 72
+  maxLvl:
+    hp: 2840
+    atk: 1325
+    rcv: 185
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 4863
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and HP of [INT] characters by 2x
+special:
+  name: Rose Rondo
+  description: Deals 5,000 Fixed damage to all enemies
+  cooldown: 15
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 30
+  - description: If this character has an [INT] orb and you hit a PERFECT with him,
+      keep his [INT] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Jozu and Marco
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - cooldown: 1
+    - type: potential
+    - atk: 25
+    - cooldown: 1
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - atk: 50
+    - hp: 100
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

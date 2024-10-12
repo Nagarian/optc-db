@@ -1,0 +1,93 @@
+type: DEX
+name: Brook - Song of Scratches Blizzard Slash
+japanName: ブルック 掠り唄　吹雪斬り
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5+
+stats:
+  combo: 6
+  minLvl:
+    hp: 1043
+    atk: 481
+    rcv: 187
+  maxLvl:
+    hp: 2204
+    atk: 1277
+    rcv: 351
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 22659
+aliases:
+  - Mega Brook
+  - Super Brook
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and recovers 430 HP at
+    the end of each turn
+special:
+  name: "Song of Scratches: Blizzard Slash"
+  description: Delays all enemies by 1 turn and locks all orbs for 1 turn
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of all characters by 20
+  - description: Boosts this character's damage against [STR] characters by 2x
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin and Franky
+  levels:
+    - Reduces damage received from [DEX] characters by 1%
+    - Reduces damage received from [DEX] characters by 2%
+    - Reduces damage received from [DEX] characters by 3%
+    - Reduces damage received from [DEX] characters by 4%
+    - Reduces damage received from [DEX] characters by 5%
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 20
+    - hp: 40
+    - hp: 60
+    - hp: 80
+    - rcv: 20
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20

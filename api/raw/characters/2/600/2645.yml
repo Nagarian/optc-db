@@ -1,0 +1,241 @@
+type: PSY
+name: Bonney & Hawkins - The Worst vs. The Strongest
+japanName: ボニー＆ホーキンス “最悪”対“最強”
+family:
+  - BasilHawkins
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 830
+    atk: 550
+    rcv: 180
+  maxLvl:
+    hp: 2694
+    atk: 1203
+    rcv: 250
+cost: 50
+slots: 5
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 160272
+aliases:
+  - Stampede Jewelry Bonney
+  - Stampede Basil Hawkins
+captain:
+  name: ""
+  description: Boosts HP of Free Spirit and Slasher characters by 2x
+special:
+  name: '"Worst" Collaboration - Demonic Exorcism'
+  description: Reduces Paralysis and Chain Coefficient Reduction duration by 3
+    turns and randomizes [STR], [DEX], [QCK], [PSY] and [INT] orbs into either
+    [RCV] or [TND] orbs.
+  cooldown: 14
+  maxLevel: 5
+sailor:
+  - description: Makes [INT], [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 20
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - rcv: 30
+    - rcv: 30
+    - cooldown: 1
+    - rcv: 40
+    - cooldown: 1
+    - rcv: 50
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+rumble:
+  stats:
+    def: 179
+    rumbleType: RCV
+    spd: 145
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Free Spirit
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 39
+      effects:
+        - amount: 350
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: fixed
+        - attributes:
+            - Paralysis
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Accuracy
+          effect: buff
+          level: 2
+          duration: 10
+          targeting:
+            targets:
+              - crew
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 375
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 400
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 425
+        - override:
+            duration: 13
+        - override:
+            duration: 13
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 450
+        - override:
+            duration: 14
+        - override:
+            duration: 14
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 475
+        - override:
+            duration: 15
+        - override:
+            duration: 15
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 500
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 525
+        - override:
+            duration: 17
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 550
+        - override:
+            duration: 18
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 39
+      effects:
+        - override:
+            amount: 650
+        - override:
+            duration: 20
+        - override:
+            level: 4
+            duration: 20

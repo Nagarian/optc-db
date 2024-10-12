@@ -1,0 +1,48 @@
+type: PSY
+name: Ryuma
+japanName: リューマ
+family:
+  - ShimotsukiRyuma
+class:
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 1138
+    atk: 368
+    rcv: 162
+  maxLvl:
+    hp: 2005
+    atk: 1088
+    rcv: 162
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 3558
+aliases:
+  - Ryuuma
+captain:
+  name: ""
+  description: Boosts ATK and HP of Slasher characters by 1.5x
+special:
+  name: "Shusui: Three Verse Arrow Notch Slash"
+  description: Deals random [PSY] damage to all enemies
+  cooldown: 35
+  maxLevel: 18
+  notes: "`random : 1 : 100,000`"
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Roronoa Zoro
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

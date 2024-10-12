@@ -1,0 +1,49 @@
+type: QCK
+name: Kamazo
+japanName: 鎌ぞう
+family:
+  - Killer
+class:
+  - Driven
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 590
+    atk: 389
+    rcv: 38
+  maxLvl:
+    hp: 1312
+    atk: 865
+    rcv: 86
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 252733
+aliases:
+  - Killer
+evolution:
+  - id: 3229
+    evolvers:
+      - 117
+      - 90
+      - 94
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x and their HP by 1.2x.
+special:
+  name: Manslayer's Onslaught Attack
+  description: Deals 20% of enemies' current HP in True damage to one enemy,
+    reduces Burn duration by 4 turns, reduces enemies' Increased Defense
+    duration by 4 turns and locks the chain multiplier at 3x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [QCK] characters by 50

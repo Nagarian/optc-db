@@ -1,0 +1,116 @@
+type: STR
+name: Marco the Phoenix - Blue Flame in the Paramount War
+japanName: 不死鳥マルコ 頂上戦争の蒼炎
+family:
+  - Marco
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1078
+    atk: 558
+    rcv: 114
+  maxLvl:
+    hp: 2694
+    atk: 1395
+    rcv: 286
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 168135
+aliases:
+  - Limited Marco
+  - Secret Marco
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x, by 3.5x instead if HP
+    is below 50% at the start of the turn.
+special:
+  name: Soaring Blue Flames
+  description: Reduces crew's current HP to 1, boosts the Color Affinity of
+    Powerhouse characters by 2x for 1 turn and removes Blindness, Poison, RCV
+    DOWN and No Healing duration completely
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 75
+  - description: Makes [STR] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Edward Newgate (Whitebeard) and Portgas D. Ace
+  levels:
+    - value: 5
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - rcv: 10
+    - atk: 20
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 40
+    - atk: 20
+    - hp: 40
+    - atk: 60
+    - type: sailor
+    - hp: 60
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

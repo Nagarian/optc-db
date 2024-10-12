@@ -1,0 +1,250 @@
+type: QCK
+name: Kalifa - CP9's Strongest
+japanName: カリファ 歴代最強の「ＣＰ９」
+family:
+  - Kalifa
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 912
+    atk: 498
+    rcv: 238
+  maxLvl:
+    hp: 1964
+    atk: 933
+    rcv: 473
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16962
+aliases:
+  - Califa, CP9's Strongest Generation
+  - Calipha, CP9's Strongest Generation
+  - Kalipha, CP9's Strongest Generation
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.25x and their RCV by 1.5x
+special:
+  name: Sheep Cloud Tidal Wave
+  description: Reduces damage received by 50% for 1 turn if the special is
+    activated with more than 50% health remaining, reduces damage received by
+    80% for 1 turn if activated with less than 50% but more than 10% health
+    remaining, reduces damage received by 100% for 1 turn if activated with less
+    than 10% health remaining
+  cooldown: 21
+  maxLevel: 8
+sailor:
+  - description: Reduces Blindness duration by 3 turns
+  - description: Restores special cooldown of this character by 2 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Rob Lucci, Kaku, Jabra, Blueno, Fukuro and Kumadori
+  levels:
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces any damage received above 5,000 HP by 50% for 1 turn
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces any damage received above 5,000 HP by 50% for 1 turn
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces any damage received above 5,000 HP by ??% for 1 turn
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces any damage received above 4,000 HP by ??% for 1 turn
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces any damage received above 3,000 HP by ??% for 1 turn
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 40
+    - rcv: 20
+    - type: potential
+    - atk: 40
+    - cooldown: 1
+    - hp: 70
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - hp: 90
+    - atk: 50
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 99
+    rumbleType: DBF
+    spd: 151
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 2
+          condition:
+            comparator: less
+            count: 5
+            type: crew
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 3
+          condition:
+            comparator: less
+            count: 5
+            type: crew
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 4
+          condition:
+            comparator: less
+            count: 5
+            type: crew
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 5
+          condition:
+            comparator: less
+            count: 5
+            type: crew
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 6
+          condition:
+            comparator: less
+            count: 5
+            type: crew
+          targeting:
+            targets:
+              - Fighter
+  special:
+    - cooldown: 34
+      effects:
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 3
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 400
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 34
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 440
+    - cooldown: 34
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 480
+    - cooldown: 34
+      effects:
+        - override:
+            level: 6
+        - override:
+            amount: 520
+    - cooldown: 34
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 560
+    - cooldown: 34
+      effects:
+        - override:
+            level: 8
+        - override:
+            amount: 600
+    - cooldown: 34
+      effects:
+        - override:
+            level: 9
+        - override:
+            amount: 640
+    - cooldown: 34
+      effects:
+        - override:
+            level: 10
+        - override:
+            amount: 680
+    - cooldown: 34
+      effects:
+        - override:
+            level: 11
+        - override:
+            amount: 720
+    - cooldown: 34
+      effects:
+        - override:
+            level: 12
+        - override:
+            amount: 780

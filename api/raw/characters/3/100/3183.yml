@@ -1,0 +1,255 @@
+type: PSY
+name: Crocus - Waiting at the Cape to Fulfill a Promise
+japanName: クロッカス 約束の岬で待つ男
+family:
+  - Crocus
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1246
+    atk: 800
+    rcv: 96
+  maxLvl:
+    hp: 2768
+    atk: 1334
+    rcv: 319
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 248702
+aliases:
+  - World Cruise Crocus
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 3x and their RCV by 1.2x.
+special:
+  name: Silent Intimidation
+  description: Reduces damage received by 90% for 2 turns, recovers 20x
+    character's RCV in HP, allowing HP Overfill up to 2x MAX HP, removes
+    Blindness and Poison duration completely and reduces Burn and RCV DOWN
+    duration by 5 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: descriptive
+  criteria: Laboon, Silvers Rayleigh and Gol D. Roger
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 30% for 1 turn and recovers 500 HP.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 30% for 1 turn and recovers 1,000 HP.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 30% for 1 turn, recovers 1,000 HP and reduces
+      Burn duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 40% for 1 turn, recovers 1,500 HP and reduces
+      Burn duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 50% for 1 turn, recovers 2,500 HP and reduces
+      Burn duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 50
+    - slot: 1
+    - hp: 50
+    - hp: 100
+    - atk: 30
+    - type: sailor
+    - rcv: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 190
+    rumbleType: DEF
+    spd: 107
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - DEF
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+        - amount: 10
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - self
+          type: percentage
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 22
+            level: 1
+        - override:
+            amount: 10
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 23
+            level: 1
+        - override:
+            amount: 11
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 24
+            level: 1
+        - override:
+            amount: 11
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 25
+            level: 2
+        - override:
+            amount: 12
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 26
+            level: 2
+        - override:
+            amount: 12
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 27
+            level: 2
+        - override:
+            amount: 13
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 28
+            level: 3
+        - override:
+            amount: 13
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 29
+            level: 3
+        - override:
+            amount: 14
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 30
+            level: 4
+        - override:
+            amount: 15

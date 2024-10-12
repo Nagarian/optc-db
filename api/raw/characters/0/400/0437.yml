@@ -1,0 +1,50 @@
+type: DEX
+name: Perona ~Sweets~
+japanName: ペローナ　スイート
+family:
+  - Perona
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 168
+    atk: 98
+    rcv: 58
+  maxLvl:
+    hp: 928
+    atk: 412
+    rcv: 231
+cost: 11
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 10445
+aliases:
+  - Valentine Perona
+evolution:
+  - id: 438
+    evolvers:
+      - 118
+      - 80
+      - 86
+      - 94
+      - 97
+captain:
+  name: ""
+  description: Boosts RCV of [DEX] characters by 3x if HP is below 30% at the
+    start of the turn
+special:
+  name: Negative Horo "Sweet"
+  description: Recovers 3x character's RCV in HP, reduces damage received by 80%
+    for 1 turn, Poisons enemies for 1,000 for a single turn
+  cooldown: 18
+  maxLevel: 1
+  notes: Poison damage deals 1,000 damage exactly and will ignore enemy armor at
+    the end of your turn

@@ -1,0 +1,54 @@
+type: INT
+name: ChoBro
+japanName: チョニキ
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 252
+    atk: 72
+    rcv: 70
+  maxLvl:
+    hp: 1028
+    atk: 504
+    rcv: 216
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 102773
+aliases:
+  - Tony Tony Chopper
+  - WCI Chopper
+  - Anniversary Chopper
+  - Choniki
+  - Bropper
+evolution:
+  - id: 2072
+    evolvers:
+      - 83
+      - 266
+      - 99
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn
+special:
+  name: A Man's Stratagem to Victory
+  description: Reduces the defense of all enemies by 80% for 1 turn, reduces
+    enemies' Threshold Damage Reduction and Enrage duration by 5 turns, makes
+    [INT], [PSY] and [DEX] orbs beneficial for all characters for 1 turn and
+    adds 0.6x to Chain multiplier for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Changes all orbs into [RCV] orbs at the start of the fight

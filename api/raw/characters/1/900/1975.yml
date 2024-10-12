@@ -1,0 +1,54 @@
+type: QCK
+name: "X Drake: Neo - Drake Pirates"
+japanName: X・ドレーク 「改」 ドレーク海賊団
+family:
+  - XDrake
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 549
+    atk: 221
+    rcv: 51
+  maxLvl:
+    hp: 1357
+    atk: 694
+    rcv: 178
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 92464
+aliases:
+  - Neo X Drake
+  - Kai X Drake
+evolution:
+  - id: 1976
+    evolvers:
+      - 118
+      - 83
+      - 85
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x if HP is below 30% at the start
+    of the turn
+special:
+  name: Double Edge of Revolt [Neo]
+  description: If HP above 70% then changes [RCV], [TND], [EMPTY], [BOMB] and
+    [BLOCK] orbs into Matching orbs. If HP below 30% then changes orbs of
+    adjacent characters into Matching orbs. Deals 50x character's ATK in [QCK]
+    damage to one enemy, changes the orb of this character into a [QCK] orb and
+    locks all orbs for 1 turn.
+  cooldown: 19
+  maxLevel: 11
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base ATK of
+      all characters by 40

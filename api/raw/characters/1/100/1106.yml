@@ -1,0 +1,86 @@
+type: DEX
+name: Binz - Zephyr's Final Pupil
+japanName: ビンズ ゼファー最後の教え子
+family:
+  - Binz
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1091
+    atk: 484
+    rcv: 115
+  maxLvl:
+    hp: 2107
+    atk: 1042
+    rcv: 280
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 33490
+aliases:
+  - Colo Binz
+  - Coliseum Binz
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Free Spirit characters by 2x, deals 2x
+    character's ATK in Typeless damage to all enemies at the end of each turn
+special:
+  name: Mosa Mosa Dance
+  description: Delays all enemies by 1 turn. Adds 0.2x to Chain multiplier for 2
+    turns. Makes PERFECTs easier to hit for 2 turns.
+  cooldown: 23
+  maxLevel: 12
+sailor:
+  - description: Adds 2x character's ATK as Additional Damage
+  - description: Makes [DEX] orbs beneficial for Shooter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Zephyr and Ain
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 20
+    - type: sailor
+    - type: potential
+    - atk: 10
+    - hp: 20
+    - atk: 30
+    - rcv: 40
+    - hp: 40
+    - slot: 1
+    - hp: 70
+    - type: sailor
+    - cooldown: 2
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

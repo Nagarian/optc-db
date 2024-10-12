@@ -1,0 +1,50 @@
+type: INT
+name: Doberman - Navy Vice Admiral
+japanName: ドーベルマン 海軍本部中将
+family:
+  - Doberman
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 200
+    atk: 210
+    rcv: 71
+  maxLvl:
+    hp: 1085
+    atk: 951
+    rcv: 205
+cost: 20
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 24036
+aliases:
+  - Colo Doberman
+  - Coliseum Doberman
+captain:
+  name: ""
+  description: Boosts ATK and HP of Driven characters by 1.5x
+special:
+  name: Unwavering Hammer of Justice
+  description: Increases damage received by 1.5x and boosts ATK of Slasher and
+    Driven characters by 1.2x for 3 turns
+  cooldown: 18
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8

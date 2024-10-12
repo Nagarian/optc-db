@@ -1,0 +1,320 @@
+type: QCK
+name: Doflamingo - Enjoying the Change of an Era
+japanName: ドフラミンゴ 時代の変化を楽しむ男
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1120
+    atk: 717
+    rcv: 94
+  maxLvl:
+    hp: 2911
+    atk: 1464
+    rcv: 308
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 261441
+aliases:
+  - Kizuna Doffy
+  - Kizuna Doflamingo
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3.5x and their HP by 1.25x.
+special:
+  name: Spacious Slicing
+  description: Deals 100x character's ATK in Typeless damage to all enemies,
+    changes orbs of adjacent characters into Matching Orbs and reduces enemies'
+    Threshold Damage Reduction and Increased Defense duration by 5 turns. If HP
+    is above 70% at the time the special is activated, increases duration of any
+    Chain Multiplier Limit, Chain Lock, or Chain Boundary debuffs by 1 turn.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Makes [QCK] orbs beneficial for Driven characters
+  - description: If your Captain is a Driven character, boosts base ATK of Driven
+      and Slasher characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - rcv: 25
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 100
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 140
+          reduction: 2
+        - value: 170
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 118
+    rumbleType: DBF
+    spd: 170
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 50
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 55
+            duration: 12
+        - override:
+            duration: 12
+            level: 1
+        - override:
+            duration: 12
+            level: 1
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 60
+            duration: 13
+        - override:
+            duration: 13
+            level: 1
+        - override:
+            duration: 13
+            level: 1
+        - override:
+            duration: 13
+            level: 1
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 65
+            duration: 14
+        - override:
+            duration: 14
+            level: 1
+        - override:
+            duration: 14
+            level: 1
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 70
+            duration: 15
+        - override:
+            duration: 15
+            level: 1
+        - override:
+            duration: 15
+            level: 2
+        - override:
+            duration: 15
+            level: 2
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 75
+            duration: 16
+        - override:
+            duration: 16
+            level: 2
+        - override:
+            duration: 16
+            level: 2
+        - override:
+            duration: 16
+            level: 3
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 80
+            duration: 17
+        - override:
+            duration: 17
+            level: 2
+        - override:
+            duration: 17
+            level: 2
+        - override:
+            duration: 17
+            level: 3
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 85
+            duration: 18
+        - override:
+            duration: 18
+            level: 2
+        - override:
+            duration: 18
+            level: 3
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 90
+            duration: 19
+        - override:
+            duration: 19
+            level: 2
+        - override:
+            duration: 19
+            level: 3
+        - override:
+            duration: 19
+            level: 4
+    - cooldown: 26
+      effects:
+        - override:
+            chance: 100
+            duration: 20
+        - override:
+            duration: 20
+            level: 3
+        - override:
+            duration: 20
+            level: 4
+        - override:
+            duration: 20
+            level: 5

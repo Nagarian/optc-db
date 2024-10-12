@@ -1,0 +1,475 @@
+type: DEX
+name: Buggy - Flashily Enjoying the Festival
+japanName: バギー ド派手に祭りを楽しむ男
+family:
+  - Buggy
+class:
+  - Free Spirit
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1206
+    atk: 639
+    rcv: 85
+  maxLvl:
+    hp: 2802
+    atk: 1467
+    rcv: 319
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 221383
+aliases:
+  - Summer Buggy
+  - Hanabi Buggy
+  - Yukata Buggy
+  - Kizuna Buggy
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Driven characters by 3x, their HP by
+    1.25x and makes [DEX] orbs beneficial for Free Spirit and Driven characters.
+special:
+  name: Muggy Ball - Festival Version
+  description: Reduces Bind, Despair and Paralysis duration by 5 turns. If your
+    Captain is a Free Spirit character, changes all orbs, including [BLOCK]
+    orbs, into Matching orbs.
+  cooldown: 28
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of Free Spirit and Driven characters by 50
+  - description: Makes [STR] and [DEX] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - atk: 25
+    - hp: 50
+    - atk: 25
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 153
+    rumbleType: DBF
+    spd: 192
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 20
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 23
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 12
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 26
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 13
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 29
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 14
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 32
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 35
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 16
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 38
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 17
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 41
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 18
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 44
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 19
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - amount: 50
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Accuracy
+          duration: 20
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 20
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - QCK

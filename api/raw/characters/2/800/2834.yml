@@ -1,0 +1,333 @@
+type: DUAL
+name: Nami & Robin - The Lovely Ladies of the Straw Hat Crew
+japanName: ナミ＆ロビン 麦わらの一味の紅二点
+family:
+  - Nami
+  - NicoRobin
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 521
+    atk: 221
+    rcv: 45
+  maxLvl:
+    hp: 1402
+    atk: 958
+    rcv: 202
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 184672
+aliases:
+  - Nami&Robin
+  - NamiRobin
+  - Robin&Nami
+  - RobinNami
+  - Romi
+  - Boob Bait
+  - Legend Nami and Robin
+evolution:
+  - id: 2835
+    evolvers:
+      - 118
+      - 118
+      - 104
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 4.5x, their HP and RCV
+    by 1.3x, reduces damage received by 20% and makes [DEX] and [INT] orbs
+    beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character has
+    an [EMPTY] orb, boosts their ATK by 6x instead.
+special:
+  name: Mil Fleur Tempo
+  description: Deals 25% of enemies' current HP in damage to one enemy, boosts Orb
+    Effects of [DEX] and [INT] characters by 2.5x for 1 turn, reduces Paralysis
+    duration by 10 turns and becomes Nami & Robin for 3 turns
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Makes [DEX] and [INT] orbs beneficial for all characters
+characters:
+  swap:
+    description: If this character has no stored orbs, stores current orbs and
+      changes all orbs into [EMPTY] orbs. If this character has stored orbs,
+      restores orbs into slots.
+    notes: The storing and emptying of orbs will work on all orbs, including
+      [BLOCK], [RAINBOW], [SEMLA] and [WANO]. However, you can not override
+      [RAINBOW], [SEMLA] or [WANO] orbs with other orbs. The Swap can not store
+      [EMPTY] orbs; if all orbs are empty, the swap will occur without any
+      additional effects if there's no stored orbs.
+  character1:
+    name: Nami - The Lovely Ladies of the Straw Hat Crew
+    japanName: ナミ 麦わらの一味の紅二点
+    class:
+      - Free Spirit
+      - Striker
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 540
+        atk: 220
+        rcv: 40
+      maxLvl:
+        hp: 1402
+        atk: 949
+        rcv: 175
+    captain:
+      name: ""
+      description: Boosts ATK of [DEX] and [INT] characters by 3.5x, by 3.75x instead
+        if they have a beneficial orb, their HP by 1.3x and makes [DEX] and
+        [INT] orbs beneficial for [DEX] and [INT] characters. If a [DEX] or
+        [INT] character has an [EMPTY] orb, boosts their ATK by 4x instead.
+    sailor:
+      - description: Makes [DEX] and [INT] orbs beneficial for all characters
+  character2:
+    name: Robin - The Lovely Ladies of the Straw Hat Crew
+    japanName: ロビン 麦わらの一味の紅二点
+    class:
+      - Free Spirit
+      - Cerebral
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 521
+        atk: 209
+        rcv: 45
+      maxLvl:
+        hp: 1358
+        atk: 890
+        rcv: 202
+    captain:
+      name: ""
+      description: Boosts ATK of [DEX] and [INT] characters by 3.25x, their HP and RCV
+        by 1.3x, reduces damage received by 10% and makes [DEX] and [INT] orbs
+        beneficial for [DEX] and [INT] characters. If a [DEX] or [INT] character
+        has an [EMPTY] orb, boosts their ATK by 4x instead.
+    sailor:
+      - description: Makes [DEX] and [INT] orbs beneficial for all characters
+rumble:
+  stats:
+    def: 176
+    rumbleType: SPT
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 22
+          effect: damage
+          type: cut
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Paralysis
+          effect: boon
+          duration: 10
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - crew
+    - cooldown: 28
+      effects:
+        - {}
+        - {}
+        - override:
+            duration: 16
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 23
+        - {}
+        - override:
+            duration: 17
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 24
+        - {}
+        - override:
+            duration: 18
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 25
+        - {}
+        - override:
+            duration: 19
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 26
+        - {}
+        - override:
+            duration: 20
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 27
+        - {}
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 28
+        - {}
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 29
+        - {}
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 28
+      effects:
+        - override:
+            duration: 30
+        - {}
+        - override:
+            level: 3
+            duration: 24
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,50 @@
+type: DEX
+name: Franky - Celebrate 20th Anniversary Cruise
+japanName: フランキー Celebrate 20th Anniversary Cruise
+family:
+  - Franky
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 794
+    atk: 385
+    rcv: 30
+  maxLvl:
+    hp: 1599
+    atk: 687
+    rcv: 126
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 62645
+aliases:
+  - 20th Anniversary Franky
+evolution:
+  - id: 1688
+    evolvers:
+      - 80
+      - 86
+      - 91
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x and reduces damage received by 10%
+special:
+  name: Franky Iron BOXING
+  description: Changes the orb of this character into a [DEX] orb, deals 15 hits
+    of random Typeless damage to random enemies and reduces the defense of all
+    enemies by 100% for 2 turns
+  cooldown: 19
+  maxLevel: 5
+  notes: "`random : ? : ? : for each hit`"
+sailor:
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded

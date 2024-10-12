@@ -1,0 +1,79 @@
+type: INT
+name: Senor Pink - North Blue Darkness
+japanName: セニョール・ピンク “北の海”の闇
+family:
+  - SenorPink
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1472
+    atk: 440
+    rcv: 130
+  maxLvl:
+    hp: 3050
+    atk: 990
+    rcv: 310
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 38723
+aliases:
+  - Senor Pink
+  - Young Senior Pink
+  - Senior Pink
+  - Young Senor Pink
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1.75x. Recovers 0.75x this
+    character's RCV at the end of the turn for each time you hit a PERFECT.
+special:
+  name: Blood and Gunpowder of the Underground Family
+  description: Randomizes all orbs. Boosts the Color Affinity of Free Spirit and
+    Shooter characters by 1.5x for 1 turn
+  cooldown: 12
+  maxLevel: 3
+sailor:
+  - description: Boosts Shooter and Free Spirit characters' damage against [STR],
+      [DEX] and [QCK] characters by 1.05x
+  - description: Makes [INT] orbs beneficial for Shooter and Free Spirit characters
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 10
+    - rcv: 15
+    - type: potential
+    - hp: 20
+    - type: sailor
+    - hp: 30
+    - hp: 50
+    - atk: 40
+    - cooldown: 3
+    - type: sailor
+    - atk: 55
+    - slot: 1
+    - atk: 90
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - {}

@@ -1,0 +1,164 @@
+type: DEX
+name: Charlotte Cracker
+japanName: シャーロット・クラッカー
+family:
+  - CharlotteCracker
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 305
+    atk: 393
+    rcv: 45
+  maxLvl:
+    hp: 1270
+    atk: 786
+    rcv: 128
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 110168
+aliases:
+  - Raid Cracker
+evolution:
+  - id: 2158
+    evolvers:
+      - 118
+      - 97
+      - 1180
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.25x and their HP by 1.2x
+special:
+  name: Honey Pretzel
+  description: Reduces Chain Multiplier Limit duration by 5 turns, changes all
+    orbs, including [BLOCK] orbs, into [DEX] orbs, makes [DEX] orbs beneficial
+    for all characters for 1 turn and deals 20% of enemies' current HP in True
+    damage to one enemy.
+  cooldown: 30
+  maxLevel: 16
+  stages:
+    - description: Changes all orbs into [DEX] orbs, makes [DEX] orbs beneficial for
+        Cerebral characters and deals 10% of enemies' current HP in True damage
+        to one enemy.
+      cooldown: 26
+rumble:
+  stats:
+    def: 166
+    rumbleType: ATK
+    spd: 175
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 32
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 30
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 33
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 34
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 35
+        - override:
+            level: 2
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 36
+        - override:
+            level: 2
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 37
+        - override:
+            level: 3
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 38
+        - override:
+            level: 3
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 39
+        - override:
+            level: 3
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 40
+        - override:
+            level: 4
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 42
+        - override:
+            level: 6

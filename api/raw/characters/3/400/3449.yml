@@ -1,0 +1,227 @@
+type: INT
+name: Olin - Emperor in Preparation
+japanName: おリン 準備中の四皇
+family:
+  - CharlotteLinlin
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1388
+    atk: 733
+    rcv: 71
+  maxLvl:
+    hp: 3746
+    atk: 1512
+    rcv: 101
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 294545
+aliases:
+  - Borpa
+  - O-lin
+evolution:
+  - id: 3450
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of [INT], Driven and Powerhouse characters by 3.25x,
+    their HP by 1.3x and makes [RCV] and [SEMLA] orbs beneficial for all
+    characters.
+special:
+  name: Harmful Onslaught
+  description: Reduces Silence duration by 4 turns, reduces enemies' Percent
+    Damage Reduction duration by 4 turns, changes [BLOCK] and [RCV] orbs into
+    [SEMLA] orbs and boosts Orb Effects of [INT], Driven and Powerhouse
+    characters by 2x for 2 turns.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Makes [RCV] and [SEMLA] orbs beneficial for Driven and Powerhouse
+      characters
+  - description: Reduces Silence duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - atk: 25
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 8
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - {}
+        - {}
+        - {}
+        - value: 7
+rumble:
+  stats:
+    def: 206
+    rumbleType: DBF
+    spd: 142
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - DEF
+          duration: 6
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.4
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 7
+        - override:
+            amount: 0.5
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 8
+        - override:
+            amount: 0.6
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 9
+        - override:
+            amount: 0.7
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 10
+        - override:
+            amount: 0.8
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 11
+        - override:
+            amount: 0.9
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 12
+        - override:
+            amount: 1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 13
+        - override:
+            amount: 1.1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 14
+        - override:
+            amount: 1.2
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 15
+        - override:
+            amount: 1.3

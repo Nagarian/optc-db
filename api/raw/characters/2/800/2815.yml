@@ -1,0 +1,65 @@
+type: PSY
+name: Otama - Bestest Birthday Ever
+japanName: お玉 最高の誕生日
+family:
+  - Tama
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1102
+    atk: 503
+    rcv: 172
+  maxLvl:
+    hp: 1904
+    atk: 1005
+    rcv: 333
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 181871
+aliases:
+  - OTama
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and recovers 500 HP at
+    the end of each turn
+special:
+  name: Yummy Oshiruko
+  description: Reduces Despair duration by 4 turns, reduces enemies' Increased
+    Defense duration by 4 turns and changes Badly Matching orbs into Matching
+    orbs.
+  cooldown: 39
+  maxLevel: 28
+limitBreak:
+  path:
+    - type: potential
+    - hp: 300
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 2.5x, by 3.25x instead if
+          they have a beneficial orb, and recovers 500 HP at the end of each
+          turn
+    - atk: 200
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 10

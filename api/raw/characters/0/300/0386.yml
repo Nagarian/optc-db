@@ -1,0 +1,47 @@
+type: INT
+name: Doctor Hogback
+japanName: ドクトル・ホグバック
+family:
+  - Hogback
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1180
+    atk: 550
+    rcv: 72
+  maxLvl:
+    hp: 2741
+    atk: 945
+    rcv: 189
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 7731
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x
+special:
+  name: Zombie Marionette Operation
+  description: Reduces damage received by 50% for 1 turn, boosts ATK of Fighter
+    characters by 1.25x for 1 turn
+  cooldown: 20
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Perona, Absalom and Gecko Moria
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

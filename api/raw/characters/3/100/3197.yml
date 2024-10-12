@@ -1,0 +1,259 @@
+type: PSY
+name: Monkey D. Garp - An Indulgent Christmas
+japanName: モンキー・D・ガープ 花より団子のクリスマス
+family:
+  - MonkeyDGarp
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1030
+    atk: 564
+    rcv: 120
+  maxLvl:
+    hp: 2576
+    atk: 1409
+    rcv: 301
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 245464
+aliases:
+  - TM Garp
+  - Christmas Garp
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 1.75x.
+special:
+  name: Chewy Food
+  description: Makes [PSY] and [RCV] orbs beneficial for all characters for 1 turn
+    and changes all orbs into [PSY] and [RCV] orbs. If your Captain is a
+    Fighter, Slasher, Striker or Shooter character, boosts ATK of all characters
+    by 1.75x for 2 turns. If your Captain is a Free Spirit, Driven, Cerebral or
+    Powerhouse character, reduces Special Cooldown of all characters by 2 turns.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Free Spirit characters by 30
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy, Portgas D. Ace and Sabo
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 2x.
+    - type: sailor
+    - rcv: 20
+    - hp: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 2.5x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 40
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 2.75x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 3x and their HP
+          by 1.2x.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 3.25x and their
+          HP by 1.2x.
+    - hp: 100
+    - hp: 120
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 3.5x, their HP
+          by 1.2x and makes PERFECTs consume [RCV] orbs.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 121
+    rumbleType: ATK
+    spd: 185
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 2000
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1200
+          effect: damage
+          targeting:
+            targets:
+              - INT
+          type: fixed
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2100
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2200
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2300
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2400
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2500
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2600
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2700
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2800
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 3000
+        - {}

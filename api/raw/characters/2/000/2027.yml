@@ -1,0 +1,97 @@
+type: PSY
+name: Black Cage Hina - Prison that Prevents Rescue
+japanName: 黒檻のヒナ 炎救出を妨げる牢獄
+family:
+  - Hina
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 935
+    atk: 558
+    rcv: 127
+  maxLvl:
+    hp: 2477
+    atk: 1328
+    rcv: 344
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 97000
+aliases:
+  - Hina
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 2.25x and their RCV by 1.2x
+special:
+  name: "Kimono Sleeve Cage: Lock"
+  description: Delays all enemies by 1 turn. If your Captain is a [QCK] or [PSY]
+    character, boosts the Color Affinity of [QCK] and [PSY] characters by 2x for
+    1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [PSY] and [QCK] characters by 50
+  - description: If this character has a [PSY] orb and you hit a PERFECT with her,
+      keep her [PSY] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Smoker, Fullbody and Django
+  levels:
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 20
+    - hp: 25
+    - hp: 30
+    - type: sailor
+    - hp: 45
+    - slot: 1
+    - atk: 25
+    - atk: 35
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - atk: 50
+    - rcv: 25
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

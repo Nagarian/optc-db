@@ -1,0 +1,89 @@
+type: STR
+name: Charlotte Opera - Big Mom Pirates
+japanName: シャーロット・オペラ ビッグ・マム海賊団
+family:
+  - CharlotteOpera
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1870
+    atk: 690
+    rcv: 82
+  maxLvl:
+    hp: 3750
+    atk: 1320
+    rcv: 135
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 110897
+aliases:
+  - Colo Opera
+  - Coliseum Opera
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and their HP by 1.25x
+special:
+  name: Cream Monster
+  description: Deals 20% of enemies' current HP in damage to all enemies. If your
+    crew has 5 or more Fighter characters, reduces Increase Damage Taken,
+    Blindness and Despair duration by 7 turns and delays all enemies by 1 turn.
+  cooldown: 27
+  maxLevel: 12
+sailor:
+  - description: Makes [STR] orbs beneficial for Fighter characters
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: descriptive
+  criteria: Fighter characters
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces Despair duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - slot: 1
+    - cooldown: 1
+    - hp: 40
+    - atk: 30
+    - hp: 40
+    - cooldown: 1
+    - atk: 30
+    - rcv: 60
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

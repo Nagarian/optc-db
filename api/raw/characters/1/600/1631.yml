@@ -1,0 +1,50 @@
+type: PSY
+name: Fisher Tiger
+japanName: フィッシャー・タイガー
+family:
+  - FisherTiger
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 140
+    atk: 198
+    rcv: 36
+  maxLvl:
+    hp: 1323
+    atk: 707
+    rcv: 180
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 60067
+aliases:
+  - Secret Fisher Tiger
+  - Limited Fisher Tiger
+evolution:
+  - id: 1632
+    evolvers:
+      - 118
+      - 87
+      - 266
+      - 98
+      - 303
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x
+special:
+  name: Rebellion against the "Prohibition" - Taboo
+  description: Boosts ATK of Powerhouse characters by 1.75x for 3 turns
+  cooldown: 21
+  maxLevel: 5
+sailor:
+  - description: When any other Powerhouse character uses a special, reduces special
+      cooldown of this character by 1 turn

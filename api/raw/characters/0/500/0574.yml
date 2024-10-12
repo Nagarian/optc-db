@@ -1,0 +1,295 @@
+type: INT
+name: Aokiji
+japanName: 青キジ
+family:
+  - Kuzan
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 232
+    atk: 160
+    rcv: 32
+  maxLvl:
+    hp: 1142
+    atk: 712
+    rcv: 157
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 12794
+aliases:
+  - Raid Kuzan
+  - Raid Aokiji
+evolution:
+  - id: 575
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: Ice Block - Pheasant Beak
+  description: Boosts ATK of Striker characters by 1.75x for 2 turns, locks all
+    orbs for 2 turns
+  cooldown: 33
+  maxLevel: 16
+rumble:
+  stats:
+    def: 162
+    rumbleType: SPT
+    spd: 159
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Striker
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 0.45
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.47
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.48
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.52
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.54
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.55
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.57
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.59
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - cooldown: 28
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 25
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker

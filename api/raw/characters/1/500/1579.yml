@@ -1,0 +1,99 @@
+type: PSY
+name: Momonosuke - Wano Country Child
+japanName: モモの助 ワノ国の子
+family:
+  - KozukiMomonosuke
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 761
+    atk: 238
+    rcv: 200
+  maxLvl:
+    hp: 1922
+    atk: 690
+    rcv: 535
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 55822
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of all characters by 1.25x, protects from
+    defeat as long as HP is above 50%
+special:
+  name: Miraculous Flying Dragon
+  description: Switches orbs between slots 1 time and adds 0.5x to Chain
+    multiplier for 1 turn
+  cooldown: 14
+  maxLevel: 6
+  stages:
+    - description: Adds 0.2x to Chain multiplier for 1 turn
+      cooldown: 8
+    - description: Switches orbs between slots 1 time and adds 0.3x to Chain
+        multiplier for 1 turn
+      cooldown: 11
+sailor:
+  - description: Makes [STR], [QCK], [DEX] and [INT] orbs beneficial for this character
+  - description: Reduces Silence duration by 1 turn
+support:
+  type: descriptive
+  criteria: Nami, Nico Robin and Kin'emon
+  levels:
+    - Once per adventure, when the supported character uses their special, adds
+      0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.3x to Chain multiplier for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - hp: 50
+    - atk: 30
+    - atk: 40
+    - hp: 100
+    - slot: 1
+    - atk: 40
+    - atk: 60
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

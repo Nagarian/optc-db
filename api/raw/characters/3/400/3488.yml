@@ -1,0 +1,229 @@
+type: QCK
+name: Captain Kuro of a Thousand Plans - Battle on the Hill
+japanName: 百計のクロ 坂道での激闘
+family:
+  - Kuro
+class:
+  - Cerebral
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1269
+    atk: 602
+    rcv: 167
+  maxLvl:
+    hp: 2853
+    atk: 1433
+    rcv: 273
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 307442
+aliases:
+  - Secret Limited Kizuna Kuro Kladadore
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Cerebral and Driven characters by 3x, their HP by
+    1.2x and makes [QCK] orbs beneficial for Cerebral and Driven characters.  
+
+    **Boosted Ability:** Boosts ATK of Cerebral and Driven characters by 5.25x, their HP by 1.25x and makes [STR] orbs beneficial for Cerebral and Driven characters.
+special:
+  name: Chopping Up - Scoop Death
+  description: Reduces ATK DOWN duration by 5 turns and changes [BLOCK] and Badly
+    Matching orbs into Matching orbs. If your crew has Color Affinity, increases
+    boost effects of Color Affinity buffs by +0.25x, boosts the Color Affinity
+    of Cerebral and Driven characters by 2x for 2 turns otherwise.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [QCK] orbs beneficial for Cerebral and Driven characters
+  - description: Boosts base ATK, HP and RCV of Cerebral and Driven characters by 50
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+  criteria: Cerebral characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 6
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 98
+    rumbleType: ATK
+    spd: 207
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 70
+      type: debuff
+    - attribute: Cerebral
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 32
+      effects:
+        - attributes:
+            - SPD
+          duration: 11
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+        - amount: 0.9
+          effect: damage
+          repeat: 5
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - override:
+            level: 7
+            duration: 12
+        - override:
+            amount: 1
+    - cooldown: 32
+      effects:
+        - override:
+            level: 8
+            duration: 13
+        - override:
+            amount: 1.1
+    - cooldown: 32
+      effects:
+        - override:
+            level: 8
+            duration: 14
+        - override:
+            amount: 1.2
+    - cooldown: 32
+      effects:
+        - override:
+            level: 9
+            duration: 15
+        - override:
+            amount: 1.3
+    - cooldown: 32
+      effects:
+        - override:
+            level: 9
+            duration: 16
+        - override:
+            amount: 1.4
+    - cooldown: 32
+      effects:
+        - override:
+            level: 10
+            duration: 17
+        - override:
+            amount: 1.5
+    - cooldown: 32
+      effects:
+        - override:
+            level: 10
+            duration: 18
+        - override:
+            amount: 1.6
+    - cooldown: 32
+      effects:
+        - override:
+            level: 11
+            duration: 19
+        - override:
+            amount: 1.7
+    - cooldown: 32
+      effects:
+        - override:
+            level: 12
+            duration: 20
+        - override:
+            amount: 1.8

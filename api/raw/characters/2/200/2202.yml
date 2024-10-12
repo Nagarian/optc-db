@@ -1,0 +1,49 @@
+type: DEX
+name: Dr. Indigo - Plan to Tear the World Asunder
+japanName: Dr.インディゴ 世界転覆の陰謀
+family:
+  - Indigo
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 248
+    atk: 121
+    rcv: 28
+  maxLvl:
+    hp: 1153
+    atk: 485
+    rcv: 201
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 116163
+aliases:
+  - ""
+evolution:
+  - id: 2203
+    evolvers:
+      - 117
+      - 86
+      - 266
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.25x
+special:
+  name: Chemical Juggling
+  description: If HP is below 10%, recovers all missing HP. If your Captain is a
+    Driven character, removes Poison and Blindness duration completely and
+    reduces damage received by 50% for 3 turns.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character

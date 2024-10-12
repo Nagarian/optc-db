@@ -1,0 +1,96 @@
+type: DEX
+name: Boa Hancock - An Unlikely Alliance
+japanName: ボア・ハンコック 寄せ集めの共同戦線
+family:
+  - BoaHancock
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1207
+    atk: 780
+    rcv: 105
+  maxLvl:
+    hp: 2810
+    atk: 1455
+    rcv: 310
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 164563
+aliases:
+  - Stampede Boa Hancock
+  - Kizuna Boa Hancock
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [PSY] characters by 2.5x-3.25x depending on
+    the crew's current HP and their RCV by 1.25x.
+  notes: "`captainProportional : higher : 2.5 + 0.75 * (remaining HP) / (total HP)
+    : 3.25 : 2.5`"
+special:
+  name: Perfume Femur Magna
+  description: Deals 20% of enemies' current HP in damage to one enemy, locks the
+    chain multiplier at 3x for 1 turn and randomizes all orbs into either [DEX]
+    or [PSY] orbs.
+  cooldown: 30
+  maxLevel: 19
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] and [PSY] characters by 50
+  - description: If your Captain is a [DEX] or [PSY] character, makes [INT] orbs
+      beneficial for [DEX] and [PSY] character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 8
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 20
+    - hp: 20
+    - slot: 1
+    - rcv: 20
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - type: sailor
+    - rcv: 30
+    - atk: 100
+    - hp: 150
+    - cooldown: 1
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50

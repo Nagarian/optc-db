@@ -1,0 +1,94 @@
+type: PSY
+name: Tony Tony Chopper - Heavy Point
+frenchName: Tony Tony Chopper Weight Boost
+japanName: トニートニー・チョッパー 重量強化（ヘビーポイント）
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 306
+    atk: 213
+    rcv: 78
+  maxLvl:
+    hp: 754
+    atk: 622
+    rcv: 207
+cost: 9
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 2021
+aliases: []
+evolution:
+  - id: 1448
+    evolvers:
+      - skull
+      - 267
+captain:
+  name: ""
+  description: Boosts RCV of [PSY] characters by 1.5x
+special:
+  name: Heavy Gong
+  description: Deals 15x character's ATK in [PSY] damage to one enemy
+  cooldown: 23
+  maxLevel: 9
+sailor:
+  - description: Makes [TND] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Fighter characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 40
+    - rcv: 30
+    - type: potential
+    - hp: 60
+    - cooldown: 1
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - slot: 1
+    - cooldown: 2
+    - atk: 50
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

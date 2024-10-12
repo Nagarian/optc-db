@@ -1,0 +1,46 @@
+type: INT
+name: Sergeant Helmeppo
+japanName: 軍曹ヘルメッポ
+family:
+  - Helmeppo
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 807
+    atk: 555
+    rcv: 150
+  maxLvl:
+    hp: 1998
+    atk: 1060
+    rcv: 260
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 5101
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and HP of Slasher characters by 1.5x
+special:
+  name: Tempered Kukris
+  description: Reduces Bind duration by 3 turns
+  cooldown: 17
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Garp and Coby
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10

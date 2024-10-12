@@ -1,0 +1,47 @@
+type: QCK
+name: Marguerite - Guardian Warrior
+japanName: マーガレット 護国の戦士
+family:
+  - Marguerite
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 854
+    atk: 516
+    rcv: 145
+  maxLvl:
+    hp: 1563
+    atk: 1070
+    rcv: 335
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 23265
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.75x, recovers a small amount
+    of health at the end of each turn
+special:
+  name: Kuja's Haki Arrow
+  description: Deals 5,000 Fixed damage to one enemy, delays all enemies by 1
+    turn, changes [RCV] orbs of Shooter characters into Matching orbs
+  cooldown: 18
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Boa Hancock, Aphelandra and Kikyo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

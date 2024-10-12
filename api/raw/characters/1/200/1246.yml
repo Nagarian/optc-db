@@ -1,0 +1,48 @@
+type: STR
+name: Portgas D. Ace - Fire Fist with a Death Sentence
+japanName: ポートガス・D・エース 処刑台の“火拳”
+family:
+  - PortgasDAce
+class:
+  - Fighter
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 79
+    atk: 30
+    rcv: 2
+  maxLvl:
+    hp: 590
+    atk: 302
+    rcv: 5
+cost: 12
+slots: 0
+maxExp: 136167
+maxLevel: 35
+flags:
+  - special
+links:
+  gamewithId: 37432
+aliases:
+  - Marineford Ace
+evolution:
+  - id: 1247
+    evolvers:
+      - 118
+      - 84
+      - 94
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.2x
+special:
+  name: Firefly Light, Fiery Doll
+  description: Reduces crew's current HP by 90%, deals 55x character's ATK in
+    Typeless damage to all enemies and boosts ATK of Fighter characters by 1.3x
+    for 1 turn. If "Gomu Gomu no Stamp Gatling" is used again in the same turn
+    the special is activated in, boosts ATK of Fighter characters by 2x instead.
+  cooldown: 17
+  maxLevel: 1

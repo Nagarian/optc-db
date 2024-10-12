@@ -1,0 +1,98 @@
+type: QCK
+name: Daifuku - Third Son of the Charlotte Family
+japanName: ダイフク シャーロット家３男
+family:
+  - CharlotteDaifuku
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1253
+    atk: 532
+    rcv: 72
+  maxLvl:
+    hp: 3054
+    atk: 1288
+    rcv: 206
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 117874
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and reduces damage
+    received by 20%
+special:
+  name: Genie-uine Rage Split
+  description: Reduces enemies' Percent Damage Reduction, End of Turn Heal,
+    Increased Defense and Resilience Buffs duration by 2 turns, changes the orb
+    of this character into a [RCV] orb and deals 30x character's ATK in [QCK]
+    damage to all enemies
+  cooldown: 13
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of all characters by 75
+  - description: Makes [DEX] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Charlotte Katakuri, Charlotte Oven, Charlotte Brûlée and Charlotte Smoothie
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - atk: 30
+    - rcv: 20
+    - hp: 50
+    - slot: 1
+    - atk: 50
+    - hp: 70
+    - type: sailor
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100

@@ -1,0 +1,406 @@
+type: INT
+name: Marco - Sky Soaring Phoenix
+japanName: マルコ 天翔ける不死鳥
+family:
+  - Marco
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1480
+    atk: 976
+    rcv: 101
+  maxLvl:
+    hp: 3288
+    atk: 1626
+    rcv: 335
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 279531
+aliases:
+  - V2 Legend Marco
+captain:
+  name: ""
+  description: If HP is above 99% at the start of the turn, boosts ATK of [INT]
+    characters by 5x, by 4.5x otherwise, boosts ATK of all other characters by
+    4x, boosts HP of all characters by 1.3x and allows HP Overfill up to 2x MAX
+    HP. Once per adventure, if HP is below 30%, activates "Blue Flame Kick".
+superSpecial:
+  criteria: This character must be captain and HP must be below 50%.
+  description: Changes all orbs into [INT] orbs, reduces RCV DOWN duration
+    completely and transforms all [INT] characters into Super [INT] characters.
+special:
+  name: Blue Flame Kick
+  description: Reduces Slot Barrier duration by 3 turns, reduces Paralysis and
+    Silence duration by 7 turns and recovers 50x character's RCV in HP, allowing
+    HP Overfill up to 2x MAX HP. If HP is below 50% at the time the special is
+    activated, boosts the Color Affinity of [PSY], [INT] and Powerhouse
+    characters by 2.5x for 1 turn, by 2x for 1 turn otherwise. If your crew has
+    Color Affinity boost, adds 1.2x to Chain multiplier for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 75
+  - description: Reduces Silence duration completely on this character
+support:
+  type: descriptive
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Jozu and Vista
+  levels:
+    - Once per adventure, when you reach the final stage, recovers 500 HP
+      allowing HP Overfill up to 2x MAX HP.
+    - Once per adventure, when you reach the final stage, recovers 1,000 HP
+      allowing HP Overfill up to 2x MAX HP.
+    - Once per adventure, when you reach the final stage, recovers 1,500 HP
+      allowing HP Overfill up to 2x MAX HP.
+    - Once per adventure, when you reach the final stage, recovers 2,000 HP
+      allowing HP Overfill up to 2x MAX HP.
+    - Once per adventure, when you reach the final stage, recovers 3,000 HP
+      allowing HP Overfill up to 2x MAX HP.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 15
+    - hp: 15
+    - rcv: 10
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - hp: 25
+    - hp: 25
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - atk: 30
+    - hp: 60
+    - hp: 60
+    - rcv: 20
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - type: sailor
+    - atk: 40
+    - hp: 80
+    - hp: 100
+    - hp: 120
+    - type: potential
+    - key: 1
+    - hp: 50
+    - atk: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 25
+    - hp: 150
+    - rcv: 25
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 111
+    rumbleType: RCV
+    spd: 152
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1.5
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          duration: 6
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            amount: 1.6
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            amount: 1.7
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            amount: 1.8
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            amount: 1.9
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            amount: 2
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            amount: 2.1
+        - override:
+            level: 3
+            duration: 12
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            amount: 2.2
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            amount: 2.3
+        - override:
+            level: 4
+            duration: 14
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2
+        - override:
+            amount: 2.5
+        - override:
+            level: 5
+            duration: 15
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

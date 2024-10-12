@@ -1,0 +1,50 @@
+type: PSY
+name: Thatch - Whitebeard's Fourth Division Commander
+japanName: サッチ 白ひげ海賊団４番隊隊長
+family:
+  - Thatch
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 80
+    atk: 37
+    rcv: 37
+  maxLvl:
+    hp: 1995
+    atk: 1088
+    rcv: 227
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 25019
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x, recovers 2x character's RCV
+    in HP at the end of each turn
+special:
+  name: Ties with Ace
+  description: Reduces Silence duration by 3 turns and recovers 4,000 HP
+  cooldown: 20
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Portgas D. Ace
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

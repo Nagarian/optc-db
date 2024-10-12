@@ -1,0 +1,47 @@
+type: DEX
+name: Hina - Navy HQ Captain
+japanName: ヒナ 海軍本部大佐
+family:
+  - Hina
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 188
+    atk: 128
+    rcv: 48
+  maxLvl:
+    hp: 977
+    atk: 544
+    rcv: 191
+cost: 18
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 18812
+aliases:
+  - Colo Hina
+  - Coliseum Hina
+evolution:
+  - id: 804
+    evolvers:
+      - 117
+      - 80
+      - 86
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [DEX] characters by 1.2x
+special:
+  name: "Black Spear Formation: All-Out Attack!"
+  description: Deals 8 hits of random [DEX] damage to random enemies, boosts ATK
+    of all characters by 1.1x for 3 turns
+  cooldown: 27
+  maxLevel: 11

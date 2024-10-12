@@ -1,0 +1,465 @@
+type: INT
+name: Fujitora - Apology That Shook the World
+japanName: 藤虎 世界を揺るがす土下座
+family:
+  - Issho
+class:
+  - Slasher
+  - Powerhouse
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1448
+    atk: 786
+    rcv: 293
+  maxLvl:
+    hp: 3540
+    atk: 1610
+    rcv: 374
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 80509
+aliases:
+  - Mega/Super/6+ Fujitora
+  - V2 Legend Fujitora
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3.25x at the start of the chain
+    and their HP by 1.2x and boosts ATK of Slasher characters by 4.225x
+    following a chain of Good > Great > PERFECT hits.
+special:
+  name: Rain of Debris with No Escape
+  description: Deals 10 hits of 30x character's ATK in Typeless damage to random
+    enemies and delays all enemies by 1 turn. If this character is your Captain
+    or Friend/Guest Captain, changes all orbs of all characters into Matching
+    orbs and locks the chain multiplier at 2.75x for 2 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 40
+  - description: Makes [STR], [QCK], [DEX] and [PSY] orbs beneficial for this
+      character if your Captain is a Slasher character
+support:
+  type: descriptive
+  criteria: Slasher characters
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, randomizes supported character's orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, randomizes supported character's orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes Badly Matching orb of the supported
+      character into Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes Badly Matching orb of the supported
+      character into Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes Badly Matching orbs of Slasher characters
+      into Matching orbs.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 15
+    - hp: 25
+    - type: potential
+    - rcv: 5
+    - atk: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 15
+    - rcv: 15
+    - atk: 20
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - type: potential
+    - rcv: 20
+    - atk: 25
+    - rcv: 25
+    - atk: 30
+    - rcv: 30
+    - atk: 35
+    - hp: 45
+    - hp: 50
+    - hp: 60
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - captain:
+        description: Boosts ATK of Slasher characters by 3.5x at the start of the chain
+          and their HP by 1.4x and boosts ATK of Slasher characters by 4.55x
+          following a chain of Good > Great > PERFECT hits.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Pinch Healing
+      levels:
+        - value: 2
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 2
+          threshold: 20
+        - value: 2
+          threshold: 30
+        - value: 2
+          threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+rumble:
+  stats:
+    def: 179
+    rumbleType: DBF
+    spd: 121
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 38
+      effects:
+        - amount: 0.95
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Action Bind
+          duration: 7
+          chance: 30
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.97
+        - {}
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 0.98
+        - {}
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 8
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1.02
+        - override:
+            duration: 8
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1.04
+        - override:
+            duration: 9
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1.05
+        - override:
+            duration: 9
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1.07
+        - override:
+            duration: 9
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1.09
+        - override:
+            duration: 10
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1.25
+        - override:
+            duration: 10
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - Blow Away
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+            - attributes:
+                - HP
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 7
+  - captain:
+      - description: Boosts ATK of Slasher characters by 4.5x at the start of the chain
+          and their HP by 1.2x and boosts ATK of Slasher characters by 5.25x
+          following a chain of Good > Great > PERFECT hits.
+      - description: Boosts ATK of Slasher characters by 4.75x at the start of the chain
+          and their HP by 1.5x and boosts ATK of Slasher characters by 5.5x
+          following a chain of Good > Great > PERFECT hits.
+  - rumble:
+      special:
+        - cooldown: 36
+          effects:
+            - amount: 1.45
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - Action Bind
+              duration: 7
+              chance: 50
+              effect: hinderance
+              targeting:
+                targets:
+                  - enemies
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.47
+            - {}
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.48
+            - {}
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.5
+            - override:
+                duration: 8
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.52
+            - override:
+                duration: 8
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.54
+            - override:
+                duration: 9
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.55
+            - override:
+                duration: 9
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.57
+            - override:
+                duration: 9
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.59
+            - override:
+                duration: 10
+        - cooldown: 36
+          effects:
+            - override:
+                amount: 1.75
+            - override:
+                duration: 10
+  - rumble:
+      resilience:
+        - attribute: Action Bind
+          chance: 100
+          type: debuff
+        - attribute: PSY
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 10 hits of 50x character's ATK in Typeless damage to random
+        enemies, changes all orbs, including [BLOCK] orbs, of Slasher characters
+        into Matching orbs, delays all enemies by 2 turns and locks the chain
+        multiplier at 3.5x for 3 turns.

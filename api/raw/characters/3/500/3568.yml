@@ -1,0 +1,247 @@
+type: QCK
+name: Komurasaki - Oiran's Way of Life
+japanName: 小紫 花魁の生き様
+family:
+  - KozukiHiyori
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1319
+    atk: 498
+    rcv: 170
+  maxLvl:
+    hp: 2771
+    atk: 1378
+    rcv: 279
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Kizuna Secret Limited
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Free Spirit and Cerebral characters by 3x, their HP
+    and RCV by 1.2x and recovers 0.5x this character's RCV at the end of the
+    turn for each time you hit a PERFECT.  
+
+    **Boosted Ability:** Boosts ATK of Free Spirit and Cerebral characters by 5.25x, their HP and RCV by 1.25x and recovers 1x this character's RCV at the end of the turn for each time you hit a PERFECT
+special:
+  name: Unyielding Slap
+  description: Reduces Despair duration by 5 turns and reduces enemies' Percent
+    Damage Reduction duration by 5 turns. If your Captain is a Free Spirit or
+    Cerebral character, boosts the Color Affinity of Free Spirit and Cerebral
+    characters by 2.25x for 1 turn, by 2x for 2 turns otherwise.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [QCK] orbs beneficial for Free Spirit and Cerebral characters
+  - description: Boosts base ATK and HP of Free Spirit and Cerebral characters by 50
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 5
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 8
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 132
+    rumbleType: RCV
+    spd: 173
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 200
+      interval: 5
+      type: healing
+    - attribute: Driven
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            count: 4
+            stat: heal
+            type: trigger
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 3
+          effect: recharge
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Guard
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.2
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.4
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.6
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.8
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 4
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 4.2
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 4.4
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 4.6
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 5
+        - override:
+            level: 5
+            duration: 20

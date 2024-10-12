@@ -1,0 +1,54 @@
+type: INT
+name: Vander Decken IX - To My Beloved Princess
+japanName: バンダー・デッケン九世 親愛なる姫君へ
+family:
+  - VanderDeckenIX
+class:
+  - Striker
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1196
+    atk: 626
+    rcv: 154
+  maxLvl:
+    hp: 2065
+    atk: 1205
+    rcv: 235
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 88587
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x. Recovers 2x character's RCV in
+    HP at the end of each turn.
+special:
+  name: Shooting at the Heart
+  description: Locks all orbs for 1 turn, boosts Orb Effects of all characters by
+    1.5x for 1 turn and deals 1x-85x character's ATK in Typeless damage to one
+    enemy
+  cooldown: 21
+  maxLevel: 7
+  notes: "`specialProportional : higher : 85 * ( (remaining HP) / (total HP) )`"
+support:
+  type: descriptive
+  criteria: Hody Jones
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Silence,
+      reduces Bind and Silence duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Silence,
+      reduces Bind and Silence duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Silence,
+      reduces Bind and Silence duration by 2 turns.

@@ -1,0 +1,391 @@
+type: INT
+name: Blackbeard - Craving Darkness
+family:
+  - MarshallDTeach
+class:
+  - Powerhouse
+  - Driven
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 2042
+    atk: 795
+    rcv: 95
+  maxLvl:
+    hp: 4084
+    atk: 1590
+    rcv: 190
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - TM Secret Limited Legend
+captain:
+  name: ""
+  description: "Boosts ATK of Driven and Powerhouse characters by 4.75x, by 5.25x
+    instead if they have a beneficial orb, their HP by 1.5x and makes [INT] and
+    [TND] orbs beneficial for Driven and Powerhouse characters. If a crew member
+    uses a special with a base ATK UP or End of Turn Healing buff, replaces
+    those buffs with an base ATK boost that will overwrite base ATK boosts in
+    the same special: Boosts base ATK of Driven and Powerhouse characters by
+    1,250 for 1 turn. If a crew member uses a special with a Percent Damage
+    Reduction or Chain Addition buff, replaces those buffs with an Chain
+    Addition boost that will overwrite Chain Addition boosts in the same
+    special: Adds 1.4x to Chain multiplier for 1 turn."
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Jesus
+    Burgess (Mr. Store), Shiryu, Van Ogre, Avalo Pizarro, Lafitte, Catarina
+    Devon, San Juan Wolf, Vasco Shot or Doc Q, excluding Support members or your
+    crew must have both a Chain Addition and Base ATK buff."
+  description: Boosts ATK of Driven and Powerhouse characters by 2.25x for 1 turn,
+    changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into [TND] orbs and
+    transforms all Powerhouse characters into Super Powerhouse characters.
+special:
+  name: Ground-Shaking Tremors
+  description: Deals 20% of enemies' current HP in True damage to all enemies,
+    reduces Bind duration by 10 turns. If during that turn you score 2 PERFECT
+    hits, sets Chain Boundaries to 2.75x and 35.0x for 1 turn. If your Captain
+    is a Driven or Powerhouse character, sets Chain Boundaries to 3.0x and 40.0x
+    for 1 turn, sets Chain Boundaries to 2.5x and 35.0x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of Driven and Powerhouse characters by 200
+  - description: When any other Driven or Powerhouse character uses a special,
+      reduces special cooldown of this character by 1 turn
+support:
+  type: descriptive
+  criteria: Lafitte, Van Ogre, Jesus Burgess (Mr. Store), Shiryu, Doc Q, Avalo
+    Pizarro, Catarina Devon, Vasco Shot and San Juan Wolf
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 1.75x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.25x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.75x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 5
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - rcv: 10
+    - hp: 20
+    - rcv: 10
+    - atk: 10
+    - type: sailor
+    - rcv: 20
+    - atk: 15
+    - atk: 20
+    - hp: 30
+    - type: potential
+    - cooldown: 1
+    - atk: 30
+    - hp: 40
+    - rcv: 20
+    - hp: 60
+    - hp: 60
+    - hp: 70
+    - hp: 70
+    - atk: 30
+    - type: sailor
+    - rcv: 30
+    - hp: 90
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 20
+    - atk: 50
+    - rcv: 30
+    - atk: 100
+    - hp: 200
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Jesus Burgess (Mr. Store), Shiryu, Van Ogre,
+          Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot or
+          Doc Q."
+        description: Boosts Tandem ATK of Driven and Powerhouse characters by 1.25x for
+          1 turn.
+      - criteria: "Any 2 of the following: Jesus Burgess (Mr. Store), Shiryu, Van Ogre,
+          Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot or
+          Doc Q."
+        description: Boosts Tandem ATK of Driven and Powerhouse characters by 1.5x for 1
+          turn.
+      - criteria: "Any 2 of the following: Jesus Burgess (Mr. Store), Shiryu, Van Ogre,
+          Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot or
+          Doc Q."
+        description: Boosts Tandem ATK of Driven and Powerhouse characters by 1.5x for 1
+          turn and boosts Chain Multiplier Growth Rate by 1.1x for 1 turn.
+      - criteria: "Any 2 of the following: Jesus Burgess (Mr. Store), Shiryu, Van Ogre,
+          Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot or
+          Doc Q."
+        description: Boosts Tandem ATK of Driven and Powerhouse characters by 1.5x for 1
+          turn and boosts Chain Multiplier Growth Rate by 1.25x for 1 turn.
+      - criteria: "Any 2 of the following: Jesus Burgess (Mr. Store), Shiryu, Van Ogre,
+          Avalo Pizarro, Lafitte, Catarina Devon, San Juan Wolf, Vasco Shot or
+          Doc Q."
+        description: Boosts Tandem ATK of Driven and Powerhouse characters by 1.5x for 1
+          turn and boosts Chain Multiplier Growth Rate by 1.5x for 1 turn.
+rumble:
+  stats:
+    def: 170
+    rumbleType: ATK
+    spd: 146
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - SPD
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - attributes:
+            - DEF
+          duration: 6
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 1.1
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            amount: 1.2
+    - cooldown: 31
+      effects:
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            amount: 1.3
+    - cooldown: 31
+      effects:
+        - override:
+            level: 2
+            duration: 10
+        - override:
+            amount: 1.4
+    - cooldown: 31
+      effects:
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            amount: 1.5
+    - cooldown: 31
+      effects:
+        - override:
+            level: 3
+            duration: 12
+        - override:
+            amount: 1.6
+    - cooldown: 31
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 1.7
+    - cooldown: 31
+      effects:
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            amount: 1.8
+    - cooldown: 31
+      effects:
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            amount: 2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

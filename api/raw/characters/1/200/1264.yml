@@ -1,0 +1,80 @@
+type: QCK
+name: Vergo - North Blue Darkness
+japanName: ヴェルゴ “北の海”の闇
+family:
+  - Vergo
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1250
+    atk: 559
+    rcv: 48
+  maxLvl:
+    hp: 2694
+    atk: 1389
+    rcv: 139
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 38722
+aliases:
+  - Young Vergo
+captain:
+  name: ""
+  description: Boosts ATK of Cost 30 or less characters by 2.5x
+special:
+  name: Iron Leg Sanctions
+  description: Deals 20,000 Fixed damage to one enemy. Boosts ATK of this
+    character by 2x for 2 turns
+  cooldown: 13
+  maxLevel: 3
+sailor:
+  - description: Boosts base ATK of this character by 300 if this character is the
+      last in the chain to attack
+  - description: Makes [STR], [DEX], [PSY] and [INT] orbs beneficial for this character
+limitBreak:
+  path:
+    - hp: 60
+    - hp: 80
+    - rcv: 5
+    - type: potential
+    - cooldown: 3
+    - rcv: 10
+    - atk: 20
+    - slot: 1
+    - rcv: 15
+    - hp: 120
+    - type: sailor
+    - atk: 30
+    - atk: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 4
+        - value: 6
+        - value: 100
+    - type: Critical Hit
+      levels:
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+        - value: 9
+          threshold: 80
+        - value: 10
+          threshold: 90

@@ -1,0 +1,198 @@
+type: INT
+name: Magellan - Jail Chief Warden
+japanName: マゼラン 監獄署長
+family:
+  - Magellan
+class:
+  - Striker
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1149
+    atk: 590
+    rcv: 57
+  maxLvl:
+    hp: 2605
+    atk: 1316
+    rcv: 207
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 45905
+aliases:
+  - Raid Magellan
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.25x and their HP by 1.5x, deals
+    5x the damage taken from enemies in the previous turn in [INT] damage to all
+    enemies at the end of each turn
+special:
+  name: Poison Dragon
+  description: Inflicts Toxic to all enemies and delays all enemies by 1 turn.
+  cooldown: 31
+  maxLevel: 16
+  stages:
+    - description: Poisons all enemies and delays all enemies by 1 turn.
+      cooldown: 25
+  notes: >-
+    `toxic : 0.5x : 3x : 1,500,000`  
+      
+    If enemies are both Poisoned and inflicted with Toxic, only the Toxic damage will damage the enemy at the end of the turn.
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Makes [TND] and [RCV] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Hannyabal
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - hp: 80
+    - type: sailor
+    - slot: 2
+    - hp: 80
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 154
+    rumbleType: DBF
+    spd: 162
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          condition:
+            count: 4
+            stat: Critical Hit
+            type: trigger
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 22
+      effects:
+        - attributes:
+            - Damage Over Time
+          duration: 30
+          level: 1
+          chance: 100
+          effect: hinderance
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 36
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 42
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 48
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 54
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 60
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 66
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 72
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 78
+    - cooldown: 22
+      effects:
+        - override:
+            duration: 84

@@ -1,0 +1,101 @@
+type: STR
+name: Portgas D. Ace - Embodiment of the Whitebeard Era
+japanName: ポートガス・D・エース “白ひげ”時代の体現者
+family:
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1641
+    atk: 528
+    rcv: 100
+  maxLvl:
+    hp: 3405
+    atk: 1352
+    rcv: 222
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 165297
+aliases:
+  - Raid Ace
+captain:
+  name: ""
+  description: Boosts ATK of Fighter, Free Spirit and Powerhouse characters by
+    2.5x, by 3x instead if HP is below 50% at the start of the turn.
+special:
+  name: Ace Special
+  description: Deals 40x character's ATK in [STR] damage to one enemy and changes
+    [BLOCK] orbs into Matching orbs. If HP is below 30% at the time the special
+    is activated, boosts Orb Effects of Fighter, Free Spirit and Powerhouse
+    characters by 2.25x for 1 turn, by 2x otherwise.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of top row characters by 80
+  - description: If your Captain is a Fighter, Free Spirit or Powerhouse character,
+      removes Blindness duration completely
+support:
+  type: descriptive
+  criteria: Edward Newgate (Whitebeard)
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [EMPTY] orbs of Free Spirit characters
+      into Matching orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [EMPTY] orbs of Free Spirit characters
+      into Matching orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [EMPTY] orbs of Free Spirit characters
+      into Matching orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [EMPTY] and Badly Matching orbs of Free
+      Spirit characters into Matching orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [EMPTY] and Badly Matching orbs of Free
+      Spirit and Powerhouse characters into Matching orbs.
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 20
+    - hp: 30
+    - type: potential
+    - rcv: 10
+    - hp: 40
+    - atk: 40
+    - type: sailor
+    - hp: 50
+    - rcv: 20
+    - cooldown: 1
+    - atk: 70
+    - slot: 1
+    - hp: 80
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

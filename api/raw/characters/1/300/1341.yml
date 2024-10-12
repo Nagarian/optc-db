@@ -1,0 +1,91 @@
+type: QCK
+name: '"Sky Boss" Gedatsu - Vassal of Skypiea'
+japanName: 空番長　ゲダツ スカイピア神官
+family:
+  - Gedatsu
+class:
+  - Driven
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 692
+    atk: 448
+    rcv: 142
+  maxLvl:
+    hp: 1443
+    atk: 1220
+    rcv: 288
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 44768
+aliases:
+  - Colo Gedatsu
+  - Coliseum Gedatsu
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 1.75x. After scoring 3 hits below
+    Good in a row, boosts ATK of [QCK] characters by 2.625x instead.
+special:
+  name: Swamp Cloud Burger
+  description: Delays all enemies by 1 turn. Deals 10% of enemies' current HP in
+    damage to all enemies
+  cooldown: 23
+  maxLevel: 11
+sailor:
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Enel
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 20
+    - type: sailor
+    - type: potential
+    - atk: 10
+    - hp: 20
+    - atk: 30
+    - rcv: 40
+    - hp: 40
+    - slot: 1
+    - atk: 60
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

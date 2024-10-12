@@ -1,0 +1,90 @@
+type: DEX
+name: One-Hit Namule
+japanName: 一撃のナミュール
+family:
+  - Namule
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 999
+    atk: 755
+    rcv: 117
+  maxLvl:
+    hp: 2398
+    atk: 1303
+    rcv: 262
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 11072
+aliases:
+  - One-Hit Namur
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x and their HP by 1.5x
+special:
+  name: Number Eight's One Hit
+  description: Boosts ATK of Fighter characters by 1.5x for 1 turn, deals 25x
+    character's ATK in [DEX] damage to one enemy
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Fighter characters by 20
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 2 turns
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Fighter characters
+  levels:
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 55
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - hp: 55
+    - rcv: 20
+    - cooldown: 3
+    - atk: 80
+    - slot: 1
+    - cooldown: 3
+    - hp: 60
+    - cooldown: 3
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 6
+        - value: 9

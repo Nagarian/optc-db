@@ -1,0 +1,90 @@
+type: INT
+name: Machvise - Donquixote Pirates
+japanName: マッハ・バイス ドンキホーテ海賊団
+family:
+  - Machvise
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1523
+    atk: 643
+    rcv: 49
+  maxLvl:
+    hp: 2882
+    atk: 1280
+    rcv: 217
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 26487
+aliases:
+  - Mach Vise
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x if HP is above 99% at
+    the start of the turn
+special:
+  name: 10,000 Ton Vise of Hell
+  description: Changes [RCV] orbs into Matching orbs
+  cooldown: 15
+  maxLevel: 7
+sailor:
+  - description: Makes [TND] orbs beneficial for this character
+  - description: Boosts base ATK of this character by 200 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Señor Pink, Lao G, Dellinger
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - cooldown: 3
+    - hp: 60
+    - type: sailor
+    - rcv: 30
+    - slot: 1
+    - hp: 70
+    - atk: 70
+    - cooldown: 3
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

@@ -1,0 +1,241 @@
+type: STR
+name: Water Buffalo Atmos
+japanName: 水牛のアトモス
+family:
+  - Atmos
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1159
+    atk: 440
+    rcv: 41
+  maxLvl:
+    hp: 3552
+    atk: 1238
+    rcv: 132
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 35374
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x
+special:
+  name: Advancing Continuous Sword Attack
+  description: Deals 7 hits of random Typeless damage to random enemies. Reduces
+    Bind and Despair duration by 3 turns
+  cooldown: 23
+  maxLevel: 8
+  notes: "`random : 5,000 : 20,000 : for each hit`"
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 20
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 3 turns
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Portgas D. Ace, Edward Newgate (Whitebeard)
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 15
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - atk: 40
+    - hp: 50
+    - rcv: 30
+    - hp: 90
+    - atk: 60
+    - type: sailor
+    - slot: 1
+    - cooldown: 3
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - {}
+        - {}
+        - {}
+        - {}
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100
+rumble:
+  stats:
+    def: 114
+    rumbleType: ATK
+    spd: 146
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 38
+      effects:
+        - amount: 500
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 500
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - amount: 500
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 550
+        - override:
+            amount: 550
+        - override:
+            amount: 550
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 600
+        - override:
+            amount: 600
+        - override:
+            amount: 600
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 650
+        - override:
+            amount: 650
+        - override:
+            amount: 650
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 700
+        - override:
+            amount: 700
+        - override:
+            amount: 700
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 750
+        - override:
+            amount: 750
+        - override:
+            amount: 750
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 800
+        - override:
+            amount: 800
+        - override:
+            amount: 800
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 850
+        - override:
+            amount: 850
+        - override:
+            amount: 850
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 900
+        - override:
+            amount: 900
+        - override:
+            amount: 900
+    - cooldown: 38
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            amount: 1000
+        - override:
+            amount: 1000

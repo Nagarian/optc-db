@@ -1,0 +1,94 @@
+type: PSY
+name: Nami - Weatheria Cat Burglar
+japanName: ナミ 空島ウェザリアの泥棒ネコ
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1037
+    atk: 522
+    rcv: 189
+  maxLvl:
+    hp: 2119
+    atk: 1081
+    rcv: 413
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 24701
+aliases:
+  - Timeskip Nami
+  - 3D2Y Nami
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, boosts ATK of Cerebral characters by 2x
+special:
+  name: Cyclone Burst
+  description: Reduces Bind duration completely for one character. Changes Badly
+    Matching orbs of Striker and Cerebral characters into Matching orbs
+  cooldown: 24
+  maxLevel: 8
+sailor:
+  - description: Makes [RCV] orbs beneficial for Cerebral and Striker characters
+  - description: Boosts base ATK, HP and RCV of Cerebral and Striker characters by 50
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - captain:
+        description: Reduces Special Cooldown of all characters by 3 turns at the start
+          of the fight, boosts ATK of Cerebral characters by 2.25x
+    - cooldown: 2
+    - hp: 60
+    - type: sailor
+    - atk: 50
+    - cooldown: 3
+    - hp: 80
+    - type: sailor
+    - atk: 60
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

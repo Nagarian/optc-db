@@ -1,0 +1,55 @@
+type: INT
+name: Monkey D. Luffy - Star of Hope
+japanName: モンキー・D・ルフィ 希望の星
+family:
+  - MonkeyDLuffy
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 259
+    atk: 179
+    rcv: 0
+  maxLvl:
+    hp: 1400
+    atk: 763
+    rcv: 0
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 18567
+aliases:
+  - Raid NM Luffy
+  - Raid Luffy
+  - Nightmare Luffy
+evolution:
+  - id: 795
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 3x, reduces crew's current
+    HP by 10% at the end of each turn, reduces own ATK multiplier by 0.1x at the
+    end of each turn
+  notes: His ATK multiplier will be 3.0x on the first turn, 2.9x on the second,
+    2.8x on the third and so on. The reduction stops once the multiplier is
+    1.0x. The multiplier affects all Powerhouse characters. You will not die to
+    the HP reduction
+special:
+  name: Gum-Gum Storm
+  description: Deals 10 hits of random [INT] damage to random enemies, delays all
+    enemies by 1 turn
+  cooldown: 24
+  maxLevel: 15
+  notes: "`random : 1,000 : 30,000 : for each hit`"

@@ -1,0 +1,119 @@
+type: INT
+name: Bonekichi - Ghost
+japanName: ホネ吉 おばけ
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1414
+    atk: 554
+    rcv: 60
+  maxLvl:
+    hp: 3536
+    atk: 1385
+    rcv: 149
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 179385
+aliases:
+  - Wano Brook
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 2.5x and their HP by 1.2x.
+special:
+  name: Appear Gashadokuro
+  description: Removes all positive buffs on your team, reduces Despair and
+    Silence duration by 3 turns and adds 0.7x to Chain multiplier for 2 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of [QCK] and [INT] characters by 50
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Nami, Nico Robin and Kin'emon
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - hp: 30
+    - atk: 40
+    - hp: 50
+    - rcv: 70
+    - hp: 60
+    - cooldown: 1
+    - atk: 80
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

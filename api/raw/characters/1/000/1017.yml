@@ -1,0 +1,49 @@
+type: PSY
+name: Brownbeard
+japanName: 茶ひげ
+family:
+  - Brownbeard
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 230
+    atk: 101
+    rcv: 33
+  maxLvl:
+    hp: 1202
+    atk: 504
+    rcv: 137
+cost: 18
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 27622
+aliases:
+  - Colo Brownbeard
+  - Coliseum Brownbeard
+evolution:
+  - id: 1018
+    evolvers:
+      - 117
+      - 81
+      - 87
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts HP of Slasher characters by 1.5x
+special:
+  name: Ravaging Cutlass Dance
+  description: Changes the orb of this character into a [PSY] orb. Deals 1x-75x
+    character's ATK in [PSY] damage, depending on the crew's current HP, to one
+    enemy. Boosts ATK of Slasher characters by 1.5x for 1 turn
+  cooldown: 26
+  maxLevel: 11
+  notes: "`specialProportional : lower : 75 * ( 1 - (remaining HP) / (total HP) )`"

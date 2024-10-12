@@ -1,0 +1,86 @@
+type: INT
+name: Heavy Artillery Curiel
+japanName: 重火器使いのクリエル
+family:
+  - Curiel
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1092
+    atk: 762
+    rcv: 99
+  maxLvl:
+    hp: 2470
+    atk: 1359
+    rcv: 252
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 11075
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x and their RCV by 1.5x
+special:
+  name: Double Cannon
+  description: Randomizes the orbs of middle row characters into either [STR] or
+    [DEX] orbs, the orbs of bottom characters into either [PSY] or [INT] orbs,
+    switches orbs between slots 1 time
+  cooldown: 18
+  maxLevel: 9
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+  - description: Makes [STR] and [DEX] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 4
+    - atk: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - hp: 40
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - {}

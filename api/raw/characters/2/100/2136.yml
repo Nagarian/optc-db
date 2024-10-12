@@ -1,0 +1,51 @@
+type: INT
+name: Sir Crocodile - Thirst-Inducing Escapee
+japanName: サー・クロコダイル 渇きを与える脱獄囚
+family:
+  - Crocodile
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 373
+    atk: 136
+    rcv: 20
+  maxLvl:
+    hp: 1222
+    atk: 398
+    rcv: 82
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 108932
+aliases:
+  - TM Crocodile
+  - TM Mr. 0
+evolution:
+  - id: 2137
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x. If this character becomes
+    your captain in the middle of an island, boosts ATK of all characters by 2x
+    instead
+special:
+  name: Scorpion Tail
+  description: Deals 30x character's ATK in [INT] damage to one enemy and boosts
+    ATK of this character by 2x for 1 turn. If this character is a Sailor, swaps
+    this unit with your captain for 1 turn
+  cooldown: 32
+  maxLevel: 8
+  notes: This is the same type of ability as raid boss Shiki's swap. You cannot
+    use it if another effect swaps your captain. (Such as if Shiki swaps first)

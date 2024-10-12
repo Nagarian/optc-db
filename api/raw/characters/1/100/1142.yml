@@ -1,0 +1,48 @@
+type: STR
+name: Foxy - Donut Race Meddler
+japanName: フォクシー ドーナツレースの邪魔者
+family:
+  - Foxy
+class:
+  - Free Spirit
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 165
+    atk: 94
+    rcv: 44
+  maxLvl:
+    hp: 949
+    atk: 503
+    rcv: 162
+cost: 16
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 34494
+aliases:
+  - Colo Foxy
+  - Coliseum Foxy
+  - Dying Foxy
+evolution:
+  - id: 1143
+    evolvers:
+      - 117
+      - 95
+      - 99
+      - 300
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1.5x
+special:
+  name: "Gorilla Punch: Golden Strike"
+  description: Deals 15 hits of random [STR] damage to random enemies. Delays all
+    enemies by 1 turn
+  cooldown: 24
+  maxLevel: 13

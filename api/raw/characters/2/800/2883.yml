@@ -1,0 +1,97 @@
+type: QCK
+name: Douglas Bullet - The One with Invincible Strength
+japanName: ダグラス・バレット 無敵の『強さ』を宿す者
+family:
+  - DouglasBullet
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 999
+    atk: 551
+    rcv: 52
+  maxLvl:
+    hp: 2425
+    atk: 1235
+    rcv: 151
+cost: 50
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 191070
+aliases:
+  - Raid Bullet
+  - Raid Douglass Bullet
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [QCK] and [PSY] characters by 3x and boosts
+    ATK of this character by 3.25x.
+special:
+  name: Det Sterkeste Strike
+  description: Deals 25% of enemies' current HP in damage to one enemy. If your
+    crew has 6 [STR], [QCK] or [PSY] characters, boosts the Color Affinity of
+    [STR], [QCK] and [PSY] characters by 2x for 1 turn, by 1.75x otherwise.
+  cooldown: 31
+  maxLevel: 15
+sailor:
+  - description: Boosts this character's damage against [DEX] characters by 2x
+  - description: Makes [DEX] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[QCK] characters"
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - type: potential
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - cooldown: 2
+    - hp: 100
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - rcv: 75
+    - atk: 100
+    - hp: 200
+    - atk: 100
+    - cooldown: 3
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

@@ -1,0 +1,53 @@
+type: STR
+name: Mr. 1 - Assassin of the West Blue
+japanName: Mr.1 西の海の剣客
+family:
+  - DazBones
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 45
+    atk: 24
+    rcv: 19
+  maxLvl:
+    hp: 2024
+    atk: 1044
+    rcv: 118
+cost: 17
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 22117
+aliases:
+  - Kimono Mr. 1
+  - Kimono Mr 1
+  - Daz Bones
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Slasher characters by 2x
+special:
+  name: "Daisy Blade: First"
+  description: Deals 15x character's ATK in [STR] damage to all enemies, boosts
+    ATK of Slasher characters by 1.5x for 1 turn if HP is below 30% when the
+    special is activated
+  cooldown: 28
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Crocodile (Mr. 0)
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6

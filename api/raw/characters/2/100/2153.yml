@@ -1,0 +1,51 @@
+type: DEX
+name: Baron Tamago - Gentlemanly Knight
+japanName: タマゴ男爵 紳士的な騎士
+family:
+  - BaronTamago
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 387
+    atk: 310
+    rcv: 23
+  maxLvl:
+    hp: 1070
+    atk: 890
+    rcv: 102
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 110394
+aliases:
+  - ""
+evolution:
+  - id: 2154
+    evolvers:
+      - 86
+      - 86
+      - 266
+      - 94
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x, by 2.5x instead if they
+    have a beneficial orb
+special:
+  name: Legs Benedict
+  description: Deals 75x character's ATK in [DEX] Fixed True damage to one enemy.
+    If your Captain is a Fighter character, changes all orbs, including [BLOCK]
+    orbs, of Fighter characters into Matching orbs
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: When HP is above 50% at the start of the turn, boosts base ATK of
+      Fighter characters by 120

@@ -1,0 +1,142 @@
+type: INT
+name: Mr. 2 Bon Clay - Uncertain Samurai
+japanName: Mr.2・ボン・クレー あやふやな侍
+family:
+  - Bentham
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 42
+    atk: 20
+    rcv: 22
+  maxLvl:
+    hp: 1810
+    atk: 1003
+    rcv: 235
+cost: 17
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 22987
+aliases:
+  - Kimono Mr. 2
+  - Kimono Bonclay
+  - Kimono Bon Clay
+  - Kimono Mr 2
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 1.75x and their
+    RCV by 1.25x
+special:
+  name: 'Hymn to Friendship: "Okama Way" Two'
+  description: Reduces Despair duration by 5 turns, recovers 10x character's RCV in HP
+  cooldown: 23
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Crocodile (Mr. 0)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+rumble:
+  stats:
+    def: 112
+    rumbleType: RCV
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 0.6
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.74
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.87
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.01
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.15
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.29
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.42
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.56
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.7
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1.9

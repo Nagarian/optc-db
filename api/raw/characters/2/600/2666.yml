@@ -1,0 +1,55 @@
+type: INT
+name: Donald Moderate - Host
+japanName: ドナルド・モデラート 仕切り屋
+family:
+  - DonaldModerate
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 986
+    atk: 441
+    rcv: 69
+  maxLvl:
+    hp: 2464
+    atk: 1102
+    rcv: 172
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 162835
+aliases:
+  - Fortnight Donald Moderate
+  - Stampede Donald Moderate
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.2x and gives chance of
+    duplicating a drop upon completion of the island.
+  notes: Does not work if she was not your captain upon starting the island.
+    Stacks with other additional drop captains, giving you two chances of
+    getting an extra drop.
+special:
+  name: The Partitioner Talk
+  description: Reduces ATK DOWN duration by 3 turns, changes all orbs of top row
+    characters into Matching orbs and boosts ATK of all characters by 1.5x for 1
+    turn.
+  cooldown: 19
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

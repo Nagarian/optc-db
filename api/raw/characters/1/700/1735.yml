@@ -1,0 +1,52 @@
+type: STR
+name: Sugar - Trebol Army Leader
+japanName: シュガー トレーボル軍　特別幹部
+family:
+  - Sugar
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 597
+    atk: 311
+    rcv: 203
+  maxLvl:
+    hp: 1830
+    atk: 975
+    rcv: 320
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 66024
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Fighter characters by 1.75x and recovers
+    3x character's RCV in HP at the end of each turn
+special:
+  name: Toy's Close Combat
+  description: Changes the orb of bottom right character into a [STR] orb and
+    changes the orb of bottom left character into an [INT] orb. Switches orbs
+    between slots 2 times.
+  cooldown: 13
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Trebol, Donquixote Doflamingo and Monet
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

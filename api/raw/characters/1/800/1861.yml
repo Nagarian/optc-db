@@ -1,0 +1,104 @@
+type: QCK
+name: Raizo of the Mist - Wano Country Ninja
+japanName: 霧の雷ぞう ワノ国の忍者
+family:
+  - Raizo
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 896
+    atk: 589
+    rcv: 134
+  maxLvl:
+    hp: 2182
+    atk: 1399
+    rcv: 322
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 80284
+aliases:
+  - Colo Raizo
+  - Coliseum Raizo
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Shooter characters by 2.5x
+special:
+  name: Flower Shuriken
+  description: Deals 11x character's ATK in [QCK] damage to all enemies, changes
+    [TND] and [RCV] orbs of Shooter characters into Matching orbs. If your
+    Captain is a Shooter Character, boosts ATK against delayed enemies by 1.75x
+    for 1 turn
+  cooldown: 30
+  maxLevel: 16
+  stages:
+    - description: Deals 3x character's ATK in [QCK] damage to all enemies, changes
+        [TND] and [RCV] orbs of Shooter characters into Matching orbs.
+      cooldown: 19
+    - description: Deals 7x character's ATK in [QCK] damage to all enemies, changes
+        [TND] and [RCV] orbs of Shooter characters into Matching orbs. If your
+        Captain is a Shooter Character, boosts ATK against delayed enemies by
+        1.35x for 1 turn
+      cooldown: 24
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 30
+  - description: Boosts base ATK of Shooter characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Kozuki Momonosuke, Kin'emon and Kurozumi Kanjuro
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 10
+    - rcv: 15
+    - type: potential
+    - rcv: 20
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - atk: 30
+    - type: sailor
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 9
+          threshold: 30
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

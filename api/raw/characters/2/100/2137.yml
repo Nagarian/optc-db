@@ -1,0 +1,155 @@
+type: INT
+name: Sir Crocodile - Thirst-Inducing Pirate
+japanName: サー・クロコダイル 渇きを統べる海賊
+family:
+  - Crocodile
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 839
+    atk: 341
+    rcv: 72
+  maxLvl:
+    hp: 2777
+    atk: 1408
+    rcv: 224
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 108932
+aliases:
+  - TM Crocodile
+  - TM Mr. 0
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x. If this character becomes your
+    captain in the middle of an island, boosts ATK of all characters by 2.5x
+    instead
+special:
+  name: Scorpion Tail
+  description: Deals 30x character's ATK in [INT] damage to one enemy and boosts
+    ATK of this character by 2x for 1 turn. If this character is a Sailor, swaps
+    this unit with your captain for 1 turn
+  cooldown: 32
+  maxLevel: 8
+  notes: This is the same type of ability as raid boss Shiki's swap. You cannot
+    use it if another effect swaps your captain. (Such as if Shiki swaps first)
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+  - description: Makes [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Striker characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - captain:
+        description: Boosts ATK of all characters by 2x. If this character becomes your
+          captain in the middle of an island, boosts ATK of all characters by
+          2.75x instead
+    - type: sailor
+    - rcv: 20
+    - rcv: 20
+    - rcv: 20
+    - captain:
+        description: Boosts ATK of all characters by 2x. If this character becomes your
+          captain in the middle of an island, boosts ATK of all characters by 3x
+          instead
+    - slot: 1
+    - cooldown: 1
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - captain:
+        description: Boosts ATK of all characters by 2x. If this character becomes your
+          captain in the middle of an island, boosts ATK of all characters by
+          3.25x instead
+    - cooldown: 2
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - cooldown: 3
+    - slot: 1
+    - hp: 40
+    - hp: 50
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of all characters by 2x. If this character becomes your
+          captain in the middle of an island, boosts ATK of all characters by
+          3.5x instead
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 40
+    - atk: 40
+    - atk: 40
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of all characters by 2x. If this character becomes your
+          captain in the middle of an island, boosts ATK of all characters by 4x
+          instead
+    - atk: 40
+    - atk: 50
+    - captain:
+        description: Boosts ATK of all characters by 2.5x and makes [STR], [DEX] and
+          [INT] orbs beneficial for all characters. If this character becomes
+          your captain in the middle of an island, boosts ATK of all characters
+          by 4x instead
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

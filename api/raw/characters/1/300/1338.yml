@@ -1,0 +1,89 @@
+type: PSY
+name: Evening Shower Kanjuro
+japanName: 夕立ち　カン十郎
+family:
+  - KurozumiKanjuro
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1209
+    atk: 645
+    rcv: 133
+  maxLvl:
+    hp: 2414
+    atk: 1253
+    rcv: 330
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 44766
+aliases:
+  - Colo Kanjuro
+  - Coliseum Kanjuro
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Free Spirit characters by 2.25x, reduces
+    damage received by 10%
+special:
+  name: Brushman's Brush
+  description: Changes [RCV], [TND], [EMPTY], [G] and [BOMB] orbs of Free Spirit
+    and Striker characters into Badly Matching orbs and changes [STR], [QCK],
+    [DEX], [PSY] and [INT] orbs of Free Spirit and Striker characters into
+    Matching orbs.
+  cooldown: 27
+  maxLevel: 13
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Kin'emon, Kozuki Momonosuke and Raizo
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - hp: 50
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - atk: 40
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,41 @@
+type: STR
+name: Boa Marigold
+japanName: ボア・マリーゴールド
+family:
+  - BoaMarigold
+class:
+  - Striker
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 183
+    atk: 40
+    rcv: 31
+  maxLvl:
+    hp: 1062
+    atk: 517
+    rcv: 158
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 30530
+aliases: []
+evolution:
+  - id: 1058
+    evolvers:
+      - 117
+      - 78
+      - 84
+      - 95
+      - 100
+special:
+  name: Deadly Poisonous Corrosive Liquid
+  description: Strongly Poisons one enemy
+  cooldown: 17
+  maxLevel: 6
+  notes: Strong Poison deals 5x character's ATK in Fixed damage at the end of each
+    turn

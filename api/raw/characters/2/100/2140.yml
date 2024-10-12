@@ -1,0 +1,99 @@
+type: QCK
+name: '"Sparking Red" Vinsmoke Ichiji - Science Military Germa 66'
+japanName: “スパーキングレッド” ヴィンスモーク・イチジ 科学戦闘部隊ジェルマ６６
+family:
+  - VinsmokeIchiji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1274
+    atk: 572
+    rcv: 97
+  maxLvl:
+    hp: 3066
+    atk: 1449
+    rcv: 256
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 74387
+aliases:
+  - Red Ranger
+  - Super Ichiji
+  - Mega Ichiji
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.25x, boosts ATK of Powerhouse
+    characters by 1.4x and boosts HP of Powerhouse characters by 1.2x
+  notes: Attack boost stacks, so a [QCK] Powerhouse character has a 3.15x ATK
+special:
+  name: Sparking Figure
+  description: If your captain is a [QCK] or [INT] character, boosts Orb Effects
+    of all characters by 2x for 1 turn. If your Captain is a Powerhouse
+    character, reduces Increase Damage Taken duration by 3 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [INT] orbs beneficial for this character
+  - description: Boosts base ATK of all characters by 50
+support:
+  type: descriptive
+  criteria: Vinsmoke Judge, Vinsmoke Niji, Vinsmoke Yonji and Vinsmoke Reiju
+  levels:
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces Increase Damage Taken duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces Increase Damage Taken duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces Increase Damage Taken duration by 1 turn
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces Increase Damage Taken duration by 1 turn delays all enemies by 1
+      turn
+    - Once per adventure, when an enemy inflicts you with Increase Damage Taken,
+      reduces Increase Damage Taken duration by 2 turns delays all enemies by 1
+      turn
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 15
+    - hp: 40
+    - atk: 30
+    - hp: 50
+    - cooldown: 1
+    - rcv: 25
+    - slot: 1
+    - hp: 60
+    - atk: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

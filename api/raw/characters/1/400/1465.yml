@@ -1,0 +1,39 @@
+type: INT
+name: Chopper's Tea Party
+japanName: チョッパーのティーパーティ
+family:
+  - TonyTonyChopper
+class:
+  - Shooter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 841
+    atk: 315
+    rcv: 150
+  maxLvl:
+    hp: 1906
+    atk: 999
+    rcv: 347
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 51897
+aliases:
+  - White Day Chopper
+captain:
+  name: ""
+  description: Boosts ATK and RCV of all characters by 1.25x, protects from defeat
+    as long as HP is above 50%
+special:
+  name: Devoted Healing - "Instant Recovery"
+  description: Recovers 6x character's RCV in HP and reduces Paralysis duration by 2 turns
+  cooldown: 11
+  maxLevel: 5
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 100 each

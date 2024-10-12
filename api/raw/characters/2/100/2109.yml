@@ -1,0 +1,163 @@
+type: STR
+name: Charlotte Linlin - Great Pirate "Big Mom"
+japanName: シャーロット・リンリン　大海賊　”ビッグ・マム”
+family:
+  - CharlotteLinlin
+class:
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 923
+    atk: 391
+    rcv: 45
+  maxLvl:
+    hp: 3134
+    atk: 1529
+    rcv: 125
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 105798
+aliases:
+  - TM Big Mom
+  - TM Charlotte Linlin
+captain:
+  name: ""
+  description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+    crew, boosts ATK of all characters by 1.5x, boosts damage of [STR], [DEX],
+    [QCK], [PSY] and [INT] specials by 1.5x and deals 5% of enemies' current HP
+    in damage to all enemies at the end of each turn. Recovers 1x character's
+    RCV in HP at the end of each turn.
+special:
+  name: The Harmony that Interweaves the Souls
+  description: Removes all positive buffs on your team, changes all orbs,
+    including [BLOCK] orbs, into [G] orbs, boosts Orb Effects of all characters
+    by 3x for 1 turn, boosts ATK of all characters by 1.25x for 1 turn and
+    boosts the Color Affinity of all characters by 1.25x for 1 turn
+  cooldown: 34
+  maxLevel: 8
+sailor:
+  - description: Makes [RCV] orbs beneficial for this character
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Charlotte Katakuri, Charlotte Cracker, Charlotte Smoothie and
+    Charlotte Perospero
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - captain:
+        description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+          crew, boosts ATK of all characters by 1.5x, boosts damage of [STR],
+          [DEX], [QCK], [PSY] and [INT] specials by 1.5x and deals 6% of
+          enemies' current HP in damage to all enemies at the end of each turn.
+          Recovers 1x character's RCV in HP at the end of each turn.
+    - type: sailor
+    - atk: 15
+    - hp: 40
+    - rcv: 10
+    - captain:
+        description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+          crew, boosts ATK of all characters by 1.75x, boosts damage of [STR],
+          [DEX], [QCK], [PSY] and [INT] specials by 1.5x and deals 7% of
+          enemies' current HP in damage to all enemies at the end of each turn.
+          Recovers 1x character's RCV in HP at the end of each turn.
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 15
+    - captain:
+        description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+          crew, boosts ATK of all characters by 1.75x, boosts damage of [STR],
+          [DEX], [QCK], [PSY] and [INT] specials by 1.5x and deals 7% of
+          enemies' current HP in damage to all enemies at the end of each turn.
+          Recovers 1.5x character's RCV in HP at the end of each turn.
+    - cooldown: 2
+    - atk: 25
+    - hp: 60
+    - rcv: 20
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - hp: 55
+    - cooldown: 4
+    - captain:
+        description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+          crew, boosts ATK of all characters by 1.75x, boosts damage of [STR],
+          [DEX], [QCK], [PSY] and [INT] specials by 1.5x and deals 10% of
+          enemies' current HP in damage to all enemies at the end of each turn.
+          Recovers 1.5x character's RCV in HP at the end of each turn.
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - hp: 50
+    - rcv: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+          crew, boosts ATK of all characters by 1.75x, boosts damage of [STR],
+          [DEX], [QCK], [PSY] and [INT] specials by 2x and deals 10% of enemies'
+          current HP in damage to all enemies at the end of each turn. Recovers
+          1.5x character's RCV in HP at the end of each turn.
+    - atk: 60
+    - hp: 60
+    - captain:
+        description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+          crew, boosts ATK of all characters by 2x, boosts damage of [STR],
+          [DEX], [QCK], [PSY] and [INT] specials by 3x and deals 10% of enemies'
+          current HP in damage to all enemies at the end of each turn. Recovers
+          2x character's RCV in HP at the end of each turn.
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

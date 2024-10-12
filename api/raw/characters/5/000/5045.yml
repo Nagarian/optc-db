@@ -1,0 +1,97 @@
+type: STR
+oldDbId: 3324
+name: "Demon Bamboo Vergo: Neo - Top Donquiote Family Officer"
+japanName: 鬼竹のヴェルゴ「改」 ドンキホーテファミリー最高幹部
+family:
+  - Vergo
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1016
+    atk: 626
+    rcv: 108
+  maxLvl:
+    hp: 2453
+    atk: 1422
+    rcv: 253
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 266798
+aliases:
+  - Neo Vergo
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x, their HP by 1.2x and
+    reduces damage received by 10%
+special:
+  name: Pure-Black Demon [Neo]
+  description: Deals 100x character's ATK in [STR] damage to one enemy, reduces
+    enemies' Percent Damage Reduction Buff duration by 5 turns, reduces damage
+    received by 50% for 1 turn and boosts ATK of Striker characters by 1.75x for
+    1 turn
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of Striker characters by 40
+  - description: If your Captain is a Striker character, makes [STR] orbs beneficial
+      for Striker characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Striker characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - hp: 50
+    - rcv: 30
+    - cooldown: 4
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

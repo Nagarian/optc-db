@@ -1,0 +1,171 @@
+type: INT
+name: Nico Robin - Let's Go to the Pirate Festival!
+japanName: ニコ・ロビン Let’s go for PIRATE FESTIVAL
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 655
+    atk: 326
+    rcv: 74
+  maxLvl:
+    hp: 1924
+    atk: 1138
+    rcv: 251
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 106874
+aliases:
+  - Pizza Robin
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 1.5x and their HP and RCV by 1.2x
+special:
+  name: Gorgeous Small Break
+  description: Reduces Blindness duration by 3 turns, boosts chances of getting
+    Matching orbs for 3 turns and randomizes non-Matching orbs, including
+    [BLOCK] orbs.
+  cooldown: 16
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Vinsmoke Sanji, Nami, Usopp, Tony Tony
+    Chopper, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+rumble:
+  stats:
+    def: 88
+    rumbleType: RCV
+    spd: 124
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 36
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 20
+          duration: 6
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 400
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: fixed
+    - cooldown: 36
+      effects:
+        - override:
+            duration: 7
+        - override:
+            amount: 450
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 21
+            duration: 8
+        - override:
+            amount: 500
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 21
+            duration: 9
+        - override:
+            amount: 550
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 22
+            duration: 10
+        - override:
+            amount: 600
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 23
+            duration: 11
+        - override:
+            amount: 650
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 23
+            duration: 12
+        - override:
+            amount: 700
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 24
+            duration: 13
+        - override:
+            amount: 750
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 25
+            duration: 14
+        - override:
+            amount: 800
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 26
+            duration: 16
+        - override:
+            amount: 900

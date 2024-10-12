@@ -1,0 +1,339 @@
+type: DEX
+name: Donquixote Rocinante
+japanName: ドンキホーテ・ロシナンテ
+family:
+  - DonquixoteRosinante
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1428
+    atk: 628
+    rcv: 272
+  maxLvl:
+    hp: 2746
+    atk: 1222
+    rcv: 555
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 26850
+aliases:
+  - Rocinante
+  - Rosinante
+  - Corasan
+  - Cora-san
+  - V1 Legend Corazon
+evolution:
+  - id: 2195
+    evolvers:
+      - skullDEX
+      - 118
+      - 86
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1x-2x depending on the crew's
+    current HP. Recovers 1.5x this character's RCV at the end of the turn each
+    time you hit a GOOD. Recovers 0.5x this character's RCV at the end of the
+    turn each time you hit a GREAT.
+  notes: "`captainProportional : higher : 1 + 1 * (remaining HP) / (total HP) : 2
+    : 1`"
+special:
+  name: Love Sacrifice
+  description: Recovers 25x character's RCV in HP. Reduces Bind and Despair
+    duration by 3 turns
+  cooldown: 23
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Reduces Silence duration by 1 turn
+support:
+  type: descriptive
+  criteria: Trafalgar D. Water Law
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, Despair or
+      Paralysis, reduces Bind, Despair and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, Despair or
+      Paralysis, reduces Bind, Despair and Paralysis duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 15
+    - type: potential
+    - atk: 5
+    - atk: 10
+    - atk: 15
+    - type: sailor
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - hp: 60
+    - atk: 35
+    - atk: 35
+    - type: sailor
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - captain:
+        description: Boosts ATK of all characters by 1x-2x depending on the crew's
+          current HP. Recovers 1.5x this character's RCV at the end of the turn
+          each time you hit a GOOD. Recovers 0.8x this character's RCV at the
+          end of the turn each time you hit a GREAT. Recovers 0.3x this
+          character's RCV at the end of the turn for each time you hit a
+          PERFECT.
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 127
+    rumbleType: RCV
+    spd: 124
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 3
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 150
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 8
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1.4
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - DEF
+          duration: 10
+          level: 2
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          effect: buff
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.53
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.65
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.78
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.91
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.04
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.16
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.29
+        - override:
+            level: 3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.42
+        - override:
+            level: 4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            level: 5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

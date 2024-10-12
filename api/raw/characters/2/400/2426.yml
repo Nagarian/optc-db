@@ -1,0 +1,94 @@
+type: PSY
+name: Sai - Don Repaying a Debt to His Crew
+japanName: サイ 一味の恩義に報いる首領
+family:
+  - Sai
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 984
+    atk: 723
+    rcv: 152
+  maxLvl:
+    hp: 2421
+    atk: 1422
+    rcv: 322
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 140989
+aliases:
+  - Don Sai
+captain:
+  name: ""
+  description: Boosts HP of Driven characters by 1.25x and boosts ATK of Driven
+    characters by 1.5x, by 2.75x instead if they have a beneficial orb
+special:
+  name: Drill Dragon Nail - The Leader's Killing Strike
+  description: Reduces Bind, Despair and Burn duration by 3 turns, reduces
+    enemies' ATK Up, Enrage and Resilience Buffs duration by 3 turns, reduces
+    the defense of all enemies by 80% for 1 turn and makes [STR], [DEX], [QCK],
+    [PSY] and [INT] orbs beneficial for Driven characters for 1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Driven characters by 50
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Chinjao, Dagama, Abdullah, Jeet, Orlumbus, Blue Gilly, Suleiman,
+    Cavendish, Ideo, Elizabello II and Hajrudin
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 90
+    - hp: 120
+    - cooldown: 1
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - cooldown: 1
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7

@@ -1,0 +1,174 @@
+type: DUAL
+name: Smoothie & Oven - Intruder Eliiminators
+japanName: スムージー＆オーブン 乱入者を排除する者達
+family:
+  - CharlotteOven
+  - CharlotteSmoothie
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1420
+    atk: 780
+    rcv: 212
+  maxLvl:
+    hp: 2672
+    atk: 1428
+    rcv: 322
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 144757
+aliases:
+  - Smoothie&Oven
+  - Oven&Smoothie
+  - SmoothieOven
+  - OvenSmoothie
+  - TM Smoothie and Oven
+  - SmooThicc and Hawt
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], [PSY] and [INT] characters by 3.75x and
+    recovers 3x character's RCV in HP at the end of each turn.
+special:
+  name: Burning Blade Slash
+  description: Boosts chances of getting [QCK] and [PSY] orbs for 2 turns,
+    randomizes all orbs, boosts Orb Effects of [QCK], [PSY] and [INT] characters
+    by 2x for 2 turns and becomes Smoothie & Oven for 2 turns
+  cooldown: 41
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK], [PSY] and [INT] characters by 50
+  - description: Cannot be blown away
+characters:
+  swap:
+    description: Makes [QCK] and [PSY] orbs beneficial for [QCK], [PSY] and [INT]
+      characters for 1 turn and deals 20x character's ATK in character's Type
+      damage to all enemies at the end of each turn for 1 turn.
+  character1:
+    name: Smoothie - Intruder Eliiminators
+    japanName: スムージー 乱入者を排除する者達
+    class:
+      - Powerhouse
+      - Slasher
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 920
+        atk: 551
+        rcv: 142
+      maxLvl:
+        hp: 2406
+        atk: 1206
+        rcv: 291
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY] characters by 3x and boosts ATK of [QCK] and
+        [INT] characters by 2.5x.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 25
+      - description: Cannot be blown away
+  character2:
+    name: Oven - Intruder Eliiminators
+    japanName: オーブン 乱入者を排除する者達
+    class:
+      - Powerhouse
+      - Fighter
+    type: QCK
+    stats:
+      combo: 6
+      minLvl:
+        hp: 802
+        atk: 652
+        rcv: 102
+      maxLvl:
+        hp: 2112
+        atk: 1332
+        rcv: 189
+    captain:
+      name: ""
+      description: Boosts ATK of [QCK] characters by 3x and boosts ATK of [PSY] and
+        [INT] characters by 2.5x.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 25
+      - description: Cannot be blown away
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - cooldown: 1
+    - cooldown: 1
+    - atk: 15
+    - hp: 40
+    - rcv: 10
+    - cooldown: 1
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 20
+    - cooldown: 1
+    - cooldown: 2
+    - atk: 25
+    - hp: 50
+    - rcv: 30
+    - cooldown: 2
+    - slot: 1
+    - atk: 30
+    - hp: 50
+    - cooldown: 2
+    - cooldown: 2
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - hp: 50
+    - rcv: 50
+    - cooldown: 2
+    - slot: 1
+    - cooldown: 2
+    - atk: 50
+    - hp: 60
+    - cooldown: 3
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 50
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

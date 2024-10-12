@@ -1,0 +1,91 @@
+type: INT
+name: Portgas D. Ace - Scorching Detective
+japanName: ポートガス・Ｄ・エース 灼熱の名探偵
+family:
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1550
+    atk: 892
+    rcv: 111
+  maxLvl:
+    hp: 2790
+    atk: 1605
+    rcv: 200
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 234207
+aliases:
+  - World Journey Ace
+  - Limited Ace
+  - Secret Ace
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Powerhouse characters by 3x at the
+    start of the chain, by 3.5x after scoring 3 PERFECTs in a row.
+special:
+  name: A Detective's Appearance
+  description: Boosts Orb Effects of Free Spirit and Powerhouse characters by
+    1.75x for 1 turn. After 2 turns, boosts Orb Effects of Free Spirit and
+    Powerhouse characters by 2x for 1 turn. If your captain is a Free Spirit or
+    Powerhouse character, increases duration of any ATK boosting buffs by 1
+    turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 75
+  - description: Reduces Blindness duration by 5 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Edward Newgate (Whitebeard) and Marco
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 10
+    - atk: 15
+    - type: potential
+    - hp: 60
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - hp: 100
+    - slot: 1
+    - rcv: 20
+    - atk: 25
+    - type: sailor
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

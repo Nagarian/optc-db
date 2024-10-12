@@ -1,0 +1,203 @@
+type: QCK
+name: Jozu
+japanName: ジョズ
+family:
+  - Jozu
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 412
+    atk: 109
+    rcv: 27
+  maxLvl:
+    hp: 1820
+    atk: 596
+    rcv: 98
+cost: 18
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 4864
+aliases: []
+evolution:
+  - id: 253
+    evolvers:
+      - 118
+      - 85
+      - 94
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK and HP of [QCK] characters by 2x
+special:
+  name: Brilliant Punk
+  description: Reduces damage received from [DEX] enemies by 100% for 1 turn
+  cooldown: 15
+  maxLevel: 8
+rumble:
+  stats:
+    def: 168
+    rumbleType: DBF
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Powerhouse
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 6
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 7
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 8
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 9
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 10
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 11
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 12
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 13
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 14
+          effect: debuff
+          level: 7
+          targeting:
+            targets:
+              - STR
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Special CT
+          duration: 15
+          effect: debuff
+          level: 8
+          targeting:
+            targets:
+              - STR

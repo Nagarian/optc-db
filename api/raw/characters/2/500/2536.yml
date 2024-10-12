@@ -1,0 +1,189 @@
+type: DUAL
+name: Zeus & Prometheus & Big Mom - The Leaders of the Land of Souls
+japanName: ゼウス＆プロメテウス＆ビッグ・マム “魂の国”の主達
+family:
+  - CharlotteLinlin
+  - Zeus
+  - Prometheus
+class:
+  - Powerhouse
+  - Striker
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1713
+    atk: 667
+    rcv: 47
+  maxLvl:
+    hp: 4282
+    atk: 1668
+    rcv: 118
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 150046
+aliases:
+  - Zeus Big Mom
+  - Prometheus Big Mom
+  - Charlotte Linlin
+  - V2 Legend BM
+captain:
+  name: ""
+  description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+    your crew, Increases damage received by 1.75x boosts ATK of all characters
+    by 4x and their HP by 2x. Recovers HP proportional to the number of enemies
+    you defeated in that turn ✕ crew's RCV at the end of the enemy turn.
+  notes: The amount healed each turn is equal to the number of enemies defeated
+    times the crew's total base RCV.
+special:
+  name: Heavenly Fire and Lightning Ring & Mama Mash
+  description: Boosts base ATK of all characters by 1-1,000 for 1 turn, depending
+    on your current HP and becomes Zeus & Prometheus & Big Mom for 3 turns. If
+    HP is above 50% at the time the special is activated, locks the chain
+    multiplier at 3.5x for 1 turn.
+  cooldown: 16
+  maxLevel: 7
+  notes: Base ATK boost is equal to current HP/100, the maximum effect at 100,000
+    HP will give a 1,000 base ATK boost.
+sailor:
+  - description: Makes [STR], [DEX], [QCK], [PSY], [INT], [TND] and [RCV] orbs
+      beneficial for this character
+  - description: Boosts base HP of all characters by 150
+characters:
+  swap:
+    description: Removes Paralysis duration completely on this character and changes
+      orb of this character into a Matching orb, boosts ATK of this character by
+      1.5x for 1 turn and boosts Orb Effects of this character by 1.5x for 1
+      turn.
+  character1:
+    name: Zeus & Big Mom - The Leaders of the Land of Souls
+    japanName: ゼウス＆ビッグ・マム “魂の国”の主達
+    class:
+      - Powerhouse
+      - Striker
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1571
+        atk: 641
+        rcv: 33
+      maxLvl:
+        hp: 3928
+        atk: 1602
+        rcv: 82
+    captain:
+      name: ""
+      description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+        your crew, Increases damage received by 1.75x boosts ATK of all
+        characters by 3.25x and their HP by 2x. Recovers HP proportional to the
+        number of enemies you defeated in that turn ✕ crew's RCV at the end of
+        the enemy turn.
+      notes: The amount healed each turn is equal to the number of enemies defeated
+        times the crew's total base RCV.
+    sailor:
+      - description: Makes [STR], [PSY] and [RCV] orbs beneficial for this character
+      - description: Boosts base HP of all characters by 150
+  character2:
+    name: Prometheus & Big Mom - The Leaders of the Land of Souls
+    japanName: プロメテウス＆ビッグ・マム “魂の国”の主達
+    class:
+      - Powerhouse
+      - Striker
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1571
+        atk: 641
+        rcv: 33
+      maxLvl:
+        hp: 3928
+        atk: 1602
+        rcv: 82
+    captain:
+      name: ""
+      description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+        your crew, Increases damage received by 1.75x boosts ATK of all
+        characters by 3.25x and their HP by 2x. Recovers HP proportional to the
+        number of enemies you defeated in that turn ✕ crew's RCV at the end of
+        the enemy turn.
+      notes: The amount healed each turn is equal to the number of enemies defeated
+        times the crew's total base RCV.
+    sailor:
+      - description: Makes [DEX], [QCK] and [TND] orbs beneficial for this character
+      - description: Boosts base HP of all characters by 150
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - hp: 45
+    - type: potential
+    - rcv: 15
+    - rcv: 15
+    - rcv: 20
+    - atk: 15
+    - atk: 15
+    - atk: 20
+    - hp: 60
+    - hp: 100
+    - type: sailor
+    - hp: 150
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - hp: 150
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

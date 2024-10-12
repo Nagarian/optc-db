@@ -1,0 +1,48 @@
+type: INT
+name: Capone Bege - Firetank Pirate Captain
+japanName: カポネ・ベッジ ファイアタンク海賊団船長
+family:
+  - CaponeBege
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 494
+    atk: 313
+    rcv: 80
+  maxLvl:
+    hp: 962
+    atk: 749
+    rcv: 244
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 27620
+aliases:
+  - Colo Capone Bege
+  - Coliseum Capone Bege
+evolution:
+  - id: 1016
+    evolvers:
+      - 82
+      - 83
+      - 88
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.75x if they have a beneficial orb
+special:
+  name: Hollow Eye Killing Shot
+  description: Randomizes all orbs. Boosts ATK of [INT] characters by 1.5x for 1
+    turn. If during that turn you score 6 PERFECT hits, boosts ATK of [INT]
+    characters by 1.5x for the next 2 turns
+  cooldown: 24
+  maxLevel: 13

@@ -1,0 +1,396 @@
+type: STR
+name: Big Mom - Emperor
+japanName: ビッグ・マム 四皇
+family:
+  - CharlotteLinlin
+class:
+  - Powerhouse
+  - Driven
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1820
+    atk: 1020
+    rcv: 0
+  maxLvl:
+    hp: 4000
+    atk: 1650
+    rcv: 0
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 117773
+aliases:
+  - Charlotte Linlin
+  - V1 Legend BM
+evolution:
+  - id: 2500
+    evolvers:
+      - skullSTR
+      - 118
+      - 84
+      - 300
+      - 267
+captain:
+  name: ""
+  description: >-
+    **Always Active:** Boosts HP of [STR], [DEX] and [QCK] characters
+    by 1.2x and changes [RCV] orbs into [SEMLA] orbs.  
+
+    **Standard Captain:** Boosts ATK of [STR], [DEX] and [QCK] characters by 3.5x  
+
+    **Powered Up Captain:** Boosts ATK of [STR], [DEX] and [QCK] characters by 4x and reduces damage received by 15%  
+
+    **Rampage Captain:** Boosts ATK of this character by 10x and own attacks will ignore damage reducing Barriers and Buffs and boosts ATK of [STR], [DEX] and [QCK] characters by 3.75x
+  notes: >-
+    [SEMLA] orbs replace [RCV] orbs, are beneficial for all characters and
+    heal at the end of the enemy turn and can not be controlled by special
+    abilities.  
+
+    In order to Power Up Big Mom, you must eat a [SEMLA] orb and will be powered up the following turn.  
+
+    While in Rampage, Big Mom will always attack a random enemy on her own, even while Binded or Paralyzed and hit a HUNGRY, which deals the same damage as a PERFECT. This attack occurs after your chain, so Big Mom's attack will not be affected by Chain Limiters, Chain Boosters, or Chain Lockers. You can not activate Big Mom's special while in Rampage. To exit Rampage, you must consume a [SEMLA] orb.
+special:
+  name: Temper Tantrum
+  description: Deals 250x character's ATK in Typeless damage to one enemy and
+    changes the orb of this character into a [STR] orb. If Big Mom is your
+    Captain or Friend/Guest Captain, boosts ATK of top row characters by 2x for
+    3 turns and boosts Orb Effects of top row characters by 2x for 3 turns. If
+    she is a Sailor, boosts ATK of this character by 2x for 1 turn and boosts
+    Orb Effects of this character by 2x for 1 turn instead
+  cooldown: 15
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of this character by 350 if this character is the
+      last in the chain to attack
+  - description: Makes [DEX] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR], [DEX], [QCK] characters"
+  levels:
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - hp: 40
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - atk: 30
+    - rcv: 20
+    - cooldown: 1
+    - atk: 30
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - atk: 100
+    - captain:
+        description: Not Translated
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+        - value: 10
+          threshold: 90
+rumble:
+  stats:
+    def: 162
+    rumbleType: ATK
+    spd: 154
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 51
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.62
+        - override:
+            amount: 0.82
+        - override:
+            amount: 0.61
+        - override:
+            level: 6
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.63
+        - override:
+            amount: 0.83
+        - override:
+            amount: 0.61
+        - override:
+            level: 7
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            amount: 0.85
+        - override:
+            amount: 0.62
+        - override:
+            level: 8
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.67
+        - override:
+            amount: 0.87
+        - override:
+            amount: 0.63
+        - override:
+            level: 9
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.69
+        - override:
+            amount: 0.89
+        - override:
+            amount: 0.64
+        - override:
+            level: 10
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            amount: 0.9
+        - override:
+            amount: 0.64
+        - override:
+            level: 11
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.72
+        - override:
+            amount: 0.92
+        - override:
+            amount: 0.65
+        - override:
+            level: 12
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.74
+        - override:
+            amount: 0.94
+        - override:
+            amount: 0.66
+        - override:
+            level: 12
+    - cooldown: 51
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            amount: 1.05
+        - override:
+            amount: 0.75
+        - override:
+            level: 14
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

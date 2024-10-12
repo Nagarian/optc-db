@@ -1,0 +1,419 @@
+type: DUAL
+name: General Franky - Dream Docking
+japanName: フランキー将軍 夢のドッキング
+family:
+  - TonyTonyChopper
+  - Franky
+class:
+  - Free Spirit
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2158
+    atk: 789
+    rcv: 153
+  maxLvl:
+    hp: 4316
+    atk: 1578
+    rcv: 306
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Iron Pirate Legend
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4x, their HP by 1.5x and reduces
+    ATK DOWN and Burn duration by 10 turns. Boosts ATK of Class 1 Fighter,
+    Shooter, Slasher and Striker characters by 1.25x. Boosts Color Affinity of
+    Class 1 Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.
+special:
+  name: General Franky Docking
+  description: Recovers 30% of crew's MAX HP, reduces Poison duration completely,
+    boosts ATK of Fighter, Slasher, Shooter and Striker characters by 2.5x for 1
+    turn, boosts Orb Effects of Free Spirit, Cerebral, Powerhouse and Driven
+    characters by 2.5x for 1 turn and becomes General Franky for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and
+      Striker characters
+  - description: Makes [PSY] orbs beneficial for Free Spirit, Cerebral, Powerhouse
+      and Driven characters
+characters:
+  swap:
+    description: Changes the orb of this character into a Matching orb, reduces
+      Despair duration completely on this character, boosts Color Affinity of
+      all characters by 1.5x for 1 turn and recovers 25% of damage taken from
+      enemies on the stage when entering a new stage for 1 stage.
+    super:
+      criteria: 4
+      description: Changes the orb of this character into a Matching orb, reduces
+        Despair duration completely on this character, boosts Color Affinity of
+        all characters by 2x for 1 turn and recovers 50% of damage taken from
+        enemies on the stage when entering a new stage for 1 stage.
+  character1:
+    name: Black Rhino FR-U4 - Dream Docking
+    class:
+      - Free Spirit
+      - Fighter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1880
+        atk: 770
+        rcv: 132
+      maxLvl:
+        hp: 3760
+        atk: 1540
+        rcv: 264
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces
+        ATK DOWN duration by 10 turns. Boosts ATK of Class 1 Fighter, Shooter,
+        Slasher, Striker and Free Spirit characters by 1.25x.
+    sailor:
+      - description: Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and
+          Striker characters
+      - description: Makes [PSY] orbs beneficial for Free Spirit, Cerebral, Powerhouse
+          and Driven characters
+  character2:
+    name: Brachio-Tank 5 - Dream Docking
+    class:
+      - Free Spirit
+      - Shooter
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1800
+        atk: 758
+        rcv: 134
+      maxLvl:
+        hp: 3600
+        atk: 1516
+        rcv: 296
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.75x, their HP by 1.5x and reduces
+        Burn duration by 10 turns. Boosts Color Affinity of Class 1 Fighter,
+        Free Spirit, Cerebral, Powerhouse and Driven characters by 1.3x.
+    sailor:
+      - description: Makes [DEX] orbs beneficial for Fighter, Shooter, Slasher and
+          Striker characters
+      - description: Makes [PSY] orbs beneficial for Free Spirit, Cerebral, Powerhouse
+          and Driven characters
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 100
+    - rcv: 5
+    - atk: 10
+    - rcv: 5
+    - atk: 20
+    - rcv: 5
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 150
+    - hp: 150
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - atk: 30
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 40
+    - atk: 40
+    - rcv: 15
+    - rcv: 15
+    - type: potential
+    - key: 1
+    - atk: 100
+    - hp: 100
+    - rcv: 10
+    - rcv: 15
+    - hp: 200
+    - rcv: 25
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 360
+    rumbleType: SPT
+    spd: 131
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: Driven
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 11
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - amount: 15
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: percentage
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            duration: 12
+        - override:
+            amount: 16
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            duration: 13
+        - override:
+            amount: 17
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            duration: 14
+        - override:
+            amount: 18
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            duration: 15
+        - override:
+            amount: 19
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            amount: 20
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            amount: 21
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            amount: 22
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            duration: 19
+        - override:
+            amount: 23
+    - cooldown: 25
+      effects:
+        - override:
+            level: 6
+            duration: 20
+        - override:
+            duration: 20
+        - override:
+            amount: 25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

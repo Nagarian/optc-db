@@ -1,0 +1,117 @@
+type: STR
+name: Soul King Brook - Whole Cake Chateau Intruder
+japanName: “ソウルキング”ブルック ホールケーキ城の侵入者
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1078
+    atk: 526
+    rcv: 145
+  maxLvl:
+    hp: 2538
+    atk: 1369
+    rcv: 321
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 102770
+aliases:
+  - WCI Brook
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 2x and boosts
+    Chain Multiplier Growth Rate by 1.5x
+special:
+  name: The Spherical Song that Resonates the Soul
+  description: Deals 8 hits of 20x character's ATK in Typeless damage to random
+    enemies. If enemies have All Debuff Protection or Delay Debuff Protection at
+    the time the special was activated, changes [BLOCK] orbs into Matching orbs
+    and boosts the Color Affinity of all characters by 1.75x for 1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: If this character has a [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Pedro, Monkey D. Luffy, Nami, Carrot, Tony Tony Chopper
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - rcv: 25
+    - rcv: 25
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - hp: 80
+    - atk: 40
+    - type: sailor
+    - slot: 1
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

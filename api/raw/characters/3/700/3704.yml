@@ -1,0 +1,213 @@
+type: QCK
+name: Kizaru - Invading Navy Admiral
+family:
+  - Borsalino
+class:
+  - Shooter
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1944
+    atk: 840
+    rcv: 97
+  maxLvl:
+    hp: 3888
+    atk: 1680
+    rcv: 194
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - RED Secret Limited Rumble
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3x.
+special:
+  name: Diva Capturing Yasakani Sacred Jewel
+  description: Reduces Special Cooldown of Shooter and Fighter characters by 1
+    turn and deals 75x character's ATK in Typeless damage to all enemies.
+  cooldown: 8
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 30
+limitBreak:
+  path:
+    - rcv: 40
+    - hp: 80
+    - atk: 100
+    - type: potential
+    - hp: 120
+    - atk: 150
+    - hp: 200
+    - rcv: 60
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 122
+    rumbleType: ATK
+    spd: 247
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            comparator: more
+            count: 6
+            type: crew
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            count: 3
+            priority: highest
+            stat: ATK
+            targets:
+              - Shooter
+        - amount: 0.4
+          effect: damage
+          repeat: 3
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 7
+        - override:
+            amount: 0.45
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            amount: 0.5
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            amount: 0.55
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 10
+        - override:
+            amount: 0.6
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            amount: 0.65
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 12
+        - override:
+            amount: 0.7
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 13
+        - override:
+            amount: 0.75
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 14
+        - override:
+            amount: 0.8
+    - cooldown: 27
+      effects:
+        - override:
+            level: 6
+            duration: 15
+        - override:
+            amount: 1.1

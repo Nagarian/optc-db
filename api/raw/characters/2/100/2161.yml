@@ -1,0 +1,255 @@
+type: QCK
+name: Donquixote Doflamingo - Strongman of the Paramount War
+japanName: ドンキホーテ・ドフラミンゴ 頂上戦争の重要戦力
+family:
+  - DonquixoteDoflamingo
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 867
+    atk: 652
+    rcv: 151
+  maxLvl:
+    hp: 2026
+    atk: 1497
+    rcv: 341
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 110873
+aliases:
+  - Limited Doffy
+  - Secret Doffy
+  - Secret Doflamingo
+  - Limited Doflamingo
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x and their HP by 1.2x. If
+    you use "Punishment for the Weak" in this turn boosts ATK of Shooter
+    characters by 3.25x instead.
+special:
+  name: Punishment for the Weak
+  description: Makes Damage and Health Cutting Specials of Shooter characters
+    bypass all defensive Buffs, Barriers and Defense, deals 150x character's ATK
+    in [QCK] damage to one enemy, changes [RCV], [TND] and [BLOCK] orbs into
+    Matching orbs and boosts Orb Effects of Shooter characters by 2x for 1 turn
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Shooter characters by 75
+  - description: Makes [QCK] orbs beneficial for Shooter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shooter characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 30
+    - hp: 20
+    - type: potential
+    - atk: 30
+    - rcv: 20
+    - atk: 30
+    - type: sailor
+    - rcv: 20
+    - atk: 30
+    - rcv: 30
+    - hp: 50
+    - cooldown: 1
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 83
+    rumbleType: ATK
+    spd: 176
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 20
+      type: debuff
+    - attribute: Powerhouse
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 15
+      effects:
+        - amount: 0.8
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - Counter
+          effect: boon
+          amount: 1
+          duration: 10
+          targeting:
+            targets:
+              - self
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 1
+            duration: 7
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 1
+            duration: 8
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 2
+            duration: 9
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 2
+            duration: 10
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 3
+            duration: 11
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 3
+            duration: 12
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 3
+            duration: 13
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 4
+            duration: 14
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 5
+            duration: 15
+        - {}

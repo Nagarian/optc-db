@@ -1,0 +1,90 @@
+type: DEX
+name: Giolla - Donquixote Pirates
+japanName: ジョーラ ドンキホーテ海賊団
+family:
+  - Giolla
+class:
+  - Free Spirit
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1404
+    atk: 443
+    rcv: 146
+  maxLvl:
+    hp: 2887
+    atk: 880
+    rcv: 347
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 21541
+aliases:
+  - Giolla, Donquixote Pirates
+  - Jora
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x, boosts amount of Beli received by 2x
+special:
+  name: Heaven's Do Art
+  description: Reduces any damage received above 2,000 HP by 88% for 2 turns
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Makes [STR] and [QCK] orbs beneficial for this character
+  - description: Boosts base HP of all characters by 100
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 9
+    - value: 10
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - type: sailor
+    - type: potential
+    - hp: 30
+    - rcv: 20
+    - atk: 20
+    - atk: 30
+    - rcv: 30
+    - slot: 1
+    - hp: 50
+    - type: sailor
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

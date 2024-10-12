@@ -1,0 +1,51 @@
+type: INT
+name: Pudding - False Bride
+japanName: プリン 偽リの花嫁
+family:
+  - CharlottePudding
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 114
+    atk: 81
+    rcv: 62
+  maxLvl:
+    hp: 1048
+    atk: 451
+    rcv: 148
+cost: 12
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 88902
+aliases:
+  - Wedding Pudding
+  - Bride Pudding
+evolution:
+  - id: 1963
+    evolvers:
+      - 116
+      - 117
+      - 82
+      - 88
+      - 99
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and Fighter characters by 2x
+  notes: This effect is boosted if you use Sanji's [1960/1961] special in the same
+    turn
+special:
+  name: Tears of Attraction
+  description: Changes [G], [BLOCK] and Badly Matching orbs into Matching orbs,
+    reduces Bind and Silence duration by 3 turns and locks the chain multiplier
+    at 2.5x for 1 turn
+  cooldown: 21
+  maxLevel: 10
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character

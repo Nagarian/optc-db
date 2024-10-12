@@ -1,0 +1,250 @@
+type: DEX
+name: Leo - Warrior Anticipating the Party
+japanName: レオ パーティーで意気込む戦士
+family:
+  - Leo
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 570
+    atk: 385
+    rcv: 41
+  maxLvl:
+    hp: 1268
+    atk: 856
+    rcv: 92
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 241502
+aliases:
+  - Christmas Leo
+evolution:
+  - id: 3170
+    evolvers:
+      - 117
+      - 86
+      - 97
+      - 1180
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and reduces damage
+    received by 10%
+special:
+  name: Haute Couture
+  description: Reduces enemies' Increased Defense duration by 5 turns and reduces
+    Chain Multiplier Limit duration by 7 turns. If there is more than 10,000
+    Excess Healing done when the special is activated, reduces Special Cooldown
+    of top row characters by 3 turns, reduces Special Cooldown of top row
+    characters by 1 turn otherwise.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral characters by 50
+rumble:
+  stats:
+    def: 134
+    rumbleType: DBF
+    spd: 140
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 6
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+              - Cerebral
+        - amount: 1
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 12
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            duration: 7
+        - override:
+            amount: 1.1
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 13
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            duration: 8
+        - override:
+            amount: 1.2
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 14
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            duration: 9
+        - override:
+            amount: 1.3
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 15
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            duration: 10
+        - override:
+            amount: 1.4
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 16
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            duration: 11
+        - override:
+            amount: 1.5
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 17
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            duration: 12
+        - override:
+            amount: 1.6
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 18
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            duration: 13
+        - override:
+            amount: 1.7
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 19
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            duration: 14
+        - override:
+            amount: 1.8
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 20
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            duration: 15
+        - override:
+            amount: 2

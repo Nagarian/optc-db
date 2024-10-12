@@ -1,0 +1,327 @@
+type: PSY
+name: Usopp
+frenchName: Usopp
+japanName: ウソップ
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 50
+    atk: 32
+    rcv: 42
+  maxLvl:
+    hp: 322
+    atk: 127
+    rcv: 121
+cost: 4
+slots: 0
+maxExp: 26184
+maxLevel: 20
+flags:
+  - sugo
+links:
+  gamewithId: 2022
+aliases: []
+evolution:
+  - id: 14
+    evolvers:
+      - 115
+      - 81
+  - id: 15
+    evolvers:
+      - 115
+      - 81
+      - 98
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.2x
+special:
+  name: Liar
+  description: Delays all enemies by 1 turn
+  cooldown: 15
+  maxLevel: 6
+rumble:
+  stats:
+    def: 164
+    rumbleType: DBF
+    spd: 124
+    cost: 20
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 12
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 13
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 14
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 17
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 18
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 23
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 19
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed

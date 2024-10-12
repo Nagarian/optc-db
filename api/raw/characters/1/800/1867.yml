@@ -1,0 +1,165 @@
+type: QCK
+name: '"Magician" Basil Hawkins - Supernova'
+japanName: “魔術師”バジル・ホーキンス 超新星
+family:
+  - BasilHawkins
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 907
+    atk: 484
+    rcv: 141
+  maxLvl:
+    hp: 2078
+    atk: 1079
+    rcv: 281
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 80648
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x, boosts Chain Multiplier
+    Growth Rate by 1.5x
+special:
+  name: Fortune-Telling from the Shadow of Death
+  description: Deals 10% of enemies' current HP in damage to all enemies. Deals
+    10% of enemies' current HP in damage to all enemies at the end of the turn
+    for 3 turns. Reduces damage received by 40% for 3 turns.
+  cooldown: 24
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: X Drake and Urouge
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+rumble:
+  stats:
+    def: 121
+    rumbleType: DBF
+    spd: 129
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 19
+      effects:
+        - amount: 14
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 15
+        - override:
+            level: 1
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 1
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 19
+        - override:
+            level: 3
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 3
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 21
+        - override:
+            level: 3
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 22
+        - override:
+            level: 4
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 5

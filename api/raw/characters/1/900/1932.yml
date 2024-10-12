@@ -1,0 +1,59 @@
+type: PSY
+name: Boa Marigold - Runaway Slave
+japanName: ボア・マリーゴールド 逃亡奴隷
+family:
+  - BoaMarigold
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 219
+    atk: 345
+    rcv: 20
+  maxLvl:
+    hp: 2020
+    atk: 1123
+    rcv: 239
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 86347
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.75x
+special:
+  name: "The Trio Crawling Away from the Heavens: The Third Daughter"
+  description: 'Boosts Orb Effects of Fighter characters by 1.25x for 1 turn and
+    boosts ATK of Fighter characters by 1.5x for 1 turn. If "The Trio Crawling
+    Away from the Heavens: The Second Daughter" is used again in the same turn
+    the special is activated in, boosts ATK of Fighter characters by 1.75x
+    instead.'
+  cooldown: 21
+  maxLevel: 9
+  notes: This special is boosted if you use Boa Sandersonia's [1931] special in
+    the same turn
+sailor:
+  - description: Boosts base ATK of this character by 100 if this character is the
+      3rd in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Boa Marigold and Boa Hancock
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

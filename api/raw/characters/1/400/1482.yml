@@ -1,0 +1,51 @@
+type: INT
+name: Madam Sharley
+japanName: マダム・シャーリー
+family:
+  - Shyarly
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 91
+    atk: 89
+    rcv: 44
+  maxLvl:
+    hp: 935
+    atk: 478
+    rcv: 232
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 52208
+aliases:
+  - ""
+  - Madame Shirley
+  - Madame Shyarly
+evolution:
+  - id: 1483
+    evolvers:
+      - 88
+      - 99
+      - 1180
+      - 104
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x and their RCV by 1.2x
+special:
+  name: Foretold Catastrophe
+  description: Randomizes all non-Matching orbs, switches orbs between slots 2
+    times and if enemies have a barrier at the time the special was activated,
+    boosts ATK of all characters by 1.75x for 1 turn, by 1.25x otherwise.
+  cooldown: 15
+  maxLevel: 7
+sailor:
+  - description: "[INT] characters will deal an extra 1.1x to non [PSY] enemies"

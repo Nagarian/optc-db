@@ -1,0 +1,478 @@
+type: STR
+name: Toki & Momonosuke & Hiyori - Entrusted Future
+japanName: トキ＆モモの助＆日和 託す未来
+family:
+  - KozukiMomonosuke
+  - KozukiHiyori
+  - KozukiToki
+class:
+  - Free Spirit
+  - Slasher
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1349
+    atk: 941
+    rcv: 103
+  maxLvl:
+    hp: 3288
+    atk: 1587
+    rcv: 329
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+  - inkable
+links:
+  gamewithId: 287747
+aliases:
+  - Legend Toki
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of all characters by 4.75x, their HP by 1.2x, makes
+    [STR] orbs beneficial for all characters and recovers 1x this character's
+    RCV at the end of the turn for each time you hit a PERFECT.
+superSpecial:
+  criteria: This character must be captain and another crew member must activate a
+    Special Ability.
+  description: Reduces Special Cooldown of this character by 5 turns, boosts the
+    Color Affinity of [STR] characters by 2x for 1 turn and transforms all [STR]
+    characters into Super [STR] characters.
+special:
+  name: Tale Woven Together for Twenty Years
+  description: Apply Toki-Toki state to 2 characters for 2 turns. After Toki-Toki
+    state expires, boosts ATK of selected characters by 3.5x for 1 turn and
+    boosts Orb Effects of selected characters by 3.5x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+  notes: "Toki-Toki state makes certain members of your crew immune to debuffs
+    including, but not limited to: Bind, Despair, Silence, Slot Bind, Paralysis,
+    Special Rewind, Captain Swap and Blow Away, including self-inflicted
+    debuffs."
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+  - description: Restores Special Cooldown of this character by 2 turns when it is
+      rewinded and reduces Silence duration by 5 turns on this character
+support:
+  type: descriptive
+  criteria: Kozuki Oden, Kin'emon, Kikunojo, Denjiro (Kyoshiro), Inuarashi,
+    Nekomamushi, Raizo, Kawamatsu, Ashura Doji (Shutenmaru) and Kurozumi Kanjuro
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [STR] orb, locks
+      supported character's orb for 1 turn, boosts ATK of supported character by
+      1.5x for 1 turn and boosts Orb Effects of the supported character by 1.1x
+      for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [STR] orb, locks
+      supported character's orb for 1 turn, boosts ATK of supported character by
+      1.5x for 1 turn and boosts Orb Effects of the supported character by 1.2x
+      for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [STR] orb, locks
+      supported character's orb for 1 turn, boosts ATK of supported character by
+      1.5x for 1 turn and boosts Orb Effects of the supported character by 1.3x
+      for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [STR] orb, locks
+      supported character's orb for 1 turn, boosts ATK of supported character by
+      1.5x for 1 turn and boosts Orb Effects of the supported character by 1.4x
+      for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [STR] orb, locks
+      supported character's orb for 1 turn, boosts ATK of supported character by
+      1.5x for 1 turn and boosts Orb Effects of the supported character by 1.5x
+      for 1 turn.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - atk: 20
+    - atk: 20
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - rcv: 10
+    - hp: 100
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - rcv: 15
+    - rcv: 30
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - hp: 100
+    - hp: 150
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - hp: 150
+    - atk: 100
+    - cooldown: 1
+    - rcv: 50
+  potentials:
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 129
+    rumbleType: SPT
+    spd: 152
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: Silence
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 1
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 2
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 3
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Silence
+          duration: 11
+          effect: boon
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Action Bind
+          duration: 11
+          effect: boon
+          targeting:
+            targets:
+              - STR
+        - amount: 6
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+        - attributes:
+            - ATK
+          duration: 11
+          level: 1
+          effect: buff
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+        - amount: 1
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+        - override:
+            amount: 7
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            amount: 1.1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 13
+        - override:
+            duration: 13
+        - override:
+            amount: 8
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 1.2
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 14
+        - override:
+            duration: 14
+        - override:
+            amount: 9
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            amount: 1.3
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 15
+        - override:
+            duration: 15
+        - override:
+            amount: 10
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            amount: 1.4
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            amount: 11
+        - override:
+            level: 6
+            duration: 16
+        - override:
+            amount: 1.5
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            amount: 12
+        - override:
+            level: 7
+            duration: 17
+        - override:
+            amount: 1.6
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            amount: 13
+        - override:
+            level: 8
+            duration: 18
+        - override:
+            amount: 1.7
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+        - override:
+            amount: 14
+        - override:
+            level: 9
+            duration: 19
+        - override:
+            amount: 1.8
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 20
+        - override:
+            duration: 20
+        - override:
+            amount: 15
+        - override:
+            level: 10
+            duration: 20
+        - override:
+            amount: 2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

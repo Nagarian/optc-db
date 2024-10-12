@@ -1,0 +1,56 @@
+type: QCK
+oldDbId: 3321
+name: "Monkey D. Luffy: Neo - Star of Hope"
+japanName: モンキー・D・ルフィ「改」 希望の星
+family:
+  - MonkeyDLuffy
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 259
+    atk: 179
+    rcv: 0
+  maxLvl:
+    hp: 1351
+    atk: 735
+    rcv: -200
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 266799
+aliases:
+  - Neo Nightmare Luffy
+evolution:
+  - id: 5043
+    evolvers:
+      - 118
+      - 85
+      - 266
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Powerhouse characters by 3x, reduces crew's
+    current HP by 10% at the end of each turn and reduces own ATK multiplier by
+    0.1x at the end of each turn
+  notes: His ATK multiplier will be 3.0x on the first turn, 2.9x on the second,
+    2.8x on the third and so on. The reduction stops once the multiplier is
+    1.0x. The multiplier affects all Powerhouse characters. You will not die to
+    the HP reduction
+special:
+  name: Gum-Gum Storm [Neo]
+  description: Deals 17 hits of random [QCK] damage to random enemies, reduces
+    enemies' Threshold Damage Reduction duration by 4 turns and boosts ATK of
+    Powerhouse characters by 1.75x for 1 turn.
+  cooldown: 28
+  maxLevel: 15

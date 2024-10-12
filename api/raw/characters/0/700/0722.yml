@@ -1,0 +1,47 @@
+type: STR
+name: Jerry - Cipher Pol No. 6
+japanName: ジェリー サイファーポールNo.6
+family:
+  - Jerry
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 439
+    atk: 323
+    rcv: 70
+  maxLvl:
+    hp: 1000
+    atk: 712
+    rcv: 212
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 16387
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x if HP is above 99% at the
+    start of the turn
+special:
+  name: Screw Drop Kick
+  description: Randomizes all orbs, including [BLOCK] orbs
+  cooldown: 16
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Wanze and Nero
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6

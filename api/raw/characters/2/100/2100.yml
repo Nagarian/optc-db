@@ -1,0 +1,53 @@
+type: STR
+name: Dice - VIP Room Dealer
+japanName: ダイス スペシャルギャンブルのディーラー
+family:
+  - Dice
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 276
+    atk: 164
+    rcv: 11
+  maxLvl:
+    hp: 1289
+    atk: 648
+    rcv: 71
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 105797
+aliases:
+  - V2 Dice
+evolution:
+  - id: 2101
+    evolvers:
+      - 117
+      - 84
+      - 94
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.75x and boosts ATK of
+    [STR] characters by 1.2x
+  notes: Attack boost stacks, so a [STR] Powerhouse character has a 2.1x ATK
+special:
+  name: Furious Armored Tank
+  description: Deals 15% of enemies' current HP in damage to one enemy and reduces
+    enemies' Barrier duration by 1 turn. If your captain is a [STR] or [QCK]
+    character, changes the orb of this character into a [STR] orb and boosts ATK
+    of all characters by 1.75x for 1 turn
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: If this character has a [STR] orb and you hit a GOOD or GREAT with
+      him, keep his [STR] orb for the next turn

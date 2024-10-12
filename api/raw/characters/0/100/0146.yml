@@ -1,0 +1,37 @@
+type: INT
+name: Fighter Group Crew - Black Pirates
+japanName: 格闘隊 隊員 ブラックパイレーツ
+family:
+  - FighterGroupCrewPirates
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 202
+    atk: 108
+    rcv: 8
+  maxLvl:
+    hp: 695
+    atk: 440
+    rcv: 27
+cost: 6
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 2700
+aliases: []
+evolution:
+  - id: 273
+    evolvers:
+      - 115
+      - 116
+      - 93
+special:
+  name: Hyper Straight
+  description: Deals 10x character's ATK in character's Type damage to one enemy
+  cooldown: 40
+  maxLevel: 26

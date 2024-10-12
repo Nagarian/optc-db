@@ -1,0 +1,88 @@
+type: DEX
+name: Master Caesar
+japanName: Ｍ（マスター）・シーザー
+family:
+  - CaesarClown
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 941
+    atk: 695
+    rcv: 177
+  maxLvl:
+    hp: 2000
+    atk: 1383
+    rcv: 343
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 19810
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.5x
+special:
+  name: Gas Robe
+  description: Poisons all enemies, boosts ATK of Driven characters by 1.75x for 2 turns
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven characters by 30
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Vergo and Monet
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - rcv: 30
+    - atk: 60
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

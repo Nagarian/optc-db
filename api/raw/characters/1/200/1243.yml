@@ -1,0 +1,48 @@
+type: INT
+name: Hack Fish-Man Karate Master
+japanName: ハック 魚人空手師範
+family:
+  - Hack
+class:
+  - Fighter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 79
+    atk: 55
+    rcv: 12
+  maxLvl:
+    hp: 904
+    atk: 570
+    rcv: 91
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 37426
+aliases:
+  - ""
+evolution:
+  - id: 1244
+    evolvers:
+      - 116
+      - 117
+      - 93
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 1.3x
+  notes: Attack boost stacks, so a Fighter/Powerhouse character has a 1.69x ATK
+special:
+  name: Fishman karate, KO blow
+  description: Deals 15x character's ATK in [INT] damage to all enemies. Changes
+    the orb of this character into an [INT] orb and changes orbs of adjacent
+    characters into [G] orbs
+  cooldown: 20
+  maxLevel: 6

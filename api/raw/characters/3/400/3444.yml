@@ -1,0 +1,249 @@
+type: DEX
+name: Jinbe - Helmsman in Disguise
+japanName: ジンベエ 変装する操舵手
+family:
+  - Jinbe
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1382
+    atk: 558
+    rcv: 87
+  maxLvl:
+    hp: 3454
+    atk: 1396
+    rcv: 209
+cost: 30
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 293726
+aliases:
+  - Onigashima Jinbe
+  - TM Jinbe
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 3.25x and their HP by 1.3x.
+special:
+  name: "Fishman Karate: Secret Infiltration"
+  description: Changes all orbs of all characters into this character's orb, locks
+    all orbs for 1 turn, reduces Chain Coefficient Reduction duration by 5
+    turns, reduces the defense of all enemies by 80% for 1 turn and boosts ATK
+    against enemies with reduced defense by 1.75x for 1 turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Boosts base HP of Free Spirit and Powerhouse characters by 60
+  - description: Cannot be Blown Away
+support:
+  type: descriptive
+  criteria: Free Spirit characters
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      orbs on Free Spirit characters for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs on Free Spirit characters for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs on Free Spirit characters for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs on Free Spirit characters for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Chain Coefficient Reduction duration by 1 turn and locks orbs on
+      Free Spirit characters for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - rcv: 20
+    - slot: 1
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - hp: 80
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 3
+rumble:
+  stats:
+    def: 289
+    rumbleType: DEF
+    spd: 112
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 5
+            duration: 20

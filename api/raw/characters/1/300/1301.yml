@@ -1,0 +1,46 @@
+type: QCK
+name: "Prisoner: Buggy"
+japanName: 受刑者　バギー
+family:
+  - Buggy
+class:
+  - Slasher
+  - Driven
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 72
+    atk: 33
+    rcv: 28
+  maxLvl:
+    hp: 923
+    atk: 424
+    rcv: 187
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 41931
+aliases:
+  - Baggy
+evolution:
+  - id: 1302
+    evolvers:
+      - 116
+      - 117
+      - 79
+      - 85
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.75x
+special:
+  name: Special Muggy Ball
+  description: Reduces crew's current HP to 1, changes all orbs into [EMPTY] orbs
+    and deals 30x character's ATK in [QCK] damage to all enemies
+  cooldown: 20
+  maxLevel: 7

@@ -1,0 +1,196 @@
+type: PSY
+name: Nami - Keen-Eyed Cat Burglar at the Pirates Expo
+japanName: ナミ 『海賊万博』で見抜く泥棒猫
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 397
+    atk: 229
+    rcv: 77
+  maxLvl:
+    hp: 994
+    atk: 573
+    rcv: 192
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 164101
+aliases:
+  - Stampede Nami
+evolution:
+  - id: 2676
+    evolvers:
+      - 94
+      - 2662
+      - 303
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x, their RCV by 1.2x, and
+    recovers 1x character's RCV at the end of each turn.
+special:
+  name: Summer Sky - Zeus Breeze Tempo
+  description: Reduces Special Cooldown of [DEX] and [PSY] characters by 2 turns
+    and reduces Bind, Silence and Chain Multiplier Limit duration by 5 turns.
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Reduces Special Cooldown of [DEX] and [PSY] characters by 1 turn
+        and reduces Bind duration by 2 turns.
+      cooldown: 12
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+rumble:
+  stats:
+    def: 92
+    rumbleType: RCV
+    spd: 130
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: heal
+      area: Small
+      level: 2
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - PSY
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 21
+      effects:
+        - amount: 0.4
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 10
+          effect: recharge
+          type: Special CT
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+        - amount: 15
+          effect: recharge
+          type: percentage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.42
+        - override:
+            amount: 11
+        - override:
+            amount: 15
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            amount: 12
+        - override:
+            amount: 15
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.45
+        - override:
+            amount: 13
+        - override:
+            amount: 15
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.47
+        - override:
+            amount: 14
+        - override:
+            amount: 15
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            amount: 15
+        - override:
+            amount: 15
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            amount: 16
+        - override:
+            amount: 16
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.52
+        - override:
+            amount: 17
+        - override:
+            amount: 16
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            amount: 18
+        - override:
+            amount: 16
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            amount: 20
+        - override:
+            amount: 18

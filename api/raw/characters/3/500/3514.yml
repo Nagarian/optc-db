@@ -1,0 +1,162 @@
+type: DUAL
+name: Luffy & Straw Hat Pirates - Advancing Pirates
+japanName: ルフィ＆麦わらの一味 攻め入る者達
+family:
+  - MonkeyDLuffy
+  - RoronoaZoro
+  - Nami
+  - Usopp
+  - VinsmokeSanji
+  - TonyTonyChopper
+  - NicoRobin
+  - Franky
+  - Jinbe
+  - Brook
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1199
+    atk: 449
+    rcv: 93
+  maxLvl:
+    hp: 2398
+    atk: 898
+    rcv: 186
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 313580
+aliases:
+  - Luffy Crew
+  - V2 Legend Strawhat Crew
+  - SHC
+  - SHP
+evolution:
+  - id: 3515
+    evolvers:
+      - 118
+      - 1180
+      - 100
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of this character by 4 turns at the start
+    of the fight, boosts ATK of all characters by 5x, by 5.25x instead if they
+    have a beneficial orb, their HP by 1.5x recovers 2,000 HP at the end of each
+    turn and makes all Specials that apply Class or Type restricted buffs apply
+    to the whole crew instead.
+  notes: "Buff restriction override does not apply to \"Partial\" buffs. The buff
+    restriction override applies to any effect that would normally affect only
+    certain classes or types, including, but not restricted to: ATK buffs, Orb
+    buffs, Base ATK buffs, Cooldown Reduction, Normal Attack Defensive Effect
+    Bypass, Orb Lock buffs and Slot Barrier debuffs, but does not effect
+    defensive buffs. This effect doesn't not effect Swap abilities, Support
+    abilities, Super Special abilities, VS Special abilities or effects obtained
+    from Following Turn or Tap-Timing Following Turn buffs."
+special:
+  name: Charging Straw Hats
+  description: Deals 300x character's ATK in Typeless damage to all enemies,
+    changes all orbs, including [BLOCK] orbs, into [RAINBOW] orbs and becomes
+    Luffy & Straw Hat Pirates for 3 turns. If your crew has 1 or fewer buffs
+    when the special is activated, boosts ATK of all characters by 2x for 2
+    turns, boosts the Color Affinity of all characters by 2x for 2 turns, boosts
+    Orb Effects of all characters by 2x for 2 turns, adds 0.8x to Chain
+    multiplier for 2 turns and prevents adding any additional buffs to your team
+    this turn. If your crew has 2 or more buffs when the special is activated,
+    locks all orbs for 2 turns and increases duration of any ATK boosting, Orb
+    Amplification, Base ATK boosting, Status ATK boosting, Affinity boosting,
+    Chain Addition, Chain Multiplication buffs and Chain Lock/Limit/Boundary
+    debuffs/buffs by 1 turn.
+  cooldown: 23
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+characters:
+  swap:
+    description: Changes the orb, including [BLOCK] orb, of this character into a
+      Matching orb and removes Slot Bind and Paralysis duration completely on
+      this character.
+    super:
+      criteria: 4
+      description: Changes the orb, including [BLOCK] orb, of this character into a
+        Matching orb, removes Slot Bind and Paralysis duration completely on
+        this character and reduces Ship Bind and Paralysis duration by 4 turns.
+  character1:
+    name: Monkey D. Luffy - Advancing Pirates
+    japanName: ルフィ 攻め入る者達
+    class:
+      - Free Spirit
+      - Fighter
+    type: STR
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1171
+        atk: 420
+        rcv: 79
+      maxLvl:
+        hp: 2342
+        atk: 840
+        rcv: 158
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of this character by 4 turns at the start
+        of the fight, boosts ATK of all characters by 4.75x, their HP by 1.5x
+        recovers 1,000 HP at the end of each turn and makes all Specials that
+        apply Class or Type restricted buffs apply to the whole crew instead.
+      notes: "Buff restriction override does not apply to \"Partial\" buffs. The buff
+        restriction override applies to any effect that would normally affect
+        only certain classes or types, including, but not restricted to: ATK
+        buffs, Orb buffs, Base ATK buffs, Cooldown Reduction, Normal Attack
+        Defensive Effect Bypass, Orb Lock buffs and Slot Barrier debuffs, but
+        does not effect defensive buffs. This effect doesn't not effect Swap
+        abilities, Support abilities, Super Special abilities, VS Special
+        abilities or effects obtained from Following Turn or Tap-Timing
+        Following Turn buffs."
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 100
+  character2:
+    name: Straw Hat Pirates - Advancing Pirates
+    japanName: 麦わらの一味 攻め入る者達
+    class:
+      - Free Spirit
+      - Fighter
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1167
+        atk: 413
+        rcv: 84
+      maxLvl:
+        hp: 2334
+        atk: 826
+        rcv: 168
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of this character by 4 turns at the start
+        of the fight, boosts ATK of all characters by 4.5x, by 5x instead if
+        they have a beneficial orb, their HP by 1.5x recovers 1,000 HP at the
+        end of each turn and makes all Specials that apply Class or Type
+        restricted buffs apply to the whole crew instead.
+      notes: "Buff restriction override does not apply to \"Partial\" buffs. The buff
+        restriction override applies to any effect that would normally affect
+        only certain classes or types, including, but not restricted to: ATK
+        buffs, Orb buffs, Base ATK buffs, Cooldown Reduction, Normal Attack
+        Defensive Effect Bypass, Orb Lock buffs and Slot Barrier debuffs, but
+        does not effect defensive buffs. This effect doesn't not effect Swap
+        abilities, Support abilities, Super Special abilities, VS Special
+        abilities or effects obtained from Following Turn or Tap-Timing
+        Following Turn buffs."
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 100

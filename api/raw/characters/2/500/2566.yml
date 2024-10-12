@@ -1,0 +1,165 @@
+type: QCK
+name: Karasu
+japanName: カラス
+family:
+  - Karasu
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 477
+    atk: 246
+    rcv: 50
+  maxLvl:
+    hp: 1192
+    atk: 616
+    rcv: 126
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 152589
+aliases:
+  - ""
+evolution:
+  - id: 2567
+    evolvers:
+      - 83
+      - 266
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 2x and their HP by 1.2x.
+special:
+  name: Liberating Crows
+  description: Reduces Special Cooldown of Free Spirit and Cerebral characters by
+    2 turns and reduces Silence, Increase Damage Taken and Burn duration by 5
+    turns.
+  cooldown: 19
+  maxLevel: 7
+  stages:
+    - description: Reduces Special Cooldown of Free Spirit and Cerebral characters by
+        1 turn and reduces Silence duration by 2 turns.
+      cooldown: 11
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+rumble:
+  stats:
+    def: 238
+    rumbleType: DEF
+    spd: 100
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+              - Cerebral
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 20
+      effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          duration: 10
+          targeting:
+            targets:
+              - Free Spirit
+              - Cerebral
+        - amount: 5
+          effect: recharge
+          targeting:
+            targets:
+              - Free Spirit
+              - Cerebral
+            excludes:
+              - self
+          type: Special CT
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 11
+        - {}
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 12
+        - override:
+            amount: 6
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 13
+        - override:
+            amount: 7
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 14
+        - override:
+            amount: 7
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 15
+        - override:
+            amount: 8
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 16
+        - override:
+            amount: 9
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 17
+        - override:
+            amount: 10
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 18
+        - override:
+            amount: 10
+    - cooldown: 20
+      effects:
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            amount: 12

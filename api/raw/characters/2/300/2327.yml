@@ -1,0 +1,145 @@
+type: QCK
+name: Charlotte Amande - The Mad Moiselle
+japanName: シャーロット・アマンド 鬼夫人
+family:
+  - CharlotteAmande
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 788
+    atk: 498
+    rcv: 83
+  maxLvl:
+    hp: 1970
+    atk: 1244
+    rcv: 207
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 127789
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.25x and their HP by 1.2x,
+    deals 3x character's ATK in [QCK] damage to all enemies at the end of each
+    turn
+special:
+  name: Slow Waltz
+  description: Deals 10% of enemies' current HP in damage to all enemies, reduces
+    enemies' Percent Damage Reduction and Resilience Buffs duration by 2 turns.
+    If your Captain is a Slasher character, reduces damage received by 30% for 2
+    turns
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Charlotte Linlin (Big Mom), Bobbin
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+rumble:
+  stats:
+    def: 122
+    rumbleType: DBF
+    spd: 128
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - duration: 20
+          effect: damage
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 21
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 23
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 24
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 26
+            level: 4
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 27
+            level: 4
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 29
+            level: 4
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 30
+            level: 5
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 32
+            level: 5
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 33
+            level: 6

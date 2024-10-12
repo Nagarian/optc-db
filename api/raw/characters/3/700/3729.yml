@@ -1,0 +1,47 @@
+type: DEX
+name: Monkey D. Garp - Proud Fist
+family:
+  - MonkeyDGarp
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1093
+    atk: 410
+    rcv: 50
+  maxLvl:
+    hp: 2186
+    atk: 820
+    rcv: 100
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - rumble
+aliases:
+  - V2 Secret Limited Rumble
+evolution:
+  - id: 3730
+    evolvers: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 5x, boosts HP of
+    Fighter and Powerhouse characters by 1.5x and reduces Bind duration by 3
+    turns. If you use "Splitting Fist" in this turn, boosts ATK of Fighter and
+    Powerhouse characters by 5.25x.
+special:
+  name: Splitting Fist
+  description: Deals 300x character's ATK in Typeless True damage to one enemy,
+    reduces Special Cooldown of all characters by 2 turns, adds 1.5x to Chain
+    multiplier for 1 turn, makes Fighter and Powerhouse characters' attacks
+    ignore damage reducing Barriers and Buffs.
+  cooldown: 21
+  maxLevel: 6
+  notes: This special can only be activated if 1 other special at most has been
+    activated this turn and removes the ability to activate more than 1 other
+    special this turn.

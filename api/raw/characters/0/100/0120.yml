@@ -1,0 +1,31 @@
+type: STR
+name: Pistol Bandit
+japanName: ピストル山賊
+family:
+  - PistolBandit
+class:
+  - Shooter
+rarity: 1
+stats:
+  combo: 5
+  minLvl:
+    hp: 17
+    atk: 14
+    rcv: 28
+  maxLvl:
+    hp: 105
+    atk: 57
+    rcv: 104
+cost: 1
+slots: 0
+maxExp: 8728
+maxLevel: 20
+flags: []
+links:
+  gamewithId: 2822
+aliases: []
+special:
+  name: Hyper Shot
+  description: Deals 5x character's ATK in character's Type damage to all enemies
+  cooldown: 35
+  maxLevel: 26

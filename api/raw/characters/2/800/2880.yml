@@ -1,0 +1,89 @@
+type: PSY
+name: Mr. 2 Bon Clay - Top-Flight Swan
+japanName: Mr.2・ボン・クレー 一流のオカマ
+family:
+  - Bentham
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1199
+    atk: 539
+    rcv: 120
+  maxLvl:
+    hp: 2998
+    atk: 1348
+    rcv: 301
+cost: 30
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 190737
+aliases:
+  - TM Bon Clay
+captain:
+  name: ""
+  description: Reduces Special Cooldown of [PSY] characters by 2 turns at the
+    start of the fight, boosts ATK of [PSY] characters by 3x.
+special:
+  name: Fruits of his Lesson - Swan Bombardier
+  description: Deals 222,222 Fixed damage to one enemy. If enemies have ATK UP at
+    the time the special was activated, boosts ATK of all characters by 2.25x
+    for 1 turn. If enemies have Percent Damage Reduction at the time the special
+    was activated, reduces damage received by 80% for 2 turns. If enemies have
+    Threshold Damage Reduction at the time the special was activated, reduces
+    any damage received above 5,000 HP by ?% for 2 turns.
+  cooldown: 18
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK, HP and RCV of [PSY] characters by 30
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Galdino (Mr. 3), Crocodile (Mr. 0), Daz Bones (Mr. 1)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 10
+    - atk: 30
+    - type: potential
+    - hp: 50
+    - rcv: 15
+    - atk: 40
+    - slot: 1
+    - hp: 80
+    - rcv: 20
+    - cooldown: 1
+    - type: sailor
+    - slot: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

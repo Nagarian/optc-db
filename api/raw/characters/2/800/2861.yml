@@ -1,0 +1,321 @@
+type: DUAL
+name: Red-Hair Pirates - Pirates Making Merry at the Feast
+japanName: 赤髪海賊団 宴に興じる海賊団
+family:
+  - Shanks
+  - LuckyRoux
+  - BenBeckman
+  - Yasopp
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 700
+    atk: 388
+    rcv: 69
+  maxLvl:
+    hp: 1688
+    atk: 954
+    rcv: 171
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 187986
+aliases:
+  - Legend Red Hair Pirates
+  - Shanks Crew
+  - ShanksCrew
+evolution:
+  - id: 2862
+    evolvers:
+      - 118
+      - 118
+      - 103
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4.5x, their HP by 1.2x, makes [QCK]
+    and [PSY] orbs beneficial for all characters, reduces Silence duration by 10
+    turns and reduces damage taken by 20%. Deals 0x-1000x character's ATK in
+    Typeless damage to all enemies at the end of each turn depending on how many
+    PERFECTs scored that turn.
+  notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+    PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs -
+    32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 350x ATK; 6 PERFECTs - 1000x
+    ATK"
+special:
+  name: Anger for their Friend
+  description: Deals 20% of enemies' current HP in True damage to all enemies,
+    locks the chain multiplier at 3.5x for 3 turns and becomes Red Hair Pirates
+    for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration completely on this character
+characters:
+  swap:
+    description: Changes orbs of adjacent characters into Matching Orbs and boosts
+      ATK of all characters by 1.5x for 1 turn.
+  character1:
+    name: Shanks - Pirates Making Merry at the Feast
+    japanName: 赤髪海賊団 宴に興じる海賊団
+    class:
+      - Slasher
+      - Cerebral
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 660
+        atk: 323
+        rcv: 51
+      maxLvl:
+        hp: 1594
+        atk: 878
+        rcv: 122
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.5x, their HP by 1.2x, makes [QCK]
+        orbs beneficial for all characters, reduces Silence duration by 10
+        turns.
+      notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+        PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs
+        - 32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 350x ATK; 6 PERFECTs -
+        1000x ATK"
+    sailor:
+      - description: Reduces Silence duration completely on this character
+  character2:
+    name: Beckman & Lucky Roux & Yasopp - Pirates Making Merry at the Feast
+    japanName: 赤髪海賊団 宴に興じる海賊団
+    class:
+      - Shooter
+      - Cerebral
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 660
+        atk: 300
+        rcv: 60
+      maxLvl:
+        hp: 1594
+        atk: 871
+        rcv: 138
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.25x, their HP by 1.2x, makes
+        [PSY] orbs beneficial for all characters, reduces Silence duration by 10
+        turns and reduces damage taken by 10%.
+      notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+        PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs
+        - 32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 350x ATK; 6 PERFECTs -
+        1000x ATK"
+    sailor:
+      - description: Reduces Silence duration completely on this character
+rumble:
+  stats:
+    def: 237
+    rumbleType: DEF
+    spd: 133
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 1
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 24
+      effects:
+        - amount: 18
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 5
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            duration: 6
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            duration: 7
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            duration: 8
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 19
+        - override:
+            duration: 9
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 19
+        - override:
+            duration: 10
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 19
+        - override:
+            duration: 11
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 19
+        - override:
+            duration: 12
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 20
+        - override:
+            duration: 13
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 21
+        - override:
+            duration: 14
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

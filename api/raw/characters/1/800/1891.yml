@@ -1,0 +1,178 @@
+type: STR
+name: Ghost Princess Perona - Ruins of the Muggy Kingdom
+japanName: “ゴーストプリンセス”ペローナ シッケアール王国　跡地
+family:
+  - Perona
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 730
+    atk: 345
+    rcv: 200
+  maxLvl:
+    hp: 1820
+    atk: 890
+    rcv: 401
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 84035
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.25x and their HP by 1.2x.
+    Reduces damage received by 10%
+special:
+  name: Gothic Angel
+  description: Reduces damage received by 50% for 2 turns, makes Badly Matching
+    and [BLOCK] orbs not reduce damage for 2 turns and recovers 2,000 HP at the
+    end of the turn for 3 turns
+  cooldown: 20
+  maxLevel: 6
+  notes: Ex. A [STR] character with a [QCK] orb will still deal regular damage
+sailor:
+  - description: Boosts base RCV of Shooter characters by 50
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Dracule Mihawk and Roronoa Zoro
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+rumble:
+  stats:
+    def: 84
+    rumbleType: RCV
+    spd: 144
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 15
+      effects:
+        - attributes:
+            - Guard
+          duration: 10
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - amount: 0.25
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 15
+      effects:
+        - override:
+            level: 1
+            duration: 11
+        - override:
+            amount: 0.36
+    - cooldown: 15
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 0.47
+    - cooldown: 15
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 0.58
+    - cooldown: 15
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 0.69
+    - cooldown: 15
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            amount: 0.8
+    - cooldown: 15
+      effects:
+        - override:
+            level: 2
+            duration: 16
+        - override:
+            amount: 0.91
+    - cooldown: 15
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            amount: 1.02
+    - cooldown: 15
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            amount: 1.13
+    - cooldown: 15
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 1.35

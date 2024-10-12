@@ -1,0 +1,382 @@
+type: DEX
+name: Roronoa Zoro - Dead Man's Drawn Sword in Hell
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2021
+    atk: 839
+    rcv: 109
+  maxLvl:
+    hp: 4042
+    atk: 1678
+    rcv: 218
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+aliases:
+  - Secret Limited TM Treasure Map Legend
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 5.25x, by 5.4x
+    instead if they have a beneficial orb, boosts HP of Slasher and Free Spirit
+    characters by 1.2x and reduces damage received by 10%. If this character has
+    a [TND] or [WANO] orb and you attack with this character, increases boost
+    effects of Chain Addition buffs by +0.25x.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Monkey
+    D. Luffy, Vinsmoke Sanji, Nami, Usopp, Tony Tony Chopper, Nico Robin, Brook,
+    Franky, Jinbe, Kozuki Hiyori and Yamato, excluding Support members or crew
+    must have Color Affinity and Orb Amplification."
+  description: Deals 75x character's ATK in Typeless damage to all enemies, boosts
+    ATK of Slasher and Free Spirit characters by 2.5x for 1 turn and transforms
+    all Slasher characters into Super Slasher characters.
+special:
+  name: "Demon Aura Nine-Sword Style: Ashura, Blades Drawn Dead Man's Game"
+  description: Reduces crew's current HP by 20%, deals 1,000,000 Fixed True
+    damage, ignoring Normal Attack Only, to all enemies, reduces enemies'
+    Percent Damage Reduction and Threshold Damage Reduction duration by 6 turns
+    and increases Chain Tap Timing Bonus of Slasher and Free Spirit characters
+    by +0.2x-0.6x for 1 turn depending on Tap Timing. If your Captain's orb is
+    [TND] or [WANO], boosts Chain Multiplier Growth Rate by 1.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Slasher and Free Spirit characters by 125
+  - description: Reduces Stun duration completely on this character
+support:
+  type: descriptive
+  criteria: Slasher characters
+  levels:
+    - Once per adventure, when you reach the final stage, adds 0.1x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.2x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.3x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.4x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.5x to Chain
+      multiplier for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - rcv: 10
+    - hp: 30
+    - atk: 10
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - atk: 10
+    - atk: 20
+    - hp: 60
+    - type: potential
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 20
+    - atk: 20
+    - hp: 70
+    - hp: 90
+    - rcv: 30
+    - hp: 100
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - rcv: 30
+    - atk: 40
+    - type: potential
+    - key: 1
+    - atk: 25
+    - atk: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 200
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 2
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 169
+    rumbleType: ATK
+    spd: 163
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+            - Critical Hit
+          condition:
+            count: 4
+            stat: takes damage
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1.05
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+          defbypass: true
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            amount: 1.1
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            amount: 1.15
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            amount: 1.2
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            amount: 1.25
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            amount: 1.3
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2
+        - override:
+            amount: 1.35
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            amount: 1.4
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            amount: 1.45
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            amount: 1.5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+              - HP
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - HP
+              - SPD
+              - ATK
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - Slasher
+                - Free Spirit
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 1
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 4
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 5
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 6
+    burst:
+      condition:
+        - count: 6
+          type: special
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - attributes:
+                - DEF
+              duration: 12
+              effect: debuff
+              level: 1
+              targeting:
+                targets:
+                  - QCK
+            - amount: 2
+              effect: damage
+              targeting:
+                count: 3
+                targets:
+                  - enemies
+              type: atkbase
+              leader: true
+        - uses: 2
+          effects:
+            - override:
+                level: 2
+                duration: 14
+            - override:
+                amount: 2.75
+        - uses: 2
+          effects:
+            - override:
+                level: 3
+                duration: 16
+            - override:
+                amount: 3.5
+        - uses: 2
+          effects:
+            - override:
+                level: 4
+                duration: 18
+            - override:
+                amount: 4.25
+        - uses: 2
+          effects:
+            - override:
+                level: 5
+                duration: 20
+            - override:
+                amount: 5

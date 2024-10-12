@@ -1,0 +1,441 @@
+type: STR
+name: Rob Lucci "Life Return" - CP9's Strongest
+japanName: ロブ・ルッチ　“生命帰還” 歴代最強の「ＣＰ９」
+family:
+  - RobLucci
+class:
+  - Powerhouse
+  - Fighter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1704
+    atk: 790
+    rcv: 230
+  maxLvl:
+    hp: 3480
+    atk: 1570
+    rcv: 390
+cost: 65
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16960
+aliases:
+  - Mega/Super/6+ Lucci
+  - V1 Legend Lucci
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x, by 3.5x instead if
+    they have a beneficial orb, reduces crew's RCV to 0.
+special:
+  name: "Six Powers Supreme: Six King Gun"
+  description: Deals 75x character's ATK in Typeless damage to one enemy, greatly
+    boosts chances of getting Matching orbs for 3 turns.
+  cooldown: 22
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK, HP and RCV of Powerhouse characters by 30
+  - description: Makes [RCV] and [TND] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: sailor
+    - rcv: 5
+    - rcv: 10
+    - rcv: 15
+    - atk: 15
+    - atk: 15
+    - atk: 20
+    - type: potential
+    - hp: 45
+    - hp: 50
+    - hp: 60
+    - rcv: 20
+    - rcv: 25
+    - rcv: 30
+    - atk: 25
+    - atk: 30
+    - atk: 35
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - hp: 90
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Powerhouse characters by 3x, by 3.75x instead if they
+          have a beneficial orb, reduces crew's RCV to 0.
+    - cooldown: 7
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 124
+    rumbleType: ATK
+    spd: 194
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - ATK
+          effect: buff
+          level: 13
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          targeting:
+            targets:
+              - self
+    - effects:
+        - {}
+        - {}
+        - override:
+            level: 14
+    - effects:
+        - {}
+        - {}
+        - override:
+            level: 15
+    - effects:
+        - {}
+        - {}
+        - override:
+            level: 16
+    - effects:
+        - {}
+        - {}
+        - override:
+            level: 18
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 3150
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 3325
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 3500
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 3675
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 3850
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 4025
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 4200
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 4375
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 4550
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 4850
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - Powerhouse
+            - attributes:
+                - DEF
+              effect: penalty
+              level: 2
+              targeting:
+                targets:
+                  - Powerhouse
+            - attributes:
+                - ATK
+              effect: buff
+              level: 15
+              condition:
+                comparator: first
+                count: 25
+                type: time
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - {}
+            - {}
+            - override:
+                level: 16
+        - effects:
+            - {}
+            - {}
+            - override:
+                level: 17
+        - effects:
+            - {}
+            - {}
+            - override:
+                level: 18
+        - effects:
+            - override:
+                level: 7
+            - {}
+            - override:
+                level: 19
+  - captain:
+      - description: Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of Powerhouse characters by 4.5x, by 5x
+          instead if they have a beneficial orb, reduces crew's RCV to 0.
+      - description: Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of Powerhouse characters by 5x, by 5.25x
+          instead if they have a beneficial orb, reduces crew's RCV to 0.
+          Reduces Special Cooldown of this character by 5 turns at the start of
+          Stage 3.
+  - rumble:
+      special:
+        - cooldown: 30
+          effects:
+            - amount: 3500
+              effect: damage
+              range:
+                direction: forward
+                size: large
+              targeting:
+                count: 2
+                targets:
+                  - enemies
+              type: fixed
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 3700
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 3900
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 4100
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 4300
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 4500
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 4700
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 4900
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 5100
+        - cooldown: 30
+          effects:
+            - override:
+                amount: 5500
+  - rumble:
+      resilience:
+        - attribute: Paralysis
+          chance: 100
+          type: debuff
+        - attribute: DEX
+          percentage: 40
+          type: damage
+    special:
+      description: "Deals 300x character's ATK in Typeless damage to one enemy,
+        greatly boosts chances of getting Matching orbs for 3 turns. Boosts ATK
+        of Powerhouse characters by 2.25x-2.75x for 1 turn depending on how many
+        times this character used \"Six Powers Supreme: Six King Gun\" this
+        adventure."
+    sailor:
+      sailor1:
+        description: Boosts base ATK, HP and RCV of Powerhouse characters by 100

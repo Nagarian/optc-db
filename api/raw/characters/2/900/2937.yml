@@ -1,0 +1,246 @@
+type: PSY
+name: "Roronoa Zoro - Straw Hat Pirates: Mark of Adventure"
+japanName: ロロノア・ゾロ 麦わらの一味・冒険の軌跡
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 153
+    atk: 77
+    rcv: 28
+  maxLvl:
+    hp: 1384
+    atk: 622
+    rcv: 112
+cost: 9
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 200106
+aliases:
+  - Super Zoro
+evolution:
+  - id: 2938
+    evolvers:
+      - 81
+      - 117
+      - 103
+      - 87
+      - 1180
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.25x.
+special:
+  name: "Black Blade: Oni Giri"
+  description: Deals 20x character's ATK in Typeless True damage to all enemies
+    and boosts Orb Effects of [PSY] characters by 1.75x for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 50
+rumble:
+  stats:
+    def: 107
+    rumbleType: ATK
+    spd: 143
+    cost: 20
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 21
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 0.99
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.08
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.17
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.26
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.44
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.53
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.62
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk

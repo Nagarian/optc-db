@@ -1,0 +1,267 @@
+type: DEX
+name: Wyper - Willing to Die for a Cause
+japanName: ワイパー 本望の道連れ
+family:
+  - Wyper
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1712
+    atk: 662
+    rcv: 82
+  maxLvl:
+    hp: 3424
+    atk: 1324
+    rcv: 163
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 305430
+aliases:
+  - Rumble Wyper
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1x-3x depending on the
+    crew's current HP
+  notes: >-
+    `captainProportional : lower : 1 + 2 * (1 - (remaining HP) / (total HP))
+    : 1 : 3`  
+
+    `captainProportional : lower : 1 + 2.5 * (1 - (remaining HP) / (total HP)) : 1 : 3.5`
+special:
+  name: Expulsion Companion - Reject
+  description: Reduces crew's current HP by 99%, reduces the defense of all
+    enemies by 100% for 1 turn, deals 50x the amount of HP subtracted in
+    Typeless damage to one enemy and boosts ATK against enemies with reduced
+    defense by 2x for 1 turn.
+  cooldown: 16
+  maxLevel: 1
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 200
+  - description: Makes [RCV] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 200
+    - hp: 200
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 1x-3.5x depending on the
+          crew's current HP, and reduces damage received by 10%.
+    - type: potential
+    - cooldown: 3
+    - hp: 200
+    - rcv: 100
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 3
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 168
+    rumbleType: ATK
+    spd: 171
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - amount: 1100
+          effect: damage
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 1
+            duration: 22
+        - override:
+            amount: 1200
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 2
+            duration: 23
+        - override:
+            amount: 1300
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 2
+            duration: 24
+        - override:
+            amount: 1400
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            amount: 1500
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 4
+            duration: 26
+        - override:
+            amount: 1600
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 4
+            duration: 27
+        - override:
+            amount: 1700
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 5
+            duration: 28
+        - override:
+            amount: 1800
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 5
+            duration: 29
+        - override:
+            amount: 1900
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 6
+            duration: 30
+        - override:
+            amount: 2000

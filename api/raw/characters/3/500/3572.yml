@@ -1,0 +1,267 @@
+type: STR
+name: Orochi - Eight-Headed Snake's Fury
+japanName: オロチ 怒りの八岐大蛇
+family:
+  - KurozumiOrochi
+class:
+  - Driven
+  - Powerhouse
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1314
+    atk: 901
+    rcv: 86
+  maxLvl:
+    hp: 3523
+    atk: 1563
+    rcv: 198
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+aliases:
+  - Kizuna 5+
+captain:
+  name: ""
+  description: If there are 6 Driven characters in your crew, boosts ATK of Driven
+    characters by 4x. If there are 5 [STR] characters in your crew, boosts HP of
+    [STR] characters by 1.3x and makes [QCK] and [DEX] orbs beneficial for all
+    characters.
+special:
+  name: Puff-up Hell Wink
+  description: Reduces Bind, Despair, ATK DOWN and Silence duration by 3 turns,
+    boosts Orb Effects of Driven characters by 2x for 2 turns. If you have used
+    10 or more [STR] orbs in attacks at the time the special is activated, locks
+    the chain multiplier at 3.25x for 1 turn
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Cannot be Blown Away
+  - description: Boosts base ATK and HP of Driven characters by 60
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Driven characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - atk: 25
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 7
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 150
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - {}
+        - {}
+        - {}
+        - value: 7
+rumble:
+  stats:
+    def: 283
+    rumbleType: DEF
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Guard
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - DEF
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            count: 3
+            targets:
+              - STR
+        - amount: 1500
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - crew
+          type: fixed
+        - attributes:
+            - Provoke
+          duration: 6
+          effect: boon
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - crew
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 1600
+        - override:
+            duration: 7
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            amount: 1700
+        - override:
+            duration: 8
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            amount: 1800
+        - override:
+            duration: 9
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 10
+        - override:
+            amount: 1900
+        - override:
+            duration: 10
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            amount: 2000
+        - override:
+            duration: 11
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 12
+        - override:
+            amount: 2100
+        - override:
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 2200
+        - override:
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            amount: 2300
+        - override:
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            amount: 2500
+        - override:
+            duration: 15

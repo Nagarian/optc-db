@@ -1,0 +1,226 @@
+type: STR
+name: General Smoothie - Big Mom Pirates
+japanName: 将星スムージー ビッグ・マム海賊団
+family:
+  - CharlotteSmoothie
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1166
+    atk: 620
+    rcv: 50
+  maxLvl:
+    hp: 2793
+    atk: 1468
+    rcv: 190
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 117870
+aliases:
+  - SmooThicc
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3.5x following a chain of Good >
+    Great > PERFECT hits and recovers 500 HP at the end of each turn
+special:
+  name: Human Juicer
+  description: Recovers 5,000, removes Poison duration completely, reduces
+    Paralysis, Bind, Despair and Burn duration by 2 turns, changes orbs of
+    adjacent characters into Matching Orbs and switches orbs between slots 3
+    times
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of top row characters by 50
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character if your Captain is a [STR] character
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Charlotte Cracker and Charlotte Katakuri
+  levels:
+    - value: 3
+    - value: 4
+    - value: 7
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 10
+    - hp: 30
+    - hp: 50
+    - hp: 70
+    - hp: 90
+    - slot: 1
+    - atk: 30
+    - atk: 60
+    - type: sailor
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - hp: 150
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 111
+    rumbleType: ATK
+    spd: 150
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1200
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1285
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1370
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1455
+        - override:
+            level: 4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1540
+        - override:
+            level: 4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1625
+        - override:
+            level: 5
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1710
+        - override:
+            level: 5
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1795
+        - override:
+            level: 5
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1880
+        - override:
+            level: 6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            level: 7

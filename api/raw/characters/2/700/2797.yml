@@ -1,0 +1,138 @@
+type: PSY
+name: Tony Tony Chopper - Long-Awaited Present
+japanName: トニートニー・チョッパー 待ちわびるプレゼント
+family:
+  - TonyTonyChopper
+class:
+  - Shooter
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1568
+    atk: 759
+    rcv: 241
+  maxLvl:
+    hp: 3090
+    atk: 1390
+    rcv: 431
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 180650
+aliases:
+  - V1 Legend Chopper
+  - Christmas (Xmas) Chopper
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3.5x and their HP by 1.25x.
+    Guarantees duplicating all Cotton Candy drops upon completion of the island.
+  notes: Does not work if he was not your captain upon starting the island. Stacks
+    with other additional drop captains, giving you multiple extra drops.
+special:
+  name: The Doctor Decorating the Tree Top
+  description: Reduces Paralysis, Burn, Bind, Despair, Silence, ATK DOWN, Increase
+    Damage Taken, RCV DOWN and Blindness duration by 5 turns, removes Poison
+    duration completely and recovers 12,024 HP at the end of the turn for 3
+    turns.
+  cooldown: 21
+  maxLevel: 6
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 6
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 9
+      reduction: 4
+    - value: 11
+      reduction: 5
+    - value: 13
+      reduction: 6
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 70
+    - hp: 70
+    - hp: 70
+    - atk: 25
+    - atk: 25
+    - cooldown: 1
+    - rcv: 15
+    - rcv: 15
+    - hp: 90
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - captain:
+        description: Boosts ATK of all characters by 4x and their HP by 1.25x.
+          Guarantees duplicating all Cotton Candy drops upon completion of the
+          island.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

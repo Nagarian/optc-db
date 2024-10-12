@@ -1,0 +1,114 @@
+type: DEX
+name: Boa Sandersonia - Straw Hat Luffy's Conspirator
+japanName: ボア・サンダーソニア 麦わらのルフィの共犯者
+family:
+  - BoaSandersonia
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1085
+    atk: 459
+    rcv: 126
+  maxLvl:
+    hp: 2503
+    atk: 1267
+    rcv: 320
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 66499
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Powerhouse characters by 2.5x and boosts
+    HP of [DEX] characters by 1.3x
+special:
+  name: "Snake Hair Possession: Eight-Headed Serpent"
+  description: Changes all orbs into [DEX] orbs, reduces the defense of all
+    enemies by 80% for 2 turns and boosts ATK of Striker and Powerhouse
+    characters by 1.75x for 2 turns
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+  - description: Boosts this character's damage against [STR] characters by 2x
+support:
+  type: descriptive
+  criteria: Boa Marigold
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn. Changes orb of the
+      supported character into a [DEX] orb.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn. Changes orbs of the
+      supported and adjacent characters into [DEX] orbs.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 2 turns. Changes orbs of the
+      supported and adjacent characters into [DEX] orbs.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - hp: 40
+    - rcv: 20
+    - rcv: 30
+    - hp: 70
+    - atk: 30
+    - type: sailor
+    - atk: 40
+    - hp: 90
+    - slot: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 4
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

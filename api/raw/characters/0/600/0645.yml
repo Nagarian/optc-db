@@ -1,0 +1,86 @@
+type: INT
+name: Ice Witch Whitey Bay
+japanName: 氷の魔女ホワイティベイ
+family:
+  - WhiteyBay
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1094
+    atk: 561
+    rcv: 171
+  maxLvl:
+    hp: 2278
+    atk: 993
+    rcv: 399
+cost: 29
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 14402
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x
+special:
+  name: Witch's Icebreaker
+  description: Reduces Bind and Despair duration by 2 turns, boosts ATK against
+    delayed enemies by 1.2x for 3 turns
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of [INT] characters by 20
+  - description: Makes [INT] orbs beneficial for Slasher and Driven characters
+support:
+  type: descriptive
+  criteria: Slasher Characters
+  levels:
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind duration by 1 turn.
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind duration by 1 turn.
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind duration by 2 turns.
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind duration by 2 turns.
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind and Despair duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - hp: 30
+    - slot: 1
+    - hp: 30
+    - type: sailor
+    - rcv: 45
+    - hp: 40
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

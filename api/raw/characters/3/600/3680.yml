@@ -1,0 +1,451 @@
+type: INT
+name: Uta - The Song of Peace
+family:
+  - Uta
+class:
+  - Cerebral
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1780
+    atk: 862
+    rcv: 200
+  maxLvl:
+    hp: 3560
+    atk: 1724
+    rcv: 400
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+aliases:
+  - Legend Limited Secret RED
+evolution:
+  - id: 3721
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Reduces Special Cooldown of this character by 4 turns at the start
+    of the fight, boosts ATK of [INT], Striker and Cerebral characters by 5.25x,
+    boosts HP of [INT], Striker and Cerebral characters by 1.3x and reduces
+    Paralysis duration by 10 turns and restores Special Cooldown of all
+    characters by 10 turns when they are rewinded.
+superSpecial:
+  criteria: This character must be captain and your crew must have ATK UP and Orb Effect.
+  description: Increases boost effects of ATK UP and Orb Amplification buffs
+    applied by Striker and Cerebral characters by 0.25x for 3 turns, recovers
+    30% of crew's MAX HP and transforms all Cerebral characters into Super
+    Cerebral characters.
+special:
+  name: Joyous Song
+  description: >-
+    Applies a Turn Progress Effect for 3 turns that will apply the
+    following effects:
+
+
+    -   **Turn 1 (Activation):** Boosts ATK of Striker and Cerebral characters by 2.5x for 1 turn and boosts Orb Effects of Striker and Cerebral characters by 2x for 1 turn
+
+    -   **Turn 2:** Boosts ATK of Striker and Cerebral characters by 2.75x for 1 turn and boosts Orb Effects of Striker and Cerebral characters by 2.25x for 1 turn
+
+    -   **Turn 3:** Boosts ATK of Striker and Cerebral characters by 3x for 1 turn and boosts Orb Effects of Striker and Cerebral characters by 2.5x for 1 turn
+
+    -   **On Effect Removal by Enemy:** Boosts ATK of Striker and Cerebral characters by 2.5x for 1 turn and boosts Orb Effects of Striker and Cerebral characters by 2.5x for 1 turn.
+
+
+    If your crew has Turn Progress Effect when the special is activated, changes all orbs, including [BLOCK] orbs, into [INT] orbs, locks all orbs for 2 turns and adds 1.4x to Chain multiplier for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [PSY] and [INT] orbs beneficial for Cerebral characters
+  - description: Boosts base HP of Cerebral characters by 1.1x
+support:
+  type: descriptive
+  criteria: "[INT] Cerebral characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Cerebral characters by 1.1x for 1 turn and boosts Orb
+      Effects of Cerebral characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Cerebral characters by 1.2x for 1 turn and boosts Orb
+      Effects of Cerebral characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Cerebral characters by 1.3x for 1 turn and boosts Orb
+      Effects of Cerebral characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Cerebral characters by 1.4x for 1 turn and boosts Orb
+      Effects of Cerebral characters by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Cerebral characters by 1.5x for 1 turn and boosts Orb
+      Effects of Cerebral characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - atk: 10
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 30
+    - rcv: 40
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - atk: 40
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - rcv: 40
+    - hp: 100
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 20
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 30
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 2
+          threshold: 50
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: On the last Stage, if your crew has 2 or more Cerebral characters, not
+      including this character
+    levels:
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 1.25x.
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 1.5x.
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 1.75x.
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 2x.
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 2.25x.
+rumble:
+  stats:
+    def: 212
+    rumbleType: SPT
+    spd: 164
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+            - RCV
+          condition:
+            count: 4
+            stat: hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 2
+  special:
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - Special CT
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - amount: 2.5
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - {}
+        - {}
+        - override:
+            amount: 2.6
+    - cooldown: 32
+      effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            amount: 2.7
+    - cooldown: 32
+      effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            amount: 2.8
+    - cooldown: 32
+      effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            amount: 2.9
+    - cooldown: 32
+      effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            amount: 3
+    - cooldown: 32
+      effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            amount: 3.1
+    - cooldown: 32
+      effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            amount: 3.2
+    - cooldown: 32
+      effects:
+        - override:
+            level: 5
+        - override:
+            level: 4
+        - override:
+            amount: 3.3
+    - cooldown: 32
+      effects:
+        - override:
+            level: 6
+        - override:
+            level: 5
+        - override:
+            amount: 3.5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - PSY
+                - INT
+          - attributes:
+              - Special CT
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - PSY
+                - INT
+          - attributes:
+              - ATK
+              - HP
+              - Guard
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - Cerebral
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 1
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 4
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 5
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 6
+    burst:
+      condition:
+        - count: 8
+          team: crew
+          type: special
+      special:
+        - uses: 2
+          effects:
+            - attributes:
+                - Paralysis
+                - Silence
+              duration: 18
+              effect: boon
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - Action Bind
+              chance: 30
+              duration: 5
+              effect: hinderance
+              targeting:
+                targets:
+                  - enemies
+            - amount: 50
+              effect: recharge
+              targeting:
+                count: 2
+                targets:
+                  - Cerebral
+              type: Special CT
+        - uses: 2
+          effects:
+            - override:
+                duration: 21
+            - override:
+                chance: 37
+            - override:
+                amount: 62
+        - uses: 2
+          effects:
+            - override:
+                duration: 24
+            - override:
+                chance: 45
+            - override:
+                amount: 75
+        - uses: 2
+          effects:
+            - override:
+                duration: 27
+            - override:
+                chance: 52
+            - override:
+                amount: 87
+        - uses: 2
+          effects:
+            - override:
+                duration: 30
+            - override:
+                chance: 60
+            - override:
+                amount: 100

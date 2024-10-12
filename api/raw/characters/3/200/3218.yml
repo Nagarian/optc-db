@@ -1,0 +1,55 @@
+type: PSY
+name: Koala - Treasure-Hunting Bandit
+japanName: コアラ 宝狙う盗賊
+family:
+  - Koala
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 832
+    atk: 329
+    rcv: 92
+  maxLvl:
+    hp: 1554
+    atk: 786
+    rcv: 160
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 252549
+aliases:
+  - World Journey Koala
+  - Limited Koala
+  - Secret Koala
+evolution:
+  - id: 3219
+    evolvers:
+      - 118
+      - 87
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 3x, makes [PSY]
+    orbs beneficial for Slasher and Cerebral characters and recovers 1,000 HP at
+    the end of each turn.
+special:
+  name: Strategic Meeting in the Dark Night
+  description: Reduces enemies' Threshold Damage Reduction duration by 5 turns,
+    reduces Bind duration by 5 turns and changes [BLOCK] and Badly Matching orbs
+    into Matching orbs. If your captain is a Slasher or Cerebral character, adds
+    1.0x to Chain multiplier for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base RCV of Slasher and Cerebral characters by 50

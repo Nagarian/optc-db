@@ -1,0 +1,46 @@
+type: DEX
+name: Pirate Zeff
+japanName: 海賊ゼフ
+family:
+  - Zeff
+class:
+  - Fighter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 185
+    atk: 112
+    rcv: 24
+  maxLvl:
+    hp: 1210
+    atk: 663
+    rcv: 128
+cost: 13
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 13947
+aliases: []
+evolution:
+  - id: 607
+    evolvers:
+      - 117
+      - 80
+      - 86
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x if HP is above 50% at the
+    start of the turn
+special:
+  name: Red Leg Kick
+  description: Deals 20x character's ATK in [DEX] damage to one enemy, changes
+    orbs of adjacent characters into [RCV] orbs
+  cooldown: 23
+  maxLevel: 11

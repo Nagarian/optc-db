@@ -1,0 +1,47 @@
+type: STR
+name: Lao G.
+japanName: ラオＧ
+family:
+  - LaoG
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 117
+    atk: 129
+    rcv: 37
+  maxLvl:
+    hp: 1025
+    atk: 783
+    rcv: 181
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 21542
+aliases: []
+evolution:
+  - id: 880
+    evolvers:
+      - 118
+      - 83
+      - 84
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Fighter characters by 1.75x
+special:
+  name: "Battle Preservation Fist: Manki Kayaku"
+  description: Changes all orbs, including [BLOCK] orbs, into [G] orbs, deals
+    random Typeless damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 5,000 : 100,000`"

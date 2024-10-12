@@ -1,0 +1,245 @@
+type: PSY
+name: Monkey D. Luffy - Shouldering the Hopes of His Crew
+japanName: モンキー・D・ルフィ 仲間の想いを背負う者
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 566
+    atk: 274
+    rcv: 48
+  maxLvl:
+    hp: 1811
+    atk: 877
+    rcv: 155
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 164009
+aliases:
+  - Legend Stampede Luffy
+  - Bullet Imposter
+evolution:
+  - id: 2672
+    evolvers:
+      - 118
+      - 303
+      - 2662
+      - 103
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [PSY] characters by 4x, reduces
+    damage received by 20%, boosts ATK of this character by 4.5x, makes [STR],
+    [DEX] and [PSY] orbs beneficial for [STR], [DEX] and [PSY] characters.
+    Reduces Despair and Paralysis duration by 10 turns.
+  notes: The Despair and Paralysis reduction can activate multiple times
+special:
+  name: Gomu Gomu no King Kong Gatling
+  description: Deals 120x character's ATK in Typeless damage to all enemies,
+    boosts ATK of this character by 2.5x for 2 turns, boosts Orb Effects of this
+    character by 2.5x for 2 turns and boosts base ATK of this character by
+    1-1,000 for 2 turns, depending on your current HP.
+  cooldown: 17
+  maxLevel: 6
+  notes: Base ATK boost is equal to current HP/20, the maximum effect at 20,000 HP
+    will give a 1,000 base ATK boost.
+rumble:
+  stats:
+    def: 166
+    rumbleType: ATK
+    spd: 150
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - PSY
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 37
+      effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          duration: 15
+          level: 5
+          effect: buff
+          targeting:
+            targets:
+              - self
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 37
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.41
+    - cooldown: 37
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.46
+    - cooldown: 37
+      effects:
+        - override:
+            level: 6
+        - override:
+            amount: 1.52
+    - cooldown: 37
+      effects:
+        - override:
+            level: 6
+        - override:
+            amount: 1.58
+    - cooldown: 37
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 1.64
+    - cooldown: 37
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 1.69
+    - cooldown: 37
+      effects:
+        - override:
+            level: 8
+        - override:
+            amount: 1.75
+    - cooldown: 37
+      effects:
+        - override:
+            level: 8
+        - override:
+            amount: 1.81
+    - cooldown: 37
+      effects:
+        - override:
+            level: 10
+        - override:
+            amount: 1.95
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

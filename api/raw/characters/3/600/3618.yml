@@ -1,0 +1,228 @@
+type: STR
+name: Jack - Trampling Drought
+family:
+  - Jack
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1703
+    atk: 814
+    rcv: 95
+  maxLvl:
+    hp: 3406
+    atk: 1628
+    rcv: 190
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Powerhouse characters by 3x, boosts HP of
+    Striker and Powerhouse characters by 1.5x and makes [QCK] and [TND] orbs
+    beneficial for Striker and Powerhouse characters.
+special:
+  name: Trampling Giant Legs
+  description: Adds 1.1x to Chain multiplier for 1 turn. If your Captain is a
+    Striker or Powerhouse character, reduces Paralysis and Bind duration by 5
+    turns and reduces enemies' Threshold Damage Reduction duration by 5 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 75.
+  - description: If this character has a [TND] or [WANO] orb and you attack with
+      this character, increases boost effects of Chain Addition buffs by +0.2x.
+support:
+  type: descriptive
+  criteria: Kaido, King and Queen
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb and reduces
+      Paralysis and Bind duration by 1 turn.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 50
+    - slot: 1
+    - atk: 50
+    - rcv: 50
+    - hp: 60
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 173
+    rumbleType: DBF
+    spd: 128
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+            - ATK
+            - RCV
+          duration: 10
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+        - amount: 10
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - DEX
+          type: cut
+    - cooldown: 35
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 11
+    - cooldown: 35
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 12
+    - cooldown: 35
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 13
+    - cooldown: 35
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 14
+    - cooldown: 35
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 15
+    - cooldown: 35
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 16
+    - cooldown: 35
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 17
+    - cooldown: 35
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 18
+    - cooldown: 35
+      effects:
+        - override:
+            level: 7
+        - override:
+            amount: 20

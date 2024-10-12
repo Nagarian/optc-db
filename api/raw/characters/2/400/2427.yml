@@ -1,0 +1,168 @@
+type: PSY
+name: Cavendish - Beautiful Captain Gathering Popularity
+japanName: キャベンディッシュ 人気を集める美しき船長
+family:
+  - Cavendish
+class:
+  - Slasher
+  - Driven
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 440
+    atk: 200
+    rcv: 40
+  maxLvl:
+    hp: 1100
+    atk: 500
+    rcv: 100
+cost: 1
+slots: 3
+maxExp: 130703
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 141694
+aliases:
+  - Fortnight Cavendish
+  - Fortnight Cabbage
+evolution:
+  - id: 2428
+    evolvers:
+      - 117
+      - 81
+      - 87
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.75x, but boosts ATK of this
+    character by 2.5x
+special:
+  name: Swan Lake Sword
+  description: Deals 15x character's ATK in [PSY] damage to one enemy, changes the
+    orb of this character into a [PSY] orb, boosts Orb Effects of Slasher
+    characters by 1.5x for 1 turn and boosts ATK of Slasher characters by 1.5x
+    for 1 turn
+  cooldown: 19
+  maxLevel: 7
+rumble:
+  stats:
+    def: 137
+    rumbleType: SPT
+    spd: 141
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 16
+      effects:
+        - amount: 0.35
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 10
+          targeting:
+            targets:
+              - Slasher
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.38
+        - override:
+            duration: 11
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            duration: 12
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            duration: 13
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.46
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.51
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.57
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 16
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            level: 4
+            duration: 19

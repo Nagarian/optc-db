@@ -1,0 +1,88 @@
+type: QCK
+name: Blue Gilly Jiaokungdo Fighter
+japanName: ブルーギリー 脚功道格闘家（ジャオクンドー）
+family:
+  - BlueGilly
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1253
+    atk: 630
+    rcv: 129
+  maxLvl:
+    hp: 2552
+    atk: 1300
+    rcv: 277
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 28761
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Fighter characters by 2x
+special:
+  name: Shooting Moon
+  description: Changes orb of Captain character into Matching orb and switches
+    orbs between slots 3 times
+  cooldown: 11
+  maxLevel: 7
+sailor:
+  - description: Makes [DEX] orbs beneficial for this character
+  - description: Makes [STR], [PSY], [INT] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Elizabello II and Dagama
+  levels:
+    - Once per adventure, when you reach the final stage, changes [EMPTY] and
+      [TND] orbs of the supported character into a Matching orb
+    - Once per adventure, when you reach the final stage, randomizes supported
+      character's orb
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and switches orbs between slots 1
+      time
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and switches orbs between slots 2
+      times
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - hp: 40
+    - hp: 50
+    - rcv: 40
+    - hp: 60
+    - slot: 1
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

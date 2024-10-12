@@ -1,0 +1,217 @@
+type: STR
+name: Tony Tony Chopper - Pre-Rampage
+japanName: トニートニー・チョッパー 暴走前
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 280
+    atk: 180
+    rcv: 300
+  maxLvl:
+    hp: 1808
+    atk: 851
+    rcv: 0
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 5209
+aliases:
+  - Raid Monster Chopper
+  - MC
+evolution:
+  - id: 249
+    evolvers:
+      - 118
+      - 84
+      - 84
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x and reduces HP of [STR]
+    characters by 60%
+special:
+  name: Rampage
+  description: Deals random [STR] damage to one enemy, boosts ATK of [STR]
+    characters by 1.75x for 1 turn
+  cooldown: 30
+  maxLevel: 16
+  notes: "`random : 2,000 : 200,000`"
+rumble:
+  stats:
+    def: 121
+    rumbleType: ATK
+    spd: 151
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+  special:
+    - cooldown: 21
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 0.88
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 0.95
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.03
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.11
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.19
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.26
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.34
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.42
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 21
+      effects:
+        - amount: 1.55
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk

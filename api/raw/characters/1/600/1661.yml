@@ -1,0 +1,51 @@
+type: QCK
+name: Corazon - Rain, Rain, Go Away
+japanName: コラソン 消したい雨雲
+family:
+  - DonquixoteRosinante
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 225
+    atk: 111
+    rcv: 60
+  maxLvl:
+    hp: 1167
+    atk: 465
+    rcv: 187
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - shop
+links:
+  gamewithId: 61073
+aliases:
+  - ""
+evolution:
+  - id: 1662
+    evolvers:
+      - 118
+      - 85
+      - 1180
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [PSY], [QCK] and [DEX] characters by 2x and recovers
+    300 HP at the end of each turn
+special:
+  name: The Sun under the Rain
+  description: Locks the chain multiplier at 2.5x for 1 turn and reduces Special
+    Cooldown of Cerebral and Free Spirit characters by 1 turn.
+  cooldown: 10
+  maxLevel: 1
+  stages:
+    - description: Reduces Special Cooldown of Cerebral and Free Spirit characters by
+        1 turn.
+      cooldown: 6

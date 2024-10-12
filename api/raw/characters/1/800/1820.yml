@@ -1,0 +1,48 @@
+type: PSY
+name: Scarlet
+japanName: スカーレット
+family:
+  - TankLepanto
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 741
+    atk: 128
+    rcv: 252
+  maxLvl:
+    hp: 1920
+    atk: 630
+    rcv: 420
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 72659
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts HP and RCV of [PSY] characters by 1.5x
+special:
+  name: Frontier Love
+  description: Locks all orbs for 1 turn and recovers 5x character's RCV in HP.
+  cooldown: 18
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Rebecca and Kyros (Toy Soldier)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

@@ -1,0 +1,320 @@
+type: DUAL
+name: Shirahoshi & Mansherry - Blissful Gift Exchange
+japanName: しらほし＆マンシェリー 素敵なプレゼント交換
+family:
+  - Shirahoshi
+  - Mansherry
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 584
+    atk: 390
+    rcv: 90
+  maxLvl:
+    hp: 1298
+    atk: 866
+    rcv: 199
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 241499
+aliases:
+  - Shirahoshi&Mansherry
+  - ShirahoshiMansherry
+  - Mansherry&Shirahoshi
+  - MansherryShirahoshi
+  - ShiraMan
+  - Christmas (Xmas) ShiraSherry
+  - V2 Legend Shirahoshi and Mansherry
+evolution:
+  - id: 3166
+    evolvers:
+      - 118
+      - 101
+      - 103
+      - 94
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 3.5x-4.5x
+    depending on the crew's current HP, boosts HP of all characters by 1.2x,
+    recovers 1x this character's RCV at the end of the turn for each time you
+    hit a PERFECT, 1.5x this character's RCV at the end of the turn each time
+    you hit a GREAT, 2x this character's RCV at the end of the turn each time
+    you hit a GOOD and allows HP Overfill up to 2x MAX HP.
+  notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+special:
+  name: Sharing the Joy
+  description: Removes Paralysis, Poison, RCV DOWN and Blindness duration
+    completely, reduces Despair and Burn duration by 7 turns, changes all orbs
+    into [RAINBOW] orbs, adds 1.2x to Chain multiplier for 1 turn, recovers 50x
+    character's RCV in HP and becomes Shirahoshi & Mansherry for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Cerebral characters by 75
+characters:
+  swap:
+    description: Allows HP Overfill up to 2x MAX HP for 1 turn, reduces Slot Bind,
+      Silence, Bind and Despair duration by 1 turn and recovers 1,500 HP.
+  character1:
+    name: Shirahoshi - Blissful Gift Exchange
+    japanName: しらほし 素敵なプレゼント交換
+    class:
+      - Cerebral
+      - Striker
+    type: QCK
+    stats:
+      combo: 5
+      minLvl:
+        hp: 577
+        atk: 380
+        rcv: 73
+      maxLvl:
+        hp: 1283
+        atk: 845
+        rcv: 162
+    captain:
+      name: ""
+      description: Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x
+        depending on the crew's current HP, boosts HP of all characters by 1.2x,
+        recovers 0.5x this character's RCV at the end of the turn for each time
+        you hit a PERFECT, 0.75x this character's RCV at the end of the turn
+        each time you hit a GREAT and 1x this character's RCV at the end of the
+        turn each time you hit a GOOD.
+      notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+    sailor:
+      - description: Boosts base ATK of Striker and Cerebral characters by 50
+  character2:
+    name: Mansherry - Blissful Gift Exchange
+    japanName: マンシェリー 素敵なプレゼント交換
+    class:
+      - Cerebral
+      - Striker
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 577
+        atk: 361
+        rcv: 76
+      maxLvl:
+        hp: 1283
+        atk: 802
+        rcv: 169
+    captain:
+      name: ""
+      description: Boosts ATK of Striker and Cerebral characters by 2.75x-3.75x
+        depending on the crew's current HP, boosts HP of all characters by 1.2x,
+        recovers 0.5x this character's RCV at the end of the turn for each time
+        you hit a PERFECT, 0.75x this character's RCV at the end of the turn
+        each time you hit a GREAT and 1x this character's RCV at the end of the
+        turn each time you hit a GOOD.
+      notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+    sailor:
+      - description: Boosts base HP and RCV of Striker and Cerebral characters by 50
+rumble:
+  stats:
+    def: 184
+    rumbleType: RCV
+    spd: 163
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 2
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            duration: 12
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            duration: 13
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            duration: 14
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            duration: 15
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            duration: 16
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            duration: 17
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.7
+        - override:
+            duration: 18
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.8
+        - override:
+            duration: 19
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 3
+        - override:
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

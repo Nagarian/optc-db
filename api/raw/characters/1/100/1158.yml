@@ -1,0 +1,47 @@
+type: STR
+name: Chief Warden Magellan
+japanName: マゼラン署長
+family:
+  - Magellan
+class:
+  - Powerhouse
+  - Shooter
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 154
+    atk: 56
+    rcv: -250
+  maxLvl:
+    hp: 1093
+    atk: 470
+    rcv: -250
+cost: 18
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 34746
+aliases: []
+evolution:
+  - id: 1159
+    evolvers:
+      - 118
+      - 78
+      - 82
+      - 95
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of Shooter, Striker and Powerhouse characters by 1.75x
+special:
+  name: Poison Puffer Fish
+  description: Deals 20% of enemies' current HP in damage to all enemies. Strongly
+    Poisons one enemy and Poisons all other enemies.
+  cooldown: 21
+  maxLevel: 7
+  notes: Strong Poison deals 5x character's ATK in Fixed damage at the end of each
+    turn. Regular Poison deals 0.5x character's ATK in Fixed damage at the end
+    of each turn.

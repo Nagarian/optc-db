@@ -1,0 +1,223 @@
+type: STR
+name: Tyrant Bartholomew Kuma - Government Human Weapon
+japanName: 暴君バーソロミュー・くま 政府の人間兵器
+family:
+  - BartholomewKuma
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1159
+    atk: 572
+    rcv: 190
+  maxLvl:
+    hp: 3090
+    atk: 1435
+    rcv: 90
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 19426
+aliases:
+  - Raid Kuma
+captain:
+  name: ""
+  description: Boosts ATK and HP of Cerebral characters by 2x, deals 5x the damage
+    taken from enemies in the previous turn in [STR] damage to all enemies at
+    the end of each turn
+special:
+  name: Thrust Pad Cannon
+  description: Changes [RCV], [TND], [EMPTY], [BLOCK] and [BOMB] orbs into
+    Matching orbs, boosts Orb Effects of all characters by 1.75x for 1 turn
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: If HP is above 99% at the start of the turn, boosts base ATK of
+      this character by 50
+  - description: When HP is below 30% at the start of the turn, boosts base ATK of
+      this character by 75
+support:
+  type: descriptive
+  criteria: Dracule Mihawk, Jinbe, Gecko Moria, Boa Hancock and Donquixote Doflamingo
+  levels:
+    - Reduces damage received from [DEX] characters by 1%
+    - Reduces damage received from [DEX] characters by 2%
+    - Reduces damage received from [DEX] characters by 3%
+    - Reduces damage received from [DEX] characters by 4%
+    - Reduces damage received from [DEX] characters by 5%
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - hp: 40
+    - type: potential
+    - atk: 40
+    - hp: 50
+    - hp: 60
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - rcv: 30
+    - hp: 70
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 219
+    rumbleType: DBF
+    spd: 99
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 0.35
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.38
+        - override:
+            level: 1
+            duration: 16
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 1
+            duration: 17
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            level: 1
+            duration: 18
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.46
+        - override:
+            level: 1
+            duration: 19
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            level: 1
+            duration: 20
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.51
+        - override:
+            level: 1
+            duration: 21
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 1
+            duration: 22
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.57
+        - override:
+            level: 1
+            duration: 23
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            level: 2
+            duration: 24

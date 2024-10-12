@@ -1,0 +1,132 @@
+type: DEX
+name: Portgas D. Ace - Black Clad Division Commander
+japanName: ポートガス・D・エース 黒衣の白ひげ海賊団2番隊隊長
+family:
+  - PortgasDAce
+class:
+  - Shooter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1877
+    atk: 702
+    rcv: 214
+  maxLvl:
+    hp: 3818
+    atk: 1352
+    rcv: 321
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 12647
+aliases:
+  - Strong World Ace
+  - SW Ace
+  - V1 Legend Ace
+evolution:
+  - id: 1816
+    evolvers:
+      - skullDEX
+      - 118
+      - 86
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Boosts HP of Shooter characters by 1.5x and boosts ATK of Shooter
+    characters by 2x, by 3x instead if they have a beneficial orb
+special:
+  name: "Great Flame Commandment: Flame Emperor"
+  description: Reduces crew's current HP by 40%, deals 15x the amount of HP
+    subtracted in Typeless damage to all enemies, locks all orbs for 1 turn
+  cooldown: 22
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 50
+  - description: Makes [DEX] orbs beneficial for Shooter characters
+support:
+  type: descriptive
+  criteria: Edward Newgate (Whitebeard) and Marco
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, locks the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, locks the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, locks the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, locks all orbs for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, locks all orbs for 2 turns.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - type: sailor
+    - atk: 30
+    - rcv: 30
+    - atk: 50
+    - rcv: 30
+    - atk: 60
+    - hp: 40
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 110
+    - type: potential
+    - key: 1
+    - cooldown: 1
+    - atk: 50
+    - hp: 100
+    - captain:
+        description: Boosts HP of Shooter characters by 1.5x and boosts ATK of Shooter
+          characters by 3x, by 3.5x instead if they have a beneficial orb.
+    - hp: 100
+    - rcv: 100
+    - hp: 100
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

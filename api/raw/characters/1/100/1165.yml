@@ -1,0 +1,50 @@
+type: DEX
+name: Carina Gold Ship Songstress
+japanName: カリーナ 黄金船の歌姫
+family:
+  - Carina
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 597
+    atk: 321
+    rcv: 132
+  maxLvl:
+    hp: 1074
+    atk: 719
+    rcv: 306
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 35077
+aliases:
+  - Raid Carina
+captain:
+  name: ""
+  description: Boosts RCV of all characters by 1.5x
+special:
+  name: Sexy Diva
+  description: Boosts RCV by 1.5x for 1 turn and boosts Orb Effects of all
+    characters by 1.5x for 1 turn
+  cooldown: 17
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Gild Tesoro, Baccarat, Dice and Tanaka
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7

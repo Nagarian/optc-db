@@ -1,0 +1,90 @@
+type: INT
+name: Dagama Prodence Kingdom Tactician
+japanName: ダガマ プロデンス王国軍師
+family:
+  - Dagama
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1255
+    atk: 490
+    rcv: 150
+  maxLvl:
+    hp: 2940
+    atk: 978
+    rcv: 320
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 33763
+aliases: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of all characters by 2x
+special:
+  name: Tactician's Savage Cut
+  description: Reduces Paralysis and Despair duration by 5 turns. Deals 10% of
+    enemies' current HP in damage to one enemy
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 25
+  - description: Reduces Silence duration by 2 turns on this character
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+  criteria: Elizabello II
+  levels:
+    - value: 7
+      reduction: 1
+    - value: 10
+      reduction: 2
+    - value: 12
+      reduction: 3
+    - value: 15
+      reduction: 4
+    - value: 20
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 30
+    - atk: 40
+    - atk: 40
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - cooldown: 1
+    - hp: 40
+    - slot: 1
+    - hp: 70
+    - cooldown: 2
+    - hp: 90
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

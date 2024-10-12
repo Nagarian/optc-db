@@ -1,0 +1,315 @@
+type: QCK
+name: Queen - Rampaging Brachiosaurus
+japanName: クイーン 暴れるブラキオサウルス
+family:
+  - Queen
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1184
+    atk: 574
+    rcv: 91
+  maxLvl:
+    hp: 2960
+    atk: 1436
+    rcv: 228
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 254924
+aliases:
+  - TM Queen TM
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x.
+special:
+  name: Brachio-Bomber
+  description: Changes orbs of adjacent characters into Matching orbs, reduces
+    enemies' Percent Damage Reduction duration by 5 turns, deals 50x the damage
+    taken from enemies before the special is activated in Typeless damage to one
+    enemy.
+  cooldown: 33
+  maxLevel: 8
+  notes: The amount of damage possible caps at 200,000 damage taken.
+sailor:
+  - description: If your Captain is a [QCK] character, boosts base HP of [QCK]
+      characters by 1.1x
+  - description: After each turn you take damage, reduces special cooldown of this
+      character by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Kaido, King and Jack
+  levels:
+    - value: 1
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [QCK] characters by 2.5x.
+    - type: sailor
+    - rcv: 20
+    - hp: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of [QCK] characters by 2.75x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - captain:
+        description: Boosts ATK of [QCK] characters by 3x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of [QCK] characters by 3.25x and their HP by 1.1x.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [QCK] characters by 3.5x and their HP by 1.2x.
+    - hp: 100
+    - hp: 120
+    - captain:
+        description: Boosts ATK of [QCK] characters by 3.75x, their HP by 1.2x and
+          reduces Special Cooldown of this character by 1 turn after each turn
+          you take damage.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Cooldown Reduction
+      levels:
+        - value: 3
+        - value: 5
+        - value: 6
+        - value: 7
+        - value: 9
+rumble:
+  stats:
+    def: 268
+    rumbleType: DEF
+    spd: 121
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 250
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - DEF
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - amount: 0.7
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 7
+            level: 1
+        - override:
+            duration: 7
+            level: 1
+        - override:
+            amount: 0.8
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 8
+            level: 1
+        - override:
+            duration: 8
+            level: 1
+        - override:
+            amount: 0.9
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 9
+            level: 2
+        - override:
+            duration: 9
+            level: 2
+        - override:
+            amount: 1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 10
+            level: 2
+        - override:
+            duration: 10
+            level: 2
+        - override:
+            amount: 1.1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 11
+            level: 3
+        - override:
+            duration: 11
+            level: 3
+        - override:
+            amount: 1.2
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 12
+            level: 3
+        - override:
+            duration: 12
+            level: 3
+        - override:
+            amount: 1.3
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 13
+            level: 3
+        - override:
+            duration: 13
+            level: 3
+        - override:
+            amount: 1.4
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 14
+            level: 4
+        - override:
+            duration: 14
+            level: 4
+        - override:
+            amount: 1.5
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 15
+            level: 5
+        - override:
+            duration: 15
+            level: 5
+        - override:
+            amount: 1.7

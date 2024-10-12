@@ -1,0 +1,461 @@
+type: QCK
+name: Red-Haired Shanks - Red-Hair Stopping the Menace
+family:
+  - Shanks
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1945
+    atk: 904
+    rcv: 160
+  maxLvl:
+    hp: 3890
+    atk: 1808
+    rcv: 320
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+aliases:
+  - RED Limited Secret Legend V4
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 5x, boosts ATK of all other
+    characters by 4x, boosts HP of all characters by 1.5x, boosts Color Affinity
+    of [QCK] characters by 1.1x, reduces damage received by 10%, makes [QCK],
+    [RCV] and [TND] orbs beneficial for all characters and boosts chance of
+    getting [QCK] and [TND] orbs.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Monkey
+    D. Luffy, Ben Beckman, Lucky Roux, Yasopp, Rockstar and Uta, excluding
+    Support members."
+  description: Increases boost effects of Color Affinity buffs by +0.25x, changes
+    all enemies into [STR] characters for 1 turn and transforms all [QCK]
+    characters into Super [QCK] characters.
+  notes: Enemy Type Change is a debuff.
+special:
+  name: Haki Slash
+  description: Deals 10% of enemies' current HP in True damage to all enemies,
+    changes all orbs, including [BLOCK] orbs, of left column characters into
+    [QCK] orbs, changes all orbs, including [BLOCK] orbs, of right column
+    characters into [TND] orbs and adds 1.4x to Chain multiplier for 1 turn. If
+    your crew has 5 or more [QCK] characters, boosts Color Affinity of [QCK]
+    characters by 2.75x for 1 turn; boosts Color Affinity of all characters by
+    2.25x for 1 turn otherwise. If your crew has Chain Addition and Color
+    Affinity at the time the special is activated, reduces enemies' Percent
+    Damage Reduction and Threshold Damage Reduction duration by 7 turns and
+    increases boost effects of Chain Addition buffs by +0.5x.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 100
+  - description: Makes [STR] orbs beneficial for [QCK] characters
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Ben Beckman, Lucky Roux, Yasopp, Rockstar and Uta
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [QCK] characters by 1.35x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [QCK] characters by 1.45x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [QCK] characters by 1.55x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [QCK] characters by 1.65x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [QCK] characters by 1.75x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 10
+    - atk: 10
+    - type: sailor
+    - type: potential
+    - atk: 10
+    - hp: 10
+    - rcv: 10
+    - hp: 10
+    - atk: 10
+    - hp: 20
+    - atk: 20
+    - atk: 20
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 40
+    - hp: 50
+    - rcv: 20
+    - hp: 50
+    - atk: 40
+    - hp: 60
+    - hp: 70
+    - atk: 40
+    - hp: 80
+    - hp: 100
+    - rcv: 40
+    - type: sailor
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 20
+    - rcv: 30
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 2
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 60
+        - threshold: 50
+        - threshold: 0
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar or Uta."
+        description: Boosts Tandem ATK of [QCK] characters by 1.5x for 1 turn and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+      - criteria: "Any 2 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar or Uta."
+        description: Boosts Tandem ATK of [QCK] characters by 1.75x for 1 turn and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+      - criteria: "Any 2 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar or Uta."
+        description: Boosts Tandem ATK of [QCK] characters by 2x for 1 turn and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+      - criteria: "Any 1 of the following: [QCK] characters. Any 1 of the following:
+          Monkey D. Luffy, Ben Beckman, Lucky Roux, Yasopp, Rockstar or Uta."
+        description: Boosts Tandem ATK of [QCK] characters by 2.25x for 1 turn and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+      - criteria: "Any 1 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar or Uta."
+        description: Boosts Tandem ATK of [QCK] characters by 2.5x for 1 turn and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+rumble:
+  stats:
+    def: 202
+    rumbleType: SPT
+    spd: 173
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 200
+      interval: 5
+      type: healing
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - SPD
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 35
+      effects:
+        - attributes:
+            - ATK
+            - HP
+            - RCV
+            - DEF
+            - SPD
+          chance: 10
+          effect: cleanse
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 20
+        - {}
+        - override:
+            amount: 1.9
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 30
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            amount: 2
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 40
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            amount: 2.1
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 50
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 2.2
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 60
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 2.3
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 70
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            amount: 2.4
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 80
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            amount: 2.5
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 90
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            amount: 2.6
+    - cooldown: 35
+      effects:
+        - override:
+            chance: 100
+        - override:
+            level: 6
+            duration: 15
+        - override:
+            amount: 2.8
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - QCK
+                - INT
+          - attributes:
+              - Critical Hit
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - QCK
+                - INT
+          - attributes:
+              - ATK
+              - HP
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - Cerebral
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Cerebral
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 4
+          - override:
+              level: 4
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 5
+          - override:
+              level: 5
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 6
+          - override:
+              level: 6
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 15
+          type: attack
+          attack: Normal
+      special:
+        - uses: 2
+          effects:
+            - attributes:
+                - ATK
+                - SPD
+                - DEF
+              duration: 22
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - QCK
+                  - INT
+            - attributes:
+                - Paralysis
+              chance: 60
+              duration: 7
+              effect: hinderance
+              targeting:
+                count: 1
+                priority: lowest
+                stat: HP
+                targets:
+                  - enemies
+        - uses: 2
+          effects:
+            - override:
+                level: 3
+                duration: 24
+            - override:
+                chance: 70
+                duration: 9
+        - uses: 2
+          effects:
+            - override:
+                level: 5
+                duration: 26
+            - override:
+                chance: 80
+                duration: 11
+        - uses: 2
+          effects:
+            - override:
+                level: 7
+                duration: 28
+            - override:
+                chance: 90
+                duration: 13
+        - uses: 2
+          effects:
+            - override:
+                level: 10
+                duration: 30
+            - override:
+                chance: 100
+                duration: 15

@@ -1,0 +1,93 @@
+type: STR
+name: Dosun - Fish-Man District Spirit
+japanName: ドスン 魚人街の亡霊
+family:
+  - Dosun
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1369
+    atk: 430
+    rcv: 50
+  maxLvl:
+    hp: 3059
+    atk: 1333
+    rcv: 189
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 50185
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 3.25x following a chain of
+    Good > Great > PERFECT hits
+special:
+  name: Papara Hammer
+  description: Changes [RCV], [TND], [EMPTY], [BLOCK] and [BOMB] orbs into [STR],
+    [QCK], [DEX], [PSY] or [INT] orbs, boosts ATK of Powerhouse characters by
+    1.5x for 1 turn and boosts Orb Effects of Powerhouse characters by 1.5x for
+    1 turn
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of all characters by 150 and also ATK of all
+      characters by 50 if there are 6 Powerhouse characters in your crew
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Hody Jones, Hyouzou, Ikaros Much, Daruma and Zeo
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - hp: 50
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - cooldown: 1
+    - slot: 1
+    - hp: 90
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

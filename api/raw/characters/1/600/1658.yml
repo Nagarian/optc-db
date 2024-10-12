@@ -1,0 +1,105 @@
+type: DEX
+name: Evening Shower Kanjuro - Wano Kingdom Samurai
+japanName: 夕立ち　カン十郎 ワノ国の侍
+family:
+  - KurozumiKanjuro
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1026
+    atk: 511
+    rcv: 144
+  maxLvl:
+    hp: 2306
+    atk: 1301
+    rcv: 329
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 60675
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Free Spirit characters by 2.5x
+special:
+  name: Summon Dragon
+  description: Reduces Bind and Despair duration by 5 turns. If your Captain is a
+    Striker character, locks the chain multiplier at 2.75x for 1 turn
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: If your Captain is a Striker character, makes [DEX] orbs beneficial
+      for Striker characters
+  - description: Boosts base ATK, HP and RCV of Striker characters by 75
+support:
+  type: descriptive
+  criteria: Kin'emon, Raizo, Kozuki Momonosuke and Kikunojo
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - hp: 20
+    - slot: 1
+    - hp: 30
+    - type: sailor
+    - hp: 40
+    - hp: 60
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 6

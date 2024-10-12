@@ -1,0 +1,51 @@
+type: QCK
+name: Usopp - Let's Go to the Pirate Festival!
+japanName: ウソップ Let’s go for PIRATE FESTIVAL
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 634
+    atk: 301
+    rcv: 74
+  maxLvl:
+    hp: 1820
+    atk: 1076
+    rcv: 288
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 102417
+aliases:
+  - Pizza Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.75x
+special:
+  name: Humble Words to Excite the Party
+  description: Reduces ATK DOWN and Paralysis duration by 3 turns and delays all
+    enemies by 1 turn
+  cooldown: 14
+  maxLevel: 4
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Vinsmoke Sanji, Roronoa Zoro, Nami, Tony Tony
+    Chopper, Nico Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

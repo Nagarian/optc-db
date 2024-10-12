@@ -1,0 +1,35 @@
+type: INT
+name: Cannoneer Skilled
+japanName: 砲撃手 腕利き
+family:
+  - Cannoneer
+class:
+  - Shooter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 203
+    atk: 105
+    rcv: 3
+  maxLvl:
+    hp: 1350
+    atk: 550
+    rcv: 30
+cost: 12
+slots: 0
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 2217
+aliases: []
+evolution:
+  - id: 289
+    evolvers:
+      - 104
+special:
+  name: Iron Shield
+  description: Reduces damage received by 20% for 1 turn
+  cooldown: 25
+  maxLevel: 16

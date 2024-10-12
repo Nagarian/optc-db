@@ -1,0 +1,96 @@
+type: PSY
+name: Charlotte Brulee - Big Mom Pirates
+japanName: シャーロット・ブリュレ ビッグ・マム海賊団
+family:
+  - CharlotteBrulee
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 810
+    atk: 720
+    rcv: 149
+  maxLvl:
+    hp: 1570
+    atk: 1401
+    rcv: 402
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 107232
+aliases:
+  - Brulee
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 1.5x and deals 15% of
+    enemies' current HP in damage to all enemies at the end of each turn
+special:
+  name: Light Reflecting a Virtual Image
+  description: Changes [TND] and [RCV] orbs of this character into [PSY] orbs,
+    changes all other orbs, including [BLOCK] orbs, of all characters into
+    Brûlée's orb. Adds 30x character's ATK as Additional Typeless Damage for 5
+    turns
+  cooldown: 22
+  maxLevel: 7
+  stages:
+    - description: Changes [TND] and [RCV] orbs of this character into [PSY] orbs,
+        changes all other orbs, including [BLOCK] orbs, of all characters into
+        Brûlée's orb. Adds 30x character's ATK as Additional Typeless Damage for
+        3 turns
+      cooldown: 18
+  notes: Upon activating the special, all orbs will be changed to the orb Brûlée
+    has, including [RAINBOW] and [BLOCK] orbs.
+sailor:
+  - description: Makes [PSY] orbs beneficial for Cerebral characters
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Charlotte Katakuri and Charlotte Perospero
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 60
+    - hp: 80
+    - type: sailor
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

@@ -1,0 +1,94 @@
+type: STR
+name: Pekoms - Rampaging Sulong
+japanName: ペコムズ 暴走する“月の獅子”
+family:
+  - Pekoms
+class:
+  - Slasher
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1576
+    atk: 711
+    rcv: 101
+  maxLvl:
+    hp: 3152
+    atk: 1422
+    rcv: 202
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - TM Limited Secret Sulong Pekoms
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 3x, their HP by 1.2x and
+    recovers 800 HP at the end of each turn.
+special:
+  name: Marciless Claws
+  description: Reduces Bind duration completely for one character, changes orbs of
+    adjacent characters into Matching orbs, reduces enemies' Threshold Damage
+    Reduction and Percent Damage Reduction duration by 5 turns and locks the
+    chain multiplier at 3x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [STR] orbs beneficial for Slasher and Fighter characters
+  - description: Reduces Blindness duration by 5 turns
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji, Dogstorm, Cat Viper, Pedro and Carrot
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.5x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - rcv: 20
+    - type: potential
+    - atk: 10
+    - hp: 30
+    - atk: 40
+    - slot: 1
+    - hp: 40
+    - atk: 50
+    - rcv: 30
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

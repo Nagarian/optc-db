@@ -1,0 +1,227 @@
+type: STR
+name: Enraged Arlong - Tyrannical Fish-Man
+japanName: ブチ切れアーロン 暴虐の魚人
+family:
+  - Arlong
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1172
+    atk: 712
+    rcv: 52
+  maxLvl:
+    hp: 2682
+    atk: 1512
+    rcv: 122
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 134190
+aliases:
+  - Raid Arlong
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.75x, but boosts ATK of this
+    character by 3x
+special:
+  name: Kiribachi - Single Stroke Slice
+  description: Deals ?x character's ATK in [STR] damage to one enemy, reduces
+    enemies' Increased Defense and Resilience Buffs duration by 3 turns, changes
+    [BLOCK] orbs into Matching orbs and boosts Orb Effects of Slasher characters
+    by 1.75x for 3 turns
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Makes [QCK] orbs beneficial for this character
+  - description: Boosts base ATK of this character by 200 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Hatchan, Choo and Kuroobi
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: sailor
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - atk: 30
+    - atk: 45
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 50
+        - value: 3
+          threshold: 60
+        - value: 4
+          threshold: 70
+        - value: 5
+          threshold: 80
+        - value: 6
+          threshold: 90
+rumble:
+  stats:
+    def: 132
+    rumbleType: ATK
+    spd: 168
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 0.55
+          effect: damage
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.86
+        - override:
+            amount: 0.58
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.91
+        - override:
+            amount: 0.6
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.97
+        - override:
+            amount: 0.63
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.03
+        - override:
+            amount: 0.66
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.09
+        - override:
+            amount: 0.69
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.14
+        - override:
+            amount: 0.71
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            amount: 0.74
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.26
+        - override:
+            amount: 0.77
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.35
+        - override:
+            amount: 0.85

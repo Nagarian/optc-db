@@ -1,0 +1,177 @@
+type: DEX
+name: Orlumbus Massacre Ruler
+japanName: オオロンブス 殺戮支配者
+family:
+  - Orlumbus
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1389
+    atk: 584
+    rcv: 103
+  maxLvl:
+    hp: 3065
+    atk: 1180
+    rcv: 231
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 33764
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.25x and their HP by 1.5x
+special:
+  name: Admiral Killer Bowling
+  description: Changes [BLOCK] orbs into [EMPTY] orbs, deals 20x-500x character's
+    ATK in Typeless damage to all enemies, depending on number of [BLOCK] slots
+    emptied. Changes [EMPTY] orbs into Matching orbs
+  cooldown: 20
+  maxLevel: 7
+  notes: "The exact multiplier used is chosen based on the number of [BLOCK] orbs
+    consumed: 0 orbs - Cannot Activate; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3
+    orbs - 100x ATK; 4 orbs - 200x ATK; 5 orbs - 300x ATK; 6 orbs - 500x ATK."
+sailor:
+  - description: Adds 2x character's ATK as Additional Damage
+  - description: Boosts base ATK, HP and RCV of Striker characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro and Elizabello II
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 20
+    - atk: 30
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - slot: 1
+    - rcv: 30
+    - hp: 60
+    - type: sailor
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 138
+    rumbleType: DBF
+    spd: 123
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - DEF
+          duration: 24
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+    - cooldown: 27
+      effects:
+        - override:
+            level: 6
+    - cooldown: 27
+      effects:
+        - override:
+            level: 7
+    - cooldown: 27
+      effects:
+        - override:
+            level: 8
+    - cooldown: 27
+      effects:
+        - override:
+            level: 9
+    - cooldown: 27
+      effects:
+        - override:
+            level: 10
+    - cooldown: 27
+      effects:
+        - override:
+            level: 11

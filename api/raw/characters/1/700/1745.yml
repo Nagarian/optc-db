@@ -1,0 +1,89 @@
+type: INT
+name: Marguerite - Straw Hat Luffy's Conspirator
+japanName: マーガレット 麦わらのルフィの共犯者
+family:
+  - Marguerite
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 974
+    atk: 434
+    rcv: 162
+  maxLvl:
+    hp: 2062
+    atk: 1063
+    rcv: 450
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 66497
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x and recovers 2x character's
+    RCV in HP at the end of each turn
+special:
+  name: Defender's Spade-Shaped Arrow
+  description: Deals 7% of enemies' current HP in damage to one enemy and boosts
+    Orb Effects of Shooter characters by 1.75x for 3 turns
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 30
+  - description: Reduces Blindness duration by 3 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Shooter characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 60
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 70
+    - cooldown: 1
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+          threshold: 6
+        - value: 1
+          threshold: 5
+        - value: 1
+          threshold: 4
+        - value: 2
+          threshold: 4
+        - value: 3
+          threshold: 4
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

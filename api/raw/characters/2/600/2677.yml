@@ -1,0 +1,197 @@
+type: DEX
+name: Franky - Shipwright Exhibiting at the Pirates Expo
+japanName: フランキー 『海賊万博』で披露する船大工
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 513
+    atk: 253
+    rcv: 49
+  maxLvl:
+    hp: 1283
+    atk: 633
+    rcv: 124
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 164100
+aliases:
+  - Stampede Franky
+evolution:
+  - id: 2678
+    evolvers:
+      - 94
+      - 2662
+      - 302
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2x, boosts ATK of [PSY]
+    characters by 1.5x and deals 3x character's ATK in [DEX] damage to all
+    enemies at the end of each turn.
+special:
+  name: "Franky Radical Beam: Pirate Expo Version"
+  description: Reduces enemies' barrier duration by 1 turn and deals 75x
+    character's ATK in [DEX] damage to all enemies. If your Captain's orb is
+    [DEX] or [PSY], locks all orbs for 1 turn and boosts ATK of [DEX] and [PSY]
+    characters by 2x for 2 turns
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+rumble:
+  stats:
+    def: 287
+    rumbleType: DEF
+    spd: 96
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - PSY
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 18
+      effects:
+        - amount: 0.25
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          level: 1
+          effect: debuff
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Provoke
+          duration: 8
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.28
+        - {}
+        - override:
+            duration: 9
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.31
+        - {}
+        - override:
+            duration: 11
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.34
+        - override:
+            level: 2
+        - override:
+            duration: 12
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.37
+        - override:
+            level: 2
+        - override:
+            duration: 14
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 2
+        - override:
+            duration: 15
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            level: 3
+        - override:
+            duration: 17
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.46
+        - override:
+            level: 3
+        - override:
+            duration: 18
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            level: 3
+        - override:
+            duration: 20
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 5
+        - override:
+            duration: 21

@@ -1,0 +1,104 @@
+type: DEX
+name: Sandersonia & Marigold - The Snake-Snake Fruit Sisters
+japanName: サンダーソニア＆マリーゴールド “ヘビヘビの実”の姉妹
+family:
+  - BoaSandersonia
+  - BoaMarigold
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1016
+    atk: 745
+    rcv: 65
+  maxLvl:
+    hp: 2584
+    atk: 1483
+    rcv: 275
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 208222
+aliases:
+  - Limited Sandersonia
+  - Limited Marigold
+  - Secret Sandersonia
+  - Secret Marigold
+  - Kizuna Sandersonia
+  - Kizuna Marigold
+  - Boa Sandersonia
+  - Boa Marigold
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of [STR], [DEX] and [INT] characters by 2.5x, by 3x
+    instead if they have a beneficial orb.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x, reduces damage received by 20% and reduces Paralysis and Silence duration by 1 turn.
+special:
+  name: "Medusa Hair: Twin Snakes"
+  description: If this character is your Captain or Friend/Guest Captain, boosts
+    the Color Affinity of [STR], [DEX] and [INT] characters by 2.25x for 1 turn.
+    If you are in Kizuna Clash during that turn you score 3 PERFECT hits, boosts
+    ATK of [STR], [DEX] and [INT] characters by 1.75x-2.25x for 1 turn in the
+    following turn, depending on your Kizuna Clash Level.
+  cooldown: 19
+  maxLevel: 6
+  notes: |-
+    Level 1-15: 1.75x ATK boost  
+    Level 16-30: 2x ATK boost  
+    Level 31+: 2.25x ATK boost
+sailor:
+  - description: Makes [STR] and [INT] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of [STR], [DEX] and [INT] characters by 45
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[DEX] characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 25
+    - rcv: 25
+    - type: potential
+    - atk: 25
+    - hp: 50
+    - atk: 25
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

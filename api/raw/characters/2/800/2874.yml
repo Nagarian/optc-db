@@ -1,0 +1,98 @@
+type: QCK
+name: Sanji - Number 4, Searching for the Miracle Sea
+japanName: サンジ 奇跡の海追う４人目
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1237
+    atk: 542
+    rcv: 204
+  maxLvl:
+    hp: 2256
+    atk: 1353
+    rcv: 336
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 189635
+aliases:
+  - East Blue Sanji
+  - Secret Sanji
+  - Limited Sanji
+  - Throwback Sanji
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [STR] characters by 2.75x.
+special:
+  name: Thanks from a Damn Rascal
+  description: Boosts ATK against enemies with reduced defense by 1.75x for 1
+    turn, reduces enemies' Threshold Damage Reduction duration by 5 turns and
+    changes [EMPTY] and Badly Matching orbs into [RCV] orbs. If your Captain is
+    a [STR] or [QCK] character, makes [RCV] orbs beneficial for all characters
+    for 1 turn.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: If this character has an [RCV] orb and you hit a PERFECT with him,
+      keep his [RCV] orb for the next turn
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - HP
+  criteria: "[QCK] characters"
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 8
+      reduction: 3
+    - value: 10
+      reduction: 4
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - rcv: 30
+    - atk: 40
+    - hp: 90
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

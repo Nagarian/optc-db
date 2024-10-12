@@ -1,0 +1,212 @@
+type: STR
+name: Vinsmoke Sanji - Germa Kingdom
+japanName: ヴィンスモーク・サンジ ジェルマ王国
+family:
+  - VinsmokeSanji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1099
+    atk: 677
+    rcv: 157
+  maxLvl:
+    hp: 2267
+    atk: 1468
+    rcv: 346
+cost: 50
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 70377
+aliases:
+  - Raid Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.75x until the first hit
+    other than PERFECT and recovers 300 HP at the end of each turn
+special:
+  name: Joue Shoot
+  description: Deal 150x character's ATK in Typeless damage to one enemy, boosts
+    ATK of Powerhouse characters by 2x for 1 turn
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - hp: 45
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - rcv: 50
+    - slot: 1
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 156
+    rumbleType: SPT
+    spd: 150
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 0.45
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.59
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.64
+        - override:
+            level: 3
+            duration: 24
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.69
+        - override:
+            level: 3
+            duration: 25
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.73
+        - override:
+            level: 3
+            duration: 26
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.78
+        - override:
+            level: 4
+            duration: 27
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.83
+        - override:
+            level: 4
+            duration: 28
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.95
+        - override:
+            level: 5
+            duration: 30

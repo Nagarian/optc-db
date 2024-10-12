@@ -1,0 +1,227 @@
+type: PSY
+name: Basil Hawkins - Foretelling the Future
+family:
+  - BasilHawkins
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1208
+    atk: 641
+    rcv: 86
+  maxLvl:
+    hp: 2839
+    atk: 1465
+    rcv: 321
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 239261
+aliases:
+  - Kizuna Hawkins
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 3.5x and makes
+    [PSY] orbs beneficial for Striker and Cerebral characters.
+special:
+  name: Piercing Straw Sword
+  description: Reduces Paralysis and Despair duration by 5 turns, reduces enemies'
+    Threshold Damage Reduction duration by 5 turns and reduces damage received
+    from [STR], [QCK] and [INT] enemies by 100% for 1 turn.
+  cooldown: 28
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral and Striker characters by 50
+  - description: Adds 2x character's ATK as Additional Damage
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 25
+    - atk: 25
+    - rcv: 25
+    - type: potential
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 127
+    rumbleType: ATK
+    spd: 192
+  target:
+    criteria: HP
+    comparator: highest
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          duration: 21
+          effect: boon
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            duration: 22
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 23
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 24
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 25
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 26
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            duration: 27
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            duration: 28
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 29
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            duration: 30

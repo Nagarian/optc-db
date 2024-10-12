@@ -1,0 +1,52 @@
+type: DEX
+name: Shishilian - Mokomo Dukedom's Dogstorm Musketeers Captain
+japanName: シシリアン モコモ公国　犬嵐銃士隊隊長
+family:
+  - Sicilian
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 256
+    atk: 90
+    rcv: 22
+  maxLvl:
+    hp: 1297
+    atk: 692
+    rcv: 104
+cost: 12
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 112363
+aliases:
+  - Secret Sicilian
+  - Limited Sicilian
+  - Secret Shishilian
+  - Limited Shishilian
+evolution:
+  - id: 2171
+    evolvers:
+      - 117
+      - 80
+      - 91
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.5x
+special:
+  name: Lightning Slash
+  description: Deals 15x character's ATK in [DEX] damage to one enemy, delays all
+    enemies by 1 turn and if enemies have a barrier at the time the special was
+    activated, boosts ATK of all characters by 1.75x for 1 turn, by 1.5x
+    otherwise.
+  cooldown: 10
+  maxLevel: 1

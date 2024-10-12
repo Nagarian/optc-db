@@ -1,0 +1,227 @@
+type: STR
+name: Boa Sandersonia - Eight-Headed Snake
+japanName: ボア・サンダーソニア 八つ首の蛇
+family:
+  - BoaSandersonia
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1930
+    atk: 780
+    rcv: 119
+  maxLvl:
+    hp: 3860
+    atk: 1560
+    rcv: 238
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - Rumble Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Free Spirit characters by 2.5x and
+    their HP by 1.2x.
+special:
+  name: "Inescapable Snake Hair Possession: Eight-Headed Snake"
+  description: Boosts ATK of Powerhouse and Free Spirit characters by 1.75x for 2
+    turns, changes all orbs into [STR] orbs and reduces the defense of all
+    enemies by 80% for 2 turns.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Powerhouse and Free Spirit characters by 30
+support:
+  type: descriptive
+  criteria: Boa Marigold
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction and Threshold Damage Reduction
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction and Threshold Damage Reduction
+      duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Percent Damage Reduction and Threshold Damage Reduction
+      duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 50
+    - atk: 75
+    - atk: 75
+    - type: potential
+    - hp: 200
+    - atk: 100
+    - rcv: 50
+    - hp: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 133
+    rumbleType: ATK
+    spd: 191
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: DEX
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          condition:
+            comparator: above
+            count: 60
+            stat: HP
+            type: stat
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 6
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1.5
+          effect: damage
+          repeat: 2
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+        - amount: 5
+          effect: recharge
+          condition:
+            families:
+              - BoaMarigold
+              - BoaHancock
+            team: crew
+            type: character
+          targeting:
+            targets:
+              - STR
+          type: Special CT
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            amount: 6
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            amount: 7
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            amount: 8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            amount: 9
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2
+        - override:
+            amount: 10
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            amount: 11
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            amount: 12
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            amount: 13
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            amount: 15

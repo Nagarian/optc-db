@@ -1,0 +1,148 @@
+type: DEX
+name: Dark King Rayleigh - Old Man Watching Over the New Age
+japanName: 冥王レイリー 時代を見守る老兵
+family:
+  - SilversRayleigh
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1908
+    atk: 695
+    rcv: 180
+  maxLvl:
+    hp: 3510
+    atk: 1472
+    rcv: 330
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 83029
+aliases:
+  - V2 Legend Rayleigh
+evolution:
+  - id: 3018
+    evolvers:
+      - skullDEX
+      - 118
+      - 86
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight. Boosts ATK of all characters by 3.5x and boosts chances of
+    getting Matching orbs if HP is below 30% at the start of the turn, by 2.5x
+    otherwise and boosts HP and RCV of all characters by 1.25x.
+special:
+  name: Signaling the Beginning of a Bright Future
+  description: Deals 200,000 Fixed True damage to one enemy, locks the chain
+    multiplier at 3x for 1 turn, boosts Orb Effects of all characters by 1.75x
+    for 1 turn and if HP is below 30% at the time the special is activated,
+    reduces damage received by 95% for 1 turn and changes [RCV], [TND], [EMPTY]
+    and [BLOCK] orbs into Matching orbs
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Makes [STR] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[DEX] characters"
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 9
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 5
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - rcv: 10
+    - hp: 25
+    - atk: 15
+    - type: sailor
+    - rcv: 20
+    - hp: 30
+    - atk: 20
+    - rcv: 30
+    - hp: 35
+    - atk: 25
+    - type: potential
+    - rcv: 40
+    - hp: 40
+    - atk: 30
+    - hp: 45
+    - atk: 35
+    - hp: 45
+    - atk: 35
+    - hp: 45
+    - hp: 45
+    - hp: 50
+    - hp: 55
+    - type: sailor
+    - hp: 60
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 50
+    - hp: 100
+    - atk: 100
+    - hp: 200
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. Boosts ATK of all characters by 3.9875x and boosts
+          chances of getting Matching orbs if HP is below 30% at the start of
+          the turn, by 2.75x otherwise and boosts HP and RCV of all characters
+          by 1.25x.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

@@ -1,0 +1,104 @@
+type: STR
+name: Kawamatsu - Dragon Felling Kappa Style
+family:
+  - Kawamatsu
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1635
+    atk: 779
+    rcv: 93
+  maxLvl:
+    hp: 3270
+    atk: 1558
+    rcv: 186
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR], Slasher and Free Spirit characters by 3x and
+    boosts HP of [STR], Slasher and Free Spirit characters by 1.2x.
+special:
+  name: "Clearing Kappa Style: River of Sea"
+  description: Reduces Special Cooldown of all characters by 1 turn and reduces
+    Bind and Despair duration by 5 turns. If your crew has 5 or more Slasher
+    characters, boosts ATK of [STR] and Slasher characters by 2.25x for 2 turns.
+    If your crew has ATK UP, boosts Color Affinity of [STR] and Slasher
+    characters by 2x for 2 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 60
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Izo, Kin'emon, Dogstorm, Kozuki Momonosuke, Cat Viper, Raizo,
+    Kikunojo, Kozuki Oden, Denjiro, Kozuki Hiyori and Ashura Doji
+  levels:
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, boosts ATK of Slasher characters by 1.15x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, boosts ATK of Slasher characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, boosts ATK of Slasher characters by 1.45x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, boosts ATK of Slasher characters by 1.6x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, boosts ATK of Slasher characters by 1.75x for 1 turn.
+limitBreak:
+  path:
+    - hp: 20
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - atk: 50
+    - slot: 1
+    - rcv: 10
+    - rcv: 30
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

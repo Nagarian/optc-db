@@ -1,0 +1,92 @@
+type: DEX
+name: Kyros Ex-Riku Royal Army Commander
+japanName: キュロス 元リク王軍軍隊長
+family:
+  - Kyros
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1042
+    atk: 657
+    rcv: 143
+  maxLvl:
+    hp: 2377
+    atk: 1373
+    rcv: 290
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 30737
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Cost 30 or less characters by 2.5x
+special:
+  name: Trueno Bastardo
+  description: Deals 15x character's ATK in [DEX] damage to one enemy, changes the
+    orb of this character into a [DEX] orb and boosts ATK of this character by
+    2x for 1 turn
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 2 turns on this character
+  - description: Boosts base ATK of all characters by 50
+support:
+  type: descriptive
+  criteria: Rebecca
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of the supported character by 1.2x.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of the supported character by 1.25x.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of the supported character by 1.5x.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of the supported character by 1.75x.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of the supported character by 2x.
+limitBreak:
+  path:
+    - rcv: 20
+    - atk: 20
+    - hp: 40
+    - type: potential
+    - rcv: 30
+    - hp: 60
+    - atk: 30
+    - type: sailor
+    - cooldown: 1
+    - hp: 80
+    - slot: 1
+    - cooldown: 1
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 120
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

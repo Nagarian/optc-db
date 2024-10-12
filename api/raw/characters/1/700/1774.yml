@@ -1,0 +1,51 @@
+type: INT
+name: "\"Samurai\" Foxfire Kin'emon"
+japanName: “侍”　狐火の錦えもん
+family:
+  - Kinemon
+class:
+  - Free Spirit
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 890
+    atk: 560
+    rcv: 65
+  maxLvl:
+    hp: 2058
+    atk: 1245
+    rcv: 192
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 68612
+aliases:
+  - Kin'emon
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.25x and their HP by 1.25x
+    and reduces damage received by 15%
+special:
+  name: "Firefox Style: Crimson Slash"
+  description: Deals 20x character's ATK in [INT] damage to one enemy, boosts Orb
+    Effects of Free Spirit characters by 1.75x for 1 turn
+  cooldown: 21
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Free Spirit characters by 25
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kozuki Momonosuke
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

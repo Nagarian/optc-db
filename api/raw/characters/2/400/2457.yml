@@ -1,0 +1,55 @@
+type: INT
+name: Pudding - Enamored Chocolatier
+japanName: プリン メロメロのショコラティエ
+family:
+  - CharlottePudding
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 798
+    atk: 403
+    rcv: 112
+  maxLvl:
+    hp: 1996
+    atk: 1009
+    rcv: 281
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 144057
+aliases:
+  - Fortnight Pudding
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x and their RCV by 1.2x.
+special:
+  name: Chocolatier's Love
+  description: Binds self for 3 turns, reduces ATK DOWN duration by 2 turns and
+    adds 0.3x to Chain multiplier for 1 turn. If your Captain is a Fighter
+    character, changes orbs of this and the Captain characters into Matching
+    orbs.
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Vinsmoke Sanji
+  levels:
+    - description: Boosts the supported character's ATK by 1.05x against Big Mom.
+      value: 1
+    - description: Boosts the supported character's ATK by 1.1x against Big Mom.
+      value: 1
+    - description: Boosts the supported character's ATK by 1.15x against Big Mom.
+      value: 2
+    - description: Boosts the supported character's ATK by 1.15x against Big Mom.
+      value: 2
+    - description: Boosts the supported character's ATK by 1.2x against Big Mom.
+      value: 3

@@ -1,0 +1,102 @@
+type: QCK
+name: Charlotte Chiffon - For My Family, With Love
+japanName: シャーロット・シフォン 家族の為に愛をこめて
+family:
+  - CharlotteChiffon
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1281
+    atk: 686
+    rcv: 92
+  maxLvl:
+    hp: 2939
+    atk: 1383
+    rcv: 337
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 246493
+aliases:
+  - Limited Chiffon
+  - Secret Chiffon
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Free Spirit characters by 2.75x and
+    reduces damage received by 10%.
+special:
+  name: A Loving Cake
+  description: Reduces Bind, Despair and Paralysis duration by 5 turns, recovers
+    15x character's RCV in HP and changes [EMPTY], [BLOCK], [BOMB], [RCV], [TND]
+    and [G] orbs into Matching orbs. If your captain is a Cerebral or Free
+    Spirit character, increases duration of any Color Affinity buffs by 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of Cerebral characters by 75
+  - description: Reduces Blindness duration by 5 turns
+support:
+  type: descriptive
+  criteria: Capone Bege, Charlotte Pudding and Lola
+  levels:
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, reduces Paralysis duration by 1 turn and recovers
+      500 HP.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, reduces Paralysis duration by 1 turn and recovers
+      1,000 HP.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, reduces Paralysis duration by 2 turns and
+      recovers 1,500 HP.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, reduces Paralysis duration by 2 turns and
+      recovers 2,000 HP.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, reduces Paralysis duration by 2 turns and
+      recovers 3,000 HP.
+limitBreak:
+  path:
+    - hp: 50
+    - rcv: 25
+    - atk: 25
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 50

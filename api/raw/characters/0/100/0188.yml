@@ -1,0 +1,38 @@
+type: INT
+name: Cannoneer Seaman - Navy
+japanName: バズーカ一等兵 海軍
+family:
+  - CannoneerNavy
+class:
+  - Shooter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 143
+    atk: 140
+    rcv: 1
+  maxLvl:
+    hp: 620
+    atk: 660
+    rcv: 2
+cost: 10
+slots: 0
+maxExp: 134812
+maxLevel: 40
+flags: []
+links:
+  gamewithId: 2220
+aliases: []
+evolution:
+  - id: 198
+    evolvers:
+      - 116
+      - 117
+      - 82
+      - 88
+special:
+  name: "[RCV] Slot Change [INT]"
+  description: Changes [RCV] orbs into [INT] orbs
+  cooldown: 15
+  maxLevel: 9

@@ -1,0 +1,103 @@
+type: QCK
+name: Sir Crocodile - King of the Desert in a Kimono
+japanName: サー・クロコダイル 和服着こなす砂の王
+family:
+  - Crocodile
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1401
+    atk: 809
+    rcv: 141
+  maxLvl:
+    hp: 2959
+    atk: 1401
+    rcv: 250
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 183710
+aliases:
+  - Secret Crocodile
+  - Limited Crocodile
+  - World Journey Crocodile
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Driven characters by 2x-3.25x depending
+    on the crew's current HP and reduces damage received by 10%
+  notes: "`captainProportional : lower : 2 + 1.25 * (1 - (remaining HP) / (total
+    HP)) : 2 : 3.25`"
+special:
+  name: Underworld Style
+  description: Reduces Burn and ATK DOWN duration by 5 turns. If your Captain is a
+    Striker or Driven character, removes Poison duration completely and reduces
+    enemies' Threshold Damage Reduction duration by 5 turns.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 150
+  - description: Boosts base ATK, HP and RCV of Striker and Driven characters by 50
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+  criteria: Striker and Driven characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 6
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - hp: 40
+    - cooldown: 1
+    - hp: 60
+    - hp: 100
+    - atk: 15
+    - slot: 1
+    - atk: 20
+    - atk: 25
+    - type: sailor
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

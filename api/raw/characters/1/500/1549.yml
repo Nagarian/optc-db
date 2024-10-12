@@ -1,0 +1,91 @@
+type: PSY
+name: Nico Robin - Mil Fluers Campo de Flores
+japanName: ニコ・ロビン 千紫万紅　花畑
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 979
+    atk: 487
+    rcv: 171
+  maxLvl:
+    hp: 2105
+    atk: 1187
+    rcv: 401
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 15622
+aliases:
+  - Mega Robin
+  - Super Robin
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.25x and recovers 3x character's
+    RCV in HP at the end of each turn
+special:
+  name: "Mil Fluer: Campo de Flores"
+  description: Reduces Bind, Despair and Silence duration by 3 turns and reduces
+    Special Cooldown of all characters by 1 turn
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 3 turns on this character
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Franky and Brook
+  levels:
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 10
+    - value: 15
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - hp: 50
+    - cooldown: 1
+    - atk: 40
+    - type: sailor
+    - hp: 90
+    - slot: 1
+    - rcv: 30
+    - atk: 40
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

@@ -1,0 +1,180 @@
+type: DUAL
+name: Shirahoshi & Mansherry - Wonderful Meeting
+japanName: しらほし＆マンシェリー 素敵な出会い
+family:
+  - Shirahoshi
+  - Mansherry
+class:
+  - Cerebral
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1075
+    atk: 529
+    rcv: 264
+  maxLvl:
+    hp: 2689
+    atk: 1324
+    rcv: 660
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 155975
+aliases:
+  - Shirahoshi&Mansherry
+  - ShirahoshiMansherry
+  - Mansherry&Shirahoshi
+  - MansherryShirahoshi
+  - ShiraMan
+  - ShiraSherry
+  - V1 Legend Shirahoshi and Mansherry
+captain:
+  name: ""
+  description: Boosts ATK of Striker, Cerebral and Free Spirit characters by 3.5x,
+    recovers 5x character's RCV in HP at the end of each turn and protects from
+    defeat as long as HP is above 50%.
+special:
+  name: Lovely Healing
+  description: Changes all orbs, including [BLOCK] orbs, into Matching orbs,
+    recovers 100x character's RCV in HP, reduces 2 selected debuffs duration by
+    10 turns and becomes Shirahoshi & Mansherry for 1 turn.
+  cooldown: 22
+  maxLevel: 6
+  notes: "The debuff reduction only works on debuffs whose icons are located in
+    the bottom left of the adventure screen, above the HP bar. This DOES NOT
+    include: Bind, Despair, Paralysis, Silence, Slot Bind, and Target Lock.
+    Additionally, this debuff reduction will not trigger any enemy interupts,
+    however the healing or orb manipulation of the special may still activate
+    interupts."
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker, Cerebral and Free Spirit
+      characters by 75
+  - description: Boosts base HP and RCV of Striker, Cerebral and Free Spirit
+      characters by 100
+characters:
+  swap:
+    description: Reduces Slot Bind and Silence duration by 1 turn and changes the
+      orb of this character into a [RAINBOW] orb and changes Matching orbs into
+      [RAINBOW] orbs
+  character1:
+    name: Shirahoshi - Wonderful Meeting
+    japanName: しらほし 素敵な出会い
+    class:
+      - Cerebral
+      - Striker
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1075
+        atk: 515
+        rcv: 195
+      maxLvl:
+        hp: 2689
+        atk: 1288
+        rcv: 488
+    captain:
+      name: ""
+      description: Boosts ATK of Striker, Cerebral and Free Spirit characters by 3x,
+        but boosts ATK of this character by 1.2x and recovers 5x character's RCV
+        in HP at the end of each turn.
+    sailor:
+      - description: Reduces Silence duration by 7 turns on this character
+      - description: Boosts base HP and RCV of Striker, Cerebral and Free Spirit
+          characters by 100
+  character2:
+    name: Mansherry - Wonderful Meeting
+    japanName: マンシェリー 素敵な出会い
+    class:
+      - Cerebral
+      - Free Spirit
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1075
+        atk: 485
+        rcv: 209
+      maxLvl:
+        hp: 2689
+        atk: 1214
+        rcv: 524
+    captain:
+      name: ""
+      description: Boosts ATK of Striker, Cerebral and Free Spirit characters by 2.75x
+        and recovers 5x character's RCV in HP at the end of each turn.
+    sailor:
+      - description: Reduces Silence duration by 7 turns on this character
+      - description: Boosts base HP and RCV of Striker, Cerebral and Free Spirit
+          characters by 100
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 15
+    - hp: 15
+    - hp: 15
+    - hp: 20
+    - atk: 20
+    - atk: 25
+    - atk: 25
+    - rcv: 15
+    - rcv: 15
+    - rcv: 15
+    - type: potential
+    - type: sailor
+    - hp: 40
+    - hp: 40
+    - hp: 50
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - cooldown: 1
+    - hp: 50
+    - hp: 75
+    - hp: 100
+    - rcv: 20
+    - rcv: 20
+    - rcv: 25
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - hp: 50
+    - hp: 50
+    - hp: 100
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

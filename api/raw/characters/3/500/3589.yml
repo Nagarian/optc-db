@@ -1,0 +1,55 @@
+type: STR
+name: Drake - Betting on Hope
+family:
+  - XDrake
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 699
+    atk: 452
+    rcv: 45
+  maxLvl:
+    hp: 1593
+    atk: 993
+    rcv: 101
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Kizuna Secret Limited V1
+evolution:
+  - id: 3590
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Powerhouse characters by 5x, their HP by
+    1.3x, makes [PSY] and [INT] orbs beneficial for Striker and Powerhouse
+    characters, restores Special Cooldown of all characters by 10 turns when
+    they are rewinded and deals ?x-400x character's ATK in Typeless damage to
+    all enemies at the end of each turn depending on how many PERFECTs scored
+    that turn.
+  notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+    PERFECTs - ?x ATK; 1 PERFECT - ?x ATK; 2 PERFECTs - ?x ATK; 3 PERFECTs - ?x
+    ATK; 4 PERFECTs - ?x ATK; 5 PERFECTs - ?x ATK; 6 PERFECTs - 400x ATK"
+special:
+  name: X Calibur
+  description: Deals 10% of enemies' current HP in True damage to all enemies and
+    boosts ATK of Striker and Powerhouse characters by 2.5x for 1 turn. If your
+    Captain is a Striker or Powerhouse character, sets Chain Boundaries to 3.0x
+    and 40.0x for 1 turn, sets Chain Boundaries to 2.5x and 35.0x for 1 turn
+    otherwise.
+  cooldown: 19
+  maxLevel: 6

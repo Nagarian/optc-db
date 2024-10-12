@@ -1,0 +1,107 @@
+type: INT
+name: Koala - You're My Valentine
+japanName: コアラ You’re My Valentine
+family:
+  - Koala
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 943
+    atk: 512
+    rcv: 144
+  maxLvl:
+    hp: 2063
+    atk: 1297
+    rcv: 370
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 87128
+aliases:
+  - Valentines Koala
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.75x
+special:
+  name: Vigorous Straight Fist
+  description: Reduces Bind and Despair duration by 3 turns and changes the orb of
+    this character into a [RCV] orb. If your Captain is a Cerebral character,
+    adds 0.7x to Chain multiplier for 1 turn and changes all orbs of bottom row
+    characters into Matching orbs
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: If this character has a [RCV] orb and you hit a PERFECT with her,
+      keep her [RCV] orb for the next turn
+  - description: Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 35
+support:
+  type: descriptive
+  criteria: Sabo
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind and Despair duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 40
+    - type: potential
+    - hp: 40
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - hp: 70
+    - atk: 60
+    - cooldown: 1
+    - atk: 60
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 6
+        - value: 9
+        - value: 12
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

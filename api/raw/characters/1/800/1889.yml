@@ -1,0 +1,149 @@
+type: PSY
+name: Cavendish - White Christmas Knight
+japanName: キャベンディッシュ White Christmas Knight
+family:
+  - Cavendish
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 720
+    atk: 303
+    rcv: 108
+  maxLvl:
+    hp: 2468
+    atk: 1391
+    rcv: 302
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 83084
+aliases:
+  - Adventure Cavendish
+  - TM Cavendish
+  - Cabbage
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.5x, recovers 1.5x character's
+    RCV in HP at the end of each turn. Boosts ATK of Driven characters by 1.8x
+    following a chain of 3 same Type attacks no lower than Good
+special:
+  name: A Star Descending from the Twinkling Night Sky
+  description: Removes all positive buffs on your team, recovers 1,224 HP, changes
+    Badly Matching orbs into Matching orbs. Boosts ATK of Driven characters by
+    1.75x for 1 turn and boosts Orb Effects of Driven characters by 1.75x for 1
+    turn
+  cooldown: 36
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven characters by 50
+  - description: Makes [PSY] orbs beneficial for Driven characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 5
+    - type: potential
+    - captain:
+        description: Boosts ATK of Driven characters by 1.5x, recovers 1.6x character's
+          RCV in HP at the end of each turn. Boosts ATK of Driven characters by
+          1.95x following a chain of 3 same Type attacks no lower than Good
+    - type: sailor
+    - atk: 15
+    - hp: 40
+    - rcv: 10
+    - captain:
+        description: Boosts ATK of Driven characters by 1.5x, recovers 1.7x character's
+          RCV in HP at the end of each turn. Boosts ATK of Driven characters by
+          2.1x following a chain of 3 same Type attacks no lower than Good
+    - slot: 1
+    - cooldown: 1
+    - atk: 20
+    - hp: 50
+    - rcv: 15
+    - captain:
+        description: Boosts ATK of Driven characters by 1.5x, recovers 1.8x character's
+          RCV in HP at the end of each turn. Boosts ATK of Driven characters by
+          2.25x following a chain of 3 same Type attacks no lower than Good
+    - cooldown: 2
+    - atk: 25
+    - hp: 60
+    - rcv: 20
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - hp: 65
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Driven characters by 1.75x, recovers 1.9x character's
+          RCV in HP at the end of each turn. Boosts ATK of Driven characters by
+          2.625x following a chain of 3 same Type attacks no lower than Good
+    - atk: 30
+    - hp: 70
+    - type: sailor
+    - atk: 35
+    - hp: 85
+    - rcv: 30
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Driven characters by 2x, recovers 2x character's RCV
+          in HP at the end of each turn. Boosts ATK of Driven characters by 3x
+          following a chain of 3 same Type attacks no lower than Good
+    - atk: 40
+    - hp: 100
+    - captain:
+        description: Boosts ATK of Driven characters by 2.5x, recovers 2x character's
+          RCV in HP at the end of each turn. Boosts ATK of Driven characters by
+          3.75x following a chain of 3 same Type attacks no lower than Good
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 10
+        - value: 1.5
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40

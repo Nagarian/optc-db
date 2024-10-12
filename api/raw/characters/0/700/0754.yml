@@ -1,0 +1,193 @@
+type: QCK
+name: Jabra - CP9's Strongest
+japanName: ジャブラ 歴代最強の「ＣＰ９」
+family:
+  - Jabra
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1601
+    atk: 657
+    rcv: 55
+  maxLvl:
+    hp: 3003
+    atk: 1299
+    rcv: 166
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16963
+aliases:
+  - Jabura
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x
+special:
+  name: Moonlight Ten Finger Pistol
+  description: Deals 15x character's ATK in [QCK] damage to one enemy, boosts Orb
+    Effects of all characters by 1.75x for 1 turn
+  cooldown: 22
+  maxLevel: 8
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Rob Lucci and Kaku
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV] orbs of all characters into the supported character's orb
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV] orbs of all characters into the supported character's orb
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV], [EMPTY] and [BOMB] orbs of all characters into the
+      supported character's orb
+    - Once per adventure, when the supported character uses their special,
+      changes [RCV], [EMPTY] and [BOMB] orbs of all characters into the
+      supported character's orb
+    - Once per adventure, when the supported character uses their special,
+      changes all orbs into the supported character's orb
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - hp: 60
+    - rcv: 30
+    - cooldown: 2
+    - type: sailor
+    - hp: 90
+    - atk: 40
+    - slot: 1
+    - cooldown: 3
+    - atk: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - atk: 100
+    - rcv: 25
+    - hp: 100
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - cooldown: 5
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 145
+    rumbleType: ATK
+    spd: 149
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.89
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.98
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.07
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.16
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.25
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.34
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.43
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.52
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.65

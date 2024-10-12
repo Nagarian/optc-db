@@ -1,0 +1,92 @@
+type: INT
+name: Full-Power Shishilian
+japanName: 全力のシシリアン
+family:
+  - Sicilian
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1130
+    atk: 589
+    rcv: 86
+  maxLvl:
+    hp: 2559
+    atk: 1457
+    rcv: 212
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 55823
+aliases:
+  - Sicilian
+  - Shishilian
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x and their HP by 1.25x
+special:
+  name: Dash - Dive - Destroy
+  description: Delays all enemies by 1 turn, deals 25x character's ATK in [INT]
+    damage to all enemies and changes [STR], [DEX], [QCK], [INT] and [PSY] orbs
+    of Cerebral characters into Matching orbs.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base ATK of
+      this character by 200
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Wanda and Inuarashi
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 40
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - cooldown: 1
+    - atk: 30
+    - type: sailor
+    - atk: 40
+    - slot: 1
+    - hp: 50
+    - atk: 60
+    - cooldown: 1
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

@@ -1,0 +1,146 @@
+type: PSY
+name: Kami Eneru - Divine Providence of Skypiea
+japanName: ゴッド・エネル スカイピアの天災
+family:
+  - Enel
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 882
+    atk: 354
+    rcv: 67
+  maxLvl:
+    hp: 2586
+    atk: 1441
+    rcv: 248
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 116308
+aliases:
+  - TM Enel
+  - TM Eneru
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x, deals 5656 in [PSY] damage to
+    all enemies at the end of each turn and recovers 51 HP at the end of each
+    turn
+special:
+  name: "God's Judgement: El Thor"
+  description: Deals 565,600 Fixed damage to all enemies and locks all orbs for 1 turn.
+  cooldown: 37
+  maxLevel: 8
+sailor:
+  - description: Makes [RCV] orbs beneficial for this character
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 5 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - captain:
+        description: Boosts ATK of all characters by 2x, deals 15656 in [PSY] damage to
+          all enemies at the end of each turn and recovers 151 HP at the end of
+          each turn
+    - type: sailor
+    - rcv: 20
+    - rcv: 20
+    - rcv: 20
+    - captain:
+        description: Boosts ATK of all characters by 2x, deals 25656 in [PSY] damage to
+          all enemies at the end of each turn and recovers 251 HP at the end of
+          each turn
+    - slot: 1
+    - cooldown: 1
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - captain:
+        description: Boosts ATK of all characters by 2x, deals 35656 in [PSY] damage to
+          all enemies at the end of each turn and recovers 351 HP at the end of
+          each turn
+    - cooldown: 2
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - cooldown: 3
+    - slot: 1
+    - hp: 40
+    - hp: 50
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of all characters by 2x, deals 45656 in [PSY] damage to
+          all enemies at the end of each turn and recovers 451 HP at the end of
+          each turn
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 40
+    - atk: 40
+    - atk: 40
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of all characters by 2x, deals 56560 in [PSY] damage to
+          all enemies at the end of each turn and recovers 510 HP at the end of
+          each turn
+    - atk: 40
+    - atk: 50
+    - captain:
+        description: Boosts ATK of all characters by 2.5x, deals 56560 in [PSY] damage
+          to all enemies at the end of each turn and recovers 510 HP at the end
+          of each turn
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

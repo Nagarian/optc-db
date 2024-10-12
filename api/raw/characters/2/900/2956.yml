@@ -1,0 +1,343 @@
+type: INT
+name: Mr. 0 - Combat With No Rules
+japanName: Mr.0 卑怯という言葉なき決闘
+family:
+  - Crocodile
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1566
+    atk: 483
+    rcv: 87
+  maxLvl:
+    hp: 2932
+    atk: 1405
+    rcv: 243
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 201885
+aliases:
+  - Raid Crocodile
+  - Raid Mr.0
+  - Raid Mr. 0
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x, by 3.25x instead if HP is
+    below ?% at the start of the turn, boosts HP of [INT] characters by 1.3x and
+    makes [STR] orbs beneficial for [INT] characters.
+special:
+  name: "Hidden in the Sand: Trump Card"
+  description: Deals 10% of enemies' current HP in damage to one enemy, changes
+    [BLOCK] orbs into Matching orbs and reduces Despair and Paralysis duration
+    by 5 turns. If your captain is a [STR] or [INT] character, adds 0.8x to
+    Chain multiplier for 1 turn.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of [INT] characters by 40
+  - description: If this character has an [INT] orb and you hit a PERFECT with him,
+      keep his [INT] orb for the next turn
+support:
+  type: descriptive
+  criteria: Daz Bones (Mr. 1), Nico Robin, Bentham (Mr. 2 Bon Clay)
+  levels:
+    - Once per adventure, when the supported character uses their special, adds
+      0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.3x to Chain multiplier for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - rcv: 20
+    - type: potential
+    - atk: 40
+    - hp: 60
+    - rcv: 30
+    - slot: 1
+    - atk: 60
+    - cooldown: 1
+    - hp: 80
+    - rcv: 60
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 4
+          threshold: 25
+        - value: 5
+          threshold: 30
+        - value: 6
+          threshold: 35
+        - value: 7
+          threshold: 40
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 194
+    rumbleType: DBF
+    spd: 139
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Driven
+  special:
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 12
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 13
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 14
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 16
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 17
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 18
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 19
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 20
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 20
+          effect: debuff
+          level: 7
+          targeting:
+            targets:
+              - Free Spirit

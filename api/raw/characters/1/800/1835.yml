@@ -1,0 +1,51 @@
+type: STR
+name: Vinsmoke Ichiji
+japanName: ヴィンスモーク・イチジ
+family:
+  - VinsmokeIchiji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 268
+    atk: 82
+    rcv: 28
+  maxLvl:
+    hp: 1346
+    atk: 647
+    rcv: 110
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 74387
+aliases:
+  - Red Ranger
+evolution:
+  - id: 1836
+    evolvers:
+      - 83
+      - 94
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 1.75x, boosts ATK of Powerhouse
+    characters by 1.2x and boosts HP of Powerhouse characters by 1.2x
+  notes: Attack boost stacks, so a [STR] Powerhouse character has a 2.1x ATK
+special:
+  name: Majestic Impact
+  description: If your captain is a [STR] or [PSY] character, locks the chain
+    multiplier at 2.5x for 2 turns. If your Captain is a Powerhouse character,
+    delays all enemies by 2 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character

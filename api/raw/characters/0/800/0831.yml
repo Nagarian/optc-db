@@ -1,0 +1,97 @@
+type: DEX
+name: Magician Basil Hawkins - Hawkins Pirates Captain
+japanName: 魔術師バジル・ホーキンス ホーキンス海賊団船長
+family:
+  - BasilHawkins
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1157
+    atk: 690
+    rcv: 147
+  maxLvl:
+    hp: 2239
+    atk: 1278
+    rcv: 347
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 19416
+aliases:
+  - Supernova Hawkins
+  - Colo Hawkins
+  - Coliseum Hawkins
+  - Colo Basil Hawkins
+  - Coliseum Basil Hawkins
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Striker characters by 2x, deals 5x the
+    damage taken from enemies in the previous turn in [DEX] damage to all
+    enemies at the end of each turn
+special:
+  name: Karma Conviction
+  description: Changes all orbs of top row characters into [STR] orbs, changes the
+    orbs of middle row characters into [DEX] orbs, changes all orbs of bottom
+    row characters into [QCK] orbs
+  cooldown: 24
+  maxLevel: 13
+sailor:
+  - description: Makes [QCK] orbs beneficial for this character
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Striker characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 50
+    - hp: 50
+    - hp: 80
+    - type: potential
+    - rcv: 20
+    - cooldown: 1
+    - rcv: 30
+    - type: sailor
+    - hp: 90
+    - slot: 1
+    - cooldown: 2
+    - atk: 50
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

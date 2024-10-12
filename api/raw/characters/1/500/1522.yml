@@ -1,0 +1,49 @@
+type: DEX
+name: Portgas D. Ace - Hidden Demon Child
+japanName: ポートガス・D・エース 隠された鬼の子
+family:
+  - PortgasDAce
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 108
+    atk: 103
+    rcv: 31
+  maxLvl:
+    hp: 1134
+    atk: 870
+    rcv: 191
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 53573
+aliases:
+  - Kid Ace
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.75x and their HP by 1.2x
+special:
+  name: Demon's Temper
+  description: Removes Blindness duration completely, boosts ATK of this character
+    by 1.75x for 1 turn
+  cooldown: 15
+  maxLevel: 12
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy and Sabo
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

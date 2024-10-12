@@ -1,0 +1,184 @@
+type: INT
+name: Rob Lucci - Dark Justice-Abiding Beast
+japanName: ロブ・ルッチ “闇の正義”を尊ぶ獣
+family:
+  - RobLucci
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 211
+    atk: 180
+    rcv: 24
+  maxLvl:
+    hp: 980
+    atk: 854
+    rcv: 102
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 95430
+aliases:
+  - Raid Lucci
+evolution:
+  - id: 2015
+    evolvers:
+      - 118
+      - 99
+      - 1180
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x and set crew's RCV to 0.
+    If you defeated an enemy in the last turn, boosts ATK of Fighter characters
+    by 2.75x instead and boosts ATK of all other characters by 1.2x
+special:
+  name: "Sai Dai Rin: Rokuogan (Ultimate Radius: Rokuogan)"
+  description: Deals 100x character's ATK in [INT] damage to one enemy and if
+    there is only one enemy on the stage when the special is activated, delays
+    that enemy by 1 turn and boosts ATK against delayed enemies by 1.75x for 1
+    turn
+  cooldown: 30
+  maxLevel: 16
+rumble:
+  stats:
+    def: 180
+    rumbleType: ATK
+    spd: 191
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.5
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Blow Away
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.56
+        - override:
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.61
+        - override:
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.67
+        - override:
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.73
+        - override:
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.79
+        - override:
+            duration: 20
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.84
+        - override:
+            duration: 21
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 22
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.96
+        - override:
+            duration: 23
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 25
+            level: 3

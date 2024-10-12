@@ -1,0 +1,384 @@
+type: STR
+name: Vivi - Poolside Flower at Night
+japanName: ビビ 夜のプールに咲く大輪の花
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1546
+    atk: 929
+    rcv: 93
+  maxLvl:
+    hp: 3436
+    atk: 1549
+    rcv: 311
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 289186
+aliases:
+  - Swimsuit Vivi
+  - Summer Vivi
+  - Legend Vivi
+captain:
+  name: ""
+  description: Boosts ATK of [STR], Cerebral and Free Spirit characters by 5x,
+    their HP by 1.2x and reduces Silence duration by 10 turns.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: 6
+    Cerebral or Free Spirit characters, excluding Support members."
+  description: Boosts ATK of [STR], Cerebral and Free Spirit characters by 2x for
+    1 turn and transforms all [STR] characters into Super [STR] characters.
+special:
+  name: Maiden Playing in the Pool
+  description: Boosts Orb Effects of [STR], Cerebral and Free Spirit characters by
+    2.25x for 3 turns, changes all orbs, including [BLOCK] orbs, into Matching
+    orbs and locks all orbs for 1 turn. If your crew has Orb Amplification,
+    increases boost effects of Orb Amplification buffs by +0.25x and increases
+    duration of any Orb Amplification buffs by 2 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral and Free Spirit characters by 75
+  - description: Makes [QCK] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Cerebral characters
+  levels:
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Cerebral characters by 1.5x
+      for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Cerebral characters by
+      1.55x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Cerebral characters by 1.6x
+      for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Cerebral characters by
+      1.65x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Cerebral characters by
+      1.75x for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - atk: 5
+    - rcv: 10
+    - hp: 30
+    - atk: 10
+    - hp: 30
+    - type: sailor
+    - hp: 40
+    - rcv: 20
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - cooldown: 1
+    - hp: 50
+    - hp: 50
+    - rcv: 20
+    - atk: 30
+    - atk: 40
+    - rcv: 20
+    - hp: 60
+    - hp: 60
+    - type: sailor
+    - rcv: 30
+    - atk: 60
+    - hp: 70
+    - hp: 70
+    - type: potential
+    - key: 1
+    - atk: 100
+    - hp: 50
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 25
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce Slot Barrier duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 100
+rumble:
+  stats:
+    def: 157
+    rumbleType: SPT
+    spd: 171
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: heal
+      area: Large
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: DEX
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 0.6
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 20
+          duration: 5
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          level: 1
+          effect: buff
+          targeting:
+            targets:
+              - STR
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            chance: 23
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            chance: 26
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            chance: 29
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1
+        - override:
+            chance: 32
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            chance: 35
+        - override:
+            level: 4
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            chance: 38
+        - override:
+            level: 4
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            chance: 41
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            chance: 44
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            chance: 50
+        - override:
+            level: 7
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

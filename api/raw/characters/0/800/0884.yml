@@ -1,0 +1,87 @@
+type: INT
+name: Dorry the Blue
+japanName: 青鬼のドリー
+family:
+  - Dorry
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1366
+    atk: 449
+    rcv: 64
+  maxLvl:
+    hp: 2640
+    atk: 1000
+    rcv: 156
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 21138
+aliases:
+  - Colo Dorry
+  - Coliseum Dorry
+captain:
+  name: ""
+  description: Boosts ATK and HP of Powerhouse characters by 1.5x
+special:
+  name: Hakoku Sovereignty
+  description: Deals 20x character's ATK in character's Type damage to all
+    enemies, boosts ATK of Powerhouse characters by 1.5x for 1 turn. If "Hakoku
+    Sovereignty" is used again in the same turn the special is activated in,
+    boosts ATK of Powerhouse characters by 2x instead.
+  cooldown: 29
+  maxLevel: 11
+sailor:
+  - description: Makes [INT] orbs beneficial for Powerhouse characters
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Broggy
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 75
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - cooldown: 4
+    - type: sailor
+    - cooldown: 5
+    - rcv: 50
+    - slot: 1
+    - hp: 125
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

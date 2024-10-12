@@ -1,0 +1,83 @@
+type: DEX
+name: Roronoa Zoro - Lone Wolf on the Prairie
+japanName: ロロノア・ゾロ 荒野の一匹狼
+family:
+  - RoronoaZoro
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1702
+    atk: 810
+    rcv: 66
+  maxLvl:
+    hp: 3120
+    atk: 1399
+    rcv: 110
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 137917
+aliases:
+  - World Journey Zoro
+  - Cowboy Zoro
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Driven characters by 2.25x, by 2.75x
+    instead if they have a beneficial orb.
+special:
+  name: Triple-Wielding Outlaw
+  description: If enemies have a barrier at the time the special was activated,
+    changes all orbs, including [BLOCK] orbs, into Matching orbs and reduces
+    enemies' Barrier duration by 1 turn, changes orbs of adjacent characters
+    into Matching Orbs otherwise.
+  cooldown: 8
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter and Driven characters by 50
+  - description: Reduces Silence duration by 1 turn
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - hp: 40
+    - rcv: 30
+    - hp: 50
+    - atk: 30
+    - type: sailor
+    - slot: 1
+    - hp: 70
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 40
+        - value: 3
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

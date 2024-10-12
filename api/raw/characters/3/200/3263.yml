@@ -1,0 +1,102 @@
+type: DEX
+name: Marco - Dancing Blue Flame
+japanName: マルコ 舞う蒼炎
+family:
+  - Marco
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1305
+    atk: 505
+    rcv: 105
+  maxLvl:
+    hp: 2805
+    atk: 1281
+    rcv: 305
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 263228
+aliases:
+  - Raid Marco
+  - Marco the Phoenix
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Free Spirit characters by 3x and their
+    RCV by 1.2x.
+special:
+  name: Blue Flame Raid
+  description: Reduces Burn and RCV DOWN duration by 5 turns, boosts Orb Effects
+    of all characters by 1.75x for 1 turn, makes PERFECTs easier to hit for 1
+    turn and recovers 20%-70% of crew's MAX HP depending on how many Free Spirit
+    characters are on the crew.
+  cooldown: 26
+  maxLevel: 13
+  notes: |-
+    1 Free Spirit character: 20% MAX HP  
+    2 Free Spirit characters: ?% MAX HP  
+    3 Free Spirit characters: ?% MAX HP  
+    4 Free Spirit characters: ?% MAX HP  
+    5 Free Spirit characters: ?% MAX HP  
+    6 Free Spirit characters: 70% MAX HP
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+  - description: Makes [STR], [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - atk: 40
+    - cooldown: 1
+    - hp: 50
+    - rcv: 30
+    - slot: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 50

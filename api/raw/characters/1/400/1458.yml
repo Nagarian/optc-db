@@ -1,0 +1,54 @@
+type: INT
+name: Captain Kuro of the Thousand Plans - Pirate
+japanName: 百計のクロ 海賊
+family:
+  - Kuro
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 10
+  minLvl:
+    hp: 805
+    atk: 489
+    rcv: 131
+  maxLvl:
+    hp: 1664
+    atk: 1299
+    rcv: 310
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 50810
+aliases:
+  - Colo Kuro
+  - Coliseum Kuro
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of [QCK] and [INT] characters by 2x
+special:
+  name: Pussyfoot Maneuver
+  description: Reduces Bind and Despair duration by 2 turns, for Slasher and
+    Cerebral characters, randomizes non-Matching orbs and changes the orb of
+    this character into an [INT] orb
+  cooldown: 18
+  maxLevel: 12
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Django, Siam, Butchie
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

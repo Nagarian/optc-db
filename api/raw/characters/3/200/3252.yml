@@ -1,0 +1,133 @@
+type: VS
+name: Ace VS Akainu - Fire and Magma
+japanName: エースＶＳ赤犬 炎とマグマ
+family:
+  - PortgasDAce
+  - Sakazuki
+rarity: 5
+stats:
+  combo: 0
+  minLvl:
+    hp: 887
+    atk: 464
+    rcv: 44
+  maxLvl:
+    hp: 1971
+    atk: 1031
+    rcv: 97
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 257248
+aliases:
+  - Sakazuki
+  - AceAkainu
+  - AkainuAce
+  - Legend Ace VS Akainu
+evolution:
+  - id: 3253
+    evolvers:
+      - 118
+      - 100
+      - 101
+      - 266
+      - 2662
+captain:
+  name: ""
+characters:
+  criteria: When the crew consumes/uses 12 [STR], [DEX] or [QCK] orbs with normal
+    attacks.
+  character1:
+    name: Ace - Flame and Magma
+    japanName: エース 炎とマグマ
+    class:
+      - Shooter
+      - Free Spirit
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 729
+        atk: 450
+        rcv: 42
+      maxLvl:
+        hp: 1620
+        atk: 999
+        rcv: 93
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter and Free Spirit characters by 5x, their HP by
+        1.3x, makes [STR], [DEX] and [QCK] orbs beneficial for Shooter and Free
+        Spirit characters and restores Special Cooldown of all characters by 10
+        turns when they are rewinded.
+    special:
+      name: Fire Fist Ablaze • Great Eruption Boil
+      description: Deals 200x character's ATK in Typeless damage to all enemies,
+        changes all orbs into Matching orbs and boosts Orb Effects of Shooter
+        and Free Spirit characters by 2.5x for 2 turns. If your Captain's orb is
+        [STR], sets Chain Boundaries to 2.5x and 35.0x for 2 turns.
+      cooldown: 20
+      maxLevel: 6
+      notes: |-
+        **0-7 orbs consumed:** 3x chain lock  
+        **8-14 orbs consumed:** 3.25x chain lock  
+        **15+ orbs consumed:** 3.5x chain lock
+    sailor:
+      - description: Makes [STR] orbs beneficial for all characters
+    versus:
+      description: Inflicts all enemies with Burn that will deal 100x enemies' ATK in
+        damage for 2 turns, boosts ATK against enemies inflicted with Burn by 2x
+        for 2 turns and changes [BLOCK], [EMPTY], [BOMB], [TND], [RCV], [G] orbs
+        of all characters into [STR] orbs and changes orb of this character into
+        a [STR] orb.
+      notes: Burn Damage deals 100x enemies' ATK in typeless damage at the end of the
+        enemy turn.
+  character2:
+    name: Akainu - Flame and Magma
+    japanName: 赤犬 炎とマグマ
+    class:
+      - Driven
+      - Powerhouse
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 778
+        atk: 451
+        rcv: 34
+      maxLvl:
+        hp: 1729
+        atk: 1002
+        rcv: 76
+    captain:
+      name: ""
+      description: Boosts ATK of Driven and Powerhouse characters by 5x, their HP by
+        1.5x, boosts chances of getting [QCK] orbs and inflicts all enemies with
+        Burn that will deal 100x enemies' ATK in damage for 4 turns that will
+        ignore debuff protection after each turn you take damage.
+    special:
+      name: Fire Fist Ablaze • Great Eruption Boil
+      description: Deals 400x character's ATK in Typeless damage to all enemies,
+        changes all orbs, including [BLOCK] orbs, into [QCK] orbs, boosts Orb
+        Effects of Driven and Powerhouse characters by 2.5x for 2 turns. Locks
+        the chain multiplier at 3x-3.5x for 1 turn, depending on how many [QCK]
+        orbs used in attacks.
+      cooldown: 20
+      maxLevel: 6
+      notes: |-
+        **0-7 orbs consumed:** 3x chain lock  
+        **8-14 orbs consumed:** 3.25x chain lock  
+        **15+ orbs consumed:** 3.5x chain lock
+    sailor:
+      - description: Makes [QCK] orbs beneficial for all characters
+    versus:
+      description: Inflicts all enemies with Burn that will deal 100x enemies' ATK in
+        damage for 4 turns, boosts ATK against enemies inflicted with Burn by
+        1.75x for 4 turns and makes [QCK] orbs beneficial for Driven and
+        Powerhouse characters for 4 turns.
+      notes: Burn Damage deals 100x enemies' ATK in typeless damage at the end of the
+        enemy turn.

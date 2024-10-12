@@ -1,0 +1,47 @@
+type: STR
+name: Shiki the Golden Lion
+japanName: 金獅子のシキ
+family:
+  - Shiki
+class:
+  - Driven
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 244
+    atk: 164
+    rcv: 39
+  maxLvl:
+    hp: 1274
+    atk: 709
+    rcv: 177
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 33650
+aliases:
+  - Raid Shiki
+evolution:
+  - id: 1108
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK and HP of Driven characters by 1.5x
+special:
+  name: "Lion's Threat: Imperial Earth Bind"
+  description: Deals 30x character's ATK in Typeless damage to all enemies.
+    Changes [BLOCK], [G] and [BOMB] orbs of Driven characters into Matching
+    orbs. Boosts ATK of Driven characters by 1.75x for 1 turn.
+  cooldown: 30
+  maxLevel: 16

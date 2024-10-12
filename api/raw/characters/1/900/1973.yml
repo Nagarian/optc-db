@@ -1,0 +1,61 @@
+type: STR
+name: Basil Hawkins - Stoic Fortune Teller
+japanName: バジル・ホーキンス 静穏の予見者
+family:
+  - BasilHawkins
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 241
+    atk: 65
+    rcv: 46
+  maxLvl:
+    hp: 940
+    atk: 640
+    rcv: 180
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 92474
+aliases:
+  - Secret Hawkins
+  - Limited Hawkins
+evolution:
+  - id: 1974
+    evolvers:
+      - 118
+      - 84
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x and makes [STR] orbs
+    beneficial for Cerebral characters
+special:
+  name: Raging Strike
+  description: Deals 20% of enemies' current HP in damage to one enemy and changes
+    [TND], [EMPTY] and Badly Matching orbs into Matching orbs and if your
+    Captain is a Cerebral character, removes Paralysis duration completely
+  cooldown: 20
+  maxLevel: 6
+  stages:
+    - description: Deals 10% of enemies' current HP in damage to one enemy and changes
+        [TND], [EMPTY] and Badly Matching orbs into Matching orbs and if your
+        Captain is a Cerebral character, reduces Paralysis duration by 2 turns
+      cooldown: 14
+    - description: Deals 15% of enemies' current HP in damage to one enemy and changes
+        [TND], [EMPTY] and Badly Matching orbs into Matching orbs and if your
+        Captain is a Cerebral character, reduces Paralysis duration by 5 turns
+      cooldown: 17
+sailor:
+  - description: Boosts base ATK of Cerebral characters by 75

@@ -1,0 +1,47 @@
+type: PSY
+name: Kaya - A rich young girl from Syrup Village
+japanName: カヤ シロップ村のお嬢様
+family:
+  - Kaya
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 331
+    atk: 151
+    rcv: 275
+  maxLvl:
+    hp: 405
+    atk: 250
+    rcv: 550
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 11787
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of [PSY] characters by 1.5x
+special:
+  name: Studying Medicine
+  description: Recovers 5x character's RCV in HP at the end of each turn for 4 turns
+  cooldown: 21
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Usopp
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15

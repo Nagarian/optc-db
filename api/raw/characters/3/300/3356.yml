@@ -1,0 +1,53 @@
+type: INT
+name: Marco - Flame of Passion and Healing
+japanName: マルコ 情熱と癒しの炎
+family:
+  - Marco
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 671
+    atk: 444
+    rcv: 51
+  maxLvl:
+    hp: 1492
+    atk: 988
+    rcv: 113
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 279531
+aliases:
+  - V2 Legend Marco
+evolution:
+  - id: 3357
+    evolvers:
+      - 118
+      - 304
+      - 1180
+      - 104
+      - 267
+captain:
+  name: ""
+  description: If HP is above 99% at the start of the turn, boosts ATK of [INT]
+    characters by 5x, by 4.5x otherwise, boosts ATK of all other characters by
+    4x, boosts HP of all characters by 1.3x and allows HP Overfill up to 2x MAX
+    HP. Once per adventure, if HP is below 30%, activates "Blue Flame Kick".
+special:
+  name: Blue Flame Kick
+  description: Reduces Slot Barrier duration by 3 turns, reduces Paralysis and
+    Silence duration by 7 turns and recovers 50x character's RCV in HP, allowing
+    HP Overfill up to 2x MAX HP. If HP is below 50% at the time the special is
+    activated, boosts the Color Affinity of [PSY], [INT] and Powerhouse
+    characters by 2.5x for 1 turn, by 2x for 1 turn otherwise. If your crew has
+    Color Affinity boost, adds 1.2x to Chain multiplier for 1 turn.
+  cooldown: 20
+  maxLevel: 6

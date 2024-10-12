@@ -1,0 +1,58 @@
+type: QCK
+name: Raizo - Wano Country Ninja
+japanName: 雷ぞう ワノ国の忍者
+family:
+  - Raizo
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 107
+    atk: 166
+    rcv: 41
+  maxLvl:
+    hp: 1035
+    atk: 655
+    rcv: 181
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 80284
+aliases:
+  - Colo Raizo
+  - Coliseum Raizo
+evolution:
+  - id: 1861
+    evolvers:
+      - 118
+      - 96
+      - 1180
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x
+special:
+  name: Flower Shuriken
+  description: Deals 11x character's ATK in [QCK] damage to all enemies, changes
+    [TND] and [RCV] orbs of Shooter characters into Matching Orbs. If your
+    Captain is a Shooter Character, boosts ATK against delayed enemies by 1.75x
+    for 1 turn
+  cooldown: 30
+  maxLevel: 16
+  stages:
+    - description: Deals 3x character's ATK in [QCK] damage to all enemies, changes
+        [TND] and [RCV] orbs of Shooter characters into Matching Orbs,
+      cooldown: 19
+    - description: Deals 7x character's ATK in [QCK] damage to all enemies, changes
+        [TND] and [RCV] orbs of Shooter characters into Matching Orbs. If your
+        Captain is a Shooter Character, boosts ATK against delayed enemies by
+        1.35x for 1 turn
+      cooldown: 24

@@ -1,0 +1,94 @@
+type: DEX
+name: Nami - Navigator Relaxing at Sea
+family:
+  - Nami
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1543
+    atk: 709
+    rcv: 110
+  maxLvl:
+    hp: 3068
+    atk: 1418
+    rcv: 220
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - Summer TM Secret Limited
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of [DEX] and [PSY] characters by 3x, by 3.75x
+    instead if HP is below 30% at the start of the turn.
+special:
+  name: Elegant Time at the Sea
+  description: Reduces Paralysis and Bind duration by 5 turns and boosts Orb
+    Effects of [DEX] and [PSY] characters by 2.25x for 1 turn. If your crew has
+    Orb Amplification, increases boost effects of Orb Amplification buffs by
+    +0.2x.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [DEX] orbs beneficial for all characters
+  - description: Boosts base RCV of [DEX] and [PSY] characters by 75
+support:
+  type: descriptive
+  criteria: Tony Tony Chopper, Nico Robin and Franky
+  levels:
+    - Once per adventure, when the supported character uses a Paralysis reducing
+      special, reduces Paralysis duration by 1 turn.
+    - Once per adventure, when the supported character uses a Paralysis reducing
+      special, reduces Paralysis duration by 1 turn.
+    - Once per adventure, when the supported character uses a Paralysis reducing
+      special, reduces Paralysis duration by 1 turn.
+    - Once per adventure, when the supported character uses a Paralysis reducing
+      special, reduces Paralysis duration by 1 turn.
+    - Once per adventure, when the supported character uses a Paralysis or Bind
+      reducing special, reduces Paralysis and Bind duration by 1 turn.
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - rcv: 20
+    - slot: 1
+    - hp: 30
+    - rcv: 20
+    - hp: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50

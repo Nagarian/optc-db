@@ -1,0 +1,51 @@
+type: QCK
+name: Vinsmoke Niji
+japanName: ヴィンスモーク・ニジ
+family:
+  - VinsmokeNiji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 250
+    atk: 79
+    rcv: 32
+  maxLvl:
+    hp: 1332
+    atk: 630
+    rcv: 118
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 74386
+aliases:
+  - Blue Ranger
+evolution:
+  - id: 1838
+    evolvers:
+      - 118
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 1.75x, boosts ATK of Powerhouse
+    characters by 1.2x and boosts HP of Powerhouse characters by 1.2x
+  notes: Attack boost stacks, so a [QCK] Powerhouse character has a 2.1x ATK
+special:
+  name: Blitz Needle
+  description: If your Captain is a [QCK] or [PSY] character, boosts ATK of all
+    characters by 1.75x for 2 turns. If your Captain is a Powerhouse character,
+    locks all orbs for 1 turn
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character

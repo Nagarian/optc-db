@@ -1,0 +1,257 @@
+type: DEX
+name: Kizaru - Three Admirals Defending Marineford
+family:
+  - Borsalino
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1662
+    atk: 714
+    rcv: 110
+  maxLvl:
+    hp: 3324
+    atk: 1428
+    rcv: 220
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts HP of all characters by 1.5x and makes [DEX] and [TND] orbs
+    beneficial for all characters. If there is a [STR], [DEX], [QCK], [PSY] and
+    [INT] character in your crew, boosts ATK of all characters by 4x. If this
+    character becomes your captain in the middle of an island, further boosts
+    ATK of all characters by 1.35x and reduces damage received by 10%.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Sengoku, Sakazuki (Akainu), Kuzan (Aokiji), Issho (Fujitora) and Monkey D.
+    Garp, excluding Support members."
+  description: Boosts Color Affinity of this character by 2.5x for 1 turn,
+    optionally removes Captain Swap duration completely and transforms all [DEX]
+    characters into Super [DEX] characters.
+special:
+  name: Lightspeed Kick
+  description: Reduces Special Cooldown of all characters by 1 turn and reduces
+    Burn and Paralysis duration by 5 turns. If this character is a Sailor,
+    optionally swaps this unit with your captain for 1 turn. If there is a
+    [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, sets Chain
+    Boundaries to 2.5x and 10.0x for 1 turn, locks the chain multiplier at 3.25x
+    for 1 turn otherwise.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded.
+  - description: If there is a [STR], [DEX], [QCK], [PSY] and [INT] character in
+      your crew, if this character has a [TND] orb and you attack with this
+      character, reduces enemies' [STR], [QCK], [PSY] and [INT] Resistance by
+      -10% for 1 turn.
+support:
+  type: descriptive
+  criteria: Sengoku, Sakazuki (Akainu), Kuzan (Aokiji) and Issho (Fujitora)
+  levels:
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn or Paralysis,
+      reduces Burn or Paralysis duration by 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - hp: 20
+    - type: sailor
+    - atk: 40
+    - slot: 1
+    - hp: 60
+    - hp: 60
+    - atk: 60
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 60
+        - threshold: 50
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: When your crew has ATK UP and Orb Amplification
+    levels:
+      - description: Boosts own base ATK by 200 for 1 turn.
+      - description: Boosts own base ATK by 350 for 1 turn.
+      - description: Boosts own base ATK by 500 for 1 turn.
+      - description: Boosts own base ATK by 650 for 1 turn.
+      - description: Boosts own base ATK by 800 for 1 turn.
+rumble:
+  stats:
+    def: 144
+    rumbleType: SPT
+    spd: 146
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - SPD
+            - Critical Hit
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: SPD
+            targets:
+              - crew
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            level: 3
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            level: 4
+            duration: 20

@@ -1,0 +1,45 @@
+type: INT
+name: Trebol
+japanName: トレーボル
+family:
+  - Trebol
+class:
+  - Cerebral
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 103
+    atk: 150
+    rcv: 42
+  maxLvl:
+    hp: 941
+    atk: 770
+    rcv: 201
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 21539
+aliases: []
+evolution:
+  - id: 876
+    evolvers:
+      - 118
+      - 88
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Driven characters by 2x
+special:
+  name: Beto Launcher
+  description: Changes the orb of Captain character into a Matching orb, locks all
+    orbs for 1 turn, deals 13x character's ATK in [INT] damage to all enemies
+  cooldown: 21
+  maxLevel: 7

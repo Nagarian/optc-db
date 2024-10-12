@@ -1,0 +1,102 @@
+type: DEX
+name: Koala - Revolutionary Army
+japanName: コアラ 革命軍
+family:
+  - Koala
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 931
+    atk: 600
+    rcv: 185
+  maxLvl:
+    hp: 1934
+    atk: 1212
+    rcv: 392
+cost: 29
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 15190
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x and their RCV by 1.5x
+special:
+  name: Fishman Karate! True Fist Thrust of the Revolutionaries
+  description: Boosts ATK of Fighter characters by 1.75x for 1 turn
+  cooldown: 15
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter characters by 30
+  - description: Makes [RCV] and [TND] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Sabo, Hack and Nico Robin
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 15
+    - rcv: 30
+    - type: potential
+    - atk: 20
+    - atk: 50
+    - atk: 100
+    - type: sailor
+    - hp: 40
+    - slot: 1
+    - hp: 75
+    - type: sailor
+    - cooldown: 1
+    - hp: 90
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 5
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

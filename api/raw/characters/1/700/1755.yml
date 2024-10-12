@@ -1,0 +1,93 @@
+type: PSY
+name: Sanji - 20th Anniversary Memorial Treasure
+japanName: サンジ 20th Anniversary Memorial Treasure
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1032
+    atk: 574
+    rcv: 137
+  maxLvl:
+    hp: 2417
+    atk: 1353
+    rcv: 305
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 65835
+aliases:
+  - 20th Anniversary Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2.5x and their HP by 1.2x
+special:
+  name: "Diable Jambe: Collier Strike"
+  description: Deals 15% of enemies' current HP in damage to one enemy, removes
+    Poison duration completely and boosts Orb Effects of all characters by 1.75x
+    for 1 turn
+  cooldown: 16
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 40
+  - description: Makes [INT] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Nami, Tony Tony Chopper and Brook
+  levels:
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      reduces Poison duration by 3 turns
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      reduces Poison duration by 4 turns
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      reduces Poison duration by 5 turns
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      reduces Poison duration by 7 turns
+    - Once per adventure, when an enemy inflicts you with Poison or Toxic,
+      removes Poison duration completely
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - type: sailor
+    - rcv: 20
+    - rcv: 20
+    - rcv: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

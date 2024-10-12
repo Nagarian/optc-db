@@ -1,0 +1,158 @@
+type: PSY
+name: Nico Olvia Ohara Archaeologist
+japanName: ニコ・オルビア オハラの考古学者
+family:
+  - NicoOlvia
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 800
+    atk: 339
+    rcv: 223
+  maxLvl:
+    hp: 1602
+    atk: 713
+    rcv: 461
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 29915
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.25x when HP is below 30% at the
+    start of the turn, by 1.5x otherwise and their RCV by 1.5x.
+special:
+  name: Mother's Wish to Fight The World
+  description: Reduces Paralysis duration by 3 turns, reduces damage received by
+    30% for 2 turns and recovers 6x character's RCV in HP at the end of each
+    turn for 3 turns
+  cooldown: 22
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Nico Robin
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 8
+rumble:
+  stats:
+    def: 88
+    rumbleType: RCV
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - Paralysis
+          duration: 5
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - amount: 0.25
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 5
+        - override:
+            amount: 0.32
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 6
+        - override:
+            amount: 0.38
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 6
+        - override:
+            amount: 0.45
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 7
+        - override:
+            amount: 0.52
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 7
+        - override:
+            amount: 0.59
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 8
+        - override:
+            amount: 0.65
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 8
+        - override:
+            amount: 0.72
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 9
+        - override:
+            amount: 0.79
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 9
+        - override:
+            amount: 0.95

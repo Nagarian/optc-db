@@ -1,0 +1,90 @@
+type: PSY
+name: Charlotte Bavarois - Big Mom Pirates
+japanName: シャーロット・ババロア ビッグ・マム海賊団
+family:
+  - CharlotteBavarois
+class:
+  - Shooter
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1372
+    atk: 821
+    rcv: 41
+  maxLvl:
+    hp: 3430
+    atk: 1459
+    rcv: 142
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 131995
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x and recovers 1,000 HP at
+    the end of each turn
+special:
+  name: Ordering the Homie Cannonballs
+  description: Deals 8 hits of random Typeless damage to random enemies and
+    changes all orbs of left column characters into Matching orbs. If your
+    Captain's orb is [QCK], [PSY], [INT] or [TND], boosts ATK of Shooter
+    characters by 1.75x for 3 turns.
+  cooldown: 20
+  maxLevel: 7
+  notes: "`random : ? : ? : for each hit`"
+sailor:
+  - description: Boosts base ATK of Shooter characters by 50
+  - description: Reduces Paralysis duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Charlotte Linlin (Big Mom) and Charlotte Perospero
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - hp: 40
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50

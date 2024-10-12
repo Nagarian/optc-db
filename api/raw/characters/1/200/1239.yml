@@ -1,0 +1,63 @@
+type: PSY
+name: Kizaru - Navy HQ Powerhouse
+japanName: 黄猿 海軍本部最高戦力
+family:
+  - Borsalino
+class:
+  - Slasher
+  - Shooter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 316
+    atk: 293
+    rcv: 101
+  maxLvl:
+    hp: 1376
+    atk: 841
+    rcv: 279
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 37125
+aliases:
+  - Borsalino
+  - V1 Legend Kizaru
+evolution:
+  - id: 1240
+    evolvers:
+      - 118
+      - 266
+      - 98
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of all characters by 2x and boosts RCV of all
+    characters by 1.3x. If you use "Yasakani no Magatama" in this turn boosts
+    ATK of all characters by 3x instead.
+special:
+  name: Yasakani no Magatama
+  description: Changes all orbs of Shooter and Slasher characters into Matching
+    orbs. Recovers 10x character's RCV in HP. Deals 10 hits of large random
+    Typeless damage to random enemies.
+  cooldown: 20
+  maxLevel: 4
+  stages:
+    - description: For Shooter and Slasher characters, randomizes all non-Matching
+        orbs. Deals 10 hits of small random Typeless damage to random enemies.
+      cooldown: 6
+    - description: For Shooter and Slasher characters, randomizes all non-Matching
+        orbs. Recovers 5x character's RCV in HP. Deals 10 hits of random
+        Typeless damage to random enemies.
+      cooldown: 12
+  notes: |-
+    `random : 1,000 : 3,000 : for each hit on Stage 1`  
+    `random : 3,000 : 6,000 : for each hit on Stage 2`  
+    `random : 10,000 : 16,000 : for each hit on Stage 3`

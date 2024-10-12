@@ -1,0 +1,47 @@
+type: DEX
+name: Kizaru - Lightspeed Chaser
+japanName: 黄猿 急追する一閃
+family:
+  - Borsalino
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 348
+    atk: 122
+    rcv: 29
+  maxLvl:
+    hp: 1069
+    atk: 368
+    rcv: 117
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 100396
+aliases:
+  - TM Kizaru
+  - TM Borsalino
+evolution:
+  - id: 2064
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX], [PSY] and [INT] characters by 1.5x
+special:
+  name: Ama no Murakumo
+  description: Deals 20% of enemies' current HP in damage to one enemy, locks all
+    orbs for 1 turn and boosts ATK of Captain's Type characters by 1.75x for 3
+    turns
+  cooldown: 34
+  maxLevel: 8

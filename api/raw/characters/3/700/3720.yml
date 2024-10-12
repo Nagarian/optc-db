@@ -1,0 +1,268 @@
+type: PSY
+name: Red-Haired Shanks - Father Caring for His Daughter
+family:
+  - Shanks
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1405
+    atk: 994
+    rcv: 79
+  maxLvl:
+    hp: 3481
+    atk: 1580
+    rcv: 194
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags: []
+aliases:
+  - RED Kizuna Super Mega
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 4x, by 4.25x instead if they have
+    a beneficial orb, boosts HP of [PSY] characters by 1.3x, boosts chance of
+    getting [PSY] and [TND] orbs depending on the crew's current HP and makes
+    [TND] orbs beneficial for [PSY] characters.
+  notes: Rate of orbs is higher with higher HP.
+special:
+  name: Father's Presence Protecting His Daughter
+  description: Reduces Paralysis duration by 6 turns, reduces enemies' Resilience
+    and Threshold Damage Reduction duration by 6 turns, sets Chain Boundaries to
+    2.75x and 8.0x for 1 turn and changes all orbs of bottom row characters into
+    [TND] orbs.
+  cooldown: 15
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 70
+  - description: Makes [PSY] and [TND] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Ben Beckman, Lucky Roux, Yasopp and Uta
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.05x until the next stage
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.1x until the next stage
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.15x until the next stage
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.2x until the next stage
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.25x until the next stage
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 50
+    - rcv: 25
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - atk: 50
+    - cooldown: 1
+    - atk: 50
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar and Uta."
+        description: Boosts Tandem ATK of [PSY] characters by 1.1x for 1 turn.
+      - criteria: "Any 2 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar and Uta."
+        description: Boosts Tandem ATK of [PSY] characters by 1.2x for 1 turn.
+      - criteria: "Any 2 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar and Uta."
+        description: Boosts Tandem ATK of [PSY] characters by 1.3x for 1 turn.
+      - criteria: "Any 2 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar and Uta."
+        description: Boosts Tandem ATK of [PSY] characters by 1.4x for 1 turn.
+      - criteria: "Any 2 of the following: Monkey D. Luffy, Ben Beckman, Lucky Roux,
+          Yasopp, Rockstar and Uta."
+        description: Boosts Tandem ATK of [PSY] characters by 1.5x for 1 turn.
+rumble:
+  stats:
+    def: 153
+    rumbleType: ATK
+    spd: 178
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1200
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 10
+          effect: recharge
+          targeting:
+            targets:
+              - PSY
+          type: percentage
+        - amount: 500
+          effect: damage
+          condition:
+            comparator: more
+            count: 1
+            type: crew
+            relative: true
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1300
+        - {}
+        - override:
+            amount: 600
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1400
+        - {}
+        - override:
+            amount: 700
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1500
+        - {}
+        - override:
+            amount: 800
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1600
+        - {}
+        - override:
+            amount: 900
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1700
+        - {}
+        - override:
+            amount: 1000
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1800
+        - {}
+        - override:
+            amount: 1100
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1900
+        - {}
+        - override:
+            amount: 1200
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2000
+        - {}
+        - override:
+            amount: 1300
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2200
+        - {}
+        - override:
+            amount: 1500

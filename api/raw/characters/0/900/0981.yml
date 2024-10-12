@@ -1,0 +1,51 @@
+type: PSY
+name: Namule - Whitebeard's Eighth Division Commander
+japanName: ナミュール 白ひげ海賊団８番隊隊長
+family:
+  - Namule
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 49
+    atk: 48
+    rcv: 26
+  maxLvl:
+    hp: 2148
+    atk: 1305
+    rcv: 154
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 25751
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2x and reduces
+    RCV of Fighter and Powerhouse characters by 90%
+  notes: The RCV Reduction is around 90%
+special:
+  name: Martial Art Diving Fist
+  description: Boosts ATK of this character by 1.75x for 1 turn and deals 800
+    Fixed damage to one enemy
+  cooldown: 16
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12

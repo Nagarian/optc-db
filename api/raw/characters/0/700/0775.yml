@@ -1,0 +1,39 @@
+type: PSY
+name: Strawberry - Marine Vice Admiral
+japanName: ストロベリー 海軍本部中将
+family:
+  - Strawberry
+class:
+  - Cerebral
+  - Slasher
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 142
+    atk: 64
+    rcv: 33
+  maxLvl:
+    hp: 1883
+    atk: 943
+    rcv: 178
+cost: 16
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 17350
+aliases:
+  - Raid Strawberry
+captain:
+  name: ""
+  description: Boosts ATK and HP of Cerebral characters by 1.5x
+special:
+  name: Angry Headbutt
+  description: Deals 1x-125x character's ATK in [PSY] damage, depending on the
+    crew's current HP, to one enemy.
+  cooldown: 27
+  maxLevel: 11
+  notes: "`specialProportional : lower : 125 * ( 1 - (remaining HP) / (total HP) )`"

@@ -1,0 +1,55 @@
+type: STR
+name: Lucy - Star of Corrida Coliseum
+japanName: ルーシー コリーダコロシアム決勝戦の風雲児
+family:
+  - Sabo
+class:
+  - Striker
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 394
+    atk: 237
+    rcv: 61
+  maxLvl:
+    hp: 1394
+    atk: 798
+    rcv: 242
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 69286
+aliases:
+  - Sabo
+  - Legend Lucy
+evolution:
+  - id: 1794
+    evolvers:
+      - 118
+      - 100
+      - 101
+      - 102
+      - 267
+captain:
+  name: ""
+  description: If there is a [STR], [DEX] and [QCK] character in your crew, boosts
+    ATK of [STR], [DEX] and [QCK] characters by 2.75x and their HP by 1.3x,
+    lowers chances of getting [STR] orbs and makes [DEX] and [QCK] orbs
+    beneficial for [STR], [DEX] and [QCK] characters. If there are no [PSY] or
+    [INT] characters on your crew, boosts ATK of [STR], [DEX] and [QCK]
+    characters by 3.7125x instead.
+  notes: Sabo boosts ATK by 3.7125x if you have [STR], [DEX] and [QCK] characters
+    and no [PSY] or [INT] characters at all.
+special:
+  name: "Dragon's Claw: Reverse Wave Motion"
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 1.75x for 1
+    turn. If during that turn you score 4 PERFECT hits, boosts ATK of [STR],
+    [DEX] and [QCK] characters by 2x for 1 turn in the following turn.
+  cooldown: 19
+  maxLevel: 6

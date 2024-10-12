@@ -1,0 +1,170 @@
+type: QCK
+name: Straw Hat Luffy - Gum-Gum Power's Potential
+japanName: 麦わらのルフィ ゴムゴムの力の可能性
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1782
+    atk: 744
+    rcv: 105
+  maxLvl:
+    hp: 3780
+    atk: 1635
+    rcv: 225
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 100007
+aliases:
+  - G4
+  - Gear 4 Tankman
+  - Gear 4 Boundman
+  - V4 Luffy
+  - Second Mistake
+  - Gear Change Luffy
+  - Gear Shift Luffy
+  - Legend Luffy
+  - V2G4
+  - G4V2
+  - V2 G4
+  - G4 V2
+  - Legend G4
+evolution:
+  - id: 2363
+    evolvers:
+      - skullQCK
+      - skullSTR
+      - 95
+      - 300
+      - 267
+captain:
+  name: ""
+  description: >-
+    **Always Active:** Boosts HP of all characters by 1.25x, boosts
+    chances of getting [STR], [QCK], [PSY] orbs.  
+
+    **Gear 2 Captain:** Boosts ATK of all characters by 3x, slightly boosts chances of getting [RCV] orbs and makes [QCK] orbs beneficial for all characters  
+
+    **Gear 3 Captain:** Boosts ATK of all characters by 3.5x after 2 consecutive PERFECTs, boosts chances of getting [RCV] orbs and makes [STR] orbs beneficial for all characters  
+
+    **Gear 4 - Boundman Captain:** Boosts ATK of all characters by 4x, reduces damage received by 20%, boosts chances of getting [RCV] orbs and makes [STR], [QCK] and [PSY] orbs beneficial for all characters  
+
+    **Gear 4 - Tankman Captain:** Boosts ATK of this character by 4.25x, boosts ATK of all other characters by 4x, reduces damage received by 50% and makes [STR], [QCK] and [PSY] orbs beneficial for all characters  
+
+    **Action:** Based on how full Gear Power Gauge is, transforms Luffy. If Gear Power is above 50%, changes between Gear 2 and Gear 3. If Gear Power is full, changes into Gear 4 - Boundman. This can be used an unlimited number of times per turn.
+  notes: In order to increase Gear Power Gauge level, you must hit a PERFECT with
+    Luffy or consume [RCV] orbs. MAX Gear Power Gauge level is 8. Hitting a
+    PERFECT with Luffy and consuming a [RCV] orb increases Gauge level by 1. If
+    Luffy gets swapped out in battle, Gear Gauge Power will go to 0. While in
+    Gear 4, Luffy will stay in that form until Gauge Power goes to 0. Attacking
+    with any character while in Gear 4 reduces Gear Power Gauge by 3.
+special:
+  name: Gomu Gomu no Kong Organ
+  description: Deals 150x character's ATK in Typeless damage to all enemies,
+    boosts ATK of all characters by 2x for 1 turn, makes [RCV] and [TND] orbs
+    beneficial for all characters for 3 turns. If Luffy is Captain or
+    Friend/Guest Captain, transform into Gear 4
+  cooldown: 19
+  maxLevel: 6
+  notes: If you use this special after consuming 10 [RCV] orbs since the start of
+    the fight, transform into Tankman, otherwise transform into Boundman
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: All characters
+  levels:
+    - value: 3
+    - value: 5
+    - value: 7
+    - value: 8
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - hp: 20
+    - atk: 20
+    - hp: 30
+    - rcv: 10
+    - atk: 20
+    - rcv: 15
+    - hp: 30
+    - atk: 20
+    - hp: 40
+    - atk: 30
+    - type: potential
+    - hp: 40
+    - atk: 40
+    - rcv: 15
+    - hp: 50
+    - type: sailor
+    - atk: 60
+    - hp: 60
+    - hp: 60
+    - rcv: 20
+    - rcv: 20
+    - cooldown: 1
+    - type: sailor
+    - hp: 80
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 50
+    - atk: 50
+    - hp: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 200
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90

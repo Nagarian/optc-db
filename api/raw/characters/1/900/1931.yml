@@ -1,0 +1,58 @@
+type: QCK
+name: Boa Sandersonia - Runaway Slave
+japanName: ボア・サンダーソニア 逃亡奴隷
+family:
+  - BoaSandersonia
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 198
+    atk: 320
+    rcv: 34
+  maxLvl:
+    hp: 1530
+    atk: 1125
+    rcv: 320
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 86348
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1.75x
+special:
+  name: "The Trio Crawling Away from the Heavens: The Second Daughter"
+  description: 'Adds 0.25x to Chain multiplier for 1 turn and boosts ATK of
+    Fighter characters by 1.5x for 1 turn. If "The Trio Crawling Away from the
+    Heavens: The Eldest Daughter" is used again in the same turn the special is
+    activated in, boosts ATK of Fighter characters by 1.75x instead.'
+  cooldown: 21
+  maxLevel: 9
+  notes: This special is boosted if you use Boa Hancock's [1933] special in the
+    same turn
+sailor:
+  - description: Boosts base ATK of this character by 100 if this character is the
+      2nd in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Boa Sandersonia and Boa Hancock
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

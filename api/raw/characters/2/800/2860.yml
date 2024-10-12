@@ -1,0 +1,191 @@
+type: DUAL
+name: Arlong Pirates - Pirates of the Superior Race
+japanName: アーロン一味 “至高の種族”の海賊団
+family:
+  - Choo
+  - Kuroobi
+  - Hatchan
+  - Arlong
+class:
+  - Powerhouse
+  - Shooter
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1690
+    atk: 976
+    rcv: 48
+  maxLvl:
+    hp: 4266
+    atk: 1659
+    rcv: 151
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 187982
+aliases:
+  - Legend Arlong Pirates
+  - Arlong Crew
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, reduces crew's current HP by 10% at the end of each turn,
+    makes [STR] orbs beneficial for all characters and if there is a [STR],
+    [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all
+    characters by 4.25x.
+special:
+  name: Shark On Pirates
+  description: Deals 250x character's ATK in Typeless damage to all enemies,
+    reduces Special Cooldown of all characters by 2 turns and becomes Arlong
+    Pirates for 3 turns. If HP is below 30% at the time the special is
+    activated, boosts ATK of all characters by 2.5x for 1 turn, by 2x otherwise.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+  - description: Restores Special Cooldown of this character completely when it is rewinded
+characters:
+  swap:
+    description: Changes orb of this character into a Matching orb and boosts base
+      ATK of all characters based on your current Percent HP for 1 turn.
+    notes: Base ATK boost is equal to 10 + 240\*(1 - currentHP/maxHP), the maximum
+      effect at 1 HP will give a 250 base ATK boost
+  character1:
+    name: Arlong - Pirates of the Superior Race
+    japanName: アーロン一味 “至高の種族”の海賊団
+    class:
+      - Powerhouse
+      - Shooter
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1607
+        atk: 967
+        rcv: 32
+      maxLvl:
+        hp: 3876
+        atk: 1599
+        rcv: 121
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of all characters by 3 turns at the start
+        of the fight, reduces crew's current HP by 10% at the end of each turn
+        and if there is a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+        crew, boosts ATK of this character by 3.75x, boosts ATK of all other
+        characters by 3.25x.
+    sailor:
+      - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+          character
+      - description: Restores Special Cooldown of this character completely when it is
+          rewinded
+  character2:
+    name: Hatchan & Kuroobi & Choo - Pirates of the Superior Race
+    japanName: アーロン一味 “至高の種族”の海賊団
+    class:
+      - Powerhouse
+      - Slasher
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1621
+        atk: 938
+        rcv: 38
+      maxLvl:
+        hp: 4074
+        atk: 1470
+        rcv: 131
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of all characters by 3 turns at the start
+        of the fight, reduces crew's current HP by 10% at the end of each turn,
+        makes [STR] orbs beneficial for all characters and if there is a [STR],
+        [DEX], [QCK], [PSY] and [INT] character in your crew, boosts ATK of all
+        characters by 3.25x.
+    sailor:
+      - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+          character
+      - description: Restores Special Cooldown of this character completely when it is
+          rewinded
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 10
+    - hp: 30
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - atk: 10
+    - atk: 10
+    - atk: 20
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - rcv: 15
+    - rcv: 25
+    - cooldown: 1
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - hp: 100
+    - hp: 150
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 50
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+        - value: 200
+          reduction: 4
+        - value: 300
+          reduction: 5

@@ -1,0 +1,95 @@
+type: INT
+name: Donquixote Doflamingo - Plot to Destroy the World
+japanName: ドンキホーテ・ドフラミンゴ 世界を滅ぼす異図
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1243
+    atk: 701
+    rcv: 137
+  maxLvl:
+    hp: 2319
+    atk: 1515
+    rcv: 333
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 120333
+aliases:
+  - V2 Raid Doffy
+  - V2 Raid Doflamingo
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Cerebral characters by 3x when HP is 50%
+    or below, by 1.5x otherwise
+special:
+  name: Athlete
+  description: Randomizes all non-Matching orbs, including [BLOCK] orbs and locks
+    all orbs for 1 turn. If your Captain is a Cerebral or Driven character,
+    increases duration of any ATK boosting buffs and Orb Amplification buffs by
+    2 turns
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 100
+  - description: When any other Cerebral or Driven character uses a special, reduces
+      special cooldown of this character by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vergo, Trebol, Pica and Diamante
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - description: Boosts the supported character's ATK by 1.2x against Trafalgar D.
+        Water Law
+      value: 6
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - slot: 1
+    - rcv: 30
+    - hp: 40
+    - atk: 80
+    - type: sailor
+    - slot: 1
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

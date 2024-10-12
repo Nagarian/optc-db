@@ -1,0 +1,174 @@
+type: QCK
+name: Kaku - CP9's Greatest Swordsman
+japanName: カク ＣＰ９随一の剣術使い
+family:
+  - Kaku
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 556
+    atk: 208
+    rcv: 58
+  maxLvl:
+    hp: 1390
+    atk: 520
+    rcv: 145
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 146586
+aliases:
+  - ""
+evolution:
+  - id: 2483
+    evolvers:
+      - 94
+      - 1180
+      - 301
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x and their HP by 1.2x.
+special:
+  name: Extreme Nose Gun - "Kirimanjaro"
+  description: Deals 200,000 Fixed damage to one enemy, changes all orbs of all
+    characters into Kaku's orb and reduces ATK DOWN, Bind and Paralysis duration
+    by 5 turns.
+  cooldown: 20
+  maxLevel: 8
+  stages:
+    - description: Deals 50,000 Fixed damage to one enemy, changes all orbs of
+        adjacent characters into Kaku's orb and reduces ATK DOWN, Bind and
+        Paralysis duration by 3 turns.
+      cooldown: 17
+sailor:
+  - description: Boosts this character's damage against [DEX] characters by 2x
+rumble:
+  stats:
+    def: 156
+    rumbleType: ATK
+    spd: 187
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 24
+      effects:
+        - amount: 650
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          duration: 15
+          targeting:
+            targets:
+              - Slasher
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 750
+        - {}
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 850
+        - {}
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 950
+        - override:
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            level: 4
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            level: 4
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            level: 5
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            level: 5
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1550
+        - override:
+            level: 7

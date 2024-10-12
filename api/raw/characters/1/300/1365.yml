@@ -1,0 +1,57 @@
+type: INT
+name: "Nami - Straw Hat Pirates: Reunited"
+japanName: ナミ 集結の麦わらの一味
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 189
+    atk: 106
+    rcv: 36
+  maxLvl:
+    hp: 995
+    atk: 498
+    rcv: 203
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 45759
+aliases:
+  - New World Nami
+  - Timeskip Nami
+  - TS Nami
+evolution:
+  - id: 1366
+    evolvers:
+      - 1180
+      - 82
+      - 83
+      - 88
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Cerebral characters by 1.5x
+special:
+  name: Black Ball - Thundercloud Rod
+  description: Reduces Paralysis and Silence duration by 5 turns. Delays all
+    enemies by 2 turns
+  cooldown: 18
+  maxLevel: 6
+  stages:
+    - description: Reduces Paralysis and Silence duration by 1 turn. Delays all
+        enemies by 1 turn
+      cooldown: 13
+    - description: Reduces Paralysis and Silence duration by 2 turns. Delays all
+        enemies by 1 turn
+      cooldown: 15
+sailor:
+  - description: Reduces Silence duration completely on this character

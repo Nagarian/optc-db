@@ -1,0 +1,92 @@
+type: PSY
+name: Trafalgar Law - An Unlikely Alliance
+japanName: トラファルガー・ロー 寄せ集めの共同戦線
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1209
+    atk: 677
+    rcv: 195
+  maxLvl:
+    hp: 2604
+    atk: 1398
+    rcv: 300
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 160895
+aliases:
+  - Coliseum Law
+  - Stampede Law
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2.5x at the start
+    of the chain, their HP and RCV by 1.1x and boosts ATK of Slasher and
+    Cerebral characters by 2.8x following a chain of 3 attacks no lower than
+    Good
+special:
+  name: ROOM Shambles Escape
+  description: Reduces Silence and ATK DOWN duration by 4 turns. If HP is above
+    50% at the time the special is activated, boosts ATK of Slasher and Cerebral
+    characters by 2x for 1 turn. If HP is below 30% at the time the special is
+    activated, recovers 70% of crew's MAX HP.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Makes [PSY] orbs beneficial for Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 20
+    - rcv: 45
+    - type: potential
+    - type: sailor
+    - hp: 35
+    - slot: 1
+    - rcv: 45
+    - atk: 35
+    - hp: 40
+    - cooldown: 1
+    - type: sailor
+    - atk: 40
+    - rcv: 60
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

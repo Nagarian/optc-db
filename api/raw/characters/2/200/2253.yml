@@ -1,0 +1,51 @@
+type: PSY
+name: Pound - Father of Lola and Chiffon
+japanName: パウンド ローラとシフォンのお父さん
+family:
+  - Pound
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 912
+    atk: 422
+    rcv: 75
+  maxLvl:
+    hp: 2002
+    atk: 1006
+    rcv: 281
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 118918
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x. If you use "A Bizarre
+    Encounter" in this turn boosts ATK of Free Spirit characters by 2.6x
+    instead.
+special:
+  name: A Bizarre Encounter
+  description: Locks all orbs for 1 turn and boosts Orb Effects of middle and
+    bottom row characters by 1.5x for 3 turns. If your Captain is a Free Spirit
+    character, randomizes all non-Matching orbs.
+  cooldown: 18
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Lola and Charlotte Chiffon
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 9

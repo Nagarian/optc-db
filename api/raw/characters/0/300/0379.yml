@@ -1,0 +1,39 @@
+type: STR
+name: Kung Fu Dugong
+japanName: クンフージュゴン
+family:
+  - Dugong
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 25
+    atk: 225
+    rcv: 45
+  maxLvl:
+    hp: 50
+    atk: 355
+    rcv: 95
+cost: 7
+slots: 1
+maxExp: 26184
+maxLevel: 20
+flags:
+  - fortnight
+  - raid
+links:
+  gamewithId: 7573
+aliases: []
+evolution:
+  - id: 380
+    evolvers:
+      - 115
+      - 78
+      - 300
+special:
+  name: Dugong Kung Fu Fist of Healing
+  description: Removes Poison duration completely
+  cooldown: 15
+  maxLevel: 6

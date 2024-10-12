@@ -1,0 +1,407 @@
+type: PSY
+name: Queen the Plague - Animal Kingdom Pirates, Lead Performer
+japanName: 疫災のクイーン 百獣海賊団大看板
+family:
+  - Queen
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1400
+    atk: 848
+    rcv: 63
+  maxLvl:
+    hp: 3112
+    atk: 1414
+    rcv: 210
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 234489
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x and their HP by 1.2x.
+special:
+  name: Plague Showtime
+  description: Reduces enemies' Increased Defense and Percent Damage Reduction
+    duration by 5 turns and locks the chain multiplier at 3x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Kaido, King and Jack
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - atk: 10
+    - type: potential
+    - atk: 10
+    - rcv: 10
+    - rcv: 10
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 50
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Nutrition/Reduce Hunger stacks
+      variant: up to
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 75
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 125
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+rumble:
+  stats:
+    def: 154
+    rumbleType: RCV
+    spd: 126
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 1000
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1050
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.05
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1100
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.1
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1150
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.15
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1200
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.2
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1250
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.25
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1300
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.3
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1350
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.35
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1400
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.4
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV
+    - cooldown: 35
+      effects:
+        - amount: 1500
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.5
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+          type: RCV

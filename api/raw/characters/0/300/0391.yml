@@ -1,0 +1,47 @@
+type: DEX
+name: Perona
+japanName: ペローナ
+family:
+  - Perona
+class:
+  - Shooter
+  - Driven
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 134
+    atk: 44
+    rcv: 55
+  maxLvl:
+    hp: 944
+    atk: 422
+    rcv: 222
+cost: 10
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 8440
+aliases: []
+evolution:
+  - id: 392
+    evolvers:
+      - 117
+      - 86
+      - 91
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts RCV of [DEX] characters by 1.5x
+special:
+  name: Negative Hollow
+  description: Reduces damage received by 90% for 1 turn, reduces the defense of
+    all enemies by 80% for 1 turn, Poisons enemies for 1,000 damage for 1 turn
+  cooldown: 23
+  maxLevel: 10
+  notes: Poison damage deals 1,000 damage exactly and will ignore enemy armor at
+    the end of your turn

@@ -1,0 +1,162 @@
+type: STR
+name: "Monkey D. Luffy - Voyage Dream: Pirate King"
+frenchName: Monkey D. Luffy, Promesse de l'avènement de l'ère des pirates "Roi des pirates"
+japanName: モンキー・D・ルフィ 航海の夢「海賊王」
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1490
+    atk: 776
+    rcv: 250
+  maxLvl:
+    hp: 3440
+    atk: 1430
+    rcv: 351
+cost: 55
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - removed
+links:
+  gamewithId: 12878
+notes: "Voyage Log/Dream Batch has been removed, except this Luffy which has
+  been replaced with a different artwork and id #1121."
+aliases:
+  - Log Luffy
+  - Logfy
+  - LL
+  - V1 Legend Luffy
+  - Endless Dream Luffy
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4x following a chain of Good >
+    Great > PERFECT hits
+special:
+  name: Gum-Gum Jet Gatling
+  description: Deals random Typeless damage to all enemies, changes the orb of
+    this character into a [STR] orb
+  cooldown: 23
+  maxLevel: 7
+  notes: >-
+    `random : 70,000 : 200,000`  
+
+    Level Limit Break: This special can only be activated if no more than 5 specials has been activated this turn and removes the ability to activate more than 5 specials this turn.
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters
+  - description: Makes [TND] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Nami, Vinsmoke Sanji, Usopp, Tony Tony Chopper, Nico
+    Robin and Franky
+  levels:
+    - Once per adventure, when you reach the final stage, randomizes supported
+      character's orb
+    - Once per adventure, when you reach the final stage, randomizes supported
+      character's orb
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [STR] orb
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [STR] orb
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [STR] orb and makes [STR] orbs beneficial for
+      all characters for 1 turn
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 15
+    - type: potential
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: sailor
+    - hp: 20
+    - hp: 30
+    - slot: 1
+    - cooldown: 2
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - cooldown: 2
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - hp: 30
+    - cooldown: 4
+    - hp: 30
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - rcv: 20
+    - hp: 30
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 20
+    - atk: 50
+    - hp: 100
+    - atk: 70
+    - hp: 150
+    - atk: 100
+    - cooldown: 4
+    - atk: 150
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 2
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 2
+          threshold: 20
+        - value: 2
+          threshold: 30
+        - value: 2
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 100
+levelLimitBreak:
+  - {}
+  - {}
+  - captain:
+      - description: Boosts ATK of all characters by 4x at the start of the chain and
+          their HP by 1.3x, boosts ATK of all characters by 5.25x following a
+          chain of Good > Great > PERFECT hits, makes [STR], [TND] and [RCV]
+          orbs beneficial for all characters.
+  - {}
+  - special:
+      description: Reduces Special Cooldown of all characters by 1 turn, deals 200x
+        character's ATK in Typeless damage to all enemies and changes all orbs,
+        including [BLOCK] orbs, into [STR] orbs.
+    sailor:
+      sailor1:
+        description: Makes [STR], [TND] and [RCV] orbs beneficial for all characters.
+      sailor2:
+        description: Restores Special Cooldown of this character by 2 turns when it is
+          rewinded

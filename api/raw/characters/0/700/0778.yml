@@ -1,0 +1,48 @@
+type: QCK
+name: Rebecca - Imprisoned Swordswoman
+japanName: レベッカ 囚人剣闘士
+family:
+  - Rebecca
+class:
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 193
+    atk: 112
+    rcv: 51
+  maxLvl:
+    hp: 1003
+    atk: 503
+    rcv: 201
+cost: 18
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 17474
+aliases:
+  - Colo Rebecca
+  - Coliseum Rebecca
+evolution:
+  - id: 779
+    evolvers:
+      - 117
+      - 85
+      - 94
+      - 96
+      - 301
+captain:
+  name: ""
+  description: Reduces damage received by 20%
+special:
+  name: Undefeated Sword Technique
+  description: Deals 1x-125x character's ATK in [QCK] damage, depending on the
+    crew's current HP, to one enemy, and changes the orb of this character into
+    a [QCK] orb
+  cooldown: 26
+  maxLevel: 11
+  notes: "`specialProportional : lower : 125 * ( 1 - (remaining HP) / (total HP) )`"

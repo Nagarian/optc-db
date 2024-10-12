@@ -1,0 +1,101 @@
+type: DEX
+name: Shutenmaru - Chief, Atamayama Thieves Brigade
+japanName: 酒天丸 頭山盗賊団　棟梁
+family:
+  - AshuraDoji
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1358
+    atk: 693
+    rcv: 80
+  maxLvl:
+    hp: 3460
+    atk: 1477
+    rcv: 131
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 181529
+aliases:
+  - Coliseum Shutenmaru
+  - Coliseum Ashura Doji
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Powerhouse characters by 2.75x, their HP
+    by 1.2x and reduces damage received by 5%.
+special:
+  name: Samurai Flash
+  description: Deals 200,000 Fixed True damage to one enemy, reduces Silence
+    duration by 5 turns and boosts ATK of Slasher and Powerhouse characters by
+    1.75x for 1 turn. If your Captain is a Slasher or Powerhouse character,
+    makes [TND] orbs beneficial for Slasher and Powerhouse characters for 3
+    turns and boosts chances of getting [TND] orbs for 3 turns.
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Powerhouse characters by 50
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - rcv: 20
+    - slot: 1
+    - rcv: 20
+    - type: sailor
+    - atk: 30
+    - cooldown: 1
+    - hp: 50
+    - atk: 40
+    - hp: 50
+    - type: potential
+    - rcv: 25
+    - hp: 70
+    - atk: 80
+    - hp: 70
+    - cooldown: 1
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,49 @@
+type: PSY
+name: T-Bone
+japanName: Tボーン
+family:
+  - TBone
+class:
+  - Slasher
+  - Cerebral
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 99
+    atk: 78
+    rcv: 42
+  maxLvl:
+    hp: 958
+    atk: 542
+    rcv: 162
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 16375
+aliases:
+  - TBone
+  - T Bone
+evolution:
+  - id: 724
+    evolvers:
+      - 117
+      - 92
+      - 98
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x, recovers 1.2x character's
+    RCV in HP at the end of each turn
+special:
+  name: "Right Angle Flying Bird: Bone Phoenix"
+  description: Reduces crew's current HP by 80%, deals 5x the amount of HP
+    subtracted in Typeless damage to all enemies, reduces damage received by 90%
+    for 1 turn
+  cooldown: 25
+  maxLevel: 10

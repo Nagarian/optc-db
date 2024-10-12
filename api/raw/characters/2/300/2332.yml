@@ -1,0 +1,103 @@
+type: INT
+name: Ain - For Master Z's Ideals
+japanName: アイン ゼット先生の理想のために
+family:
+  - Ain
+class:
+  - Shooter
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1121
+    atk: 706
+    rcv: 201
+  maxLvl:
+    hp: 1886
+    atk: 1246
+    rcv: 461
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 128089
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Shooter and Slasher characters by 1.75x
+special:
+  name: Double Shot
+  description: Reduces enemies' Percent Damage Reduction and Increased Defense
+    duration by 2 turns, reduces Bind and Despair duration by 2 turns and if
+    your crew has Percent Damage Reduction, recovers 20% of crew's MAX HP,
+    reduces damage received by 70% for 1 turn otherwise.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Makes [PSY] orbs beneficial for Shooter characters
+support:
+  type: descriptive
+  criteria: Zephyr and Binz
+  levels:
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense or Percent
+      Damage Reduction buff, reduces enemies' Percent Damage Reduction and
+      Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense or Percent
+      Damage Reduction buff, reduces enemies' Percent Damage Reduction and
+      Increased Defense duration by 2 turns.
+    - Once per adventure, when the enemy gains an Increased Defense or Percent
+      Damage Reduction buff, reduces enemies' Percent Damage Reduction and
+      Increased Defense duration by 2 turns and recovers 5% of crew's MAX HP.
+    - Once per adventure, when the enemy gains an Increased Defense or Percent
+      Damage Reduction buff, reduces enemies' Percent Damage Reduction and
+      Increased Defense duration by 2 turns and recovers 10% of crew's MAX HP.
+limitBreak:
+  path:
+    - hp: 25
+    - hp: 35
+    - hp: 45
+    - type: potential
+    - atk: 15
+    - cooldown: 1
+    - atk: 25
+    - type: sailor
+    - rcv: 15
+    - rcv: 20
+    - hp: 65
+    - slot: 1
+    - atk: 40
+    - rcv: 30
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100

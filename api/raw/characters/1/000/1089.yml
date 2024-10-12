@@ -1,0 +1,54 @@
+type: QCK
+name: Saga - Cursed Holy Sword
+japanName: サガ 呪われた聖剣
+family:
+  - Saga
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 912
+    atk: 497
+    rcv: 93
+  maxLvl:
+    hp: 1952
+    atk: 1093
+    rcv: 220
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 30797
+aliases:
+  - Colo Saga
+  - Coliseum Saga
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x and boosts HP of Driven
+    characters by 1.75x
+special:
+  name: Seven Stars Sword of Darkness
+  description: Reduces crew's current HP by 70%, deals 15x character's ATK in
+    [QCK] damage to all enemies. Boosts ATK of Slasher and Driven characters by
+    1.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

@@ -1,0 +1,94 @@
+type: DEX
+name: "Morley : Halloween Zombie - Night of Halloween"
+japanName: モーリー　ハロウィン・ゾンビナイト Night of Halloween
+family:
+  - Morley
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1724
+    atk: 693
+    rcv: 76
+  maxLvl:
+    hp: 3549
+    atk: 1379
+    rcv: 152
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 297515
+aliases:
+  - Legend Secret Limited TM HW Morley
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Free Spirit characters by 3x and their HP by 1.2x.
+special:
+  name: Giant Emerging From The Ground
+  description: Reduces Despair, ATK DOWN and Chain Coefficient Reduction duration
+    by 5 turns, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching
+    orbs, reduces enemies' Percent Damage Reduction duration by 5 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Free Spirit characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: descriptive
+  criteria: Emporio Ivankov, Lindbergh, Karasu, Sabo, Koala, Belo Betty and Nico Robin
+  levels:
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair or ATK DOWN,
+      reduces Despair and ATK DOWN duration by 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - hp: 20
+    - atk: 30
+    - slot: 1
+    - rcv: 50
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50

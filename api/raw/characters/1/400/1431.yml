@@ -1,0 +1,52 @@
+type: PSY
+name: General Franky
+japanName: フランキー将軍
+family:
+  - Franky
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 400
+    atk: 165
+    rcv: 20
+  maxLvl:
+    hp: 1550
+    atk: 736
+    rcv: 102
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 50027
+aliases:
+  - General Franky
+  - Raid Franky
+evolution:
+  - id: 1432
+    evolvers:
+      - 118
+      - 266
+      - 300
+      - 301
+      - 302
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x if there's a [STR], [DEX],
+    [QCK], [PSY] and [INT] character in your crew and boosts their HP by 1.2x if
+    there's a Fighter, Slasher, Shooter, Driven, Free Spirit and Powerhouse
+    character in your crew
+special:
+  name: General Cannon
+  description: Deals 100x character's ATK in Typeless damage to all enemies,
+    removes enemies' ATK Up, Enrage, End of Turn Damage/Percent Cut and End of
+    Turn Heal Buffs duration completely and boosts ATK of all characters by 1.5x
+    for 1 turn
+  cooldown: 33
+  maxLevel: 17

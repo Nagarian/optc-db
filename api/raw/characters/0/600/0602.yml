@@ -1,0 +1,346 @@
+type: QCK
+name: Eneru 200,000,000 Volt Amaru
+japanName: エネル ２億Ｖ　雷神
+family:
+  - Enel
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 155
+    atk: 163
+    rcv: 38
+  maxLvl:
+    hp: 1369
+    atk: 724
+    rcv: 128
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 13688
+aliases:
+  - Raid Enel, 200 Million Volt Thunder God
+  - God Enel
+  - Kami Eneru
+evolution:
+  - id: 603
+    evolvers:
+      - 118
+      - 266
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x
+special:
+  name: 200,000,000 Volt Amaru
+  description: Reduces crew's current HP by 90%, deals 20,000 Fixed damage to all
+    enemies, boosts ATK of [QCK] characters by 2x for 1 turn
+  cooldown: 32
+  maxLevel: 16
+rumble:
+  stats:
+    def: 117
+    rumbleType: ATK
+    spd: 196
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - QCK
+  special:
+    - cooldown: 43
+      effects:
+        - amount: 1750
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 60
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 1825
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 62
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 1900
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 65
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 1975
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 67
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 2050
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 70
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 2125
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 72
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 2200
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 75
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 2275
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 77
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 2350
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 80
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 43
+      effects:
+        - amount: 2650
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 80
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies

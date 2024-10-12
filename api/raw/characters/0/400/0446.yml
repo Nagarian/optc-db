@@ -1,0 +1,398 @@
+type: STR
+name: Marshall D. Teach
+japanName: マーシャル・Ｄ・ティーチ
+family:
+  - MarshallDTeach
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 235
+    atk: 166
+    rcv: 30
+  maxLvl:
+    hp: 1402
+    atk: 790
+    rcv: 23
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 9878
+aliases:
+  - Raid Blackbeard
+  - BB
+evolution:
+  - id: 447
+    evolvers:
+      - 118
+      - 266
+      - 89
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Increases damage received by 2x, boosts ATK of [STR] characters by
+    2x and their HP by 1.5x
+special:
+  name: Black Hole
+  description: Deals 20x the damage taken from enemies in the previous turn in
+    Typeless damage to all enemies
+  cooldown: 30
+  maxLevel: 16
+rumble:
+  stats:
+    def: 105
+    rumbleType: DBF
+    spd: 144
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 2
+          targeting:
+            targets:
+              - STR
+  special:
+    - cooldown: 39
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 18
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 19
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 21
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 23
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 11
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 24
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 11
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 26
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 11
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 27
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 39
+      effects:
+        - amount: 12
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 29
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies

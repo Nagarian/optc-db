@@ -1,0 +1,160 @@
+type: INT
+name: Charlotte Brulee - Brulee's Forces
+japanName: シャーロット・ブリュレ ブリュレ一派
+family:
+  - CharlotteBrulee
+class:
+  - Cerebral
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 652
+    atk: 352
+    rcv: 154
+  maxLvl:
+    hp: 1734
+    atk: 1023
+    rcv: 320
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 108424
+aliases:
+  - Brulee
+captain:
+  name: ""
+  description: Boosts RCV of Cerebral characters by 1.2x and boosts ATK of
+    Cerebral characters by 1.75x, by 2.75x instead if they have a beneficial orb
+special:
+  name: The Witch's Meal
+  description: Reduces Bind duration by 2 turns and boosts Orb Effects of Cerebral
+    characters by 1.5x for 1 turn and boosts ATK of Cerebral characters by 1.5x
+    for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+rumble:
+  stats:
+    def: 113
+    rumbleType: SPT
+    spd: 124
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Action Bind
+          duration: 5
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 16
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 17
+            level: 3
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 19
+            level: 4
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 20
+            level: 5
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 21
+            level: 5
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 22
+            level: 6
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 23
+            level: 7
+    - cooldown: 30
+      effects:
+        - {}
+        - override:
+            duration: 24
+            level: 8

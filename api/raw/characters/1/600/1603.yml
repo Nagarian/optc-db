@@ -1,0 +1,51 @@
+type: STR
+name: Thunder Lord McGuy
+japanName: 雷卿マクガイ
+family:
+  - McGuy
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 151
+    atk: 90
+    rcv: 98
+  maxLvl:
+    hp: 1760
+    atk: 1190
+    rcv: 257
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 57474
+aliases:
+  - Colo McGuy
+  - Coliseum McGuy
+  - Lightning McGuy
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.25x and their RCV by 1.25x
+special:
+  name: Numb Crosscut
+  description: Delays all enemies by 2 turns
+  cooldown: 21
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

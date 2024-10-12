@@ -1,0 +1,250 @@
+type: DEX
+name: '"Garuda" Vinsmoke Judge - King of Germa'
+japanName: “怪鳥”ヴィンスモーク・ジャッジ ジェルマ王国　国王
+family:
+  - VinsmokeJudge
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1149
+    atk: 632
+    rcv: 108
+  maxLvl:
+    hp: 2720
+    atk: 1420
+    rcv: 200
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 121667
+aliases:
+  - Raid Judge
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [PSY] characters by 2.5x and their
+    HP by 1.2x at the start of the chain. Boosts ATK of [STR], [DEX] and [PSY]
+    characters by 3x following a chain of [STR] > [PSY] > [DEX] attacks no lower
+    than Good
+special:
+  name: Electro-Magnetic Shaft
+  description: Deals 200,000 Fixed damage to one enemy, reduces crew's Increase
+    Damage Taken, Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 5 turns. If your crew has 3 or more [DEX] characters, boosts the
+    Color Affinity of [STR], [DEX] and [PSY] characters by 2x for 1 turn
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] characters by 30
+  - description: Boosts base ATK of Powerhouse characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vinsmoke Ichiji, Vinsmoke Niji, Vinsmoke Yonji and Vinsmoke Reiju
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - hp: 20
+    - cooldown: 1
+    - slot: 1
+    - atk: 35
+    - hp: 30
+    - atk: 45
+    - hp: 30
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 215
+    rumbleType: SPT
+    spd: 155
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 1250
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - PSY
+        - attributes:
+            - Critical Hit
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - PSY
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1275
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1325
+        - override:
+            duration: 13
+        - override:
+            duration: 13
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            duration: 14
+        - override:
+            duration: 14
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1375
+        - override:
+            duration: 15
+        - override:
+            duration: 15
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1425
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            duration: 18
+            level: 2
+        - override:
+            duration: 18
+            level: 2
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            duration: 19
+            level: 3
+        - override:
+            duration: 19
+            level: 3

@@ -1,0 +1,49 @@
+type: DEX
+name: Chopper - Dream Chaser
+japanName: チョッパー 夢を追い求める冒険者
+family:
+  - TonyTonyChopper
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 196
+    atk: 98
+    rcv: 51
+  maxLvl:
+    hp: 1170
+    atk: 624
+    rcv: 212
+cost: 17
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 11953
+aliases:
+  - New Strong World Chopper
+  - SW Chopper
+evolution:
+  - id: 1177
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 97
+      - 302
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [DEX] characters by 1.5x
+special:
+  name: Devoted Healing - "I'm Glad You are Safe"
+  description: Removes Poison duration completely, recovers 15x character's RCV in HP
+  cooldown: 23
+  maxLevel: 7
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base RCV of
+      this character by 50

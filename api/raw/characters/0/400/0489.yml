@@ -1,0 +1,36 @@
+type: DEX
+name: Green Nomad - Shandian Warrior
+japanName: 緑の遊牧隊　隊員 シャンディアの戦士
+family:
+  - GreenShandianWarrior
+class:
+  - Striker
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 85
+    atk: 40
+    rcv: 28
+  maxLvl:
+    hp: 517
+    atk: 289
+    rcv: 89
+cost: 6
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 11563
+aliases: []
+evolution:
+  - id: 492
+    evolvers:
+      - 117
+      - 302
+special:
+  name: Attack Boost DEX
+  description: Boosts ATK of [DEX] characters by 1.2x for 1 turn
+  cooldown: 25
+  maxLevel: 11

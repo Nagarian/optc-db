@@ -1,0 +1,390 @@
+type: INT
+name: "Mihawk: Lord of the Night - Happy Spooky Halloween!"
+japanName: ミホーク　ナイトロード Happy Scary Halloween
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 718
+    atk: 445
+    rcv: 42
+  maxLvl:
+    hp: 1596
+    atk: 988
+    rcv: 93
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 229895
+aliases:
+  - Halloween (HWeen) Mihawk
+  - V3 Legend Mihawk
+evolution:
+  - id: 3100
+    evolvers:
+      - 118
+      - 99
+      - 1180
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [INT] characters by 5x until the first hit other
+    than PERFECT, by 4x otherwise, boosts their HP by 1.3x and reduces Paralysis
+    duration by 10 turns.
+special:
+  name: A Flashing Light in the Night
+  description: Deals 15% of enemies' current HP in damage to one enemy, reduces
+    enemies' Percent Damage Reduction duration by 10 turns and boosts ATK of
+    [INT] characters by 2.25x for 1 turn. If during that turn you score 3
+    PERFECT hits, boosts ATK of [INT] characters by 2.5x for 1 turn in the
+    following turn.
+  cooldown: 20
+  maxLevel: 6
+rumble:
+  stats:
+    def: 104
+    rumbleType: ATK
+    spd: 213
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            count: 1
+            stat: Critical Hit
+            type: trigger
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            count: 3
+            stat: Critical Hit
+            type: trigger
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            count: 3
+            stat: Critical Hit
+            type: trigger
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            count: 4
+            stat: Critical Hit
+            type: trigger
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+  special:
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - amount: 2
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - amount: 2.1
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - amount: 2.2
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - amount: 2.3
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - amount: 2.4
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - amount: 2.5
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - amount: 2.6
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - amount: 2.7
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - amount: 2.8
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - amount: 3
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

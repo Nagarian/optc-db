@@ -1,0 +1,37 @@
+type: INT
+name: Rock & Scotch
+japanName: ロック＆スコッチ
+family:
+  - Rock
+  - Scotch
+class:
+  - Shooter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 7
+  minLvl:
+    hp: 192
+    atk: 210
+    rcv: 13
+  maxLvl:
+    hp: 1541
+    atk: 1260
+    rcv: 104
+cost: 15
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 60336
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts HP of [INT] characters by 2x
+special:
+  name: COOL Ambush
+  description: Reduces damage received by 50% for 1 turn
+  cooldown: 19
+  maxLevel: 10

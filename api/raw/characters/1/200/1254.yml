@@ -1,0 +1,53 @@
+type: QCK
+name: Maelstrom Spider Squard - Whitebeard Pirates Family
+japanName: 大渦蜘蛛スクアード 白ひげ海賊団傘下
+family:
+  - Squard
+class:
+  - Striker
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 96
+    atk: 69
+    rcv: -48
+  maxLvl:
+    hp: 2096
+    atk: 1246
+    rcv: 96
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 38339
+aliases:
+  - Squardo
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x until the first hit other
+    than PERFECT. Reduces crew's current HP by 5% at the end of each turn.
+special:
+  name: Sword Attack Without Hesitation
+  description: Deals 10x character's ATK in Fixed damage to one enemy, reduces
+    crews current HP by 30% and reduces the defense of all enemies by 80% for 1
+    turn
+  cooldown: 21
+  maxLevel: 8
+sailor:
+  - description: Reduces Paralysis by 1 turn on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Whitey Bay, Decalvan Brothers and Edward Newgate (Whitebeard)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

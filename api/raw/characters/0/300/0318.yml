@@ -1,0 +1,51 @@
+type: DEX
+name: Beautiful Secretary Kalifa
+japanName: 美人秘書カリファ
+family:
+  - Kalifa
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 788
+    atk: 488
+    rcv: 177
+  maxLvl:
+    hp: 1728
+    atk: 963
+    rcv: 378
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 6114
+aliases:
+  - Beautiful Secretary Califa
+  - Beautiful Secretary Calipha
+  - Beautiful Secretary Kalipha
+captain:
+  name: ""
+  description: Recovers 1,000 HP at the end of each turn, reduces damage received by 15%
+special:
+  name: Beautiful Secretary's Job
+  description: Randomizes all orbs into either [DEX] or [STR] orbs, deals random
+    [DEX] damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 1 : 15,000`"
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Iceburg
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

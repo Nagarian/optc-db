@@ -1,0 +1,231 @@
+type: STR
+name: Trafalgar Law - Trapped Heart
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1596
+    atk: 577
+    rcv: 101
+  maxLvl:
+    hp: 3990
+    atk: 1443
+    rcv: 254
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - Pirate Rumble Law
+  - Secret Law
+  - Limited Law
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and makes [STR] orbs
+    beneficial for Free Spirit characters.
+special:
+  name: Heart in Prison
+  description: Deals 20x character's ATK in [STR] damage to all enemies, changes
+    the orb of this character into a [STR] orb and boosts Orb Effects of Free
+    Spirit characters by 1.75x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 30
+limitBreak:
+  path:
+    - rcv: 50
+    - hp: 50
+    - rcv: 50
+    - type: potential
+    - atk: 100
+    - hp: 150
+    - atk: 150
+    - hp: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 218
+    rumbleType: SPT
+    spd: 174
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 2
+        - {}
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - {}
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - {}
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - {}
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+            - SPD
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 13
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            duration: 15
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 16
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            duration: 17
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            duration: 18
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            duration: 19
+            level: 5
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2
+        - override:
+            duration: 20
+            level: 6

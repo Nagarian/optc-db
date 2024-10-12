@@ -1,0 +1,120 @@
+type: STR
+name: Kawamatsu the Kappa
+japanName: 河童の河松
+family:
+  - Kawamatsu
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1168
+    atk: 630
+    rcv: 159
+  maxLvl:
+    hp: 2802
+    atk: 1386
+    rcv: 271
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - arena
+links:
+  gamewithId: 259611
+aliases:
+  - Arena Kawamatsu
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 3x, their HP by
+    1.2x and makes [RCV] and [TND] orbs beneficial for Slasher and Free Spirit
+    characters.
+special:
+  name: River of Retribution
+  description: Deals 100x character's ATK in [STR] damage to all enemies, reduces
+    Paralysis and ATK DOWN duration by 3 turns, changes [EMPTY], [BLOCK] and
+    [BOMB] orbs into Matching orbs, locks all orbs for 1 turn and boosts ATK of
+    Slasher and Free Spirit characters by 1.75x for 1 turn. After 2 turns,
+    boosts Orb Effects of Slasher and Free Spirit characters by 2x for 1 turn.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of Slasher and Free Spirit characters by 50
+  - description: If this character has a [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+support:
+  type: descriptive
+  criteria: Kozuki Oden, Raizo and Kikunojo
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces Paralysis duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Paralysis duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Paralysis duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Paralysis duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Paralysis duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - atk: 40
+    - hp: 40
+    - cooldown: 1
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 45
+    - hp: 80
+    - atk: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

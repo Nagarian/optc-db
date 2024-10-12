@@ -1,0 +1,179 @@
+type: DUAL
+name: Mihawk & Perona - Rulers of the Ruins of the Muggy Kingdom
+japanName: ミホーク＆ペローナ シッケアール王国跡地の強者達
+family:
+  - DraculeMihawk
+  - Perona
+class:
+  - Cerebral
+  - Slasher
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1522
+    atk: 966
+    rcv: 222
+  maxLvl:
+    hp: 3702
+    atk: 1605
+    rcv: 423
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 193648
+aliases:
+  - Mihawk&Perona
+  - MihawkPerona
+  - Perona&Mihawk
+  - PeronaMihawk
+  - Legend Mihawk and Perona
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 4x, by 4.5x instead if
+    they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x, makes
+    [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for [STR] and [PSY]
+    characters, lowers chances of getting [RCV] and [TND] orbs.
+special:
+  name: Spirit Sword
+  description: Deals 20% of enemies' current HP in damage to all enemies, changes
+    [BLOCK] orbs into Matching orbs, boosts ATK against enemies inflicted with
+    Negative by 2x for 1 turn and becomes Mihawk and Perona for 3 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [STR] and [PSY] characters by 100
+  - description: Makes [STR] and [PSY] orbs beneficial for [STR] and [PSY] characters
+characters:
+  swap:
+    description: Changes the orb of this character into a Matching orb, recovers
+      1,500 HP, and inflicts enemies with Negative for 1 turn. If there are 2 or
+      more enemies on the stage when the Change is activated, ignores debuff
+      protection and inflicts enemies with Negative for 1 turn.
+    notes: Negative reduces the ATK and DEF of enemies by 20%. More info about how
+      ATK reduction is calculated will be updated here soon.
+  character1:
+    name: Mihawk - Rulers of the Ruins of the Muggy Kingdom
+    japanName: ミホーク シッケアール王国跡地の強者達
+    class:
+      - Cerebral
+      - Slasher
+    type: STR
+    stats:
+      combo: 6
+      minLvl:
+        hp: 1332
+        atk: 951
+        rcv: 188
+      maxLvl:
+        hp: 3350
+        atk: 1535
+        rcv: 355
+    captain:
+      name: ""
+      description: Boosts ATK of [STR] and [PSY] characters by 3x, by 3.5x instead if
+        they have a [STR], [QCK], [DEX], [INT] or [PSY] orb, their HP by 1.3x,
+        makes [STR] orbs beneficial for [PSY] characters, lowers chances of
+        getting [RCV] and [TND] orbs.
+    sailor:
+      - description: Boosts base ATK and HP of [STR] and [PSY] characters by 75
+      - description: Makes [STR] and [PSY] orbs beneficial for [STR] and [PSY] characters
+  character2:
+    name: Perona - Rulers of the Ruins of the Muggy Kingdom
+    japanName: ペローナ シッケアール王国跡地の強者達
+    class:
+      - Cerebral
+      - Driven
+    type: PSY
+    stats:
+      combo: 6
+      minLvl:
+        hp: 1332
+        atk: 923
+        rcv: 211
+      maxLvl:
+        hp: 3350
+        atk: 1433
+        rcv: 404
+    captain:
+      name: ""
+      description: Boosts ATK of [STR] and [PSY] characters by 3.25x, their HP by
+        1.3x, makes [PSY] orbs beneficial for [STR] characters, lowers chances
+        of getting [RCV] and [TND] orbs.
+    sailor:
+      - description: Boosts base ATK and RCV of [STR] and [PSY] characters by 75
+      - description: Makes [STR] and [PSY] orbs beneficial for [STR] and [PSY] characters
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - hp: 10
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - hp: 25
+    - hp: 25
+    - atk: 10
+    - atk: 15
+    - rcv: 10
+    - rcv: 10
+    - atk: 15
+    - atk: 15
+    - type: potential
+    - cooldown: 1
+    - hp: 50
+    - hp: 70
+    - rcv: 10
+    - rcv: 20
+    - rcv: 40
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 35
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Critical Hit
+      levels:
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 9
+          threshold: 90
+        - value: 10
+          threshold: 100

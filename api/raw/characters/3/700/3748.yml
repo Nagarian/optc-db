@@ -1,0 +1,100 @@
+type: STR
+name: Kikunojo - Dragon Felling Fallen Snow
+family:
+  - Kikunojo
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1437
+    atk: 713
+    rcv: 148
+  maxLvl:
+    hp: 2874
+    atk: 1425
+    rcv: 296
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR], Slasher and Free Spirit characters by 3x and
+    boosts HP of [STR], Slasher and Free Spirit characters by 1.2x.
+special:
+  name: Slicing Falled Snow Scythes
+  description: Makes [DEX] and [QCK] orbs beneficial for [STR] and Slasher
+    characters for 3 turns, reduces enemies' Percent Damage Reduction duration
+    by 5 turns and reduces the defense of all enemies by 100% for 2 turns. If
+    your crew has 5 or more Slasher characters, adds 1.0x to Chain multiplier
+    for 2 turns and boosts ATK against enemies with reduced defense by 1.75x for
+    2 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of Slasher characters by 70
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: descriptive
+  criteria: Izo, Kin'emon, Dogstorm, Kozuki Momonosuke, Cat Viper, Raizo, Kozuki
+    Oden, Denjiro, Kawamatsu, Kozuki Hiyori and Ashura Doji
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 40% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 60% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 70% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces the defense of all enemies by 80% for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - rcv: 30
+    - slot: 1
+    - hp: 50
+    - atk: 40
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50

@@ -1,0 +1,437 @@
+type: QCK
+name: Smoker - Sailor with an Unwavering Sense of Justice
+japanName: スモーカー 己の正義貫く海兵
+family:
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 806
+    atk: 289
+    rcv: 37
+  maxLvl:
+    hp: 1727
+    atk: 978
+    rcv: 127
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 211227
+aliases:
+  - V1 Legend Smoker
+evolution:
+  - id: 3007
+    evolvers:
+      - 118
+      - 301
+      - 2662
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 4x and their HP by 1.3x at the
+    start of the chain. Boosts ATK of [QCK] characters by an additive 0.2x after
+    each PERFECT in a row, max of 5x.
+special:
+  name: White Blow Settlement
+  description: Deals 100x character's ATK in Typeless Fixed True damage to one
+    enemy and applies Burn and ATK DOWN Immunity for 5 turns. If your crew has
+    ATK UP, boosts Orb Effects of [QCK] characters by 2.5x for 1 turn, boosts
+    ATK of [QCK] characters by 2.5x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 6
+rumble:
+  stats:
+    def: 208
+    rumbleType: DBF
+    spd: 179
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - enemies
+  special:
+    - cooldown: 42
+      effects:
+        - amount: 0.73
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 70
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 0.83
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 71
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 0.93
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 72
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 1.03
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 73
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 1.13
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 74
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 1.23
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 75
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 1.33
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 76
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 1.43
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 77
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 1.53
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 78
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 42
+      effects:
+        - amount: 2.5
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 100
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

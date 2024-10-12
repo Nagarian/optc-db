@@ -1,0 +1,96 @@
+type: DEX
+name: Whitebeard - Meeting in Uncharted Lands
+family:
+  - EdwardNewgate
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1293
+    atk: 684
+    rcv: 132
+  maxLvl:
+    hp: 2974
+    atk: 1494
+    rcv: 235
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Kizuna Secret Limited
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of [DEX], Striker and Free Spirit characters by 3x,
+    boosts HP of [DEX], Striker and Free Spirit characters by 1.2x and makes
+    [DEX] orbs beneficial for [DEX], Striker and Free Spirit characters.  
+
+    **Boosted Ability:** Boosts ATK of [DEX], Striker and Free Spirit characters by 5.25x, boosts HP of [DEX], Striker and Free Spirit characters by 1.4x and makes [DEX] orbs beneficial for [DEX], Striker and Free Spirit characters.
+special:
+  name: Roaring Shockwave
+  description: Reduces ATK DOWN duration by 6 turns and reduces enemies' Threshold
+    Damage Reduction duration by 6 turns. If your Captain is a Striker or Free
+    Spirit character, sets Chain Boundaries to 2.5x and 35.0x for 1 turn, sets
+    Chain Boundaries to 2.25x and 35.0x for 2 turns otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Free Spirit characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Striker characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

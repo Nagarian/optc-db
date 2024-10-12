@@ -1,0 +1,471 @@
+type: INT
+name: Knight of the Sea Jinbe - Straw Hat Luffy's Conspirator
+japanName: 海侠のジンベエ 麦わらのルフィの共犯者
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1820
+    atk: 752
+    rcv: 182
+  maxLvl:
+    hp: 3980
+    atk: 1484
+    rcv: 352
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 24564
+aliases:
+  - Mega/Super/6+ Jinbe
+  - Jimbei
+  - Jinbei
+  - INTbe
+  - V1 Legend Jinbe
+  - Shichibukai
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 3x, boosts HP of Fighter
+    characters by 1.5x and reduces damage received by 7%.
+special:
+  name: "Shark Fist Tile Breaker: Great Earth Wave"
+  description: Deals 60x character's ATK in [INT] damage to all enemies, changes
+    all orbs of Fighter characters into Matching orbs and reduces enemies'
+    Percent Damage Reduction and Increased Defense duration by 5 turns.
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+  - description: Restores Special Cooldown of this character completely when it is rewinded
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 6
+      reduction: 3
+    - value: 8
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - hp: 10
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Fighter characters by 3.5x, boosts HP of Fighter
+          characters by 1.5x and reduces damage received by 15%.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 271
+    rumbleType: DEF
+    spd: 105
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 7
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.94
+        - override:
+            duration: 16
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.97
+        - override:
+            duration: 17
+            level: 8
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.01
+        - override:
+            duration: 18
+            level: 9
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.05
+        - override:
+            duration: 19
+            level: 10
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.09
+        - override:
+            duration: 20
+            level: 11
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.12
+        - override:
+            duration: 21
+            level: 11
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.16
+        - override:
+            duration: 22
+            level: 12
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 23
+            level: 13
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            duration: 25
+            level: 15
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Fighter
+            - attributes:
+                - DEF
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Fighter
+        - effects:
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 7
+  - captain:
+      - description: Boosts ATK of Fighter characters by 4.25x, by 5x instead if they
+          have a beneficial orb, boosts HP of Fighter characters by 1.5x and
+          reduces damage received by 15%.
+      - description: Boosts ATK of Fighter characters by 4.5x, by 5.25x instead if they
+          have a beneficial orb, boosts HP of Fighter characters by 1.5x and
+          reduces damage received by 15%.
+  - rumble:
+      special:
+        - cooldown: 31
+          effects:
+            - amount: 1
+              effect: damage
+              range:
+                direction: sideways
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              duration: 15
+              effect: debuff
+              level: 8
+              range:
+                direction: sideways
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 1.15
+            - override:
+                duration: 16
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 1.3
+            - override:
+                duration: 17
+                level: 9
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 1.45
+            - override:
+                duration: 18
+                level: 10
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 1.6
+            - override:
+                duration: 19
+                level: 11
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 1.75
+            - override:
+                duration: 20
+                level: 11
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 1.9
+            - override:
+                duration: 21
+                level: 12
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 2.05
+            - override:
+                duration: 22
+                level: 13
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 2.2
+            - override:
+                duration: 23
+                level: 14
+        - cooldown: 31
+          effects:
+            - override:
+                amount: 2.5
+            - override:
+                duration: 25
+                level: 16
+  - rumble:
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: PSY
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 150x character's ATK in [INT] damage to all enemies, changes
+        all orbs of Fighter characters into Matching orbs and reduces enemies'
+        Percent Damage Reduction and Increased Defense duration by 5 turns. If
+        your Captain is a Fighter character, reduces ATK DOWN duration by 5
+        turns and boosts Color Affinity of Fighter characters by 2x for 1 turn.

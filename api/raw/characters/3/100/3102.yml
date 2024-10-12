@@ -1,0 +1,490 @@
+type: INT
+name: "Law: Midnight Lord - Happy Spooky Halloween!"
+japanName: ロー　ロード・ミッドナイトドクター Happy Scary Halloween
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Cerebral
+  - Slasher
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1597
+    atk: 957
+    rcv: 91
+  maxLvl:
+    hp: 3548
+    atk: 1595
+    rcv: 302
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 229894
+aliases:
+  - Halloween (HWeen) Law
+  - V4 Legend Law
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 4.25x at the start of the chain,
+    boosts their HP by 1.4x, reduces Despair duration by 10 turns and deals 100x
+    the damage taken from enemies in the previous turn in [INT] damage to all
+    enemies at the end of each turn. Boosts ATK of [INT] characters by an
+    additive 0.15x after each PERFECT in a row.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Monkey
+    D. Luffy, Dracule Mihawk, Crocodile (Mr. 0), Donquixote Doflamingo,
+    Bartholomew Kuma, Gecko Moria, Boa Hancock, Jinbe, Marshall D. Teach
+    (Blackbeard), Buggy or Edward Weevil, excluding Support members."
+  description: Recovers 50% of crew's MAX HP and transforms all [INT] characters
+    into Super [INT] characters.
+special:
+  name: "One Night of Horror: ROOM"
+  description: Boosts Orb Effects of [INT] characters by 2.25x for 1 turn and
+    protects from defeat for 1 turn. After 1 turn, boosts Orb Effects of [INT]
+    characters by 2.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: When HP is below 10% at the start of the turn, boosts base ATK of
+      [INT] characters by 150
+  - description: Makes [PSY], [RCV] and [TND] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: "[INT] characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [INT] characters by 1.5x for
+      1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [INT] characters by 1.55x
+      for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [INT] characters by 1.6x for
+      1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [INT] characters by 1.65x
+      for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [INT] characters by 1.75x
+      for 1 turn.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - type: sailor
+    - rcv: 10
+    - rcv: 15
+    - atk: 15
+    - atk: 15
+    - type: potential
+    - cooldown: 1
+    - hp: 70
+    - hp: 70
+    - hp: 70
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - rcv: 30
+    - rcv: 30
+    - type: sailor
+    - hp: 100
+    - hp: 100
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 154
+    rumbleType: DBF
+    spd: 155
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 50
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 55
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.05
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 65
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.15
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 75
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.25
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 85
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 90
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Silence
+          chance: 100
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

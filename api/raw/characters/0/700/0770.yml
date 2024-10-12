@@ -1,0 +1,136 @@
+type: STR
+name: Dalmatian - Marine Vice Admiral
+japanName: ダルメシアン 海軍本部中将
+family:
+  - Dalmatian
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 241
+    atk: 186
+    rcv: 35
+  maxLvl:
+    hp: 2171
+    atk: 1275
+    rcv: 189
+cost: 20
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 17349
+aliases:
+  - Raid Dalmatian
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of [STR] characters by 2x
+special:
+  name: "Shigan: Convergence"
+  description: Deals 15x character's ATK in [STR] damage to one enemy, boosts ATK
+    against delayed enemies by 1.3x for 2 turns
+  cooldown: 23
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Momonga, Onigumo, Strawberry and Brannew
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+rumble:
+  stats:
+    def: 121
+    rumbleType: ATK
+    spd: 168
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 20
+      effects:
+        - amount: 1150
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1325
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1500
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1675
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 1850
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 2025
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 2200
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 2375
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 2550
+    - cooldown: 20
+      effects:
+        - override:
+            amount: 2850

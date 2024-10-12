@@ -1,0 +1,317 @@
+type: PSY
+name: "Sanji - Straw Hat Pirates: Mark of Adventure"
+japanName: サンジ 麦わらの一味・冒険の軌跡
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 152
+    atk: 78
+    rcv: 28
+  maxLvl:
+    hp: 1375
+    atk: 624
+    rcv: 113
+cost: 9
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 200107
+aliases:
+  - Super Sanji
+evolution:
+  - id: 2944
+    evolvers:
+      - 81
+      - 117
+      - 103
+      - 87
+      - 1180
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x.
+special:
+  name: "Diable Jambe: Battlefield Mouton Shot"
+  description: Changes orbs of adjacent characters into Matching orbs and locks
+    the chain multiplier at 2.5x for 2 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 50
+rumble:
+  stats:
+    def: 139
+    rumbleType: SPT
+    spd: 126
+    cost: 20
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 22
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 24
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 26
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 28
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 32
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 34
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 36
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 38
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 29
+      effects:
+        - amount: 40
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY

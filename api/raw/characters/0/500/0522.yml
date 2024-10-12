@@ -1,0 +1,94 @@
+type: INT
+name: Sanji - Straw Hat Pirates' Attack
+japanName: サンジ 特攻の麦わらの一味
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1471
+    atk: 630
+    rcv: 86
+  maxLvl:
+    hp: 2834
+    atk: 1224
+    rcv: 226
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - removed
+links:
+  gamewithId: 11950
+notes: "Strong World Batch has been entirely replaced. So this characte is now
+  available with a different artwork and id #1117."
+aliases:
+  - Strong World Sanji
+  - SW Sanji
+captain:
+  name: ""
+  description: Reduces damage received by 80% if HP is above 99% at the start of the turn
+special:
+  name: Diable Jambe - Venaison Shot
+  description: Deals 1x-100x character's ATK in [INT] damage to all enemies
+  cooldown: 23
+  maxLevel: 7
+  notes: "`specialProportional : lower : 100 * ( 1 - (remaining HP) / (total HP) )`"
+sailor:
+  - description: Reduces Paralysis duration by 3 turns on this character
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 500
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Usopp
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - atk: 40
+    - cooldown: 3
+    - atk: 40
+    - cooldown: 3
+    - atk: 50
+    - slot: 1
+    - atk: 50
+    - cooldown: 3
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - {}
+        - {}
+        - {}
+        - {}

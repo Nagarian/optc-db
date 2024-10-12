@@ -1,0 +1,51 @@
+type: STR
+name: Kin'emon
+japanName: 錦えもん
+family:
+  - Kinemon
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 609
+    atk: 399
+    rcv: 62
+  maxLvl:
+    hp: 1142
+    atk: 779
+    rcv: 177
+cost: 25
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 43751
+aliases:
+  - Colo Kinemon
+  - Coliseum Kinemon
+  - Colo Kin'emon
+  - Coliseum Kin'emon
+evolution:
+  - id: 1310
+    evolvers:
+      - 118
+      - 95
+      - 95
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x, recovers 1x character's
+    RCV in HP at the end of each turn
+special:
+  name: Poof
+  description: Reduces Special Cooldown of Slasher and Free Spirit characters by 1
+    turn and if HP is above 70%, changes orbs of adjacent characters into
+    Matching Orbs
+  cooldown: 16
+  maxLevel: 12

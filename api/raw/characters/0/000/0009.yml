@@ -1,0 +1,46 @@
+type: INT
+name: Nami
+frenchName: Nami
+japanName: ナミ
+family:
+  - Nami
+class:
+  - Striker
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 72
+    atk: 51
+    rcv: 32
+  maxLvl:
+    hp: 366
+    atk: 201
+    rcv: 89
+cost: 4
+slots: 0
+maxExp: 26184
+maxLevel: 20
+flags:
+  - sugo
+links:
+  gamewithId: 2020
+aliases: []
+evolution:
+  - id: 10
+    evolvers:
+      - 115
+      - 82
+  - id: 11
+    evolvers:
+      - 116
+      - 82
+      - 99
+captain:
+  name: ""
+  description: Reduces damage received from [INT] enemies by 20%
+special:
+  name: Cat Burglar
+  description: Recovers 1,000 HP
+  cooldown: 12
+  maxLevel: 6

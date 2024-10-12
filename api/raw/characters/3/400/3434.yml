@@ -1,0 +1,255 @@
+type: QCK
+name: Black Maria - Tobi Roppo Assembled
+japanName: ブラックマリア 集結する“飛び六胞”
+family:
+  - BlackMaria
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1265
+    atk: 691
+    rcv: 165
+  maxLvl:
+    hp: 2529
+    atk: 1382
+    rcv: 329
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 293289
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Driven characters by 3x and boosts RCV
+    of [QCK] characters by 1.4x.
+special:
+  name: The Look of Ecstasy on Your Face
+  description: Reduces Silence duration by 5 turns, reduces enemies' Increased
+    Defense and Percent Damage Reduction duration by 5 turns and boosts the
+    Color Affinity of Cerebral and Driven characters by 1.75x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Makes [QCK] orbs beneficial for Cerebral and Driven characters
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - atk: 20
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - hp: 100
+    - type: sailor
+    - rcv: 30
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 124
+    rumbleType: DBF
+    spd: 137
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - SPD
+          duration: 6
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - Paralysis
+          chance: 20
+          duration: 6
+          effect: hinderance
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 24
+      effects:
+        - override:
+            level: 3
+            duration: 7
+        - override:
+            chance: 25
+            duration: 7
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 8
+        - override:
+            chance: 30
+            duration: 8
+    - cooldown: 24
+      effects:
+        - override:
+            level: 4
+            duration: 9
+        - override:
+            chance: 35
+            duration: 9
+    - cooldown: 24
+      effects:
+        - override:
+            level: 5
+            duration: 10
+        - override:
+            chance: 40
+            duration: 10
+    - cooldown: 24
+      effects:
+        - override:
+            level: 5
+            duration: 11
+        - override:
+            chance: 45
+            duration: 11
+    - cooldown: 24
+      effects:
+        - override:
+            level: 6
+            duration: 12
+        - override:
+            chance: 50
+            duration: 12
+    - cooldown: 24
+      effects:
+        - override:
+            level: 6
+            duration: 13
+        - override:
+            chance: 55
+            duration: 13
+    - cooldown: 24
+      effects:
+        - override:
+            level: 7
+            duration: 14
+        - override:
+            chance: 60
+            duration: 14
+    - cooldown: 24
+      effects:
+        - override:
+            level: 8
+            duration: 15
+        - override:
+            chance: 70
+            duration: 15

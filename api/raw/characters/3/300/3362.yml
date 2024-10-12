@@ -1,0 +1,264 @@
+type: STR
+name: General Cracker - True Identity of the Hardened Warrior
+japanName: 将星クラッカー 屈強な戦士の正体
+family:
+  - CharlotteCracker
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1358
+    atk: 752
+    rcv: 118
+  maxLvl:
+    hp: 3983
+    atk: 1533
+    rcv: 225
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 281791
+aliases:
+  - Secret Cracker
+  - Limited Cracker
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x and their HP by 1.2x.
+special:
+  name: True Form Strike
+  description: Changes [BLOCK] orbs into Matching orbs and boosts the Color
+    Affinity of Slasher characters by 1.75x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 50
+limitBreak:
+  path:
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - rcv: 100
+    - hp: 100
+    - hp: 100
+    - atk: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 174
+    rumbleType: ATK
+    spd: 172
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: DEX
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 1
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 18
+      effects:
+        - amount: 0.1
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+          defbypass: true
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+          duration: 21
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+          duration: 6
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.2
+        - override:
+            level: 1
+            duration: 22
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            level: 1
+            duration: 23
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 2
+            duration: 24
+        - override:
+            level: 1
+            duration: 9
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 2
+            duration: 25
+        - override:
+            level: 1
+            duration: 10
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 3
+            duration: 26
+        - override:
+            level: 2
+            duration: 11
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 3
+            duration: 27
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 3
+            duration: 28
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 4
+            duration: 29
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 18
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 5
+            duration: 30
+        - override:
+            level: 3
+            duration: 15

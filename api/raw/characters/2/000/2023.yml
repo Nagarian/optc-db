@@ -1,0 +1,135 @@
+type: INT
+name: Sakazuki - Fateful Struggle to the Death
+japanName: サカズキ 天下分け目の死闘
+family:
+  - Sakazuki
+class:
+  - Fighter
+  - Shooter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1652
+    atk: 798
+    rcv: 82
+  maxLvl:
+    hp: 3580
+    atk: 1621
+    rcv: 169
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 96998
+aliases:
+  - V2 Legend Akainu
+evolution:
+  - id: 3625
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 3.25x and makes [STR]
+    and [INT] orbs beneficial for [STR] and [INT] characters. Deals 0x-500x
+    character's ATK in Typeless damage to one enemy at the end of each turn
+    depending on how many PERFECTs scored that turn.
+  notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+    PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs -
+    32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 200x ATK; 6 PERFECTs - 500x ATK"
+special:
+  name: "The Natural Disaster's Final Attack: Scorched Earth"
+  description: Randomizes all orbs, including [BLOCK] orbs, into either [STR] or
+    [INT] orbs and boosts Orb Effects of [STR] and [INT] characters by 2.25x for
+    1 turn
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of [STR] and [INT] characters by 100
+  - description: Makes [PSY] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[INT] characters"
+  levels:
+    - value: 8
+    - value: 9
+    - value: 10
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - atk: 15
+    - atk: 15
+    - rcv: 10
+    - type: sailor
+    - hp: 30
+    - hp: 30
+    - atk: 20
+    - atk: 20
+    - hp: 35
+    - hp: 35
+    - type: potential
+    - hp: 45
+    - hp: 45
+    - atk: 30
+    - atk: 30
+    - hp: 55
+    - hp: 55
+    - rcv: 15
+    - cooldown: 1
+    - hp: 70
+    - rcv: 20
+    - rcv: 25
+    - type: sailor
+    - hp: 80
+    - atk: 40
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 250
+    - captain:
+        description: Boosts ATK of [STR] and [INT] characters by 3.75x and makes [STR]
+          and [INT] orbs beneficial for [STR] and [INT] characters. Deals
+          0x-500x character's ATK in Typeless damage to one enemy at the end of
+          each turn depending on how many PERFECTs scored that turn.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

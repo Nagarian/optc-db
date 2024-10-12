@@ -1,0 +1,59 @@
+type: INT
+name: Borsalino - Admirals in a Fleeting Moment of Calm
+japanName: ボルサリーノ　束の間の平穏と大将たち
+family:
+  - Borsalino
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1024
+    atk: 451
+    rcv: 98
+  maxLvl:
+    hp: 2212
+    atk: 1212
+    rcv: 241
+cost: 20
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 98734
+aliases:
+  - Kimono Kizaru
+  - Kimono Borsalino
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Free Spirit and Shooter characters by 2.25x and
+    their HP by 1.2x
+special:
+  name: The Afterglow of a Fight
+  description: Changes orbs of adjacent characters into Matching Orbs. If your
+    crew has 2 or more characters of the same Type, reduces Special Cooldown of
+    each Type of characters by 1 turn.
+  cooldown: 8
+  maxLevel: 1
+  notes: Cooldown Reduction works for any Type that you have 2 or more characters
+    of on your crew
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 20
+support:
+  type: descriptive
+  criteria: Kuzan (Aokiji) and Sakazuki (Akainu)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received from [PSY] and [INT] enemies by 5% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received from [PSY] and [INT] enemies by 10% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received from [PSY] and [INT] enemies by 15% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received from [PSY] and [INT] enemies by 20% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received from [PSY] and [INT] enemies by 25% for 1 turn.

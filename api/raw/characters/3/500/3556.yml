@@ -1,0 +1,254 @@
+type: PSY
+name: Ashura Doji - Samurai Challenging the Dragon
+japanName: アシュラ童子 龍に立ち向かう侍
+family:
+  - AshuraDoji
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1743
+    atk: 726
+    rcv: 92
+  maxLvl:
+    hp: 3486
+    atk: 1452
+    rcv: 185
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 3.25x and their
+    RCV by 1.2x.
+special:
+  name: Assaulting Strike
+  description: Deals 100x character's ATK in [PSY] damage to one enemy, reduces
+    ATK DOWN duration by 5 turns and changes orbs of Slasher and Free Spirit
+    characters into Matching orbs. If your crew has 6 Slasher or Free Spirit
+    characters, boosts ATK of Slasher and Free Spirit characters by 2.25x for 1
+    turn, by 2x otherwise.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Makes [RCV] orbs beneficial for Slasher and Free Spirit characters
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+support:
+  type: descriptive
+  criteria: Izo, Kin'emon, Kurozumi Kanjuro, Dogstorm, Kozuki Momonosuke, Cat
+    Viper, Raizo, Kikunojo, Kozuki Oden, Denjiro, Kawamatsu, Kozuki Hiyori
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Slasher and Free Spirit characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Slasher and Free Spirit characters by 1.1x for 1 turn and
+      reduces ATK DOWN duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Slasher and Free Spirit characters by 1.2x for 1 turn and
+      reduces ATK DOWN duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Slasher and Free Spirit characters by 1.2x for 1 turn and
+      reduces ATK DOWN duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Slasher and Free Spirit characters by 1.3x for 1 turn and
+      reduces ATK DOWN duration by 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - hp: 40
+    - atk: 50
+    - slot: 1
+    - hp: 30
+    - hp: 50
+    - rcv: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 148
+    rumbleType: ATK
+    spd: 146
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 50
+          attributes:
+            - HP
+          effect: penalty
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 2.1
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            amount: 2.2
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            amount: 2.3
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 2
+            duration: 10
+        - override:
+            amount: 2.4
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            amount: 2.5
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 12
+        - override:
+            amount: 2.6
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 2.7
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            amount: 2.8
+    - cooldown: 34
+      effects:
+        - {}
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            amount: 3

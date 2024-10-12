@@ -1,0 +1,231 @@
+type: STR
+name: Krieg Pirates
+japanName: クリーク海賊団
+family:
+  - Gin
+  - Pearl
+  - Krieg
+class:
+  - Driven
+  - Powerhouse
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1390
+    atk: 887
+    rcv: 113
+  maxLvl:
+    hp: 3428
+    atk: 1573
+    rcv: 207
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 308632
+aliases:
+  - Kizuna Krieg Pirates
+  - Don Krieg Crew
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3.5x, by 3.75x instead if they
+    have a [STR] orb, boosts their HP by 1.5x and boosts chances of getting
+    [STR] orbs.
+special:
+  name: Ruler of the East Blue's Power
+  description: Deals 10% of enemies' current HP in damage to all enemies, makes
+    Badly Matching and [BLOCK] orbs not reduce damage for 5 turns, poisons all
+    enemies, reduces Bind and Despair duration by 5 turns, boosts ATK against
+    Poisoned enemies, Strongly Poisoned enemies and enemies inflicted with Toxic
+    by 2x for 1 turn and reduces damage received by 90% for 1 turn.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven and Powerhouse characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Driven characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - atk: 25
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 8
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 196
+    rumbleType: DBF
+    spd: 135
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 45
+          duration: 1
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            chance: 47
+            duration: 12
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            chance: 49
+            duration: 13
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            chance: 51
+            duration: 14
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2
+        - override:
+            chance: 53
+            duration: 15
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            chance: 56
+            duration: 16
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            chance: 58
+            duration: 17
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            chance: 60
+            duration: 18
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            chance: 62
+            duration: 19
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            chance: 65
+            duration: 20

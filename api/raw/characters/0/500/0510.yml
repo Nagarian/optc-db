@@ -1,0 +1,52 @@
+type: QCK
+name: Sir Crocodile, the Strongest Prisoner - Ex-Seven Warlords Member
+japanName: 最強の囚人サー・クロコダイル 元王下七武海
+family:
+  - Crocodile
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1101
+    atk: 500
+    rcv: 100
+  maxLvl:
+    hp: 2200
+    atk: 1150
+    rcv: 188
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 11775
+aliases:
+  - Mr 0
+  - Mr. 0
+  - Prisondile
+captain:
+  name: ""
+  description: Reduces damage received by 10%, boosts ATK of Striker characters by 2x
+special:
+  name: "Merciless Ploy: Poison Needle"
+  description: Poisons all enemies, boosts ATK of Striker characters by 1.5x for 1 turn
+  cooldown: 24
+  maxLevel: 11
+  notes: "`poison : 0.5x`"
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Daz Bones (Mr. 1)
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

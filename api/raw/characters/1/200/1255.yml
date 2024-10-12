@@ -1,0 +1,52 @@
+type: PSY
+name: DeCalvan Brothers - Whitebeard Pirates Family
+japanName: 絆のディカルバン兄弟 白ひげ海賊団傘下
+family:
+  - DecalvanBrothers
+class:
+  - Fighter
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 122
+    atk: 52
+    rcv: 22
+  maxLvl:
+    hp: 2525
+    atk: 1122
+    rcv: 152
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 38341
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x after the 11th hit in the
+    chain, by 2x after the 16th hit, by 2.5x after the 22nd hit
+special:
+  name: Large Fleet Commander
+  description: Makes PERFECTs slightly easier to hit for 1 turn and boosts Orb
+    Effects of all characters by 1.5x for 1 turn
+  cooldown: 19
+  maxLevel: 8
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base ATK of
+      Fighter characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Squard, Whitey Bay and Edward Newgate (Whitebeard)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

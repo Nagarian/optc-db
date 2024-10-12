@@ -1,0 +1,218 @@
+type: PSY
+name: Ben Beckman - First Mate's Repose
+japanName: ベン・ベックマン 一服する副船長
+family:
+  - BenBeckman
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1326
+    atk: 877
+    rcv: 67
+  maxLvl:
+    hp: 2947
+    atk: 1462
+    rcv: 222
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 279604
+aliases:
+  - Benn
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [INT] characters by 3x and their HP by 1.2x.
+special:
+  name: Prepared for Gunfire
+  description: Changes [EMPTY], [BOMB], [RCV], [TND] and Badly Matching orbs into
+    Matching orbs, reduces Bind duration by 5 turns and locks the chain
+    multiplier at 3x for 1 turn. If your crew has 6 [PSY] characters, removes
+    enemies' Defense Reduction Debuff Protection duration completely.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of [PSY] and [INT] characters by 50
+  - description: Changes all orbs into [PSY] orbs at the start of the fight
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - HP
+  criteria: "[PSY] characters"
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 7
+      reduction: 2
+    - value: 10
+      reduction: 3
+    - value: 12
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - hp: 60
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 131
+    rumbleType: DBF
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 21
+      effects:
+        - amount: 1000
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          duration: 11
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            level: 5
+            duration: 20

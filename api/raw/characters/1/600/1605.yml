@@ -1,0 +1,51 @@
+type: STR
+name: Portgas D. Ace - Whitebeard's Son
+japanName: ポートガス・D・エース 白ひげの“息子”
+family:
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 880
+    atk: 410
+    rcv: 110
+  maxLvl:
+    hp: 1850
+    atk: 1090
+    rcv: 260
+cost: 15
+slots: 3
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 57510
+aliases:
+  - 0 Stamina Ace
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x and recovers 500 HP at the end
+    of each turn
+special:
+  name: Fist of the Demon's Child 'Fire'
+  description: Randomizes all non-Matching orbs and deals 13x character's ATK in
+    [STR] damage to all enemies
+  cooldown: 15
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Edward Newgate (Whitebeard)
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

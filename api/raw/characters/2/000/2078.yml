@@ -1,0 +1,114 @@
+type: PSY
+name: Carrot - Rabbit in the Forest of Sweets
+japanName: キャロット おかしの森のカワイイウサギ
+family:
+  - Carrot
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1228
+    atk: 545
+    rcv: 82
+  maxLvl:
+    hp: 2828
+    atk: 1298
+    rcv: 238
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 102772
+aliases:
+  - WCI Carrot
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and boosts HP of Free
+    Spirit characters by 1.2x
+special:
+  name: Eleclaw
+  description: Reduces Paralysis and Despair duration by 4 turns, delays all
+    enemies by 1 turn, changes [STR], [DEX], [QCK], [INT] and [PSY] orbs into
+    [PSY] orbs and boosts ATK against enemies with reduced defense by 1.75x for
+    1 turn
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Boosts base ATK and HP of Fighter characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Tony Tony Chopper
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - hp: 80
+    - atk: 40
+    - atk: 40
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 7
+          threshold: 50
+        - value: 8
+          threshold: 60
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

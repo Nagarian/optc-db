@@ -1,0 +1,246 @@
+type: DEX
+name: Onami & Orobi - Brave Women in Wano
+japanName: おナミ＆おロビ ワノ国に舞う女傑達
+family:
+  - Nami
+  - NicoRobin
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1114
+    atk: 703
+    rcv: 97
+  maxLvl:
+    hp: 2848
+    atk: 1441
+    rcv: 329
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 250301
+aliases:
+  - Nami&Robin
+  - Nami and Robin
+  - Nami Robin
+  - NamiRobin
+  - Robin&Nami
+  - Robin and Nami
+  - Robin Nami
+  - RobinNami
+  - Kizuna Orobi
+  - Kizuna O-Robi
+  - Kizuna Onami
+  - Kizuna Robin
+  - Kizuna Nami
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x, their HP by 1.2x and makes
+    [DEX] orbs beneficial for all characters.
+special:
+  name: Flower and Lighting Strike
+  description: Deals 15% of enemies' current HP in damage to one enemy, reduces
+    Paralysis duration by 6 turns, reduces Special Cooldown of all characters by
+    1 turn, boosts Orb Effects of all characters by 2x for 1 turn and applies
+    Increase Damage Taken Immunity for 3 turns.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 25
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 312
+    rumbleType: SPT
+    spd: 155
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - duration: 21
+          effect: damage
+          level: 2
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 22
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 23
+        - override:
+            duration: 13
+            level: 1
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 24
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 25
+        - override:
+            duration: 15
+            level: 2
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 26
+        - override:
+            duration: 16
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 27
+        - override:
+            duration: 17
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 28
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 29
+        - override:
+            duration: 19
+            level: 4
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 30
+        - override:
+            duration: 20
+            level: 5

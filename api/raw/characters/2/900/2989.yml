@@ -1,0 +1,360 @@
+type: DEX
+name: Rob Lucci - Penetrating Dark Justice
+japanName: ロブ・ルッチ 貫く闇の正義
+family:
+  - RobLucci
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1232
+    atk: 646
+    rcv: 38
+  maxLvl:
+    hp: 2820
+    atk: 1352
+    rcv: 220
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 206802
+aliases:
+  - Pirate Festival Lucci
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [DEX] characters by 2.5x, by 3x instead if they
+    have a beneficial orb, and makes [STR] orbs beneficial for [DEX] characters.
+special:
+  name: Zero Finger Gun
+  description: Deals 15% of enemies' current HP in damage to one enemy, changes
+    the orb of this character into a Matching orb, reduces enemies' Threshold
+    Damage Reduction duration by 4 turns, reduces Silence duration by 4 turns
+    and boosts the Color Affinity of [DEX] characters by 1.75x for 1 turn.
+  cooldown: 18
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Stussy, Kaku and Spandam
+  levels:
+    - value: 1
+    - value: 3
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 100
+    - hp: 200
+    - atk: 100
+    - type: potential
+    - cooldown: 3
+    - atk: 100
+    - hp: 200
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 131
+    rumbleType: ATK
+    spd: 202
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - Accuracy
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 0.75
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 30
+      effects:
+        - amount: 0.78
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 12
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 30
+      effects:
+        - amount: 0.81
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 13
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 30
+      effects:
+        - amount: 0.84
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 14
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 29
+      effects:
+        - amount: 0.87
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 29
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 29
+      effects:
+        - amount: 0.93
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 17
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 28
+      effects:
+        - amount: 0.96
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 18
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 28
+      effects:
+        - amount: 0.99
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 19
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 28
+      effects:
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX

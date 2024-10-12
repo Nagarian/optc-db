@@ -1,0 +1,45 @@
+type: STR
+name: Bartholomew Kuma
+japanName: バーソロミュー・くま
+family:
+  - BartholomewKuma
+class:
+  - Shooter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 290
+    atk: 110
+    rcv: 33
+  maxLvl:
+    hp: 1525
+    atk: 692
+    rcv: 118
+cost: 15
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 9031
+aliases: []
+evolution:
+  - id: 412
+    evolvers:
+      - 118
+      - 84
+      - 94
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK and HP of [STR] characters by 2x
+special:
+  name: Ursa Shock
+  description: Changes orbs of adjacent characters into [STR] orbs, deals 1,000
+    Fixed damage to all enemies
+  cooldown: 20
+  maxLevel: 7

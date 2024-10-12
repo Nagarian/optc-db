@@ -1,0 +1,54 @@
+type: PSY
+name: Bartolomeo - Captain of the Barto Club Pirates
+japanName: バルトロメオ 海賊団「バルトクラブ」船長
+family:
+  - Bartolomeo
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 444
+    atk: 255
+    rcv: 41
+  maxLvl:
+    hp: 1475
+    atk: 701
+    rcv: 156
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 81717
+aliases:
+  - Raid Bartolomeo
+evolution:
+  - id: 1879
+    evolvers:
+      - 118
+      - 98
+      - 1180
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x and reduces damage received by
+    10%. If you use "Barrier Crash" in this turn boosts ATK of all characters by
+    2.25x instead.
+special:
+  name: Barrier Crash
+  description: Reduces any damage received above 3,000 HP by 97% for 2 turns,
+    recovers 50% of crew's MAX HP, reduces enemies' ATK Up, Enrage, End of Turn
+    Damage/Percent Cut and Resilience Buffs duration by 5 turns.
+  cooldown: 33
+  maxLevel: 16
+  stages:
+    - description: Reduces any damage received above 5,000 HP by 97% for 2 turns,
+        recovers 20% of crew's MAX HP, reduces enemies' ATK Up and Enrage Buffs
+        duration by 5 turns.
+      cooldown: 28

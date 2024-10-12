@@ -1,0 +1,61 @@
+type: QCK
+name: Vinsmoke Ichiji - The Science Military's True Worth
+japanName: ヴィンスモーク・イチジ 科学戦闘部隊の真価
+family:
+  - VinsmokeIchiji
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1193
+    atk: 560
+    rcv: 94
+  maxLvl:
+    hp: 2982
+    atk: 1401
+    rcv: 236
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 213417
+aliases:
+  - Secret Ichiji
+  - Limited Ichiji
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.5x.
+special:
+  name: Sparking Knuckle
+  description: Reduces enemies' Increased Defense and Percent Damage Reduction
+    duration by 5 turns. If you are on a Treasure Map, boosts the Color Affinity
+    of [QCK] characters by 1.5x-2x for 3 turns depending on your Treasure Map
+    Level.
+  cooldown: 13
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.5x Affinity boost  
+    Level 11-20: 1.75x Affinity boost  
+    Level 21+: 2x Affinity boost
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vinsmoke Reiju
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - description: When the supported character hits a PERFECT, reduces enemies'
+        Percent Damage Reduction duration by 1 turn.
+      value: 4

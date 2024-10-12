@@ -1,0 +1,104 @@
+type: INT
+name: "Brook - Straw Hat Pirates: Born Again"
+japanName: ブルック 新生・麦わらの一味
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1176
+    atk: 482
+    rcv: 131
+  maxLvl:
+    hp: 2421
+    atk: 1317
+    rcv: 329
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 47322
+aliases:
+  - New World Brook
+  - Timeskip Brook
+  - TS Brook
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 2.5x. Protects from defeat
+    as long as HP is above 50%
+special:
+  name: "Soul's Murder Soul: Soul Solid"
+  description: Delays all enemies by 1 turn and boosts ATK of Slasher and Free
+    Spirit characters by 1.75x for 1 turn
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin and Franky
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 15
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - rcv: 20
+    - hp: 30
+    - rcv: 40
+    - atk: 15
+    - atk: 25
+    - hp: 40
+    - atk: 30
+    - rcv: 50
+    - hp: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

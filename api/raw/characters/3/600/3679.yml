@@ -1,0 +1,239 @@
+type: INT
+name: Usopp - Straw Hat Pirates Enjoying the FES
+family:
+  - Usopp
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 2114
+    atk: 735
+    rcv: 103
+  maxLvl:
+    hp: 4228
+    atk: 1470
+    rcv: 206
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - Rumble Limited Secret RED
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 3x.
+special:
+  name: Knock-Down Impact Wolf
+  description: Reduces Paralysis duration by 2 turns, delays all enemies by 1 turn
+    and boosts ATK against delayed enemies by 1.25x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 30
+limitBreak:
+  path:
+    - rcv: 40
+    - hp: 80
+    - atk: 100
+    - type: potential
+    - hp: 120
+    - hp: 200
+    - atk: 150
+    - rcv: 60
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 222
+    rumbleType: SPT
+    spd: 155
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+            - Accuracy
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - Critical Hit
+            - ATK
+          duration: 11
+          effect: buff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - amount: 10
+          effect: recharge
+          targeting:
+            count: 2
+            priority: lowest
+            stat: Special CT
+            targets:
+              - crew
+            excludes:
+              - self
+          type: Special CT
+        - attributes:
+            - ATK
+          duration: 6
+          effect: debuff
+          level: 1
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 12
+        - override:
+            amount: 12
+        - override:
+            level: 2
+            duration: 7
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 14
+        - override:
+            level: 3
+            duration: 8
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            amount: 16
+        - override:
+            level: 4
+            duration: 9
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            amount: 18
+        - override:
+            level: 5
+            duration: 10
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            amount: 20
+        - override:
+            level: 6
+            duration: 11
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 17
+        - override:
+            amount: 22
+        - override:
+            level: 7
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            amount: 24
+        - override:
+            level: 8
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            level: 6
+            duration: 19
+        - override:
+            amount: 26
+        - override:
+            level: 9
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            level: 7
+            duration: 20
+        - override:
+            amount: 30
+        - override:
+            level: 10
+            duration: 15

@@ -1,0 +1,91 @@
+type: QCK
+name: Inazuma - Revolutionary Army
+japanName: イナズマ 革命軍
+family:
+  - Inazuma
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1244
+    atk: 400
+    rcv: 199
+  maxLvl:
+    hp: 2559
+    atk: 833
+    rcv: 380
+cost: 29
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 15188
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x, deals 5x character's ATK
+    in [QCK] damage to all enemies at the end of each turn
+special:
+  name: KEEP OUT
+  description: Reduces any damage received above 5,000 HP by 97% for 3 turns
+  cooldown: 18
+  maxLevel: 5
+  notes: "The exact formula for the damage received is: 5,000 + ((total damage) -
+    5,000) \\* 0.03"
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Makes [QCK] orbs beneficial for Slasher characters
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy and Emporio Ivankov
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 40
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 30
+    - type: sailor
+    - atk: 40
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4

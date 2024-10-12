@@ -1,0 +1,512 @@
+type: PSY
+name: Gol D. Roger - Captain of the Roger Pirates
+japanName: ゴール・D・ロジャー ロジャー海賊団船長
+family:
+  - GolDRoger
+class:
+  - Free Spirit
+  - Slasher
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1737
+    atk: 1044
+    rcv: 61
+  maxLvl:
+    hp: 3861
+    atk: 1740
+    rcv: 202
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - inkable
+links:
+  gamewithId: 248545
+aliases:
+  - World Cruise Roger
+  - V1 Legend Roger
+captain:
+  name: ""
+  description: Nullifies Remove Beneficial Effects and Remove Accumulated Value
+    effects once per adventure. Boosts ATK of all characters by 4.5x and their
+    HP by 1.3x and removes Despair duration completely. If you use "Divine
+    Departure" on this Roger boosts ATK of all characters by 5x for 3 turns
+    instead.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Kozuki
+    Oden, Silvers Rayleigh, Edward Newgate (Whitebeard), Crocus, Shanks, Buggy,
+    Inuarashi, Nekomamushi and Portgas D. Ace, excluding Support members."
+  description: Changes all orbs, including [BLOCK] orbs, into Matching orbs, locks
+    all orbs for 1 turn and transforms all [PSY] characters into Super [PSY]
+    characters.
+special:
+  name: Divine Departure
+  description: Deals 1,000,000 Fixed True damage, ignoring Normal Attack Only, to
+    all enemies and boosts ATK of all characters by 2x-3x for 1 turn depending
+    on the amount of normal attack damage dealt before this special was
+    activated. If this character is your Captain/Friend Captain, increases
+    duration of any Orb Amplification buffs by 1 turn.
+  cooldown: 19
+  maxLevel: 6
+  notes: |-
+    0-1,499,999 damage: 2x ATK boost  
+    1,500,000-2,999,999 damage: 2.5x ATK boost  
+    3,000,000+ damage: 3x ATK boost
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+  - description: Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this
+      character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: All characters
+  levels:
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 10
+    - value: 11
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - hp: 100
+    - hp: 100
+    - hp: 110
+    - type: sailor
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 50
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 5
+        - value: 8
+        - value: 10
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+        - value: 8
+          threshold: 90
+        - value: 10
+          threshold: 100
+rumble:
+  stats:
+    def: 193
+    rumbleType: ATK
+    spd: 214
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+            - SPD
+          condition:
+            comparator: first
+            count: 60
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - {}
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - {}
+        - override:
+            level: 3
+        - override:
+            level: 4
+    - effects:
+        - {}
+        - override:
+            level: 4
+        - override:
+            level: 5
+    - effects:
+        - {}
+        - override:
+            level: 5
+        - override:
+            level: 6
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 1000
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 6
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 6
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 6
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            duration: 7
+        - override:
+            duration: 7
+        - override:
+            duration: 7
+            level: 2
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            duration: 8
+            level: 2
+        - override:
+            duration: 8
+            level: 2
+        - override:
+            duration: 8
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            duration: 9
+            level: 3
+        - override:
+            duration: 9
+            level: 2
+        - override:
+            duration: 9
+            level: 4
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            duration: 10
+            level: 3
+        - override:
+            duration: 10
+            level: 3
+        - override:
+            duration: 10
+            level: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            duration: 11
+            level: 4
+        - override:
+            duration: 11
+            level: 3
+        - override:
+            duration: 11
+            level: 6
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            duration: 12
+            level: 5
+        - override:
+            duration: 12
+            level: 4
+        - override:
+            duration: 12
+            level: 7
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            duration: 13
+            level: 5
+        - override:
+            duration: 13
+            level: 4
+        - override:
+            duration: 13
+            level: 8
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            duration: 14
+            level: 6
+        - override:
+            duration: 14
+            level: 5
+        - override:
+            duration: 14
+            level: 9
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            duration: 15
+            level: 7
+        - override:
+            duration: 15
+            level: 5
+        - override:
+            duration: 15
+            level: 10
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+              - HP
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - PSY
+          - attributes:
+              - Special CT
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - PSY
+          - attributes:
+              - ATK
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Slasher
+          - attributes:
+              - SPD
+              - Guard
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - Slasher
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 4
+      - effects:
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 3
+          - override:
+              level: 5
+      - effects:
+          - override:
+              level: 6
+          - override:
+              level: 3
+          - override:
+              level: 3
+          - override:
+              level: 6
+    burst:
+      condition:
+        - count: 55000
+          type: dmgreceived
+      special:
+        - uses: 2
+          effects:
+            - amount: 1000
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+            - attributes:
+                - Half Stats
+              chance: 60
+              duration: 12
+              effect: hinderance
+              targeting:
+                targets:
+                  - enemies
+        - uses: 2
+          effects:
+            - override:
+                amount: 1375
+            - override:
+                chance: 70
+                duration: 14
+        - uses: 2
+          effects:
+            - override:
+                amount: 1750
+            - override:
+                chance: 80
+                duration: 16
+        - uses: 2
+          effects:
+            - override:
+                amount: 2125
+            - override:
+                chance: 90
+                duration: 18
+        - uses: 2
+          effects:
+            - override:
+                amount: 2500
+            - override:
+                chance: 100
+                duration: 20

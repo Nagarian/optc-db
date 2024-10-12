@@ -1,0 +1,603 @@
+type: QCK
+name: Cat Viper - Stubborn King of the Night
+japanName: ネコマムシ 話の通じぬ“夜の王”
+family: []
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1202
+    atk: 723
+    rcv: 187
+  maxLvl:
+    hp: 2740
+    atk: 1288
+    rcv: 314
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 200918
+aliases:
+  - Limited Nekomamushi
+  - Secret Nekomamushi
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 2.25x and their HP by 1.25x.
+special:
+  name: Awoken Spear Attack
+  description: Makes [QCK] orbs beneficial for Striker and Cerebral characters for
+    1 turn and boosts ATK of Striker and Cerebral characters by 1.75x for 1
+    turn.
+  cooldown: 10
+  maxLevel: 1
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+limitBreak:
+  path:
+    - hp: 50
+    - rcv: 25
+    - rcv: 25
+    - type: potential
+    - hp: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - slot: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 235
+    rumbleType: DEF
+    spd: 113
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 32
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 34
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 36
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 38
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 40
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 42
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 44
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 46
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+    - cooldown: 35
+      effects:
+        - amount: 30
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - ATK
+          duration: 49
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Striker
+              - Cerebral
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - self

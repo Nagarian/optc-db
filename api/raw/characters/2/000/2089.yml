@@ -1,0 +1,51 @@
+type: PSY
+name: Nami - Let's Go to the Pirate Festival!
+japanName: ナミ Let’s go for PIRATE FESTIVAL
+family:
+  - Nami
+class:
+  - Cerebral
+  - Shooter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 594
+    atk: 288
+    rcv: 85
+  maxLvl:
+    hp: 1740
+    atk: 1008
+    rcv: 324
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 102415
+aliases:
+  - Pizza Nami
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and reduces damage received by 15%
+special:
+  name: Intoxicating Magic
+  description: If HP is full at the time the special was activated, reduces Bind
+    duration by 3 turns and boosts ATK of all characters by 1.5x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Shooter characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 2
+    - value: 3

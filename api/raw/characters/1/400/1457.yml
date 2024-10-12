@@ -1,0 +1,49 @@
+type: INT
+name: Klahadore - Butler
+japanName: クラハドール 執事
+family:
+  - Kuro
+class:
+  - Slasher
+  - Cerebral
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 109
+    atk: 109
+    rcv: 30
+  maxLvl:
+    hp: 892
+    atk: 557
+    rcv: 187
+cost: 16
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - coliseum
+links:
+  gamewithId: 50810
+aliases:
+  - Colo Kuro
+  - Coliseum Kuro
+evolution:
+  - id: 1458
+    evolvers:
+      - 83
+      - 85
+      - 88
+      - 96
+      - 99
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [QCK] and [INT] characters by 1.75x
+special:
+  name: Pussyfoot Maneuver
+  description: Reduces Bind and Despair duration by 2 turns, for Slasher and
+    Cerebral characters, randomizes non-Matching orbs and changes the orb of
+    this character into an [INT] orb
+  cooldown: 18
+  maxLevel: 12

@@ -1,0 +1,40 @@
+type: QCK
+name: Hammond
+japanName: ハモンド
+family:
+  - Hammond
+class:
+  - Powerhouse
+  - Shooter
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 217
+    atk: 71
+    rcv: 17
+  maxLvl:
+    hp: 1701
+    atk: 817
+    rcv: 117
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 52493
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by ?x-2.25x depending on the
+    crew's current HP
+  notes: "`captainProportional : lower : ? + ? * (1 - (remaining HP) / (total HP))
+    : ? : 2.25`"
+special:
+  name: Absurd Invitation
+  description: Changes the orb of this character into a [QCK] orb and changes orbs
+    of adjacent characters into [EMPTY] orbs
+  cooldown: 14
+  maxLevel: 8

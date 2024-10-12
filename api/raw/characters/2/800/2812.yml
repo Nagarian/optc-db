@@ -1,0 +1,92 @@
+type: STR
+name: Okiku - Teahouse Beauty
+japanName: お菊 麗しき茶屋の看板娘
+family:
+  - Kikunojo
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 813
+    atk: 432
+    rcv: 112
+  maxLvl:
+    hp: 2588
+    atk: 1382
+    rcv: 308
+cost: 30
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 181588
+aliases:
+  - Kizuna Kikunojo
+  - Kizuna Okiku
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x-2.5x depending on the crew's current HP.
+  notes: "`captainProportional : higher : 2 + 1 * (remaining HP) / (total HP) : 3
+    : 2`"
+special:
+  name: Poster Girl's Reception
+  description: Reduces Bind and Paralysis duration by 2 turns, reduces Special
+    Cooldown of all characters by 1 turn and reduces damage received by 70% for
+    1 turn
+  cooldown: 26
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher characters by 25
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 50
+    - atk: 50
+    - rcv: 10
+    - type: potential
+    - hp: 50
+    - atk: 50
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - atk: 50
+    - hp: 100
+    - type: sailor
+    - captain:
+        description: Boosts ATK of all characters by 2x-3x depending on the crew's
+          current HP.
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100

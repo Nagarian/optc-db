@@ -1,0 +1,571 @@
+type: DEX
+name: Silvers Rayleigh - Old Man Watching Over the New Age
+japanName: シルバーズ・レイリー 時代を見守る老兵
+family:
+  - SilversRayleigh
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 901
+    atk: 167
+    rcv: 17
+  maxLvl:
+    hp: 2105
+    atk: 738
+    rcv: 206
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 83029
+aliases:
+  - V2 Legend Rayleigh
+evolution:
+  - id: 1883
+    evolvers:
+      - 118
+      - 80
+      - 1180
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight. Boosts ATK of all characters by 3.5x and boosts chances of
+    getting Matching orbs if HP is below 30% at the start of the turn, by 2.5x
+    otherwise and boosts HP and RCV of all characters by 1.25x
+special:
+  name: Signaling the Beginning of a Bright Future
+  description: Deals 200,000 Fixed True damage to one enemy, locks the chain
+    multiplier at 3x for 1 turn, boosts Orb Effects of all characters by 1.75x
+    for 1 turn and if HP is below 30% at the time the special is activated,
+    reduces damage received by 95% for 1 turn and changes [RCV], [TND], [EMPTY]
+    and [BLOCK] orbs into Matching orbs
+  cooldown: 20
+  maxLevel: 7
+rumble:
+  stats:
+    def: 208
+    rumbleType: DEF
+    spd: 103
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Guard
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Guard
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Guard
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Guard
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Guard
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 37
+      effects:
+        - amount: 350
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 375
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 400
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 425
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 450
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 475
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 500
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 525
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 22
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 550
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 23
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 37
+      effects:
+        - amount: 600
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          duration: 24
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

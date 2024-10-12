@@ -1,0 +1,93 @@
+type: PSY
+name: Don Chin Jao - 12th Leader of the Happosui Army
+japanName: 首領・チンジャオ 元八宝水軍第１２代棟梁
+family:
+  - Chinjao
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1177
+    atk: 576
+    rcv: 77
+  maxLvl:
+    hp: 2707
+    atk: 1367
+    rcv: 212
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 50809
+aliases:
+  - Colo Don Chinjao
+  - Coliseum Don Chinjao
+  - Colo Chinjao
+  - Coliseum Chinjao
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.75x until the first hit
+    other than PERFECT and recovers 120 HP at the end of each turn
+special:
+  name: Legend Told to the Grandchild
+  description: Deals 25% of enemies' current HP in damage to one enemy, reduces
+    damage received by 70% for 1 turn
+  cooldown: 30
+  maxLevel: 16
+  stages:
+    - description: Deals 20% of enemies' current HP in damage to one enemy, reduces
+        damage received by 50% for 1 turn
+      cooldown: 25
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Powerhouse characters by 50
+  - description: Adds 2x character's ATK as Additional Damage
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Sai and Boo
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - rcv: 30
+    - hp: 30
+    - hp: 60
+    - slot: 1
+    - atk: 80
+    - type: sailor
+    - slot: 1
+    - hp: 80
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

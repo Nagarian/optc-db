@@ -1,0 +1,105 @@
+type: DEX
+name: Eustass Kid - Red-Hair-Seeking Worst Generation
+japanName: ユースタス・キッド "赤髪" を狙う最悪の世代
+family:
+  - EustassKid
+class:
+  - Striker
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1522
+    atk: 863
+    rcv: 105
+  maxLvl:
+    hp: 2849
+    atk: 1395
+    rcv: 237
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 103566
+aliases:
+  - Colo Kid
+  - Coliseum Kid
+  - Timeskip Captain Kid
+  - Timeskip Kid
+  - Colo Kidd
+  - Coliseum Kidd
+  - Timeskip Captain Kidd
+  - Timeskip Kidd
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Shooter characters by 2.5x and deals 5x
+    character's ATK in [DEX] damage to all enemies at the end of each turn
+special:
+  name: Electromagnetic Projection Sword
+  description: Deals 5 hits of random [DEX] damage to random enemies and reduces
+    Special Cooldown of Striker and Shooter characters by 2 turns. If your
+    Captain is a Striker or Shooter character, deals 350x character's ATK in
+    [DEX] damage to all enemies at the end of the turn for 2 turns
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] characters by 20
+  - description: Boosts base ATK of Striker characters by 30
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - HP
+  criteria: Killer, Scratchmen Apoo and Basil Hawkins
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 8
+      reduction: 2
+    - value: 11
+      reduction: 3
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - atk: 30
+    - type: potential
+    - slot: 1
+    - cooldown: 1
+    - hp: 40
+    - atk: 30
+    - hp: 40
+    - cooldown: 1
+    - atk: 30
+    - rcv: 60
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 11

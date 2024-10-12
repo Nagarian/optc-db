@@ -1,0 +1,50 @@
+type: PSY
+name: Porche - Cutie Baton User
+japanName: ポルチェ キューティバトンの使い手
+family:
+  - Porche
+class:
+  - Shooter
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 591
+    atk: 314
+    rcv: 121
+  maxLvl:
+    hp: 1103
+    atk: 656
+    rcv: 330
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 34495
+aliases:
+  - Colo Porche
+  - Coliseum Porche
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.75x and their RCV by 1.5x
+special:
+  name: "Cutie Baton: Flower Shuriken"
+  description: Deals 5x character's ATK in [PSY] damage to all enemies. Recovers
+    15x character's RCV in HP
+  cooldown: 22
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Foxy
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 9
+    - value: 13

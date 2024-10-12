@@ -1,0 +1,168 @@
+type: INT
+name: Otama
+japanName: お玉
+family:
+  - Tama
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 102
+    atk: 98
+    rcv: 23
+  maxLvl:
+    hp: 976
+    atk: 616
+    rcv: 182
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 177828
+aliases:
+  - Tama
+  - Otama
+evolution:
+  - id: 2780
+    evolvers:
+      - 94
+      - 1180
+      - 304
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x and recovers 500 HP at the
+    end of each turn.
+special:
+  name: It's a Big Dango!!
+  description: Reduces Burn, Paralysis, Chain Multiplier Limit and Chain
+    Coefficient Reduction duration by 7 turns and recovers 30x character's RCV
+    in HP.
+  cooldown: 21
+  maxLevel: 7
+  stages:
+    - description: Reduces Burn, Paralysis, Chain Multiplier Limit and Chain
+        Coefficient Reduction duration by 3 turns and recovers 8x character's
+        RCV in HP.
+      cooldown: 16
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 20
+rumble:
+  stats:
+    def: 117
+    rumbleType: RCV
+    spd: 128
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 15
+          effect: recharge
+          type: percentage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - crew
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            duration: 16
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 16
+        - override:
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 16
+        - override:
+            duration: 19
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 17
+        - override:
+            duration: 20
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 17
+        - override:
+            duration: 21
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 17
+        - override:
+            duration: 22
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 18
+        - override:
+            duration: 23
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 3
+            duration: 24

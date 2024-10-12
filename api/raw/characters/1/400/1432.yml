@@ -1,0 +1,98 @@
+type: PSY
+name: General Franky - Iron Pirate
+japanName: フランキー将軍 鉄の海賊（アイアンパイレーツ）
+family:
+  - Franky
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1487
+    atk: 667
+    rcv: 67
+  maxLvl:
+    hp: 3330
+    atk: 1400
+    rcv: 181
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 50027
+aliases:
+  - Shogun Franky
+  - Raid Franky
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x if there's a [STR], [DEX],
+    [QCK], [PSY] and [INT] character in your crew and boosts their HP by 1.5x if
+    there's a Fighter, Slasher, Shooter, Driven, Free Spirit and Powerhouse
+    character in your crew
+special:
+  name: General Cannon
+  description: Deals 100x character's ATK in Typeless damage to all enemies,
+    removes enemies' ATK Up, Enrage, End of Turn Damage/Percent Cut and End of
+    Turn Heal Buffs duration completely and boosts ATK of all characters by 1.5x
+    for 1 turn
+  cooldown: 33
+  maxLevel: 17
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy, Usopp and Tony Tony Chopper
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - description: Boosts the supported character's ATK by 1.3x against Baby 5 and Buffalo
+      value: 7
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - hp: 60
+    - atk: 20
+    - type: sailor
+    - hp: 120
+    - slot: 1
+    - rcv: 30
+    - atk: 40
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1.5
+          threshold: 25
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

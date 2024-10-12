@@ -1,0 +1,95 @@
+type: DEX
+name: Smoker G-5 Vice Admiral
+japanName: スモーカー 海軍ＧＬ第５支部「Ｇ‐５」中将
+family:
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1257
+    atk: 594
+    rcv: 44
+  maxLvl:
+    hp: 2738
+    atk: 1430
+    rcv: 196
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 37122
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Driven characters by 2.25x and reduces
+    RCV of all characters by 50%. If this character becomes your captain in the
+    middle of an island, reduces damage received by 30% and boosts ATK of
+    Striker and Driven characters by 2.925x instead
+special:
+  name: Armed - White Launcher
+  description: Deals 30x character's ATK in [DEX] damage to one enemy. If this
+    character is a Sailor, swaps this unit with your captain for 2 turns
+  cooldown: 19
+  maxLevel: 8
+  notes: This is the same type of ability as raid boss Shiki's swap. You cannot
+    use it if another effect swaps your captain. (Such as if Shiki swaps first)
+sailor:
+  - description: Boosts base ATK of Striker characters by 50
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Tashigi and Hina
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - hp: 60
+    - type: potential
+    - rcv: 20
+    - cooldown: 1
+    - rcv: 30
+    - atk: 30
+    - hp: 70
+    - cooldown: 1
+    - atk: 35
+    - type: sailor
+    - atk: 45
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 40
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

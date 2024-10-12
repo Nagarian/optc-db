@@ -1,0 +1,47 @@
+type: INT
+name: Capone "Gang" Bege - Big Mom Pirate Family Member
+japanName: カポネ・“ギャング”ベッジ ビッグ・マム海賊団傘下
+family:
+  - CaponeBege
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 951
+    atk: 472
+    rcv: 48
+  maxLvl:
+    hp: 1980
+    atk: 1281
+    rcv: 243
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 117423
+aliases:
+  - ""
+evolution:
+  - id: 2597
+    evolvers:
+      - skullINT
+      - 83
+      - 88
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Shooter characters by 1 turn at the
+    start of the fight and boosts ATK of Shooter characters by 2.25x
+special:
+  name: Leader's Orders "Simultaneous Sweep"
+  description: Deals 12 hits of random Typeless damage to random enemies and locks
+    all orbs for 1 turn. If HP is above ?% at the time the special is activated,
+    boosts the Color Affinity of Shooter characters by 1.5x for 1 turn.
+  cooldown: 17
+  maxLevel: 6

@@ -1,0 +1,262 @@
+type: QCK
+name: Miyagi & Tristan
+japanName: ミヤギ＆トリスタン
+family:
+  - Miyagi
+  - Tristan
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1024
+    atk: 473
+    rcv: 146
+  maxLvl:
+    hp: 2512
+    atk: 1385
+    rcv: 380
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Kizuna
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 3x and recovers 3x
+    character's RCV in HP at the end of each turn.
+special:
+  name: Fervent Medical Aid
+  description: Reduces Special Cooldown of Striker and Cerebral characters by 2
+    turns, reduces Bind and ATK DOWN duration by 6 turns, changes [BLOCK] and
+    Badly Matching orbs into Matching orbs and recovers 15x character's RCV in
+    HP at the end of each turn for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+  stages:
+    - description: Reduces Special Cooldown of Striker and Cerebral characters by 1
+        turn, reduces Bind and ATK DOWN duration by 4 turns and recovers 10x
+        character's RCV in HP at the end of each turn for 3 turns.
+      cooldown: 15
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Boosts base ATK, HP and RCV of Striker and Cerebral characters by 50
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 5
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 8
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 50
+        - value: 0.6
+          threshold: 50
+        - value: 0.7
+          threshold: 50
+        - value: 1
+          threshold: 50
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 131
+    rumbleType: RCV
+    spd: 175
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Paralysis
+      chance: 70
+      type: debuff
+    - attribute: Free Spirit
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 200
+          duration: 6
+          effect: recharge
+          interval: 5
+          targeting:
+            targets:
+              - Cerebral
+          type: fixed
+        - attributes:
+            - ATK
+            - SPD
+            - Guard
+          duration: 11
+          effect: buff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 230
+            duration: 7
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 260
+            duration: 8
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 290
+            duration: 9
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 320
+            duration: 10
+        - override:
+            level: 4
+            duration: 15
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 350
+            duration: 11
+        - override:
+            level: 4
+            duration: 16
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 380
+            duration: 12
+        - override:
+            level: 5
+            duration: 17
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 410
+            duration: 13
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 440
+            duration: 14
+        - override:
+            level: 6
+            duration: 19
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 500
+            duration: 15
+        - override:
+            level: 7
+            duration: 20

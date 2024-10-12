@@ -1,0 +1,325 @@
+type: STR
+name: Capone Bege - Invitation to the Tea Party
+japanName: カポネ・ベッジ お茶会への招待
+family:
+  - CaponeBege
+class:
+  - Driven
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 614
+    atk: 382
+    rcv: 37
+  maxLvl:
+    hp: 1365
+    atk: 849
+    rcv: 82
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 225030
+aliases:
+  - WCI Capone
+evolution:
+  - id: 3069
+    evolvers:
+      - 117
+      - 89
+      - 94
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2.5x and reduces damage
+    taken by 10%.
+special:
+  name: Manner-Questioning Bullet
+  description: Reduces Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 7 turns, reduces any damage received above 3,000 HP by 97% for 2
+    turns and recovers 30% of crew's MAX HP.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of [STR] and [PSY] characters by 50
+rumble:
+  stats:
+    def: 233
+    rumbleType: DEF
+    spd: 102
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.05
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.15
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.25
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 25
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR

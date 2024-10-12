@@ -1,0 +1,75 @@
+type: INT
+name: Tony Tony Chopper - Holy Night Reindeer
+japanName: トニートニー・チョッパー 聖夜のトナカイ
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1391
+    atk: 753
+    rcv: 83
+  maxLvl:
+    hp: 2509
+    atk: 1400
+    rcv: 130
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 133511
+aliases:
+  - Limited Chopper
+  - Secret Chopper
+captain:
+  name: ""
+  description: Boosts amount of Beli received by 3x
+  notes: Beli boost does not take effect if he becomes your captain in the middle
+    of the adventure.
+special:
+  name: The Ship's Doctor that Delivers a Merry Christmas
+  description: Reduces Silence duration by 2 turns and changes orbs of adjacent
+    characters into Matching Orbs. If you are on a Treasure Map, boosts ATK of
+    Fighter, Slasher and Striker characters by 1.75x-2.25x for 1 turn depending
+    on your Treasure Map Level
+  cooldown: 12
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x ATK boost  
+    Level 11-20: 2x ATK boost  
+    Level 21+: 2.25x ATK boost
+sailor:
+  - description: Reduces Silence duration completely on this character
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - atk: 10
+    - slot: 1
+    - rcv: 50
+    - atk: 15
+    - atk: 20
+    - hp: 80
+    - atk: 35
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 50
+        - value: 4
+          threshold: 60
+        - value: 5
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90

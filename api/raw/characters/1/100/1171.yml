@@ -1,0 +1,49 @@
+type: QCK
+name: Mr. Tanaka Gran Tesoro Security
+japanName: タナカさん 黄金船の警備担当
+family:
+  - Tanaka
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 849
+    atk: 449
+    rcv: 131
+  maxLvl:
+    hp: 1706
+    atk: 1089
+    rcv: 305
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 35201
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x
+special:
+  name: Escape-Escape Fruit
+  description: Reduces Bind duration by 3 turns and changes Badly Matching,
+    [BLOCK] and [BOMB] orbs into [EMPTY] orbs
+  cooldown: 19
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Gild Tesoro, Baccarat, Dice and Carina
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7

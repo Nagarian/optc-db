@@ -1,0 +1,36 @@
+type: STR
+name: Monkey D. Luffy
+frenchName: Monkey D. Luffy
+japanName: モンキー・D・ルフィ
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 42
+    atk: 15
+    rcv: 8
+  maxLvl:
+    hp: 134
+    atk: 68
+    rcv: 15
+cost: 1
+slots: 0
+maxExp: 163
+maxLevel: 5
+flags: []
+links:
+  gamewithId: 2017
+aliases: []
+evolution:
+  - id: 2
+    evolvers:
+      - 78
+special:
+  name: Spinning Gum Punch
+  description: Deals 5x character's ATK in [STR] damage to one enemy
+  cooldown: 3
+  maxLevel: 2

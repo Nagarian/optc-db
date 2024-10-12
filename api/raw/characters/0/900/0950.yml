@@ -1,0 +1,49 @@
+type: PSY
+name: Fire Fist Ace
+japanName: 火拳のエース
+family:
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 606
+    atk: 313
+    rcv: 54
+  maxLvl:
+    hp: 1496
+    atk: 744
+    rcv: 152
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 25098
+aliases:
+  - Colo Ace
+  - Coliseum Ace
+evolution:
+  - id: 951
+    evolvers:
+      - 118
+      - 83
+      - 87
+      - 98
+      - 303
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 2.5x after
+    scoring 3 PERFECTs in a row
+special:
+  name: "Flame Commandment: Fire Pillar"
+  description: Reduces Special Cooldown of Fighter and Free Spirit characters by 1
+    turn. Reduces damage received by 50% for 1 turn.
+  cooldown: 21
+  maxLevel: 13
+  notes: Reducing Special Cooldown works as if you took an extra turn

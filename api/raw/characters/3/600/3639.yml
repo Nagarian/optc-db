@@ -1,0 +1,204 @@
+type: QCK
+name: Senor Pink - Falling Memories
+family: []
+class:
+  - Free Spirit
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1860
+    atk: 806
+    rcv: 122
+  maxLvl:
+    hp: 3720
+    atk: 1612
+    rcv: 244
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - Rumble Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x and boosts HP of [QCK]
+    characters by 1.2x.
+special:
+  name: Freefall Strike
+  description: Deals 50x character's ATK in [QCK] damage to one enemy and changes
+    all orbs of [QCK] characters into [QCK] orbs.
+  cooldown: 15
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 30
+limitBreak:
+  path:
+    - atk: 75
+    - rcv: 50
+    - hp: 200
+    - type: potential
+    - atk: 75
+    - rcv: 50
+    - atk: 100
+    - hp: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 162
+    rumbleType: ATK
+    spd: 185
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+            - ATK
+          condition:
+            count: 6
+            stat: takes damage
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 31
+      effects:
+        - attributes:
+            - SPD
+            - ATK
+          duration: 11
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+        - amount: 0.3
+          effect: damage
+          repeat: 4
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 31
+      effects:
+        - override:
+            level: 3
+            duration: 12
+        - override:
+            amount: 0.4
+    - cooldown: 31
+      effects:
+        - override:
+            level: 4
+            duration: 13
+        - override:
+            amount: 0.5
+    - cooldown: 31
+      effects:
+        - override:
+            level: 4
+            duration: 14
+        - override:
+            amount: 0.6
+    - cooldown: 31
+      effects:
+        - override:
+            level: 5
+            duration: 15
+        - override:
+            amount: 0.7
+    - cooldown: 31
+      effects:
+        - override:
+            level: 5
+            duration: 16
+        - override:
+            amount: 0.8
+    - cooldown: 31
+      effects:
+        - override:
+            level: 6
+            duration: 17
+        - override:
+            amount: 0.9
+    - cooldown: 31
+      effects:
+        - override:
+            level: 6
+            duration: 18
+        - override:
+            amount: 1
+    - cooldown: 31
+      effects:
+        - override:
+            level: 7
+            duration: 19
+        - override:
+            amount: 1.1
+    - cooldown: 31
+      effects:
+        - override:
+            level: 8
+            duration: 20
+        - override:
+            amount: 1.3

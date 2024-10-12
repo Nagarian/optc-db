@@ -1,0 +1,212 @@
+type: STR
+name: Kaido - Confronting a Lingering Memory From the Past
+japanName: カイドウ 過去の影との対峙
+family:
+  - Kaido
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 2305
+    atk: 750
+    rcv: 22
+  maxLvl:
+    hp: 4611
+    atk: 1501
+    rcv: 43
+cost: 30
+slots: 5
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - special
+aliases:
+  - LT ST Kaido
+captain:
+  name: ""
+  description: Boosts ATK of Class 1 Driven characters by 3x, their HP by 1.2x and
+    boosts chances of getting [STR] orbs. If a Class 1 Driven character has a
+    [STR] orb, boosts their ATK by 4.5x instead.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Kurozumi Orochi, King, Queen or Jack, excluding Support members."
+  description: Reduces Special Cooldown of [STR] characters by 1 turn, changes all
+    orbs into [STR] orbs and transforms all [STR] characters into Super [STR]
+    characters.
+special:
+  name: Lightning Roar
+  description: Reduces Despair and Burn duration by 3 turns, deals 300x
+    character's ATK in [STR] damage to all enemies, removes all positive buffs
+    on your team, changes all orbs, including [BLOCK] orbs, into [STR] orbs and
+    boosts ATK of Driven characters by 2.25x for 1 turn.
+  cooldown: 17
+  maxLevel: 1
+sailor:
+  - description: Makes [STR] orbs beneficial for Driven characters
+  - description: Boosts base ATK of Driven characters by 70
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Driven Characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+limitBreak:
+  path:
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - cooldown: 2
+    - type: potential
+    - type: sailor
+    - atk: 50
+    - hp: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 6
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: On the last Stage when character has a [STR] orb
+    levels:
+      - description: Boosts own base ATK by 100 for 1 turn.
+      - description: Boosts own base ATK by 250 for 1 turn.
+      - description: Boosts own base ATK by 400 for 1 turn.
+      - description: Boosts own base ATK by 550 for 1 turn.
+      - description: Boosts own base ATK by 700 for 1 turn.
+rumble:
+  stats:
+    def: 158
+    rumbleType: ATK
+    spd: 167
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 250
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 10
+          effect: damage
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: cut
+        - amount: 0.5
+          effect: damage
+          targeting:
+            targets:
+              - DEX
+          type: atk
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 12
+        - override:
+            amount: 0.6
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 14
+        - override:
+            amount: 0.7
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 16
+        - override:
+            amount: 0.8
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 18
+        - override:
+            amount: 0.9
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 20
+        - override:
+            amount: 1
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 22
+        - override:
+            amount: 1.1
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 24
+        - override:
+            amount: 1.2
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 26
+        - override:
+            amount: 1.3
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 30
+        - override:
+            amount: 1.5

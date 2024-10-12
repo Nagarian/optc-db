@@ -1,0 +1,446 @@
+type: PSY
+name: Germa 66 - Science Military
+japanName: ジェルマ６６ 科学戦闘部隊
+family:
+  - VinsmokeJudge
+  - VinsmokeReiju
+  - VinsmokeIchiji
+  - VinsmokeNiji
+  - VinsmokeYonji
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 731
+    atk: 440
+    rcv: 41
+  maxLvl:
+    hp: 1625
+    atk: 978
+    rcv: 92
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 224884
+aliases:
+  - Vinsmoke Judge
+  - Vinsmoke Reiju
+  - Vinsmoke Ichiji
+  - Vinsmoke Niji
+  - Vinsmoke Yonji
+  - Legend Germa 66
+evolution:
+  - id: 3071
+    evolvers:
+      - 118
+      - 83
+      - 266
+      - 1180
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 4x, boosts ATK of all other
+    characters by 3.75x and makes [TND] orbs beneficial for all characters. If a
+    [PSY] character has a [PSY] or [TND] orb, boosts their ATK by 5x instead. If
+    this character becomes your captain in the middle of an island, this
+    character's own normal attacks count as Type Effective against all Types.
+special:
+  name: Calling Germa 66
+  description: Changes all orbs into [TND] orbs and boosts Orb Effects of [PSY]
+    characters by 2.25x for 2 turns. If this character is a Sailor, swaps this
+    unit with your captain for 2 turns.
+  cooldown: 19
+  maxLevel: 6
+  stages:
+    - description: Changes the orb of this character into a [TND] orb and boosts Orb
+        Effects of [PSY] characters by 2x for 1 turn. If this character is a
+        Sailor, swaps this unit with your captain for 1 turn.
+      cooldown: 16
+rumble:
+  stats:
+    def: 128
+    rumbleType: ATK
+    spd: 182
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 1500
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 80
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 1600
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 81
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 1700
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 82
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 1800
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 83
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 1900
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 84
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 2000
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 85
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 2100
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 86
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 2200
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 87
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 2300
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 88
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+    - cooldown: 30
+      effects:
+        - amount: 2500
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 100
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - INT
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

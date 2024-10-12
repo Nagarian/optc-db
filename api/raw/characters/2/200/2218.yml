@@ -1,0 +1,48 @@
+type: STR
+name: Duke Dogstorm
+japanName: イヌアラシ公爵
+family:
+  - Inuarashi
+class:
+  - Slasher
+  - Cerebral
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 410
+    atk: 259
+    rcv: 25
+  maxLvl:
+    hp: 1112
+    atk: 614
+    rcv: 61
+cost: 13
+slots: 3
+maxExp: 130703
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 116885
+aliases:
+  - Dogstorm
+  - Dog Storm
+evolution:
+  - id: 2219
+    evolvers:
+      - 117
+      - 78
+      - 84
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.75x
+special:
+  name: Dog Treat
+  description: Reduces enemies' Increased Defense duration by 2 turns and changes
+    the orb of this character into a [STR] orb. If your Captain is a Cerebral
+    character, Locks the chain multiplier at 2.5x for 1 turn.
+  cooldown: 19
+  maxLevel: 7

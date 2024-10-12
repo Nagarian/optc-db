@@ -1,0 +1,52 @@
+type: INT
+name: Sky Breeder Ohm
+japanName: スカイブリーダー・オーム
+family:
+  - Ohm
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 197
+    atk: 169
+    rcv: -200
+  maxLvl:
+    hp: 1710
+    atk: 1170
+    rcv: -150
+cost: 20
+slots: 3
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 35526
+aliases:
+  - Colo Ohm
+  - Coliseum Ohm
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Powerhouse characters by 1x, by 2.5x
+    instead if they have a beneficial orb, reduces crew's RCV to 0
+special:
+  name: Investigator of Sorrow
+  description: Changes all orbs, including [BLOCK] orbs, of Cerebral and
+    Powerhouse characters into Badly Matching orbs. Deals ?x character's ATK in
+    [INT] damage to all enemies
+  cooldown: 17
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Enel, Shura, Satori and Gedatsu
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 13

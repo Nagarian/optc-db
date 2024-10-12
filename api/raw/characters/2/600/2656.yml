@@ -1,0 +1,172 @@
+type: QCK
+name: Brook - Musician Infiltrating the Pirates Expo
+japanName: ブルック 『海賊万博』に忍び込む音楽家
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 422
+    atk: 281
+    rcv: 56
+  maxLvl:
+    hp: 1131
+    atk: 821
+    rcv: 129
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 161688
+aliases:
+  - Stampede Brook
+evolution:
+  - id: 2657
+    evolvers:
+      - 94
+      - 2662
+      - 301
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x and boosts their HP by 1.2x.
+special:
+  name: "Song of Scratches: Freezing Rubble"
+  description: Deals 50x character's ATK in [QCK] damage to one enemy and boosts
+    ATK of [STR], [QCK] and [INT] characters by 1.5x for 1 turn. If during that
+    turn you score 4 PERFECT hits, boosts ATK of [STR], [QCK] and [INT]
+    characters by 2x for 2 turns in the following turn.
+  cooldown: 22
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 10 turns
+rumble:
+  stats:
+    def: 110
+    rumbleType: SPT
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 0.35
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - INT
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.38
+        - override:
+            duration: 21
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            duration: 23
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            duration: 24
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.46
+        - override:
+            level: 2
+            duration: 26
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            level: 2
+            duration: 27
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.51
+        - override:
+            level: 2
+            duration: 29
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 3
+            duration: 30
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.57
+        - override:
+            level: 3
+            duration: 32
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            level: 4
+            duration: 33

@@ -1,0 +1,218 @@
+type: STR
+name: Portgas D. Ace - Pirate of the Whitebeard Era
+japanName: ポートガス・D・エース “白ひげ”時代の海賊
+family:
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 667
+    atk: 222
+    rcv: 42
+  maxLvl:
+    hp: 2210
+    atk: 778
+    rcv: 121
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 165297
+aliases:
+  - Raid Ace
+evolution:
+  - id: 2394
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Fighter, Free Spirit and Powerhouse characters by 2x,
+    by 2.5x instead if HP is below 50% at the start of the turn.
+special:
+  name: Ace Special
+  description: Deals 40x character's ATK in [STR] damage to one enemy and changes
+    [BLOCK] orbs into Matching orbs. If HP is below 30% at the time the special
+    is activated, boosts Orb Effects of Fighter, Free Spirit and Powerhouse
+    characters by 2.25x for 1 turn, by 2x otherwise.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of top row characters by 80
+rumble:
+  stats:
+    def: 102
+    rumbleType: ATK
+    spd: 183
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 45
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+              - Powerhouse
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+              - Powerhouse
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.64
+        - override:
+            level: 2
+            duration: 16
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.67
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.71
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.79
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.82
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.86
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 2
+            duration: 23
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            level: 3
+            duration: 25

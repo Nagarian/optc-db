@@ -1,0 +1,159 @@
+type: INT
+name: Blackbeard - Emperor
+japanName: 黒ひげ 四皇
+family:
+  - MarshallDTeach
+class:
+  - Driven
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1688
+    atk: 1054
+    rcv: 98
+  maxLvl:
+    hp: 3768
+    atk: 1650
+    rcv: 222
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 202415
+aliases:
+  - Marshall D. Teach
+  - V2 Legend BB
+evolution:
+  - id: 3739
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of this character by 5x, boosts ATK of other [INT]
+    characters by 4.25x, their HP by 1.5x, reduces RCV of all characters by 85%
+    and reduces Special Cooldown of this character by 2 turns after each turn
+    you take damage.
+superSpecial:
+  criteria: This character must be captain and Blackbeard's ATK after boosts
+    should be greater than 500x his base ATK.
+  description: Boosts base ATK of this character by 1000 for 1 turn, reduces all
+    enemies' positive buffs duration by 1 turn and transforms all [INT]
+    characters into Super [INT] characters.
+  notes: "Positive Buffs include, but are not limited to: ATK UP, Any Variation of
+    Debuff Immunity, Increased Defense, Percent Damage Reduction, Threshold
+    Damage Reduction and Enrage. This list will be expanded if any specific
+    exceptions are found."
+special:
+  name: Quake Strike of the New Emperor
+  description: Deals 10% of enemies' current HP in True damage to one enemy,
+    changes the orb of this character into a Matching orb, boosts ATK of this
+    character by 2x-4x for 1 turn, and boosts Orb Effects of this character by
+    2x-4x for 1 turn, depending on the number of times the character used their
+    own special.
+  cooldown: 15
+  maxLevel: 6
+  notes: "ATK and Orb boosts increase each time the character uses their own
+    special. 1st time: 2x, 2nd time: 3x, 3rd time or more: 4x."
+sailor:
+  - description: Boosts base ATK of this character by 300 if this character is the
+      last in the chain to attack
+  - description: After each turn you take damage, reduces special cooldown of this
+      character by 1 turn
+support:
+  type: descriptive
+  criteria: Jesus Burgess, Shiryu, Van Augur, Laffitte and Doc Q
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.3x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.5x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.75x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 2x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 2.5x for 1 turn
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - atk: 5
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - hp: 30
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 40
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - rcv: 30
+    - hp: 60
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - hp: 100
+    - atk: 40
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100

@@ -1,0 +1,85 @@
+type: DEX
+name: Blenheim of the Cutlass
+japanName: カトラスのブレンハイム
+family:
+  - Blenheim
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 949
+    atk: 512
+    rcv: 44
+  maxLvl:
+    hp: 2643
+    atk: 1355
+    rcv: 224
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 35411
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.5x
+special:
+  name: Anger of the Ki Sword
+  description: Deals 15x character's ATK in [DEX] damage to all enemies. Makes
+    [RCV] and [TND] orbs beneficial for Slasher characters for 3 turns
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+  - description: Makes [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Portgas D. Ace, Edward Newgate (Whitebeard)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - atk: 30
+    - hp: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 70
+    - type: sailor
+    - cooldown: 2
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - {}
+        - {}
+        - {}
+        - {}

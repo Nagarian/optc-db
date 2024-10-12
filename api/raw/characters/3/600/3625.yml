@@ -1,0 +1,548 @@
+type: INT
+name: Fleet Admiral Sakazuki - Admiral Eradicating Evil
+family:
+  - Sakazuki
+class:
+  - Fighter
+  - Shooter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 2080
+    atk: 895
+    rcv: 130
+  maxLvl:
+    hp: 4160
+    atk: 1790
+    rcv: 260
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - V2 6+ Legend
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [STR] and [INT] characters by 4.5x and makes
+    [STR] and [INT] orbs beneficial for [STR] and [INT] characters. Deals
+    0x-600x character's ATK in Typeless damage to one enemy at the end of each
+    turn depending on how many PERFECTs scored that turn.
+  notes: >-
+    End of turn damage is based on how many PERFECTs you hit this turn: 0
+    PERFECTs - 0x ATK; 1 PERFECT - 100x ATK; 2 PERFECTs - 200x ATK; 3 PERFECTs -
+    300x ATK; 4 PERFECTs - 400x ATK; 5 PERFECTs - 500x ATK; 6 PERFECTs - 600x
+    ATK  
+
+    [LLB] End of turn damage is based on how many PERFECTs you hit this turn: 0 PERFECTs - 0x ATK; 1 PERFECT - 150x ATK; 2 PERFECTs - 250x ATK; 3 PERFECTs - 350x ATK; 4 PERFECTs - 500x ATK; 5 PERFECTs - 650x ATK; 6 PERFECTs - 800x ATK
+special:
+  name: Roiling Hound Blaze
+  description: Deals 200x character's ATK in Typeless True damage to one enemy,
+    reduces enemies' Increased Defense and Percent Damage Reduction duration by
+    2 turns, changes all orbs, including [BLOCK] orbs, into Matching orbs and
+    boosts Orb Effects of [STR] and [INT] characters by 2.25x for 1 turn. If you
+    have used 20 or more [STR] or [INT] orbs in attacks at the time the special
+    is activated, reduces Special Cooldown of this character by 12 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of [STR] and [INT] characters by 100
+  - description: Makes [PSY] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[INT] characters"
+  levels:
+    - value: 8
+    - value: 9
+    - value: 10
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - atk: 15
+    - atk: 15
+    - rcv: 10
+    - type: sailor
+    - hp: 30
+    - hp: 30
+    - atk: 20
+    - atk: 20
+    - hp: 35
+    - hp: 35
+    - type: potential
+    - hp: 45
+    - hp: 45
+    - atk: 30
+    - atk: 30
+    - hp: 55
+    - hp: 55
+    - rcv: 15
+    - cooldown: 1
+    - hp: 70
+    - rcv: 20
+    - rcv: 25
+    - type: sailor
+    - hp: 80
+    - atk: 40
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 250
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [STR] and [INT] characters by 4.75x,
+          boosts HP of [STR] and [INT] characters by 1.3x, boosts chances of
+          getting Matching orbs on [STR] and [INT] characters and makes [STR]
+          and [INT] orbs beneficial for [STR] and [INT] characters. Deals
+          0x-800x character's ATK in Typeless damage to one enemy at the end of
+          each turn depending on how many PERFECTs scored that turn.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 193
+    rumbleType: ATK
+    spd: 184
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - INT
+        - attributes:
+            - Accuracy
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 3
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 15
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 31
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - amount: 600
+          effect: damage
+          targeting:
+            targets:
+              - PSY
+          type: fixed
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 2
+            duration: 32
+        - override:
+            amount: 700
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 3
+            duration: 33
+        - override:
+            amount: 800
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 3
+            duration: 34
+        - override:
+            amount: 900
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 19
+        - override:
+            level: 4
+            duration: 35
+        - override:
+            amount: 1000
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 4
+            duration: 36
+        - override:
+            amount: 1100
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 21
+        - override:
+            level: 5
+            duration: 37
+        - override:
+            amount: 1200
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 22
+        - override:
+            level: 5
+            duration: 38
+        - override:
+            amount: 1300
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 23
+        - override:
+            level: 6
+            duration: 39
+        - override:
+            amount: 1400
+    - cooldown: 34
+      effects:
+        - override:
+            amount: 25
+        - override:
+            level: 7
+            duration: 40
+        - override:
+            amount: 1500
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+                - ATK
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - STR
+                  - INT
+            - attributes:
+                - Accuracy
+              effect: debuff
+              level: 1
+              targeting:
+                targets:
+                  - PSY
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 2
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 5
+  - captain:
+      - description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [STR] and [INT] characters by 4.75x,
+          boosts HP of [STR] and [INT] characters by 1.3x, boosts chances of
+          getting Matching orbs on [STR] and [INT] characters and makes [STR]
+          and [INT] orbs beneficial for [STR] and [INT] characters. Deals
+          0x-600x character's ATK in Typeless damage to one enemy at the end of
+          each turn depending on how many PERFECTs scored that turn.
+      - description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of [STR] and [INT] characters by 5x, boosts
+          HP of [STR] and [INT] characters by 1.3x, boosts chances of getting
+          Matching orbs on [STR] and [INT] characters and makes [STR] and [INT]
+          orbs beneficial for [STR] and [INT] characters. Deals 0x-800x
+          character's ATK in Typeless damage to one enemy at the end of each
+          turn depending on how many PERFECTs scored that turn.
+  - rumble:
+      special:
+        - cooldown: 34
+          effects:
+            - amount: 15
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: cut
+            - attributes:
+                - DEF
+              duration: 31
+              effect: debuff
+              level: 2
+              targeting:
+                targets:
+                  - QCK
+                  - PSY
+            - amount: 700
+              effect: damage
+              targeting:
+                targets:
+                  - PSY
+              type: fixed
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 16
+            - override:
+                level: 2
+                duration: 32
+            - override:
+                amount: 900
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 17
+            - override:
+                level: 3
+                duration: 33
+            - override:
+                amount: 1100
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 18
+            - override:
+                level: 3
+                duration: 34
+            - override:
+                amount: 1300
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 19
+            - override:
+                level: 4
+                duration: 35
+            - override:
+                amount: 1500
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 20
+            - override:
+                level: 4
+                duration: 36
+            - override:
+                amount: 1700
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 21
+            - override:
+                level: 5
+                duration: 37
+            - override:
+                amount: 1900
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 22
+            - override:
+                level: 5
+                duration: 38
+            - override:
+                amount: 2100
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 23
+            - override:
+                level: 6
+                duration: 39
+            - override:
+                amount: 2300
+        - cooldown: 34
+          effects:
+            - override:
+                amount: 30
+            - override:
+                level: 8
+                duration: 40
+            - override:
+                amount: 2500
+  - rumble:
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: PSY
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 200x character's ATK in Typeless True damage to one enemy,
+        reduces enemies' Increased Defense and Percent Damage Reduction duration
+        by 3 turns, changes all orbs, including [BLOCK] orbs, into Matching orbs
+        and boosts Orb Effects of [STR] and [INT] characters by 2.25x for 1
+        turn. If you have used 16 or more [STR] or [INT] orbs in attacks at the
+        time the special is activated, reduces Special Cooldown of this
+        character by 12 turns. If your crew has Orb Amplification, boosts ATK of
+        [STR] and [INT] characters by 2.25x for 1 turn.

@@ -1,0 +1,163 @@
+type: DEX
+name: Shanks - Pirate with a Straw Hat
+japanName: シャンクス　麦わら帽子の海賊
+family:
+  - Shanks
+class:
+  - Free Spirit
+  - Slasher
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 338
+    atk: 128
+    rcv: 21
+  maxLvl:
+    hp: 978
+    atk: 555
+    rcv: 102
+cost: 13
+slots: 3
+maxExp: 130703
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 96639
+aliases:
+  - FN Shanks
+evolution:
+  - id: 2019
+    evolvers:
+      - 80
+      - 86
+      - 91
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1.75x
+special:
+  name: Treasured Trust
+  description: Reduces Bind and Despair duration by 2 turns. If your Captain is a
+    Free Spirit Character changes [BLOCK] orbs into Matching orbs
+  cooldown: 12
+  maxLevel: 7
+rumble:
+  stats:
+    def: 142
+    rumbleType: SPT
+    spd: 136
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - Action Bind
+          duration: 5
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 6
+        - override:
+            duration: 11
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 7
+        - override:
+            duration: 12
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 8
+        - override:
+            duration: 13
+            level: 2
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 9
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 10
+        - override:
+            duration: 15
+            level: 2
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 11
+        - override:
+            duration: 16
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 12
+        - override:
+            duration: 17
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 13
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            duration: 15
+        - override:
+            duration: 20
+            level: 5

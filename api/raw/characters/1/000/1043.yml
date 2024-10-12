@@ -1,0 +1,92 @@
+type: DEX
+name: Massacre Soldier Killer - Kid Pirates
+japanName: “殺戮武人”キラー キッド海賊団
+family:
+  - Killer
+class:
+  - Striker
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 887
+    atk: 728
+    rcv: 64
+  maxLvl:
+    hp: 1879
+    atk: 1424
+    rcv: 189
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 29622
+aliases:
+  - Colo Killer
+  - Coliseum Killer
+  - Supernova Killer
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Slasher characters by 2x, by 2.75x
+    instead if they have a beneficial orb, reduces crew's RCV to 0.
+special:
+  name: Hitting Size
+  description: Changes [STR] and [QCK] orbs of Striker and Slasher characters into
+    Matching orbs, deals 7% of enemies' current HP in damage to one enemy
+  cooldown: 18
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK of Slasher characters by 30
+  - description: Boosts base HP of Slasher characters by 60
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Striker characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - atk: 50
+    - cooldown: 1
+    - rcv: 40
+    - type: sailor
+    - hp: 30
+    - hp: 40
+    - cooldown: 1
+    - hp: 50
+    - atk: 60
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

@@ -1,0 +1,111 @@
+type: DEX
+name: Franky - ONE PIECE STAMPEDE
+japanName: フランキー ONE PIECE STAMPEDE
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1167
+    atk: 575
+    rcv: 113
+  maxLvl:
+    hp: 2801
+    atk: 1382
+    rcv: 272
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 164100
+aliases:
+  - Stampede Franky
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.5x, boosts ATK of [PSY]
+    characters by 2x and deals 5x character's ATK in [DEX] damage to all enemies
+    at the end of each turn.
+special:
+  name: "Franky Radical Beam: Pirate Expo Version"
+  description: Reduces enemies' barrier duration by 1 turn and deals 75x
+    character's ATK in [DEX] damage to all enemies. If your Captain's orb is
+    [DEX] or [PSY], locks all orbs for 1 turn and boosts ATK of [DEX] and [PSY]
+    characters by 2x for 2 turns
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+  - description: If your Captain is a [DEX] or [PSY] character, makes [RCV] and
+      [TND] orbs beneficial for [DEX] and [PSY] character
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin and Brook
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - hp: 50
+    - slot: 1
+    - hp: 70
+    - hp: 90
+    - type: sailor
+    - atk: 25
+    - atk: 35
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 70
+        - threshold: 50

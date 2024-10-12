@@ -1,0 +1,50 @@
+type: QCK
+name: Roronoa Zoro - Wild Pirate
+japanName: ロロノア・ゾロ 野生の海賊
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 244
+    atk: 144
+    rcv: 22
+  maxLvl:
+    hp: 1122
+    atk: 596
+    rcv: 77
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - shop
+links:
+  gamewithId: 45851
+aliases:
+  - Wild Zoro
+evolution:
+  - id: 1372
+    evolvers:
+      - 95
+      - 302
+      - 301
+      - 98
+      - 99
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Powerhouse characters by 2x at the start
+    of the chain, by 2.25x after the 2nd PERFECT in a row and by 2.5x after the
+    4th PERFECT in a row.
+special:
+  name: Wild Plan
+  description: Reduces Despair duration by 3 turns. Reduces Special Cooldown of
+    Slasher and Powerhouse characters by 2 turns
+  cooldown: 15
+  maxLevel: 1
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded

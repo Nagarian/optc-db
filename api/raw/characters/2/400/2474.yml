@@ -1,0 +1,255 @@
+type: DEX
+name: Dracule Mihawk - Strongest Master in the World
+japanName: ジュラキュール・ミホーク 世界最強の師
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 840
+    atk: 234
+    rcv: 44
+  maxLvl:
+    hp: 2011
+    atk: 601
+    rcv: 109
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 146574
+aliases:
+  - V2 Legend Mihawk
+evolution:
+  - id: 2475
+    evolvers:
+      - 118
+      - 102
+      - 1180
+      - 302
+      - 267
+captain:
+  name: ""
+  description: If there are only Slasher characters in your crew, boosts Chain
+    Multiplier Growth Rate by 4x and boosts ATK of Slasher characters by 1.75x.
+    Boosts chances of getting [DEX] and [INT] orbs.
+special:
+  name: Haki Sword
+  description: Deals 25% of enemies' current HP in damage to one enemy. If your
+    crew has 4 or more characters with [DEX] or [INT] orbs, boosts Orb Effects
+    of Slasher characters by 2.25x for 1 turn and locks all orbs for 1 turn,
+    boosts Orb Effects of Slasher characters by 2x for 1 turn otherwise.
+  cooldown: 19
+  maxLevel: 7
+rumble:
+  stats:
+    def: 130
+    rumbleType: ATK
+    spd: 180
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Full
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          effect: buff
+          level: 8
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 15
+      effects:
+        - amount: 12
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - amount: 20
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 15
+      effects:
+        - {}
+        - override:
+            amount: 21
+    - cooldown: 15
+      effects:
+        - {}
+        - override:
+            amount: 22
+    - cooldown: 15
+      effects:
+        - {}
+        - override:
+            amount: 23
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 13
+        - override:
+            amount: 24
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 13
+        - override:
+            amount: 25
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 13
+        - override:
+            amount: 26
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 13
+        - override:
+            amount: 27
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 14
+        - override:
+            amount: 28
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 15
+        - override:
+            amount: 30
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

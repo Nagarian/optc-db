@@ -1,0 +1,553 @@
+type: INT
+name: Buggy the Genius Jester
+japanName: 千両道化のバギー
+family:
+  - Buggy
+class:
+  - Driven
+  - Shooter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1281
+    atk: 512
+    rcv: 225
+  maxLvl:
+    hp: 2710
+    atk: 1201
+    rcv: 498
+cost: 40
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 46852
+aliases:
+  - Baggy
+  - Mega/Super/6+ Buggy
+  - V1 Legend Buggy
+  - Shichibukai
+captain:
+  name: ""
+  description: Boosts ATK of Cost 40 or less characters by 1.75x and reduces ATK
+    and HP of Cost 41 or higher characters by 50%. Guarantees duplicating a drop
+    upon completion of the island.
+  notes: Does not work if he was not your captain upon starting the island. Stacks
+    with other additional drop captains, giving you two chances of getting an
+    extra drop.
+special:
+  name: The Greatest Villain's Bluff
+  description: Boosts ATK of Cost 40 or less characters by 2x for 2 turns
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cost 40 or less characters by 50
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Characters with cost 40 or less
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.6x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.7x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.8x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 2x for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - hp: 40
+    - type: sailor
+    - atk: 30
+    - rcv: 30
+    - atk: 50
+    - rcv: 30
+    - hp: 40
+    - hp: 60
+    - hp: 60
+    - atk: 60
+    - type: sailor
+    - hp: 70
+    - hp: 110
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - captain:
+        description: Boosts ATK of Cost 40 or less characters by 2.25x and reduces ATK
+          and HP of Cost 41 or higher characters by 50%. Guarantees duplicating
+          a drop upon completion of the island.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 80
+        - threshold: 70
+        - threshold: 0
+rumble:
+  stats:
+    def: 185
+    rumbleType: SPT
+    spd: 157
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 23
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+            level: 4
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 19
+            level: 3
+        - override:
+            duration: 19
+            level: 4
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 20
+            level: 3
+        - override:
+            duration: 20
+            level: 5
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 21
+            level: 3
+        - override:
+            duration: 21
+            level: 5
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 22
+            level: 3
+        - override:
+            duration: 22
+            level: 6
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 23
+            level: 4
+        - override:
+            duration: 23
+            level: 6
+    - cooldown: 23
+      effects:
+        - override:
+            duration: 25
+            level: 5
+        - override:
+            duration: 25
+            level: 8
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - SPD
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                count: 3
+                stat: Critical Hit
+                type: trigger
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 6
+  - captain:
+      - description: "Boosts ATK of Cost 40 or less characters by 1.75x and reduces ATK
+          and HP of Cost 41 or higher characters by 50%. Guarantees duplicating
+          a drop upon completion of the island. At the start of the fight,
+          applies the following buff: Boosts Orb Effects of Cost 40 or less
+          characters by 2x for 20 turns."
+      - description: "Boosts ATK of Cost 40 or less characters by 3x, boosts HP of Cost
+          40 or less characters by 1.5x and reduces ATK and HP of Cost 41 or
+          higher characters by 50%. Guarantees duplicating a drop upon
+          completion of the island. At the start of the fight, applies the
+          following buff: Boosts Orb Effects of Cost 40 or less characters by 2x
+          for 20 turns."
+  - rumble:
+      special:
+        - cooldown: 23
+          effects:
+            - attributes:
+                - ATK
+              duration: 15
+              effect: buff
+              level: 3
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - SPD
+              duration: 15
+              effect: buff
+              level: 3
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - Critical Hit
+              duration: 11
+              effect: buff
+              level: 2
+              range:
+                direction: radial
+                size: large
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 23
+          effects:
+            - override:
+                level: 3
+                duration: 16
+            - override:
+                level: 3
+                duration: 16
+            - override:
+                level: 2
+                duration: 12
+        - cooldown: 23
+          effects:
+            - override:
+                level: 4
+                duration: 17
+            - override:
+                level: 4
+                duration: 17
+            - override:
+                level: 2
+                duration: 13
+        - cooldown: 23
+          effects:
+            - override:
+                level: 4
+                duration: 18
+            - override:
+                level: 5
+                duration: 18
+            - override:
+                level: 3
+                duration: 14
+        - cooldown: 23
+          effects:
+            - override:
+                level: 5
+                duration: 19
+            - override:
+                level: 5
+                duration: 19
+            - override:
+                level: 3
+                duration: 15
+        - cooldown: 23
+          effects:
+            - override:
+                level: 5
+                duration: 20
+            - override:
+                level: 6
+                duration: 20
+            - override:
+                level: 4
+                duration: 16
+        - cooldown: 23
+          effects:
+            - override:
+                level: 6
+                duration: 21
+            - override:
+                level: 7
+                duration: 21
+            - override:
+                level: 4
+                duration: 17
+        - cooldown: 23
+          effects:
+            - override:
+                level: 6
+                duration: 22
+            - override:
+                level: 7
+                duration: 22
+            - override:
+                level: 4
+                duration: 18
+        - cooldown: 23
+          effects:
+            - override:
+                level: 7
+                duration: 23
+            - override:
+                level: 8
+                duration: 23
+            - override:
+                level: 5
+                duration: 19
+        - cooldown: 23
+          effects:
+            - override:
+                level: 8
+                duration: 25
+            - override:
+                level: 10
+                duration: 25
+            - override:
+                level: 6
+                duration: 20
+  - rumble:
+      resilience:
+        - amount: 200
+          interval: 5
+          type: healing
+        - attribute: PSY
+          percentage: 40
+          type: damage
+    special:
+      description: Boosts ATK against enemies with reduced defense by 1.75x for 2
+        turns, changes orbs of Cost 40 or lower characters into Matching orbs,
+        boosts ATK of Cost 40 or less characters by 2.25x for 2 turns.
+    sailor:
+      sailor1:
+        description: Boosts base ATK, HP and RCV of Cost 40 or less characters by 150

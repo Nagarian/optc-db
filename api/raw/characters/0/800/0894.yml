@@ -1,0 +1,43 @@
+type: INT
+name: Gecko Moria - Shadows' Asgard
+japanName: ゲッコー・モリア 影の集合地（シャドーズ・アスガルド）
+family:
+  - GeckoMoria
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1000
+    atk: 500
+    rcv: -500
+  maxLvl:
+    hp: 3180
+    atk: 1430
+    rcv: -999
+cost: 30
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 19289
+aliases:
+  - Gekko Moriah, Shadow's Asgard
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3x following a chain of Good >
+    Great > PERFECT hits
+special:
+  name: "Brick Bat: Black Box"
+  description: Changes [INT] orbs into [EMPTY] orbs, deals 10x-200x character's
+    ATK in [INT] damage to one enemy, depending on how many [INT] slots were
+    emptied.
+  cooldown: 25
+  maxLevel: 8
+  notes: "The exact multiplier used is chosen based on the number of [INT] orbs
+    consumed: 1 orb will give a 10x multiplier, 2 orbs 15x, 3 orbs 20x, 4 orbs
+    50x, 5 orbs 100x, 6 orbs 200x. It's not possible to activate the special
+    without consuming at least one [INT] orb."

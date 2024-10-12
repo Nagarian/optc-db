@@ -1,0 +1,336 @@
+type: INT
+name: "Law: Midnight Doctor - Happy Spooky Halloween!"
+japanName: ロー　ミッドナイトドクター Happy Scary Halloween
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 724
+    atk: 436
+    rcv: 46
+  maxLvl:
+    hp: 1609
+    atk: 969
+    rcv: 103
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 229894
+aliases:
+  - Halloween (HWeen) Law
+  - V4 Legend Law
+evolution:
+  - id: 3102
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 4.25x at the start of the chain,
+    boosts their HP by 1.4x, reduces Despair duration by 10 turns and deals 100x
+    the damage taken from enemies in the previous turn in [INT] damage to all
+    enemies at the end of each turn. Boosts ATK of [INT] characters by an
+    additive 0.15x after each PERFECT in a row.
+special:
+  name: "One Night of Horror: ROOM"
+  description: Boosts Orb Effects of [INT] characters by 2.25x for 1 turn and
+    protects from defeat for 1 turn. After 1 turn, boosts Orb Effects of [INT]
+    characters by 2.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+rumble:
+  stats:
+    def: 154
+    rumbleType: DBF
+    spd: 155
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+  special:
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 50
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 55
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.05
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 65
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.15
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 75
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.25
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 85
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 90
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 45
+      effects:
+        - attributes:
+            - Silence
+          chance: 100
+          duration: 8
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk

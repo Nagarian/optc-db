@@ -1,0 +1,48 @@
+type: QCK
+name: Camie - Takoyaki Shop Clerk
+japanName: ケイミー タコ焼き屋店員
+family:
+  - Camie
+class:
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 900
+    atk: 295
+    rcv: 231
+  maxLvl:
+    hp: 1731
+    atk: 698
+    rcv: 455
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 14399
+aliases:
+  - Keimi, Takoyaki Stand Assistant
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK and RCV of [QCK] and [PSY] characters by 1.5x
+special:
+  name: Guiding Mermaid Voice
+  description: Boosts chances of getting [QCK] and [PSY] orbs for 3 turns, boosts
+    ATK of [QCK] and [PSY] characters by 1.2x for 3 turns
+  cooldown: 25
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Hatchan
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

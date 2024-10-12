@@ -1,0 +1,97 @@
+type: STR
+name: Fossa the Blazing Katana
+japanName: 火炎刀のフォッサ
+family:
+  - Fossa
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1059
+    atk: 788
+    rcv: 95
+  maxLvl:
+    hp: 2454
+    atk: 1388
+    rcv: 228
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 11074
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x, boosts damage of [STR] specials by 2x
+special:
+  name: Manly Flaming Sword
+  description: Boosts ATK of [STR] characters by 1.5x for 1 turn, deals 15x
+    character's ATK in [STR] damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: When any other [STR] character uses a special, reduces special
+      cooldown of this character by 1 turn
+  - description: Boosts base ATK of [STR] characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 20
+    - cooldown: 3
+    - atk: 30
+    - type: potential
+    - hp: 80
+    - cooldown: 3
+    - rcv: 30
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [STR] characters by 2.25x and their HP by 1.2x and
+          boosts damage of [STR] specials by 2x
+    - hp: 140
+    - cooldown: 3
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

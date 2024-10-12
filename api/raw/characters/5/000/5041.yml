@@ -1,0 +1,92 @@
+type: QCK
+oldDbId: 3320
+name: "Duval: Neo - Rosy Life Riders Leader"
+japanName: デュバル「改」 人生バラ色ライダーズ ヘッド
+family:
+  - Duval
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 8
+  minLvl:
+    hp: 1428
+    atk: 958
+    rcv: 113
+  maxLvl:
+    hp: 2708
+    atk: 1383
+    rcv: 312
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 266800
+aliases:
+  - Neo Duval
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight and boosts ATK of Shooter characters by 2.25x and their RCV by
+    1.5x
+special:
+  name: Heart-Smashing Horn [Neo]
+  description: Deals 5,000 Fixed damage to all enemies, reduces damage received by
+    80% for 1 turn, reduces Paralysis and Increase Damage Taken duration by 4
+    turns and boosts ATK of Shooter characters by 1.75x for 1 turn
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of Shooter characters by 40
+  - description: When any other Shooter character uses a special, reduces special
+      cooldown of this character by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shooter characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - hp: 50
+    - rcv: 30
+    - cooldown: 4
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

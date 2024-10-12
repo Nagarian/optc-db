@@ -1,0 +1,502 @@
+type: STR
+name: Portgas D. Ace - Strength of Unyielding Flames
+japanName: ポートガス・D・エース “力”に屈さぬ炎
+family:
+  - PortgasDAce
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1110
+    atk: 646
+    rcv: 57
+  maxLvl:
+    hp: 2606
+    atk: 1374
+    rcv: 241
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 199634
+aliases:
+  - Pirate Festival Ace
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 2.5x, by 3.5x instead
+    if they have a [STR] or [INT] orb, and boosts their HP and RCV by 1.2x.
+special:
+  name: "Dark Sky: Saint Elmo's Fire"
+  description: Changes [BLOCK] orbs into Matching orbs, reduces Burn duration by 5
+    turns, reduces enemies' Threshold Damage Reduction duration by 5 turns and
+    boosts ATK of [STR] and [INT] characters by 1.75x for 2 turns.
+  cooldown: 17
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: If this character has an [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy and Sabo
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - rcv: 100
+    - hp: 200
+    - atk: 100
+    - type: potential
+    - cooldown: 3
+    - atk: 100
+    - hp: 200
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 168
+    rumbleType: ATK
+    spd: 186
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 950
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 0.8
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1000
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 0.84
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1050
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 0.88
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1100
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 0.92
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1150
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 0.96
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1200
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 1
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1250
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 1.04
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1300
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 1.08
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1350
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 1.12
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1500
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - INT
+        - amount: 1.2
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk

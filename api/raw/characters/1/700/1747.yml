@@ -1,0 +1,398 @@
+type: PSY
+name: Boa Hancock - Straw Hat Luffy's Conspirator
+japanName: ボア・ハンコック 麦わらのルフィの共犯者
+family:
+  - BoaHancock
+class:
+  - Shooter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1265
+    atk: 734
+    rcv: 230
+  maxLvl:
+    hp: 2795
+    atk: 1430
+    rcv: 478
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 66496
+aliases:
+  - Korean Boa
+  - V1 Legend Boa Hancock
+  - Shichibukai
+evolution:
+  - id: 2434
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x-3.25x based on the timing
+    of the attack of the previous unit in the chain and recovers 1,000 HP at the
+    end of each turn. Greatly reduces chances of getting [TND] and [RCV] orbs.
+  notes: A hit below Good or a Miss will boost the ATK of the next unit by 2.5x, a
+    Good hit by 2.75x, a Great hit by 3x and a PERFECT hit by 3.25x. This bonus
+    is applied only to Shooter characters.
+special:
+  name: Pistol Kisses
+  description: Deals 6 hits of 20,000 Fixed damage to random enemies, delays all
+    enemies by 1 turn and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs
+    beneficial for Shooter characters for 2 turns
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character if your Captain is a Free Spirit character
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Boa Marigold and Boa Sandersonia
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 9
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - rcv: 10
+    - hp: 40
+    - atk: 20
+    - rcv: 10
+    - hp: 50
+    - atk: 20
+    - type: sailor
+    - rcv: 15
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 15
+    - hp: 50
+    - atk: 25
+    - rcv: 15
+    - hp: 60
+    - atk: 25
+    - cooldown: 1
+    - rcv: 15
+    - hp: 70
+    - atk: 25
+    - rcv: 30
+    - hp: 80
+    - atk: 30
+    - hp: 90
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Shooter characters by 3x-3.5x based on the timing of
+          the attack of the previous unit in the chain, their HP by 1.3x, and
+          recovers 1,000 HP at the end of each turn. Greatly reduces chances of
+          getting [TND] and [RCV] orbs.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 2
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 2
+          threshold: 20
+        - value: 2
+          threshold: 30
+        - value: 2
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 123
+    rumbleType: SPT
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            count: 4
+            stat: Critical Hit
+            type: trigger
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 1
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 850
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+        - attributes:
+            - Critical Hit
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+              - Free Spirit
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 2
+            duration: 11
+        - override:
+            level: 1
+            duration: 11
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 1
+            duration: 14
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            level: 1
+            duration: 16
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            level: 1
+            duration: 17
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 3
+            duration: 19
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 4
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            level: 4
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            level: 5
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,52 @@
+type: QCK
+name: Emporio Ivankov Queen of the Miracle Garden
+japanName: エンポリオ・イワンコフ 奇跡を起こす花園の女王
+family:
+  - EmporioIvankov
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1120
+    atk: 443
+    rcv: 141
+  maxLvl:
+    hp: 2007
+    atk: 906
+    rcv: 322
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 29445
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x after scoring 3
+    PERFECTs in a row
+special:
+  name: "Kenpo: Kick Thrust Drop"
+  description: Deals 13x character's ATK in [QCK] Damage to one Enemy. If HP is
+    above 99% at the time the special is activated, changes orbs of middle left
+    and bottom left characters into Matching orbs. If HP is below 99% and above
+    30% at the time the special is activated, changes orbs of left column
+    characters into [G] orbs. If HP is below 30% at the time the special is
+    activated, changes orbs of left column characters into [RCV] orbs
+  cooldown: 23
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Inazuma and Bentham (Mr. 2 Bon Clay)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 8

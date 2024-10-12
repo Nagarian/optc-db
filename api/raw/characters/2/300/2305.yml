@@ -1,0 +1,51 @@
+type: DEX
+name: Gastino - Gangster
+japanName: ガスティーノ ギャングスター
+family:
+  - CaesarClown
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 245
+    atk: 131
+    rcv: 13
+  maxLvl:
+    hp: 1120
+    atk: 937
+    rcv: 51
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 125108
+aliases:
+  - Gangster Gastino
+  - Not Caesar Clown
+evolution:
+  - id: 2306
+    evolvers:
+      - 117
+      - 86
+      - 1180
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.75x until the first hit
+    other than PERFECT
+special:
+  name: Blue Sword
+  description: Poisons all enemies. If your Captain is a Slasher or Cerebral
+    character, boosts ATK against Poisoned and Strongly Poisoned enemies by
+    1.75x for 3 turns
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Slasher and Cerebral characters by 75

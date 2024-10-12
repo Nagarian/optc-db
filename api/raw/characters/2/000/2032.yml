@@ -1,0 +1,217 @@
+type: PSY
+name: Monkey D. Luffy - I Can't Eat Any More
+japanName: モンキー・D・ルフィ 腹いっぱい
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 224
+    atk: 159
+    rcv: 3
+  maxLvl:
+    hp: 2019
+    atk: 799
+    rcv: 18
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 97742
+aliases:
+  - Tankman
+  - Raid Tankman
+  - Raid Luffy
+evolution:
+  - id: 2033
+    evolvers:
+      - 115
+      - 108
+      - 108
+  - id: 2033
+    evolvers:
+      - 81
+      - 108
+      - 108
+  - id: 2033
+    evolvers:
+      - 92
+      - 108
+      - 108
+captain:
+  name: ""
+  description: Boosts ATK and HP of [PSY] characters by 0.5x
+special:
+  name: The Heavy Tank's Critical Breakthrough
+  description: Boosts ATK of all characters by 1.5x for 1 turn. If your Captain is
+    a [PSY] character, boosts Orb Effects of all characters by 1.5x for 1 turn,
+    adds 0.3x to Chain multiplier for 1 turn, adds 20x character's ATK as
+    Additional Typeless Damage for 1 turn and reduces damage received by 40% for
+    1 turn.
+  cooldown: 28
+  maxLevel: 15
+rumble:
+  stats:
+    def: 277
+    rumbleType: DEF
+    spd: 105
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - Provoke
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Critical Hit
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 24
+      effects:
+        - {}
+        - {}
+        - {}
+        - override:
+            duration: 11
+    - cooldown: 24
+      effects:
+        - {}
+        - {}
+        - override:
+            level: 5
+        - override:
+            duration: 12
+    - cooldown: 24
+      effects:
+        - {}
+        - {}
+        - override:
+            level: 5
+        - override:
+            duration: 13
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            level: 4
+        - override:
+            level: 6
+        - override:
+            duration: 14
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            level: 4
+        - override:
+            level: 6
+        - override:
+            duration: 15
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            level: 4
+        - override:
+            level: 7
+        - override:
+            duration: 16
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            level: 4
+        - override:
+            level: 7
+        - override:
+            duration: 17
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            level: 5
+        - override:
+            level: 8
+        - override:
+            duration: 18
+    - cooldown: 24
+      effects:
+        - {}
+        - override:
+            level: 6
+        - override:
+            level: 9
+        - override:
+            duration: 19
+            level: 2

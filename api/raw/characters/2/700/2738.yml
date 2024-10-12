@@ -1,0 +1,52 @@
+type: DEX
+name: Red-Haired Shanks - The Approaching Promised Time
+japanName: 赤髪のシャンクス 迫る約束の時
+family:
+  - Shanks
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1105
+    atk: 480
+    rcv: 55
+  maxLvl:
+    hp: 2010
+    atk: 1221
+    rcv: 358
+cost: 25
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 173373
+aliases:
+  - Blitz Battle Shanks
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [PSY] characters by 2.25x, by 2.75x
+    instead if they have a beneficial orb, and their HP by 1.2x.
+special:
+  name: Four Emperors
+  description: Deals 15x character's ATK in [DEX] damage to all enemies, reduces
+    ATK DOWN, Chain Multiplier Limit and Chain Coefficient Reduction duration by
+    2 turns and reduces Special Cooldown of all characters by 1 turn.
+  cooldown: 32
+  maxLevel: 24
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11

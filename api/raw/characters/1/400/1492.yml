@@ -1,0 +1,564 @@
+type: PSY
+name: Sabo - Flame-Flame Fruit Wielder
+japanName: サボ メラメラの実の能力者
+family:
+  - Sabo
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1534
+    atk: 777
+    rcv: 277
+  maxLvl:
+    hp: 3234
+    atk: 1534
+    rcv: 452
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 15191
+aliases:
+  - Mega/Super/6+ Sabo
+  - V1 Legend Sabo
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x and boosts HP and RCV
+    of all characters by 1.2x.
+special:
+  name: Reborn - Fire
+  description: Boosts ATK of Free Spirit characters by 1.75x for 1 turn. If during
+    that turn you score 4 PERFECT hits, boosts ATK of Free Spirit characters by
+    2x for 1 turn in the following turn.
+  cooldown: 23
+  maxLevel: 7
+  stages:
+    - description: Boosts ATK of Free Spirit characters by 1.5x for 1 turn. If during
+        that turn you score 5 PERFECT hits, boosts ATK of Free Spirit characters
+        by 2x for 1 turn in the following turn.
+      cooldown: 18
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 50
+  - description: Makes [INT] orbs beneficial for Free Spirit characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy and Koala
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 14
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 25
+    - hp: 25
+    - hp: 25
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - hp: 70
+    - cooldown: 1
+    - atk: 30
+    - hp: 80
+    - hp: 90
+    - type: sailor
+    - atk: 50
+    - atk: 60
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - rcv: 25
+    - rcv: 50
+    - captain:
+        description: Boosts ATK of Free Spirit characters by 4x and boosts HP and RCV of
+          all characters by 1.2x.
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 0.75
+          threshold: 40
+        - value: 1
+          threshold: 40
+        - value: 1.25
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+        - value: 2
+          threshold: 50
+rumble:
+  stats:
+    def: 194
+    rumbleType: SPT
+    spd: 177
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  resilience:
+    - amount: 200
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 23
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - amount: 0.35
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 0.37
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 0.38
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 0.4
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 0.42
+        - override:
+            level: 3
+            duration: 19
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 0.44
+        - override:
+            level: 3
+            duration: 20
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 0.45
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 0.47
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 0.49
+        - override:
+            level: 4
+            duration: 23
+    - cooldown: 23
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 0.6
+        - override:
+            level: 5
+            duration: 24
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - SPD
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - Free Spirit
+            - attributes:
+                - ATK
+              effect: buff
+              level: 2
+              condition:
+                count: 2
+                stat: Critical Hit
+                type: trigger
+              targeting:
+                targets:
+                  - Free Spirit
+        - effects:
+            - override:
+                level: 3
+            - {}
+        - effects:
+            - override:
+                level: 4
+            - {}
+        - effects:
+            - override:
+                level: 5
+            - {}
+        - effects:
+            - override:
+                level: 7
+            - {}
+  - captain:
+      - description: Boosts ATK of Free Spirit characters by 4.5x, by 5x instead if they
+          have a beneficial orb and boosts HP and RCV of Free Spirit characters
+          by 1.2x. If this character has a [PSY] or [TND] orb and you attack
+          with this character, inflicts all enemies with Burn that will deal 50x
+          enemies' ATK in damage for 2 turns.
+      - description: Boosts ATK of Free Spirit characters by 5x, by 5.25x instead if
+          they have a beneficial orb and boosts HP and RCV of Free Spirit
+          characters by 1.2x. If this character has a [PSY] or [TND] orb and you
+          attack with this character, inflicts all enemies with Burn that will
+          deal 80x enemies' ATK in damage for 2 turns.
+  - rumble:
+      special:
+        - cooldown: 23
+          effects:
+            - attributes:
+                - DEF
+              duration: 15
+              effect: debuff
+              level: 4
+              targeting:
+                count: 1
+                priority: highest
+                stat: DEF
+                targets:
+                  - enemies
+            - amount: 0.5
+              effect: damage
+              targeting:
+                count: 1
+                priority: highest
+                stat: DEF
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              duration: 15
+              effect: buff
+              level: 5
+              targeting:
+                targets:
+                  - Free Spirit
+        - cooldown: 23
+          effects:
+            - override:
+                level: 3
+            - override:
+                amount: 0.57
+            - override:
+                level: 5
+                duration: 16
+        - cooldown: 23
+          effects:
+            - override:
+                level: 4
+            - override:
+                amount: 0.64
+            - override:
+                level: 5
+                duration: 17
+        - cooldown: 23
+          effects:
+            - override:
+                level: 4
+            - override:
+                amount: 0.71
+            - override:
+                level: 5
+                duration: 18
+        - cooldown: 23
+          effects:
+            - override:
+                level: 4
+            - override:
+                amount: 0.78
+            - override:
+                level: 5
+                duration: 19
+        - cooldown: 23
+          effects:
+            - override:
+                level: 4
+            - override:
+                amount: 0.85
+            - override:
+                level: 5
+                duration: 20
+        - cooldown: 23
+          effects:
+            - override:
+                level: 4
+            - override:
+                amount: 0.92
+            - override:
+                level: 5
+                duration: 21
+        - cooldown: 23
+          effects:
+            - override:
+                level: 4
+            - override:
+                amount: 0.99
+            - override:
+                level: 6
+                duration: 22
+        - cooldown: 23
+          effects:
+            - override:
+                level: 5
+            - override:
+                amount: 1.06
+            - override:
+                level: 6
+                duration: 23
+        - cooldown: 23
+          effects:
+            - override:
+                level: 5
+            - override:
+                amount: 1.2
+            - override:
+                level: 7
+                duration: 24
+  - rumble:
+      resilience:
+        - attribute: INT
+          percentage: 40
+          type: damage
+        - amount: 250
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          interval: 5
+          type: healing
+    special:
+      description: Changes the orb of this and adjacent characters into a Matching
+        orb, boosts ATK of Free Spirit characters by 2x for 1 turn and boosts
+        ATK against enemies inflicted with Burn by 1.5x for 3 turns. If during
+        that turn you score 3 PERFECT hits, boosts ATK of Free Spirit characters
+        by 2.5x for 1 turn in the following turn.
+      stages:
+        - description: Changes the orb of this character into a Matching orb and boosts
+            ATK of Free Spirit characters by 1.75x for 1 turn. If during that
+            turn you score 3 PERFECT hits, boosts ATK of Free Spirit characters
+            by 2.25x for 1 turn in the following turn.
+          cooldown: 18

@@ -1,0 +1,94 @@
+type: QCK
+oldDbId: 3383
+name: Local Sea Monster - Man-Eating Monster
+japanName: 近海の主 人食いの怪物
+family:
+  - MasterOfTheNearSea
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1180
+    atk: 648
+    rcv: 43
+  maxLvl:
+    hp: 2704
+    atk: 1430
+    rcv: 104
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - gloex
+  - raid
+links:
+  gamewithId: 284385
+aliases:
+  - LSM
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3x, reduces damage received by
+    10% and makes [QCK] orbs beneficial for Free Spirit and Powerhouse
+    characters.
+special:
+  name: Sea Monster's Strength
+  description: Deals 5,555 Fixed True damage to all enemies, reduces enemies'
+    Increased Defense and Threshold Damage Reduction duration by 4 turns and
+    boosts Orb Effects of [QCK] and [PSY] characters by 1.75x for 1 turn. If
+    during that turn you score 3 PERFECT hits, boosts Orb Effects of [QCK] and
+    [PSY] characters by 2x for 1 turn in the following turn.
+  cooldown: 22
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of [QCK] characters by 50
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[QCK] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 10
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - captain:
+        description: Boosts ATK of [QCK] characters by 3.5x, reduces damage received by
+          20% and makes [QCK] orbs beneficial for Free Spirit and Powerhouse
+          characters.
+    - slot: 1
+    - cooldown: 1
+    - hp: 70
+    - cooldown: 1
+    - atk: 70
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

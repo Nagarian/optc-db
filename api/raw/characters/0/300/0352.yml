@@ -1,0 +1,488 @@
+type: INT
+name: Zephyr
+japanName: ゼファー
+family:
+  - Zephyr
+class:
+  - Shooter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 320
+    atk: 133
+    rcv: 4
+  maxLvl:
+    hp: 1588
+    atk: 699
+    rcv: 29
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 7291
+aliases:
+  - Raid Zephyr
+evolution:
+  - id: 353
+    evolvers:
+      - 118
+      - 83
+      - 88
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x
+special:
+  name: Smash Buster
+  description: Boosts ATK of Shooter characters by 1.75x for 2 turns
+  cooldown: 30
+  maxLevel: 15
+rumble:
+  stats:
+    def: 167
+    rumbleType: ATK
+    spd: 158
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 48
+      effects:
+        - amount: 0.32
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.34
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.36
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.38
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.4
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.42
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.44
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.46
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.48
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+    - cooldown: 48
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - ATK
+          condition:
+            comparator: less
+            count: 3
+            type: crew
+          duration: 15
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self

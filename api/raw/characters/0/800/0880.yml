@@ -1,0 +1,92 @@
+type: STR
+name: Lao G. - Donquixote Pirates
+japanName: ラオＧ ドンキホーテ海賊団
+family:
+  - LaoG
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 968
+    atk: 721
+    rcv: 143
+  maxLvl:
+    hp: 2021
+    atk: 1420
+    rcv: 293
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 21542
+aliases: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, boosts ATK of Fighter characters by 2x
+special:
+  name: "Battle Preservation Fist: Manki Kayaku"
+  description: Changes all orbs, including [BLOCK] orbs, into [G] orbs, deals
+    random Typeless damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 5,000 : 100,000`"
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+  - description: If HP is above 99% at the start of the turn, boosts base ATK of
+      Driven characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Machvise, Señor Pink, Dellinger and Diamante
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 70
+    - type: potential
+    - hp: 90
+    - cooldown: 2
+    - type: sailor
+    - cooldown: 2
+    - atk: 20
+    - cooldown: 3
+    - atk: 30
+    - slot: 1
+    - hp: 100
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

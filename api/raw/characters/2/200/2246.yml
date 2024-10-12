@@ -1,0 +1,57 @@
+type: QCK
+name: Nefeltari Vivi - Vivi's Adventure
+japanName: ネフェルタリ・ビビ ビビの冒険
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Free Spirit
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 362
+    atk: 210
+    rcv: 64
+  maxLvl:
+    hp: 981
+    atk: 581
+    rcv: 200
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 118575
+aliases:
+  - Limited Vivi
+  - Secret Vivi
+evolution:
+  - id: 2247
+    evolvers:
+      - 118
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 1x-2.5x depending on the
+    crew's current HP and recovers 1.25x character's RCV in HP at the end of
+    each turn
+  notes: "`captainProportional : higher : 1 + 1.5 * ((remaining HP) / (total HP))
+    : 2.5 : 1`"
+special:
+  name: The Mark of Friendship
+  description: Reduces Special Cooldown of all characters by 1 turn and changes
+    [BLOCK] orbs into [RCV] orbs and changes orbs of adjacent characters into
+    [RCV] orbs. If during that turn, you hit 2 PERFECTS, locks the chain
+    multiplier at 3x for 3 turns.
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 1 turn

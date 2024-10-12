@@ -1,0 +1,87 @@
+type: PSY
+name: Brook - A Pirate Who Lives By His Code
+japanName: ブルック 信念に生きる麦わらの一味
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1461
+    atk: 636
+    rcv: 100
+  maxLvl:
+    hp: 2788
+    atk: 1243
+    rcv: 234
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 11952
+aliases:
+  - New Strong World Brook
+  - SW Brook
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x, reduces damage received from
+    [INT] enemies by 30%
+special:
+  name: "Three-Verse Humming: Arrow-Notch Slash"
+  description: Deals random [PSY] damage to all enemies, randomizes all orbs
+  cooldown: 23
+  maxLevel: 8
+sailor:
+  - description: Boosts base RCV of [PSY] characters by 15
+  - description: If this character has a [PSY] orb and you hit a PERFECT with him,
+      keep his [PSY] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Nico Robin and Franky
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - cooldown: 1
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+    - rcv: 30
+    - cooldown: 1
+    - hp: 80
+    - cooldown: 2
+    - rcv: 40
+    - cooldown: 2
+    - hp: 100
+    - cooldown: 3
+    - atk: 100
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - {}
+        - {}
+        - {}
+        - {}

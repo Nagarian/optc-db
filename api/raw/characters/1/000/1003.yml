@@ -1,0 +1,45 @@
+type: STR
+name: Bepo the Martial Artist - Heart Pirates
+japanName: 武闘家のベポ ハートの海賊団
+family:
+  - Bepo
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 921
+    atk: 461
+    rcv: 162
+  maxLvl:
+    hp: 1803
+    atk: 1054
+    rcv: 307
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 26911
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x
+special:
+  name: Bepo's Ultimate Fist!!
+  description: Reduces Paralysis duration by 3 turns and deals 7x character's ATK
+    in [STR] damage to one enemy
+  cooldown: 20
+  maxLevel: 9
+support:
+  type: descriptive
+  criteria: Trafalgar D. Water Law, Sachi, Penguin and Jean Bart
+  levels:
+    - Reduces damage received from [DEX] characters by 1%
+    - Reduces damage received from [DEX] characters by 1%
+    - Reduces damage received from [DEX] characters by 2%
+    - Reduces damage received from [DEX] characters by 2%
+    - Reduces damage received from [DEX] characters by 3%

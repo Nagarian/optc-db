@@ -1,0 +1,97 @@
+type: STR
+name: Captain Kid - Kid Pirates Captain
+japanName: キャプテン・キッド キッド海賊団船長
+family:
+  - EustassKid
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1549
+    atk: 640
+    rcv: 112
+  maxLvl:
+    hp: 2727
+    atk: 1319
+    rcv: 224
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 24017
+aliases:
+  - Colo Kid
+  - Coliseum Kid
+  - Colo Kidd
+  - Coliseum Kidd
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x, by 2.75x instead if HP is
+    below 30% at the start of the turn
+special:
+  name: "Repel: Weapons Reflect"
+  description: Changes all orbs into [EMPTY] orbs, deals 3.5x-140x character's ATK
+    in [STR] damage to all enemies, depending on number of [STR] slots emptied.
+  cooldown: 28
+  maxLevel: 13
+  notes: "The exact multiplier used is chosen based on the number of [STR] orbs
+    consumed: 0 orbs - 3.5x ATK; 1 orb - 7x ATK; 2 orbs - 14x ATK; 3 orbs - 21x
+    ATK; 4 orbs - 35x ATK; 5 orbs - 91x ATK; 6 orbs - 140x ATK."
+sailor:
+  - description: Changes all orbs into [STR] orbs at the start of the fight
+  - description: Boosts base ATK of this character by 100 if this character is the
+      last in the chain to attack
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Driven characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 25
+    - rcv: 25
+    - atk: 30
+    - type: potential
+    - slot: 1
+    - hp: 50
+    - hp: 70
+    - cooldown: 2
+    - slot: 1
+    - type: sailor
+    - cooldown: 3
+    - atk: 80
+    - cooldown: 3
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

@@ -1,0 +1,342 @@
+type: DEX
+name: Eustass Kid - Dragon-Challenging Young Captain
+japanName: ユースタス・キッド 龍に挑む若き“キャプテン”
+family:
+  - EustassKid
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 801
+    atk: 291
+    rcv: 34
+  maxLvl:
+    hp: 1723
+    atk: 1000
+    rcv: 123
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 203898
+aliases:
+  - Kidd
+  - V1 Legend Kid
+evolution:
+  - id: 2980
+    evolvers:
+      - 118
+      - 302
+      - 1180
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 4x, boosts ATK of all other
+    characters by 3.75x, changes [TND] orbs into [BOMB] orbs, boosts chances of
+    getting [TND] orbs and makes [BOMB] and [SUPERBOMB] orbs beneficial for all
+    characters. If a [DEX] character has a [BOMB] or [SUPERBOMB] orb, boosts
+    their ATK by 5x instead. [BOMB] and [SUPERBOMB] orbs will deal 0 damage to
+    the crew.
+special:
+  name: Captain's Steel Arm
+  description: Changes [STR], [DEX], [BOMB] and [SUPERBOMB] orbs into [EMPTY]
+    orbs, deals 500,000-3,000,000 Typeless damage to all enemies depending on
+    number of slots emptied, changes [EMPTY] orbs into [SUPERBOMB] orbs and
+    boosts ATK of [DEX] characters by 2.5x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+  notes: |-
+    0 slots emptied: 500,000 damage  
+    1-6 slots emptied: deals 500,000 damage per slot emptied.
+rumble:
+  stats:
+    def: 277
+    rumbleType: DEF
+    spd: 122
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 0.88
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 0.96
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 19
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 1.04
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 1.12
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 21
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.28
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 23
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.36
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 24
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.44
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 25
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk

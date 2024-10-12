@@ -1,0 +1,55 @@
+type: PSY
+name: Roronoa Zoro - Let's Go to the Pirate Festival!
+japanName: ロロノア・ゾロ Let’s go for PIRATE FESTIVAL
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 755
+    atk: 342
+    rcv: 41
+  maxLvl:
+    hp: 2299
+    atk: 1302
+    rcv: 133
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 106871
+aliases:
+  - Pizza Zoro
+captain:
+  name: ""
+  description: 'Boosts ATK of all characters by 2x. If you use "One Sword Style:
+    Yakkodori - Banquet" in this turn boosts ATK of all characters by 2.6x
+    instead.'
+special:
+  name: "One Sword Style: Yakkodori - Banquet"
+  description: Deals 15x character's ATK in [PSY] damage to all enemies, reduces
+    the defense of all enemies by 50% for 1 turn and boosts ATK against enemies
+    with reduced defense by 1.5x for 1 turn.
+  cooldown: 17
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Vinsmoke Sanji, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

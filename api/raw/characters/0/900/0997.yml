@@ -1,0 +1,91 @@
+type: DEX
+name: Dellinger - Donquixote Pirates
+japanName: デリンジャー ドンキホーテ海賊団
+family:
+  - Dellinger
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 933
+    atk: 692
+    rcv: 143
+  maxLvl:
+    hp: 2087
+    atk: 1362
+    rcv: 324
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 26720
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x, makes [TND] and [RCV]
+    orbs beneficial for Powerhouse characters
+special:
+  name: Decapitation High Heel
+  description: Changes Badly Matching orbs of all characters into Matching orbs.
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Changes Badly Matching orbs of Powerhouse characters into Matching orbs.
+      cooldown: 11
+sailor:
+  - description: Makes [TND] orbs beneficial for Powerhouse characters
+  - description: Makes [RCV] orbs beneficial for Powerhouse characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Lao G, Machvise and Diamante
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - hp: 40
+    - type: potential
+    - hp: 70
+    - hp: 90
+    - cooldown: 1
+    - type: sailor
+    - rcv: 10
+    - rcv: 20
+    - slot: 1
+    - atk: 50
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 7
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,1067 @@
+type: INT
+name: '"Buddha" Sengoku - Supreme Commander of the Navy'
+japanName: 仏のセンゴク 海軍総大将
+family:
+  - Sengoku
+class:
+  - Fighter
+  - Cerebral
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1998
+    atk: 729
+    rcv: 194
+  maxLvl:
+    hp: 3696
+    atk: 1458
+    rcv: 398
+cost: 54
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 11070
+aliases:
+  - Mega/Super/6+ Sengoku
+  - V1 Legend Sengoku
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Cost 29 or lower characters by 3.25x and their
+    HP by 1.2x, boosts ATK of Cost 54 characters by 3x.
+  notes: His captain ability also affects his evolved forms, his base (5\*) form
+    will NOT receive the boost. All evolved and plus evolved Sengoku characters
+    in the team are included in the bonus.
+special:
+  name: Requiem Shockwave
+  description: Deals random large [INT] Damage to all enemies, boosts ATK of all
+    characters by 1.5x for 1 turn, changes all orbs of Cost 29 or lower
+    characters into Matching orbs
+  cooldown: 23
+  maxLevel: 10
+sailor:
+  - description: Boosts base ATK and HP of Cost 29 or lower characters by 100
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Characters with cost 29 or less
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.25x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.75x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 2.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - type: sailor
+    - atk: 30
+    - rcv: 30
+    - atk: 50
+    - rcv: 30
+    - atk: 60
+    - hp: 40
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 110
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of Cost 54 or 29 or lower characters by 4x,
+          and their HP and RCV by 1.5x.
+    - cooldown: 6
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 200
+          reduction: 3
+        - value: 250
+          reduction: 4
+        - value: 300
+          reduction: 5
+rumble:
+  stats:
+    def: 229
+    rumbleType: SPT
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 41
+      effects:
+        - amount: 0.35
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.37
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.38
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.4
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.41
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.43
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.44
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.46
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.47
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - cooldown: 41
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - DEF
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - INT
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - DEF
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - INT
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - DEF
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - INT
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - crew
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 5
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - DEF
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - INT
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 5
+              targeting:
+                targets:
+                  - crew
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 6
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - DEF
+              effect: buff
+              level: 5
+              targeting:
+                targets:
+                  - INT
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 6
+              targeting:
+                targets:
+                  - crew
+  - captain:
+      - description: Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of Cost 30 or less characters by 5.25x,
+          boosts ATK of Cost 54 characters by 5x and boosts HP of Cost 30 or
+          less characters by 1.75x.
+      - description: Reduces Special Cooldown of all characters by 3 turns at the start
+          of the fight, boosts ATK of Cost 30 or less characters by 5.5x, boosts
+          ATK of Cost 54 characters by 5.25x, boosts HP of Cost 30 or less
+          characters by 1.75x and boosts RCV of Cost 30 or less characters by
+          1.5x.
+  - rumble:
+      special:
+        - cooldown: 39
+          effects:
+            - amount: 1
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 1.1
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 1.2
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 1.3
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 1.4
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 1.5
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 1.6
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 7
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 1.7
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 1.8
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - crew
+        - cooldown: 39
+          effects:
+            - amount: 2
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: buff
+              level: 5
+              targeting:
+                targets:
+                  - crew
+  - rumble:
+      resilience:
+        - attribute: Action Bind
+          chance: 100
+          type: debuff
+        - attribute: PSY
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 150x character's ATK in [INT] damage to all enemies, boosts
+        ATK of all characters by 2x for 1 turn, changes orbs of Cost 30 or lower
+        characters into Matching orbs and boosts Orb Effects of Cost 30 or less
+        characters by 2.25x for 1 turn.
+    sailor:
+      sailor1:
+        description: Boosts base ATK and HP of Cost 30 or lower characters by 100

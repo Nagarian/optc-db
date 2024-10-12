@@ -1,0 +1,51 @@
+type: DEX
+name: Fresh Franky - Health Comes First!
+japanName: フレッシュ・フランキー 健康第一
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 659
+    atk: 244
+    rcv: 85
+  maxLvl:
+    hp: 1330
+    atk: 659
+    rcv: 211
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 23062
+aliases:
+  - Colo Franky
+  - Coliseum Franky
+evolution:
+  - id: 901
+    evolvers:
+      - 118
+      - 86
+      - 94
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x if HP is above 99% at the
+    start of the turn
+special:
+  name: Franky Destroy Gun
+  description: Deals 6 hits of 2,000 Fixed damage to random enemies and for
+    Shooter and Free Spirit characters, randomizes Badly Matching orbs into [G]
+    orbs or Matching orbs
+  cooldown: 28
+  maxLevel: 13
+  notes: The orb shuffle only applies to Shooter and Free Spirit characters; other
+    classes are unaffected.

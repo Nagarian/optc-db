@@ -1,0 +1,143 @@
+type: QCK
+name: Basil Hawkins the Magician - Animal Kingdom Pirates, Headliner
+japanName: “魔術師”バジル・ホーキンス 百獣海賊団“真打ち”
+family:
+  - BasilHawkins
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1268
+    atk: 524
+    rcv: 94
+  maxLvl:
+    hp: 3170
+    atk: 1310
+    rcv: 235
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 171381
+aliases:
+  - Treasure Map Hawkins
+  - Treasure Map Basil Hawkins
+  - TM Hawkins
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 1.75x.
+special:
+  name: Strawman Cards Pursuit
+  description: Changes all orbs into Matching Orbs. If the HP of the enemy with
+    the highest Maximum HP is below 70% at the time the special is activated,
+    ignores Delay Debuff Protection and delays all enemies by 1 turn, delays all
+    enemies by 1 turn otherwise.
+  cooldown: 37
+  maxLevel: 8
+  stages:
+    - description: Changes orbs of adjacent characters into Matching Orbs and delays
+        all enemies by 1 turn.
+      cooldown: 29
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker characters by 50
+  - description: Makes [DEX] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kaido
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 2x.
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 2x and makes [QCK]
+          orbs beneficial for Cerebral and Striker characters.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 35
+    - rcv: 35
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 2.5x and makes
+          [QCK] orbs beneficial for Cerebral and Striker characters.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 2.75x and makes
+          [QCK] orbs beneficial for Cerebral and Striker characters.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 35
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 3x and makes [QCK]
+          orbs beneficial for Cerebral and Striker characters.
+    - hp: 70
+    - hp: 100
+    - captain:
+        description: Boosts ATK of Striker and Cerebral characters by 3.25x and makes
+          [QCK] orbs beneficial for Cerebral and Striker characters.
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

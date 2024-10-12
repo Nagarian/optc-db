@@ -1,0 +1,120 @@
+type: DEX
+name: Rebecca - Future of the Former Dressrosa Royal Family
+japanName: レベッカ ドレスローザ旧王家の未来
+family:
+  - Rebecca
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 974
+    atk: 520
+    rcv: 154
+  maxLvl:
+    hp: 2051
+    atk: 1203
+    rcv: 403
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 80512
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.25x and reduces damage received by 15%
+special:
+  name: Strike of Determination
+  description: Deals 50,000 Fixed damage to one enemy, reduces Chain Multiplier
+    Limit and Chain Coefficient Reduction duration by 5 turns and changes orbs
+    of adjacent characters into Matching orbs
+  cooldown: 16
+  maxLevel: 8
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of Striker and Slasher characters by 50
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Riku Doldo III (Ricky), Kyros (Toy Soldier) and Viola (Violet)
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - hp: 20
+    - hp: 40
+    - rcv: 30
+    - atk: 40
+    - hp: 50
+    - cooldown: 1
+    - hp: 60
+    - atk: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

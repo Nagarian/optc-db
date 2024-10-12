@@ -1,0 +1,94 @@
+type: STR
+name: Vinsmoke Judge - Germa 66 Generalissimo
+japanName: ヴィンスモーク・ジャッジ ジェルマ６６　総帥
+family:
+  - VinsmokeJudge
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1092
+    atk: 632
+    rcv: 126
+  maxLvl:
+    hp: 2732
+    atk: 1480
+    rcv: 230
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 120456
+aliases:
+  - Limited Judge
+  - Secret Judge
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3.5x and their HP by 1.2x and
+    makes [QCK] orbs beneficial for all characters
+special:
+  name: Clone Soldier Wall
+  description: Reduces any damage received above 5,000 HP by 90% for 1 turn. If
+    your Captain is a Powerhouse or Striker character, changes [G], [BLOCK] and
+    [EMPTY] orbs into Matching orbs and boosts ATK of [STR] characters by 1.75x
+    for 1 turn. If "Clone Soldier Wall" is used again in the same turn the
+    special is activated in, boosts ATK of [STR] characters by 2.25x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of [STR] characters by 50
+  - description: If this character has a [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+support:
+  type: descriptive
+  criteria: "[STR] characters"
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [STR] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 25
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - cooldown: 1
+    - hp: 60
+    - hp: 90
+    - type: sailor
+    - atk: 10
+    - atk: 15
+    - atk: 25
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+        - value: 75
+        - value: 100
+        - value: 150
+        - value: 200

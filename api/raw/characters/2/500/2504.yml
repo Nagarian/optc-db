@@ -1,0 +1,90 @@
+type: STR
+name: Capone "Gang" Bege - Castle-Man of the Castle_Castle Fruit
+japanName: カポネ・“ギャング”ベッジ “シロシロの実”城人間
+family:
+  - CaponeBege
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1547
+    atk: 522
+    rcv: 98
+  maxLvl:
+    hp: 3205
+    atk: 1360
+    rcv: 219
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 147433
+aliases:
+  - Raid Capone
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x, by 3x instead if HP is
+    above 50% at the start of the turn, and if you don't attack with him,
+    reduces damage received by 20% for that turn.
+special:
+  name: Manipulating the Castle's Interior
+  description: If there are 6 Shooter characters in your crew, boosts ATK of
+    Shooter characters by 2x for 1 turn. If HP is below 50% at the time the
+    special is activated, recovers missing HP to 51% MAX HP.
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 30
+  - description: When HP is above 50% at the start of the turn, boosts base ATK of
+      Shooter characters by 100
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Charlotte Chiffon, Vito and Gotti
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 20
+    - atk: 20
+    - hp: 30
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - atk: 40
+    - type: sailor
+    - hp: 50
+    - rcv: 30
+    - cooldown: 1
+    - atk: 60
+    - slot: 1
+    - hp: 70
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

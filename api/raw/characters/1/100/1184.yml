@@ -1,0 +1,95 @@
+type: PSY
+name: Twin-Gauntlet Kingdew
+japanName: 双拳ガントレットのキングデュー
+family:
+  - Kingdew
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1031
+    atk: 432
+    rcv: 113
+  maxLvl:
+    hp: 2670
+    atk: 1180
+    rcv: 308
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 35305
+aliases:
+  - Heman
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x
+special:
+  name: Brass Knuckle Destruction
+  description: Changes [PSY] orbs into [EMPTY] orbs, deals 13x-230x character's
+    ATK in [PSY] damage to one enemy
+  cooldown: 23
+  maxLevel: 7
+  notes: "The exact multiplier used is chosen based on the number of [PSY] orbs
+    consumed: 1 orb will give a 13x multiplier, 2 orbs 19x, 3 orbs 26x, 4 orbs
+    65x, 5 orbs 130x, 6 orbs 230x. It's not possible to activate the special
+    without consuming at least one [PSY] orb."
+sailor:
+  - description: If HP is above 99% at the start of the turn, boosts base ATK of
+      [PSY] characters by 75
+  - description: When HP is above 99% at the start of the turn, boosts base ATK of
+      this character by 100
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Portgas D. Ace, Edward Newgate (Whitebeard)
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 15
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 10
+    - atk: 30
+    - type: potential
+    - rcv: 30
+    - atk: 50
+    - rcv: 40
+    - atk: 70
+    - slot: 1
+    - cooldown: 2
+    - cooldown: 2
+    - atk: 70
+    - cooldown: 3
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

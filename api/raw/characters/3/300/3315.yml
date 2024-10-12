@@ -1,0 +1,97 @@
+type: DEX
+name: "Emporio Ivankov: Neo - Queen of Kamabakka Queendom (Retired)"
+japanName: エンポリオ・イワンコフ「改」 カマバッカ王国女王【永久欠番】
+family:
+  - EmporioIvankov
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1672
+    atk: 470
+    rcv: 152
+  maxLvl:
+    hp: 3030
+    atk: 1255
+    rcv: 391
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 266801
+aliases:
+  - Neo Ivankov
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3.25x following a chain of [STR] >
+    [QCK] > [DEX] attacks no lower than Good
+special:
+  name: Hell Wink [Neo]
+  description: Reduces Special Cooldown of all characters by 1 turn, randomizes
+    all non-[DEX] orbs into either [RCV], [STR], [DEX] or [QCK] orbs, changes
+    [BLOCK] orbs into [DEX] orbs, changes the orb, including [BLOCK] orbs, of
+    this character into a [DEX] orb, makes [RCV] and [DEX] orbs beneficial for
+    all characters for 1 turn and boosts ATK of Free Spirit characters by 1.75x
+    for 1 turn.
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of Free Spirit characters by 40
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - hp: 50
+    - rcv: 30
+    - cooldown: 4
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50

@@ -1,0 +1,183 @@
+type: DEX
+name: Hyouzou - Steroid and Booze Junkie
+japanName: ヒョウゾウ 酒のつまみの凶薬
+family:
+  - Hyouzou
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 212
+    atk: 161
+    rcv: -333
+  maxLvl:
+    hp: 1412
+    atk: 712
+    rcv: -333
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 146583
+aliases:
+  - ""
+evolution:
+  - id: 2481
+    evolvers:
+      - 94
+      - 1180
+      - 302
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x at the start of the chain
+    and boosts ATK of Slasher characters by 2.5x following a chain of [INT] >
+    [DEX] > [DEX] attacks no lower than Good.
+special:
+  name: Octopus Eight Sword Style - Poisonous Blade
+  description: Strongly Poisons one enemy. Removes Blindness duration completely,
+    reduces Despair and Silence duration by 5 turns, changes orbs of adjacent
+    characters into Matching Orbs and switches orbs between slots 3 times.
+  cooldown: 20
+  maxLevel: 8
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+rumble:
+  stats:
+    def: 125
+    rumbleType: ATK
+    spd: 163
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - Slasher
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 1050
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - duration: 20
+          effect: damage
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: time
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            duration: 22
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            duration: 24
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            duration: 26
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            duration: 28
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            duration: 30
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            level: 3
+            duration: 32
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            level: 3
+            duration: 34
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            level: 3
+            duration: 36
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 1550
+        - override:
+            level: 4
+            duration: 38

@@ -1,0 +1,59 @@
+type: QCK
+name: "Monkey D. Luffy - Straw Hat Pirates: Reunited"
+japanName: モンキー・D・ルフィ 集結の麦わらの一味
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 313
+    atk: 300
+    rcv: 70
+  maxLvl:
+    hp: 1422
+    atk: 840
+    rcv: 210
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 47356
+aliases:
+  - New World Luffy
+  - Timeskip Luffy
+  - TS Luffy
+  - TSL
+  - Legend Luffy
+evolution:
+  - id: 1404
+    evolvers:
+      - 118
+      - 85
+      - 266
+      - 301
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and reduces damage
+    received by 15%. If you use "Gomu Gomu no Red Hawk" on this Luffy boosts ATK
+    of Free Spirit characters by 4x for 3 turns instead.
+  notes: Using Luffy's special will change his own captain boost to 4x. If both
+    Luffy's specials are used, the total ATK boost will be 16x
+special:
+  name: Gomu Gomu no Red Hawk
+  description: Deals 60x character's ATK in [QCK] damage to one enemy and makes
+    [QCK], [DEX] and [PSY] orbs beneficial for 3 turns
+  cooldown: 18
+  maxLevel: 6
+  stages:
+    - description: Deals 25x character's ATK in [QCK] damage to one enemy and makes
+        [QCK], [DEX] and [PSY] orbs beneficial for Fighter and Free Spirit
+        characters for 1 turn
+      cooldown: 13

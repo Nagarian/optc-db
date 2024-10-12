@@ -1,0 +1,246 @@
+type: INT
+name: Donquixote Doflamingo - Soaring Demon
+japanName: ドンキホーテ・ドフラミンゴ 天駆ける夜叉
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 511
+    atk: 281
+    rcv: 36
+  maxLvl:
+    hp: 1327
+    atk: 780
+    rcv: 142
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 202543
+aliases:
+  - Doffy
+evolution:
+  - id: 2972
+    evolvers:
+      - 117
+      - 94
+      - 93
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 2.25x.
+special:
+  name: Cruel Athlete
+  description: Reduces Silence duration by 2 turns and reduces enemies' ATK UP,
+    Increased Defense and Threshold Damage Reduction duration by 2 turns. If
+    your Captain is a [STR] or [INT] character, boosts the Color Affinity of
+    [STR] and [INT] characters by 1.75x for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+rumble:
+  stats:
+    def: 84
+    rumbleType: ATK
+    spd: 155
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1.7
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 1.9
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - amount: 2.2
+          effect: damage
+          range:
+            direction: sideways
+            size: small
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk

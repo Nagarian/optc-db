@@ -1,0 +1,252 @@
+type: PSY
+name: Avalo Pizarro
+japanName: アバロ・ピサロ
+family:
+  - AvaloPizarro
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1169
+    atk: 833
+    rcv: 91
+  maxLvl:
+    hp: 2598
+    atk: 1389
+    rcv: 304
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 263878
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 3x and their RCV by 1.2x.
+special:
+  name: Corrupt King's Meal
+  description: Recovers 7,000 HP, reduces Bind and ATK DOWN duration by 4 turns,
+    reduces any damage received above 5,000 HP by ?% for 1 turn and boosts Orb
+    Effects of Powerhouse and Driven characters by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of Powerhouse characters by 50
+  - description: If your Captain is a Powerhouse character, makes [RCV] orbs
+      beneficial for all characters
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Powerhouse characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 25
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+rumble:
+  stats:
+    def: 119
+    rumbleType: RCV
+    spd: 126
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 1
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - Guard
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 7
+            level: 1
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            duration: 8
+            level: 2
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            duration: 9
+            level: 2
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            duration: 10
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2
+        - override:
+            duration: 11
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            duration: 12
+            level: 4
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            duration: 13
+            level: 4
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            duration: 14
+            level: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 3
+        - override:
+            duration: 15
+            level: 5

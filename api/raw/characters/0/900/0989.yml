@@ -1,0 +1,60 @@
+type: STR
+name: Impostor Straw Hat Pirates
+japanName: ニセ麦わらの一味
+family:
+  - DemaloBlack
+  - Chocolat
+  - Cocoa
+  - NoraGitsune
+  - Manjaro
+  - Drip
+  - Mounblutain
+  - Turco
+class:
+  - Driven
+  - Shooter
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 561
+    atk: 330
+    rcv: 36
+  maxLvl:
+    hp: 1288
+    atk: 604
+    rcv: 110
+cost: 15
+slots: 3
+maxExp: 653515
+maxLevel: 50
+flags:
+  - raid
+links:
+  gamewithId: 26833
+aliases:
+  - Raid
+  - Imposter
+  - Fake
+captain:
+  name: ""
+  description: Boosts ATK of Cost 20-30 characters by 2.5x, but reduces HP of
+    every character by 90%
+special:
+  name: Bluff Piracy
+  description: Changes all orbs of left column characters into [G], [QCK] and
+    [DEX] orbs, changes all orbs of right column characters into [STR], [PSY]
+    and [INT] orbs
+  cooldown: 19
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: All characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

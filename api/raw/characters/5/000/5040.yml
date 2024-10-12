@@ -1,0 +1,53 @@
+type: QCK
+oldDbId: 3319
+name: "Duval: Neo - Flying Fish Riders Leader"
+japanName: デュバル「改」 トビウオライダーズ ヘッド
+family:
+  - Duval
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 684
+    atk: 524
+    rcv: 46
+  maxLvl:
+    hp: 1492
+    atk: 923
+    rcv: 103
+cost: 30
+slots: 2
+maxExp: 1123790
+maxLevel: 60
+flags:
+  - gloex
+links:
+  gamewithId: 266800
+aliases:
+  - Neo Duval
+evolution:
+  - id: 5041
+    evolvers:
+      - 118
+      - 85
+      - 266
+      - 96
+      - 101
+  - id: 5041
+    evolvers:
+      - 18
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of Shooter characters by 2.25x and their RCV by
+    1.5x
+special:
+  name: Heart-Smashing Horn [Neo]
+  description: Deals 5,000 Fixed damage to all enemies, reduces damage received by
+    80% for 1 turn, reduces Paralysis and Increase Damage Taken duration by 4
+    turns and boosts ATK of Shooter characters by 1.75x for 1 turn
+  cooldown: 28
+  maxLevel: 15

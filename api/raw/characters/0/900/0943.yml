@@ -1,0 +1,88 @@
+type: STR
+name: Cyborg Franky - Baldimore's Sacred Beast
+japanName: 鉄人（サイボーグ）フランキー バルジモアの霊獣
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1535
+    atk: 635
+    rcv: 88
+  maxLvl:
+    hp: 2810
+    atk: 1249
+    rcv: 244
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 24702
+aliases:
+  - Timeskip Franky
+  - 3D2Y Franky
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.25x and their HP by 1.75x
+special:
+  name: "Future Country's Big Incident: The Nightmare of Baldimore"
+  description: Reduces damage received from [QCK] enemies by 100% for 1 turn
+  cooldown: 15
+  maxLevel: 8
+sailor:
+  - description: Makes [TND] orbs beneficial for this character
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin and Brook
+  levels:
+    - Reduces damage received from [QCK] characters by 1%
+    - Reduces damage received from [QCK] characters by 2%
+    - Reduces damage received from [QCK] characters by 3%
+    - Reduces damage received from [QCK] characters by 4%
+    - Reduces damage received from [QCK] characters by 6%
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - hp: 40
+    - atk: 50
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - rcv: 30
+    - atk: 60
+    - hp: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

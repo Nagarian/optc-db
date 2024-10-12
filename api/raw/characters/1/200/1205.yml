@@ -1,0 +1,49 @@
+type: QCK
+name: Musical Swordsman Brook Rumbar Pirates
+japanName: “音楽家兼剣士”ブルック ルンバー海賊団
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 942
+    atk: 466
+    rcv: 139
+  maxLvl:
+    hp: 1894
+    atk: 984
+    rcv: 299
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 35906
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Free Spirit characters by 1.5x
+special:
+  name: Awakening Tune Power
+  description: Deals 500 Fixed damage to all enemies, changes [RCV] orbs into
+    [QCK] orbs and changes [TND] orbs into [PSY] orbs
+  cooldown: 17
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Yorki
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

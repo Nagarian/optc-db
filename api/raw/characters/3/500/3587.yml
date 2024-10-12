@@ -1,0 +1,245 @@
+type: DEX
+name: Donquixote Doflamingo - Tragedy at Minion Island
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1502
+    atk: 785
+    rcv: 92
+  maxLvl:
+    hp: 3004
+    atk: 1570
+    rcv: 184
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+aliases:
+  - Rumble
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 2x and their HP by 1.2x.
+special:
+  name: Decimating Thread
+  description: Reduces Bind and Despair duration by 3 turns, reduces enemies'
+    Damage Nullification duration by 1 turn, deals 15% of enemies' current HP in
+    True damage to one enemy and boosts ATK of [STR], [DEX] and [QCK] characters
+    by 1.75x for 1 turn. If during that turn you score 2 Good hits, boosts ATK
+    of [STR], [DEX] and [QCK] characters by 2x in the following turn.
+  cooldown: 19
+  maxLevel: 1
+sailor:
+  - description: Makes [STR] and [QCK] orbs beneficial for this character.
+  - description: Boosts base ATK, HP and RCV of [STR], [DEX] and [QCK] characters by 40.
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Driven characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 200
+    - hp: 200
+    - captain:
+        description: Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x and their
+          HP by 1.3x.
+    - type: potential
+    - cooldown: 3
+    - hp: 200
+    - rcv: 100
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 154
+    rumbleType: DBF
+    spd: 161
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - Damage Over Time
+          duration: 11
+          level: 1
+          chance: 100
+          effect: hinderance
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 10
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - STR
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 10
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 11
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 14
+        - override:
+            level: 1
+            duration: 11
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 15
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 16
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 17
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 18
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 19
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            level: 4
+            duration: 15

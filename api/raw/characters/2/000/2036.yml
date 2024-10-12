@@ -1,0 +1,51 @@
+type: INT
+name: Mr. Store
+japanName: Mr.ストア
+family:
+  - JesusBurgess
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 232
+    atk: 160
+    rcv: 9
+  maxLvl:
+    hp: 1862
+    atk: 809
+    rcv: 72
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 97782
+aliases:
+  - Jesus Burgers
+  - Jesus Burgess
+  - Mr. Store
+evolution:
+  - id: 2037
+    evolvers:
+      - 118
+      - 99
+      - 1180
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x
+special:
+  name: Galleon Lariat
+  description: Deals 7% of enemies' current HP in damage to all enemies and boosts
+    ATK of Fighter characters by 1.75x for 1-6 turns, depending on the number of
+    enemies on the stage when the special is activated.
+  cooldown: 28
+  maxLevel: 15
+  notes: Fighter ATK buff duration is equal to the number of enemies on the stage
+    at the time the special was activated

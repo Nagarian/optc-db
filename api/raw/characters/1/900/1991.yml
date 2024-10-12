@@ -1,0 +1,95 @@
+type: QCK
+name: Garp the Fist - Suffering Hero
+japanName: ゲンコツのガープ 苦悩の英雄
+family:
+  - MonkeyDGarp
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1198
+    atk: 845
+    rcv: 105
+  maxLvl:
+    hp: 2583
+    atk: 1389
+    rcv: 302
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 93186
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x until the first hit
+    other than PERFECT
+special:
+  name: An Outcry of Bitterness
+  description: Delays all enemies by 2 turns. If your Captain is a [STR] or [QCK]
+    character, adds 55x character's ATK as Additional Typeless Damage for 1 turn
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Makes [STR] orbs beneficial for Free Spirit characters
+  - description: Boosts base ATK of Free Spirit characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Coby, Helmeppo and Sengoku
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 20
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - hp: 40
+    - slot: 1
+    - hp: 80
+    - atk: 40
+    - type: sailor
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

@@ -1,0 +1,118 @@
+type: QCK
+name: Big Eater Jewelry Bonney - Worst Generation in Hiding
+japanName: “大喰らい”ジュエリー・ボニー 身を潜める“最悪”
+family:
+  - JewelryBonney
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1095
+    atk: 762
+    rcv: 200
+  maxLvl:
+    hp: 2436
+    atk: 1347
+    rcv: 345
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 211229
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x and their RCV by 1.2x.
+special:
+  name: Smiling from Success
+  description: Reduces Bind and Despair duration by 5 turns and boosts ATK of
+    [QCK] characters by 1.75x for 1 turn. After 1 turn, boosts ATK of [QCK]
+    characters by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of [QCK] characters by 100
+  - description: Makes [RCV] orbs beneficial for [QCK] characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[QCK] characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - atk: 30
+    - rcv: 20
+    - hp: 100
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      variant: up to
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

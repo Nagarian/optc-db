@@ -1,0 +1,534 @@
+type: QCK
+name: Boa Hancock
+japanName: ボア・ハンコック
+family:
+  - BoaHancock
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 416
+    atk: 251
+    rcv: 197
+  maxLvl:
+    hp: 1595
+    atk: 859
+    rcv: 340
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 9034
+aliases:
+  - Shichibukai
+  - V1 Legend Boa Hancock
+evolution:
+  - id: 416
+    evolvers:
+      - 118
+      - 266
+      - 94
+      - 96
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 2.75x and their RCV by
+    1.5x if HP is above 70% at the start of the turn
+special:
+  name: Love-Love Mellow
+  description: Recovers 15x character's RCV in HP, delays all enemies by 1 turn
+  cooldown: 17
+  maxLevel: 5
+rumble:
+  stats:
+    def: 100
+    rumbleType: RCV
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 30
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - RCV
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - RCV
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - RCV
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - RCV
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - QCK
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - RCV
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - QCK
+              - PSY
+  special:
+    - cooldown: 34
+      effects:
+        - amount: 450
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.6
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 475
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.65
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 500
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.69
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 525
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.74
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 550
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.79
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 575
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.84
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 600
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.88
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 625
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.93
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 650
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.98
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 34
+      effects:
+        - amount: 900
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.1
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: RCV
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

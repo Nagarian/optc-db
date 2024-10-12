@@ -1,0 +1,46 @@
+type: INT
+name: Baccarat
+japanName: バカラ
+family:
+  - Baccarat
+class:
+  - Fighter
+  - Striker
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 44
+    atk: 31
+    rcv: 123
+  maxLvl:
+    hp: 888
+    atk: 444
+    rcv: 222
+cost: 12
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 35203
+aliases: []
+evolution:
+  - id: 1167
+    evolvers:
+      - 117
+      - 88
+      - 99
+captain:
+  name: ""
+  description: Gives chance of duplicating a drop upon completion of the island.
+  notes: Does not work if she was not your captain upon starting the island.
+    Stacks with other additional drop captains, giving you two chances of
+    getting an extra drop.
+special:
+  name: Lucky-Lucky Fruit
+  description: Boosts chances of getting Matching orbs for 1 turn and reduces the
+    ATK of enemies by 10% for 1 turn
+  cooldown: 14
+  maxLevel: 7

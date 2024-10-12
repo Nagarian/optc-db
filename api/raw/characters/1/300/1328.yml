@@ -1,0 +1,52 @@
+type: DEX
+name: Leo the Warrior - Tontatta Tonta Corps
+japanName: 戦士レオ トンタッタ族トンタ兵団
+family:
+  - Leo
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 810
+    atk: 472
+    rcv: 140
+  maxLvl:
+    hp: 1724
+    atk: 1134
+    rcv: 281
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 44167
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Cost 20 or less characters by 2.5x
+special:
+  name: Tail Hammer
+  description: Deals 15x character's ATK in [DEX] damage to one enemy, changes the
+    orbs of Friend Captain and this character into Matching orbs
+  cooldown: 19
+  maxLevel: 8
+  stages:
+    - description: Deals 3x character's ATK in [DEX] damage to one enemy, changes the
+        orb of this character into a [DEX] orb
+      cooldown: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Mansherry, Usopp and Nico Robin
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

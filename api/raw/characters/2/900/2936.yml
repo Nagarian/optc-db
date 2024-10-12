@@ -1,0 +1,135 @@
+type: PSY
+name: "Monkey D. Luffy - Straw Hat Pirates: Mark of a Fierce Battle"
+japanName: モンキー・D・ルフィ 麦わらの一味・激戦の軌跡
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1364
+    atk: 601
+    rcv: 116
+  maxLvl:
+    hp: 2984
+    atk: 1313
+    rcv: 265
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 199749
+aliases:
+  - Super Luffy
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 3x, boosts ATK of all other
+    characters by 2.5x, boosts HP of all characters by 1.1x and boosts EXP
+    gained by 1.25x.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Roronoa
+    Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky or
+    Brook, excluding Support members."
+  description: Deals 50x character's ATK in [PSY] damage to all enemies, changes
+    [STR], [DEX], [QCK], [PSY] and [INT] orbs into Matching orbs and transforms
+    all [PSY] characters into Super [PSY] characters.
+special:
+  name: Gomu Gomu Jet Bazooka
+  description: Deals 50x character's ATK in [PSY] damage to all enemies, changes
+    the orb of this character into a Matching orb and boosts ATK of [PSY]
+    characters by 1.75x for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Makes [PSY] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - hp: 60
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 100
+    - captain:
+        description: Boosts ATK of [PSY] characters by 3.5x, boosts ATK of all other
+          characters by 3x, boosts HP of all characters by 1.3x and boosts EXP
+          gained by 1.25x.
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 100
+    - hp: 100
+    - atk: 100
+    - captain:
+        description: Boosts ATK of [PSY] characters by 3.75x, boosts ATK of all other
+          characters by 3.25x, boosts HP of all characters by 1.4x and boosts
+          EXP gained by 1.25x.
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      variant: up to
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2

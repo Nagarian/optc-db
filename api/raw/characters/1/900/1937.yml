@@ -1,0 +1,43 @@
+type: INT
+name: Blackbeard - The Darkness that Challenges the Sun
+japanName: 黒ひげ 太陽に挑む闇
+family:
+  - MarshallDTeach
+class:
+  - Driven
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1198
+    atk: 662
+    rcv: 134
+  maxLvl:
+    hp: 2211
+    atk: 1189
+    rcv: 288
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 86359
+aliases:
+  - BB
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 1.75x and their HP by 1.5x
+special:
+  name: "Sacred Flames: Unknown Fire"
+  description: Adds 15x character's ATK as Additional Typeless Damage for 2 turns.
+    If you are on a Treasure Map, deals 10%-25% of enemies' current HP in True
+    damage to all enemies, depending on your Treasure Map Level
+  cooldown: 15
+  maxLevel: 1
+  notes: |-
+    Level 1-20: 10% Health Cut  
+    Level 21+: 25% Health Cut

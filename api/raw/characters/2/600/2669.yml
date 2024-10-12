@@ -1,0 +1,55 @@
+type: STR
+name: Rob Lucci - Spectator of the Pirates Expo
+japanName: ロブ・ルッチ 『海賊万博』の静観者
+family:
+  - RobLucci
+class:
+  - Fighter
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 282
+    atk: 173
+    rcv: 18
+  maxLvl:
+    hp: 1410
+    atk: 804
+    rcv: 131
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 163420
+aliases:
+  - Raid Lucci
+  - Stampede Lucci
+evolution:
+  - id: 2670
+    evolvers:
+      - 118
+      - 100
+      - 84
+      - 300
+      - 2662
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x and their HP by 1.2x. If you
+    defeat an enemy, increases ATK boost slightly. Stacks up to 8 times to a
+    maximum of 3.5x.
+  notes: If a character dies and revives, it counts as killing a character. If you
+    did not defeat an enemy, lose all ATK boost stacks.
+special:
+  name: Zero Tempest Kick
+  description: Deals 100,000 Fixed damage to all enemies and randomizes all orbs,
+    including [BLOCK] orbs, into either [STR], [QCK] or [INT] orbs. If your crew
+    has 4 or more [STR] characters, boosts the Color Affinity of all characters
+    by 2x for 1 turn. If your crew has 3 or more [QCK] or [INT] characters,
+    reduces Bind duration by 5 turns and reduces enemies' Percent Damage
+    Reduction duration by 5 turns.
+  cooldown: 29
+  maxLevel: 16

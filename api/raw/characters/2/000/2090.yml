@@ -1,0 +1,52 @@
+type: DEX
+name: Franky - Let's Go to the Pirate Festival!
+japanName: フランキー Let’s go for PIRATE FESTIVAL
+family:
+  - Franky
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 724
+    atk: 340
+    rcv: 46
+  maxLvl:
+    hp: 2148
+    atk: 1212
+    rcv: 188
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 102416
+aliases:
+  - Pizza Franky
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.5x and their HP and RCV by 1.2x
+special:
+  name: Cola Party
+  description: Reduces Despair duration by 3 turns, changes orbs of adjacent
+    characters into [RCV] orbs and switches orbs between slots 2 times
+  cooldown: 17
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Vinsmoke Sanji, Roronoa Zoro, Nami, Usopp, Tony Tony
+    Chopper, Nico Robin and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

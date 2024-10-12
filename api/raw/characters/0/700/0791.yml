@@ -1,0 +1,52 @@
+type: QCK
+name: Onion, Pepper & Carrot - Usopp Pirates
+japanName: たまねぎ＆ピーマン＆にんじん ウソップ海賊団
+family:
+  - UsoppPirates
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 654
+    atk: 77
+    rcv: 180
+  maxLvl:
+    hp: 1200
+    atk: 333
+    rcv: 350
+cost: 15
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 18184
+aliases:
+  - Usopp Pirates
+  - Tamanegi, Piiman & Ninjin
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of [STR], [DEX] and [QCK] characters by 1.25x
+special:
+  name: March!! Usopp Pirates
+  description: Deals 3x character's ATK in [QCK] damage to one enemy, boosts ATK
+    of [STR], [DEX] and [QCK] characters by 1.2x for 3 turns
+  cooldown: 17
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Usopp
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15

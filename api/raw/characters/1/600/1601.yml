@@ -1,0 +1,51 @@
+type: INT
+name: Shiryu - Blackbeard Pirates
+japanName: シリュウ 黒ひげ海賊団
+family:
+  - Shiryu
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 444
+    atk: 444
+    rcv: -300
+  maxLvl:
+    hp: 1099
+    atk: 750
+    rcv: -300
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 57473
+aliases:
+  - Colo Shiryu
+  - Coliseum Shiryu
+evolution:
+  - id: 1602
+    evolvers:
+      - 118
+      - 99
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x
+special:
+  name: Blood Stained 'Iron Wall'
+  description: Instantly defeats all enemies with HP equal to or below 75x
+    character's ATK, removes Poison duration completely and reduces damage
+    received by 50% for 3 turns,
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of this character by 100 if this character is the
+      last in the chain to attack

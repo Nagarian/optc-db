@@ -1,0 +1,392 @@
+type: QCK
+oldDbId: 2686
+name: Whitebeard - Voiceless Rage
+japanName: 白ひげ 言葉なき怒り
+family:
+  - EdwardNewgate
+class:
+  - Powerhouse
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1820
+    atk: 789
+    rcv: 40
+  maxLvl:
+    hp: 4504
+    atk: 1520
+    rcv: 141
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - gloex
+links:
+  gamewithId: 165540
+aliases:
+  - V2 Legend WB
+evolution:
+  - id: 5063
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Powerhouse and Striker characters by 2.5x-4.5x
+    depending on the crew's current HP and reduces damage received by 20%.
+  notes: >-
+    `captainProportional : lower : 2.5 + 2 * (1 - (remaining HP) / (total
+    HP)) : 2.5 : 4.5`  
+
+    `captainProportional : lower : 3.25 + 1.25 * (1 - (remaining HP) / (total HP)) : 3.25 : 4.5`
+special:
+  name: Seismic Strike
+  description: Deals 400,000 Fixed True damage to one enemy, adds 0.7x to Chain
+    multiplier for 1 turn, boosts ATK of Striker and Powerhouse characters by 2x
+    for 1 turn. If HP is below 30% at the time the special is activated, reduces
+    damage received by 95% for 1 turn and reduces Despair duration by 20 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Cannot be blown away
+  - description: Boosts base ATK of all characters by 70
+support:
+  type: descriptive
+  criteria: Marco and Portgas D. Ace
+  levels:
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 3 turns.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - hp: 30
+    - atk: 15
+    - rcv: 15
+    - hp: 30
+    - type: sailor
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - atk: 15
+    - atk: 15
+    - hp: 30
+    - atk: 20
+    - rcv: 30
+    - atk: 40
+    - rcv: 30
+    - atk: 60
+    - hp: 50
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 110
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 150
+    - hp: 200
+    - rcv: 25
+    - rcv: 50
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of Powerhouse and Striker characters by
+          3.25x-4.5x depending on the crew's current HP and reduces damage
+          received by 20%.
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 200
+          reduction: 3
+        - value: 250
+          reduction: 4
+        - value: 300
+          reduction: 5
+rumble:
+  stats:
+    def: 278
+    rumbleType: DEF
+    spd: 121
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Powerhouse
+            excludes:
+              - self
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 40
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 20
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 15
+          level: 1
+          effect: buff
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          duration: 15
+          level: 2
+          effect: buff
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+    - cooldown: 31
+      effects:
+        - {}
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 21
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 21
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 22
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 22
+        - override:
+            duration: 20
+        - override:
+            duration: 20
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 23
+        - override:
+            duration: 21
+        - override:
+            level: 3
+            duration: 21
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 23
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            level: 3
+            duration: 22
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 2
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 25
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            level: 4
+            duration: 25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

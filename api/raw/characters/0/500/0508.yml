@@ -1,0 +1,53 @@
+type: STR
+name: Chaka - The guardian jackal of Alabasta
+japanName: チャカ アラバスタの守護神ジャッカル
+family:
+  - Chaka
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 740
+    atk: 531
+    rcv: 81
+  maxLvl:
+    hp: 1160
+    atk: 923
+    rcv: 180
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 11789
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and HP of [STR] characters by 1.5x
+special:
+  name: Ringing Fang
+  description: Deals 25x character's ATK in [STR] damage to one enemy
+  cooldown: 25
+  maxLevel: 8
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 2
+    - value: 3
+      reduction: 3

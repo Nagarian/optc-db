@@ -1,0 +1,392 @@
+type: QCK
+name: King the Wildfire - Soaring Pteranodon
+japanName: 火災のキング 天翔ける翼竜
+family:
+  - King
+class:
+  - Driven
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1670
+    atk: 985
+    rcv: 70
+  maxLvl:
+    hp: 3712
+    atk: 1642
+    rcv: 234
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 285216
+aliases:
+  - V1 Legend King
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], Driven and Powerhouse characters by 5x, their
+    HP by 1.2x and makes [QCK] and [INT] orbs beneficial for [QCK], Driven and
+    Powerhouse characters and if you use "Pteranodon Raid" in this turn, deals
+    500x character's ATK in [QCK] damage to all enemies at the end of the turn.
+    Twice per an adventure, if a crew member uses an ability with ATK UP,
+    activates "Pteranodon Raid" in the following turn.
+superSpecial:
+  criteria: This character must be captain and your crew must have ATK UP.
+  description: Deals 75x character's ATK in Typeless damage to all enemies,
+    changes all orbs into [QCK] orbs and transforms all [QCK] characters into
+    Super [QCK] characters.
+special:
+  name: Pteranodon Raid
+  description: Deals 20% of enemies' current HP in damage to all enemies, reduces
+    Special Cooldown of all characters by 1 turn and boosts Orb Effects of
+    [QCK], Driven and Powerhouse characters by 2.5x for 1 turn. After 1 turn,
+    adds 1.1x to Chain multiplier for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character completely when it is rewinded
+  - description: Makes [QCK] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Kaido, Queen and Jack
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of Powerhouse characters by
+      1.5x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of Powerhouse characters by
+      1.55x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of Powerhouse characters by
+      1.6x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of Powerhouse characters by
+      1.65x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of Powerhouse characters by
+      1.75x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - hp: 15
+    - hp: 15
+    - atk: 10
+    - atk: 10
+    - type: sailor
+    - hp: 25
+    - hp: 25
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - hp: 60
+    - hp: 60
+    - atk: 30
+    - rcv: 20
+    - rcv: 30
+    - hp: 80
+    - hp: 100
+    - type: sailor
+    - hp: 120
+    - atk: 30
+    - atk: 40
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 100
+    - rcv: 25
+    - hp: 150
+    - hp: 200
+    - atk: 100
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 132
+    rumbleType: ATK
+    spd: 190
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 3
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 1
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Damage Over Time
+          duration: 21
+          level: 1
+          chance: 100
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 6
+          level: 1
+          effect: debuff
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 22
+            level: 1
+        - override:
+            duration: 7
+            level: 1
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2
+        - override:
+            duration: 23
+            level: 1
+        - override:
+            duration: 8
+            level: 2
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            duration: 24
+            level: 1
+        - override:
+            duration: 9
+            level: 2
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 3
+        - override:
+            duration: 25
+            level: 1
+        - override:
+            duration: 10
+            level: 3
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 3.5
+        - override:
+            duration: 26
+            level: 2
+        - override:
+            duration: 11
+            level: 4
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 4
+        - override:
+            duration: 27
+            level: 2
+        - override:
+            duration: 12
+            level: 4
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 4.5
+        - override:
+            duration: 28
+            level: 2
+        - override:
+            duration: 13
+            level: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 5
+        - override:
+            duration: 29
+            level: 2
+        - override:
+            duration: 14
+            level: 5
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 6
+        - override:
+            duration: 30
+            level: 3
+        - override:
+            duration: 15
+            level: 7
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

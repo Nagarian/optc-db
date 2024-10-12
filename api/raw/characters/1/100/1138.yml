@@ -1,0 +1,49 @@
+type: PSY
+name: Blueno World Government Spy Group
+japanName: ブルーノ 世界政府直下暗躍諜報機関
+family:
+  - Blueno
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 99
+    atk: 30
+    rcv: 19
+  maxLvl:
+    hp: 2330
+    atk: 712
+    rcv: 193
+cost: 20
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 34497
+aliases: []
+captain:
+  name: ""
+  description: Reduces damage received by 25%
+special:
+  name: "Iron Mass: Ring Sneak Attack"
+  description: Reduces damage received by 60% for 1 turn and boosts ATK of
+    Powerhouse and Fighter characters by 1.3x for 1 turn
+  cooldown: 19
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Kalifa, Rob Lucci, Kaku, Jabra, Fukuro, Kumadori and Spandam
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

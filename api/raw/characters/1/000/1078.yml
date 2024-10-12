@@ -1,0 +1,50 @@
+type: PSY
+name: Mansherry
+japanName: マンシェリー
+family:
+  - Mansherry
+class:
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 100
+    atk: 94
+    rcv: 86
+  maxLvl:
+    hp: 717
+    atk: 416
+    rcv: 307
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 30734
+aliases: []
+evolution:
+  - id: 1079
+    evolvers:
+      - 83
+      - 87
+      - 87
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn
+special:
+  name: Chiyupopo
+  description: Recovers 50x character's RCV in HP. Removes Paralysis, Poison, RCV
+    DOWN and Blindness duration completely
+  cooldown: 24
+  maxLevel: 7
+  stages:
+    - description: Recovers 6x character's RCV in HP. Reduces Paralysis duration by 3 turns
+      cooldown: 14
+    - description: Recovers 15x character's RCV in HP. Removes Paralysis, Poison, RCV
+        DOWN and Blindness duration completely
+      cooldown: 19

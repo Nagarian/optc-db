@@ -1,0 +1,81 @@
+type: QCK
+name: "Hawk Eyes Mihawk: Neo"
+japanName: 鷹の目のミホーク「改」
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1934
+    atk: 778
+    rcv: 13
+  maxLvl:
+    hp: 3794
+    atk: 1280
+    rcv: 24
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 62443
+notes: This Limit Break is exclusive to Global ONLY
+aliases:
+  - Kai Mihawk
+  - Neo Mihawk
+  - Raid Mihawk
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x
+special:
+  name: Black Blade Ship Cutter [Neo]
+  description: Deals 30% of enemies' current HP in damage to all enemies
+  cooldown: 25
+  maxLevel: 10
+sailor:
+  - description: Makes [STR], [RCV] and [TND] orbs beneficial for this character
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - rcv: 40
+    - atk: 20
+    - atk: 25
+    - rcv: 50
+    - type: sailor
+    - hp: 40
+    - rcv: 60
+    - rcv: 60
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Slasher and Free Spirit characters by 2.5x and their
+          HP by 1.3x
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40

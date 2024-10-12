@@ -1,0 +1,431 @@
+type: DEX
+name: "Sir Crocodile: Logia - Warlord of the Sea"
+japanName: サー・クロコダイル　ロギア 王下七武海
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 500
+    atk: 293
+    rcv: 104
+  maxLvl:
+    hp: 1780
+    atk: 831
+    rcv: 226
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 16216
+aliases:
+  - V1 Legend Crocodile
+  - Shichibukai
+evolution:
+  - id: 720
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.5x-3.25x depending on the
+    crew's current HP
+  notes: "`captainProportional : lower : 1.5 + 1.75 * (1 - (remaining HP) / (total
+    HP)) : 1.5 : 3.25`"
+special:
+  name: "Sables: Pesado"
+  description: If HP is below 30% when the special is activated, boosts ATK of
+    Cerebral characters by 2x for 1 turn, by 1.5x for 1 turn otherwise. Deals
+    20x character's ATK in [DEX] damage to all enemies.
+  cooldown: 21
+  maxLevel: 8
+rumble:
+  stats:
+    def: 101
+    rumbleType: ATK
+    spd: 169
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 100
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 19
+      effects:
+        - amount: 11
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 12
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 13
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 14
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 15
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 16
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 17
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 18
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 19
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 19
+      effects:
+        - amount: 22
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - Critical Hit
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

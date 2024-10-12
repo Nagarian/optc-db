@@ -1,0 +1,344 @@
+type: PSY
+name: Marco - Phoenix Gauging the Emperor
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1824
+    atk: 742
+    rcv: 196
+  maxLvl:
+    hp: 3648
+    atk: 1484
+    rcv: 392
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - V3
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn, boosts ATK of
+    [PSY], Fighter and Powerhouse characters by 4.75x, by 5x instead if they
+    have a beneficial orb, boosts HP of [PSY], Fighter and Powerhouse characters
+    by 1.4x, makes [INT] orbs beneficial for all characters and boosts EXP
+    gained by 2.25x. One time per an adventure, if a crew member uses an ability
+    with End of Turn Healing, activates "Marco Special" in the following turn.
+superSpecial:
+  criteria: This character must be captain and the crew must consist of 5 Fighter
+    characters, excluding Support members.
+  description: Deals 80x character's ATK in Typeless damage to all enemies,
+    reduces Special Cooldown of Fighter characters by 1 turn, recovers 8,000 HP
+    at the end of the turn for 2 turns and transforms all Fighter characters
+    into Super Fighter characters.
+special:
+  name: Phoenix Brand
+  description: Reduces Special Cooldown of all characters by 1 turn, deals 80x
+    character's ATK in Typeless True damage to all enemies, recovers 10,000 HP
+    and boosts ATK of [PSY], Fighter and Powerhouse characters by 2.5x for 2
+    turns. After 1 turn, adds 1.4x to Chain multiplier for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 5 turns when it is rewinded
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+support:
+  type: descriptive
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Jozu and Vista
+  levels:
+    - Once per adventure, when you reach the final stage, adds 0.1x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.2x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.3x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.5x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.7x to Chain
+      multiplier for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 10
+    - type: potential
+    - hp: 40
+    - rcv: 10
+    - hp: 50
+    - atk: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 10
+    - rcv: 10
+    - hp: 60
+    - hp: 70
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - atk: 20
+    - hp: 80
+    - rcv: 20
+    - atk: 30
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - rcv: 20
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 10
+    - rcv: 15
+    - atk: 100
+    - hp: 100
+    - rcv: 25
+    - hp: 200
+    - hp: 200
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 174
+    rumbleType: RCV
+    spd: 157
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 200
+      interval: 5
+      type: healing
+    - attribute: INT
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 2500
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+        - amount: 3
+          effect: recharge
+          targeting:
+            targets:
+              - PSY
+          type: RCV
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2600
+        - override:
+            amount: 2.15
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2700
+        - override:
+            amount: 2.3
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2800
+        - override:
+            amount: 2.45
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2900
+        - override:
+            amount: 2.6
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 3000
+        - override:
+            amount: 2.75
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 3100
+        - override:
+            amount: 2.9
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 3200
+        - override:
+            amount: 3.05
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 3300
+        - override:
+            amount: 3.2
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 3500
+        - override:
+            amount: 3.5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,50 @@
+type: DEX
+name: Leo - Tontatta Tonta Corps
+japanName: レオ トンタッタ族トンタ兵団
+family:
+  - Leo
+class:
+  - Striker
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 40
+    atk: 40
+    rcv: 40
+  maxLvl:
+    hp: 888
+    atk: 518
+    rcv: 180
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 44167
+aliases:
+  - ""
+evolution:
+  - id: 1328
+    evolvers:
+      - 116
+      - 117
+      - 80
+      - 91
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Cost 20 or less characters by 2x
+special:
+  name: Tail Hammer
+  description: Deals 15x character's ATK in [DEX] damage to one enemy, changes the
+    orbs of Friend Captain and this character into Matching orbs
+  cooldown: 19
+  maxLevel: 8
+  stages:
+    - description: Deals 3x character's ATK in [DEX] damage to one enemy, changes the
+        orb of this character into a [DEX] orb
+      cooldown: 11

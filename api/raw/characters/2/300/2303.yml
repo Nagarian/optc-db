@@ -1,0 +1,55 @@
+type: PSY
+name: Charlotte Chiffon - Bege's Wife
+japanName: シャーロット・シフォン ベッジの妻
+family:
+  - CharlotteChiffon
+class:
+  - Shooter
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 230
+    atk: 123
+    rcv: 23
+  maxLvl:
+    hp: 980
+    atk: 857
+    rcv: 101
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 125106
+aliases:
+  - ""
+evolution:
+  - id: 2304
+    evolvers:
+      - 117
+      - 87
+      - 1180
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Reduces damage received by 80% if HP is above 99% at the start of the turn
+special:
+  name: A Speech from a Fool
+  description: Reduces Paralysis, Despair and Silence and ATK DOWN duration by 3
+    turns, recovers 10x character's RCV in HP at the end of each turn for 3
+    turns and if your crew has Threshold Damage Reduction, Percent Damage
+    Reduction or Resilience, recovers all missing HP
+  cooldown: 23
+  maxLevel: 7
+  stages:
+    - description: Reduces Paralysis, Despair and Silence and ATK DOWN duration by 1
+        turn and recovers 3x character's RCV in HP at the end of each turn for 3
+        turns
+      cooldown: 16
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character

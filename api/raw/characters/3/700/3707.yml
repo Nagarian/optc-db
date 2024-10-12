@@ -1,0 +1,109 @@
+type: DUAL
+name: Usopp & Yasopp - Connected Sight
+family:
+  - Usopp
+  - Yasopp
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 966
+    atk: 398
+    rcv: 71
+  maxLvl:
+    hp: 2120
+    atk: 854
+    rcv: 142
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+aliases:
+  - RED
+evolution:
+  - id: 3708
+    evolvers: []
+captain:
+  name: ""
+  description: Boosts ATK of Shooter and Free Spirit characters by 5.25x, boosts
+    HP of [PSY] and Shooter characters by 1.3x, makes [QCK] and [PSY] orbs
+    beneficial for Shooter and Free Spirit characters, boosts chance of getting
+    [QCK] and [PSY] orbs and ignores Debuff Protection and delays all enemies by
+    1 turn after each turn you take damage.
+special:
+  name: Marksmanship of Father and Son
+  description: Boosts base ATK of Shooter and Free Spirit characters by 1,250 for
+    1 turn, boosts ATK against delayed enemies by 2.25x for 1 turn and becomes
+    Usopp & Yasopp for 3 turns. If enemies are delayed at the time the special
+    was activated, increases duration of any delay debuffs by 1 turn. If your
+    Captain is a Shooter or Free Spirit character, ignores Debuff Protection and
+    delays all enemies by 1 turn; delays all enemies by 1 turn otherwise.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Removes Blindness duration completely
+characters:
+  swap:
+    description: Changes the orb of this character into a Matching orb, reduces
+      enemies' Shooter and Free Spirit Resistance by -15% for 1 turn and removes
+      Despair and Paralysis duration completely on this character.
+    super:
+      criteria: 6
+      description: Changes orbs of this and adjacent characters into Matching orbs,
+        reduces enemies' Shooter and Free Spirit Resistance by -30% for 1 turn
+        and removes Despair and Paralysis duration completely on this character.
+  character1:
+    name: Usopp - Connected Sight
+    class:
+      - Shooter
+      - Free Spirit
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1005
+        atk: 397
+        rcv: 68
+      maxLvl:
+        hp: 0
+        atk: 0
+        rcv: 0
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts
+        HP of [PSY] and Shooter characters by 1.3x, makes [PSY] orbs beneficial
+        for Shooter and Free Spirit characters, boosts chance of getting [PSY]
+        orbs and ignores Debuff Protection and delays all enemies by 1 turn
+        after each turn you take damage.
+    sailor:
+      - description: Removes Blindness duration completely
+  character2:
+    name: Yasopp - Connected Sight
+    class:
+      - Shooter
+      - Free Spirit
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 956
+        atk: 402
+        rcv: 69
+      maxLvl:
+        hp: 0
+        atk: 0
+        rcv: 0
+    captain:
+      name: ""
+      description: Boosts ATK of Shooter and Free Spirit characters by 4.75x, boosts
+        HP of [PSY] and Shooter characters by 1.3x, makes [QCK] orbs beneficial
+        for Shooter and Free Spirit characters, boosts chance of getting [QCK]
+        orbs and ignores Debuff Protection and delays all enemies by 1 turn
+        after each turn you take damage.
+    sailor:
+      - description: Removes Blindness duration completely

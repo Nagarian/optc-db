@@ -1,0 +1,48 @@
+type: INT
+name: Smoker - Navy HQ Captain
+japanName: スモーカー 海軍本部大佐
+family:
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 710
+    atk: 309
+    rcv: 44
+  maxLvl:
+    hp: 1600
+    atk: 703
+    rcv: 146
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 18811
+aliases:
+  - Colo Smoker
+  - Coliseum Smoker
+evolution:
+  - id: 806
+    evolvers:
+      - 118
+      - 83
+      - 88
+      - 99
+      - 304
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: White Vine
+  description: Reduces crew's current HP by 20%, deals 10x the amount of HP
+    subtracted in [INT] damage to one enemy, boosts Orb Effects of all
+    characters by 1.75x for 1 turn
+  cooldown: 27
+  maxLevel: 13

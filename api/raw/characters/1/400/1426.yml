@@ -1,0 +1,49 @@
+type: QCK
+name: Sai - 13th Leader of the Happosui Army
+japanName: サイ 八宝水軍第１３代棟梁
+family:
+  - Sai
+class:
+  - Fighter
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1123
+    atk: 527
+    rcv: 57
+  maxLvl:
+    hp: 2192
+    atk: 1301
+    rcv: 181
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 49865
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Striker characters by 2x and their HP by 1.25x
+special:
+  name: Military Leg Heel
+  description: Deals 25x character's ATK in [QCK] damage to one enemy. If a
+    character is locked at the time the special was activated, boosts Orb
+    Effects of all characters by 1.5x for 3 turns
+  cooldown: 20
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Chinjao
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

@@ -1,0 +1,142 @@
+type: PSY
+name: Kuzan - Fateful Struggle to the Death
+japanName: クサン 天下分け目の死闘
+family:
+  - Kuzan
+class:
+  - Striker
+  - Shooter
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1598
+    atk: 728
+    rcv: 142
+  maxLvl:
+    hp: 3442
+    atk: 1572
+    rcv: 302
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 96999
+aliases:
+  - V2 Legend Aokiji
+evolution:
+  - id: 3592
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 3.25x and their HP by
+    1.35x at the start of the chain and makes [QCK] and [PSY] orbs beneficial
+    for [QCK] and [PSY] characters. Boosts ATK of [QCK] and [PSY] characters by
+    4.0625x following a chain of [PSY] > [PSY] > [QCK] attacks no lower than
+    Good.
+special:
+  name: "The Natural Disaster's Final Attack: Frozen Sea"
+  description: Randomly changes all orbs, including [BLOCK] orbs, into either
+    [QCK] or [PSY] orbs and boosts ATK of [QCK] and [PSY] characters by 2.25x
+    for 1 turn
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of [QCK] and [PSY] characters by 100
+  - description: Makes [STR] and [INT] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Monkey D. Garp and Smoker
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes orbs of the supported and adjacent
+      characters into Matching orbs.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - hp: 40
+    - rcv: 15
+    - type: sailor
+    - atk: 10
+    - atk: 10
+    - hp: 50
+    - hp: 50
+    - atk: 15
+    - atk: 15
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - hp: 70
+    - hp: 70
+    - atk: 20
+    - atk: 20
+    - rcv: 15
+    - cooldown: 1
+    - atk: 25
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - atk: 35
+    - hp: 100
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 250
+    - captain:
+        description: Boosts ATK of [QCK] and [PSY] characters by 3.5x and their HP by
+          1.35x at the start of the chain and makes [QCK] and [PSY] orbs
+          beneficial for [QCK] and [PSY] characters. Boosts ATK of [QCK] and
+          [PSY] characters by 4.375x following a chain of [PSY] > [PSY] > [QCK]
+          attacks no lower than Good.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

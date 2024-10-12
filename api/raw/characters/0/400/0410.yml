@@ -1,0 +1,93 @@
+type: QCK
+name: Jinbe - Warlord of the Sea
+japanName: ジンベエ 王下七武海
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1522
+    atk: 622
+    rcv: 70
+  maxLvl:
+    hp: 3055
+    atk: 1092
+    rcv: 250
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 9032
+aliases:
+  - Jinbe Warlord of the Sea
+  - Jimbei Warlord of the Sea
+  - Jinbei Warlord of the Sea
+  - Jimbe Warlord of the Sea
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x
+special:
+  name: Ocean Current Shoulder Throw
+  description: Changes the orb of this character into a [QCK] orb, deals 13x
+    character's ATK in [QCK] damage to one enemy
+  cooldown: 11
+  maxLevel: 6
+sailor:
+  - description: Makes [QCK] orbs beneficial for Fighter characters
+  - description: Boosts base ATK and HP of Fighter characters by 100
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Fighter characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 20
+    - atk: 40
+    - rcv: 30
+    - type: potential
+    - atk: 50
+    - type: sailor
+    - atk: 80
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - cooldown: 1
+    - hp: 100
+    - captain:
+        description: Boosts ATK of Fighter characters by 2.75x
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

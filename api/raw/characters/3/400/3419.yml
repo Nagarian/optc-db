@@ -1,0 +1,217 @@
+type: INT
+name: Emporio Ivankov - New Kama Shining in Hell
+japanName: エンポリオ・イワンコフ 地獄に映える新人類
+family:
+  - EmporioIvankov
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1024
+    atk: 685
+    rcv: 105
+  maxLvl:
+    hp: 2743
+    atk: 1472
+    rcv: 282
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 291948
+aliases:
+  - Kizuna Ivankov
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 3.5x, their HP
+    by 1.2x and recovers 3x character's RCV in HP at the end of each turn.
+special:
+  name: Puff-up Hell Wink
+  description: Deals 100,000 Fixed damage to all enemies, reduces enemies' Percent
+    Damage Reduction and Resilience duration by 5 turns, changes [EMPTY],
+    [BLOCK], [BOMB] and Badly Matching orbs into Matching orbs and boosts ATK of
+    Free Spirit and Cerebral characters by 2x for 1 turn.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Boosts base RCV of Free Spirit and Cerebral characters by 50
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 25
+    - hp: 50
+    - type: potential
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - rcv: 25
+    - rcv: 25
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - {}
+        - {}
+        - {}
+        - value: 7
+rumble:
+  stats:
+    def: 156
+    rumbleType: DBF
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 0.1
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.2
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 4
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 6
+            duration: 20

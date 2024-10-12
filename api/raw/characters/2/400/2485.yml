@@ -1,0 +1,114 @@
+type: STR
+name: Ryuma - Legendary Samurai
+japanName: リューマ 伝説の侍
+family:
+  - ShimotsukiRyuma
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1168
+    atk: 482
+    rcv: 138
+  maxLvl:
+    hp: 2601
+    atk: 1355
+    rcv: 312
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 146584
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x and boosts HP of Slasher
+    characters by 1.2x.
+special:
+  name: Polka Remise
+  description: If your Captain is a Slasher character, boosts ATK of Slasher
+    characters by 1.75x for 1 turn and boosts Orb Effects of Slasher characters
+    by 1.75x for 1 turn.
+  cooldown: 23
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Slasher characters by 50
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - cooldown: 1
+    - type: potential
+    - hp: 80
+    - hp: 120
+    - cooldown: 1
+    - type: sailor
+    - slot: 1
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

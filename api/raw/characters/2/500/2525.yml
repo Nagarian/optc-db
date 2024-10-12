@@ -1,0 +1,52 @@
+type: INT
+name: Roronoa Zoro - Dressing Up for the Pirate Festival!
+japanName: ロロノア・ゾロ Dress up for PIRATE FESTIVAL
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 924
+    atk: 524
+    rcv: 51
+  maxLvl:
+    hp: 2310
+    atk: 1311
+    rcv: 128
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 150788
+aliases:
+  - Dress Up Zoro
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.75x. If a character has an
+    [INT] orb, boosts their ATK by 2.1x instead
+special:
+  name: Exhilarating Getup
+  description: Boosts ATK of [QCK], [PSY] and [INT] characters by 1.5x for 1 turn,
+    adds 0.3x to Chain multiplier for 1 turn and changes orbs of adjacent
+    characters into [INT] orbs.
+  cooldown: 16
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Nami, Vinsmoke Sanji, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

@@ -1,0 +1,146 @@
+type: DEX
+name: "Sir Crocodile: Logia - Ex-Warlord of the Sea"
+japanName: サー・クロコダイル　ロギア 元王下七武海
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1724
+    atk: 765
+    rcv: 174
+  maxLvl:
+    hp: 3621
+    atk: 1435
+    rcv: 310
+cost: 55
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16216
+aliases:
+  - V1 Legend Crocodile
+  - Shichibukai
+evolution:
+  - id: 1927
+    evolvers:
+      - skullSTR
+      - 118
+      - 84
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.5x-3.25x depending on the
+    crew's current HP.
+  notes: "`captainProportional : lower : 1.5 + 1.75 * (1 - (remaining HP) / (total
+    HP)) : 1.5 : 3.25`"
+special:
+  name: "Sables: Pesado"
+  description: If HP is below 30% when the special is activated, boosts ATK of
+    Cerebral characters by 2x for 1 turn, by 1.5x for 1 turn otherwise. Deals
+    20x character's ATK in [DEX] damage to all enemies.
+  cooldown: 21
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Cerebral characters by 50
+  - description: Makes [DEX] orbs beneficial for Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - atk: 15
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: sailor
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - atk: 15
+    - rcv: 20
+    - hp: 50
+    - type: potential
+    - hp: 60
+    - hp: 70
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - hp: 75
+    - rcv: 30
+    - cooldown: 1
+    - atk: 50
+    - rcv: 30
+    - hp: 75
+    - type: sailor
+    - hp: 80
+    - atk: 55
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 200
+          reduction: 2
+        - value: 250
+          reduction: 2
+        - value: 300
+          reduction: 3
+levelLimitBreak:
+  - {}
+  - {}
+  - captain:
+      - description: Reduces Special Cooldown of Cerebral characters by 1 turn at the
+          start of the fight, boosts ATK of Cerebral characters by 4x-5.25x
+          depending on the crew's current HP and reduces damage received by 10%.
+  - {}
+  - special:
+      description: Deals 80x character's ATK in [DEX] damage to all enemies, boosts
+        ATK of Cerebral characters by 2x for 1 turn, boosts Orb Effects of
+        Cerebral characters by 2x for 1 turn and changes all orbs, including
+        [BLOCK] orbs, of top row and bottom row characters into Matching orbs.
+        If HP is below 50% when the special is activated, sets Chain Boundaries
+        to 2.0x and 20.0x for 1 turn.

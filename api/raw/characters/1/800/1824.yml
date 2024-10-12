@@ -1,0 +1,260 @@
+type: STR
+name: Byrnndi World - World Destroyer
+japanName: バーンディ・ワールド 世界の破壊者
+family:
+  - ByrnndiWorld
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1185
+    atk: 688
+    rcv: 122
+  maxLvl:
+    hp: 2462
+    atk: 1408
+    rcv: 319
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 73186
+aliases:
+  - Secret World
+  - Secret Byrnndi World
+  - Limited World
+  - Limited Byrnndi World
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Shooter characters by 2.2x at the start of the
+    chain.  
+
+    Boosts ATK of Shooter characters by 2.42x after the 1st PERFECT in a row, by 2.662x after the 2nd PERFECT in a row, by 2.9282x after the 3rd PERFECT in a row, by 3.22102x after the 4th PERFECT in a row and by 3.543122x after the 5th PERFECT in a row.
+special:
+  name: "More More: Hundredfold Artillery Cannon"
+  description: Deals 500,000 Fixed damage to one enemy, removes ATK DOWN duration
+    completely and reduces enemies' Barrier duration by 1 turn
+  cooldown: 22
+  maxLevel: 5
+  stages:
+    - description: Deals 100,000 Fixed damage to one enemy and removes ATK DOWN
+        duration completely
+      cooldown: 14
+    - description: Deals 300,000 Fixed damage to one enemy and removes ATK DOWN
+        duration completely
+      cooldown: 18
+sailor:
+  - description: Boosts base HP of Shooter characters by 150
+  - description: Boosts base ATK of Shooter characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Shooter characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 10
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - hp: 70
+    - type: sailor
+    - cooldown: 1
+    - hp: 80
+    - slot: 1
+    - cooldown: 1
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 120
+          reduction: 2
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 136
+    rumbleType: ATK
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+    - attribute: Powerhouse
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1000
+          effect: damage
+          condition:
+            comparator: less
+            count: 4
+            type: crew
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+          type: fixed
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 0.6
+        - override:
+            amount: 1100
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 0.7
+        - override:
+            amount: 1200
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 0.8
+        - override:
+            amount: 1300
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            amount: 0.9
+        - override:
+            amount: 1400
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 1
+        - override:
+            amount: 1500
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            amount: 1.1
+        - override:
+            amount: 1600
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            amount: 1.2
+        - override:
+            amount: 1700
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 1.3
+        - override:
+            amount: 1800
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 1.5
+        - override:
+            amount: 2000

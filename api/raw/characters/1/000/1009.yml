@@ -1,0 +1,41 @@
+type: STR
+name: Kizuna BOOST Luffy
+japanName: キズナBOOOOSTルフィ
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 465
+    atk: 232
+    rcv: 36
+  maxLvl:
+    hp: 1978
+    atk: 1170
+    rcv: 220
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 27466
+aliases:
+  - Afro Luffy
+  - Afroluffy
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and Fighter characters by 1.5x, reduces Special
+    Cooldown of all characters by 1 turn at the start of the fight
+  notes: The bonus is cumulative. [STR] Fighter characters get a 2.25x bonus.
+special:
+  name: Gum-Gum Flail
+  description: Changes [BLOCK] orbs into [STR] orbs, deals 20x character's ATK in
+    [STR] damage to one enemy
+  cooldown: 25
+  maxLevel: 12

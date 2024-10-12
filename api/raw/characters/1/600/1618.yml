@@ -1,0 +1,96 @@
+type: STR
+name: "Gecko Moria - Battles of the Great Era of Piracy: Strongest Underlings"
+japanName: ゲッコー・モリア 大海賊時代の死闘「最強の部下」
+family:
+  - GeckoMoria
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1328
+    atk: 620
+    rcv: 0
+  maxLvl:
+    hp: 3002
+    atk: 1501
+    rcv: 0
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 57879
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [INT] and [DEX] characters by 2.5x
+special:
+  name: 'Shadow Asgard: "Baptism" from the Royal Shichibukai'
+  description: For [STR], [INT] and [DEX] characters, randomizes all non-Matching
+    orbs and boosts ATK of [STR], [INT], [DEX] characters by 1.75x for 2 turns
+  cooldown: 24
+  maxLevel: 8
+sailor:
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Hogback, Perona and Absalom
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 40
+    - type: potential
+    - hp: 40
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - hp: 70
+    - atk: 60
+    - cooldown: 1
+    - atk: 60
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - cooldown: 7
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

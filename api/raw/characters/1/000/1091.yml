@@ -1,0 +1,99 @@
+type: PSY
+name: Red Flag X Drake - Drake Pirates
+frenchName: Colo Drake
+japanName: 赤旗 X・ドレーク ドレーク海賊団
+family:
+  - XDrake
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1297
+    atk: 631
+    rcv: 130
+  maxLvl:
+    hp: 2599
+    atk: 1230
+    rcv: 300
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 30796
+aliases:
+  - Coliseum Drake
+  - Colo X Drake
+  - Coliseum X Drake
+  - Supernova Drake
+  - Supernova X Drake
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x if HP is below 30% at the
+    start of the turn
+special:
+  name: Double Edge of Revolt
+  description: Deals 25x character's ATK in [PSY] damage to one enemy. If HP is
+    below 30% then changes orbs of adjacent characters into Matching orbs
+  cooldown: 25
+  maxLevel: 14
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 50
+  - description: Makes [INT] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Powerhouse characters
+  levels:
+    - Reduces damage received from [INT] characters by 1%.
+    - Reduces damage received from [INT] characters by 1%.
+    - Reduces damage received from [INT] characters by 2%.
+    - Reduces damage received from [INT] characters by 3%.
+    - Reduces damage received from [INT] characters by 4%.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 70
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - hp: 100
+    - type: sailor
+    - rcv: 40
+    - slot: 1
+    - cooldown: 2
+    - atk: 80
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

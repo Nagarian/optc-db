@@ -1,0 +1,253 @@
+type: QCK
+name: Buddha Sengoku - Cunning Officer on the Move
+japanName: 仏のセンゴク 動き出す智将
+family:
+  - Sengoku
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1337
+    atk: 837
+    rcv: 72
+  maxLvl:
+    hp: 2970
+    atk: 1395
+    rcv: 240
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 257246
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Cerebral characters by 3x and their RCV by 1.2x.
+special:
+  name: Determined to Risk a Life
+  description: Reduces Bind duration by 5 turns, reduces enemies' Resilience and
+    Percent Damage Reduction duration by 5 turns and adds 80x character's ATK as
+    Additional Typeless Damage for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Makes [QCK] orbs beneficial for Powerhouse characters
+  - description: Changes all orbs into [QCK] orbs at the start of the fight
+support:
+  type: descriptive
+  criteria: Sakazuki (Akainu), Kuzan (Aokiji) and Borsalino (Kizaru)
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience and Percent Damage
+      Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience and Percent Damage
+      Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Resilience and Percent Damage
+      Reduction duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - atk: 10
+    - type: potential
+    - atk: 10
+    - rcv: 10
+    - rcv: 10
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 50
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 184
+    rumbleType: SPT
+    spd: 135
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 40
+      effects:
+        - amount: 2500
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 2600
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 2700
+        - override:
+            duration: 13
+            level: 1
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 2800
+        - override:
+            duration: 14
+            level: 1
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 2900
+        - override:
+            duration: 15
+            level: 2
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 3000
+        - override:
+            duration: 16
+            level: 2
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 3100
+        - override:
+            duration: 17
+            level: 2
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 3200
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 3300
+        - override:
+            duration: 19
+            level: 3
+    - cooldown: 40
+      effects:
+        - override:
+            amount: 3500
+        - override:
+            duration: 20
+            level: 4

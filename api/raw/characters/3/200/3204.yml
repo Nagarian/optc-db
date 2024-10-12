@@ -1,0 +1,579 @@
+type: DUAL
+name: Sanji & Pudding - Done! A Special Cake!
+japanName: サンジ＆プリン 完成！スペシャルケーキ
+family:
+  - VinsmokeSanji
+  - CharlottePudding
+class:
+  - Fighter
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1518
+    atk: 956
+    rcv: 119
+  maxLvl:
+    hp: 3787
+    atk: 1654
+    rcv: 393
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+  - inkable
+links:
+  gamewithId: 246494
+aliases:
+  - Sanji&Pudding
+  - Pudding&Sanji
+  - SanjiPudding
+  - PuddingSanji
+  - Limited Legend Sanji and Pudding
+  - SanPudding
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Cerebral characters by 5x, their HP by
+    1.35x, their RCV by 1.5x, reduces damage received by 10%, and makes [STR],
+    [DEX] and [QCK] orbs beneficial for Fighter and Cerebral characters.
+special:
+  name: Duo's Prepared Special Cake
+  description: Recovers 15,000 HP, removes enemies' Percent Damage Reduction and
+    Threshold Damage Reduction duration completely, boosts the Color Affinity of
+    Fighter and Cerebral characters by 2.25x for 2 turns and becomes Sanji &
+    Pudding for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 100
+  - description: Reduces Silence duration by 5 turns on this character
+characters:
+  swap:
+    description: Removes Despair, Paralysis and Slot Bind duration completely on
+      this character, changes the orb, including [BLOCK] orb, of this character
+      into a Matching orb and recovers 25% of damage taken from enemies on the
+      stage when entering a new stage for 1 stage.
+  character1:
+    name: Sanji - Done! A Special Cake!
+    japanName: サンジ 完成！スペシャルケーキ
+    class:
+      - Fighter
+      - Cerebral
+    type: QCK
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1464
+        atk: 867
+        rcv: 99
+      maxLvl:
+        hp: 3423
+        atk: 1463
+        rcv: 347
+    captain:
+      name: ""
+      description: Boosts ATK of Fighter and Cerebral characters by 4x, their HP by
+        1.35x, reduces damage received by 10%, and makes [STR] and [DEX] orbs
+        beneficial for Fighter and Cerebral characters.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50
+      - description: Reduces Silence duration by 5 turns on this character
+  character2:
+    name: Pudding - Done! A Special Cake!
+    japanName: プリン 完成！スペシャルケーキ
+    class:
+      - Cerebral
+      - Shooter
+    type: DEX
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1433
+        atk: 853
+        rcv: 109
+      maxLvl:
+        hp: 3392
+        atk: 1421
+        rcv: 361
+    captain:
+      name: ""
+      description: Boosts ATK of Fighter and Cerebral characters by 3.75x, their HP by
+        1.35x, their RCV by 1.5x, and makes [STR] and [QCK] orbs beneficial for
+        Fighter and Cerebral characters.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Fighter and Cerebral characters by 50
+      - description: Reduces Silence duration by 5 turns on this character
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 15
+    - rcv: 30
+    - hp: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - type: sailor
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - hp: 150
+  potentials:
+    - type: Nutrition/Reduce Hunger stacks
+      variant: up to
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10
+rumble:
+  stats:
+    def: 173
+    rumbleType: ATK
+    spd: 213
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+  special:
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.5
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 12
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.6
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 13
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.7
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 14
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.8
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 15
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.9
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 16
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+        - amount: 2
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 17
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+        - amount: 2.1
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 18
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - enemies
+        - amount: 2.2
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 19
+          effect: debuff
+          level: 7
+          targeting:
+            targets:
+              - enemies
+        - amount: 2.3
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 35
+      effects:
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 9
+          targeting:
+            targets:
+              - enemies
+        - amount: 2.5
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

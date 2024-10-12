@@ -1,0 +1,118 @@
+type: PSY
+name: Carrot - Bedroom Adventure
+japanName: キャロット 寝室での冒険
+family:
+  - Carrot
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 873
+    atk: 835
+    rcv: 111
+  maxLvl:
+    hp: 2249
+    atk: 1353
+    rcv: 374
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 154924
+aliases:
+  - Secret Carrot
+  - Limited Carrot
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of Free Spirit characters by 3x.
+special:
+  name: Air Step Mink Kick
+  description: Reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 3 turns, reduces Bind duration by 5 turns and changes
+    [BOMB], [G], [EMPTY] and Badly Matching orbs into Matching orbs. If your
+    Captain is a Free Spirit Character, boosts ATK against delayed enemies by 2x
+    for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Makes [PSY] orbs beneficial for Free Spirit characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - hp: 50
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - hp: 60
+    - type: sailor
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 80
+        - threshold: 60
+        - threshold: 50
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

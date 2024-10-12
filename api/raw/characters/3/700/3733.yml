@@ -1,0 +1,100 @@
+type: QCK
+name: Tashigi - Swapped Navy Officer
+family:
+  - Tashigi
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1349
+    atk: 685
+    rcv: 147
+  maxLvl:
+    hp: 2698
+    atk: 1370
+    rcv: 294
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - Secret Limited TM Treasure Map Smoker
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3.25x, boost HP of [QCK]
+    characters by 1.2x and makes [STR] and [DEX] orbs beneficial for all
+    characters.
+special:
+  name: Focused Thrust
+  description: Deals 80x character's ATK in [QCK] damage to one enemy, changes
+    [PSY], [INT], [BLOCK], [BOMB] and [EMPTY] orbs into Matching orbs and
+    reduces Paralysis and Burn duration by 5 turns. If your Captain is a Striker
+    or Driven character, sets Chain Boundaries to 2.0x and 15.0x for 1 turn. If
+    your Captain is a [QCK] character, adds 0.8x to Chain multiplier for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for all characters
+  - description: Changes all orbs into [QCK] orbs at the start of the fight
+support:
+  type: descriptive
+  criteria: Hina, Monkey D. Garp and Sengoku
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [PSY] and [INT] orbs beneficial for [QCK]
+      characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [PSY] and [INT] orbs beneficial for [QCK]
+      characters for 1 turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [PSY] and [INT] orbs beneficial for [QCK]
+      characters for 2 turns.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [PSY] and [INT] orbs beneficial for [QCK]
+      characters for 2 turns.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, makes [PSY] and [INT] orbs beneficial for [QCK]
+      characters for 3 turns.
+limitBreak:
+  path:
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - slot: 1
+    - hp: 50
+    - rcv: 20
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2

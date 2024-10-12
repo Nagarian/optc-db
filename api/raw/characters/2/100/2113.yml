@@ -1,0 +1,170 @@
+type: STR
+name: Charlotte Katakuri - Big Mom Pirates Sweet 3
+japanName: シャーロット・カタクリ ビッグ・マム海賊団　３将星
+family:
+  - CharlotteKatakuri
+class:
+  - Shooter
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1675
+    atk: 910
+    rcv: 100
+  maxLvl:
+    hp: 3700
+    atk: 1640
+    rcv: 250
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 107160
+aliases:
+  - Potato Starch
+  - V1 Legend Katakuri
+evolution:
+  - id: 2739
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Fighter, Striker, Shooter, Cerebral and Powerhouse
+    characters by 1.825x, reduces damage received by 20% and makes [QCK], [PSY],
+    [RCV] and [TND] orbs beneficial for all characters. Has a chance to delay
+    all enemies by 1 turn based on damage dealt in previous turn.
+  notes: >-
+    The bonus is cumulative. Characters with 2 of the boosted classes get a
+    1.825x or 1.9x squared ATK boost  
+
+    Delay chance is based on damage dealt with normal attacks and does not stack with any other delay specials or effects  
+
+    **Base Chances**  
+
+    **100,000 damage or more:** 20% chance to delay  
+
+    **500,000 damage or more:** 50% chance to delay  
+
+    **1,000,000 damage or more:** 100% chance to delay  
+
+    **2,000,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection  
+
+    **Limit Break Chances**  
+
+    **100,000 damage or more:** 20% chance to delay  
+
+    **500,000 damage or more:** 50% chance to delay  
+
+    **750,000 damage or more:** 100% chance to delay  
+
+    **1,500,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection
+special:
+  name: "Peerless Donuts: Mochi Singing Result"
+  description: Boosts ATK against delayed enemies by 1.75x for 2 turns, changes
+    [STR], [QCK], [DEX], [PSY], [INT] and [BLOCK] orbs of Fighter, Striker,
+    Shooter, Cerebral and Powerhouse characters into Matching orbs and reduces
+    Special Cooldown of Fighter, Striker, Shooter, Cerebral and Powerhouse
+    characters by 1 turn
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Fighter, Striker, Shooter, Cerebral and
+      Powerhouse characters by 50
+  - description: Boosts this character's damage against [QCK] characters by 2x
+support:
+  type: descriptive
+  criteria: Charlotte Cracker and Charlotte Smoothie
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.4x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - hp: 60
+    - atk: 30
+    - atk: 40
+    - atk: 40
+    - cooldown: 1
+    - type: sailor
+    - atk: 50
+    - hp: 80
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 50
+    - hp: 100
+    - atk: 100
+    - hp: 200
+    - captain:
+        description: Boosts ATK of Fighter, Striker, Shooter, Cerebral and Powerhouse
+          characters by 1.9x, reduces damage received by 20% and makes [QCK],
+          [PSY], [RCV] and [TND] orbs beneficial for all characters. Has a
+          chance to delay all enemies by 1 turn based on damage dealt in
+          previous turn.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90

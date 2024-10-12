@@ -1,0 +1,106 @@
+type: PSY
+name: Phantom Thief Carina
+japanName: 怪盗カリーナ
+family:
+  - Carina
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1002
+    atk: 481
+    rcv: 167
+  maxLvl:
+    hp: 2182
+    atk: 1258
+    rcv: 401
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 105799
+aliases:
+  - V2 Carina
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of [PSY] characters by 2.5x and their RCV by
+    1.2x
+special:
+  name: The Great Final Act of One's Victory
+  description: Reduces enemies' Threshold Damage Reduction, Percent Damage
+    Reduction and Resilience and End of Turn Damage/Percent Cut Buffs duration
+    by 4 turns, changes orbs of adjacent characters into Matching orbs and
+    changes [BLOCK] orbs into Matching orbs, randomizes non-Matching orbs and
+    reduces damage received by 70% for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: If this character has a [PSY] orb and you hit a GOOD or GREAT with
+      her, keep her [PSY] orb for the next turn
+  - description: If you have a Striker, Shooter, Fighter, Slasher, Free Spirit,
+      Cerebral, Powerhouse and Driven character on your crew, changes all orbs
+      into Matching orbs at the start of the fight
+support:
+  type: descriptive
+  criteria: Nami
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 20% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 25% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 25% for 2 turns.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 30% for 2 turns.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 30% for 2 turns and changes orbs of adjacent
+      characters into Matching orbs.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - rcv: 30
+    - hp: 45
+    - atk: 20
+    - rcv: 30
+    - type: sailor
+    - hp: 60
+    - atk: 25
+    - slot: 1
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7

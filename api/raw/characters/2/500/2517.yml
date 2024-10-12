@@ -1,0 +1,138 @@
+type: DUAL
+name: Magellan & Hannyabal - Guardians of the Fortress of Hell
+japanName: マゼラン＆ハンニャバル 地獄の大砦の守護神達
+family:
+  - Hannyabal
+  - Magellan
+class:
+  - Striker
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1400
+    atk: 734
+    rcv: 161
+  maxLvl:
+    hp: 2671
+    atk: 1475
+    rcv: 270
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 149120
+aliases:
+  - Magellan&Hannyabal
+  - Hannyabal&Magellan
+  - MagellanHannyabal
+  - HannyabalMagellan
+  - Raid Magellan and Hannyabal
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 3x and makes [QCK] and
+    [INT] orbs beneficial for all characters
+special:
+  name: Poison Rush
+  description: Poisons all enemies, randomizes all orbs into either [QCK] or [INT]
+    orbs and becomes Magellan & Hannyabal for 2 turns. If your captain is a
+    [QCK] or [INT] character, boosts the Color Affinity of [QCK] and [INT]
+    characters by 2x for 1 turn.
+  cooldown: 30
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 50
+  - description: Reduces Paralysis duration completely on this character
+characters:
+  swap:
+    description: Reduces Poison duration by 5 turns and changes orb of this
+      character into a Matching orb
+  character1:
+    name: Magellan - Guardians of the Fortress of Hell
+    japanName: マゼラン 地獄の大砦の守護神達
+    class:
+      - Striker
+      - Shooter
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 892
+        atk: 624
+        rcv: 140
+      maxLvl:
+        hp: 2315
+        atk: 1311
+        rcv: 255
+    captain:
+      name: ""
+      description: Boosts ATK of [INT] characters by 2.5x, boosts ATK of [QCK]
+        characters by 2x and makes [QCK] orbs beneficial for all characters
+    sailor:
+      - description: Boosts base ATK, HP and RCV of [INT] characters by 25
+      - description: Reduces Paralysis duration completely on this character
+  character2:
+    name: Hannyabal - Guardians of the Fortress of Hell
+    japanName: ハンニャバル 地獄の大砦の守護神達
+    class:
+      - Striker
+      - Driven
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 930
+        atk: 530
+        rcv: 120
+      maxLvl:
+        hp: 2409
+        atk: 1207
+        rcv: 266
+    captain:
+      name: ""
+      description: Boosts ATK of [QCK] characters by 2.5x, boosts ATK of [INT]
+        characters by 2x and makes [INT] orbs beneficial for all characters
+    sailor:
+      - description: Boosts base ATK, HP and RCV of [QCK] characters by 25
+      - description: Reduces Paralysis duration completely on this character
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 30
+    - rcv: 30
+    - type: potential
+    - atk: 20
+    - hp: 40
+    - rcv: 40
+    - type: sailor
+    - atk: 40
+    - hp: 60
+    - cooldown: 1
+    - rcv: 60
+    - slot: 1
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1.5
+          threshold: 30

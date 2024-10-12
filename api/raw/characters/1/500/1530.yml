@@ -1,0 +1,93 @@
+type: QCK
+name: White Knight Cavendish - Captain of the Beautiful Pirates
+japanName: 白馬のキャベンディッシュ 美しき海賊団船長
+family:
+  - Cavendish
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1500
+    atk: 737
+    rcv: 202
+  maxLvl:
+    hp: 2487
+    atk: 1477
+    rcv: 361
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - ambush
+links:
+  gamewithId: 53622
+aliases:
+  - Invasion Cavendish
+  - Invasion Cabbage
+  - Ambush Cavendish
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.75x, but boosts ATK of this
+    character by 3.5x
+special:
+  name: Blue Bird Sword
+  description: If HP is above 50% at the time the special was activated, boosts
+    Orb Effects of Slasher characters by 2.25x for 1 turn, by 2x otherwise
+  cooldown: 28
+  maxLevel: 14
+sailor:
+  - description: Reduces ATK of all characters by 50% if your Captain is a [STR] or
+      [QCK] character
+  - description: Boosts base ATK of all characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Suleiman and Bartolomeo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 11
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - cooldown: 1
+    - rcv: 30
+    - hp: 50
+    - atk: 50
+    - type: sailor
+    - slot: 1
+    - hp: 130
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

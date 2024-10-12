@@ -1,0 +1,52 @@
+type: DEX
+name: Master Swordsman Ryuma - General Zombie Samurai
+japanName: 剣豪リューマ 侍の将軍ゾンビ
+family:
+  - ShimotsukiRyuma
+class:
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 1031
+    atk: 450
+    rcv: 99
+  maxLvl:
+    hp: 2017
+    atk: 1192
+    rcv: 244
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 54675
+aliases:
+  - Colo Ryuma
+  - Coliseum Ryuma
+  - Colo Ryumma
+  - Coliseum Ryumma
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.25x, recovers 2x character's
+    RCV in HP at the end of each turn
+special:
+  name: Pure Body and Soul
+  description: Boosts ATK of [DEX] characters by 1.35x for 1 turn and boosts Orb
+    Effects of [DEX] characters by 1.35x for 1 turn
+  cooldown: 16
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Hogback and Gecko Moria
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

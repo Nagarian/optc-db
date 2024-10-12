@@ -1,0 +1,54 @@
+type: PSY
+name: Dalton - Drum Island Civilian Guard
+japanName: ドルトン ドラム島民間護衛団団長
+family:
+  - Dalton
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 160
+    atk: 106
+    rcv: 19
+  maxLvl:
+    hp: 1061
+    atk: 961
+    rcv: 235
+cost: 20
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 47302
+aliases:
+  - Colo Dalton
+  - Coliseum Dalton
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [QCK] characters by 2x
+special:
+  name: Offense Battle Axe
+  description: Deals 13x character's ATK in [PSY] damage to one enemy, boosts ATK
+    of [PSY] characters by 1.5x for 1 turn
+  cooldown: 18
+  maxLevel: 11
+  stages:
+    - description: Deals 3x character's ATK in [PSY] damage to one enemy, boosts ATK
+        of [PSY] characters by 1.3x for 1 turn
+      cooldown: 14
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kureha (Doctorine) and Tony Tony Chopper
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

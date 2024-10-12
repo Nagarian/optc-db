@@ -1,0 +1,105 @@
+type: PSY
+name: Binz - Pledging Allegiance to Master Z
+japanName: ビンズ ゼット先生に忠を尽くす
+family:
+  - Binz
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1312
+    atk: 782
+    rcv: 190
+  maxLvl:
+    hp: 2455
+    atk: 1385
+    rcv: 321
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 128088
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x and their HP by 1.25x
+special:
+  name: Continuous Shuriken Throwing
+  description: Deals 40x character's ATK in Typeless damage to all enemies, delays
+    all enemies by 1 turn and if the HP of the enemy with the highest Maximum HP
+    is equal to or less than 80%, boosts Orb Effects of Shooter characters by
+    1.75x for 3 turns
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of Shooter characters by 50
+  - description: Makes [INT] orbs beneficial for Shooter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Zephyr and Ain
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 50
+    - atk: 20
+    - type: potential
+    - rcv: 15
+    - hp: 70
+    - atk: 20
+    - slot: 1
+    - rcv: 25
+    - hp: 80
+    - atk: 25
+    - type: sailor
+    - atk: 35
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - hp: 200
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

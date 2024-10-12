@@ -1,0 +1,155 @@
+type: DUAL
+name: Mr. 0 & Miss All Sunday - Rulers of the Desert
+japanName: Mr.0＆ミス・オールサンデー 砂漠の支配者達
+family:
+  - NicoRobin
+  - Crocodile
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1089
+    atk: 572
+    rcv: 138
+  maxLvl:
+    hp: 2723
+    atk: 1431
+    rcv: 345
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 150050
+aliases:
+  - Mr. 0&Miss All Sunday
+  - Miss All Sunday&Mr. 0
+  - Mr. 0Miss All Sunday
+  - Miss All SundayMr. 0
+  - Mr. 0 and Miss All Sunday
+  - Crocodile&Robin
+  - Robin&Crocodile
+  - CrocodileRobin
+  - RobinCrocodile
+  - Crocodile and Robin
+  - CrocRobin
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 3x, reduces damage received by
+    20% and makes [DEX] orbs beneficial for Cerebral characters.
+special:
+  name: "Disorderly Bloom: Pesado"
+  description: Reduces damage received by 80% for 1 turn, boosts the Color
+    Affinity of all characters by 1.75x for 1 turn and becomes Mr. 0 & Miss All
+    Sunday for 2 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Cerebral characters by 50
+  - description: Makes [DEX] orbs beneficial for Cerebral characters
+characters:
+  swap:
+    description: Slightly boosts chances of getting Matching orbs for 1 turn.
+  character1:
+    name: Mr. 0 - Rulers of the Desert
+    japanName: Mr.0 砂漠の支配者達
+    class:
+      - Cerebral
+      - Slasher
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1060
+        atk: 565
+        rcv: 129
+      maxLvl:
+        hp: 2651
+        atk: 1412
+        rcv: 322
+    captain:
+      name: ""
+      description: Boosts ATK of Cerebral characters by 2.5x and makes [DEX] orbs
+        beneficial for Cerebral characters.
+    sailor:
+      - description: Restores Special Cooldown of this character by 2 turns when it is
+          rewinded
+      - description: Makes [DEX] orbs beneficial for Cerebral characters
+  character2:
+    name: Miss All Sunday - Rulers of the Desert
+    japanName: ミス・オールサンデー 砂漠の支配者達
+    class:
+      - Cerebral
+      - Slasher
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 803
+        atk: 515
+        rcv: 132
+      maxLvl:
+        hp: 2008
+        atk: 1288
+        rcv: 331
+    captain:
+      name: ""
+      description: Boosts ATK of Cerebral characters by 2.25x and reduces damage
+        received by 15%.
+    sailor:
+      - description: Reduces Silence duration by 2 turns on this character
+      - description: Makes [DEX] orbs beneficial for Cerebral characters
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - hp: 100
+    - type: sailor
+    - rcv: 10
+    - rcv: 20
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - atk: 100
+    - hp: 200
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

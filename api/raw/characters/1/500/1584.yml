@@ -1,0 +1,94 @@
+type: PSY
+name: Orlumbus the Savage Surmounter - Yonta Maria Fleet Commodore
+japanName: 殺戮支配者オオロンブス ヨンタマリア大船団提督
+family:
+  - Orlumbus
+class:
+  - Striker
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1354
+    atk: 544
+    rcv: 67
+  maxLvl:
+    hp: 3012
+    atk: 1243
+    rcv: 200
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 56054
+aliases:
+  - Colo Orlumbus
+  - Coliseum Orlumbus
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x, by 3x instead if HP is
+    below 30% at the start of the turn
+special:
+  name: Admiral Hug
+  description: Locks all orbs for 1 turn. If there are 4 enemies or more on the
+    stage when the special is activated, boosts Orb Effects of Striker
+    characters by 2x for 1 turn, otherwise boosts Orb Effects of Striker
+    characters by 1.5x for 1 turn
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Makes [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro and Elizabello II
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - hp: 50
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - atk: 40
+    - type: sailor
+    - hp: 60
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40

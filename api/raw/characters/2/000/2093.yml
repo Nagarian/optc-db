@@ -1,0 +1,52 @@
+type: STR
+name: Tony Tony Chopper - Let's Go to the Pirate Festival!
+japanName: トニートニー・チョッパー Let’s go for PIRATE FESTIVAL
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 600
+    atk: 313
+    rcv: 91
+  maxLvl:
+    hp: 1790
+    atk: 1087
+    rcv: 295
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 106872
+aliases:
+  - Pizza Chopper
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 1.5x and their
+    RCV by 1.2x
+special:
+  name: Overflowing Happiness
+  description: Removes Poison duration completely and boosts ATK against delayed
+    enemies by 1.5x for 1 turn
+  cooldown: 17
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

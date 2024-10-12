@@ -1,0 +1,188 @@
+type: STR
+name: Ideo - Two-Time Champion of the New World Central MMA League
+japanName: イデオ 新世界セントラル格闘会 Ｖ２覇者
+family:
+  - Ideo
+class:
+  - Driven
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 254
+    atk: 188
+    rcv: 25
+  maxLvl:
+    hp: 1056
+    atk: 745
+    rcv: 155
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 140988
+aliases:
+  - ""
+evolution:
+  - id: 2420
+    evolvers:
+      - 84
+      - 266
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight boosts ATK of Driven and Fighter characters by 2x, but boosts
+    ATK of this character by 2.5x
+special:
+  name: The Fist of Humanity and Duty
+  description: Delays all enemies by 2 turns. If your Captain is a [DEX] or [INT]
+    character, changes [G], [EMPTY] and [BLOCK] orbs into Matching orbs and
+    locks the chain multiplier at 2.75x for 3 turns. If your Captain is a [QCK]
+    or [PSY] character, changes [RCV], [TND] and [BOMB] orbs into Matching orbs
+    and locks the chain multiplier at 3x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [QCK] orbs beneficial for this character
+rumble:
+  stats:
+    def: 133
+    rumbleType: SPT
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          level: 4
+          effect: buff
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 10
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          duration: 10
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 13
+        - override:
+            duration: 13
+    - cooldown: 30
+      effects:
+        - override:
+            duration: 14
+        - override:
+            duration: 14
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            duration: 15
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 30
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 30
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            level: 3
+            duration: 19

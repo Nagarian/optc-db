@@ -1,0 +1,51 @@
+type: INT
+name: "Donquixote Doflamingo - Country's Future Hanging by a Thread "
+japanName: ドンキホーテ・ドフラミンゴ 国を滅ぼす糸
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 239
+    atk: 193
+    rcv: 39
+  maxLvl:
+    hp: 1167
+    atk: 794
+    rcv: 191
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 120333
+aliases:
+  - V2 Raid Doffy
+  - V2 Raid Doflamingo
+evolution:
+  - id: 2263
+    evolvers:
+      - 118
+      - 267
+      - 88
+      - 304
+      - 83
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Cerebral characters by 2.5x when HP is 50%
+    or below, by 1.5x otherwise
+special:
+  name: Athlete
+  description: Randomizes all non-Matching orbs, including [BLOCK] orbs and locks
+    all orbs for 1 turn. If your Captain is a Cerebral or Driven character,
+    increases duration of any ATK boosting buffs and Orb Amplification buffs by
+    2 turns
+  cooldown: 29
+  maxLevel: 16

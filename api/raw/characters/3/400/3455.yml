@@ -1,0 +1,246 @@
+type: INT
+name: "Shirahoshi: Ocean Halloween Party - Night of Halloween"
+japanName: しらほし　ハロウィン・マリンパーティー Night of Halloween
+family:
+  - Shirahoshi
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1359
+    atk: 698
+    rcv: 115
+  maxLvl:
+    hp: 2612
+    atk: 1331
+    rcv: 344
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 295625
+aliases:
+  - ""
+  - HW Shirahoshi
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x and recovers 3x character's
+    RCV in HP at the end of each turn.
+special:
+  name: Preparing for a Colorful Halloween
+  description: Changes the orb of this character into a [RAINBOW] orb, changes
+    orbs of adjacent characters into Matching orbs, reduces Burn and Paralysis
+    duration by 5 turns and boosts Orb Effects of Free Spirit and Striker
+    characters by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of Striker and Free Spirit characters by 50
+  - description: Changes all orbs into [RAINBOW] orbs at the start of the fight
+support:
+  type: descriptive
+  criteria: Neptune, Fukaboshi, Nefertari Vivi, Rebecca, Mansherry and Viola (Violet)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a Matching orb and
+      recovers 500 HP.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a Matching orb and
+      recovers 750 HP.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a Matching orb and
+      recovers 1,000 HP.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a Matching orb and
+      recovers 1,500 HP.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a Matching orb and
+      recovers 2,000 HP.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - slot: 1
+    - atk: 50
+    - hp: 40
+    - rcv: 30
+    - type: sailor
+    - atk: 50
+    - hp: 80
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 120
+    rumbleType: RCV
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1000
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 6
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 4
+            duration: 11
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            level: 7
+            duration: 15

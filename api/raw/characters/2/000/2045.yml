@@ -1,0 +1,49 @@
+type: DEX
+name: Lucky Roux - Harbor Town Pirate
+japanName: ラッキー・ルウ 港村の海賊
+family:
+  - LuckyRoux
+class:
+  - Shooter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 654
+    atk: 334
+    rcv: 23
+  maxLvl:
+    hp: 2018
+    atk: 1241
+    rcv: 150
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 98271
+aliases:
+  - Lucky Roux
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.75x and recovers 1x
+    character's RCV in HP at the end of each turn
+special:
+  name: Constantly Eating Meat
+  description: Recovers 3x character's RCV in HP after the end of each turn for 10 turns
+  cooldown: 16
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Shanks, Ben Beckman and Yasopp
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 9

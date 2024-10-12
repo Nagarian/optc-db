@@ -1,0 +1,100 @@
+type: PSY
+name: Mad Monk Urouge
+japanName: 怪僧ウルージ
+family:
+  - Urouge
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1202
+    atk: 730
+    rcv: 75
+  maxLvl:
+    hp: 2071
+    atk: 1343
+    rcv: 200
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 5981
+aliases:
+  - Supernova Urouge
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x and their HP by 1.5x
+  notes: "`captainProportional : lower : 2 + 1 * (1 - (remaining HP) / (total HP))
+    : 2 : 3`"
+special:
+  name: Karmic Punishment
+  description: Boosts ATK of Striker characters by 1.5x for 1 turn, deals 25x
+    character's ATK in [PSY] damage to one enemy
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker characters by 30
+support:
+  type: descriptive
+  criteria: Striker characters
+  levels:
+    - Once per adventure, when you reach the final stage, adds 50x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 75x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 100x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 125x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 150x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+limitBreak:
+  path:
+    - atk: 40
+    - hp: 60
+    - rcv: 25
+    - type: potential
+    - cooldown: 3
+    - captain:
+        description: Boosts ATK of Striker characters by 2x-3x depending on the crew's
+          current HP, and their HP by 1.5x
+    - cooldown: 3
+    - hp: 70
+    - type: sailor
+    - atk: 60
+    - rcv: 25
+    - cooldown: 3
+    - hp: 80
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

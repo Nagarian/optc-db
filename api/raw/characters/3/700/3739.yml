@@ -1,0 +1,670 @@
+type: INT
+name: Blackbeard - Ruling Emperor
+family:
+  - MarshallDTeach
+class:
+  - Driven
+  - Powerhouse
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 2176
+    atk: 1094
+    rcv: 127
+  maxLvl:
+    hp: 4352
+    atk: 1712
+    rcv: 254
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+aliases:
+  - 6+ Super Mega
+captain:
+  name: ""
+  description: Boosts ATK of this character by 5x, boosts ATK of other [STR] and
+    [INT] characters by 4.5x, boosts HP of [STR] and [INT] characters by 1.75x,
+    makes [STR] and [INT] orbs beneficial for [STR] and [INT] characters,
+    reduces Paralysis and Silence duration completely on this character and
+    reduces Special Cooldown of this character by 2 turns after each turn you
+    take damage.
+superSpecial:
+  criteria: This character must be captain and Blackbeard's ATK after boosts
+    should be greater than 500x his base ATK.
+  description: Boosts base ATK of this character by 1,250 for 1 turn, reduces all
+    enemies' positive buffs duration by 1 turn and transforms all [INT]
+    characters into Super [INT] characters.
+  notes: "Positive Buffs include, but are not limited to: ATK UP, Any Variation of
+    Debuff Immunity, Increased Defense, Percent Damage Reduction, Threshold
+    Damage Reduction and Enrage. This list will be expanded if any specific
+    exceptions are found."
+special:
+  name: Groud Breaking Shockwave
+  description: Deals 10% of enemies' current HP in True damage to one enemy,
+    reduces enemies' Threshold Damage Reduction duration by 5 turns, changes the
+    orb, including [BLOCK] orbs, of this character into a Matching orb, boosts
+    ATK of this character by 3x-4x for 1 turn, and boosts Orb Effects of this
+    character by 3x-4x for 1 turn, depending on the number of times the
+    character used their own special.
+  cooldown: 15
+  maxLevel: 6
+  notes: "ATK and Orb boosts increase each time the character uses their own
+    special. 1st time: 3/3.5x, 2nd time: 3.5/3.75x, 3rd time or more: 4x."
+sailor:
+  - description: Boosts base ATK of this character by 300 if this character is the
+      last in the chain to attack
+  - description: After each turn you take damage, reduces special cooldown of this
+      character by 1 turn
+support:
+  type: descriptive
+  criteria: Jesus Burgess, Shiryu, Van Augur, Laffitte and Doc Q
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.3x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.5x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 1.75x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 2x for 1 turn
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of supported character by 2.5x for 1 turn
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 5
+    - atk: 5
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - hp: 30
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 40
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - rcv: 20
+    - rcv: 30
+    - hp: 60
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - hp: 100
+    - atk: 40
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 195
+    rumbleType: ATK
+    spd: 151
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: PSY
+      percentage: 30
+      type: damage
+    - amount: 250
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Special CT
+          condition:
+            comparator: below
+            count: 60
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Powerhouse
+  special:
+    - cooldown: 20
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 16
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 17
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 1.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 18
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 19
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 1.9
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 2
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 21
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 2.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 22
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 2.2
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 23
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 2.3
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 8
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 24
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 20
+      effects:
+        - amount: 2.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 25
+          effect: buff
+          level: 10
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          duration: 25
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - {}
+  - captain:
+      - description: Boosts ATK of this character by 5.25x, boosts ATK of other [STR]
+          and [INT] characters by 4.75x, boosts HP of [STR] and [INT] characters
+          by 1.75x, makes [STR] and [INT] orbs beneficial for [STR] and [INT]
+          characters, reduces Paralysis and Silence duration completely on this
+          character and reduces Special Cooldown of this character by 2 turns
+          after each turn you take damage.
+  - {}
+  - special:
+      description: Deals 10% of enemies' current HP in True damage to one enemy,
+        reduces enemies' Threshold Damage Reduction duration by 7 turns, changes
+        the orb, including [BLOCK] orbs, of this character into a Matching orb,
+        boosts ATK of this character by 3.5x-4x for 1 turn, and boosts Orb
+        Effects of this character by 3.5x-4x for 1 turn, depending on the number
+        of times the character used their own special.

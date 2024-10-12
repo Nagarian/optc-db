@@ -1,0 +1,49 @@
+type: QCK
+name: Urouge - Supernova from the Sky
+japanName: ウルージ 空から来た超新星
+family:
+  - Urouge
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 210
+    atk: 69
+    rcv: 42
+  maxLvl:
+    hp: 1261
+    atk: 690
+    rcv: 169
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 84242
+aliases:
+  - Secret Urouge
+  - Limited Urouge
+evolution:
+  - id: 1895
+    evolvers:
+      - 118
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x and their HP by 1.2x
+special:
+  name: The Collapsing Arhat
+  description: If HP is below 50% at the time the special is activated, deal 75x
+    character's ATK in [QCK] damage to one enemy, boosts ATK of Fighter
+    characters by 2x for 1 turn
+  cooldown: 19
+  maxLevel: 5

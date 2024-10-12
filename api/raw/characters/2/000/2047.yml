@@ -1,0 +1,55 @@
+type: QCK
+name: Koala - Corruption-Hunting Revolutionary
+japanName: コアラ 闇を探る革命軍
+family:
+  - Koala
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 282
+    atk: 176
+    rcv: 50
+  maxLvl:
+    hp: 986
+    atk: 657
+    rcv: 220
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 99269
+aliases:
+  - Limited Koala
+  - Secret Koala
+evolution:
+  - id: 2048
+    evolvers:
+      - 118
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x, by 2.5x instead if they
+    have a beneficial orb
+special:
+  name: Fishman Karate Mid-Air Roundhouse Kick
+  description: Deals 20x character's ATK in [QCK] damage to one enemy. If enemies
+    have All Debuff Protection or Delay Debuff Protection at the time the
+    special was activated, boosts Orb Effects of Fighter characters by 2x for 1
+    turn and changes all orbs, including [BLOCK] orbs, of Fighter characters
+    into Matching orbs
+  cooldown: 17
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK of this character by 250 if this character is the
+      last in the chain to attack

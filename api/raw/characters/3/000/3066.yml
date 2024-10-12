@@ -1,0 +1,313 @@
+type: PSY
+name: Nami - Farewell Slap
+japanName: ナミ 決別の平手打ち
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 529
+    atk: 376
+    rcv: 47
+  maxLvl:
+    hp: 1177
+    atk: 836
+    rcv: 105
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 225017
+aliases:
+  - WCI Nami
+evolution:
+  - id: 3067
+    evolvers:
+      - 117
+      - 81
+      - 83
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2.5x and their RCV by 1.2x.
+special:
+  name: Trembling Tears
+  description: Reduces Bind, Despair and Burn duration by 2 turns, reduces Special
+    Cooldown of all characters by 1 turn and boosts the Color Affinity of [STR]
+    and [PSY] characters by 1.75x for 1 turn.
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+rumble:
+  stats:
+    def: 115
+    rumbleType: RCV
+    spd: 143
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 800
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.5
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 845
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.51
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 890
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.52
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 935
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.53
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 980
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.54
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 1025
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.55
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 1070
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.56
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 1115
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.57
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 1160
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.58
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 30
+      effects:
+        - amount: 1300
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 2
+          effect: recharge
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - crew
+          type: RCV

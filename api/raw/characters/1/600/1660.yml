@@ -1,0 +1,106 @@
+type: STR
+name: Raizo of the Mist
+japanName: 霧の雷ぞう
+family:
+  - Raizo
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 8
+  minLvl:
+    hp: 1067
+    atk: 526
+    rcv: 110
+  maxLvl:
+    hp: 2353
+    atk: 1363
+    rcv: 290
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 60678
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x and makes [TND] and [RCV]
+    orbs beneficial for Shooter characters
+special:
+  name: Ninja Arts - Bunshin no Jutsu
+  description: Reduces Paralysis and Silence duration by 3 turns, switches orbs
+    between slots 3 times
+  cooldown: 15
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+support:
+  type: descriptive
+  criteria: Inuarashi, Nekomamushi, Kin'emon, Kozuki Momonosuke and Kurozumi Kanjuro
+  levels:
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence or Paralysis,
+      reduces Silence and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence or Paralysis,
+      reduces Silence and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence or Paralysis,
+      reduces Silence and Paralysis duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 20
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - cooldown: 1
+    - hp: 40
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 50
+    - type: sailor
+    - rcv: 40
+    - hp: 80
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 6

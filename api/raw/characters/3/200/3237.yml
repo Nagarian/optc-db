@@ -1,0 +1,96 @@
+type: DEX
+name: Chopperemon - Shocking Encounter
+japanName: チョパえもん 衝撃の遭遇
+family:
+  - TonyTonyChopper
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1001
+    atk: 563
+    rcv: 126
+  maxLvl:
+    hp: 2502
+    atk: 1407
+    rcv: 314
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 254797
+aliases:
+  - Secret Chopper
+  - Limited Chopper
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.5x.
+special:
+  name: Confused Ninja
+  description: Reduces enemies' Percent Damage Reduction and Resilience duration
+    by 5 turns. If you are on a Treasure Map, boosts the Color Affinity of [DEX]
+    and [QCK] characters by 2.25x for 1 turn, boosts the Color Affinity of [DEX]
+    and [QCK] characters by 1.75x for 1 turn otherwise.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: descriptive
+  criteria: "[DEX] characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of [DEX] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of [DEX] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of [DEX] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of [DEX] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of [DEX] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 20
+    - rcv: 20
+    - type: potential
+    - hp: 20
+    - atk: 20
+    - atk: 20
+    - slot: 1
+    - rcv: 30
+    - hp: 60
+    - hp: 100
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70

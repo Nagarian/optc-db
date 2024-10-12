@@ -1,0 +1,106 @@
+type: DEX
+name: Nightmare Luffy - Nightmare-Ending Warrior
+japanName: ナイトメア・ルフィ 悪夢払う戦士
+family:
+  - MonkeyDLuffy
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1009
+    atk: 708
+    rcv: 73
+  maxLvl:
+    hp: 2510
+    atk: 1475
+    rcv: 290
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 191569
+aliases:
+  - Secret Luffy
+  - Limited Luffy
+  - Kizuna Luffy
+captain:
+  name: ""
+  description: >-
+    If there is a [STR], [DEX] and [QCK] character in your crew, boosts
+    ATK of all characters by 3x, by 2.5x otherwise.  
+
+    **Boosted Ability:** If there is a [STR], [DEX] and [QCK] character in your crew, boosts ATK of all characters by 4.5x, by 3.25x otherwise and makes [DEX] orbs beneficial for all characters.
+special:
+  name: Nightmare Slash
+  description: If this character is your Captain or Friend/Guest Captain, boosts
+    ATK of [STR], [DEX] and [QCK] characters by 2x for 1 turn and if you are in
+    Kizuna Clash and if during that turn you score 3 PERFECT hits, boosts Orb
+    Effects of [STR], [DEX] and [QCK] characters by 1.75x-2.25x for 1 turn
+    depending on your Kizuna Clash Level.
+  cooldown: 18
+  maxLevel: 6
+  notes: |-
+    Level 1-15: 1.75x orb boost  
+    Level 16-30: 2x orb boost  
+    Level 31+: 2.25x orb boost
+sailor:
+  - description: If there is a [STR], [DEX] and [QCK] character in your crew, boosts
+      base ATK, HP and RCV of [STR], [DEX] and [QCK] characters by 75
+  - description: Makes [STR] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[DEX] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - rcv: 10
+    - atk: 30
+    - cooldown: 1
+    - hp: 50
+    - rcv: 30
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 40
+        - value: 3
+          threshold: 50
+        - value: 4
+          threshold: 60
+        - value: 5
+          threshold: 70
+        - value: 7
+          threshold: 80

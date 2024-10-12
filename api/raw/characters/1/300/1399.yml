@@ -1,0 +1,49 @@
+type: QCK
+name: "Smoker: Autumn Rain - Chambres"
+japanName: スモーカー　時雨 シャンブルズ
+family:
+  - Smoker
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 706
+    atk: 416
+    rcv: 160
+  maxLvl:
+    hp: 1606
+    atk: 910
+    rcv: 361
+cost: 19
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 47254
+aliases:
+  - Tashigi
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 1.5x, reduces
+    damage received by 15%
+special:
+  name: Out-of-Control White Smoke
+  description: For Slasher characters, randomizes all non-Matching orbs. If this
+    character is a Sailor, swaps this unit with your captain for 2 turns
+  cooldown: 19
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7

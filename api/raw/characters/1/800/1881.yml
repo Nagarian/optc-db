@@ -1,0 +1,334 @@
+type: INT
+name: "Hawk Eyes Mihawk - Black Blade: Night"
+japanName: 鷹の目のミホーク 黒刀「夜」
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+rarity: 6+
+stats:
+  combo: 6
+  minLvl:
+    hp: 1922
+    atk: 814
+    rcv: 31
+  maxLvl:
+    hp: 4200
+    atk: 1590
+    rcv: 120
+cost: 65
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16215
+aliases:
+  - Mega/Super/6+ IntHawk
+  - V1 Legend Mihawk
+  - Shichibukai
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x-3.5x based on the timing
+    of the attack of the previous unit in the chain
+  notes: A hit below Good or a Miss will boost the ATK of the next unit by 1.5x, a
+    Good hit by 2x, a Great hit by 2.75x and a PERFECT hit by 3.5x. This bonus
+    is applied only to Slasher characters.
+special:
+  name: Flash of [Yoru]
+  description: Deals 0.6x the damage dealt in the previous turn in Typeless damage
+    to all enemies
+  cooldown: 24
+  maxLevel: 7
+  stages:
+    - description: Deals 0.3x the damage dealt in the previous turn in Typeless damage
+        to all enemies
+      cooldown: 18
+  notes: The special only includes the damage inflicted through normal attacks.
+    The special caps out at 999,999,999 damage.
+sailor:
+  - description: Boosts base HP of Slasher characters by 120
+  - description: Boosts base ATK of Slasher characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Slasher Characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 8
+    - value: 9
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 15
+    - type: potential
+    - hp: 20
+    - hp: 25
+    - hp: 30
+    - type: sailor
+    - hp: 35
+    - hp: 40
+    - rcv: 10
+    - rcv: 15
+    - rcv: 15
+    - rcv: 30
+    - type: potential
+    - hp: 45
+    - hp: 50
+    - hp: 55
+    - hp: 60
+    - hp: 65
+    - hp: 70
+    - hp: 75
+    - cooldown: 1
+    - atk: 20
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - atk: 60
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Slasher characters by 2.5x-3.75x based on the timing
+          of the attack of the previous unit in the chain and boosts chances of
+          getting Matching orbs
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 2
+        - value: 80
+          reduction: 2
+        - value: 120
+          reduction: 3
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+rumble:
+  stats:
+    def: 156
+    rumbleType: ATK
+    spd: 167
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          effect: buff
+          level: 6
+          condition:
+            count: 3
+            stat: Blow Away
+            type: trigger
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 2
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.16
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.21
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.27
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.33
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.39
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.44
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.5
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.56
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.65
+        - {}
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

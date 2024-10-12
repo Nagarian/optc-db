@@ -1,0 +1,346 @@
+type: INT
+name: Sanji - Prince, Kingdom of Germa
+japanName: サンジ ジェルマ王国　プリンス
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1251
+    atk: 726
+    rcv: 147
+  maxLvl:
+    hp: 3233
+    atk: 1506
+    rcv: 354
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 56735
+aliases:
+  - Germa Sanji
+  - V1 Legend Sanji
+evolution:
+  - id: 2245
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of all characters by 2.5x and their HP by 1.3x  
+
+    **Action:** Sanji Sky Walks into the air and is unable to attack for 1 turn, preventing all debuffs to himself (Including, but not limited to, Bind, Despair, Silence and Paralysis). This does not remove his own Captain boost while he is unable to attack. During the next turn, boosts ATK of this character by 6.25x instead
+  notes: Sanji Captain Action lasts for 2 turns and can be reactivated after no
+    cooldown. Even while Sky Walking, will still boost all characters by 2.5x.
+    Sky Walk is not a Type boost and will stack with other boosts
+special:
+  name: Hell Memories
+  description: Deals 100,000 Fixed damage to all enemies. Changes [BLOCK] and
+    [TND] orbs into Matching orbs and changes all orbs of this and adjacent
+    characters into Matching orbs. Boosts ATK of this character by 2x for 1 turn
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters
+  - description: Boosts amount healed from [RCV] orbs by 300 each
+support:
+  type: descriptive
+  criteria: Nami, Tony Tony Chopper and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special, adds
+      0.1x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.2x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.3x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.4x to Chain multiplier for 1 turn.
+    - Once per adventure, when the supported character uses their special, adds
+      0.5x to Chain multiplier for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 15
+    - atk: 20
+    - hp: 20
+    - rcv: 10
+    - rcv: 10
+    - rcv: 15
+    - rcv: 15
+    - rcv: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - atk: 50
+    - cooldown: 1
+    - atk: 50
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+rumble:
+  stats:
+    def: 130
+    rumbleType: ATK
+    spd: 179
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 40
+      effects:
+        - attributes:
+            - DEF
+          duration: 6
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.4
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.44
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.49
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.54
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.59
+    - cooldown: 40
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 1.63
+    - cooldown: 40
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 1.68
+    - cooldown: 40
+      effects:
+        - override:
+            level: 4
+        - override:
+            amount: 1.73
+    - cooldown: 40
+      effects:
+        - override:
+            level: 5
+        - override:
+            amount: 1.8
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

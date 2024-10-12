@@ -1,0 +1,98 @@
+type: DEX
+name: Roronoa Zoro - ONE PIECE STAMPEDE
+japanName: ロロノア・ゾロ ONE PIECE STAMPEDE
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1150
+    atk: 598
+    rcv: 108
+  maxLvl:
+    hp: 2761
+    atk: 1436
+    rcv: 261
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 164102
+aliases:
+  - Stampede Zoro
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.75x and their HP by 1.25x.
+special:
+  name: Three Sword Style - Ultra Tiger Hunting • Opposing the Tiger
+  description: Deals 200,000 fixed damage to one enemy, changes the orbs of this
+    and top row characters into Matching orbs. If your crew has 5 or more [DEX]
+    or [PSY] characters, boosts Orb Effects of [DEX] and [PSY] characters by 2x
+    for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [DEX] and [PSY] characters by 50
+  - description: If your Captain is a [DEX] or [PSY] character, makes [QCK] orbs
+      beneficial for [DEX] or [PSY] characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 25
+    - type: potential
+    - cooldown: 1
+    - hp: 40
+    - hp: 60
+    - hp: 100
+    - slot: 1
+    - atk: 10
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - atk: 50
+    - rcv: 25
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

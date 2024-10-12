@@ -1,0 +1,48 @@
+type: DEX
+name: Mr. Diamante - Victory-Hindering Enemy
+japanName: Mr.ディアマンテ 優勝を阻む仇
+family:
+  - Diamante
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 898
+    atk: 538
+    rcv: 91
+  maxLvl:
+    hp: 2050
+    atk: 1282
+    rcv: 181
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 109806
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.25x and their HP by 1.2x
+special:
+  name: Corrida Glaive
+  description: Deals 20x character's ATK in [DEX] damage to one enemy and boosts
+    ATK of Slasher characters by 1.5x for 3 turns
+  cooldown: 18
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Donquixote Doflamingo, Pica, Trebol and Vergo
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

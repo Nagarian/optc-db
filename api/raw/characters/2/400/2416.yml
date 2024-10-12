@@ -1,0 +1,88 @@
+type: DEX
+name: Pica - Giant Eliminating the Former King
+japanName: ピーカ “元”王を排除する巨人
+family:
+  - Pica
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 2345
+    atk: 588
+    rcv: 16
+  maxLvl:
+    hp: 4120
+    atk: 1232
+    rcv: 35
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 140948
+aliases:
+  - Colo Pica
+  - Coliseum Pica
+captain:
+  name: ""
+  description: If this character becomes your captain in the middle of an island,
+    reduces damage received by 70% and boosts ATK of this character by 6x and
+    deals 10% of enemies' current HP in damage to all enemies at the end of each
+    turn.
+special:
+  name: Giant Rock Punch
+  description: Deals 300,000 Fixed damage to one enemy. If this character is a
+    Sailor, swaps this unit with your captain for 3 turns
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Donquixote Doflamingo, Gladius, Buffalo and Baby 5
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - atk: 20
+    - atk: 25
+    - atk: 25
+    - atk: 30
+    - slot: 1
+    - hp: 30
+    - hp: 40
+    - type: sailor
+    - hp: 70
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

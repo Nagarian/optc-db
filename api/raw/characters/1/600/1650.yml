@@ -1,0 +1,52 @@
+type: DEX
+name: Brook - Psychedelic Art
+japanName: ブルック サイケデリックアート
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 203
+    atk: 130
+    rcv: 29
+  maxLvl:
+    hp: 1830
+    atk: 1140
+    rcv: 265
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 60689
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts RCV of [DEX] characters by 1.5x and boosts ATK of [DEX]
+    characters by 1.5x, by 3x instead if they have a beneficial orb.
+special:
+  name: Eyes Blinded by True Beauty
+  description: Changes [BLOCK], [TND], [EMPTY] and [BOMB] orbs into [DEX] orbs and
+    boosts Orb Effects of all characters by 1.5x for 1 turn
+  cooldown: 15
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Nami, Tony Tony Chopper and Vinsmoke Sanji
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

@@ -1,0 +1,114 @@
+type: QCK
+name: Okiku - Samurai
+japanName: お菊 “侍”
+family:
+  - Kikunojo
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 923
+    atk: 943
+    rcv: 73
+  maxLvl:
+    hp: 2786
+    atk: 1352
+    rcv: 285
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 177830
+aliases:
+  - Kikunojo
+  - Okikunojo
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.75x
+special:
+  name: Quickdraw Slice
+  description: Deals 50x character's ATK in Typeless True damage to one enemy,
+    locks all orbs for 1 turn, reduces Bind and Despair duration by 2 turns and
+    boosts the Color Affinity of [QCK] and [INT] characters by 1.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: Makes [INT] orbs beneficial for this character
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Roronoa Zoro and Tama
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 7
+      reduction: 4
+    - value: 9
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 30
+    - type: sailor
+    - hp: 60
+    - atk: 40
+    - atk: 50
+    - slot: 1
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 4
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 100
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

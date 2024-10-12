@@ -1,0 +1,54 @@
+type: INT
+name: Magellan
+japanName: マゼラン
+family:
+  - Magellan
+class:
+  - Striker
+  - Shooter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 210
+    atk: 107
+    rcv: 29
+  maxLvl:
+    hp: 1226
+    atk: 659
+    rcv: 102
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 45905
+aliases:
+  - Raid Magellan
+evolution:
+  - id: 1374
+    evolvers:
+      - 118
+      - 88
+      - 94
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 1.5x and their HP by 1.2x, deals
+    5x the damage taken from enemies in the previous turn in [INT] damage to all
+    enemies at the end of each turn
+special:
+  name: Poison Dragon
+  description: Inflicts Toxic to all enemies and delays all enemies by 1 turn.
+  cooldown: 31
+  maxLevel: 16
+  stages:
+    - description: Poisons all enemies and delays all enemies by 1 turn.
+      cooldown: 25
+  notes: >-
+    `toxic : 0.5x : 3x : 1,500,000`  
+      
+    If enemies are both Poisoned and inflicted with Toxic, only the Toxic damage will damage the enemy at the end of the turn.

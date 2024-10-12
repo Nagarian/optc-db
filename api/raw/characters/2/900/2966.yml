@@ -1,0 +1,107 @@
+type: STR
+name: Boa Hancock - Dedication to Straw Hat Luffy
+japanName: ボア・ハンコック 麦わらのルフィへの献身
+family:
+  - BoaHancock
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1152
+    atk: 712
+    rcv: 177
+  maxLvl:
+    hp: 2604
+    atk: 1347
+    rcv: 317
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 202539
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x and their RCV by 1.2x.
+special:
+  name: Full-body Perfume Femur
+  description: Reduces ATK DOWN and Silence duration by 5 turns, changes [BLOCK],
+    [BOMB] and Badly Matching orbs into Matching orbs and locks all orbs for 1
+    turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Boosts base ATK, HP and RCV of [STR] characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Boa Sandersonia, Boa Marigold and Gloriosa (Elder Nyon)
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - slot: 1
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

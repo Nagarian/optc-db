@@ -1,0 +1,419 @@
+type: STR
+name: Otama - Bonding with Komachiyo
+japanName: お玉 狛ちよとの絆
+family:
+  - Tama
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1010
+    atk: 553
+    rcv: 222
+  maxLvl:
+    hp: 2416
+    atk: 1159
+    rcv: 411
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 200912
+aliases:
+  - Limited O-Tama
+  - Secret O-Tama
+  - Limited OTama
+  - Secret OTama
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 2x and recovers
+    500 HP at the end of each turn.
+special:
+  name: Now! Komachiyo Eat!
+  description: Reduces RCV DOWN duration by 5 turns, boosts RCV of all characters
+    by 1.5x for 1 turn and recovers 3,000 HP at the end of the turn for 1 turn.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 25
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 25
+    - slot: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 103
+    rumbleType: RCV
+    spd: 139
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 3
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 4
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 6
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Fighter
+              - Free Spirit
+  special:
+    - cooldown: 17
+      effects:
+        - amount: 1
+          effect: recharge
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 1.5
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.09
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 1.6
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.18
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 1.7
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.27
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 1.8
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.36
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 1.9
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.45
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 2
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.54
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 2.1
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.63
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 2.2
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.72
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 2.3
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 17
+      effects:
+        - amount: 1.8
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - amount: 2.5
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV

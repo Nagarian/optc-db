@@ -1,0 +1,93 @@
+type: STR
+name: Rob Lucci - Pursuer of the Unlikely Alliance
+japanName: ロブ・ルッチ 共同戦線の追撃者
+family:
+  - RobLucci
+class:
+  - Fighter
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1355
+    atk: 766
+    rcv: 107
+  maxLvl:
+    hp: 2910
+    atk: 1502
+    rcv: 234
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 163420
+aliases:
+  - Raid Lucci
+  - Stampede Lucci
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x and their HP by 1.2x. If you
+    defeat an enemy, increases ATK boost slightly. Stacks up to 10 times to a
+    maximum of 3.25x.
+  notes: If a character dies and revives, it counts as killing a character. If you
+    did not defeat an enemy, lose all ATK boost stacks.
+special:
+  name: Zero Tempest Kick
+  description: Deals 100,000 Fixed damage to all enemies and randomizes all orbs,
+    including [BLOCK] orbs, into either [STR], [QCK] or [INT] orbs. If your crew
+    has 4 or more [STR] characters, boosts the Color Affinity of all characters
+    by 2x for 1 turn. If your crew has 3 or more [QCK] or [INT] characters,
+    reduces Bind duration by 5 turns and reduces enemies' Percent Damage
+    Reduction duration by 5 turns.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of [STR] characters by 50
+  - description: Makes [STR] orbs beneficial for Fighter and Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 40
+    - atk: 40
+    - type: potential
+    - hp: 40
+    - atk: 40
+    - type: sailor
+    - slot: 1
+    - atk: 60
+    - hp: 50
+    - rcv: 40
+    - type: sailor
+    - slot: 1
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

@@ -1,0 +1,126 @@
+type: DUAL
+name: Kaido & Lead Performers - Animal Kingdom Pirates
+japanName: カイドウ＆大看板 百獣海賊団
+family:
+  - Jack
+  - Kaido
+  - King
+  - Queen
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 952
+    atk: 478
+    rcv: 33
+  maxLvl:
+    hp: 2116
+    atk: 1063
+    rcv: 91
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 312079
+aliases:
+  - Beast Pirates
+  - Animal Kingdom Pirates
+  - Legend Kaido Crew
+evolution:
+  - id: 3508
+    evolvers:
+      - 118
+      - 118
+      - 100
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters
+    by 2 turns at the start of the fight, reduces Super Swap cooldown of this
+    character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse characters
+    by 5x and their HP by 1.3x. If there are 6 Powerhouse characters in your
+    crew, deals 600x character's ATK in character's Type damage to all enemies
+    at the end of each turn.
+special:
+  name: Absolute Destruction
+  description: Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters
+    by 1 turn, deals 500x character's ATK in Typeless damage to all enemies and
+    becomes Kaido & Lead Performers for 3 turns. If your crew has 5 or more
+    Powerhouse characters, boosts the Color Affinity of [STR], [QCK] and
+    Powerhouse characters by 2.5x for 1 turn, by 2.25x otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Powerhouse characters by 100
+characters:
+  swap:
+    description: Changes the orb, including [BLOCK] orbs, of this character into a
+      Matching orb and removes Silence duration completely on this character.
+    super:
+      criteria: 8
+      description: Changes the orb, including [BLOCK] orbs, of this character into a
+        Matching orb, removes Silence duration completely on this character,
+        advances Special Cooldown of this character to MAX and deals 500,000
+        Fixed True damage, ignoring Normal Attack Only, to all enemies.
+  character1:
+    name: Kaido - Animal Kingdom Pirates
+    japanName: カイドウ 百獣海賊団
+    class:
+      - Powerhouse
+      - Driven
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 917
+        atk: 427
+        rcv: 24
+      maxLvl:
+        hp: 2106
+        atk: 959
+        rcv: 61
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters
+        by 2 turns at the start of the fight, reduces Super Swap cooldown of
+        this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse
+        characters by 4.5x and their HP by 1.3x. If there are 6 Powerhouse
+        characters in your crew, deals 400x character's ATK in [STR] damage to
+        all enemies at the end of each turn.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Powerhouse characters by 50
+  character2:
+    name: Lead Performers - Animal Kingdom Pirates
+    japanName: 大看板 百獣海賊団
+    class:
+      - Powerhouse
+      - Driven
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 917
+        atk: 418
+        rcv: 22
+      maxLvl:
+        hp: 2106
+        atk: 961
+        rcv: 58
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of [STR], [QCK] and Powerhouse characters
+        by 2 turns at the start of the fight, reduces Super Swap cooldown of
+        this character by 8 turns, boosts ATK of [STR], [QCK] and Powerhouse
+        characters by 4.5x and their HP by 1.3x. If there are 6 Powerhouse
+        characters in your crew, deals 400x character's ATK in [QCK] damage to
+        all enemies at the end of each turn.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Powerhouse characters by 50

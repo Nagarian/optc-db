@@ -1,0 +1,51 @@
+type: PSY
+name: Nojiko - Nami's Sister
+japanName: ノジコ ナミの義姉妹
+family:
+  - Nojiko
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 330
+    atk: 233
+    rcv: 253
+  maxLvl:
+    hp: 709
+    atk: 382
+    rcv: 438
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 13133
+aliases: []
+captain:
+  name: ""
+  description: Boosts HP and RCV of [PSY] characters by 1.5x
+special:
+  name: The Bond Bellmere Left Us
+  description: Changes the orb of Captain character into a [PSY] orb, recovers 9x
+    character's RCV in HP
+  cooldown: 20
+  maxLevel: 8
+support:
+  type: descriptive
+  criteria: Nami and Bellmere
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      recovers 1x supported character's RCV in HP
+    - Once per adventure, when the supported character uses their special,
+      recovers 1x supported character's RCV in HP
+    - Once per adventure, when the supported character uses their special,
+      recovers 2x supported character's RCV in HP
+    - Once per adventure, when the supported character uses their special,
+      recovers 2x supported character's RCV in HP
+    - Once per adventure, when the supported character uses their special,
+      recovers 3x supported character's RCV in HP

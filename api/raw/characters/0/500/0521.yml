@@ -1,0 +1,51 @@
+type: INT
+name: Sanji - Merveille's Adventurer
+japanName: サンジ メルヴィユの冒険者
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 268
+    atk: 115
+    rcv: 32
+  maxLvl:
+    hp: 1545
+    atk: 698
+    rcv: 122
+cost: 17
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - removed
+links:
+  gamewithId: 11950
+notes: "Strong World Batch has been entirely replaced. So this characte is now
+  available with a different artwork and id #1116."
+aliases:
+  - Strong World Sanji
+  - SW Sanji
+evolution:
+  - id: 522
+    evolvers:
+      - 118
+      - 83
+      - 88
+      - 94
+      - 104
+captain:
+  name: ""
+  description: Reduces damage received by 80% if HP is above 99% at the start of the turn
+special:
+  name: Diable Jambe - Venaison Shot
+  description: Deals 1x-100x character's ATK in [INT] damage to all enemies
+  cooldown: 23
+  maxLevel: 7
+  notes: "`specialProportional : lower : 100 * ( 1 - (remaining HP) / (total HP) )`"
+sailor:
+  - description: Reduces Paralysis duration by 3 turns on this character

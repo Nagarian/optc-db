@@ -1,0 +1,49 @@
+type: PSY
+name: Sugar - Donquixote Family Special Powers Team
+japanName: シュガー ドンキホーテファミリー　特殊能力チーム
+family:
+  - Sugar
+class:
+  - Free Spirit
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1120
+    atk: 215
+    rcv: 67
+  maxLvl:
+    hp: 2353
+    atk: 1079
+    rcv: 239
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 93533
+aliases:
+  - Story Sugar
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.25x, boosts HP of Slasher
+    characters by 1.2x and boosts RCV of Free Spirit characters by 1.2x
+special:
+  name: Little Black Bears
+  description: Deals 40x character's ATK in [PSY] damage to all enemies, boosts
+    chances of getting [PSY] orbs for 3 turns
+  cooldown: 19
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Trebol
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

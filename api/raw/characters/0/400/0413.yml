@@ -1,0 +1,368 @@
+type: INT
+name: Gecko Moria
+japanName: ゲッコー・モリア
+family:
+  - GeckoMoria
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 355
+    atk: 102
+    rcv: 15
+  maxLvl:
+    hp: 1928
+    atk: 677
+    rcv: 33
+cost: 15
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 9033
+aliases:
+  - Gekko Moriah
+evolution:
+  - id: 414
+    evolvers:
+      - 118
+      - 88
+      - 94
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x if HP is above 99% at the
+    start of the turn
+special:
+  name: Doppelman
+  description: Changes [STR] and [DEX] orbs into [INT] orbs
+  cooldown: 20
+  maxLevel: 11
+rumble:
+  stats:
+    def: 261
+    rumbleType: DEF
+    spd: 113
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - Striker
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 12
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 13
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 14
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 18
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 19
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 6
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 20
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies

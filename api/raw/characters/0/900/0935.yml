@@ -1,0 +1,346 @@
+type: INT
+name: Knight of the Sea Jinbe - Ex-Royal Seven Warlords of the Sea
+japanName: 海侠のジンベエ 元王下七武海
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1787
+    atk: 733
+    rcv: 179
+  maxLvl:
+    hp: 3400
+    atk: 1440
+    rcv: 347
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 24564
+aliases:
+  - Jimbei
+  - Jinbei
+  - INTbe
+  - V1 Legend Jinbe
+  - Shichibukai
+evolution:
+  - id: 2066
+    evolvers:
+      - skullINT
+      - 118
+      - 88
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x and their HP by 1.5x. If HP
+    is above 70% or below 30%, boosts ATK of Fighter characters by 2.75x instead
+special:
+  name: Fishman Karate!! Shark Fist Tile Breaker
+  description: Makes PERFECTs harder to hit for 1 turn. Deals 20x character's ATK
+    in [INT] damage to all enemies. Changes all orbs of Fighter characters into
+    Matching orbs
+  cooldown: 19
+  maxLevel: 6
+  notes: Decreases timing window to hit a PERFECT. (Animation remains the same)
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+  - description: Restores Special Cooldown of this character completely when it is rewinded
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 6
+      reduction: 3
+    - value: 8
+      reduction: 4
+    - value: 10
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - hp: 10
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - hp: 60
+    - cooldown: 1
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Fighter characters by 2.5x and their HP by 1.5x. If
+          HP is above 70% or below 30%, boosts ATK of Fighter characters by 3x
+          instead
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 246
+    rumbleType: DEF
+    spd: 100
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 0.75
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 5
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.79
+        - override:
+            level: 5
+            duration: 16
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.82
+        - override:
+            level: 6
+            duration: 17
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.86
+        - override:
+            level: 7
+            duration: 18
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 8
+            duration: 19
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.94
+        - override:
+            level: 9
+            duration: 20
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.97
+        - override:
+            level: 9
+            duration: 21
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.01
+        - override:
+            level: 10
+            duration: 22
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.05
+        - override:
+            level: 11
+            duration: 23
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.15
+        - override:
+            level: 13
+            duration: 25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

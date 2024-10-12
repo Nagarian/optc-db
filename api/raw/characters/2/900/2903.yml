@@ -1,0 +1,110 @@
+type: PSY
+name: Bartholomew Kuma - Protecting the Ship on Sabaody Archipelago
+japanName: バーソロミュー・くま シャボンディ諸島の船守
+family:
+  - BartholomewKuma
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1321
+    atk: 762
+    rcv: 101
+  maxLvl:
+    hp: 3020
+    atk: 1355
+    rcv: 245
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 193660
+aliases:
+  - 3D2Y Kuma
+  - 3D2Y Bartholomew Kuma
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.75x and their HP by 1.25x.
+special:
+  name: Reminiscing the 2 Years
+  description: Adds 0.6x to Chain multiplier for 3 turns and recovers 5,000 HP at
+    the end of the turn for 3 turns. After 2 turns, changes all orbs of Cerebral
+    and Powerhouse characters into Matching orbs.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of Cerebral characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Nico Robin, Franky and Brook
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 10
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - hp: 70
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - cooldown: 4
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

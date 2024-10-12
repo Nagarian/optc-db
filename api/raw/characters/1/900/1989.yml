@@ -1,0 +1,90 @@
+type: PSY
+name: '"Charging!" Little Oars Jr. - Breaking Through the Barricade'
+japanName: 猛攻のリトルオーズJr. 突破口の先駆者
+family:
+  - LittleOarsJr
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 980
+    atk: 678
+    rcv: 30
+  maxLvl:
+    hp: 2859
+    atk: 1381
+    rcv: 173
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 93185
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x and their HP by 1.5x
+special:
+  name: Unfaltering Trump Card
+  description: Deals 10% of enemies' current HP in damage to one enemy and reduces
+    Paralysis and Silence duration by 3 turns. If your Captain is a Slasher
+    character, boosts ATK against delayed enemies by 1.75x for 2 turns
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Boosts base ATK of Slasher and Powerhouse characters by 75
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Slasher characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 9
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 40
+    - type: potential
+    - hp: 40
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - hp: 70
+    - atk: 60
+    - cooldown: 1
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40

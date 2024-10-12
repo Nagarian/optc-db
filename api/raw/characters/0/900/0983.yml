@@ -1,0 +1,90 @@
+type: QCK
+name: Flower Sword Vista - Whitebeard's Fifth Division Commander
+japanName: 花剣のビスタ 白ひげ海賊団５番隊隊長
+family:
+  - Vista
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1534
+    atk: 634
+    rcv: 98
+  maxLvl:
+    hp: 2830
+    atk: 1257
+    rcv: 228
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 26489
+aliases:
+  - Colo Vista
+  - Coliseum Vista
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.25x, makes [RCV] and [TND]
+    orbs beneficial for Slasher characters
+special:
+  name: Flower Sword Straight Cut
+  description: Deals 25x character's ATK in [QCK] damage to one enemy, changes all
+    orbs of bottom row characters into Matching orbs
+  cooldown: 22
+  maxLevel: 11
+sailor:
+  - description: Boosts base ATK of Slasher characters by 60
+  - description: Makes [DEX] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Edward Newgate (Whitebeard), Marco, Portgas D. Ace, Kingdew, Izo, Jozu
+    and Haruta
+  levels:
+    - Reduces damage received from [STR] characters by 1%.
+    - Reduces damage received from [STR] characters by 1%.
+    - Reduces damage received from [STR] characters by 2%.
+    - Reduces damage received from [STR] characters by 3%.
+    - Reduces damage received from [STR] characters by 4%.
+limitBreak:
+  path:
+    - atk: 20
+    - cooldown: 1
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - cooldown: 1
+    - rcv: 30
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - cooldown: 1
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

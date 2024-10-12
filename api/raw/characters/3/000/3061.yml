@@ -1,0 +1,473 @@
+type: PSY
+name: Calgara & Noland - Ringing the Bell of Promise
+japanName: カルガラ＆ノーランド 約束の鐘の音
+family:
+  - Calgara
+  - MontBlancNoland
+class:
+  - Striker
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1485
+    atk: 564
+    rcv: 124
+  maxLvl:
+    hp: 3712
+    atk: 1411
+    rcv: 311
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 223750
+aliases:
+  - Calgara&Noland
+  - Calgara and Noland
+  - Calgara Noland
+  - CalgaraNoland
+  - Noland&Calgara
+  - Noland and Calgara
+  - Noland Calgara
+  - NolandCalgara
+  - PvP Noland
+  - PvP Calgara
+  - PF Noland
+  - PF Calgara
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Striker characters by 2.75x.
+special:
+  name: Reunion Promise
+  description: Deals 50x character's ATK in [PSY] damage to all enemies, reduces
+    Bind duration by 3 turns and adds 0.7x to Chain multiplier for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Makes [INT] orbs beneficial for this character
+limitBreak:
+  path:
+    - hp: 50
+    - rcv: 50
+    - rcv: 50
+    - type: potential
+    - atk: 100
+    - atk: 150
+    - hp: 150
+    - hp: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 133
+    rumbleType: ATK
+    spd: 226
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+            - Special CT
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+            - Special CT
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+            - Special CT
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+            - Special CT
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+            - Special CT
+            - SPD
+          condition:
+            comparator: remaining
+            count: 40
+            type: time
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - amount: 1.5
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 1.6
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.7
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - amount: 1.8
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - amount: 1.9
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - amount: 2
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - amount: 2.1
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - amount: 2.2
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - crew
+        - amount: 2.3
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 15
+      effects:
+        - attributes:
+            - ATK
+          duration: 35
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          duration: 35
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - crew
+        - amount: 2.5
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk

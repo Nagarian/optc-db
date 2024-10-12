@@ -1,0 +1,542 @@
+type: PSY
+name: Sabo
+japanName: サボ
+family:
+  - Sabo
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 369
+    atk: 279
+    rcv: 169
+  maxLvl:
+    hp: 1498
+    atk: 821
+    rcv: 305
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 15191
+aliases:
+  - V1 Legend Sabo
+evolution:
+  - id: 669
+    evolvers:
+      - 118
+      - 87
+      - 266
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts HP and RCV of all characters by 1.2x, boosts ATK of Free
+    Spirit characters by 2x-2.75x depending on the crew's current HP
+  notes: "`captainProportional : higher : 2 + 0.75 * (remaining HP) / (total HP) :
+    2.75 : 2`"
+special:
+  name: Dragon's Claw
+  description: Boosts ATK of Free Spirit characters by 1.5x for 1 turn. If during
+    that turn you score 6 PERFECT hits, boosts ATK of Free Spirit characters by
+    2x for 1 turn in the following turn.
+  cooldown: 20
+  maxLevel: 7
+rumble:
+  stats:
+    def: 169
+    rumbleType: SPT
+    spd: 172
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  resilience:
+    - amount: 150
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 0.3
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.32
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.33
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.35
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.37
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.39
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.4
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.42
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.44
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - amount: 0.55
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: HP
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Free Spirit
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

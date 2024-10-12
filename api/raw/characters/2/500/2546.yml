@@ -1,0 +1,74 @@
+type: QCK
+name: Portgas D. Ace - Celebrate the Wonderful Cruise
+japanName: ポートガス・D・エース Celebrate the wonderful cruise
+family:
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1210
+    atk: 622
+    rcv: 141
+  maxLvl:
+    hp: 2642
+    atk: 1355
+    rcv: 308
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 150400
+aliases:
+  - Anniversary Ace
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and makes [RCV] orbs
+    beneficial for Free Spirit characters.
+special:
+  name: My Paced Feast
+  description: Binds self for 5 turns, reduces Special Cooldown of all characters
+    by 2 turns and locks the chain multiplier at 3x for 2 turns.
+  cooldown: 15
+  maxLevel: 1
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - hp: 20
+    - hp: 40
+    - type: sailor
+    - hp: 60
+    - hp: 80
+    - cooldown: 1
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

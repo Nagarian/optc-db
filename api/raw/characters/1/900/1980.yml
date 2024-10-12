@@ -1,0 +1,49 @@
+type: STR
+name: Capone Gang Bege - Supernova
+japanName: カポネ・“ギャング”ベッジ 超新星
+family:
+  - CaponeBege
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 898
+    atk: 501
+    rcv: 130
+  maxLvl:
+    hp: 2055
+    atk: 1192
+    rcv: 246
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 93420
+aliases:
+  - FN Bege
+captain:
+  name: ""
+  description: Boosts HP of Shooter characters by 1.2x and boosts ATK of Shooter
+    characters by 2x, by 2.5x instead if they have a beneficial orb
+special:
+  name: Angry Threatening Command
+  description: Reduces Special Cooldown of Shooter characters by 1 turn and
+    changes all orbs of top row characters into Matching orbs
+  cooldown: 13
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Shooter characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8

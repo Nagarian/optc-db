@@ -1,0 +1,46 @@
+type: INT
+name: Tashigi - Kendo Daredevil
+japanName: たしぎ がむしゃらな剣道少女
+family:
+  - Tashigi
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 91
+    atk: 25
+    rcv: 56
+  maxLvl:
+    hp: 600
+    atk: 232
+    rcv: 291
+cost: 10
+slots: 3
+maxExp: 90778
+maxLevel: 35
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 34316
+aliases:
+  - Young Tashigi
+  - Kid Tashigi
+evolution:
+  - id: 1135
+    evolvers:
+      - 117
+      - 82
+      - 93
+      - 99
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Striker and Slasher characters by 1.2x
+special:
+  name: Non-Negotiable Quest
+  description: Reduces Special Cooldown of [INT] characters by 1 turn.
+  cooldown: 6
+  maxLevel: 1

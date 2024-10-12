@@ -1,0 +1,166 @@
+type: DEX
+name: Trafalgar Law - Second Savior
+japanName: トラファルガー・ロー 二人目の救いの神
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 801
+    atk: 423
+    rcv: 134
+  maxLvl:
+    hp: 1884
+    atk: 1155
+    rcv: 251
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 56042
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x and boosts RCV of [DEX]
+    characters by 1.5x
+special:
+  name: ROOM Tact
+  description: Changes orbs of right column characters into [DEX], [PSY], [INT]
+    orbs from top to bottom, switches orbs between slots 2 times, boosts Orb
+    Effects of all characters by 1.5x for 1 turn
+  cooldown: 20
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Caesar Clown (Gastino) and Monet
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+rumble:
+  stats:
+    def: 126
+    rumbleType: DBF
+    spd: 124
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 21
+      effects:
+        - amount: 0.35
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Accuracy
+          duration: 10
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.38
+        - override:
+            level: 1
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 1
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            level: 1
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.46
+        - override:
+            level: 2
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            level: 2
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.51
+        - override:
+            level: 2
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 2
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.57
+        - override:
+            level: 3
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 4

@@ -1,0 +1,98 @@
+type: STR
+name: Morley - Captain of the Revolutionary Army Western Forces
+japanName: モーリー 革命軍“西軍”軍隊長
+family:
+  - Morley
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1577
+    atk: 701
+    rcv: 126
+  maxLvl:
+    hp: 2952
+    atk: 1419
+    rcv: 235
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 152006
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x and their HP by 1.2x
+special:
+  name: Strike From Below
+  description: Reduces enemies' Threshold Damage Reduction and Resilience Buffs
+    duration by 5 turns and reduces the defense of all enemies by 50% for 1
+    turn. If your Captain is a Free Spirit character, boosts ATK against enemies
+    with reduced defense by 1.75x for 3 turns and if during that turn, you hit 2
+    PERFECTS, reduces the defense of all enemies by 100% for 1 turn.
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 50
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 25
+    - hp: 30
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - rcv: 30
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - hp: 70
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

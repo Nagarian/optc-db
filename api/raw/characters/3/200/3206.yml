@@ -1,0 +1,444 @@
+type: DEX
+name: Cavendish - Nobleman of Love
+japanName: キャベンディッシュ 愛の貴公子
+family:
+  - Cavendish
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1420
+    atk: 541
+    rcv: 142
+  maxLvl:
+    hp: 3552
+    atk: 1452
+    rcv: 324
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 247127
+aliases:
+  - Limited Cavendish
+  - PR Cavendish
+  - PF Cavendish
+  - Secret Cavendish
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.5x and makes [DEX] orbs
+    beneficial for Driven characters.
+special:
+  name: Beautiful Swordsmanship
+  description: Deals 70x character's ATK in [DEX] damage to one enemy and boosts
+    ATK of Driven characters by 1.75x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of Driven characters by 50
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - rcv: 100
+    - hp: 150
+    - atk: 150
+    - hp: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 174
+    rumbleType: ATK
+    spd: 189
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Guard
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Guard
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: debuff
+          level: 7
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - Guard
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 12
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2.1
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 13
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2.2
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 14
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2.3
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2.4
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 16
+          effect: buff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2.5
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 17
+          effect: buff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2.6
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 18
+          effect: buff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2.7
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 19
+          effect: buff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 2.8
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 20
+          effect: buff
+          level: 4
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - crew
+        - amount: 3
+          effect: damage
+          targeting:
+            count: 1
+            priority: lowest
+            stat: DEF
+            targets:
+              - enemies
+          type: atk

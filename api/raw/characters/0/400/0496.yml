@@ -1,0 +1,35 @@
+type: INT
+name: Black Hunter Adept - Shandian Warrior
+japanName: 黒の狩猟隊　達人 シャンディアの戦士
+family:
+  - BlackShandianWarrior
+class:
+  - Shooter
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 152
+    atk: 66
+    rcv: 153
+  maxLvl:
+    hp: 508
+    atk: 271
+    rcv: 359
+cost: 11
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 11562
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.5x
+special:
+  name: Poison Attack
+  description: Deals 3x character's ATK in [INT] damage to all enemies, Poisons all enemies
+  cooldown: 20
+  maxLevel: 6
+  notes: "`poison : 0.5x`"

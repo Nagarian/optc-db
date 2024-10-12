@@ -1,0 +1,46 @@
+type: QCK
+name: Doma
+japanName: ドーマ
+family:
+  - Doma
+class:
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 89
+    atk: 144
+    rcv: 43
+  maxLvl:
+    hp: 1098
+    atk: 733
+    rcv: 187
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 14405
+aliases: []
+evolution:
+  - id: 639
+    evolvers:
+      - 118
+      - 83
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Slasher characters by 2x
+special:
+  name: Bohemian Reverse Slash
+  description: Changes [PSY] and [INT] orbs into [QCK] orbs, reduces Bind duration by 1 turn
+  cooldown: 20
+  maxLevel: 10
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded

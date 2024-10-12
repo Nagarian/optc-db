@@ -1,0 +1,139 @@
+type: STR
+name: Duke Dogstorm - Mokomo Dukedom
+japanName: イヌアラシ公爵 モコモ公国
+family:
+  - Inuarashi
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 930
+    atk: 538
+    rcv: 38
+  maxLvl:
+    hp: 2382
+    atk: 1233
+    rcv: 108
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 116885
+aliases:
+  - Dogstorm
+  - Dog Storm
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.25x and their HP by 1.2x
+special:
+  name: Dog Treat
+  description: Reduces enemies' Increased Defense duration by 2 turns and changes
+    the orb of this character into a [STR] orb. If your Captain is a Cerebral
+    character, Locks the chain multiplier at 2.5x for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Wanda and Carrot
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 9
+rumble:
+  stats:
+    def: 232
+    rumbleType: DEF
+    spd: 105
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 20
+      effects:
+        - attributes:
+            - DEF
+          duration: 10
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 11
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 12
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 13
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 15
+            level: 2
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 16
+            level: 2
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 17
+            level: 3
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 18
+            level: 3
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 20
+            level: 4

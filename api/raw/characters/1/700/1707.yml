@@ -1,0 +1,527 @@
+type: PSY
+name: Red-Haired Shanks - Emperor
+japanName: 赤髪のシャンクス 四皇
+family:
+  - Shanks
+class:
+  - Slasher
+  - Cerebral
+rarity: 6+
+stats:
+  combo: 5
+  minLvl:
+    hp: 1574
+    atk: 752
+    rcv: 277
+  maxLvl:
+    hp: 3204
+    atk: 1510
+    rcv: 464
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 11948
+aliases:
+  - Mega/Super/6+ Shanks
+  - Strong World Shanks
+  - SW Shanks
+  - V1 Legend Shanks
+  - Yonko
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.75x and their HP by 1.3x.
+    Boosts chances of getting [PSY] orbs depending on the crew's current HP.
+  notes: At 1 HP, the rate of [PSY] orbs is ?% and at full HP, the rate of [PSY]
+    orbs is ?%
+special:
+  name: One-Armed Man that Splits the Heavens
+  description: Reduces the defense of all enemies by 100% for 1 turn, deals 75x
+    character's ATK in Typeless damage to one enemy and changes all orbs into
+    [PSY] orbs
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [INT] orbs beneficial for [PSY] characters
+  - description: Adds 3x character's ATK as Additional Damage
+support:
+  type: descriptive
+  criteria: "[PSY] characters"
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR] orbs of [PSY] characters into [PSY]
+      orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR] orbs of [PSY] characters into [PSY]
+      orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR] and [DEX] orbs of [PSY] characters
+      into [PSY] orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR], [DEX] and [QCK] orbs of [PSY]
+      characters into [PSY] orbs.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, changes [STR], [DEX], [QCK], [PSY] and [INT] orbs
+      of [PSY] characters into [PSY] orbs.
+limitBreak:
+  path:
+    - hp: 5
+    - hp: 10
+    - hp: 15
+    - type: potential
+    - hp: 20
+    - hp: 25
+    - hp: 30
+    - type: sailor
+    - hp: 35
+    - hp: 40
+    - hp: 45
+    - hp: 50
+    - hp: 55
+    - hp: 60
+    - type: potential
+    - atk: 15
+    - atk: 20
+    - atk: 25
+    - atk: 30
+    - atk: 35
+    - atk: 40
+    - atk: 45
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 30
+    - rcv: 50
+    - type: sailor
+    - hp: 90
+    - atk: 75
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - captain:
+        description: Boosts ATK of [PSY] characters by 3.5x, by 4.25x instead if they
+          have a beneficial orb, boosts their HP by 1.3x, and greatly boosts
+          chance of getting [PSY] orbs depending on the crew's current HP
+    - cooldown: 6
+    - atk: 200
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+rumble:
+  stats:
+    def: 176
+    rumbleType: DBF
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 8
+    - effects:
+        - override:
+            level: 9
+  special:
+    - cooldown: 45
+      effects:
+        - amount: 13
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - amount: 1150
+          effect: damage
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 5
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          duration: 10
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 14
+        - override:
+            amount: 1250
+        - override:
+            level: 5
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 15
+        - override:
+            amount: 1350
+        - override:
+            level: 5
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 16
+        - override:
+            amount: 1450
+        - override:
+            level: 5
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 17
+        - override:
+            amount: 1550
+        - override:
+            level: 5
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 18
+        - override:
+            amount: 1650
+        - override:
+            level: 5
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 19
+        - override:
+            amount: 1750
+        - override:
+            level: 5
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 20
+        - override:
+            amount: 1850
+        - override:
+            level: 6
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 21
+        - override:
+            amount: 1950
+        - override:
+            level: 6
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 23
+        - override:
+            amount: 2150
+        - override:
+            level: 7
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+              effect: buff
+              level: 6
+              condition:
+                comparator: remaining
+                count: 40
+                type: time
+              targeting:
+                targets:
+                  - PSY
+            - attributes:
+                - SPD
+              effect: buff
+              level: 1
+              condition:
+                comparator: remaining
+                count: 40
+                type: time
+              targeting:
+                targets:
+                  - PSY
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 2
+        - effects:
+            - override:
+                level: 8
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 9
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 10
+            - override:
+                level: 5
+  - captain:
+      - description: Boosts ATK of [PSY] characters by 4.5x, by 5x instead if they have
+          a beneficial orb and boosts HP of [PSY] characters by 1.3x. Boosts
+          chances of getting [PSY] orbs depending on the crew's current HP.
+      - description: Boosts ATK of [PSY] characters by 4.5x, by 5.25x instead if they
+          have a beneficial orb, boosts HP of [PSY] characters by 1.3x, recovers
+          1,000 HP at the end of each turn and greatly boosts chance of getting
+          [PSY] orbs depending on the crew's current HP
+  - rumble:
+      special:
+        - cooldown: 45
+          effects:
+            - amount: 20
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: cut
+            - amount: 2000
+              effect: damage
+              condition:
+                comparator: remaining
+                count: 30
+                type: time
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+            - attributes:
+                - DEF
+              effect: debuff
+              level: 5
+              condition:
+                comparator: remaining
+                count: 30
+                type: time
+              duration: 10
+              targeting:
+                targets:
+                  - enemies
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 21
+            - override:
+                amount: 2100
+            - override:
+                level: 5
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 22
+            - override:
+                amount: 2200
+            - override:
+                level: 5
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 23
+            - override:
+                amount: 2300
+            - override:
+                level: 5
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 24
+            - override:
+                amount: 2400
+            - override:
+                level: 5
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 25
+            - override:
+                amount: 2500
+            - override:
+                level: 5
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 26
+            - override:
+                amount: 2600
+            - override:
+                level: 5
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 27
+            - override:
+                amount: 2700
+            - override:
+                level: 6
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 28
+            - override:
+                amount: 2800
+            - override:
+                level: 6
+        - cooldown: 45
+          effects:
+            - override:
+                amount: 30
+            - override:
+                amount: 3000
+            - override:
+                level: 7
+  - rumble:
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: INT
+          percentage: 40
+          type: damage
+    special:
+      description: Reduces the defense of all enemies by 100% for 1 turn, deals 75x
+        character's ATK in Typeless damage to one enemy, changes all orbs into
+        [PSY] orbs and boosts ATK of [PSY] characters by 2.25x for 1 turn. If
+        during that turn you score 3 PERFECT hits, boosts ATK of [PSY]
+        characters by 2.5x for 1 turn.

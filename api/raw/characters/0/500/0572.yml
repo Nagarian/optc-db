@@ -1,0 +1,49 @@
+type: DEX
+name: "Usopp - Davy Back Fight: Cornerman"
+japanName: ウソップ デービーバックファイト・セコンド
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 61
+    atk: 30
+    rcv: 75
+  maxLvl:
+    hp: 1361
+    atk: 354
+    rcv: 310
+cost: 13
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 12806
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x if HP is above 99% at the
+    start of the turn
+special:
+  name: Roar of Mettle
+  description: Boosts ATK of Fighter characters by 2x for 1 turn, binds himself for 15 turns
+  cooldown: 30
+  maxLevel: 16
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

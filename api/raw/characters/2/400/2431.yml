@@ -1,0 +1,92 @@
+type: PSY
+name: Charlotte Pudding - Memory Flashback
+japanName: シャーロット・プリン 記憶のフラッシュバック
+family:
+  - CharlottePudding
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 740
+    atk: 494
+    rcv: 192
+  maxLvl:
+    hp: 1850
+    atk: 1235
+    rcv: 480
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 141557
+aliases:
+  - Limited Pudding
+  - Secret Pudding
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3x and recovers 2x character's
+    RCV in HP at the end of each turn
+special:
+  name: "Memory Filament: Flashback"
+  description: Reduces Silence duration by 5 turns, reduces enemies' Percent
+    Damage Reduction and Resilience Buffs duration by 5 turns, changes [BLOCK]
+    and Badly Matching orbs into [G] orbs. If there are 6 Driven characters in
+    your crew when the special is activated, changes [STR], [DEX], [QCK], [PSY],
+    [INT] orbs into Matching orbs and recovers 5,000 HP at the end of the turn
+    for 3 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Makes [PSY] orbs beneficial for Driven characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Vinsmoke Sanji and Charlotte Chiffon
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - rcv: 20
+    - hp: 80
+    - atk: 20
+    - cooldown: 1
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 80
+        - threshold: 60
+        - threshold: 50

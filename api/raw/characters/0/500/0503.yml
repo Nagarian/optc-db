@@ -1,0 +1,45 @@
+type: INT
+name: Hotori and Kotori
+japanName: ホトリ・コトリ
+family:
+  - Hotori
+  - Kotori
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 242
+    atk: 74
+    rcv: 27
+  maxLvl:
+    hp: 1055
+    atk: 455
+    rcv: 122
+cost: 9
+slots: 1
+maxExp: 136167
+maxLevel: 35
+flags:
+  - sugo
+links:
+  gamewithId: 11790
+aliases: []
+evolution:
+  - id: 504
+    evolvers:
+      - 117
+      - 82
+      - 88
+      - 104
+captain:
+  name: ""
+  description: Boosts HP of [INT] characters by 1.5x
+special:
+  name: Surprise Dial Illusion
+  description: Deals 5x character's ATK in [INT] damage to all enemies, boosts ATK
+    of all characters by 1.05x for 1 turn, reduces the defense of all enemies by
+    50% for 1 turn, randomizes all orbs
+  cooldown: 20
+  maxLevel: 6

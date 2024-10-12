@@ -1,0 +1,54 @@
+type: PSY
+name: Blenheim - Whitebeard's Ninth Division Commander
+japanName: ブレンハイム 白ひげ海賊団９番隊隊長
+family:
+  - Blenheim
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 168
+    atk: 98
+    rcv: 29
+  maxLvl:
+    hp: 1959
+    atk: 1246
+    rcv: 248
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 53592
+aliases:
+  - Colo Blenheim
+  - Coliseum Blenheim
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.25x
+special:
+  name: Australian Army Aid Blade
+  description: Reduces Despair duration by 2 turns, makes [STR], [DEX] and [QCK]
+    orbs beneficial for Powerhouse characters for 1 turn if HP is below 30% at
+    the start of the turn
+  cooldown: 21
+  maxLevel: 10
+sailor:
+  - description: Makes [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

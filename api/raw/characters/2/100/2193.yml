@@ -1,0 +1,90 @@
+type: PSY
+name: Bartholomew Kuma - Justice-Defying Human Weapon
+japanName: バーソロミュー・くま 正義に逆らう人間兵器
+family:
+  - BartholomewKuma
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1672
+    atk: 712
+    rcv: 112
+  maxLvl:
+    hp: 3129
+    atk: 1382
+    rcv: 192
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 114954
+aliases:
+  - Colo Kuma
+  - Coliseum Kuma
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x and recovers 2x
+    character's RCV in HP at the end of each turn
+special:
+  name: Erasing Palm Strike
+  description: Reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 3 turns and changes orbs of adjacent characters into
+    [RCV] orbs. If there are 2 enemies or more on the stage when the special is
+    activated, instantly defeats one enemy with HP equal to or below 350x
+    character's ATK, deals 20% of enemies' current HP in True damage to one
+    enemy otherwise
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base HP of Shooter characters by 75
+  - description: Makes [PSY] orbs beneficial for Shooter characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Shooter characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - hp: 40
+    - cooldown: 1
+    - hp: 60
+    - hp: 80
+    - atk: 30
+    - slot: 1
+    - rcv: 20
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

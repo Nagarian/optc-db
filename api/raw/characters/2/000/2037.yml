@@ -1,0 +1,95 @@
+type: INT
+name: Jesus Burgess - Blackbeard Pirates
+japanName: ジーザス・バージェス 黒ひげ海賊団
+family:
+  - JesusBurgess
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1630
+    atk: 735
+    rcv: 61
+  maxLvl:
+    hp: 3620
+    atk: 1419
+    rcv: 124
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 97782
+aliases:
+  - Jesus Burgers
+  - Mr. Store
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x at the start of the chain,
+    by 3.75x after scoring 4 PERFECTs in a row.
+special:
+  name: Galleon Lariat
+  description: Deals 7% of enemies' current HP in damage to all enemies and boosts
+    ATK of Fighter characters by 1.75x for 1-6 turns, depending on the number of
+    enemies on the stage when the special is activated.
+  cooldown: 28
+  maxLevel: 15
+  notes: Fighter ATK buff duration is equal to the number of enemies on the stage
+    at the time the special was activated
+sailor:
+  - description: Boosts base ATK of Fighter characters by 50
+  - description: Makes [INT] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Marshall D. Teach (Blackbeard), Laffitte and Shiryu
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - hp: 40
+    - hp: 40
+    - atk: 30
+    - hp: 40
+    - type: sailor
+    - atk: 30
+    - rcv: 60
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

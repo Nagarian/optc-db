@@ -1,0 +1,49 @@
+type: PSY
+name: Sengoku
+japanName: センゴク
+family:
+  - Sengoku
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 610
+    atk: 278
+    rcv: 157
+  maxLvl:
+    hp: 2020
+    atk: 758
+    rcv: 228
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 11070
+aliases:
+  - V1 Legend Sengoku
+  - Legend Goku
+evolution:
+  - id: 459
+    evolvers:
+      - 118
+      - 266
+      - 94
+      - 98
+      - 267
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Cost 20 or less characters by 3x
+special:
+  name: Zen Shockwave
+  description: Deals random [PSY] damage to all enemies, boosts ATK of all
+    characters by 1.5x for 1 turn
+  cooldown: 28
+  maxLevel: 10
+  notes: "`random : 30,000 : 150,000`"

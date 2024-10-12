@@ -1,0 +1,92 @@
+type: DEX
+name: Raizo - Akazaya Samurai
+japanName: 雷ぞう 赤鞘の侍
+family:
+  - Raizo
+class:
+  - Shooter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1425
+    atk: 678
+    rcv: 137
+  maxLvl:
+    hp: 2850
+    atk: 1356
+    rcv: 273
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 286870
+aliases:
+  - Limited Raizo
+  - Secret Raizo
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.5x.
+special:
+  name: Loyal Shuriken
+  description: Deals 12 hits of random Typeless damage to random enemies and
+    changes [BLOCK], [EMPTY] and Badly Matching orbs into Matching orbs. If you
+    are on a Treasure Map, boosts the Color Affinity of [DEX] and [QCK]
+    characters by 2.25x for 1 turn, by 1.75x for 1 turn otherwise.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX] characters by 30
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+support:
+  type: descriptive
+  criteria: "[DEX] characters"
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [DEX] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [DEX] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [DEX] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [DEX] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [DEX] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 10
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - atk: 30
+    - rcv: 20
+    - slot: 1
+    - rcv: 30
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

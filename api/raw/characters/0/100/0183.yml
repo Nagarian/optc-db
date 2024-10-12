@@ -1,0 +1,36 @@
+type: INT
+name: Cannoneer Apprentice - Navy
+japanName: バズーカ三等兵 海軍
+family:
+  - CannoneerNavy
+class:
+  - Shooter
+rarity: 1
+stats:
+  combo: 5
+  minLvl:
+    hp: 93
+    atk: 90
+    rcv: 0
+  maxLvl:
+    hp: 400
+    atk: 350
+    rcv: 1
+cost: 5
+slots: 0
+maxExp: 33626
+maxLevel: 25
+flags: []
+links:
+  gamewithId: 2220
+aliases: []
+evolution:
+  - id: 188
+    evolvers:
+      - 115
+      - 82
+special:
+  name: "[RCV] Slot Change [INT]"
+  description: Changes [RCV] orbs into [INT] orbs
+  cooldown: 15
+  maxLevel: 9

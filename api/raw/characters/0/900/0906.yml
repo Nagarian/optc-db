@@ -1,0 +1,106 @@
+type: STR
+name: Roronoa Zoro - Master Swordsman Disciple
+japanName: ロロノア・ゾロ 世界最強剣士の門弟
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1403
+    atk: 687
+    rcv: 67
+  maxLvl:
+    hp: 2830
+    atk: 1390
+    rcv: 190
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 23145
+aliases:
+  - 3D2Y Zoro
+  - Timeskip Zoro
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.75x if HP is below 30% at the
+    start of the turn
+special:
+  name: Two Gorilla Cut
+  description: Changes the orb of this character into a [STR] orb, boosts ATK of
+    Slasher characters by 1.75x for 2 turns
+  cooldown: 24
+  maxLevel: 7
+  stages:
+    - description: Changes the orb of this character into a [STR] orb, boosts ATK of
+        this character by 1.5x for 2 turns
+      cooldown: 17
+    - description: Changes the orb of this character into a [STR] orb, boosts ATK of
+        Slasher characters by 1.5x for 2 turns
+      cooldown: 21
+sailor:
+  - description: If this character has a [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+  - description: Makes [DEX] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Dracule Mihawk and Perona
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 11
+limitBreak:
+  path:
+    - cooldown: 1
+    - atk: 50
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 70
+    - cooldown: 1
+    - atk: 60
+    - cooldown: 1
+    - captain:
+        description: Boosts ATK of Slasher characters by 3x if HP is below 30% at the
+          start of the turn
+    - hp: 90
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

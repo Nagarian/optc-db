@@ -1,0 +1,104 @@
+type: STR
+name: Kami Eneru - Skypiea's One and Only Kami
+japanName: ゴッド・エネル スカイピア唯一神
+family:
+  - Enel
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1138
+    atk: 656
+    rcv: 155
+  maxLvl:
+    hp: 2321
+    atk: 1484
+    rcv: 302
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 84400
+aliases:
+  - Colo Enel
+  - Coliseum Enel
+  - Colo Eneru
+  - Coliseum Eneru
+  - Colo Kami Enel
+  - Coliseum Kami Enel
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.5x-2.75x depending on the
+    crew's current HP and their RCV by 1.3x
+  notes: "`captainProportional : higher : 1.5 + 1.25 * ((remaining HP) / (total
+    HP)) : 2.75 : 1.5`"
+special:
+  name: "30,000,000 Volt: Hino"
+  description: Changes the orb of this character into a [STR] orb, reduces ATK
+    DOWN, Chain Multiplier Limit and Paralysis duration by 5 turns. If your
+    Captain is a Driven character, adds 0.7x to Chain multiplier for 1 turn
+  cooldown: 28
+  maxLevel: 15
+  stages:
+    - description: Changes the orb of this character into a [STR] orb, reduces ATK
+        DOWN, Chain Multiplier Limit and Paralysis duration by 2 turns. If your
+        Captain is a Driven character, adds 0.3x to Chain multiplier for 1 turn
+      cooldown: 23
+sailor:
+  - description: Boosts base RCV of Driven characters by 25
+  - description: Boosts base ATK of Driven characters by 40
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Driven characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - rcv: 20
+    - hp: 60
+    - atk: 30
+    - type: sailor
+    - rcv: 20
+    - cooldown: 1
+    - atk: 50
+    - hp: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20

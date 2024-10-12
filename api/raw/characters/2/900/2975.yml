@@ -1,0 +1,82 @@
+type: INT
+name: Fleet Admiral Sakazuki - Evil-Burning Justice
+japanName: サカズキ元帥 悪を焼き尽くす正義
+family:
+  - Sakazuki
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 506
+    atk: 350
+    rcv: 34
+  maxLvl:
+    hp: 1880
+    atk: 1344
+    rcv: 138
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 202437
+aliases:
+  - Akainu
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 2.75x, by 3x instead if
+    they have a beneficial orb.
+special:
+  name: Raging Strike
+  description: Reduces Bind duration by 5 turns, reduces the defense of all
+    enemies by 100% for 1 turn and deals 250x character's ATK in Typeless damage
+    to all enemies at the end of the turn for 2 turns.
+  cooldown: 22
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of [INT] characters by 50
+  - description: Makes [STR] orbs beneficial for [INT] characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 100
+    - hp: 200
+    - atk: 100
+    - cooldown: 4
+    - type: potential
+    - type: sailor
+    - hp: 400
+    - atk: 200
+    - cooldown: 6
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 6

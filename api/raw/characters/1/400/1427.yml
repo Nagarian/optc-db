@@ -1,0 +1,48 @@
+type: QCK
+name: Boo - Happosui Army
+japanName: ブー 八宝水軍
+family:
+  - Boo
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 305
+    atk: 159
+    rcv: 29
+  maxLvl:
+    hp: 1672
+    atk: 1005
+    rcv: 111
+cost: 15
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 49866
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2x
+special:
+  name: Unblockable Eight Fists
+  description: Deals 15x character's ATK in [QCK] True damage to one enemy.
+  cooldown: 18
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Chinjao and Sai
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 11

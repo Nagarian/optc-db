@@ -1,0 +1,85 @@
+type: DEX
+name: Funk Brothers Mogaro Kingdom Assassin
+japanName: ファンク兄弟 モガロ王国の殺し屋
+family:
+  - FunkBrothers
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 8
+  minLvl:
+    hp: 1500
+    atk: 824
+    rcv: 77
+  maxLvl:
+    hp: 2920
+    atk: 1251
+    rcv: 226
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 28759
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x after the 21st hit in the
+    chain and by 3.5x after the 36th hit
+special:
+  name: Rah-Rah-Rah Rampage
+  description: Deals random damage to all enemies, boosts ATK of all characters by
+    1.75x after 30th hit in the chain for 3 turns.
+  cooldown: 18
+  maxLevel: 7
+  notes: Buffalo's Captain as a Special essentially
+sailor:
+  - description: Boosts base ATK, HP and RCV of Fighter characters by 50
+  - description: Makes [DEX] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Fighter characters
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - rcv: 5
+    - hp: 30
+    - type: sailor
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 2
+    - atk: 50
+    - hp: 50
+    - slot: 1
+    - hp: 80
+    - type: sailor
+    - rcv: 40
+    - hp: 90
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

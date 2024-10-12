@@ -1,0 +1,53 @@
+type: PSY
+name: Koala - Undercover Revolutionary
+japanName: コアラ 極秘任務の革命軍
+family:
+  - Koala
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 238
+    atk: 82
+    rcv: 18
+  maxLvl:
+    hp: 2422
+    atk: 1012
+    rcv: 249
+cost: 15
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - special
+links:
+  gamewithId: 69787
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.25x and boosts EXP and amount of
+    Beli received by 1.2x
+special:
+  name: Revolutionary Soldier's Anger
+  description: Changes the orb of Captain character into a Matching orb and boosts
+    ATK of your Captain character by 1.5x for 1 turn
+  cooldown: 12
+  maxLevel: 5
+support:
+  type: descriptive
+  criteria: Fighter characters
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of your captain characters by 1.025x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of your captain characters by 1.05x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of your captain characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of your captain characters by 1.15x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of your captain characters by 1.2x for 1 turn.

@@ -1,0 +1,159 @@
+type: INT
+name: Dr. Hiriluk - Drum Kingdom's Quack Doctor
+japanName: Dr.ヒルルク ドラム王国のヤブ医者
+family:
+  - Hiriluk
+class:
+  - Free Spirit
+  - Driven
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 464
+    atk: 134
+    rcv: 58
+  maxLvl:
+    hp: 1160
+    atk: 335
+    rcv: 145
+cost: 1
+slots: 3
+maxExp: 130703
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 146867
+aliases:
+  - ""
+evolution:
+  - id: 2491
+    evolvers:
+      - 117
+      - 82
+      - 88
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 2x and their RCV by 1.2x.
+special:
+  name: Entrusting his Dream with this Final Cup
+  description: Reduces crew's current HP by 50%, reduces Despair, Paralysis and
+    Chain Coefficient Reduction duration by 3 turns and changes [TND] and [RCV]
+    orbs of all characters into Matching Orbs.
+  cooldown: 19
+  maxLevel: 7
+rumble:
+  stats:
+    def: 79
+    rumbleType: RCV
+    spd: 95
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          targeting:
+            targets:
+              - DEX
+              - INT
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 500
+          effect: recharge
+          targeting:
+            targets:
+              - crew
+          type: fixed
+        - attributes:
+            - Paralysis
+          duration: 5
+          effect: boon
+          targeting:
+            targets:
+              - crew
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 550
+        - {}
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 600
+        - override:
+            duration: 6
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 650
+        - override:
+            duration: 6
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 700
+        - override:
+            duration: 7
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 750
+        - override:
+            duration: 7
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 800
+        - override:
+            duration: 8
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 850
+        - override:
+            duration: 8
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 900
+        - override:
+            duration: 9
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            duration: 10

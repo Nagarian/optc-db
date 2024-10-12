@@ -1,0 +1,50 @@
+type: STR
+name: Foxfire Kin'emon - Samurai from 20 Years in the Past
+japanName: 狐火の錦えもん 20年前より来たる侍
+family:
+  - Kinemon
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1197
+    atk: 549
+    rcv: 98
+  maxLvl:
+    hp: 2992
+    atk: 1372
+    rcv: 244
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 171285
+aliases:
+  - Secret Kinemon
+  - Limited Kinemon
+  - Secret Kin'emon
+  - Limited Kin'emon
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and their HP by 1.2x.
+    If you use "Flaming Flash" on this Kinemon boosts ATK of Powerhouse
+    characters by 3.5x for 3 turns instead.
+special:
+  name: Flaming Flash
+  description: Deals 30x character's ATK in [STR] damage to one enemy, reduces
+    enemies' Percent Damage Reduction and Threshold Damage Reduction duration by
+    3 turns. If you are on a Treasure Map, boosts ATK of Powerhouse characters
+    by 1.75x-2.25x for 1 turn depending on your Treasure Map Level.
+  cooldown: 13
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x ATK boost  
+    Level 11-20: 2x ATK boost  
+    Level 21+: 2.25x ATK boost

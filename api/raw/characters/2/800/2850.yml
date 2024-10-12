@@ -1,0 +1,311 @@
+type: DUAL
+name: Rebecca & Viola - Princesses of Dressrosa
+japanName: レベッカ＆ヴィオラ ドレスローザ王国の王女達
+family:
+  - Rebecca
+  - Viola
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1218
+    atk: 582
+    rcv: 143
+  maxLvl:
+    hp: 3044
+    atk: 1454
+    rcv: 358
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 186212
+aliases:
+  - Rebecca&Viola
+  - Viola&Rebecca
+  - RebeccaViola
+  - ViolaRebecca
+  - TM Rebecca and Viola
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 3.75x and makes [DEX]
+    and [INT] orbs beneficial for [DEX] and [INT] characters.
+special:
+  name: Memories of a Nostalgic Country
+  description: Reduces Burn and Silence duration by 5 turns and becomes Rebecca &
+    Viola for 2 turns and locks the chain multiplier at 3x-3.5x for 1 turn,
+    depending on the number of enemies on the stage when the special is
+    activated.
+  cooldown: 31
+  maxLevel: 8
+  notes: |-
+    **1-2 enemies:** 3x chain lock  
+    **3-5 enemies:** 3.25x chain lock  
+    **6 enemies:** 3.5x chain lock
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: Boosts base ATK, HP and RCV of [DEX] and [INT] characters by 75
+characters:
+  swap:
+    description: Displays the status of all enemies for 1 turn, randomizes all
+      [EMPTY] orbs and recovers 5% of crew's MAX HP.
+  character1:
+    name: Rebecca - Princesses of Dressrosa
+    japanName: レベッカ ドレスローザ王国の王女達
+    class:
+      - Cerebral
+      - Striker
+    type: DEX
+    stats:
+      combo: 5
+      minLvl:
+        hp: 1226
+        atk: 524
+        rcv: 101
+      maxLvl:
+        hp: 3064
+        atk: 1309
+        rcv: 253
+    captain:
+      name: ""
+      description: Boosts ATK of [DEX] characters by 3x and boosts ATK of [INT]
+        characters by 2.25x.
+    sailor:
+      - description: Reduces Silence duration by 3 turns on this character
+      - description: Boosts base ATK, HP and RCV of [DEX] and [INT] characters by 75
+  character2:
+    name: Viola - Princesses of Dressrosa
+    japanName: ヴィオラ ドレスローザ王国の王女達
+    class:
+      - Cerebral
+      - Striker
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1174
+        atk: 519
+        rcv: 111
+      maxLvl:
+        hp: 2936
+        atk: 1298
+        rcv: 278
+    captain:
+      name: ""
+      description: Boosts ATK of [INT] characters by 3x and boosts ATK of [DEX]
+        characters by 2.25x.
+    sailor:
+      - description: Reduces Silence duration by 3 turns on this character
+      - description: Boosts base ATK, HP and RCV of [DEX] and [INT] characters by 75
+limitBreak:
+  path:
+    - slot: 1
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - cooldown: 1
+    - hp: 20
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - cooldown: 1
+    - slot: 1
+    - cooldown: 1
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - cooldown: 1
+    - cooldown: 2
+    - rcv: 20
+    - rcv: 25
+    - rcv: 30
+    - cooldown: 1
+    - slot: 1
+    - atk: 25
+    - atk: 25
+    - cooldown: 1
+    - rcv: 40
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - hp: 80
+    - hp: 100
+    - cooldown: 1
+    - slot: 1
+    - cooldown: 1
+    - hp: 35
+    - hp: 40
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 7
+rumble:
+  stats:
+    def: 118
+    rumbleType: RCV
+    spd: 153
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 30
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 0.8
+          effect: recharge
+          type: RCV
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          duration: 15
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 0.96
+        - override:
+            amount: 16
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.12
+        - override:
+            amount: 17
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.28
+        - override:
+            amount: 18
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.44
+        - override:
+            level: 3
+            amount: 19
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 3
+            amount: 20
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.76
+        - override:
+            level: 3
+            amount: 21
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 1.92
+        - override:
+            level: 4
+            amount: 22
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 2.08
+        - override:
+            level: 4
+            amount: 23
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 2.35
+        - override:
+            level: 5
+            amount: 24

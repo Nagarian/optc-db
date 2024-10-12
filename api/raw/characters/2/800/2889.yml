@@ -1,0 +1,115 @@
+type: STR
+name: Brook - Humming Swordsman
+japanName: ブルック 剣侠“鼻唄”
+family:
+  - Brook
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1092
+    atk: 689
+    rcv: 90
+  maxLvl:
+    hp: 2600
+    atk: 1388
+    rcv: 304
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 191570
+aliases:
+  - Secret Brook
+  - Limited Brook
+  - Kizuna Brook
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x.
+special:
+  name: "Afro Guard: Notch Slash"
+  description: Reduces Despair duration by 5 turns and reduces enemies' Percent
+    Damage Reduction duration by 5 turns. If your crew has 3 or more [STR],
+    [DEX] or [QCK] characters, makes [PSY], [INT], [TND] and [RCV] orbs
+    beneficial for [STR], [DEX] and [QCK] characters for 1 turn and adds 0.8x to
+    Chain multiplier for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [STR] orbs beneficial for all characters
+  - description: Boosts base ATK, HP and RCV of [STR], [DEX] and [QCK] characters by 50
+support:
+  type: descriptive
+  criteria: Nami and Roronoa Zoro
+  levels:
+    - Once per adventure, when you reach the final stage, adds 0.1x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.2x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.25x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.3x to Chain
+      multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.35x to Chain
+      multiplier for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 30
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - atk: 30
+    - hp: 50
+    - cooldown: 1
+    - rcv: 10
+    - atk: 40
+    - rcv: 20
+    - type: sailor
+    - hp: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 40
+        - value: 3
+          threshold: 50
+        - value: 4
+          threshold: 60
+        - value: 5
+          threshold: 70
+        - value: 7
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

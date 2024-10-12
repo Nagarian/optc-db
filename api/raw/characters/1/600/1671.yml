@@ -1,0 +1,49 @@
+type: QCK
+name: Camie - Mermaid Cafe
+japanName: ケイミー マーメイドカフェ
+family:
+  - Camie
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 122
+    atk: 52
+    rcv: 38
+  maxLvl:
+    hp: 1850
+    atk: 946
+    rcv: 350
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 61626
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts RCV of Free Spirit characters by 1.5x
+special:
+  name: Cheerfulness that Shines in the Deep Sea
+  description: Recovers 15% of crew's MAX HP and boosts Orb Effects of all
+    characters by 1.5x for 1 turn
+  cooldown: 16
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Pappagu and Shyarly
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

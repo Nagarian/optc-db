@@ -1,0 +1,97 @@
+type: PSY
+name: Fire Fist Ace - Whitebeard's Second Division Commander
+japanName: 火拳のエース 白ひげ海賊団２番隊隊長
+family:
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1431
+    atk: 690
+    rcv: 110
+  maxLvl:
+    hp: 2599
+    atk: 1271
+    rcv: 271
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 25098
+aliases:
+  - Colo Ace
+  - Coliseum Ace
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 2.75x after
+    scoring 3 PERFECTs in a row
+special:
+  name: "Flame Commandment: Fire Pillar"
+  description: Reduces Special Cooldown of Fighter and Free Spirit characters by 1
+    turn. Reduces damage received by 50% for 1 turn.
+  cooldown: 21
+  maxLevel: 13
+  notes: Reducing Special Cooldown works as if you took an extra turn
+sailor:
+  - description: Boosts base HP of Free Spirit and Fighter characters by 100
+  - description: Makes [PSY] orbs beneficial for Free Spirit and Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Edward Newgate (Whitebeard), Marco, Jozu and Vista
+  levels:
+    - description: Boosts the supported character's ATK by 1.05x against Blackbeard
+      value: 1
+    - description: Boosts the supported character's ATK by 1.1x against Blackbeard
+      value: 1
+    - description: Boosts the supported character's ATK by 1.15x against Blackbeard
+      value: 2
+    - description: Boosts the supported character's ATK by 1.2x against Blackbeard
+      value: 2
+    - description: Boosts the supported character's ATK by 1.25x against Blackbeard
+      value: 3
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - atk: 35
+    - slot: 1
+    - rcv: 35
+    - atk: 35
+    - atk: 45
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

@@ -1,0 +1,97 @@
+type: PSY
+name: Nami - Navigator Entering Battle
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1452
+    atk: 701
+    rcv: 161
+  maxLvl:
+    hp: 2926
+    atk: 1447
+    rcv: 260
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - RED Secret Limited Kizuna
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of [PSY], Striker and Cerebral characters by 3.25x,
+    boosts HP of [PSY], Striker and Cerebral characters by 1.2x and recovers 3x
+    character's RCV in HP at the end of each turn.  
+
+    **Boosted Ability:** Boosts ATK of [PSY], Striker and Cerebral characters by 5.25x, boosts HP of [PSY], Striker and Cerebral characters by 1.3x and recovers 5x character's RCV in HP HP at the end of each turn.
+special:
+  name: Stage Rocking Zeus Breeze Tempo
+  description: Reduces enemies' Barrier duration by 2 turns, reduces enemies'
+    Percent Damage Reduction duration by 6 turns, reduces the defense of all
+    enemies by 100% for 1 turn and boosts ATK against enemies with reduced
+    defense by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn
+  - description: Makes [DEX] orbs beneficial for [PSY] characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 25
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 25
+    - rcv: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - rcv: 25
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50

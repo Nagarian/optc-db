@@ -1,0 +1,46 @@
+type: DEX
+name: Bellmere - Nami and Nojiko's Mother
+japanName: ベルメール ナミとノジコの養母
+family:
+  - Bellmere
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 377
+    atk: 249
+    rcv: 240
+  maxLvl:
+    hp: 810
+    atk: 483
+    rcv: 400
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 11791
+aliases: []
+captain:
+  name: ""
+  description: Boosts RCV of Shooter characters by 2x
+special:
+  name: Women Are Courageous!
+  description: Delays all enemies by 1 turn
+  cooldown: 13
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Nami and Nojiko
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15

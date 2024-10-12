@@ -1,0 +1,138 @@
+type: QCK
+name: Orobi - Geisha
+japanName: おロビ 芸者
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1102
+    atk: 527
+    rcv: 121
+  maxLvl:
+    hp: 2754
+    atk: 1317
+    rcv: 302
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 179438
+aliases:
+  - Wano Robin
+  - TM Robin
+  - Orobi
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 1.75x
+special:
+  name: Novice Geisha's Dance Practice
+  description: Reduces Paralysis, Bind and Silence duration by 3 turns and reduces
+    enemies' Threshold Damage Reduction and Percent Damage Reduction duration by
+    3 turns. If HP is above 50% at the time the special is activated, reduces
+    damage received from [STR] and [PSY] enemies by 100% for 1 turn.
+  cooldown: 36
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] characters by 30
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Franky and Brook
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 2x and recovers 1x
+          character's RCV in HP at the end of each turn
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 2.25x and recovers 1.1x
+          character's RCV in HP at the end of each turn
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 40
+    - rcv: 50
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 2.5x and recovers 1.2x
+          character's RCV in HP at the end of each turn
+    - cooldown: 2
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 2.75x and recovers 1.3x
+          character's RCV in HP at the end of each turn
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 35
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 3x and recovers 1.4x
+          character's RCV in HP at the end of each turn
+    - hp: 70
+    - hp: 100
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 3.25x and recovers 1.5x
+          character's RCV in HP at the end of each turn
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

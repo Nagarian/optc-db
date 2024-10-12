@@ -1,0 +1,53 @@
+type: STR
+name: Kozuki Oden
+japanName: 光月おでん
+family:
+  - KozukiOden
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 798
+    atk: 449
+    rcv: 36
+  maxLvl:
+    hp: 1774
+    atk: 998
+    rcv: 80
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 248546
+aliases:
+  - World Cruise Oden
+  - V1 Legend Oden
+evolution:
+  - id: 3175
+    evolvers:
+      - 118
+      - 300
+      - 2662
+      - 100
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4.25x and their HP by 1.5x. If a
+    [STR] character has a [WANO] orb, boosts their ATK by 4.75x instead.
+  notes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all
+    characters, but boost by 2.5x instead, and can not be swapped by special
+    abilities."
+special:
+  name: Paradise Waterfall
+  description: Changes [STR] orbs into [WANO] orbs for 2 turns, changes Matching
+    orbs into [STR] orbs and boosts Orb Effects of [STR], Slasher and Free
+    Spirit characters by 2.5x for 2 turns.
+  cooldown: 20
+  maxLevel: 6

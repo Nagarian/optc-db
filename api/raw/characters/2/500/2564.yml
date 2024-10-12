@@ -1,0 +1,188 @@
+type: PSY
+name: Belo Betty
+japanName: ベロ・ベティ
+family:
+  - BeloBetty
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 391
+    atk: 221
+    rcv: 86
+  maxLvl:
+    hp: 977
+    atk: 552
+    rcv: 215
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 152587
+aliases:
+  - ""
+evolution:
+  - id: 2565
+    evolvers:
+      - 83
+      - 266
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x but boosts ATK of this
+    character by 1.25x instead and reduces damage received by 5%.
+special:
+  name: The Beautiful Flag of Freedom
+  description: Greatly boosts chances of getting [PSY] and [RCV] orbs for 3 turns,
+    boosts RCV of all characters by 1.5x for 3 turns, adds 0.7x to Chain
+    multiplier for 3 turns, randomizes non [PSY] and [RCV] orbs.
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Boosts chances of getting [PSY] and [RCV] orbs for 1 turn, adds
+        0.3x to Chain multiplier for 1 turn, randomizes all orbs.
+      cooldown: 15
+sailor:
+  - description: Makes [PSY], [RCV] and [TND] orbs beneficial for Free Spirit and
+      Cerebral characters
+rumble:
+  stats:
+    def: 114
+    rumbleType: SPT
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: heal
+      area: Large
+      level: 2
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+            excludes:
+              - self
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+            excludes:
+              - self
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          duration: 15
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - crew
+            excludes:
+              - self
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 19
+        - override:
+            duration: 19
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 20
+        - override:
+            duration: 20
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 21
+        - override:
+            duration: 21
+    - cooldown: 26
+      effects:
+        - override:
+            level: 6
+            duration: 22
+        - override:
+            duration: 22
+    - cooldown: 26
+      effects:
+        - override:
+            level: 6
+            duration: 23
+        - override:
+            duration: 23
+    - cooldown: 26
+      effects:
+        - override:
+            level: 8
+            duration: 24
+        - override:
+            level: 2
+            duration: 24

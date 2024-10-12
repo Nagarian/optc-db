@@ -1,0 +1,46 @@
+type: INT
+name: Mont Blanc Noland - Lvneel Kingdom Explorer
+japanName: モンブラン・ノーランド ルブニール王国探検船提督
+family:
+  - MontBlancNoland
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 949
+    atk: 442
+    rcv: 170
+  maxLvl:
+    hp: 1982
+    atk: 890
+    rcv: 326
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 15598
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Slasher characters by 1.5x
+special:
+  name: Botanist's Great Discovery
+  description: Boosts Orb Effects of all characters by 1.5x for 2 turns
+  cooldown: 18
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Calgara
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

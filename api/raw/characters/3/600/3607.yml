@@ -1,0 +1,493 @@
+type: DEX
+name: Monkey D. Luffy - With His Trusted Companions
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2227
+    atk: 907
+    rcv: 114
+  maxLvl:
+    hp: 4455
+    atk: 1815
+    rcv: 228
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+aliases:
+  - Super Secret Limited Super Tandem Legend
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Fighter characters by 5x, by 5.5x
+    instead if they have a beneficial orb, boosts HP of Fighter and Free Spirit
+    characters by 1.3x, boosts chances of getting [TND] orbs, makes [TND] orbs
+    beneficial for all characters and increases duration of any ATK boosting
+    buffs applied by Specials by 1 turn.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Roronoa
+    Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico Robin, Franky,
+    Brook or Jinbe, excluding Support members."
+  description: Reduces Special Cooldown of all characters by 1 turn, increases
+    boost effects of Orb Amplification buffs by +0.25x, boosts base ATK of
+    Fighter and Free Spirit characters by 1,000 for 1 turn and transforms all
+    Free Spirit characters into Super Free Spirit characters.
+special:
+  name: Future King of Pirates and his Companions
+  description: Reduces Special Cooldown of all characters by 1 turn, deals 200x
+    character's ATK in [DEX] damage to all enemies, reduces Despair duration by
+    20 turns, changes all orbs, including [BLOCK] orbs, into [TND] orbs and
+    locks all orbs for 1 turn. If this character is the Captain or the Friend
+    Captain, boosts Orb Effects of Fighter and Free Spirit characters by 3.25x
+    for 1 turn, by 3x for 1 turn otherwise.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters
+  - description: Boosts base ATK of all characters by 100
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky, Jinbe and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.05x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.1x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.15x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.2x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.25x until the next stage.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 30
+    - atk: 10
+    - type: potential
+    - rcv: 10
+    - hp: 40
+    - hp: 50
+    - atk: 10
+    - hp: 60
+    - type: sailor
+    - rcv: 10
+    - hp: 60
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - rcv: 20
+    - atk: 20
+    - hp: 70
+    - rcv: 30
+    - hp: 90
+    - rcv: 30
+    - atk: 20
+    - type: sailor
+    - hp: 100
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - key: 1
+    - atk: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Roronoa Zoro or Vinsmoke Sanji."
+        description: Boosts Tandem ATK of Free Spirit characters by 1.5x and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+      - criteria: "Any 2 of the following: Roronoa Zoro or Vinsmoke Sanji."
+        description: Boosts Tandem ATK of Free Spirit characters by 1.75x and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+      - criteria: "Any 2 of the following: Roronoa Zoro or Vinsmoke Sanji."
+        description: Boosts Tandem ATK of Free Spirit characters by 2x and makes [STR],
+          [DEX], [QCK], [PSY] and [INT] orbs beneficial for all characters for 1
+          turn.
+      - criteria: "Any 2 of the following: Roronoa Zoro, Vinsmoke Sanji, Usopp, Nami,
+          Tony Tony Chopper, Nico Robin, Franky, Brook or Jinbe. One of Roronoa
+          Zoro or Vinsmoke Sanji is required."
+        description: Boosts Tandem ATK of Free Spirit characters by 2.25x and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+      - criteria: "Any 2 of the following: Roronoa Zoro, Vinsmoke Sanji, Usopp, Nami,
+          Tony Tony Chopper, Nico Robin, Franky, Brook or Jinbe. One of Roronoa
+          Zoro or Vinsmoke Sanji is required."
+        description: Boosts Tandem ATK of Free Spirit characters by 2.5x and makes
+          [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for all
+          characters for 1 turn.
+rumble:
+  stats:
+    def: 162
+    rumbleType: ATK
+    spd: 187
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Revive
+          effect: boon
+          repeat: 1
+          amount: 10
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            amount: 20
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            amount: 30
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            amount: 40
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            amount: 50
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 1.5
+          effect: damage
+          repeat: 3
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Counter
+          effect: boon
+          amount: 1
+          duration: 11
+          targeting:
+            targets:
+              - self
+        - amount: 50
+          effect: recharge
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          targeting:
+            count: 1
+            percentage: 100
+            priority: below
+            stat: Special CT
+            targets:
+              - DEX
+            excludes:
+              - self
+          type: Special CT
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            amount: 1.1
+            duration: 12
+        - override:
+            amount: 55
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            amount: 1.2
+            duration: 13
+        - override:
+            amount: 60
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            amount: 1.3
+            duration: 14
+        - override:
+            amount: 65
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            amount: 1.4
+            duration: 15
+        - override:
+            amount: 70
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2
+        - override:
+            amount: 1.5
+            duration: 16
+        - override:
+            amount: 75
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            amount: 1.6
+            duration: 17
+        - override:
+            amount: 80
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            amount: 1.7
+            duration: 18
+        - override:
+            amount: 85
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            amount: 1.8
+            duration: 19
+        - override:
+            amount: 90
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            amount: 2
+            duration: 20
+        - override:
+            amount: 100
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - Special CT
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - Accuracy
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - SPD
+              - HP
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - PSY
+          - attributes:
+              - ATK
+              - HP
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - Fighter
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Fighter
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 4
+          - override:
+              level: 2
+          - override:
+              level: 4
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 5
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 6
+          - override:
+              level: 3
+          - override:
+              level: 6
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 20
+          type: hitreceived
+      special:
+        - uses: 2
+          effects:
+            - amount: 2
+              effect: damage
+              targeting:
+                count: 1
+                priority: highest
+                stat: Special CT
+                targets:
+                  - enemies
+              type: atkbase
+              leader: true
+            - amount: 50
+              effect: recharge
+              targeting:
+                count: 2
+                targets:
+                  - DEX
+                  - PSY
+              type: Special CT
+        - uses: 2
+          effects:
+            - override:
+                amount: 2.75
+            - override:
+                amount: 62
+        - uses: 2
+          effects:
+            - override:
+                amount: 3.5
+            - override:
+                amount: 75
+        - uses: 2
+          effects:
+            - override:
+                amount: 4.25
+            - override:
+                amount: 87
+        - uses: 2
+          effects:
+            - override:
+                amount: 5
+            - override:
+                amount: 100

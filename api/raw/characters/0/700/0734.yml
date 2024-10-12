@@ -1,0 +1,43 @@
+type: PSY
+name: Kumadori - Cipher Pol No. 9
+japanName: クマドリ サイファーポールNo.9
+family:
+  - Kumadori
+class:
+  - Striker
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 102
+    atk: 60
+    rcv: 29
+  maxLvl:
+    hp: 1055
+    atk: 442
+    rcv: 119
+cost: 9
+slots: 2
+maxExp: 136167
+maxLevel: 35
+flags: []
+links:
+  gamewithId: 16656
+aliases: []
+evolution:
+  - id: 735
+    evolvers:
+      - 116
+      - 87
+      - 98
+      - 303
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 1.2x
+special:
+  name: Life Return - Digestion, Absorption
+  description: For 1 turn, boosts the amount healed by [RCV] orbs by 1.5x, then
+    2x, then 2.5x from the third crew member onward
+  cooldown: 14
+  maxLevel: 8

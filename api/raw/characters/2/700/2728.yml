@@ -1,0 +1,53 @@
+type: QCK
+name: Basil Hawkins - Animal Kingdom Pirates, Headliner
+japanName: バジル・ホーキンス 百獣海賊団“真打ち”
+family:
+  - BasilHawkins
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 588
+    atk: 318
+    rcv: 56
+  maxLvl:
+    hp: 1470
+    atk: 795
+    rcv: 140
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 171381
+aliases:
+  - Treasure Map Hawkins
+  - Treasure Map Basil Hawkins
+  - TM Hawkins
+evolution:
+  - id: 2729
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 1.5x
+special:
+  name: Strawman Cards Pursuit
+  description: Changes orbs of adjacent characters into Matching Orbs. If the HP
+    of the enemy with the highest Maximum HP is below 70% at the time the
+    special is activated, ignores Delay Debuff Protection and delays all enemies
+    by 1 turn, delays all enemies by 1 turn otherwise.
+  cooldown: 37
+  maxLevel: 8
+  stages:
+    - description: Changes orbs of adjacent characters into Matching Orbs and delays
+        all enemies by 1 turn.
+      cooldown: 29

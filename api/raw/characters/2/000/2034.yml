@@ -1,0 +1,508 @@
+type: PSY
+name: Borsalino - Navy HQ Powerhouse
+japanName: ボルサリーノ 海軍本部最高戦力
+family:
+  - Borsalino
+class:
+  - Slasher
+  - Shooter
+rarity: 6+
+stats:
+  combo: 7
+  minLvl:
+    hp: 1412
+    atk: 782
+    rcv: 236
+  maxLvl:
+    hp: 2928
+    atk: 1512
+    rcv: 508
+cost: 65
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 37125
+aliases:
+  - Mega/Super/6+ Borsalino
+  - V1 Legend Kizaru
+captain:
+  name: ""
+  description: 'Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of all characters by 2x and boosts RCV of all
+    characters by 1.35x. If you use "Yasakani no Magatama: Divine Light" in this
+    turn boosts ATK of all characters by 3.5x instead.'
+special:
+  name: "Yasakani no Magatama: Divine Light"
+  description: Changes all orbs of Shooter and Slasher characters into Matching
+    orbs. Recovers 15x character's RCV in HP. Deals 20 hits of large random
+    Typeless damage to random enemies.
+  cooldown: 15
+  maxLevel: 4
+  stages:
+    - description: For Shooter and Slasher characters, randomizes all non-Matching
+        orbs. Recovers 6x character's RCV in HP. Deals 20 hits of random
+        Typeless damage to random enemies.
+      cooldown: 9
+  notes: |-
+    `random : ? : ? : for each hit on Stage 1`  
+    `random : ? : ? : for each hit on Stage 2`
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: Makes [PSY] orbs beneficial for Shooter and Slasher characters
+support:
+  type: descriptive
+  criteria: Sakazuki (Akainu) and Kuzan (Aokiji)
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, randomizes all orbs of Shooter characters.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, randomizes all orbs of Shooter characters.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs of Shooter characters into Matching
+      orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs of Shooter characters into Matching
+      orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs of Shooter and Slasher characters
+      into Matching orbs.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - type: sailor
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - slot: 1
+    - rcv: 25
+    - atk: 30
+    - rcv: 35
+    - atk: 50
+    - hp: 30
+    - atk: 60
+    - hp: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - hp: 80
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - captain:
+        description: 'Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of all characters by 3.5x and boosts RCV of
+          all characters by 1.35x. If you use "Yasakani no Magatama: Divine
+          Light" in this turn boosts ATK of all characters by 4.25x instead.'
+    - hp: 200
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 80
+        - threshold: 70
+        - threshold: 0
+rumble:
+  stats:
+    def: 187
+    rumbleType: SPT
+    spd: 200
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Shooter
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Shooter
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 4
+  special:
+    - cooldown: 15
+      effects:
+        - amount: 0.7
+          effect: damage
+          targeting:
+            count: 4
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Shooter
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.73
+        - {}
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.76
+        - override:
+            duration: 21
+            level: 3
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.79
+        - override:
+            duration: 21
+            level: 3
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.82
+        - override:
+            duration: 22
+            level: 4
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            duration: 22
+            level: 4
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.88
+        - override:
+            duration: 23
+            level: 5
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.91
+        - override:
+            duration: 23
+            level: 5
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.94
+        - override:
+            duration: 24
+            level: 6
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 24
+            level: 7
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - SPD
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+                  - Shooter
+            - attributes:
+                - Special CT
+              condition:
+                comparator: first
+                count: 40
+                type: time
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - Slasher
+                  - Shooter
+        - effects:
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 4
+  - captain:
+      - description: 'Reduces Special Cooldown of this character by 2 turns at the start
+          of the fight, reduces Special Cooldown of all other characters by 2
+          turns at the start of the fight, boosts ATK of all characters by
+          4.25x, boosts RCV of all characters by 1.35x and makes [PSY] orbs
+          beneficial for all characters. If you use "Yasakani no Magatama:
+          Divine Light" in this turn boosts ATK of all characters by 4.75x
+          instead.'
+      - description: 'Reduces Special Cooldown of this character by 2 turns at the start
+          of the fight, reduces Special Cooldown of all other characters by 2
+          turns at the start of the fight, boosts ATK of all characters by 4.5x,
+          boosts RCV of all characters by 1.35x and makes [PSY] orbs beneficial
+          for all characters. If you use "Yasakani no Magatama: Divine Light" in
+          this turn boosts ATK of all characters by 5x instead.'
+  - rumble:
+      special:
+        - cooldown: 15
+          effects:
+            - amount: 0.7
+              effect: damage
+              targeting:
+                count: 4
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              duration: 20
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+                  - Shooter
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.73
+            - {}
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.76
+            - override:
+                duration: 21
+                level: 4
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.79
+            - override:
+                duration: 21
+                level: 4
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.82
+            - override:
+                duration: 22
+                level: 5
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.85
+            - override:
+                duration: 22
+                level: 5
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.88
+            - override:
+                duration: 23
+                level: 6
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.91
+            - override:
+                duration: 23
+                level: 6
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.94
+            - override:
+                duration: 24
+                level: 7
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 1
+            - override:
+                duration: 24
+                level: 8
+  - rumble:
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: INT
+          percentage: 40
+          type: damage
+    special:
+      description: Reduces Special Cooldown of Shooter and Slasher characters by 2
+        turns, changes all orbs, including [BLOCK] orbs, of Shooter and Slasher
+        characters into Matching orbs, boosts ATK of Shooter and Slasher
+        characters by 2x for 2 turns, boosts Color Affinity of Shooter and
+        Slasher characters by 2x for 2 turns, recovers 15x character's RCV in HP
+        and deals 20 hits of random Typeless damage to random enemies.
+      stages:
+        - description: Reduces Special Cooldown of Shooter and Slasher characters by 1
+            turn, changes all orbs of Shooter and Slasher characters into
+            Matching orbs, boosts ATK of Shooter and Slasher characters by 1.75x
+            for 1 turn, boosts Color Affinity of Shooter and Slasher characters
+            by 1.75x for 1 turn, recovers 6x character's RCV in HP and deals 20
+            hits of random Typeless damage to random enemies.
+          cooldown: 9
+    sailor:
+      sailor1:
+        description: Reduces Paralysis duration completely on this character. Restores
+          Special Cooldown of this character completely when it is rewinded.

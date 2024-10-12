@@ -1,0 +1,341 @@
+type: STR
+name: Edward Newgate
+japanName: エドワード・ニューゲート
+family:
+  - EdwardNewgate
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1338
+    atk: 522
+    rcv: 80
+  maxLvl:
+    hp: 3220
+    atk: 1060
+    rcv: 156
+cost: 40
+slots: 4
+maxExp: 1422664
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 5166
+aliases:
+  - Whitebeard
+  - V1 Legend WB
+  - Yonko
+evolution:
+  - id: 261
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 95
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x if HP is below 30% at the start
+    of the turn
+special:
+  name: Seaquake
+  description: Deals 30% of enemies' current HP in damage to all enemies
+  cooldown: 25
+  maxLevel: 9
+rumble:
+  stats:
+    def: 121
+    rumbleType: ATK
+    spd: 145
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 30
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 31
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 32
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 33
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 34
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 35
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 36
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 37
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 38
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - amount: 40
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

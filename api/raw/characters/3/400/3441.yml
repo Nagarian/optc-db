@@ -1,0 +1,278 @@
+type: DEX
+name: Nami - Navigator in Disguise
+japanName: ナミ 変装する航海士
+family:
+  - Nami
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1186
+    atk: 646
+    rcv: 201
+  maxLvl:
+    hp: 2373
+    atk: 1293
+    rcv: 403
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 293669
+aliases:
+  - Onigashima Nami
+  - Limited Nami
+  - Secret Nami
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 3x and their RCV by 1.2x.
+special:
+  name: "Thunder Wing: Raitei"
+  description: Reduces Special Cooldown of all characters by 1 turn, reduces Bind,
+    Silence and Burn duration by 5 turns and recovers 15x character's RCV in HP
+    at the end of each turn for 3 turns.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji and Kin'emon
+  levels:
+    - Once per adventure, when an enemy inflicts you with Burn or Bind, recovers
+      1,000 HP.
+    - Once per adventure, when an enemy inflicts you with Burn or Bind, recovers
+      2,000 HP.
+    - Once per adventure, when an enemy inflicts you with Burn or Bind, recovers
+      3,000 HP.
+    - Once per adventure, when an enemy inflicts you with Burn or Bind, recovers
+      4,000 HP.
+    - Once per adventure, when an enemy inflicts you with Burn or Bind, recovers
+      5,000 HP.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - hp: 20
+    - type: potential
+    - rcv: 20
+    - hp: 30
+    - atk: 30
+    - slot: 1
+    - atk: 30
+    - atk: 40
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 2
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+rumble:
+  stats:
+    def: 116
+    rumbleType: SPT
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 1
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - amount: 500
+          effect: recharge
+          targeting:
+            targets:
+              - DEX
+              - INT
+          type: fixed
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 550
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 600
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 1
+            duration: 14
+        - override:
+            amount: 650
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 1
+            duration: 15
+        - override:
+            amount: 700
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            level: 1
+            duration: 16
+        - override:
+            amount: 750
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            level: 1
+            duration: 17
+        - override:
+            amount: 800
+    - cooldown: 27
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            level: 1
+            duration: 18
+        - override:
+            amount: 850
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            level: 1
+            duration: 19
+        - override:
+            amount: 900
+    - cooldown: 27
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            amount: 1000

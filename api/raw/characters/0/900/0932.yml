@@ -1,0 +1,51 @@
+type: PSY
+name: Pica
+japanName: ピーカ
+family:
+  - Pica
+class:
+  - Powerhouse
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 300
+    atk: 99
+    rcv: 5
+  maxLvl:
+    hp: 1730
+    atk: 630
+    rcv: 6
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 23506
+aliases:
+  - Raid Pica
+evolution:
+  - id: 933
+    evolvers:
+      - 118
+      - 87
+      - 266
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.5x and their HP by 1.5x
+special:
+  name: Rock Domination Wall
+  description: Changes [EMPTY] and Badly Matching orbs into Matching orbs. Deals
+    20% of enemies' current HP in damage to all enemies
+  cooldown: 31
+  maxLevel: 15
+  stages:
+    - description: Changes [EMPTY] and Badly Matching orbs of Driven and Powerhouse
+        characters into Matching orbs. Deals 10% of enemies' current HP in
+        damage to all enemies
+      cooldown: 25

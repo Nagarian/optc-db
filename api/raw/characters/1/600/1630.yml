@@ -1,0 +1,52 @@
+type: INT
+name: Ikaros Much - Rebel Fish-Man Pirate
+japanName: イカロス・ムッヒ 反逆の魚人海賊
+family:
+  - IkarosMuch
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 876
+    atk: 409
+    rcv: 104
+  maxLvl:
+    hp: 2231
+    atk: 1142
+    rcv: 199
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 59477
+aliases:
+  - Colo Ikaros Much
+  - Coliseum Ikaros Much
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x and their HP by 1.5x
+special:
+  name: The Spear that Penetrated the Undersea Mountain
+  description: Randomizes all orbs, including [BLOCK] orbs, into [STR], [DEX],
+    [QCK], [INT], or [PSY] orbs and changes the orb of this character into an
+    [INT] orb
+  cooldown: 15
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Hody Jones, Hyouzou, Daruma, Zeo and Dosun
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7

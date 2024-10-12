@@ -1,0 +1,112 @@
+type: STR
+name: "Tony Tony Chopper: Monster Point - Straw Hat Pirates: Born Again"
+japanName: トニートニー・チョッパー　怪物強化 新生・麦わらの一味
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1362
+    atk: 515
+    rcv: 0
+  maxLvl:
+    hp: 3000
+    atk: 1499
+    rcv: 170
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 47321
+aliases:
+  - New World Chopper
+  - Timeskip Chopper
+  - TS Chopper
+  - Monster Chopper
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.75x, reduces crew's RCV to 0
+special:
+  name: "Carving Hoof Palm: Coconut"
+  description: Reduces enemies' Percent Damage Reduction and Increased Defense
+    duration by 3 turns and deals 60x character's ATK in Typeless damage to all
+    enemies
+  cooldown: 25
+  maxLevel: 8
+  notes: This does not affect threshold damage reduction. Damage Reduction is the
+    rainbow shield buff enemies have and Increased Defense is the blue shield
+    buff enemies have
+sailor:
+  - description: If this character has a [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+  - description: When any other [STR] character uses a special, reduces special
+      cooldown of this character by 2 turns
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Usopp, Nami, Vinsmoke Sanji, Nico
+    Robin, Franky, Brook
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - cooldown: 8
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

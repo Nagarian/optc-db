@@ -1,0 +1,96 @@
+type: STR
+name: Shark-Slicer Bastille Naval HQ Vice Admiral
+japanName: 鮫切りバスティーユ 海軍本部中将
+family:
+  - Bastille
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1222
+    atk: 519
+    rcv: 83
+  maxLvl:
+    hp: 2606
+    atk: 1313
+    rcv: 259
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 37052
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x after the 15th hit in the chain
+    and by 3x after the 30th hit
+special:
+  name: Shark Cutter - Flash
+  description: Deals 20x character's ATK in [STR] damage to all enemies. Boosts
+    ATK of all characters by 2x after 30th hit in the chain for 1 turn.
+  cooldown: 22
+  maxLevel: 9
+sailor:
+  - description: Makes [QCK] orbs beneficial for this character
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+support:
+  type: descriptive
+  criteria: Issho (Fujitora) and Maynard
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.1x after 20th hit in the chain for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.2x after 20th hit in the chain for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.3x after 20th hit in the chain for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.4x after 20th hit in the chain for 1
+      turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of all characters by 1.5x after 20th hit in the chain for 1
+      turn.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 50
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - rcv: 30
+    - cooldown: 1
+    - hp: 90
+    - cooldown: 1
+    - captain:
+        description: Boosts HP of all characters by 1.25x. Boosts ATK of all characters
+          by 2x after the 12th hit in the chain and by 3x after the 28th hit.
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - {}
+        - {}
+        - {}
+        - {}

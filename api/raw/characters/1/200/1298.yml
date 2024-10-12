@@ -1,0 +1,202 @@
+type: STR
+name: Akainu Magma Man
+japanName: 赤犬 マグマ人間
+family:
+  - Sakazuki
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1518
+    atk: 716
+    rcv: 44
+  maxLvl:
+    hp: 3168
+    atk: 1444
+    rcv: 99
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 41278
+aliases:
+  - Raid Sakazuki
+  - Raid Akainu
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x following a chain of [STR] >
+    [STR] > [STR] attacks no lower than Good
+special:
+  name: Great Eruption
+  description: Deals 50x character's ATK in [STR] damage to all enemies. Changes
+    orbs of [STR] characters into [STR] orbs. Boosts the Color Affinity of [STR]
+    characters by 1.75x for 1 turn
+  cooldown: 32
+  maxLevel: 16
+sailor:
+  - description: Boosts base HP of [STR] characters by 100
+  - description: Boosts base ATK of [STR] characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - atk: 40
+    - cooldown: 1
+    - atk: 50
+    - type: sailor
+    - cooldown: 2
+    - atk: 50
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 117
+    rumbleType: ATK
+    spd: 181
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 37
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Critical Hit
+          level: 1
+          duration: 15
+          effect: buff
+          targeting:
+            targets:
+              - STR
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            level: 1
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 0.89
+        - override:
+            level: 1
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 0.94
+        - override:
+            level: 1
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 0.99
+        - override:
+            level: 1
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.04
+        - override:
+            level: 1
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.08
+        - override:
+            level: 1
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.13
+        - override:
+            level: 1
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.18
+        - override:
+            level: 1
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 2

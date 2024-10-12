@@ -1,0 +1,621 @@
+type: QCK
+name: Whitebeard - At the Top, but Not on the Throne
+japanName: 白ひげ 王座につかぬ頂点
+family:
+  - EdwardNewgate
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1235
+    atk: 648
+    rcv: 40
+  maxLvl:
+    hp: 3840
+    atk: 1500
+    rcv: 250
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 216916
+aliases:
+  - PF Whitebeard
+  - Edward Newgate
+captain:
+  name: ""
+  description: If HP is below 30% at the start of the turn, boosts ATK of [QCK]
+    characters by 3x, by 2x otherwise.
+special:
+  name: World Shaking Quake
+  description: Deals 50x character's ATK in [QCK] damage to all enemies, reduces
+    Despair duration by 2 turns and reduces enemies' Increased Defense duration
+    by 2 turns.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of [QCK] characters by 50
+limitBreak:
+  path:
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - type: potential
+    - atk: 100
+    - atk: 150
+    - hp: 150
+    - hp: 350
+    - slot: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+rumble:
+  stats:
+    def: 163
+    rumbleType: ATK
+    spd: 207
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - amount: 1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 50
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 52
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 12
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 55
+          duration: 17
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 12
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 57
+          duration: 18
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 13
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 19
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 13
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 62
+          duration: 20
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 14
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 65
+          duration: 21
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 14
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.7
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 67
+          duration: 22
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 23
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse
+    - cooldown: 33
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 24
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - Powerhouse

@@ -1,0 +1,235 @@
+type: QCK
+name: Ulti - Vicious Tobi Roppo
+family:
+  - Ulti
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1675
+    atk: 772
+    rcv: 89
+  maxLvl:
+    hp: 3350
+    atk: 1543
+    rcv: 178
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Chonk
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Powerhouse characters by 2.5x, by 3x
+    instead if they have a beneficial orb, boosts HP of Striker and Powerhouse
+    characters by 1.5x and makes [TND] orbs beneficial for all characters. If
+    this character becomes your captain in the middle of an island, boosts ATK
+    of Striker and Powerhouse characters by 4.2x, by 5x instead if they have a
+    beneficial orb.
+special:
+  name: Well-Aimed Headbutt
+  description: Deals 100x character's ATK in Typeless damage to one enemy, changes
+    the orb, including [BLOCK] orbs, of this character into a [TND] orb, reduces
+    Bind and ATK DOWN duration by 5 turns and reduces enemies' Resilience
+    duration by 5 turns. If your crew has [Page One] as a member or supporting
+    this character and reduces the defense of all enemies by 100% for 1 turn. If
+    this character is a Sailor, swaps this unit with your captain for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: If your Captain is a [STR] or [DEX] character, boosts this
+      character's damage against [DEX] characters by 2.25x
+  - description: If your Captain is a [STR] or [DEX] character, boosts this
+      character's damage against [QCK] characters by 1.5x
+support:
+  type: descriptive
+  criteria: Jack, Kaido, Page One, King, Queen, Sasaki, Black Maria and Who's-Who
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [STR], [DEX] and [QCK]
+      characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [STR], [DEX] and [QCK]
+      characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [STR], [DEX] and [QCK]
+      characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [STR], [DEX] and [QCK]
+      characters by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts Orb Effects of [STR], [DEX] and [QCK]
+      characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 20
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - rcv: 50
+    - hp: 30
+    - type: sailor
+    - hp: 50
+    - atk: 30
+    - hp: 60
+    - slot: 1
+    - atk: 30
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 2
+        - value: 3
+rumble:
+  stats:
+    def: 132
+    rumbleType: DBF
+    spd: 142
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 62
+        - override:
+            level: 1
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 64
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 66
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 68
+        - override:
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 70
+        - override:
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 72
+        - override:
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 74
+        - override:
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 76
+        - override:
+            level: 5
+    - cooldown: 27
+      effects:
+        - override:
+            chance: 80
+        - override:
+            level: 5

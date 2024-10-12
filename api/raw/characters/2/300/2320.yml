@@ -1,0 +1,47 @@
+type: INT
+name: Charlotte Cracker - Minister of Biscuits
+japanName: シャーロット・クラッカー ビスケット大臣
+family:
+  - CharlotteCracker
+class:
+  - Slasher
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 128
+    atk: 65
+    rcv: 7
+  maxLvl:
+    hp: 1293
+    atk: 658
+    rcv: 77
+cost: 13
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 131801
+aliases:
+  - Story Cracker
+evolution:
+  - id: 2321
+    evolvers:
+      - 118
+      - 266
+      - 93
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x and boosts Chain Multiplier
+    Growth Rate by 1.2x if HP below ?% at the start of the turn
+special:
+  name: Baptism of the "New World"
+  description: Deals 15% of enemies' current HP in damage to one enemy, reduces
+    damage by 50% and deals 75x character's ATK in [INT] damage to all enemies
+    at the end of the turn for 3 turns
+  cooldown: 19
+  maxLevel: 6

@@ -1,0 +1,247 @@
+type: INT
+name: Trebol - Donquixote Pirates
+japanName: トレーボル ドンキホーテ海賊団
+family:
+  - Trebol
+class:
+  - Cerebral
+  - Driven
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 889
+    atk: 721
+    rcv: 148
+  maxLvl:
+    hp: 1967
+    atk: 1381
+    rcv: 334
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 21539
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Driven characters by 2.25x, makes [TND]
+    and [RCV] orbs beneficial for Cerebral and Driven characters
+special:
+  name: Beto Launcher
+  description: Changes the orb of Captain character into a Matching orb, locks all
+    orbs for 1 turn, deals 13x character's ATK in [INT] damage to all enemies
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven characters by 30
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Sugar, Donquixote Doflamingo and Giolla
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 30
+    - type: sailor
+    - hp: 50
+    - type: potential
+    - atk: 30
+    - cooldown: 2
+    - atk: 40
+    - hp: 100
+    - rcv: 30
+    - slot: 1
+    - rcv: 30
+    - cooldown: 2
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 120
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 132
+    rumbleType: DBF
+    spd: 129
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          condition:
+            comparator: more
+            count: 7
+            type: crew
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - DEF
+          condition:
+            comparator: more
+            count: 7
+            type: crew
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 31
+      effects:
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 3
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          duration: 16
+          effect: debuff
+          level: 2
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 31
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 31
+      effects:
+        - override:
+            level: 4
+            duration: 18
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 31
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            level: 3
+            duration: 19
+    - cooldown: 31
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            level: 4
+            duration: 20
+    - cooldown: 31
+      effects:
+        - override:
+            level: 6
+            duration: 21
+        - override:
+            level: 5
+            duration: 21
+    - cooldown: 31
+      effects:
+        - override:
+            level: 6
+            duration: 22
+        - override:
+            level: 5
+            duration: 22
+    - cooldown: 31
+      effects:
+        - override:
+            level: 7
+            duration: 23
+        - override:
+            level: 6
+            duration: 23
+    - cooldown: 31
+      effects:
+        - override:
+            level: 7
+            duration: 24
+        - override:
+            level: 6
+            duration: 24
+    - cooldown: 31
+      effects:
+        - override:
+            level: 9
+            duration: 25
+        - override:
+            level: 8
+            duration: 25

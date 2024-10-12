@@ -1,0 +1,49 @@
+type: INT
+name: Pedro
+japanName: ペドロ
+family:
+  - Pedro
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 110
+    atk: 148
+    rcv: 58
+  maxLvl:
+    hp: 957
+    atk: 620
+    rcv: 213
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 60676
+aliases:
+  - ""
+evolution:
+  - id: 1654
+    evolvers:
+      - 88
+      - 99
+      - 1180
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x
+special:
+  name: Charge Drive
+  description: Reduces crew's current HP to 1, deals 7x the amount of HP
+    subtracted in Typeless damage to all enemies, boosts Orb Effects of all
+    characters by 1.75x for 1 turn
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Makes [INT] orbs beneficial for Slasher and Cerebral characters

@@ -1,0 +1,97 @@
+type: DEX
+name: Sugar - Flamingo Pool's Main Character
+japanName: シュガー フラミンゴプールの最重要人物
+family:
+  - Sugar
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 696
+    atk: 472
+    rcv: 152
+  maxLvl:
+    hp: 1882
+    atk: 1276
+    rcv: 412
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 158389
+aliases:
+  - Summer Sugar
+  - Swimsuit Sugar
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.5x at the start of the chain,
+    boosts ATK of [DEX] characters by 4x following a chain of [PSY] > [INT]
+    attacks no lower than Good and reduces damage received from [QCK] enemies by
+    30%
+special:
+  name: 'Summer Mischievous Smile: "Sweet Little Black Bears"'
+  description: Reduces enemies' Percent Damage Reduction and Resilience Buffs
+    duration by 5 turns and changes all orbs into [DEX] orbs. If Sugar is your
+    Captain or Friend/Guest Captain, boosts ATK of [DEX] characters by 2.25x for
+    1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX], [PSY] and [INT] characters by 30
+  - description: Makes [DEX] orbs beneficial for Cerebral and Striker characters
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - hp: 30
+    - type: sailor
+    - hp: 40
+    - slot: 1
+    - hp: 50
+    - hp: 60
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

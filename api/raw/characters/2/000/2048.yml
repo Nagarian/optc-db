@@ -1,0 +1,123 @@
+type: QCK
+name: Koala - Corruption-Exposing Revolutionary
+japanName: コアラ 闇を暴く革命軍
+family:
+  - Koala
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 910
+    atk: 583
+    rcv: 168
+  maxLvl:
+    hp: 1974
+    atk: 1328
+    rcv: 406
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 99269
+aliases:
+  - Limited Koala
+  - Secret Koala
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x, by 3.25x instead if they
+    have a beneficial orb
+special:
+  name: Fishman Karate Mid-Air Roundhouse Kick
+  description: Deals 20x character's ATK in [QCK] damage to one enemy. If enemies
+    have All Debuff Protection or Delay Debuff Protection at the time the
+    special was activated, boosts Orb Effects of Fighter characters by 2x for 1
+    turn and changes all orbs, including [BLOCK] orbs, of Fighter characters
+    into Matching orbs
+  cooldown: 17
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK of this character by 250 if this character is the
+      last in the chain to attack
+  - description: Makes [QCK] orbs beneficial for Fighter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Fighter characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 20
+    - hp: 30
+    - type: potential
+    - cooldown: 1
+    - atk: 30
+    - rcv: 30
+    - hp: 40
+    - hp: 40
+    - hp: 40
+    - rcv: 40
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50

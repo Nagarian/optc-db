@@ -1,0 +1,101 @@
+type: PSY
+name: Red-Haired Shanks
+frenchName: Shanks le Roux
+japanName: 赤髪のシャンクス
+family:
+  - Shanks
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 898
+    atk: 670
+    rcv: 222
+  maxLvl:
+    hp: 2118
+    atk: 990
+    rcv: 417
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 2014
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x
+special:
+  name: Conqueror's Haki
+  description: Deals 15x character's ATK in [PSY] damage to all enemies
+  cooldown: 25
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [PSY] characters by 75
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Ben Beckman, Lucky Roux and Yasopp
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - cooldown: 2
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+    - cooldown: 2
+    - atk: 250
+    - cooldown: 2
+    - hp: 200
+    - cooldown: 3
+    - rcv: 40
+    - cooldown: 3
+    - captain:
+        description: Boosts ATK of [PSY] characters by 2.75x and their RCV by 1.2x
+    - hp: 400
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80

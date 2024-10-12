@@ -1,0 +1,53 @@
+type: INT
+name: Gecko Moria - Nightmare of Shadows
+japanName: ゲッコー・モリア 影の見せる悪夢
+family:
+  - GeckoMoria
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 274
+    atk: 140
+    rcv: 23
+  maxLvl:
+    hp: 2103
+    atk: 748
+    rcv: 70
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 107814
+aliases:
+  - Limited Moria
+  - Secret Moria
+evolution:
+  - id: 2050
+    evolvers:
+      - 118
+      - 88
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Fighter characters by 3x, reduces
+    crew's current HP by ?% at the end of each turn, reduces own ATK multiplier
+    by ?x at the end of each turn
+special:
+  name: Resurrected Nightmare Attack
+  description: Locks the chain multiplier at 3x for 1 turn and reduces Increase
+    Damage Taken duration by 5 turns. If enemies are delayed at the time the
+    special was activated, deals 1,000,000 Fixed damage to all enemies
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Makes [INT] orbs beneficial for Powerhouse characters

@@ -1,0 +1,35 @@
+type: PSY
+name: Pistol Apprentice - Navy
+japanName: ピストル三等兵 海軍
+family:
+  - PistolNavy
+class:
+  - Shooter
+rarity: 1
+stats:
+  combo: 6
+  minLvl:
+    hp: 49
+    atk: 16
+    rcv: 32
+  maxLvl:
+    hp: 105
+    atk: 72
+    rcv: 96
+cost: 3
+slots: 0
+maxExp: 7532
+maxLevel: 15
+flags: []
+links:
+  gamewithId: 2528
+aliases: []
+evolution:
+  - id: 187
+    evolvers:
+      - 81
+special:
+  name: Light Healing
+  description: Recovers 5x character's RCV in HP
+  cooldown: 12
+  maxLevel: 5

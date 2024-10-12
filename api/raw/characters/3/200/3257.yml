@@ -1,0 +1,281 @@
+type: STR
+name: Monkey D. Luffy - Saving His Older Brother
+japanName: モンキー・D・ルフィ 兄を救う弟
+family:
+  - MonkeyDLuffy
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1310
+    atk: 841
+    rcv: 74
+  maxLvl:
+    hp: 2910
+    atk: 1401
+    rcv: 248
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 257244
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x and their HP by 1.2x.
+special:
+  name: Younger Brother's Cry
+  description: Changes orbs of top and bottom row characters into Matching orbs,
+    locks all orbs for 1 turn, reduces Paralysis and Silence Duration by 5 turns
+    and adds 0.8x to Chain multiplier for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: If this character has a [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+support:
+  type: descriptive
+  criteria: Portgas D. Ace
+  levels:
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character and adds 0.1x to the
+      Chain multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character and adds 0.1x to the
+      Chain multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character and adds 0.2x to the
+      Chain multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 1 turn on the supported character and adds 0.2x to the
+      Chain multiplier for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Silence, reduces
+      Silence duration by 2 turns on the supported character and adds 0.3x to
+      the Chain multiplier for 1 turn.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - atk: 10
+    - type: potential
+    - atk: 10
+    - rcv: 20
+    - rcv: 30
+    - slot: 1
+    - hp: 50
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 106
+    rumbleType: ATK
+    spd: 172
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 24
+      effects:
+        - amount: 1
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 1
+        - override:
+            level: 1
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 1
+        - override:
+            level: 1
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 1
+        - override:
+            level: 1
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - cooldown: 24
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 4
+        - override:
+            level: 4

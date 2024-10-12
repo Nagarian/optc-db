@@ -1,0 +1,51 @@
+type: INT
+name: Baccarat Gran Tesoro Concierge
+japanName: バカラ 黄金船のコンシェルジュ
+family:
+  - Baccarat
+class:
+  - Fighter
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 777
+    atk: 333
+    rcv: 222
+  maxLvl:
+    hp: 1552
+    atk: 777
+    rcv: 456
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 35203
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.2x. Gives chance of duplicating a
+    drop upon completion of the island.
+  notes: Does not work if she was not your captain upon starting the island.
+    Stacks with other additional drop captains, giving you two chances of
+    getting an extra drop.
+special:
+  name: Lucky-Lucky Fruit
+  description: Boosts chances of getting Matching orbs for 1 turn and reduces the
+    ATK of enemies by 10% for 1 turn
+  cooldown: 14
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Gild Tesoro, Dice and Tanaka
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

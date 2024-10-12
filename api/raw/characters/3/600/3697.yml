@@ -1,0 +1,374 @@
+type: QCK
+name: Ben Beckman & Lucky Roux - Fatherly Pirates
+family:
+  - LuckyRoux
+  - BenBeckman
+class:
+  - Shooter
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1856
+    atk: 825
+    rcv: 141
+  maxLvl:
+    hp: 3711
+    atk: 1650
+    rcv: 282
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - RED Limited Secret Legend
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of [QCK] and Shooter characters by 5x, by 5.25x
+    instead if they have a beneficial orb and boosts HP of [QCK] and Shooter
+    characters by 1.2x. When a Barrier Penetration Enabled character hits a
+    PERFECT, reduces enemies' Increased Defense, Percent Damage Reduction and
+    Threshold Damage Reduction duration by 1 turn.
+  notes: You do not need to actively use Barrier Penetration to damage through a
+    barrier in order to proc the Buff Reduction on PERFECT. The character only
+    needs to fulfill the requirements to have Barrier Penetration active.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: 5
+    Shooter characters, excluding Support members."
+  description: Reduces enemies Increased Defense, Percent Damage Reduction and
+    Threshold Damage Reduction duration by 2 turns, boosts ATK of Shooter
+    characters by 2x for 2 turns and transforms all Shooter characters into
+    Super Shooter characters.
+special:
+  name: Emotional Bullet
+  description: Boosts Orb Effects of [QCK] and Shooter characters by 2.25x for 3
+    turns and sets Chain Boundaries to 2.75x and 35.0x for 3 turns. If your crew
+    has Orb Amplification, increases boost effects of Orb Amplification buffs by
+    +0.3x. If your crew has Chain Lock, increases boost effects of Chain Lock
+    buffs by +0.25x.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: If your Captain is a Shooter character, boosts base ATK, HP and RCV
+      of all characters by 100
+  - description: When any other Shooter character uses a special, reduces special
+      cooldown of this character by 1 turn
+support:
+  type: descriptive
+  criteria: Shanks, Yasopp and Rockstar
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense duration by 1
+      turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense duration by 1
+      turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense and Percent
+      Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense and Percent
+      Damage Reduction duration by 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, reduces enemies' Increased Defense, Percent Damage
+      Reduction and Threshold Damage Reduction duration by 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - rcv: 10
+    - atk: 10
+    - atk: 10
+    - rcv: 20
+    - hp: 20
+    - type: potential
+    - type: sailor
+    - atk: 10
+    - atk: 20
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - atk: 30
+    - hp: 40
+    - rcv: 30
+    - hp: 50
+    - rcv: 40
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - hp: 80
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 10
+    - rcv: 10
+    - hp: 100
+    - hp: 200
+    - hp: 200
+    - atk: 100
+    - rcv: 30
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 60
+        - threshold: 50
+        - threshold: 0
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Shanks, Yasopp, Rockstar or Usopp."
+        description: Boosts Tandem ATK of [QCK] and Shooter characters by 1.2x for 1
+          turn and reduces enemies' Increased Defense, Percent Damage Reduction
+          and Threshold Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Shanks, Yasopp, Rockstar or Usopp."
+        description: Boosts Tandem ATK of [QCK] and Shooter characters by 1.4x for 1
+          turn and reduces enemies' Increased Defense, Percent Damage Reduction
+          and Threshold Damage Reduction duration by 1 turn.
+      - criteria: "Any 2 of the following: Shanks, Yasopp, Rockstar or Usopp."
+        description: Boosts Tandem ATK of [QCK] and Shooter characters by 1.6x for 1
+          turn and reduces enemies' Increased Defense, Percent Damage Reduction
+          and Threshold Damage Reduction duration by 1 turn.
+      - criteria: "Any 1 of the following: Shooter characters. Any 1 of the following:
+          Shanks, Yasopp, Rockstar or Usopp."
+        description: Boosts Tandem ATK of [QCK] and Shooter characters by 1.8x for 1
+          turn and reduces enemies' Increased Defense, Percent Damage Reduction
+          and Threshold Damage Reduction duration by 1 turn.
+      - criteria: "Any 1 of the following: Shanks, Yasopp, Rockstar or Usopp."
+        description: Boosts Tandem ATK of [QCK] and Shooter characters by 2x for 1 turn
+          and reduces enemies' Increased Defense, Percent Damage Reduction and
+          Threshold Damage Reduction duration by 1 turn.
+rumble:
+  stats:
+    def: 118
+    rumbleType: ATK
+    spd: 197
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 8
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 0.3
+          effect: damage
+          repeat: 6
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+            - Critical Hit
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.35
+        - override:
+            duration: 12
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.45
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 3
+            duration: 15
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.55
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 4
+            duration: 17
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.65
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 6
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

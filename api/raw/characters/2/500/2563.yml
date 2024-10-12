@@ -1,0 +1,107 @@
+type: DEX
+name: Lindbergh - Captain of the Revolutionary Army Southern Forces
+japanName: リンドバーグ 革命軍“南軍”軍隊長
+family:
+  - Lindbergh
+class:
+  - Free Spirit
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1056
+    atk: 535
+    rcv: 142
+  maxLvl:
+    hp: 2590
+    atk: 1377
+    rcv: 324
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 152588
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.75x.
+special:
+  name: Cool Shooter
+  description: If your Captain is a Free Spirit character, boosts Orb Effects of
+    Free Spirit characters by 2x for 1 turn.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP and RCV of Free Spirit characters by 50
+  - description: When any other Free Spirit character uses a special, reduces
+      special cooldown of this character by 2 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Free Spirit characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 25
+    - type: potential
+    - hp: 40
+    - cooldown: 1
+    - hp: 60
+    - hp: 100
+    - slot: 1
+    - atk: 20
+    - atk: 35
+    - cooldown: 1
+    - type: sailor
+    - atk: 45
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

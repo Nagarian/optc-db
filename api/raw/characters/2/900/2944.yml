@@ -1,0 +1,101 @@
+type: PSY
+name: "Sanji - Straw Hat Pirates: Mark of a Fierce Battle"
+japanName: サンジ 麦わらの一味・激戦の軌跡
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1372
+    atk: 621
+    rcv: 108
+  maxLvl:
+    hp: 3002
+    atk: 1355
+    rcv: 248
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 200107
+aliases:
+  - Super Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x.
+special:
+  name: "Diable Jambe: Battlefield Mouton Shot"
+  description: Changes orbs of adjacent characters into Matching orbs and locks
+    the chain multiplier at 2.5x for 2 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: Makes [INT] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - hp: 60
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 4
+        - value: 7
+        - value: 100

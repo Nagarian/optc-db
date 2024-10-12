@@ -1,0 +1,218 @@
+type: DUAL
+name: Smoker & Tashigi - G-5's Commanders
+japanName: スモーカー＆たしぎ Ｇ‐５の指揮官達
+family:
+  - Tashigi
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 488
+    atk: 252
+    rcv: 70
+  maxLvl:
+    hp: 1220
+    atk: 631
+    rcv: 175
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 150051
+aliases:
+  - Smoker&Tashigi
+  - Tashigi&Smoker
+  - SmokerTashigi
+  - TashigiSmoker
+  - Smoker and Tashigi
+evolution:
+  - id: 2542
+    evolvers:
+      - 79
+      - 81
+      - 83
+      - 101
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 3.25x, boosts ATK of
+    all other characters by 2.5x, and boosts HP of all characters by 1.2x.
+special:
+  name: White Hunting Autumn Rain
+  description: Deals 100,000 Fixed damage to all enemies, changes [STR], [DEX],
+    [QCK], [PSY], [INT] and [BLOCK] orbs into Matching orbs, locks all orbs for
+    1 turn and becomes Smoker & Tashigi for 2 turns.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP and RCV of [QCK] and [PSY] characters by 75
+characters:
+  swap:
+    description: Randomizes [RCV], [EMPTY], [G], [BOMB] orbs and recovers 1,000 HP.
+  character1:
+    name: Smoker - G-5's Commanders
+    japanName: スモーカー Ｇ‐５の指揮官達
+    class:
+      - Striker
+      - Driven
+    type: QCK
+    stats:
+      combo: 5
+      minLvl:
+        hp: 471
+        atk: 246
+        rcv: 25
+      maxLvl:
+        hp: 1177
+        atk: 615
+        rcv: 63
+    captain:
+      name: ""
+      description: Boosts ATK of [QCK] characters by 2.5x, boosts ATK of all other
+        characters by 2x, and boosts HP of all characters by 1.2x.
+    sailor:
+      - description: Boosts base HP of [QCK] and [PSY] characters by 50
+  character2:
+    name: Tashigi - G-5's Commanders
+    japanName: たしぎ Ｇ‐５の指揮官達
+    class:
+      - Slasher
+      - Cerebral
+    type: PSY
+    stats:
+      combo: 6
+      minLvl:
+        hp: 358
+        atk: 236
+        rcv: 64
+      maxLvl:
+        hp: 895
+        atk: 590
+        rcv: 159
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY] characters by 2.5x, boosts ATK of all other
+        characters by 2x, and boosts HP of all characters by 1.2x.
+    sailor:
+      - description: Boosts base RCV of [QCK] and [PSY] characters by 50
+rumble:
+  stats:
+    def: 121
+    rumbleType: ATK
+    spd: 183
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 650
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - SPD
+          duration: 25
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 750
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 850
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 950
+        - override:
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            level: 5
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 6

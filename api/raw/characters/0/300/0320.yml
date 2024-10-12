@@ -1,0 +1,45 @@
+type: DEX
+name: Paulie - Dock One Foreman/Mast Specialist
+japanName: パウリー 1番ドック艤装(ぎそう)・マスト職職長
+family:
+  - Paulie
+class:
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 812
+    atk: 617
+    rcv: 130
+  maxLvl:
+    hp: 2300
+    atk: 1070
+    rcv: 231
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 6113
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: Hook, Line and Sinker
+  description: Locks all orbs for 1 turn
+  cooldown: 20
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Iceburg
+  levels:
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 7
+    - value: 9

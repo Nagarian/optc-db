@@ -1,0 +1,177 @@
+type: PSY
+name: Charlotte Flampe
+japanName: シャーロット・フランペ
+family:
+  - CharlotteFlampe
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 320
+    atk: 130
+    rcv: 30
+  maxLvl:
+    hp: 980
+    atk: 740
+    rcv: 140
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 136390
+aliases:
+  - Charlotte Flambe
+  - Charlotte Flambé
+evolution:
+  - id: 2367
+    evolvers:
+      - 117
+      - 87
+      - 1180
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn
+special:
+  name: Numbing Needle
+  description: Recovers 6x character's RCV in HP at the end of each turn for 3
+    turns. If during that turn, you hit 3 PERFECTS, boosts ATK of Fighter,
+    Slasher, Shooter, Driven and Powerhouse characters by 1.75x for 3 turns in
+    the following turn and If the special is activated with more than 50% health
+    remaining, protects from defeat for 1 turn.
+  cooldown: 22
+  maxLevel: 7
+sailor:
+  - description: If this character has a [PSY] orb and you hit a PERFECT with her,
+      keep his [PSY] orb for the next turn
+rumble:
+  stats:
+    def: 103
+    rumbleType: DBF
+    spd: 132
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 20
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 100
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 11
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 12
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 13
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 14
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 15
+        - override:
+            level: 5
+            duration: 20
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 16
+        - override:
+            level: 6
+            duration: 21
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 17
+        - override:
+            level: 7
+            duration: 22
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 18
+        - override:
+            level: 8
+            duration: 23
+    - cooldown: 20
+      effects:
+        - override:
+            duration: 19
+        - override:
+            level: 10
+            duration: 24

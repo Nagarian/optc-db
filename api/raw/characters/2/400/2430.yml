@@ -1,0 +1,193 @@
+type: PSY
+name: Charlotte Pudding - Flip-Flopping Emotions
+japanName: シャーロット・プリン 感情の裏返し
+family:
+  - CharlottePudding
+class:
+  - Driven
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 300
+    atk: 294
+    rcv: 120
+  maxLvl:
+    hp: 750
+    atk: 735
+    rcv: 300
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 141557
+aliases:
+  - Limited Pudding
+  - Secret Pudding
+evolution:
+  - id: 2431
+    evolvers:
+      - 118
+      - 87
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.5x and recovers 1x character's
+    RCV in HP at the end of each turn
+special:
+  name: "Memory Filament: Flashback"
+  description: Reduces Silence duration by 5 turns, reduces enemies' Percent
+    Damage Reduction and Resilience Buffs duration by 5 turns, changes [BLOCK]
+    and Badly Matching orbs into [G] orbs. If there are 6 Driven characters in
+    your crew when the special is activated, changes [STR], [DEX], [QCK], [PSY],
+    [INT] orbs into Matching orbs and recovers 5,000 HP at the end of the turn
+    for 3 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+rumble:
+  stats:
+    def: 103
+    rumbleType: DBF
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 70
+      type: debuff
+    - attribute: Powerhouse
+      percentage: 20
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - duration: 11
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 11
+          effect: hinderance
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 12
+        - override:
+            chance: 73
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 13
+        - override:
+            chance: 76
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 14
+        - override:
+            chance: 79
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            duration: 15
+        - override:
+            chance: 82
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 16
+        - override:
+            chance: 85
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            chance: 88
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            chance: 91
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            chance: 94
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+            duration: 20
+        - override:
+            chance: 100
+            duration: 20

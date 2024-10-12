@@ -1,0 +1,410 @@
+type: QCK
+name: "Hancock: Sweet Flirtatious Halloween - Night of Halloween"
+japanName: ハンコック　ハロウィン・スウィートコケティッシュ Night of Halloween
+family:
+  - BoaHancock
+class:
+  - Free Spirit
+  - Shooter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1746
+    atk: 765
+    rcv: 106
+  maxLvl:
+    hp: 3492
+    atk: 1531
+    rcv: 373
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 295542
+aliases:
+  - V4 Legend Boa Hancock
+  - Halloween (HWeen) Boa Hancock
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], Shooter and Free Spirit characters by 5x,
+    their HP by 1.25x and inflicts Melo-Melo to enemies that attack you for 7
+    hits after each turn you take damage.
+superSpecial:
+  criteria: This character must be captain and 7 turns must pass, not including
+    premptive turns.
+  description: Recovers 15,000 HP, inflicts Melo-Melo to all enemies for 10
+    additional hits and transforms all [QCK] characters into Super [QCK]
+    characters.
+  notes: Mero-Mero state prevents enemies from attacking, Melo-Melo stacks from
+    Super Special stack on existing effects.
+special:
+  name: Night Kiss Pistol
+  description: Reduces Silence and ATK DOWN duration by 6 turns, boosts base ATK
+    of [QCK], Shooter and Free Spirit characters by 1000 for 2 turns and locks
+    the chain multiplier at 3.5x for 2 turns. If your crew has Base ATK boost,
+    increases duration of any base ATK boosting buffs by 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 75
+  - description: Reduces Silence duration completely on this character
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Boa Sandersonia, Boa Marigold and Marguerite
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.75x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - atk: 10
+    - type: potential
+    - hp: 10
+    - hp: 20
+    - rcv: 20
+    - atk: 10
+    - atk: 10
+    - type: sailor
+    - hp: 30
+    - hp: 40
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 30
+    - atk: 30
+    - hp: 40
+    - rcv: 30
+    - atk: 30
+    - atk: 40
+    - hp: 50
+    - hp: 60
+    - type: sailor
+    - rcv: 40
+    - hp: 70
+    - hp: 80
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 100
+    - hp: 150
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+rumble:
+  stats:
+    def: 124
+    rumbleType: SPT
+    spd: 174
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          condition:
+            count: 5
+            stat: heal
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - Special CT
+          amount: 15
+          effect: hinderance
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 1
+          condition:
+            comparator: after
+            count: 40
+            type: time
+          targeting:
+            targets:
+              - QCK
+        - amount: 1
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 1.4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 1.8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            amount: 2.2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 19
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            amount: 2.6
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            amount: 3
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 21
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            amount: 3.4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 22
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            amount: 3.8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 23
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            amount: 4.2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 25
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            amount: 5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

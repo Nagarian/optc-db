@@ -1,0 +1,379 @@
+type: DUAL
+name: Luffy & Ace - High Seas' Pirate
+japanName: ルフィ＆エース 海賊の高み
+family:
+  - MonkeyDLuffy
+  - PortgasDAce
+class:
+  - Free Spirit
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1456
+    atk: 839
+    rcv: 210
+  maxLvl:
+    hp: 3400
+    atk: 1630
+    rcv: 400
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 93183
+aliases:
+  - Luffy&Ace
+  - LuffyAce
+  - Ace&Luffy
+  - AceLuffy
+  - Legend Luffy and Ace
+  - Lace
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 3x, by 4.25x instead if
+    they have a beneficial orb, boosts HP of Free Spirit characters by 1.2x and
+    reduces damage received by 20%
+special:
+  name: Brotherly Bond
+  description: Deals 75x character's ATK in Typeless damage to all enemies,
+    changes [STR], [DEX], [QCK], [INT] and [PSY] orbs of Free Spirit characters
+    into Matching orbs, boosts Orb Effects of all characters by 2x for 1 turn
+    and becomes Luffy & Ace for 3 turns
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 150
+  - description: Makes [TND] and [RCV] orbs beneficial for this character
+characters:
+  swap:
+    description: Removes Despair, Paralysis and Slot Bind duration completely on
+      this character and changes the orb, including [BLOCK] orbs, of this
+      character into a Matching orb
+  character1:
+    name: Monkey D. Luffy - High Seas' Pirate
+    japanName: ルフィ 海賊の高み
+    class:
+      - Free Spirit
+      - Fighter
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1439
+        atk: 721
+        rcv: 203
+      maxLvl:
+        hp: 3205
+        atk: 1472
+        rcv: 386
+    captain:
+      name: ""
+      description: Boosts ATK of Free Spirit characters by 3x and their HP by 1.2x and
+        reduces damage received by 15%
+    sailor:
+      - description: Makes [QCK] orbs beneficial for Free Spirit characters
+      - description: Makes [TND] and [RCV] orbs beneficial for this character
+  character2:
+    name: Portgas D. Ace - High Seas' Pirate
+    japanName: エース 海賊の高み
+    class:
+      - Free Spirit
+      - Shooter
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1327
+        atk: 824
+        rcv: 194
+      maxLvl:
+        hp: 2920
+        atk: 1587
+        rcv: 372
+    captain:
+      name: ""
+      description: Boosts ATK of Free Spirit characters by 2.25x, by 3.5x instead if
+        they have a beneficial orb, and boosts HP of Free Spirit characters by
+        1.2x
+    sailor:
+      - description: Makes [STR] orbs beneficial for Free Spirit characters
+      - description: Makes [TND] and [RCV] orbs beneficial for this character
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - atk: 25
+    - hp: 30
+    - hp: 25
+    - atk: 20
+    - atk: 20
+    - hp: 40
+    - hp: 30
+    - hp: 45
+    - type: potential
+    - hp: 45
+    - rcv: 20
+    - atk: 30
+    - hp: 20
+    - atk: 35
+    - rcv: 20
+    - hp: 50
+    - cooldown: 1
+    - hp: 65
+    - rcv: 20
+    - hp: 65
+    - type: sailor
+    - hp: 85
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 50
+    - rcv: 25
+    - hp: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 139
+    rumbleType: SPT
+    spd: 187
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - ATK
+            - DEF
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - amount: 0.45
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 11
+        - override:
+            amount: 0.47
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            amount: 0.49
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            amount: 0.51
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 14
+        - override:
+            amount: 0.53
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 15
+        - override:
+            amount: 0.55
+    - cooldown: 27
+      effects:
+        - override:
+            level: 1
+            duration: 16
+        - override:
+            amount: 0.57
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - override:
+            amount: 0.59
+    - cooldown: 27
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            amount: 0.61
+    - cooldown: 27
+      effects:
+        - override:
+            level: 3
+            duration: 20
+        - override:
+            amount: 0.65
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

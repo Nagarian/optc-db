@@ -1,0 +1,130 @@
+type: DUAL
+name: Marshall D. Teach - Overwhelming Two Powers
+japanName: マーシャル・D・ティーチ 圧倒的な二つの能力
+family:
+  - MarshallDTeach
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 870
+    atk: 473
+    rcv: 44
+  maxLvl:
+    hp: 1933
+    atk: 1050
+    rcv: 98
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 263870
+aliases:
+  - Blackbeard
+  - V3 Legend BB
+evolution:
+  - id: 3280
+    evolvers:
+      - 118
+      - 1180
+      - 304
+      - 104
+      - 267
+captain:
+  name: ""
+  description: "Boosts ATK of Driven and Powerhouse characters by 5x, their HP by
+    1.75x, reduces Special Cooldown of this character by 2 turns after each turn
+    you take damage and deals 10% of enemies' current HP in True damage,
+    ignoring Normal Attack Only, to all enemies at the start of every stage. If
+    a crew member uses a special with a Percent Damage Reduction, Threshold
+    Damage Reduction or Damage Nullification buff, replaces those buffs with an
+    ATK boost that will overwrite ATK boosts in the same special: Boosts ATK of
+    Driven and Powerhouse characters by 2x for 1 turn."
+special:
+  name: Tremendous Dismay of Darkness and Earthquakes
+  description: Adds 1.0x to Chain multiplier for 1 turn and becomes Blackbeard,
+    Two Overwhelming Abilities for 3-8 turns depending on the total Damage Taken
+    before the special is activated. If your Captain is a Powerhouse or Driven
+    character, increases duration of any ATK boosting buffs and Orb
+    Amplification buffs by 1 turn.
+  cooldown: 19
+  maxLevel: 6
+  notes: |-
+    0 damage: 3 turns  
+    ? damage: 4 turns  
+    ? damage: 5 turns  
+    ? damage: 6 turns  
+    ? damage: 7 turns  
+    50,000 damage: 8 turns
+sailor:
+  - description: Boosts base ATK of Driven and Powerhouse characters by 125
+characters:
+  swap:
+    description: Removes Despair and Silence duration completely on this character
+      and changes the orb, including [BLOCK] orbs, of this character into a
+      Matching orb.
+  character1:
+    name: Marshall D. Teach - Overwhelming Two Powers
+    japanName: マーシャル・D・ティーチ 圧倒的な二つの能力
+    class:
+      - Driven
+      - Powerhouse
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 798
+        atk: 437
+        rcv: 38
+      maxLvl:
+        hp: 1772
+        atk: 988
+        rcv: 81
+    captain:
+      name: ""
+      description: "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by
+        1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases
+        damage received by 1.5x and reduces Special Cooldown of this character
+        by 2 turns after each turn you take damage. If a crew member uses a
+        special with a Percent Damage Reduction, Threshold Damage Reduction or
+        Damage Nullification buff, replaces those buffs with an ATK boost that
+        will overwrite ATK boosts in the same special: Boosts ATK of Driven and
+        Powerhouse characters by 2x for 1 turn."
+    sailor:
+      - description: Boosts base ATK of Driven characters by 75
+  character2:
+    name: Marshall D. Teach - Overwhelming Two Powers
+    japanName: マーシャル・D・ティーチ 圧倒的な二つの能力
+    class:
+      - Powerhouse
+      - Driven
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 798
+        atk: 444
+        rcv: 37
+      maxLvl:
+        hp: 1772
+        atk: 971
+        rcv: 84
+    captain:
+      name: ""
+      description: "Boosts ATK of Driven and Powerhouse characters by 4x, their HP by
+        1.75x, reduces RCV of Driven and Powerhouse characters by 50%, increases
+        damage received by 1.5x and deals 10% of enemies' current HP in True
+        damage, ignoring Normal Attack Only, to all enemies at the start of
+        every stage. If a crew member uses a special with a Percent Damage
+        Reduction, Threshold Damage Reduction or Damage Nullification buff,
+        replaces those buffs with an ATK boost that will overwrite ATK boosts in
+        the same special: Boosts ATK of Driven and Powerhouse characters by 2x
+        for 1 turn."
+    sailor:
+      - description: Boosts base ATK of Powerhouse characters by 75

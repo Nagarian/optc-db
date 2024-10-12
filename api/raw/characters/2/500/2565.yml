@@ -1,0 +1,120 @@
+type: PSY
+name: Belo Betty - Captain of the Revolutionary Army Eastern Forces
+japanName: ベロ・ベティ 革命軍“東軍”軍隊長
+family:
+  - BeloBetty
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 888
+    atk: 502
+    rcv: 195
+  maxLvl:
+    hp: 2219
+    atk: 1254
+    rcv: 488
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 152587
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 3x but boosts ATK of this
+    character by 1.5x instead and reduces damage received by 7%.
+special:
+  name: The Beautiful Flag of Freedom
+  description: Greatly boosts chances of getting [PSY] and [RCV] orbs for 3 turns,
+    boosts RCV of all characters by 1.5x for 3 turns, adds 0.7x to Chain
+    multiplier for 3 turns, randomizes non [PSY] and [RCV] orbs.
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Boosts chances of getting [PSY] and [RCV] orbs for 1 turn, adds
+        0.3x to Chain multiplier for 1 turn, randomizes all orbs.
+      cooldown: 15
+sailor:
+  - description: Makes [PSY], [RCV] and [TND] orbs beneficial for Free Spirit and
+      Cerebral characters
+  - description: Boosts base ATK, HP and RCV of Free Spirit and Cerebral characters by 75
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - atk: 10
+    - atk: 15
+    - rcv: 15
+    - cooldown: 1
+    - atk: 20
+    - atk: 20
+    - rcv: 25
+    - slot: 1
+    - rcv: 40
+    - type: sailor
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 100
+    - hp: 150
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,52 @@
+type: PSY
+name: Lafitte - Blackbeard Pirates
+japanName: ラフィット 黒ひげ海賊団
+family:
+  - Laffitte
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 93
+    atk: 49
+    rcv: 29
+  maxLvl:
+    hp: 2044
+    atk: 949
+    rcv: 323
+cost: 25
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 57823
+aliases:
+  - La Feet
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 1.75x
+special:
+  name: Deprivation of Self-Consciousness
+  description: Randomly shuffles non-Matching orbs of Shooter characters, reduces
+    the defense of all enemies by 50% for 1 turn and delays all enemies by 1
+    turn
+  cooldown: 15
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Marshall D. Teach (Blackbeard), Doc Q, Van Augur and Jesus Burgess
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

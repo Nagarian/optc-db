@@ -1,0 +1,50 @@
+type: DEX
+name: Blue Gilly, Longleg Tribe - Jiaokungdo Martial Artist
+japanName: 足長族　ブルーギリー 脚功道格闘家
+family:
+  - BlueGilly
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 972
+    atk: 480
+    rcv: 88
+  maxLvl:
+    hp: 2208
+    atk: 1185
+    rcv: 187
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 67113
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 1.5x and boosts ATK of
+    Fighter characters by 1.5x
+special:
+  name: Jao Kun Do Consecutive Thrusting Kick
+  description: Deals 10 hits of 5x character's ATK in Typeless damage to random
+    enemies, reduces the defense of all enemies by 50% for 1 turn, randomizes
+    non-Matching orbs, including [BLOCK] orbs
+  cooldown: 17
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Fighter characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

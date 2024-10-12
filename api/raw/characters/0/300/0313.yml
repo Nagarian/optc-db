@@ -1,0 +1,46 @@
+type: PSY
+name: Urouge
+japanName: ウルージ
+family:
+  - Urouge
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 108
+    atk: 108
+    rcv: 35
+  maxLvl:
+    hp: 1290
+    atk: 798
+    rcv: 108
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 5981
+aliases:
+  - Supernova Urouge
+evolution:
+  - id: 314
+    evolvers:
+      - 118
+      - 81
+      - 83
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x and their HP by 1.5x
+special:
+  name: Karmic Punishment
+  description: Boosts ATK of Striker characters by 1.5x for 1 turn, deals 25x
+    character's ATK in [PSY] damage to one enemy
+  cooldown: 25
+  maxLevel: 8

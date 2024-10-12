@@ -1,0 +1,47 @@
+type: PSY
+name: Hajrudin
+japanName: ハイルディン
+family:
+  - Hajrudin
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 201
+    atk: 177
+    rcv: 38
+  maxLvl:
+    hp: 1403
+    atk: 795
+    rcv: 116
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 28756
+aliases: []
+evolution:
+  - id: 1031
+    evolvers:
+      - 83
+      - 87
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x if HP is above 99% at
+    the start of the turn
+special:
+  name: Hero's Gungnir
+  description: Reduces crew's current HP to 1, deals 10x the amount of HP
+    subtracted in Typeless damage to one enemy. Boosts ATK of this character by
+    2.25x for 1 turn.
+  cooldown: 23
+  maxLevel: 9

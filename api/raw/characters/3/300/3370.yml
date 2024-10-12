@@ -1,0 +1,249 @@
+type: PSY
+name: Nico Robin - MUGIWARA 56
+japanName: ニコ・ロビン ＭＵＧＩＷＡＲＡ５６
+family:
+  - NicoRobin
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1272
+    atk: 601
+    rcv: 171
+  maxLvl:
+    hp: 2861
+    atk: 1436
+    rcv: 276
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 284388
+aliases:
+  - Mugiwara Robin
+  - Germa Robin
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Free Spirit characters by 3x and their HP by 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x and their HP by 1.3x.
+special:
+  name: Flower-like Blooming Hands
+  description: Reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction duration by 4 turns, reduces any damage received above 5,000 HP by
+    ?% for 1 turn and boosts ATK against enemies with reduced defense by 1.75x
+    for 4 turns. If during that turn you score 3 PERFECT hits, reduces the
+    defense of all enemies by 80% for 1 turn in the following turn
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When any other Free Spirit character uses a special, reduces
+      special cooldown of this character by 1 turn
+  - description: Makes [TND] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Nami and Franky
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against enemies with reduced defense by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+rumble:
+  stats:
+    def: 132
+    rumbleType: DBF
+    spd: 128
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 1
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 1000
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+          duration: 11
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 2
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            level: 4
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            level: 5
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 5
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 6
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            level: 7
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 2000
+        - override:
+            level: 8
+            duration: 20

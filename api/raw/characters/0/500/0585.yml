@@ -1,0 +1,44 @@
+type: PSY
+name: Nojiko
+japanName: ノジコ
+family:
+  - Nojiko
+class:
+  - Striker
+  - Cerebral
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 125
+    atk: 57
+    rcv: 60
+  maxLvl:
+    hp: 398
+    atk: 277
+    rcv: 293
+cost: 9
+slots: 1
+maxExp: 136167
+maxLevel: 35
+flags:
+  - sugo
+links:
+  gamewithId: 13133
+aliases: []
+evolution:
+  - id: 586
+    evolvers:
+      - 116
+      - 87
+      - 92
+      - 98
+captain:
+  name: ""
+  description: Boosts RCV of [PSY] characters by 1.5x
+special:
+  name: The Bond Bellmere Left Us
+  description: Changes the orb of Captain character into a [PSY] orb, recovers 9x
+    character's RCV in HP
+  cooldown: 20
+  maxLevel: 8

@@ -1,0 +1,250 @@
+type: PSY
+name: Aokiji - Fateful Struggle to the Death
+japanName: クザン 天下分け目の死闘
+family:
+  - Kuzan
+class:
+  - Striker
+  - Shooter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 482
+    atk: 224
+    rcv: 60
+  maxLvl:
+    hp: 1829
+    atk: 858
+    rcv: 154
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 96999
+aliases:
+  - Kuzan
+  - V2 Legend Aokiji
+evolution:
+  - id: 2025
+    evolvers:
+      - 118
+      - 118
+      - 303
+      - 303
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 3.25x and their HP by
+    1.35x at the start of the chain and makes [QCK] and [PSY] orbs beneficial
+    for [QCK] and [PSY] characters. Boosts ATK of [QCK] and [PSY] characters by
+    4.0625x following a chain of [PSY] > [PSY] > [QCK] attacks no lower than
+    Good
+special:
+  name: "The Natural Disaster's Final Attack: Frozen Sea"
+  description: Randomly changes all orbs, including [BLOCK] orbs, into either
+    [QCK] or [PSY] orbs and boosts ATK of [QCK] and [PSY] characters by 2.25x
+    for 1 turn
+  cooldown: 20
+  maxLevel: 6
+rumble:
+  stats:
+    def: 168
+    rumbleType: ATK
+    spd: 197
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+              - PSY
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 37
+      effects:
+        - amount: 800
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+            - SPD
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 850
+        - override:
+            duration: 16
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 900
+        - override:
+            duration: 18
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 950
+        - override:
+            duration: 19
+            level: 2
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            duration: 21
+            level: 2
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            duration: 22
+            level: 3
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            duration: 24
+            level: 3
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            duration: 25
+            level: 3
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            duration: 27
+            level: 4
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            duration: 28
+            level: 5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,50 @@
+type: PSY
+name: Ben Beckman - Harbor Town Pirate
+japanName: ベン・ベックマン 港村の海賊
+family:
+  - BenBeckman
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 612
+    atk: 321
+    rcv: 75
+  maxLvl:
+    hp: 1980
+    atk: 1107
+    rcv: 251
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 98270
+aliases:
+  - Benn Beckman
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Cerebral characters by 1.5x
+special:
+  name: Intense Gun Strike
+  description: Boosts ATK of Cerebral characters by 1.5x for 1 turn and reduces
+    Special Cooldown of Cerebral characters by 1 turn
+  cooldown: 16
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Shanks, Lucky Roux and Yasopp
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 9

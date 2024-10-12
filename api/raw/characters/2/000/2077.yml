@@ -1,0 +1,50 @@
+type: PSY
+name: Carrot - Cute Rabbit in the Forest of Sweets
+japanName: キャロット おかしの森のウサギ
+family:
+  - Carrot
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 282
+    atk: 152
+    rcv: 12
+  maxLvl:
+    hp: 1312
+    atk: 612
+    rcv: 91
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 102772
+aliases:
+  - WCI Carrot
+evolution:
+  - id: 2078
+    evolvers:
+      - 83
+      - 266
+      - 98
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x
+special:
+  name: Eleclaw
+  description: Reduces Paralysis and Despair duration by 4 turns, delays all
+    enemies by 1 turn, changes [STR], [DEX], [QCK], [INT] and [PSY] orbs into
+    [PSY] orbs and boosts ATK against enemies with reduced defense by 1.75x for
+    1 turn
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration completely on this character

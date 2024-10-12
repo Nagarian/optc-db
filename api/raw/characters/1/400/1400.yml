@@ -1,0 +1,55 @@
+type: STR
+name: Gladius - Rupture-Man
+japanName: グラディウス 破裂人間
+family:
+  - Gladius
+class:
+  - Driven
+  - Shooter
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 186
+    atk: 168
+    rcv: 39
+  maxLvl:
+    hp: 1088
+    atk: 786
+    rcv: 98
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 47299
+aliases:
+  - Colo Gladius
+  - Coliseum Gladius
+evolution:
+  - id: 1401
+    evolvers:
+      - 118
+      - 78
+      - 83
+      - 95
+      - 300
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.75x and boosts ATK of Driven
+    characters by 1.3x
+  notes: The bonus is cumulative. Shooter Driven characters get a 2.275x bonus.
+special:
+  name: Stonewall Punk
+  description: Deals 30x character's ATK in [STR] damage to all enemies, reduces
+    Bind and Despair duration by 2 turns and boosts the Color Affinity of
+    Shooter characters by 1.75x for 1 turn
+  cooldown: 33
+  maxLevel: 16
+  stages:
+    - description: Deals 13x character's ATK in [STR] damage to all enemies, reduces
+        Bind and Despair duration by 1 turn and boosts the Color Affinity of
+        Shooter characters by 1.5x for 1 turn
+      cooldown: 26

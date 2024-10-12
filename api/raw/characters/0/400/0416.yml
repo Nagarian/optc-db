@@ -1,0 +1,133 @@
+type: QCK
+name: Boa Hancock - Warlord of the Sea
+japanName: ボア・ハンコック 王下七武海
+family:
+  - BoaHancock
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1512
+    atk: 782
+    rcv: 301
+  maxLvl:
+    hp: 2860
+    atk: 1320
+    rcv: 515
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 9034
+aliases:
+  - Shichibukai
+  - V1 Legend Boa Hancock
+evolution:
+  - id: 1445
+    evolvers:
+      - skullQCK
+      - 118
+      - 85
+      - 301
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 2.75x and their RCV by
+    1.5x if HP is above 70% at the start of the turn
+special:
+  name: Love-Love Mellow
+  description: Recovers 15x character's RCV in HP, delays all enemies by 1 turn
+  cooldown: 17
+  maxLevel: 5
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] and [PSY] characters by 30
+  - description: Boosts base ATK of [QCK] and [PSY] characters by 75
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Boa Sandersonia, Boa Marigold
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      recovers 500 HP and changes the orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,000 HP and changes the orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,500 HP and changes the orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 2,000 HP and changes the orb of the supported character into a
+      Matching orb.
+    - Once per adventure, when the supported character uses their special,
+      recovers 2,500 HP and changes all orbs of left column characters into
+      Matching orbs.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: sailor
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - hp: 60
+    - hp: 70
+    - hp: 80
+    - hp: 90
+    - rcv: 10
+    - rcv: 20
+    - type: sailor
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 50
+    - rcv: 20
+    - atk: 50
+    - rcv: 20
+    - hp: 100
+    - rcv: 80
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

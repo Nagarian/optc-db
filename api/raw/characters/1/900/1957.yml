@@ -1,0 +1,107 @@
+type: STR
+name: Carrot - You're My Valentine
+japanName: キャロット You’re My Valentine
+family:
+  - Carrot
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 978
+    atk: 529
+    rcv: 143
+  maxLvl:
+    hp: 2162
+    atk: 1310
+    rcv: 350
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 87127
+aliases:
+  - Valentines Carrot
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.5x and their RCV by 1.25x
+special:
+  name: Hopping Crash
+  description: Reduces Chain Multiplier Limit and Chain Coefficient Reduction
+    duration by 3 turns and locks the chain multiplier at 2.75x for 1 turn
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters
+  - description: Adds 2.5x character's ATK as Additional Damage
+support:
+  type: descriptive
+  criteria: Tony Tony Chopper
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces crew's Chain Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, reduces crew's Chain Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction or Chain Multiplier Limit, reduces crew's Chain Multiplier Limit
+      and Chain Coefficient Reduction duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 10
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - slot: 1
+    - rcv: 30
+    - hp: 70
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

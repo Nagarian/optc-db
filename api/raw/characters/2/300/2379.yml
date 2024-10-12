@@ -1,0 +1,51 @@
+type: DEX
+name: Streusen - Cook-Cook Fruit User
+japanName: シュトロイゼン ククククの実の能力者
+family:
+  - Streusen
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 750
+    atk: 320
+    rcv: 130
+  maxLvl:
+    hp: 1799
+    atk: 1099
+    rcv: 309
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 136748
+aliases:
+  - Young Streusen
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x and their RCV by 1.2x
+special:
+  name: The Cook's Expectation
+  description: Recovers 3,000 HP and boosts RCV of all characters by 2x for 1 turn.
+  cooldown: 16
+  maxLevel: 6
+support:
+  type: descriptive
+  criteria: Charlotte Linlin (Big Mom)
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      recovers 100 HP
+    - Once per adventure, when the supported character uses their special,
+      recovers 300 HP
+    - Once per adventure, when the supported character uses their special,
+      recovers 500 HP
+    - Once per adventure, when the supported character uses their special,
+      recovers 700 HP
+    - Once per adventure, when the supported character uses their special,
+      recovers 1,000 HP

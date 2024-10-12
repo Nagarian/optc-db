@@ -1,0 +1,51 @@
+type: STR
+name: Trafalgar Law - Unusual Pirate Alliance
+japanName: トラファルガー・ロー 異例の海賊同盟
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Fighter
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 782
+    atk: 371
+    rcv: 72
+  maxLvl:
+    hp: 1451
+    atk: 742
+    rcv: 142
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 128093
+aliases:
+  - TM Law
+  - TM Trafalgar Law
+evolution:
+  - id: 2336
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Fighter, Slasher, Cerebral and Free Spirit characters by 1.1x
+  notes: The bonus is cumulative. Characters with 2 of the boosted classes get a
+    1.21x bonus
+special:
+  name: Counter-Shock
+  description: Deals 30x character's ATK in [STR] damage to one enemy, reduces
+    Bind and Despair duration by 2 turns, changes orbs of this and adjacent
+    characters into Matching orbs, adds 0.7x to Chain multiplier for 1 turn and
+    reduces Special Cooldown of Fighter, Slasher, Cerebral and Free Spirit
+    characters by 1 turn
+  cooldown: 30
+  maxLevel: 8

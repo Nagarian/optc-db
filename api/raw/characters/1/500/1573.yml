@@ -1,0 +1,90 @@
+type: QCK
+name: "Wanda: Kingsbird"
+japanName: 王の鳥　ワンダ
+family:
+  - Wanda
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 938
+    atk: 470
+    rcv: 167
+  maxLvl:
+    hp: 2177
+    atk: 1243
+    rcv: 367
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 55744
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x and their RCV by 1.2x
+special:
+  name: Ruler's Aide Flight
+  description: Randomizes all orbs, including [BLOCK] orbs, into [STR], [DEX],
+    [QCK], [INT], or [PSY] orbs, boosts ATK of Cerebral characters by 1.75x for
+    3 turns
+  cooldown: 21
+  maxLevel: 6
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Boosts base ATK, HP and RCV of Cerebral characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Sicilian, Pedro and Inuarashi
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - hp: 50
+    - rcv: 20
+    - slot: 1
+    - rcv: 30
+    - atk: 60
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

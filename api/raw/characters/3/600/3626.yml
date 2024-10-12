@@ -1,0 +1,269 @@
+type: DEX
+name: Gol D. Roger - Great Pirate With Grand Dreams
+family:
+  - GolDRoger
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1183
+    atk: 813
+    rcv: 81
+  maxLvl:
+    hp: 3271
+    atk: 1458
+    rcv: 184
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags: []
+aliases:
+  - ""
+evolution:
+  - id: 3627
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 4x, boosts HP
+    of Slasher and Free Spirit characters by 1.2x and makes [STR], [DEX] and
+    [QCK] orbs beneficial for Slasher and Free Spirit characters.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Kozuki
+    Oden, Silvers Rayleigh, Gaban, Edward Newgate (Whitebeard), Crocus, Shanks,
+    Buggy, Inuarashi, Nekomamushi and Portgas D. Ace, excluding Support
+    members."
+  description: Locks all orbs for 1 turn, boosts ATK of all characters by 1.75x
+    for 1 turn and transforms all Free Spirit characters into Super Free Spirit
+    characters.
+special:
+  name: The Vast Treasure Left Behind
+  description: Reduces Bind duration by 2 turns, reduces enemies' Increased
+    Defense and Resilience duration by 2 turns, boosts base ATK of Slasher and
+    Free Spirit characters by 500 for 2 turns and reduces damage received by 50%
+    for 1 turn. If your crew has ATK UP, increases duration of any ATK UP buffs
+    by 1 turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Makes [DEX] orbs beneficial for Slasher and Free Spirit characters.
+  - description: When any other Slasher or Free Spirit character uses a special,
+      reduces special cooldown of this character by 1 turn.
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: All characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - type: potential
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - atk: 25
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 8
+          threshold: 80
+    - type: Double Special Activation
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 100
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: On the last Stage when character has a [DEX] or [TND] orb
+    levels:
+      - description: Boosts own base ATK by 100 for 1 turn.
+      - description: Boosts own base ATK by 200 for 1 turn.
+      - description: Boosts own base ATK by 300 for 1 turn.
+      - description: Boosts own base ATK by 400 for 1 turn.
+      - description: Boosts own base ATK by 500 for 1 turn.
+rumble:
+  stats:
+    def: 206
+    rumbleType: DBF
+    spd: 157
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+            - SPD
+            - DEF
+          duration: 6
+          effect: buff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - DEX
+        - amount: 900
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 32
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            amount: 1000
+    - cooldown: 32
+      effects:
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            amount: 1100
+    - cooldown: 32
+      effects:
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            amount: 1200
+    - cooldown: 32
+      effects:
+        - override:
+            level: 3
+            duration: 10
+        - override:
+            amount: 1300
+    - cooldown: 32
+      effects:
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            amount: 1400
+    - cooldown: 32
+      effects:
+        - override:
+            level: 4
+            duration: 12
+        - override:
+            amount: 1500
+    - cooldown: 32
+      effects:
+        - override:
+            level: 4
+            duration: 13
+        - override:
+            amount: 1600
+    - cooldown: 32
+      effects:
+        - override:
+            level: 5
+            duration: 14
+        - override:
+            amount: 1700
+    - cooldown: 32
+      effects:
+        - override:
+            level: 6
+            duration: 15
+        - override:
+            amount: 1800

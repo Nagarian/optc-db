@@ -1,0 +1,394 @@
+type: DEX
+name: Monkey D. Garp - Drill Crushing Fist
+family:
+  - MonkeyDGarp
+class:
+  - Fighter
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2156
+    atk: 815
+    rcv: 95
+  maxLvl:
+    hp: 4312
+    atk: 1630
+    rcv: 190
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+aliases:
+  - V2 Secret Limited Rumble
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 5x, boosts HP of
+    Fighter and Powerhouse characters by 1.5x and reduces Bind duration by 3
+    turns. If you use "Splitting Fist" in this turn, boosts ATK of Fighter and
+    Powerhouse characters by 5.25x.
+special:
+  name: Splitting Fist
+  description: Deals 300x character's ATK in Typeless True damage to one enemy,
+    reduces Special Cooldown of all characters by 2 turns, adds 1.5x to Chain
+    multiplier for 1 turn, makes Fighter and Powerhouse characters' attacks
+    ignore damage reducing Barriers and Buffs.
+  cooldown: 21
+  maxLevel: 6
+  notes: This special can only be activated if 1 other special at most has been
+    activated this turn and removes the ability to activate more than 1 other
+    special this turn.
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: descriptive
+  criteria: Coby, Helmeppo and Sengoku
+  levels:
+    - Once per adventure, when you reach the final stage, adds 0.3x to Chain
+      Multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.4x to Chain
+      Multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.5x to Chain
+      Multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.6x to Chain
+      Multiplier for 1 turn.
+    - Once per adventure, when you reach the final stage, adds 0.7x to Chain
+      Multiplier for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - hp: 50
+    - type: sailor
+    - hp: 40
+    - atk: 20
+    - hp: 50
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 20
+    - atk: 20
+    - hp: 50
+    - hp: 60
+    - rcv: 30
+    - hp: 70
+    - atk: 30
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 75
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 125
+    - atk: 100
+    - hp: 200
+    - cooldown: 1
+    - rcv: 50
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 167
+    rumbleType: ATK
+    spd: 165
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - ATK
+            - DEF
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 0.9
+          effect: damage
+          repeat: 2
+          targeting:
+            count: 2
+            priority: exactly
+            percentage: 100
+            stat: Special CT
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+            - SPD
+          duration: 11
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - Counter
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: boon
+          amount: 0.5
+          duration: 21
+          targeting:
+            targets:
+              - self
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 12
+        - override:
+            amount: 0.6
+            duration: 22
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            amount: 0.7
+            duration: 23
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            amount: 0.8
+            duration: 24
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            amount: 0.9
+            duration: 25
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            amount: 1
+            duration: 26
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 5
+            duration: 17
+        - override:
+            amount: 1.1
+            duration: 27
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            amount: 1.2
+            duration: 28
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 6
+            duration: 19
+        - override:
+            amount: 1.3
+            duration: 29
+    - cooldown: 31
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 7
+            duration: 20
+        - override:
+            amount: 1.4
+            duration: 30
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

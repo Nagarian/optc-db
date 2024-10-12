@@ -1,0 +1,55 @@
+type: STR
+name: Boa Hancock - Be My Valentine
+japanName: ボア・ハンコック Be My Valentine
+family:
+  - BoaHancock
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 174
+    atk: 79
+    rcv: 46
+  maxLvl:
+    hp: 987
+    atk: 740
+    rcv: 220
+cost: 12
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 91336
+aliases:
+  - Valentines Boa
+evolution:
+  - id: 1968
+    evolvers:
+      - 117
+      - 78
+      - 89
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts amount of Beli received by 2x
+  notes: Beli boost does not take effect if she becomes your captain in the middle
+    of the adventure.
+special:
+  name: An Important Confession from the Snake Princess
+  description: Changes [BLOCK], [STR], [DEX], [QCK], [INT] and [PSY] orbs of
+    Shooter and Cerebral characters into Matching orbs. If you are on a Treasure
+    Map, boosts Orb Effects of Cerebral and Shooter characters by 1.75x-2.25x
+    for 1 turn depending on your Treasure Map Level
+  cooldown: 10
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x orb boost  
+    Level 11-20: 2x orb boost  
+    Level 21+: 2.25x orb boost

@@ -1,0 +1,215 @@
+type: DEX
+name: Bartolomeo - Worth Risking One's Life For
+japanName: バルトロメオ 命を賭ける価値
+family:
+  - Bartolomeo
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1036
+    atk: 561
+    rcv: 103
+  maxLvl:
+    hp: 2590
+    atk: 1402
+    rcv: 257
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 243497
+aliases:
+  - PF Bartolomeo
+  - PR Bartolomeo
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.5x, by 3.5x instead if HP is
+    above 70% at the start of the turn.
+special:
+  name: Passionate Barrier Crash
+  description: Deals 50x character's ATK in [DEX] damage to all enemies, reduces
+    enemies' Threshold Damage Reduction duration by 2 turns and reduces damage
+    received by 70% for 2 turns. If your crew has Percent Damage Reduction,
+    locks the chain multiplier at 2.75x for 3 turns.
+  cooldown: 19
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[DEX] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 100
+    - hp: 150
+    - captain:
+        description: Boosts ATK of [DEX] characters by 2.5x, by 3.5x instead if HP is
+          above 70% at the start of the turn, their HP by 1.25x and reduces
+          damage received by 20%.
+    - type: potential
+    - cooldown: 3
+    - atk: 150
+    - hp: 350
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 3
+        - value: 5
+        - value: 8
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 218
+    rumbleType: DEF
+    spd: 137
+  target:
+    criteria: HP
+    comparator: lowest
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 14
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 15
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 16
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            duration: 17
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            duration: 18
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 19
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            duration: 20

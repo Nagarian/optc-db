@@ -1,0 +1,354 @@
+type: DEX
+name: Magellan - Hell's Ruler
+japanName: マゼラン 地獄の支配者
+family:
+  - Magellan
+class:
+  - Striker
+  - Shooter
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1470
+    atk: 700
+    rcv: 99
+  maxLvl:
+    hp: 3527
+    atk: 1499
+    rcv: 291
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 63199
+aliases:
+  - V1 Legend Magellan
+evolution:
+  - id: 2159
+    evolvers:
+      - skullDEX
+      - 118
+      - 86
+      - 302
+      - 267
+captain:
+  name: ""
+  description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+    crew, boosts ATK of all characters by 2.25x and their HP by 1.5x and deals
+    15% of enemies' current HP in damage to all enemies at the end of each turn.
+  notes: Poison deals 50x character's ATK in fixed damage that bypasses defensive
+    buffs at the end of each turn.
+special:
+  name: Venom Cloud
+  description: Inflicts Toxic to all enemies, recovers 13x character's RCV in HP
+    at the end of each turn for 3 turns
+  cooldown: 19
+  maxLevel: 6
+  notes: >-
+    `toxic : 50x : 2x : 2,000,000`  
+
+    If enemies are both Poisoned and inflicted with Toxic, only the Toxic damage will damage the enemy at the end of the turn.
+sailor:
+  - description: Cannot be blown away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Striker characters
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+    - value: 13
+limitBreak:
+  path:
+    - atk: 15
+    - hp: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - hp: 30
+    - atk: 15
+    - type: sailor
+    - atk: 15
+    - hp: 30
+    - rcv: 10
+    - rcv: 10
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - rcv: 10
+    - atk: 20
+    - hp: 40
+    - atk: 30
+    - hp: 60
+    - rcv: 15
+    - cooldown: 1
+    - rcv: 15
+    - hp: 90
+    - atk: 40
+    - atk: 45
+    - hp: 90
+    - rcv: 20
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - atk: 100
+    - rcv: 25
+    - rcv: 50
+    - captain:
+        description: If there's a [STR], [DEX], [QCK], [PSY] and [INT] character in your
+          crew, boosts ATK of all characters by 2.25x and their HP by 1.5x and
+          deals 15% of enemies' current HP in damage to all enemies at the end
+          of each turn. If 300,000 damage was dealt to enemies in the last turn,
+          poisons all enemies.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 2
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 2
+          threshold: 20
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 30
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 152
+    rumbleType: DBF
+    spd: 149
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - amount: 100
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          condition:
+            comparator: more
+            count: 5
+            type: crew
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Damage Over Time
+          duration: 20
+          level: 1
+          chance: 100
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          duration: 20
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 23
+        - override:
+            level: 1
+            duration: 21
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 26
+        - override:
+            level: 1
+            duration: 23
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 29
+        - override:
+            level: 1
+            duration: 24
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 32
+        - override:
+            level: 1
+            duration: 26
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 35
+        - override:
+            level: 1
+            duration: 28
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 38
+        - override:
+            level: 2
+            duration: 29
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 41
+        - override:
+            level: 2
+            duration: 31
+    - cooldown: 31
+      effects:
+        - override:
+            level: 1
+            duration: 44
+        - override:
+            level: 2
+            duration: 32
+    - cooldown: 31
+      effects:
+        - override:
+            level: 2
+            duration: 47
+        - override:
+            level: 3
+            duration: 34
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

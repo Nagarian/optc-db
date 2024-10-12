@@ -1,0 +1,104 @@
+type: PSY
+name: Marco - Blue-Flamed Detective
+japanName: マルコ 蒼炎の名探偵
+family:
+  - Marco
+class:
+  - Free Spirit
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1500
+    atk: 750
+    rcv: 167
+  maxLvl:
+    hp: 2700
+    atk: 1350
+    rcv: 300
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 234208
+aliases:
+  - World Journey Marco
+  - Limited Marco
+  - Secret Marco
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Powerhouse characters by 3x, reduces
+    damage received by 10% and recovers 5x character's RCV in HP at the end of
+    each turn.
+special:
+  name: An Elegant Cup
+  description: Boosts ATK of Free Spirit and Powerhouse characters by 1.75x for 1
+    turn. After 2 turns, boosts ATK of Free Spirit and Powerhouse characters by
+    2x for 1 turn. If your captain is a Free Spirit or Powerhouse character,
+    increases duration of any Orb Amplification buffs by 1 turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace and Jozu
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 40
+    - rcv: 10
+    - atk: 15
+    - type: potential
+    - hp: 60
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - hp: 100
+    - slot: 1
+    - rcv: 20
+    - atk: 25
+    - type: sailor
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50

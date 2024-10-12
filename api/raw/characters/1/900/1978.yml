@@ -1,0 +1,96 @@
+type: DEX
+name: Dark King Rayleigh - Master of Haki
+japanName: 冥王レイリー “覇気”の師
+family:
+  - SilversRayleigh
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1119
+    atk: 613
+    rcv: 160
+  maxLvl:
+    hp: 2662
+    atk: 1249
+    rcv: 340
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 92604
+aliases:
+  - Colo Rayleigh
+  - Coliseum Rayleigh
+captain:
+  name: ""
+  description: Boosts chances of getting Matching orbs, boosts ATK of Free Spirit
+    and Slasher characters by 2.5x
+special:
+  name: Unabated Surge
+  description: Deals 20% of enemies' current HP in damage to one enemy, reduces
+    Bind and Silence duration by 3 turns, boosts chances of getting [DEX], [PSY]
+    and [INT] orbs for 3 turns and makes [DEX], [PSY] and [INT] orbs beneficial
+    for Free Spirit characters for 3 turns
+  cooldown: 26
+  maxLevel: 15
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: Boosts base ATK of Free Spirit characters by 35
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 2
+    - value: 4
+      reduction: 3
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - rcv: 30
+    - cooldown: 1
+    - hp: 40
+    - type: sailor
+    - atk: 40
+    - slot: 1
+    - atk: 20
+    - hp: 30
+    - cooldown: 1
+    - atk: 20
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

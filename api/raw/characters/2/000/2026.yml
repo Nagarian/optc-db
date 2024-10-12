@@ -1,0 +1,49 @@
+type: PSY
+name: Hina - Prison that Prevents Rescue
+japanName: ヒナ 炎救出を妨げる牢獄
+family:
+  - Hina
+class:
+  - Fighter
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 298
+    atk: 82
+    rcv: 50
+  maxLvl:
+    hp: 1125
+    atk: 645
+    rcv: 151
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 97000
+aliases:
+  - Hina
+evolution:
+  - id: 2027
+    evolvers:
+      - 94
+      - 81
+      - 87
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [PSY] characters by 2x
+special:
+  name: "Kimono Sleeve Cage: Lock"
+  description: Delays all enemies by 1 turn. If your Captain is a [QCK] or [PSY]
+    character, boosts the Color Affinity of [QCK] and [PSY] characters by 2x for
+    1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [PSY] and [QCK] characters by 50

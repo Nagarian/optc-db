@@ -1,0 +1,178 @@
+type: DEX
+name: Carrot - Ninja-Pirate-Mink-Samurai Alliance
+japanName: キャロット 忍者海賊ミンク侍同盟
+family:
+  - Carrot
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 481
+    atk: 147
+    rcv: 29
+  maxLvl:
+    hp: 988
+    atk: 697
+    rcv: 153
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 181744
+aliases:
+  - Wano Carrot
+evolution:
+  - id: 2810
+    evolvers:
+      - 266
+      - 91
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3x following a chain of Good >
+    Great > PERFECT hits
+special:
+  name: Kimono Mink Air Step
+  description: Reduces Despair and ATK DOWN duration by 3 turns, changes [BLOCK]
+    and Badly Matching orbs into [TND] orbs and boosts the Color Affinity of
+    Free Spirit characters by 1.75x for 1 turn. If during that turn you score 3
+    PERFECT hits, boosts the Color Affinity of Free Spirit characters by 1.75x
+    for 1 turn.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters
+rumble:
+  stats:
+    def: 142
+    rumbleType: SPT
+    spd: 148
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 0.4
+          effect: damage
+          type: atk
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+            - SPD
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            duration: 11
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.45
+        - override:
+            duration: 12
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.48
+        - override:
+            duration: 13
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.51
+        - override:
+            duration: 14
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            duration: 15
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.56
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.59
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.62
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 3
+            duration: 20

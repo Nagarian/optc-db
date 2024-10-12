@@ -1,0 +1,50 @@
+type: INT
+name: Onigumo Eight-Swords Style Fighter
+japanName: オニグモ 八刀流の剣士
+family:
+  - Onigumo
+class:
+  - Driven
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 172
+    atk: 136
+    rcv: 5
+  maxLvl:
+    hp: 1294
+    atk: 638
+    rcv: 99
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 43893
+aliases:
+  - ""
+evolution:
+  - id: 1324
+    evolvers:
+      - 88
+      - 266
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Slasher and Driven characters by 1.3x
+  notes: The bonus is cumulative. Slasher + Driven characters get a 1.69x bonus.
+special:
+  name: Onigumo of Dismantling Swordsmanship
+  description: Randomizes [RCV], [TND] and [BLOCK] orbs. Makes [STR], [DEX] and
+    [QCK] orbs beneficial for Driven and Slasher characters for 2 turns
+  cooldown: 15
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 5 turns on this character

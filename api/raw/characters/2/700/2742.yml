@@ -1,0 +1,177 @@
+type: PSY
+name: "Koala: Devilish Red Riding Hood - Happy Halloween!"
+japanName: コアラ　小悪魔な赤ずきん Happy Halloween
+family:
+  - Koala
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 103
+    atk: 121
+    rcv: 23
+  maxLvl:
+    hp: 822
+    atk: 879
+    rcv: 120
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 174232
+aliases:
+  - Halloween Koala
+evolution:
+  - id: 2743
+    evolvers:
+      - 94
+      - 2662
+      - 303
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Cerebral characters by 2.25x recovers 500
+    HP at the end of each turn.
+special:
+  name: Little Devil's Treat and Smile
+  description: Reduces Increase Damage Taken duration by 5 turns, reduces damage
+    received by 50% for 3 turns, recovers 10x character's RCV in HP at the end
+    of each turn for 3 turns.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of Fighter and Cerebral characters by 30
+rumble:
+  stats:
+    def: 113
+    rumbleType: RCV
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Cerebral
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 70
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 0.35
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - DEF
+          level: 1
+          effect: buff
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.43
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.5
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.58
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.66
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.74
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.81
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.89
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.97
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 3

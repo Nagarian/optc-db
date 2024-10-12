@@ -1,0 +1,88 @@
+type: PSY
+name: Morning Star Rakuyo
+japanName: モーニングスターのラクヨウ
+family:
+  - Rakuyo
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 945
+    atk: 681
+    rcv: 122
+  maxLvl:
+    hp: 2001
+    atk: 1320
+    rcv: 337
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 11073
+aliases: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, boosts ATK of Striker characters by 2x
+special:
+  name: Dread Morning Star
+  description: Changes orbs of this and Captain characters into [PSY] orbs
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for Striker characters
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 5 turns
+support:
+  type: descriptive
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Marco and Vista
+  levels:
+    - Once per adventure, when you reach the final stage, changes [EMPTY] orb of
+      the supported character into a [PSY] orb
+    - Once per adventure, when you reach the final stage, changes [EMPTY] and
+      [TND] orbs of the supported character into a [PSY] orb
+    - Once per adventure, when you reach the final stage, changes [EMPTY], [TND]
+      and [RCV] orbs of the supported character into a [PSY] orb
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [PSY] orb
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a [PSY] orb and reduces Special Cooldown of
+      supported character by 1 turn
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 20
+    - hp: 80
+    - type: potential
+    - rcv: 25
+    - hp: 80
+    - atk: 30
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - cooldown: 2
+    - hp: 90
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

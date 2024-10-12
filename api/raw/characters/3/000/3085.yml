@@ -1,0 +1,499 @@
+type: STR
+name: Perospero - Troublesome Candy
+japanName: ぺロスペロー 行く手を阻むアメ
+family:
+  - CharlottePerospero
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1241
+    atk: 843
+    rcv: 82
+  maxLvl:
+    hp: 2758
+    atk: 1405
+    rcv: 272
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 225042
+aliases:
+  - Limited Perospero
+  - Secret Perospero
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [STR] characters by 2.5x.
+special:
+  name: Candy Maiden - Decoration
+  description: Reduces enemies' Threshold Damage Reduction, Percent Damage
+    Reduction and Increased Defense duration by 4 turns. If your captain is a
+    [STR] character, boosts Orb Effects of all characters by 2x for 1 turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [STR] characters by 50
+  - description: Restores Special Cooldown of this character by 2 turns when it is
+      rewinded and reduces Silence duration by 2 turns on this character
+support:
+  type: descriptive
+  criteria: Charlotte Linlin (Big Mom) and Charlotte Katakuri
+  levels:
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense or Threshold
+      Damage Reduction buff, reduces enemies' Threshold Damage Reduction and
+      Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense or Threshold
+      Damage Reduction buff, reduces enemies' Threshold Damage Reduction and
+      Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense or Threshold
+      Damage Reduction buff, reduces enemies' Threshold Damage Reduction and
+      Increased Defense duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - hp: 30
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - rcv: 30
+    - hp: 50
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 125
+    rumbleType: DBF
+    spd: 149
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.33
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.36
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.39
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.42
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 3
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.45
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.48
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.51
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 4
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.54
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 5
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 6
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 2
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies

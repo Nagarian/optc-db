@@ -1,0 +1,495 @@
+type: INT
+name: Vinsmoke Reiju - The Science Military's True Worth
+japanName: ヴィンスモーク・レイジュ 科学戦闘部隊の真価
+family:
+  - VinsmokeReiju
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1053
+    atk: 546
+    rcv: 122
+  maxLvl:
+    hp: 2632
+    atk: 1366
+    rcv: 306
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 213457
+aliases:
+  - TM Reiju TM
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 1.75x.
+special:
+  name: Dangerous Butterfly - Germa Kick
+  description: Reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction duration by 5 turns and changes [BLOCK] orbs into Matching orbs.
+    If your captain is a [QCK] or [INT] character, poisons all enemies, boosts
+    ATK against Poisoned enemies by 1.75x for 3 turns and if during that turn
+    you score 2 PERFECT hits, poisons all enemies in the following turn.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] and [INT] characters by 25
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vinsmoke Sanji
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 4
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 6
+      reduction: 5
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 2x.
+    - type: sailor
+    - rcv: 20
+    - hp: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 2.25x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 2.5x.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 2.75x.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 30
+    - atk: 40
+    - atk: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 3x.
+    - hp: 100
+    - hp: 120
+    - captain:
+        description: Boosts ATK of [QCK] and [INT] characters by 3.5x and reduces
+          Paralysis duration by 1 turn.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 0.5
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 163
+    rumbleType: SPT
+    spd: 168
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          condition:
+            comparator: remaining
+            count: 70
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 70
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 0.73
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 71
+          duration: 12
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 0.76
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 72
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 0.79
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 73
+          duration: 17
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 0.82
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 74
+          duration: 20
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 0.85
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 75
+          duration: 22
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 0.88
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 76
+          duration: 25
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 0.91
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 77
+          duration: 27
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 0.94
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 78
+          duration: 30
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 100
+          duration: 32
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies

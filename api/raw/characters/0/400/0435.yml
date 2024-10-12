@@ -1,0 +1,44 @@
+type: QCK
+name: Sanji - Kamabakka Queendom Traditional Fighting Style
+japanName: サンジ カマバッカ王国伝統の決闘スタイル
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 221
+    atk: 58
+    rcv: 29
+  maxLvl:
+    hp: 1229
+    atk: 622
+    rcv: 130
+cost: 10
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 10003
+aliases: []
+evolution:
+  - id: 436
+    evolvers:
+      - 117
+      - 85
+      - 433
+      - 434
+      - 96
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x following a chain of [INT] >
+    [PSY] > [QCK] attacks no lower than Good
+special:
+  name: Maiden's Bloom
+  description: Randomizes [RCV], [STR] and [DEX] orbs into either [STR] or [QCK] orbs
+  cooldown: 12
+  maxLevel: 5

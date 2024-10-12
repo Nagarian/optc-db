@@ -1,0 +1,60 @@
+type: INT
+name: Hody Jones - New Fish-Man Pirates Executive
+japanName: ホーディ・ジョーンズ 新魚人海賊団船長
+family:
+  - HodyJones
+class:
+  - Powerhouse
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 700
+    atk: 240
+    rcv: 10
+  maxLvl:
+    hp: 1976
+    atk: 789
+    rcv: 95
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 50143
+aliases:
+  - V1 Legend Hody
+evolution:
+  - id: 1434
+    evolvers:
+      - 118
+      - 266
+      - 267
+      - 99
+      - 304
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Powerhouse characters by 1 turn at the
+    start of the fight, reduces crew's current HP by 10% at the end of each
+    turn, boosts ATK of Powerhouse characters by 3x if there are 6 Powerhouse
+    characters in your crew and boosts HP of Powerhouse characters by 1.1x-2x
+    depending on how many Powerhouse characters are in your crew.
+  notes: Hody's HP boost is dependent on how many Powerhouse characters are in
+    your crew. With 6 Powerhouse characters, the boost is 2x, with 5 the boost
+    is 1.5x, with 4 the boost is 1.4x, with 3 the boost is 1.3x, with 2 the
+    boost is 1.2x and with 1 the boost is 1.1x.
+special:
+  name: Water Bullets
+  description: Deals 60x character's ATK in [INT] True damage to one enemy,
+    reduces Special Cooldown of Powerhouse characters by 2 turns, reduces damage
+    received by 90% for 1 turn
+  cooldown: 22
+  maxLevel: 6
+  stages:
+    - description: Deals 10x character's ATK in [INT] True damage to one enemy,
+        reduces Special Cooldown of Powerhouse characters by 1 turn, reduces
+        damage received by 60% for 1 turn
+      cooldown: 12

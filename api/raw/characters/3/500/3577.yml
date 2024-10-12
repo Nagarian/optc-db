@@ -1,0 +1,205 @@
+type: QCK
+name: Robin - Emperor-Felling Flower
+japanName: ロビン 四皇転がす花
+family:
+  - NicoRobin
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1614
+    atk: 712
+    rcv: 119
+  maxLvl:
+    hp: 3228
+    atk: 1424
+    rcv: 238
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 2.75x, their
+    RCV by 1.3x and recovers 2x character's RCV in HP at the end of each turn.
+special:
+  name: Mil Fleurs Delphinium
+  description: Reduces Special Cooldown of Fighter and Free Spirit characters by 1
+    turn, reduces Bind and Silence duration by 5 turns, changes [BLOCK] orbs
+    into Matching orbs, reduces damage received by 80% for 1 turn and boosts
+    Color Affinity of Fighter and Free Spirit characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Franky, Jinbe and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [QCK] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [QCK] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [QCK] orb and recovers
+      500 HP.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [QCK] orb and recovers
+      1,000 HP.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [QCK] orb and recovers
+      1,500 HP.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 20
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - hp: 40
+    - atk: 30
+    - slot: 1
+    - hp: 30
+    - hp: 50
+    - rcv: 50
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 110
+    rumbleType: RCV
+    spd: 136
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          effect: buff
+          condition:
+            count: 5
+            type: crew
+            comparator: less
+            team: crew
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 3
+          effect: recharge
+          targeting:
+            targets:
+              - QCK
+          type: RCV
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.1
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.2
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.3
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.4
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.5
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.7
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3.8
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 4

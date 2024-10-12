@@ -1,0 +1,218 @@
+type: QCK
+name: Ryuma - Resurrected Samurai of Wano
+japanName: リューマ 蘇るワノ国の侍
+family:
+  - ShimotsukiRyuma
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1294
+    atk: 689
+    rcv: 132
+  maxLvl:
+    hp: 2587
+    atk: 1377
+    rcv: 263
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 287148
+aliases:
+  - Rumble Ryuma
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x.
+special:
+  name: Gavotte Bond en Avant Pierce
+  description: Reduces enemies' Threshold Damage Reduction and Resilience duration
+    by 3 turns, makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for
+    all characters for 1 turn and boosts the Color Affinity of all characters by
+    1.75x for 1 turn.
+  cooldown: 16
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: When any other [QCK] character uses a special, reduces special
+      cooldown of this character by 2 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Slasher characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - rcv: 100
+    - atk: 100
+    - captain:
+        description: Boosts ATK of [QCK] characters by 3x and their HP by 1.2x.
+    - type: potential
+    - cooldown: 3
+    - atk: 100
+    - hp: 400
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Cooldown Reduction
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 6
+rumble:
+  stats:
+    def: 123
+    rumbleType: ATK
+    spd: 198
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 500
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 0.1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 550
+        - override:
+            amount: 0.2
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 600
+        - override:
+            amount: 0.3
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 650
+        - override:
+            amount: 0.4
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 700
+        - override:
+            amount: 0.5
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 750
+        - override:
+            amount: 0.6
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 800
+        - override:
+            amount: 0.7
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 850
+        - override:
+            amount: 0.8
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 900
+        - override:
+            amount: 0.9
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            amount: 1

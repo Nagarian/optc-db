@@ -1,0 +1,51 @@
+type: PSY
+name: Ship Cutter T-Bone - Marine Captain
+japanName: 船斬りTボーン 海軍本部大佐
+family:
+  - TBone
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 900
+    atk: 493
+    rcv: 133
+  maxLvl:
+    hp: 1700
+    atk: 1100
+    rcv: 300
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 16375
+aliases:
+  - TBone
+  - T Bone
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.75x, recovers 1.5x
+    character's RCV in HP at the end of each turn
+special:
+  name: "Right Angle Flying Bird: Bone Phoenix"
+  description: Reduces crew's current HP by 80%, deals 5x the amount of HP
+    subtracted in Typeless damage to all enemies, reduces damage received by 90%
+    for 1 turn
+  cooldown: 25
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Sengoku
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

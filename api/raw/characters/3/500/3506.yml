@@ -1,0 +1,342 @@
+type: QCK
+name: Hyogoro the Flower
+japanName: 花のヒョウ五郎
+family:
+  - Hyogoro
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1206
+    atk: 575
+    rcv: 107
+  maxLvl:
+    hp: 3016
+    atk: 1438
+    rcv: 268
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 311549
+aliases:
+  - Grandpa
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [QCK] and [PSY] characters by 2.25x and their
+    HP by 1.1x.
+special:
+  name: Relaxation Room
+  description: Reduces enemies' Increased Defense duration by 6 turns, reduces
+    Special Cooldown of all characters by 1 turn, recovers 10,000 HP and changes
+    all orbs, including [BLOCK] orbs, of top and bottom row characters into
+    Matching orbs. If your Captain is a [STR], [QCK] or [PSY] character, if your
+    crew has Color Affinity, increases duration of any Color Affinity buffs by 1
+    turn, boosts the Color Affinity of [STR], [QCK] and [PSY] characters by 2x
+    for 1 turn otherwise. If your Captain is a [DEX] or [INT] character, if your
+    crew has Base ATK Boost, increases duration of any Base ATK Boost buffs by 1
+    turn, boosts base ATK of [DEX] and [INT] characters by 800 for 1 turn
+    otherwise.
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this
+      character.
+  - description: Boosts this character's damage against [DEX] characters by 2x.
+support:
+  type: descriptive
+  criteria: Kozuki Oden
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Increased Defense duration by 2 turns.
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 5
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of [STR], [QCK] and [PSY] characters by 2.5x and their
+          HP by 1.1x.
+    - type: sailor
+    - hp: 10
+    - atk: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of [STR], [QCK] and [PSY] characters by 2.75x and their
+          HP by 1.1x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 20
+    - atk: 30
+    - hp: 20
+    - captain:
+        description: Boosts ATK of [STR], [QCK] and [PSY] characters by 3x and their HP
+          by 1.15x.
+    - cooldown: 2
+    - rcv: 30
+    - hp: 30
+    - hp: 40
+    - cooldown: 3
+    - slot: 1
+    - hp: 50
+    - atk: 40
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of [STR], [QCK] and [PSY] characters by 3.25x and their
+          HP by 1.15x.
+    - rcv: 30
+    - rcv: 40
+    - type: sailor
+    - atk: 50
+    - atk: 50
+    - hp: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of [STR], [QCK] and [PSY] characters by 3.5x and their
+          HP by 1.15x.
+    - hp: 70
+    - hp: 80
+    - captain:
+        description: Boosts ATK of [STR], [QCK] and [PSY] characters by 3.75x and their
+          HP by 1.25x.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - value: 7
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 153
+    rumbleType: SPT
+    spd: 167
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          effect: debuff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - SPD
+          effect: buff
+          duration: 1
+          level: 1
+          targeting:
+            count: 3
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          effect: buff
+          duration: 6
+          level: 1
+          targeting:
+            count: 3
+            targets:
+              - QCK
+        - attributes:
+            - ATK
+          effect: debuff
+          duration: 6
+          level: 2
+          targeting:
+            count: 3
+            targets:
+              - STR
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 13
+        - override:
+            level: 2
+            duration: 8
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            level: 2
+            duration: 9
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 3
+            duration: 10
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+            duration: 16
+        - override:
+            level: 3
+            duration: 11
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+            duration: 17
+        - override:
+            level: 4
+            duration: 12
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+            duration: 18
+        - override:
+            level: 4
+            duration: 13
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+            duration: 19
+        - override:
+            level: 5
+            duration: 14
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 28
+      effects:
+        - override:
+            level: 7
+            duration: 20
+        - override:
+            level: 6
+            duration: 15
+        - override:
+            level: 6
+            duration: 15

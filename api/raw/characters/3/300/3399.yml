@@ -1,0 +1,295 @@
+type: INT
+name: Buggy's Delivery
+japanName: バギーズデリバリー
+family:
+  - Alvida
+  - Mohji
+  - Richie
+  - Cabaji
+  - Buggy
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1244
+    atk: 596
+    rcv: 194
+  maxLvl:
+    hp: 2488
+    atk: 1192
+    rcv: 388
+cost: 50
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 288065
+aliases:
+  - Baggy Crew
+  - Buggy Crew
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Cost 50 or 30 or less characters by 3x, boosts
+    their HP by 1.2x and gives chance of duplicating a drop upon completion of
+    the island.
+special:
+  name: Those Crossing A Thousand Seas
+  description: Reduces Bind, Despair, Paralysis, Silence and ATK DOWN duration by
+    2 turns, changes [BLOCK], [BOMB], [RCV] and [TND] orbs into Matching orbs
+    and boosts Orb Effects of all characters by 2x for 1 turn.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 40
+    - hp: 10
+    - rcv: 20
+    - atk: 50
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - rcv: 30
+    - atk: 65
+    - cooldown: 1
+    - hp: 40
+    - rcv: 40
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - atk: 70
+    - hp: 50
+    - hp: 60
+    - rcv: 50
+    - cooldown: 1
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 145
+    rumbleType: DBF
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 250
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+          duration: 11
+        - attributes:
+            - Action Bind
+          chance: 20
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - attributes:
+            - Paralysis
+          chance: 20
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - attributes:
+            - Silence
+          chance: 20
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            chance: 23
+        - override:
+            chance: 23
+        - override:
+            chance: 23
+    - cooldown: 28
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            chance: 26
+        - override:
+            chance: 26
+        - override:
+            chance: 26
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            chance: 29
+        - override:
+            chance: 29
+        - override:
+            chance: 29
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            chance: 32
+        - override:
+            chance: 32
+        - override:
+            chance: 32
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            chance: 35
+        - override:
+            chance: 35
+        - override:
+            chance: 35
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            chance: 38
+        - override:
+            chance: 38
+        - override:
+            chance: 38
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            chance: 41
+        - override:
+            chance: 41
+        - override:
+            chance: 41
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            chance: 44
+        - override:
+            chance: 44
+        - override:
+            chance: 44
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            chance: 50
+        - override:
+            chance: 50
+        - override:
+            chance: 50

@@ -1,0 +1,546 @@
+type: QCK
+name: Marco - Whitebeard 1st Div. Commander
+japanName: マルコ 白ひげ海賊団１番隊隊長
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 455
+    atk: 268
+    rcv: 177
+  maxLvl:
+    hp: 1612
+    atk: 777
+    rcv: 303
+cost: 30
+slots: 4
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 14400
+aliases:
+  - LMarco
+  - QMarco
+  - V1 Legend Marco
+evolution:
+  - id: 649
+    evolvers:
+      - 118
+      - 85
+      - 266
+      - 301
+      - 267
+captain:
+  name: ""
+  description: Reduces damage received by 30% if HP is above 70% at the start of
+    the turn, boosts ATK of [QCK] and [PSY] characters by 2.75x if HP is above
+    70% at the start the turn
+special:
+  name: Blue Flame Kick
+  description: Recovers 100x character's RCV in HP, boosts Orb Effects of all
+    characters by 1.5x for 2 turns
+  cooldown: 25
+  maxLevel: 8
+rumble:
+  stats:
+    def: 141
+    rumbleType: DEF
+    spd: 139
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - Guard
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - Guard
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - Guard
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - Guard
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+              - PSY
+        - attributes:
+            - ATK
+          condition:
+            comparator: above
+            count: 50
+            stat: HP
+            type: stat
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 0.45
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.3
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.48
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.41
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.51
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.53
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.62
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.56
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.73
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.59
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.84
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.61
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 1.94
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.64
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 2.05
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.67
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 2.16
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+    - cooldown: 23
+      effects:
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 5
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 2.35
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: RCV
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,317 @@
+type: INT
+name: Jack - Animal Kingdom Pirates, Lead Performer
+japanName: ジャック 百獣海賊団大看板
+family:
+  - Jack
+class:
+  - Powerhouse
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 615
+    atk: 385
+    rcv: 36
+  maxLvl:
+    hp: 1367
+    atk: 856
+    rcv: 81
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 234488
+aliases:
+  - ""
+evolution:
+  - id: 3141
+    evolvers:
+      - 1180
+      - 93
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x and reduces damage received by 10%.
+special:
+  name: Double Drought Strike
+  description: Deals 200,000 Fixed damage to one enemy, reduces Bind and ATK Down
+    duration by 5 turns and boosts Orb Effects of all characters by 2x for 1
+    turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of Powerhouse characters by 50
+rumble:
+  stats:
+    def: 150
+    rumbleType: ATK
+    spd: 144
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - STR
+              - PSY
+              - INT
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies

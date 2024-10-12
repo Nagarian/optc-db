@@ -1,0 +1,156 @@
+type: DUAL
+oldDbId: 2919
+name: Sanji & Pudding - Royal Matrimony
+japanName: サンジ＆プリン ロイヤルウェディング
+family:
+  - VinsmokeSanji
+  - CharlottePudding
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1158
+    atk: 604
+    rcv: 160
+  maxLvl:
+    hp: 2887
+    atk: 1458
+    rcv: 380
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - gloex
+links:
+  gamewithId: 197087
+aliases:
+  - Sanji&Pudding
+  - Pudding&Sanji
+  - SanjiPudding
+  - PuddingSanji
+  - Secret Limited Sanji and Pudding
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of [STR], [DEX] and [QCK] characters by 3.25x, their RCV
+    by 1.5x, boosts chances of getting [RCV] orbs and makes [RCV] orbs
+    beneficial for all characters.  
+
+    **Boosted Ability:** Boosts ATK of [STR], [DEX] and [QCK] characters by 4.25x, their RCV by 1.75x, boosts chances of getting [RCV] orbs and makes [RCV] orbs beneficial for all characters.
+special:
+  name: Wedding Vows
+  description: Changes orbs of adjacent characters into [RCV] orbs, reduces any
+    damage received above 3,000 HP by 97% for 2 turns, reduces enemies'
+    Threshold Damage Reduction duration by 5 turns, boosts the Color Affinity of
+    [STR], [DEX] and [QCK] characters by 1.75x for 2 turns and becomes Sanji &
+    Pudding for 2 turns.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of top row characters by 60
+  - description: Makes [RCV] orbs beneficial for all characters
+characters:
+  swap:
+    description: Randomizes [PSY] and [INT] orbs of [STR], [DEX] and [QCK]
+      characters into either [RCV], [TND], [STR], [DEX] or [QCK] orbs
+  character1:
+    name: Sanji - Royal Matrimony
+    japanName: サンジ ロイヤルウェディング
+    class:
+      - Powerhouse
+      - Fighter
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1106
+        atk: 586
+        rcv: 120
+      maxLvl:
+        hp: 2765
+        atk: 1410
+        rcv: 300
+    captain:
+      name: ""
+      description: Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x, their RCV
+        by 1.2x and boosts chances of getting [RCV] orbs
+    sailor:
+      - description: Makes [RCV] orbs beneficial for all characters
+  character2:
+    name: Pudding - Royal Matrimony
+    japanName: プリン ロイヤルウェディング
+    class:
+      - Shooter
+      - Cerebral
+    type: QCK
+    stats:
+      combo: 6
+      minLvl:
+        hp: 1078
+        atk: 570
+        rcv: 152
+      maxLvl:
+        hp: 2694
+        atk: 1389
+        rcv: 358
+    captain:
+      name: ""
+      description: Boosts ATK of [STR], [DEX] and [QCK] characters by 2.5x, their RCV
+        by 1.2x and makes [RCV] orbs beneficial for all characters
+    sailor:
+      - description: Makes [RCV] orbs beneficial for all characters
+limitBreak:
+  path:
+    - rcv: 15
+    - rcv: 15
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - hp: 40
+    - hp: 70
+    - type: sailor
+    - hp: 100
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - rcv: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

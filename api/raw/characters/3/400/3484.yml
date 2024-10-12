@@ -1,0 +1,102 @@
+type: QCK
+name: Rob Lucci - Six Powers Taken to the Extreme
+japanName: ロブ・ルッチ 「六式」の極限
+family:
+  - RobLucci
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1632
+    atk: 726
+    rcv: 86
+  maxLvl:
+    hp: 3264
+    atk: 1452
+    rcv: 172
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 305253
+aliases:
+  - Secret Limited Lucci
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Cerebral and Powerhouse characters by 2.5x, by
+    3x instead if they have a beneficial orb, and makes [QCK] orbs beneficial
+    for Cerebral and Powerhouse characters.
+special:
+  name: "Eliminate Evil: Six King Gun"
+  description: Deals 50x character's ATK in Typeless Fixed True damage to all
+    enemies, reduces Burn and ATK DOWN duration by 5 turns and boosts Orb
+    Effects of Cerebral and Powerhouse characters by 2.25x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Cerebral and Powerhouse characters by 50
+  - description: Makes [QCK] orbs beneficial for Cerebral and Powerhouse characters
+support:
+  type: descriptive
+  criteria: Kalifa, Kaku, Blueno, Jabra, Kumadori and Fukuro
+  levels:
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, reduces Burn
+      duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn or ATK DOWN,
+      reduces Burn and ATK DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn or ATK DOWN,
+      reduces Burn and ATK DOWN duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 10
+    - atk: 10
+    - hp: 20
+    - type: potential
+    - atk: 30
+    - hp: 20
+    - atk: 30
+    - slot: 1
+    - rcv: 50
+    - atk: 40
+    - atk: 40
+    - type: sailor
+    - hp: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

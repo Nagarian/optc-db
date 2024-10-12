@@ -1,0 +1,104 @@
+type: STR
+name: Dogstorm - Reunion Duel
+japanName: イヌアラシ 再会の一騎打ち
+family:
+  - Inuarashi
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1339
+    atk: 543
+    rcv: 89
+  maxLvl:
+    hp: 3342
+    atk: 1342
+    rcv: 203
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 194017
+aliases:
+  - Coliseum Inuarashi
+  - Coliseum Dogstorm
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2.5x. If HP is below
+    50% at the start of the turn Boosts Chain Multiplier Growth Rate by 1.5x
+special:
+  name: Single-Legged King Sword
+  description: Deals 10% of enemies' current HP in damage to one enemy, reduces
+    Despair and Chain Coefficient Reduction duration by 5 turns, reduces
+    enemies' Threshold Damage Reduction duration by 5 turns and boosts ATK of
+    [STR] and [PSY] characters by 2x for 1 turn.
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of this character by 100 if this character is the
+      last in the chain to attack
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kin'emon, Kozuki Momonosuke, Kurozumi Kanjuro and Raizo
+  levels:
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 30
+    - rcv: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - hp: 40
+    - rcv: 40
+    - type: sailor
+    - atk: 40
+    - hp: 40
+    - type: potential
+    - hp: 60
+    - rcv: 45
+    - atk: 80
+    - hp: 60
+    - cooldown: 1
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80

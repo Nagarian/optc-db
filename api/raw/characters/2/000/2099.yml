@@ -1,0 +1,168 @@
+type: QCK
+name: Golden Tesoro
+japanName: ゴールデンテゾーロ
+family:
+  - GildTesoro
+class:
+  - Driven
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1542
+    atk: 672
+    rcv: 169
+  maxLvl:
+    hp: 3297
+    atk: 1528
+    rcv: 341
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 105086
+aliases:
+  - V2 Legend Gild Tesoro
+captain:
+  name: ""
+  description: If you have a Striker, Shooter, Fighter, Slasher, Free Spirit,
+    Cerebral, Powerhouse and Driven character on your crew, boosts ATK of all
+    characters by 3.75x, their HP by 1.35x and boosts chances of getting
+    Matching orbs. Boosts ATK of all characters by 4.5 after scoring 4 GREATs in
+    a row. Scoring a PERFECT reduces ATK boost for the next attack by 30%.
+  notes: Scoring a PERFECT will reduce the ATK boost for the next character in the
+    chain, boosting ATK by 2.625x at the start of the chain, by 3.15x after
+    scoring 4 GREATs in a row, not for the rest of the battle.
+special:
+  name: Gon Inferno
+  description: Deals 200,000 Fixed damage to all enemies, changes all orbs of top
+    and bottom row characters into Matching orbs and locks the chain multiplier
+    at 3.25x for 1 turn.
+  cooldown: 16
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of Driven and Striker characters by 50
+  - description: Makes [STR], [DEX], [RCV], [TND] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Baccarat, Dice and Tanaka
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.6x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.7x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 2.8x for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the chain multiplier at 3x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - atk: 10
+    - atk: 10
+    - atk: 15
+    - rcv: 15
+    - type: sailor
+    - hp: 75
+    - atk: 15
+    - type: potential
+    - rcv: 15
+    - type: sailor
+    - hp: 75
+    - atk: 20
+    - cooldown: 1
+    - rcv: 20
+    - hp: 100
+    - atk: 25
+    - cooldown: 1
+    - rcv: 20
+    - hp: 100
+    - atk: 25
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts ATK of all characters by 3.75x, their HP by 1.35x and boosts
+          chances of getting Matching orbs. Boosts ATK of all characters by 4.75
+          after scoring 4 GREATs in a row. Scoring a PERFECT reduces ATK boost
+          for the next attack by 30%.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+levelLimitBreak:
+  - {}
+  - {}
+  - captain:
+      - description: Boosts amount of Beli received by 2x. If you have a Striker,
+          Shooter, Fighter, Slasher, Free Spirit, Cerebral, Powerhouse and
+          Driven character on your crew, boosts ATK of all characters by 4.75x
+          at the start of the chain, boosts HP of all characters by 1.35x,
+          boosts chances of getting Matching orbs, boosts ATK of all characters
+          by 5.5 after scoring 4 GREATs in a row and scoring a PERFECT reduces
+          ATK boost for the next attack by 40%.
+      - description: Boosts amount of Beli received by 2.5x. Boosts ATK of all
+          characters by 5x, their HP by 1.35x and boosts chances of getting
+          Matching orbs, boosts ATK of all characters by 5.5x after scoring 4
+          GREATs in a row and scoring a PERFECT reduces ATK boost for the next
+          attack by 40%. If you have a Striker, Shooter, Fighter, Slasher, Free
+          Spirit, Cerebral, Powerhouse and Driven character on your crew,
+          reduces Silence duration by 5 turns and restores Special Cooldown of
+          all characters by 5 turns when they are rewinded.
+  - {}
+  - special:
+      description: Deals 500,000 Fixed damage to all enemies, changes all orbs of top
+        and bottom row characters into Matching orbs, barriers top and bottom
+        character's orbs for 1 PERFECT hit and locks the chain multiplier at
+        3.5x for 1 turn. If during that turn you score 4 GREAT hits, locks the
+        chain multiplier at 4x for 1 turn.
+    sailor:
+      sailor1:
+        description: Boosts base ATK and HP of Driven and Striker characters by 100.
+      sailor2:
+        description: Makes [STR], [DEX], [QCK], [PSY], [INT], [RCV] and [TND] orbs
+          beneficial for this character.

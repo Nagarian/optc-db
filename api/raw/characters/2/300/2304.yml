@@ -1,0 +1,107 @@
+type: PSY
+name: Charlotte Chiffon - Collaborator in the Emperor Assassination Plan
+japanName: シャーロット・シフォン 「四皇暗殺作戦」連合軍
+family:
+  - CharlotteChiffon
+class:
+  - Shooter
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 967
+    atk: 847
+    rcv: 98
+  maxLvl:
+    hp: 2120
+    atk: 1211
+    rcv: 443
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 125106
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x and reduces damage received by
+    80% if HP is above 99% at the start of the turn
+special:
+  name: A Speech from a Fool
+  description: Reduces Paralysis, Despair and Silence and ATK DOWN duration by 3
+    turns, recovers 10x character's RCV in HP at the end of each turn for 3
+    turns and if your crew has Threshold Damage Reduction, Percent Damage
+    Reduction or Resilience, recovers all missing HP
+  cooldown: 23
+  maxLevel: 7
+  stages:
+    - description: Reduces Paralysis, Despair and Silence and ATK DOWN duration by 1
+        turn and recovers 3x character's RCV in HP at the end of each turn for 3
+        turns
+      cooldown: 16
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: When HP is above 99% at the start of the turn, boosts base ATK of
+      Shooter characters by 75
+support:
+  type: descriptive
+  criteria: Capone Bege
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      recovers 5% of crew's MAX HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 10% of crew's MAX HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 15% of crew's MAX HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 20% of crew's MAX HP.
+    - Once per adventure, when the supported character uses their special,
+      recovers 20% of crew's MAX HP and changes orb of the supported character
+      into a Matching orb.
+limitBreak:
+  path:
+    - rcv: 5
+    - hp: 20
+    - rcv: 15
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - hp: 30
+    - atk: 50
+    - hp: 50
+    - slot: 1
+    - cooldown: 1
+    - type: sailor
+    - rcv: 30
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

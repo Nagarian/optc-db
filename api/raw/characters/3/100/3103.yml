@@ -1,0 +1,359 @@
+type: INT
+name: "Hancock: Midnight Party - Happy Spooky Halloween!"
+japanName: ハンコック　ミッドナイトパーティ Happy Scary Halloween
+family:
+  - BoaHancock
+class:
+  - Cerebral
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 530
+    atk: 391
+    rcv: 45
+  maxLvl:
+    hp: 1178
+    atk: 869
+    rcv: 100
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 229952
+aliases:
+  - Halloween Hancock
+  - Halloween Boa Hancock
+evolution:
+  - id: 3104
+    evolvers:
+      - 117
+      - 82
+      - 83
+      - 88
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x and their RCV by 1.2x.
+special:
+  name: Beautiful Shining Appearance in the Night
+  description: Reduces Bind duration by 5 turns, reduces enemies' Threshold Damage
+    Reduction and Resilience duration by 5 turns and makes [STR], [DEX] and
+    [QCK] orbs beneficial for all characters for 3 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of [INT] characters by 50
+rumble:
+  stats:
+    def: 143
+    rumbleType: SPT
+    spd: 147
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+            - DEF
+          condition:
+            count: 1
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+            - DEF
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+            - DEF
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+            - DEF
+          condition:
+            count: 3
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+            - DEF
+          condition:
+            count: 3
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - amount: 1.55
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.6
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+        - amount: 1.65
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - amount: 1.7
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+        - amount: 1.75
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - amount: 1.8
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+        - amount: 1.85
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - amount: 1.9
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+        - amount: 2
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk

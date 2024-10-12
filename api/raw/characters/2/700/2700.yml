@@ -1,0 +1,133 @@
+type: DEX
+name: Kaido - The Strongest Creature Alive
+japanName: カイドウ 最強の生物
+family:
+  - Kaido
+class:
+  - Powerhouse
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2176
+    atk: 975
+    rcv: 48
+  maxLvl:
+    hp: 4457
+    atk: 1656
+    rcv: 105
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 168818
+aliases:
+  - Lazy Mode
+  - V1 Legend Kaido
+captain:
+  name: ""
+  description: Reduces Special Cooldown of Striker and Powerhouse characters by 2
+    turns at the start of the fight boosts ATK of Striker and Powerhouse
+    characters by 4x, their HP by 1.25x, and deals 400x character's ATK in [DEX]
+    damage to all enemies at the end of each turn. At the start of the fight,
+    this character activates their own special.
+  notes: Preemptive Special Activation will not reset the special cooldown.
+special:
+  name: Boro Breath
+  description: Deals 20% of enemies' current HP in damage to all enemies and deals
+    400x character's ATK in [DEX] damage to all enemies at the end of each turn
+    for 99+ turns. Applies a Continuous Effect that deals 20% of enemies'
+    current HP in damage to all enemies at the start of every stage for 99+
+    turns.
+  cooldown: 22
+  maxLevel: 6
+  notes: The continuous special effect that triggers at the start of each stage
+    will not stack with other continuous special effects.
+sailor:
+  - description: Boosts base ATK, HP and RCV of Powerhouse and Striker characters by 75
+  - description: Cannot be Blown Away
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Jack, Holdem and Speed
+  levels:
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 15
+    - value: 18
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - hp: 10
+    - hp: 10
+    - hp: 20
+    - atk: 10
+    - atk: 15
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - atk: 25
+    - type: potential
+    - rcv: 15
+    - hp: 30
+    - atk: 30
+    - hp: 30
+    - hp: 30
+    - cooldown: 1
+    - atk: 30
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - cooldown: 2
+    - hp: 150
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 6
+        - value: 7
+        - value: 100

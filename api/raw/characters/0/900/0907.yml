@@ -1,0 +1,48 @@
+type: INT
+name: Nico Robin - Tequila Wolf Prisoner
+japanName: ニコ・ロビン テキーラウルフの収監者
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 131
+    atk: 91
+    rcv: 43
+  maxLvl:
+    hp: 1021
+    atk: 679
+    rcv: 217
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 23380
+aliases:
+  - 3D2Y Robin
+  - Timeskip Robin
+evolution:
+  - id: 908
+    evolvers:
+      - 88
+      - 266
+      - 94
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Cerebral characters by 1.5x if HP is below
+    30% at the start of the turn
+special:
+  name: "Cien Fleur: Big Tree"
+  description: Delays all enemies by 1 turn, locks all orbs for 1 turn, deals
+    5,000 Fixed damage to all enemies, reduces crew's current HP to 1
+  cooldown: 15
+  maxLevel: 7

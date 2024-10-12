@@ -1,0 +1,47 @@
+type: QCK
+name: Sanji
+frenchName: Sanji
+japanName: サンジ
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 136
+    atk: 64
+    rcv: 17
+  maxLvl:
+    hp: 506
+    atk: 218
+    rcv: 60
+cost: 4
+slots: 0
+maxExp: 26184
+maxLevel: 20
+flags:
+  - sugo
+  - fortnight
+links:
+  gamewithId: 2018
+aliases: []
+evolution:
+  - id: 18
+    evolvers:
+      - 115
+      - 79
+  - id: 19
+    evolvers:
+      - 116
+      - 79
+      - 96
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 1.5x
+special:
+  name: Special Fried Rice
+  description: Recovers 10x character's RCV in HP
+  cooldown: 23
+  maxLevel: 9

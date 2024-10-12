@@ -1,0 +1,51 @@
+type: STR
+name: Ms. Valentine - Officer Agent, Baroque Works
+japanName: ミス・バレンタイン Ｂ・Ｗオフィサーエージェント
+family:
+  - Mikita
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 687
+    atk: 319
+    rcv: 90
+  maxLvl:
+    hp: 1402
+    atk: 774
+    rcv: 250
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 50811
+aliases:
+  - Colo Miss Valentine
+  - Coliseum Miss Valentine
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.14x following a chain of Good >
+    Good > Great > PERFECT hits
+special:
+  name: Crescendo Stone
+  description: Binds self for 2 turns, makes [BOMB] orbs beneficial for all
+    characters for 1 turn and boosts ATK against enemies with reduced defense by
+    1.5x for 1 turn.
+  cooldown: 22
+  maxLevel: 12
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Crocodile (Mr. 0) and Gem (Mr. 5)
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 9
+    - value: 13

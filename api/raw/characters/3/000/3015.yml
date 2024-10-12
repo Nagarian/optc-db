@@ -1,0 +1,116 @@
+type: QCK
+name: Emporio Ivankov - Miraculous Engineer of the Human Body
+japanName: エンポリオ・イワンコフ 奇跡の人体エンジニア
+family:
+  - EmporioIvankov
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1119
+    atk: 759
+    rcv: 188
+  maxLvl:
+    hp: 2524
+    atk: 1339
+    rcv: 333
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 211230
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 2.5x and recovers 1,000
+    HP at the end of each turn.
+special:
+  name: Emporio Energy Hormones
+  description: Reduces crew's current HP by 1%, boosts ATK of [QCK] and [INT]
+    characters by 1.75x for 3 turns and boosts the Color Affinity of [QCK] and
+    [INT] characters by 1.75x for 3 turns. After 3 turns, reduces ATK of all
+    characters by 50% for 10 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of [QCK] characters by 50
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  defenseType: STR
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Monkey D. Luffy and Bentham (Mr. 2 Bon Clay)
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - hp: 50
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - rcv: 30
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - hp: 70
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

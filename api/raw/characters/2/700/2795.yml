@@ -1,0 +1,273 @@
+type: DUAL
+name: Coby & Helmeppo - Shining Rookies of Navy HQ
+japanName: コビー＆ヘルメッポ 海軍本部期待の若手達
+family:
+  - Coby
+  - Helmeppo
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1216
+    atk: 792
+    rcv: 157
+  maxLvl:
+    hp: 2621
+    atk: 1484
+    rcv: 312
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 180202
+aliases:
+  - Coby&Helmeppo
+  - Helmeppo&Coby
+  - CobyHelmeppo
+  - HelmeppoCoby
+  - Raid Coby and Helmeppo
+  - Cobymeppo
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [INT] characters by 3x and makes [PSY] and
+    [INT] orbs beneficial for all characters. Boosts ATK of all characters by an
+    additional 1.2x after 4 PERFECTs in a row.
+special:
+  name: Cooperative Attack of Garp's Training
+  description: Reduces enemies' Threshold Damage Reduction duration by 4 turns,
+    deals 10% of enemies' current HP in damage to all enemies and becomes Coby &
+    Helmeppo for 2 turns. If your crew has 5 or more [PSY] or [INT] characters,
+    boosts ATK of [PSY] and [INT] characters by 2x for 1 turn, by 1.75x for 1
+    turn otherwise.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts base RCV of [PSY] and [INT] characters by 30
+  - description: Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 50
+characters:
+  swap:
+    description: Reduces Despair duration by 1 turn and changes orb of this
+      character into a Matching orb
+  character1:
+    name: Coby - Shining Rookies of Navy HQ
+    japanName: コビー 海軍本部期待の若手達
+    class:
+      - Free Spirit
+      - Fighter
+    type: PSY
+    stats:
+      combo: 6
+      minLvl:
+        hp: 940
+        atk: 584
+        rcv: 132
+      maxLvl:
+        hp: 2432
+        atk: 1251
+        rcv: 280
+    captain:
+      name: ""
+      description: Boosts ATK of [PSY] characters by 2.5x, boosts ATK of [INT]
+        characters by 2.25x and makes [PSY] orbs beneficial for all characters.
+        Boosts ATK of all characters by an additional 1.2x after 4 PERFECTs in a
+        row.
+    sailor:
+      - description: Boosts base RCV of [PSY] and [INT] characters by 30
+      - description: Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 50
+  character2:
+    name: Helmeppo - Shining Rookies of Navy HQ
+    japanName: ヘルメッポ 海軍本部期待の若手達
+    class:
+      - Slasher
+      - Free Spirit
+    type: INT
+    stats:
+      combo: 6
+      minLvl:
+        hp: 940
+        atk: 634
+        rcv: 104
+      maxLvl:
+        hp: 2432
+        atk: 1297
+        rcv: 235
+    captain:
+      name: ""
+      description: Boosts ATK of [INT] characters by 2.5x, boosts ATK of [PSY]
+        characters by 2.25x and makes [INT] orbs beneficial for all characters.
+        Boosts ATK of all characters by an additional 1.2x after 4 PERFECTs in a
+        row.
+    sailor:
+      - description: Boosts base RCV of [PSY] and [INT] characters by 30
+      - description: Boosts base ATK, HP and RCV of [PSY] and [INT] characters by 50
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 20
+    - hp: 50
+    - type: potential
+    - hp: 60
+    - atk: 30
+    - rcv: 50
+    - type: sailor
+    - slot: 1
+    - atk: 40
+    - hp: 80
+    - slot: 1
+    - cooldown: 1
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 137
+    rumbleType: ATK
+    spd: 197
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          effect: debuff
+          duration: 15
+          level: 1
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Guard
+          effect: debuff
+          duration: 15
+          level: 1
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.45
+          effect: damage
+          type: atk
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - {}
+        - {}
+        - override:
+            amount: 0.5
+    - cooldown: 26
+      effects:
+        - {}
+        - {}
+        - override:
+            amount: 0.55
+    - cooldown: 26
+      effects:
+        - {}
+        - {}
+        - override:
+            amount: 0.6
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 2
+        - override:
+            amount: 0.65
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 2
+        - override:
+            amount: 0.7
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 2
+        - override:
+            amount: 0.75
+    - cooldown: 26
+      effects:
+        - {}
+        - override:
+            level: 2
+        - override:
+            amount: 0.8
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+        - override:
+            amount: 0.85
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+        - override:
+            level: 4
+        - override:
+            amount: 0.95

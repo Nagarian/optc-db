@@ -1,0 +1,84 @@
+type: STR
+name: Hack - Revolutionary Army
+japanName: ハック 革命軍
+family:
+  - Hack
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1185
+    atk: 668
+    rcv: 115
+  maxLvl:
+    hp: 2387
+    atk: 1324
+    rcv: 259
+cost: 29
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 15189
+aliases: []
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, boosts ATK of Fighter characters by 2x
+special:
+  name: Four Thousand Tile True Punch
+  description: Deals 20% of enemies' current HP in damage to all enemies, changes
+    the orb of this character into a [STR] orb
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts this character's damage against [DEX] characters by 1.1x
+  - description: Boosts this character's damage against [QCK] characters by 2x
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Sabo and Koala
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - atk: 50
+    - slot: 1
+    - type: sailor
+    - hp: 70
+    - atk: 50
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 9
+        - value: 13

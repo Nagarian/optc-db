@@ -1,0 +1,258 @@
+type: DUAL
+name: Kaido & Big Mom - Worst Alliance Ever
+japanName: カイドウ＆ビッグ・マム 史上最悪の同盟
+family:
+  - CharlotteLinlin
+  - Kaido
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1362
+    atk: 721
+    rcv: 122
+  maxLvl:
+    hp: 3269
+    atk: 1602
+    rcv: 271
+cost: 60
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 276899
+aliases:
+  - Kaido&Big Mom
+  - Big Mom&Kaido
+  - KaidoBig Mom
+  - Big MomKaido
+  - Kaido and BM
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 4.25x, their HP
+    by 1.2x and makes [STR] and [DEX] orbs beneficial for [STR], [DEX] and [QCK]
+    characters.
+special:
+  name: Alliance Announcement
+  description: Reduces Bind duration by 7 turns, randomizes all orbs into either
+    [STR] or [DEX] orbs, boosts Orb Effects of [STR], [DEX] and [QCK] characters
+    by 2.25x for 1 turn and becomes Kaido & Big Mom for 2 turns.
+  cooldown: 22
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of all characters by 100
+  - description: Makes [QCK] orbs beneficial for this character
+characters:
+  swap:
+    description: Changes orb of this character into a Matching orb and boosts ATK of
+      this character by 2x for 1 turn
+  character1:
+    name: Kaido - Worst Alliance Ever
+    japanName: カイドウ 史上最悪の同盟
+    class:
+      - Driven
+      - Powerhouse
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1362
+        atk: 721
+        rcv: 122
+      maxLvl:
+        hp: 3269
+        atk: 1602
+        rcv: 271
+    captain:
+      name: ""
+      description: Boosts ATK of [STR], [DEX] and [QCK] characters by 3.5x, their HP
+        by 1.2x and makes [STR] orbs beneficial for [STR], [DEX] and [QCK]
+        characters.
+    sailor:
+      - description: Boosts base ATK of all characters by 50
+      - description: Makes [QCK] orbs beneficial for this character
+  character2:
+    name: Big Mom - Worst Alliance Ever
+    japanName: ビッグ・マム 史上最悪の同盟
+    class:
+      - Driven
+      - Powerhouse
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1362
+        atk: 721
+        rcv: 122
+      maxLvl:
+        hp: 3269
+        atk: 1602
+        rcv: 271
+    captain:
+      name: ""
+      description: Boosts ATK of [STR], [DEX] and [QCK] characters by 3.5x, their HP
+        by 1.2x and makes [DEX] orbs beneficial for [STR], [DEX] and [QCK]
+        characters.
+    sailor:
+      - description: Boosts base ATK of all characters by 50
+      - description: Makes [QCK] orbs beneficial for this character
+limitBreak:
+  path:
+    - rcv: 100
+    - hp: 200
+    - atk: 100
+    - cooldown: 4
+    - type: potential
+    - type: sailor
+    - hp: 400
+    - atk: 200
+    - cooldown: 6
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 177
+    rumbleType: ATK
+    spd: 162
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 1.6
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Driven
+              - Powerhouse
+          duration: 11
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.9
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            level: 5
+            duration: 20

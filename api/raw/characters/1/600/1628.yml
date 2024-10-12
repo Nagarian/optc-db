@@ -1,0 +1,95 @@
+type: DEX
+name: Machvise - Diamante Officer
+japanName: マッハ・バイス ディアマンテ軍幹部
+family:
+  - Machvise
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1310
+    atk: 490
+    rcv: 77
+  maxLvl:
+    hp: 3110
+    atk: 1198
+    rcv: 186
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 59480
+aliases:
+  - Colo Mach Vise
+  - Coliseum Mach Vise
+  - Colo Machvise
+  - Coliseum Machvise
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Striker characters by 2.25x and their
+    RCV by 1.5x
+special:
+  name: Thousand Ton Destruction
+  description: Reduces Chain Multiplier Limit duration by 5 turns and boosts the
+    Color Affinity of Striker characters by 1.75x for 1 turn
+  cooldown: 31
+  maxLevel: 15
+  stages:
+    - description: Reduces Chain Multiplier Limit duration by 1 turn and boosts the
+        Color Affinity of Striker characters by 1.25x for 1 turn
+      cooldown: 23
+    - description: Reduces Chain Multiplier Limit duration by 3 turns and boosts the
+        Color Affinity of Striker characters by 1.5x for 1 turn
+      cooldown: 27
+sailor:
+  - description: Boosts base ATK of Striker characters by 35
+  - description: Makes [STR] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Lao G, Dellinger, Diamante
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 10
+    - cooldown: 1
+    - atk: 40
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - rcv: 10
+    - atk: 80
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

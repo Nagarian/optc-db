@@ -1,0 +1,162 @@
+type: QCK
+name: Okiku
+japanName: お菊
+family:
+  - Kikunojo
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 98
+    atk: 211
+    rcv: 9
+  maxLvl:
+    hp: 946
+    atk: 952
+    rcv: 75
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 177830
+aliases:
+  - Kikunojo
+  - Okikunojo
+evolution:
+  - id: 2778
+    evolvers:
+      - 94
+      - 1180
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.5x
+special:
+  name: Quickdraw Slice
+  description: Deals 50x character's ATK in Typeless True damage to one enemy,
+    locks all orbs for 1 turn, reduces Bind and Despair duration by 2 turns and
+    boosts the Color Affinity of [QCK] and [INT] characters by 1.75x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of all characters by 50
+rumble:
+  stats:
+    def: 88
+    rumbleType: ATK
+    spd: 167
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Guard
+          level: 1
+          effect: buff
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 8
+    - effects:
+        - override:
+            level: 10
+        - override:
+            level: 2
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1100
+          effect: damage
+          type: fixed
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1200
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1300
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1400
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1500
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1600
+        - override:
+            level: 2
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            level: 2
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            level: 2
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1900
+        - override:
+            level: 2
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2100
+        - override:
+            level: 3

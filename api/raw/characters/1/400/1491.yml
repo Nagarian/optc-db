@@ -1,0 +1,52 @@
+type: QCK
+name: Mr. 5 - Officer Agent, Baroque Works
+japanName: Mr.5 Ｂ・Ｗオフィサーエージェント
+family:
+  - Gem
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 733
+    atk: 325
+    rcv: 44
+  maxLvl:
+    hp: 1618
+    atk: 818
+    rcv: 198
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 52210
+aliases:
+  - Colo Mr. 5
+  - Coliseum Mr. 5
+  - Mr 5
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x following a chain of Good > Good
+    > Great hits
+special:
+  name: Explosion Blocking Escape
+  description: Changes orbs of top row characters into a [BOMB] orb, reduces Bind
+    duration by 2 turns and reduces the defense of all enemies by 50% for 1
+    turn.
+  cooldown: 20
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Crocodile (Mr. 0) and Mikita (Miss Valentine)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

@@ -1,0 +1,464 @@
+type: PSY
+name: Kami Eneru - Deity Seeking the World of Dreams
+japanName: ゴッド・エネル “夢の世界”求める神
+family:
+  - Enel
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1061
+    atk: 542
+    rcv: 102
+  maxLvl:
+    hp: 2656
+    atk: 1356
+    rcv: 256
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 218974
+aliases:
+  - PF Enel
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x. If you defeat an enemy,
+    increases ATK boost slightly. Stacks up to 3 times to a maximum of 3.5x.
+special:
+  name: El Thor Brought Down from the Ark
+  description: Changes orbs, including [BLOCK] orbs, of this and adjacent
+    characters into Matching orbs, reduces Chain Multiplier Limit and Burn
+    duration by 5 turns and adds 0.8x to Chain multiplier for 1 turn.
+  cooldown: 17
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [PSY] characters by 30
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[PSY] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 100
+    - hp: 200
+    - captain:
+        description: Boosts ATK of [PSY] characters by 2.5x and deals 10x character's
+          ATK in [PSY] damage to all enemies at the end of each turn. If you
+          defeat an enemy, increases ATK boost slightly. Stacks up to 3 times to
+          a maximum of 3.5x.
+    - type: potential
+    - cooldown: 3
+    - atk: 200
+    - hp: 200
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+rumble:
+  stats:
+    def: 162
+    rumbleType: ATK
+    spd: 210
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 800
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 12
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 870
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 12
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 940
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 13
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 1010
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 14
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 1080
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 15
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 1150
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 16
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 1250
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 17
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 1290
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 18
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 1360
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 19
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - cooldown: 30
+      effects:
+        - amount: 1400
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 30
+          duration: 20
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY

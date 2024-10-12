@@ -1,0 +1,132 @@
+type: DEX
+name: Carrot - Carrot-Carrying Rabbit
+japanName: キャロット 人参を運ぶ兎
+family:
+  - Carrot
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1173
+    atk: 649
+    rcv: 101
+  maxLvl:
+    hp: 2891
+    atk: 1468
+    rcv: 312
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 250059
+aliases:
+  - Limited Carrot
+  - Secret Carrot
+  - Kizuna Carrot
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Fighter and Free Spirit characters by 3x and
+    their HP by 1.2x.
+special:
+  name: Delicious Smile
+  description: Reduces Despair duration by 7 turns, reduces enemies' Percent
+    Damage Reduction duration by 7 turns, changes [BLOCK] and Badly Matching
+    orbs into Matching orbs and locks all orbs for 1 turn. If enemies have Delay
+    Debuff Protection or All Debuff Protection at the time the special was
+    activated, boosts ATK of Fighter and Free Spirit characters by 2.25x for 1
+    turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of Fighter and Free Spirit characters by 75
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 25
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - atk: 25
+    - cooldown: 1
+    - rcv: 25
+    - hp: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 1
+        - value: 200
+          threshold: 3000
+          reduction: 1
+        - value: 300
+          threshold: 3000
+          reduction: 2
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

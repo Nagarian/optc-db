@@ -1,0 +1,46 @@
+type: QCK
+name: Kaku - Dock One Carpentry Specialist
+japanName: カク 1番ドック大工職職長
+family:
+  - Kaku
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1132
+    atk: 552
+    rcv: 98
+  maxLvl:
+    hp: 2517
+    atk: 988
+    rcv: 213
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 6488
+aliases: []
+captain:
+  name: ""
+  description: Boosts HP and RCV of [QCK] characters by 1.5x
+special:
+  name: Mountain Wind
+  description: Boosts Orb Effects of all characters by 1.5x for 2 turns
+  cooldown: 17
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Iceburg, Paulie, Rob Lucci, Kalifa, Tilestone and Peeply Lulu
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10

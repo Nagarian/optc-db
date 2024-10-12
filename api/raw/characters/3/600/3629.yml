@@ -1,0 +1,426 @@
+type: QCK
+name: Trafalgar Law - Heart-Piercing Blade of Death
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1861
+    atk: 819
+    rcv: 155
+  maxLvl:
+    hp: 3723
+    atk: 1638
+    rcv: 310
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Super Tandem Legend
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Free Spirit characters by 5.25x, boosts
+    HP of Cerebral and Free Spirit characters by 1.2x, reduces damage received
+    by 10%, makes [TND] orbs beneficial for Cerebral and Free Spirit characters
+    and reduces Paralysis duration by 10 turns. If this character has a [QCK],
+    [TND] or [WANO] orb and you attack with this character, reduces the defense
+    of all enemies by 100% for 1 turn.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of: Bepo,
+    Shachi, Penguin, Jean Bart or Monkey D. Luffy, excluding Support members or
+    your crew must have ATK UP applied."
+  description: Changes the orb, including [BLOCK] orb, of this character into a
+    [TND] orb, boosts ATK against enemies with reduced defense by 2.25x for 3
+    turns and transforms all Cerebral characters into Super Cerebral characters.
+special:
+  name: Dragon-Piercing Gamma Knife
+  description: Reduces Special Cooldown of all characters by 1 turn, increases
+    Chain Tap Timing Bonus of Cerebral and Free Spirit characters by +0.2x-0.6x
+    for 1 turn depending on Tap Timing, boosts ATK of Cerebral and Free Spirit
+    characters by 2.75x for 1 turn and recovers 50x character's RCV in HP,
+    allowing HP Overfill up to 2x MAX HP. If your crew has ATK UP, boosts Orb
+    Effects of Cerebral and Free Spirit characters by 2.5x for 2 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: If your Captain is a Cerebral or Free Spirit character, recovers
+      500 HP at the end of each turn
+  - description: Boosts base ATK, HP and RCV of Cerebral and Free Spirit characters by 100
+support:
+  type: descriptive
+  criteria: Bepo, Shachi, Penguin, Jean Bart, Monkey D. Luffy and Donquixote
+    Rosinante (Corazon)
+  levels:
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn, changes the orb of the
+      supported character into a Matching orb, and recovers 500 HP.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn, changes the orb of the
+      supported character into a Matching orb, and recovers 800 HP.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn, changes the orb of the
+      supported character into a Matching orb, and recovers 1,200 HP.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn, changes the orb of the
+      supported character into a Matching orb, and recovers 1,500 HP.
+    - Once per adventure, when you reach the final stage, reduces Special
+      Cooldown of supported character by 1 turn, changes the orb of the
+      supported character into a Matching orb, and recovers 2,000 HP.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - hp: 40
+    - atk: 10
+    - hp: 50
+    - atk: 10
+    - atk: 10
+    - type: sailor
+    - hp: 60
+    - atk: 20
+    - atk: 20
+    - hp: 60
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - atk: 20
+    - atk: 20
+    - hp: 70
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - type: sailor
+    - hp: 90
+    - rcv: 30
+    - hp: 100
+    - atk: 30
+    - type: potential
+    - key: 1
+    - rcv: 10
+    - rcv: 15
+    - atk: 100
+    - hp: 100
+    - rcv: 25
+    - hp: 200
+    - hp: 200
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Cerebral characters. Any 1 of the following:
+          Bepo, Shachi, Penguin, Jean Bart, Monkey D. Luffy or Donquixote
+          Rosinante (Corazon)."
+        description: Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.25x
+          for 1 turn and makes [QCK] orbs beneficial for Cerebral and Free
+          Spirit characters for 1 turn.
+      - criteria: "Any 2 of the following: Cerebral characters. Any 1 of the following:
+          Bepo, Shachi, Penguin, Jean Bart, Monkey D. Luffy or Donquixote
+          Rosinante (Corazon)."
+        description: Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.5x
+          for 1 turn and makes [QCK] orbs beneficial for Cerebral and Free
+          Spirit characters for 1 turn.
+      - criteria: "Any 2 of the following: Cerebral characters. Any 1 of the following:
+          Bepo, Shachi, Penguin, Jean Bart, Monkey D. Luffy or Donquixote
+          Rosinante (Corazon)."
+        description: Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.5x
+          for 1 turn and makes [STR], [DEX] and [QCK] orbs beneficial for
+          Cerebral and Free Spirit characters for 1 turn.
+      - criteria: "Any 2 of the following: Cerebral or Free Spirit characters. Any 1 of
+          the following: Bepo, Shachi, Penguin, Jean Bart, Monkey D. Luffy or
+          Donquixote Rosinante (Corazon)."
+        description: Boosts Tandem ATK of Cerebral and Free Spirit characters by 1.75x
+          for 1 turn and makes [STR], [DEX] and [QCK] orbs beneficial for
+          Cerebral and Free Spirit characters for 1 turn.
+      - criteria: "Any 1 of the following: Cerebral or Free Spirit characters. Any 1 of
+          the following: Bepo, Shachi, Penguin, Jean Bart, Monkey D. Luffy or
+          Donquixote Rosinante (Corazon)."
+        description: Boosts Tandem ATK of Cerebral and Free Spirit characters by 2x for
+          1 turn and makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial
+          for Cerebral and Free Spirit characters for 1 turn.
+rumble:
+  stats:
+    def: 157
+    rumbleType: ATK
+    spd: 194
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 6
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 2
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 70
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 2
+            priority: highest
+            stat: ATK
+            targets:
+              - STR
+        - attributes:
+            - SPD
+          duration: 11
+          effect: buff
+          level: 2
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.1
+        - override:
+            chance: 73
+            duration: 12
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            chance: 76
+            duration: 13
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.3
+        - override:
+            chance: 79
+            duration: 14
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            chance: 82
+            duration: 15
+        - override:
+            level: 4
+            duration: 15
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.5
+        - override:
+            chance: 85
+            duration: 16
+        - override:
+            level: 4
+            duration: 16
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            chance: 88
+            duration: 17
+        - override:
+            level: 5
+            duration: 17
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.7
+        - override:
+            chance: 91
+            duration: 18
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2.8
+        - override:
+            chance: 94
+            duration: 19
+        - override:
+            level: 6
+            duration: 19
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 3
+        - override:
+            chance: 100
+            duration: 20
+        - override:
+            level: 7
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

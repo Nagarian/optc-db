@@ -1,0 +1,415 @@
+type: QCK
+name: Kaido - Destructive Club
+japanName: カイドウ 叩き伏せる金棒
+family:
+  - Kaido
+class:
+  - Driven
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1756
+    atk: 995
+    rcv: 59
+  maxLvl:
+    hp: 4002
+    atk: 1658
+    rcv: 197
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 252729
+aliases:
+  - V2 Legend Kaido
+captain:
+  name: ""
+  description: 'If you use "Thunderous Lighting: Thunder Bagua" in this turn,
+    boosts ATK of [QCK] characters by 5x, by 4.5x otherwise, their HP by 1.5x
+    and boosts ATK of all other characters by 4x. Every turn Damage Taken
+    exceeds 10,000, activates "Thunderous Lighting: Thunder Bagua" and reset
+    stacks.'
+superSpecial:
+  criteria: This character must be captain and HP must be below 50%.
+  description: Deals 2,000,000 Typeless damage to one enemy, reduces enemies'
+    Percent Damage Reduction and Threshold Damage Reduction duration by 2 turns
+    and transforms all [QCK] characters into Super [QCK] characters.
+special:
+  name: "Thunderous Lighting: Thunder Bagua"
+  description: Inflicts all enemies with Increase Damage Taken by 2x for 1 turn,
+    deals 1,000,000 Typeless damage to one enemy and changes all orbs into
+    Matching orbs.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Cannot be Blown Away
+  - description: 'If you use "Thunderous Lighting: Thunder Bagua" in this turn,
+      boosts base ATK of this character by 1.1x'
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: King, Queen and Jack
+  levels:
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 15
+    - value: 18
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - atk: 10
+    - atk: 10
+    - type: sailor
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - cooldown: 1
+    - atk: 10
+    - atk: 10
+    - rcv: 30
+    - rcv: 30
+    - hp: 50
+    - hp: 50
+    - hp: 100
+    - hp: 100
+    - type: sailor
+    - atk: 30
+    - atk: 30
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 50
+    - hp: 100
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - hp: 100
+    - cooldown: 1
+    - hp: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+        - value: 200
+          reduction: 4
+        - value: 300
+          reduction: 5
+rumble:
+  stats:
+    def: 184
+    rumbleType: ATK
+    spd: 172
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 7
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 10
+        - override:
+            level: 10
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - DEF
+          duration: 5
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Paralysis
+          chance: 10
+          duration: 11
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 0.88
+        - override:
+            chance: 14
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 0.96
+        - override:
+            chance: 18
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 1.04
+        - override:
+            chance: 22
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            level: 1
+        - override:
+            amount: 1.12
+        - override:
+            chance: 26
+            duration: 15
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 1.2
+        - override:
+            chance: 30
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 1.28
+        - override:
+            chance: 34
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 1.36
+        - override:
+            chance: 38
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+        - override:
+            amount: 1.44
+        - override:
+            chance: 42
+            duration: 19
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+        - override:
+            amount: 2
+        - override:
+            chance: 50
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

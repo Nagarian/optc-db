@@ -1,0 +1,92 @@
+type: DEX
+name: DeCalvan Brothers - Brothers' Bond
+japanName: 絆のディカルバン兄弟
+family:
+  - DecalvanBrothers
+class:
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1824
+    atk: 602
+    rcv: 50
+  maxLvl:
+    hp: 3330
+    atk: 1183
+    rcv: 158
+cost: 29
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 14404
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x, deals 2x character's ATK
+    in [DEX] damage to all enemies at the end of each turn
+special:
+  name: "Pirate Brothers: Twin Strike"
+  description: Changes the orb of this character into a [DEX] orb, deals 1x-50x
+    character's ATK in [DEX] damage, depending on the crew's current HP, to one
+    enemy.
+  cooldown: 23
+  maxLevel: 7
+  notes: "`specialProportional : lower : 50 * ( 1 - (remaining HP) / (total HP) )`"
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base ATK of
+      Fighter characters by 100
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 500
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Edward Newgate (Whitebeard) and Portgas D. Ace
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 50
+    - atk: 40
+    - hp: 70
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - rcv: 30
+    - cooldown: 3
+    - slot: 1
+    - cooldown: 3
+    - atk: 50
+    - atk: 100
+    - cooldown: 4
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

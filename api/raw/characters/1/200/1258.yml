@@ -1,0 +1,110 @@
+type: PSY
+name: Edward Newgate - Great Pirate Whitebeard
+japanName: エドワード・ニューゲート 大海賊“白ひげ”
+family:
+  - EdwardNewgate
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1597
+    atk: 762
+    rcv: 70
+  maxLvl:
+    hp: 2702
+    atk: 1570
+    rcv: 170
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - ambush
+links:
+  gamewithId: 38236
+aliases:
+  - Edward Newgate
+  - Young Whitebeard
+  - YWB
+  - Invasion Whitebeard
+  - Ambush Whitebeard
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x if HP is below 50% at the
+    start of the turn
+special:
+  name: Earth Shattering Fist
+  description: Deals 40% of enemies' current HP in damage to all enemies
+  cooldown: 36
+  maxLevel: 13
+  stages:
+    - description: Deals 10% of enemies' current HP in damage to all enemies
+      cooldown: 23
+    - description: Deals 20% of enemies' current HP in damage to all enemies
+      cooldown: 28
+sailor:
+  - description: Cannot be Blown Away
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 100
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 6
+      reduction: 4
+    - value: 8
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - type: potential
+    - hp: 60
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - hp: 80
+    - atk: 50
+    - atk: 50
+    - type: sailor
+    - slot: 1
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 180
+          reduction: 3

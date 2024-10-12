@@ -1,0 +1,51 @@
+type: DEX
+name: Sanji - Kamabakka Kingdom Escapee
+japanName: サンジ カマバッカ王国の逃走者
+family:
+  - VinsmokeSanji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 212
+    atk: 124
+    rcv: 20
+  maxLvl:
+    hp: 1575
+    atk: 701
+    rcv: 127
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 23377
+aliases:
+  - 3D2Y Sanji
+  - Timeskip Sanji
+evolution:
+  - id: 912
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK and HP of Powerhouse characters by 1.5x
+special:
+  name: "Diable Jambe: Premier Hachis"
+  description: Deals 20x character's ATK in [DEX] damage to one enemy, boosts ATK
+    of Powerhouse characters by 2x for 1 turn
+  cooldown: 25
+  maxLevel: 8
+  stages:
+    - description: Deals 13x character's ATK in [DEX] damage to one enemy, boosts ATK
+        of Powerhouse characters by 1.2x for 1 turn
+      cooldown: 15

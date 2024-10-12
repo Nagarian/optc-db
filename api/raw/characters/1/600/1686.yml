@@ -1,0 +1,88 @@
+type: INT
+name: Usopp - 20th Anniversary Memorial Treasure
+japanName: ウソップ 20th Anniversary Memorial Treasure
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1146
+    atk: 432
+    rcv: 148
+  maxLvl:
+    hp: 2550
+    atk: 1184
+    rcv: 336
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 62647
+aliases:
+  - 20th Anniversary Usopp
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 3.25x following a chain of Good
+    > Great > PERFECT hits
+special:
+  name: "Green Star: Bamboo Javelin-Grove"
+  description: Changes [EMPTY] orbs into Matching orbs, changes Badly Matching
+    orbs into [RCV] orbs and delays all enemies by 1 turn
+  cooldown: 11
+  maxLevel: 5
+sailor:
+  - description: Reduces Silence duration by 4 turns on this character
+  - description: Boosts base ATK and HP of Shooter characters by 50
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy, Nico Robin and Franky
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, randomizes all [EMPTY] orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, randomizes all [EMPTY] orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [EMPTY] orbs into Matching orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [EMPTY] orbs into Matching orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes [EMPTY] orbs into Matching orbs and changes
+      Badly Matching orbs into [RCV] orbs.
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 20
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - rcv: 20
+    - atk: 20
+    - rcv: 20
+    - hp: 50
+    - atk: 20
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - {}
+        - {}
+        - {}
+        - {}

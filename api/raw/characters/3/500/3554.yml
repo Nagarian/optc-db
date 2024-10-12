@@ -1,0 +1,114 @@
+type: DUAL
+name: Kin'emon & Denjiro - Samurai Challenging the Dragon
+japanName: 錦えもん＆傳ジロー 龍に立ち向かう侍
+family:
+  - Kinemon
+  - Denjiro
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1131
+    atk: 402
+    rcv: 75
+  maxLvl:
+    hp: 2162
+    atk: 804
+    rcv: 150
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+aliases:
+  - Legend Kinemon Denjiro
+  - Kinemon&Denjiro
+  - Denjiro&Kinemon
+  - KinemonDenjiro
+  - DenjiroKinemon
+evolution:
+  - id: 3555
+    evolvers:
+      - 118
+      - 118
+      - 101
+      - 103
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 5x and their HP
+    by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs into
+    [WANO] orbs. Characters who attack with a Type advantage will gain a [WANO]
+    orb after attacking.
+special:
+  name: Unrelenting Onslaught
+  description: Deals 20% of enemies' current HP in True damage to one enemy,
+    reduces enemies' Percent Damage Reduction and Increased Defense duration by
+    6 turns, boosts Orb Effects of Slasher and Free Spirit characters by 2.75x
+    for 1 turn, boosts base ATK of Slasher and Free Spirit characters by 500 for
+    1 turn and becomes Kin'emon & Denjiro for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 100
+characters:
+  swap:
+    description: Changes the orb of this character into a Matching orb, and reduces
+      enemies' Slasher Resistance by -20% for 1 turn.
+    super:
+      criteria: 6
+      description: Changes all orbs into Matching orbs, and reduces enemies' Slasher
+        Resistance by -50% for 1 turn.
+  character1:
+    name: Kin'emon - Samurai Challenging the Dragon
+    class:
+      - Slasher
+      - Free Spirit
+    type: PSY
+    stats:
+      combo: 5
+      minLvl:
+        hp: 962
+        atk: 390
+        rcv: 74
+      maxLvl:
+        hp: 1925
+        atk: 780
+        rcv: 145
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Free Spirit characters by 4.25x and their
+        HP by 1.5x, boosts chances of getting [RCV] orbs and changes [RCV] orbs
+        into [WANO] orbs. Characters who attack with a Type advantage will gain
+        a [WANO] orb after attacking.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters
+          by 100
+  character2:
+    name: Denjiro - Samurai Challenging the Dragon
+    class:
+      - Slasher
+      - Free Spirit
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1034
+        atk: 383
+        rcv: 64
+      maxLvl:
+        hp: 2069
+        atk: 766
+        rcv: 128
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Free Spirit characters by 4.5x and their
+        HP by 1.5x and changes [RCV] orbs into [WANO] orbs. Characters who
+        attack with a Type advantage will gain a [WANO] orb after attacking.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters
+          by 100

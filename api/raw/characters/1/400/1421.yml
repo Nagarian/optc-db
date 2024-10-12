@@ -1,0 +1,48 @@
+type: INT
+name: Diamante - Flapping Flag Man
+japanName: ディアマンテ はためく旗（フラッグ）人間
+family:
+  - Diamante
+class:
+  - Driven
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 505
+    atk: 388
+    rcv: 12
+  maxLvl:
+    hp: 1202
+    atk: 770
+    rcv: 91
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 48689
+aliases:
+  - Colo Diamante
+  - Coliseum Diamante
+evolution:
+  - id: 1422
+    evolvers:
+      - 118
+      - 94
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x
+special:
+  name: Half Moon Glaive
+  description: Deals 20x Character's ATK in [INT] damage to all enemies. If HP is
+    full at the time the special was activated, boosts ATK of Driven characters
+    by 2x for 1 turn, by 1.5x otherwise
+  cooldown: 33
+  maxLevel: 17

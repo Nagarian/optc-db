@@ -1,0 +1,100 @@
+type: STR
+name: Okiku - The Masked Swordswoman
+japanName: お菊 仮面の剣士
+family:
+  - Kikunojo
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1025
+    atk: 642
+    rcv: 227
+  maxLvl:
+    hp: 2460
+    atk: 1413
+    rcv: 399
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 225831
+aliases:
+  - Kikunojo
+  - Coliseum Kikunojo
+  - Okiku
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.75x and recovers 5x character's
+    RCV in HP at the end of each turn.
+special:
+  name: Masked Swordswoman's Cut-up
+  description: Deals 60x character's ATK in Typeless Fixed True damage to one
+    enemy, reduces Bind duration by 5 turns and reduces enemies' Percent Damage
+    Reduction duration by 5 turns. If HP is above 99% at the time the special is
+    activated, boosts Orb Effects of all characters by 2x for 1 turn, otherwise,
+    boosts Orb Effects of all characters by 1.75x for 2 turns.
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK and RCV of [STR] characters by 50
+  - description: Reduces Blindness duration by 5 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - cooldown: 1
+    - atk: 40
+    - rcv: 40
+    - type: sailor
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - rcv: 45
+    - hp: 60
+    - hp: 60
+    - atk: 80
+    - cooldown: 1
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70

@@ -1,0 +1,217 @@
+type: DEX
+name: Drake & Urouge - The Worst vs. The Strongest
+japanName: ドレーク＆ウルージ “最悪”対“最強”
+family:
+  - Urouge
+  - XDrake
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1200
+    atk: 590
+    rcv: 117
+  maxLvl:
+    hp: 3011
+    atk: 1131
+    rcv: 222
+cost: 50
+slots: 5
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 160273
+aliases:
+  - Stampede X Drake
+  - Stampede Dies Drake
+  - Stampede Urouge
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 1.75x and their
+    HP by 1.25x
+special:
+  name: '"Worst" Collaboration - Ancient Species Punishment'
+  description: Deals 50x character's ATK in Typeless Fixed True damage to one
+    enemy and boosts the Color Affinity of Fighter and Powerhouse characters by
+    1.75x for 1 turn.
+  cooldown: 16
+  maxLevel: 5
+sailor:
+  - description: Makes [STR] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: "[DEX] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 20
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - type: potential
+    - hp: 30
+    - hp: 30
+    - cooldown: 1
+    - hp: 40
+    - cooldown: 1
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 146
+    rumbleType: ATK
+    spd: 161
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 1300
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          duration: 15
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1425
+        - override:
+            duration: 16
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1550
+        - override:
+            duration: 17
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1675
+        - override:
+            duration: 18
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            duration: 19
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 1925
+        - override:
+            duration: 20
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2050
+        - override:
+            duration: 21
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2175
+        - override:
+            duration: 22
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2300
+        - override:
+            duration: 23
+    - cooldown: 35
+      effects:
+        - override:
+            amount: 2500
+        - override:
+            level: 2
+            duration: 24

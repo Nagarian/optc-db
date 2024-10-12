@@ -1,0 +1,51 @@
+type: DEX
+name: Madam Sharley - Owner of the Mermaid Cafe
+japanName: マダム・シャーリー マーメイドカフェ　店長
+family:
+  - Shyarly
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 154
+    atk: 105
+    rcv: 29
+  maxLvl:
+    hp: 1950
+    atk: 1140
+    rcv: 315
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 61625
+aliases:
+  - Madame Shirley
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.75x and their RCV by 1.2x
+special:
+  name: A Warning to the Fool
+  description: Randomizes all non-Matching orbs, switches orbs between slots 2
+    times and delays all enemies by 1 turn
+  cooldown: 15
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Camie and Pappagu
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

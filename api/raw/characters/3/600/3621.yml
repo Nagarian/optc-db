@@ -1,0 +1,290 @@
+type: DEX
+name: Sabo - Flaming Heart of a Revolutionary
+family:
+  - Sabo
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1600
+    atk: 796
+    rcv: 94
+  maxLvl:
+    hp: 3200
+    atk: 1592
+    rcv: 187
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+aliases:
+  - TM Super Tandem
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Free Spirit characters by 1.5x and boosts
+    HP of Fighter and Free Spirit characters by 1.2x.
+special:
+  name: "Path-Clearing Dragon Claw Fist: Dragon Breath"
+  description: Reduces Paralysis and Burn duration by 5 turns, changes all orbs,
+    including [BLOCK] orbs, of adjacent characters into [TND] orbs and sets
+    Chain Boundaries to 3.0x and 5.0x for 1 turn.
+  cooldown: 33
+  maxLevel: 1
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters
+  - description: Boosts base ATK, HP and RCV of Free Spirit characters by 75
+support:
+  type: descriptive
+  criteria: Koala, Morley, Lindbergh, Belo Betty and Karasu
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.2x for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.5x for 1 turn.
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - hp: 20
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 1.75x and
+          boosts HP of Fighter and Free Spirit characters by 1.2x.
+    - type: sailor
+    - rcv: 30
+    - atk: 10
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 2x and boosts
+          HP of Fighter and Free Spirit characters by 1.2x.
+    - slot: 1
+    - cooldown: 1
+    - atk: 10
+    - hp: 30
+    - rcv: 40
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 2.5x and boosts
+          HP of Fighter and Free Spirit characters by 1.2x.
+    - cooldown: 2
+    - atk: 20
+    - hp: 30
+    - hp: 40
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - rcv: 50
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 3x and boosts
+          HP of Fighter and Free Spirit characters by 1.2x.
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - hp: 60
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 3.5x and boosts
+          HP of Fighter and Free Spirit characters by 1.2x.
+    - hp: 150
+    - cooldown: 7
+    - captain:
+        description: Boosts ATK of Fighter and Free Spirit characters by 4x, boosts HP
+          of Fighter and Free Spirit characters by 1.2x and boosts chances of
+          getting TND orbs, makes TND orbs beneficial for Fighter and Free
+          Spirit characters.
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Super Tandem
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+  superTandem:
+    levels:
+      - criteria: "Any 2 of the following: Koala, Morley, Lindbergh, Belo Betty or
+          Karasu."
+        description: Boosts Tandem ATK of all characters by 1.1x.
+      - criteria: "Any 2 of the following: Koala, Morley, Lindbergh, Belo Betty or
+          Karasu."
+        description: Boosts Tandem ATK of all characters by 1.2x.
+      - criteria: "Any 2 of the following: Koala, Morley, Lindbergh, Belo Betty or
+          Karasu."
+        description: Boosts Tandem ATK of all characters by 1.3x.
+      - criteria: "Any 2 of the following: Koala, Morley, Lindbergh, Belo Betty or
+          Karasu."
+        description: Boosts Tandem ATK of all characters by 1.4x.
+      - criteria: "Any 2 of the following: Koala, Morley, Lindbergh, Belo Betty or
+          Karasu."
+        description: Boosts Tandem ATK of all characters by 1.5x.
+rumble:
+  stats:
+    def: 122
+    rumbleType: ATK
+    spd: 183
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 80
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - HP
+            - SPD
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 11
+        - override:
+            level: 1
+            duration: 22
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 12
+        - override:
+            level: 1
+            duration: 23
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 13
+        - override:
+            level: 1
+            duration: 24
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 14
+        - override:
+            level: 2
+            duration: 25
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 15
+        - override:
+            level: 2
+            duration: 26
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 2
+            duration: 27
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 3
+            duration: 28
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 3
+            duration: 29
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 4
+            duration: 30

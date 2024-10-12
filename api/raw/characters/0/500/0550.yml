@@ -1,0 +1,46 @@
+type: INT
+name: Sadie - Impel Down Chief Jailer
+japanName: サディちゃん インペルダウン獄卒長
+family:
+  - Sadie
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 618
+    atk: 488
+    rcv: 202
+  maxLvl:
+    hp: 1505
+    atk: 997
+    rcv: 388
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 12138
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x after scoring 3 PERFECTs in a row
+special:
+  name: Arousal Manifesto - Red Demon Whip
+  description: Boosts ATK against enemies with reduced defense by 1.3x for 3 turns
+  cooldown: 20
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Domino, Hannyabal and Magellan
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

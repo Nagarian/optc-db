@@ -1,0 +1,454 @@
+type: STR
+name: "Monkey D. Luffy - Voyage Log: Straw Hat Pirates"
+japanName: モンキー・D・ルフィ 航海の記録・麦わらの一味
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 390
+    atk: 290
+    rcv: 150
+  maxLvl:
+    hp: 1559
+    atk: 840
+    rcv: 290
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - removed
+links:
+  gamewithId: 12878
+notes: "Voyage Log/Dream Batch has been removed, except this Luffy which has
+  been replaced with a different artwork and id #1120."
+aliases:
+  - Log Luffy
+  - Logfy
+  - LL
+  - V1 Legend Luffy
+  - Endless Dream Luffy
+evolution:
+  - id: 578
+    evolvers:
+      - 118
+      - 266
+      - 95
+      - 300
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4x following a chain of Good >
+    Great > PERFECT hits
+special:
+  name: Gum-Gum Jet Gatling
+  description: Deals random Typeless damage to all enemies, changes the orb of
+    this character into a [STR] orb
+  cooldown: 23
+  maxLevel: 7
+  notes: "`random : 70,000 : 200,000`"
+rumble:
+  stats:
+    def: 120
+    rumbleType: ATK
+    spd: 194
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 100
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 35
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 0.94
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 0.97
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 1.01
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 1.05
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 1.09
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 1.12
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 1.16
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+    - cooldown: 35
+      effects:
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          duration: 30
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - STR
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

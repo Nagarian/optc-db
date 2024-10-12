@@ -1,0 +1,49 @@
+type: DEX
+name: Mother Carmel - Mother of the House of Lambs
+japanName: マザー・カルメル 羊の家の聖母
+family:
+  - MotherCaramel
+class:
+  - Shooter
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 800
+    atk: 300
+    rcv: 120
+  maxLvl:
+    hp: 1626
+    atk: 1017
+    rcv: 355
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 136746
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x and their RCV by 1.5x
+special:
+  name: The Voice Given by the Holy Mother
+  description: Reduces enemies' ATK UP duration by 3 turns, changes all orbs of
+    top row characters into [RCV] orbs and boosts ATK of top row characters by
+    1.75x for 1 turn.
+  cooldown: 17
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Charlotte Linlin (Big Mom) and Hajrudin
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

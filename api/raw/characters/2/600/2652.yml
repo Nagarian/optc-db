@@ -1,0 +1,168 @@
+type: STR
+name: Tony Tony Chopper - Doctor Scouting Out the Pirates Expo
+japanName: トニートニー・チョッパー 『海賊万博』で探す船医
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 452
+    atk: 312
+    rcv: 45
+  maxLvl:
+    hp: 1201
+    atk: 891
+    rcv: 159
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 161687
+aliases:
+  - Stampede Chopper
+evolution:
+  - id: 2653
+    evolvers:
+      - 94
+      - 2662
+      - 300
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x and recovers 809 HP at the end
+    of each turn.
+special:
+  name: Treasured Smile
+  description: Recovers 13x character's RCV in HP at the end of each turn for 3
+    turns and reduces Paralysis, Despair, Chain Multiplier Limit and Chain
+    Coefficient Reduction duration by 5 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of all characters by 30
+rumble:
+  stats:
+    def: 108
+    rumbleType: RCV
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - RCV
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - QCK
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.5
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - DEF
+          duration: 10
+          level: 1
+          effect: buff
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.6
+        - {}
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.69
+        - {}
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.79
+        - {}
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.89
+        - {}
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.99
+        - {}
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.08
+        - {}
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.18
+        - {}
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.28
+        - override:
+            level: 2
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 3

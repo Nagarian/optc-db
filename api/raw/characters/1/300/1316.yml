@@ -1,0 +1,102 @@
+type: PSY
+name: Petty Officer Coby Hero of the Navy's Student
+japanName: 海軍本部曹長　コビー “海軍の英雄”の教え子
+family:
+  - Coby
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 877
+    atk: 447
+    rcv: 164
+  maxLvl:
+    hp: 2024
+    atk: 1151
+    rcv: 414
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 43907
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x after the 2nd PERFECT in a row
+    and by 3.5x after the 5th PERFECT in a row.
+special:
+  name: Echoing Cry of the Soul
+  description: If HP is below 3,000, removes No Healing debuff duration
+    completely. Recovers 13x character's RCV in HP
+  cooldown: 24
+  maxLevel: 7
+  stages:
+    - description: If HP is below 3,000, reduces No Healing debuff duration by 1 turn.
+        Recovers 3x character's RCV in HP
+      cooldown: 15
+    - description: If HP is below 3,000, reduces No Healing debuff duration by 3
+        turns. Recovers 6x character's RCV in HP
+      cooldown: 20
+  notes: No Healing debuff completely stops healing abilities. This is the debuff
+    used in Akainu raid
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+  - description: Makes [PSY] orbs beneficial for Fighter characters
+support:
+  type: descriptive
+  criteria: Monkey D. Garp and Helmeppo
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Blindness,
+      reduces ATK DOWN and Blindness duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Blindness,
+      reduces ATK DOWN and Blindness duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Blindness,
+      reduces ATK DOWN and Blindness duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Blindness,
+      reduces ATK DOWN and Blindness duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Blindness,
+      reduces ATK DOWN and Blindness duration by 3 turns.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - cooldown: 2
+    - atk: 40
+    - hp: 40
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - rcv: 45
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

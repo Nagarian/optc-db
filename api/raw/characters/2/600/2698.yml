@@ -1,0 +1,95 @@
+type: DEX
+name: Sir Crocodile - Thirst Upon the Battlefield
+japanName: サー・クロコダイル 渇きの戦場
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1390
+    atk: 731
+    rcv: 96
+  maxLvl:
+    hp: 3132
+    atk: 1467
+    rcv: 209
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 168145
+aliases:
+  - Raid Crocodile
+captain:
+  name: ""
+  description: Boosts ATK of Rarity 4 or 4+ characters by 2.5x, boosts ATK of
+    Rarity 5 or 5+ characters by 2.75x and boosts ATK of Rarity 6 or 6+
+    characters by 3x.
+special:
+  name: Battlefield Sables
+  description: Deals 50x character's ATK in Typeless True damage to all enemies,
+    changes [EMPTY], [BLOCK] and [BOMB] orbs into Matching orbs and reduces
+    Chain Multiplier Limit duration by 8 turns. If your Captain is a Striker or
+    Cerebral character, sets Chain Boundaries to 2.0x and 35.0x for 3 turns.
+  cooldown: 28
+  maxLevel: 16
+sailor:
+  - description: Cannot be Blown Away
+  - description: Makes [STR] and [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Daz Bones (Mr. 1)
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - atk: 40
+    - rcv: 20
+    - hp: 50
+    - type: potential
+    - hp: 70
+    - atk: 40
+    - type: sailor
+    - slot: 1
+    - atk: 40
+    - rcv: 30
+    - hp: 80
+    - type: sailor
+    - slot: 1
+    - rcv: 30
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 10
+          threshold: 1
+        - value: 15
+          threshold: 2
+        - value: 20
+          threshold: 4
+        - value: 25
+          threshold: 6
+        - value: 40
+          threshold: 8
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

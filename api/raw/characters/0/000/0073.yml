@@ -1,0 +1,87 @@
+type: PSY
+name: Princess Vivi
+frenchName: Princesse Vivi
+japanName: 王女ビビ
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 602
+    atk: 414
+    rcv: 280
+  maxLvl:
+    hp: 908
+    atk: 747
+    rcv: 477
+cost: 20
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 2013
+aliases: []
+captain:
+  name: ""
+  description: Recovers 5x character's RCV in HP at the end of each turn
+special:
+  name: Charge! Supersonic Duck Squadron!
+  description: Randomizes all orbs
+  cooldown: 12
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Makes [INT] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: All characters
+  levels:
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 500 HP
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 800 HP
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 1,200 HP
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 1,500 HP
+    - Once per adventure, when you reach the final stage, changes the orb of the
+      supported character into a Matching orb and recovers 2,000 HP
+limitBreak:
+  path:
+    - atk: 50
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - hp: 100
+    - cooldown: 1
+    - hp: 100
+    - type: sailor
+    - hp: 100
+    - slot: 1
+    - hp: 200
+    - atk: 80
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

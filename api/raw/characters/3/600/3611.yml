@@ -1,0 +1,522 @@
+type: DUAL
+name: Yamato & Ace - Two Who Get Along So Well
+family:
+  - PortgasDAce
+  - Yamato
+class:
+  - Free Spirit
+  - Striker
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2324
+    atk: 840
+    rcv: 133
+  maxLvl:
+    hp: 4648
+    atk: 1680
+    rcv: 266
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+aliases:
+  - Super Secret Limited Legend
+  - Yamato Ace
+  - Yamato&Ace
+  - Ace&Yamato
+  - YamatoAce
+  - AceYamato
+captain:
+  name: ""
+  description: Boosts ATK of Striker, Shooter and Free Spirit characters by
+    4.75x-5.5x based on the timing of the attack of the previous unit in the
+    chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x,
+    recovers 2x this character's RCV at the end of the turn for each time you
+    hit a PERFECT, reduces damage received by 20% and reduces Bind and Silence
+    duration by 10 turns.
+special:
+  name: Ultimate Club and Flame Combination
+  description: Reduces Special Cooldown of Striker, Shooter and Free Spirit
+    characters by 2 turns, deals 400x character's ATK in Typeless damage to all
+    enemies, makes PERFECTs easier to hit for 1 turn, boosts ATK against enemies
+    inflicted with Burn by 1.75x for 2 turns, boosts ATK of Striker, Shooter and
+    Free Spirit characters by 2.75x for 2 turns and becomes Yamato & Ace for 3
+    turns.
+  cooldown: 21
+  maxLevel: 6
+  stages:
+    - description: Reduces Special Cooldown of Striker, Shooter and Free Spirit
+        characters by 1 turn, deals 300x character's ATK in Typeless damage to
+        all enemies, makes PERFECTs easier to hit for 1 turn, boosts ATK of
+        Striker, Shooter and Free Spirit characters by 2.75x for 1 turn and
+        becomes Yamato & Ace for 3 turns.
+      cooldown: 17
+sailor:
+  - description: Boosts base ATK of Striker, Shooter and Free Spirit characters by 125
+  - description: Makes [STR] and [TND] orbs beneficial for Striker, Shooter and Free
+      Spirit characters
+characters:
+  swap:
+    description: Inflicts all enemies with Burn that will deal 30x enemies' ATK in
+      damage for 1 turn, changes the orb, including [BLOCK] orbs, of this
+      character into a Matching orb and sets Chain Boundaries to 1.6x and 35.0x
+      for 1 turn.
+    super:
+      criteria: 6
+      description: Inflicts all enemies with Burn that will deal 100x enemies' ATK in
+        damage for 2 turns that will ignore debuff protection, changes the orb,
+        including [BLOCK] orbs, of this character into a Matching orb and sets
+        Chain Boundaries to 2.5x and 35.0x for 2 turns.
+  character1:
+    name: Yamato - Two Who Get Along So Well
+    class:
+      - Free Spirit
+      - Striker
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 2161
+        atk: 779
+        rcv: 130
+      maxLvl:
+        hp: 4322
+        atk: 1558
+        rcv: 261
+    captain:
+      name: ""
+      description: Boosts ATK of Striker, Shooter and Free Spirit characters by
+        4.5x-5.25x based on the timing of the attack of the previous unit in the
+        chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x,
+        reduces damage received by 20% and reduces Bind and Silence duration by
+        10 turns.
+    sailor:
+      - description: Boosts base ATK of Striker, Shooter and Free Spirit characters by 125
+      - description: Makes [STR] and [TND] orbs beneficial for Striker, Shooter and Free
+          Spirit characters
+  character2:
+    name: Ace - Two Who Get Along So Well
+    class:
+      - Free Spirit
+      - Shooter
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 2140
+        atk: 801
+        rcv: 126
+      maxLvl:
+        hp: 4280
+        atk: 1602
+        rcv: 253
+    captain:
+      name: ""
+      description: Boosts ATK of Striker, Shooter and Free Spirit characters by
+        4.5x-5.25x based on the timing of the attack of the previous unit in the
+        chain, boosts HP of Striker, Shooter and Free Spirit characters by 1.2x,
+        recovers 2x this character's RCV at the end of the turn for each time
+        you hit a PERFECT and reduces Bind and Silence duration by 10 turns.
+    sailor:
+      - description: Boosts base ATK of Striker, Shooter and Free Spirit characters by 125
+      - description: Makes [STR] and [TND] orbs beneficial for Striker, Shooter and Free
+          Spirit characters
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 40
+    - rcv: 10
+    - atk: 10
+    - rcv: 10
+    - atk: 20
+    - rcv: 10
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 50
+    - hp: 60
+    - atk: 20
+    - rcv: 20
+    - hp: 60
+    - atk: 30
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - atk: 40
+    - atk: 40
+    - hp: 70
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - hp: 150
+    - atk: 50
+    - rcv: 25
+    - hp: 150
+    - atk: 50
+    - hp: 200
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Nutrition/Reduce Hunger stacks
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: On the last Stage
+    levels:
+      - description: Overrides the Chain Multiplier to 5x.
+      - description: Overrides the Chain Multiplier to 6x.
+      - description: Overrides the Chain Multiplier to 7x.
+      - description: Overrides the Chain Multiplier to 8x.
+      - description: Overrides the Chain Multiplier to 8x and changes the orb of this
+          character into a [WANO] orb.
+rumble:
+  stats:
+    def: 177
+    rumbleType: SPT
+    spd: 217
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: Driven
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+              - Striker
+        - attributes:
+            - Shield
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+            - Critical Hit
+          effect: buff
+          level: 4
+          targeting:
+            count: 2
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+              - self
+        - amount: 150
+          duration: 11
+          effect: recharge
+          interval: 5
+          targeting:
+            count: 2
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+              - self
+          type: fixed
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 2.2
+        - override:
+            level: 4
+        - override:
+            amount: 165
+            duration: 12
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 2.4
+        - override:
+            level: 4
+        - override:
+            amount: 180
+            duration: 13
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 2.6
+        - override:
+            level: 5
+        - override:
+            amount: 195
+            duration: 14
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 2.8
+        - override:
+            level: 5
+        - override:
+            amount: 210
+            duration: 15
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 3
+        - override:
+            level: 6
+        - override:
+            amount: 225
+            duration: 16
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 3.2
+        - override:
+            level: 6
+        - override:
+            amount: 240
+            duration: 17
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 3.4
+        - override:
+            level: 6
+        - override:
+            amount: 255
+            duration: 18
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 3.6
+        - override:
+            level: 7
+        - override:
+            amount: 270
+            duration: 19
+    - cooldown: 33
+      effects:
+        - override:
+            amount: 4
+        - override:
+            level: 8
+        - override:
+            amount: 300
+            duration: 20
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+              - HP
+              - SPD
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - STR
+                - DEX
+          - attributes:
+              - DEF
+              - Special CT
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Striker
+          - attributes:
+              - Blow Away
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - Striker
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 2
+          - override:
+              level: 5
+      - effects:
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 6
+      - effects:
+          - override:
+              level: 6
+          - override:
+              level: 3
+          - override:
+              level: 7
+    burst:
+      condition:
+        - count: 6
+          type: debuff
+          attribute: Blow Away
+      special:
+        - uses: 2
+          effects:
+            - amount: 1000
+              effect: damage
+              targeting:
+                count: 2
+                targets:
+                  - enemies
+              type: fixed
+            - attributes:
+                - Special CT
+              duration: 22
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - crew
+        - uses: 2
+          effects:
+            - override:
+                amount: 1375
+            - override:
+                level: 2
+                duration: 24
+        - uses: 2
+          effects:
+            - override:
+                amount: 1750
+            - override:
+                level: 3
+                duration: 26
+        - uses: 2
+          effects:
+            - override:
+                amount: 2125
+            - override:
+                level: 4
+                duration: 28
+        - uses: 2
+          effects:
+            - override:
+                amount: 2500
+            - override:
+                level: 5
+                duration: 30

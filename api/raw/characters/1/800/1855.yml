@@ -1,0 +1,179 @@
+type: STR
+name: '"Roar of the Sea" Scratchmen Apoo - Supernova'
+japanName: “海鳴り”スクラッチメン・アプー 超新星
+family:
+  - ScratchmenApoo
+class:
+  - Free Spirit
+  - Slasher
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1067
+    atk: 534
+    rcv: 95
+  maxLvl:
+    hp: 2136
+    atk: 1211
+    rcv: 221
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 79682
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2x at the start of the
+    chain, by 2.5x after the 3rd PERFECT in a row and by 3x after the 5th
+    PERFECT in a row
+special:
+  name: Fighting Musical Performance
+  description: Boosts Orb Effects of Free Spirit characters by 1.5x for 1 turn and
+    boosts ATK of Free Spirit characters by 1.5x for 1 turn
+  cooldown: 20
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+rumble:
+  stats:
+    def: 139
+    rumbleType: SPT
+    spd: 131
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 21
+      effects:
+        - attributes:
+            - ATK
+          duration: 5
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Blow Away
+          duration: 5
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - cooldown: 21
+      effects:
+        - override:
+            level: 1
+            duration: 6
+        - override:
+            level: 2
+            duration: 6
+    - cooldown: 21
+      effects:
+        - override:
+            level: 1
+            duration: 7
+        - override:
+            level: 2
+            duration: 7
+    - cooldown: 21
+      effects:
+        - override:
+            level: 1
+            duration: 8
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 21
+      effects:
+        - override:
+            level: 1
+            duration: 9
+        - override:
+            level: 3
+            duration: 9
+    - cooldown: 21
+      effects:
+        - override:
+            level: 1
+            duration: 10
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 21
+      effects:
+        - override:
+            level: 1
+            duration: 11
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 21
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 21
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 21
+      effects:
+        - override:
+            level: 3
+            duration: 15
+        - override:
+            level: 5
+            duration: 15

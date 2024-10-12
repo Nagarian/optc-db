@@ -1,0 +1,47 @@
+type: DEX
+name: Bamboo Demon Vergo
+japanName: 鬼竹のヴェルゴ
+family:
+  - Vergo
+class:
+  - Fighter
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 280
+    atk: 158
+    rcv: 34
+  maxLvl:
+    hp: 1253
+    atk: 697
+    rcv: 152
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 63219
+aliases:
+  - Raid Vergo
+evolution:
+  - id: 1696
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x
+special:
+  name: The Darkest Demon
+  description: Deals 50x character's ATK in [DEX] damage to one enemy, boosts Orb
+    Effects of Striker characters by 1.75x for 1 turn and reduces damage
+    received by 50% for 1 turn
+  cooldown: 30
+  maxLevel: 15

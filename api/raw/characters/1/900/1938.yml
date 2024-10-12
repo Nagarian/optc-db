@@ -1,0 +1,49 @@
+type: DEX
+name: Thatch - Dual-Wielding Swordsman Clutching Darkness
+japanName: サッチ 闇を手にした二刀使い
+family:
+  - Thatch
+class:
+  - Slasher
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 168
+    atk: 97
+    rcv: 19
+  maxLvl:
+    hp: 1382
+    atk: 685
+    rcv: 147
+cost: 12
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 86358
+aliases:
+  - ""
+evolution:
+  - id: 1939
+    evolvers:
+      - 117
+      - 80
+      - 91
+      - 97
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 1.75x
+special:
+  name: Gliding Twin Swords
+  description: Deals 13x character's ATK in [DEX] damage to one enemy, changes
+    orbs of adjacent characters into Matching Orbs. If there are 4 enemies or
+    more on the stage when the special is activated, boosts Orb Effects of all
+    characters by 1.75x for 1 turn
+  cooldown: 15
+  maxLevel: 1

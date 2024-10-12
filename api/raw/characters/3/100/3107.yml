@@ -1,0 +1,426 @@
+type: INT
+name: Moria & Perona - Beginning of the Nightmare
+japanName: モリア＆ペローナ 悪夢の始まり
+family:
+  - Perona
+  - GeckoMoria
+class:
+  - Slasher
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1045
+    atk: 555
+    rcv: 103
+  maxLvl:
+    hp: 2612
+    atk: 1388
+    rcv: 258
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 230290
+aliases:
+  - Pirate Festival Moria
+  - Pirate Festival Perona
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x. If you defeat an enemy,
+    increases ATK boost slightly. Stacks up to 3 times to a maximum of 3.5x.
+special:
+  name: Shadow & Ghost Attack
+  description: Removes Poison duration completely, reduces Paralysis duration by 5
+    turns, reduces the defense of all enemies by 80% for 1 turn and boosts ATK
+    against enemies with reduced defense by 1.75x for 1 turn.
+  cooldown: 19
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of [INT] characters by 50
+  - description: Makes [PSY] orbs beneficial for Slasher and Shooter characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - atk: 50
+    - hp: 100
+    - captain:
+        description: Boosts ATK of [INT] characters by 2.5x. If you defeat an enemy,
+          increases ATK boost slightly and reduces damage received by 20%.
+          Stacks up to 3 times to a maximum of 3.5x.
+    - type: potential
+    - cooldown: 3
+    - atk: 150
+    - rcv: 150
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 293
+    rumbleType: DEF
+    spd: 120
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 50
+          duration: 20
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 55
+          duration: 21
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 6
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 22
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 65
+          duration: 23
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 8
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 24
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 9
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 75
+          duration: 25
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 26
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 11
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 85
+          duration: 27
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 12
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 90
+          duration: 28
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 13
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 100
+          duration: 29
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - amount: 15
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut

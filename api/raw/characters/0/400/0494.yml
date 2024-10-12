@@ -1,0 +1,38 @@
+type: INT
+name: Black Hunter - Shandian Warrior
+japanName: 黒の狩猟隊　隊員 シャンディアの戦士
+family:
+  - BlackShandianWarrior
+class:
+  - Shooter
+rarity: 2
+stats:
+  combo: 4
+  minLvl:
+    hp: 40
+    atk: 25
+    rcv: 39
+  maxLvl:
+    hp: 214
+    atk: 128
+    rcv: 196
+cost: 5
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 11562
+aliases: []
+evolution:
+  - id: 496
+    evolvers:
+      - 117
+      - 82
+      - 88
+special:
+  name: Poison Attack
+  description: Deals 3x character's ATK in [INT] damage to all enemies, Poisons all enemies
+  cooldown: 20
+  maxLevel: 6
+  notes: "`poison : 0.5x`"

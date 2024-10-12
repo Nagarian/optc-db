@@ -1,0 +1,53 @@
+type: STR
+name: Rob Lucci Cipher Pol No. 9
+japanName: ロブ・ルッチ サイファーポールNo.9
+family:
+  - RobLucci
+class:
+  - Fighter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 121
+    atk: 153
+    rcv: 20
+  maxLvl:
+    hp: 1121
+    atk: 792
+    rcv: 64
+cost: 12
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 14312
+aliases: []
+evolution:
+  - id: 633
+    evolvers:
+      - 117
+      - 89
+      - 95
+      - 300
+      - 100
+  - id: 737
+    evolvers:
+      - 118
+      - 79
+      - 94
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.5x
+special:
+  name: "Finger Pistol: Yellow Lotus"
+  description: Randomizes all orbs into either [STR], [PSY] or [INT] orbs, deals
+    random [STR] damage to all enemies, reduces the defense of all enemies by
+    50% for 2 turns
+  cooldown: 25
+  maxLevel: 8
+  notes: "`random : 2,000 : 20,000`"

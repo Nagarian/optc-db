@@ -1,0 +1,110 @@
+type: STR
+name: Orochi
+japanName: オロチ
+family:
+  - KurozumiOrochi
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1240
+    atk: 621
+    rcv: 193
+  maxLvl:
+    hp: 2976
+    atk: 1306
+    rcv: 269
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 219645
+aliases:
+  - Yamata no Orochi
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.75x and reduces damage received
+    from [DEX] enemies by 10%.
+special:
+  name: Shogun's Power
+  description: Reduces crew's current HP by 80%, reduces Bind and Paralysis
+    duration by 8 turns, removes enemies' ATK Up, Enrage, End of Turn
+    Damage/Percent Cut and End of Turn Heal Buffs duration completely and boosts
+    ATK of Driven, Cerebral and Powerhouse characters by 2x for 1 turn.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven, Cerebral and Powerhouse
+      characters by 30
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - HP
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 30
+    - rcv: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - atk: 30
+    - rcv: 30
+    - hp: 30
+    - cooldown: 1
+    - rcv: 40
+    - atk: 40
+    - type: sailor
+    - hp: 40
+    - hp: 40
+    - type: potential
+    - atk: 45
+    - hp: 120
+    - rcv: 40
+    - atk: 50
+    - cooldown: 1
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

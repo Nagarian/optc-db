@@ -1,0 +1,261 @@
+type: STR
+name: Charlotte Katakuri
+japanName: シャーロット・カタクリ
+family:
+  - CharlotteKatakuri
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 595
+    atk: 330
+    rcv: 50
+  maxLvl:
+    hp: 1750
+    atk: 975
+    rcv: 150
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 107160
+aliases:
+  - Potato Starch
+  - V1 Legend Katakuri
+evolution:
+  - id: 2113
+    evolvers:
+      - 118
+      - 266
+      - 300
+      - 100
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Fighter, Striker, Shooter, Cerebral and Powerhouse
+    characters by 1.825x, reduces damage received by 20% and makes [QCK], [PSY],
+    [RCV] and [TND] orbs beneficial for all characters. Has a chance to delay
+    all enemies by 1 turn based on damage dealt in previous turn.
+  notes: >-
+    The bonus is cumulative. Characters with 2 of the boosted classes get a
+    3.330625x bonus  
+
+    Delay chance is based on damage dealt with normal attacks and does not stack with any other delay specials or effects  
+
+    **100,000 damage or more:** 20% chance to delay  
+
+    **500,000 damage or more:** 50% chance to delay  
+
+    **1,000,000 damage or more:** 100% chance to delay  
+
+    **2,000,000 damage or more:** 100% chance to delay ignoring Delay Debuff Protection
+special:
+  name: "Peerless Donuts: Mochi Singing Result"
+  description: Boosts ATK against delayed enemies by 1.75x for 2 turns, changes
+    [STR], [QCK], [DEX], [PSY], [INT] and [BLOCK] orbs of Fighter, Striker,
+    Shooter, Cerebral and Powerhouse characters into Matching orbs and reduces
+    Special Cooldown of Fighter, Striker, Shooter, Cerebral and Powerhouse
+    characters by 1 turn
+  cooldown: 16
+  maxLevel: 6
+rumble:
+  stats:
+    def: 185
+    rumbleType: DBF
+    spd: 168
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Blow Away
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          condition:
+            count: 2
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 0.45
+          effect: damage
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          duration: 30
+          effect: debuff
+          level: 1
+          range:
+            direction: sideways
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.48
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.5
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.53
+        - override:
+            level: 2
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.56
+        - override:
+            level: 2
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.59
+        - override:
+            level: 2
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.61
+        - override:
+            level: 3
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.64
+        - override:
+            level: 3
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.67
+        - override:
+            level: 4
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 0.75
+        - override:
+            level: 5
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

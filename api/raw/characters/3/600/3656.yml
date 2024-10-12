@@ -1,0 +1,204 @@
+type: STR
+name: Page One - Tobi Roppo on Reconnaissance
+family:
+  - PageOne
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1655
+    atk: 795
+    rcv: 85
+  maxLvl:
+    hp: 3309
+    atk: 1590
+    rcv: 169
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Chonk
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Powerhouse characters by 3x, boosts HP of
+    Striker and Powerhouse characters by 1.5x, makes [RCV] orbs beneficial for
+    all characters and makes PERFECTs consume [RCV] orbs.
+special:
+  name: Blockading Bite
+  description: Reduces Despair duration by 5 turns and reduces enemies' Percent
+    Damage Reduction duration by 5 turns. If your Captain is a [DEX] or [QCK]
+    character, boosts ATK against enemies with reduced defense by 2.25x for 1
+    turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: If your Captain is a [DEX] or [QCK] character, boosts this
+      character's damage against [QCK] characters by 2.25x
+  - description: If your Captain is a [DEX] or [QCK] character, boosts this
+      character's damage against [STR] characters by 1.5x
+support:
+  type: descriptive
+  criteria: Jack, Kaido, King, Queen, Sasaki, Ulti, Black Maria and Who's-Who
+  levels:
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of [STR], [DEX] and [QCK] characters by
+      1.1x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of [STR], [DEX] and [QCK] characters by
+      1.2x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of [STR], [DEX] and [QCK] characters by
+      1.3x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of [STR], [DEX] and [QCK] characters by
+      1.4x for 1 turn.
+    - Once per adventure, when the supported character uses a Damage Dealing or
+      Health Cutting special, boosts ATK of [STR], [DEX] and [QCK] characters by
+      1.5x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 20
+    - rcv: 30
+    - atk: 30
+    - type: potential
+    - hp: 20
+    - hp: 30
+    - atk: 30
+    - type: sailor
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - slot: 1
+    - atk: 40
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 112
+    rumbleType: ATK
+    spd: 164
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 0.2
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.3
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.5
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.6
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.7
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.8
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.9
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.2

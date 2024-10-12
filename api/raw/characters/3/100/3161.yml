@@ -1,0 +1,55 @@
+type: STR
+name: Shutenmaru - Samurai Who Lost the Chance for a Meaningful Death
+japanName: 酒天丸 死にぞこなった侍
+family:
+  - AshuraDoji
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 956
+    atk: 640
+    rcv: 42
+  maxLvl:
+    hp: 3156
+    atk: 1356
+    rcv: 122
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 238589
+aliases:
+  - Limited Shutenmaru
+  - Secret Shutenmaru
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x and deals 5,000 [STR] damage
+    to all enemies at the end of each turn.
+special:
+  name: Samurai Sword
+  description: Randomizes all non-Matching orbs and boosts Orb Effects of all
+    characters by 1.5x for 1 turn.
+  cooldown: 7
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: "[STR] Powerhouse characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.1x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.15x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.2x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.25x until the next stage.
+    - Once per adventure, when the supported character uses their special,
+      boosts base ATK of the supported character by 1.3x until the next stage.

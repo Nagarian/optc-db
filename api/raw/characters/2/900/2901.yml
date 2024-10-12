@@ -1,0 +1,110 @@
+type: STR
+name: Heracles - Glinston Forest's Hero
+japanName: ヘラクレス グリンストンの森の勇者
+family:
+  - Heraclesn
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1110
+    atk: 757
+    rcv: 178
+  maxLvl:
+    hp: 2588
+    atk: 1400
+    rcv: 302
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 193662
+aliases:
+  - 3D2Y Heracles'n
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.75x and their HP by 1.25x.
+special:
+  name: Explaining the Pop Green
+  description: Removes Poison duration completely and reduces Burn and Paralysis
+    duration by 4 turns. If your crew has 5 or more [STR] or [PSY] characters,
+    boosts Orb Effects of [STR] and [PSY] characters by 2x for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [STR] and [PSY] characters by 50
+  - description: If your Captain is a [STR] or [PSY] character, makes [DEX] orbs
+      beneficial for [STR] and [PSY] characters
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+    - HP
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - hp: 50
+    - rcv: 10
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - rcv: 30
+    - atk: 50
+    - slot: 1
+    - hp: 70
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

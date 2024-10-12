@@ -1,0 +1,94 @@
+type: STR
+name: Diamond Jozu - Whitebeard's Third Division Commander
+japanName: “ダイヤモンド”・ジョズ 白ひげ海賊団３番隊隊長
+family:
+  - Jozu
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1392
+    atk: 640
+    rcv: 120
+  maxLvl:
+    hp: 2748
+    atk: 1299
+    rcv: 249
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 29621
+aliases:
+  - Colo Jozu
+  - Coliseum Jozu
+captain:
+  name: ""
+  description: Boosts ATK and HP of [STR] characters by 2x
+special:
+  name: Ice Throw
+  description: Deals 30x character's ATK in [STR] damage to all enemies. If HP is
+    below 30% at the time the special is activated, boosts ATK of all characters
+    by 1.5x for 1 turn.
+  cooldown: 29
+  maxLevel: 12
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 150
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      all characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Marco and Vista
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 35
+    - type: potential
+    - slot: 1
+    - hp: 60
+    - hp: 70
+    - cooldown: 3
+    - hp: 90
+    - type: sailor
+    - cooldown: 3
+    - atk: 80
+    - cooldown: 3
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 6
+        - value: 9

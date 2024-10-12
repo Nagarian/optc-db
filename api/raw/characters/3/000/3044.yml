@@ -1,0 +1,114 @@
+type: PSY
+name: Viola - Royal Vacation
+japanName: ヴィオラ 王族のバカンス
+family:
+  - Viola
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1159
+    atk: 823
+    rcv: 137
+  maxLvl:
+    hp: 2850
+    atk: 1398
+    rcv: 259
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 218712
+aliases:
+  - Summer Viola
+  - Swimsuit Viola
+  - Summer Violet
+  - Swimsuit Violet
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x and reduces damage received by 10%.
+special:
+  name: The Smile of the Princess Cooling Down with the Sea Breeze
+  description: Reduces ATK DOWN duration by 7 turns and boosts Orb Effects of
+    [DEX] and [PSY] characters by 1.75x for 1 turn. If during that turn you
+    score 3 PERFECT hits, boosts Orb Effects of [DEX] and [PSY] characters by 2x
+    for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 5 turns
+  - description: If this character has an [PSY] orb and you hit a PERFECT with her,
+      keep her [PSY] orb for the next turn
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Rebecca, Riku Doldo III (Ricky) and Kyros (Toy Soldier)
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - atk: 30
+    - rcv: 20
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - hp: 100
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - hp: 200
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

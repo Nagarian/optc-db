@@ -1,0 +1,46 @@
+type: INT
+name: Dagama
+japanName: ダガマ
+family:
+  - Dagama
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 177
+    atk: 52
+    rcv: 31
+  maxLvl:
+    hp: 1332
+    atk: 554
+    rcv: 213
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 33763
+aliases: []
+evolution:
+  - id: 1129
+    evolvers:
+      - 118
+      - 94
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of all characters by 1.75x
+special:
+  name: Tactician's Savage Cut
+  description: Reduces Paralysis and Despair duration by 5 turns. Deals 10% of
+    enemies' current HP in damage to one enemy
+  cooldown: 20
+  maxLevel: 6

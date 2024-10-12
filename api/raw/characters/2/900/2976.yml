@@ -1,0 +1,82 @@
+type: STR
+name: Cavendish - Beautiful Noble of the Coliseum
+japanName: キャベンディッシュ コロシアムの美しき貴公子
+family:
+  - Cavendish
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 445
+    atk: 321
+    rcv: 56
+  maxLvl:
+    hp: 1823
+    atk: 1282
+    rcv: 168
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 202436
+aliases:
+  - Hakuba
+captain:
+  name: ""
+  description: Boosts ATK of this character by 3.25x and boosts ATK of other [STR]
+    and [INT] characters by 2.75x.
+special:
+  name: Beautiful Rose-Scented Sword
+  description: Reduces enemies' Percent Damage Reduction duration by 5 turns,
+    makes [QCK] and [DEX] orbs beneficial for all characters for 2 turns and
+    locks the chain multiplier at 2.75x for 2 turns.
+  cooldown: 22
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of [STR] characters by 50
+  - description: Makes [INT] orbs beneficial for [STR] characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 100
+    - hp: 200
+    - atk: 100
+    - cooldown: 4
+    - type: potential
+    - type: sailor
+    - hp: 400
+    - atk: 200
+    - cooldown: 6
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 6

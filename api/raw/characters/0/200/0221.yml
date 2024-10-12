@@ -1,0 +1,88 @@
+type: INT
+name: Nami - Happiness Punch
+japanName: ナミ（幸せパンチ）
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1044
+    atk: 377
+    rcv: 94
+  maxLvl:
+    hp: 1990
+    atk: 949
+    rcv: 168
+cost: 22
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 4027
+aliases:
+  - Towel Nami
+  - TNami
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x
+special:
+  name: Happiness Punch
+  description: Changes [PSY] orbs into [INT] orbs
+  cooldown: 13
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 30
+  - description: Makes [TND] orbs beneficial for [INT] characters
+support:
+  type: descriptive
+  criteria: "[INT] characters"
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [INT] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [INT] characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [INT] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [INT] characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of [INT] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 40
+    - rcv: 30
+    - type: potential
+    - rcv: 40
+    - captain:
+        description: Boosts ATK of [INT] characters by 2.5x and their RCV by 1.2x
+    - hp: 50
+    - atk: 30
+    - type: sailor
+    - atk: 40
+    - cooldown: 2
+    - type: sailor
+    - hp: 60
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

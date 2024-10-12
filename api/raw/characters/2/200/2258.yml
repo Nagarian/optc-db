@@ -1,0 +1,48 @@
+type: STR
+name: Higuma - Wanted Man
+japanName: ヒグマ 第一級のおたずね者
+family:
+  - Higuma
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 294
+    atk: 339
+    rcv: 14
+  maxLvl:
+    hp: 883
+    atk: 699
+    rcv: 70
+cost: 20
+slots: 5
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 119586
+aliases:
+  - Secret Higuma
+  - Limited Higuma
+evolution:
+  - id: 2259
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 1.75x
+special:
+  name: Scoundrel's Attack
+  description: Deals 800 Fixed damage to one enemy, reduces Despair duration by 3
+    turns and reduces enemies' Resilience Buff duration by 3 turns.
+  cooldown: 12
+  maxLevel: 1

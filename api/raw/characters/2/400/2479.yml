@@ -1,0 +1,111 @@
+type: PSY
+name: Mr. 1 - Baroque Works' Assassin
+japanName: Mr.1 Ｂ・Ｗの暗殺者
+family:
+  - DazBones
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1218
+    atk: 471
+    rcv: 130
+  maxLvl:
+    hp: 2712
+    atk: 1324
+    rcv: 294
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 146579
+aliases:
+  - Daz Bones
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2.5x and their HP by 1.2x.
+special:
+  name: Spiral Hollow
+  description: Deals 20% of enemies' current HP in True damage to one enemy,
+    randomizes all non-Matching orbs, including [BLOCK] orbs, makes Badly
+    Matching and [BLOCK] orbs not reduce damage for 3 turns and reduces enemies'
+    Threshold Damage Reduction, Percent Damage Reduction and Increased Defense
+    duration by 3 turns.
+  cooldown: 18
+  maxLevel: 8
+sailor:
+  - description: If your Captain is a Slasher character, boosts base ATK of this
+      character by 150
+  - description: Makes [PSY] orbs beneficial for Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Crocodile (Mr. 0) and Zala (Miss Doublefinger)
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - rcv: 10
+    - rcv: 15
+    - slot: 1
+    - type: sailor
+    - rcv: 25
+    - hp: 40
+    - hp: 50
+    - cooldown: 1
+    - atk: 40
+    - atk: 65
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

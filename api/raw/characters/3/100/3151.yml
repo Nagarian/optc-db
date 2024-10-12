@@ -1,0 +1,115 @@
+type: QCK
+name: Trafalgar Law - Troubles Ahead
+japanName: トラファルガー・ロー 降りかかる厄介事
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1151
+    atk: 679
+    rcv: 98
+  maxLvl:
+    hp: 2801
+    atk: 1489
+    rcv: 310
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 238593
+aliases:
+  - Secret Law
+  - Limited Law
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of Slasher characters by 3x.
+special:
+  name: "Slicing-Cut: Room"
+  description: Changes [STR] and [QCK] orbs into Matching orbs, reduces enemies'
+    Percent Damage Reduction duration by 5 turns and reduces ATK DOWN duration
+    by 5 turns. If your Captain is a Fighter, Slasher or Free Spirit character,
+    adds 1.0x to Chain multiplier for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Slasher characters by 75
+  - description: If this character has an [QCK] orb and you hit a PERFECT with him,
+      keep his [QCK] orb for the next turn
+support:
+  type: descriptive
+  criteria: Donquixote Rosinante (Corazon), Bepo, Sachi and Penguin
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 50
+    - rcv: 25
+    - atk: 25
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - rcv: 25
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0

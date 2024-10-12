@@ -1,0 +1,48 @@
+type: INT
+name: Sugar - Cherry Fruit
+japanName: シュガー　実桜
+family:
+  - Sugar
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 41
+    atk: 24
+    rcv: 64
+  maxLvl:
+    hp: 799
+    atk: 355
+    rcv: 249
+cost: 13
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 28647
+aliases:
+  - Sakura Sugar
+evolution:
+  - id: 1021
+    evolvers:
+      - 117
+      - 85
+      - 88
+      - 96
+      - 99
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Shooter and Cerebral characters by 1.5x.
+  notes: This effect does not stack for characters that have both classes.
+special:
+  name: Sweet Fruit Trap
+  description: Recovers 9x characters RCV in HP. Changes the orb of Captain
+    character into Matching orb
+  cooldown: 13
+  maxLevel: 1

@@ -1,0 +1,88 @@
+type: DEX
+name: Trafalgar Law - 13 Year Wait
+japanName: トラファルガー・ロー １３年の因縁
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Slasher
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1331
+    atk: 701
+    rcv: 150
+  maxLvl:
+    hp: 2191
+    atk: 1359
+    rcv: 277
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 142486
+aliases:
+  - Secret Law
+  - Limited Law
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x
+special:
+  name: Shambles - Kikoku's Strike
+  description: Deals 30x character's ATK in [DEX] damage to one enemy. If enemies
+    have a Defense Reduction debuff at the time the special was activated,
+    boosts the Color Affinity of all characters by 1.5x for 1 turn and if you
+    are on a Treasure Map, boosts ATK against enemies with reduced defense by
+    1.75x-2.25x for 1 turn depending on your Treasure Map Level
+  cooldown: 12
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 1.75x conditional boost  
+    Level 11-20: 2x conditional boost  
+    Level 21+: 2.25x conditional boost
+support:
+  type: descriptive
+  criteria: Donquixote Doflamingo
+  levels:
+    - Once per adventure, when the supported character uses a Damage Reducing
+      special, increases damage received by 2x for 1 turn, reduces RCV by ?% for
+      1 turn and locks all orbs for 1 turn
+    - Once per adventure, when the supported character uses a Damage Reducing
+      special, increases damage received by 2x for 1 turn, reduces RCV by ?% for
+      1 turn and locks all orbs for 1 turn
+    - Once per adventure, when the supported character uses a Damage Reducing
+      special, increases damage received by 2x for 1 turn, reduces RCV by ?% for
+      1 turn and locks all orbs for 2 turns
+    - Once per adventure, when the supported character uses a Damage Reducing
+      special, increases damage received by 2x for 1 turn, reduces RCV by ?% for
+      1 turn and locks all orbs for 2 turns
+    - Once per adventure, when the supported character uses a Damage Reducing
+      special, increases damage received by 2x for 1 turn, reduces RCV by ?% for
+      1 turn, locks all orbs for 2 turns and makes Badly Matching and [BLOCK]
+      orbs not reduce damage for 2 turns
+  notes: This Support Ability is Global/Korea exclusive
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - atk: 15
+    - slot: 1
+    - rcv: 25
+    - atk: 20
+    - atk: 25
+    - hp: 60
+    - atk: 30
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 80
+        - threshold: 70
+        - threshold: 60
+        - threshold: 50

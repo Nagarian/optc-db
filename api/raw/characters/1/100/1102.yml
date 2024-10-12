@@ -1,0 +1,94 @@
+type: STR
+name: Black Arm Zephyr - Ex-Navy HQ Admiral
+japanName: 黒腕のゼファー 元海軍本部大将
+family:
+  - Zephyr
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1318
+    atk: 749
+    rcv: 0
+  maxLvl:
+    hp: 2620
+    atk: 1500
+    rcv: 0
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 33488
+aliases:
+  - Colo Zephyr
+  - Coliseum Zephyr
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.75x until the first hit other
+    than PERFECT. Reduces crew's current HP by 10% at the end of each turn
+special:
+  name: Black Arm's Last Impact
+  description: Reduces crew's current HP by 80%, deals 10x the amount of HP
+    subtracted in Typeless damage to one enemy. Boosts ATK of [STR] and [INT]
+    characters by 1.75x for 1 turn
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 200
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      all characters by 100
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Ain and Binz
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 20
+    - type: sailor
+    - type: potential
+    - cooldown: 1
+    - slot: 1
+    - atk: 30
+    - hp: 40
+    - hp: 40
+    - slot: 1
+    - hp: 50
+    - type: sailor
+    - cooldown: 2
+    - atk: 60
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

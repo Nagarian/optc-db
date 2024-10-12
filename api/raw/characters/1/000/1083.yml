@@ -1,0 +1,227 @@
+type: STR
+name: Don Sai Kano Kingdom Gang
+japanName: 首領・サイ 花ノ国のギャング
+family:
+  - Sai
+class:
+  - Striker
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1231
+    atk: 631
+    rcv: 87
+  maxLvl:
+    hp: 3013
+    atk: 1300
+    rcv: 202
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 30736
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Fighter characters by 1.5x at the start
+    of the chain and by 3x after the 3rd PERFECT in a row
+special:
+  name: "Drill Dragon: Drill Nail"
+  description: Deals 20x character's ATK in [STR] damage to all enemies. Boosts
+    ATK of Striker and Fighter characters by 1.2x-1.75x for 2 turns, depending
+    on the current HP at the time the special was activated.
+  cooldown: 23
+  maxLevel: 8
+  notes: Below 30% -> 1.75 boost, between 30% and 70% -> 1.5, above 70% -> 1.2
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Baby 5 and Chinjao
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 40
+    - type: potential
+    - hp: 10
+    - hp: 20
+    - hp: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+    - slot: 1
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 6
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 5
+        - value: 7
+          threshold: 5
+        - value: 10
+          threshold: 5
+        - value: 10
+          threshold: 10
+        - value: 15
+          threshold: 15
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 120
+    rumbleType: ATK
+    spd: 132
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          targeting:
+            targets:
+              - Striker
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 46
+      effects:
+        - amount: 0.85
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - amount: 20
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            amount: 21
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 0.95
+        - override:
+            amount: 23
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 1
+        - override:
+            amount: 24
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 1.05
+        - override:
+            amount: 26
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            amount: 27
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 1.15
+        - override:
+            amount: 29
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            amount: 30
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 1.25
+        - override:
+            amount: 32
+    - cooldown: 46
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            amount: 35

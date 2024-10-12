@@ -1,0 +1,275 @@
+type: DEX
+name: Trafalgar Law - Wave of the New Era
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1573
+    atk: 717
+    rcv: 124
+  maxLvl:
+    hp: 3146
+    atk: 1433
+    rcv: 248
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+aliases:
+  - TM Treasure Map V2
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 2x and boosts HP
+    of Slasher and Cerebral characters by 1.2x.
+special:
+  name: Gear Stompping Blade
+  description: Changes [STR], [DEX], [QCK], [PSY], [INT] and [BLOCK] orbs into
+    Matching orbs. If your Captain is a Slasher or Cerebral character, increases
+    duration of any ATK boosting buffs and Orb Amplification buffs by 2 turns.
+    If this character is a Sailor, optionally swaps this unit with your captain
+    for 2 turns.
+  cooldown: 35
+  maxLevel: 1
+sailor:
+  - description: Boosts base RCV of all characters by 60
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - atk: 15
+    - atk: 25
+    - type: potential
+    - captain:
+        description: Boosts ATK of Slasher and Cerebral characters by 2.25x and boosts
+          HP of Slasher and Cerebral characters by 1.2x.
+    - type: sailor
+    - rcv: 10
+    - rcv: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Slasher and Cerebral characters by 2.5x and boosts HP
+          of Slasher and Cerebral characters by 1.2x.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Slasher and Cerebral characters by 2.75x and boosts
+          HP of Slasher and Cerebral characters by 1.2x.
+    - cooldown: 2
+    - hp: 40
+    - hp: 40
+    - rcv: 40
+    - cooldown: 3
+    - slot: 1
+    - hp: 50
+    - hp: 60
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Slasher and Cerebral characters by 3x and boosts HP
+          of Slasher and Cerebral characters by 1.2x.
+    - atk: 30
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - hp: 70
+    - hp: 100
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Slasher and Cerebral characters by 3.25x and boosts
+          HP of Slasher and Cerebral characters by 1.2x.
+    - atk: 50
+    - cooldown: 7
+    - captain:
+        description: Boosts ATK of Slasher and Cerebral characters by 4x, boosts HP of
+          Slasher and Cerebral characters by 1.2x and deals 10% of enemies'
+          current HP in damage to all enemies at the end of each turn. If this
+          character becomes your captain in the middle of an island, reduces
+          damage received by 70% and reduces Silence duration by 2 turns.
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - rcv: 100
+    - hp: 100
+    - atk: 50
+    - hp: 150
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+rumble:
+  stats:
+    def: 149
+    rumbleType: DBF
+    spd: 153
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Half SPD
+          chance: 55
+          duration: 15
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 28
+      effects:
+        - {}
+        - override:
+            chance: 60
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+        - override:
+            chance: 65
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+        - override:
+            chance: 70
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+        - override:
+            chance: 75
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+        - override:
+            chance: 80
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+        - override:
+            chance: 85
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+        - override:
+            chance: 90
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+        - override:
+            chance: 95
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+        - override:
+            chance: 100

@@ -1,0 +1,48 @@
+type: INT
+name: Sir Crocodile - Warlord of the Sea
+japanName: サー・クロコダイル 王下七武海
+family:
+  - Crocodile
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1088
+    atk: 659
+    rcv: 147
+  maxLvl:
+    hp: 2980
+    atk: 1380
+    rcv: 150
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 7577
+aliases:
+  - Slasherdile
+captain:
+  name: ""
+  description: Reduces damage received by 20%, boosts ATK of Slasher characters by 2x
+special:
+  name: Ground Death
+  description: Randomizes all orbs and changes the orb of this character into an
+    [INT] orb, deals 15x character's ATK in [INT] damage to all enemies
+  cooldown: 23
+  maxLevel: 6
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Nico Robin
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

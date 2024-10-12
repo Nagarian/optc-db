@@ -1,0 +1,53 @@
+type: QCK
+name: Charlotte Perospero - Vengeful Candyman
+japanName: シャーロット・ペロスペロー 報復の飴細工
+family:
+  - CharlottePerospero
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 634
+    atk: 552
+    rcv: 86
+  maxLvl:
+    hp: 2930
+    atk: 1142
+    rcv: 231
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 155145
+aliases:
+  - Support Perospero
+  - Kizuna Perospero
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of Cerebral characters by 2.25x.
+special:
+  name: Candy Seaslug
+  description: Locks all orbs for 1 turn and changes Badly Matching orbs into Matching orbs.
+  cooldown: 9
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: Cerebral characters
+  levels:
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      the supported character's orb for 1 turn.
+    - Once per adventure, when the supported character uses their special, locks
+      orbs for Cerebral characters for 1 turn.

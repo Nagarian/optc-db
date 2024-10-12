@@ -1,0 +1,103 @@
+type: INT
+name: Ben Beckman - Red-Hair Emperor's Right-Hand Man
+japanName: ベン・ベックマン “四皇”赤髪の右腕
+family:
+  - BenBeckman
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1126
+    atk: 672
+    rcv: 136
+  maxLvl:
+    hp: 2295
+    atk: 1384
+    rcv: 367
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 66691
+aliases:
+  - Secret Benn Beckman
+  - Secret Ben Beckman
+  - Limited Ben Beckman
+  - Limited Benn Beckman
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.5x and their HP by 1.2x at
+    the start of the chain and boosts ATK of Cerebral characters by 3.25x
+    following a chain of Good > Great > PERFECT hits
+special:
+  name: Restraining Gunpoint
+  description: Delays all enemies by 1 turn. If your Captain is a Cerebral
+    character, boosts ATK against delayed enemies by 1.5x for 1 turn and changes
+    orbs of adjacent characters into Matching Orbs
+  cooldown: 13
+  maxLevel: 5
+sailor:
+  - description: Reduces Blindness duration by 3 turns
+  - description: Adds 2x character's ATK as Additional Damage
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shanks, Lucky Roux and Yasopp
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - atk: 30
+    - rcv: 30
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - hp: 60
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 80
+          reduction: 2
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 3

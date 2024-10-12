@@ -1,0 +1,45 @@
+type: PSY
+name: Conis
+japanName: コニス
+family:
+  - Conis
+class:
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 58
+    atk: 10
+    rcv: 32
+  maxLvl:
+    hp: 503
+    atk: 190
+    rcv: 232
+cost: 9
+slots: 2
+maxExp: 136167
+maxLevel: 35
+flags:
+  - fortnight
+links:
+  gamewithId: 16035
+aliases:
+  - Konis
+evolution:
+  - id: 716
+    evolvers:
+      - 116
+      - 117
+      - 81
+      - 87
+captain:
+  name: ""
+  description: Boosts RCV of all characters by 2x if HP is below 30% at the start
+    of the turn
+special:
+  name: Angel's Harp - Healing
+  description: Boosts ATK and RCV of Free Spirit characters by 1.5x for 2 turns,
+    seals herself for 3 turns
+  cooldown: 27
+  maxLevel: 14

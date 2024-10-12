@@ -1,0 +1,415 @@
+type: STR
+name: Whitebeard - Four Emperors
+japanName: 白ひげ 四皇
+family:
+  - EdwardNewgate
+class:
+  - Striker
+  - Powerhouse
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 3148
+    atk: 996
+    rcv: 142
+  maxLvl:
+    hp: 3806
+    atk: 1558
+    rcv: 347
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 5166
+aliases:
+  - Edward Newgate
+  - Mega/Super/6+ WB
+  - Yonko
+  - V1 Legend WB
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.75x, by 3x instead if HP is below
+    30% at the start of the turn, and boosts HP of all characters by 1.2x
+special:
+  name: Emperor's Pride
+  description: Deals 30% of enemies' current HP in damage to all enemies, reduces
+    Special Cooldown of middle and bottom row characters by 1 turn and
+    randomizes non-Matching orbs, including [BLOCK] orbs.
+  cooldown: 25
+  maxLevel: 9
+sailor:
+  - description: Boosts base ATK of Striker and Powerhouse characters by 60
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - atk: 5
+    - hp: 5
+    - rcv: 10
+    - type: potential
+    - rcv: 15
+    - hp: 20
+    - atk: 25
+    - type: sailor
+    - atk: 10
+    - hp: 15
+    - atk: 20
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - type: potential
+    - rcv: 20
+    - atk: 20
+    - hp: 45
+    - hp: 50
+    - hp: 65
+    - atk: 25
+    - hp: 40
+    - hp: 70
+    - hp: 80
+    - atk: 30
+    - rcv: 40
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 200
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 2
+        - value: 100
+          reduction: 3
+        - value: 150
+          reduction: 4
+        - value: 200
+          reduction: 5
+rumble:
+  stats:
+    def: 146
+    rumbleType: ATK
+    spd: 150
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Damage Over Time
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - DEF
+          effect: buff
+          level: 8
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+    - effects:
+        - override:
+            level: 7
+        - {}
+    - effects:
+        - override:
+            level: 8
+        - {}
+  special:
+    - cooldown: 23
+      effects:
+        - amount: 38
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 39
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 40
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 41
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 42
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 43
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 44
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 45
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 46
+    - cooldown: 23
+      effects:
+        - override:
+            amount: 48
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+              effect: buff
+              level: 4
+              condition:
+                comparator: below
+                count: 30
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - DEF
+              effect: buff
+              level: 9
+              condition:
+                comparator: below
+                count: 30
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 5
+            - {}
+        - effects:
+            - override:
+                level: 6
+            - {}
+        - effects:
+            - override:
+                level: 7
+            - {}
+        - effects:
+            - override:
+                level: 9
+            - {}
+  - captain:
+      - description: Boosts ATK of all characters by 4x, by 5.25x instead if HP is below
+          30% at the start of the turn, boosts HP of all characters by 1.3x,
+          reduces damage received by 20% and makes Badly Matching orbs
+          beneficial for all characters.
+  - rumble:
+      special:
+        - cooldown: 23
+          effects:
+            - amount: 40
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: cut
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 41
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 42
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 43
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 44
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 45
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 46
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 47
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 48
+        - cooldown: 23
+          effects:
+            - override:
+                amount: 50
+  - rumble:
+      resilience:
+        - attribute: Damage Over Time
+          chance: 100
+          type: debuff
+        - attribute: DEX
+          percentage: 40
+          type: damage
+    special:
+      description: Deals 30% of enemies' current HP in damage to all enemies, reduces
+        Special Cooldown of all characters by 1 turn and changes all orbs,
+        including [BLOCK] orbs, into Matching orbs. If your crew has Normal
+        Attack Only, deals 1,000,000 Fixed True damage, ignoring Normal Attack
+        Only, to all enemies, boosts Orb Effects of all characters by 2x for 1
+        turn and boosts base ATK of all characters by 800 for 1 turn.

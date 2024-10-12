@@ -1,0 +1,45 @@
+type: STR
+name: Bepo - Heart Pirates
+japanName: ベポ ハートの海賊団
+family:
+  - Bepo
+class:
+  - Fighter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 96
+    atk: 53
+    rcv: 46
+  maxLvl:
+    hp: 1003
+    atk: 525
+    rcv: 213
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 26911
+aliases: []
+evolution:
+  - id: 1003
+    evolvers:
+      - 117
+      - 78
+      - 84
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 1.5x
+special:
+  name: Bepo's Ultimate Fist!!
+  description: Reduces Paralysis duration by 3 turns and deals 7x character's ATK
+    in [STR] damage to one enemy
+  cooldown: 20
+  maxLevel: 9

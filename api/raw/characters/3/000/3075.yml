@@ -1,0 +1,98 @@
+type: STR
+name: Rebecca - Dancing Daughter of a Hero
+japanName: レベッカ 演舞極める英雄の娘
+family:
+  - Rebecca
+class:
+  - Fighter
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1606
+    atk: 783
+    rcv: 112
+  maxLvl:
+    hp: 2892
+    atk: 1410
+    rcv: 248
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 223979
+aliases:
+  - World Journey Rebecca
+  - Chinese Rebecca
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Striker characters by 3x and reduces
+    damage received by 15%.
+special:
+  name: Dancing Swordswoman Stance
+  description: Reduces Silence duration by 5 turns and reduces enemies' Threshold
+    Damage Reduction duration by 5 turns. If your captain is a Fighter or
+    Striker character, boosts the Color Affinity of all characters by 1.75x for
+    1 turn and if during that turn you score 4 PERFECT hits, boosts the Color
+    Affinity of all characters by 2x for 1 turn in the following turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Makes [QCK] orbs beneficial for Fighter and Striker characters
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Striker characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 4
+      reduction: 4
+    - value: 5
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 40
+    - rcv: 10
+    - hp: 15
+    - type: potential
+    - atk: 60
+    - cooldown: 1
+    - rcv: 20
+    - atk: 100
+    - hp: 20
+    - slot: 1
+    - rcv: 20
+    - hp: 25
+    - type: sailor
+    - hp: 40
+    - type: potential
+  potentials:
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

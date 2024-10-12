@@ -1,0 +1,510 @@
+type: INT
+name: The Dark King Silvers Rayleigh - Pirate King's Right-Hand Man
+japanName: “冥王”シルバーズ・レイリー 海賊王の右腕
+family:
+  - SilversRayleigh
+class:
+  - Slasher
+  - Fighter
+rarity: 6+
+stats:
+  combo: 5
+  minLvl:
+    hp: 1500
+    atk: 800
+    rcv: 300
+  maxLvl:
+    hp: 3121
+    atk: 1472
+    rcv: 515
+cost: 65
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 7311
+aliases:
+  - Mega/Super/6+ Rayleigh
+  - V1 Legend Rayliegh
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 4x and boosts HP and RCV of
+    all characters by 1.2x
+special:
+  name: Netherworld Conqueror
+  description: Reduces Bind, Despair and Paralysis duration by 7 turns, delays all
+    enemies by 1 turn and makes PERFECTs easier to hit for 1 turn
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 2 turns
+support:
+  type: descriptive
+  criteria: Monkey D. Luffy
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind or Despair,
+      reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, Despair or
+      Paralysis, reduces Bind, Despair and Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, Despair or
+      Paralysis, reduces Bind, Despair and Paralysis duration by 2 turns.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 20
+    - hp: 20
+    - atk: 15
+    - rcv: 15
+    - hp: 40
+    - hp: 50
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - type: sailor
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - rcv: 30
+    - atk: 30
+    - hp: 70
+    - hp: 80
+    - cooldown: 1
+    - type: sailor
+    - hp: 90
+    - hp: 130
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts Chain Multiplier Growth Rate by 4x, boosts HP and RCV of all
+          characters by 1.2x, makes [PSY], [INT] and [TND] orbs beneficial for
+          all characters and recovers 2x character's RCV at the end of each
+          turn.
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 3
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1.5
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 2
+          threshold: 50
+rumble:
+  stats:
+    def: 129
+    rumbleType: RCV
+    spd: 151
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 70
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 10
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 26
+        - override:
+            level: 4
+            duration: 11
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 27
+        - override:
+            level: 5
+            duration: 12
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 28
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 29
+        - override:
+            level: 6
+            duration: 14
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 30
+        - override:
+            level: 6
+            duration: 15
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 31
+        - override:
+            level: 7
+            duration: 16
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 32
+        - override:
+            level: 7
+            duration: 17
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 33
+        - override:
+            level: 8
+            duration: 18
+    - cooldown: 29
+      effects:
+        - {}
+        - override:
+            chance: 35
+        - override:
+            level: 9
+            duration: 19
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - SPD
+              effect: buff
+              level: 4
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - INT
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 2
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 7
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 8
+            - override:
+                level: 5
+  - captain:
+      - description: Boosts ATK of all characters by 1.75x, boosts Chain Multiplier
+          Growth Rate by 4x and boosts HP and RCV of all characters by 1.3x.
+      - description: Reduces Special Cooldown of all characters by 2 turns at the start
+          of the fight, boosts ATK of all characters by 1.75x, boosts Chain
+          Multiplier Growth Rate by 4x, boosts HP and RCV of all characters by
+          1.3x, makes [PSY], [INT] and [TND] orbs beneficial for all characters
+          and recovers 2x character's RCV at the end of each turn.
+  - rumble:
+      special:
+        - cooldown: 29
+          effects:
+            - attributes:
+                - Silence
+              duration: 20
+              effect: boon
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - Silence
+              chance: 35
+              duration: 10
+              effect: hinderance
+              targeting:
+                targets:
+                  - enemies
+            - attributes:
+                - ATK
+              duration: 11
+              effect: debuff
+              level: 4
+              targeting:
+                targets:
+                  - self
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 21
+            - override:
+                chance: 39
+            - override:
+                level: 4
+                duration: 12
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 22
+            - override:
+                chance: 43
+            - override:
+                level: 5
+                duration: 13
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 23
+            - override:
+                chance: 47
+            - override:
+                level: 5
+                duration: 14
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 24
+            - override:
+                chance: 51
+            - override:
+                level: 6
+                duration: 15
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 25
+            - override:
+                chance: 55
+            - override:
+                level: 6
+                duration: 16
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 26
+            - override:
+                chance: 59
+            - override:
+                level: 7
+                duration: 17
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 27
+            - override:
+                chance: 63
+            - override:
+                level: 7
+                duration: 18
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 28
+            - override:
+                chance: 67
+            - override:
+                level: 8
+                duration: 19
+        - cooldown: 29
+          effects:
+            - override:
+                duration: 29
+            - override:
+                chance: 75
+            - override:
+                level: 9
+                duration: 20
+  - rumble:
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: PSY
+          percentage: 40
+          type: damage
+    special:
+      description: Boosts Orb Effects of all characters by 2x for 1 turn, Reduces
+        Bind, Despair and Paralysis duration by 7 turns, delays all enemies by 1
+        turn and makes PERFECTs easier to hit for 1 turn. If your crew has Orb
+        Amplification, increases boost effects of Orb Amplification buffs by
+        +0.3x.

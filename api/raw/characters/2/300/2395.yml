@@ -1,0 +1,181 @@
+type: DEX
+name: Chopper & Franky - Warriors with the Soul of an Emperor
+japanName: チョッパー＆フランキー 皇帝（エンペラー）の魂持つ戦士たち
+family:
+  - TonyTonyChopper
+  - Franky
+class:
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 351
+    atk: 199
+    rcv: 20
+  maxLvl:
+    hp: 1410
+    atk: 682
+    rcv: 55
+cost: 30
+slots: 1
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 140043
+aliases:
+  - Raid Tony Tony Chopper
+  - Raid Franky
+  - Raid Chopper
+evolution:
+  - id: 2398
+    evolvers:
+      - 2396
+      - 2397
+rumble:
+  stats:
+    def: 275
+    rumbleType: DEF
+    spd: 106
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 1
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - DEF
+          duration: 15
+          effect: penalty
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+            excludes:
+              - self
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 20
+        - override:
+            duration: 20
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            duration: 23
+        - override:
+            level: 2
+            duration: 23
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            level: 2
+            duration: 24
+        - override:
+            level: 3
+            duration: 24

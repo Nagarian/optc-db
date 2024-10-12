@@ -1,0 +1,225 @@
+type: QCK
+name: Cavendish - Elegant Swordsman on a White Horse
+japanName: キャベンディッシュ 華麗なる白馬の剣士
+family:
+  - Cavendish
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1280
+    atk: 689
+    rcv: 135
+  maxLvl:
+    hp: 2622
+    atk: 1374
+    rcv: 304
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 272364
+aliases:
+  - Anniversary Cavendish
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 3x, by 3.5x instead if they have
+    a beneficial orb.
+special:
+  name: Rose-Scented Slash
+  description: Reduces Chain Multiplier Limit duration by 4 turns and reduces
+    enemies' Resilience duration by 4 turns. If you have used 10 or more [RCV]
+    orbs with normal attacks, boosts ATK of all characters by 2x for 1 turn and
+    reduces Special Cooldown of all characters by 1 turn, boosts ATK of all
+    characters by 1.75x for 1 turn otherwise.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Restores Special Cooldown of this character by 1 turn when it is rewinded
+  - description: Changes all orbs into [RCV] orbs at the start of the fight
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[QCK] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - rcv: 40
+    - hp: 40
+    - type: sailor
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - hp: 50
+    - atk: 75
+    - rcv: 40
+    - hp: 60
+    - cooldown: 1
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 6
+rumble:
+  stats:
+    def: 95
+    rumbleType: ATK
+    spd: 224
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - DEX
+              - QCK
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 19
+      effects:
+        - amount: 0.1
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.2
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            duration: 13
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            duration: 14
+            level: 2
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            duration: 15
+            level: 3
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            duration: 16
+            level: 3
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            duration: 17
+            level: 4
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            duration: 18
+            level: 4
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            duration: 19
+            level: 5
+    - cooldown: 19
+      effects:
+        - override:
+            amount: 1
+        - override:
+            duration: 20
+            level: 5

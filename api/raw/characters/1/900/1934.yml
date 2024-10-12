@@ -1,0 +1,69 @@
+type: QCK
+name: Franky - Straw Hat Pirates' Secret Weapon
+japanName: フランキー 麦わらの一味の秘密兵器
+family:
+  - Franky
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 824
+    atk: 187
+    rcv: 6
+  maxLvl:
+    hp: 2230
+    atk: 860
+    rcv: 82
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 87123
+aliases:
+  - Shogun Franky
+  - General Franky
+  - V1 Legend Franky
+evolution:
+  - id: 1935
+    evolvers:
+      - 118
+      - 79
+      - 94
+      - 301
+      - 267
+captain:
+  name: ""
+  description: >-
+    If there are 6 characters in your crew with Fighter, Slasher,
+    Shooter or Striker classes, boosts ATK of all characters by 3x and their HP
+    by 1.3x.  
+
+    **Action:** Franky brings the entire crew into General Franky for 1 turn and becomes immune to Blow Away inflicted to the crew. During this turn, boosts ATK of all characters by 4x instead and reduces damage taken by 38%
+  notes: >-
+    All characters on your crew must have one of the 4 classes listed, but
+    you do not need one of each. Franky Captain Action lasts one turn and can be
+    reactivated after a 4 turns cooldown. Only 1 Franky Captain Action can be
+    activated at once.  
+
+    During transformation:  
+
+    If you attack with a Fighter character, deal 1.25x damage to targeted enemy  
+
+    If you attack with a Slasher character, deal full damage to targeted enemy, but deal 0.1x damage to all enemies in the same row as the targeted enemy  
+
+    If you attack with a Striker character, deal 0.5x damage to all enemies on the stage  
+
+    If you attack with a Shooter character, deal 0.75x damage to targeted enemy but deal 0.3x damage to all other enemies on the stage
+special:
+  name: Franky Cannon
+  description: Deals 10% of enemies' current HP in damage to all enemies,
+    randomizes all non-Matching orbs, including [BLOCK] orbs, and boosts ATK of
+    Fighter, Slasher, Shooter and Striker characters by 2x for 1 turn
+  cooldown: 21
+  maxLevel: 6

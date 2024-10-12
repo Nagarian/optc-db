@@ -1,0 +1,410 @@
+type: STR
+name: Eustass "Captain" Kid - Competing Captains
+japanName: ユースタス・“キャプテン”キッド 競い合う船長達
+family:
+  - EustassKid
+class:
+  - Striker
+  - Driven
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1727
+    atk: 996
+    rcv: 62
+  maxLvl:
+    hp: 3838
+    atk: 1660
+    rcv: 207
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - inkable
+links:
+  gamewithId: 275858
+aliases:
+  - Last tap LT Final Tap FT Kid
+  - V2 Legend Kid
+captain:
+  name: ""
+  description: Reduces Special Cooldown of this character by 3 turns at the start
+    of the fight, boosts ATK of [STR], Striker and Driven characters by 5x and
+    their HP by 1.3x. If HP is below 50% at the start of the turn, reduces
+    damage received by 25%.
+superSpecial:
+  criteria: This character must be captain and this character's Special ability
+    must be used 2 times.
+  description: Changes all orbs into Matching orbs, reduces Burn duration by 3
+    turns and transforms all [STR] characters into Super [STR] characters.
+special:
+  name: Trample-Down Steel Arm
+  description: If HP is above 51% at the time the special is activated, reduces
+    crew's current HP by 50% crew's MAX HP and advances Special Cooldown of this
+    character to MAX. Deals 100x character's ATK in Typeless True damage to all
+    enemies and boosts ATK of [STR], Striker and Driven characters by 2.5x for 1
+    turn. If your crew has ATK UP, boosts Orb Effects of [STR], Striker and
+    Driven characters by 2.5x for 1 turn. If your crew has ATK UP and Orb
+    Amplification, boosts the Color Affinity of [STR], Striker and Driven
+    characters by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+  - description: Makes [STR] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[STR] characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - type: potential
+    - atk: 5
+    - hp: 10
+    - atk: 5
+    - hp: 20
+    - hp: 20
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - rcv: 20
+    - rcv: 30
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - hp: 50
+    - hp: 100
+    - hp: 100
+    - type: sailor
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 8
+          threshold: 40
+        - value: 9
+          threshold: 50
+        - value: 10
+          threshold: 60
+        - value: 11
+          threshold: 70
+        - value: 12
+          threshold: 80
+  lastTap:
+    criteria: On the last Stage, if HP is below 51% at the start of the turn
+    levels:
+      - description: Makes normal attacks of this character deal damage to all enemies
+          for 1 turn.
+      - description: Makes normal attacks of this character deal damage to all enemies
+          for 1 turn and overrides the Chain Multiplier to 3.5x.
+      - description: Makes normal attacks of this character deal damage to all enemies
+          for 1 turn and overrides the Chain Multiplier to 3.75x.
+      - description: Makes normal attacks of this character deal damage to all enemies
+          for 1 turn and overrides the Chain Multiplier to 4x.
+      - description: Makes normal attacks of this character deal damage to all enemies
+          for 1 turn and overrides the Chain Multiplier to 4.5x.
+rumble:
+  stats:
+    def: 155
+    rumbleType: ATK
+    spd: 178
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 100
+      type: debuff
+    - attribute: DEX
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 7
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 0.6
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+          defbypass: true
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+          duration: 6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 1
+            duration: 6
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            level: 3
+            duration: 10
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - SPD
+              - HP
+              - Guard
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - STR
+          - attributes:
+              - ATK
+              - DEF
+              - Critical Hit
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+          - attributes:
+              - ATK
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Driven
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Driven
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 2
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 5
+          - override:
+              level: 3
+          - override:
+              level: 3
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 6
+          - override:
+              level: 3
+          - override:
+              level: 4
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 10
+          type: action
+          action: guard
+      special:
+        - uses: 2
+          effects:
+            - amount: 1.2
+              effect: damage
+              targeting:
+                count: 3
+                targets:
+                  - enemies
+              type: atk
+              defbypass: true
+            - attributes:
+                - DEF
+              duration: 21
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - STR
+        - uses: 2
+          effects:
+            - override:
+                amount: 1.45
+            - override:
+                level: 2
+                duration: 23
+        - uses: 2
+          effects:
+            - override:
+                amount: 1.7
+            - override:
+                level: 3
+                duration: 25
+        - uses: 2
+          effects:
+            - override:
+                amount: 1.95
+            - override:
+                level: 4
+                duration: 27
+        - uses: 2
+          effects:
+            - override:
+                amount: 2.2
+            - override:
+                level: 5
+                duration: 29

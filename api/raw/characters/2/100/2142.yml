@@ -1,0 +1,98 @@
+type: STR
+name: '"Winch Green" Vinsmoke Yonji - Science Military Germa 66'
+japanName: “ウインチグリーン” ヴィンスモーク・ヨンジ 科学戦闘部隊ジェルマ６６
+family:
+  - VinsmokeYonji
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1116
+    atk: 426
+    rcv: 172
+  maxLvl:
+    hp: 2540
+    atk: 1364
+    rcv: 372
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 74385
+aliases:
+  - Green Ranger
+  - Super Yonji
+  - Mega Yonji
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.25x, boosts ATK of Powerhouse
+    characters by 1.4x and boosts HP of Powerhouse characters by 1.2x
+  notes: Attack boost stacks, so a [STR] Powerhouse character has a 3.15x ATK
+special:
+  name: Burst End Iron Arm
+  description: If your Captain is a [STR] or [INT] character, adds 55x character's
+    ATK as additional Typeless damage for 1 turn. If your Captain is a
+    Powerhouse character, reduces enemies' Percent Damage Reduction and
+    Threshold Damage Reduction duration by 3 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [INT] orbs beneficial for this character
+  - description: Boosts base HP of all characters by 100
+support:
+  type: descriptive
+  criteria: Vinsmoke Judge, Vinsmoke Ichiji, Vinsmoke Niji and Vinsmoke Reiju
+  levels:
+    - Once per adventure, when you reach the final stage, adds 10x supported
+      character's ATK as Additional Damage to Powerhouse character's attacks for
+      1 turn
+    - Once per adventure, when you reach the final stage, adds 10x supported
+      character's ATK as Additional Damage to Powerhouse character's attacks for
+      1 turn
+    - Once per adventure, when you reach the final stage, adds 20x supported
+      character's ATK as Additional Damage to Powerhouse character's attacks for
+      1 turn
+    - Once per adventure, when you reach the final stage, adds 20x supported
+      character's ATK as Additional Damage to Powerhouse character's attacks for
+      1 turn
+    - Once per adventure, when you reach the final stage, adds 30x supported
+      character's ATK as Additional Damage to Powerhouse character's attacks for
+      1 turn
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - rcv: 15
+    - hp: 40
+    - atk: 30
+    - rcv: 25
+    - cooldown: 1
+    - hp: 60
+    - slot: 1
+    - atk: 50
+    - hp: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

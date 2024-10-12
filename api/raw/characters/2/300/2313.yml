@@ -1,0 +1,40 @@
+type: QCK
+name: Germa Kingdom Clone Soldier (QCK)
+japanName: ジェルマ王国複製兵・[速]
+family:
+  - GermaSoldierQCK
+class:
+  - Powerhouse
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 127
+    atk: 47
+    rcv: 21
+  maxLvl:
+    hp: 1500
+    atk: 753
+    rcv: 144
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+links:
+  gamewithId: 131808
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of [QCK] characters by 1 turn at the start
+    of the fight and boosts ATK of [QCK] characters by 1.5x
+special:
+  name: Rapid Trump Card
+  description: Reduces Special Cooldown of [QCK] characters by 1 turn. Following
+    the activation of the special, if during that turn you score 6 PERFECT hits,
+    reduces Special Cooldown of Powerhouse characters by 1 turn in the following
+    turn
+  cooldown: 15
+  maxLevel: 7

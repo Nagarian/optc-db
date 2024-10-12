@@ -1,0 +1,87 @@
+type: INT
+name: Navy HQ Vice Admiral Onigumo Eight-Swords Style Fighter
+japanName: 海軍本部中将オニグモ 八刀流の剣士
+family:
+  - Onigumo
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1243
+    atk: 572
+    rcv: 46
+  maxLvl:
+    hp: 2598
+    atk: 1383
+    rcv: 225
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 43893
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight, boosts ATK of Slasher and Driven characters by 1.6x
+  notes: The bonus is cumulative. Slasher + Driven characters get a 2.56x bonus.
+special:
+  name: Onigumo of Dismantling Swordsmanship
+  description: Randomizes [RCV], [TND] and [BLOCK] orbs. Makes [STR], [DEX] and
+    [QCK] orbs beneficial for Driven and Slasher characters for 2 turns
+  cooldown: 15
+  maxLevel: 7
+sailor:
+  - description: Reduces Paralysis duration by 5 turns on this character
+  - description: Boosts base ATK, HP and RCV of Slasher and Driven characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Sakazuki (Akainu), Kuzan (Aokiji), Borsalino (Kizaru) and Sengoku
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - type: potential
+    - rcv: 10
+    - rcv: 20
+    - rcv: 20
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - cooldown: 1
+    - hp: 80
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

@@ -1,0 +1,43 @@
+type: INT
+name: Nami - Mirage Tempo
+frenchName: Nami MirageTempo
+japanName: ナミ 蜃気楼＝テンポ
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 348
+    atk: 201
+    rcv: 75
+  maxLvl:
+    hp: 840
+    atk: 543
+    rcv: 219
+cost: 9
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 2020
+aliases: []
+evolution:
+  - id: 12
+    evolvers:
+      - 117
+      - 82
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 1.5x
+special:
+  name: Mirage Tempo
+  description: Reduces damage received from [INT] enemies by 100% for 1 turn
+  cooldown: 15
+  maxLevel: 8

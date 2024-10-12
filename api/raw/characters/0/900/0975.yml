@@ -1,0 +1,47 @@
+type: DEX
+name: Smoker - Wild Lone Wolf
+japanName: スモーカー あらくれの一匹オオカミ
+family:
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 210
+    atk: 86
+    rcv: 100
+  maxLvl:
+    hp: 610
+    atk: 286
+    rcv: 273
+cost: 10
+slots: 3
+maxExp: 90778
+maxLevel: 35
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 25365
+aliases:
+  - Kid Smoker
+evolution:
+  - id: 976
+    evolvers:
+      - 117
+      - 80
+      - 91
+      - 97
+captain:
+  name: ""
+  description: Reduces damage received by 10%
+special:
+  name: A Threat That Puts Adults to Shame
+  description: Boosts ATK of Striker and Driven characters by 1.3x for 1 turn. If
+    the special is activated with more than 50% health remaining, protects from
+    defeat for 1 turn.
+  cooldown: 15
+  maxLevel: 1

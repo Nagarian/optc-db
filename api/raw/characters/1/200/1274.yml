@@ -1,0 +1,103 @@
+type: STR
+name: Champion Jesus Burgess
+japanName: “チャンピオン”ジーザス・バージェス
+family:
+  - JesusBurgess
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1439
+    atk: 522
+    rcv: 1
+  maxLvl:
+    hp: 3870
+    atk: 1368
+    rcv: 1
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 38771
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 1.6x and their HP by 1.2x
+  notes: Boosts stack, so a Fighter/Powerhouse character has a 2.56x ATK and 1.44x HP
+special:
+  name: Champion of the Wild Roar
+  description: Deals 20x character's ATK in [STR] damage to all enemies. Boosts
+    ATK of Fighter characters by 1.5x for 5 turns
+  cooldown: 25
+  maxLevel: 9
+sailor:
+  - description: Boosts base HP of all characters by 75
+  - description: Adds 2x character's ATK as Additional Damage
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Marshall D. Teach (Blackbeard), Van Augur, Laffitte, Shiryu and Doc Q
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - hp: 40
+    - hp: 40
+    - atk: 20
+    - atk: 30
+    - slot: 1
+    - hp: 80
+    - hp: 90
+    - cooldown: 2
+    - atk: 50
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 5
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

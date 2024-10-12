@@ -1,0 +1,450 @@
+type: INT
+name: Uta - Demon King of the Uta World
+family:
+  - Uta
+class:
+  - Driven
+  - Powerhouse
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 2002
+    atk: 1067
+    rcv: 175
+  maxLvl:
+    hp: 4004
+    atk: 1778
+    rcv: 350
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - kizuna
+aliases:
+  - RED Super Mega Tot Musica
+captain:
+  name: ""
+  description: 'Reduces Special Cooldown of this character by 4 turns at the start
+    of the fight, boosts ATK of [INT], Driven and Powerhouse characters by 5.25x
+    and boosts HP of [INT], Driven and Powerhouse characters by 1.3x. If you use
+    "Resonating Tot Musica: Finale" on this character, boosts ATK of [INT],
+    Driven and Powerhouse characters by 5.5x for 3 turns instead. If there is
+    only 1 enemy on the stage, reduces damage received by 40%.'
+superSpecial:
+  criteria: This character must be captain and your crew must have Orb Effect and
+    Color Affinity.
+  description: Increases boost effects of Orb Amplification and Color Affinity
+    buffs applied by Driven and Powerhouse characters by 0.25x for 3 turns,
+    changes all orbs of top and bottom row characters into Matching orbs and
+    transforms all Driven characters into Super Driven characters.
+special:
+  name: "Resonating Tot Musica: Finale"
+  description: >-
+    Applies a Turn Progress Effect for 3 turns that will apply the
+    following effects:
+
+
+    -   **Start of Each Turn:** Reduces crew's current HP by 70% at the start of every turn
+
+    -   **Turn 1 (Activation):** Boosts Orb Effects of Driven and Powerhouse characters by 2.5x for 1 turn and boosts Color Affinity of Driven and Powerhouse characters by 2.25x for 1 turn
+
+    -   **Turn 2:** Boosts Orb Effects of Driven and Powerhouse characters by 2.75x for 1 turn and boosts Color Affinity of Driven and Powerhouse characters by 2.5x for 1 turn
+
+    -   **Turn 3:** Boosts Orb Effects of Driven and Powerhouse characters by 3x for 1 turn and boosts Color Affinity of Driven and Powerhouse characters by 2.75x for 1 turn
+
+    -   **On Effect Removal by Enemy:** Boosts Orb Effects of Driven and Powerhouse characters by 2.75x for 1 turn and boosts Color Affinity of Driven and Powerhouse characters by 2.5x for 1 turn.
+
+    -   **Effect Removal Condition & Effect:** If your HP is below 70% at the end of your turn, removes Turn Progress Effect and binds themselves for 5 turns.
+
+
+    If your crew has the same Turn Progress Effect when the special is activated, changes Effect Removal Condition & Effect to: If your HP is below 70% at the end of your turn, removes Turn Progress Effect and binds themselves for 5 turns; and changes the Start of Each Turn effect to: Reduces crew's current HP by 30% at the start of every turn. If your crew has Turn Progress Effect when the special is activated, increases duration of any ATK boosting buffs buffs by 2 turns, locks all orbs for 2 turns and adds 1.4x to Chain multiplier for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Makes [PSY] and [INT] orbs beneficial for Driven characters
+  - description: Boosts base HP of Driven characters by 1.1x
+support:
+  type: descriptive
+  criteria: "[INT] Driven characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Driven characters by 1.1x for 1 turn and boosts Orb Effects
+      of Driven characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Driven characters by 1.2x for 1 turn and boosts Orb Effects
+      of Driven characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Driven characters by 1.3x for 1 turn and boosts Orb Effects
+      of Driven characters by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Driven characters by 1.4x for 1 turn and boosts Orb Effects
+      of Driven characters by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of Driven characters by 1.5x for 1 turn and boosts Orb Effects
+      of Driven characters by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 10
+    - rcv: 20
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - atk: 10
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 30
+    - rcv: 40
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - atk: 40
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - rcv: 40
+    - hp: 100
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 20
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 30
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 2
+          threshold: 50
+    - type: Last Tap
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+  lastTap:
+    criteria: On the last Stage, on the turn this character's special is used
+    levels:
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 1.25x.
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 1.5x.
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 1.75x.
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 2x.
+      - description: Changes the orb of this character into a Matching orb and Boosts
+          Chain Multiplier Growth Rate by 2.25x.
+rumble:
+  stats:
+    def: 237
+    rumbleType: DBF
+    spd: 169
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: PSY
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - HP
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - ATK
+            - Special CT
+          condition:
+            count: 4
+            stat: hit
+            type: trigger
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 2
+  special:
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Half ATK
+            - Half SPD
+          chance: 50
+          duration: 11
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - amount: 3
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 55
+            duration: 12
+        - override:
+            duration: 12
+        - override:
+            amount: 3.1
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 60
+            duration: 13
+        - override:
+            duration: 13
+        - override:
+            amount: 3.2
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 65
+            duration: 14
+        - override:
+            duration: 14
+        - override:
+            amount: 3.3
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 70
+            duration: 15
+        - override:
+            duration: 15
+        - override:
+            amount: 3.4
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 75
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            amount: 3.5
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 80
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            amount: 3.6
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 85
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            amount: 3.7
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 90
+            duration: 19
+        - override:
+            duration: 19
+        - override:
+            amount: 3.8
+    - cooldown: 34
+      effects:
+        - override:
+            chance: 100
+            duration: 20
+        - override:
+            duration: 20
+        - override:
+            amount: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - Critical Hit
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - PSY
+                - INT
+          - attributes:
+              - Special CT
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - PSY
+                - INT
+          - attributes:
+              - ATK
+              - HP
+            effect: buff
+            level: 2
+            targeting:
+              targets:
+                - Driven
+          - attributes:
+              - DEF
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Driven
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 1
+          - override:
+              level: 3
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+          - override:
+              level: 4
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 5
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 6
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 10
+          team: enemies
+          type: special
+      special:
+        - uses: 1
+          effects:
+            - amount: 1000
+              effect: damage
+              repeat: 3
+              targeting:
+                count: 2
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 1
+          effects:
+            - override:
+                amount: 1750
+        - uses: 1
+          effects:
+            - override:
+                amount: 2500
+        - uses: 1
+          effects:
+            - override:
+                amount: 3250
+        - uses: 1
+          effects:
+            - override:
+                amount: 4000

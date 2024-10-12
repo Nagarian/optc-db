@@ -1,0 +1,96 @@
+type: QCK
+name: Kawamatsu - Akazaya Samurai
+japanName: 河松 赤鞘の侍
+family:
+  - Kawamatsu
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1432
+    atk: 699
+    rcv: 129
+  maxLvl:
+    hp: 2864
+    atk: 1397
+    rcv: 257
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 286869
+aliases:
+  - Limited Kawamatsu
+  - Secret Kawamatsu
+captain:
+  name: ""
+  description: Boosts HP of Slasher characters by 1.5x.
+special:
+  name: Vivid Sword
+  description: Reduces Bind and Paralysis duration by 4 turns. If your crew has 4
+    or more [QCK] characters, boosts ATK of [DEX] and [QCK] characters by 1.75x
+    for 1 turn. If your crew has 4 or more [DEX] characters, boosts the Color
+    Affinity of [DEX] and [QCK] characters by 1.75x for 1 turn
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base HP of all characters by 50
+  - description: Adds 3x character's ATK as Additional Damage
+support:
+  type: descriptive
+  criteria: "[QCK] characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [QCK] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [QCK] characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [QCK] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [QCK] characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK of [QCK] characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 20
+    - type: potential
+    - rcv: 30
+    - atk: 30
+    - hp: 20
+    - slot: 1
+    - hp: 30
+    - atk: 50
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70

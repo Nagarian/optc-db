@@ -1,0 +1,49 @@
+type: QCK
+name: Ideo
+japanName: イデオ
+family:
+  - Ideo
+class:
+  - Fighter
+  - Shooter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 151
+    atk: 120
+    rcv: 29
+  maxLvl:
+    hp: 1230
+    atk: 679
+    rcv: 180
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 33766
+aliases: []
+evolution:
+  - id: 1133
+    evolvers:
+      - 118
+      - 83
+      - 88
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK and HP of Fighter characters by 1.5x
+special:
+  name: Destruction Cannon
+  description: Deals 50x character's ATK in [QCK] damage to all enemies, boosts
+    ATK of Fighter characters by 1.75x for 1 turn
+  cooldown: 23
+  maxLevel: 7
+  stages:
+    - description: Deals 30x character's ATK in [QCK] damage to all enemies, boosts
+        ATK of Fighter characters by 1.5x for 1 turn
+      cooldown: 18

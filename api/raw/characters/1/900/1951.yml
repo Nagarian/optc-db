@@ -1,0 +1,352 @@
+type: PSY
+name: Nico Robin - Successor to the Will of Ohara
+japanName: ニコ・ロビン 空白を明かす考古学者
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1164
+    atk: 678
+    rcv: 241
+  maxLvl:
+    hp: 2680
+    atk: 1450
+    rcv: 493
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 87124
+aliases:
+  - V1 Legend Robin
+evolution:
+  - id: 2830
+    evolvers:
+      - skullPSY
+      - skullINT
+      - 99
+      - 304
+      - 267
+  - id: 5062
+    evolvers:
+      - skullPSY
+      - skullINT
+      - 99
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 3.25x and their RCV by 1.5x,
+    makes [RCV] orbs beneficial for Cerebral characters and reduces damage
+    received by 20%.
+special:
+  name: Moth Orchid
+  description: Reduces damage received by 100% for 1 turn. If your Captain is a
+    Cerebral character, changes orbs of adjacent characters into [RCV] orbs
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of Cerebral characters by 50
+  - description: Makes [PSY], [RCV] and [TND] orbs beneficial for Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Bartolomeo, Cavendish, Rebecca and Kyros (Toy Soldier)
+  levels:
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 15
+    - value: 18
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 25
+    - type: sailor
+    - hp: 25
+    - hp: 40
+    - hp: 40
+    - hp: 40
+    - rcv: 10
+    - hp: 45
+    - type: potential
+    - hp: 45
+    - rcv: 20
+    - atk: 30
+    - rcv: 20
+    - atk: 35
+    - rcv: 20
+    - hp: 50
+    - cooldown: 1
+    - hp: 65
+    - rcv: 30
+    - hp: 65
+    - type: sailor
+    - hp: 65
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - captain:
+        description: Boosts ATK of Cerebral characters by 3.75x and their RCV by 1.5x,
+          makes [RCV] orbs beneficial for Cerebral characters and reduces damage
+          received by 20%.
+    - cooldown: 1
+    - hp: 150
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+        - value: 250
+          reduction: 3
+        - value: 300
+          reduction: 4
+        - value: 400
+          reduction: 5
+rumble:
+  stats:
+    def: 200
+    rumbleType: DEF
+    spd: 131
+  target:
+    criteria: near
+  pattern:
+    - action: heal
+      area: Self
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 100
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - Guard
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 9
+          effect: hinderance
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            level: 1
+            duration: 16
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 17
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 19
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 20
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 21
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 22
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 23
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 6
+            duration: 25
+        - {}
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

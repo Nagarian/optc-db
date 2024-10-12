@@ -1,0 +1,127 @@
+type: DEX
+name: "Carrot: Kingsbird - Mokomo Dukedom"
+japanName: 王の鳥　キャロット モコモ公国
+family:
+  - Carrot
+class:
+  - Fighter
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 689
+    atk: 729
+    rcv: 65
+  maxLvl:
+    hp: 2166
+    atk: 1220
+    rcv: 189
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 71420
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Fighter characters by 2.25x
+special:
+  name: Rabbit Mink's Air Step
+  description: Reduces Special Cooldown of top row characters by 2 turns, boosts
+    ATK of Fighter characters by 1.5x for 1 turn
+  cooldown: 21
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Fighter characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3
+rumble:
+  stats:
+    def: 138
+    rumbleType: SPT
+    spd: 127
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 20
+      effects:
+        - amount: 20
+          effect: recharge
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - crew
+          type: Special CT
+    - cooldown: 19
+      effects:
+        - {}
+    - cooldown: 18
+      effects:
+        - {}
+    - cooldown: 17
+      effects:
+        - {}
+    - cooldown: 16
+      effects:
+        - {}
+    - cooldown: 15
+      effects:
+        - {}
+    - cooldown: 14
+      effects:
+        - {}
+    - cooldown: 13
+      effects:
+        - {}
+    - cooldown: 12
+      effects:
+        - {}
+    - cooldown: 11
+      effects:
+        - {}

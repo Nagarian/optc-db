@@ -1,0 +1,183 @@
+type: QCK
+name: Sugar - Donquixote Pirates
+japanName: シュガー ドンキホーテ海賊団
+family:
+  - Sugar
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 896
+    atk: 342
+    rcv: 274
+  maxLvl:
+    hp: 1905
+    atk: 790
+    rcv: 532
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 21543
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [QCK] characters by 2x
+special:
+  name: Hobby-Hobby Fruit
+  description: Instantly defeats all enemies with current HP less than or equal to
+    20% their MAX HP
+  cooldown: 16
+  maxLevel: 7
+  notes: The special bypasses all known protective buffs. If the enemy can revive
+    after being defeated, however, the special will only reduce the enemies' HP
+    to 0 and trigger their revive effect.
+sailor:
+  - description: Boosts base ATK, HP and RCV of Free Spirit and Cerebral characters by 30
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monet and Trebol
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 40
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - rcv: 30
+    - type: sailor
+    - atk: 30
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - atk: 30
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 102
+    rumbleType: DBF
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          condition:
+            comparator: less
+            count: 5
+            type: crew
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 36
+      effects:
+        - attributes:
+            - Silence
+          chance: 30
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - enemies
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 35
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 40
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 45
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 50
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 55
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 60
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 65
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 70
+    - cooldown: 36
+      effects:
+        - override:
+            chance: 75

@@ -1,0 +1,44 @@
+type: PSY
+name: Domino
+japanName: ドミノ
+family:
+  - Domino
+class:
+  - Fighter
+  - Cerebral
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 32
+    atk: 20
+    rcv: 80
+  maxLvl:
+    hp: 713
+    atk: 366
+    rcv: 318
+cost: 13
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 12098
+aliases: []
+evolution:
+  - id: 538
+    evolvers:
+      - 117
+      - 81
+      - 92
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 2x
+special:
+  name: Sea Stone Handcuffs
+  description: Reduces Bind and Despair duration by 1 turn, locks all orbs for 1 turn
+  cooldown: 25
+  maxLevel: 10

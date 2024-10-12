@@ -1,0 +1,58 @@
+type: PSY
+name: Petty Officer Coby Grand Line Sailor
+japanName: 海軍本部曹長　コビー “偉大なる航路”の海兵
+family:
+  - Coby
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 103
+    atk: 94
+    rcv: 48
+  maxLvl:
+    hp: 941
+    atk: 511
+    rcv: 209
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 43907
+aliases:
+  - ""
+evolution:
+  - id: 1316
+    evolvers:
+      - 87
+      - 94
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x after the 2nd PERFECT in a row
+    and by 3x after the 5th PERFECT in a row.
+special:
+  name: Echoing Cry of the Soul
+  description: If HP is below 3,000, removes No Healing debuff duration
+    completely. Recovers 13x character's RCV in HP
+  cooldown: 24
+  maxLevel: 7
+  stages:
+    - description: If HP is below 3,000, reduces No Healing debuff duration by 1 turn.
+        Recovers 3x character's RCV in HP
+      cooldown: 15
+    - description: If HP is below 3,000, reduces No Healing debuff duration by 3
+        turns. Recovers 6x character's RCV in HP
+      cooldown: 20
+  notes: No Healing debuff completely stops healing abilities. This is the debuff
+    used in Akainu raid
+sailor:
+  - description: Reduces Blindness duration by 5 turns

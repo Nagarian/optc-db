@@ -1,0 +1,59 @@
+type: PSY
+name: Dracule Mihawk - Ruins of the Muggy Kingdom
+japanName: ジュラキュール・ミホーク シッケアール王国　跡地
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+  - Cerebral
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 166
+    atk: 76
+    rcv: 4
+  maxLvl:
+    hp: 800
+    atk: 938
+    rcv: 4
+cost: 13
+slots: 3
+maxExp: 130703
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 84036
+aliases:
+  - ""
+evolution:
+  - id: 1893
+    evolvers:
+      - 81
+      - 87
+      - 82
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Cerebral characters by 1.5x
+special:
+  name: A Test Against the Black Blade
+  description: Reduces crew's current HP by 80%, deals 6x the amount of HP
+    subtracted in Typeless damage to all enemies and delays all enemies by 1
+    turn. If your Captain is a [PSY] character, boosts ATK against delayed
+    enemies by 1.5x for 1 turn.
+  cooldown: 23
+  maxLevel: 6
+  stages:
+    - description: Reduces crew's current HP by 50%, deals 2x the amount of HP
+        subtracted in Typeless damage to all enemies.
+      cooldown: 15
+    - description: Reduces crew's current HP by 50%, deals 2x the amount of HP
+        subtracted in Typeless damage to all enemies and delays all enemies by 1
+        turn.
+      cooldown: 19
+sailor:
+  - description: When HP is below 50% at the start of the turn, boosts base ATK of
+      this character by 1.25x

@@ -1,0 +1,125 @@
+type: PSY
+name: Kureha & Hiriluk - Famed Doctors of Drum Island
+japanName: くれは＆ヒルルク ドラム島の名医達
+family:
+  - Kureha
+  - Hiriluk
+class:
+  - Cerebral
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1164
+    atk: 678
+    rcv: 202
+  maxLvl:
+    hp: 2459
+    atk: 1252
+    rcv: 352
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 180658
+aliases:
+  - Kureha&Hiriluk
+  - Kureha and Hiriluk
+  - Kureha Hiriluk
+  - KurehaHiriluk
+  - Hiriluk&Kureha
+  - Hiriluk and Kureha
+  - Hiriluk Kureha
+  - HirilukKureha
+  - Limited Kureha
+  - Limited Hiriluk
+  - Secret Kureha
+  - Secret Hiriluk
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and [PSY] characters by 2.5x and recovers 1,000
+    HP at the end of each turn
+special:
+  name: Quack Doctor's Last Request
+  description: Changes [EMPTY], [BLOCK] and [BOMB] orbs into Matching orbs, boosts
+    ATK of all characters by 1.75x for 1 turn and boosts the Color Affinity of
+    [PSY] and [INT] characters by 1.75x for 1 turn.
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Makes [RCV] orbs beneficial for this character
+  - description: Restores Special Cooldown of this character by 2 turns when it is
+      rewinded and reduces Silence duration by 2 turns on this character
+support:
+  type: descriptive
+  criteria: Tony Tony Chopper
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes [BOMB] orb of the supported character into a Matching orb and
+      boosts ATK of supported character by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes [BOMB] orb of the supported character into a Matching orb and
+      boosts ATK of supported character by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes [BOMB] orb of the supported character into a Matching orb and
+      boosts ATK of supported character by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes [BOMB] orb of the supported character into a Matching orb and
+      boosts ATK of supported character by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes [EMPTY] and [BOMB] orbs into Matching orbs and boosts ATK of
+      supported character by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - atk: 25
+    - atk: 25
+    - atk: 30
+    - slot: 1
+    - rcv: 20
+    - rcv: 30
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - key: 1
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

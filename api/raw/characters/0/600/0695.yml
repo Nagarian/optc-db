@@ -1,0 +1,37 @@
+type: INT
+name: Knuckle Corporal - Navy HQ
+japanName: ナックル伍長 海軍本部
+family:
+  - KnuckleCoporalNavy
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 6
+  minLvl:
+    hp: 55
+    atk: 48
+    rcv: 22
+  maxLvl:
+    hp: 522
+    atk: 392
+    rcv: 82
+cost: 7
+slots: 0
+maxExp: 90778
+maxLevel: 35
+flags: []
+links:
+  gamewithId: 15648
+aliases: []
+evolution:
+  - id: 700
+    evolvers:
+      - 116
+      - 99
+      - 304
+special:
+  name: Slight Break
+  description: Deals 5% of enemies' current HP in damage to all enemies
+  cooldown: 25
+  maxLevel: 16

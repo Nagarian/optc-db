@@ -1,0 +1,59 @@
+type: QCK
+name: Nico Robin - Blooming Beauty
+japanName: ニコ・ロビン 咲き誇る美
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 776
+    atk: 600
+    rcv: 87
+  maxLvl:
+    hp: 2560
+    atk: 1261
+    rcv: 253
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 246090
+aliases:
+  - Limited Robin
+  - Secret Robin
+  - Support Robin
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.25x and their RCV by 1.2x.
+special:
+  name: "Mil Fleur: Gigantesco Mano"
+  description: Reduces damage received by 70% for 1 turn, recovers 30% of crew's
+    MAX HP and reduces Bind and Despair duration by 2 turns.
+  cooldown: 13
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: "[QCK] Cerebral characters"
+  levels:
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind and Despair duration by 1 turn.
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind and Despair duration by 1 turn and reduces
+      damage received by 30% for 1 turn.
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind and Despair duration by 1 turn and reduces
+      damage received by 70% for 1 turn.
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind and Despair duration by 1 turn, reduces
+      damage received by 70% for 1 turn and recovers 30% of crew's MAX HP.
+    - Once per adventure, when the supported character uses a Bind or Despair
+      reducing special, reduces Bind and Despair duration by 2 turns, reduces
+      damage received by 70% for 1 turn and recovers 30% of crew's MAX HP.

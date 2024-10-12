@@ -1,0 +1,101 @@
+type: DEX
+name: Trafalgar Law - Unrelenting Assault
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1511
+    atk: 743
+    rcv: 106
+  maxLvl:
+    hp: 3022
+    atk: 1486
+    rcv: 211
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Secret Limited TM Treasure Map
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [DEX] characters by 3x and boosts HP of [DEX]
+    characters by 1.2x.
+special:
+  name: Ground Slamming Room Takt
+  description: Reduces Despair and Paralysis duration by 5 turns, changes orbs of
+    adjacent characters into Matching Orbs and boosts Color Affinity of Slasher
+    and Cerebral characters by 2x for 1 turn. If your crew has 4 or more
+    characters with [DEX], [TND] or [WANO] orbs, adds 1.0x to Chain multiplier
+    for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters
+  - description: If this character has a [DEX], [TND] or [WANO] orb and you attack
+      with this character, increases boost effects of Color Affinity buffs by
+      +0.25x.
+support:
+  type: descriptive
+  criteria: Bepo, Eustass Kid, Sachi and Penguin
+  levels:
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair, reduces
+      Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Despair or Paralysis,
+      reduces Despair and Paralysis duration by 1 turn.
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 20
+    - rcv: 20
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 20
+    - rcv: 30
+    - atk: 40
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50

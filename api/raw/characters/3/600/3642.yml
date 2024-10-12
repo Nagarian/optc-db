@@ -1,0 +1,94 @@
+type: INT
+name: Jesus Burgess - Champion Targeting Power-Users
+family:
+  - JesusBurgess
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1775
+    atk: 729
+    rcv: 63
+  maxLvl:
+    hp: 3550
+    atk: 1458
+    rcv: 125
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - TM Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Powerhouse characters by 1.5x.
+special:
+  name: Galleon Lariat Takedown
+  description: Reduces Special Cooldown of Driven and Powerhouse characters by 2
+    turns, reduces Despair duration by 5 turns, boosts the Color Affinity of
+    Driven and Powerhouse characters by 2x for 1 turn and reduces damage
+    received by 60% for 2 turns.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 5 turns when it is rewinded
+  - description: If this character has a [TND] orb and you attack with this
+      character, increases boost effects of Color Affinity buffs by +0.2x
+support:
+  type: descriptive
+  criteria: Marshall D. Teach (Blackbeard), Lafitte, Van Ogre, Shiryu, Doc Q,
+    Avalo Pizarro, Catarina Devon, Vasco Shot and San Juan Wolf
+  levels:
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn and reduces damage received by 10% for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn and reduces damage received by 15% for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn and reduces damage received by 20% for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn and reduces damage received by 25% for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Bind, reduces Bind
+      duration by 1 turn and reduces damage received by 30% for 1 turn.
+limitBreak:
+  path:
+    - atk: 30
+    - atk: 30
+    - rcv: 10
+    - type: potential
+    - atk: 40
+    - hp: 30
+    - rcv: 20
+    - slot: 1
+    - hp: 30
+    - hp: 40
+    - rcv: 20
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

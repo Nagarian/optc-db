@@ -1,0 +1,345 @@
+type: QCK
+name: Carrot - Sulong Smiling in the Moonlight
+japanName: キャロット 夜に微笑む獅子
+family:
+  - Carrot
+class:
+  - Fighter
+  - Slasher
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1861
+    atk: 973
+    rcv: 151
+  maxLvl:
+    hp: 3704
+    atk: 1604
+    rcv: 349
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 131991
+aliases:
+  - Mega/Super/6+ Carrot
+  - V1 Legend Carrot
+  - Kakarot
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 2 turns at the start
+    of the fight. Boosts ATK of Fighter, Slasher, Striker, Shooter and Cerebral
+    characters by 4x, and if this character becomes your captain in the middle
+    of an island, boosts ATK of Fighter, Slasher, Striker, Shooter and Cerebral
+    characters by 4.5x instead. For 12 turns at the start of the fight, boosts
+    chances of getting Matching orbs and attacks will ignore damage reducing
+    Barriers and Buffs.
+  notes: Attacks are still affected by DEF value. DEF boost buffs (Blue shield)
+    still reduce your damage and you can not kill through Resilience, but Damage
+    Negating (Yellow shield), % Damage Reduction (Rainbow shield), Barriers and
+    Threshold Damage Reduction are ignored. Enemy attacks will go through YOUR
+    defensive buffs.
+special:
+  name: Moonlit Lighting Rush
+  description: Reduces Special Cooldown of all characters by 2 turns, boosts Orb
+    Effects of Fighter, Slasher, Striker, Shooter and Cerebral characters by
+    2.25x for 1 turn and makes [QCK], [RCV] and [TND] orbs beneficial for all
+    characters for 1 turn. If this character is a Sailor, swaps this unit with
+    your captain for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 30
+  - description: Restores Special Cooldown of this character completely when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Nami, Jinbe, Tony Tony Chopper and Brook
+  levels:
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 15
+    - value: 18
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - hp: 10
+    - hp: 10
+    - hp: 20
+    - hp: 20
+    - rcv: 15
+    - hp: 20
+    - type: sailor
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - atk: 30
+    - rcv: 25
+    - atk: 30
+    - rcv: 35
+    - atk: 40
+    - hp: 50
+    - cooldown: 1
+    - hp: 80
+    - hp: 80
+    - hp: 80
+    - type: sailor
+    - atk: 75
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 50
+    - hp: 100
+    - atk: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 10
+          threshold: 90
+rumble:
+  stats:
+    def: 145
+    rumbleType: ATK
+    spd: 199
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+              - Striker
+              - Shooter
+              - Cerebral
+        - attributes:
+            - ATK
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 8
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 1750
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 20
+          effect: recharge
+          targeting:
+            targets:
+              - Fighter
+              - Slasher
+              - Striker
+              - Shooter
+              - Cerebral
+          type: Special CT
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1825
+        - {}
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1900
+        - override:
+            amount: 21
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1975
+        - override:
+            amount: 21
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2050
+        - override:
+            amount: 22
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2125
+        - override:
+            amount: 22
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2200
+        - override:
+            amount: 23
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2275
+        - override:
+            amount: 23
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2350
+        - override:
+            amount: 24
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 2500
+        - override:
+            amount: 25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

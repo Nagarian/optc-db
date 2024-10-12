@@ -1,0 +1,96 @@
+type: INT
+name: Caesar Clown - Ruler of the Land of the Dead
+japanName: シーザー・クラウン 死の国の王となる男
+family:
+  - CaesarClown
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1720
+    atk: 704
+    rcv: 81
+  maxLvl:
+    hp: 3440
+    atk: 1409
+    rcv: 163
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - Secret TM Limited Caesar
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Driven characters by 2.5x, their HP by
+    1.2x and makes [INT] orbs beneficial for Fighter and Driven characters.
+special:
+  name: Terrifying Land of the Dead
+  description: Reduces Bind duration by 3 turns and removes Poison duration
+    completely. If your Captain is a [PSY] or [INT] character, poisons all
+    enemies and boosts Orb Effects of all characters by 1.75x for 1 turn. If
+    your Captain is a [STR], [DEX] or [QCK] character, boosts ATK against
+    enemies inflicted with Poison, Strong Poison or Toxic by 2x for 1 turn and
+    reduces damage received by 60% for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 60
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: descriptive
+  criteria: Donquixote Doflamingo, Vergo, Monet and Kaido
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn and boosts ATK against enemies inflicted
+      with Poison, Strong Poison or Toxic by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn and boosts ATK against enemies inflicted
+      with Poison, Strong Poison or Toxic by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn and boosts ATK against enemies inflicted
+      with Poison, Strong Poison or Toxic by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn and boosts ATK against enemies inflicted
+      with Poison, Strong Poison or Toxic by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces Bind duration by 1 turn and boosts ATK against enemies inflicted
+      with Poison, Strong Poison or Toxic by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 20
+    - hp: 20
+    - type: potential
+    - atk: 20
+    - hp: 40
+    - hp: 40
+    - slot: 1
+    - rcv: 30
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 5
+        - value: 7
+        - value: 100

@@ -1,0 +1,376 @@
+type: DEX
+name: Donquixote Doflamingo - Rage-Fueled Massacre
+japanName: ドンキホーテ・ドフラミンゴ 怒りの虐殺
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Cerebral
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1924
+    atk: 920
+    rcv: 163
+  maxLvl:
+    hp: 3848
+    atk: 1841
+    rcv: 305
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - 6+ Super Mega Doffy
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 4.5x if they have a beneficial
+    orb, by 3.75x otherwise and their HP by 1.4x. Lowers chances of getting
+    [STR] orbs and makes [DEX] and [QCK] orbs beneficial for Driven characters.
+special:
+  name: "Life-Stealing Thousand Arrows: Flapping Thread"
+  description: Deals 2.5x the damage dealt in Overkill Damage in the previous turn
+    in Typeless damage to all enemies. If your crew has Normal Attack Only,
+    boosts ATK of Driven characters by 2.5x for 1 turn and makes [PSY] and [INT]
+    orbs beneficial for Driven characters for 1 turn.
+  cooldown: 22
+  maxLevel: 6
+  notes: Overkill Damage is damage dealt over the enemies' current HP with normal
+    attacks that killed them. For example, dealing 2,100,000 damage to an enemy
+    with 1,000,000 HP will count as 1,100,000 Overkill Damage. This stacks for
+    each enemy killed in the previous turn. The special caps out at 999,999,999
+    damage.
+sailor:
+  - description: Makes [QCK] orbs beneficial for this character
+  - description: Makes [DEX] orbs beneficial for Driven characters
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+  criteria: Trebol, Pica, Diamante and Vergo
+  levels:
+    - value: 6
+      reduction: 1
+    - value: 7
+      reduction: 2
+    - value: 8
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 12
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - type: potential
+    - rcv: 5
+    - rcv: 10
+    - rcv: 15
+    - type: sailor
+    - rcv: 20
+    - rcv: 25
+    - rcv: 30
+    - rcv: 35
+    - rcv: 40
+    - rcv: 50
+    - hp: 20
+    - type: potential
+    - hp: 25
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - hp: 45
+    - hp: 50
+    - hp: 55
+    - hp: 60
+    - hp: 65
+    - hp: 75
+    - atk: 55
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. If they have a beneficial orb, boosts ATK of Driven
+          characters by 4.75x, by 4x otherwise, and their HP by 1.4x. Lowers
+          chances of getting [STR] orbs and makes [DEX] and [QCK] orbs
+          beneficial for Driven characters.
+    - cooldown: 3
+    - hp: 150
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 193
+    rumbleType: ATK
+    spd: 184
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 250
+      interval: 5
+      type: healing
+    - attribute: QCK
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Driven
+        - attributes:
+            - SPD
+            - DEF
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 6
+  special:
+    - cooldown: 28
+      effects:
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1
+          effect: damage
+          condition:
+            comparator: remaining
+            count: 60
+            type: time
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1
+          effect: damage
+          condition:
+            comparator: remaining
+            count: 45
+            type: time
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - amount: 1
+          effect: damage
+          condition:
+            comparator: remaining
+            count: 30
+            type: time
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.1
+        - {}
+        - {}
+        - {}
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.2
+        - {}
+        - {}
+        - {}
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.3
+        - {}
+        - {}
+        - {}
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.4
+        - {}
+        - {}
+        - {}
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.5
+        - {}
+        - {}
+        - {}
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.6
+        - {}
+        - {}
+        - {}
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.7
+        - {}
+        - {}
+        - {}
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 1.8
+        - {}
+        - {}
+        - {}
+    - cooldown: 28
+      effects:
+        - override:
+            amount: 2
+        - {}
+        - {}
+        - {}
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

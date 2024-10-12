@@ -1,0 +1,270 @@
+type: DEX
+oldDbId: 4987
+name: Monkey D. Luffy - To Become a True Kung Fu Master
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1510
+    atk: 652
+    rcv: 132
+  maxLvl:
+    hp: 3000
+    atk: 1505
+    rcv: 265
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - gloex
+aliases:
+  - Kung Fu Luffy
+  - KFL
+  - LINE Luffy
+  - The Hero Global Needed
+  - Another Legend Luffy
+  - Best Cup of Coffee
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3.5x after the 2nd PERFECTs in a
+    row, by 4x after the 5th PERFECTs in a row and boosts HP of all characters
+    by 1.5x
+special:
+  name: "Gum-Gum Giant Rifle: Kung Fu"
+  description: Deals 120x character's ATK in Typeless damage to all enemies,
+    changes orbs of adjacent characters into Matching Orbs, boosts ATK of all
+    characters by 1.75x for 2 turns, reduces any damage received above 5,656 HP
+    by 97% for 2 turns and makes PERFECTs easier to hit for 2 turns
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Adds 3x character's ATK as Additional Damage
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special, makes
+      PERFECTs slightly easier to hit for 1 turn.
+    - Once per adventure, when the supported character uses their special, makes
+      PERFECTs easier to hit for 1 turn.
+    - Once per adventure, when the supported character uses their special, makes
+      PERFECTs easier to hit for 1 turn.
+    - Once per adventure, when the supported character uses their special, makes
+      PERFECTs significantly easier to hit for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes orbs of adjacent characters into Matching orbs and makes PERFECTs
+      significantly easier to hit for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - atk: 10
+    - atk: 15
+    - rcv: 10
+    - atk: 15
+    - hp: 30
+    - hp: 30
+    - atk: 20
+    - atk: 20
+    - hp: 35
+    - hp: 35
+    - type: potential
+    - hp: 45
+    - hp: 45
+    - atk: 25
+    - atk: 25
+    - hp: 55
+    - hp: 55
+    - rcv: 15
+    - atk: 30
+    - hp: 70
+    - rcv: 20
+    - rcv: 25
+    - type: sailor
+    - hp: 100
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7
+    - type: Pinch Healing
+      levels:
+        - value: 0.75
+          threshold: 40
+        - value: 1
+          threshold: 40
+        - value: 1.25
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+        - value: 2
+          threshold: 50
+rumble:
+  stats:
+    def: 162
+    rumbleType: ATK
+    spd: 187
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 100
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+            - ATK
+          condition:
+            comparator: first
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Special CT
+          condition:
+            comparator: remaining
+            count: 50
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 2
+  special:
+    - cooldown: 31
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 50
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 3
+            targets:
+              - enemies
+        - amount: 1.5
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 53
+            duration: 17
+        - override:
+            amount: 1.6
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 56
+            duration: 18
+        - override:
+            amount: 1.7
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 59
+            duration: 19
+        - override:
+            amount: 1.8
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 62
+            duration: 20
+        - override:
+            amount: 1.9
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 65
+            duration: 21
+        - override:
+            amount: 2
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 68
+            duration: 22
+        - override:
+            amount: 2.1
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 71
+            duration: 23
+        - override:
+            amount: 2.2
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 74
+            duration: 24
+        - override:
+            amount: 2.3
+    - cooldown: 31
+      effects:
+        - override:
+            chance: 80
+            duration: 25
+        - override:
+            amount: 2.5

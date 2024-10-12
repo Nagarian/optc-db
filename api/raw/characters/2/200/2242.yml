@@ -1,0 +1,105 @@
+type: QCK
+name: General Cracker - Big Mom Pirates
+japanName: 将星クラッカー ビッグ・マム海賊団
+family:
+  - CharlotteCracker
+class:
+  - Slasher
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1202
+    atk: 602
+    rcv: 50
+  maxLvl:
+    hp: 3000
+    atk: 1453
+    rcv: 153
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 117872
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 2.75x and their
+    HP by 1.25x
+special:
+  name: Infinite Biscuit Soldiers
+  description: If your Captain is a [STR], [DEX] or [QCK] character, boosts ATK of
+    [STR], [DEX] and [QCK] characters by 1.75x for 1 turn and boosts Orb Effects
+    of [STR], [DEX] and [QCK] characters by 1.75x for 1 turn and changes [BLOCK]
+    orbs into Matching orbs. If your Captain is a [PSY] or [INT] character,
+    boosts ATK of [STR], [DEX] and [QCK] characters by 1.75x for 3 turns and
+    boosts Orb Effects of [STR], [DEX] and [QCK] characters by 1.75x for 3 turns
+    and changes all orbs into [G] orbs.
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts this character's damage against [DEX] characters by 2x
+  - description: Makes [TND] orbs beneficial for [STR], [DEX] and [QCK] characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Charlotte Linlin (Big Mom), Charlotte Brûlée, Homies and Randolph
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - atk: 50
+    - hp: 30
+    - hp: 40
+    - slot: 1
+    - hp: 50
+    - rcv: 50
+    - type: sailor
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

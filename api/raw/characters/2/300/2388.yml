@@ -1,0 +1,58 @@
+type: INT
+name: Makino - Kindness for the Three Brothers
+japanName: マキノ ３兄弟のお世話
+family:
+  - Makino
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 563
+    atk: 644
+    rcv: 160
+  maxLvl:
+    hp: 1645
+    atk: 1011
+    rcv: 468
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - support
+links:
+  gamewithId: 137906
+aliases:
+  - Support Makino
+captain:
+  name: ""
+  description: Reduces damage received by 20% and recovers 2x character's RCV in
+    HP at the end of each turn
+special:
+  name: Female Bartender's Care
+  description: Recovers 3,000 HP and reduces damage received by 60% for 2 turns.
+  cooldown: 12
+  maxLevel: 1
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy, Portgas D. Ace and Sabo
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 2
+    - value: 5
+      reduction: 3
+    - value: 6
+      reduction: 4
+    - value: 9
+      reduction: 5

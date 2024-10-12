@@ -1,0 +1,41 @@
+type: STR
+name: Monkey D. Luffy - Gum-Gum Pistol
+frenchName: Monkey D. Luffy Gum-Gum Carabine
+japanName: モンキー・D・ルフィ ゴムゴムの銃(ピストル)
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 130
+    atk: 76
+    rcv: 14
+  maxLvl:
+    hp: 510
+    atk: 249
+    rcv: 49
+cost: 4
+slots: 0
+maxExp: 26184
+maxLevel: 20
+flags:
+  - sugo
+links:
+  gamewithId: 2017
+aliases: []
+evolution:
+  - id: 3
+    evolvers:
+      - 115
+      - 78
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.5x
+special:
+  name: Gum-Gum Pistol
+  description: Deals 7x character's ATK in [STR] damage to one enemy
+  cooldown: 12
+  maxLevel: 4

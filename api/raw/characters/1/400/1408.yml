@@ -1,0 +1,93 @@
+type: DEX
+name: "Nico Robin - Straw Hat Pirates: Born Again"
+japanName: ニコ・ロビン 新生・麦わらの一味
+family:
+  - NicoRobin
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 946
+    atk: 479
+    rcv: 165
+  maxLvl:
+    hp: 2151
+    atk: 1257
+    rcv: 403
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 47338
+aliases:
+  - New World Robin
+  - Timeskip Robin
+  - TS Robin
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [PSY] characters by 2.25x and their RCV by 1.5x
+special:
+  name: "Mil Fleur: Gigantesco Mano Stomp"
+  description: Reduces Despair duration by 3 turns and boosts ATK of [DEX] and
+    [PSY] characters by 2x for 1 turn
+  cooldown: 22
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 3 turns
+  - description: When any other [DEX] or [PSY] character uses a special, reduces
+      special cooldown of this character by 2 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Monkey D. Luffy, Roronoa Zoro, Vinsmoke Sanji, Franky and Brook
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - hp: 40
+    - hp: 50
+    - slot: 1
+    - rcv: 30
+    - hp: 60
+    - type: sailor
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

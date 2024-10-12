@@ -1,0 +1,45 @@
+type: STR
+name: Fossa
+japanName: フォッサ
+family:
+  - Fossa
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 150
+    atk: 160
+    rcv: 34
+  maxLvl:
+    hp: 1120
+    atk: 831
+    rcv: 132
+cost: 18
+slots: 3
+maxExp: 522812
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 11074
+aliases: []
+evolution:
+  - id: 455
+    evolvers:
+      - 118
+      - 83
+      - 84
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x, boosts damage of [STR] specials by 2x
+special:
+  name: Manly Flaming Sword
+  description: Boosts ATK of [STR] characters by 1.5x for 1 turn, deals 15x
+    character's ATK in [STR] damage to all enemies
+  cooldown: 25
+  maxLevel: 8

@@ -1,0 +1,451 @@
+type: DUAL
+name: Robin & Jinbe - Steadfast Duo
+japanName: ロビン＆ジンベエ 臆さぬ二人
+family:
+  - NicoRobin
+  - Jinbe
+class:
+  - Fighter
+  - Cerebral
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 2193
+    atk: 805
+    rcv: 143
+  maxLvl:
+    hp: 4387
+    atk: 1610
+    rcv: 287
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 309205
+aliases:
+  - Robin&Jinbe
+  - RobinJinbe
+  - Jinbe&Robin
+  - JinbeRobin
+  - Legend Robin and Jinbe
+captain:
+  name: ""
+  description: "Boosts ATK of Fighter and Cerebral characters by 5x, their HP by
+    1.5x, their RCV by 1.3x, makes [DEX] and [INT] orbs beneficial for Fighter
+    and Cerebral characters and reduces damage received by 10%. At the start of
+    the fight, applies the following buff: Reduces any damage received above
+    10,000 HP by 60% for 99 turns."
+special:
+  name: Encounter of Gentle Strength
+  description: Reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 6 turns, reduces ATK DOWN duration by 6 turns, reduces
+    Special Cooldown of all characters by 2 turns, boosts base ATK of all
+    characters by 1000 for 1 turn and becomes Robin & Jinbe for 3 turns.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of all characters by 75
+  - description: Restores Special Cooldown of this character completely when it is rewinded
+characters:
+  swap:
+    description: Changes orbs of adjacent characters into Matching orbs and reduces
+      damage received by 15% for 1 turn.
+    super:
+      criteria: 5
+      description: Changes all orbs into Matching orbs, reduces damage received by 70%
+        for 1 turn and recovers 3,000 HP.
+  character1:
+    name: Robin - Steadfast Duo
+    japanName: ロビン 臆さぬ二人
+    class:
+      - Fighter
+      - Cerebral
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 2088
+        atk: 713
+        rcv: 143
+      maxLvl:
+        hp: 4176
+        atk: 1426
+        rcv: 287
+    captain:
+      name: ""
+      description: "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by
+        1.5x, their RCV by 1.3x and makes [DEX] and [INT] orbs beneficial for
+        Fighter and Cerebral characters. At the start of the fight, applies the
+        following buff: Reduces any damage received above 10,000 HP by 60% for
+        99 turns."
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 50
+      - description: Restores Special Cooldown of this character completely when it is
+          rewinded
+  character2:
+    name: Jinbe - Steadfast Duo
+    japanName: ジンベエ 臆さぬ二人
+    class:
+      - Fighter
+      - Cerebral
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 2140
+        atk: 773
+        rcv: 85
+      maxLvl:
+        hp: 4280
+        atk: 1547
+        rcv: 171
+    captain:
+      name: ""
+      description: "Boosts ATK of Fighter and Cerebral characters by 4.5x, their HP by
+        1.5x, makes [DEX] and [INT] orbs beneficial for Fighter and Cerebral
+        characters and reduces damage received by 10%. At the start of the
+        fight, applies the following buff: Reduces any damage received above
+        10,000 HP by 60% for 99 turns."
+    sailor:
+      - description: Boosts base ATK and HP of all characters by 50
+      - description: Restores Special Cooldown of this character completely when it is
+          rewinded
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 10
+    - hp: 10
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - rcv: 10
+    - rcv: 10
+    - atk: 10
+    - atk: 20
+    - hp: 20
+    - rcv: 20
+    - rcv: 20
+    - type: potential
+    - cooldown: 1
+    - hp: 30
+    - atk: 20
+    - hp: 40
+    - hp: 50
+    - atk: 40
+    - atk: 40
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - rcv: 30
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 50
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 295
+    rumbleType: DEF
+    spd: 138
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 100
+      interval: 5
+      type: healing
+    - attribute: Shooter
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Guard
+          duration: 11
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Fighter
+        - attributes:
+            - Provoke
+          duration: 16
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Counter
+          effect: boon
+          amount: 0.6
+          duration: 16
+          targeting:
+            targets:
+              - self
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+            duration: 12
+        - override:
+            duration: 17
+        - override:
+            amount: 0.7
+            duration: 17
+    - cooldown: 29
+      effects:
+        - override:
+            level: 1
+            duration: 13
+        - override:
+            duration: 18
+        - override:
+            amount: 0.8
+            duration: 18
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 14
+        - override:
+            duration: 19
+        - override:
+            amount: 0.9
+            duration: 19
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 15
+        - override:
+            duration: 20
+        - override:
+            amount: 1
+            duration: 20
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 16
+        - override:
+            duration: 21
+        - override:
+            amount: 1.1
+            duration: 21
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - override:
+            duration: 22
+        - override:
+            amount: 1.2
+            duration: 22
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - override:
+            duration: 23
+        - override:
+            amount: 1.3
+            duration: 23
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - override:
+            duration: 24
+        - override:
+            amount: 1.4
+            duration: 24
+    - cooldown: 29
+      effects:
+        - override:
+            level: 5
+            duration: 20
+        - override:
+            duration: 25
+        - override:
+            amount: 1.5
+            duration: 25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

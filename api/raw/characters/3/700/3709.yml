@@ -1,0 +1,235 @@
+type: PSY
+name: Roronoa Zoro - Swordsman Entering Battle
+family:
+  - RoronoaZoro
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1648
+    atk: 807
+    rcv: 82
+  maxLvl:
+    hp: 3296
+    atk: 1613
+    rcv: 163
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - RED Secret Limited TM Treasure Map
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [PSY] and Slasher characters by 3x and boost HP
+    of [PSY] and Slasher characters by 1.2x.
+special:
+  name: Advancing Black Rope Dragon Twitster
+  description: Reduces Bind and Paralysis duration by 4 turns, changes orbs of
+    adjacent characters into Matching orbs and boosts Color Affinity of [PSY]
+    and Slasher characters by 2x for 1 turn. If HP is above 51% at the time the
+    special is activated, reduces crew's current HP by 50% crew's MAX HP and
+    reduces Special Cooldown of this character by 6 turns.
+  cooldown: 19
+  maxLevel: 7
+  stages:
+    - description: Reduces Bind and Paralysis duration by 2 turns, changes the orb of
+        this character into a Matching orb and boosts Color Affinity of [PSY]
+        and Slasher characters by 1.75x for 1 turn.
+      cooldown: 13
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 75
+  - description: Makes [TND] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: "[PSY] Slasher characters"
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [PSY] and Slasher characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [PSY] and Slasher characters by 1.15x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [PSY] and Slasher characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [PSY] and Slasher characters by 1.25x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts Color Affinity of [PSY] and Slasher characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - rcv: 10
+    - type: potential
+    - rcv: 10
+    - hp: 100
+    - rcv: 10
+    - slot: 1
+    - atk: 40
+    - atk: 40
+    - rcv: 20
+    - type: sailor
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 254
+    rumbleType: DEF
+    spd: 104
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 25
+      effects:
+        - attributes:
+            - DEF
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Provoke
+          duration: 11
+          effect: boon
+          targeting:
+            targets:
+              - self
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+        - override:
+            duration: 12
+    - cooldown: 25
+      effects:
+        - override:
+            level: 1
+        - override:
+            duration: 13
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+        - override:
+            duration: 14
+    - cooldown: 25
+      effects:
+        - override:
+            level: 2
+        - override:
+            duration: 15
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+        - override:
+            duration: 16
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+        - override:
+            duration: 17
+    - cooldown: 25
+      effects:
+        - override:
+            level: 3
+        - override:
+            duration: 18
+    - cooldown: 25
+      effects:
+        - override:
+            level: 4
+        - override:
+            duration: 19
+    - cooldown: 25
+      effects:
+        - override:
+            level: 5
+        - override:
+            duration: 20

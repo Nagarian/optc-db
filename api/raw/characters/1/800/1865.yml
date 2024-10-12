@@ -1,0 +1,51 @@
+type: DEX
+name: '"Mad Monk" Urouge - Supernova'
+japanName: “怪僧”ウルージ 超新星
+family:
+  - Urouge
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1038
+    atk: 656
+    rcv: 126
+  maxLvl:
+    hp: 2036
+    atk: 1311
+    rcv: 204
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 80650
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 1.75x, protects from defeat as
+    long as HP is above 50%
+special:
+  name: Culling the Criminals from this Earthly World
+  description: Recovers 5,000 HP, boosts ATK of Striker characters by 1.5x for 1
+    turn. If during that turn you score 4 Great hits, boosts ATK of Striker
+    characters by 1.75x for 1 turn in the following turn.
+  cooldown: 22
+  maxLevel: 8
+  notes: PERFECT hits don't count, it has to GREAT hits
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Basil Hawkins and X Drake
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

@@ -1,0 +1,235 @@
+type: INT
+name: Nightmare Luffy - Warrior of Hope
+japanName: ナイトメア・ルフィ 希望の戦士
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1331
+    atk: 711
+    rcv: 0
+  maxLvl:
+    hp: 3020
+    atk: 1520
+    rcv: 0
+cost: 50
+slots: 2
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 18567
+aliases:
+  - Raid NM Luffy
+  - Raid Luffy
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 3.5x, reduces crew's current
+    HP by 10% at the end of each turn, reduces own ATK multiplier by 0.1x at the
+    end of each turn
+  notes: His ATK multiplier will be 3.5x on the first turn, 3.4x on the second,
+    3.3x on the third and so on. The reduction stops once the multiplier is
+    1.0x. The multiplier affects all Powerhouse characters. You will not die to
+    the HP reduction
+special:
+  name: Gum-Gum Storm
+  description: Deals 10 hits of random [INT] damage to random enemies, delays all
+    enemies by 1 turn
+  cooldown: 24
+  maxLevel: 15
+  notes: "`random : 1,000 : 30,000 : for each hit`"
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      all characters by 40
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 80
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony Chopper, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - atk: 20
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 1
+    - hp: 80
+    - type: sailor
+    - slot: 1
+    - atk: 60
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 8
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 165
+    rumbleType: ATK
+    spd: 160
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 6
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 7
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 0.8
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Silence
+          chance: 35
+          duration: 10
+          effect: hinderance
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.86
+        - override:
+            chance: 36
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.91
+        - override:
+            chance: 38
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 0.97
+        - override:
+            chance: 39
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.03
+        - override:
+            chance: 41
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.09
+        - override:
+            chance: 42
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.14
+        - override:
+            chance: 44
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            chance: 45
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.26
+        - override:
+            chance: 47
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 1.35
+        - override:
+            chance: 50

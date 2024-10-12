@@ -1,0 +1,53 @@
+type: PSY
+name: Lucky Roux - Red-Hair Pirates
+japanName: ラッキー・ルウ 赤髪海賊団
+family:
+  - LuckyRoux
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 842
+    atk: 412
+    rcv: 70
+  maxLvl:
+    hp: 1606
+    atk: 789
+    rcv: 188
+cost: 20
+slots: 3
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 17475
+aliases:
+  - Colo Lucky Roo
+  - Colo Lucky Roux
+  - Coliseum Lucky Roo
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [PSY] characters by 1.75x
+special:
+  name: Boisterous Lucky Shot!!
+  description: Recovers 5,000 HP, deals 15x character's ATK in [PSY] damage to one
+    enemy, seals himself for 3 turns
+  cooldown: 20
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shanks and Ben Beckman
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

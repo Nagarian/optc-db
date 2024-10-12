@@ -1,0 +1,489 @@
+type: INT
+name: Silvers Rayleigh
+japanName: シルバーズ・レイリー
+family:
+  - SilversRayleigh
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 488
+    atk: 302
+    rcv: 168
+  maxLvl:
+    hp: 1518
+    atk: 826
+    rcv: 309
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 7311
+aliases:
+  - Dark King Rayleigh
+  - V1 Legend Rayliegh
+evolution:
+  - id: 367
+    evolvers:
+      - 118
+      - 88
+      - 266
+      - 99
+      - 267
+captain:
+  name: ""
+  description: Boosts Chain Multiplier Growth Rate by 4x
+special:
+  name: Dark King's Aura
+  description: Deals 20x character's ATK in [INT] damage to all enemies, reduces
+    Bind duration by 5 turns
+  cooldown: 23
+  maxLevel: 6
+rumble:
+  stats:
+    def: 104
+    rumbleType: RCV
+    spd: 146
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Large
+      level: 1
+    - action: attack
+      type: Power
+    - action: heal
+      area: Medium
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 10
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 11
+          effect: debuff
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 12
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 13
+          effect: debuff
+          level: 4
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 14
+          effect: debuff
+          level: 5
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 5
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 6
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 6
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 7
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 29
+      effects:
+        - attributes:
+            - Silence
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 25
+          duration: 10
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: debuff
+          level: 8
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,255 @@
+type: DEX
+name: Orochi - Imperturbable Shogun
+japanName: オロチ 余裕の将軍
+family:
+  - KurozumiOrochi
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1211
+    atk: 820
+    rcv: 89
+  maxLvl:
+    hp: 2690
+    atk: 1367
+    rcv: 296
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 285656
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3x and their HP by 1.2x.
+special:
+  name: Enjoying the Feast
+  description: Changes all orbs, including [BLOCK] orbs, into [RCV] orbs, reduces
+    Burn duration by 8 turns and boosts the Color Affinity of Shooter and Driven
+    characters by 2.25x for 1 turn.
+  cooldown: 30
+  maxLevel: 7
+  stages:
+    - description: Changes orbs of adjacent characters into [RCV] orbs, reduces Burn
+        duration by 4 turns and boosts the Color Affinity of Shooter and Driven
+        characters by 2x for 1 turn.
+      cooldown: 18
+sailor:
+  - description: Boosts base HP of Driven characters by 50
+  - description: Makes [RCV] orbs beneficial for Driven characters
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - HP
+  criteria: Driven characters
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 7
+      reduction: 2
+    - value: 10
+      reduction: 3
+    - value: 12
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - rcv: 10
+    - hp: 40
+    - type: potential
+    - rcv: 10
+    - hp: 40
+    - rcv: 30
+    - slot: 1
+    - atk: 20
+    - atk: 30
+    - hp: 60
+    - type: sailor
+    - atk: 40
+    - hp: 60
+    - type: potential
+    - key: 1
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 140
+    rumbleType: SPT
+    spd: 136
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - DEF
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - ATK
+          duration: 11
+          level: 2
+          effect: buff
+          targeting:
+            targets:
+              - DEX
+        - amount: 1
+          effect: recharge
+          targeting:
+            count: 1
+            priority: lowest
+            stat: HP
+            targets:
+              - crew
+          type: RCV
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 12
+            level: 2
+        - override:
+            amount: 1.2
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 13
+            level: 3
+        - override:
+            amount: 1.4
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 14
+            level: 3
+        - override:
+            amount: 1.6
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 15
+            level: 4
+        - override:
+            amount: 1.8
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 16
+            level: 5
+        - override:
+            amount: 2
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 17
+            level: 5
+        - override:
+            amount: 2.2
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 18
+            level: 6
+        - override:
+            amount: 2.4
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 19
+            level: 6
+        - override:
+            amount: 2.6
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 20
+            level: 8
+        - override:
+            amount: 3

@@ -1,0 +1,46 @@
+type: INT
+name: "Big Mom: Sweet Halloween Night - Happy Spooky Halloween!"
+japanName: ビッグ・マム　スイートハロウィンナイト Happy Scary Halloween
+family:
+  - CharlotteLinlin
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1101
+    atk: 563
+    rcv: 109
+  maxLvl:
+    hp: 2752
+    atk: 1408
+    rcv: 272
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 232377
+aliases:
+  - TM Big Mom
+  - TM Linlin
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.5x
+special:
+  name: One Night Hungry for Sweets
+  description: Reduces enemies' Threshold Damage Reduction duration by 5 turns,
+    reduces Special Cooldown of [INT] characters by 1 turn. If you are on a
+    Treasure Map, locks the chain multiplier at 2.5x-3x for 1 turn, depending on
+    your Treasure Map Level
+  cooldown: 13
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 2.5x chain lock  
+    Level 11-20: 2.75x chain lock  
+    Level 21+: 3x chain lock

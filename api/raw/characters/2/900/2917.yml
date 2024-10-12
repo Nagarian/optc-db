@@ -1,0 +1,49 @@
+type: STR
+name: "Jesus Burgess - Corrida Coliseum Finals: Battle Royale"
+japanName: ジーザス・バージェス コリーダコロシアム決勝戦バトルロイヤル
+family:
+  - JesusBurgess
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 817
+    atk: 481
+    rcv: 84
+  maxLvl:
+    hp: 2042
+    atk: 1202
+    rcv: 209
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 196234
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x.
+special:
+  name: Shoot Him Down - Shockwave Elbow
+  description: Reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction duration by 3 turns and locks the chain multiplier at 2.5x for 1
+    turn.
+  cooldown: 21
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Marshall D. Teach (Blackbeard), Laffitte, Van Augur and Doc Q
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

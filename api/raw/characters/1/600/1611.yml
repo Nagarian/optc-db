@@ -1,0 +1,50 @@
+type: PSY
+name: Bartholomew Kuma - Arch-Enemies of an Endless Dream
+japanName: バーソロミュー・くま 終わらぬ夢の宿敵
+family:
+  - BartholomewKuma
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 212
+    atk: 123
+    rcv: 25
+  maxLvl:
+    hp: 1400
+    atk: 554
+    rcv: 114
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 57876
+aliases:
+  - ""
+evolution:
+  - id: 1612
+    evolvers:
+      - 87
+      - 98
+      - 1180
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.75x and their HP by 1.2x
+special:
+  name: "Paw Paw Fruit: Scatter and Fly Away"
+  description: Reduces Bind and Despair duration by 7 turns. Recovers 20% of
+    crew's MAX HP and has low chance to instantly defeat each enemy
+  cooldown: 20
+  maxLevel: 6
+  notes: "`instantKill : 10%`"
+sailor:
+  - description: If this character has a [PSY] orb and you hit a PERFECT with him,
+      keep his [PSY] orb for the next turn

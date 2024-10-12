@@ -1,0 +1,179 @@
+type: QCK
+name: Chopperemon
+japanName: チョパえもん
+family:
+  - TonyTonyChopper
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 534
+    atk: 248
+    rcv: 48
+  maxLvl:
+    hp: 1334
+    atk: 620
+    rcv: 121
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 179388
+aliases:
+  - Wano Chopper
+evolution:
+  - id: 2787
+    evolvers:
+      - 118
+      - 301
+      - 2662
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] and [INT] characters by 1.5x, reduces damage
+    received by 10%.
+special:
+  name: "Ninja Arts: Shuriken no Jutsu"
+  description: Delays all enemies by 2 turns, reduces enemies' Barrier duration by
+    1 turn and deals 10% of enemies' current HP in damage to all enemies at the
+    end of the turn for 2 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: If your Captain is a [QCK] character, makes [STR] orbs beneficial
+      for [QCK] characters
+rumble:
+  stats:
+    def: 100
+    rumbleType: DBF
+    spd: 150
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 9
+          effect: damage
+          type: cut
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Silence
+          chance: 40
+          duration: 5
+          effect: hinderance
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - SPD
+          effect: debuff
+          duration: 15
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            chance: 41
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            chance: 42
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            chance: 43
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            chance: 44
+    - cooldown: 27
+      effects:
+        - {}
+        - override:
+            chance: 45
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 10
+        - override:
+            chance: 46
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 10
+        - override:
+            chance: 47
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 10
+        - override:
+            chance: 48
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 11
+        - override:
+            chance: 50
+        - override:
+            level: 3

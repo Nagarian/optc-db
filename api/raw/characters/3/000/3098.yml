@@ -1,0 +1,517 @@
+type: DUAL
+name: Sakazuki & Borsalino - Strength of the Most Powerful
+japanName: サカズキ＆ボルサリーノ 最高戦力の実力
+family:
+  - Borsalino
+  - Sakazuki
+class:
+  - Fighter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 981
+    atk: 223
+    rcv: 54
+  maxLvl:
+    hp: 2315
+    atk: 845
+    rcv: 110
+cost: 60
+slots: 4
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - kizuna
+links:
+  gamewithId: 229444
+aliases:
+  - Sakazuki&Borsalino
+  - Borsalino&Sakazuki
+  - SakazukiBorsalino
+  - BorsalinoSakazuki
+  - Akainu&Kizaru
+  - Kizaru&Akainu
+  - AkainuKizaru
+  - KizaruAkainu
+  - Kizuna Sakazuki and Borsalino
+  - Kizuna Akainu and Kizaru
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Driven characters by 3.75x, their HP by
+    1.25x and makes [STR] and [PSY] orbs beneficial for Slasher and Driven
+    characters.
+special:
+  name: Magma and Light Assault
+  description: Deals 100x character's ATK in Typeless Fixed True damage to all
+    enemies. If your Captain is a [STR] or [PSY] character, boosts Orb Effects
+    of Slasher and Driven characters by 2.75x for 1 turn, by 2x for 2 turns
+    otherwise and becomes Sakazuki & Borsalino for 3 turns.
+  cooldown: 33
+  maxLevel: 10
+sailor:
+  - description: Boosts base ATK and HP of Driven and Slasher characters by 100
+  - description: Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this
+      character
+characters:
+  swap:
+    description: Changes orb of this character into a Matching orb and reduces Slot
+      Bind and Silence duration by 1 turn.
+  character1:
+    name: Sakazuki - Strength of the Most Powerful
+    japanName: サカズキ 最高戦力の実力
+    class:
+      - Fighter
+      - Driven
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 903
+        atk: 208
+        rcv: 41
+      maxLvl:
+        hp: 2009
+        atk: 760
+        rcv: 109
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Driven characters by 2.75x, their HP by
+        1.25x and makes [STR] orbs beneficial for Slasher and Driven characters.
+    sailor:
+      - description: Boosts base ATK and HP of Driven and Slasher characters by 100
+      - description: Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this
+          character
+  character2:
+    name: Borsalino - Strength of the Most Powerful
+    japanName: ボルサリーノ 最高戦力の実力
+    class:
+      - Slasher
+      - Shooter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 910
+        atk: 196
+        rcv: 40
+      maxLvl:
+        hp: 2021
+        atk: 710
+        rcv: 108
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Driven characters by 2.75x, their HP by
+        1.25x and makes [PSY] orbs beneficial for Slasher and Driven characters.
+    sailor:
+      - description: Boosts base ATK and HP of Driven and Slasher characters by 100
+      - description: Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for this
+          character
+limitBreak:
+  path:
+    - atk: 300
+    - slot: 1
+    - rcv: 100
+    - type: potential
+    - atk: 300
+    - hp: 500
+    - rcv: 100
+    - type: sailor
+    - cooldown: 5
+    - hp: 500
+    - type: sailor
+    - type: potential
+    - atk: 300
+    - cooldown: 5
+    - hp: 500
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 8
+          threshold: 80
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+rumble:
+  stats:
+    def: 140
+    rumbleType: ATK
+    spd: 211
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+  special:
+    - cooldown: 33
+      effects:
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 1.46
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 16
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 16
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 1.52
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 17
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 17
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 1.58
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 18
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 18
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 1.64
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 19
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 19
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 1.7
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 20
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 1.76
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 21
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 1.82
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 22
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 1.88
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 23
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 33
+      effects:
+        - amount: 2
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - SPD
+          duration: 24
+          effect: buff
+          level: 7
+          targeting:
+            targets:
+              - Slasher
+              - Driven

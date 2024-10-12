@@ -1,0 +1,53 @@
+type: PSY
+name: Sengoku - Navy HQ Admiral
+japanName: センゴク 海軍本部大将
+family:
+  - Sengoku
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 1015
+    atk: 494
+    rcv: 20
+  maxLvl:
+    hp: 1910
+    atk: 989
+    rcv: 102
+cost: 30
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - ambush
+links:
+  gamewithId: 122271
+aliases:
+  - Invasion Sengoku
+  - Ambush Sengoku
+  - Young Sengoku
+evolution:
+  - id: 2283
+    evolvers:
+      - 118
+      - 87
+      - 92
+      - 98
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Fighter characters by 2.25x and boosts
+    ATK of Cost 30 or less characters by 1.1x.
+  notes: The bonus is cumulative. Cerebral and Fighter characters with 30 cost or
+    less get a 2.475x bonus.
+special:
+  name: Ruthless Straight Fist
+  description: Deals 20% of enemies' current HP in True damage to one enemy. If
+    your crew has 4 or more characters with the same Type Orb, makes the
+    Dominant Type Orbs beneficial for all characters for 1 turn and boosts Orb
+    Effects of all characters by 2x for 3 turns.
+  cooldown: 29
+  maxLevel: 15

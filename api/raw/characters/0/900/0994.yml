@@ -1,0 +1,54 @@
+type: PSY
+name: Violet
+japanName: ヴァイオレット
+family:
+  - Viola
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 147
+    atk: 48
+    rcv: 77
+  maxLvl:
+    hp: 1157
+    atk: 451
+    rcv: 274
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 26464
+aliases:
+  - Viola
+evolution:
+  - id: 995
+    evolvers:
+      - 118
+      - 87
+      - 94
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Boosts amount of Beli received by 2x
+special:
+  name: Peeping Mind
+  description: Reduces Special Cooldown of Cerebral and Fighter characters by 2
+    turns. Displays the status of all enemies.
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Reduces Special Cooldown of Cerebral and Fighter characters by 1
+        turn. Displays the status of all enemies.
+      cooldown: 13
+  notes: Status includes Enemy Attack, Defense, Combo Hits, Current / Total HP,
+    Attack Interval, 'Specials based on turns' and 'Effect after Death'
+sailor:
+  - description: Restores special cooldown of this character by 1 turn when it is rewinded

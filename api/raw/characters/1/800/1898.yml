@@ -1,0 +1,48 @@
+type: QCK
+name: "Killer: Neo - Kid Pirates"
+japanName: キラー「改」 キッド海賊団
+family:
+  - Killer
+class:
+  - Striker
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 445
+    atk: 346
+    rcv: 40
+  maxLvl:
+    hp: 920
+    atk: 799
+    rcv: 120
+cost: 25
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 84592
+aliases:
+  - Neo Killer
+  - Kai Killer
+evolution:
+  - id: 1899
+    evolvers:
+      - 118
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Slasher characters by 2x, reduces crew's RCV to 0.
+special:
+  name: Hitting Size [Neo]
+  description: Changes [STR], [DEX] and [QCK] orbs of Striker and Slasher
+    characters into Matching orbs, deals 8% of enemies' current HP in damage to
+    one enemy
+  cooldown: 18
+  maxLevel: 11

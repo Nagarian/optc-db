@@ -1,0 +1,94 @@
+type: QCK
+name: Sanji - Grill Shot
+japanName: サンジ グリル＝ショット
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5+
+stats:
+  combo: 4
+  minLvl:
+    hp: 550
+    atk: 515
+    rcv: 175
+  maxLvl:
+    hp: 2709
+    atk: 1337
+    rcv: 251
+cost: 30
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 2018
+aliases:
+  - Mega Sanji
+  - Super Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and reduces damage take by 10%.
+special:
+  name: Grill Shot
+  description: Deals 50,000 Fixed damage to all enemies and boosts ATK of this
+    character by 1.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+  stages:
+    - description: Deals 5,000 Fixed damage to all enemies and boosts ATK of this
+        character by 1.2x for 1 turn.
+      cooldown: 15
+sailor:
+  - description: Makes [RCV] orbs beneficial for all characters
+  - description: Boosts base ATK, HP and RCV of all characters by 40
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Powerhouse characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - atk: 40
+    - type: potential
+    - hp: 60
+    - rcv: 20
+    - cooldown: 1
+    - atk: 60
+    - type: sailor
+    - rcv: 20
+    - cooldown: 1
+    - rcv: 30
+    - hp: 90
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20

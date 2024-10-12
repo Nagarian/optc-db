@@ -1,0 +1,114 @@
+type: QCK
+name: Karasu - Captain of the Revolutionary Army Northern Forces
+japanName: カラス 革命軍“北軍”軍隊長
+family:
+  - Karasu
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1084
+    atk: 560
+    rcv: 115
+  maxLvl:
+    hp: 2709
+    atk: 1401
+    rcv: 288
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 152589
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 2.5x and their
+    HP by 1.2x.
+special:
+  name: Liberating Crows
+  description: Reduces Special Cooldown of Free Spirit and Cerebral characters by
+    2 turns and reduces Silence, Increase Damage Taken and Burn duration by 5
+    turns.
+  cooldown: 19
+  maxLevel: 7
+  stages:
+    - description: Reduces Special Cooldown of Free Spirit and Cerebral characters by
+        1 turn and reduces Silence duration by 2 turns.
+      cooldown: 11
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: Reduces Silence duration by 5 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Free Spirit characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 15
+    - rcv: 30
+    - type: potential
+    - hp: 10
+    - hp: 15
+    - slot: 1
+    - hp: 25
+    - atk: 25
+    - atk: 30
+    - atk: 40
+    - type: sailor
+    - hp: 50
+    - hp: 80
+    - type: potential
+    - key: 1
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

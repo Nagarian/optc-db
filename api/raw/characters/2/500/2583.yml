@@ -1,0 +1,134 @@
+type: INT
+name: Rob Lucci - Cipher Pol "Aigis" Zero
+japanName: ロブ・ルッチ サイファーポール“イージス”ゼロ
+family:
+  - RobLucci
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1768
+    atk: 779
+    rcv: 56
+  maxLvl:
+    hp: 3129
+    atk: 1430
+    rcv: 209
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 153889
+aliases:
+  - TM Lucci
+  - TM Rob Lucci
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.25x, by 1.5x instead if they
+    have a beneficial orb, and reduces crew's RCV to 0.
+special:
+  name: Leg Gun
+  description: Deals 20% of enemies' current HP in damage to one enemy. If HP is
+    above 99% at the time the special is activated, boosts Orb Effects of
+    Cerebral characters by 2x for 3 turns and locks all orbs for 1 turn.
+  cooldown: 36
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Cerebral characters by 50
+  - description: Makes [PSY], [RCV] and [TND] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Kaku and Stussy
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 5
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Cerebral characters by 1.25x, by 1.75x instead if
+          they have a beneficial orb, and reduces crew's RCV to 0.
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Cerebral characters by 1.5x, by 2.1x instead if they
+          have a beneficial orb, and reduces crew's RCV to 0.
+    - slot: 1
+    - cooldown: 1
+    - rcv: 30
+    - rcv: 35
+    - rcv: 35
+    - captain:
+        description: Boosts ATK of Cerebral characters by 1.75x, by 2.45x instead if
+          they have a beneficial orb, and reduces crew's RCV to 0.
+    - cooldown: 2
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - cooldown: 3
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Cerebral characters by 2x, by 2.8x instead if they
+          have a beneficial orb, and reduces crew's RCV to 0.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 35
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Cerebral characters by 2.25x, by 3.15x instead if
+          they have a beneficial orb, and reduces crew's RCV to 0.
+    - hp: 70
+    - hp: 100
+    - captain:
+        description: Boosts ATK of Cerebral characters by 2.5x, by 3.5x instead if they
+          have a beneficial orb, their HP by 1.2x and reduces crew's RCV to 0.
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 4
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

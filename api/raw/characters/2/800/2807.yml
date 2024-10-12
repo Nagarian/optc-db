@@ -1,0 +1,187 @@
+type: INT
+name: Franosuke
+japanName: フラの介
+family:
+  - Franky
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 634
+    atk: 146
+    rcv: 31
+  maxLvl:
+    hp: 634
+    atk: 146
+    rcv: 31
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 181749
+aliases:
+  - Wano Franky
+evolution:
+  - id: 2808
+    evolvers:
+      - 266
+      - 93
+      - 99
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x and makes [TND] orbs
+    beneficial for [INT] characters
+special:
+  name: Daily Life of an Apprentice Carpenter
+  description: Reduces Burn duration by 3 turns and reduces enemies' Resilience
+    duration by 3 turns, changes orbs of adjacent characters into [TND] orbs,
+    switches orbs between slots 2 times, locks all orbs for 2 turns.
+  cooldown: 17
+  maxLevel: 7
+sailor:
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+rumble:
+  stats:
+    def: 249
+    rumbleType: DEF
+    spd: 107
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          condition:
+            count: 4
+            stat: Guard
+            type: trigger
+          targeting:
+            targets:
+              - QCK
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 21
+      effects:
+        - amount: 0.4
+          effect: damage
+          type: atk
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - attributes:
+            - Provoke
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.45
+        - {}
+        - {}
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.49
+        - {}
+        - override:
+            level: 3
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.54
+        - {}
+        - override:
+            level: 4
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.59
+        - {}
+        - override:
+            level: 5
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.64
+        - {}
+        - override:
+            level: 6
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.68
+        - {}
+        - override:
+            level: 7
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.73
+        - {}
+        - override:
+            level: 8
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.78
+        - {}
+        - override:
+            level: 8
+    - cooldown: 21
+      effects:
+        - override:
+            amount: 0.85
+        - {}
+        - override:
+            level: 10

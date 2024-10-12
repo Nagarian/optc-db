@@ -1,0 +1,100 @@
+type: DEX
+name: Kami Eneru - Omnipotent Kami of Lightning
+japanName: ゴッド・エネル 万雷を統べる神
+family:
+  - Enel
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1610
+    atk: 731
+    rcv: 88
+  maxLvl:
+    hp: 3220
+    atk: 1462
+    rcv: 176
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 305252
+aliases:
+  - Secret Limited Enel
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Striker characters by 2.75x and deals
+    20,000 in [DEX] damage to all enemies at the end of each turn.
+special:
+  name: Spearing the Natural Enemy
+  description: Reduces Bind duration by 3 turns, reduces enemies' Percent Damage
+    Reduction and Threshold Damage Reduction duration by 5 turns and boosts the
+    Color Affinity of Cerebral and Striker characters by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Adds 4x character's ATK as Additional Damage
+  - description: Reduces Cerebral and Striker character's Paralysis duration by 1 turn
+support:
+  type: descriptive
+  criteria: "[DEX] Cerebral characters"
+  levels:
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, boosts the Color Affinity of Cerebral characters by 1.1x for 1
+      turn.
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, boosts the Color Affinity of Cerebral characters by 1.2x for 1
+      turn.
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, boosts the Color Affinity of Cerebral characters by 1.3x for 1
+      turn.
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, boosts the Color Affinity of Cerebral characters by 1.4x for 1
+      turn.
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, boosts the Color Affinity of Cerebral characters by 1.5x for 1
+      turn and reduces Bind duration by 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - type: potential
+    - atk: 20
+    - hp: 20
+    - atk: 30
+    - slot: 1
+    - atk: 40
+    - rcv: 50
+    - atk: 50
+    - type: sailor
+    - hp: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

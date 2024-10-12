@@ -1,0 +1,50 @@
+type: PSY
+name: Izo - Whitebeard's Sixteenth Division Commander
+japanName: イゾウ 白ひげ海賊団１６番隊隊長
+family:
+  - Izo
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 37
+    atk: 22
+    rcv: 39
+  maxLvl:
+    hp: 1910
+    atk: 990
+    rcv: 300
+cost: 25
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 25488
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] and [DEX] characters by 1.75x and their RCV by 1.2x
+special:
+  name: Flintlock Barrage
+  description: Randomizes all orbs into either [PSY] or [DEX] orbs, deals random
+    [PSY] damage to all enemies
+  cooldown: 25
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7

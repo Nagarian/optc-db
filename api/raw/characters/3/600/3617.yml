@@ -1,0 +1,236 @@
+type: STR
+name: Queen - Retaliating Plague
+family:
+  - Queen
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1906
+    atk: 765
+    rcv: 77
+  maxLvl:
+    hp: 3813
+    atk: 1530
+    rcv: 155
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Powerhouse characters by 3x, boosts HP of
+    Striker and Powerhouse characters by 1.5x and makes [DEX] and [TND] orbs
+    beneficial for Striker and Powerhouse characters.
+special:
+  name: Intercepting Mouth Blast
+  description: Reduces enemies' Percent Damage Reduction and Increased Defense
+    duration by 5 turns and locks all orbs for 1 turn. If your Captain is a
+    Striker or Powerhouse character, boosts base ATK of Striker and Powerhouse
+    characters by 900 for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Powerhouse characters by 75.
+  - description: If this character has a [TND] or [WANO] orb and you attack with
+      this character, reduces enemies' Striker and Powerhouse Resistance by -10%
+      for 1 turn.
+support:
+  type: descriptive
+  criteria: Jack, Kaido and King
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb and boosts
+      base ATK of Striker and Powerhouse characters by 100 for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      changes the orb of the supported character into a [TND] orb and boosts
+      base ATK of Striker and Powerhouse characters by 200 for 1 turn.
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 40
+    - rcv: 15
+    - type: potential
+    - atk: 50
+    - rcv: 15
+    - hp: 60
+    - slot: 1
+    - rcv: 20
+    - atk: 50
+    - hp: 60
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+rumble:
+  stats:
+    def: 145
+    rumbleType: ATK
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 100
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 36
+      effects:
+        - amount: 15
+          effect: damage
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 2
+            duration: 12
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 3
+            duration: 13
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 19
+        - override:
+            level: 3
+            duration: 14
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 21
+        - override:
+            level: 4
+            duration: 15
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 22
+        - override:
+            level: 4
+            duration: 16
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 24
+        - override:
+            level: 5
+            duration: 17
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 25
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 27
+        - override:
+            level: 6
+            duration: 19
+    - cooldown: 36
+      effects:
+        - override:
+            amount: 30
+        - override:
+            level: 7
+            duration: 20

@@ -1,0 +1,317 @@
+type: PSY
+name: Usopp - Tabasco Star
+frenchName: Usopp Etoile Piquante
+japanName: ウソップ タバスコ星
+family:
+  - Usopp
+class:
+  - Shooter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 286
+    atk: 148
+    rcv: 85
+  maxLvl:
+    hp: 627
+    atk: 240
+    rcv: 257
+cost: 7
+slots: 2
+maxExp: 136167
+maxLevel: 35
+flags:
+  - sugo
+links:
+  gamewithId: 2022
+aliases: []
+evolution:
+  - id: 15
+    evolvers:
+      - 117
+  - id: 16
+    evolvers:
+      - 117
+      - 87
+      - 98
+      - 103
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.5x
+special:
+  name: Tabasco Star
+  description: Delays all enemies by 2 turns
+  cooldown: 15
+  maxLevel: 6
+rumble:
+  stats:
+    def: 164
+    rumbleType: DBF
+    spd: 124
+    cost: 20
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - crew
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 59
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 63
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 67
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 71
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 75
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 79
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 7
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 83
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 8
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 87
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 9
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 91
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 9
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Silence
+          chance: 96
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - Accuracy
+          duration: 15
+          effect: debuff
+          level: 11
+          targeting:
+            targets:
+              - enemies

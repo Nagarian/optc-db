@@ -1,0 +1,51 @@
+type: PSY
+name: Tony Tony Chopper - Dressing Up for the Pirate Festival!
+japanName: トニートニー・チョッパー Dress up for PIRATE FESTIVAL
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 755
+    atk: 405
+    rcv: 119
+  maxLvl:
+    hp: 1888
+    atk: 1012
+    rcv: 298
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 150789
+aliases:
+  - Dress Up Chopper
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.75x and their HP by 1.2x
+special:
+  name: Refreshing Shower
+  description: Reduces the defense of all enemies by 50% for 1 turn, changes orbs
+    of middle row characters into [RCV] orbs and boosts RCV of all characters by
+    1.5x for 1 turn.
+  cooldown: 16
+  maxLevel: 5
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Vinsmoke Sanji, Usopp, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

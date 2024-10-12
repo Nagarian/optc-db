@@ -1,0 +1,113 @@
+type: PSY
+name: "Hawk Eyes Mihawk - Marineford in Chaos: Master Swordsman"
+japanName: 鷹の目のミホーク 狂乱のマリンフォード“剣豪”
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 980
+    atk: 678
+    rcv: 30
+  maxLvl:
+    hp: 2859
+    atk: 1381
+    rcv: 173
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 114526
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x and boosts HP of [PSY]
+    characters by 1.3x
+special:
+  name: Hawk Eyes' Instantaneous Killing
+  description: Deal 50x character's ATK in Typeless damage to one enemy and
+    reduces enemies' Barrier duration by 1 turn. If your crew has 3 or more
+    [PSY] characters, changes the orb of this character into a [PSY] orb and
+    boosts Orb Effects of all characters by 2x for 1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of [PSY] and [INT] characters by 50
+  - description: Boosts this character's damage against [INT] characters by 1.1x
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Bartholomew Kuma, Gecko Moria, Boa Hancock and Donquixote Doflamingo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 20
+    - type: potential
+    - hp: 40
+    - hp: 40
+    - hp: 40
+    - type: sailor
+    - hp: 55
+    - slot: 1
+    - hp: 65
+    - atk: 60
+    - cooldown: 1
+    - atk: 60
+    - type: potential
+    - key: 1
+    - atk: 100
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - atk: 100
+    - cooldown: 4
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

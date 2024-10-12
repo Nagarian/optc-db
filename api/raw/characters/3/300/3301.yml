@@ -1,0 +1,98 @@
+type: DEX
+name: Vinsmoke Judge - Electrifying Garuda
+japanName: ヴィンスモーク・ジャッジ 電撃ほとばしる怪鳥
+family:
+  - VinsmokeJudge
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 986
+    atk: 683
+    rcv: 89
+  maxLvl:
+    hp: 2731
+    atk: 1397
+    rcv: 281
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 270111
+aliases:
+  - Kizuna Judge
+  - Limited Judge
+  - Secret Judge
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Driven characters by 3x and their HP by 1.2x.
+special:
+  name: Garuda Charge
+  description: Reduces Despair duration by 5 turns, reduces enemies' Resilience
+    duration by 5 turns and reduces damage received by 60% for 1 turn. If your
+    Captain is a Striker or Driven character, boosts Orb Effects of all
+    characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of Striker and Driven characters by 30
+  - description: If this character has a [DEX] orb and you hit a PERFECT with him,
+      keep his [DEX] orb for the next turn
+support:
+  type: descriptive
+  criteria: Vinsmoke Ichiji, Vinsmoke Niji, Vinsmoke Yonji, Vinsmoke Reiju
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Resilience duration by 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Resilience duration by 2 turns.
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - atk: 25
+    - atk: 25
+    - hp: 50
+    - type: sailor
+    - rcv: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 25
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

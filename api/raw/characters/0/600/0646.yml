@@ -1,0 +1,48 @@
+type: STR
+name: Little Oars Jr.
+japanName: リトルオーズJr.
+family:
+  - LittleOarsJr
+class:
+  - Shooter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 251
+    atk: 166
+    rcv: 1
+  maxLvl:
+    hp: 1900
+    atk: 734
+    rcv: 3
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 14401
+aliases: []
+evolution:
+  - id: 647
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x if HP is below 30% at the
+    start of the turn
+special:
+  name: Vanguard Breaker
+  description: Deals 20x character's ATK in [STR] damage to all enemies, boosts
+    chances of getting [STR] orbs for 3 turns
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: Boosts base HP of [STR] characters by 30

@@ -1,0 +1,51 @@
+type: STR
+name: Aokiji - "Duel" Opponent
+japanName: 青キジ “一騎討ち”の相手
+family:
+  - Kuzan
+class:
+  - Shooter
+  - Slasher
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 126
+    atk: 130
+    rcv: 49
+  maxLvl:
+    hp: 1220
+    atk: 724
+    rcv: 195
+cost: 20
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 61003
+aliases:
+  - Secret Aokiji
+  - Secret Kuzan
+  - Limited Aokiji
+  - Limited Kuzan
+evolution:
+  - id: 1665
+    evolvers:
+      - 118
+      - 84
+      - 94
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2.5x
+special:
+  name: Ice Saber
+  description: Locks all orbs for 1 turn. If during that turn, you hit 2 PERFECTS
+    and your Captain is a Shooter character, boosts ATK of Shooter characters by
+    2x for 1 turn in the following turn.
+  cooldown: 16
+  maxLevel: 5

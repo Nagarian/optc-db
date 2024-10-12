@@ -1,0 +1,35 @@
+type: STR
+name: STR Rook - Chess Peacekeeper
+japanName: ルーク・[力] チェス戎兵
+family:
+  - RookSTR
+class:
+  - Shooter
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 136
+    atk: 78
+    rcv: 7
+  maxLvl:
+    hp: 1560
+    atk: 930
+    rcv: 75
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2x and their HP by 1.1x.
+special:
+  name: "Rook: Slot Power"
+  description: Randomizes [PSY] and [INT] orbs, into either [STR] or [DEX] orbs
+    and boosts Orb Effects of all characters by 1.5x for 1 turn.
+  cooldown: 22
+  maxLevel: 7

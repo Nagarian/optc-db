@@ -1,0 +1,50 @@
+type: STR
+name: Arlong - Sun Pirates
+japanName: アーロン タイヨウの海賊団
+family:
+  - Arlong
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1261
+    atk: 633
+    rcv: 45
+  maxLvl:
+    hp: 2020
+    atk: 1389
+    rcv: 171
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 14829
+aliases:
+  - Young Arlong
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of [STR] characters by 2x
+special:
+  name: Tooth Gum
+  description: Changes [EMPTY] and [TND] orbs into [STR] orbs, deals 10x
+    character's ATK in [STR] damage to one enemy, boosts Orb Effects of all
+    characters by 1.25x for 2 turns
+  cooldown: 24
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Fisher Tiger and Hatchan
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

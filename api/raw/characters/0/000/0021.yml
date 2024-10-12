@@ -1,0 +1,62 @@
+type: PSY
+name: Tony Tony Chopper
+frenchName: Tony Tony Chopper
+japanName: トニートニー・チョッパー
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 52
+    atk: 40
+    rcv: 39
+  maxLvl:
+    hp: 294
+    atk: 144
+    rcv: 120
+cost: 4
+slots: 0
+maxExp: 26184
+maxLevel: 20
+flags:
+  - sugo
+links:
+  gamewithId: 2021
+aliases: []
+evolution:
+  - id: 22
+    evolvers:
+      - 116
+      - 81
+      - 98
+  - id: 23
+    evolvers:
+      - 116
+      - 82
+      - 99
+  - id: 24
+    evolvers:
+      - 116
+      - 78
+      - 95
+  - id: 25
+    evolvers:
+      - 116
+      - 79
+      - 96
+  - id: 26
+    evolvers:
+      - 116
+      - 80
+      - 97
+captain:
+  name: ""
+  description: Boosts RCV of [PSY] characters by 1.2x
+special:
+  name: Hearty Yell
+  description: Changes orbs of adjacent characters into [RCV] orbs
+  cooldown: 15
+  maxLevel: 8

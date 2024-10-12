@@ -1,0 +1,52 @@
+type: INT
+name: Musshuru - Poison Spore Human
+japanName: ムッシュール 毒胞子人間
+family:
+  - Musshuru
+class:
+  - Driven
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 667
+    atk: 472
+    rcv: 131
+  maxLvl:
+    hp: 1419
+    atk: 1142
+    rcv: 302
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 30798
+aliases:
+  - Colo Musshuru
+  - Coliseum Musshuru
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x and their RCV by 1.5x
+special:
+  name: Lot Stiffen
+  description: Randomizes all orbs, including [BLOCK] orbs. boosts Orb Effects of
+    all characters by 1.5x for 2 turns
+  cooldown: 20
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Wapol
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

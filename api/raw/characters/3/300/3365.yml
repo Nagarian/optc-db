@@ -1,0 +1,242 @@
+type: PSY
+name: Monkey D. Luffy - MUGIWARA 56
+japanName: モンキー・D・ルフィ ＭＵＧＩＷＡＲＡ５６
+family:
+  - MonkeyDLuffy
+class:
+  - Free Spirit
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1528
+    atk: 678
+    rcv: 128
+  maxLvl:
+    hp: 3056
+    atk: 1406
+    rcv: 256
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 282917
+aliases:
+  - Secret Luffy
+  - Limited Luffy
+  - Mugiwara Luffy
+  - Germa Luffy
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 3x and their HP by 1.2x.
+special:
+  name: Fierce Red Hawk
+  description: Reduces enemies' Resilience duration by 5 turns, reduces Bind and
+    Despair duration by 5 turns and locks the chain multiplier at 2.75x for 1
+    turn. If your crew has Chain Lock, increases boost effects of Chain Lock
+    buffs by +0.2x.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: When any other Free Spirit character uses a special, reduces
+      special cooldown of this character by 1 turn
+  - description: Makes [STR] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Vinsmoke Sanji and Roronoa Zoro
+  levels:
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, locks the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, locks the chain multiplier at 2x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, locks the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, locks the chain multiplier at 2.5x for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Amplification
+      special, locks the chain multiplier at 2.75x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 30
+    - atk: 20
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - atk: 20
+    - type: sailor
+    - atk: 20
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 70
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+rumble:
+  stats:
+    def: 110
+    rumbleType: ATK
+    spd: 167
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+        - attributes:
+            - Special CT
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 1
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 1
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 0.1
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+          duration: 1
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.2
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 1
+        - override:
+            level: 5
+            duration: 20

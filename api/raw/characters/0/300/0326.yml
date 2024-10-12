@@ -1,0 +1,44 @@
+type: STR
+name: Wapol
+japanName: ワポル
+family:
+  - Wapol
+class:
+  - Fighter
+  - Free Spirit
+rarity: 3
+stats:
+  combo: 4
+  minLvl:
+    hp: 330
+    atk: 128
+    rcv: 20
+  maxLvl:
+    hp: 1440
+    atk: 488
+    rcv: 98
+cost: 8
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 6659
+aliases: []
+evolution:
+  - id: 327
+    evolvers:
+      - 117
+      - 84
+      - 89
+      - 95
+      - 300
+captain:
+  name: ""
+  description: Recovers 10x character's RCV in HP at the end of each turn
+special:
+  name: Munch-Munch Tongue Cannon
+  description: Changes all orbs into [EMPTY] orbs, deals 25x character's ATK in
+    [STR] damage to one enemy
+  cooldown: 22
+  maxLevel: 7

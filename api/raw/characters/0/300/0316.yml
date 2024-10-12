@@ -1,0 +1,86 @@
+type: STR
+name: Bepo the Martial Artist
+japanName: 武闘家のベポ
+family:
+  - Bepo
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 755
+    atk: 640
+    rcv: 198
+  maxLvl:
+    hp: 1880
+    atk: 1200
+    rcv: 405
+cost: 28
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 5980
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of Fighter characters by 1.5x
+special:
+  name: Aye Aye, Captain!
+  description: Changes [PSY] and [INT] orbs into [STR] orbs, changes [DEX] and
+    [QCK] orbs into [EMPTY] orbs
+  cooldown: 20
+  maxLevel: 11
+sailor:
+  - description: Reduces Paralysis duration by 2 turns on this character
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Trafalgar D. Water Law
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Striker and Slasher characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Striker and Slasher characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Striker and Slasher characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Striker and Slasher characters by 1.2x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of Striker and Slasher characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 30
+    - hp: 40
+    - type: potential
+    - atk: 30
+    - hp: 40
+    - cooldown: 2
+    - rcv: 30
+    - hp: 40
+    - atk: 40
+    - slot: 1
+    - cooldown: 2
+    - hp: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

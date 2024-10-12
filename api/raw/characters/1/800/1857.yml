@@ -1,0 +1,49 @@
+type: PSY
+name: '"Red Flag" X Drake - Supernova'
+japanName: “赤旗”X・ドレーク 超新星
+family:
+  - XDrake
+class:
+  - Powerhouse
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 1472
+    atk: 567
+    rcv: 30
+  maxLvl:
+    hp: 2978
+    atk: 1267
+    rcv: 50
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 79681
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and recovers 200 HP at
+    the end of each turn
+special:
+  name: Intervening A Fierce Battle
+  description: Deals 7% of enemies' current HP in damage to all enemies. Boosts
+    the Color Affinity of Powerhouse characters by 1.25x for 1 turn
+  cooldown: 14
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Urouge and Basil Hawkins
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

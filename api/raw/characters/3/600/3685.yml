@@ -1,0 +1,224 @@
+type: INT
+name: Nico Robin - Straw Hat Pirates Enjoying the FES
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1444
+    atk: 762
+    rcv: 131
+  maxLvl:
+    hp: 2888
+    atk: 1523
+    rcv: 261
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - RED
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and Cerebral characters by 3x and recovers 5x
+    character's RCV in HP at the end of each turn.
+special:
+  name: Spider Net For Catching
+  description: Reduces Silence and Burn duration by 5 turns. If your Captain is an
+    [INT] character, reduces the defense of all enemies by 100% for 1 turn and
+    boosts ATK against enemies with reduced defense by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of all characters by 100. If your crew has 6 [INT]
+      characters, boosts base RCV of all characters by 75.
+  - description: Reduces Silence duration completely on this character
+support:
+  type: descriptive
+  criteria: Nami, Tony Tony Chopper and Brook
+  levels:
+    - Once per adventure, when an enemy inflicts you with Burn, recovers 1,000
+      HP and reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, recovers 1,250
+      HP and reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, recovers 1,500
+      HP and reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, recovers 1,750
+      HP and reduces the defense of all enemies by 50% for 1 turn.
+    - Once per adventure, when an enemy inflicts you with Burn, recovers 2,000
+      HP and reduces the defense of all enemies by 50% for 1 turn.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 40
+    - atk: 20
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - atk: 30
+    - slot: 1
+    - hp: 50
+    - hp: 50
+    - atk: 40
+    - type: sailor
+    - hp: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 110
+    rumbleType: ATK
+    spd: 151
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 3
+  special:
+    - cooldown: 29
+      effects:
+        - amount: 200
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Cerebral
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 300
+        - override:
+            duration: 7
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 400
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 500
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 600
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 700
+        - override:
+            level: 3
+            duration: 11
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 800
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 900
+        - override:
+            level: 4
+            duration: 13
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1000
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 29
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            level: 6
+            duration: 15

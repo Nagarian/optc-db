@@ -1,0 +1,132 @@
+type: DEX
+name: Nami - Cat Burglar Conning the World
+japanName: ナミ 世界を欺く泥棒猫
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1382
+    atk: 548
+    rcv: 238
+  maxLvl:
+    hp: 2720
+    atk: 1394
+    rcv: 482
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 102769
+aliases:
+  - V1 Legend Nami
+evolution:
+  - id: 2588
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of [DEX] characters by 3.75x and makes [STR] and
+    [QCK] orbs beneficial for [DEX] characters.
+special:
+  name: "Weather Egg: Thunderbreed Tempo"
+  description: If your Captain is a Free Spirit, Cerebral, Powerhouse or Driven
+    character, boosts the Color Affinity of Free Spirit, Cerebral, Powerhouse
+    and Driven characters by 1.75x for 1 turn and boosts Orb Effects of Free
+    Spirit, Cerebral, Powerhouse and Driven characters by 2x for 1 turn
+  cooldown: 21
+  maxLevel: 6
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Monkey D. Luffy, Carrot and Tony Tony Chopper
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 11
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - hp: 40
+    - hp: 40
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - rcv: 15
+    - rcv: 15
+    - hp: 60
+    - hp: 60
+    - cooldown: 1
+    - atk: 30
+    - atk: 30
+    - rcv: 25
+    - rcv: 25
+    - hp: 65
+    - type: sailor
+    - hp: 80
+    - atk: 30
+    - atk: 40
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 50
+    - hp: 100
+    - atk: 100
+    - hp: 200
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight and boosts ATK of [DEX] characters by 3.75x and makes
+          [STR], [QCK] and [RCV] orbs beneficial for [DEX] characters.
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

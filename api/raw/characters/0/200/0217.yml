@@ -1,0 +1,105 @@
+type: STR
+name: Monkey D. Luffy - Gear Third
+japanName: モンキー・D・ルフィ（ギア３）
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1374
+    atk: 585
+    rcv: 50
+  maxLvl:
+    hp: 2960
+    atk: 1303
+    rcv: 105
+cost: 22
+slots: 2
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 4005
+aliases:
+  - Mistake
+  - G3
+  - Gear 3
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 3.5x after scoring 3 PERFECTs in a row
+special:
+  name: Gum-Gum Giant Rifle
+  description: Deals 15x character's ATK in [STR] damage to all enemies
+  cooldown: 25
+  maxLevel: 6
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for this character
+  - description: Boosts base ATK of this character by 200 if this character is the
+      last in the chain to attack
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Nami, Vinsmoke Sanji, Usopp, Tony Tony Chopper, Nico
+    Robin, Franky
+  levels:
+    - Once per adventure, when you reach the final stage, adds 50x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 75x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 100x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 125x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+    - Once per adventure, when you reach the final stage, adds 150x supported
+      character's ATK as Additional Damage to the supported character's attacks
+      for 1 turn
+limitBreak:
+  path:
+    - rcv: 10
+    - cooldown: 4
+    - rcv: 20
+    - type: potential
+    - rcv: 30
+    - cooldown: 5
+    - rcv: 40
+    - type: sailor
+    - rcv: 50
+    - slot: 1
+    - slot: 1
+    - rcv: 60
+    - cooldown: 5
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 7
+          threshold: 40
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

@@ -1,0 +1,105 @@
+type: DEX
+name: Charlotte Daifuku - Puff-Puff Fruit Lampman
+japanName: シャーロット・ダイフク ホヤホヤの実のランプ人間
+family:
+  - CharlotteDaifuku
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1556
+    atk: 875
+    rcv: 58
+  maxLvl:
+    hp: 2988
+    atk: 1476
+    rcv: 150
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 118420
+aliases:
+  - Colo Daifuku
+  - Coliseum Daifuku
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Powerhouse characters by 2.5x at the
+    start of the chain and their HP by 1.25x, by 2.85x after scoring 3 PERFECTs
+    in a row.
+special:
+  name: The Genie's Flashy Strike
+  description: Deals 75x character's ATK in [DEX] True damage to all enemies. If
+    your crew has 4 or more characters with [STR] or [DEX] orbs, Delays all
+    enemies by 2 turns and adds 0.8x to Chain multiplier for 2 turns. If your
+    crew has 4 or more characters with [PSY] or [INT] orbs, boosts the Color
+    Affinity of all characters by 1.75x for 2 turns and makes [PSY] and [INT]
+    orbs beneficial for all characters for 2 turns.
+  cooldown: 28
+  maxLevel: 15
+  stages:
+    - description: Deals 45x character's ATK in [DEX] True damage to all enemies. If
+        your crew has 4 or more characters with [STR] or [DEX] orbs, Delays all
+        enemies by 1 turn and adds 0.5x to Chain multiplier for 1 turn. If your
+        crew has 4 or more characters with [PSY] or [INT] orbs, boosts the Color
+        Affinity of all characters by 1.5x for 1 turn and makes [PSY] and [INT]
+        orbs beneficial for all characters for 1 turn.
+      cooldown: 24
+sailor:
+  - description: If this character has a [DEX] orb and you hit a PERFECT with him,
+      keep his [DEX] orb for the next turn
+  - description: Makes [DEX] orbs beneficial for Slasher characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Slasher characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6
+    - value: 8
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - hp: 20
+    - type: potential
+    - hp: 20
+    - cooldown: 1
+    - slot: 1
+    - atk: 35
+    - hp: 30
+    - atk: 45
+    - hp: 30
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 2
+          threshold: 15
+        - value: 4
+          threshold: 20
+        - value: 6
+          threshold: 25
+        - value: 8
+          threshold: 40
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

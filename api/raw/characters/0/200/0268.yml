@@ -1,0 +1,47 @@
+type: DEX
+name: White Chase Smoker
+japanName: 白猟のスモーカー ビローアバイク
+family:
+  - Smoker
+class:
+  - Striker
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1644
+    atk: 1012
+    rcv: 298
+  maxLvl:
+    hp: 2215
+    atk: 1282
+    rcv: 338
+cost: 20
+slots: 3
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 2078
+aliases:
+  - WC Smoker
+captain:
+  name: ""
+  description: Reduces damage received by 25%
+special:
+  name: White Out
+  description: Reduces damage received by 50% for 3 turns
+  cooldown: 22
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Tashigi, Hina
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 6

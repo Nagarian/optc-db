@@ -1,0 +1,56 @@
+type: DEX
+name: "Kizaru: Neo"
+japanName: 黄猿「改」
+family:
+  - Borsalino
+class:
+  - Fighter
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 217
+    atk: 171
+    rcv: 37
+  maxLvl:
+    hp: 1221
+    atk: 746
+    rcv: 162
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - raid
+links:
+  gamewithId: 68680
+aliases:
+  - Neo Kizaru
+  - Neo Borsalino
+  - Kai Kizaru
+  - Kai Borsalino
+  - Raid Kizaru
+  - Raid Borsalino
+evolution:
+  - id: 1780
+    evolvers:
+      - 118
+      - 86
+      - 266
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x
+special:
+  name: Yata no Kagami (Sacred Mirror) Neo
+  description: Changes the orb of this character into a [DEX] orb. Reduces Special
+    Cooldown of Shooter and Fighter characters by 1 turn. Adds 0.5x to Chain
+    multiplier for 2 turns
+  cooldown: 20
+  maxLevel: 10
+  stages:
+    - description: Changes the orb of this character into a [DEX] orb. Reduces Special
+        Cooldown of Shooter and Fighter characters by 1 turn
+      cooldown: 14

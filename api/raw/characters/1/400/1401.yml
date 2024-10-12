@@ -1,0 +1,97 @@
+type: STR
+name: Gladius - Pica Army
+japanName: グラディウス ピーカ軍幹部
+family:
+  - Gladius
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 986
+    atk: 698
+    rcv: 86
+  maxLvl:
+    hp: 2188
+    atk: 1419
+    rcv: 208
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 47299
+aliases:
+  - Colo Gladius
+  - Coliseum Gladius
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 1.75x and boosts ATK of Driven
+    characters by 1.5x
+  notes: The bonus is cumulative. Shooter Driven characters get a 2.625x bonus.
+special:
+  name: Stonewall Punk
+  description: Deals 30x character's ATK in [STR] damage to all enemies, reduces
+    Bind and Despair duration by 2 turns and boosts the Color Affinity of
+    Shooter characters by 1.75x for 1 turn
+  cooldown: 33
+  maxLevel: 16
+  stages:
+    - description: Deals 13x character's ATK in [STR] damage to all enemies, reduces
+        Bind and Despair duration by 1 turn and boosts the Color Affinity of
+        Shooter characters by 1.5x for 1 turn
+      cooldown: 26
+sailor:
+  - description: Reduces Silence duration by 2 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Buffalo, Pica
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 10
+    - hp: 20
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - rcv: 30
+    - hp: 40
+    - rcv: 40
+    - type: sailor
+    - hp: 50
+    - hp: 70
+    - slot: 1
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 30
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 50
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

@@ -1,0 +1,215 @@
+type: INT
+name: Blueno - CP9's Strongest
+japanName: ブルーノ 歴代最強の「ＣＰ９」
+family:
+  - Blueno
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1779
+    atk: 600
+    rcv: 56
+  maxLvl:
+    hp: 3502
+    atk: 1045
+    rcv: 168
+cost: 26
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16964
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x, reduces damage received from
+    [PSY] enemies by 30%
+special:
+  name: Tekkai - Rin
+  description: Reduces damage received by 50% for 1 turn, boosts ATK of Powerhouse
+    characters by 1.75x for 1 turn
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Makes [STR] orbs beneficial for this character
+  - description: Boosts base HP of Powerhouse characters by 150
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Kalifa, Rob Lucci, Kaku, Jabra, Fukuro, Kumadori, Spandam
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 15
+limitBreak:
+  path:
+    - hp: 10
+    - hp: 20
+    - hp: 40
+    - type: potential
+    - hp: 70
+    - hp: 90
+    - cooldown: 1
+    - type: sailor
+    - rcv: 10
+    - rcv: 20
+    - slot: 1
+    - atk: 50
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 203
+    rumbleType: DEF
+    spd: 100
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 28
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          duration: 6
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - self
+    - cooldown: 28
+      effects:
+        - override:
+            level: 2
+            duration: 12
+        - override:
+            level: 3
+            duration: 7
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 13
+        - override:
+            level: 4
+            duration: 8
+    - cooldown: 28
+      effects:
+        - override:
+            level: 3
+            duration: 14
+        - override:
+            level: 4
+            duration: 9
+    - cooldown: 28
+      effects:
+        - override:
+            level: 4
+            duration: 15
+        - override:
+            level: 5
+            duration: 10
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+            duration: 16
+        - override:
+            level: 5
+            duration: 11
+    - cooldown: 28
+      effects:
+        - override:
+            level: 5
+            duration: 17
+        - override:
+            level: 6
+            duration: 12
+    - cooldown: 28
+      effects:
+        - override:
+            level: 6
+            duration: 18
+        - override:
+            level: 6
+            duration: 13
+    - cooldown: 28
+      effects:
+        - override:
+            level: 6
+            duration: 19
+        - override:
+            level: 7
+            duration: 14
+    - cooldown: 28
+      effects:
+        - override:
+            level: 8
+            duration: 20
+        - override:
+            level: 8
+            duration: 15

@@ -1,0 +1,48 @@
+type: STR
+name: Sanji - Wild Pirate
+japanName: サンジ 野生の海賊
+family:
+  - VinsmokeSanji
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 242
+    atk: 133
+    rcv: 49
+  maxLvl:
+    hp: 1225
+    atk: 573
+    rcv: 138
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - shop
+links:
+  gamewithId: 52276
+aliases:
+  - Wild Sanji
+evolution:
+  - id: 1485
+    evolvers:
+      - 95
+      - 96
+      - 97
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x after scoring 3 PERFECTs in a row
+special:
+  name: Wild Shot
+  description: Locks the chain multiplier at 2.5x for 1 turn, reduces Bind
+    duration by 5 turns
+  cooldown: 14
+  maxLevel: 1
+sailor:
+  - description: Changes all orbs into [RCV] orbs at the start of the fight.

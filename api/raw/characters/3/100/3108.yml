@@ -1,0 +1,407 @@
+type: INT
+name: "Crocodile: Ruler of the Night - Happy Spooky Halloween!"
+japanName: クロコダイル　夜の支配者 Happy Scary Halloween
+family:
+  - Crocodile
+class:
+  - Cerebral
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1091
+    atk: 532
+    rcv: 113
+  maxLvl:
+    hp: 2859
+    atk: 1341
+    rcv: 271
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 229951
+aliases:
+  - Halloween Crocodile
+captain:
+  name: ""
+  description: Reduces Special Cooldown of [INT] characters by 1 turn at the start
+    of the fight, boosts ATK of [INT] characters by 3x and their HP by 1.2x and
+    boosts ATK of all other characters by 2.5x.
+special:
+  name: Ruler's Margin
+  description: Reduces ATK DOWN and Burn duration by 5 turns and boosts the Color
+    Affinity of [INT] characters by 2x for 1 turn.
+  cooldown: 27
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of [INT] characters by 40
+  - description: If this character has an [INT] orb and you hit a PERFECT with him,
+      keep his [INT] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - hp: 50
+    - type: potential
+    - captain:
+        description: Reduces Special Cooldown of [INT] characters by 1 turn at the start
+          of the fight, boosts ATK of [INT] characters by 3.5x and their HP by
+          1.3x and boosts ATK of all other characters by 3x.
+    - atk: 50
+    - hp: 60
+    - type: sailor
+    - hp: 90
+    - rcv: 30
+    - atk: 70
+    - slot: 1
+    - rcv: 70
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 146
+    rumbleType: DBF
+    spd: 157
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Guard
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Guard
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - Guard
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 50
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 55
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.05
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 60
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.1
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 65
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.15
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 70
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.2
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 75
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.25
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 80
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 85
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.35
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 90
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.4
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 34
+      effects:
+        - attributes:
+            - Action Bind
+          chance: 100
+          duration: 3
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk

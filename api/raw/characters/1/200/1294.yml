@@ -1,0 +1,61 @@
+type: PSY
+name: Boa Sandersonia - Second Gorgon Sister
+japanName: ボア・サンダーソニア ゴルゴン三姉妹・次女
+family:
+  - BoaSandersonia
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 693
+    atk: 393
+    rcv: 139
+  maxLvl:
+    hp: 1839
+    atk: 993
+    rcv: 329
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 39530
+aliases:
+  - Colo Sandersonia
+  - Coliseum Sandersonia
+  - Colo Boa Sandersonia
+  - Coliseum Boa Sandersonia
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x, deals 4x the damage
+    taken from enemies in the previous turn in [PSY] damage to all enemies at
+    the end of each turn
+special:
+  name: Snake Dance
+  description: Changes orb of Captain character into a Matching orb and reduces
+    damage received from [PSY] enemies by 50%-100% for 1 turn.
+  cooldown: 26
+  maxLevel: 11
+  stages:
+    - description: Changes orb of Captain character into a Matching orb and reduces
+        damage received from [PSY] enemies by 40% for 1 turn
+      cooldown: 21
+  notes: "The exact multiplier used is chosen based on the crew's current HP at
+    the time the special is activated: above 50% HP, the multiplier used is 50%;
+    between 50% and 10%, it's 80%; below 10% HP, it's 100%."
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Boa Hancock and Boa Marigold
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

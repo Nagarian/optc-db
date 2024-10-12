@@ -1,0 +1,49 @@
+type: QCK
+name: Ganfor
+japanName: ガン・フォール
+family:
+  - Ganfor
+class:
+  - Striker
+rarity: 3
+stats:
+  combo: 6
+  minLvl:
+    hp: 80
+    atk: 40
+    rcv: 48
+  maxLvl:
+    hp: 930
+    atk: 452
+    rcv: 185
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags:
+  - fortnight
+links:
+  gamewithId: 16034
+aliases:
+  - Gan Fall
+  - ganfall
+evolution:
+  - id: 713
+    evolvers:
+      - 117
+      - 90
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2x if HP is above 50% at the
+    start of the turn
+special:
+  name: Sky Knight's Javelin
+  description: Deals 15x character's ATK in [QCK] damage to one enemy, boosts ATK
+    of top row characters by 1.5x for 2 turns
+  cooldown: 22
+  maxLevel: 9
+  notes: The special boosts the attack of only the crew's captain and the
+    currently selected Friend captain.

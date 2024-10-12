@@ -1,0 +1,93 @@
+type: STR
+name: Coby - Navy HQ Captain and Member of "SWORD"
+family:
+  - Coby
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1468
+    atk: 711
+    rcv: 151
+  maxLvl:
+    hp: 2864
+    atk: 1487
+    rcv: 247
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+aliases:
+  - Secret Limited Kizuna
+captain:
+  name: ""
+  description: Boosts ATK of [STR], Cerebral and Fighter characters by 3.5x and
+    boosts HP anbd RCV of [STR], Cerebral and Fighter characters by 1.3x.
+special:
+  name: Status Report
+  description: Changes all orbs, including [BLOCK] orbs, into [TND] orbs, reduces
+    enemies' Threshold Damage Reduction duration by 5 turns, reduces Paralysis
+    and Bind durattion by 5 turns and locks the chain multiplier at 3x for 1
+    turn. If your crew has Chain Lock, increases boost effects of Chain Lock
+    buffs by +0.25x.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [TND] orbs beneficial for all characters
+  - description: Boosts base ATK of Cerebral and Fighter characters by 70
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - atk: 25
+    - rcv: 25
+    - type: sailor
+    - rcv: 25
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - atk: 25
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3

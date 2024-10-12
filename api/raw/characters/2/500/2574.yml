@@ -1,0 +1,54 @@
+type: PSY
+name: Carrot - Mirror Adventure
+japanName: キャロット 鏡の中の冒険
+family:
+  - Carrot
+class:
+  - Free Spirit
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 235
+    atk: 230
+    rcv: 31
+  maxLvl:
+    hp: 875
+    atk: 840
+    rcv: 124
+cost: 20
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 154924
+aliases:
+  - Secret Carrot
+  - Limited Carrot
+evolution:
+  - id: 2575
+    evolvers:
+      - 118
+      - 87
+      - 98
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight and boosts ATK of Free Spirit characters by 2.5x.
+special:
+  name: Air Step Mink Kick
+  description: Reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 3 turns, reduces Bind duration by 5 turns and changes
+    [BOMB], [G], [EMPTY] and Badly Matching orbs into Matching orbs. If your
+    Captain is a Free Spirit Character, boosts ATK against delayed enemies by 2x
+    for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Reduces Paralysis duration completely on this character

@@ -1,0 +1,96 @@
+type: STR
+name: Marguerite - Straw Hat Luffy's Savior
+japanName: マーガレット 麦わらのルフィの命の恩人
+family:
+  - Marguerite
+class:
+  - Fighter
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 985
+    atk: 713
+    rcv: 85
+  maxLvl:
+    hp: 2470
+    atk: 1387
+    rcv: 326
+cost: 20
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 208221
+aliases:
+  - Limited Marguerite
+  - Secret Marguerite
+  - Kizuna Marguerite
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.75x.
+special:
+  name: Kuja's Sword Technique
+  description: Reduces Paralysis duration by 3 turns and reduces enemies'
+    Resilience and Percent Damage Reduction duration by 3 turns. If your crew
+    has 3 or more [STR], [DEX] or [INT] characters, boosts Orb Effects of all
+    characters by 2x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts this character's damage against [DEX] characters by 1.1x
+  - description: Boosts base ATK of [STR], [DEX] and [INT] characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Slasher characters
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 50
+    - atk: 20
+    - type: potential
+    - hp: 50
+    - rcv: 20
+    - hp: 50
+    - type: sailor
+    - atk: 20
+    - slot: 1
+    - rcv: 30
+    - cooldown: 1
+    - hp: 50
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 80

@@ -1,0 +1,216 @@
+type: STR
+name: Monet - Summer Night Vacation
+japanName: モネ サマーナイトバカンス
+family:
+  - Monet
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1414
+    atk: 591
+    rcv: 168
+  maxLvl:
+    hp: 2827
+    atk: 1182
+    rcv: 335
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 289192
+aliases:
+  - Swimsuit Monet
+  - Summer Monet
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3x and their RCV by 1.2x.
+special:
+  name: Bewitching Harpy at the Water's Edge
+  description: Delays all enemies by 1 turn, boosts ATK against delayed enemies by
+    1.75x for 1 turn, reduces Blindness duration by 4 turns and reduces enemies'
+    Resilience duration by 4 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of all characters by 60
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+support:
+  type: descriptive
+  criteria: Donquixote Doflamingo, Caesar Clown (Gastino), Vergo and Sugar
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.15x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.25x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts ATK against delayed enemies by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 30
+    - type: potential
+    - slot: 1
+    - atk: 30
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - hp: 40
+    - rcv: 40
+    - type: sailor
+    - atk: 40
+    - hp: 50
+    - type: potential
+    - atk: 50
+    - rcv: 40
+    - hp: 60
+    - atk: 75
+    - cooldown: 1
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+rumble:
+  stats:
+    def: 142
+    rumbleType: DBF
+    spd: 146
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - INT
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 25
+      effects:
+        - amount: 0.1
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Action Bind
+          chance: 50
+          duration: 5
+          effect: hinderance
+          targeting:
+            count: 1
+            targets:
+              - enemies
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.2
+        - override:
+            chance: 55
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.3
+        - override:
+            chance: 60
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.4
+        - override:
+            chance: 65
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.5
+        - override:
+            chance: 70
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.6
+        - override:
+            chance: 75
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            chance: 80
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.8
+        - override:
+            chance: 85
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            chance: 90
+    - cooldown: 25
+      effects:
+        - override:
+            amount: 1
+        - override:
+            chance: 100

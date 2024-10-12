@@ -1,0 +1,500 @@
+type: PSY
+name: Vinsmoke Judge - Science Military Germa 66
+japanName: ヴィンスモーク・ジャッジ 科学戦闘部隊ジェルマ６６
+family:
+  - VinsmokeJudge
+class:
+  - Powerhouse
+  - Driven
+rarity: 6
+stats:
+  combo: 5
+  minLvl:
+    hp: 1602
+    atk: 740
+    rcv: 138
+  maxLvl:
+    hp: 4212
+    atk: 1510
+    rcv: 201
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 74384
+aliases:
+  - Yellow Ranger
+  - V1 Legend Judge
+evolution:
+  - id: 2138
+    evolvers:
+      - skull
+      - skull
+      - skull
+      - skull
+      - skull
+captain:
+  name: ""
+  description: Increase the rate of [PSY] orbs, reduces damage received by 15%,
+    boosts HP of all characters by 1.25x and if there is a [STR], [DEX], [QCK],
+    [PSY] and [INT] character in your crew, boosts ATK of all characters by
+    2.25x, by 3.9375x instead if they have a beneficial orb.
+special:
+  name: Dengi Crack
+  description: Reduces Bind duration by 7 turns and boosts Orb Effects of all
+    characters by 2x for 1 turn. If this character is the captain or the Friend
+    captain, slightly boosts the rate of [PSY] orbs and randomly shuffles all
+    orbs, including [BLOCK] orbs
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of Powerhouse characters by 60
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Vinsmoke Ichiji, Vinsmoke Niji, Vinsmoke Yonji and Vinsmoke Reiju
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - atk: 5
+    - hp: 5
+    - rcv: 10
+    - type: potential
+    - rcv: 15
+    - hp: 20
+    - atk: 25
+    - type: sailor
+    - atk: 10
+    - hp: 15
+    - atk: 20
+    - hp: 30
+    - hp: 35
+    - hp: 40
+    - type: potential
+    - rcv: 20
+    - atk: 20
+    - hp: 45
+    - hp: 55
+    - hp: 65
+    - atk: 25
+    - hp: 40
+    - hp: 70
+    - hp: 80
+    - atk: 30
+    - rcv: 40
+    - type: sailor
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 200
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - captain:
+        description: Increase the rate of [PSY] orbs, reduces damage received by 15%,
+          boosts HP of all characters by 1.25x and boosts ATK of all characters
+          by 2.5x, by 4.375x instead if they have a beneficial orb.
+    - cooldown: 3
+    - atk: 100
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 223
+    rumbleType: SPT
+    spd: 170
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Fighter
+              - Driven
+              - Powerhouse
+        - attributes:
+            - DEF
+          effect: buff
+          level: 3
+          condition:
+            comparator: below
+            count: 20
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 0.4
+          effect: damage
+          range:
+            direction: radial
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.43
+        - override:
+            level: 1
+            duration: 21
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.45
+        - override:
+            level: 1
+            duration: 23
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.48
+        - override:
+            level: 2
+            duration: 24
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.51
+        - override:
+            level: 2
+            duration: 26
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            level: 3
+            duration: 27
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.56
+        - override:
+            level: 3
+            duration: 29
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.59
+        - override:
+            level: 3
+            duration: 30
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.62
+        - override:
+            level: 4
+            duration: 32
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 0.7
+        - override:
+            level: 5
+            duration: 33
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - ATK
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Fighter
+                  - Driven
+                  - Powerhouse
+            - attributes:
+                - DEF
+              effect: buff
+              level: 4
+              condition:
+                comparator: below
+                count: 30
+                stat: HP
+                type: stat
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 4
+            - {}
+        - effects:
+            - override:
+                level: 5
+            - {}
+        - effects:
+            - override:
+                level: 6
+            - {}
+        - effects:
+            - override:
+                level: 7
+            - {}
+  - captain:
+      - description: Increase the rate of [PSY] orbs, reduces damage received by 15%,
+          boosts HP of all characters by 1.25x and boosts ATK of all characters
+          by 4.25x, by 4.75x instead if they have a beneficial orb.
+      - description: Increase the rate of [PSY] orbs, reduces damage received by 15%,
+          boosts HP of all characters by 1.25x and boosts ATK of all characters
+          by 4.5x, by 5.25x instead if they have a beneficial orb. If there is a
+          [STR], [DEX], [QCK], [PSY] and [INT] character in your crew, reduces
+          Special Cooldown of all characters by 2 turns at the start of Stage 3.
+  - rumble:
+      special:
+        - cooldown: 22
+          effects:
+            - amount: 0.55
+              effect: damage
+              range:
+                direction: radial
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - ATK
+              duration: 20
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - Powerhouse
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.58
+            - override:
+                level: 2
+                duration: 21
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.61
+            - override:
+                level: 2
+                duration: 23
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.64
+            - override:
+                level: 3
+                duration: 24
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.67
+            - override:
+                level: 3
+                duration: 26
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.7
+            - override:
+                level: 4
+                duration: 27
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.73
+            - override:
+                level: 4
+                duration: 29
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.76
+            - override:
+                level: 4
+                duration: 30
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.79
+            - override:
+                level: 5
+                duration: 32
+        - cooldown: 22
+          effects:
+            - override:
+                amount: 0.85
+            - override:
+                level: 6
+                duration: 33
+  - rumble:
+      resilience:
+        - attribute: Paralysis
+          chance: 100
+          type: debuff
+        - attribute: INT
+          percentage: 35
+          type: damage
+    special:
+      description: Reduces Bind duration by 10 turns, boosts Orb Effects of all
+        characters by 2.25x for 1 turn, changes all orbs, including [BLOCK]
+        orbs, into [PSY] orbs and boosts chances of getting [PSY] orbs for 3
+        turns.

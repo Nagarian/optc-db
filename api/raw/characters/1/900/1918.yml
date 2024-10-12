@@ -1,0 +1,178 @@
+type: STR
+name: "Vinsmoke Reiju - Germa Resurrection Plan: Masterpiece"
+japanName: ヴィンスモーク・レイジュ ジェルマの復活計画　最高傑作
+family:
+  - VinsmokeReiju
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 688
+    atk: 382
+    rcv: 33
+  maxLvl:
+    hp: 1394
+    atk: 1130
+    rcv: 66
+cost: 15
+slots: 4
+maxExp: 355666
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 85783
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.25x and reduces damage received by 15%
+special:
+  name: Brute Force Rescue
+  description: Reduces Bind duration by 2 turns, boosts ATK of [STR] characters by
+    1.75x for 1 turn
+  cooldown: 22
+  maxLevel: 8
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: descriptive
+  criteria: Vinsmoke Ichiji, Vinsmoke Niji, Vinsmoke Yonji, Vinsmoke Judge and
+    Vinsmoke Sanji
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, reduces Chain Multiplier Limit duration by 1 turn and
+      makes [RCV] orbs beneficial for all characters for 1 turn
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, reduces Chain Multiplier Limit duration by 1 turn and
+      makes [RCV] orbs beneficial for all characters for 1 turn
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, reduces Chain Multiplier Limit duration by 2 turns
+      and makes [RCV] orbs beneficial for all characters for 1 turn
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, reduces Chain Multiplier Limit duration by 2 turns
+      and makes [RCV] orbs beneficial for all characters for 1 turn
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, reduces Chain Multiplier Limit duration by 3 turns
+      and makes [RCV] orbs beneficial for all characters for 1 turn
+rumble:
+  stats:
+    def: 175
+    rumbleType: SPT
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - Action Bind
+          duration: 5
+          effect: boon
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          duration: 10
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 6
+        - override:
+            level: 1
+            duration: 11
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 7
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 7
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 8
+        - override:
+            level: 1
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 8
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 9
+        - override:
+            level: 2
+            duration: 16
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 9
+        - override:
+            level: 2
+            duration: 17
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 10
+        - override:
+            level: 2
+            duration: 18
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 11
+        - override:
+            level: 4
+            duration: 20

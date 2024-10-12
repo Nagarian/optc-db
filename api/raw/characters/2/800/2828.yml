@@ -1,0 +1,56 @@
+type: QCK
+name: Sir Crocodile - Legendary Man in a Kimono
+japanName: サー・クロコダイル 和服着こなす豪傑
+family:
+  - Crocodile
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 712
+    atk: 501
+    rcv: 89
+  maxLvl:
+    hp: 1421
+    atk: 896
+    rcv: 159
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 183710
+aliases:
+  - Secret Crocodile
+  - Limited Crocodile
+  - World Journey Crocodile
+evolution:
+  - id: 2829
+    evolvers:
+      - 118
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Driven characters by 2x-3.25x depending
+    on the crew's current HP and reduces damage received by 10%
+  notes: "`captainProportional : lower : 2 + 1.25 * (1 - (remaining HP) / (total
+    HP)) : 2 : 3.25`"
+special:
+  name: Underworld Style
+  description: Reduces Burn and ATK DOWN duration by 5 turns. If your Captain is a
+    Striker or Driven character, removes Poison duration completely and reduces
+    enemies' Threshold Damage Reduction duration by 5 turns.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      this character by 150

@@ -1,0 +1,46 @@
+type: PSY
+name: Petty Officer Coby
+japanName: 曹長コビー
+family:
+  - Coby
+class:
+  - Fighter
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 701
+    atk: 485
+    rcv: 191
+  maxLvl:
+    hp: 1926
+    atk: 984
+    rcv: 340
+cost: 18
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 5100
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x
+special:
+  name: Shave
+  description: Boosts Orb Effects of all characters by 1.5x for 2 turns
+  cooldown: 17
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Garp and Helmeppo
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10

@@ -1,0 +1,239 @@
+type: PSY
+name: "Monkey D. Luffy - Straw Hat Pirates: Mark of Adventure"
+japanName: モンキー・D・ルフィ 麦わらの一味・冒険の軌跡
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 151
+    atk: 75
+    rcv: 30
+  maxLvl:
+    hp: 1367
+    atk: 604
+    rcv: 121
+cost: 9
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 199749
+aliases:
+  - Super Luffy
+evolution:
+  - id: 2936
+    evolvers:
+      - 118
+      - 103
+      - 98
+      - 92
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x, boosts ATK of all other
+    characters by 2x, boosts HP of all characters by 1.1x and boosts EXP gained
+    by 1.1x.
+special:
+  name: Gomu Gomu Jet Bazooka
+  description: Deals 50x character's ATK in [PSY] damage to all enemies, changes
+    the orb of this character into a Matching orb and boosts ATK of [PSY]
+    characters by 1.75x for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+rumble:
+  stats:
+    def: 105
+    rumbleType: ATK
+    spd: 146
+    cost: 20
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - PSY
+    - effects:
+        - attributes:
+            - Critical Hit
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - PSY
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 950
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 1000
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 1100
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 1200
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 1300
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 1400
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 1500
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 1600
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 1700
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+    - cooldown: 26
+      effects:
+        - amount: 2000
+          effect: damage
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: fixed

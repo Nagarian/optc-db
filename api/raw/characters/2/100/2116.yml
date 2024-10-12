@@ -1,0 +1,54 @@
+type: INT
+name: Charlotte Amande
+japanName: シャーロット・アマンド
+family:
+  - CharlotteAmande
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 135
+    atk: 194
+    rcv: -100
+  maxLvl:
+    hp: 989
+    atk: 881
+    rcv: -100
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 107233
+aliases:
+  - ""
+evolution:
+  - id: 2117
+    evolvers:
+      - 88
+      - 93
+      - 304
+      - 1180
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x and reduces crew's RCV to 0
+special:
+  name: Slow Ballad
+  description: Reduces the defense of all enemies by 100% for 1 turn, reduces
+    enemies' Barrier duration by 3 turns and deals 50% of enemies' current HP in
+    damage to one enemy
+  cooldown: 37
+  maxLevel: 8
+  stages:
+    - description: Reduces the defense of all enemies by 100% for 1 turn, reduces
+        enemies' Barrier duration by 2 turns and deals 20% of enemies' current
+        HP in damage to one enemy
+      cooldown: 20
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character

@@ -1,0 +1,43 @@
+type: INT
+name: Buggy
+frenchName: Baggy
+japanName: バギー
+family:
+  - Buggy
+class:
+  - Slasher
+  - Driven
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 200
+    atk: 107
+    rcv: 22
+  maxLvl:
+    hp: 818
+    atk: 446
+    rcv: 85
+cost: 8
+slots: 0
+maxExp: 136167
+maxLevel: 35
+flags:
+  - fortnight
+links:
+  gamewithId: 2106
+aliases: []
+evolution:
+  - id: 39
+    evolvers:
+      - 116
+      - 82
+      - 93
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 1.5x
+special:
+  name: Chop-Chop Festival
+  description: Changes [RCV] orbs into [INT] orbs
+  cooldown: 13
+  maxLevel: 7

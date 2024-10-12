@@ -1,0 +1,249 @@
+type: PSY
+name: Emporio Ivankov - The Cook's Many Trials
+japanName: エンポリオ・イワンコフ 料理人に与える試練
+family:
+  - EmporioIvankov
+class:
+  - Cerebral
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 311
+    atk: 190
+    rcv: 45
+  maxLvl:
+    hp: 1084
+    atk: 715
+    rcv: 213
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 193657
+aliases:
+  - 3D2Y Ivankov
+evolution:
+  - id: 2899
+    evolvers:
+      - 117
+      - 81
+      - 83
+      - 87
+      - 98
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2x and recovers 1x character's
+    RCV in HP at the end of each turn.
+special:
+  name: Dominance is Key!!!
+  description: Reduces Bind and Silence duration by 5 turns, reduces enemies'
+    Increased Defense duration by 5 turns and changes [RCV], [TND] and Badly
+    Matching orbs into Matching orbs.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and RCV of Cerebral characters by 50
+rumble:
+  stats:
+    def: 180
+    rumbleType: SPT
+    spd: 138
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 29
+      effects:
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          duration: 15
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            count: 1
+            priority: lowest
+            stat: ATK
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            count: 1
+            priority: lowest
+            stat: ATK
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            count: 1
+            priority: lowest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+    - cooldown: 29
+      effects:
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            level: 2
+            duration: 19
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 29
+      effects:
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 29
+      effects:
+        - override:
+            level: 3
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 29
+      effects:
+        - override:
+            level: 4
+            duration: 25
+        - override:
+            level: 4
+            duration: 25
+        - override:
+            level: 4
+            duration: 25
+        - override:
+            level: 4
+            duration: 25

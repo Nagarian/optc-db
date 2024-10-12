@@ -1,0 +1,53 @@
+type: QCK
+name: Stussy - Queen of the Pleasure District
+japanName: ステューシー 歓楽街の女王
+family:
+  - Stussy
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 528
+    atk: 306
+    rcv: 30
+  maxLvl:
+    hp: 1320
+    atk: 765
+    rcv: 75
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 131992
+aliases:
+  - CP-0 Stussy
+evolution:
+  - id: 2340
+    evolvers:
+      - 117
+      - 85
+      - 1180
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight. Boosts ATK of Shooter and Cerebral characters by 2.25x
+special:
+  name: Flying Finger Gun
+  description: Deals 50x character's ATK in [QCK] damage to one enemy, randomizes
+    all non-Matching orbs and boosts ATK of Fighter, Slasher, Striker, Shooter
+    and Cerebral characters by 1.5x for 1 turn. If "Flying Finger Gun" is used
+    again in the same turn the special is activated in, boosts ATK of Fighter,
+    Slasher, Striker, Shooter and Cerebral characters by 2.25x for 1 turn.
+  cooldown: 14
+  maxLevel: 7
+sailor:
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 1 turn

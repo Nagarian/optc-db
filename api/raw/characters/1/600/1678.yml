@@ -1,0 +1,98 @@
+type: INT
+name: "Trafalgar Law - A Vow in the Great Age of Pirates: Freedom"
+japanName: トラファルガー・ロー 大海賊時代への誓い「自由」
+family:
+  - TrafalgarDWaterLaw
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1109
+    atk: 660
+    rcv: 164
+  maxLvl:
+    hp: 2177
+    atk: 1423
+    rcv: 361
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+  - removed
+links:
+  gamewithId: 61807
+notes: Voyage Log/Dream Batch has been removed, except Log Luffy and Nami,
+  Usopp, Zoro and Chopper (only on global).
+aliases:
+  - Log Law
+  - Secret Law
+  - Limited Law
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2.5x at the start of the chain,
+    by 3.25x after the 3rd PERFECT in a row
+special:
+  name: "ROOM: Kikoku"
+  description: Boosts the Color Affinity of Slasher characters by 1.5x for 1 turn,
+    changes all orbs of middle row characters into Matching orbs and switches
+    orbs between slots 3 times
+  cooldown: 11
+  maxLevel: 5
+sailor:
+  - description: Reduces Silence duration completely on this character
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Slasher characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 20
+    - rcv: 10
+    - rcv: 25
+    - type: potential
+    - hp: 30
+    - hp: 35
+    - rcv: 35
+    - type: sailor
+    - atk: 30
+    - hp: 40
+    - atk: 40
+    - slot: 1
+    - hp: 85
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 10
+        - value: 5
+          threshold: 15
+        - value: 5
+          threshold: 20
+        - value: 10
+          threshold: 20
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

@@ -1,0 +1,547 @@
+type: STR
+name: Man-Eating Bartolomeo
+japanName: 人食いのバルトロメオ
+family:
+  - Bartolomeo
+class:
+  - Striker
+  - Driven
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1550
+    atk: 769
+    rcv: 181
+  maxLvl:
+    hp: 3505
+    atk: 1431
+    rcv: 341
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 28771
+aliases:
+  - V1 Legend Bartolomeo
+evolution:
+  - id: 1928
+    evolvers:
+      - skullQCK
+      - 118
+      - 85
+      - 301
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 1.25x-2.75x depending on how
+    many Strikers are on your team. If you don't attack with Bartolomeo, reduces
+    damage received by 30% for that turn.
+  notes: "ATK boost with 1 Striker is 1.25x. With 2 Strikers: 1.5x. With 3
+    Strikers: 1.75x. With 4 Strikers: 2x. With 5 Strikers: 2.5x. With 6
+    Strikers: 2.75x"
+special:
+  name: Bari Bari No Pistol
+  description: Protects from defeat for 1 turn and deals 1x-150x character's ATK
+    in Typeless damage, depending on the crew's current HP, to one enemy.
+  cooldown: 23
+  maxLevel: 6
+  notes: "`specialProportional : lower : 150 * ( 1 - (remaining HP) / (total HP) )`"
+sailor:
+  - description: Boosts base ATK and HP of Striker characters by 60
+  - description: Reduces Paralysis duration completely on this character
+support:
+  type: descriptive
+  criteria: Nico Robin and Cavendish
+  levels:
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 2 turns.
+    - Once per adventure, when an enemy inflicts you with Paralysis, reduces
+      Paralysis duration by 3 turns.
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 15
+    - hp: 35
+    - atk: 15
+    - type: sailor
+    - atk: 20
+    - hp: 40
+    - atk: 25
+    - hp: 45
+    - cooldown: 1
+    - hp: 50
+    - type: potential
+    - rcv: 20
+    - atk: 30
+    - cooldown: 1
+    - hp: 55
+    - hp: 65
+    - atk: 35
+    - cooldown: 1
+    - hp: 70
+    - hp: 80
+    - cooldown: 1
+    - rcv: 40
+    - type: sailor
+    - atk: 40
+    - atk: 45
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - rcv: 50
+    - hp: 150
+    - captain:
+        description: Boosts ATK of Striker characters by 2.75x. If you don't attack with
+          Bartolomeo, reduces damage received by 30% for that turn.
+    - cooldown: 3
+    - hp: 150
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 205
+    rumbleType: DEF
+    spd: 127
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Striker
+              - Driven
+        - attributes:
+            - DEF
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Striker
+              - Driven
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 15
+      effects:
+        - amount: 0.4
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Provoke
+          duration: 10
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - duration: 10
+          attributes:
+            - Guard
+          level: 7
+          effect: buff
+          targeting:
+            targets:
+              - self
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.45
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.49
+        - override:
+            duration: 14
+        - override:
+            duration: 14
+            level: 8
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.54
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+            level: 9
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.59
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+            level: 10
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.64
+        - override:
+            duration: 20
+        - override:
+            duration: 20
+            level: 11
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.68
+        - override:
+            duration: 22
+        - override:
+            duration: 22
+            level: 12
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.73
+        - override:
+            duration: 24
+        - override:
+            duration: 24
+            level: 13
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.78
+        - override:
+            duration: 26
+        - override:
+            duration: 26
+            level: 13
+    - cooldown: 15
+      effects:
+        - override:
+            amount: 0.85
+        - override:
+            duration: 28
+        - override:
+            duration: 28
+            level: 16
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - Guard
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - Striker
+                  - Driven
+            - attributes:
+                - DEF
+              condition:
+                comparator: below
+                count: 30
+                stat: HP
+                type: stat
+              effect: buff
+              level: 2
+              targeting:
+                targets:
+                  - Striker
+                  - Driven
+        - effects:
+            - override:
+                level: 3
+            - {}
+        - effects:
+            - override:
+                level: 4
+            - {}
+        - effects:
+            - override:
+                level: 5
+            - {}
+        - effects:
+            - override:
+                level: 6
+            - override:
+                level: 3
+  - captain:
+      - description: "Boosts ATK of Striker and Driven characters by 4.5x and reduces
+          damage received by 30% for that turn. If a crew member uses a special
+          with a Percent Damage Reduction buff, replaces those buffs with an
+          Percent Damage Reduction boost that will overwrite Percent Damage
+          Reduction boosts in the same special: Reduces damage received by 85%
+          for 1 turn."
+      - description: "Boosts ATK of Striker and Driven characters by 5x, makes [STR] and
+          [QCK] orbs beneficial for all characters and reduces damage received
+          by 30% for that turn. If a crew member uses a special with a Percent
+          Damage Reduction buff, replaces those buffs with an Percent Damage
+          Reduction boost that will overwrite Percent Damage Reduction boosts in
+          the same special: Reduces damage received by 85% for 1 turn."
+  - rumble:
+      special:
+        - cooldown: 15
+          effects:
+            - amount: 0.5
+              effect: damage
+              targeting:
+                count: 1
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - Provoke
+              duration: 12
+              effect: boon
+              targeting:
+                targets:
+                  - self
+            - duration: 12
+              attributes:
+                - Guard
+              level: 9
+              effect: buff
+              targeting:
+                targets:
+                  - self
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.57
+            - override:
+                duration: 14
+            - override:
+                duration: 14
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.63
+            - override:
+                duration: 16
+            - override:
+                duration: 16
+                level: 10
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.7
+            - override:
+                duration: 18
+            - override:
+                duration: 18
+                level: 11
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.77
+            - override:
+                duration: 20
+            - override:
+                duration: 20
+                level: 11
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.84
+            - override:
+                duration: 22
+            - override:
+                duration: 22
+                level: 12
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.9
+            - override:
+                duration: 24
+            - override:
+                duration: 24
+                level: 13
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 0.97
+            - override:
+                duration: 26
+            - override:
+                duration: 26
+                level: 13
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 1.04
+            - override:
+                duration: 28
+            - override:
+                duration: 28
+                level: 14
+        - cooldown: 15
+          effects:
+            - override:
+                amount: 1.2
+            - override:
+                duration: 30
+            - override:
+                duration: 30
+                level: 16
+  - rumble:
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+        - attribute: DEX
+          percentage: 35
+          type: damage
+    special:
+      description: Protects from defeat for 1 turn, deals 300x character's ATK in
+        Typeless damage to one enemy and boosts ATK of Striker and Driven
+        characters by 2x for 2 turns and boosts Color Affinity of Striker and
+        Driven characters by 2x for 2 turns.

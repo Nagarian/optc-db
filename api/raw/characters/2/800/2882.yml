@@ -1,0 +1,257 @@
+type: STR
+name: Buggy - An Unlikely Alliance
+japanName: バギー 寄せ集めの共同戦線
+family:
+  - Buggy
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1202
+    atk: 701
+    rcv: 132
+  maxLvl:
+    hp: 2910
+    atk: 1335
+    rcv: 270
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 191066
+aliases:
+  - Stampede Buggy
+  - Stampede Baggy
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of Driven and Shooter characters by 2.75x and makes
+    [STR] orbs beneficial for Driven and Shooter characters.  
+
+    **Boosted Ability:** Boosts ATK of [STR], [QCK] and [PSY] characters by 3x and makes [STR] orbs beneficial for Driven and Shooter characters.
+special:
+  name: Special Muggy Ball
+  description: Reduces Paralysis, Silence and ATK DOWN duration by 5 turns. If
+    your Captain is a Driven character, changes all orbs, including [BLOCK]
+    orbs, into Matching orbs.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Silence duration by 5 turns on this character
+  - description: Reduces Paralysis duration by 1 turn
+support:
+  type: stats
+  defenseType: DEX
+  statsTypes:
+    - HP
+  criteria: Monkey D. Luffy, Sabo, Boa Hancock, Smoker, Rob Lucci and Trafalgar D.
+    Water Law
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - rcv: 20
+    - type: potential
+    - rcv: 30
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - atk: 50
+    - hp: 40
+    - hp: 40
+    - slot: 1
+    - hp: 80
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 100
+    - rcv: 25
+    - rcv: 25
+    - hp: 150
+    - hp: 150
+    - hp: 200
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 135
+    rumbleType: SPT
+    spd: 142
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Shooter
+              - Driven
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 30
+      effects:
+        - amount: 400
+          effect: damage
+          type: fixed
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          duration: 10
+          targeting:
+            targets:
+              - Shooter
+              - Driven
+        - attributes:
+            - Silence
+          effect: boon
+          duration: 5
+          targeting:
+            targets:
+              - Shooter
+              - Driven
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 450
+        - override:
+            duration: 11
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 500
+        - override:
+            duration: 12
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 550
+        - override:
+            level: 3
+            duration: 13
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 600
+        - override:
+            level: 3
+            duration: 14
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 650
+        - override:
+            level: 3
+            duration: 15
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 700
+        - override:
+            level: 4
+            duration: 16
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 750
+        - override:
+            level: 4
+            duration: 17
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 800
+        - override:
+            level: 4
+            duration: 18
+        - {}
+    - cooldown: 30
+      effects:
+        - override:
+            amount: 900
+        - override:
+            level: 6
+            duration: 20
+        - {}

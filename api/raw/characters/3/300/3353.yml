@@ -1,0 +1,257 @@
+type: INT
+name: Blackbeard - Duel at Banaro Island
+japanName: 黒ひげ バナロ島の決着
+family:
+  - MarshallDTeach
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1555
+    atk: 695
+    rcv: 88
+  maxLvl:
+    hp: 3205
+    atk: 1431
+    rcv: 188
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 280279
+aliases:
+  - Marshall D. Teach
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 3x and their HP by 1.2x.
+special:
+  name: Eroding Darkness
+  description: Deals 20% of enemies' current HP in damage to all enemies, reduces
+    enemies' Threshold Damage Reduction, Percent Damage Reduction and Increased
+    Defense duration by 4 turns and changes the orb of this character into an
+    [INT] orb.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [INT] characters by 50
+  - description: If this character has an [INT] orb and you hit a PERFECT with him,
+      keep his [INT] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+limitBreak:
+  path:
+    - hp: 30
+    - atk: 30
+    - rcv: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - atk: 30
+    - rcv: 30
+    - cooldown: 1
+    - hp: 40
+    - atk: 40
+    - type: sailor
+    - rcv: 40
+    - atk: 50
+    - type: potential
+    - hp: 50
+    - atk: 75
+    - rcv: 40
+    - hp: 60
+    - cooldown: 1
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 122
+    rumbleType: DBF
+    spd: 136
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          effect: penalty
+          level: 3
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - {}
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - {}
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - {}
+        - override:
+            level: 5
+        - override:
+            level: 4
+    - effects:
+        - {}
+        - override:
+            level: 7
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - amount: 10
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          duration: 6
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 11
+        - override:
+            level: 1
+            duration: 6
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 12
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 13
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 14
+        - override:
+            level: 1
+            duration: 8
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 15
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 2
+            duration: 10
+    - cooldown: 26
+      effects:
+        - override:
+            amount: 20
+        - override:
+            level: 3
+            duration: 10

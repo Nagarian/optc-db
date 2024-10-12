@@ -1,0 +1,44 @@
+type: QCK
+name: Gladius - Blast to Capture Slicing Winds
+japanName: グラディウス カマイタチを捕らえる衝撃波
+family:
+  - Gladius
+class:
+  - Shooter
+  - Driven
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1241
+    atk: 647
+    rcv: 132
+  maxLvl:
+    hp: 2186
+    atk: 1274
+    rcv: 235
+cost: 20
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 83030
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2.25x and their HP by 1.2x
+special:
+  name: Fashion Pop
+  description: Reduces crew's current HP by 80%, changes [BOMB] orbs into [EMPTY]
+    orbs, deals 10x-400x character's ATK in Typeless damage to all enemies
+    depending on number of [BOMB] slots emptied and boosts ATK against delayed
+    enemies by 1.5x for 2 turns
+  cooldown: 14
+  maxLevel: 1
+  notes: "The exact multiplier used is chosen based on the number of [BOMB] orbs
+    consumed: 0 orbs - 10x ATK; 1 orb - 20x ATK; 2 orbs - 40x ATK; 3 orbs - 80x
+    ATK; 4 orbs - 150x ATK; 5 orbs - 250x ATK; 6 orbs - 400x ATK."

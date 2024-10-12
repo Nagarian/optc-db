@@ -1,0 +1,94 @@
+type: DEX
+name: Tony Tony Chopper - 20th Anniversary Memorial Treasure
+japanName: トニートニー・チョッパー 20th Anniversary Memorial Treasure
+family:
+  - TonyTonyChopper
+class:
+  - Fighter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1023
+    atk: 474
+    rcv: 187
+  maxLvl:
+    hp: 2330
+    atk: 1258
+    rcv: 351
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 65834
+aliases:
+  - 20th Anniversary Chopper
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [INT] characters by 2.5x
+special:
+  name: Intelligent Monster
+  description: Changes all orbs of left column characters into [INT], [RCV] and
+    [DEX] orbs, changes all orbs of right column characters into [INT], [PSY]
+    and [DEX] orbs
+  cooldown: 13
+  maxLevel: 5
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is
+      rewinded and reduces Silence duration by 2 turns on this character
+  - description: Makes [RCV] orbs beneficial for this character
+support:
+  type: stats
+  defenseType: QCK
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro, Vinsmoke Sanji, Nami and Brook
+  levels:
+    - value: 2
+      reduction: 1
+    - value: 3
+      reduction: 2
+    - value: 4
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - hp: 40
+    - rcv: 20
+    - atk: 40
+    - type: sailor
+    - hp: 40
+    - cooldown: 1
+    - rcv: 20
+    - hp: 50
+    - cooldown: 1
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

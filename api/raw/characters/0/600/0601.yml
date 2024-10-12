@@ -1,0 +1,50 @@
+type: PSY
+name: Shanks - Roger Pirates
+japanName: シャンクス ロジャー海賊団
+family:
+  - Shanks
+class:
+  - Slasher
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 825
+    atk: 440
+    rcv: 193
+  maxLvl:
+    hp: 1964
+    atk: 920
+    rcv: 354
+cost: 18
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 13567
+aliases:
+  - Young Shanks
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2x
+special:
+  name: Sword Draw - Single Flash
+  description: Deals 15x character's ATK in [PSY] damage to one enemy, boosts ATK
+    of [PSY] characters by 1.3x for 2 turns
+  cooldown: 18
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Buggy
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10

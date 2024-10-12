@@ -1,0 +1,591 @@
+type: INT
+name: Donquixote Doflamingo - Judgement of the Divine
+japanName: ドンキホーテ・ドフラミンゴ 神の制裁
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Slasher
+rarity: 6+
+stats:
+  combo: 5
+  minLvl:
+    hp: 1601
+    atk: 789
+    rcv: 241
+  maxLvl:
+    hp: 3100
+    atk: 1608
+    rcv: 461
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 21536
+aliases:
+  - Mega/Super/6+ Doffy
+  - V1 Legend Doffy
+  - Shichibukai
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 3.5x, their HP by 1.2x and makes
+    [PSY] and [INT] orbs beneficial for Driven characters.
+special:
+  name: Black Knight Ambushing the "D"
+  description: Changes orbs of adjacent characters into Matching orbs, boosts Orb
+    Effects of Driven characters by 2.25x for 1 turn
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: If this character has an [QCK] orb and you hit a PERFECT with him,
+      keep his [QCK] orb for the next turn
+  - description: Makes [QCK] orbs beneficial for Driven characters
+support:
+  type: descriptive
+  criteria: Driven characters
+  levels:
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Driven characters by 1.5x
+      for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Driven characters by 1.55x
+      for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Driven characters by 1.6x
+      for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Driven characters by 1.65x
+      for 1 turn.
+    - Once per adventure, when the supported character uses an Orb Converting or
+      Orb Randomizing special, boosts Orb Effects of Driven characters by 1.75x
+      for 1 turn.
+limitBreak:
+  path:
+    - atk: 5
+    - atk: 10
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - hp: 10
+    - hp: 20
+    - atk: 15
+    - rcv: 15
+    - hp: 20
+    - hp: 20
+    - rcv: 20
+    - atk: 30
+    - type: potential
+    - atk: 30
+    - cooldown: 1
+    - type: sailor
+    - atk: 30
+    - rcv: 35
+    - atk: 50
+    - hp: 30
+    - atk: 60
+    - hp: 50
+    - hp: 70
+    - cooldown: 1
+    - type: sailor
+    - hp: 100
+    - hp: 130
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - rcv: 75
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+        - value: 10
+          threshold: 70
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 100
+rumble:
+  stats:
+    def: 287
+    rumbleType: DEF
+    spd: 134
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 150
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - ATK
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - effects:
+        - override:
+            level: 3
+        - {}
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - {}
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - {}
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+        - {}
+        - override:
+            level: 6
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - DEF
+          duration: 10
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+        - attributes:
+            - Critical Hit
+          duration: 10
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+              - Driven
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            duration: 11
+        - override:
+            duration: 11
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            duration: 12
+        - override:
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            duration: 13
+        - override:
+            duration: 13
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            duration: 14
+        - override:
+            duration: 14
+            level: 3
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            duration: 15
+        - override:
+            duration: 15
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.7
+        - override:
+            duration: 17
+        - override:
+            duration: 17
+            level: 4
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            duration: 18
+        - override:
+            duration: 18
+            level: 5
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 2
+        - override:
+            duration: 19
+        - override:
+            duration: 19
+            level: 6
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000
+levelLimitBreak:
+  - {}
+  - rumble:
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+                  - Driven
+            - attributes:
+                - DEF
+              condition:
+                comparator: first
+                count: 30
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+                  - Driven
+            - attributes:
+                - ATK
+              condition:
+                comparator: first
+                count: 30
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+                  - Driven
+        - effects:
+            - override:
+                level: 4
+            - {}
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 5
+            - {}
+            - override:
+                level: 5
+        - effects:
+            - override:
+                level: 6
+            - {}
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 7
+            - {}
+            - override:
+                level: 7
+  - captain:
+      - description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight, boosts ATK of Driven characters by 5x, by 5.25x instead
+          if they have a beneficial orb, boosts HP of Driven characters by 1.2x,
+          makes [PSY], [INT], [RCV] and [TND] orbs beneficial for Driven
+          characters and recovers 1x this character's RCV at the end of the turn
+          for each time you hit a PERFECT.
+  - rumble:
+      special:
+        - cooldown: 27
+          effects:
+            - amount: 1
+              effect: damage
+              targeting:
+                count: 3
+                targets:
+                  - enemies
+              type: atk
+            - attributes:
+                - DEF
+              duration: 10
+              effect: buff
+              level: 6
+              targeting:
+                targets:
+                  - Slasher
+                  - Driven
+            - attributes:
+                - Critical Hit
+              duration: 10
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - Slasher
+                  - Driven
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.1
+            - override:
+                duration: 11
+            - override:
+                duration: 11
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.2
+            - override:
+                duration: 12
+            - override:
+                duration: 12
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.3
+            - override:
+                duration: 13
+            - override:
+                duration: 13
+                level: 4
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.4
+            - override:
+                duration: 14
+            - override:
+                duration: 14
+                level: 4
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.5
+            - override:
+                duration: 15
+            - override:
+                duration: 15
+                level: 5
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.6
+            - override:
+                duration: 16
+            - override:
+                duration: 16
+                level: 5
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.7
+            - override:
+                duration: 17
+            - override:
+                duration: 17
+                level: 5
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 1.8
+            - override:
+                duration: 18
+            - override:
+                duration: 18
+                level: 6
+        - cooldown: 27
+          effects:
+            - override:
+                amount: 2.5
+            - override:
+                duration: 19
+            - override:
+                duration: 19
+                level: 7
+  - rumble:
+      resilience:
+        - attribute: PSY
+          percentage: 40
+          type: damage
+        - amount: 200
+          condition:
+            comparator: below
+            count: 50
+            stat: HP
+            type: stat
+          interval: 5
+          type: healing
+    special:
+      description: Locks all orbs for 1 turn, makes PERFECTs easier to hit for 1 turn,
+        changes all orbs, including [BLOCK] orbs, of adjacent characters into
+        Matching orbs, boosts Orb Effects of Driven characters by 2.25x for 2
+        turns and boosts Color Affinity of Driven characters by 1.75x for 2
+        turns.

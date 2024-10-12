@@ -1,0 +1,57 @@
+type: DEX
+name: "Koala: Halloween Night Party - Night of Halloween"
+japanName: コアラ　ハロウィン・ナイトパーティー Night of Halloween
+family:
+  - Koala
+class:
+  - Fighter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 932
+    atk: 463
+    rcv: 78
+  maxLvl:
+    hp: 1759
+    atk: 768
+    rcv: 161
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 297519
+aliases:
+  - Legend Secret Limited TM Halloween (HWeen) Koala
+evolution:
+  - id: 3462
+    evolvers:
+      - 118
+      - 97
+      - 1180
+      - 302
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [DEX], Fighter and Free Spirit characters by 4.5x, by
+    5x instead if they have a beneficial orb, their RCV by 1.5x, makes [STR] and
+    [QCK] orbs beneficial for [DEX], Fighter and Free Spirit characters, reduces
+    damage received by 20% and restores Special Cooldown of all characters by 10
+    turns when they are rewinded.
+special:
+  name: Sanctions Against Uninvited Guests
+  description: Reduces Counter-Heal duration by 10 turns and recovers 30,000 HP,
+    allowing HP Overfill up to 2x MAX HP. If HP is above 99% at the time the
+    special is activated, boosts the Color Affinity of [DEX], Fighter and Free
+    Spirit characters by 2.5x for 1 turn, by 2x for 1 turn otherwise. If MAX HP
+    is below 40,000 at the time the special is activated, permanently boosts HP
+    by a static 1.3x.
+  cooldown: 19
+  maxLevel: 6
+  notes: Static HP Boost is calculated at time of activation and does not change
+    with changes to team composition.

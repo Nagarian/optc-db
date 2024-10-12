@@ -1,0 +1,45 @@
+type: STR
+name: Hack
+japanName: ハック
+family:
+  - Hack
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 188
+    atk: 136
+    rcv: 21
+  maxLvl:
+    hp: 1241
+    atk: 721
+    rcv: 151
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 15189
+aliases: []
+evolution:
+  - id: 673
+    evolvers:
+      - 118
+      - 84
+      - 94
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x
+special:
+  name: Four Thousand Tile True Punch
+  description: Deals 20% of enemies' current HP in damage to all enemies, changes
+    the orb of this character into a [STR] orb
+  cooldown: 20
+  maxLevel: 6

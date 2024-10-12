@@ -1,0 +1,48 @@
+type: STR
+name: Raizo
+japanName: 雷ぞう
+family:
+  - Raizo
+class:
+  - Shooter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 129
+    atk: 133
+    rcv: 34
+  maxLvl:
+    hp: 1126
+    atk: 604
+    rcv: 152
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 60678
+aliases:
+  - ""
+evolution:
+  - id: 1660
+    evolvers:
+      - 83
+      - 84
+      - 95
+      - 1180
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Shooter characters by 2x
+special:
+  name: Ninja Arts - Bunshin no Jutsu
+  description: Reduces Paralysis and Silence duration by 3 turns, switches orbs
+    between slots 3 times
+  cooldown: 15
+  maxLevel: 6
+sailor:
+  - description: Reduces Silence duration completely on this character

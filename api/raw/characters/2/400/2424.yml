@@ -1,0 +1,112 @@
+type: INT
+name: The Fighting King, Elizabello II - King's Fist Smashing a Giant Arm
+japanName: “戦う王”エリザベローII世 巨腕を砕く王の拳
+family:
+  - Elizabello
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1150
+    atk: 717
+    rcv: 122
+  maxLvl:
+    hp: 2828
+    atk: 1411
+    rcv: 258
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 140986
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1x. Increases own ATK multiplier
+    by 0.1125x at the end of each turn until it reaches a maximum 3.25x after 20
+    turns. Recovers 500 HP at the end of each turn.
+  notes: His ATK multiplier will be 1x on the first turn, 1.1125x on the second,
+    1.225x on the third and so on. The increase stops once the multiplier is
+    3.25x.
+special:
+  name: "Light Version: King Punch"
+  description: Reduces enemies' Percent Damage Reduction and Threshold Damage
+    Reduction Buffs duration by 3 turns and locks all orbs for 1 turn. If
+    enemies have an Increased Defense buff or a Defense Reduction debuff at the
+    time the special was activated, boosts Orb Effects of all characters by 2x
+    for 1 turn, boosts Orb Effects of Driven and Fighter characters by 1.75x for
+    3 turns otherwise
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of this character by 150 if this character is the
+      last in the chain to attack
+  - description: Makes [INT] orbs beneficial for Driven characters
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Chinjao, Dagama, Abdullah, Jeet, Orlumbus, Blue Gilly, Suleiman,
+    Cavendish, Sai, Ideo and Hajrudin
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - type: potential
+    - hp: 40
+    - hp: 60
+    - slot: 1
+    - type: sailor
+    - atk: 20
+    - rcv: 20
+    - hp: 100
+    - atk: 30
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 25
+    - atk: 100
+    - hp: 300
+    - atk: 100
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

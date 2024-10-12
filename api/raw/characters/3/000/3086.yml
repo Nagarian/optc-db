@@ -1,0 +1,93 @@
+type: STR
+name: Pedro - Feud from Five Years Ago
+japanName: ペドロ 5年前の因縁
+family:
+  - Pedro
+class:
+  - Slasher
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1231
+    atk: 621
+    rcv: 68
+  maxLvl:
+    hp: 2581
+    atk: 1298
+    rcv: 209
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 226434
+aliases:
+  - WCI Pedro
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [PSY] characters by 2.75x, by 3.25x instead
+    if HP is below 50% at the start of the turn.
+special:
+  name: Relentless Attacks until Dawn
+  description: Deals 60x character's ATK in Typeless damage to all enemies,
+    reduces enemies' Increased Defense duration by 4 turns, reduces ATK DOWN and
+    Despair duration by 4 turns and changes [BLOCK], [EMPTY] and Badly Matching
+    orbs of [STR] and [PSY] characters into Matching orbs.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [STR] and [PSY] characters by 30
+support:
+  type: descriptive
+  criteria: Carrot and Brook
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Despair,
+      reduces ATK DOWN and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Despair,
+      reduces ATK DOWN and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Despair,
+      reduces ATK DOWN and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Despair,
+      reduces ATK DOWN and Despair duration by 1 turn.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN or Despair,
+      reduces ATK DOWN and Despair duration by 2 turns.
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - slot: 1
+    - atk: 25
+    - atk: 30
+    - atk: 40
+    - atk: 100
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 2
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 3

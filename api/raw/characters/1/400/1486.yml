@@ -1,0 +1,48 @@
+type: DEX
+name: Ideo - XXX-Rank Boxer
+japanName: イデオ ＸＸＸ級ボクサー
+family:
+  - Ideo
+class:
+  - Shooter
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 505
+    atk: 350
+    rcv: 41
+  maxLvl:
+    hp: 1158
+    atk: 717
+    rcv: 166
+cost: 25
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 52180
+aliases:
+  - Colo Ideo
+  - Coliseum Ideo
+evolution:
+  - id: 1487
+    evolvers:
+      - 118
+      - 266
+      - 97
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x if they have a beneficial orb.
+special:
+  name: "Destruction Cannon: Hidden Bullet"
+  description: Increases damage received by 2x for 2 turns, deals 15x character's
+    ATK in [DEX] damage to one enemy, boosts Orb Effects of Fighter characters
+    by 2x for 1 turn
+  cooldown: 28
+  maxLevel: 16

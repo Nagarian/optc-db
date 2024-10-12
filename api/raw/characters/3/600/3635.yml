@@ -1,0 +1,113 @@
+type: INT
+name: Catarina Devon - Enemy-Deceiving Mythical Fox
+family:
+  - CatarinaDevon
+class:
+  - Powerhouse
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1630
+    atk: 745
+    rcv: 80
+  maxLvl:
+    hp: 3260
+    atk: 1490
+    rcv: 160
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - arena
+aliases:
+  - Arena
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Driven characters by 3.75x and reduces
+    Paralysis duration by 1 turn.
+special:
+  name: Amazing Transformation
+  description: Reduces Special Cooldown of Powerhouse and Driven characters by 1
+    turn, delays all enemies by 1 turn, reduces enemies' Threshold Damage
+    Reduction duration by 6 turns, boosts ATK against delayed enemies by 2x for
+    2 turns and locks all orbs for 1 turn. If your crew has ATK UP, increases
+    boost effects of ATK UP buffs by +0.25x.
+  cooldown: 29
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven characters by 75
+  - description: Boosts this character's damage against [PSY] characters by 1.1x
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - HP
+  criteria: Powerhouse characters
+  levels:
+    - value: 4
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 8
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 12
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 75
+    - atk: 20
+    - cooldown: 6
+    - slot: 1
+    - atk: 40
+    - rcv: 25
+    - type: potential
+    - rcv: 50
+    - cooldown: 6
+    - atk: 50
+    - hp: 85
+    - rcv: 70
+    - slot: 1
+    - type: potential
+    - hp: 100
+    - atk: 60
+    - type: sailor
+    - cooldown: 6
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

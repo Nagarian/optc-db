@@ -1,0 +1,94 @@
+type: QCK
+name: "Marco: Flames of Revival - Whitebeard Pirates"
+japanName: マルコ　復活の炎 白ひげ海賊団
+family:
+  - Marco
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1309
+    atk: 620
+    rcv: 142
+  maxLvl:
+    hp: 2370
+    atk: 1236
+    rcv: 335
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 38049
+aliases:
+  - Colo Marco
+  - Coliseum Marco
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 1.5x and recovers 0.5x-3.5x
+    character's RCV in HP at the end of each turn depending on how many
+    Powerhouse characters are on your team
+  notes: "1x Powerhouse: 0.5x RCV | 2x Powerhouse: 0.75x RCV | 3x Powerhouse: 1x
+    RCV | 4x Powerhouse: 1.5x RCV | 5x Powerhouse: 2x RCV | 6x Powerhouse: 3.5x
+    RCV"
+special:
+  name: Burning Vanguard
+  description: Randomizes non-Matching orbs and boosts ATK of Powerhouse
+    characters by 1.5x for 1 turn
+  cooldown: 24
+  maxLevel: 16
+  stages:
+    - description: Randomizes all orbs and boosts ATK of Powerhouse characters by 1.5x
+        for 1 turn
+      cooldown: 21
+sailor:
+  - description: Reduces Paralysis duration by 3 turns on this character
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Edward Newgate (Whitebeard), Portgas D. Ace, Vista, Kingdew, Izo,
+    Jozu, Haruta
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - rcv: 30
+    - type: potential
+    - hp: 30
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - cooldown: 1
+    - atk: 20
+    - slot: 1
+    - atk: 40
+    - atk: 50
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

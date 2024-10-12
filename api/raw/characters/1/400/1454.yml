@@ -1,0 +1,45 @@
+type: STR
+name: Marguerite - Festive on the 14th
+japanName: マーガレット １４日の記念日
+family:
+  - Marguerite
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 831
+    atk: 377
+    rcv: 188
+  maxLvl:
+    hp: 1755
+    atk: 1081
+    rcv: 348
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 50813
+aliases:
+  - Valentine Marguerite
+captain:
+  name: ""
+  description: Boosts ATK of [STR], [DEX] and [QCK] characters by 1.75x and their
+    RCV by 1.5x
+special:
+  name: Doki Doki Heart
+  description: If HP is above 70% at the time the special was activated, changes
+    all orbs into [QCK], [DEX] and [STR] orbs, from top to bottom. If HP is
+    below 30% at the time the special was activated, changes all orbs into
+    [RCV], [QCK] and [STR] orbs, from top to bottom.
+  cooldown: 12
+  maxLevel: 1
+  notes: |-
+    HP>70%: Top row to [QCK], middle row to [DEX], bottom row to [STR]  
+    HP<30%: Top row to [RCV], middle row to [QCK], bottom row to [STR]

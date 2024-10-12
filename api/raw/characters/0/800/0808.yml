@@ -1,0 +1,50 @@
+type: PSY
+name: Goddess in White Nami - Wedding
+japanName: 純白の女神ナミ ウエディング
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 877
+    atk: 362
+    rcv: 221
+  maxLvl:
+    hp: 1772
+    atk: 799
+    rcv: 409
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 19171
+aliases:
+  - Bridal Nami
+captain:
+  name: ""
+  description: Boosts ATK and RCV of Cerebral characters by 1.5x, recovers 2x
+    character's RCV in HP at the end of each turn
+special:
+  name: "Thunder Charge: Swing Arm"
+  description: Deals 15x character's ATK in [PSY] damage to one enemy, boosts ATK
+    against enemies with reduced defense by 1.3x for 3 turns
+  cooldown: 23
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Lola
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7

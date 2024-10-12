@@ -1,0 +1,224 @@
+type: PSY
+name: Empress Boa Hancock - Kuja Pirates Captain
+japanName: 女帝ボア・ハンコック 九蛇海賊団船長
+family:
+  - BoaHancock
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 943
+    atk: 589
+    rcv: 161
+  maxLvl:
+    hp: 2055
+    atk: 1378
+    rcv: 375
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 20391
+aliases:
+  - Raid Boa
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit characters by 2.5x and their HP by 2x
+special:
+  name: Slave Arrow
+  description: Locks the chain multiplier at 2.5x for 2 turns, delays all enemies by 1 turn
+  cooldown: 28
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK, HP and RCV of Shooter characters by 20
+  - description: Makes [PSY] orbs beneficial for Shooter characters
+support:
+  type: descriptive
+  criteria: Boa Sandersonia, Boa Marigold and Marguerite
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2x for 1 turn
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2x for 1 turn
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.2x for 1 turn
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.2x for 1 turn
+    - Once per adventure, when an enemy inflicts you with Chain Coefficient
+      Reduction, locks the chain multiplier at 2.5x for 1 turn
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - cooldown: 2
+    - rcv: 50
+    - slot: 1
+    - hp: 100
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50
+rumble:
+  stats:
+    def: 146
+    rumbleType: DBF
+    spd: 143
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: Critical Hit
+            type: trigger
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 24
+      effects:
+        - attributes:
+            - Silence
+          chance: 45
+          duration: 10
+          effect: hinderance
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Special CT
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Free Spirit
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 45
+        - override:
+            level: 1
+            amount: 16
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 45
+        - override:
+            level: 1
+            amount: 17
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 45
+        - override:
+            level: 1
+            amount: 18
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 45
+        - override:
+            level: 2
+            amount: 19
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 45
+        - override:
+            level: 2
+            amount: 20
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 45
+        - override:
+            level: 2
+            amount: 21
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 45
+        - override:
+            level: 3
+            amount: 22
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 45
+        - override:
+            level: 3
+            amount: 23
+    - cooldown: 24
+      effects:
+        - override:
+            chance: 65
+        - override:
+            level: 5
+            amount: 25

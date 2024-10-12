@@ -1,0 +1,98 @@
+type: INT
+name: Jinbe - Straw Hat Pirates Enjoying the FES
+family:
+  - Jinbe
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1593
+    atk: 734
+    rcv: 90
+  maxLvl:
+    hp: 3185
+    atk: 1468
+    rcv: 180
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - RED Elvis
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and Fighter characters by 3x and reduces damage
+    received by 15%.
+special:
+  name: "Fish-Man Karate: Blasting Arabesque Brick Fist"
+  description: Reduces enemies' Barrier duration by 2 turns, deals 75x character's
+    ATK in [INT] damage to one enemy, changes all orbs, including [BLOCK] orbs,
+    into Matching orbs and locks all orbs for 1 turn. If your crew has ATK UP,
+    increases boost effects of ATK UP buffs by +0.25x; boosts ATK of [INT]
+    characters by 2x for 3 turns otherwise.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base HP of all characters by 150
+  - description: Cannot be Blown Away
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Vinsmoke Sanji and Franky
+  levels:
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, randomizes supported character's orb into either [STR], [DEX],
+      [QCK], [PSY] or [INT] orbs.
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, randomizes supported character's orb into either [STR], [DEX],
+      [QCK], [PSY] or [INT] orbs.
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, randomizes supported character's orb into either [STR], [DEX],
+      [QCK], [PSY] or [INT] orbs.
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, changes the orb of the supported character into a Matching orb.
+    - Once per adventure, when the supported character uses an ATK Boosting
+      special, changes the orb of the supported character into a Matching orb
+      and locks all orbs for 1 turn.
+limitBreak:
+  path:
+    - atk: 30
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - atk: 30
+    - atk: 40
+    - rcv: 20
+    - slot: 1
+    - hp: 30
+    - rcv: 20
+    - hp: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

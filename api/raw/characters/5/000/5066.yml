@@ -1,0 +1,59 @@
+type: PSY
+oldDbId: 3478
+name: Makino - Proprietor of a Relaxed Tavern
+japanName: マキノ 憩いの酒場の女店主
+family:
+  - Makino
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 563
+    atk: 644
+    rcv: 160
+  maxLvl:
+    hp: 1645
+    atk: 1011
+    rcv: 468
+cost: 1
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - shop
+  - gloex
+  - special
+links:
+  gamewithId: 296442
+aliases:
+  - Support Makino
+captain:
+  name: ""
+  description: Boosts HP and RCV of Cerebral characters by 1.75x
+special:
+  name: "Today's Service: \"Pirates Only\""
+  description: Makes [PSY] orbs beneficial for Cerebral characters for 2 turns.
+  cooldown: 13
+  maxLevel: 1
+support:
+  type: descriptive
+  criteria: Shanks, Ben Beckman, Lucky Roux and Yasopp
+  levels:
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      or Blindness, reduces Chain Multiplier Limit and Blindness duration by 1
+      turn.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      or Blindness, reduces Chain Multiplier Limit and Blindness duration by 1
+      turn.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      or Blindness, reduces Chain Multiplier Limit and Blindness duration by 2
+      turns.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      or Blindness, reduces Chain Multiplier Limit and Blindness duration by 2
+      turns.
+    - Once per adventure, when an enemy inflicts you with Chain Multiplier Limit
+      or Blindness, reduces Chain Multiplier Limit and Blindness duration by 3
+      turns.

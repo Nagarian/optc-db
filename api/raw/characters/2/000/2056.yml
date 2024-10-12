@@ -1,0 +1,53 @@
+type: INT
+name: "Vinsmoke Ichiji - Germa Resurrection Plan: Masterpiece"
+japanName: ヴィンスモーク・イチジ ジェルマの復活計画　最高傑作
+family:
+  - VinsmokeIchiji
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 7
+  minLvl:
+    hp: 750
+    atk: 426
+    rcv: 33
+  maxLvl:
+    hp: 1444
+    atk: 1180
+    rcv: 66
+cost: 15
+slots: 4
+maxExp: 355666
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 99704
+aliases:
+  - Kid Ichiji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and reduces RCV of Fighter
+    characters to 0
+special:
+  name: Scornful Gang Up (First Son)
+  description: Deals 15x character's ATK in [INT] damage to one enemy, changes all
+    orbs of top row characters into [PSY] orbs and makes [PSY] orbs beneficial
+    for all characters for 1 turn.
+  cooldown: 16
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Vinsmoke Niji, Vinsmoke Yonji, Vinsmoke Judge and Vinsmoke Reiju
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

@@ -1,0 +1,45 @@
+type: PSY
+name: Rakuyo
+japanName: ラクヨウ
+family:
+  - Rakuyo
+class:
+  - Striker
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 161
+    atk: 122
+    rcv: 65
+  maxLvl:
+    hp: 1000
+    atk: 733
+    rcv: 193
+cost: 18
+slots: 3
+maxExp: 522812
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 11073
+aliases: []
+evolution:
+  - id: 453
+    evolvers:
+      - 118
+      - 83
+      - 87
+      - 303
+      - 103
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, boosts ATK of Striker characters by 2x
+special:
+  name: Dread Morning Star
+  description: Changes orbs of this and Captain characters into [PSY] orbs
+  cooldown: 16
+  maxLevel: 7

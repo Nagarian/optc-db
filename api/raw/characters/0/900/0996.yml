@@ -1,0 +1,47 @@
+type: DEX
+name: Dellinger
+japanName: デリンジャー
+family:
+  - Dellinger
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 91
+    atk: 147
+    rcv: 51
+  maxLvl:
+    hp: 999
+    atk: 755
+    rcv: 192
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 26720
+aliases: []
+evolution:
+  - id: 997
+    evolvers:
+      - 80
+      - 86
+      - 266
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x
+special:
+  name: Decapitation High Heel
+  description: Changes Badly Matching orbs of all characters into Matching orbs.
+  cooldown: 20
+  maxLevel: 7
+  stages:
+    - description: Changes Badly Matching orbs of Powerhouse characters into Matching orbs.
+      cooldown: 11

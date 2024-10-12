@@ -1,0 +1,203 @@
+type: STR
+name: Heracles - Glinston's Open Air Classroom
+japanName: ヘラクレス グリンストンの青空教室
+family:
+  - Heraclesn
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 319
+    atk: 195
+    rcv: 42
+  maxLvl:
+    hp: 1122
+    atk: 769
+    rcv: 190
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 193662
+aliases:
+  - 3D2Y Heracles'n
+evolution:
+  - id: 2901
+    evolvers:
+      - 84
+      - 266
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 2.25x and their HP by 1.2x.
+special:
+  name: Explaining the Pop Green
+  description: Removes Poison duration completely and reduces Burn and Paralysis
+    duration by 4 turns. If your crew has 5 or more [STR] or [PSY] characters,
+    boosts Orb Effects of [STR] and [PSY] characters by 2x for 2 turns.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK of [STR] and [PSY] characters by 50
+rumble:
+  stats:
+    def: 137
+    rumbleType: SPT
+    spd: 139
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+              - PSY
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 31
+      effects:
+        - attributes:
+            - SPD
+          effect: debuff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.55
+          effect: recharge
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+          type: RCV
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          duration: 15
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 16
+        - override:
+            amount: 0.61
+        - override:
+            duration: 16
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 17
+        - override:
+            amount: 0.66
+        - override:
+            level: 4
+            duration: 17
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 18
+        - override:
+            amount: 0.72
+        - override:
+            level: 5
+            duration: 18
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 19
+        - override:
+            amount: 0.78
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 31
+      effects:
+        - override:
+            duration: 20
+        - override:
+            amount: 0.84
+        - override:
+            level: 6
+            duration: 20
+    - cooldown: 31
+      effects:
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            amount: 0.89
+        - override:
+            level: 7
+            duration: 21
+    - cooldown: 31
+      effects:
+        - override:
+            level: 2
+            duration: 22
+        - override:
+            amount: 0.95
+        - override:
+            level: 8
+            duration: 22
+    - cooldown: 31
+      effects:
+        - override:
+            level: 2
+            duration: 23
+        - override:
+            amount: 1.01
+        - override:
+            level: 8
+            duration: 23
+    - cooldown: 31
+      effects:
+        - override:
+            level: 3
+            duration: 25
+        - override:
+            amount: 1.2
+        - override:
+            level: 11
+            duration: 25

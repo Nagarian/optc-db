@@ -1,0 +1,433 @@
+type: DUAL
+name: Luffy & Law - Miracle-Making Generation
+japanName: ルフィ＆ロー “奇跡”を起こす世代
+family:
+  - MonkeyDLuffy
+  - TrafalgarDWaterLaw
+class:
+  - Fighter
+  - Free Spirit
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1471
+    atk: 658
+    rcv: 170
+  maxLvl:
+    hp: 3677
+    atk: 1644
+    rcv: 425
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 150044
+aliases:
+  - Luffy&Law
+  - LuffyLaw
+  - Law&Luffy
+  - LawLuffy
+  - LL
+  - Lawffy
+  - Legend Luffy and Law
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 4.5x, their HP by 1.25x and
+    recovers 1x their RCV at the end of the turn for each time you hit a
+    PERFECT.
+special:
+  name: The Ultimate Stratagem to Defeat God
+  description: ""
+  cooldown: 17
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+  - description: Reduces Paralysis and Silence duration completely on this character
+characters:
+  swap:
+    description: Removes Slot Bind duration completely on this character and changes
+      orb, including [BLOCK] orbs, of this character into a Matching orb, boosts
+      ATK of this character by 2x for 1 turn and makes own normal attacks ignore
+      damage reducing Barriers and Buffs.
+    notes: Attacks that ignore damage reducing Barriers and Buffs are still affected
+      by Defense and Increased Defense buffs.
+  character1:
+    name: Luffy - Miracle-Making Generation
+    japanName: ルフィ “奇跡”を起こす世代
+    class:
+      - Fighter
+      - Free Spirit
+    type: DEX
+    stats:
+      combo: 6
+      minLvl:
+        hp: 1367
+        atk: 607
+        rcv: 125
+      maxLvl:
+        hp: 3418
+        atk: 1518
+        rcv: 312
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3.5x and their HP by 1.25x.
+    special:
+      name: The Ultimate Stratagem to Defeat God
+      description: Deals 400x character's ATK in Typeless damage to one enemy, makes
+        [DEX] and [QCK] orbs beneficial for all characters for 1 turn, boosts
+        Orb Effects of all characters by 2.5x for 1 turn and becomes Luffy & Law
+        for 3 turns.
+    sailor:
+      - description: Boosts base ATK of all characters by 50
+      - description: Reduces Paralysis and Silence duration completely on this character
+  character2:
+    name: Law - Miracle-Making Generation
+    japanName: ロー “奇跡”を起こす世代
+    class:
+      - Slasher
+      - Cerebral
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1315
+        atk: 593
+        rcv: 152
+      maxLvl:
+        hp: 3288
+        atk: 1482
+        rcv: 381
+    captain:
+      name: ""
+      description: Boosts ATK of all characters by 3x, their HP by 1.25x and recovers
+        0.5x this character's RCV at the end of the turn for each time you hit a
+        PERFECT.
+    special:
+      name: The Ultimate Stratagem to Defeat God
+      description: Deals 75x character's ATK in Typeless True damage to all enemies,
+        makes [DEX] and [QCK] orbs beneficial for all characters for 1 turn,
+        boosts Orb Effects of all characters by 2.5x for 1 turn and becomes
+        Luffy & Law for 3 turns.
+    sailor:
+      - description: Boosts base HP of all characters by 50
+      - description: Reduces Paralysis and Silence duration completely on this character
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 10
+    - type: potential
+    - hp: 20
+    - hp: 20
+    - hp: 40
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - rcv: 10
+    - hp: 50
+    - type: potential
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - atk: 25
+    - atk: 25
+    - atk: 30
+    - rcv: 15
+    - rcv: 20
+    - rcv: 20
+    - type: sailor
+    - hp: 70
+    - hp: 80
+    - hp: 100
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - atk: 50
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 10
+        - value: 0.5
+          threshold: 15
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+    - type: Reduce No Healing duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+        - value: 9
+          threshold: 90
+        - value: 10
+          threshold: 100
+rumble:
+  stats:
+    def: 136
+    rumbleType: ATK
+    spd: 189
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - amount: 100
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - crew
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 45
+      effects:
+        - amount: 1250
+          effect: damage
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - amount: 1.05
+          effect: damage
+          targeting:
+            count: 1
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - ATK
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - crew
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1275
+        - override:
+            amount: 1.09
+        - {}
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            amount: 1.12
+        - {}
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1325
+        - override:
+            amount: 1.16
+        - {}
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            amount: 1.2
+        - {}
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1375
+        - override:
+            amount: 1.24
+        - {}
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            amount: 1.27
+        - {}
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1425
+        - override:
+            amount: 1.31
+        - {}
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            amount: 1.35
+        - {}
+    - cooldown: 45
+      effects:
+        - override:
+            amount: 1700
+        - override:
+            amount: 1.45
+        - override:
+            level: 2
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+              - HP
+              - RCV
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - DEX
+                - QCK
+          - attributes:
+              - ATK
+              - HP
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Fighter
+                - Slasher
+          - attributes:
+              - Critical Hit
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - Fighter
+                - Slasher
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 4
+          - override:
+              level: 2
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 6
+          team: enemies
+          type: special
+      special:
+        - uses: 2
+          effects:
+            - amount: 2000
+              effect: damage
+              targeting:
+                count: 1
+                priority: highest
+                stat: ATK
+                targets:
+                  - enemies
+              type: fixed
+            - amount: 2
+              effect: damage
+              targeting:
+                count: 1
+                priority: highest
+                stat: HP
+                targets:
+                  - enemies
+              type: atkbase
+              leader: true
+        - uses: 2
+          effects:
+            - override:
+                amount: 2750
+            - override:
+                amount: 2.75
+        - uses: 2
+          effects:
+            - override:
+                amount: 3500
+            - override:
+                amount: 3.5
+        - uses: 2
+          effects:
+            - override:
+                amount: 4250
+            - override:
+                amount: 4.25
+        - uses: 2
+          effects:
+            - override:
+                amount: 5000
+            - override:
+                amount: 5

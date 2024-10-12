@@ -1,0 +1,48 @@
+type: DEX
+name: Namule
+japanName: ナミュール
+family:
+  - Namule
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 155
+    atk: 133
+    rcv: 40
+  maxLvl:
+    hp: 1081
+    atk: 822
+    rcv: 142
+cost: 18
+slots: 3
+maxExp: 522812
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 11072
+aliases:
+  - Namur
+evolution:
+  - id: 451
+    evolvers:
+      - 118
+      - 83
+      - 86
+      - 302
+      - 102
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2x and their HP by 1.5x
+special:
+  name: Number Eight's One Hit
+  description: Boosts ATK of Fighter characters by 1.5x for 1 turn, deals 25x
+    character's ATK in [DEX] damage to one enemy
+  cooldown: 25
+  maxLevel: 8
+sailor:
+  - description: Boosts base ATK of Fighter characters by 20

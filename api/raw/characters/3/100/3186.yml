@@ -1,0 +1,84 @@
+type: STR
+name: Buggy - Menace of Orange Town
+japanName: バギー オレンジの町の脅威
+family:
+  - Buggy
+class:
+  - Driven
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1203
+    atk: 689
+    rcv: 21
+  maxLvl:
+    hp: 2521
+    atk: 1251
+    rcv: 198
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 248937
+aliases:
+  - World Cruise Buggy
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3x, boosts ATK of [PSY] by 2.5x
+    and reduces damage received by 15%.
+special:
+  name: Blasting Buggy Ball
+  description: Changes all orbs into [STR] orbs, reduces enemies' Barrier duration
+    by 1 turn and sets Chain Boundaries to 1.5x and 30.0x for 1 turn.
+  cooldown: 10
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [STR] characters by 30
+  - description: Reduces Blindness duration by 5 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: "[STR] characters"
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 9
+limitBreak:
+  path:
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 10
+    - rcv: 10
+    - cooldown: 1
+    - rcv: 20
+    - atk: 20
+    - slot: 1
+    - atk: 30
+    - atk: 50
+    - type: sailor
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

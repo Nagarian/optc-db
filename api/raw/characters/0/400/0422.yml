@@ -1,0 +1,52 @@
+type: INT
+name: "Nami - Mirage Tempo: The Heavens"
+japanName: ナミ 蜃気楼＝テンポ“天”
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 348
+    atk: 201
+    rcv: 75
+  maxLvl:
+    hp: 1260
+    atk: 988
+    rcv: 361
+cost: 15
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 9249
+aliases:
+  - Kimono Nami
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of [INT] characters by 1.5x
+special:
+  name: "Mirage Tempo: The Heavens"
+  description: Reduces damage received from [INT] enemies by 100% for 1 turn,
+    recovers a random amount of HP
+  cooldown: 20
+  maxLevel: 11
+  notes: "`randomHeal : 1,000 : 3,000`"
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Monkey D. Luffy and Roronoa Zoro
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7

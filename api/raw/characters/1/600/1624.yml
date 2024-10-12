@@ -1,0 +1,50 @@
+type: QCK
+name: Hyouzou - Fish-Man Pirate Bodyguard
+japanName: ヒョウゾウ 魚人海賊の用心棒
+family:
+  - Hyouzou
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 85
+    atk: 58
+    rcv: 27
+  maxLvl:
+    hp: 1980
+    atk: 1088
+    rcv: 345
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 59328
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.5x and boosts HP of
+    Powerhouse characters by 1.25x
+special:
+  name: Flexible Six Swords
+  description: Randomizes all orbs, deals 10% of enemies' current HP in damage to
+    all enemies and Poisons all enemies.
+  cooldown: 15
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Hody Jones, Ikaros Much, Daruma, Zeo and Dosun
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

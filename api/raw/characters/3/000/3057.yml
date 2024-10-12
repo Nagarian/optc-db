@@ -1,0 +1,117 @@
+type: PSY
+name: Nefeltari Vivi - Princess Enjoying the Summer Festival
+japanName: ネフェルタリ・ビビ 夏祭りを楽しむ王女
+family:
+  - NefertariVivi
+  - Karoo
+class:
+  - Free Spirit
+  - Cerebral
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1022
+    atk: 530
+    rcv: 133
+  maxLvl:
+    hp: 2554
+    atk: 1324
+    rcv: 333
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 222843
+aliases:
+  - Summer Vivi
+  - Hanabi Vivi
+  - Yukata Vivi
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Cerebral characters by 2.5x and their
+    RCV by 1.2x.
+special:
+  name: Water Yo-Yo Slasher
+  description: Reduces enemies' Percent Damage Reduction duration by 5 turns and
+    boosts the Color Affinity of Free Spirit and Cerebral characters by 1.75x
+    for 1 turn. If during that turn you score 3 PERFECT hits, boosts the Color
+    Affinity of Free Spirit and Cerebral characters by 2x for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: If this character has an [PSY] orb and you hit a PERFECT with her,
+      keep her [PSY] orb for the next turn
+  - description: Reduces Blindness duration by 5 turns
+support:
+  type: descriptive
+  criteria: Free Spirit characters
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Free Spirit characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Free Spirit characters by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Free Spirit characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Free Spirit characters by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      boosts the Color Affinity of Free Spirit characters by 1.3x for 1 turn.
+limitBreak:
+  path:
+    - hp: 10
+    - rcv: 10
+    - atk: 10
+    - type: potential
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - type: sailor
+    - hp: 60
+    - rcv: 50
+    - atk: 60
+    - slot: 1
+    - rcv: 60
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - atk: 100
+    - rcv: 50
+    - rcv: 50
+    - hp: 100
+    - hp: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - {}
+        - {}
+        - {}
+        - {}

@@ -1,0 +1,49 @@
+type: QCK
+name: Leo
+japanName: レオ
+family:
+  - Leo
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 131
+    atk: 142
+    rcv: 54
+  maxLvl:
+    hp: 979
+    atk: 700
+    rcv: 222
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 30733
+aliases: []
+evolution:
+  - id: 1077
+    evolvers:
+      - 118
+      - 83
+      - 85
+      - 96
+      - 101
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Free Spirit characters by 1.75x
+special:
+  name: "Haute Couture: Patchwork"
+  description: Delays all enemies by 1 turn. Locks all orbs for 1 turn. Deals 20%
+    of enemies' current HP in damage to all enemies
+  cooldown: 20
+  maxLevel: 5
+  stages:
+    - description: Delays all enemies by 1 turn. Locks all orbs for 1 turn. Deals 10%
+        of enemies' current HP in damage to all enemies
+      cooldown: 16

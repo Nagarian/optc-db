@@ -1,0 +1,95 @@
+type: QCK
+name: '"Mad Monk" Urouge - Supernova from the Sky'
+japanName: “怪僧”ウルージ 空から来た超新星
+family:
+  - Urouge
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1146
+    atk: 627
+    rcv: 153
+  maxLvl:
+    hp: 2547
+    atk: 1301
+    rcv: 342
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 84242
+aliases:
+  - Secret Urouge
+  - Limited Urouge
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x, by 3.0375x instead if HP
+    is below 50% at the start of the turn, and boosts HP of Fighter characters
+    by 1.25x
+special:
+  name: The Collapsing Arhat
+  description: If HP is below 50% at the time the special is activated, deal 75x
+    character's ATK in [QCK] damage to one enemy, boosts ATK of Fighter
+    characters by 2x for 1 turn
+  cooldown: 19
+  maxLevel: 5
+sailor:
+  - description: Boosts base HP of Fighter characters by 50
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      Fighter characters by 75
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Fighter characters
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 10
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 10
+    - atk: 40
+    - type: potential
+    - hp: 60
+    - rcv: 20
+    - cooldown: 1
+    - atk: 60
+    - type: sailor
+    - rcv: 20
+    - slot: 1
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 5
+        - value: 1.25
+          threshold: 5
+        - value: 1.5
+          threshold: 5
+        - value: 1.5
+          threshold: 10
+        - value: 1.5
+          threshold: 20

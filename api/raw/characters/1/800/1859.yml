@@ -1,0 +1,103 @@
+type: INT
+name: Leo the Warrior - Brave and Gallant Dwarf
+japanName: 戦士レオ 勇敢なる小人族
+family:
+  - Leo
+class:
+  - Striker
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 901
+    atk: 722
+    rcv: 166
+  maxLvl:
+    hp: 2233
+    atk: 1422
+    rcv: 354
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 79745
+aliases:
+  - Secret Leo
+  - Limited Leo
+captain:
+  name: ""
+  description: Boosts ATK of Striker characters by 2.5x and their HP by 1.2x at
+    the start of the chain. Boosts ATK of Striker characters by 3.25x after
+    scoring 3 PERFECTs in a row.
+special:
+  name: Grand Tontatta Siege
+  description: Reduces Paralysis duration by 3 turns, randomizes non-Matching
+    orbs, including [BLOCK] orbs, adds 65x character's ATK as Additional
+    Typeless Damage for 1 turn, when your Captain is a Striker Character,
+    reduces enemies' Percent Damage Reduction duration by 3 turns
+  cooldown: 18
+  maxLevel: 5
+sailor:
+  - description: If this character has an [INT] orb and you hit a PERFECT with him,
+      keep his [INT] orb for the next turn
+  - description: Makes [PSY] orbs beneficial for this character
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Usopp, Nico Robin, Mansherry
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - atk: 30
+    - rcv: 30
+    - hp: 50
+    - hp: 60
+    - cooldown: 1
+    - hp: 60
+    - atk: 40
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 100
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 8

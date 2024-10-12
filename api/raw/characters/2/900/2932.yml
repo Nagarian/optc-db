@@ -1,0 +1,409 @@
+type: INT
+name: Diamond Jozu - Ice-Shattering Diamond
+japanName: “ダイヤモンド”・ジョズ 氷砕く金剛石
+family:
+  - Jozu
+class:
+  - Fighter
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1231
+    atk: 711
+    rcv: 172
+  maxLvl:
+    hp: 2830
+    atk: 1270
+    rcv: 305
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 200915
+aliases:
+  - Limited Jozu
+  - Secret Jozu
+captain:
+  name: ""
+  description: Boosts ATK and HP of [INT] characters by 2x.
+special:
+  name: Ice Breaker Brilliant Punk
+  description: Deals 30x character's ATK in [INT] damage to all enemies and boosts
+    Orb Effects of [INT] characters by 1.75x for 1 turn.
+  cooldown: 12
+  maxLevel: 1
+sailor:
+  - description: Boosts base HP of [INT] characters by 100
+limitBreak:
+  path:
+    - rcv: 25
+    - rcv: 25
+    - atk: 50
+    - type: potential
+    - atk: 50
+    - hp: 50
+    - hp: 50
+    - hp: 100
+    - slot: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - rcv: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 203
+    rumbleType: ATK
+    spd: 170
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+            - Guard
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+            - Guard
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+            - Guard
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+            - Guard
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - DEF
+            - Guard
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 31
+      effects:
+        - amount: 1100
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 1200
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 1300
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 1400
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 1500
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 1600
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 1700
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 1800
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 1900
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - INT
+    - cooldown: 31
+      effects:
+        - amount: 2200
+          effect: damage
+          range:
+            direction: forward
+            size: small
+          targeting:
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Critical Hit
+            - DEF
+          duration: 15
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - INT

@@ -1,0 +1,87 @@
+type: DEX
+name: Chopper - Straw Hat Pirates' Attack
+japanName: チョッパー 特攻の麦わらの一味
+family:
+  - TonyTonyChopper
+class:
+  - Shooter
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1110
+    atk: 571
+    rcv: 179
+  maxLvl:
+    hp: 2212
+    atk: 1099
+    rcv: 368
+cost: 27
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - removed
+links:
+  gamewithId: 11953
+notes: "Strong World Batch has been entirely replaced. So this characte is now
+  available with a different artwork and id #1177."
+aliases:
+  - Strong World Chopper
+  - SW Chopper
+captain:
+  name: ""
+  description: Boosts ATK and RCV of [DEX] characters by 2x
+special:
+  name: Devoted Healing - "I'm Glad You are Safe"
+  description: Removes Poison duration completely, recovers 15x character's RCV in HP
+  cooldown: 23
+  maxLevel: 7
+sailor:
+  - description: When HP is below 30% at the start of the turn, boosts base RCV of
+      this character by 50
+  - description: Boosts amount healed from [RCV] orbs by 100 each
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Roronoa Zoro
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 50
+    - atk: 50
+    - cooldown: 2
+    - atk: 50
+    - rcv: 30
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - cooldown: 5
+    - hp: 80
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - {}
+    - type: Reduce No Healing duration
+      levels:
+        - {}
+        - {}
+        - {}
+        - {}
+        - {}

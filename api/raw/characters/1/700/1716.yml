@@ -1,0 +1,40 @@
+type: STR
+name: Caesar Clown - King of the Land of the Dead
+japanName: シーザー・クラウン 死の国の王
+family:
+  - CaesarClown
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1097
+    atk: 717
+    rcv: 130
+  maxLvl:
+    hp: 2194
+    atk: 1435
+    rcv: 260
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 60339
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces HP of all characters by 50%, boosts ATK of Driven
+    characters by 1.2x, increases own ATK multiplier by 0.1x at the end of each
+    turn until it reaches 3x
+special:
+  name: Massacre GAS
+  description: Delays all enemies by 1 turn. Changes [EMPTY] orbs of Driven
+    characters into Matching orbs. Boosts ATK of Driven characters by 1.75x for
+    1 turn if HP is below 30% when the special is activated.
+  cooldown: 21
+  maxLevel: 7

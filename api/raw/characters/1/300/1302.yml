@@ -1,0 +1,52 @@
+type: QCK
+name: "Prisoner: Buggy the Clown Prison Break Alliance"
+japanName: 受刑者　道化のバギー 脱獄同盟
+family:
+  - Buggy
+class:
+  - Slasher
+  - Driven
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 852
+    atk: 371
+    rcv: 130
+  maxLvl:
+    hp: 1903
+    atk: 854
+    rcv: 340
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 41931
+aliases:
+  - Baggy
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 1.75x and boosts ATK of Driven
+    characters by 1.5x
+  notes: The bonus is cumulative. Slasher Driven characters get a 2.625x bonus.
+special:
+  name: Special Muggy Ball
+  description: Reduces crew's current HP to 1, changes all orbs into [EMPTY] orbs
+    and deals 30x character's ATK in [QCK] damage to all enemies
+  cooldown: 20
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Galdino (Mr. 3)
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4

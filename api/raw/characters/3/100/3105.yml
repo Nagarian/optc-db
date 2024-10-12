@@ -1,0 +1,317 @@
+type: INT
+name: "Buggy: Mischievous Jester - Happy Spooky Halloween!"
+japanName: バギー　いたずら道化師 Happy Scary Halloween
+family:
+  - Buggy
+class:
+  - Driven
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 619
+    atk: 378
+    rcv: 37
+  maxLvl:
+    hp: 1376
+    atk: 840
+    rcv: 83
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 229953
+aliases:
+  - Halloween Buggy
+evolution:
+  - id: 3106
+    evolvers:
+      - 117
+      - 93
+      - 94
+      - 99
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2x and reduces damage received by 10%.
+special:
+  name: Laughing Clown in the Night
+  description: Reduces Silence duration by 5 turns, reduces enemies' Increased
+    Defense duration by 5 turns, changes [BLOCK], [RCV], [TND] and [BOMB] orbs
+    into Matching orbs and locks all orbs for 2 turns.
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+rumble:
+  stats:
+    def: 170
+    rumbleType: DBF
+    spd: 130
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 20
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 35
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - INT
+    - effects:
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - INT
+  special:
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 50
+          duration: 10
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 55
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 60
+          duration: 12
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 17
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 65
+          duration: 13
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 18
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 70
+          duration: 14
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 19
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 75
+          duration: 15
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 20
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 16
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 21
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 85
+          duration: 17
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 22
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 90
+          duration: 18
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 23
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 35
+      effects:
+        - attributes:
+            - Silence
+          chance: 100
+          duration: 19
+          effect: hinderance
+          targeting:
+            count: 2
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 24
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - enemies

@@ -1,0 +1,49 @@
+type: STR
+name: Loveseeking Lola - Thriller Bark Bride
+japanName: 求愛のローラ スリラーバークの花嫁
+family:
+  - Lola
+class:
+  - Slasher
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 8
+  minLvl:
+    hp: 1032
+    atk: 513
+    rcv: 52
+  maxLvl:
+    hp: 2018
+    atk: 1009
+    rcv: 147
+cost: 18
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 19172
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x and their RCV by 1.5x,
+    reduces crew's current HP by 10% at the end of each turn
+special:
+  name: Lola's Attack Chance
+  description: Reduces the defense of all enemies by 80% for 1 turn, boosts Orb
+    Effects of all characters by 1.5x for 1 turn
+  cooldown: 25
+  maxLevel: 13
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Nami
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

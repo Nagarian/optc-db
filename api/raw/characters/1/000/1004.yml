@@ -1,0 +1,48 @@
+type: QCK
+name: Shachi & Penguin - Heart Pirates
+japanName: シャチ＆ペンギン ハートの海賊団
+family:
+  - Sachi
+  - Penguin
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 92
+    atk: 37
+    rcv: 36
+  maxLvl:
+    hp: 1059
+    atk: 701
+    rcv: 231
+cost: 15
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - fortnight
+links:
+  gamewithId: 26913
+aliases: []
+captain:
+  name: ""
+  description: Boosts RCV of all characters by 1.5x
+special:
+  name: Hilarious Combination
+  description: Changes all orbs of left column characters into [RCV] orbs
+  cooldown: 20
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Trafalgar D. Water Law, Bepo and Jean Bart
+  levels:
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 10
+    - value: 15

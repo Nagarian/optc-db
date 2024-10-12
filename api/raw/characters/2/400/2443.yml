@@ -1,0 +1,140 @@
+type: QCK
+name: Donquixote Doflamingo - Another Stage Called "Awakening"
+japanName: ドンキホーテ・ドフラミンゴ 「覚醒」という上の世界（ステージ）
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Shooter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1021
+    atk: 802
+    rcv: 169
+  maxLvl:
+    hp: 2002
+    atk: 1457
+    rcv: 321
+cost: 60
+slots: 1
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - tm
+links:
+  gamewithId: 142768
+aliases:
+  - TM Doffy
+  - TM Doflamingo
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 1.5x. If you use "Off White" in
+    this turn boosts ATK of Driven characters by 2x instead.
+special:
+  name: Off White
+  description: Removes RCV DOWN duration completely and reduces damage received by
+    80% for 2 turns. If your Captain is a Driven character, changes all orbs,
+    including [BLOCK] orbs, of Driven characters into Matching orbs
+  cooldown: 35
+  maxLevel: 8
+sailor:
+  - description: Reduces Silence duration by 3 turns on this character
+  - description: Boosts base ATK, HP and RCV of Driven characters by 30
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Trebol, Pica and Diamante
+  levels:
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+    - value: 8
+limitBreak:
+  path:
+    - slot: 1
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - captain:
+        description: Boosts ATK of Driven characters by 1.5x. If you use "Off White" in
+          this turn boosts ATK of Driven characters by 2.1x instead.
+    - type: sailor
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - captain:
+        description: Boosts ATK of Driven characters by 1.75x. If you use "Off White" in
+          this turn boosts ATK of Driven characters by 2.45x instead.
+    - slot: 1
+    - cooldown: 1
+    - atk: 10
+    - atk: 15
+    - atk: 20
+    - captain:
+        description: Boosts ATK of Driven characters by 2x and recovers 500 HP at the
+          end of each turn. If you use "Off White" in this turn boosts ATK of
+          Driven characters by 2.8x instead.
+    - cooldown: 2
+    - rcv: 30
+    - rcv: 30
+    - rcv: 40
+    - cooldown: 3
+    - slot: 1
+    - hp: 30
+    - hp: 30
+    - cooldown: 4
+    - captain:
+        description: Boosts ATK of Driven characters by 2.25x and recovers 500 HP at the
+          end of each turn. If you use "Off White" in this turn boosts ATK of
+          Driven characters by 3.15x instead.
+    - hp: 60
+    - hp: 70
+    - type: sailor
+    - atk: 35
+    - atk: 40
+    - atk: 50
+    - cooldown: 5
+    - slot: 1
+    - captain:
+        description: Boosts ATK of Driven characters by 2.5x and recovers 500 HP at the
+          end of each turn. If you use "Off White" in this turn boosts ATK of
+          Driven characters by 3.25x instead.
+    - hp: 70
+    - hp: 100
+    - captain:
+        description: Boosts ATK of Driven characters by 2.75x and recovers 500 HP at the
+          end of each turn. If you use "Off White" in this turn boosts ATK of
+          Driven characters by 3.5x instead.
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 50
+    - hp: 100
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

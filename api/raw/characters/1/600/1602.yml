@@ -1,0 +1,89 @@
+type: INT
+name: Shiryu of the Rain - Blackbeard Pirates
+japanName: 雨のシリュウ 黒ひげ海賊団
+family:
+  - Shiryu
+class:
+  - Slasher
+  - Driven
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1020
+    atk: 670
+    rcv: -300
+  maxLvl:
+    hp: 3000
+    atk: 1505
+    rcv: -300
+cost: 40
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 57473
+aliases:
+  - Colo Shiryu
+  - Coliseum Shiryu
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x at the start of the chain,
+    by 3x after the 3rd PERFECT in a row
+special:
+  name: Blood Stained 'Iron Wall'
+  description: Instantly defeats all enemies with HP equal to or below 75x
+    character's ATK, removes Poison duration completely and reduces damage
+    received by 50% for 3 turns,
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Boosts base ATK of this character by 100 if this character is the
+      last in the chain to attack
+  - description: Reduces Silence duration by 1 turn
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Marshall D. Teach (Blackbeard)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - hp: 40
+    - hp: 40
+    - hp: 50
+    - atk: 30
+    - type: sailor
+    - hp: 60
+    - atk: 40
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

@@ -1,0 +1,104 @@
+type: STR
+name: Navy HQ Captain Coby - Weeping Guard
+japanName: 海軍本部大佐コビー 涙を流す護衛
+family:
+  - Coby
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1061
+    atk: 552
+    rcv: 118
+  maxLvl:
+    hp: 2654
+    atk: 1382
+    rcv: 297
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 156169
+aliases:
+  - Koby
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 2.75x.
+special:
+  name: Hastened Hero
+  description: Reduces Despair and Paralysis duration by 5 turns and recovers 9x
+    character's RCV in HP at the end of each turn for 3 turns. If HP is above
+    50% at the time the special is activated, reduces damage received from [QCK]
+    and [DEX] enemies by 100% for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: Reduces Blindness duration by 10 turns
+  - description: Makes [STR] orbs beneficial for Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Riku Doldo III (Ricky), Viola (Violet), Elizabello II and Kyros (Toy Soldier)
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 70
+    - hp: 100
+    - type: potential
+    - cooldown: 1
+    - rcv: 10
+    - rcv: 15
+    - rcv: 25
+    - slot: 1
+    - atk: 10
+    - atk: 15
+    - atk: 25
+    - type: sailor
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - rcv: 25
+    - rcv: 50
+    - atk: 100
+    - atk: 100
+    - cooldown: 2
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Ship Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

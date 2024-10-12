@@ -1,0 +1,48 @@
+type: INT
+name: Breed - Pet-Pet Fruit User
+japanName: ブリード ペトペトの実の能力者
+family:
+  - Breed
+class:
+  - Cerebral
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 867
+    atk: 818
+    rcv: 200
+  maxLvl:
+    hp: 2002
+    atk: 1311
+    rcv: 180
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 18769
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Powerhouse characters by 2x
+special:
+  name: Peto-Peto Fruit, The Greatest Power
+  description: Slightly boosts chances of getting Matching orbs for 3 turns,
+    boosts ATK of this character by 1.75x for 1 turn
+  cooldown: 22
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+  criteria: Cerebral characters
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5

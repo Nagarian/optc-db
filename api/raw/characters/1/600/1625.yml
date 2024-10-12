@@ -1,0 +1,49 @@
+type: STR
+name: Daruma - Deep-Sea Fish-Man
+japanName: ダルマ 深海の魚人海賊
+family:
+  - Daruma
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 48
+    atk: 53
+    rcv: 24
+  maxLvl:
+    hp: 1405
+    atk: 985
+    rcv: 320
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 59332
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Fighter characters by 1.75x
+special:
+  name: Arching Fangs
+  description: Randomizes all orbs, including [BLOCK] orbs, and reduces damage
+    received by 50% for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Hody Jones, Hyouzou, Ikaros Much, Zeo and Dosun
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

@@ -1,0 +1,53 @@
+type: QCK
+name: King - Soaring Pteranodon
+japanName: キング 天翔ける翼竜
+family:
+  - King
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 757
+    atk: 449
+    rcv: 37
+  maxLvl:
+    hp: 1682
+    atk: 997
+    rcv: 82
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 285216
+aliases:
+  - V1 Legend King
+evolution:
+  - id: 3376
+    evolvers:
+      - 118
+      - 90
+      - 1180
+      - 101
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [QCK], Driven and Powerhouse characters by 5x, their
+    HP by 1.2x and makes [QCK] and [INT] orbs beneficial for [QCK], Driven and
+    Powerhouse characters and if you use "Pteranodon Raid" in this turn, deals
+    500x character's ATK in [QCK] damage to all enemies at the end of the turn.
+    Twice per an adventure, if a crew member uses an ability with ATK UP,
+    activates "Pteranodon Raid" in the following turn.
+special:
+  name: Pteranodon Raid
+  description: Deals 20% of enemies' current HP in damage to all enemies, reduces
+    Special Cooldown of all characters by 1 turn and boosts Orb Effects of
+    [QCK], Driven and Powerhouse characters by 2.5x for 1 turn. After 1 turn,
+    adds 1.1x to Chain multiplier for 1 turn.
+  cooldown: 19
+  maxLevel: 6

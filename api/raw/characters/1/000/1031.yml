@@ -1,0 +1,92 @@
+type: PSY
+name: Hajrudin Pirate Mercenary
+japanName: ハイルディン 海賊傭兵
+family:
+  - Hajrudin
+class:
+  - Powerhouse
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1337
+    atk: 740
+    rcv: 57
+  maxLvl:
+    hp: 2700
+    atk: 1402
+    rcv: 205
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 28756
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.75x if HP is above 99% at
+    the start of the turn
+special:
+  name: Hero's Gungnir
+  description: Reduces crew's current HP to 1, deals 10x the amount of HP
+    subtracted in Typeless damage to one enemy. Boosts ATK of this character by
+    2.25x for 1 turn.
+  cooldown: 23
+  maxLevel: 9
+sailor:
+  - description: Boosts base ATK of this character by 50 if this character is the
+      last in the chain to attack
+  - description: When HP is below ?% at the start of the turn, boosts base ATK of
+      all characters by 200
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Buggy
+  levels:
+    - value: 6
+    - value: 7
+    - value: 9
+    - value: 12
+    - value: 15
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - cooldown: 3
+    - rcv: 30
+    - slot: 1
+    - hp: 40
+    - type: sailor
+    - atk: 40
+    - hp: 100
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70

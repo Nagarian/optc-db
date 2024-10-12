@@ -1,0 +1,233 @@
+type: STR
+name: Hody Jones - A Monster Born from His Environment
+japanName: ホーディ・ジョーンズ 環境が生んだバケモノ
+family:
+  - HodyJones
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1974
+    atk: 1034
+    rcv: 33
+  maxLvl:
+    hp: 3201
+    atk: 1540
+    rcv: 65
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 122245
+aliases:
+  - Limited Hody Jones
+  - Secret Hody Jones
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight, boosts ATK of Powerhouse characters by 3.25x and increases
+    damage received by ?x.
+special:
+  name: Shark Slicer
+  description: Deals 50x character's ATK in [STR] damage to all enemies, changes
+    all orbs of left column characters into [DEX], [STR] and [PSY] orbs, changes
+    all orbs of right column characters into [TND], [QCK] and [INT] orbs. If
+    your Friend Captain's orb is [STR], [DEX] or [RCV], boosts Orb Effects of
+    Powerhouse characters by 2.25x for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of all characters by 50
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Powerhouse characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 30
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - rcv: 30
+    - hp: 40
+    - atk: 20
+    - hp: 50
+    - atk: 40
+    - cooldown: 1
+    - type: sailor
+    - atk: 60
+    - hp: 50
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100
+rumble:
+  stats:
+    def: 176
+    rumbleType: DBF
+    spd: 125
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 23
+      effects:
+        - attributes:
+            - ATK
+          duration: 16
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+    - cooldown: 23
+      effects:
+        - override:
+            level: 1
+            duration: 17
+        - override:
+            level: 1
+            duration: 17
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+            duration: 18
+        - override:
+            level: 1
+            duration: 18
+    - cooldown: 23
+      effects:
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            level: 1
+            duration: 19
+    - cooldown: 23
+      effects:
+        - override:
+            level: 3
+            duration: 20
+        - override:
+            level: 2
+            duration: 20
+    - cooldown: 23
+      effects:
+        - override:
+            level: 4
+            duration: 21
+        - override:
+            level: 2
+            duration: 21
+    - cooldown: 23
+      effects:
+        - override:
+            level: 4
+            duration: 22
+        - override:
+            level: 2
+            duration: 22
+    - cooldown: 23
+      effects:
+        - override:
+            level: 5
+            duration: 23
+        - override:
+            level: 3
+            duration: 23
+    - cooldown: 23
+      effects:
+        - override:
+            level: 5
+            duration: 24
+        - override:
+            level: 3
+            duration: 24
+    - cooldown: 23
+      effects:
+        - override:
+            level: 7
+            duration: 25
+        - override:
+            level: 4
+            duration: 25

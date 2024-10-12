@@ -1,0 +1,465 @@
+type: VS
+name: Kaido VS Big Mom - Emperors in Conflict
+japanName: カイドウＶＳビッグ・マム ぶつかり合う四皇
+family:
+  - CharlotteLinlin
+  - Kaido
+rarity: 5
+stats:
+  combo: 0
+  minLvl:
+    hp: 928
+    atk: 478
+    rcv: 37
+  maxLvl:
+    hp: 2062
+    atk: 1062
+    rcv: 82
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 234110
+aliases:
+  - VS Kaido
+  - VS BM
+  - Legend Kaido VS BM
+evolution:
+  - id: 3135
+    evolvers:
+      - 118
+      - 100
+      - 104
+      - 266
+      - 2662
+captain:
+  name: ""
+characters:
+  criteria: When the crew consumes/uses 10 [TND], [RCV] or [SEMLA] orbs with
+    normal attacks.
+  character1:
+    name: Kaido - Emperors in Conflict
+    japanName: カイドウ ぶつかり合う四皇
+    class:
+      - Driven
+      - Powerhouse
+    type: STR
+    stats:
+      combo: 5
+      minLvl:
+        hp: 770
+        atk: 453
+        rcv: 35
+      maxLvl:
+        hp: 1711
+        atk: 1007
+        rcv: 77
+    captain:
+      name: ""
+      description: Reduces Special Cooldown of all characters by 2 turns at the start
+        of the fight, boosts ATK of [STR], [DEX] and [INT] characters by 5x,
+        their HP by 1.3x, deals 20% of enemies' current HP in damage to all
+        enemies at the end of each turn, boosts chances of getting [TND] orbs
+        and makes [TND] orbs beneficial for all characters.
+    special:
+      name: Beast Blow • Soul Rending Blow
+      description: Deals 20% of enemies' current HP in True damage to all enemies,
+        changes [BLOCK] and [RCV] orbs into [TND] orbs, boosts ATK of [STR],
+        [DEX] and [INT] characters by 2.25x for 1 turn. If during that turn you
+        score 3 PERFECT hits, boosts Orb Effects of [STR], [DEX] and [INT]
+        characters by 2.5x for 1 turn.
+      cooldown: 20
+      maxLevel: 6
+    sailor:
+      - description: Cannot be Blown Away
+    rumble:
+      stats:
+        def: 162
+        rumbleType: ATK
+        spd: 188
+      target:
+        criteria: near
+      pattern:
+        - action: attack
+          type: Normal
+        - action: attack
+          type: Normal
+        - action: attack
+          type: Power
+        - action: attack
+          type: Full
+      resilience:
+        - attribute: Action Bind
+          chance: 100
+          type: debuff
+      ability:
+        - effects:
+            - attributes:
+                - HP
+              condition:
+                comparator: first
+                count: 40
+                type: time
+              effect: buff
+              level: 5
+              targeting:
+                targets:
+                  - self
+            - attributes:
+                - DEF
+              condition:
+                comparator: first
+                count: 40
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - crew
+            - attributes:
+                - ATK
+              condition:
+                comparator: remaining
+                count: 60
+                type: time
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - self
+            - attributes:
+                - SPD
+              condition:
+                comparator: remaining
+                count: 60
+                type: time
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - crew
+        - effects:
+            - override:
+                level: 6
+            - {}
+            - override:
+                level: 2
+            - override:
+                level: 2
+        - effects:
+            - override:
+                level: 7
+            - {}
+            - override:
+                level: 3
+            - override:
+                level: 3
+        - effects:
+            - override:
+                level: 8
+            - {}
+            - override:
+                level: 4
+            - override:
+                level: 4
+        - effects:
+            - override:
+                level: 10
+            - {}
+            - override:
+                level: 5
+            - override:
+                level: 5
+      special:
+        - cooldown: 25
+          effects:
+            - amount: 50
+              effect: damage
+              targeting:
+                count: 1
+                targets:
+                  - enemies
+              type: cut
+            - attributes:
+                - Special CT
+              effect: penalty
+              level: 10
+              targeting:
+                targets:
+                  - self
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 54
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 58
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 62
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 66
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 70
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 74
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 78
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 82
+        - cooldown: 25
+          effects:
+            - override:
+                amount: 90
+    versus:
+      description: Deals 500x character's ATK in Typeless damage to all enemies at the
+        end of the turn for 3 turns and deals 3x the damage dealt by this
+        character with normal attacks in Typeless damage to the enemy with the
+        highest current HP at the end of the turn for 3 turns.
+  character2:
+    name: Big Mom - Emperors in Conflict
+    japanName: ビッグ・マム ぶつかり合う四皇
+    class:
+      - Driven
+      - Powerhouse
+    type: INT
+    stats:
+      combo: 4
+      minLvl:
+        hp: 787
+        atk: 451
+        rcv: 35
+      maxLvl:
+        hp: 1749
+        atk: 1001
+        rcv: 79
+    captain:
+      name: ""
+      description: Boosts ATK of [STR], [PSY] and [INT] characters by 5x, their HP by
+        1.5x, boosts chances of getting [RCV] orbs, makes [RCV] and [SEMLA] orbs
+        beneficial for all characters and PERFECTs will consume [RCV] and
+        [SEMLA] orbs.
+    special:
+      name: Beast Blow • Soul Rending Blow
+      description: Deals 20% of enemies' current HP in True damage to all enemies,
+        changes [BLOCK] and [TND] orbs into [RCV] orbs, boosts ATK of [STR],
+        [PSY] and [INT] characters by 2.25x for 1 turn. If during that turn you
+        score 3 PERFECT hits, boosts Orb Effects of [STR], [PSY] and [INT]
+        characters by 2.5x for 1 turn.
+      cooldown: 20
+      maxLevel: 6
+    sailor:
+      - description: Cannot be Blown Away
+    rumble:
+      stats:
+        def: 170
+        rumbleType: ATK
+        spd: 179
+      target:
+        criteria: near
+      pattern:
+        - action: attack
+          type: Normal
+        - action: attack
+          type: Normal
+        - action: attack
+          type: Power
+        - action: attack
+          type: Full
+      resilience:
+        - attribute: Silence
+          chance: 100
+          type: debuff
+      ability:
+        - effects:
+            - attributes:
+                - Special CT
+              condition:
+                comparator: first
+                count: 40
+                type: time
+              effect: buff
+              level: 1
+              targeting:
+                targets:
+                  - INT
+            - attributes:
+                - SPD
+              condition:
+                comparator: remaining
+                count: 60
+                type: time
+              effect: buff
+              level: 3
+              targeting:
+                targets:
+                  - self
+            - attributes:
+                - Special CT
+              condition:
+                comparator: remaining
+                count: 30
+                type: time
+              effect: buff
+              level: 5
+              targeting:
+                targets:
+                  - self
+        - effects:
+            - override:
+                level: 2
+            - override:
+                level: 4
+            - override:
+                level: 6
+        - effects:
+            - override:
+                level: 3
+            - override:
+                level: 5
+            - override:
+                level: 7
+        - effects:
+            - override:
+                level: 4
+            - override:
+                level: 6
+            - override:
+                level: 8
+        - effects:
+            - override:
+                level: 5
+            - override:
+                level: 8
+            - override:
+                level: 10
+      special:
+        - cooldown: 35
+          effects:
+            - amount: 0.5
+              effect: damage
+              range:
+                direction: sideways
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - amount: 1
+              condition:
+                comparator: remaining
+                count: 50
+                type: time
+              effect: damage
+              range:
+                direction: sideways
+                size: medium
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+            - amount: 2
+              condition:
+                comparator: remaining
+                count: 30
+                type: time
+              effect: damage
+              range:
+                direction: sideways
+                size: large
+              targeting:
+                targets:
+                  - enemies
+              type: atk
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 0.6
+            - override:
+                amount: 1.1
+            - override:
+                amount: 2.1
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 0.7
+            - override:
+                amount: 1.2
+            - override:
+                amount: 2.2
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 0.8
+            - override:
+                amount: 1.3
+            - override:
+                amount: 2.3
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 0.9
+            - override:
+                amount: 1.4
+            - override:
+                amount: 2.4
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 1
+            - override:
+                amount: 1.5
+            - override:
+                amount: 2.5
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 1.1
+            - override:
+                amount: 1.6
+            - override:
+                amount: 2.6
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 1.2
+            - override:
+                amount: 1.7
+            - override:
+                amount: 2.7
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 1.3
+            - override:
+                amount: 1.8
+            - override:
+                amount: 2.8
+        - cooldown: 35
+          effects:
+            - override:
+                amount: 1.5
+            - override:
+                amount: 2
+            - override:
+                amount: 3
+    versus:
+      description: Makes own normal attacks ignore damage reducing Barriers, Buffs and
+        DEF for 3 turns, changes [RCV] orbs into [SEMLA] orbs for 3 turns and
+        recovers HP proportional to the number of enemies you defeated in that
+        turn ✕ 15x character's RCV at the end of the enemy turn.

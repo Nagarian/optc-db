@@ -1,0 +1,52 @@
+type: PSY
+name: Sanji - The True Essence of Sweetness
+japanName: サンジ 甘みの真骨頂
+family:
+  - VinsmokeSanji
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 891
+    atk: 512
+    rcv: 60
+  maxLvl:
+    hp: 2228
+    atk: 1280
+    rcv: 152
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 144055
+aliases:
+  - Fortnight Sanji
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.25x and their HP by 1.2x.
+    Boosts ATK of Fighter characters by 2.475x following a chain of [PSY] >
+    [INT] > [QCK] attacks no lower than Good.
+special:
+  name: The Ultimate Fresh Cream
+  description: Deals 15x character's ATK in [PSY] damage to all enemies and
+    reduces enemies' Percent Damage Reduction duration by 2 turns. If your crew
+    has 6 Fighter characters, delays all enemies by 1 turn.
+  cooldown: 19
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Charlotte Pudding
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

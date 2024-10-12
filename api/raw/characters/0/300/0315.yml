@@ -1,0 +1,47 @@
+type: STR
+name: Bepo
+japanName: ベポ
+family:
+  - Bepo
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 120
+    atk: 105
+    rcv: 80
+  maxLvl:
+    hp: 820
+    atk: 690
+    rcv: 246
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 5980
+aliases: []
+evolution:
+  - id: 316
+    evolvers:
+      - 118
+      - 78
+      - 83
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of Fighter characters by 1.5x
+special:
+  name: Aye Aye, Captain!
+  description: Changes [PSY] and [INT] orbs into [STR] orbs, changes [DEX] and
+    [QCK] orbs into [EMPTY] orbs
+  cooldown: 20
+  maxLevel: 11
+sailor:
+  - description: Reduces Paralysis duration by 2 turns on this character

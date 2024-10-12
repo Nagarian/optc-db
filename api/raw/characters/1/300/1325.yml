@@ -1,0 +1,45 @@
+type: PSY
+name: "Corazon: Royal Vampire"
+japanName: コラソン　ロイヤルヴァンパイア
+family:
+  - DonquixoteRosinante
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 84
+    atk: 51
+    rcv: 33
+  maxLvl:
+    hp: 935
+    atk: 526
+    rcv: 206
+cost: 12
+slots: 1
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 44160
+aliases:
+  - Halloween Corazon
+evolution:
+  - id: 1326
+    evolvers:
+      - 116
+      - 117
+      - 81
+      - 87
+      - 103
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn
+special:
+  name: Amulet Flame
+  description: If HP is above 99%, changes [STR], [DEX] and [QCK] orbs of Cerebral
+    and Free Spirit characters into Matching orbs
+  cooldown: 13
+  maxLevel: 8

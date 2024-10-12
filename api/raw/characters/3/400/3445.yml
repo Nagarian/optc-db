@@ -1,0 +1,249 @@
+type: INT
+name: Nico Robin - Archaeologist in Disguise
+japanName: ニコ・ロビン 変装する考古学者
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1281
+    atk: 599
+    rcv: 169
+  maxLvl:
+    hp: 2886
+    atk: 1432
+    rcv: 271
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 294512
+aliases:
+  - Onigashima Robin
+  - Limited Robin
+  - Secret Robin
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of all characters by 3x and their HP by 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x and their HP by 1.3x.
+special:
+  name: "Giganteso Mano: Stomp"
+  description: Reduces enemies' Threshold Damage Reduction duration by 5 turns,
+    reduces Paralysis duration by 5 turns and boosts Orb Effects of all
+    characters by 2x for 1 turn. If HP is above 50% at the time the special is
+    activated, reduces damage received from [QCK] and [PSY] enemies by 100% for
+    1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 50
+  - description: Makes [INT] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Tony Tony Chopper and Kin'emon
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts
+      Orb Effects of the supported character by 1.1x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts
+      Orb Effects of the supported character by 1.2x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts
+      Orb Effects of the supported character by 1.3x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts
+      Orb Effects of the supported character by 1.4x for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces enemies' Threshold Damage Reduction duration by 1 turn and boosts
+      Orb Effects of the supported character by 1.5x for 1 turn.
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - rcv: 25
+    - atk: 25
+    - atk: 25
+    - type: sailor
+    - hp: 50
+    - slot: 1
+    - rcv: 25
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1
+          threshold: 50
+rumble:
+  stats:
+    def: 111
+    rumbleType: ATK
+    spd: 165
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 1000
+          effect: damage
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+          type: fixed
+        - attributes:
+            - Paralysis
+          chance: 50
+          duration: 11
+          effect: hinderance
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - enemies
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            chance: 55
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1100
+        - override:
+            chance: 60
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            chance: 65
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1200
+        - override:
+            chance: 70
+            duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            chance: 75
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1300
+        - override:
+            chance: 80
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            chance: 85
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1400
+        - override:
+            chance: 90
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1500
+        - override:
+            chance: 100
+            duration: 120

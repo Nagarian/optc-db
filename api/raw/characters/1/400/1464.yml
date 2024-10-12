@@ -1,0 +1,46 @@
+type: INT
+name: Chopper's Break Time
+japanName: チョッパーのブレイクタイム
+family:
+  - TonyTonyChopper
+class:
+  - Shooter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 121
+    atk: 76
+    rcv: 44
+  maxLvl:
+    hp: 920
+    atk: 401
+    rcv: 197
+cost: 12
+slots: 2
+maxExp: 392109
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 51897
+aliases:
+  - White Day Chopper
+evolution:
+  - id: 1465
+    evolvers:
+      - 116
+      - 117
+      - 82
+      - 88
+      - 99
+captain:
+  name: ""
+  description: Protects from defeat as long as HP is above 50%
+special:
+  name: Devoted Healing - "Instant Recovery"
+  description: Recovers 6x character's RCV in HP and reduces Paralysis duration by 2 turns
+  cooldown: 11
+  maxLevel: 5
+sailor:
+  - description: Boosts amount healed from [RCV] orbs by 100 each

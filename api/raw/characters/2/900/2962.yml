@@ -1,0 +1,131 @@
+type: INT
+name: Charlotte Katakuri - Future-Controlling Haki
+japanName: シャーロット・カタクリ 未来を従える覇気
+family:
+  - CharlotteKatakuri
+class:
+  - Driven
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1655
+    atk: 932
+    rcv: 152
+  maxLvl:
+    hp: 3568
+    atk: 1591
+    rcv: 275
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 202416
+aliases:
+  - V3 Legend Katakuri
+captain:
+  name: ""
+  description: If HP is below 50% at the start of the turn, boosts ATK of [INT]
+    characters by 5x and reduces damage received by 30%, boosts ATK of [INT]
+    characters by 4x otherwise.
+superSpecial:
+  criteria: This character must be captain and HP must be below 30%.
+  description: Ignores Delay Debuff Protection and delays all enemies by 1 turn
+    and transforms all [INT] characters into Super [INT] characters.
+special:
+  name: Kuzu Mochi
+  description: Deals 10 hits of 50,000 Fixed damage to random enemies, boosts ATK
+    of all characters by 2x for 1 turn and boosts ATK against delayed enemies by
+    2x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of [INT] characters by 75
+  - description: Boosts [INT] characters' damage against [PSY] characters by 1.1x
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: "[INT] Characters"
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - rcv: 5
+    - rcv: 10
+    - rcv: 10
+    - type: sailor
+    - hp: 40
+    - hp: 50
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 30
+    - atk: 30
+    - rcv: 10
+    - cooldown: 1
+    - hp: 60
+    - hp: 70
+    - hp: 80
+    - type: sailor
+    - rcv: 50
+    - hp: 100
+    - atk: 30
+    - atk: 50
+    - type: potential
+    - key: 1
+    - hp: 50
+    - rcv: 25
+    - hp: 50
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 150
+    - rcv: 50
+    - atk: 100
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 2
+        - value: 300
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

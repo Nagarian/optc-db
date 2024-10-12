@@ -1,0 +1,110 @@
+type: INT
+name: Nico Robin - ONE PIECE STAMPEDE
+japanName: ニコ・ロビン ONE PIECE STAMPEDE
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 872
+    atk: 732
+    rcv: 133
+  maxLvl:
+    hp: 2288
+    atk: 1234
+    rcv: 401
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 161686
+aliases:
+  - Stampede Robin
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 2.5x, boosts ATK of [STR] and
+    [QCK] characters by 2x and reduces damage received by 20%.
+special:
+  name: Mil Fleur
+  description: Boosts the Color Affinity of [STR], [QCK] and [INT] characters by
+    1.75x for 3 turns and locks all orbs for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base RCV of all characters by 30
+  - description: Makes [TND] and [RCV] orbs beneficial for [STR], [QCK] and [INT] characters
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Tony Tony
+    Chopper, Franky and Brook
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 60
+    - hp: 90
+    - hp: 120
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - rcv: 20
+    - atk: 10
+    - atk: 20
+    - atk: 30
+    - cooldown: 1
+    - atk: 50
+    - slot: 1
+    - type: sailor
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,54 @@
+type: DEX
+name: Ben Beckman - Red-Hair Pirates
+japanName: ベン・ベックマン 赤髪海賊団
+family:
+  - BenBeckman
+class:
+  - Striker
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 867
+    atk: 329
+    rcv: 122
+  maxLvl:
+    hp: 1403
+    atk: 800
+    rcv: 229
+cost: 20
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - coliseum
+links:
+  gamewithId: 25133
+aliases:
+  - Colo Ben Beckman
+  - Coliseum Ben Beckman
+  - Colo Benn Beckman
+  - Coliseum Benn Beckman
+captain:
+  name: ""
+  description: Boosts ATK and HP of Shooter and Striker characters by 1.5x
+special:
+  name: Life-saving Gunstock Blow
+  description: Deals 13x character's ATK in [DEX] Damage to one enemy. Changes the
+    orb of Captain character into a Matching orb.
+  cooldown: 18
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Shanks and Yasopp
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

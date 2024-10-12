@@ -1,0 +1,57 @@
+type: INT
+name: Saw-Tooth Arlong - Arlong Pirates Captain
+japanName: ノコギリのアーロン アーロン一味船長
+family:
+  - Arlong
+class:
+  - Striker
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 853
+    atk: 735
+    rcv: 55
+  maxLvl:
+    hp: 2053
+    atk: 1479
+    rcv: 153
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 53593
+aliases:
+  - Colo Arlong
+  - Coliseum Arlong
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight. Boosts ATK of [INT] characters by 2x
+special:
+  name: Just 'Water Play'
+  description: Reduces Special Cooldown of top row characters by 1 turn, boosts
+    ATK of top row characters by 1.75x for 1 turn
+  cooldown: 21
+  maxLevel: 10
+  stages:
+    - description: Reduces Special Cooldown of top row characters by 1 turn, boosts
+        ATK of top row characters by 1.5x for 1 turn
+      cooldown: 16
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Choo, Kuroobi and Hatchan
+  levels:
+    - value: 3
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10

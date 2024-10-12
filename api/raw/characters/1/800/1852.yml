@@ -1,0 +1,53 @@
+type: INT
+name: Edward Newgate - Whitebeard Pirates Captain
+japanName: エドワード・ニューゲート 白ひげ海賊団船長
+family:
+  - EdwardNewgate
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 335
+    atk: 144
+    rcv: 25
+  maxLvl:
+    hp: 1044
+    atk: 421
+    rcv: 100
+cost: 30
+slots: 1
+maxExp: 130703
+maxLevel: 50
+flags: []
+links:
+  gamewithId: 79258
+aliases:
+  - TM Whitebeard
+  - WB
+evolution:
+  - id: 1853
+    evolvers:
+      - 115
+      - 116
+      - 117
+      - 118
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1x-2x depending on the crew's
+    current HP and their HP by 1.2x
+  notes: "`captainProportional : lower : 1 + 1 * (1 - (remaining HP) / (total HP))
+    : 1 : 2`"
+special:
+  name: The Epicenter of the Halberd
+  description: Changes the orb of this character into an [INT] orb, deals 100x
+    character's ATK in Typeless True damage to all enemies. If enemies have All
+    Debuff Protection or Delay Debuff Protection at the time the special was
+    activated, boosts Orb Effects of all characters by 2x for 1 turn. If enemies
+    have a barrier at the time the special was activated, boosts ATK of this
+    character by 2.25x for 1 turn
+  cooldown: 37
+  maxLevel: 8

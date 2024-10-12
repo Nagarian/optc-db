@@ -1,0 +1,50 @@
+type: DEX
+name: Legendary Shipwright Tom - Tom's Workers
+japanName: 伝説の船大工トム トムズ　ワーカーズ
+family:
+  - Tom
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1059
+    atk: 572
+    rcv: 100
+  maxLvl:
+    hp: 2207
+    atk: 1029
+    rcv: 266
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 19904
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2x if HP is below 30% at the start
+    of the turn
+special:
+  name: "Sturdy Boat: Launch"
+  description: Reduces Despair duration by 5 turns, boosts ATK of all characters
+    by 1.05x for 3 turns, reduces damage received by 10% for 3 turns, boosts Orb
+    Effects of all characters by 1.1x for 3 turns, recovers 2x character's RCV
+    in HP at the end of each turn for 3 turns
+  cooldown: 25
+  maxLevel: 10
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Franky and Iceburg
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

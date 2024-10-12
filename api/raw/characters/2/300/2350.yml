@@ -1,0 +1,51 @@
+type: STR
+name: Charlotte Compote - Minister of Fruit
+japanName: シャーロット・コンポート フルーツ大臣
+family:
+  - CharlotteCompote
+class:
+  - Striker
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 912
+    atk: 444
+    rcv: 80
+  maxLvl:
+    hp: 2280
+    atk: 1110
+    rcv: 200
+cost: 20
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 133009
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts HP of Powerhouse characters by 1.2x. Boosts ATK of
+    Powerhouse characters by 2.5x following a chain of 3 same Type attacks no
+    lower than Good
+special:
+  name: Fruit Bowl
+  description: Changes [RCV], [TND] and [BOMB] orbs into Matching orbs and reduces
+    Chain Coefficient Reduction duration by 3 turns.
+  cooldown: 20
+  maxLevel: 7
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Striker characters
+  levels:
+    - value: 1
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

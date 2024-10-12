@@ -1,0 +1,89 @@
+type: PSY
+name: Duval - Straw Hat Pirates Conspirator
+japanName: デュバル 麦わらの一味の共犯者
+family:
+  - Duval
+class:
+  - Slasher
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1246
+    atk: 430
+    rcv: 86
+  maxLvl:
+    hp: 3000
+    atk: 1120
+    rcv: 267
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 54004
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 3 turns at the start
+    of the fight, boosts ATK of [PSY] characters by 3x if they have Matching
+    orbs
+special:
+  name: Prideful Memories
+  description: Reduces damage received by 50% for 1 turn, boosts ATK of [PSY]
+    characters by 1.75x for 1 turn
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Makes [INT] orbs beneficial for [PSY] characters
+  - description: Boosts base ATK and HP of [PSY] characters by 50
+support:
+  type: descriptive
+  criteria: All characters
+  levels:
+    - Reduces damage received from [INT] characters by 1%
+    - Reduces damage received from [INT] characters by 2%
+    - Reduces damage received from [INT] characters by 3%
+    - Reduces damage received from [INT] characters by 4%
+    - Reduces damage received from [INT] characters by 5%
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 50
+    - atk: 10
+    - type: potential
+    - atk: 10
+    - cooldown: 1
+    - atk: 10
+    - atk: 30
+    - atk: 40
+    - slot: 1
+    - rcv: 30
+    - atk: 50
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 0.5
+          threshold: 20
+        - value: 1
+          threshold: 25
+        - value: 1
+          threshold: 30
+        - value: 1
+          threshold: 40
+        - value: 1.5
+          threshold: 40

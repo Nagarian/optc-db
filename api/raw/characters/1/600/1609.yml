@@ -1,0 +1,57 @@
+type: QCK
+name: Kami Eneru - Arch-Enemies of an Endless Dream
+japanName: ゴッド・エネル 終わらぬ夢の宿敵
+family:
+  - Enel
+class:
+  - Shooter
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 350
+    atk: 219
+    rcv: 56
+  maxLvl:
+    hp: 1256
+    atk: 756
+    rcv: 236
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 57875
+aliases:
+  - Kami Eneru
+  - V1 Legend God Enel
+evolution:
+  - id: 1610
+    evolvers:
+      - 118
+      - 266
+      - 96
+      - 301
+      - 267
+captain:
+  name: ""
+  description: Reduces HP of all characters by 20%, boosts chances of getting
+    [RCV] orbs, makes [RCV] orbs beneficial for all characters, boosts ATK of
+    all characters by 2x-3.25x depending on the amount healed in the last turn.
+  notes: The range of ATK boost is from 2x to 3.25x. The exact boost is calculated
+    as 2 + (HP recovered in the previous turn) \* 0.000125 and maxes at 10k HP
+    healed. This ignores your max HP, so it doesn't stop counting if you
+    over-heal.
+special:
+  name: Heavy Thunder
+  description: Deals 10x Excess Healing done before the special is activated in
+    Typeless damage to all enemies.
+  cooldown: 21
+  maxLevel: 6
+  notes: The Excess Healing is counted from the last time the special is used and
+    accumulates when you heal more than your maximum HP. For example, if you are
+    at max HP and you heal 1,000 HP, you will add 10k damage to the special. The
+    amount of damage possible caps at 2,000,000 damage.

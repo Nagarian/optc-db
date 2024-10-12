@@ -1,0 +1,96 @@
+type: INT
+name: Charlotte Katakuri - Mochi-Mochi Fruit User
+japanName: シャーロット・カタクリ “モチモチの実”の能力者
+family:
+  - CharlotteKatakuri
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 1460
+    atk: 780
+    rcv: 120
+  maxLvl:
+    hp: 2871
+    atk: 1403
+    rcv: 258
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 145443
+aliases:
+  - Colo Katakuri
+  - Coliseum Katakuri
+  - Potato Starch
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Striker characters by 2.75x and makes
+    [INT] orbs beneficial for Powerhouse and Striker characters
+special:
+  name: Sharpened Bullets
+  description: Makes [STR], [DEX], [QCK], [PSY] and [INT] orbs beneficial for
+    Powerhouse and Striker characters for 2 turns. If there are 4 enemies or
+    more on the stage at the time the special is activated, ignores Delay Debuff
+    Protection and delays all enemies by 2 turns.
+  cooldown: 29
+  maxLevel: 16
+sailor:
+  - description: Boosts this character's damage against [PSY] characters by 1.1x
+  - description: Restores Special Cooldown of this character by 3 turns when it is rewinded
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Charlotte Linlin (Big Mom)
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - rcv: 20
+    - rcv: 30
+    - atk: 20
+    - atk: 25
+    - slot: 1
+    - atk: 25
+    - atk: 30
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - type: potential
+  potentials:
+    - type: "[PSY] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

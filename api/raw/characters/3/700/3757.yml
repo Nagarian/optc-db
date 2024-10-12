@@ -1,0 +1,111 @@
+type: DEX
+name: Killer - Ripping Punisher
+family:
+  - Killer
+class:
+  - Driven
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1644
+    atk: 751
+    rcv: 77
+  maxLvl:
+    hp: 3288
+    atk: 1502
+    rcv: 154
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+aliases:
+  - Secret Limited TM Treasure Map
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Driven characters by 3.5x, boosts HP of
+    Slasher and Driven characters by 1.3x and reduces crew's RCV to 0.
+special:
+  name: Head-Hunting Onslaught
+  description: Reduces enemies' Increased Defense duration by 6 turns, reduces
+    Special Cooldown of all characters by 1 turn and boosts Orb Effects of
+    Slasher and Driven characters by 2.25x for 1 turn. If your Captain is a
+    Slasher or Driven character, locks all orbs for 1 turn. If your Captain's
+    orb is [BOMB] or [SUPERBOMB], reduces enemies' Resilience duration by 6
+    turns.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+  - description: If this character has a [BOMB] or [SUPERBOMB] orb and you attack
+      with this character, reduces enemies' Slasher and Driven Resistance by
+      -10% for 1 turn.
+support:
+  type: descriptive
+  criteria: Eustass Kid, Heat and Wire
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb and boosts Color Affinity of supported character by 1.1x for 1
+      turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb and boosts Color Affinity of supported character by 1.2x for 1
+      turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb and boosts Color Affinity of supported character by 1.3x for 1
+      turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb and boosts Color Affinity of supported character by 1.4x for 1
+      turn.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a
+      [BOMB] orb and boosts Color Affinity of supported character by 1.5x for 1
+      turn.
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 20
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - hp: 50
+    - slot: 1
+    - rcv: 50
+    - atk: 30
+    - hp: 50
+    - type: sailor
+    - atk: 40
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3

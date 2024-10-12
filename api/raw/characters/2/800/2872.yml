@@ -1,0 +1,96 @@
+type: INT
+name: Nami - Number 2, the Seeker of Aid
+japanName: ナミ 助け求める２人目
+family:
+  - Nami
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1040
+    atk: 345
+    rcv: 210
+  maxLvl:
+    hp: 2070
+    atk: 1250
+    rcv: 392
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 189634
+aliases:
+  - East Blue Nami
+  - Secret Nami
+  - Limited Nami
+  - Throwback Nami
+captain:
+  name: ""
+  description: Boosts ATK of [INT] and [STR] characters by 2.75x.
+special:
+  name: A Girl's Wish
+  description: Reduces Silence duration by 3 turns, reduces enemies' End of Turn
+    Heal and Resilience Buffs duration by 5 turns, delays all enemies by 1 turn.
+    If your Captain is a [STR] or [INT] character, adds 0.5x to Chain multiplier
+    for 1 turn.
+  cooldown: 11
+  maxLevel: 1
+sailor:
+  - description: Reduces Paralysis duration by 1 turn
+  - description: Reduces Silence duration by 3 turns on this character
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - RCV
+  criteria: "[INT] characters"
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 4
+      reduction: 1
+    - value: 6
+      reduction: 2
+    - value: 8
+      reduction: 3
+    - value: 10
+      reduction: 4
+limitBreak:
+  path:
+    - rcv: 20
+    - atk: 20
+    - rcv: 20
+    - type: potential
+    - atk: 20
+    - hp: 30
+    - rcv: 30
+    - hp: 30
+    - hp: 30
+    - slot: 1
+    - hp: 40
+    - hp: 60
+    - type: sailor
+    - atk: 50
+    - type: potential
+  potentials:
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

@@ -1,0 +1,100 @@
+type: INT
+name: Shiryu of the Rain - User of the Clear-Clear Fruit
+family:
+  - Shiryu
+class:
+  - Powerhouse
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1630
+    atk: 775
+    rcv: 72
+  maxLvl:
+    hp: 3260
+    atk: 1550
+    rcv: 144
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - sugo
+  - tm
+aliases:
+  - TM Secret Limited
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Powerhouse characters by 1.5x.
+special:
+  name: Formless Slash
+  description: Deals 50x character's ATK in Typeless True damage to all enemies,
+    removes Poison duration completely, reduces ATK DOWN duration by 5 turns,
+    reduces enemies' Percent Damage Reduction duration by 5 turns, recovers
+    5,000 HP at the end of the turn for 2 turns and boosts Orb Effects of
+    Slasher and Powerhouse characters by 2x for 1 turn.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of Slasher and Powerhouse characters by 60
+  - description: If this character has a [TND] orb and you attack with this
+      character, increases boost effects of Orb Effect buffs by +0.2x
+support:
+  type: descriptive
+  criteria: Marshall D. Teach (Blackbeard), Lafitte, Van Ogre, Jesus Burgess (Mr.
+    Store), Doc Q, Avalo Pizarro, Catarina Devon, Vasco Shot and San Juan Wolf
+  levels:
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and recovers 1% of crew's MAX HP.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and recovers 2% of crew's MAX HP.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and recovers 3% of crew's MAX HP.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and recovers 4% of crew's MAX HP.
+    - Once per adventure, when an enemy inflicts you with ATK DOWN, reduces ATK
+      DOWN duration by 1 turn and recovers 5% of crew's MAX HP.
+limitBreak:
+  path:
+    - hp: 20
+    - hp: 20
+    - hp: 20
+    - type: potential
+    - rcv: 20
+    - atk: 30
+    - hp: 40
+    - slot: 1
+    - atk: 30
+    - rcv: 30
+    - atk: 40
+    - type: sailor
+    - atk: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 1
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 2
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+        - value: 7
+          threshold: 80

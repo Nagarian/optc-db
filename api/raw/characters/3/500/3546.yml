@@ -1,0 +1,251 @@
+type: STR
+name: Boa Marigold - Burning Snake
+japanName: ボア・マリーゴールド 燃え盛る蛇
+family:
+  - BoaMarigold
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1514
+    atk: 716
+    rcv: 106
+  maxLvl:
+    hp: 3028
+    atk: 1432
+    rcv: 212
+cost: 50
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags: []
+aliases:
+  - Rumble
+captain:
+  name: ""
+  description: Reduces Special Cooldown of all characters by 1 turn at the start
+    of the fight. If they have a beneficial orb, boosts ATK of Powerhouse and
+    Free Spirit characters by 2.5x, by 2x otherwise.
+special:
+  name: Gorgon's Curse
+  description: Reduces enemies' Threshold Damage Reduction and Percent Damage
+    Reduction duration by 4 turns and delays all enemies by 1 turn. If your
+    Captain is a Powerhouse or Free Spirit character, boosts ATK against delayed
+    enemies by 1.75x for 1 turn.
+  cooldown: 17
+  maxLevel: 1
+sailor:
+  - description: Adds 5x character's ATK as Additional Damage.
+  - description: If this character has a [STR] orb and you hit a PERFECT with them,
+      keep their [STR] orb for the next turn.
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Powerhouse characters
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - hp: 200
+    - atk: 200
+    - captain:
+        description: Reduces Special Cooldown of all characters by 1 turn at the start
+          of the fight. If they have a beneficial orb, boosts ATK of Powerhouse
+          and Free Spirit characters by 3x, by 2.5x otherwise, and makes [DEX]
+          orbs beneficial for [STR] characters.
+    - type: potential
+    - cooldown: 3
+    - rcv: 100
+    - hp: 200
+    - type: sailor
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 4
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 6
+          threshold: 60
+        - value: 7
+          threshold: 70
+        - value: 8
+          threshold: 80
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 75
+          reduction: 1
+        - value: 100
+          reduction: 2
+        - value: 125
+          reduction: 2
+        - value: 150
+          reduction: 3
+rumble:
+  stats:
+    def: 177
+    rumbleType: RCV
+    spd: 146
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 2
+  resilience:
+    - amount: 150
+      interval: 5
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+            - RCV
+            - Guard
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - STR
+    - effects:
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 0.8
+          effect: damage
+          targeting:
+            count: 3
+            targets:
+              - enemies
+          type: atk
+        - amount: 1
+          effect: recharge
+          targeting:
+            targets:
+              - STR
+          type: RCV
+        - attributes:
+            - ATK
+          duration: 11
+          effect: buff
+          level: 1
+          condition:
+            families:
+              - BoaHancock
+              - BoaSandersonia
+            team: crew
+            type: character
+          targeting:
+            targets:
+              - crew
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.9
+        - override:
+            amount: 1.1
+        - override:
+            level: 1
+            duration: 12
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1
+        - override:
+            amount: 1.2
+        - override:
+            level: 1
+            duration: 13
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.1
+        - override:
+            amount: 1.3
+        - override:
+            level: 2
+            duration: 14
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.2
+        - override:
+            amount: 1.4
+        - override:
+            level: 2
+            duration: 15
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.3
+        - override:
+            amount: 1.5
+        - override:
+            level: 3
+            duration: 16
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.4
+        - override:
+            amount: 1.6
+        - override:
+            level: 3
+            duration: 17
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.5
+        - override:
+            amount: 1.7
+        - override:
+            level: 3
+            duration: 18
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.6
+        - override:
+            amount: 1.8
+        - override:
+            level: 4
+            duration: 19
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.8
+        - override:
+            amount: 2
+        - override:
+            level: 5
+            duration: 20

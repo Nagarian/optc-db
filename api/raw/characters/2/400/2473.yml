@@ -1,0 +1,92 @@
+type: QCK
+name: Big Mom - Hungry Onslaught
+japanName: ビッグ・マム 空腹の猛攻撃
+family:
+  - CharlotteLinlin
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1466
+    atk: 632
+    rcv: 78
+  maxLvl:
+    hp: 3001
+    atk: 1450
+    rcv: 200
+cost: 50
+slots: 3
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - raid
+links:
+  gamewithId: 145819
+aliases:
+  - Raid Big Mom
+  - Thin Mom
+  - Raid Linlin
+  - Raid Charlotte Linlin
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 2.5x, by 3x instead if HP is below
+    50% at the start of the turn, and reduces HP of all characters by 20%
+special:
+  name: Mama-Mash
+  description: Reduces crew's current HP by 50%, deals 100x the amount of HP
+    subtracted in Typeless damage to one enemy and randomizes all non-[RCV]
+    orbs.
+  cooldown: 21
+  maxLevel: 15
+sailor:
+  - description: Reduces HP of all characters by 30% and boosts base RCV of all
+      characters by 1.2x
+  - description: Boosts amount healed from [RCV] orbs by 300 each
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Charlotte Perospero, Charlotte Daifuku and Charlotte Bavarois
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 7
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 30
+    - hp: 40
+    - type: potential
+    - hp: 50
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - atk: 30
+    - hp: 60
+    - cooldown: 1
+    - atk: 50
+    - slot: 1
+    - atk: 70
+    - type: potential
+  potentials:
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 100
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4

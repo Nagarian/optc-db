@@ -1,0 +1,119 @@
+type: STR
+name: X Drake - Allosaurus' Power
+japanName: X・ドレーク アロサウルスの力
+family:
+  - XDrake
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1430
+    atk: 659
+    rcv: 85
+  maxLvl:
+    hp: 3432
+    atk: 1449
+    rcv: 145
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - arena
+links:
+  gamewithId: 249105
+aliases:
+  - Arena X Drake
+  - Arena Drake
+  - Coliseum X Drake
+  - Coliseum Drake
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3x and boosts ATK of all other
+    characters by 2.75x, boosts ATK of all characters additionally by 1.2x after
+    scoring 4 PERFECTs in a row.
+special:
+  name: Sharp Claws
+  description: Reduces enemies' Damage Nullification duration by 2 turns, reduces
+    enemies' Threshold Damage Reduction duration by 4 turns and boosts the Color
+    Affinity of all characters by 1.75x for 1 turn. If your crew has 3 or more
+    [PSY] characters, reduces Bind duration by 4 turns and adds 0.75x to Chain
+    multiplier for 1 turn. If your crew has 3 or more [QCK], [DEX] and [INT]
+    characters, changes all orbs into Matching orbs and locks the chain
+    multiplier at 3x for 1 turn.
+  cooldown: 29
+  maxLevel: 15
+sailor:
+  - description: Makes [PSY], [DEX], [QCK] and [INT] orbs beneficial for this character
+  - description: Boosts base ATK of all characters by 40
+support:
+  type: descriptive
+  criteria: "[STR] Powerhouse Characters"
+  levels:
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of all characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of all characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of all characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of all characters by 1.1x for 1 turn.
+    - Once per adventure, when you reach the final stage, boosts the Color
+      Affinity of all characters by 1.2x for 1 turn.
+limitBreak:
+  path:
+    - rcv: 30
+    - atk: 30
+    - hp: 30
+    - type: potential
+    - slot: 1
+    - rcv: 30
+    - atk: 40
+    - hp: 40
+    - cooldown: 1
+    - atk: 50
+    - rcv: 40
+    - type: sailor
+    - hp: 50
+    - hp: 60
+    - type: potential
+    - rcv: 45
+    - hp: 80
+    - atk: 60
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 2
+          threshold: 30
+        - value: 3
+          threshold: 40
+        - value: 4
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 6
+          threshold: 70
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2

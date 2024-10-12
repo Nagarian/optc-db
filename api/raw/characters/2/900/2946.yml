@@ -1,0 +1,109 @@
+type: PSY
+name: "Tony Tony Chopper - Straw Hat Pirates: Mark of a Fierce Battle"
+japanName: トニートニー・チョッパー 麦わらの一味・激戦の軌跡
+family:
+  - TonyTonyChopper
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 960
+    atk: 590
+    rcv: 187
+  maxLvl:
+    hp: 2102
+    atk: 1289
+    rcv: 420
+cost: 20
+slots: 4
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 200108
+aliases:
+  - Super Chopper
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 1.75x and their HP by 1.2x.
+special:
+  name: Full Support
+  description: Reduces damage received by 50% for 3 turns and recovers 3,000 HP at
+    the end of the turn for 3 turns.
+  cooldown: 18
+  maxLevel: 6
+  stages:
+    - description: Reduces damage received by 50% for 1 turn.
+      cooldown: 16
+sailor:
+  - description: Boosts base RCV of all characters by 50
+  - description: Boosts amount healed from [RCV] orbs by 150 each
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Monkey D. Luffy, Roronoa Zoro, Nami, Usopp, Vinsmoke Sanji, Nico
+    Robin, Franky and Brook
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - hp: 40
+    - atk: 20
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - rcv: 20
+    - atk: 20
+    - type: sailor
+    - hp: 60
+    - atk: 30
+    - atk: 30
+    - slot: 1
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - hp: 100
+    - atk: 100
+    - rcv: 25
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - hp: 150
+    - cooldown: 3
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

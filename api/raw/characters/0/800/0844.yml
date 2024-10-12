@@ -1,0 +1,85 @@
+type: STR
+name: Baby 5 - Donquixote Pirates
+japanName: ベビー５ ドンキホーテ海賊団
+family:
+  - Baby5
+class:
+  - Shooter
+  - Striker
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 850
+    atk: 692
+    rcv: 185
+  maxLvl:
+    hp: 1929
+    atk: 1352
+    rcv: 349
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 19805
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of Slasher, Striker and Shooter characters by 2x
+special:
+  name: "Arms-Morphosis: Missile Girl"
+  description: Deals 15x character's ATK in [STR] damage to all enemies, boosts
+    ATK of Shooter characters by 1.5x for 1 turn. If during that turn you score
+    6 PERFECT hits, boosts ATK of Shooter, Striker and Slasher characters by
+    1.5x for 1 turn in the following turn.
+  cooldown: 25
+  maxLevel: 7
+sailor:
+  - description: Boosts base HP of Shooter, Slasher and Striker characters by 100
+  - description: Boosts base ATK of Shooter, Slasher and Striker characters by 50
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Pica, Gladius and Buffalo
+  levels:
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9
+    - value: 11
+limitBreak:
+  path:
+    - rcv: 20
+    - hp: 50
+    - rcv: 30
+    - type: potential
+    - hp: 80
+    - atk: 40
+    - cooldown: 2
+    - hp: 90
+    - cooldown: 2
+    - type: sailor
+    - cooldown: 2
+    - atk: 50
+    - cooldown: 2
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 99
+        - threshold: 99
+        - threshold: 80
+        - threshold: 50

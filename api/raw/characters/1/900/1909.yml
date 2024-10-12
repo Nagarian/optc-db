@@ -1,0 +1,54 @@
+type: DEX
+name: Donquixote Doflamingo - Current King of Dressrosa
+japanName: ドンキホーテ・ドフラミンゴ ドレスローザ現国王
+family:
+  - DonquixoteDoflamingo
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 714
+    atk: 201
+    rcv: 19
+  maxLvl:
+    hp: 1670
+    atk: 851
+    rcv: 178
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 84572
+aliases:
+  - V2 Legend Doffy
+evolution:
+  - id: 1910
+    evolvers:
+      - 118
+      - 102
+      - 97
+      - 302
+      - 267
+captain:
+  name: ""
+  description: If there are 6 Driven characters in your crew, boosts ATK of Driven
+    characters by 3.25x, by 3.9x instead if they have a beneficial orb, and
+    their HP by 1.2x. Lowers chances of getting [STR] orbs and makes [DEX] and
+    [QCK] orbs beneficial for Driven characters
+special:
+  name: "Thousand Arrows: Flap Thread"
+  description: Deals 2x the damage dealt in Overkill Damage in the previous turn
+    in Typeless damage to all enemies.
+  cooldown: 22
+  maxLevel: 6
+  notes: Overkill Damage is damage dealt over the enemies' current HP with normal
+    attacks that killed them. For example, dealing 2,100,000 damage to an enemy
+    with 1,000,000 HP will count as 1,100,000 Overkill Damage. This stacks for
+    each enemy killed in the previous turn. The special caps out at 999,999,999
+    damage.

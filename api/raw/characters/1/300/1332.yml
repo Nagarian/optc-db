@@ -1,0 +1,52 @@
+type: PSY
+name: Mansherry - Princess, Kingdom of Tontatta
+japanName: マンシェリー トンタッタ王国の姫
+family:
+  - Mansherry
+class:
+  - Striker
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 606
+    atk: 303
+    rcv: 234
+  maxLvl:
+    hp: 1472
+    atk: 604
+    rcv: 497
+cost: 20
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 44750
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Recovers 3x character's RCV in HP at the end of each turn
+special:
+  name: Tears of Healing
+  description: Reduces Bind duration by 7 turns on one character. Recovers 15x
+    character's RCV in HP.
+  cooldown: 24
+  maxLevel: 8
+  stages:
+    - description: Reduces Bind duration by 4 turns on one character. Recovers 7x
+        character's RCV in HP.
+      cooldown: 18
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Leo
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 7
+    - value: 9

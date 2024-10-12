@@ -1,0 +1,141 @@
+type: DUAL
+name: Doflamingo & Trebol - Those Who Pull the Strings Behind Dressrosa
+japanName: ドフラミンゴ＆トレーボル ドレスローザの闇の支配者達
+family:
+  - DonquixoteDoflamingo
+  - Trebol
+class:
+  - Driven
+  - Cerebral
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1320
+    atk: 834
+    rcv: 123
+  maxLvl:
+    hp: 2940
+    atk: 1501
+    rcv: 210
+cost: 40
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 150552
+aliases:
+  - Doflamingo&Trebol
+  - Trebol&Doflamingo
+  - DoflamingoTrebol
+  - TrebolDoflamingo
+  - Doflamingo and Trebol
+  - DoffyTrebol
+  - TrebolDoffy
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Cerebral characters by 2.75x and their HP
+    and RCV by 1.2x and makes [RCV] and [TND] orbs beneficial for Driven and
+    Cerebral characters.
+special:
+  name: Punishment by Means of "Evil"
+  description: Switches orbs between slots 2 times, locks all orbs for 1 turn,
+    locks the chain multiplier at 2.75x for 1 turn and becomes Doflamingo &
+    Trebol for 2 turns. If during that turn, you hit 4 PERFECTS, locks the chain
+    multiplier at 3.25x for 1 turn.
+  cooldown: 27
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK, HP and RCV of Driven and Cerebral characters by 50
+  - description: Makes [RCV] orbs beneficial for Driven and Cerebral characters
+characters:
+  swap:
+    description: Makes [STR] and [DEX] orbs beneficial for all characters for 1 turn
+      and changes orb of this character into a Matching orb.
+  character1:
+    name: Doflamingo - Those Who Pull the Strings Behind Dressrosa
+    japanName: ドフラミンゴ ドレスローザの闇の支配者達
+    class:
+      - Driven
+      - Cerebral
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 832
+        atk: 635
+        rcv: 110
+      maxLvl:
+        hp: 2234
+        atk: 1345
+        rcv: 160
+    captain:
+      name: ""
+      description: Boosts ATK of Driven and Cerebral characters by 2.5x and their HP
+        by 1.2x.
+    sailor:
+      - description: Boosts base ATK of Driven and Cerebral characters by 30
+      - description: Makes [RCV] orbs beneficial for Driven and Cerebral characters
+  character2:
+    name: Trebol - Those Who Pull the Strings Behind Dressrosa
+    japanName: トレーボル ドレスローザの闇の支配者達
+    class:
+      - Driven
+      - Cerebral
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 987
+        atk: 515
+        rcv: 144
+      maxLvl:
+        hp: 2480
+        atk: 1309
+        rcv: 170
+    captain:
+      name: ""
+      description: Boosts ATK of Driven and Cerebral characters by 2.25x and their HP
+        and RCV by 1.2x.
+    sailor:
+      - description: Boosts base HP and RCV of Driven and Cerebral characters by 30
+      - description: Makes [RCV] orbs beneficial for Driven and Cerebral characters
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 30
+    - rcv: 10
+    - type: potential
+    - rcv: 20
+    - hp: 40
+    - atk: 20
+    - type: sailor
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - atk: 40
+    - hp: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 2
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 8
+          threshold: 50

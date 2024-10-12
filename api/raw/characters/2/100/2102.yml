@@ -1,0 +1,56 @@
+type: INT
+name: Baccarat - VIP Room Concierge
+japanName: バカラ ＶＩＰ専属コンシェルジュ
+family:
+  - Baccarat
+class:
+  - Cerebral
+  - Striker
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 209
+    atk: 128
+    rcv: 26
+  maxLvl:
+    hp: 1034
+    atk: 501
+    rcv: 201
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 105796
+aliases:
+  - V2 Baccarat
+evolution:
+  - id: 2103
+    evolvers:
+      - 117
+      - 88
+      - 93
+      - 1180
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of all characters by 1.2x. Gives chance of duplicating a
+    drop upon completion of the island.
+  notes: Does not work if she was not your captain upon starting the island.
+    Stacks with other additional drop captains, giving you two chances of
+    getting an extra drop.
+special:
+  name: Lucky Coin of Victory
+  description: Deals 77x character's ATK in Typeless damage to all enemies and
+    reduces ATK DOWN, Chain Multiplier Limit and Paralysis duration by 3 turns.
+    If your captain is an [INT] or [QCK] character, changes the orb of this
+    character into an [INT] orb and boosts Orb Effects of all characters by
+    1.75x for 1 turn
+  cooldown: 19
+  maxLevel: 7
+sailor:
+  - description: If this character has an [INT] orb and you hit a GOOD or GREAT with
+      her, keep her [INT] orb for the next turn

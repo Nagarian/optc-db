@@ -1,0 +1,35 @@
+type: STR
+name: STR Pawn - Chess Peacekeeper
+japanName: ポーン・[力] チェス戎兵
+family:
+  - PawnSTR
+class:
+  - Striker
+  - Powerhouse
+rarity: 3
+stats:
+  combo: 5
+  minLvl:
+    hp: 131
+    atk: 74
+    rcv: 7
+  maxLvl:
+    hp: 1530
+    atk: 915
+    rcv: 75
+cost: 12
+slots: 1
+maxExp: 449516
+maxLevel: 60
+flags: []
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 1.75x.
+special:
+  name: "Pawn: Random Attack"
+  description: Deals 20x character's ATK in [STR] damage to one enemy and reduces
+    the defense of all enemies by 50% for 1 turn.
+  cooldown: 16
+  maxLevel: 7

@@ -1,0 +1,36 @@
+type: INT
+name: Slasher Group Crew - Black Pirates
+japanName: 斬撃隊 隊員 ブラックパイレーツ
+family:
+  - SlasherGroupCrewPirates
+class:
+  - Slasher
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 176
+    atk: 100
+    rcv: 16
+  maxLvl:
+    hp: 695
+    atk: 384
+    rcv: 78
+cost: 7
+slots: 0
+maxExp: 90778
+maxLevel: 35
+flags: []
+links:
+  gamewithId: 2796
+aliases: []
+evolution:
+  - id: 278
+    evolvers:
+      - 116
+      - 99
+special:
+  name: Hyper Slash
+  description: Deals 10x character's ATK in character's Type damage to one enemy
+  cooldown: 40
+  maxLevel: 26

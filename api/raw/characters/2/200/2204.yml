@@ -1,0 +1,52 @@
+type: INT
+name: Scarlet - Plan to Tear the World Asunder
+japanName: スカーレット 世界転覆の陰謀
+family:
+  - Scarlet
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 311
+    atk: 155
+    rcv: 12
+  maxLvl:
+    hp: 1412
+    atk: 601
+    rcv: 72
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 116164
+aliases:
+  - ""
+evolution:
+  - id: 2205
+    evolvers:
+      - 117
+      - 99
+      - 1180
+      - 304
+      - 104
+captain:
+  name: ""
+  description: Boosts ATK of Fighter and Powerhouse characters by 2.5x following a
+    chain of Good > Great > PERFECT hits
+special:
+  name: Natural Strength
+  description: If HP is below 10%, boosts Orb Effects of all characters by 2x for
+    1 turn. If your Captain is a Driven character, locks all orbs for 1 turn and
+    reduces enemies' ATK Up, Enrage and End of Turn Damage/Percent Cut duration
+    by 5 turns.
+  cooldown: 20
+  maxLevel: 7
+sailor:
+  - description: If your Captain is a Driven character, boosts base ATK of this
+      character by 100

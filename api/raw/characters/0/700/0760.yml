@@ -1,0 +1,197 @@
+type: STR
+name: Kumadori - CP9's Strongest
+japanName: クマドリ 歴代最強の「ＣＰ９」
+family:
+  - Kumadori
+class:
+  - Powerhouse
+  - Striker
+rarity: 5
+stats:
+  combo: 7
+  minLvl:
+    hp: 1110
+    atk: 560
+    rcv: 170
+  maxLvl:
+    hp: 2479
+    atk: 1018
+    rcv: 355
+cost: 26
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 16966
+aliases: []
+captain:
+  name: ""
+  description: Boosts ATK of [STR] characters by 3x if HP is below 30% at the
+    start of the turn
+special:
+  name: "Life Return: Shishi Finger Pistol"
+  description: Switches orbs between slots 3 times, locks all orbs for 1 turn
+  cooldown: 21
+  maxLevel: 7
+sailor:
+  - description: Makes [PSY] orbs beneficial for this character
+  - description: Makes [QCK] orbs beneficial for this character
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Kalifa, Rob Lucci, Kaku, Jabra, Fukuro, Blueno, Spandam
+  levels:
+    - value: 6
+    - value: 7
+    - value: 8
+    - value: 10
+    - value: 15
+limitBreak:
+  path:
+    - rcv: 10
+    - atk: 30
+    - hp: 40
+    - type: potential
+    - rcv: 20
+    - hp: 60
+    - atk: 40
+    - type: sailor
+    - cooldown: 3
+    - hp: 80
+    - slot: 1
+    - cooldown: 3
+    - atk: 70
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 152
+    rumbleType: RCV
+    spd: 128
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Power
+    - action: heal
+      area: Self
+      level: 2
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          condition:
+            comparator: below
+            count: 30
+            stat: HP
+            type: stat
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+    - effects:
+        - override:
+            level: 7
+    - effects:
+        - override:
+            level: 8
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 850
+          effect: recharge
+          targeting:
+            targets:
+              - self
+          type: fixed
+        - amount: 0.6
+          effect: damage
+          targeting:
+            count: 2
+            targets:
+              - enemies
+          type: atk
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 950
+        - override:
+            amount: 0.65
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1050
+        - override:
+            amount: 0.7
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1150
+        - override:
+            amount: 0.75
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1250
+        - override:
+            amount: 0.8
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1350
+        - override:
+            amount: 0.85
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1450
+        - override:
+            amount: 0.9
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1550
+        - override:
+            amount: 0.95
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1650
+        - override:
+            amount: 1
+    - cooldown: 32
+      effects:
+        - override:
+            amount: 1800
+        - override:
+            amount: 1.1

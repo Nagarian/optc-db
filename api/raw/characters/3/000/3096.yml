@@ -1,0 +1,487 @@
+type: QCK
+name: Leo & Wicca & Cub
+japanName: レオ＆ウィッカ＆カブ
+family:
+  - Leo
+  - Wicca
+  - Cub
+class:
+  - Striker
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1405
+    atk: 552
+    rcv: 142
+  maxLvl:
+    hp: 3512
+    atk: 1379
+    rcv: 355
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 229333
+aliases:
+  - PF Leo
+  - PF Wicca
+  - PF Cub
+captain:
+  name: ""
+  description: Boosts ATK of [QCK] characters by 2.75x and their RCV by 1.25x.
+special:
+  name: Charge! Tontatta Trio
+  description: Reduces Bind and Despair duration by 3 turns and recovers 3,000 HP
+    at the end of the turn for 3 turns.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [QCK] characters by 30
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 50
+    - rcv: 50
+    - type: potential
+    - atk: 100
+    - atk: 100
+    - rcv: 100
+    - hp: 100
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 171
+    rumbleType: DBF
+    spd: 203
+  target:
+    comparator: highest
+    criteria: ATK
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Medium
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+  special:
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 20
+          duration: 16
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 20
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 24
+          duration: 16
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 21
+          effect: debuff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 21
+          effect: buff
+          level: 1
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 28
+          duration: 17
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 22
+          effect: debuff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 22
+          effect: buff
+          level: 2
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 32
+          duration: 18
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 23
+          effect: debuff
+          level: 4
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 23
+          effect: buff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 36
+          duration: 19
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 24
+          effect: debuff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 24
+          effect: buff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 40
+          duration: 20
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 25
+          effect: debuff
+          level: 6
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 25
+          effect: buff
+          level: 4
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 44
+          duration: 20
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 26
+          effect: debuff
+          level: 7
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 26
+          effect: buff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 48
+          duration: 21
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 27
+          effect: debuff
+          level: 8
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 27
+          effect: buff
+          level: 5
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 52
+          duration: 22
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 28
+          effect: debuff
+          level: 9
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 28
+          effect: buff
+          level: 6
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 30
+      effects:
+        - attributes:
+            - Paralysis
+          chance: 60
+          duration: 23
+          effect: hinderance
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - DEF
+          duration: 29
+          effect: debuff
+          level: 10
+          targeting:
+            count: 1
+            priority: highest
+            stat: DEF
+            targets:
+              - enemies
+        - attributes:
+            - ATK
+          duration: 29
+          effect: buff
+          level: 7
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew

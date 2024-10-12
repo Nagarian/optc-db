@@ -1,0 +1,117 @@
+type: PSY
+name: Sabo - Revolutionary Army Chief of Staff as a Samurai
+japanName: サボ 侍に扮する革命軍参謀総長
+family:
+  - Sabo
+class:
+  - Free Spirit
+  - Striker
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1130
+    atk: 821
+    rcv: 132
+  maxLvl:
+    hp: 2752
+    atk: 1414
+    rcv: 270
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 217469
+aliases:
+  - One Piece Day Sabo
+captain:
+  name: ""
+  description: Boosts ATK of Free Spirit and Striker characters by 2.75x and makes
+    [PSY] orbs beneficial for Free Spirit and Striker characters.
+special:
+  name: Dragon Flame-Claw
+  description: Reduces Special Cooldown of Striker and Free Spirit characters by 1
+    turn, reduces Chain Coefficient Reduction duration by 5 turns and changes
+    orbs of adjacent characters into Matching orbs. If your Captain is a Free
+    Spirit or Striker character, adds 1.0x to Chain multiplier for 1 turn.
+  cooldown: 18
+  maxLevel: 7
+sailor:
+  - description: Boosts base ATK and HP of Striker and Free Spirit characters by 50
+  - description: Restores Special Cooldown of this character by 2 turns when it is rewinded
+support:
+  type: stats
+  defenseType: INT
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Striker characters
+  levels:
+    - value: 1
+      reduction: 1
+    - value: 2
+      reduction: 2
+    - value: 3
+      reduction: 3
+    - value: 5
+      reduction: 4
+    - value: 7
+      reduction: 5
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 10
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - rcv: 30
+    - slot: 1
+    - hp: 30
+    - hp: 30
+    - hp: 50
+    - type: sailor
+    - hp: 90
+    - atk: 50
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - rcv: 50
+    - rcv: 50
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

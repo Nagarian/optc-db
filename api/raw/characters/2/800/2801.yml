@@ -1,0 +1,320 @@
+type: DUAL
+name: Luffytaro & Zorojuro - Land of Wano Visitor
+japanName: ルフィ太郎＆ゾロ十郎 ワノ国の来訪者達
+family:
+  - MonkeyDLuffy
+  - RoronoaZoro
+class:
+  - Free Spirit
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 632
+    atk: 291
+    rcv: 21
+  maxLvl:
+    hp: 1822
+    atk: 748
+    rcv: 197
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 181039
+aliases:
+  - Wano Luffy and Zoro
+  - Luffy&Zoro
+  - LuffyZoro
+  - Zoro&Luffy
+  - ZoroLuffy
+  - Legend Luffy and Zoro
+evolution:
+  - id: 2802
+    evolvers:
+      - 118
+      - 118
+      - 100
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Slasher and Free Spirit characters by 4x, their HP by
+    1.3x and boosts chances of getting [WANO] orbs. Characters who attack with a
+    Type advantage will gain a [WANO] orb after attacking.
+  notes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all
+    characters, but boost by 2.5x instead, and can not be swapped by special
+    abilities."
+special:
+  name: Gomu Gomu no Toro Red Hawk
+  description: Deals 250x character's ATK in character's Type damage to all
+    enemies, locks the chain multiplier at 3x for 1 turn and becomes Luffy &
+    Zoro for 3 turns. Boosts Orb Effects of Slasher and Free Spirit characters
+    by 2x-2.75x for 1 turn, depending on how many [WANO] or [TND] orbs were used
+    in attacks.
+  cooldown: 18
+  maxLevel: 6
+  notes: |-
+    0-7 Orbs: 2x orb boost  
+    8-14 Orbs: 2.5x orb boost  
+    15+ Orbs: 2.75x orb boost
+sailor:
+  - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75
+characters:
+  swap:
+    description: Changes orb of this character into a [TND] orb and reduces Bind,
+      Despair, Silence and Slot Bind duration by 1 turn
+  character1:
+    name: Luffytaro - Land of Wano Visitor
+    japanName: ルフィ太郎 ワノ国の来訪者達
+    class:
+      - Free Spirit
+      - Slasher
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 612
+        atk: 275
+        rcv: 25
+      maxLvl:
+        hp: 1802
+        atk: 728
+        rcv: 182
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Free Spirit characters by 3x, their HP by
+        1.3x and boosts chances of getting [WANO] orbs. Characters who attack
+        with a Type advantage will gain a [WANO] orb after attacking.
+      notes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all
+        characters, but boost by 2.5x instead, and can not be swapped by special
+        abilities."
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75
+  character2:
+    name: Zorojuro - Land of Wano Visitor
+    japanName: ゾロ十郎 ワノ国の来訪者達
+    class:
+      - Free Spirit
+      - Slasher
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 612
+        atk: 287
+        rcv: 26
+      maxLvl:
+        hp: 1802
+        atk: 719
+        rcv: 185
+    captain:
+      name: ""
+      description: Boosts ATK of Slasher and Free Spirit characters by 3.25x and their
+        HP by 1.3x. Characters who attack with a Type advantage will gain a
+        [WANO] orb after attacking.
+      notes: "[和]/[WANO] orbs replace [TND] orbs, count as beneficial for all
+        characters, but boost by 2.5x instead, and can not be swapped by special
+        abilities."
+    sailor:
+      - description: Boosts base ATK, HP and RCV of Slasher and Free Spirit characters by 75
+rumble:
+  stats:
+    def: 182
+    rumbleType: ATK
+    spd: 183
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          condition:
+            count: 2
+            stat: Critical Hit
+            type: trigger
+          targeting:
+            targets:
+              - Slasher
+              - Free Spirit
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          targeting:
+            targets:
+              - Slasher
+              - Free Spirit
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 27
+      effects:
+        - amount: 0.85
+          effect: damage
+          type: atk
+          range:
+            direction: sideways
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - attributes:
+            - Critical Hit
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - Slasher
+              - Free Spirit
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.9
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.94
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 0.99
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.04
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.09
+        - {}
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.13
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.18
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.23
+        - override:
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            amount: 1.35
+        - override:
+            level: 3
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

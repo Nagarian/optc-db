@@ -1,0 +1,56 @@
+type: STR
+name: Ben Beckman - Light-Stopping Gun Barrel
+japanName: ベン・ベックマン 光を止める銃口
+family:
+  - BenBeckman
+class:
+  - Striker
+  - Cerebral
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 202
+    atk: 85
+    rcv: 18
+  maxLvl:
+    hp: 1408
+    atk: 712
+    rcv: 128
+cost: 12
+slots: 3
+maxExp: 261406
+maxLevel: 50
+flags:
+  - sugo
+  - tm
+links:
+  gamewithId: 99879
+aliases:
+  - Limited Ben Beckman
+  - Secret Ben Beckman
+  - Limited Benn Beckman
+  - Secret Benn Beckman
+evolution:
+  - id: 2060
+    evolvers:
+      - 117
+      - 78
+      - 89
+      - 95
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 1.2x
+special:
+  name: Trial of Annihilation
+  description: Reduces enemies' Increased Defense duration by 3 turns, changes the
+    orb of this character into a [STR] orb and boosts Orb Effects of all
+    characters by 1.5x for 1 turn. If you are on a Treasure Map, locks the chain
+    multiplier at 2.5x-3x for 1 turn, depending on your Treasure Map Level
+  cooldown: 11
+  maxLevel: 1
+  notes: |-
+    Level 1-10: 2.5x chain lock  
+    Level 11-20: 2.75x chain lock  
+    Level 21+: 3x chain lock

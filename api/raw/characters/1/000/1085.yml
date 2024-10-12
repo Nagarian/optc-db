@@ -1,0 +1,148 @@
+type: INT
+name: Issho
+japanName: イッショウ
+family:
+  - Issho
+class:
+  - Driven
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1820
+    atk: 700
+    rcv: 201
+  maxLvl:
+    hp: 3809
+    atk: 1380
+    rcv: 325
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 30744
+aliases:
+  - Fujitora
+  - V1 Legend Fujitora
+evolution:
+  - id: 2954
+    evolvers:
+      - skullINT
+      - 118
+      - 88
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts HP of Driven characters by 1.5x and boosts ATK of Driven
+    characters by 1.5x, by 3x instead if they have a beneficial orb. Makes [TND]
+    and [RCV] orbs beneficial for Driven characters
+special:
+  name: "Gravito: Heavens Fall"
+  description: Deals 20% of enemies' current HP in damage to all enemies. Deals
+    20% of enemies' current HP in damage to all enemies at the end of the turn
+    for 3 turns
+  cooldown: 24
+  maxLevel: 8
+  notes: Does not stack with other 'end of turn damage' abilities
+sailor:
+  - description: Cannot be Blown Away
+  - description: Boosts base ATK, HP and RCV of Powerhouse and Driven characters by 50
+support:
+  type: stats
+  defenseType: PSY
+  statsTypes:
+    - ATK
+  criteria: Sakazuki (Akainu), Borsalino (Kizaru), Sengoku and Tsuru
+  levels:
+    - value: 3
+      reduction: 1
+    - value: 5
+      reduction: 2
+    - value: 7
+      reduction: 3
+    - value: 10
+      reduction: 4
+    - value: 13
+      reduction: 5
+limitBreak:
+  path:
+    - hp: 25
+    - hp: 25
+    - rcv: 10
+    - type: potential
+    - atk: 20
+    - rcv: 10
+    - atk: 20
+    - hp: 30
+    - atk: 20
+    - rcv: 15
+    - type: sailor
+    - rcv: 15
+    - rcv: 15
+    - rcv: 15
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - hp: 40
+    - hp: 50
+    - hp: 60
+    - type: sailor
+    - rcv: 15
+    - atk: 25
+    - hp: 60
+    - cooldown: 1
+    - atk: 50
+    - hp: 70
+    - hp: 80
+    - hp: 100
+    - type: potential
+    - key: 1
+    - hp: 100
+    - rcv: 50
+    - hp: 100
+    - atk: 100
+    - hp: 150
+    - hp: 150
+    - captain:
+        description: Boosts HP of Driven characters by 1.5x and boosts ATK of Driven
+          characters by 1.5x, by 3.5x instead if they have a beneficial orb.
+          Makes [TND] and [RCV] orbs beneficial for Driven characters
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 20
+          reduction: 1
+        - value: 40
+          reduction: 1
+        - value: 60
+          reduction: 2
+        - value: 80
+          reduction: 2
+        - value: 100
+          reduction: 3
+    - type: Critical Hit
+      levels:
+        - value: 5
+          threshold: 20
+        - value: 5
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 10
+          threshold: 50
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10
+        - value: 100

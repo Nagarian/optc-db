@@ -1,0 +1,221 @@
+type: DEX
+name: Chopper & Usopp - Ship Doctor and Sniper in Disguise
+japanName: チョッパー＆ウソップ 変装する船医と狙撃手
+family:
+  - Usopp
+  - TonyTonyChopper
+class:
+  - Shooter
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1388
+    atk: 567
+    rcv: 185
+  maxLvl:
+    hp: 2575
+    atk: 1412
+    rcv: 337
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - kizuna
+links:
+  gamewithId: 294511
+aliases:
+  - Onigashima Chopper
+  - Onigashima Usopp
+  - Secret Usopp
+  - Limited Usopp
+  - Limited Chopper
+  - Secret Chopper
+  - Chopper&Usopp
+  - Chopper and Usopp
+  - Chopper Usopp
+  - ChopperUsopp
+  - Usopp&Chopper
+  - UsoppChopper
+captain:
+  name: ""
+  description: >-
+    Boosts ATK of all characters by 3x and their HP by 1.2x.  
+
+    **Boosted Ability:** Boosts ATK of all characters by 5x and their HP by 1.3x.
+special:
+  name: Take-Off! Brachio Tank V
+  description: Reduces enemies' Increased Defense and Resilience duration by 5
+    turns, changes Badly Matching, [BLOCK], [BOMB], [RCV] and [TND] orbs into
+    Matching orbs and adds 1.0x to Chain multiplier for 1 turn.
+  cooldown: 18
+  maxLevel: 6
+sailor:
+  - description: Removes Blindness duration completely
+  - description: Makes [DEX] orbs beneficial for all characters
+support:
+  type: descriptive
+  criteria: Nico Robin and Kin'emon
+  levels:
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense buff,
+      reduces enemies' Increased Defense duration by 1 turn.
+    - Once per adventure, when the enemy gains an Increased Defense or
+      Resilience buff, reduces enemies' Increased Defense and Resilience
+      duration by 1 turn.
+limitBreak:
+  path:
+    - rcv: 25
+    - hp: 50
+    - atk: 25
+    - type: potential
+    - hp: 50
+    - rcv: 25
+    - atk: 25
+    - type: sailor
+    - atk: 25
+    - slot: 1
+    - hp: 50
+    - cooldown: 1
+    - hp: 50
+    - atk: 25
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 133
+    rumbleType: DBF
+    spd: 140
+  target:
+    comparator: lowest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+    - action: attack
+      type: Power
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Paralysis
+      chance: 60
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - SPD
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - ATK
+            - SPD
+          duration: 6
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 26
+      effects:
+        - override:
+            level: 1
+            duration: 7
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 8
+    - cooldown: 26
+      effects:
+        - override:
+            level: 2
+            duration: 9
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 10
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 11
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 12
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 13
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 14
+    - cooldown: 26
+      effects:
+        - override:
+            level: 7
+            duration: 15

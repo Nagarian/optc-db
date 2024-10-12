@@ -1,0 +1,51 @@
+type: QCK
+name: Tsuru Navy HQ Vice Admiral
+japanName: つる 海軍本部中将
+family:
+  - Tsuru
+class:
+  - Cerebral
+  - Shooter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 292
+    atk: 205
+    rcv: 89
+  maxLvl:
+    hp: 902
+    atk: 534
+    rcv: 213
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 43906
+aliases:
+  - ""
+evolution:
+  - id: 1320
+    evolvers:
+      - 83
+      - 85
+      - 96
+      - 301
+      - 101
+captain:
+  name: ""
+  description: Recovers 1x this character's RCV at the end of the turn each time
+    you hit a Good. Recovers 0.1x this character's RCV at the end of the turn
+    for each time you hit a PERFECT
+special:
+  name: A Decree of the Veteran
+  description: Deals 10 hits of random [QCK] damage to random enemies. Boosts ATK
+    of all characters by 1.5x for 1 turn
+  cooldown: 21
+  maxLevel: 5
+  notes: "`random : 1,000 : 32,000 : for each hit`"
+sailor:
+  - description: Reduces Paralysis duration by 1 turn

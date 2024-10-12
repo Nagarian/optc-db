@@ -1,0 +1,51 @@
+type: STR
+name: "Monkey D. Luffy - Gum-Gum Bazooka: Supremacy"
+japanName: モンキー・D・ルフィ ゴムゴムのバズーカ“覇”
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 404
+    atk: 227
+    rcv: 39
+  maxLvl:
+    hp: 1748
+    atk: 1250
+    rcv: 192
+cost: 15
+slots: 2
+maxExp: 2000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 9247
+aliases:
+  - Kimono Luffy
+captain:
+  name: ""
+  description: Boosts ATK, HP and RCV of [STR] characters by 1.5x
+special:
+  name: "Gum-Gum Bazooka: Supremacy"
+  description: Reduces Despair duration by 3 turns, deals 15x character's ATK in
+    [STR] damage to one enemy
+  cooldown: 23
+  maxLevel: 11
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Roronoa Zoro and Nami
+  levels:
+    - value: 1
+    - value: 2
+    - value: 3
+    - value: 5
+    - value: 7

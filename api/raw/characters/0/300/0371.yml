@@ -1,0 +1,37 @@
+type: PSY
+name: Giant Fighter - Yellow Pirates
+japanName: 巨人格闘隊 イエローパイレーツ
+family:
+  - GiantYellowPirates
+class:
+  - Fighter
+rarity: 2
+stats:
+  combo: 5
+  minLvl:
+    hp: 308
+    atk: 151
+    rcv: 52
+  maxLvl:
+    hp: 575
+    atk: 332
+    rcv: 67
+cost: 8
+slots: 0
+maxExp: 57558
+maxLevel: 30
+flags: []
+links:
+  gamewithId: 7590
+aliases: []
+evolution:
+  - id: 376
+    evolvers:
+      - 116
+      - 92
+      - 98
+special:
+  name: Crystal Shield INT
+  description: Reduces damage received from [INT] enemies by 50% for 1 turn
+  cooldown: 25
+  maxLevel: 14

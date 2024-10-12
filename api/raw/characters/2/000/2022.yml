@@ -1,0 +1,238 @@
+type: INT
+name: Akainu - Fateful Struggle to the Death
+japanName: 赤犬 天下分け目の死闘
+family:
+  - Sakazuki
+class:
+  - Fighter
+  - Shooter
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 512
+    atk: 241
+    rcv: 24
+  maxLvl:
+    hp: 1923
+    atk: 923
+    rcv: 91
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 96998
+aliases:
+  - Sakazuki
+  - V2 Legend Akainu
+evolution:
+  - id: 2023
+    evolvers:
+      - 118
+      - 118
+      - 304
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and [INT] characters by 3.25x and makes [STR]
+    and [INT] orbs beneficial for [STR] and [INT] characters. Deals 0x-500x
+    character's ATK in Typeless damage to one enemy at the end of each turn
+    depending on how many PERFECTs scored that turn.
+  notes: "End of turn damage is based on how many PERFECTs you hit this turn: 0
+    PERFECTs - 0x ATK; 1 PERFECT - 5x ATK; 2 PERFECTs - 13x ATK; 3 PERFECTs -
+    32x ATK; 4 PERFECTs - 80x ATK; 5 PERFECTs - 200x ATK; 6 PERFECTs - 500x ATK"
+special:
+  name: "The Natural Disaster's Final Attack: Scorched Earth"
+  description: Randomizes all orbs, including [BLOCK] orbs, into either [STR] or
+    [INT] orbs and boosts Orb Effects of [STR] and [INT] characters by 2.25x for
+    1 turn
+  cooldown: 20
+  maxLevel: 6
+rumble:
+  stats:
+    def: 168
+    rumbleType: ATK
+    spd: 179
+  target:
+    comparator: highest
+    criteria: HP
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - STR
+              - INT
+    - effects:
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+    - effects:
+        - override:
+            level: 6
+  special:
+    - cooldown: 37
+      effects:
+        - amount: 13
+          effect: damage
+          targeting:
+            targets:
+              - enemies
+          type: cut
+        - attributes:
+            - DEF
+          duration: 30
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+              - PSY
+    - cooldown: 37
+      effects:
+        - {}
+        - override:
+            duration: 31
+    - cooldown: 37
+      effects:
+        - {}
+        - override:
+            duration: 32
+    - cooldown: 37
+      effects:
+        - {}
+        - override:
+            duration: 33
+    - cooldown: 37
+      effects:
+        - {}
+        - override:
+            duration: 34
+            level: 2
+    - cooldown: 37
+      effects:
+        - {}
+        - override:
+            duration: 35
+            level: 2
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 14
+        - override:
+            duration: 36
+            level: 2
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 14
+        - override:
+            duration: 37
+            level: 2
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 14
+        - override:
+            duration: 38
+            level: 3
+    - cooldown: 37
+      effects:
+        - override:
+            amount: 16
+        - override:
+            duration: 40
+            level: 4
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

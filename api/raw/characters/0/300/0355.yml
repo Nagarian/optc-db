@@ -1,0 +1,46 @@
+type: QCK
+name: Ain - Neo Marines Vice Admiral
+japanName: アイン NEO海軍バイス・アドミラル
+family:
+  - Ain
+class:
+  - Shooter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 620
+    atk: 377
+    rcv: 155
+  maxLvl:
+    hp: 908
+    atk: 679
+    rcv: 285
+cost: 13
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags: []
+links:
+  gamewithId: 7310
+aliases:
+  - Raid Ain
+special:
+  name: Two-Sword Dance
+  description: Reduces Bind and Despair duration by 3 turns
+  cooldown: 22
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Zephyr and Binz
+  levels:
+    - value: 2
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10

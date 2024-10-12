@@ -1,0 +1,190 @@
+type: DUAL
+name: Dogstorm & Cat Viper - Antagonistic Kings of Day and Night
+japanName: イヌアラシ＆ネコマムシ 奮戦する昼夜の王
+family:
+  - Inuarashi
+class:
+  - Slasher
+  - Cerebral
+rarity: 6
+stats:
+  combo: 6
+  minLvl:
+    hp: 1408
+    atk: 644
+    rcv: 157
+  maxLvl:
+    hp: 3521
+    atk: 1611
+    rcv: 392
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 153870
+aliases:
+  - Inuarashi&Nekomamushi
+  - InuarashiNekomamushi
+  - Nekomamushi&Inuarashi
+  - NekomamushiInuarashi
+  - Dogstorm
+  - Cat Viper
+  - CatDog
+  - DogCat
+  - Cat Dog
+  - InuNeko
+  - Legend Inuarashi and Nekomamushi
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral and Striker characters by 3.5x-4x based on
+    the timing of the attack of the previous unit in the chain, makes [STR] and
+    [PSY] orbs beneficial for Cerebral and Striker characters and recovers 1.5x
+    their RCV at the end of the turn for each time you hit a PERFECT.
+special:
+  name: Two-King Onslaught
+  description: Boosts ATK of Cerebral and Striker characters by 1.75x for 1 turn
+    and boosts the Color Affinity of Cerebral and Striker characters by 1.75x
+    for 1 turn, and becomes Inuarashi & Nekomamushi for 3 turns. If during that
+    turn, you hit 2 PERFECTS, boosts Orb Effects of Cerebral and Striker
+    characters by 2.25x for 1 turn in the following turn.
+  cooldown: 22
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK of this character by 250 if this character is the
+      last in the chain to attack
+  - description: Boosts base ATK of Cerebral and Striker characters by 75
+characters:
+  swap:
+    description: Removes Despair and Slot Bind duration completely on this character
+      and reduces Paralysis duration by 1 turn.
+  character1:
+    name: Inuarashi - Antagonistic Kings of Day and Night
+    japanName: イヌアラシ 奮戦する昼夜の王
+    class:
+      - Slasher
+      - Cerebral
+    type: STR
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1
+        atk: 1
+        rcv: 1
+      maxLvl:
+        hp: 4019
+        atk: 1541
+        rcv: 371
+    captain:
+      name: ""
+      description: Boosts ATK of Cerebral characters by 3x-3.3x based on the timing of
+        the attack of the previous unit in the chain, boosts ATK of Striker
+        characters by 3x and makes [STR] orbs beneficial for Cerebral and
+        Striker characters.
+    sailor:
+      - description: Boosts base ATK of this character by 150 if this character is the
+          last in the chain to attack
+      - description: Boosts base ATK of Cerebral and Striker characters by 75
+  character2:
+    name: Nekomamushi - Antagonistic Kings of Day and Night
+    japanName: ネコマムシ 奮戦する昼夜の王
+    class:
+      - Striker
+      - Powerhouse
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1
+        atk: 1
+        rcv: 1
+      maxLvl:
+        hp: 4462
+        atk: 1467
+        rcv: 342
+    captain:
+      name: ""
+      description: Boosts ATK of Striker characters by 3x-3.3x based on the timing of
+        the attack of the previous unit in the chain, boosts ATK of Cerebral
+        characters by 3x and makes [PSY] orbs beneficial for Cerebral and
+        Striker characters.
+    sailor:
+      - description: Boosts base ATK of this character by 150 if this character is the
+          last in the chain to attack
+      - description: Boosts base ATK of Cerebral and Striker characters by 75
+limitBreak:
+  path:
+    - rcv: 10
+    - hp: 40
+    - rcv: 15
+    - type: potential
+    - cooldown: 1
+    - hp: 40
+    - atk: 10
+    - hp: 40
+    - cooldown: 1
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - rcv: 20
+    - cooldown: 1
+    - type: potential
+    - rcv: 25
+    - hp: 50
+    - type: sailor
+    - hp: 60
+    - hp: 70
+    - hp: 80
+    - atk: 15
+    - atk: 20
+    - atk: 25
+    - rcv: 30
+    - atk: 35
+    - hp: 120
+    - atk: 30
+    - atk: 35
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 25
+    - rcv: 50
+    - hp: 150
+    - atk: 50
+    - atk: 50
+    - cooldown: 2
+    - atk: 100
+  potentials:
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 50
+          reduction: 1
+        - value: 80
+          reduction: 1
+        - value: 120
+          reduction: 2
+        - value: 150
+          reduction: 2
+        - value: 200
+          reduction: 3
+    - type: Reduce No Healing duration
+      levels:
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+        - value: 7
+    - type: Critical Hit
+      levels:
+        - value: 6
+          threshold: 50
+        - value: 7
+          threshold: 60
+        - value: 8
+          threshold: 70
+        - value: 9
+          threshold: 80
+        - value: 10
+          threshold: 90

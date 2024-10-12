@@ -1,0 +1,52 @@
+type: STR
+name: Elizabello II
+japanName: エリザベローII世
+family:
+  - Elizabello
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 123
+    atk: 157
+    rcv: 20
+  maxLvl:
+    hp: 1137
+    atk: 800
+    rcv: 177
+cost: 18
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 33762
+aliases: []
+evolution:
+  - id: 1131
+    evolvers:
+      - 84
+      - 94
+      - 95
+      - 300
+      - 100
+captain:
+  name: ""
+  description: Boosts ATK and HP of Fighter and Powerhouse characters by 1.5x
+special:
+  name: King Punch
+  description: Deals 25x character's ATK in Typeless damage to all enemies
+  cooldown: 26
+  maxLevel: 7
+  stages:
+    - description: Deals 7x character's ATK in Typeless damage to all enemies
+      cooldown: 12
+    - description: Deals 15x character's ATK in Typeless damage to all enemies
+      cooldown: 20
+  notes: For each turn AFTER Elizabello's special reaches stage 3, damage is
+    boosted by 23.75x per turn for an additional 20 turns, for a max damage of
+    500x character's ATK in damage to all enemies.

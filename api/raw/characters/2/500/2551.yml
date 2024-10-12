@@ -1,0 +1,112 @@
+type: DUAL
+name: Admiral Sengoku & Vice Admiral Garp
+japanName: センゴク大将＆ガープ中将
+family:
+  - MonkeyDGarp
+  - Sengoku
+class:
+  - Fighter
+  - Cerebral
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 312
+    atk: 326
+    rcv: 123
+  maxLvl:
+    hp: 1546
+    atk: 906
+    rcv: 257
+cost: 30
+slots: 2
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - japex
+  - raid
+links:
+  gamewithId: 150065
+aliases:
+  - Sengoku&Garp
+  - Garp&Sengoku
+  - SengokuGarp
+  - GarpSengoku
+  - Raid Sengoku and Garp
+evolution:
+  - id: 2552
+    evolvers:
+      - 104
+      - 102
+      - 267
+      - 1180
+      - 118
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 3x and their HP by 1.2x, but
+    boosts ATK of this character by 4x and makes [DEX], [INT], [RCV] and [TND]
+    orbs beneficial for Fighter characters
+special:
+  name: Twin Fists of Justice
+  description: Removes all positive buffs on your team and reduces Despair
+    duration by 2 turns. Boosts ATK of Fighter characters by 1.75x for 1 turn
+    and boosts Orb Effects of Fighter characters by 1.75x for 1 turn and becomes
+    Sengoku & Garp for 3 turns
+  cooldown: 31
+  maxLevel: 16
+sailor:
+  - description: Boosts base ATK of all characters by 40 if your Captain is a
+      Fighter character
+characters:
+  swap:
+    description: Boosts ATK of Fighter characters by 1.2x for 1 turn and changes orb
+      of this character into a Matching orb
+  character1:
+    name: Admiral Sengoku
+    japanName: センゴク大将
+    class:
+      - Fighter
+      - Cerebral
+    type: INT
+    stats:
+      combo: 5
+      minLvl:
+        hp: 304
+        atk: 212
+        rcv: 99
+      maxLvl:
+        hp: 980
+        atk: 674
+        rcv: 154
+    captain:
+      name: ""
+      description: Boosts ATK of Fighter characters by 2.25x and their HP by 1.2x and
+        makes [INT] orbs beneficial for Fighter characters
+    sailor:
+      - description: Boosts base ATK of all characters by 40 if your Captain is a
+          Fighter character
+  character2:
+    name: Vice Admiral Garp
+    japanName: ガープ中将
+    class:
+      - Fighter
+      - Free Spirit
+    type: DEX
+    stats:
+      combo: 5
+      minLvl:
+        hp: 293
+        atk: 201
+        rcv: 21
+      maxLvl:
+        hp: 950
+        atk: 575
+        rcv: 100
+    captain:
+      name: ""
+      description: Boosts ATK of Fighter characters by 2x and their HP by 1.2x, but
+        boosts ATK of this character by 2.5x and makes [DEX] orbs beneficial for
+        Fighter characters
+    sailor:
+      - description: Boosts base ATK of all characters by 40 if your Captain is a
+          Fighter character

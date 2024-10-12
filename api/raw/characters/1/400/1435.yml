@@ -1,0 +1,52 @@
+type: QCK
+name: Hyouzou - New Fish-Man Pirates
+japanName: ヒョウゾウ 新魚人海賊団
+family:
+  - Hyouzou
+class:
+  - Powerhouse
+  - Slasher
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 206
+    atk: 151
+    rcv: -333
+  maxLvl:
+    hp: 1394
+    atk: 671
+    rcv: -333
+cost: 15
+slots: 3
+maxExp: 392109
+maxLevel: 50
+flags:
+  - sugo
+links:
+  gamewithId: 50182
+aliases:
+  - ""
+evolution:
+  - id: 1436
+    evolvers:
+      - 118
+      - 96
+      - 1180
+      - 101
+      - 301
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x and boosts HP of Powerhouse
+    characters by 1.2x
+special:
+  name: Staggering Slash
+  description: Makes PERFECTs harder to hit for 1 turn, changes [STR], [QCK],
+    [DEX], [PSY] and [INT] orbs of Powerhouse characters into Matching orbs,
+    delays all enemies by 1 turn, recovers 20% of crew's MAX HP.
+  cooldown: 21
+  maxLevel: 7
+  notes: Decreases timing window to hit a PERFECT. (Animation remains the same)
+sailor:
+  - description: Boosts base ATK of all characters by 150 if there are 6 Powerhouse
+      characters in your crew

@@ -1,0 +1,95 @@
+type: DEX
+name: Lao G. - Diamante Officer
+japanName: ラオＧ ディアマンテ軍幹部
+family:
+  - LaoG
+class:
+  - Driven
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 970
+    atk: 700
+    rcv: 107
+  maxLvl:
+    hp: 2070
+    atk: 1357
+    rcv: 270
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 39529
+aliases:
+  - Colo Lao G
+  - Coliseum Lao G
+captain:
+  name: ""
+  description: Boosts ATK of Driven characters by 2x, by 2.5x instead if they have
+    a beneficial orb
+special:
+  name: Lower Back Pain Stance - The Eyes of Blight Impact
+  description: Changes [PSY], [INT], [RCV] and [TND] orbs into [G] orbs. Locks all
+    orbs for 1 turn. If during that turn you score 6 PERFECT hits, changes [G]
+    orbs into Matching Orbs
+  cooldown: 29
+  maxLevel: 13
+sailor:
+  - description: Changes all orbs into [G] orbs at the start of the fight
+  - description: Makes [STR], [QCK], [DEX], [PSY] and [INT] orbs beneficial for this
+      character
+support:
+  type: descriptive
+  criteria: Diamante, Dellinger and Machvise
+  levels:
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a [G]
+      orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes the orb of the supported character into a [G]
+      orb.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes orbs of the supported and top row characters
+      into [G] orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes orbs of the supported and top row characters
+      into [G] orbs.
+    - Once per adventure, when an enemy inflicts you with an Orb Randomization
+      or Orb Manipulation, changes all orbs into [G] orbs.
+limitBreak:
+  path:
+    - hp: 50
+    - hp: 75
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - cooldown: 2
+    - type: sailor
+    - cooldown: 5
+    - rcv: 50
+    - slot: 1
+    - hp: 125
+    - type: sailor
+    - atk: 50
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 3
+        - value: 5
+        - value: 7
+        - value: 10

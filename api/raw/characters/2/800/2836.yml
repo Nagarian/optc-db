@@ -1,0 +1,310 @@
+type: INT
+name: Charlotte Pudding - Love and Determination
+japanName: シャーロット・プリン 愛ゆえの決意
+family:
+  - CharlottePudding
+class:
+  - Cerebral
+  - Shooter
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 434
+    atk: 210
+    rcv: 98
+  maxLvl:
+    hp: 1421
+    atk: 819
+    rcv: 240
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 184673
+aliases:
+  - V1 Legend Pudding
+evolution:
+  - id: 2837
+    evolvers:
+      - 118
+      - 104
+      - 304
+      - 2662
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of [INT] characters by 3.5x, by 4.25x instead if they
+    have a beneficial orb, their HP by 1.25x, makes [PSY] orbs beneficial for
+    [INT] characters and boosts chances of getting [PSY] orbs.
+special:
+  name: One Last Request
+  description: Changes [EMPTY], [BLOCK], Badly Matching orbs into Matching orbs
+    and changes the orb of this character into a Matching orb, reduces Special
+    Cooldown of all characters by 1 turn. If this character has no stored buffs,
+    copies one selected buff and advances Special Cooldown of this character to
+    MAX. If this character has a stored buff, reapply that buff with a duration
+    of 1 turn.
+  cooldown: 12
+  maxLevel: 6
+  notes: Compatible buffs include, but are not limited to, ATK UP, Orb
+    Amplification, Affinity Boost, Chain Lock and Chain Boost. When storing a
+    buff, the buff will not be removed. Stored buffs retain all modifiers of the
+    original buff.
+rumble:
+  stats:
+    def: 129
+    rumbleType: SPT
+    spd: 151
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: heal
+      area: Small
+      level: 1
+    - action: attack
+      type: Normal
+  resilience:
+    - attribute: Silence
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+        - attributes:
+            - ATK
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+              - Powerhouse
+    - effects:
+        - override:
+            level: 2
+        - {}
+        - override:
+            level: 2
+    - effects:
+        - override:
+            level: 3
+        - {}
+        - override:
+            level: 3
+    - effects:
+        - override:
+            level: 4
+        - {}
+        - override:
+            level: 4
+    - effects:
+        - override:
+            level: 5
+        - {}
+        - override:
+            level: 5
+  special:
+    - cooldown: 22
+      effects:
+        - amount: 10
+          effect: recharge
+          type: Special CT
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          duration: 15
+          targeting:
+            targets:
+              - INT
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          duration: 15
+          targeting:
+            count: 1
+            priority: highest
+            stat: ATK
+            targets:
+              - crew
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 11
+        - override:
+            duration: 16
+        - override:
+            duration: 16
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 12
+        - override:
+            duration: 17
+        - override:
+            level: 4
+            duration: 17
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 13
+        - override:
+            duration: 18
+        - override:
+            level: 4
+            duration: 18
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 14
+        - override:
+            level: 2
+            duration: 19
+        - override:
+            level: 5
+            duration: 19
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 16
+        - override:
+            level: 2
+            duration: 20
+        - override:
+            level: 6
+            duration: 20
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 17
+        - override:
+            level: 2
+            duration: 21
+        - override:
+            level: 6
+            duration: 21
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 18
+        - override:
+            level: 3
+            duration: 22
+        - override:
+            level: 7
+            duration: 22
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 19
+        - override:
+            level: 3
+            duration: 23
+        - override:
+            level: 7
+            duration: 23
+    - cooldown: 22
+      effects:
+        - override:
+            amount: 25
+        - override:
+            level: 4
+            duration: 25
+        - override:
+            level: 8
+            duration: 25
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

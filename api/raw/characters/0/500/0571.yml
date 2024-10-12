@@ -1,0 +1,51 @@
+type: STR
+name: "Monkey D. Luffy - Davy Back Fight: Combat"
+japanName: モンキー・Ｄ・ルフィ デービーバックファイト・コンバット
+family:
+  - MonkeyDLuffy
+class:
+  - Fighter
+  - Powerhouse
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 862
+    atk: 492
+    rcv: 70
+  maxLvl:
+    hp: 1978
+    atk: 1170
+    rcv: 220
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 12805
+aliases:
+  - Afro Luffy
+  - Afroluffy
+captain:
+  name: ""
+  description: Boosts ATK of [STR] and Fighter characters by 1.5x, reduces Special
+    Cooldown of all characters by 1 turn at the start of the fight
+  notes: The bonus is cumulative. [STR] Fighter characters get a 2.25x bonus.
+special:
+  name: Gum-Gum Flail
+  description: Changes [BLOCK] orbs into [STR] orbs, deals 20x character's ATK in
+    [STR] damage to one enemy
+  cooldown: 25
+  maxLevel: 12
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Usopp
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6

@@ -1,0 +1,52 @@
+type: QCK
+name: Sebastian World Pirates
+japanName: セバスチャン ワールド海賊団
+family:
+  - Sebastian
+class:
+  - Powerhouse
+  - Striker
+rarity: 4
+stats:
+  combo: 6
+  minLvl:
+    hp: 108
+    atk: 58
+    rcv: 0
+  maxLvl:
+    hp: 2258
+    atk: 1258
+    rcv: 0
+cost: 20
+slots: 2
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - fortnight
+links:
+  gamewithId: 36744
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2x and reduces damage
+    received by 0%-20%, depending on the crew's current HP
+  notes: The lower the HP, the larger the damage reduction. At 50% HP you take 10%
+    reduced damage
+special:
+  name: Camouflage Air
+  description: Reduces damage received by 50% for 1 turn and changes the orb of
+    this character into a [QCK] orb
+  cooldown: 17
+  maxLevel: 8
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Byrnndi World, Gairam and Nightin
+  levels:
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 6
+    - value: 8

@@ -1,0 +1,49 @@
+type: STR
+name: Monkey D. Garp - Hero of the Navy
+japanName: モンキー・D・ガープ 海軍の英雄
+family:
+  - MonkeyDGarp
+class:
+  - Fighter
+  - Free Spirit
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 1015
+    atk: 494
+    rcv: 0
+  maxLvl:
+    hp: 1852
+    atk: 688
+    rcv: 5
+cost: 30
+slots: 2
+maxExp: 1778330
+maxLevel: 70
+flags:
+  - ambush
+links:
+  gamewithId: 75037
+aliases:
+  - Invasion Garp
+  - Ambush Garp
+evolution:
+  - id: 1846
+    evolvers:
+      - 118
+      - 84
+      - 266
+      - 95
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Fighter characters by 2.5x and reduces damage received by 5%
+special:
+  name: Crushing Armament Fist
+  description: Reduces the defense of all enemies by 100% for 1 turn. If the
+    targeted enemy has less than or equal to 25% of their MAX HP, instantly
+    defeats them, otherwise, deals 30% of enemies' current HP in damage to one
+    enemy
+  cooldown: 32
+  maxLevel: 18

@@ -1,0 +1,341 @@
+type: INT
+oldDbId: 2830
+name: Nico Robin - Umbrella Under a Shower of Stars
+japanName: ニコ・ロビン 星の雨に傘をさす者
+family:
+  - NicoRobin
+class:
+  - Cerebral
+  - Fighter
+rarity: 6+
+stats:
+  combo: 4
+  minLvl:
+    hp: 1158
+    atk: 711
+    rcv: 230
+  maxLvl:
+    hp: 2830
+    atk: 1495
+    rcv: 530
+cost: 65
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+  - gloex
+links:
+  gamewithId: 87124
+aliases:
+  - Mega/Super/6+ Robin
+  - Legend Robin
+captain:
+  name: ""
+  description: Boosts ATK of Cerebral characters by 3.75x and their RCV by 1.5x,
+    makes [RCV] orbs beneficial for Cerebral characters and reduces damage
+    received by 20%
+special:
+  name: Flower Umbrella
+  description: Reduces damage received by 100% for 1 turn, changes orbs of
+    adjacent characters into [RCV] orbs and boosts ATK of Cerebral characters by
+    2x for 2 turns
+  cooldown: 20
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK and HP of Cerebral characters by 50
+  - description: Makes [INT], [RCV] and [TND] orbs beneficial for Cerebral characters
+support:
+  type: stats
+  statsTypes:
+    - HP
+    - RCV
+  criteria: Bartolomeo, Cavendish, Rebecca and Kyros (Toy Soldier)
+  levels:
+    - value: 8
+    - value: 10
+    - value: 12
+    - value: 15
+    - value: 18
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 25
+    - type: sailor
+    - hp: 25
+    - hp: 40
+    - hp: 40
+    - hp: 40
+    - rcv: 10
+    - hp: 45
+    - type: potential
+    - hp: 45
+    - rcv: 20
+    - atk: 30
+    - rcv: 20
+    - atk: 35
+    - rcv: 20
+    - hp: 50
+    - cooldown: 1
+    - hp: 65
+    - rcv: 30
+    - hp: 65
+    - type: sailor
+    - hp: 85
+    - atk: 40
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - rcv: 50
+    - hp: 150
+    - atk: 100
+    - atk: 100
+    - captain:
+        description: Boosts ATK of Cerebral characters by 4.5x and their RCV by 1.5x,
+          makes [RCV] orbs beneficial for Cerebral characters and reduces damage
+          received by 20%
+    - cooldown: 1
+    - hp: 150
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 10
+        - value: 5
+          threshold: 20
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 7
+          threshold: 50
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 150
+          reduction: 1
+        - value: 200
+          reduction: 2
+        - value: 250
+          reduction: 3
+        - value: 300
+          reduction: 4
+        - value: 400
+          reduction: 5
+rumble:
+  stats:
+    def: 225
+    rumbleType: DEF
+    spd: 136
+  target:
+    criteria: near
+  pattern:
+    - action: heal
+      area: Self
+      level: 1
+    - action: attack
+      type: Normal
+    - action: heal
+      area: Self
+      level: 2
+  resilience:
+    - amount: 150
+      interval: 5
+      condition:
+        comparator: below
+        count: 50
+        stat: HP
+        type: stat
+      type: healing
+  ability:
+    - effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Cerebral
+        - attributes:
+            - DEF
+          level: 3
+          effect: buff
+          condition:
+            comparator: first
+            count: 25
+            type: time
+          targeting:
+            targets:
+              - Cerebral
+    - effects:
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - {}
+    - effects:
+        - override:
+            level: 6
+        - {}
+  special:
+    - cooldown: 26
+      effects:
+        - attributes:
+            - Guard
+          effect: buff
+          level: 2
+          duration: 15
+          targeting:
+            targets:
+              - crew
+        - attributes:
+            - Silence
+          chance: 80
+          duration: 12
+          effect: hinderance
+          range:
+            direction: forward
+            size: medium
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 26
+      effects:
+        - override:
+            duration: 16
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 17
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 3
+            duration: 18
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 19
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 4
+            duration: 20
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 21
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 5
+            duration: 22
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 6
+            duration: 23
+        - {}
+    - cooldown: 26
+      effects:
+        - override:
+            level: 7
+            duration: 25
+        - {}
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

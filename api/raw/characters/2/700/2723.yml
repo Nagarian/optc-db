@@ -1,0 +1,52 @@
+type: INT
+name: Marco - Blue Flame Shedding Tears
+japanName: マルコ 蒼炎の涙
+family:
+  - Marco
+class:
+  - Powerhouse
+  - Fighter
+rarity: 4
+stats:
+  combo: 4
+  minLvl:
+    hp: 955
+    atk: 530
+    rcv: 149
+  maxLvl:
+    hp: 1812
+    atk: 1074
+    rcv: 313
+cost: 1
+slots: 4
+maxExp: 1000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 171295
+aliases:
+  - ""
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse characters by 2.5x and recovers 2x
+    character's RCV at the end of each turn.
+special:
+  name: Blue Flames of Healing
+  description: Reduces Paralysis duration by 3 turns, changes [RCV], [TND],
+    [EMPTY], [BLOCK] and [BOMB] orbs of Powerhouse characters into Matching orbs
+    and recovers 8x character's RCV in HP at the end of each turn for 3 turns.
+  cooldown: 21
+  maxLevel: 9
+support:
+  type: stats
+  statsTypes:
+    - ATK
+    - HP
+    - RCV
+  criteria: Powerhouse characters
+  levels:
+    - value: 1
+    - value: 1
+    - value: 2
+    - value: 2
+    - value: 3

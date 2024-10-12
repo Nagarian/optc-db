@@ -1,0 +1,442 @@
+type: DEX
+name: Franky - The Greatest Transformation of All Time
+japanName: フランキー 空前絶後のモデルチェンジ
+family:
+  - Franky
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1526
+    atk: 561
+    rcv: 119
+  maxLvl:
+    hp: 3814
+    atk: 1402
+    rcv: 247
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - rumble
+links:
+  gamewithId: 229337
+aliases:
+  - PF Franky
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] characters by 2.75x.
+special:
+  name: "New Version: Weapons Left"
+  description: Deals 50x character's ATK in [DEX] damage to all enemies and boosts
+    Orb Effects of [DEX] characters by 1.75x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK of [DEX] characters by 50
+limitBreak:
+  path:
+    - rcv: 50
+    - hp: 50
+    - atk: 100
+    - type: potential
+    - rcv: 100
+    - hp: 150
+    - atk: 150
+    - hp: 200
+    - slot: 1
+    - type: potential
+  potentials:
+    - type: "[QCK] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: "[STR] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+rumble:
+  stats:
+    def: 214
+    rumbleType: DBF
+    spd: 158
+  target:
+    comparator: highest
+    criteria: SPD
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - DEX
+        - attributes:
+            - SPD
+          effect: buff
+          level: 6
+          targeting:
+            targets:
+              - DEX
+  special:
+    - cooldown: 35
+      effects:
+        - duration: 35
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 15
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 15
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 36
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 16
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 16
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 37
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 17
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 17
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 38
+          effect: damage
+          level: 1
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 18
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 18
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 39
+          effect: damage
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 19
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 19
+          effect: debuff
+          level: 3
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 40
+          effect: damage
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 20
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 20
+          effect: debuff
+          level: 4
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 41
+          effect: damage
+          level: 2
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 21
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 21
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 42
+          effect: damage
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 22
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 22
+          effect: debuff
+          level: 5
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 43
+          effect: damage
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 23
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 23
+          effect: debuff
+          level: 6
+          targeting:
+            targets:
+              - QCK
+    - cooldown: 35
+      effects:
+        - duration: 44
+          effect: damage
+          level: 3
+          range:
+            direction: radial
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: time
+        - attributes:
+            - DEF
+          duration: 24
+          effect: debuff
+          level: 2
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - SPD
+          duration: 24
+          effect: debuff
+          level: 7
+          targeting:
+            targets:
+              - QCK

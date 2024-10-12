@@ -1,0 +1,50 @@
+type: QCK
+name: Z - Neo Marines Leader
+japanName: ゼット ＮＥＯ海軍総帥
+family:
+  - Zephyr
+class:
+  - Shooter
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1213
+    atk: 405
+    rcv: 10
+  maxLvl:
+    hp: 1832
+    atk: 812
+    rcv: 52
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 128087
+aliases:
+  - V1 Legend Zephyr
+  - Legend Z
+evolution:
+  - id: 2330
+    evolvers:
+      - 118
+      - 1180
+      - 301
+      - 301
+      - 267
+captain:
+  name: ""
+  description: If there are 6 Shooter characters in your crew, boosts ATK of
+    Shooter characters by 3.25x, by 3.9x instead if they have a beneficial orb,
+    and reduces damage received by 10%
+special:
+  name: 'Destroying All Evil: "Smash Buster"'
+  description: Deals 30% of enemies' current HP in damage to one enemy, adds 50x
+    character's ATK as Additional Typeless Damage for 2 turns and changes orbs,
+    including [BLOCK] orbs, of Shooter characters into Matching orbs.
+  cooldown: 18
+  maxLevel: 6

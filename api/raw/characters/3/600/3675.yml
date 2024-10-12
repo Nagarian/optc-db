@@ -1,0 +1,47 @@
+type: DEX
+name: Hiyori - Incognito at the Summer Festival
+family:
+  - KozukiHiyori
+class:
+  - Cerebral
+  - Slasher
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 817
+    atk: 370
+    rcv: 109
+  maxLvl:
+    hp: 1635
+    atk: 741
+    rcv: 218
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+aliases:
+  - Summer Yukata Legend
+evolution:
+  - id: 3676
+    evolvers: []
+captain:
+  name: ""
+  description: Boosts ATK of [DEX] and [STR] characters by 5x, by 5.25x if they
+    have a [WANO] orb, boosts HP of [DEX] and [STR] characters by 1.25x,
+    recovers 0.5x this character's RCV at the end of the turn for each time you
+    hit a PERFECT and reduces damage received by 15%.
+special:
+  name: Genuine Smile
+  description: Changes all orbs, including [BLOCK] orbs, into [WANO] orbs, locks
+    all orbs for 1 turn, reduces Bind, Despair and Chain Coefficient Reduction
+    duration by 7 turns and recovers 50x character's RCV in HP.
+  cooldown: 20
+  maxLevel: 6
+  stages:
+    - description: Changes adjacent orbs, including [BLOCK] orbs, into [WANO] orbs,
+        reduces Bind, Despair and Chain Coefficient Reduction duration by 3
+        turns and recovers 20x character's RCV in HP.
+      cooldown: 15

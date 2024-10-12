@@ -1,0 +1,192 @@
+type: DUAL
+name: Luffy & Sanji - A Joint Struggle Underpinned by Trust
+japanName: ルフィ＆サンジ 信じ合う仲間との共闘
+family:
+  - MonkeyDLuffy
+  - VinsmokeSanji
+class:
+  - Free Spirit
+  - Fighter
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1747
+    atk: 1003
+    rcv: 111
+  maxLvl:
+    hp: 3882
+    atk: 1671
+    rcv: 371
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 224880
+aliases:
+  - Luffy&Sanji
+  - LuffySanji
+  - Sanji&Luffy
+  - SanjiLuffy
+  - Legend Luffy and Sanji
+captain:
+  name: ""
+  description: If HP is above 99% at the start of the turn, boosts ATK of all
+    characters by 5x, by 4.5x otherwise, boosts HP of all characters by 1.2x,
+    recovers 1,000 HP at the end of each turn and allows HP Overfill up to 2x
+    MAX HP.
+  notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+special:
+  name: Cross Fists and Legs
+  description: Changes all orbs, including [BLOCK] orbs, into [RCV] orbs, recovers
+    50x character's RCV in HP, allowing HP Overfill up to 2x MAX HP and becomes
+    Luffy & Sanji for 3 turns. If HP is above 99% at the time the special is
+    activated, boosts ATK of all characters by 2.5x for 1 turn, by 2x for 1 turn
+    otherwise.
+  cooldown: 19
+  maxLevel: 6
+sailor:
+  - description: Boosts base ATK, HP and RCV of all characters by 100
+  - description: Boosts amount healed from [RCV] orbs by 300 each
+characters:
+  swap:
+    description: Reduces Bind, Despair and Paralysis duration by 1 turn, makes [RCV]
+      orbs beneficial for all characters for 1 turn and changes orb of this
+      character into a [RCV] orb.
+  character1:
+    name: Luffy - A Joint Struggle Underpinned by Trust
+    japanName: ルフィ 信じ合う仲間との共闘
+    class:
+      - Free Spirit
+      - Fighter
+    type: STR
+    stats:
+      combo: 6
+      minLvl:
+        hp: 1603
+        atk: 902
+        rcv: 99
+      maxLvl:
+        hp: 3562
+        atk: 1504
+        rcv: 330
+    captain:
+      name: ""
+      description: If HP is above 99% at the start of the turn, boosts ATK of all
+        characters by 4x, by 3.5x otherwise, boosts HP of all characters by 1.2x
+        and allows HP Overfill up to 2x MAX HP.
+      notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of all characters by 50
+      - description: Boosts amount healed from [RCV] orbs by 300 each
+  character2:
+    name: Sanji - A Joint Struggle Underpinned by Trust
+    japanName: サンジ 信じ合う仲間との共闘
+    class:
+      - Free Spirit
+      - Fighter
+    type: PSY
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1603
+        atk: 865
+        rcv: 105
+      maxLvl:
+        hp: 3562
+        atk: 1441
+        rcv: 351
+    captain:
+      name: ""
+      description: If HP is above 99% at the start of the turn, boosts ATK of all
+        characters by 3.75x, by 3.25x otherwise, boosts HP of all characters by
+        1.2x, recovers 1,000 HP at the end of each turn and allows HP Overfill
+        up to 2x MAX HP.
+      notes: Having Overfill HP counts as being above 99% HP for ability conditions.
+    sailor:
+      - description: Boosts base ATK, HP and RCV of all characters by 50
+      - description: Boosts amount healed from [RCV] orbs by 300 each
+limitBreak:
+  path:
+    - rcv: 5
+    - rcv: 5
+    - rcv: 5
+    - type: potential
+    - atk: 10
+    - atk: 10
+    - atk: 10
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - hp: 20
+    - hp: 30
+    - hp: 50
+    - hp: 50
+    - type: potential
+    - atk: 20
+    - atk: 20
+    - atk: 20
+    - rcv: 10
+    - rcv: 10
+    - rcv: 15
+    - atk: 30
+    - atk: 30
+    - atk: 30
+    - type: sailor
+    - rcv: 30
+    - hp: 100
+    - hp: 100
+    - hp: 150
+    - type: potential
+    - key: 1
+    - hp: 100
+    - hp: 100
+    - atk: 50
+    - atk: 50
+    - rcv: 25
+    - rcv: 50
+    - hp: 150
+    - cooldown: 1
+    - atk: 100
+  potentials:
+    - type: Nutrition/Reduce Hunger stacks
+      variant: up to
+      levels:
+        - value: 50
+          threshold: 3000
+          reduction: 1
+        - value: 100
+          threshold: 3000
+          reduction: 1
+        - value: 150
+          threshold: 3000
+          reduction: 2
+        - value: 200
+          threshold: 3000
+          reduction: 2
+        - value: 300
+          threshold: 3000
+          reduction: 3
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 15
+        - value: 1
+          threshold: 20
+        - value: 1.5
+          threshold: 30
+        - value: 1.5
+          threshold: 50
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 10

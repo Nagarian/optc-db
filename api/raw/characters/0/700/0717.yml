@@ -1,0 +1,458 @@
+type: INT
+name: Dracule Mihawk - Warlord of the Sea
+japanName: ジュラキュール・ミホーク 王下七武海
+family:
+  - DraculeMihawk
+class:
+  - Slasher
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 623
+    atk: 328
+    rcv: 10
+  maxLvl:
+    hp: 1921
+    atk: 850
+    rcv: 58
+cost: 30
+slots: 4
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 16215
+aliases:
+  - INThawk
+  - V1 Legend Mihawk
+  - Shichibukai
+evolution:
+  - id: 718
+    evolvers:
+      - 118
+      - 266
+      - 99
+      - 304
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x-2.75x based on the timing of
+    the attack of the previous unit in the chain
+  notes: A hit below Good or a Miss will boost the ATK of the next unit by 2x, a
+    Good hit by 2.25x, a Great hit by 2.5x and a PERFECT hit by 2.75x. This
+    bonus is applied only to Slasher characters.
+special:
+  name: Black Sword - Lightning Slash
+  description: Deals 0.5x the damage dealt in the previous turn in Typeless damage
+    to all enemies
+  cooldown: 25
+  maxLevel: 7
+  notes: The special only includes the damage inflicted through normal attacks.
+    The special caps out at 999,999,999 damage.
+rumble:
+  stats:
+    def: 131
+    rumbleType: ATK
+    spd: 162
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Action Bind
+      chance: 50
+      type: debuff
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 3
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 5
+          targeting:
+            targets:
+              - Slasher
+        - attributes:
+            - ATK
+          condition:
+            count: 3
+            stat: Blow Away
+            type: trigger
+          effect: buff
+          level: 4
+          targeting:
+            targets:
+              - self
+  special:
+    - cooldown: 32
+      effects:
+        - amount: 0.9
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 0.96
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 1.01
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 1.07
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 1.13
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 1.19
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 1.24
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 1.3
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 1.36
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 32
+      effects:
+        - amount: 1.5
+          effect: damage
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Guard
+          duration: 15
+          effect: debuff
+          level: 1
+          range:
+            direction: forward
+            size: large
+          targeting:
+            targets:
+              - enemies
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

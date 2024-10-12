@@ -1,0 +1,87 @@
+type: STR
+name: '"Charging!" Little Oars Jr. - Whitebeard Pirates Family'
+japanName: 猛攻のリトルオーズJr. 白ひげ海賊団傘下
+family:
+  - LittleOarsJr
+class:
+  - Slasher
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1241
+    atk: 482
+    rcv: 31
+  maxLvl:
+    hp: 2802
+    atk: 1171
+    rcv: 90
+cost: 26
+slots: 3
+maxExp: 3000000
+maxLevel: 99
+flags:
+  - coliseum
+links:
+  gamewithId: 36720
+aliases:
+  - Colo Oars Jr.
+  - Coliseum Oars Jr.
+captain:
+  name: ""
+  description: Boosts ATK of Slasher characters by 2x and boosts HP of Powerhouse
+    characters by 1.75x
+special:
+  name: Blood of the Devil Warrior
+  description: Deals 25x character's ATK in [STR] damage to one enemy. Makes [STR]
+    orbs beneficial for all characters for 1 turn
+  cooldown: 29
+  maxLevel: 14
+sailor:
+  - description: Boosts base ATK of Slasher and Powerhouse characters by 50
+  - description: If this character has a [STR] orb and you hit a PERFECT with him,
+      keep his [STR] orb for the next turn
+support:
+  type: stats
+  statsTypes:
+    - HP
+  criteria: Portgas D. Ace and Edward Newgate (Whitebeard)
+  levels:
+    - value: 5
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 13
+limitBreak:
+  path:
+    - hp: 30
+    - hp: 30
+    - slot: 1
+    - type: potential
+    - atk: 20
+    - atk: 30
+    - type: sailor
+    - cooldown: 8
+    - rcv: 50
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - atk: 50
+    - hp: 130
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 7

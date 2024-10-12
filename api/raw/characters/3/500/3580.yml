@@ -1,0 +1,97 @@
+type: PSY
+name: Hawkins - Headliner Punishing the Traitor
+family:
+  - BasilHawkins
+class:
+  - Cerebral
+  - Striker
+rarity: 5
+stats:
+  combo: 5
+  minLvl:
+    hp: 1577
+    atk: 750
+    rcv: 88
+  maxLvl:
+    hp: 3154
+    atk: 1500
+    rcv: 175
+cost: 40
+slots: 3
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - arena
+aliases:
+  - Arena
+captain:
+  name: ""
+  description: Boosts ATK of Striker and Cerebral characters by 3.25x and reduces
+    damage received by 15%.
+special:
+  name: Punishing Straw Sword
+  description: Reduces Slot Bind duration by 2 turns, inflicts all enemies with
+    Increase Damage Taken by 1.5x for 3 turns and deals 250x character's ATK in
+    [PSY] damage to all enemies at the end of the turn for 1-6 turns, depending
+    on the number of enemies on the stage when the special is activated.
+  cooldown: 30
+  maxLevel: 16
+sailor:
+  - description: If this character has an [PSY] orb and you hit a PERFECT with him,
+      keep his [PSY] orb for the next turn
+  - description: Boosts base ATK, HP and RCV of Striker and Cerebral characters by 40
+support:
+  type: stats
+  statsTypes:
+    - RCV
+  criteria: Cerebral characters
+  levels:
+    - value: 4
+    - value: 6
+    - value: 8
+    - value: 10
+    - value: 12
+limitBreak:
+  path:
+    - atk: 10
+    - atk: 20
+    - hp: 75
+    - cooldown: 1
+    - slot: 1
+    - rcv: 25
+    - atk: 40
+    - type: potential
+    - atk: 50
+    - cooldown: 1
+    - rcv: 50
+    - hp: 85
+    - rcv: 70
+    - slot: 1
+    - type: potential
+    - atk: 60
+    - hp: 100
+    - cooldown: 1
+    - type: sailor
+    - type: potential
+  potentials:
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce Slot Bind duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Cooldown Reduction
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

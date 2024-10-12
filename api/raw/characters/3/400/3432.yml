@@ -1,0 +1,120 @@
+type: DUAL
+name: Ulti & Page One
+japanName: うるティ＆ページワン
+family:
+  - PageOne
+  - Ulti
+class:
+  - Driven
+  - Powerhouse
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1230
+    atk: 420
+    rcv: 60
+  maxLvl:
+    hp: 2460
+    atk: 840
+    rcv: 120
+cost: 30
+slots: 3
+maxExp: 1066998
+maxLevel: 70
+flags:
+  - sugo
+links:
+  gamewithId: 293284
+aliases:
+  - Ulti&Page One
+  - UltiPage One
+  - Page One&Ulti
+  - Page OneUlti
+  - Legend Ulti and Page One
+evolution:
+  - id: 3433
+    evolvers:
+      - 118
+      - 118
+      - 101
+      - 102
+      - 267
+captain:
+  name: ""
+  description: Boosts ATK of Driven and Powerhouse characters by 4.75x, by 5x
+    instead if they have a beneficial orb, and makes [DEX], [QCK], [RCV] and
+    [TND] orbs beneficial for all characters and deals 500x character's ATK in
+    character's Type damage to all enemies at the end of each turn. If there is
+    a Powerful Enemy, reduces damage received by 30%
+special:
+  name: No Rest for the Wicked
+  description: Deals 300x character's ATK in Typeless damage to all enemies,
+    changes all orbs into Matching orbs, removes Target Lock duration completely
+    and becomes Ulti & Page One for 3 turns. If your Captain is a Powerhouse or
+    Driven character, marks all enemies with 10,000,000 or more MAX HP as a
+    Powerful Enemy and boosts ATK against Powerful Enemies by 2.25x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+  notes: Powerful Enemy marker is not a debuff, so it bypasses debuff protection.
+sailor:
+  - description: Makes [RCV] and [TND] orbs beneficial for Driven and Powerhouse characters
+characters:
+  swap:
+    description: Reduces Paralysis duration completely on this character, changes
+      the orb of this character into a Matching orb and sets Chain Boundaries to
+      1.6x and 35.0x for 1 turn.
+    super:
+      criteria: 6
+      description: Reduces Paralysis duration completely on this character, changes
+        the orb of this character into a Matching orb and sets Chain Boundaries
+        to 2.5x and 35.0x for 2 turns.
+  character1:
+    name: Ulti
+    japanName: うるティ
+    class:
+      - Driven
+      - Powerhouse
+    type: QCK
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1109
+        atk: 363
+        rcv: 59
+      maxLvl:
+        hp: 2217
+        atk: 725
+        rcv: 117
+    captain:
+      name: ""
+      description: Boosts ATK of Driven and Powerhouse characters by 4x, by 4.5x
+        instead if they have a beneficial orb, and makes [RCV] and [TND] orbs
+        beneficial for all characters. If there is a Powerful Enemy, reduces
+        damage received by 20%.
+    sailor:
+      - description: Makes [RCV] orbs beneficial for Driven and Powerhouse characters
+  character2:
+    name: Page One
+    japanName: ページワン
+    class:
+      - Driven
+      - Powerhouse
+    type: DEX
+    stats:
+      combo: 4
+      minLvl:
+        hp: 1083
+        atk: 384
+        rcv: 50
+      maxLvl:
+        hp: 2166
+        atk: 767
+        rcv: 99
+    captain:
+      name: ""
+      description: Boosts ATK of Driven and Powerhouse characters by 4.25x and makes
+        [RCV] and [TND] orbs beneficial for all characters. If there is a
+        Powerful Enemy, reduces damage received by 20%.
+    sailor:
+      - description: Makes [TND] orbs beneficial for Driven and Powerhouse characters

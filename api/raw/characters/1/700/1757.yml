@@ -1,0 +1,88 @@
+type: STR
+name: Nami - 20th Anniversary Memorial Treasure
+japanName: ナミ 20th Anniversary Memorial Treasure
+family:
+  - Nami
+class:
+  - Striker
+  - Cerebral
+rarity: 5
+stats:
+  combo: 6
+  minLvl:
+    hp: 820
+    atk: 420
+    rcv: 220
+  maxLvl:
+    hp: 2076
+    atk: 1179
+    rcv: 417
+cost: 30
+slots: 5
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+links:
+  gamewithId: 65833
+aliases:
+  - 20th Anniversary Nami
+captain:
+  name: ""
+  description: Recovers 5x character's RCV in HP at the end of each turn
+special:
+  name: Gust Sword
+  description: Reduces damage received by 80% for 1 turn, reduces enemies'
+    Threshold Damage Reduction and ATK UP duration by 3 turns
+  cooldown: 14
+  maxLevel: 5
+sailor:
+  - description: Makes [DEX] orbs beneficial for this character
+  - description: Boosts base ATK and HP of all characters by 50
+support:
+  type: descriptive
+  criteria: Roronoa Zoro, Vinsmoke Sanji, Tony Tony Chopper and Brook
+  levels:
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 20% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 30% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 40% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 50% for 1 turn.
+    - Once per adventure, when the supported character uses their special,
+      reduces damage received by 50% for 1 turn and reduces enemies' Threshold
+      Damage Reduction and ATK UP duration by 1 turn.
+limitBreak:
+  path:
+    - rcv: 10
+    - rcv: 20
+    - atk: 20
+    - type: potential
+    - atk: 30
+    - hp: 30
+    - hp: 40
+    - type: sailor
+    - hp: 40
+    - atk: 30
+    - hp: 40
+    - hp: 40
+    - atk: 30
+    - atk: 30
+    - type: potential
+  potentials:
+    - type: "[DEX] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Reduce No Healing duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5

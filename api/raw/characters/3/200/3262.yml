@@ -1,0 +1,104 @@
+type: DEX
+name: Whitebeard - Raging Monster
+japanName: 白ひげ 怒る怪物
+family:
+  - EdwardNewgate
+class:
+  - Powerhouse
+  - Free Spirit
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 1310
+    atk: 588
+    rcv: 66
+  maxLvl:
+    hp: 3276
+    atk: 1470
+    rcv: 164
+cost: 30
+slots: 4
+maxExp: 2000000
+maxLevel: 99
+flags: []
+links:
+  gamewithId: 257247
+aliases:
+  - Edward Newgate
+captain:
+  name: ""
+  description: Boosts ATK of Powerhouse and Free Spirit characters by 2.5x, by
+    3.25x instead if HP is below 50% at the start of the turn.
+special:
+  name: Scolding Earthquake
+  description: Deals 15% of enemies' current HP in True damage to all enemies,
+    reduces Despair and Chain Coefficient Reduction duration by 3 turns and
+    boosts the Color Affinity of Powerhouse and Free Spirit characters by 1.75x
+    for 1 turn.
+  cooldown: 20
+  maxLevel: 7
+  notes: Special is limited to 2 uses per adventure.
+sailor:
+  - description: Boosts base ATK of Powerhouse and Free Spirit characters by 50
+  - description: When any other character uses a special, reduces special cooldown
+      of this character by 6 turns
+support:
+  type: stats
+  statsTypes:
+    - ATK
+  criteria: Marco, Portgas D. Ace, Jozu, Vista, Izo, Blamenco, Thatch, Namule,
+    Rakuyo, Fossa, Curiel, Blenheim, Kingdew, Haruta, Atmos and Speed Jil
+  levels:
+    - value: 2
+    - value: 3
+    - value: 4
+    - value: 5
+    - value: 9
+limitBreak:
+  path:
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - type: potential
+    - slot: 1
+    - hp: 30
+    - rcv: 30
+    - atk: 30
+    - cooldown: 1
+    - rcv: 40
+    - hp: 40
+    - type: sailor
+    - atk: 40
+    - atk: 50
+    - type: potential
+    - hp: 50
+    - atk: 75
+    - rcv: 40
+    - hp: 60
+    - cooldown: 1
+  potentials:
+    - type: Critical Hit
+      levels:
+        - value: 3
+          threshold: 30
+        - value: 5
+          threshold: 40
+        - value: 5
+          threshold: 50
+        - value: 5
+          threshold: 60
+        - value: 7
+          threshold: 70
+    - type: Enrage/Reduce Increase Damage Taken duration
+      levels:
+        - value: 30
+          reduction: 1
+        - value: 60
+          reduction: 1
+        - value: 90
+          reduction: 1
+        - value: 120
+          reduction: 1
+        - value: 150
+          reduction: 2

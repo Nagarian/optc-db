@@ -1,0 +1,464 @@
+type: QCK
+name: Magellan - Hope-Destroying Venom
+japanName: マゼラン 絶望与える毒
+family:
+  - Magellan
+class:
+  - Shooter
+  - Powerhouse
+rarity: 6
+stats:
+  combo: 4
+  minLvl:
+    hp: 1522
+    atk: 648
+    rcv: 90
+  maxLvl:
+    hp: 3806
+    atk: 1514
+    rcv: 261
+cost: 55
+slots: 5
+maxExp: 5000000
+maxLevel: 99
+flags:
+  - sugo
+  - inkable
+links:
+  gamewithId: 263373
+aliases:
+  - V2 Legend Magellan
+captain:
+  name: ""
+  description: If HP is above 70% at the start of the turn, boosts ATK of [QCK]
+    characters by 5x, by 4.5x otherwise, boosts HP of all characters by 1.3x,
+    boosts ATK of all other characters by 4x and reduces Paralysis duration by
+    10 turns. Recovers 25% of damage taken from enemies in the previous stage
+    when entering a new stage.
+superSpecial:
+  criteria: "This character must be captain and your crew must consist of:
+    Hannyabal, Shiryu, Domino, Sadie, Saldeath, Boa Hancock, Sengoku, Sakazuki
+    (Akainu), Kuzan (Aokiji) or Borsalino (Kizaru), excluding Support members."
+  description: Removes Poison duration completely, recovers 25% of damage taken
+    from enemies on the stage when entering a new stage for 1 stage and
+    transforms all [QCK] characters into Super [QCK] characters.
+special:
+  name: "Poison Punishment: Poison Spider Cloud"
+  description: Deals 10% of enemies' current HP in True damage to all enemies,
+    reduces Bind and Burn duration by 3 turns, boosts the Color Affinity of all
+    characters by 2x for 1 turn and inflicts Toxic to all enemies. If enemies
+    are inflicted with Toxic or Poison upon activation of the special, boosts
+    ATK of all characters by 2.5x for 1 turn.
+  cooldown: 20
+  maxLevel: 6
+  notes: "`toxic : 50x : 2x : 3,000,000`"
+sailor:
+  - description: Reduces Paralysis duration completely on this character
+  - description: When any other [QCK] character uses a special, reduces special
+      cooldown of this character by 3 turns
+support:
+  type: descriptive
+  criteria: Hannyabal, Sadie, Shiryu, Domino and Saldeath
+  levels:
+    - "Once per adventure, when the supported character uses their special,
+      inflicts Toxic to all enemies (Starting Damage: 10x character's ATK,
+      Damage Limit: 500,000)."
+    - "Once per adventure, when the supported character uses their special,
+      inflicts Toxic to all enemies (Starting Damage: 20x character's ATK,
+      Damage Limit: 700,000)."
+    - "Once per adventure, when the supported character uses their special,
+      inflicts Toxic to all enemies (Starting Damage: 30x character's ATK,
+      Damage Limit: 800,000)."
+    - "Once per adventure, when the supported character uses their special,
+      inflicts Toxic to all enemies (Starting Damage: 40x character's ATK,
+      Damage Limit: 900,000)."
+    - "Once per adventure, when the supported character uses their special,
+      inflicts Toxic to all enemies (Starting Damage: 50x character's ATK,
+      Damage Limit: 1,000,000)."
+limitBreak:
+  path:
+    - atk: 10
+    - hp: 10
+    - rcv: 10
+    - type: potential
+    - hp: 10
+    - hp: 10
+    - rcv: 10
+    - atk: 10
+    - atk: 10
+    - type: sailor
+    - atk: 10
+    - hp: 10
+    - atk: 20
+    - atk: 20
+    - type: potential
+    - cooldown: 1
+    - atk: 20
+    - hp: 30
+    - rcv: 30
+    - hp: 30
+    - hp: 50
+    - rcv: 50
+    - hp: 50
+    - hp: 50
+    - type: sailor
+    - atk: 50
+    - atk: 50
+    - hp: 50
+    - atk: 100
+    - type: potential
+    - key: 1
+    - rcv: 25
+    - rcv: 25
+    - hp: 100
+    - hp: 100
+    - hp: 100
+    - atk: 100
+    - atk: 100
+    - cooldown: 1
+    - hp: 200
+  potentials:
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Barrier Penetration
+      levels:
+        - threshold: 99
+        - threshold: 90
+        - threshold: 70
+        - threshold: 50
+        - threshold: 0
+    - type: Double Special Activation
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 5
+        - value: 100
+rumble:
+  stats:
+    def: 180
+    rumbleType: DBF
+    spd: 175
+  target:
+    criteria: near
+  pattern:
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Normal
+    - action: attack
+      type: Power
+    - action: attack
+      type: Full
+  resilience:
+    - attribute: Silence
+      chance: 100
+      type: debuff
+    - attribute: STR
+      percentage: 30
+      type: damage
+  ability:
+    - effects:
+        - attributes:
+            - ATK
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - HP
+          effect: buff
+          level: 1
+          targeting:
+            targets:
+              - QCK
+        - attributes:
+            - Special CT
+          condition:
+            comparator: first
+            count: 30
+            type: time
+          effect: buff
+          level: 2
+          targeting:
+            targets:
+              - self
+    - effects:
+        - override:
+            level: 2
+        - override:
+            level: 2
+        - {}
+    - effects:
+        - override:
+            level: 3
+        - override:
+            level: 3
+        - {}
+    - effects:
+        - override:
+            level: 4
+        - override:
+            level: 4
+        - {}
+    - effects:
+        - override:
+            level: 5
+        - override:
+            level: 5
+        - {}
+  special:
+    - cooldown: 27
+      effects:
+        - attributes:
+            - DEF
+          duration: 11
+          effect: debuff
+          level: 1
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+        - amount: 0.7
+          effect: damage
+          range:
+            direction: radial
+            size: medium
+          targeting:
+            targets:
+              - enemies
+          type: atk
+        - attributes:
+            - Haste
+          chance: 50
+          effect: boon
+          targeting:
+            targets:
+              - self
+        - attributes:
+            - Haste
+          chance: 30
+          effect: boon
+          targeting:
+            count: 1
+            targets:
+              - QCK
+        - attributes:
+            - DEF
+          condition:
+            comparator: first
+            count: 40
+            type: time
+          duration: 11
+          effect: debuff
+          level: 1
+          targeting:
+            targets:
+              - enemies
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 12
+            level: 1
+        - override:
+            amount: 0.8
+        - override:
+            chance: 55
+        - override:
+            chance: 32
+        - override:
+            duration: 12
+            level: 1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 13
+            level: 1
+        - override:
+            amount: 0.9
+        - override:
+            chance: 60
+        - override:
+            chance: 34
+        - override:
+            duration: 13
+            level: 1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 14
+            level: 1
+        - override:
+            amount: 1
+        - override:
+            chance: 65
+        - override:
+            chance: 36
+        - override:
+            duration: 14
+            level: 1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 15
+            level: 1
+        - override:
+            amount: 1.1
+        - override:
+            chance: 70
+        - override:
+            chance: 38
+        - override:
+            duration: 15
+            level: 1
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 16
+            level: 2
+        - override:
+            amount: 1.2
+        - override:
+            chance: 75
+        - override:
+            chance: 40
+        - override:
+            duration: 16
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 17
+            level: 2
+        - override:
+            amount: 1.3
+        - override:
+            chance: 80
+        - override:
+            chance: 42
+        - override:
+            duration: 17
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 18
+            level: 2
+        - override:
+            amount: 1.4
+        - override:
+            chance: 85
+        - override:
+            chance: 44
+        - override:
+            duration: 18
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 19
+            level: 2
+        - override:
+            amount: 1.5
+        - override:
+            chance: 90
+        - override:
+            chance: 46
+        - override:
+            duration: 19
+            level: 2
+    - cooldown: 27
+      effects:
+        - override:
+            duration: 20
+            level: 3
+        - override:
+            amount: 1.7
+        - override:
+            chance: 100
+        - override:
+            chance: 50
+        - override:
+            duration: 20
+            level: 3
+  gpStat:
+    ability:
+      - effects:
+          - attributes:
+              - ATK
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+          - attributes:
+              - HP
+              - SPD
+            effect: buff
+            level: 1
+            targeting:
+              targets:
+                - crew
+      - effects:
+          - override:
+              level: 1
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 2
+      - effects:
+          - override:
+              level: 2
+          - override:
+              level: 3
+      - effects:
+          - override:
+              level: 3
+          - override:
+              level: 3
+    burst:
+      condition:
+        - count: 2
+          type: defeat
+          team: enemies
+      special:
+        - uses: 2
+          effects:
+            - amount: 500
+              effect: damage
+              targeting:
+                targets:
+                  - enemies
+              type: fixed
+        - uses: 2
+          effects:
+            - override:
+                amount: 625
+        - uses: 2
+          effects:
+            - override:
+                amount: 750
+        - uses: 2
+          effects:
+            - override:
+                amount: 875
+        - uses: 2
+          effects:
+            - override:
+                amount: 1000

@@ -1,0 +1,38 @@
+type: QCK
+name: Rebecca
+japanName: レベッカ
+family:
+  - Rebecca
+class:
+  - Slasher
+rarity: 4
+stats:
+  combo: 5
+  minLvl:
+    hp: 242
+    atk: 115
+    rcv: 108
+  maxLvl:
+    hp: 1525
+    atk: 707
+    rcv: 345
+cost: 14
+slots: 2
+maxExp: 1422664
+maxLevel: 70
+flags:
+  - shop
+links:
+  gamewithId: 8873
+aliases: []
+captain:
+  name: ""
+  description: Reduces damage received by 50% and boosts RCV of all characters by
+    3x when HP is low
+special:
+  name: Backwater Sword Dance
+  description: Deals 1x-150x character's ATK in [QCK] damage, depending on the
+    crew's current HP, to all enemies.
+  cooldown: 20
+  maxLevel: 1
+  notes: "`specialProportional : lower : 150 * ( 1 - (remaining HP) / (total HP) )`"

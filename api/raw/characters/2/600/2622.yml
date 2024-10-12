@@ -1,0 +1,102 @@
+type: PSY
+name: Kalifa - Nighttime Pool Vacation
+japanName: カリファ ナイトプール・バカンス
+family:
+  - Kalifa
+class:
+  - Cerebral
+  - Fighter
+rarity: 5
+stats:
+  combo: 4
+  minLvl:
+    hp: 785
+    atk: 513
+    rcv: 115
+  maxLvl:
+    hp: 2122
+    atk: 1389
+    rcv: 312
+cost: 30
+slots: 4
+maxExp: 4000000
+maxLevel: 99
+flags:
+  - sugo
+  - limited
+links:
+  gamewithId: 158390
+aliases:
+  - Summer Kalifa
+  - Swimsuit Kalifa
+captain:
+  name: ""
+  description: Boosts ATK of [PSY] characters by 2.5x at the start of the chain,
+    boosts ATK of [PSY] characters by 4x following a chain of [INT] > [DEX]
+    attacks no lower than Good and reduces damage received from [INT] enemies by
+    30%
+special:
+  name: A Smile on Top of the Soap
+  description: Reduces Paralysis and Silence duration by 5 turns and makes [DEX],
+    [INT] and [BOMB] orbs beneficial for all characters for 1 turn. If Kalifa is
+    your Captain or Friend/Guest Captain, boosts ATK of [PSY] characters by
+    2.25x for 1 turn.
+  cooldown: 13
+  maxLevel: 1
+sailor:
+  - description: Boosts base ATK, HP and RCV of [DEX], [PSY] and [INT] characters by 30
+  - description: Reduces Silence duration by 5 turns on this character
+limitBreak:
+  path:
+    - atk: 20
+    - hp: 20
+    - hp: 30
+    - type: potential
+    - atk: 20
+    - atk: 40
+    - hp: 40
+    - hp: 50
+    - rcv: 50
+    - slot: 1
+    - hp: 60
+    - type: sailor
+    - atk: 30
+    - cooldown: 1
+    - type: potential
+    - key: 1
+    - atk: 50
+    - atk: 50
+    - rcv: 50
+    - rcv: 50
+    - atk: 100
+    - hp: 100
+    - hp: 100
+    - cooldown: 1
+    - type: potential
+  potentials:
+    - type: "[INT] Damage Reduction"
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
+    - type: Pinch Healing
+      levels:
+        - value: 1
+          threshold: 10
+        - value: 1
+          threshold: 20
+        - value: 1
+          threshold: 30
+        - value: 1.5
+          threshold: 40
+        - value: 1.5
+          threshold: 50
+    - type: Reduce Sailor Despair duration
+      levels:
+        - value: 1
+        - value: 2
+        - value: 3
+        - value: 4
+        - value: 5
